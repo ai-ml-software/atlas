@@ -223,6 +223,22 @@ Live URL: <http://localhost/atlas-lms/Academy-LMS/> (root redirects to `/en` or
 | 54 | Skip link, focus-visible outlines, labelled inputs, single H1, heading order, image alt text | layout + `ha_audit` checks | `ha_audit` | VERIFIED |
 | 54 | `prefers-reduced-motion` honoured | `academy.css` | — | IMPLEMENTED |
 
+### AI Studio, key authentication, API v1 (added 2026-09-24)
+
+| Requirement | Location | Test | Status |
+|---|---|---|---|
+| 47-provider registry from official docs, country / region / capability metadata | `config/ha_ai_providers.php` | `Test_ai_studio` | VERIFIED |
+| Provider keys encrypted (AES-256-GCM), env-var override, live model sync, test connection | `libraries/Ha_ai_gateway.php`, `Ha_crypto.php` | `Test_ai_studio`, e2e | VERIFIED |
+| Task routing, usage ledger, writing assistant | `controllers/Ha_ai.php`, `views/backend/ha_ai/` | e2e | VERIFIED |
+| Course draft + lesson script jobs, validation, review, publish, single-course LMS sync | `libraries/Ha_ai_studio.php`, `Ha_bridge::sync_one()` | `Test_ai_studio`, e2e | VERIFIED |
+| Narrated slide video (GD + Arabic shaping + ffmpeg + WebVTT) | `libraries/Ha_video_renderer.php`, `Ha_arabic.php` | slides drawn in tests; encoding needs ffmpeg | IMPLEMENTED |
+| TTS / presenter / clip adapters (OpenAI-style, ElevenLabs, Azure, Google, Gemini, HeyGen, D-ID, Synthesia, Veo, Luma, Runway) | `libraries/Ha_ai_media.php` | adapter matching tested; no live vendor calls | IMPLEMENTED |
+| Background worker with lock, heartbeat, retry, crash recovery | `controllers/Ha_ai_cli.php` | `Test_ai_studio`, e2e | VERIFIED |
+| TOTP two-factor login on every login path, recovery codes, throttling | `libraries/Ha_two_factor.php`, `Ha_totp.php`, `User_model::set_login_userdata()` | `Test_key_auth`, e2e | VERIFIED |
+| Personal API keys (hashed, scoped, expiry, IP pinning, revoke, rate limit) and `/api/v1` | `libraries/Ha_api_keys.php`, `controllers/Api_v1.php` | `Test_key_auth`, e2e | VERIFIED |
+
+Last run: 116 tests, 116 passed, 1,824 assertions; 61/61 end-to-end HTTP checks.
+
 ---
 
 ## Not started

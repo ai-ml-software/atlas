@@ -700,6 +700,17 @@ class User_model extends CI_Model
 
         if ($query->num_rows() > 0) {
             $row = $query->row();
+
+            // Every login path (password, social, new-device confirmation)
+            // ends here, so the second factor is enforced once, here, and no
+            // path can skip it.
+            if ($this->two_factor_pending($row->id)) {
+                $this->session->set_userdata('ha_2fa_user_id', (int) $row->id);
+                $this->session->set_userdata('ha_2fa_expires', time() + 300);
+                redirect(site_url('login/two_factor'), 'refresh');
+            }
+            $this->session->unset_userdata(array('ha_2fa_user_id', 'ha_2fa_expires', 'ha_2fa_verified'));
+
             //604800s == 7 days
             $this->session->set_userdata('custom_session_limit', (time()+864000));
             $this->session->set_userdata('user_id', $row->id);
@@ -722,6 +733,19 @@ class User_model extends CI_Model
             $this->session->set_flashdata('error_message', get_phrase('invalid_login_credentials'));
             redirect(site_url('login'), 'refresh');
         }
+    }
+
+    /** True when the account has 2FA on and this session has not passed it yet. */
+    private function two_factor_pending($user_id) {
+        if (!$this->db->table_exists('ha_user_2fa')) {
+            return false;
+        }
+        if ((int) $this->session->userdata('ha_2fa_verified') === (int) $user_id) {
+            return false;
+        }
+        return $this->db->where('user_id', (int) $user_id)
+            ->where('confirmed_at IS NOT NULL', null, false)
+            ->count_all_results('ha_user_2fa') > 0;
     }
 
     function check_session_data($user_type = ""){

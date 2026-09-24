@@ -54,6 +54,8 @@ class Seed_rbac extends Ha_seeder {
             'settings'             => array('en' => 'Settings', 'ar' => 'الإعدادات', 'actions' => array('view', 'update')),
             'audit_logs'           => array('en' => 'Audit Logs', 'ar' => 'سجل التدقيق', 'actions' => array('view', 'export')),
             'leads'                => array('en' => 'Leads', 'ar' => 'طلبات التواصل', 'actions' => array('view', 'update', 'delete', 'export')),
+            'ai'                   => array('en' => 'AI Studio', 'ar' => 'استوديو الذكاء الاصطناعي', 'actions' => array('view', 'configure', 'generate', 'approve', 'publish')),
+            'api_keys'             => array('en' => 'API Keys', 'ar' => 'مفاتيح الواجهة البرمجية', 'actions' => array('view', 'create', 'revoke')),
         );
     }
 
@@ -74,6 +76,9 @@ class Seed_rbac extends Ha_seeder {
             'import'      => array('en' => 'Import', 'ar' => 'استيراد'),
             'impersonate' => array('en' => 'Impersonate', 'ar' => 'الدخول كمستخدم'),
             'run'         => array('en' => 'Run', 'ar' => 'تنفيذ'),
+            'configure'   => array('en' => 'Configure', 'ar' => 'إعداد'),
+            'generate'    => array('en' => 'Generate with', 'ar' => 'التوليد عبر'),
+            'revoke'      => array('en' => 'Revoke', 'ar' => 'إلغاء'),
         );
     }
 
@@ -106,6 +111,7 @@ class Seed_rbac extends Ha_seeder {
                     'faqs' => '*', 'testimonials' => '*', 'menus' => '*', 'seo' => '*', 'redirects' => '*',
                     'competitors' => '*', 'competitor_keywords' => '*', 'leads' => '*',
                     'audit_logs' => array('view'),
+                    'ai' => '*', 'api_keys' => '*',
                 ),
             ),
             'instructor' => array(
@@ -126,6 +132,9 @@ class Seed_rbac extends Ha_seeder {
                     'certificates' => array('view'),
                     'media' => array('view', 'create'),
                     'reports' => array('view'),
+                    // Instructors draft with AI; an academy admin approves.
+                    'ai' => array('view', 'generate'),
+                    'api_keys' => '*',
                 ),
             ),
             'org_admin' => array(
@@ -148,6 +157,7 @@ class Seed_rbac extends Ha_seeder {
                     'checklists' => '*', 'attendance' => '*',
                     'reports' => '*', 'analytics' => '*', 'notifications' => array('view'),
                     'audit_logs' => array('view'),
+                    'api_keys' => '*',
                 ),
             ),
             'property_manager' => array(

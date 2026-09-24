@@ -1,0 +1,7141 @@
+Below is the complete **PHP LMS Upgrade Feature List & Detailed Technical Brief** derived directly from the **Altus Advisory Strategic Business Blueprint & Brand Architecture — 2026 Edition**.  
+It covers every platform-related requirement, feature, capability, layer, experience, metric, and strategic differentiator mentioned in the document. It is structured so a PHP development team can scope, architect, build, test, and deploy the upgrade to match the **altus Hospitality Knowledge & Performance** platform.
+
+---
+
+# ALTUS HK&P — PHP LMS UPGRADE
+## Complete Feature List & Detailed Brief
+
+### 1. Executive Summary
+The existing PHP LMS must be upgraded into a **white-label, bilingual, multi-tenant, AI-enabled hospitality knowledge and performance platform** called **altus Hospitality Knowledge & Performance**.  
+It must serve independent hotels, serviced apartments, and SME establishments across Saudi Arabia and the Arab region, without the cost and complexity of global-chain systems.  
+It must convert three decades of hotel expertise and operating standards into a structured digital system for **learning, knowledge management, and performance measurement**.  
+The platform must deliver the promise:  
+> “The right knowledge, to the right person, at the right time, with clear evidence of learning and improvement.”
+
+It must fuse consulting IP with software, so knowledge stays institutionalised, versioned, continuously updated, and becomes a digital asset of the institution — not of departing staff.
+
+---
+
+### 2. Extracted Client Requirements from the Document
+The following requirements are taken directly from the Altus Advisory corporate profile. No relevant word or feature has been intentionally skipped.
+
+#### 2.1 Platform Purpose
+- Strategic Altus product.
+- Converts three decades of hotel expertise and operating standards.
+- Structured digital system.
+- Learning.
+- Knowledge management.
+- Performance measurement.
+- Purpose-built for independent hotels, serviced apartments, and SME establishments.
+- Across Saudi Arabia and the Arab region.
+- Practical, standards-based training.
+- Without cost and complexity of global-chain systems.
+
+#### 2.2 Unified Platform Architecture: Five Integrated Layers
+1. **Product & Experience** — Clear scope and consistent experience across information architecture and UX.
+2. **Knowledge & Learning** — Knowledge architecture, master curriculum, learning engine, assessment and certification.
+3. **Intelligence & Performance** — Knowledge engine, smart search, governed AI assistant, live performance indicators.
+4. **Technical Operations** — Database, identity and permissions, per-property customisation, admin and reporting.
+5. **Governance & Growth** — Security and privacy, version control, product roadmap, web and mobile channels.
+
+#### 2.3 Master Curriculum: Ten Professional Domains
+1. Hotel Fundamentals  
+2. Sales & Marketing  
+3. Front Office  
+4. Revenue & Reservations  
+5. Housekeeping  
+6. Guest Experience  
+7. Food & Beverage  
+8. Quality & Audit  
+9. Kitchen  
+10. Security & Safety  
+
+#### 2.4 Structured Content Model
+**Professional Domain → Track → Module → Lesson → Assessment & Certification**
+
+#### 2.5 Key Platform Attributes
+- Bilingual by design: Arabic and English, one experience.
+- White-label per property: each establishment’s own brand.
+- Governed AI assistant: answers only from approved content.
+- Evidence of progress: dashboards, reports, certification.
+
+#### 2.6 Competitive Edge Features
+- Consultancies hand over reports. Software vendors hand over tools. Altus HK&P fuses the two.
+- Consulting IP institutionalised inside a living platform.
+- Keeps compounding value for the client long after the mandate.
+- Three decades of operator-grade SOPs and field-tested standards.
+- Knowledge stays institutionalised, versioned, and continuously updated.
+- Assessment, certification, and competency dashboards per employee.
+- Governed AI assistant answering strictly from approved content.
+
+#### 2.7 Measurable Value for Owners and Operators
+- >40% faster onboarding readiness.
+- 100% turnover immunity: operational knowledge remains a digital asset of the institution, not of departing staff.
+- 100s of training hours saved.
+- White-label, bilingual, tailored per property, role, and standard.
+- GOP ↑ guest satisfaction & profit.
+- Internally developed digital content replaces costly repetitive classroom cycles.
+
+#### 2.8 One Platform, Three Experiences
+- **The Learner** — Role-based plan, short applied lessons, assessment, live progress, completion certificate.
+- **Property Management** — Assign tracks, follow team completion, read competency reports, apply the property’s own brand.
+- **The Altus Team** — Content management, quality control, versioning, client administration, cross-property analytics.
+
+#### 2.9 Digital & AI Intelligence Layer
+- Every Altus mandate ships with an intelligence layer.
+- **Business Intelligence** — Single source of truth across PMS, POS, channel, and financial data: unified, cleansed, decision-ready.
+- **Applied AI** — Dynamic pricing matrices, predictive yield management, demand forecasting, AI-readiness roadmaps deployed in phases.
+- **Performance Monitoring** — Continuous KPI instrumentation with alerting: variances surfaced in days, not month-end post-mortems.
+- **Executive Dashboards** — Owner- and board-grade dashboards: RevPAR, GOPPAR, pickup, sentiment, payroll productivity in one live view.
+- **Advanced Analytics** — Channel economics, guest-sentiment mining, cost-driver analysis, scenario modelling for capital decisions.
+- **Digital Transformation** — CRM architecture, cloud migration, integrated technology blueprints that cut long-run IT overheads.
+- Flagship product: altus HK&P institutionalises this intelligence layer inside every client property.
+- From gut feel to ground truth. Replace intuition with empirical analytics: deliberately, and everywhere.
+
+#### 2.10 Vision 2030 / Saudi Alignment
+- Bilingual digital academy.
+- Learning paths.
+- Certification.
+- Governed digital system.
+- Embeds transparency and a culture of continuous improvement.
+- Platform priced deliberately for independent hotels and SME establishments.
+- Supports Saudization, youth empowerment, SME GDP contribution, digital & AI leadership, tourism & hospitality surge.
+
+---
+
+### 3. Complete Feature List for PHP LMS Upgrade
+
+#### A. Platform & Experience Layer
+| ID | Feature | Description |
+|---|---|---|
+| A1 | White-label per property | Each property can apply its own brand: logo, colors, typography, domain/subdomain, email templates, certificates. |
+| A2 | Multi-tenant architecture | Support many properties/clients in one installation, with data isolation. |
+| A3 | Consistent UX | Clear scope and consistent experience across information architecture and UX. |
+| A4 | Responsive web | Works on desktop, tablet, mobile browsers. |
+| A5 | Mobile channels | Web and mobile channels; PWA or native app support. |
+| A6 | Role-based dashboards | Different views for Learner, Property Management, Altus Team, Owners. |
+| A7 | Arabic & English | Bilingual by design, one experience. Full RTL/LTR support. |
+| A8 | Per-property customisation | Tailor content, branding, roles, and standards per property. |
+| A9 | Accessibility | WCAG-compliant UI where possible. |
+
+#### B. Knowledge & Learning Layer
+| ID | Feature | Description |
+|---|---|---|
+| B1 | Knowledge architecture | Structured taxonomy for all content. |
+| B2 | Master curriculum | Ten professional domains. |
+| B3 | Learning engine | Delivers courses, tracks, modules, lessons. |
+| B4 | Structured content model | Professional Domain → Track → Module → Lesson → Assessment & Certification. |
+| B5 | Ten professional domains | Hotel Fundamentals, Sales & Marketing, Front Office, Revenue & Reservations, Housekeeping, Guest Experience, Food & Beverage, Quality & Audit, Kitchen, Security & Safety. |
+| B6 | Role-based learning plans | Learner gets a plan based on role. |
+| B7 | Short applied lessons | Micro-learning format. |
+| B8 | Live progress | Real-time progress tracking. |
+| B9 | Completion certificate | Auto-generated certificate on completion. |
+| B10 | Assign tracks | Property Management can assign tracks to teams. |
+| B11 | Follow team completion | Managers see team progress. |
+| B12 | Competency reports | Reports per employee and team. |
+| B13 | Onboarding readiness | >40% faster onboarding readiness. |
+| B14 | Turnover immunity | Knowledge remains a digital asset. |
+| B15 | Training hours saved | 100s of training hours saved. |
+| B16 | Replace classroom cycles | Internally developed digital content replaces costly repetitive classroom cycles. |
+| B17 | Continuous improvement | Culture of continuous improvement embedded. |
+| B18 | Learning paths | Structured paths per role, property, standard. |
+| B19 | Certification | Formal certification after assessment. |
+| B20 | Bilingual digital academy | Arabic and English academy. |
+
+#### C. Intelligence & Performance Layer
+| ID | Feature | Description |
+|---|---|---|
+| C1 | Knowledge engine | Indexes and serves knowledge. |
+| C2 | Smart search | Semantic and keyword search across approved content. |
+| C3 | Governed AI assistant | Answers only from approved content. |
+| C4 | Live performance indicators | Real-time KPIs. |
+| C5 | Evidence of progress | Dashboards, reports, certification. |
+| C6 | Assessment engine | Quizzes, exams, practical assessments. |
+| C7 | Competency dashboards | Per employee, team, property. |
+| C8 | Business Intelligence | Single source of truth across PMS, POS, channel, financial data: unified, cleansed, decision-ready. |
+| C9 | Applied AI | Dynamic pricing matrices, predictive yield management, demand forecasting, AI-readiness roadmaps. |
+| C10 | Performance Monitoring | Continuous KPI instrumentation with alerting: variances surfaced in days. |
+| C11 | Executive Dashboards | RevPAR, GOPPAR, pickup, sentiment, payroll productivity in one live view. |
+| C12 | Advanced Analytics | Channel economics, guest-sentiment mining, cost-driver analysis, scenario modelling. |
+| C13 | Digital Transformation | CRM architecture, cloud migration, integrated technology blueprints. |
+| C14 | Intelligence layer | Every mandate ships with this layer. |
+| C15 | Gut feel to ground truth | Replace intuition with empirical analytics. |
+| C16 | GOP ↑ | Guest satisfaction & profit improvement. |
+
+#### D. Technical Operations Layer
+| ID | Feature | Description |
+|---|---|---|
+| D1 | Database | Robust, scalable database design. |
+| D2 | Identity and permissions | RBAC, SSO, 2FA. |
+| D3 | Per-property customisation | Tenant-specific settings. |
+| D4 | Admin and reporting | Central admin console. |
+| D5 | API-first | REST/GraphQL APIs for integrations. |
+| D6 | PMS/POS integration | Pull data from PMS, POS, channel, financial systems. |
+| D7 | Data cleansing | Unified, cleansed, decision-ready data. |
+| D8 | Notification system | Email, in-app, push. |
+| D9 | Audit logs | Track all admin and user actions. |
+| D10 | Multi-currency | Support SAR, USD, etc. |
+| D11 | Multi-timezone | For GCC/MENA. |
+| D12 | Offline capability | Optional PWA offline learning. |
+
+#### E. Governance & Growth Layer
+| ID | Feature | Description |
+|---|---|---|
+| E1 | Security and privacy | Encryption, PDPL/GDPR compliance. |
+| E2 | Version control | Content versioning, rollback. |
+| E3 | Product roadmap | Feature flags, release management. |
+| E4 | Web and mobile channels | Omnichannel delivery. |
+| E5 | Quality control | Content review workflow. |
+| E6 | Client administration | Manage clients, properties, users. |
+| E7 | Cross-property analytics | Compare performance across properties. |
+| E8 | Content management | CMS for all learning content. |
+| E9 | Versioned knowledge | Knowledge stays institutionalised, versioned, continuously updated. |
+| E10 | SOP library | Operator-grade SOPs and field-tested standards. |
+
+#### F. One Platform, Three Experiences
+| ID | Experience | Features |
+|---|---|---|
+| F1 | The Learner | Role-based plan, short applied lessons, assessment, live progress, completion certificate. |
+| F2 | Property Management | Assign tracks, follow team completion, read competency reports, apply property’s own brand. |
+| F3 | The Altus Team | Content management, quality control, versioning, client administration, cross-property analytics. |
+
+#### G. Measurable Value Features
+| ID | Metric | Feature |
+|---|---|---|
+| G1 | >40% faster onboarding readiness | New hires productive from first days. |
+| G2 | 100% turnover immunity | Knowledge remains a digital asset. |
+| G3 | 100s of training hours saved | White-label, bilingual, tailored per property, role, standard. |
+| G4 | GOP ↑ | Guest satisfaction & profit. |
+| G5 | Cost reduction | Replace costly repetitive classroom cycles. |
+| G6 | Competency assurance | Assessment, certification, dashboards. |
+| G7 | AI governance | Governed AI assistant from approved content. |
+
+#### H. Digital & AI Intelligence Layer
+| ID | Feature | Description |
+|---|---|---|
+| H1 | Business Intelligence | Single source of truth across PMS, POS, channel, financial data. |
+| H2 | Applied AI | Dynamic pricing, predictive yield, demand forecasting, AI-readiness roadmaps. |
+| H3 | Performance Monitoring | Continuous KPI instrumentation with alerting. |
+| H4 | Executive Dashboards | RevPAR, GOPPAR, pickup, sentiment, payroll productivity. |
+| H5 | Advanced Analytics | Channel economics, guest-sentiment mining, cost-driver analysis, scenario modelling. |
+| H6 | Digital Transformation | CRM architecture, cloud migration, integrated technology blueprints. |
+| H7 | Flagship product | altus HK&P institutionalises intelligence layer. |
+| H8 | Empirical analytics | Replace intuition with empirical analytics. |
+
+#### I. Vision 2030 / SME / Bilingual Academy
+| ID | Feature | Description |
+|---|---|---|
+| I1 | Bilingual digital academy | Arabic and English. |
+| I2 | Learning paths | Structured paths. |
+| I3 | Certification | Formal certification. |
+| I4 | Governed digital system | Transparency and continuous improvement. |
+| I5 | SME pricing | Deliberately priced for independent hotels and SME establishments. |
+| I6 | Saudization support | Talent strategies, youth empowerment. |
+| I7 | Digital & AI leadership | Supports digitally enabled society. |
+| I8 | Tourism & hospitality surge | Supports 150M annual visits target. |
+
+#### J. Competitive Edge Features
+| ID | Feature | Description |
+|---|---|---|
+| J1 | Fuses consulting & software | Reports + tools in one. |
+| J2 | Institutionalised IP | Consulting IP inside platform. |
+| J3 | Compounding value | Value grows after mandate. |
+| J4 | Operator-grade SOPs | Three decades of standards. |
+| J5 | Field-tested standards | Real-world validated. |
+| J6 | Versioned knowledge | Continuously updated. |
+| J7 | Competency dashboards | Per employee. |
+| J8 | Governed AI assistant | Strictly approved content. |
+| J9 | No comparable firm offers this | Unique differentiator. |
+
+---
+
+### 4. Detailed Technical Upgrade Brief for PHP LMS
+
+#### 4.1 Recommended Stack
+- **PHP 8.2/8.3** or latest stable.
+- **Laravel 11** or Symfony 7 (Laravel preferred for rapid multi-tenant SaaS).
+- **Database**: MySQL 8 or PostgreSQL 16 (PostgreSQL preferred for JSONB, full-text search, pgvector for AI).
+- **Caching**: Redis.
+- **Queue**: Laravel Horizon / Redis.
+- **Search**: Meilisearch, Elasticsearch, or PostgreSQL full-text.
+- **AI/RAG**: Vector database (pgvector, Pinecone, Weaviate) + OpenAI/Anthropic/local LLM.
+- **Frontend**: Blade + Livewire + Alpine.js, or Vue/React with Inertia.
+- **Mobile**: PWA first, then React Native/Flutter if needed.
+- **DevOps**: Docker, Kubernetes, CI/CD (GitHub Actions/GitLab CI).
+- **Monitoring**: Sentry, Laravel Telescope, Prometheus/Grafana.
+
+#### 4.2 Architecture
+- **Multi-tenant**: Single database with `tenant_id` or separate database per property.  
+  - Recommended: single DB, tenant scoped, with row-level security.
+- **White-label**:  
+  - Custom domain/subdomain mapping.  
+  - Theme engine: logo, colors, fonts, email templates, certificates.  
+  - Per-property settings table.
+- **API-first**:  
+  - RESTful API for all modules.  
+  - Webhooks for PMS/POS/channel integrations.
+- **Modular monolith**:  
+  - Modules: Auth, Tenants, Properties, Users, Roles, Courses, Tracks, Modules, Lessons, Assessments, Certifications, AI Assistant, Search, Analytics, Reports, Notifications, Branding, Admin, CMS, Versioning, Security, Integrations.
+
+#### 4.3 Database Schema (Key Tables)
+- `tenants` (properties)
+- `users` (with `tenant_id`, role)
+- `roles`, `permissions`, `role_user`
+- `domains` (10 professional domains)
+- `tracks`
+- `modules`
+- `lessons`
+- `assessments`
+- `questions`
+- `answers`
+- `certifications`
+- `user_progress`
+- `competency_reports`
+- `ai_documents` (approved content)
+- `ai_conversations`
+- `kpi_metrics`
+- `dashboards`
+- `integrations`
+- `audit_logs`
+- `versions` (content versioning)
+
+#### 4.4 Learning Engine
+- CRUD for domains, tracks, modules, lessons.
+- Content types: text, video, audio, PDF, SCORM/xAPI (optional), interactive.
+- Role-based learning plans.
+- Prerequisites and sequencing.
+- Short applied lessons (micro-learning).
+- Live progress tracking.
+- Completion certificates (PDF generation with property branding).
+- Bilingual content fields (Arabic/English).
+- RTL support.
+
+#### 4.5 Assessment & Certification
+- Quiz builder: multiple choice, true/false, matching, short answer.
+- Practical assessments: file upload, checklist, manager sign-off.
+- Passing criteria.
+- Auto-certification on completion.
+- Certificate verification via QR code or unique ID.
+- Competency dashboards per employee, team, property.
+
+#### 4.6 Governed AI Assistant
+- RAG (Retrieval-Augmented Generation) architecture.
+- Only answers from approved content.
+- Admin can approve/reject content for AI.
+- Smart search across approved content.
+- AI assistant embedded in learner and manager interfaces.
+- Audit trail of AI answers.
+- Multilingual AI: Arabic and English.
+
+#### 4.7 Analytics & Dashboards
+- **Learner Dashboard**: progress, assigned tracks, certificates.
+- **Property Management Dashboard**: team completion, competency reports, branding settings.
+- **Altus Team Dashboard**: content management, quality control, versioning, client administration, cross-property analytics.
+- **Executive Dashboard**: RevPAR, GOPPAR, pickup, sentiment, payroll productivity.
+- **Performance Monitoring**: continuous KPI instrumentation with alerting.
+- **Advanced Analytics**: channel economics, guest-sentiment mining, cost-driver analysis, scenario modelling.
+- **Business Intelligence**: single source of truth across PMS, POS, channel, financial data.
+
+#### 4.8 Integrations
+- PMS integration (Opera, Protel, etc.).
+- POS integration.
+- Channel manager integration.
+- Financial systems integration.
+- CRM integration.
+- Cloud migration support.
+- Webhooks and API keys.
+- Data cleansing pipeline.
+
+#### 4.9 Security & Privacy
+- RBAC with granular permissions.
+- 2FA, SSO.
+- Encryption at rest and in transit.
+- PDPL (Saudi) and GDPR compliance.
+- Audit logs.
+- Data isolation per tenant.
+- Backup and disaster recovery.
+- Version control for content.
+
+#### 4.10 Mobile & Web
+- Responsive web design.
+- PWA for mobile.
+- Push notifications.
+- Offline learning (optional).
+- Mobile-friendly assessments.
+
+#### 4.11 Admin & Client Management
+- Central admin console.
+- Tenant management.
+- User management.
+- Content management.
+- Quality control workflow.
+- Versioning and rollback.
+- Reporting and analytics.
+- Branding per property.
+- Subscription/billing (if SaaS).
+
+#### 4.12 Versioning & Product Roadmap
+- Content versioning with history.
+- Feature flags.
+- Release management.
+- Product roadmap module.
+- Continuous updates.
+
+#### 4.13 Migration from Existing PHP LMS
+- Audit current codebase.
+- Data migration plan.
+- Upgrade PHP version.
+- Refactor to Laravel/Symfony.
+- Implement multi-tenancy.
+- Add white-label.
+- Add bilingual.
+- Add AI layer.
+- Add analytics.
+- Test, UAT, deploy.
+
+---
+
+### 5. User Roles & Workflows
+
+#### 5.1 Learner
+- Login → view role-based plan → complete short applied lessons → take assessment → receive completion certificate → view live progress.
+
+#### 5.2 Property Management
+- Login → assign tracks → follow team completion → read competency reports → apply property’s own brand → view dashboards.
+
+#### 5.3 Altus Team
+- Login → content management → quality control → versioning → client administration → cross-property analytics.
+
+#### 5.4 Owner / Executive
+- Login → executive dashboard → RevPAR, GOPPAR, pickup, sentiment, payroll productivity → advanced analytics → scenario modelling.
+
+---
+
+### 6. Implementation Phases
+
+| Phase | Duration | Deliverables |
+|---|---|---|
+| 1. Discovery & Audit | 2 weeks | Current PHP LMS audit, gap analysis, requirements finalisation. |
+| 2. Architecture & Design | 3 weeks | Multi-tenant design, DB schema, API spec, UI/UX wireframes. |
+| 3. Core Upgrade | 6 weeks | PHP 8.3, Laravel, multi-tenancy, RBAC, white-label, i18n. |
+| 4. Learning Engine | 6 weeks | Domains, tracks, modules, lessons, assessments, certificates. |
+| 5. AI & Intelligence | 6 weeks | RAG AI assistant, smart search, analytics, dashboards. |
+| 6. Integrations | 4 weeks | PMS, POS, channel, financial, CRM. |
+| 7. Mobile & PWA | 3 weeks | Responsive, PWA, push notifications. |
+| 8. Testing & UAT | 4 weeks | Unit, integration, security, UAT. |
+| 9. Deployment & Training | 2 weeks | Go-live, admin training, documentation. |
+| 10. Support & Roadmap | Ongoing | Maintenance, versioning, product roadmap. |
+
+---
+
+### 7. Acceptance Criteria
+- White-label per property works with custom domain, logo, colors, certificates.
+- Arabic and English both fully functional with RTL.
+- Ten professional domains, tracks, modules, lessons, assessments, certifications.
+- Role-based learning plans and live progress.
+- Property Management can assign tracks, follow completion, read competency reports.
+- Altus Team can manage content, quality, versioning, clients, cross-property analytics.
+- Governed AI assistant answers only from approved content.
+- Dashboards: learner, property, Altus, executive.
+- KPIs: RevPAR, GOPPAR, pickup, sentiment, payroll productivity.
+- >40% faster onboarding readiness measurable.
+- 100% turnover immunity: knowledge remains digital asset.
+- 100s of training hours saved.
+- GOP ↑ guest satisfaction & profit.
+- Security: RBAC, 2FA, encryption, PDPL/GDPR.
+- Mobile: responsive, PWA.
+- Integrations: PMS, POS, channel, financial, CRM.
+- Version control and product roadmap.
+- From gut feel to ground truth: empirical analytics everywhere.
+
+---
+
+### 8. Exhaustive Feature Checklist
+Use this checklist to ensure no requirement is missed.
+
+**Platform**
+- [ ] White-label per property
+- [ ] Multi-tenant
+- [ ] Custom domain/subdomain
+- [ ] Logo, colors, typography
+- [ ] Email templates
+- [ ] Certificates branding
+- [ ] Consistent UX
+- [ ] Information architecture
+- [ ] Responsive web
+- [ ] Mobile channels
+- [ ] PWA
+- [ ] Role-based dashboards
+- [ ] Arabic & English
+- [ ] RTL/LTR
+- [ ] Per-property customisation
+- [ ] Accessibility
+
+**Learning**
+- [ ] Knowledge architecture
+- [ ] Master curriculum
+- [ ] Ten professional domains
+- [ ] Structured content model
+- [ ] Professional Domain → Track → Module → Lesson → Assessment & Certification
+- [ ] Learning engine
+- [ ] Role-based learning plans
+- [ ] Short applied lessons
+- [ ] Live progress
+- [ ] Completion certificate
+- [ ] Assign tracks
+- [ ] Follow team completion
+- [ ] Competency reports
+- [ ] Onboarding readiness >40%
+- [ ] Turnover immunity 100%
+- [ ] 100s of training hours saved
+- [ ] Replace classroom cycles
+- [ ] Continuous improvement
+- [ ] Learning paths
+- [ ] Certification
+- [ ] Bilingual digital academy
+
+**Intelligence**
+- [ ] Knowledge engine
+- [ ] Smart search
+- [ ] Governed AI assistant
+- [ ] Answers only from approved content
+- [ ] Live performance indicators
+- [ ] Evidence of progress
+- [ ] Assessment engine
+- [ ] Competency dashboards
+- [ ] Business Intelligence
+- [ ] Single source of truth
+- [ ] PMS, POS, channel, financial data
+- [ ] Unified, cleansed, decision-ready
+- [ ] Applied AI
+- [ ] Dynamic pricing matrices
+- [ ] Predictive yield management
+- [ ] Demand forecasting
+- [ ] AI-readiness roadmaps
+- [ ] Performance Monitoring
+- [ ] Continuous KPI instrumentation
+- [ ] Alerting
+- [ ] Executive Dashboards
+- [ ] RevPAR, GOPPAR, pickup, sentiment, payroll productivity
+- [ ] Advanced Analytics
+- [ ] Channel economics
+- [ ] Guest-sentiment mining
+- [ ] Cost-driver analysis
+- [ ] Scenario modelling
+- [ ] Digital Transformation
+- [ ] CRM architecture
+- [ ] Cloud migration
+- [ ] Integrated technology blueprints
+- [ ] Intelligence layer
+- [ ] From gut feel to ground truth
+- [ ] GOP ↑ guest satisfaction & profit
+
+**Technical**
+- [ ] Database
+- [ ] Identity and permissions
+- [ ] Per-property customisation
+- [ ] Admin and reporting
+- [ ] API-first
+- [ ] PMS integration
+- [ ] POS integration
+- [ ] Channel integration
+- [ ] Financial integration
+- [ ] Data cleansing
+- [ ] Notification system
+- [ ] Audit logs
+- [ ] Multi-currency
+- [ ] Multi-timezone
+- [ ] Offline capability
+
+**Governance**
+- [ ] Security and privacy
+- [ ] Encryption
+- [ ] PDPL/GDPR
+- [ ] Version control
+- [ ] Product roadmap
+- [ ] Web and mobile channels
+- [ ] Quality control
+- [ ] Client administration
+- [ ] Cross-property analytics
+- [ ] Content management
+- [ ] Versioned knowledge
+- [ ] SOP library
+- [ ] Operator-grade SOPs
+- [ ] Field-tested standards
+
+**Experiences**
+- [ ] The Learner
+- [ ] Property Management
+- [ ] The Altus Team
+
+**Vision 2030**
+- [ ] Bilingual digital academy
+- [ ] Learning paths
+- [ ] Certification
+- [ ] Governed digital system
+- [ ] Transparency
+- [ ] Continuous improvement
+- [ ] SME pricing
+- [ ] Saudization support
+- [ ] Digital & AI leadership
+- [ ] Tourism & hospitality surge
+
+**Competitive Edge**
+- [ ] Fuses consulting & software
+- [ ] Institutionalised IP
+- [ ] Compounding value
+- [ ] Operator-grade SOPs
+- [ ] Field-tested standards
+- [ ] Versioned knowledge
+- [ ] Competency dashboards
+- [ ] Governed AI assistant
+- [ ] No comparable firm offers this
+
+---
+
+This brief is complete and directly aligned with the Altus Advisory Strategic Business Blueprint & Brand Architecture — 2026 Edition. It provides every feature, layer, experience, metric, and technical requirement needed to upgrade a PHP LMS into the **altus Hospitality Knowledge & Performance** platform.
+
+
+I converted the full Altus corporate profile into a **product-level requirements specification** for upgrading the existing PHP LMS. The important distinction is that the corporate profile contains both actual software requirements and corporate/advisory positioning; the prompt below makes sure the software supports the required operational concepts without incorrectly hardcoding marketing claims.
+
+# ALTUS HOSPITALITY KNOWLEDGE & PERFORMANCE
+
+## Complete PHP LMS Upgrade Specification
+
+### Based on the ALTUS ADVISORY Strategic Business Blueprint & Brand Architecture — 2026 Edition
+
+---
+
+# 1. PRODUCT OBJECTIVE
+
+Upgrade the existing PHP LMS into a production-ready, bilingual, multi-property, white-label **Hospitality Knowledge & Performance Platform** for Altus Advisory.
+
+The system must evolve from a conventional LMS that primarily tracks course completion into a complete system that connects:
+
+**Knowledge → Learning → Assessment → Competency → Gap Identification → Corrective Action → Reassessment → Readiness → Certification → Operational Performance**
+
+The core product promise is:
+
+> **“The right knowledge, to the right person, at the right time, with clear evidence of learning and improvement.”**
+
+The platform must institutionalise Altus Advisory's hospitality operating knowledge so that knowledge remains inside the client organisation rather than disappearing when employees leave.
+
+The system must support:
+
+* Independent hotels
+* Serviced apartments
+* Hospitality SMEs
+* Hotel groups
+* Multi-property portfolios
+* Client organisations
+* Altus internal teams
+* Property management teams
+* Individual learners
+* Supervisors and assessors
+* Executives, owners and decision-makers
+
+The system must be designed around:
+
+> **From Knowledge to Performance**
+
+---
+
+# 2. CORE PRODUCT DIFFERENTIATOR
+
+The system must not be treated as a generic LMS.
+
+A conventional LMS generally measures:
+
+* Course assigned
+* Course opened
+* Lesson completed
+* Test completed
+* Certificate generated
+
+Altus requires a deeper model.
+
+The system must measure:
+
+* What the employee was expected to know
+* What knowledge they actually consumed
+* What they understood
+* What they can demonstrate
+* What competencies they possess
+* Where competency gaps exist
+* What corrective actions were assigned
+* Whether improvement occurred
+* Whether reassessment was successful
+* Whether the employee is operationally ready
+* Whether the property/team is achieving required standards
+
+Therefore, **completion must never automatically equal competence**.
+
+---
+
+# 3. FIVE INTEGRATED PLATFORM LAYERS
+
+The application architecture must reflect the five-layer architecture specified in the corporate profile.
+
+## Layer 1 — Product & Experience
+
+Responsible for:
+
+* Consistent user experience
+* Navigation
+* UX/UI
+* Arabic and English interfaces
+* RTL/LTR
+* Responsive design
+* Mobile experience
+* Property branding
+* White-label experience
+* Role-based dashboards
+* Accessibility
+* Consistent design system
+
+---
+
+## Layer 2 — Knowledge & Learning
+
+Responsible for:
+
+* Knowledge architecture
+* Curriculum
+* Learning paths
+* Tracks
+* Modules
+* Lessons
+* Assessments
+* Certifications
+* SOP knowledge
+* Policies
+* Standards
+* Learning resources
+* Content versioning
+* Knowledge ownership
+* Content approval
+
+---
+
+## Layer 3 — Intelligence & Performance
+
+Responsible for:
+
+* Smart search
+* Governed AI assistant
+* Knowledge retrieval
+* KPI dashboards
+* Competency dashboards
+* Performance indicators
+* Learning analytics
+* Assessment analytics
+* Readiness analytics
+* Property performance
+* Employee performance
+* Management insights
+
+---
+
+## Layer 4 — Technical Operations
+
+Responsible for:
+
+* Database
+* Authentication
+* Identity management
+* Permissions
+* Multi-tenancy
+* Property management
+* Client management
+* File storage
+* API
+* Notifications
+* Reporting
+* Integrations
+* Backup
+* Logging
+* System administration
+
+---
+
+## Layer 5 — Governance & Growth
+
+Responsible for:
+
+* Security
+* Privacy
+* Audit trails
+* Version control
+* Approval workflows
+* Content governance
+* AI governance
+* Client administration
+* Product roadmap capability
+* Web/mobile channels
+* Multi-property expansion
+* Cross-property analytics
+
+---
+
+# 4. THREE PRIMARY PLATFORM EXPERIENCES
+
+The platform must provide three clearly separated experiences.
+
+## A. Learner Experience
+
+For hotel employees and trainees.
+
+Learners must be able to:
+
+* Log in
+* View assigned learning
+* View learning paths
+* Browse permitted knowledge
+* Resume unfinished lessons
+* Complete lessons
+* Watch/read learning resources
+* Complete assessments
+* View assessment results
+* View competencies
+* See gaps
+* Complete corrective actions
+* Request/receive reassessment
+* View readiness status
+* Download certificates
+* View learning history
+* Search approved knowledge
+* Ask the governed AI assistant
+* View notifications
+* Change language
+* View their profile
+
+---
+
+## B. Property Management Experience
+
+For:
+
+* General Managers
+* HR
+* Training managers
+* Department heads
+* Supervisors
+* Operations managers
+* Property administrators
+
+Management users must be able to:
+
+* Manage employees
+* Assign learning
+* Assign tracks
+* Build cohorts
+* Monitor progress
+* View overdue learning
+* Monitor assessments
+* Conduct practical evaluations
+* Review competencies
+* Identify gaps
+* Create action plans
+* Approve reassessment
+* Review readiness
+* Generate reports
+* Review certification
+* Monitor departmental performance
+* Manage property-specific content
+* Apply property standards
+* Manage property branding
+* View dashboards
+* Export reports
+
+---
+
+## C. Altus Team Experience
+
+For Altus administrators, consultants, content managers and quality-control personnel.
+
+Must support:
+
+* Client management
+* Multi-property management
+* Cross-property analytics
+* Curriculum management
+* Knowledge management
+* Content authoring
+* Content review
+* Content approval
+* Version control
+* Quality control
+* Certification management
+* Property configuration
+* White-label management
+* AI knowledge governance
+* Platform administration
+* Reporting
+* Portfolio analytics
+* User management
+* Permissions
+* Audit logs
+
+---
+
+# 5. MULTI-TENANT / MULTI-PROPERTY ARCHITECTURE
+
+The platform must be built as a genuine multi-tenant system.
+
+Recommended hierarchy:
+
+**Altus**
+→ Client Organisation
+→ Portfolio
+→ Property
+→ Departments
+→ Teams
+→ Employees
+
+A client may have:
+
+* One property
+* Multiple hotels
+* Multiple serviced apartments
+* Multiple branches
+* Multiple departments
+* Multiple user groups
+
+The database and application must enforce tenant isolation.
+
+A user belonging to Property A must never be able to access Property B unless the user's role explicitly permits cross-property access.
+
+Support:
+
+* Organisation-level settings
+* Property-level settings
+* Department-level settings
+* Role-level permissions
+* User-level permissions
+* Cross-property Altus administrator access
+
+---
+
+# 6. WHITE-LABEL PROPERTY EXPERIENCE
+
+This is a mandatory product feature.
+
+Each client/property must be able to have its own branded environment.
+
+Configurable:
+
+* Property logo
+* Property name
+* Brand colours
+* Secondary colours
+* Favicon
+* Login page branding
+* Dashboard branding
+* Certificate branding
+* Email branding
+* Report branding
+* Header/footer
+* Arabic brand name
+* English brand name
+* Property-specific welcome message
+
+The system should architecturally support custom domains/subdomains later.
+
+Example:
+
+`training.clienthotel.com`
+
+or
+
+`clientname.altusplatform.com`
+
+Do not hardcode Altus branding into tenant-facing screens.
+
+Altus administrators must control whether:
+
+* Altus branding appears
+* Client branding appears
+* Both brands appear
+
+---
+
+# 7. LANGUAGE & LOCALISATION
+
+Bilingual capability is mandatory.
+
+Supported languages:
+
+* English
+* Arabic
+
+The same learning experience must be available in both languages.
+
+Support:
+
+* LTR English
+* RTL Arabic
+* Translated menus
+* Translated buttons
+* Translated system messages
+* Translated notifications
+* Translated assessment interfaces
+* Translated certificates
+* Translated reports
+* Bilingual content
+* Arabic typography
+* RTL tables
+* RTL forms
+* RTL dashboards
+
+Content must not rely on machine-translating the interface dynamically.
+
+Store language versions independently.
+
+Example:
+
+Lesson:
+
+* English version
+* Arabic version
+
+Assessment:
+
+* English questions
+* Arabic questions
+
+Certificate:
+
+* English
+* Arabic
+* Bilingual
+
+---
+
+# 8. MASTER CURRICULUM ARCHITECTURE
+
+The required hierarchy is:
+
+**Professional Domain**
+→ **Track**
+→ **Module**
+→ **Lesson**
+→ **Assessment**
+→ **Certification**
+
+The CMS must enforce this structure while remaining flexible enough for future curriculum expansion.
+
+---
+
+# 9. TEN CORE PROFESSIONAL DOMAINS
+
+Initial curriculum must include these ten domains exactly:
+
+## 1. Hotel Fundamentals
+
+Examples:
+
+* Hospitality fundamentals
+* Hotel terminology
+* Hotel departments
+* Hotel operating model
+* Property standards
+* Roles and responsibilities
+* Service culture
+
+## 2. Sales & Marketing
+
+Support:
+
+* Sales fundamentals
+* Corporate sales
+* Leisure sales
+* Lead management
+* Digital marketing
+* Campaigns
+* Brand standards
+* Conversion
+* Direct sales
+
+## 3. Front Office
+
+Support:
+
+* Reservations
+* Pre-arrival
+* Check-in
+* Guest registration
+* Guest communication
+* Upselling
+* Check-out
+* Cash handling
+* Complaint handling
+* Front-office SOPs
+
+## 4. Revenue & Reservations
+
+Support:
+
+* Revenue concepts
+* Rate strategy
+* Dynamic pricing
+* Pickup
+* Forecasting
+* Yield management
+* Distribution
+* OTA economics
+* Direct booking
+* Revenue controls
+
+## 5. Housekeeping
+
+Support:
+
+* Room preparation
+* Cleaning standards
+* Inspection
+* Linen
+* Lost and found
+* Room-status procedures
+* Hygiene
+* Productivity
+* Quality controls
+
+## 6. Guest Experience
+
+Support:
+
+* Guest journey
+* Service standards
+* Guest communication
+* Complaint recovery
+* Mystery guest standards
+* Satisfaction
+* Experience measurement
+* Service recovery
+
+## 7. Food & Beverage
+
+Support:
+
+* Restaurant operations
+* Service standards
+* Cost control
+* Revenue
+* Guest experience
+* Food safety
+* F&B productivity
+
+## 8. Quality & Audit
+
+Support:
+
+* SOP compliance
+* Quality audits
+* Internal audits
+* Brand compliance
+* Gap assessment
+* Corrective actions
+* Follow-up
+* Evidence management
+
+## 9. Kitchen
+
+Support:
+
+* Kitchen operations
+* Hygiene
+* Food safety
+* Preparation
+* Productivity
+* Cost control
+* SOPs
+
+## 10. Security & Safety
+
+Support:
+
+* Hotel security
+* Emergency procedures
+* Incident reporting
+* Fire safety
+* Guest safety
+* Employee safety
+* Security SOPs
+* Compliance procedures
+
+The architecture must permit additional professional domains without database redesign.
+
+---
+
+# 10. CONTENT MANAGEMENT SYSTEM
+
+Build a proper hospitality knowledge CMS.
+
+Content types should include:
+
+* Lesson
+* SOP
+* Policy
+* Standard
+* Procedure
+* Checklist
+* Reference guide
+* Job aid
+* Video
+* Document
+* Presentation
+* Image
+* Infographic
+* FAQ
+* Knowledge article
+* Assessment
+* Practical evaluation
+* Case study
+* Scenario
+* Downloadable resource
+
+Each item should support:
+
+* English
+* Arabic
+* Draft
+* Review
+* Approved
+* Published
+* Archived
+* Version number
+* Author
+* Reviewer
+* Approver
+* Creation date
+* Updated date
+* Effective date
+* Expiry/review date
+* Tags
+* Domain
+* Track
+* Module
+* Role
+* Property
+* Department
+
+---
+
+# 11. CONTENT VERSION CONTROL
+
+The platform must preserve institutional knowledge.
+
+When content is updated:
+
+* Never destroy the previous version
+* Create new version
+* Record who changed it
+* Record what changed
+* Record when it changed
+* Record approval status
+* Record effective date
+
+Example:
+
+SOP Front Office Check-in
+
+Version 1.0
+Version 1.1
+Version 2.0
+
+The system must know which version is currently active.
+
+Historical reports must remain linked to the version used at that time.
+
+---
+
+# 12. KNOWLEDGE GOVERNANCE
+
+Only approved content may become authoritative organisational knowledge.
+
+Workflow:
+
+**Draft**
+→ **Internal Review**
+→ **Quality Review**
+→ **Approval**
+→ **Publish**
+→ **Active Knowledge**
+→ **Revision**
+→ **New Version**
+
+AI must not automatically treat:
+
+* Draft content
+* Rejected content
+* Archived content
+* Unapproved documents
+
+as authoritative knowledge.
+
+---
+
+# 13. LEARNING ENGINE
+
+Implement a complete learning management engine.
+
+Features:
+
+* Learning paths
+* Tracks
+* Modules
+* Lessons
+* Enrolment
+* Assignments
+* Due dates
+* Prerequisites
+* Mandatory/optional learning
+* Individual assignments
+* Group assignments
+* Department assignments
+* Role-based assignments
+* Property-based assignments
+* Cohorts
+* Learning schedules
+* Progress tracking
+* Resume learning
+* Completion state
+* Overdue state
+* Exemption
+* Reassignment
+* Retakes
+
+Track:
+
+* Started
+* In progress
+* Completed
+* Failed
+* Expired
+* Overdue
+* Exempted
+
+---
+
+# 14. LESSON EXPERIENCE
+
+Each lesson should support:
+
+* Rich text
+* Headings
+* Images
+* Video
+* Audio
+* Documents
+* Embedded content
+* Tables
+* Checklists
+* Downloadable resources
+* External/internal references
+* Arabic/English versions
+
+Track:
+
+* Start time
+* Completion time
+* Progress
+* Last viewed position
+* Time spent
+* Completion state
+
+The UI should make short, applied lessons easy to consume.
+
+---
+
+# 15. ROLE-BASED LEARNING PATHS
+
+A property should be able to define learning requirements by role.
+
+Example:
+
+Front Office Agent:
+
+* Hotel Fundamentals
+* Front Office
+* Guest Experience
+* Security & Safety
+
+Housekeeping Supervisor:
+
+* Hotel Fundamentals
+* Housekeeping
+* Guest Experience
+* Quality & Audit
+* Leadership content
+
+Revenue Manager:
+
+* Hotel Fundamentals
+* Revenue & Reservations
+* Sales & Marketing
+* Digital & Analytics content
+
+Learning paths should be configurable rather than hardcoded.
+
+---
+
+# 16. ASSESSMENT ENGINE
+
+Support multiple assessment types.
+
+## Theory assessments
+
+* Multiple choice
+* Multiple answer
+* True/false
+* Matching
+* Ordering
+* Scenario questions
+* Short answer
+* Essay/manual review
+
+Support:
+
+* Question banks
+* Randomised questions
+* Question pools
+* Passing score
+* Time limit
+* Attempts
+* Retakes
+* Automatic grading
+* Manual grading
+* Feedback
+* Correct-answer explanations
+
+---
+
+# 17. PRACTICAL COMPETENCY ASSESSMENT
+
+The platform must go beyond theoretical tests.
+
+Supervisors/assessors must be able to evaluate real-world performance.
+
+Example:
+
+Front Office Check-in Competency
+
+Criteria:
+
+* Welcomes guest
+* Confirms reservation
+* Verifies documentation
+* Explains hotel services
+* Completes system entry
+* Handles payment correctly
+* Communicates professionally
+* Follows property SOP
+
+Each criterion can be scored.
+
+Possible outcomes:
+
+* Not demonstrated
+* Developing
+* Competent
+* Exceeds standard
+
+Allow assessor comments and evidence.
+
+---
+
+# 18. COMPETENCY FRAMEWORK
+
+Create a formal competency model.
+
+A competency must support:
+
+* Competency name
+* Description
+* Domain
+* Role
+* Required level
+* Current level
+* Assessment evidence
+* Assessor
+* Assessment date
+* Status
+
+Example:
+
+`Front Office → Guest Check-in → Competent`
+
+The platform should provide competency matrices for:
+
+* Employee
+* Role
+* Department
+* Property
+* Portfolio
+
+---
+
+# 19. GAP ANALYSIS
+
+The system must automatically identify competency gaps.
+
+Example:
+
+Required Level: 4
+Current Level: 2
+
+Gap:
+
+`2 levels`
+
+The system should identify:
+
+* Missing knowledge
+* Failed assessments
+* Missing practical competency
+* Expired certification
+* Incomplete learning
+* Repeated operational weaknesses
+
+---
+
+# 20. CORRECTIVE ACTION PLANS
+
+When a gap exists, managers must be able to create an action plan.
+
+Action plan fields:
+
+* Gap
+* Employee
+* Competency
+* Required action
+* Assigned manager
+* Assigned employee
+* Due date
+* Priority
+* Status
+* Evidence
+* Notes
+* Completion date
+
+Statuses:
+
+* Open
+* Assigned
+* In Progress
+* Submitted
+* Under Review
+* Completed
+* Overdue
+* Rejected
+
+---
+
+# 21. REASSESSMENT
+
+Once corrective actions are complete, allow reassessment.
+
+Workflow:
+
+**Gap**
+→ **Action Plan**
+→ **Training/Practice**
+→ **Evidence**
+→ **Supervisor Review**
+→ **Reassessment**
+→ **Competency Updated**
+
+Keep all historical assessments.
+
+Never overwrite previous performance records.
+
+---
+
+# 22. READINESS ENGINE
+
+Create a readiness system.
+
+Examples:
+
+* Employee Ready
+* Employee Conditionally Ready
+* Employee Not Ready
+* Property Opening Readiness
+* Department Readiness
+* Role Readiness
+
+Readiness may depend on:
+
+* Mandatory learning
+* Theory assessment
+* Practical assessment
+* Required competencies
+* Certification
+* Outstanding gaps
+* Corrective actions
+
+Display clear reasons for readiness status.
+
+Example:
+
+**Ready**
+
+* 100% mandatory learning complete
+* Required theoretical assessments passed
+* Required practical competencies verified
+* No critical competency gaps
+* Current certification
+
+---
+
+# 23. CERTIFICATION ENGINE
+
+Certificates must not be generated simply because a course was clicked as complete when competency requirements exist.
+
+Certificate rules may depend on:
+
+* Learning completion
+* Assessment pass
+* Practical competency
+* Required score
+* Required role
+* Required curriculum
+* Expiry period
+
+Certificate must contain:
+
+* Learner name
+* Property
+* Role
+* Certification title
+* Domain
+* Date
+* Certificate number
+* QR verification
+* Expiry date if applicable
+* Issuing authority
+* Digital signature/approval
+* Property branding
+* Arabic/English version
+
+Public verification page:
+
+`/verify/certificate/{unique-code}`
+
+---
+
+# 24. REPORTING
+
+Create professional reports for:
+
+### Employee
+
+* Learning progress
+* Assessment results
+* Competency matrix
+* Gaps
+* Actions
+* Reassessment
+* Certificates
+* Readiness
+
+### Department
+
+* Completion
+* Competency
+* Gaps
+* Outstanding actions
+* Assessment results
+* Department readiness
+
+### Property
+
+* Training completion
+* Competency coverage
+* Critical gaps
+* Department comparison
+* Certification status
+* Readiness
+* Trends
+
+### Portfolio
+
+For authorised Altus/client users:
+
+* Cross-property comparison
+* Completion trends
+* Competency trends
+* High-risk gaps
+* Certification coverage
+* Property readiness
+* Department performance
+
+Do not allow lower-level users to see unauthorised property data.
+
+---
+
+# 25. EXECUTIVE DASHBOARDS
+
+Create owner/board-grade dashboards as described in the corporate profile.
+
+Dashboard areas may include:
+
+* Learning completion
+* Competency coverage
+* Readiness
+* Critical gaps
+* Certification
+* Guest-experience training
+* Quality compliance
+* Department performance
+* Property performance
+* Progress trends
+
+Where integrated operational data becomes available, support:
+
+* RevPAR
+* GOPPAR
+* Pickup
+* Guest sentiment
+* Payroll productivity
+* Revenue indicators
+* Cost indicators
+
+The application architecture must permit these KPIs to come from integrated sources rather than manually hardcoded values.
+
+---
+
+# 26. PERFORMANCE INTELLIGENCE
+
+The platform's long-term objective is not merely training analytics.
+
+Create an intelligence layer connecting:
+
+**Knowledge**
+→ **Capability**
+→ **Operational Performance**
+
+The architecture should therefore provide:
+
+* KPI framework
+* KPI definitions
+* KPI ownership
+* KPI targets
+* KPI actuals
+* Thresholds
+* Alerts
+* Trends
+* Reporting periods
+
+---
+
+# 27. SMART SEARCH
+
+Implement platform-wide search.
+
+Search should cover authorised:
+
+* Lessons
+* SOPs
+* Policies
+* Standards
+* FAQs
+* Documents
+* Assessments
+* Knowledge articles
+
+Search filters:
+
+* Domain
+* Track
+* Module
+* Property
+* Department
+* Role
+* Content type
+* Language
+* Status
+* Version
+
+Search must respect permissions.
+
+A user must never receive a search result from content they are not authorised to access.
+
+---
+
+# 28. GOVERNED AI ASSISTANT
+
+This is a major differentiator.
+
+Implement an AI assistant that answers questions using only approved Altus/client knowledge.
+
+The AI must use retrieval from the approved knowledge base.
+
+AI must NOT freely invent policy.
+
+Required behaviour:
+
+1. User asks a question.
+2. System determines user's tenant/property/role.
+3. System retrieves authorised approved content.
+4. AI generates answer using retrieved content.
+5. Answer should identify the source content where possible.
+6. If approved knowledge does not contain the answer, AI must clearly state that the approved knowledge base does not provide the required answer rather than inventing a policy.
+
+The AI must not use:
+
+* Draft documents
+* Deleted documents
+* Rejected documents
+* Unapproved documents
+* Other client properties' private documents
+
+unless explicitly authorised.
+
+---
+
+# 29. AI GOVERNANCE
+
+AI administration must include:
+
+* AI enable/disable
+* Approved source control
+* Tenant source isolation
+* Retrieval logs
+* User query logs
+* Response logs
+* Source references
+* Prompt configuration
+* Model configuration
+* Usage statistics
+* Administrative audit trail
+
+Provide mechanisms for Altus administrators to control which content can be used by AI.
+
+---
+
+# 30. KNOWLEDGE RETENTION / INSTITUTIONAL MEMORY
+
+The system must solve one of Altus's stated strategic problems:
+
+> Operational knowledge should remain a digital asset of the institution rather than belonging only to individual employees.
+
+Therefore:
+
+When an employee leaves:
+
+* Knowledge remains
+* SOPs remain
+* Training history remains
+* Competency history remains
+* Certification history remains
+* Property-specific standards remain
+* Content ownership remains with organisation
+* Historical analytics remain
+
+Do not associate essential institutional knowledge only with an employee account.
+
+---
+
+# 31. PROPERTY-SPECIFIC CUSTOMISATION
+
+Every property should be able to configure:
+
+* Brand
+* Departments
+* Job roles
+* Learning paths
+* Required modules
+* Required assessments
+* Competencies
+* SOPs
+* Standards
+* Local policies
+* Property-specific checklists
+* Certification rules
+* Assessment rubrics
+
+The Altus master curriculum may provide the foundation.
+
+The property may add local requirements without modifying the global master version.
+
+---
+
+# 32. GLOBAL CONTENT VS PROPERTY CONTENT
+
+Implement content scope:
+
+### Global Altus Content
+
+Managed by Altus.
+
+Can be distributed to multiple properties.
+
+### Client Content
+
+Owned by client organisation.
+
+Available to selected properties/users.
+
+### Property Content
+
+Specific to one property.
+
+### Department Content
+
+Specific to department.
+
+### Role Content
+
+Specific to job role.
+
+Permissions must respect these scopes.
+
+---
+
+# 33. CONTENT APPROVAL & QUALITY ASSURANCE
+
+Content workflow:
+
+Author
+→ Reviewer
+→ Quality Control
+→ Approver
+→ Publish
+
+Support:
+
+* Comments
+* Review notes
+* Approval history
+* Rejection reasons
+* Change requests
+* Version comparison
+
+No content should become authoritative without the required approval state.
+
+---
+
+# 34. NOTIFICATIONS
+
+Notification channels should be architected for:
+
+* In-app
+* Email
+* Future SMS/WhatsApp integrations
+
+Notification triggers:
+
+* New assignment
+* Due date
+* Overdue
+* Assessment result
+* Failed assessment
+* Reassessment available
+* Action assigned
+* Action overdue
+* Certification issued
+* Certification expiring
+* New mandatory content
+* Manager alert
+* Critical competency gap
+
+Allow administrators to configure notification rules.
+
+---
+
+# 35. USER & ROLE MANAGEMENT
+
+System roles should include at minimum:
+
+### Platform Level
+
+* Super Admin
+* Altus Administrator
+* Altus Content Manager
+* Altus Quality Reviewer
+* Altus Consultant
+
+### Organisation Level
+
+* Organisation Admin
+* Executive
+* HR/Training Manager
+
+### Property Level
+
+* Property Admin
+* General Manager
+* Department Head
+* Supervisor/Assessor
+
+### Learner Level
+
+* Employee
+* Learner
+
+Permission architecture must be RBAC-based.
+
+Do not rely on hiding buttons as security.
+
+Every backend request must enforce permissions.
+
+---
+
+# 36. AUDIT LOGGING
+
+Record security-sensitive and governance-sensitive events.
+
+Examples:
+
+* Login
+* Logout
+* Failed login
+* User creation
+* User deletion
+* Role change
+* Permission change
+* Content creation
+* Content modification
+* Content approval
+* Content publication
+* Content archival
+* Assessment modification
+* Assessment grading
+* Competency change
+* Certification
+* Action-plan changes
+* AI usage
+* Property configuration changes
+
+Audit logs should include:
+
+* User
+* Action
+* Date/time
+* IP
+* Entity
+* Previous state when relevant
+* New state when relevant
+
+---
+
+# 37. FILE MANAGEMENT
+
+The platform needs secure document management.
+
+Support:
+
+* PDFs
+* Images
+* Videos
+* Office documents
+* Training materials
+
+Files must be associated with:
+
+* Tenant
+* Property
+* Content object
+* Version
+* Owner
+
+Do not expose private files through predictable public URLs.
+
+---
+
+# 38. MOBILE / RESPONSIVE EXPERIENCE
+
+The platform must work properly on:
+
+* Desktop
+* Laptop
+* Tablet
+* Mobile
+
+Learner screens should be optimised for mobile use.
+
+Important areas:
+
+* Login
+* Dashboard
+* Learning
+* Lesson
+* Assessment
+* Competency
+* Action plan
+* Certificate
+* Search
+* AI assistant
+
+Architecture should be PWA/mobile-ready.
+
+---
+
+# 39. ALTUS CORPORATE FRAMEWORKS IN THE PLATFORM
+
+The corporate profile also introduces strategic methodologies.
+
+These must be supported as structured advisory/content frameworks where relevant rather than being ignored.
+
+## Altus Ascent™ Framework
+
+Six stages:
+
+1. DISCOVER
+2. ASSESS
+3. DESIGN
+4. TRANSFORM
+5. OPTIMISE
+6. SCALE
+
+The platform should allow an authorised Altus user to create an engagement/project and associate actions, evidence, documents and milestones with these stages.
+
+---
+
+# 40. ALTUS PERFORMANCE MATRIX™
+
+The platform should support the conceptual classification:
+
+* Undermanaged Asset
+* Legacy Operator
+* Digital Veneer
+* Altus Zone
+
+The purpose is to evaluate an asset across:
+
+**Operational Rigour**
+
+and
+
+**Digital & Commercial Intelligence**
+
+This can be implemented as an executive assessment tool/dashboard.
+
+Do not hardcode a score unless Altus defines the scoring methodology.
+
+---
+
+# 41. GOPPAR VALUE STACK™
+
+The platform should support the strategic dimensions:
+
+### Top-Line Capture
+
+* Dynamic pricing
+* Predictive yield
+* Total revenue systems
+
+### Distribution Economics
+
+* Channel mix
+* OTA governance
+* Direct booking
+
+### Cost Containment
+
+* Cost frameworks
+* Procurement
+* Productivity
+
+### Asset Productivity
+
+* Space monetisation
+* Capex
+* Energy
+* Lifecycle efficiency
+
+The system should allow assessments/actions/KPIs to be mapped to these strategic dimensions.
+
+---
+
+# 42. STRATEGIC CAPABILITY MODEL
+
+Support eight capability categories from the corporate profile:
+
+1. Operational
+2. Financial
+3. Digital & AI
+4. Governance
+5. Commercial
+6. Investment
+7. Organisational
+8. Transformation
+
+These can become executive/advisory capability classifications and should be configurable.
+
+---
+
+# 43. ESG & SUSTAINABILITY SUPPORT
+
+The corporate strategy identifies:
+
+### Governance
+
+* Owner reporting
+* HMA integrity
+* Procurement integrity
+* Anti-leakage controls
+* Assurance
+
+### Community & People
+
+* Saudization-first talent strategies
+* Local suppliers
+* Fair workplaces
+* Knowledge transfer
+
+### Responsible Tourism
+
+* Destination stewardship
+* Visitor-impact management
+* Heritage protection
+
+### Operational Sustainability
+
+* Energy
+* Water
+* Waste
+* Utility intelligence
+* Lifecycle costing
+
+The LMS should allow these areas to exist as configurable learning/knowledge domains, assessments and KPI categories without changing the mandatory ten-domain core curriculum.
+
+---
+
+# 44. VISION 2030 ALIGNMENT CONTENT
+
+The platform/corporate content structure should support Altus's stated alignment with:
+
+* Tourism and hospitality growth
+* Human capital
+* Digital and AI leadership
+* SMEs and entrepreneurship
+* Saudization
+* Knowledge transfer
+* Bilingual digital learning
+
+Vision 2030-related claims should be stored as controlled corporate content and should not be embedded as uneditable text throughout the application.
+
+---
+
+# 45. INDUSTRY / SECTOR TAXONOMY
+
+The corporate profile lists:
+
+* Hotels
+* Real Estate
+* Entertainment
+* Sports & Events
+* Luxury Resorts
+* Government & PSAs
+* Healthcare Hospitality
+* Investment & PE
+* Tourism & Destinations
+* Mixed-Use Developments
+* Retail & F&B
+* Family Offices
+
+Create a configurable industry/sector taxonomy.
+
+The hospitality LMS should remain specialised while the platform architecture allows future expansion.
+
+---
+
+# 46. CORPORATE CONTENT / CMS SUPPORT
+
+The corporate profile includes content that may eventually appear on the Altus website/platform.
+
+Create a CMS-capable structure for:
+
+* Founders message
+* Company overview
+* Vision
+* Mission
+* Purpose
+* Philosophy
+* Services
+* Hospitality Solutions
+* Business Growth Solutions
+* Product information
+* Competitive edge
+* Industries
+* Frameworks
+* Capabilities
+* Vision 2030
+* Market opportunity
+* Case studies
+* Leadership profiles
+* Strategic partnerships
+* Values
+* ESG
+* Digital & AI
+* Why Clients Choose Altus
+* Contact information
+
+Do not hardcode these pages into PHP templates when a CMS-managed solution is appropriate.
+
+---
+
+# 47. HOSPITALITY SOLUTIONS CONTENT MODEL
+
+The corporate service offering contains:
+
+## Hotel Development & Owner Representation
+
+Support content around:
+
+* Asset lifecycle
+* Owner oversight
+* Budget protection
+* HMA governance
+* Design review
+* Contractor claims
+* Handover
+
+## Operations Optimisation & Pre-Opening Support
+
+Support:
+
+* Operational diagnostics
+* Restructuring
+* Project management
+* Launch readiness
+* Recruitment
+* Training
+* Systems readiness
+
+## Feasibility Studies & Investment Validation
+
+Support:
+
+* Financial modelling
+* Supply/demand
+* ROI
+* Investment analysis
+
+## Guest Experience Enhancement & Quality Audits
+
+Support:
+
+* Brand compliance
+* Safety remediation
+* Mystery guest
+* Experience quality
+
+## Commercial Performance Improvement
+
+Support:
+
+* Sales
+* Digital marketing
+* Operations
+* Cost containment
+* Distribution
+* GOPPAR
+
+---
+
+# 48. BUSINESS GROWTH SOLUTIONS CONTENT MODEL
+
+Support corporate content around:
+
+* Strategic planning
+* Organisational restructuring
+* Revenue optimisation
+* Applied AI
+* Digital transformation
+* Leadership
+* Capability development
+* Investment appraisal
+* M&A due diligence
+
+The application architecture must support these as content categories and future learning/advisory modules.
+
+---
+
+# 49. CASE STUDY MODULE
+
+The corporate profile contains illustrative case studies.
+
+Provide structured case-study content.
+
+Each case study should support:
+
+* Title
+* Property/company
+* Geography
+* Type
+* Client profile
+* Challenge
+* Approach
+* Results
+* Metrics
+* Supporting content
+* Illustrative/anonymised label
+
+Examples represented in the profile include:
+
+* Flagship Resort Turnaround — Egypt
+* 19-Hotel Operational Excellence Portfolio
+* Dual-Hotel Pre-Opening — KSA
+* Owner Representation — Riyadh, four branded assets
+
+Important:
+
+If a case study is explicitly labelled illustrative/anonymised, the CMS should retain that designation.
+
+---
+
+# 50. EXECUTIVE PROFILE MODULE
+
+Create structured leadership profiles for:
+
+## Islam Mahrous
+
+Areas:
+
+* Brand
+* Commercial Strategy
+* AI-driven Digital Transformation
+
+Profile data should support:
+
+* Biography
+* Experience
+* Track record
+* Recognition
+* Credentials
+* Case studies
+* Leadership responsibilities
+
+## Hossam Smadi
+
+Areas:
+
+* Hospitality Operations
+* Asset Management
+
+Support:
+
+* Biography
+* Experience
+* Track record
+* Recognition
+* Leadership responsibilities
+
+These should be editable CMS content rather than hardcoded.
+
+---
+
+# 51. PARTNERSHIP / ECOSYSTEM MODULE
+
+The profile identifies four ecosystem groups:
+
+* Hotel Operators & Global Brands
+* Technology & Data Partners
+* Investors, Funds & Family Offices
+* Government & Development Authorities
+
+The system should support structured partner records:
+
+* Partner name
+* Category
+* Description
+* Geography
+* Website
+* Relationship status
+* Internal notes
+* Visibility
+
+Never imply an official partnership unless the Altus administrator explicitly marks it as such.
+
+---
+
+# 52. PERFORMANCE / KPI ARCHITECTURE
+
+The profile references:
+
+* RevPAR
+* GOPPAR
+* Guest satisfaction
+* F&B revenue
+* Pickup
+* Sentiment
+* Payroll productivity
+* Cost
+* Energy
+* Water
+* Waste
+
+Create a generic KPI system:
+
+KPI:
+
+* Name
+* Code
+* Category
+* Definition
+* Unit
+* Target
+* Threshold
+* Frequency
+* Owner
+* Source
+* Property
+* Department
+* Date period
+* Actual
+* Status
+
+This enables future external data integration.
+
+---
+
+# 53. INTEGRATION-READY API
+
+Build an API architecture that can eventually connect:
+
+* PMS
+* POS
+* CRM
+* Revenue systems
+* BI
+* HR systems
+* Identity providers
+* Notification services
+* AI services
+
+Provide:
+
+* Authentication
+* API keys/tokens
+* Rate limiting
+* Permissions
+* Tenant isolation
+* Logging
+* Versioned endpoints
+
+Do not expose internal database structure directly through public APIs.
+
+---
+
+# 54. DATABASE ARCHITECTURE
+
+The existing database must first be audited before changes are made.
+
+Expected entities include, where required:
+
+* organisations
+* properties
+* departments
+* users
+* roles
+* permissions
+* user_roles
+* domains
+* tracks
+* modules
+* lessons
+* lesson_versions
+* content
+* content_versions
+* content_categories
+* enrolments
+* learning_paths
+* assignments
+* cohorts
+* assessments
+* assessment_questions
+* assessment_options
+* assessment_attempts
+* assessment_results
+* practical_assessments
+* competencies
+* competency_requirements
+* competency_results
+* evidence
+* skill_gaps
+* action_plans
+* reassessments
+* readiness_records
+* certificates
+* certificate_verifications
+* notifications
+* knowledge_sources
+* knowledge_permissions
+* AI queries/logs
+* KPIs
+* KPI values
+* reports
+* white_label_settings
+* audit_logs
+* media/files
+
+Do not create duplicate tables if equivalent structures already exist.
+
+First inspect the current schema and reuse/migrate where appropriate.
+
+---
+
+# 55. EXISTING PHP LMS UPGRADE RULE
+
+Do NOT blindly rebuild the application.
+
+First perform a complete technical audit.
+
+Audit:
+
+* Directory structure
+* PHP version
+* Framework or custom PHP architecture
+* Database
+* Tables
+* Relationships
+* Authentication
+* User system
+* Existing LMS modules
+* Existing admin panel
+* Existing learner dashboard
+* Existing APIs
+* Existing JavaScript
+* CSS
+* Assets
+* File storage
+* Security
+* Existing routes
+* Existing reports
+* Existing certificates
+* Existing learning content
+* Existing data
+
+Determine:
+
+1. What can be retained
+2. What must be refactored
+3. What must be migrated
+4. What must be replaced
+5. What is missing
+
+Preserve existing production data wherever technically possible.
+
+Never delete or truncate production data as part of an upgrade without an explicit migration strategy.
+
+---
+
+# 56. ADMIN DASHBOARD
+
+The admin dashboard should display:
+
+* Total organisations
+* Total properties
+* Total users
+* Active users
+* Learners
+* Managers
+* Courses
+* Domains
+* Tracks
+* Lessons
+* Assessments
+* Competencies
+* Gaps
+* Action plans
+* Certifications
+* Expiring certifications
+* Readiness
+* Content awaiting approval
+* AI usage
+* Recent activity
+
+Dashboard widgets should respect permissions and tenant scope.
+
+---
+
+# 57. PROPERTY DASHBOARD
+
+Property managers should see:
+
+* Staff count
+* Assigned training
+* Completion percentage
+* Overdue training
+* Assessment pass rate
+* Competency coverage
+* Critical gaps
+* Outstanding corrective actions
+* Certification coverage
+* Readiness
+* Department breakdown
+
+Include drill-down:
+
+Property
+→ Department
+→ Employee
+→ Competency
+→ Assessment
+→ Evidence
+
+---
+
+# 58. LEARNER DASHBOARD
+
+Learner home should show:
+
+* Welcome
+* Current learning path
+* Assigned learning
+* Continue learning
+* Progress
+* Upcoming deadlines
+* Assessments
+* Competency status
+* Action plans
+* Certificates
+* Notifications
+* Search
+* AI assistant
+
+Do not overload the learner interface with executive/administrative information.
+
+---
+
+# 59. ASSESSOR DASHBOARD
+
+Supervisors should see:
+
+* Employees awaiting assessment
+* Practical assessments
+* Failed competencies
+* Gap records
+* Reassessment requests
+* Evidence submitted
+* Expiring certifications
+* Department readiness
+
+Allow:
+
+* Start assessment
+* Save draft
+* Resume assessment
+* Add evidence
+* Add comments
+* Submit assessment
+* Request reassessment
+
+---
+
+# 60. QUALITY CONTROL DASHBOARD
+
+Altus quality reviewers should see:
+
+* Draft content
+* Pending review
+* Rejected content
+* Pending approval
+* Version changes
+* Expiring content
+* Content without owner
+* Content without translation
+* AI knowledge-source status
+
+---
+
+# 61. CERTIFICATION DASHBOARD
+
+Include:
+
+* Certificates issued
+* Certificates expiring
+* Certificates expired
+* Certification rate
+* Certification by property
+* Certification by department
+* Certification by role
+* Verification activity
+
+---
+
+# 62. SEARCH & DISCOVERY EXPERIENCE
+
+Search should provide:
+
+* Global search
+* Instant suggestions
+* Filters
+* Related content
+* Recommended lessons
+* Related SOPs
+* Related assessments
+
+Future intelligent search can incorporate semantic search.
+
+---
+
+# 63. ACCESS CONTROL
+
+Implement fine-grained permissions.
+
+Examples:
+
+`content.view`
+
+`content.create`
+
+`content.edit`
+
+`content.review`
+
+`content.approve`
+
+`content.publish`
+
+`assessment.create`
+
+`assessment.grade`
+
+`competency.assess`
+
+`action.assign`
+
+`readiness.view`
+
+`certificate.issue`
+
+`report.view`
+
+`property.manage`
+
+`organisation.manage`
+
+`ai.use`
+
+`ai.manage`
+
+`audit.view`
+
+Security must be checked server-side.
+
+---
+
+# 64. DATA PRIVACY & SECURITY
+
+Implement:
+
+* Secure authentication
+* Password hashing
+* Session security
+* CSRF protection
+* XSS protection
+* SQL injection protection
+* Input validation
+* Output escaping
+* Secure file access
+* Permission validation
+* Tenant isolation
+* Audit logging
+* Secure secrets
+* Database backup strategy
+* Error handling without exposing internals
+
+Do not expose database credentials or API secrets in frontend code.
+
+---
+
+# 65. PERFORMANCE
+
+The system must be engineered for multi-property growth.
+
+Optimise:
+
+* Database queries
+* Indexes
+* Pagination
+* Search
+* Reporting
+* Dashboard queries
+* File delivery
+* API endpoints
+* Large user datasets
+* Large assessment datasets
+
+Avoid loading thousands of records into PHP memory unnecessarily.
+
+Use background processing architecture where appropriate for future:
+
+* Report generation
+* Notifications
+* AI indexing
+* Large imports
+* Analytics calculations
+
+---
+
+# 66. REPORT EXPORTS
+
+Support:
+
+* PDF
+* Excel/CSV
+* Printable reports
+
+Reports must include:
+
+* Client/property identity
+* Report period
+* Filters
+* Generated date
+* Generated by
+* Appropriate branding
+* Arabic/English support
+
+---
+
+# 67. IMPORT / MIGRATION TOOLS
+
+Provide controlled tools for:
+
+* User import
+* Property import
+* Department import
+* Role import
+* Curriculum import
+* Question-bank import
+* Content migration
+* Competency import
+
+CSV/Excel imports should have:
+
+* Validation
+* Preview
+* Error reporting
+* Duplicate detection
+* Rollback/transaction safety
+
+---
+
+# 68. SYSTEM CONFIGURATION
+
+Central settings should control:
+
+* Languages
+* Timezone
+* Date format
+* Email
+* Notification behaviour
+* Certificate settings
+* Assessment settings
+* Passing thresholds
+* Branding
+* AI
+* Search
+* File limits
+* Security
+* Tenant defaults
+
+Property-level settings should override global defaults where authorised.
+
+---
+
+# 69. WORKFLOW: COMPLETE EMPLOYEE PERFORMANCE JOURNEY
+
+The application should support this full journey:
+
+### Step 1
+
+Employee created/imported.
+
+### Step 2
+
+Employee assigned a role.
+
+### Step 3
+
+Role determines required learning.
+
+### Step 4
+
+System assigns learning path.
+
+### Step 5
+
+Employee completes lessons.
+
+### Step 6
+
+Employee completes theory assessment.
+
+### Step 7
+
+System determines theory result.
+
+### Step 8
+
+Supervisor performs practical evaluation.
+
+### Step 9
+
+System determines competency.
+
+### Step 10
+
+Any gap becomes a gap record.
+
+### Step 11
+
+Manager assigns corrective action.
+
+### Step 12
+
+Employee completes action/training/practice.
+
+### Step 13
+
+Evidence submitted.
+
+### Step 14
+
+Supervisor reviews evidence.
+
+### Step 15
+
+Reassessment occurs.
+
+### Step 16
+
+Competency record is updated.
+
+### Step 17
+
+Readiness is recalculated.
+
+### Step 18
+
+Certification is issued where requirements are satisfied.
+
+### Step 19
+
+Management dashboard reflects the updated state.
+
+This is the central operational workflow of the upgraded platform.
+
+---
+
+# 70. ROLE-TO-COMPETENCY MATRIX
+
+The platform should permit:
+
+**Role**
+→ Required Competencies
+→ Required Level
+→ Required Learning
+→ Required Assessment
+
+Example:
+
+Front Office Agent
+→ Check-in Competency
+→ Level 3
+→ Front Office Track
+→ Theory Assessment
+→ Practical Assessment
+→ Certification
+
+This must be configurable by property.
+
+---
+
+# 71. GAP HEATMAP
+
+Create visual reporting for:
+
+* Property
+* Department
+* Role
+* Competency
+* Employee
+
+Use severity levels such as:
+
+* Critical
+* High
+* Medium
+* Low
+
+Do not use arbitrary severity thresholds. Allow administrators to configure them.
+
+---
+
+# 72. READINESS HEATMAP
+
+Management should quickly see:
+
+* Ready
+* Conditional
+* Not ready
+
+At:
+
+* Employee level
+* Role level
+* Department level
+* Property level
+
+Allow click-through to the underlying reasons.
+
+---
+
+# 73. CONTENT RECOMMENDATION ENGINE
+
+Based on:
+
+* Role
+* Learning path
+* Assessment results
+* Competency gaps
+* Action plans
+
+The system can recommend:
+
+* Lessons
+* SOPs
+* Assessments
+* Practice activities
+* Knowledge articles
+
+Recommendations must remain permission-aware.
+
+---
+
+# 74. GOVERNANCE RULE: DO NOT CONFUSE TRAINING WITH PERFORMANCE
+
+This principle should be reflected throughout the system.
+
+Do NOT display:
+
+`Training Complete = Employee Competent`
+
+Instead display separately:
+
+* Learning completion
+* Knowledge assessment
+* Practical competency
+* Readiness
+* Performance indicators
+
+This is one of the most important design principles of the Altus product.
+
+---
+
+# 75. CORPORATE BRAND POSITIONING
+
+The product should visually and structurally communicate:
+
+**ALTUS ADVISORY**
+
+**altus Hospitality Knowledge & Performance**
+
+Core positioning:
+
+> Operational expertise institutionalised through digital learning and measurable performance.
+
+Theme:
+
+> From advice that ends at the report, to capability that lives inside the client's own institution.
+
+---
+
+# 76. BRAND / UX DIRECTION
+
+The interface should feel:
+
+* Premium
+* Executive
+* Hospitality-oriented
+* Professional
+* Modern
+* Trustworthy
+* Data-driven
+* International
+* Saudi/GCC appropriate
+* Bilingual
+
+Avoid generic school/education LMS appearance.
+
+It should look like an **enterprise hospitality performance platform**, not a basic online-course website.
+
+---
+
+# 77. REQUIRED MAIN NAVIGATION
+
+A suitable navigation structure is:
+
+## Learner
+
+* Dashboard
+* My Learning
+* Learning Paths
+* Knowledge
+* Assessments
+* Competencies
+* Action Plans
+* Certificates
+* Search
+* AI Assistant
+* Notifications
+* Profile
+
+## Manager
+
+* Dashboard
+* Team
+* Learning
+* Assessments
+* Competencies
+* Gaps
+* Actions
+* Readiness
+* Certifications
+* Reports
+* Knowledge
+* Settings
+
+## Altus Admin
+
+* Dashboard
+* Organisations
+* Properties
+* Users
+* Curriculum
+* Knowledge
+* Assessments
+* Competencies
+* Certifications
+* Analytics
+* KPIs
+* AI
+* Reports
+* Content Review
+* Audit Logs
+* System Settings
+
+Navigation must be generated according to permissions.
+
+---
+
+# 78. TECHNICAL IMPLEMENTATION APPROACH
+
+When upgrading the existing PHP application:
+
+### First
+
+Audit the existing project.
+
+### Second
+
+Document the current architecture.
+
+### Third
+
+Create a database migration plan.
+
+### Fourth
+
+Create module boundaries.
+
+### Fifth
+
+Introduce RBAC and tenant isolation.
+
+### Sixth
+
+Implement the new curriculum/knowledge model.
+
+### Seventh
+
+Implement assessment and competency architecture.
+
+### Eighth
+
+Implement dashboards and reporting.
+
+### Ninth
+
+Implement white-label and bilingual functionality.
+
+### Tenth
+
+Implement governed AI architecture.
+
+### Eleventh
+
+Implement QA/security/performance testing.
+
+### Twelfth
+
+Migrate production data.
+
+### Thirteenth
+
+Perform staged deployment.
+
+Do not break existing working functionality while introducing the new modules.
+
+---
+
+# 79. CODE QUALITY REQUIREMENTS
+
+The upgraded application must have:
+
+* Clean architecture
+* Reusable services
+* Reusable components
+* Centralised validation
+* Centralised permission checks
+* Database transactions
+* Error handling
+* Logging
+* Consistent naming
+* Secure SQL/database access
+* Reusable notification services
+* Reusable file services
+* Reusable translation system
+* Reusable reporting system
+
+Avoid:
+
+* Duplicate business logic
+* Copy/paste controllers
+* Hardcoded tenant IDs
+* Hardcoded property IDs
+* Hardcoded user IDs
+* Hardcoded permissions
+* Hardcoded language strings
+* Hardcoded branding
+* Hardcoded assessment scoring
+* Hardcoded certificate rules
+
+---
+
+# 80. DATABASE MIGRATION RULES
+
+Before changing tables:
+
+1. Backup database.
+2. Document current schema.
+3. Identify dependencies.
+4. Create migrations.
+5. Test on staging.
+6. Migrate sample data.
+7. Validate records.
+8. Test rollback.
+9. Perform production migration.
+10. Verify data integrity.
+
+Never make destructive database changes casually.
+
+---
+
+# 81. TESTING REQUIREMENTS
+
+Test:
+
+### Functional
+
+* Login
+* Registration/invitation
+* User management
+* Learning
+* Lessons
+* Assessments
+* Practical assessments
+* Competencies
+* Gaps
+* Action plans
+* Reassessment
+* Readiness
+* Certification
+* Reporting
+* Search
+* AI
+* Notifications
+
+### Security
+
+* Tenant isolation
+* Role escalation
+* Permission bypass
+* SQL injection
+* XSS
+* CSRF
+* File access
+* Session security
+
+### Language
+
+* Arabic
+* English
+* RTL
+* LTR
+
+### Multi-property
+
+* Cross-property restrictions
+* Portfolio administrators
+* Property administrators
+* Department permissions
+
+### Performance
+
+* Large users
+* Large assessments
+* Large reports
+* Large content library
+
+---
+
+# 82. ACCEPTANCE CRITERIA
+
+The upgrade is not complete until:
+
+* Existing LMS functionality still works.
+* Existing important data is preserved.
+* Multi-tenant architecture works.
+* Multiple properties can be created.
+* Each property can have its own branding.
+* Arabic and English work correctly.
+* RTL works correctly.
+* Curriculum supports Domain → Track → Module → Lesson.
+* Theory assessments work.
+* Practical assessments work.
+* Competency tracking works.
+* Gap analysis works.
+* Corrective action works.
+* Reassessment works.
+* Readiness works.
+* Certification works.
+* Search works.
+* Knowledge versioning works.
+* Content approval works.
+* Governed AI can only use authorised approved knowledge.
+* Managers can monitor teams.
+* Altus can manage multiple clients.
+* Executive dashboards work.
+* Reports export correctly.
+* Audit logging works.
+* Permission enforcement works server-side.
+* Tenant data cannot leak between organisations.
+* Application is responsive.
+* Application is production-safe.
+* No critical security issues remain.
+
+---
+
+# 83. NON-FUNCTIONAL REQUIREMENTS
+
+The system must be:
+
+* Secure
+* Scalable
+* Maintainable
+* Modular
+* Bilingual
+* Responsive
+* Multi-tenant
+* White-label
+* Audit-ready
+* API-ready
+* AI-ready
+* Reporting-ready
+* Integration-ready
+* Mobile-ready
+
+---
+
+# 84. DEVELOPMENT DELIVERABLES
+
+The development team/AI coding agent must produce:
+
+1. Existing-system audit
+2. Architecture document
+3. Database/schema map
+4. Migration plan
+5. Updated database migrations
+6. Backend modules
+7. Frontend/UI upgrades
+8. Role/permission system
+9. Multi-tenant system
+10. White-label system
+11. Bilingual system
+12. Curriculum system
+13. Knowledge CMS
+14. Assessment system
+15. Practical competency system
+16. Gap/action/reassessment system
+17. Readiness engine
+18. Certification engine
+19. Reporting
+20. Dashboards
+21. Search
+22. AI governance layer
+23. Notifications
+24. Audit logging
+25. API layer
+26. Security hardening
+27. Automated tests
+28. Deployment documentation
+29. Admin documentation
+30. User documentation
+
+---
+
+# 85. MASTER DEVELOPMENT PROMPT
+
+Use the following as the actual coding-agent instruction:
+
+---
+
+## MASTER PROMPT
+
+You are a senior enterprise PHP architect, Laravel/PHP developer, database architect, UX engineer, LMS specialist, hospitality technology consultant, security engineer, and AI platform architect.
+
+Upgrade the existing PHP LMS into the **ALTUS Hospitality Knowledge & Performance** platform according to the full requirements below.
+
+Do not treat this as a cosmetic LMS redesign.
+
+This is a major product transformation from a conventional course-management system into a multi-tenant hospitality knowledge, competency and operational-performance platform.
+
+### PRIMARY OBJECTIVE
+
+Transform:
+
+**Learning Management System**
+
+into:
+
+**Knowledge + Learning + Assessment + Competency + Corrective Action + Reassessment + Readiness + Certification + Performance Intelligence**
+
+The guiding principle is:
+
+> From Knowledge to Performance.
+
+The system must implement the five platform layers:
+
+1. Product & Experience
+2. Knowledge & Learning
+3. Intelligence & Performance
+4. Technical Operations
+5. Governance & Growth
+
+### CRITICAL FIRST STEP
+
+Before modifying source code:
+
+* Inspect the complete existing PHP project.
+* Identify whether it uses Laravel, another framework, or custom PHP.
+* Inspect routes.
+* Inspect controllers.
+* Inspect models.
+* Inspect migrations.
+* Inspect database schema.
+* Inspect authentication.
+* Inspect RBAC.
+* Inspect existing LMS modules.
+* Inspect admin dashboard.
+* Inspect learner dashboard.
+* Inspect assessments.
+* Inspect certificates.
+* Inspect reports.
+* Inspect file storage.
+* Inspect frontend.
+* Inspect JavaScript.
+* Inspect API endpoints.
+* Inspect current data.
+
+Create an internal implementation map of:
+
+`KEEP`
+
+`REFACTOR`
+
+`MIGRATE`
+
+`REPLACE`
+
+`ADD`
+
+Do not perform a blind rewrite.
+
+Do not delete existing production data.
+
+Do not remove functioning features unless there is a clear replacement and migration path.
+
+Reuse existing architecture where technically sound.
+
+---
+
+### PRODUCT ARCHITECTURE
+
+Implement:
+
+ALTUS
+→ Organisations
+→ Portfolios
+→ Properties
+→ Departments
+→ Roles
+→ Employees
+
+Implement secure tenant isolation.
+
+Every tenant-sensitive query must enforce the correct organisation/property scope.
+
+---
+
+### WHITE-LABEL
+
+Implement per-property:
+
+* Logo
+* Colours
+* Favicon
+* Name
+* Login branding
+* Certificates
+* Emails
+* Reports
+* Arabic/English brand name
+* Optional Altus branding
+
+Never hardcode tenant branding.
+
+---
+
+### LANGUAGE
+
+Implement:
+
+* English
+* Arabic
+* LTR
+* RTL
+
+All interface strings must be translatable.
+
+All major content entities must support bilingual content.
+
+---
+
+### CURRICULUM
+
+Implement:
+
+Professional Domain
+→ Track
+→ Module
+→ Lesson
+→ Assessment
+→ Certification
+
+Create the following initial domains:
+
+1. Hotel Fundamentals
+2. Sales & Marketing
+3. Front Office
+4. Revenue & Reservations
+5. Housekeeping
+6. Guest Experience
+7. Food & Beverage
+8. Quality & Audit
+9. Kitchen
+10. Security & Safety
+
+Allow additional domains.
+
+---
+
+### LEARNING
+
+Implement:
+
+* Learning paths
+* Role-based learning
+* Property-based learning
+* Department-based learning
+* Individual assignment
+* Cohorts
+* Mandatory learning
+* Optional learning
+* Prerequisites
+* Due dates
+* Progress
+* Resume
+* Overdue
+* Completion
+* Retakes
+* Exemptions
+
+---
+
+### KNOWLEDGE MANAGEMENT
+
+Build a proper knowledge CMS for:
+
+* SOPs
+* Standards
+* Policies
+* Procedures
+* Lessons
+* FAQs
+* Job aids
+* Checklists
+* Documents
+* Videos
+* Knowledge articles
+
+Implement:
+
+Draft
+→ Review
+→ Approval
+→ Published
+→ Archived
+
+Implement version control.
+
+Never destroy institutional knowledge.
+
+---
+
+### ASSESSMENT
+
+Implement theory assessments with:
+
+* Question banks
+* Randomisation
+* Multiple choice
+* Multiple answer
+* True/false
+* Matching
+* Ordering
+* Scenario-based questions
+* Short answer
+* Manual grading
+* Auto grading
+* Passing score
+* Attempts
+* Feedback
+
+---
+
+### PRACTICAL PERFORMANCE
+
+Implement supervisor practical assessments.
+
+A supervisor must be able to evaluate real-world performance against configurable competency criteria.
+
+Store:
+
+* Score
+* Criteria
+* Evidence
+* Comments
+* Assessor
+* Date
+* Result
+
+Do not equate course completion with competency.
+
+---
+
+### COMPETENCY
+
+Implement:
+
+* Competency definitions
+* Required competency
+* Required level
+* Current level
+* Assessment history
+* Evidence
+* Gaps
+
+Provide employee, department and property competency matrices.
+
+---
+
+### GAP MANAGEMENT
+
+When current competency is below required competency:
+
+Create:
+
+* Gap
+* Severity
+* Assigned action
+* Owner
+* Due date
+* Evidence
+* Status
+
+Support:
+
+Open
+Assigned
+In Progress
+Submitted
+Under Review
+Completed
+Overdue
+Rejected
+
+---
+
+### REASSESSMENT
+
+Implement:
+
+Gap
+→ Action
+→ Evidence
+→ Supervisor Review
+→ Reassessment
+→ Competency Update
+
+Never overwrite historical results.
+
+---
+
+### READINESS
+
+Implement readiness calculations for:
+
+* Employees
+* Roles
+* Departments
+* Properties
+
+Use configurable rules involving:
+
+* Mandatory learning
+* Theory assessments
+* Practical assessments
+* Competencies
+* Critical gaps
+* Certification
+
+Display the reasons for a readiness state.
+
+---
+
+### CERTIFICATION
+
+Create rule-based certification.
+
+Certificate should contain:
+
+* Learner
+* Property
+* Role
+* Certification
+* Date
+* Certificate number
+* QR verification
+* Expiry
+* Issuer
+* Branding
+* Language
+
+Implement a public certificate verification endpoint.
+
+---
+
+### DASHBOARDS
+
+Create dashboards for:
+
+Learners
+Managers
+Assessors
+Property Management
+Altus Administrators
+Executives
+
+Support:
+
+* Learning completion
+* Assessment performance
+* Competency
+* Gaps
+* Actions
+* Readiness
+* Certificates
+* Property comparison
+* Portfolio analytics
+
+---
+
+### KPI / PERFORMANCE LAYER
+
+Create a configurable KPI model that can support:
+
+* RevPAR
+* GOPPAR
+* Pickup
+* Guest sentiment
+* F&B revenue
+* Payroll productivity
+* Cost
+* Energy
+* Water
+* Waste
+
+Do not fabricate actual operational data.
+
+Create the architecture for integration/import.
+
+---
+
+### SMART SEARCH
+
+Implement permission-aware global search across:
+
+* Lessons
+* SOPs
+* Standards
+* Policies
+* Documents
+* Assessments
+* Knowledge articles
+
+---
+
+### GOVERNED AI ASSISTANT
+
+Implement a retrieval-based AI architecture.
+
+The AI may answer only from:
+
+* Approved
+* Published
+* Authorised
+* Current
+
+knowledge.
+
+It must never use another tenant's private content.
+
+It must never treat draft/rejected/archived content as authoritative.
+
+When no authoritative answer exists, clearly state that approved knowledge does not contain the answer.
+
+Store:
+
+* Query
+* User
+* Tenant
+* Sources
+* Response
+* Timestamp
+* AI usage information
+
+---
+
+### THREE EXPERIENCES
+
+Build:
+
+1. Learner
+2. Property Management
+3. Altus Team
+
+Ensure each has separate navigation and permissions.
+
+---
+
+### ADMINISTRATION
+
+Implement:
+
+* Organisations
+* Properties
+* Departments
+* Users
+* Roles
+* Permissions
+* Curriculum
+* Knowledge
+* Assessments
+* Competencies
+* Certificates
+* Reports
+* AI
+* Audit
+* Branding
+* Settings
+
+---
+
+### CORPORATE METHODOLOGY SUPPORT
+
+Support content/assessment structures for:
+
+Altus Ascent™:
+
+1. Discover
+2. Assess
+3. Design
+4. Transform
+5. Optimise
+6. Scale
+
+Altus Performance Matrix™:
+
+* Undermanaged Asset
+* Legacy Operator
+* Digital Veneer
+* Altus Zone
+
+GOPPAR Value Stack™:
+
+* Top-Line Capture
+* Distribution Economics
+* Cost Containment
+* Asset Productivity
+
+Do not invent undocumented scoring formulas. Make scoring configurable.
+
+---
+
+### ESG
+
+Provide configurable learning/KPI support for:
+
+* Governance
+* Community & People
+* Responsible Tourism
+* Operational Sustainability
+
+---
+
+### CONTENT / CORPORATE CMS
+
+Support structured corporate content for:
+
+* About Altus
+* Vision
+* Mission
+* Purpose
+* Philosophy
+* Services
+* Hospitality Solutions
+* Business Growth Solutions
+* Case Studies
+* Executive Profiles
+* Strategic Partnerships
+* Values
+* ESG
+* Digital & AI
+* Vision 2030
+* Market information
+
+Do not hardcode editable corporate content.
+
+---
+
+### SECURITY
+
+Implement:
+
+* Secure password hashing
+* Secure sessions
+* CSRF protection
+* XSS protection
+* SQL injection prevention
+* File-access controls
+* Tenant isolation
+* RBAC
+* Server-side authorisation
+* Audit logs
+* Secure secrets
+* Safe error handling
+
+---
+
+### PERFORMANCE
+
+Optimise:
+
+* Queries
+* Indexes
+* Pagination
+* Reports
+* Dashboards
+* Search
+* API calls
+* Large tenant datasets
+
+Do not perform inefficient N+1 queries.
+
+---
+
+### MIGRATION
+
+Before database modifications:
+
+1. Backup
+2. Analyse schema
+3. Create migrations
+4. Test migration
+5. Test rollback
+6. Validate existing records
+7. Test staging
+8. Deploy safely
+
+Preserve existing users, courses, assessments, certificates and other valid data whenever possible.
+
+---
+
+### TESTING
+
+Create tests for:
+
+* Authentication
+* RBAC
+* Tenant isolation
+* Learning
+* Assessments
+* Practical assessments
+* Competencies
+* Gaps
+* Actions
+* Reassessment
+* Readiness
+* Certification
+* Reports
+* Search
+* AI permissions
+* Arabic
+* RTL
+* White-label
+* API
+* Security
+
+---
+
+### DEVELOPMENT METHOD
+
+Implement incrementally.
+
+For every major module:
+
+1. Review existing code.
+2. Design database changes.
+3. Implement backend.
+4. Implement UI.
+5. Connect permissions.
+6. Add validation.
+7. Test.
+8. Verify tenant isolation.
+9. Verify Arabic/RTL.
+10. Document the implementation.
+
+Do not leave half-integrated modules.
+
+Do not create placeholder buttons pretending that functionality exists.
+
+Do not mark features complete until they work end-to-end.
+
+---
+
+### FINAL DEFINITION OF DONE
+
+The upgraded platform must allow a real hotel to:
+
+1. Create a property.
+2. Configure branding.
+3. Create departments.
+4. Create employees.
+5. Assign roles.
+6. Assign learning paths.
+7. Deliver bilingual lessons.
+8. Conduct knowledge assessments.
+9. Conduct practical assessments.
+10. Track competency.
+11. Identify gaps.
+12. Assign corrective action.
+13. Perform reassessment.
+14. Calculate readiness.
+15. Issue certificates.
+16. Search approved knowledge.
+17. Ask the governed AI assistant.
+18. Monitor dashboards.
+19. Export reports.
+20. Maintain institutional knowledge even when employees leave.
+
+The system must therefore function as a **hospitality knowledge and performance operating platform**, not simply as a course library.
+
+The implementation must preserve the Altus strategic positioning:
+
+> **From advice that ends at the report, to capability that lives inside the client's own institution.**
+
+And the product promise:
+
+> **The right knowledge, to the right person, at the right time, with clear evidence of learning and improvement.**
+
+---
+
+# 86. RECOMMENDED IMPLEMENTATION PHASES
+
+## Phase 1 — Existing System Audit
+
+* Code audit
+* Database audit
+* Security audit
+* Feature inventory
+* Data inventory
+* Architecture documentation
+
+## Phase 2 — Platform Foundation
+
+* Multi-tenancy
+* Organisations
+* Properties
+* Users
+* RBAC
+* White-label
+* Arabic/English
+
+## Phase 3 — Knowledge & Curriculum
+
+* Domains
+* Tracks
+* Modules
+* Lessons
+* Content CMS
+* Version control
+* Approval
+
+## Phase 4 — Learning
+
+* Assignments
+* Learning paths
+* Cohorts
+* Progress
+* Notifications
+
+## Phase 5 — Assessment
+
+* Theory assessments
+* Question banks
+* Practical assessment
+* Competencies
+
+## Phase 6 — Performance
+
+* Gaps
+* Action plans
+* Evidence
+* Reassessment
+* Readiness
+
+## Phase 7 — Certification
+
+* Rule engine
+* Certificates
+* QR verification
+
+## Phase 8 — Intelligence
+
+* Search
+* KPI engine
+* Dashboards
+* Analytics
+
+## Phase 9 — Governed AI
+
+* Knowledge indexing
+* Permission-aware retrieval
+* AI assistant
+* AI governance
+* AI audit
+
+## Phase 10 — Executive / Advisory Layer
+
+* Altus Ascent
+* Performance Matrix
+* GOPPAR Value Stack
+* ESG
+* Corporate content
+* Case studies
+
+## Phase 11 — Hardening
+
+* Security
+* Performance
+* Testing
+* Data migration
+* Backup
+* Monitoring
+* Production deployment
+
+---
+
+# 87. MOST IMPORTANT PRODUCT RULES
+
+The development team must treat these as non-negotiable:
+
+**1. Training completion is not competency.**
+
+**2. Competency must have evidence.**
+
+**3. Gaps must lead to actions.**
+
+**4. Actions must be reassessable.**
+
+**5. Readiness must be evidence-based.**
+
+**6. Institutional knowledge must survive employee turnover.**
+
+**7. AI must answer only from governed, approved knowledge.**
+
+**8. One property must never see another property's restricted data.**
+
+**9. Arabic and English must be first-class experiences.**
+
+**10. Every client property must support its own brand.**
+
+**11. Historical records must remain auditable.**
+
+**12. Existing production data must be preserved through controlled migration.**
+
+**13. Executive performance information must be separated from learner information.**
+
+**14. Corporate/advisory claims must remain editable content, not hardcoded application logic.**
+
+**15. Every major feature must work end-to-end before being considered complete.**
+Below is the continuation, moving from the business/product specification into the **actual implementation blueprint**: modules, screens, database entities, workflows, APIs, security, AI architecture, and deployment requirements.
+
+# 88. COMPLETE SYSTEM MODULE MAP
+
+The upgraded PHP platform should be organised into the following major modules.
+
+## MODULE 01 — Authentication & Identity
+
+Functions:
+
+* Login
+* Logout
+* Password reset
+* Password change
+* Account invitation
+* Email verification
+* Optional 2FA
+* Session management
+* Remember me
+* Account lockout
+* Failed-login protection
+* User profile
+* Profile photo
+* Language preference
+* Timezone
+* Notification preferences
+
+Future-ready:
+
+* SSO
+* Microsoft Entra ID
+* Google Workspace
+* SAML
+* OAuth 2.0 / OpenID Connect
+
+---
+
+# 89. MODULE 02 — ORGANISATION MANAGEMENT
+
+Altus administrators can create:
+
+* Client organisation
+* Portfolio
+* Property
+* Department
+* Team
+* Job role
+
+Example:
+
+Altus Advisory
+→ Client A
+→ Riyadh Portfolio
+→ Hotel Riyadh 01
+→ Front Office
+→ Reception Team
+
+Each level must have its own metadata and permissions.
+
+Organisation record:
+
+* Name
+* Legal name
+* Logo
+* Country
+* City
+* Contact details
+* Industry
+* Status
+* Subscription/plan
+* Created date
+* Account owner
+
+---
+
+# 90. MODULE 03 — PROPERTY MANAGEMENT
+
+Property fields:
+
+* Property name
+* Property code
+* Arabic name
+* English name
+* Property type
+* Star classification
+* Number of rooms/units
+* Country
+* Region
+* City
+* Address
+* Contact details
+* General Manager
+* Opening date
+* Operating status
+* Brand
+* Logo
+* Theme
+* Timezone
+* Default language
+* Training configuration
+
+Property types:
+
+* Hotel
+* Resort
+* Serviced Apartment
+* Furnished Apartment
+* Boutique Property
+* Chalet
+* Mixed-use Hospitality
+* Other
+
+---
+
+# 91. MODULE 04 — DEPARTMENT MANAGEMENT
+
+Default department library may include:
+
+* General Management
+* Front Office
+* Reservations
+* Revenue
+* Sales
+* Marketing
+* Housekeeping
+* Food & Beverage
+* Kitchen
+* Engineering
+* Security
+* Finance
+* Human Resources
+* Quality
+* Procurement
+* IT
+
+Administrators may add or deactivate departments.
+
+---
+
+# 92. MODULE 05 — JOB ROLE MANAGEMENT
+
+Create configurable job roles.
+
+Examples:
+
+* General Manager
+* Front Office Manager
+* Front Desk Agent
+* Reservations Agent
+* Revenue Manager
+* Sales Manager
+* Marketing Manager
+* Executive Housekeeper
+* Housekeeping Supervisor
+* Room Attendant
+* Restaurant Manager
+* Waiter
+* Chef
+* Security Officer
+* HR Manager
+* Training Manager
+* Department Head
+
+Each role may have:
+
+* Department
+* Description
+* Required competencies
+* Required learning
+* Required certification
+* Required readiness level
+
+---
+
+# 93. MODULE 06 — EMPLOYEE MANAGEMENT
+
+Employee record:
+
+* Employee ID
+* Name
+* Arabic name
+* Email
+* Phone
+* Employee number
+* Position
+* Department
+* Property
+* Manager
+* Hire date
+* Status
+* Preferred language
+* Profile image
+* Employment type
+* Certification status
+
+Statuses:
+
+* Active
+* Inactive
+* On Leave
+* Terminated
+* Archived
+
+When an employee is terminated, preserve all historical records.
+
+---
+
+# 94. MODULE 07 — CURRICULUM MANAGEMENT
+
+The curriculum manager must provide a tree interface:
+
+```text
+Professional Domain
+    └── Track
+        └── Module
+            └── Lesson
+                └── Assessment
+                    └── Certification
+```
+
+Administrators should be able to:
+
+* Create
+* Edit
+* Move
+* Duplicate
+* Archive
+* Publish
+* Reorder
+
+Use drag-and-drop where practical.
+
+---
+
+# 95. MODULE 08 — KNOWLEDGE LIBRARY
+
+The knowledge library should behave like a controlled corporate knowledge repository.
+
+Categories:
+
+* SOP
+* Policy
+* Standard
+* Procedure
+* Checklist
+* Work Instruction
+* FAQ
+* Job Aid
+* Guide
+* Reference
+* Case Study
+* Best Practice
+
+Each item should include:
+
+* Title
+* Summary
+* Content
+* Language
+* Scope
+* Owner
+* Version
+* Status
+* Tags
+* Effective date
+* Review date
+* Related domain
+* Related role
+* Related property
+
+---
+
+# 96. MODULE 09 — CONTENT EDITOR
+
+Use a professional editor.
+
+Support:
+
+* Rich text
+* Headings
+* Tables
+* Lists
+* Images
+* Videos
+* Links
+* Attachments
+* Callouts
+* Checklists
+* Embedded media
+
+Content should be stored safely and rendered through sanitised HTML.
+
+---
+
+# 97. MODULE 10 — LESSON BUILDER
+
+A lesson builder should allow:
+
+### Content blocks
+
+* Text
+* Image
+* Video
+* Audio
+* PDF
+* Download
+* Quote
+* Checklist
+* Scenario
+* Knowledge checkpoint
+* Question
+
+Allow a lesson to contain multiple blocks.
+
+Store block order separately so the lesson can be rearranged without rewriting content.
+
+---
+
+# 98. MODULE 11 — LEARNING PATH BUILDER
+
+Learning path example:
+
+```text
+Front Office Agent — Core Certification
+
+1. Hotel Fundamentals
+   ├── Hospitality Basics
+   ├── Hotel Structure
+   └── Service Culture
+
+2. Front Office
+   ├── Reservation Handling
+   ├── Check-in
+   ├── Check-out
+   └── Guest Communication
+
+3. Guest Experience
+   ├── Service Recovery
+   └── Complaint Handling
+
+4. Assessment
+
+5. Practical Assessment
+
+6. Certification
+```
+
+Learning paths should support:
+
+* Mandatory items
+* Optional items
+* Prerequisites
+* Sequence
+* Completion rules
+* Expiration
+* Recertification
+
+---
+
+# 99. MODULE 12 — ASSIGNMENT ENGINE
+
+Assignments can be created for:
+
+* Individual employee
+* Role
+* Department
+* Property
+* Organisation
+* Cohort
+
+Assignment settings:
+
+* Start date
+* Due date
+* Priority
+* Mandatory
+* Optional
+* Auto-enrol
+* Prerequisite
+* Reminder schedule
+* Completion rule
+
+---
+
+# 100. MODULE 13 — COHORT MANAGEMENT
+
+Create groups such as:
+
+* New Joiners September 2026
+* Front Office Team
+* Pre-opening Team
+* Management Development Cohort
+* Housekeeping Supervisors
+
+A cohort can receive one assignment rather than manually assigning each learner.
+
+---
+
+# 101. MODULE 14 — LEARNER PROGRESS ENGINE
+
+Track:
+
+* Assigned
+* Started
+* Viewed
+* In progress
+* Completed
+* Failed
+* Passed
+* Overdue
+* Exempted
+
+Store timestamps.
+
+Example:
+
+```text
+Assigned: 2026-09-01
+Started: 2026-09-02
+Completed: 2026-09-04
+Assessment: Passed
+Practical: Pending
+Readiness: Conditional
+```
+
+---
+
+# 102. MODULE 15 — ASSESSMENT BUILDER
+
+Assessment builder should support:
+
+* Question bank
+* Sections
+* Question pools
+* Random questions
+* Difficulty
+* Tags
+* Correct answer
+* Explanation
+* Points
+* Passing threshold
+
+Question metadata:
+
+* Domain
+* Module
+* Competency
+* Difficulty
+* Language
+* Version
+
+---
+
+# 103. MODULE 16 — QUESTION BANK
+
+Question bank should permit reuse.
+
+Example:
+
+`Front Office / Check-in / Guest Verification`
+
+Question can be used in:
+
+* Front Office certification
+* New employee assessment
+* Annual refresher
+* Supervisor assessment
+
+Changes to questions must be version controlled.
+
+---
+
+# 104. MODULE 17 — PRACTICAL ASSESSMENT BUILDER
+
+Supervisors should be able to create practical rubrics.
+
+Example:
+
+## Guest Check-in
+
+| Criterion                | Weight |
+| ------------------------ | -----: |
+| Greeting                 |     10 |
+| Verification             |     15 |
+| Reservation confirmation |     15 |
+| System transaction       |     20 |
+| Service explanation      |     15 |
+| Payment process          |     10 |
+| Communication            |     10 |
+| Closing interaction      |      5 |
+
+The scoring methodology should be configurable by authorised administrators.
+
+---
+
+# 105. MODULE 18 — COMPETENCY LIBRARY
+
+A competency record should contain:
+
+* Code
+* Name
+* Description
+* Department
+* Role
+* Domain
+* Required level
+* Assessment method
+* Evidence type
+* Criticality
+* Active/inactive
+
+Levels can be configurable, for example:
+
+1. Awareness
+2. Developing
+3. Competent
+4. Advanced
+5. Expert
+
+The property may use fewer levels.
+
+---
+
+# 106. MODULE 19 — EMPLOYEE COMPETENCY PROFILE
+
+Each employee gets a competency profile:
+
+```text
+Employee: Ahmed
+
+Competencies
+--------------------------------
+Guest Communication       4/4
+Check-in                  3/4
+Complaint Handling        2/4
+Upselling                 2/4
+System Operation          4/4
+
+Critical Gaps
+Complaint Handling
+Upselling
+```
+
+Clicking a competency opens evidence history.
+
+---
+
+# 107. MODULE 20 — SKILL GAP ENGINE
+
+Gap engine automatically compares:
+
+`Required competency`
+
+against:
+
+`Current competency`
+
+Possible gap states:
+
+* No gap
+* Minor gap
+* Moderate gap
+* Critical gap
+
+The severity thresholds must be configurable.
+
+---
+
+# 108. MODULE 21 — ACTION PLAN ENGINE
+
+Action types:
+
+* Training
+* Coaching
+* Shadowing
+* Practice
+* SOP review
+* Knowledge assessment
+* Practical exercise
+* Observation
+* Mentoring
+
+Each action should support evidence.
+
+---
+
+# 109. MODULE 22 — EVIDENCE MANAGEMENT
+
+Evidence examples:
+
+* Uploaded document
+* Photo
+* Video
+* Supervisor note
+* Assessment result
+* Observation record
+* Practical score
+* External certificate
+
+Evidence metadata:
+
+* Type
+* Uploaded by
+* Date
+* Employee
+* Competency
+* Action
+* Description
+
+---
+
+# 110. MODULE 23 — REASSESSMENT ENGINE
+
+Reassessment should not replace the original assessment.
+
+History:
+
+```text
+Assessment #1
+Result: Not Competent
+
+Corrective Action
+Completed: Yes
+
+Assessment #2
+Result: Competent
+
+Assessment #3
+Result: Advanced
+```
+
+All results must remain searchable.
+
+---
+
+# 111. MODULE 24 — READINESS ENGINE
+
+Create configurable readiness policies.
+
+Example:
+
+## Front Office Ready
+
+Must have:
+
+* Hotel Fundamentals complete
+* Front Office track complete
+* Theory score ≥ required threshold
+* Practical assessment passed
+* No critical competency gap
+* Mandatory certification active
+
+Result:
+
+`READY`
+
+Another employee might show:
+
+`CONDITIONAL`
+
+Reason:
+
+`Complaint Handling competency below required level`
+
+---
+
+# 112. MODULE 25 — CERTIFICATE ENGINE
+
+Certificate templates must be configurable.
+
+Certificate generation should support:
+
+* HTML template
+* PDF
+* QR
+* Unique number
+* Signature
+* Logo
+* Arabic
+* English
+* Bilingual
+
+Example certificate ID:
+
+`ALTUS-FOA-2026-000152`
+
+---
+
+# 113. MODULE 26 — CERTIFICATE VERIFICATION
+
+Public endpoint:
+
+```text
+https://platform-domain.com/verify/ALTUS-FOA-2026-000152
+```
+
+Show:
+
+* Valid / Invalid
+* Certificate title
+* Holder
+* Property
+* Issue date
+* Expiry
+* Issuer
+
+Do not expose private employee data.
+
+---
+
+# 114. MODULE 27 — KNOWLEDGE SEARCH ENGINE
+
+Search modes:
+
+### Basic
+
+Exact text matching.
+
+### Filtered
+
+Filter by:
+
+* Domain
+* Property
+* Department
+* Role
+* Content type
+* Language
+
+### Semantic
+
+Future vector search.
+
+Search result card:
+
+* Title
+* Type
+* Short excerpt
+* Property scope
+* Version
+* Last updated
+* Open
+
+---
+
+# 115. MODULE 28 — GOVERNED AI KNOWLEDGE PIPELINE
+
+Architecture:
+
+```text
+Approved Content
+        ↓
+Content Processing
+        ↓
+Chunking
+        ↓
+Metadata
+        ↓
+Embeddings / Search Index
+        ↓
+Permission Filter
+        ↓
+Retrieval
+        ↓
+AI Model
+        ↓
+Answer + Sources
+```
+
+Before retrieval, identify:
+
+* Organisation
+* Property
+* Department
+* Role
+* Language
+* User permissions
+
+Then filter the knowledge base.
+
+---
+
+# 116. MODULE 29 — AI ANSWER VALIDATION
+
+AI responses should contain:
+
+* Answer
+* Source documents
+* Relevant section
+* Content version where practical
+* Confidence/coverage indication where appropriate
+
+When sources are insufficient:
+
+> “The approved knowledge base does not contain sufficient information to answer this question.”
+
+Never fabricate SOP instructions.
+
+---
+
+# 117. MODULE 30 — AI ADMINISTRATION
+
+Admin should control:
+
+* Enable/disable assistant
+* Available properties
+* Available sources
+* AI model
+* Retrieval settings
+* Maximum response length
+* System instructions
+* Logging
+* Usage limits
+
+Do not allow property users to alter global AI governance.
+
+---
+
+# 118. MODULE 31 — NOTIFICATION ENGINE
+
+Create a central notification service.
+
+Supported events:
+
+* New learning
+* Assignment
+* Reminder
+* Due soon
+* Overdue
+* Assessment passed
+* Assessment failed
+* Gap identified
+* Action assigned
+* Action overdue
+* Reassessment approved
+* Certificate issued
+* Certificate expiry
+
+Store every notification.
+
+---
+
+# 119. MODULE 32 — EMAIL TEMPLATE ENGINE
+
+Email templates should support:
+
+* English
+* Arabic
+* Variables
+* Tenant branding
+* Property branding
+
+Example variables:
+
+`{{employee_name}}`
+
+`{{property_name}}`
+
+`{{course_name}}`
+
+`{{due_date}}`
+
+`{{certificate_number}}`
+
+---
+
+# 120. MODULE 33 — REPORTING ENGINE
+
+Reports should be generated dynamically.
+
+Core reports:
+
+### Learning Completion Report
+
+Columns:
+
+* Employee
+* Property
+* Department
+* Assigned
+* Completed
+* Due
+* Status
+
+### Assessment Report
+
+* Employee
+* Assessment
+* Attempts
+* Score
+* Result
+* Date
+
+### Competency Report
+
+* Employee
+* Competency
+* Required
+* Current
+* Gap
+* Status
+
+### Readiness Report
+
+* Employee
+* Role
+* Readiness
+* Missing requirements
+
+### Certification Report
+
+* Certificate
+* Employee
+* Issue
+* Expiry
+* Status
+
+---
+
+# 121. MODULE 34 — EXECUTIVE ANALYTICS
+
+Executive dashboard should permit filtering by:
+
+* Organisation
+* Portfolio
+* Property
+* Department
+* Role
+* Period
+
+Example widgets:
+
+* Overall learning completion
+* Competency coverage
+* Critical gaps
+* Readiness rate
+* Certification rate
+* Overdue actions
+* Department comparison
+* Property comparison
+
+---
+
+# 122. MODULE 35 — KPI MANAGEMENT
+
+KPI entity:
+
+```text
+KPI
+ ├── Definition
+ ├── Target
+ ├── Threshold
+ ├── Unit
+ ├── Frequency
+ ├── Source
+ └── Owner
+```
+
+KPI values:
+
+```text
+KPI
+ → Property
+ → Department
+ → Period
+ → Actual
+```
+
+Sources may eventually include:
+
+* Manual entry
+* CSV import
+* API
+* PMS
+* POS
+* BI platform
+* Data warehouse
+
+---
+
+# 123. MODULE 36 — PERFORMANCE SCORECARD
+
+Create a configurable scorecard combining:
+
+### Knowledge
+
+* Training completion
+* Assessment score
+
+### Capability
+
+* Competency
+
+### Readiness
+
+* Operational readiness
+
+### Performance
+
+* KPI
+
+Avoid calculating a single overall employee score unless Altus explicitly defines the methodology.
+
+Keep each dimension transparent.
+
+---
+
+# 124. MODULE 37 — ALTUS ENGAGEMENT MANAGEMENT
+
+Because the business model is advisory as well as digital, the platform should support internal Altus engagements.
+
+Engagement fields:
+
+* Client
+* Property
+* Engagement name
+* Engagement type
+* Consultant
+* Start date
+* End date
+* Status
+* Objectives
+* Framework
+* Deliverables
+
+Engagement types:
+
+* Pre-opening
+* Operations optimisation
+* Owner representation
+* Feasibility
+* Quality audit
+* Commercial improvement
+* Digital transformation
+* Leadership development
+
+---
+
+# 125. MODULE 38 — ALTUS ASCENT PROJECT TRACKER
+
+Each engagement may use:
+
+```text
+DISCOVER
+ASSESS
+DESIGN
+TRANSFORM
+OPTIMISE
+SCALE
+```
+
+Each stage supports:
+
+* Objectives
+* Tasks
+* Deliverables
+* Evidence
+* Milestones
+* Owner
+* Due date
+* Status
+* Client sign-off
+
+---
+
+# 126. MODULE 39 — ASSET ASSESSMENT
+
+Create an asset assessment form using the conceptual Altus Performance Matrix.
+
+Dimensions:
+
+### Operational Rigour
+
+Questions around:
+
+* SOP maturity
+* Service standards
+* Quality
+* Cost control
+* Management discipline
+* Operational consistency
+
+### Digital & Commercial Intelligence
+
+Questions around:
+
+* Data
+* Revenue management
+* Distribution
+* CRM
+* Analytics
+* AI
+* Digital infrastructure
+
+Store the assessment rather than hardcoding a predetermined conclusion.
+
+---
+
+# 127. MODULE 40 — GOPPAR VALUE STACK ASSESSMENT
+
+Assessment categories:
+
+1. Top-Line Capture
+2. Distribution Economics
+3. Cost Containment
+4. Asset Productivity
+
+Each category can contain:
+
+* Assessment questions
+* Evidence
+* Recommendations
+* Actions
+* KPIs
+
+---
+
+# 128. MODULE 41 — ESG ASSESSMENT
+
+Support four categories:
+
+* Governance
+* Community & People
+* Responsible Tourism
+* Operational Sustainability
+
+Each category can contain:
+
+* Standards
+* Learning
+* Checklist
+* Evidence
+* KPI
+* Action plan
+
+---
+
+# 129. MODULE 42 — CASE STUDY MANAGEMENT
+
+Case study fields:
+
+* Title
+* Category
+* Sector
+* Geography
+* Client profile
+* Challenge
+* Approach
+* Result
+* Metrics
+* Images
+* Confidentiality
+* Illustrative/anonymised flag
+
+The frontend should automatically display:
+
+`ILLUSTRATIVE CASE STUDY`
+
+when the CMS setting requires it.
+
+---
+
+# 130. MODULE 43 — CORPORATE LEADERSHIP CMS
+
+Leadership profile fields:
+
+* Name
+* Role
+* Biography
+* Experience
+* Track record
+* Recognition
+* Education
+* Credentials
+* Photo
+* Social links
+* Related case studies
+
+---
+
+# 131. MODULE 44 — PARTNERSHIP DIRECTORY
+
+Categories:
+
+* Hotel Operators
+* Global Brands
+* Technology
+* Data
+* Investors
+* Funds
+* Family Offices
+* Government
+* Development Authorities
+
+Add internal relationship metadata without exposing internal notes publicly.
+
+---
+
+# 132. MODULE 45 — VALUES / ESG / CORPORATE CONTENT
+
+CMS should contain editable pages/entries for:
+
+### Values
+
+* Integrity
+* Excellence
+* Innovation
+* Hospitality
+* Performance
+* Trust
+* Collaboration
+
+### ESG
+
+* Governance
+* Community & People
+* Responsible Tourism
+* Operational Sustainability
+
+### Corporate positioning
+
+* Vision
+* Mission
+* Purpose
+* Philosophy
+* Independence
+* Owner-side advisory
+
+---
+
+# 133. COMPLETE DATABASE ENTITY LIST
+
+The final architecture should consider the following entities.
+
+## Identity
+
+* users
+* user_profiles
+* roles
+* permissions
+* role_permissions
+* user_roles
+* sessions
+* login_attempts
+
+## Organisation
+
+* organisations
+* portfolios
+* properties
+* property_settings
+* departments
+* teams
+* job_roles
+* employees
+
+## Curriculum
+
+* domains
+* tracks
+* modules
+* lessons
+* lesson_blocks
+* lesson_versions
+* learning_paths
+* learning_path_items
+
+## Knowledge
+
+* knowledge_items
+* knowledge_versions
+* knowledge_tags
+* knowledge_item_tags
+* knowledge_scopes
+* knowledge_approvals
+* knowledge_reviews
+
+## Learning
+
+* enrolments
+* assignments
+* assignment_targets
+* cohorts
+* cohort_members
+* learner_progress
+* lesson_progress
+
+## Assessments
+
+* assessments
+* assessment_versions
+* assessment_sections
+* question_banks
+* questions
+* question_options
+* assessment_questions
+* attempts
+* attempt_answers
+* results
+
+## Competency
+
+* competencies
+* competency_levels
+* role_competencies
+* employee_competencies
+* competency_assessments
+* competency_evidence
+
+## Gaps
+
+* competency_gaps
+* action_plans
+* action_items
+* action_evidence
+* reassessments
+
+## Certification
+
+* certification_programs
+* certification_rules
+* certifications
+* certificate_templates
+* certificate_verifications
+
+## Performance
+
+* kpis
+* kpi_targets
+* kpi_values
+* performance_periods
+* scorecards
+
+## AI
+
+* ai_settings
+* ai_sources
+* ai_documents
+* ai_chunks
+* ai_queries
+* ai_responses
+* ai_usage_logs
+
+## Notifications
+
+* notifications
+* notification_templates
+* notification_preferences
+
+## Reporting
+
+* saved_reports
+* report_runs
+* report_exports
+
+## Governance
+
+* audit_logs
+* approval_logs
+* activity_logs
+
+## Media
+
+* files
+* folders
+* media_links
+
+## Branding
+
+* brands
+* themes
+* property_branding
+
+## Advisory
+
+* engagements
+* engagement_stages
+* engagement_tasks
+* asset_assessments
+* performance_matrix_assessments
+* value_stack_assessments
+* esg_assessments
+
+## Corporate CMS
+
+* corporate_pages
+* leadership_profiles
+* case_studies
+* partnerships
+* sectors
+* service_categories
+
+---
+
+# 134. DATABASE RELATIONSHIP PRINCIPLES
+
+The database should follow these major relationships:
+
+```text
+Organisation
+    ├── Portfolio
+    │     └── Property
+    │           ├── Department
+    │           │     └── Team
+    │           └── Employee
+    │
+    └── Users
+```
+
+Curriculum:
+
+```text
+Domain
+ → Track
+   → Module
+     → Lesson
+       → Assessment
+```
+
+Capability:
+
+```text
+Role
+ → Required Competency
+    ↓
+Employee Competency
+    ↓
+Gap
+    ↓
+Action
+    ↓
+Reassessment
+    ↓
+Readiness
+```
+
+Knowledge:
+
+```text
+Knowledge Item
+ → Version
+ → Scope
+ → Approval
+ → Search / AI
+```
+
+---
+
+# 135. API STRUCTURE
+
+Use versioned APIs:
+
+```text
+/api/v1/auth
+/api/v1/users
+/api/v1/organisations
+/api/v1/properties
+/api/v1/departments
+/api/v1/curriculum
+/api/v1/learning
+/api/v1/assessments
+/api/v1/competencies
+/api/v1/gaps
+/api/v1/actions
+/api/v1/reassessments
+/api/v1/readiness
+/api/v1/certificates
+/api/v1/knowledge
+/api/v1/search
+/api/v1/ai
+/api/v1/kpis
+/api/v1/reports
+```
+
+All APIs must enforce authentication and tenant scope.
+
+---
+
+# 136. API RESPONSE STANDARD
+
+Use consistent responses.
+
+Success:
+
+```json
+{
+  "success": true,
+  "data": {},
+  "message": "Operation completed successfully"
+}
+```
+
+Validation error:
+
+```json
+{
+  "success": false,
+  "message": "Validation failed",
+  "errors": {}
+}
+```
+
+Unauthorised:
+
+```json
+{
+  "success": false,
+  "message": "Unauthorised"
+}
+```
+
+Do not expose stack traces in production.
+
+---
+
+# 137. FRONTEND SCREEN MAP
+
+## Public
+
+* Login
+* Password reset
+* Certificate verification
+* Public corporate pages
+
+## Learner
+
+* Dashboard
+* My Learning
+* Learning Path
+* Course/Lesson
+* Assessment
+* Assessment Result
+* Competencies
+* Gap
+* Action Plan
+* Reassessment
+* Certificates
+* Knowledge Search
+* AI Assistant
+* Profile
+* Notifications
+
+## Supervisor
+
+* Dashboard
+* Team
+* Employee
+* Assessments
+* Practical Assessments
+* Competencies
+* Gaps
+* Actions
+* Reassessment
+* Readiness
+
+## Property Admin
+
+* Dashboard
+* Staff
+* Departments
+* Roles
+* Learning
+* Knowledge
+* Assessments
+* Competencies
+* Certifications
+* Reports
+* Branding
+* Settings
+
+## Altus Admin
+
+* Dashboard
+* Organisations
+* Portfolios
+* Properties
+* Users
+* Curriculum
+* Knowledge
+* Content Review
+* Assessments
+* Competencies
+* Analytics
+* KPIs
+* AI
+* Reports
+* Engagements
+* Audit
+* System Configuration
+
+---
+
+# 138. DASHBOARD UX RULES
+
+Each dashboard should answer the user's most important questions immediately.
+
+## Learner asks:
+
+“What do I need to do?”
+
+## Supervisor asks:
+
+“Who needs my attention?”
+
+## Property Manager asks:
+
+“Where are the operational capability gaps?”
+
+## Altus Consultant asks:
+
+“What is happening across the portfolio?”
+
+## Executive asks:
+
+“Are capabilities improving and where is risk?”
+
+Build dashboards around these questions rather than simply filling the page with statistics.
+
+---
+
+# 139. CRITICAL MANAGEMENT ALERTS
+
+Managers should receive alerts when:
+
+* Mandatory training overdue
+* Critical competency gap
+* Assessment repeatedly failed
+* Certification about to expire
+* Action overdue
+* Reassessment failed
+* Department readiness falls below threshold
+* Property has critical outstanding gaps
+
+Alerts must link directly to the relevant record.
+
+---
+
+# 140. DATA VISUALISATION
+
+Use charts where they improve decisions.
+
+Recommended:
+
+* Completion trend
+* Assessment pass/fail
+* Competency heatmap
+* Gap heatmap
+* Department comparison
+* Property comparison
+* Certification trend
+* Readiness distribution
+
+Always provide a table/detail view behind charts.
+
+---
+
+# 141. AUDITABILITY RULE
+
+For any important result, the manager must be able to trace:
+
+```text
+Dashboard Result
+→ Employee
+→ Requirement
+→ Assessment
+→ Evidence
+→ Competency
+→ Gap
+→ Action
+→ Reassessment
+```
+
+No KPI or readiness number should be a mysterious black box.
+
+---
+
+# 142. DATA RETENTION
+
+Historical records should remain available according to the client's configured retention policy.
+
+Do not delete:
+
+* Historical assessments
+* Previous competency levels
+* Previous certification
+* Old content versions
+* Previous action plans
+* Audit records
+
+Use archival where necessary.
+
+---
+
+# 143. BACKUP
+
+Define:
+
+* Database backup
+* Media backup
+* Configuration backup
+* Backup frequency
+* Retention
+* Restore procedure
+
+Test restoration rather than merely creating backups.
+
+---
+
+# 144. DEPLOYMENT ENVIRONMENT
+
+The PHP application should support normal production hosting environments.
+
+At minimum:
+
+* PHP 8.x compatible implementation where feasible
+* MySQL/MariaDB
+* HTTPS
+* Cron/scheduler
+* Writable storage
+* Cache
+* Queue capability where available
+
+The implementation should avoid unnecessary infrastructure requirements for smaller Saudi SME clients while remaining scalable.
+
+---
+
+# 145. CONFIGURATION / ENVIRONMENT VARIABLES
+
+Use environment-based configuration for:
+
+* Database
+* Mail
+* Storage
+* Cache
+* Queue
+* AI keys
+* External APIs
+* Application URL
+* Encryption
+* Session configuration
+
+Never commit secrets to Git.
+
+---
+
+# 146. CRON / SCHEDULED TASKS
+
+Scheduled tasks should support:
+
+* Learning reminders
+* Due-date reminders
+* Overdue alerts
+* Certification expiry warnings
+* Report generation
+* AI indexing
+* Content review reminders
+* Data synchronisation
+
+---
+
+# 147. QUEUE REQUIREMENTS
+
+Queue long-running processes such as:
+
+* Large report generation
+* Bulk emails
+* Bulk notifications
+* AI indexing
+* Large imports
+* Certificate generation at scale
+
+Do not block the web request for unnecessarily long tasks.
+
+---
+
+# 148. ERROR HANDLING
+
+Create centralised error handling.
+
+User sees:
+
+> Something went wrong. Please try again or contact your administrator.
+
+System records:
+
+* Error
+* Route
+* User
+* Tenant
+* Timestamp
+* Request ID
+* Stack trace in secure logs
+
+Never expose:
+
+* SQL query
+* DB credentials
+* File path
+* API secret
+* Stack trace
+
+to normal users.
+
+---
+
+# 149. LOGGING
+
+Maintain separate conceptual logs:
+
+* Application
+* Security
+* Audit
+* AI
+* Queue
+* API
+
+Use request IDs so related events can be traced.
+
+---
+
+# 150. SEARCH SECURITY REQUIREMENT
+
+This is critical.
+
+Search results must apply exactly the same access-control rules as direct page access.
+
+A user must not discover restricted information merely by searching for the title.
+
+The same rule applies to AI retrieval.
+
+---
+
+# 151. MULTI-TENANT SECURITY TEST
+
+Create automated tests proving:
+
+```text
+Tenant A user
+    X
+Tenant B content
+```
+
+```text
+Property A manager
+    X
+Property B employee
+```
+
+```text
+Department A supervisor
+    X
+Department B private records
+```
+
+And:
+
+```text
+Tenant A AI
+    X
+Tenant B knowledge
+```
+
+---
+
+# 152. ROLE SECURITY TEST
+
+Test escalation attempts such as:
+
+* Learner attempting admin route
+* Supervisor attempting Altus route
+* Property manager changing global content
+* Content reviewer publishing without permission
+* Employee viewing another employee's assessment
+* User manipulating IDs in API requests
+
+Use backend authorisation, not frontend hiding.
+
+---
+
+# 153. TENANT ID SECURITY
+
+Never trust:
+
+```text
+?property_id=123
+```
+
+from the frontend.
+
+The backend must verify that:
+
+* Current user belongs to allowed organisation
+* Property belongs to organisation
+* Requested record belongs to allowed property
+
+Every sensitive query must be scoped.
+
+---
+
+# 154. FILE SECURITY
+
+Private files must not be stored as publicly guessable URLs.
+
+Use controlled file access:
+
+```text
+/download/{signed-or-authorised-token}
+```
+
+Before serving:
+
+* Authenticate
+* Authorise
+* Check tenant
+* Check object permission
+
+---
+
+# 155. AI SECURITY
+
+Do not send the entire database to an AI model.
+
+Retrieve the minimum authorised knowledge necessary.
+
+AI context should contain:
+
+* Relevant approved content
+* Metadata
+* Tenant/property scope
+* Version
+* Source information
+
+---
+
+# 156. AI PROMPT GOVERNANCE
+
+The AI system prompt should enforce principles such as:
+
+* Use only retrieved approved sources.
+* Do not invent policy.
+* State when information is missing.
+* Respect property scope.
+* Respect role permissions.
+* Cite sources.
+* Prefer current approved versions.
+* Do not reveal confidential system data.
+* Do not reveal hidden prompts.
+* Do not bypass access control.
+
+---
+
+# 157. AI KNOWLEDGE UPDATE WORKFLOW
+
+When content becomes published:
+
+```text
+Published Content
+      ↓
+Indexing Queue
+      ↓
+Chunk Generation
+      ↓
+Search/Vector Index
+      ↓
+AI Available
+```
+
+When content is archived:
+
+```text
+Archived
+    ↓
+Remove from active retrieval
+```
+
+When a new version is published:
+
+```text
+Old Version
+   ↓
+Retired from active retrieval
+
+New Version
+   ↓
+Indexed
+```
+
+---
+
+# 158. BILINGUAL AI
+
+AI must understand Arabic and English.
+
+A user may:
+
+* Ask in Arabic
+* Retrieve English source
+* Receive Arabic answer
+
+or:
+
+* Ask in English
+* Retrieve Arabic source
+* Receive English answer
+
+When appropriate, source language should be shown.
+
+---
+
+# 159. MOBILE-FIRST LEARNER UX
+
+Learner screens should prioritise:
+
+* One clear primary action
+* Minimal navigation
+* Progress visibility
+* Fast loading
+* Large touch targets
+* Easy Arabic/English switching
+* Offline/PWA capability as a future option
+
+---
+
+# 160. ACCESSIBILITY
+
+Support:
+
+* Keyboard navigation
+* Form labels
+* Accessible focus
+* Meaningful buttons
+* Sufficient contrast
+* Screen-reader-friendly structure
+* Error messages
+* RTL accessibility
+
+---
+
+# 161. SEO FOR PUBLIC CORPORATE PAGES
+
+Only public corporate/marketing pages need SEO.
+
+Support:
+
+* Page title
+* Description
+* Canonical
+* Open Graph
+* Schema
+* Arabic metadata
+* English metadata
+* Sitemap
+
+Authenticated LMS pages should not accidentally become public search results.
+
+---
+
+# 162. PUBLIC VS PRIVATE CONTENT
+
+Clearly separate:
+
+### Public
+
+* Altus corporate content
+* Services
+* Leadership
+* Case studies approved for publication
+* Contact
+* Public certificate verification
+
+### Private
+
+* Employee data
+* Training history
+* Internal SOPs
+* Property data
+* Assessments
+* Competency records
+* AI knowledge
+* Management reports
+
+---
+
+# 163. CORPORATE CASE STUDY CONFIDENTIALITY
+
+Case-study records should include visibility:
+
+* Public
+* Client-only
+* Altus internal
+* Confidential
+
+Never accidentally publish confidential engagement details.
+
+---
+
+# 164. CONTENT OWNERSHIP
+
+Every knowledge asset should have:
+
+* Owner organisation
+* Content owner
+* Reviewer
+* Approver
+
+This makes governance explicit.
+
+---
+
+# 165. REVIEW / EXPIRATION MANAGEMENT
+
+Every critical SOP or knowledge asset should optionally have:
+
+* Review date
+* Expiration date
+* Review frequency
+
+The system should notify the owner before review is due.
+
+Example:
+
+`SOP expires in 30 days`
+
+---
+
+# 166. CONTENT HEALTH DASHBOARD
+
+Altus should be able to see:
+
+* Content with no owner
+* Content awaiting review
+* Expired content
+* Untranslated content
+* Outdated versions
+* Duplicate content
+* Content not used
+* Content frequently searched
+* AI source usage
+
+---
+
+# 167. LEARNING ANALYTICS
+
+Track:
+
+* Completion
+* Time spent
+* Drop-off point
+* Assessment performance
+* Repeated attempts
+* Most difficult questions
+* Most failed modules
+* Most used content
+* Least used content
+
+This data can inform curriculum improvement.
+
+---
+
+# 168. QUESTION ANALYTICS
+
+For each question:
+
+* Attempts
+* Correct percentage
+* Incorrect percentage
+* Average response time
+* Distractor selection
+* Difficulty indication
+
+Allow question review based on data.
+
+Do not automatically label a question “bad” based solely on statistics; provide evidence for reviewer assessment.
+
+---
+
+# 169. PRACTICAL ASSESSMENT ANALYTICS
+
+Show:
+
+* Most failed competencies
+* Departments with common gaps
+* Roles with recurring deficiencies
+* Assessors
+* Assessment trends
+* Reassessment rates
+
+---
+
+# 170. CONTENT → COMPETENCY LINKING
+
+A critical feature.
+
+A lesson can be linked to competencies.
+
+Example:
+
+```text
+Lesson:
+Handling Guest Complaints
+
+Supports:
+→ Complaint Recovery
+→ Communication
+→ Service Recovery
+```
+
+An assessment can also be mapped to competencies.
+
+A practical assessment can directly measure them.
+
+This creates the chain:
+
+```text
+Knowledge
+↓
+Learning
+↓
+Assessment
+↓
+Competency
+```
+
+---
+
+# 171. COMPETENCY → BUSINESS OUTCOME LINKING
+
+Future-ready architecture should permit:
+
+```text
+Competency
+→ KPI
+```
+
+Example:
+
+Guest Recovery Competency
+
+→ Guest satisfaction KPI
+
+Revenue Upselling Competency
+
+→ Average daily revenue / upsell KPI
+
+This relationship should be configurable and evidence-driven.
+
+---
+
+# 172. PROPERTY READINESS
+
+For pre-opening clients, implement:
+
+## Property Opening Readiness
+
+Categories:
+
+* Recruitment
+* Training
+* Competency
+* SOP
+* Systems
+* Safety
+* Quality
+* Commercial readiness
+
+Each category:
+
+* Required
+* Current
+* Gap
+* Action
+* Owner
+* Due date
+
+Final readiness view:
+
+```text
+Property Opening Readiness
+-------------------------
+Training       92%
+Competency     88%
+SOP            100%
+Systems        95%
+Safety         100%
+
+Overall readiness:
+CONDITIONAL
+
+Critical gaps:
+3
+```
+
+The calculation must remain configurable.
+
+---
+
+# 173. PRE-OPENING TEAM MODE
+
+Create a special cohort workflow for new hotel openings.
+
+Support:
+
+* Opening date
+* Countdown
+* Department
+* Required learning
+* Recruitment waves
+* Training waves
+* Assessments
+* Competency
+* Readiness
+
+Management dashboard can show:
+
+`T-30`
+
+`T-14`
+
+`T-7`
+
+`T-0`
+
+---
+
+# 174. OPERATIONAL AUDIT MODE
+
+Quality teams should be able to perform audits through the platform.
+
+Audit:
+
+* Standard
+* Requirement
+* Compliance
+* Evidence
+* Finding
+* Severity
+* Corrective action
+* Recheck
+
+This connects the quality function to the LMS/performance engine.
+
+---
+
+# 175. MYSTERY GUEST / QUALITY INPUT
+
+Architecture may support:
+
+* Audit score
+* Mystery guest score
+* Complaint theme
+* Service observation
+
+These can become evidence supporting competency/performance improvement.
+
+---
+
+# 176. EXECUTIVE OWNER VIEW
+
+Owner/executive users should have a simplified view.
+
+Possible sections:
+
+* Portfolio overview
+* Property readiness
+* Critical risks
+* Capability gaps
+* Training adoption
+* Certification
+* Operational improvement trend
+
+Do not expose detailed employee information unless authorised.
+
+---
+
+# 177. BOARD / EXECUTIVE EXPORT
+
+Generate professional board-level reports:
+
+* Executive summary
+* Key risks
+* Capability status
+* Critical gaps
+* Readiness
+* Trends
+* Actions
+* Recommendations/observations
+* Data sources
+
+Reports must identify reporting period and data freshness.
+
+---
+
+# 178. DATA FRESHNESS
+
+Every dashboard KPI should indicate where useful:
+
+* Current
+* Last updated
+* Reporting period
+
+Never present stale data as live.
+
+---
+
+# 179. TRANSPARENCY OF CALCULATIONS
+
+For any calculated result provide:
+
+* Formula/rule name
+* Inputs
+* Last calculation time
+* Source records
+
+Where a readiness result is shown, managers should understand what caused the result.
+
+---
+
+# 180. SYSTEM HEALTH DASHBOARD
+
+Altus technical administrators should see:
+
+* Database health
+* Queue status
+* Failed jobs
+* Email status
+* Storage
+* AI service availability
+* API status
+* Recent errors
+* Backup status
+
+---
+
+# 181. BACKUP / DISASTER RECOVERY
+
+Document:
+
+* RPO
+* RTO
+* Backup schedule
+* Restore process
+* Database restore
+* Media restore
+* Configuration recovery
+
+These values should be defined according to the hosting/business plan rather than invented by the application.
+
+---
+
+# 182. DEPLOYMENT WORKFLOW
+
+Recommended:
+
+```text
+LOCAL
+ ↓
+DEVELOPMENT
+ ↓
+STAGING
+ ↓
+USER ACCEPTANCE TESTING
+ ↓
+PRODUCTION
+```
+
+Production deployment should include:
+
+* Backup
+* Migration
+* Smoke tests
+* Rollback plan
+
+---
+
+# 183. GIT REQUIREMENTS
+
+Repository should contain:
+
+```text
+/app
+/config
+/database
+/public
+/resources
+/routes
+/storage
+/tests
+/docs
+```
+
+Actual structure should follow the existing framework where applicable rather than forcing Laravel conventions onto a non-Laravel project.
+
+Use:
+
+* Feature branches
+* Pull requests
+* Code review
+* Version tags
+* Release notes
+
+Never commit:
+
+* `.env`
+* Passwords
+* API keys
+* Production database dumps
+* Private certificates/keys
+
+---
+
+# 184. DOCUMENTATION
+
+Create:
+
+## Technical Documentation
+
+* Architecture
+* Database
+* API
+* Authentication
+* Permissions
+* Deployment
+* Backup
+* AI
+* Integrations
+
+## Admin Documentation
+
+* Organisation setup
+* Property setup
+* User management
+* Curriculum
+* Knowledge
+* Assessments
+* Competencies
+* Certification
+* Reporting
+
+## User Documentation
+
+* Learner guide
+* Supervisor guide
+* Manager guide
+
+---
+
+# 185. FINAL QA SCENARIO
+
+Run one complete realistic scenario.
+
+## Example
+
+Create:
+
+`ALTUS Demo Hotel Riyadh`
+
+Create:
+
+`Front Office Department`
+
+Create:
+
+`Front Desk Agent`
+
+Create:
+
+`Employee`
+
+Assign:
+
+`Front Office Certification`
+
+Employee completes:
+
+* Hotel Fundamentals
+* Front Office
+* Guest Experience
+
+Employee passes:
+
+`Theory Assessment`
+
+Supervisor performs:
+
+`Practical Check-in Assessment`
+
+Employee fails:
+
+`Complaint Handling`
+
+System creates:
+
+`Competency Gap`
+
+Manager assigns:
+
+`Service Recovery Action Plan`
+
+Employee completes action.
+
+Supervisor performs:
+
+`Reassessment`
+
+Employee passes.
+
+System recalculates:
+
+`Competency = Competent`
+
+System recalculates:
+
+`Readiness = Ready`
+
+System issues:
+
+`Front Office Certification`
+
+Manager dashboard updates.
+
+Employee downloads certificate.
+
+AI assistant can answer:
+
+“What is our approved check-in procedure?”
+
+AI retrieves the authorised property SOP and answers with the source.
+
+This complete scenario must work end-to-end before release.
+
+---
+
+# 186. FINAL PRODUCT ARCHITECTURE
+
+The completed product should conceptually become:
+
+```text
+                         ALTUS ADVISORY
+                               │
+                    ┌──────────┴──────────┐
+                    │                     │
+              Advisory Layer       Digital Platform
+                    │                     │
+       ┌────────────┼────────────┐        │
+       │            │            │        │
+   Strategy     Operations    Performance │
+                                           │
+                         ┌─────────────────┴─────────────────┐
+                         │                                   │
+                    Knowledge                           Learning
+                         │                                   │
+                         └───────────────┬───────────────────┘
+                                         │
+                                    Assessment
+                                         │
+                                    Competency
+                                         │
+                                      Gap
+                                         │
+                                      Action
+                                         │
+                                   Reassessment
+                                         │
+                                     Readiness
+                                         │
+                                   Certification
+                                         │
+                                  Performance KPI
+                                         │
+                                    Intelligence
+                                         │
+                                   Executive View
+```
+
+---
+
+# 187. PRODUCT NORTH STAR
+
+The system should continuously answer five questions:
+
+### 1. What should this person know?
+
+Knowledge + curriculum.
+
+### 2. Have they learned it?
+
+Learning + assessment.
+
+### 3. Can they actually do it?
+
+Practical competency + evidence.
+
+### 4. Where are they weak?
+
+Gap analysis + action planning.
+
+### 5. Are they operationally ready?
+
+Readiness + certification + performance evidence.
+
+That is the fundamental product logic.
+
+---
+
+# 188. FINAL DEVELOPMENT INSTRUCTION
+
+Do not build the platform as disconnected modules.
+
+Build one connected evidence chain:
+
+```text
+ROLE
+ ↓
+REQUIREMENTS
+ ↓
+LEARNING
+ ↓
+KNOWLEDGE
+ ↓
+ASSESSMENT
+ ↓
+COMPETENCY
+ ↓
+EVIDENCE
+ ↓
+GAP
+ ↓
+ACTION
+ ↓
+REASSESSMENT
+ ↓
+READINESS
+ ↓
+CERTIFICATION
+ ↓
+PERFORMANCE
+ ↓
+EXECUTIVE INTELLIGENCE
+```
+
+Every appropriate record should be traceable through this chain.
+
+The final platform must demonstrate that it is not merely recording whether someone completed training.
+
+It must provide evidence of whether the organisation has transformed knowledge into operational capability.
+
+---
+
+# 189. RELEASE GATES
+
+## Gate 1 — Architecture
+
+* Existing application audited
+* Technical risks documented
+* Database understood
+* Migration strategy approved
+
+## Gate 2 — Foundation
+
+* Authentication
+* RBAC
+* Multi-tenancy
+* Organisations
+* Properties
+* Departments
+
+## Gate 3 — Learning
+
+* Curriculum
+* Content
+* Learning paths
+* Assignments
+
+## Gate 4 — Capability
+
+* Assessments
+* Practical assessments
+* Competencies
+* Gaps
+* Actions
+* Reassessment
+
+## Gate 5 — Performance
+
+* Readiness
+* Certification
+* Dashboards
+* KPI
+
+## Gate 6 — Intelligence
+
+* Search
+* AI
+* Analytics
+
+## Gate 7 — Governance
+
+* Versioning
+* Audit
+* Security
+* Privacy
+* Content approval
+
+## Gate 8 — Production
+
+* Migration
+* Testing
+* Backup
+* Monitoring
+* Deployment
+* Documentation
+
+---
+
+# 190. FINAL ACCEPTANCE STATEMENT
+
+The PHP upgrade should only be considered complete when the platform can demonstrate the following:
+
+> **Altus can onboard a client organisation, create multiple properties, configure each property with its own brand and operational standards, assign bilingual learning by role, assess theoretical knowledge, evaluate practical competency, identify capability gaps, create corrective actions, reassess staff, determine operational readiness, issue verifiable certifications, preserve institutional knowledge, provide governed AI access to approved knowledge, and give managers and executives transparent evidence of capability and performance.**
+
+That is the complete functional interpretation of the Altus Advisory 2026 Corporate Profile as a digital product.
+
+# END OF IMPLEMENTATION BLUEPRINT

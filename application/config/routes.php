@@ -103,6 +103,11 @@ $route['course/(:any)'] = 'home/course/$1';
 
 $route['sitemap.xml'] = 'sitemap';
 
+// Versioned, API-key authenticated JSON API. The legacy /api/* (mobile app,
+// JWT) is a separate controller and unaffected.
+$route['api/v1']      = 'api_v1/dispatch';
+$route['api/v1/(.+)'] = 'api_v1/dispatch';
+
 // ---------------------------------------------------------------------------
 // Hospitality Academy public website (plan sections 25, 26, 28, 40).
 // The locale is always explicit in the URL so hreflang is honest and a link

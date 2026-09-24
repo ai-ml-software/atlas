@@ -107,6 +107,52 @@ class Login extends CI_Controller
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
     
+    /**
+     * Second login step for accounts with an authenticator app. The password
+     * step parked the user id in the session for five minutes; nothing else
+     * about the login exists until a valid code arrives.
+     */
+    public function two_factor()
+    {
+        $this->load->helper('ha_security');
+        $user_id = (int) $this->session->userdata('ha_2fa_user_id');
+        $expires = (int) $this->session->userdata('ha_2fa_expires');
+        if (!$user_id || $expires < time()) {
+            $this->session->unset_userdata(array('ha_2fa_user_id', 'ha_2fa_expires'));
+            $this->session->set_flashdata('error_message', get_phrase('time_over') . '! ' . site_phrase('please_try_again'));
+            redirect(site_url('login'), 'refresh');
+        }
+
+        if ($this->input->method() === 'post') {
+            if (!ha_csrf_valid()) {
+                $this->session->set_flashdata('error_message', get_phrase('your_session_expired_please_try_again'));
+                redirect(site_url('login/two_factor'), 'refresh');
+            }
+            $this->load->library('ha_two_factor');
+            $result = $this->ha_two_factor->check($user_id, $this->input->post('code'), ha_client_ip());
+            if (!$result['ok']) {
+                $this->session->set_flashdata('error_message', $result['error']);
+                redirect(site_url('login/two_factor'), 'refresh');
+            }
+            $this->load->library('ha_audit');
+            $this->ha_audit->log($result['used_recovery'] ? 'auth.2fa_recovery_used' : 'auth.2fa_passed', 'users', $user_id,
+                array('user_id' => $user_id, 'description' => 'Second factor accepted at login'));
+
+            $this->session->set_userdata('ha_2fa_verified', $user_id);
+            if ($result['used_recovery']) {
+                $this->session->set_flashdata('info_message', 'Recovery code accepted. ' . $result['remaining']
+                    . ' left. Generate new ones under Account security.');
+            }
+            $this->user_model->new_device_login_tracker($user_id);
+            $this->user_model->set_login_userdata($user_id);
+            return;
+        }
+
+        $page_data['page_name'] = 'two_factor';
+        $page_data['page_title'] = get_phrase('two_factor_login');
+        $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
+    }
+
     public function fb_validate_login($access_token = "", $fb_user_id = "") {
         $this->social_login_modal->fb_validate_login($access_token, $fb_user_id);
     }

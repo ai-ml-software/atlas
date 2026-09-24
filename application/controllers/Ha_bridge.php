@@ -131,6 +131,42 @@ class Ha_bridge extends CI_Controller {
     }
 
     /**
+     * Publish one course by academy code. Used by AI Studio after a publish,
+     * so a single approved course reaches the LMS without re-syncing all 74.
+     * Categories are synced first because a new course may be the first in
+     * its category.
+     */
+    public function sync_one($code = '') {
+        $course = $this->db
+            ->select('c.*, cat.code AS category_code')
+            ->select('t.title, t.short_description, t.description, t.requirements', false)
+            ->from('ha_course c')
+            ->join('ha_course_translation t', "t.course_id = c.id AND t.locale = 'en'", 'left')
+            ->join('ha_category cat', 'cat.id = c.category_id', 'left')
+            ->where('c.code', (string) $code)->where('c.status', 'published')
+            ->get()->row_array();
+        if (!$course) {
+            fwrite(STDERR, 'ERROR: no published course with code "' . $code . '"' . PHP_EOL);
+            exit(1);
+        }
+        $this->sync_categories();
+        $category_ids = array();
+        $sub_category_ids = array();
+        foreach ($this->db->get('category')->result_array() as $c) {
+            if (strpos($c['code'], self::MARKER . 'sub-') === 0) {
+                $sub_category_ids[substr($c['code'], strlen(self::MARKER . 'sub-'))] = (int) $c['id'];
+            } elseif (strpos($c['code'], self::MARKER) === 0) {
+                $category_ids[substr($c['code'], strlen(self::MARKER))] = (int) $c['id'];
+            }
+        }
+        $legacy_id = $this->sync_course($course, $category_ids, $sub_category_ids);
+        $counts = $this->sync_curriculum($course, $legacy_id);
+        $this->load->library('ha_assessment');
+        $this->ha_assessment->build();
+        $this->out('synced ' . $code . ' -> legacy course ' . $legacy_id . ' (' . $counts['sections'] . ' sections, ' . $counts['lessons'] . ' lessons)');
+    }
+
+    /**
      * Academy categories become legacy top level categories. The academy code
      * is stored in category.code, which is what makes this re-runnable.
      */
@@ -437,7 +473,7 @@ class Ha_bridge extends CI_Controller {
             $lessons = $this->db
                 ->select('l.id, l.lesson_type, l.duration_seconds, l.is_preview, l.sort_order')
                 ->select('lt.title, lt.body', false)
-                ->select('v.video_id, v.embed_url, v.author_name, v.author_url, v.status AS video_status', false)
+                ->select('v.video_id, v.embed_url, v.author_name, v.author_url, v.status AS video_status, v.provider AS video_provider, lt.captions_url', false)
                 ->from('ha_lesson l')
                 ->join('ha_lesson_translation lt', "lt.lesson_id = l.id AND lt.locale = 'en'", 'left')
                 ->join('ha_lesson_video_source v', "v.lesson_id = l.id AND v.status = 'live'", 'left')
@@ -454,8 +490,19 @@ class Ha_bridge extends CI_Controller {
                 // written content is real; an empty player is a dead end.
                 $video_type = '';
                 $video_url  = '';
+                $caption    = '';
                 $summary    = $l['body'];
-                if ($type === 'video' && !empty($l['embed_url'])) {
+                if ($type === 'video' && !empty($l['embed_url']) && $l['video_provider'] === 'academy') {
+                    // The academy's own production (AI Studio): an MP4 on this
+                    // server, played by the LMS html5 player with captions.
+                    $video_type = 'html5';
+                    $video_url  = $l['embed_url'];
+                    if (!empty($l['captions_url']) && strpos($l['captions_url'], 'uploads/captions/') === 0) {
+                        $caption = basename($l['captions_url']);
+                    }
+                    $summary   .= '<p class="lesson-video-credit"><small>Produced by ' . html_escape($l['author_name'])
+                        . '. Narration and slides were drafted with AI and approved by the academy before publishing.</small></p>';
+                } elseif ($type === 'video' && !empty($l['embed_url'])) {
                     $video_type = 'youtube';
                     $video_url  = $l['embed_url'];
                     $summary   .= $this->video_credit($l);
@@ -471,6 +518,7 @@ class Ha_bridge extends CI_Controller {
                     'lesson_type'     => $type,
                     'video_type'      => $video_type,
                     'video_url'       => $video_url,
+                    'caption'         => $caption,
                     'attachment'      => '',
                     'attachment_type' => '',
                     'summary'         => $summary,

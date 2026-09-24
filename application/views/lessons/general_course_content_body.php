@@ -81,7 +81,15 @@ $get_lesson_type = get_lesson_type($lesson_details['id']);
 <?php elseif ($get_lesson_type == 'amazon_video_url' || $get_lesson_type == 'wasabi_video_url' || $get_lesson_type == 'academy_cloud' || $get_lesson_type == 'html5_video_url') : ?>
 	<div class=" <?php if ($full_page) echo 'bg-black'; ?>">
 		<video poster="<?php echo $lesson_thumbnail_url; ?>" id="player" playsinline controls>
-			<source class="remove_video_src" src="<?php echo $lesson_details['video_url']; ?>" type="video/mp4">
+			<?php
+			// Academy-produced videos are stored as paths relative to this
+			// install (uploads/ai_videos/...), so they survive a domain move.
+			$ha_video_src = $lesson_details['video_url'];
+			if ($ha_video_src !== '' && !preg_match('#^(https?:)?//#i', $ha_video_src)) {
+				$ha_video_src = base_url(ltrim($ha_video_src, '/'));
+			}
+			?>
+			<source class="remove_video_src" src="<?php echo html_escape($ha_video_src); ?>" type="video/mp4">
 			<?php if ($lesson_details['caption'] != "" && file_exists('uploads/captions/' . $lesson_details['caption'])) : ?>
 				<track kind="captions" label="Caption" src="<?php echo base_url('uploads/captions/' . $lesson_details['caption']); ?>" srclang="en" default />
 			<?php endif; ?>

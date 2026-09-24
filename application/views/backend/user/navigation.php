@@ -31,6 +31,24 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 						<span><?php echo get_phrase('course_manager'); ?></span>
 					</a>
 				</li>
+				<?php
+				// Shown only when the instructor's academy role grants AI Studio;
+				// the controller enforces the same permission server side.
+				$this->load->library('ha_auth');
+				if ($this->db->table_exists('ha_ai_job') && $this->ha_auth->has('ai.view')) : ?>
+				<li class="side-nav-item">
+					<a href="<?php echo site_url('ha_ai/studio'); ?>" class="side-nav-link <?php if (strpos((string) $page_name, '../ha_ai/') === 0) echo 'active'; ?>">
+						<i class="mdi mdi-robot-happy-outline"></i>
+						<span>AI Studio</span>
+					</a>
+				</li>
+				<?php endif; ?>
+				<li class="side-nav-item">
+					<a href="<?php echo site_url('account_security'); ?>" class="side-nav-link <?php if ($page_name == '../ha_security/panel') echo 'active'; ?>">
+						<i class="mdi mdi-shield-key-outline"></i>
+						<span>Security &amp; API keys</span>
+					</a>
+				</li>
 
 				<?php if (addon_status('bootcamp') && $this->session->userdata('is_instructor') == 1) : ?>
 			        <li class="side-nav-item <?php if ($page_name == 'bootcamp/list' || $page_name == 'bootcamp_form' || $page_name == 'bootcamp/payment_invoice') : ?> active <?php endif; ?>">

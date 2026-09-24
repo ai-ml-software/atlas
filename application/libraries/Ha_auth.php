@@ -55,6 +55,21 @@ class Ha_auth {
         return $this->refresh();
     }
 
+    /**
+     * HTTP identity for /api/v1: the owner of an API key that
+     * Ha_api_keys::authenticate() has just verified. It takes that method's
+     * result, not a user id, so the identity still comes from a checked
+     * credential and never from a value the caller supplied.
+     */
+    public function from_api_key(array $auth) {
+        if (empty($auth['ok']) || empty($auth['key']['id']) || empty($auth['user']['id'])
+            || (int) $auth['key']['user_id'] !== (int) $auth['user']['id']) {
+            show_error('Ha_auth::from_api_key() needs a verified API key.', 500);
+        }
+        $this->assumed_user_id = (int) $auth['user']['id'];
+        return $this->refresh();
+    }
+
     // ---------------------------------------------------------------- identity
 
     /** Loads the signed in user's roles, permissions and tenant scope once per request. */

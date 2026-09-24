@@ -768,6 +768,28 @@
         </li>
         <?php endif; ?>
 
+        <?php $ha_ai_page = strpos((string) $page_name, '../ha_ai/') === 0; ?>
+        <li class="side-nav-item<?php echo $ha_ai_page ? ' active' : ''; ?>">
+            <a href="javascript: void(0);" class="side-nav-link">
+                <i class="mdi mdi-robot-happy-outline"></i>
+                <span> AI Studio </span>
+                <span class="menu-arrow"></span>
+            </a>
+            <ul class="side-nav-second-level" aria-expanded="false">
+                <li class="<?php echo $page_name == '../ha_ai/dashboard' ? 'active' : ''; ?>"><a href="<?php echo site_url('ha_ai'); ?>">Overview</a></li>
+                <li class="<?php echo in_array($page_name, array('../ha_ai/studio', '../ha_ai/job'), true) ? 'active' : ''; ?>"><a href="<?php echo site_url('ha_ai/studio'); ?>">Course &amp; video studio</a></li>
+                <li class="<?php echo in_array($page_name, array('../ha_ai/providers', '../ha_ai/provider'), true) ? 'active' : ''; ?>"><a href="<?php echo site_url('ha_ai/providers'); ?>">AI providers &amp; keys</a></li>
+                <li class="<?php echo $page_name == '../ha_ai/routes' ? 'active' : ''; ?>"><a href="<?php echo site_url('ha_ai/routes'); ?>">Task routing</a></li>
+                <li class="<?php echo $page_name == '../ha_ai/usage' ? 'active' : ''; ?>"><a href="<?php echo site_url('ha_ai/usage'); ?>">Usage</a></li>
+                <li class="<?php echo $page_name == '../ha_ai/assistant' ? 'active' : ''; ?>"><a href="<?php echo site_url('ha_ai/assistant'); ?>">Writing assistant</a></li>
+            </ul>
+        </li>
+        <li class="side-nav-item">
+            <a href="<?php echo site_url('account_security'); ?>" class="side-nav-link<?php echo $page_name == '../ha_security/panel' ? ' active' : ''; ?>">
+                <i class="mdi mdi-shield-key-outline"></i>
+                <span> Security &amp; API keys </span>
+            </a>
+        </li>
 
         <?php if (has_permission('settings')): ?>
         <li

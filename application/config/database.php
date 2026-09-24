@@ -94,3 +94,10 @@ $db['default'] = [
     'failover'     => [],
     'save_queries' => true,
 ];
+
+// Machine-local override (development only, never deployed): a file that
+// returns an array of connection keys replaces the matching values above, so a
+// workstation can run against its own MySQL without editing this file.
+if (is_file(__DIR__ . '/database.local.php')) {
+    $db['default'] = array_merge($db['default'], (array) include __DIR__ . '/database.local.php');
+}
