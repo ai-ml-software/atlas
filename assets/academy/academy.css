@@ -1,0 +1,1135 @@
+/*
+ * Hospitality Academy public theme.
+ *
+ * Written with logical properties (inline-start / inline-end) so the Arabic
+ * right-to-left layout is the same stylesheet rather than a mirrored copy.
+ * Contrast targets WCAG 2.1 AA against the surfaces used here.
+ */
+
+/*
+ * The palette is ALTUS ADVISORY's, from the Brand Implementation Guide:
+ * Obsidian Navy anchoring an Executive Ivory page, with Executive Gold as an
+ * accent that never fills and never sits behind text. Raw values live in
+ * altus-tokens.css, which must load first; every token below is a role, not a
+ * colour, so a tenant re-skins the site by overriding the brand tokens alone.
+ *
+ * Fallbacks are literal so a missing token file degrades to the right colours
+ * instead of to an unstyled page.
+ *
+ * ACTION vs ACCENT is the distinction that keeps the brand rule true:
+ *   --ha-action  fills things. Navy. Carries white text.
+ *   --ha-accent  marks things. Gold. Rules, underlines, bullets, hairlines.
+ *                Never a fill, never behind text. Gold on ivory is 2.3:1.
+ * Anything that needs a gold-family colour *for text* uses --ha-accent-ink-on-
+ * light, which is the deepened gold that actually passes AA.
+ */
+:root {
+    --ha-ink: var(--altus-navy, #0D1B2A);
+    --ha-ink-soft: var(--altus-slate, #4A6572);
+    --ha-ink-faint: var(--altus-slate-soft, #5F6B77);
+    --ha-canvas: var(--altus-card, #ffffff);
+    --ha-page: var(--altus-ivory, #F7F6F2);
+    --ha-surface: var(--altus-ivory-tint, #F0EEE7);
+    --ha-surface-2: var(--altus-ivory-tint-2, #E7E4DA);
+    --ha-line: var(--altus-gray, #E6E8EB);
+
+    /* Fills. Navy, because gold may not fill. */
+    --ha-action: var(--altus-navy, #0D1B2A);
+    --ha-action-deep: var(--altus-steel, #1E2A38);
+    --ha-action-ink: #ffffff;
+
+    /* Accent. Gold, and only ever as a mark. */
+    --ha-accent: var(--altus-gold, #C89D4F);
+    --ha-accent-on-light: var(--altus-gold-deep, #7A5F28);
+    --ha-accent-soft: var(--altus-sand, #EDE4D3);
+    --ha-accent-ink: #ffffff;
+    --ha-accent-deep: var(--altus-steel, #1E2A38);
+
+    /* Text tones for dark surfaces. */
+    --ha-on-dark: var(--altus-on-navy, #D8DCE1);
+    --ha-on-dark-soft: var(--altus-on-navy-soft, #A6B0BC);
+    --ha-on-dark-faint: var(--altus-on-navy-faint, #8A94A1);
+
+    --ha-warn: var(--altus-gold-deep, #7A5F28);
+    --ha-warn-soft: var(--altus-gold-tint, #F7F0E2);
+    --ha-danger: var(--altus-brick, #8C2F24);
+    --ha-danger-soft: var(--altus-brick-tint, #F6E9E7);
+    --ha-ok: var(--altus-sage-deep, #43584A);
+    --ha-ok-soft: var(--altus-sage-tint, #E8EDE9);
+    --ha-radius: 10px;
+    --ha-radius-lg: 16px;
+    --ha-shell: 1160px;
+
+    /* Typography. Guide Phase III permits Playfair Display, Montserrat, DIN
+     * Next Arabic and Cairo, and nothing else. DIN Next Arabic is a licensed
+     * commercial face with no webfont licence on file, so Cairo -- the guide's
+     * own Arabic body typeface -- carries Arabic alone. See altus-fonts.css.
+     *
+     * The guide's hierarchy law is "H1 exactly 2.5x body, H2 exactly 1.75x
+     * body". Its print sizes (52/36/24/21pt) are not usable as CSS, so the
+     * RATIO is what carries over: at full width H1 and H2 hit 2.5x and 1.75x
+     * of --fs-body exactly. Below that they compress, because a 42px heading
+     * on a 390px screen is not hierarchy, it is a wall.
+     */
+    --ha-font: "Montserrat", "Montserrat Fallback", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --ha-font-display: "Playfair Display", "Playfair Fallback", Georgia, "Times New Roman", serif;
+    /* Cairo AR is Cairo's Arabic ranges only. Latin inside Arabic text -- the
+     * brand name, a space, a digit -- falls through to Montserrat, which is a
+     * better Latin face than Cairo's secondary one and is already loaded. It
+     * also stops a single space (U+0020, in Cairo's Latin subset) dragging
+     * 33KB onto an English page for the bilingual block's word gaps. */
+    --ha-font-ar: "Cairo AR", "Montserrat", "Noto Naskh Arabic", system-ui, sans-serif;
+
+    --fs-body: 1.0625rem;                                  /* 17px           */
+    --fs-h1: clamp(1.95rem, 1.25rem + 2.9vw, 2.6563rem);   /* 2.5x  at full  */
+    --fs-h2: clamp(1.5rem, 1.22rem + 1.2vw, 1.8594rem);    /* 1.75x at full  */
+    --fs-h3: 1.25rem;
+    --fs-caption: .875rem;
+    --fs-phase: .75rem;
+
+    /* Component headings. These exist because a card title is not a document
+     * heading and should not be sized like one -- but it must still out-rank
+     * the body text beside it. They were previously eight hand-tuned absolutes
+     * calibrated against a 16px body; raising the body to the guide's ratio
+     * left six of them at or below body size, which is not a heading at all.
+     * .lab/design_check.py now fails any heading under 1.1x body. */
+    --fs-lead:   1.5rem;     /* 24px -- the largest component heading  1.41x */
+    --fs-sub:    1.25rem;    /* 20px -- card and block titles          1.18x */
+    --fs-sub-sm: 1.1875rem;  /* 19px -- aside and sidebar titles       1.12x */
+    --lh-body: 1.6;
+    --lh-heading: 1.2;
+    --lh-body-ar: 1.85;
+    --lh-heading-ar: 1.45;
+    --ha-shadow: var(--altus-shadow-md, 0 1px 2px rgba(13, 27, 42, .06), 0 10px 28px rgba(13, 27, 42, .08));
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body.ha {
+    margin: 0;
+    font-family: var(--ha-font);
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    letter-spacing: .012em;   /* the guide's +0.2px on 21pt, as a ratio */
+    color: var(--ha-ink);
+    background: var(--ha-page);
+}
+
+body.ha--rtl {
+    font-family: var(--ha-font-ar);
+    line-height: var(--lh-body-ar);
+    letter-spacing: 0;        /* Arabic is cursive; tracking breaks the joins */
+}
+
+/* Phase III: Playfair Display carries H1 and H2, Montserrat SemiBold carries
+   H3 and below. Arabic has no Playfair equivalent in the approved set, so
+   Cairo carries the whole scale and weight does the work instead. */
+h1, h2, h3, h4 { margin: 0 0 .5em; line-height: var(--lh-heading); }
+h1, h2 { font-family: var(--ha-font-display); font-weight: 700; letter-spacing: -.005em; }
+h3, h4 { font-family: var(--ha-font); font-weight: 600; letter-spacing: 0; }
+body.ha--rtl h1, body.ha--rtl h2, body.ha--rtl h3, body.ha--rtl h4 {
+    font-family: var(--ha-font-ar);
+    letter-spacing: 0;
+    line-height: var(--lh-heading-ar);
+}
+
+/*
+ * Arabic CONTENT on a Latin page gets the Arabic face. Arabic CHROME does not:
+ * a broad [lang="ar"] rule pulled a 30KB Arabic webfont onto every English
+ * page for the single word in the language switcher, which the system Arabic
+ * font renders perfectly well. The bilingual sample is content; the switcher
+ * is a control.
+ */
+.ha-compare__side--ar :is(h1, h2, h3, h4) {
+    font-family: var(--ha-font-ar);
+    letter-spacing: 0;
+    /* 700 rather than the scale's 600 so the heading shares the weight the
+       block's tag already loads, instead of pulling a third Arabic file. */
+    font-weight: 700;
+    line-height: var(--lh-heading-ar);
+}
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+p { margin: 0 0 1em; }
+
+/* Arabic has no italic form. Synthesised oblique on a cursive script is a
+   rendering artefact, not emphasis, so weight and colour carry it instead.
+   Scoped to the elements that would slant -- a blanket reset would leave
+   Arabic prose with no emphasis mechanism at all. */
+body.ha--rtl :is(em, i, cite, dfn, address, blockquote, figcaption) {
+    font-style: normal;
+    font-weight: 600;
+}
+a { color: var(--ha-accent-on-light); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+img { max-width: 100%; height: auto; }
+ul, ol { padding-inline-start: 1.25rem; }
+
+:focus-visible {
+    outline: 3px solid var(--ha-action);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+/* On navy surfaces the navy ring would vanish; gold measures 7:1 there. */
+.ha-close :focus-visible,
+.ha-footer :focus-visible,
+.ha-utility :focus-visible { outline-color: var(--ha-accent); }
+
+.ha-visually-hidden {
+    position: absolute; width: 1px; height: 1px;
+    padding: 0; margin: -1px; overflow: hidden;
+    clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+.ha-skip {
+    position: absolute; inset-inline-start: 0; top: -100px;
+    background: var(--ha-action); color: var(--ha-action-ink);
+    padding: .75rem 1.25rem; z-index: 200; border-radius: 0 0 var(--ha-radius) 0;
+}
+.ha-skip:focus { top: 0; }
+
+.ha-shell { width: min(100% - 2.5rem, var(--ha-shell)); margin-inline: auto; }
+
+/* ------------------------------------------------------------------ header */
+
+.ha-header {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(247, 246, 242, .96);
+    backdrop-filter: saturate(180%) blur(8px);
+    border-block-end: 1px solid var(--ha-line);
+}
+.ha-header__inner {
+    display: flex; align-items: center; gap: 1rem;
+    min-height: 86px; flex-wrap: wrap;
+}
+.ha-brand { display: inline-flex; align-items: center; gap: .6rem; text-decoration: none; color: var(--ha-ink); min-height: 44px; }
+.ha-brand__mark {
+    display: grid; place-items: center;
+    width: 36px; height: 36px; border-radius: 9px;
+    background: var(--ha-action); color: var(--ha-action-ink);
+    font-weight: 700; font-size: .85rem; letter-spacing: .04em;
+}
+.ha-brand__name { font-weight: 700; font-size: 1.02rem; }
+
+.ha-nav { flex: 1 1 auto; }
+.ha-nav__list {
+    list-style: none; display: flex; flex-wrap: wrap;
+    gap: .15rem 1.05rem; margin: 0; padding: 0;
+}
+.ha-nav__list a {
+    color: var(--ha-ink-soft); text-decoration: none;
+    font-size: .92rem; font-weight: 500;
+    padding: .4rem 0; display: inline-block;
+}
+.ha-nav__list a:hover { color: var(--ha-action); text-decoration: underline; }
+
+.ha-header__tools { display: flex; align-items: center; gap: .6rem; }
+
+.ha-search { display: flex; gap: .35rem; }
+.ha-search input {
+    font: inherit; font-size: .88rem;
+    padding: .45rem .7rem; min-width: 190px; min-height: 44px;
+    border: 1px solid var(--ha-line); border-radius: var(--ha-radius);
+    background: var(--ha-canvas); color: var(--ha-ink);
+}
+.ha-search button {
+    font: inherit; font-size: .88rem; font-weight: 600;
+    padding: .45rem .85rem; cursor: pointer; min-height: 44px;
+    border: 1px solid var(--ha-accent); border-radius: var(--ha-radius);
+    background: var(--ha-action); color: var(--ha-action-ink);
+}
+.ha-lang {
+    font-size: .88rem; font-weight: 600; text-decoration: none;
+    padding: .45rem .75rem; border-radius: var(--ha-radius);
+    border: 1px solid var(--ha-line); color: var(--ha-ink);
+    min-height: 44px; display: inline-flex; align-items: center;
+}
+.ha-lang:hover { border-color: var(--ha-accent); color: var(--ha-action); }
+
+.ha-burger { display: none; }
+
+/* ------------------------------------------------------------- breadcrumbs */
+
+.ha-crumbs { background: var(--ha-surface); border-block-end: 1px solid var(--ha-line); }
+.ha-crumbs ol {
+    list-style: none; display: flex; flex-wrap: wrap; gap: .4rem;
+    margin: 0; padding: .6rem 0; font-size: .85rem;
+}
+.ha-crumbs li + li::before { content: "›"; color: var(--ha-ink-faint); margin-inline-end: .4rem; }
+body.ha--rtl .ha-crumbs li + li::before { content: "‹"; }
+.ha-crumbs a { color: var(--ha-ink-soft); text-decoration: none; }
+.ha-crumbs a:hover { text-decoration: underline; }
+.ha-crumbs [aria-current] { color: var(--ha-ink); font-weight: 600; }
+
+/* --------------------------------------------------------------- sections */
+
+.ha-main { display: block; }
+
+.ha-hero {
+    padding-block: clamp(2.5rem, 1.5rem + 4vw, 4.5rem);
+    background: linear-gradient(180deg, var(--ha-accent-soft), var(--ha-canvas));
+    border-block-end: 1px solid var(--ha-line);
+}
+.ha-hero h1 { max-width: 22ch; }
+.ha-hero__lede { font-size: 1.12rem; color: var(--ha-ink-soft); max-width: 62ch; }
+.ha-hero__actions { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.4rem; }
+
+.ha-section { padding-block: clamp(2rem, 1.4rem + 2.4vw, 3.4rem); }
+.ha-section--tint { background: var(--ha-surface); }
+.ha-section__head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.4rem; }
+.ha-section__head p { color: var(--ha-ink-soft); margin: 0; max-width: 60ch; }
+
+.ha-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    gap: .4rem; font: inherit; font-weight: 600; font-size: .95rem;
+    padding: .65rem 1.2rem; border-radius: var(--ha-radius);
+    border: 1px solid var(--ha-action); background: var(--ha-action);
+    color: var(--ha-action-ink); text-decoration: none; cursor: pointer;
+    min-height: 44px;
+}
+.ha-btn:hover { background: var(--ha-action-deep); border-color: var(--ha-action-deep); }
+.ha-btn--ghost { background: transparent; color: var(--ha-action); }
+.ha-btn--ghost:hover { background: var(--ha-accent-soft); color: var(--ha-action); }
+
+/* ------------------------------------------------------------------ cards */
+
+.ha-grid { display: grid; gap: 1.1rem; }
+.ha-grid--3 { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.ha-grid--4 { grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
+.ha-grid--2 { grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); }
+
+.ha-card {
+    display: flex; flex-direction: column;
+    background: var(--ha-canvas); border: 1px solid var(--ha-line);
+    border-radius: var(--ha-radius-lg); padding: 1.15rem;
+    box-shadow: var(--ha-shadow);
+}
+.ha-card h3, .ha-card__title { margin: 0 0 .4rem; font-size: var(--fs-sub); font-weight: 700; line-height: 1.3; }
+.ha-card h3 a, .ha-card__title a { color: inherit; text-decoration: none; }
+.ha-card h3 a:hover, .ha-card__title a:hover { color: var(--ha-action); text-decoration: underline; }
+.ha-card p { color: var(--ha-ink-soft); font-size: .93rem; margin-bottom: .8rem; }
+.ha-card__meta {
+    margin-top: auto; display: flex; flex-wrap: wrap; gap: .4rem;
+    font-size: .8rem; color: var(--ha-ink-faint);
+}
+
+.ha-pill {
+    display: inline-flex; align-items: center; gap: .3rem;
+    font-size: .76rem; font-weight: 600; line-height: 1;
+    padding: .34rem .6rem; border-radius: 999px;
+    background: var(--ha-surface-2); color: var(--ha-ink-soft);
+}
+.ha-pill--accent { background: var(--ha-accent-soft); color: var(--ha-accent-on-light); }
+.ha-pill--ok { background: var(--ha-ok-soft); color: var(--ha-ok); }
+.ha-pill--warn { background: var(--ha-warn-soft); color: var(--ha-warn); }
+.ha-pill--danger { background: var(--ha-danger-soft); color: var(--ha-danger); }
+
+/* ----------------------------------------------------------------- filters */
+
+.ha-filters {
+    display: flex; flex-wrap: wrap; gap: .6rem; align-items: flex-end;
+    padding: 1rem; margin-bottom: 1.4rem;
+    background: var(--ha-surface); border: 1px solid var(--ha-line);
+    border-radius: var(--ha-radius-lg);
+}
+.ha-field { display: flex; flex-direction: column; gap: .25rem; }
+.ha-field label { font-size: .8rem; font-weight: 600; color: var(--ha-ink-soft); }
+.ha-field select, .ha-field input, .ha-field textarea {
+    font: inherit; font-size: .92rem; padding: .55rem .7rem; min-height: 44px;
+    border: 1px solid var(--ha-line); border-radius: var(--ha-radius);
+    background: var(--ha-canvas); color: var(--ha-ink);
+}
+.ha-field textarea { min-height: 140px; resize: vertical; }
+.ha-field--wide { flex: 1 1 260px; }
+.ha-field__error { font-size: .82rem; color: var(--ha-danger); }
+
+.ha-count { color: var(--ha-ink-soft); font-size: .9rem; margin-bottom: 1rem; }
+
+.ha-pager { display: flex; gap: .4rem; flex-wrap: wrap; margin-top: 2rem; align-items: center; }
+.ha-pager a, .ha-pager span {
+    min-width: 44px; min-height: 44px; display: inline-flex;
+    align-items: center; justify-content: center; padding: 0 .7rem;
+    border: 1px solid var(--ha-line); border-radius: var(--ha-radius);
+    text-decoration: none; color: var(--ha-ink-soft); font-size: .9rem;
+}
+.ha-pager [aria-current] { background: var(--ha-action); border-color: var(--ha-action); color: var(--ha-action-ink); font-weight: 700; }
+
+/* ------------------------------------------------------------------ detail */
+
+.ha-detail { display: grid; gap: 2rem; grid-template-columns: minmax(0, 2.1fr) minmax(0, 1fr); align-items: start; }
+.ha-prose { max-width: 72ch; }
+.ha-prose h2 { margin-top: 1.8rem; }
+.ha-prose h2:first-child { margin-top: 0; }
+.ha-prose ul, .ha-prose ol { margin: 0 0 1em; }
+.ha-prose li { margin-bottom: .4em; }
+
+.ha-aside {
+    position: sticky; top: 88px;
+    background: var(--ha-surface); border: 1px solid var(--ha-line);
+    border-radius: var(--ha-radius-lg); padding: 1.25rem;
+}
+.ha-aside h3 { font-size: var(--fs-sub-sm); }
+.ha-facts { list-style: none; margin: 0 0 1rem; padding: 0; }
+.ha-facts li {
+    display: flex; justify-content: space-between; gap: 1rem;
+    padding: .5rem 0; border-block-end: 1px solid var(--ha-line); font-size: .9rem;
+}
+.ha-facts li:last-child { border-block-end: 0; }
+.ha-facts dt, .ha-facts .k { color: var(--ha-ink-faint); }
+.ha-facts .v { font-weight: 600; text-align: end; }
+
+/* -------------------------------------------------------------- curriculum */
+
+.ha-module { border: 1px solid var(--ha-line); border-radius: var(--ha-radius-lg); overflow: hidden; margin-bottom: .8rem; background: var(--ha-canvas); }
+.ha-module__head {
+    display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+    padding: .9rem 1.1rem; background: var(--ha-surface); font-weight: 600;
+}
+/* ink-faint measures 4.32:1 on the sand head and fails AA; ink-soft is 4.90:1.
+   ink-faint is only safe on ivory and white. */
+.ha-module__head small { font-weight: 500; color: var(--ha-ink-soft); }
+.ha-module ol { list-style: none; margin: 0; padding: 0; }
+.ha-module li {
+    display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+    padding: .7rem 1.1rem; border-block-start: 1px solid var(--ha-line); font-size: .93rem;
+}
+.ha-module li span:first-child { display: flex; align-items: center; gap: .5rem; }
+
+/* ------------------------------------------------------------------- steps */
+
+.ha-step {
+    position: relative; padding-inline-start: 2.4rem; padding-block-end: 1.6rem;
+    border-inline-start: 2px solid var(--ha-line); margin-inline-start: .8rem;
+}
+.ha-step:last-child { border-inline-start-color: transparent; padding-block-end: 0; }
+.ha-step__no {
+    position: absolute; inset-inline-start: -1rem; top: 0;
+    width: 2rem; height: 2rem; border-radius: 50%;
+    display: grid; place-items: center; font-size: .85rem; font-weight: 700;
+    background: var(--ha-action); color: var(--ha-action-ink);
+}
+
+/* --------------------------------------------------------------- SOP sheet */
+
+.ha-sop-block { margin-bottom: 1.6rem; }
+.ha-sop-block h2 { font-size: var(--fs-sub); margin-bottom: .4rem; }
+.ha-sop-steps { counter-reset: step; list-style: none; padding: 0; margin: 0; }
+.ha-sop-steps li {
+    counter-increment: step; position: relative;
+    padding-inline-start: 2.4rem; margin-bottom: .7rem;
+}
+.ha-sop-steps li::before {
+    content: counter(step); position: absolute; inset-inline-start: 0; top: .1rem;
+    width: 1.7rem; height: 1.7rem; border-radius: 50%;
+    display: grid; place-items: center; font-size: .78rem; font-weight: 700;
+    background: var(--ha-accent-soft); color: var(--ha-accent-on-light);
+}
+.ha-check { list-style: none; padding: 0; margin: 0; }
+.ha-check li { position: relative; padding-inline-start: 1.6rem; margin-bottom: .4rem; }
+.ha-check li::before {
+    content: "✓"; position: absolute; inset-inline-start: 0;
+    color: var(--ha-ok); font-weight: 700;
+}
+
+.ha-note {
+    padding: 1rem 1.1rem; border-radius: var(--ha-radius);
+    border-inline-start: 4px solid var(--ha-warn); background: var(--ha-warn-soft);
+}
+.ha-note--ok { border-inline-start-color: var(--ha-ok); background: var(--ha-ok-soft); }
+.ha-note--danger { border-inline-start-color: var(--ha-danger); background: var(--ha-danger-soft); }
+.ha-note p:last-child { margin-bottom: 0; }
+
+/* -------------------------------------------------------------------- FAQ */
+
+.ha-faq { border: 1px solid var(--ha-line); border-radius: var(--ha-radius-lg); overflow: hidden; }
+.ha-faq details { border-block-end: 1px solid var(--ha-line); background: var(--ha-canvas); }
+.ha-faq details:last-child { border-block-end: 0; }
+.ha-faq summary {
+    cursor: pointer; padding: .95rem 1.1rem; font-weight: 600;
+    list-style: none; display: flex; justify-content: space-between; gap: 1rem;
+    min-height: 44px; align-items: center;
+}
+.ha-faq summary::-webkit-details-marker { display: none; }
+.ha-faq summary::after { content: "+"; color: var(--ha-accent-on-light); font-size: 1.2rem; line-height: 1; }
+.ha-faq details[open] summary::after { content: "−"; }
+.ha-faq .ha-faq__body { padding: 0 1.1rem 1.1rem; color: var(--ha-ink-soft); }
+
+/* ----------------------------------------------------------------- results */
+
+.ha-result { padding: 1.4rem; border-radius: var(--ha-radius-lg); border: 1px solid var(--ha-line); margin-bottom: 1.4rem; }
+.ha-result--valid { border-color: var(--ha-ok); background: var(--ha-ok-soft); }
+.ha-result--expired { border-color: var(--ha-warn); background: var(--ha-warn-soft); }
+.ha-result--revoked, .ha-result--not_found { border-color: var(--ha-danger); background: var(--ha-danger-soft); }
+.ha-result h2 { margin-bottom: .6rem; }
+
+.ha-empty {
+    padding: 2.4rem 1.4rem; text-align: center;
+    border: 1px dashed var(--ha-line); border-radius: var(--ha-radius-lg);
+    color: var(--ha-ink-soft); background: var(--ha-surface);
+}
+
+/* ------------------------------------------------------------------ footer */
+
+.ha-footer { background: var(--ha-ink); color: var(--ha-on-dark); margin-top: 3rem; padding-block: 2.4rem; }
+.ha-footer__inner { display: grid; gap: 1.8rem; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); }
+.ha-footer__brand { display: flex; gap: .8rem; align-items: flex-start; }
+.ha-footer__brand p { margin: 0; font-size: .9rem; color: var(--ha-on-dark-soft); }
+.ha-footer__brand strong { color: #fff; }
+.ha-footer__nav ul {
+    list-style: none; margin: 0; padding: 0;
+    display: grid; gap: .45rem 1.2rem;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+.ha-footer a { color: var(--ha-on-dark); text-decoration: none; font-size: .9rem; }
+.ha-footer a:hover { color: #fff; text-decoration: underline; }
+
+/* ------------------------------------------------------------------ mobile */
+
+@media (max-width: 900px) {
+    .ha-detail { grid-template-columns: minmax(0, 1fr); }
+    .ha-aside { position: static; }
+    .ha-footer__inner { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 780px) {
+    .ha-burger {
+        display: inline-flex; flex-direction: column; justify-content: center; gap: 5px;
+        width: 44px; height: 44px; padding: 0 10px; cursor: pointer;
+        background: transparent; border: 1px solid var(--ha-line); border-radius: var(--ha-radius);
+        margin-inline-start: auto; order: 2;
+    }
+    .ha-burger span { display: block; height: 2px; background: var(--ha-ink); border-radius: 2px; }
+    .ha-nav { order: 4; flex-basis: 100%; display: none; }
+    .ha-nav.is-open { display: block; }
+    .ha-nav__list { flex-direction: column; gap: 0; padding-block: .5rem; }
+    .ha-nav__list a { padding: .7rem 0; min-height: 44px; display: flex; align-items: center; border-block-end: 1px solid var(--ha-line); }
+    .ha-header__tools { order: 3; flex-basis: 100%; justify-content: space-between; padding-block-end: .7rem; }
+    .ha-search { flex: 1 1 auto; }
+    .ha-search input { min-width: 0; width: 100%; }
+    .ha-brand { order: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
+}
+
+@media print {
+    .ha-header, .ha-footer, .ha-crumbs, .ha-skip, .ha-aside { display: none !important; }
+    body.ha { font-size: 12pt; }
+    .ha-shell { width: 100%; }
+}
+
+/* ------------------------------------------------------------------ media */
+
+/*
+ * Photography. Every frame has a fixed aspect ratio so a grid row does not
+ * reflow as images arrive, and every image is given intrinsic width and height
+ * in the markup for the same reason.
+ */
+.ha-media {
+    position: relative;
+    margin: -1.15rem -1.15rem 1rem;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: var(--ha-surface-2);
+    border-radius: var(--ha-radius-lg) var(--ha-radius-lg) 0 0;
+}
+.ha-media__img {
+    width: 100%; height: 100%;
+    object-fit: cover; display: block;
+}
+.ha-card--media { padding-top: 1.15rem; }
+.ha-card--link { text-decoration: none; color: inherit; }
+.ha-card--link:hover .ha-card__title,
+.ha-card--link:hover h3 { color: var(--ha-action); }
+
+/*
+ * Hero photographs sit behind the headline. The scrim is a gradient anchored
+ * to the text side rather than a flat wash over the whole frame, so the
+ * photograph still reads while the copy keeps its contrast.
+ */
+.ha-hero--image { position: relative; isolation: isolate; overflow: hidden; }
+.ha-hero--image .ha-hero__media {
+    position: absolute; inset: 0; z-index: -2;
+    background-size: cover; background-position: center;
+}
+/*
+ * The scrim sits where the words are, not over the whole frame. Copy runs
+ * from the leading edge, so the wash is strongest there and clears by the
+ * far edge, which keeps the headline above 7:1 contrast while the
+ * photograph stays legible as a photograph.
+ */
+/*
+ * Vertical space comes from the section's own padding. Making this a flex
+ * container turned the inner .ha-shell into a flex item, and the width:100%
+ * that centred it then overrode the shell's max-width, pushing the headline
+ * flush to the viewport edge.
+ */
+.ha-hero--image { min-height: 380px; }
+.ha-hero--image::before {
+    content: ""; position: absolute; inset: 0; z-index: -1;
+    background:
+        linear-gradient(to right,
+            rgba(255, 255, 255, .96) 0%,
+            rgba(255, 255, 255, .90) 38%,
+            rgba(255, 255, 255, .55) 66%,
+            rgba(255, 255, 255, .28) 100%),
+        linear-gradient(to bottom,
+            rgba(255, 255, 255, .35) 0%,
+            rgba(255, 255, 255, .10) 45%,
+            rgba(255, 255, 255, .30) 100%);
+}
+body.ha--rtl .ha-hero--image::before {
+    background:
+        linear-gradient(to left,
+            rgba(255, 255, 255, .96) 0%,
+            rgba(255, 255, 255, .90) 38%,
+            rgba(255, 255, 255, .55) 66%,
+            rgba(255, 255, 255, .28) 100%),
+        linear-gradient(to bottom,
+            rgba(255, 255, 255, .35) 0%,
+            rgba(255, 255, 255, .10) 45%,
+            rgba(255, 255, 255, .30) 100%);
+}
+.ha-hero__body { position: relative; z-index: 1; }
+.ha-hero--image .ha-hero__lede { max-width: 46ch; }
+
+/* On a phone the photograph is behind the whole column, so the wash is even. */
+@media (max-width: 780px) {
+    .ha-hero--image { min-height: 0; }
+    .ha-hero--image::before,
+    body.ha--rtl .ha-hero--image::before {
+        background: linear-gradient(to bottom,
+            rgba(255, 255, 255, .93) 0%,
+            rgba(255, 255, 255, .88) 55%,
+            rgba(255, 255, 255, .80) 100%);
+    }
+}
+
+/* An article cover runs wide under the standfirst. */
+.ha-cover { margin: 0 0 -1rem; }
+.ha-cover__img {
+    width: 100%; max-height: 520px; object-fit: cover;
+    display: block; border-radius: var(--ha-radius-lg);
+}
+
+/* ------------------------------------------------------------------ table */
+
+.ha-table-wrap { overflow-x: auto; border: 1px solid var(--ha-line); border-radius: var(--ha-radius-lg); }
+.ha-table { width: 100%; border-collapse: collapse; font-size: .92rem; min-width: 640px; }
+.ha-table th, .ha-table td {
+    text-align: start; padding: .75rem 1rem;
+    border-block-end: 1px solid var(--ha-line); vertical-align: middle;
+}
+.ha-table thead th { background: var(--ha-surface); font-weight: 600; white-space: nowrap; }
+.ha-table tbody tr:last-child th, .ha-table tbody tr:last-child td { border-block-end: 0; }
+.ha-table tbody th { font-weight: 500; }
+
+.ha-credit { display: flex; align-items: center; gap: .7rem; }
+.ha-credit__thumb {
+    width: 64px; height: 44px; object-fit: cover;
+    border-radius: 6px; flex: 0 0 auto; background: var(--ha-surface-2);
+}
+
+@media (max-width: 780px) {
+    .ha-media { aspect-ratio: 16 / 9; }
+    .ha-cover__img { max-height: 320px; border-radius: var(--ha-radius); }
+}
+
+/* ===================================================================
+   Corporate refinement
+   Sharper hierarchy, more confident surfaces, and the accent used to
+   lead the eye rather than to decorate. Layout and markup are unchanged.
+   =================================================================== */
+
+/* The hero keeps its photograph but gains a tinted ground, so the type
+   sits on a deliberate surface instead of floating on a washed image. */
+.ha-hero {
+    background: linear-gradient(160deg, var(--ha-accent-soft) 0%, var(--ha-surface) 55%, var(--ha-canvas) 100%);
+    border-block-end: 1px solid var(--ha-line);
+}
+.ha-hero h1 { letter-spacing: -.022em; }
+body.ha--rtl .ha-hero h1 { letter-spacing: 0; }
+.ha-hero__lede { color: var(--ha-ink-soft); }
+
+/* A thin accent rule above the page title reads as a section marker and
+   gives the hero a fixed starting edge. */
+.ha-hero h1::before {
+    content: ""; display: block;
+    width: 44px; height: 4px; border-radius: 3px;
+    background: var(--ha-accent);
+    margin-block-end: 1.1rem;
+}
+
+/* Section headings get the same marker, at a smaller weight. */
+.ha-section__head h2 { position: relative; padding-block-start: .85rem; }
+.ha-section__head h2::before {
+    content: ""; position: absolute; inset-block-start: 0; inset-inline-start: 0;
+    width: 30px; height: 3px; border-radius: 3px; background: var(--ha-accent);
+}
+
+/* Cards lift on hover and lead with the accent, which makes a grid feel
+   interactive without adding a single line of script. */
+.ha-card {
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.ha-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--ha-accent);
+    box-shadow: 0 2px 4px rgba(13, 27, 42, .05), 0 16px 34px rgba(13, 27, 42, .13);
+}
+.ha-media__img { transition: transform .35s ease; }
+.ha-card:hover .ha-media__img { transform: scale(1.04); }
+
+/* The pill set carries the accent for level, and stays quiet for facts. */
+.ha-pill--accent { background: var(--ha-accent-soft); color: var(--ha-accent-deep); font-weight: 600; }
+
+/* Buttons: a solid primary with a real shadow, and a bordered secondary. */
+.ha-btn {
+    box-shadow: 0 1px 2px rgba(13, 27, 42, .08), 0 6px 16px rgba(13, 27, 42, .22);
+    transition: background .16s ease, border-color .16s ease, transform .16s ease, box-shadow .16s ease;
+}
+.ha-btn:hover { transform: translateY(-1px); box-shadow: 0 2px 4px rgba(13, 27, 42, .1), 0 10px 22px rgba(13, 27, 42, .3); }
+.ha-btn--ghost { box-shadow: none; border-color: var(--ha-line); color: var(--ha-ink); }
+.ha-btn--ghost:hover { box-shadow: none; border-color: var(--ha-accent); color: var(--ha-accent-deep); background: var(--ha-accent-soft); }
+
+/* The header gains a hairline accent so the chrome is not pure grey. */
+.ha-header { border-block-end: 1px solid var(--ha-line); }
+.ha-nav__list a { position: relative; }
+.ha-nav__list a::after {
+    content: ""; position: absolute; inset-inline: 0; inset-block-end: .1rem;
+    height: 2px; background: var(--ha-accent); border-radius: 2px;
+    transform: scaleX(0); transform-origin: inline-start;
+    transition: transform .16s ease;
+}
+.ha-nav__list a:hover { color: var(--ha-ink); text-decoration: none; }
+.ha-nav__list a:hover::after { transform: scaleX(1); }
+
+/* Aside panels read as a card rather than a grey box. */
+.ha-aside {
+    background: var(--ha-canvas);
+    border: 1px solid var(--ha-line);
+    box-shadow: var(--ha-shadow);
+}
+
+/* The module list marks the section head with the accent. */
+.ha-module__head { background: var(--ha-accent-soft); color: var(--ha-ink); }
+
+/* Tinted sections alternate against white for a clearer page rhythm. */
+.ha-section--tint { background: var(--ha-surface); border-block: 1px solid var(--ha-line); }
+
+/* The FAQ marker uses the accent, and an open row is tinted. */
+.ha-faq details[open] { background: var(--ha-surface); }
+.ha-faq summary:hover { color: var(--ha-accent-deep); }
+
+/* The footer gets a top accent edge, closing the page deliberately. */
+.ha-footer { border-block-start: 4px solid var(--ha-accent); }
+
+@media (prefers-reduced-motion: reduce) {
+    .ha-card:hover { transform: none; }
+    .ha-btn:hover { transform: none; }
+    .ha-card:hover .ha-media__img { transform: none; }
+}
+
+/* ===================================================================
+   Home page sections
+   =================================================================== */
+
+.ha-eyebrow {
+    font-size: .8rem; font-weight: 700; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--ha-accent-deep);
+    margin: 0 0 .7rem;
+}
+body.ha--rtl .ha-eyebrow { letter-spacing: 0; }
+
+.ha-hero--lead { min-height: 460px; }
+.ha-hero--lead h1 { max-width: 19ch; }
+
+/* The fact band. Numbers are live counts, so they are allowed to be loud. */
+.ha-factband {
+    background: var(--ha-ink); color: #fff;
+    padding-block: 2.2rem 1.6rem;
+}
+.ha-factband__list {
+    list-style: none; margin: 0; padding: 0;
+    display: grid; gap: 1.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    text-align: center;
+}
+.ha-factband__list li { display: flex; flex-direction: column; gap: .2rem; }
+.ha-factband__n {
+    font-size: clamp(1.8rem, 1.2rem + 1.8vw, 2.6rem);
+    font-weight: 700; line-height: 1; color: #fff;
+    font-variant-numeric: tabular-nums;
+}
+.ha-factband__l { font-size: .86rem; color: var(--ha-on-dark-soft); }
+.ha-factband__note {
+    margin: 1.4rem 0 0; text-align: center;
+    font-size: .8rem; color: var(--ha-on-dark-faint);
+}
+
+/* Two audiences side by side. */
+.ha-split { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); }
+.ha-split__card {
+    padding: 1.9rem;
+    border: 1px solid var(--ha-line); border-radius: var(--ha-radius-lg);
+    background: var(--ha-canvas); box-shadow: var(--ha-shadow);
+    display: flex; flex-direction: column; align-items: flex-start;
+}
+.ha-split__card h2 { font-size: var(--fs-lead); margin-bottom: .6rem; }
+.ha-split__card p { color: var(--ha-ink-soft); margin-bottom: 1.3rem; }
+.ha-split__card .ha-btn { margin-top: auto; }
+
+/* The operating loop, as four numbered steps joined by a rule. */
+.ha-steps {
+    list-style: none; margin: 0; padding: 0;
+    display: grid; gap: 1.6rem;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+.ha-steps__item { position: relative; padding-block-start: 3.4rem; }
+.ha-steps__item::before {
+    content: ""; position: absolute; inset-block-start: 1.35rem;
+    inset-inline-start: 2.8rem; inset-inline-end: -1.6rem;
+    height: 2px; background: var(--ha-line);
+}
+.ha-steps__item:last-child::before { display: none; }
+.ha-steps__n {
+    position: absolute; inset-block-start: 0; inset-inline-start: 0;
+    width: 2.7rem; height: 2.7rem; border-radius: 50%;
+    display: grid; place-items: center;
+    background: var(--ha-action); color: var(--ha-action-ink);
+    font-weight: 700; font-size: 1.05rem;
+    box-shadow: 0 0 0 6px var(--ha-surface);
+}
+.ha-steps__item h3 { font-size: var(--fs-sub-sm); margin-bottom: .35rem; }
+.ha-steps__item p { color: var(--ha-ink-soft); font-size: .93rem; margin: 0; }
+
+/* Department chips. */
+.ha-chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .6rem; }
+.ha-chip {
+    display: inline-flex; align-items: center; gap: .55rem;
+    padding: .6rem 1rem; min-height: 44px;
+    border: 1px solid var(--ha-line); border-radius: 999px;
+    background: var(--ha-canvas); color: var(--ha-ink);
+    text-decoration: none; font-weight: 500; font-size: .93rem;
+    transition: border-color .16s ease, background .16s ease, color .16s ease;
+}
+.ha-chip:hover { border-color: var(--ha-accent); background: var(--ha-accent-soft); color: var(--ha-accent-deep); }
+.ha-chip__n {
+    font-size: .78rem; font-weight: 700; color: var(--ha-accent-deep);
+    background: var(--ha-accent-soft); padding: .15rem .45rem; border-radius: 6px;
+}
+.ha-chip:hover .ha-chip__n { background: #fff; }
+
+/* The bilingual comparison. Each side keeps its own direction. */
+.ha-compare { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.ha-compare__side {
+    padding: 1.6rem; border-radius: var(--ha-radius-lg);
+    border: 1px solid var(--ha-line); background: var(--ha-canvas);
+    box-shadow: var(--ha-shadow);
+}
+.ha-compare__side--ar { font-family: var(--ha-font-ar); line-height: var(--lh-body-ar); }
+.ha-compare__tag {
+    font-size: .74rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--ha-accent-deep); background: var(--ha-accent-soft);
+    display: inline-block; padding: .2rem .6rem; border-radius: 6px; margin: 0 0 .9rem;
+}
+.ha-compare__side h3 { font-size: var(--fs-sub-sm); margin-bottom: .5rem; }
+.ha-compare__side p { color: var(--ha-ink-soft); margin: 0; }
+.ha-compare__foot { margin: 1.2rem 0 0; }
+
+/* The procedure demonstration. */
+.ha-sop-demo { display: grid; gap: 1.2rem; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); align-items: start; }
+.ha-sop-demo__doc, .ha-sop-demo__side {
+    background: var(--ha-canvas); border: 1px solid var(--ha-line);
+    border-radius: var(--ha-radius-lg); padding: 1.6rem; box-shadow: var(--ha-shadow);
+}
+.ha-sop-demo__head h3 { font-size: var(--fs-sub); margin-bottom: .6rem; }
+.ha-sop-demo__meta { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 1.2rem; }
+.ha-sop-demo__more { font-size: .88rem; color: var(--ha-ink-faint); margin: .9rem 0 0; }
+.ha-sop-demo__side h3 { font-size: var(--fs-sub-sm); margin-bottom: .8rem; }
+.ha-ack { list-style: none; margin: 0 0 .9rem; padding: 0; }
+.ha-ack li {
+    display: flex; align-items: center; gap: .6rem;
+    padding: .6rem 0; border-block-end: 1px solid var(--ha-line);
+    font-size: .92rem; color: var(--ha-ink-soft);
+}
+.ha-ack li::before {
+    content: ""; width: 10px; height: 10px; border-radius: 3px;
+    background: var(--ha-accent); flex: 0 0 auto;
+}
+.ha-ack li:last-child { border-block-end: 0; }
+.ha-ack__miss { color: var(--ha-danger); font-weight: 600; }
+.ha-ack li:last-child::before { background: var(--ha-danger); }
+.ha-ack__note { font-size: .85rem; color: var(--ha-ink-faint); margin-bottom: 1.1rem; }
+
+/* Cities. */
+.ha-cities {
+    list-style: none; margin: 0; padding: 0;
+    display: grid; gap: .9rem; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+}
+.ha-city {
+    display: block; position: relative; overflow: hidden;
+    border-radius: var(--ha-radius-lg); text-decoration: none;
+    border: 1px solid var(--ha-line); background: var(--ha-canvas);
+}
+.ha-city .ha-media { margin: 0; border-radius: 0; aspect-ratio: 4 / 3; }
+.ha-media--city { aspect-ratio: 4 / 3; }
+.ha-city__name {
+    position: absolute; inset-inline: 0; inset-block-end: 0;
+    padding: 1.6rem .8rem .6rem; color: #fff; font-weight: 600; font-size: .95rem;
+    background: linear-gradient(to top, rgba(13, 27, 42, .85), rgba(13, 27, 42, 0));
+}
+.ha-city:hover { border-color: var(--ha-accent); }
+.ha-city:hover .ha-media__img { transform: scale(1.06); }
+
+/* Certificate verification band. */
+.ha-verifyband { background: var(--ha-accent-soft); border-block: 1px solid var(--ha-line); }
+.ha-verifyband__inner {
+    display: grid; gap: 1.6rem; align-items: center;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+}
+.ha-verifyband h2 { margin-bottom: .5rem; }
+.ha-verifyband p { color: var(--ha-ink-soft); margin: 0; max-width: 54ch; }
+.ha-verifyband__form { display: flex; gap: .6rem; flex-wrap: wrap; }
+.ha-verifyband__form input {
+    flex: 1 1 200px; min-height: 48px; font: inherit;
+    padding: .6rem .9rem; border-radius: var(--ha-radius);
+    border: 1px solid var(--ha-line); background: var(--ha-canvas); color: var(--ha-ink);
+}
+.ha-verifyband__form input:focus-visible { border-color: var(--ha-action); }
+
+/* The close. It resolves rather than fading into the footer. */
+.ha-close {
+    background: linear-gradient(140deg, var(--altus-navy-deep, #060E17) 0%, var(--ha-ink) 60%);
+    color: #fff; padding-block: clamp(3rem, 2rem + 4vw, 5rem);
+}
+.ha-close__inner { max-width: 62ch; }
+.ha-close h2 { color: #fff; font-size: clamp(1.5rem, 1.1rem + 1.6vw, 2.2rem); }
+.ha-close p { color: var(--ha-on-dark); font-size: 1.05rem; }
+.ha-close__actions { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.6rem; }
+.ha-btn--invert { background: #fff; color: var(--ha-ink); border-color: #fff; box-shadow: none; }
+.ha-btn--invert:hover { background: var(--ha-accent-soft); border-color: var(--ha-accent-soft); color: var(--ha-ink); }
+.ha-btn--outline { background: transparent; color: #fff; border-color: rgba(255, 255, 255, .4); box-shadow: none; }
+.ha-btn--outline:hover { background: rgba(255, 255, 255, .1); border-color: #fff; color: #fff; }
+
+@media (max-width: 900px) {
+    .ha-sop-demo, .ha-verifyband__inner { grid-template-columns: minmax(0, 1fr); }
+    .ha-steps__item::before { display: none; }
+}
+
+/* ===================================================================
+   Header and footer chrome
+   =================================================================== */
+
+/* A utility bar above the navigation carries the things a visitor reaches
+   for but which are not content sections: language, verification, contact. */
+.ha-utility {
+    background: var(--ha-ink);
+    color: var(--ha-on-dark);
+    font-size: .84rem;
+}
+.ha-utility__inner {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 1rem; flex-wrap: wrap; min-height: 44px; padding-block: .35rem;
+}
+.ha-utility__note { margin: 0; color: var(--ha-on-dark-soft); }
+.ha-utility__links { display: flex; align-items: center; gap: 1.1rem; }
+.ha-utility__links a {
+    color: var(--ha-on-dark); text-decoration: none;
+    padding-block: .35rem; min-height: 44px; display: inline-flex; align-items: center;
+    /* A short label still has to be a 44px target. Arabic "تواصل" is 35px wide
+       where the English "Contact" is 54px, so the floor is on both axes. */
+    min-width: 44px; justify-content: center;
+}
+.ha-utility__links a:hover { color: #fff; text-decoration: underline; }
+.ha-utility__lang {
+    border: 1px solid rgba(255, 255, 255, .28);
+    border-radius: 999px; padding: .2rem .9rem !important;
+    font-weight: 600;
+    min-height: 44px; display: inline-flex; align-items: center;
+}
+.ha-utility__lang:hover { border-color: #fff; text-decoration: none !important; }
+
+/* The brand mark is a drawn shape rather than two letters in a box. */
+.ha-brand__mark {
+    display: grid; place-items: center;
+    width: 38px; height: 38px; border-radius: 10px;
+    background: var(--ha-action); color: var(--ha-action-ink);
+    flex: 0 0 auto;
+}
+.ha-brand__name { font-weight: 700; font-size: 1.05rem; letter-spacing: -.01em; }
+body.ha--rtl .ha-brand__name { letter-spacing: 0; }
+
+/* Footer -------------------------------------------------------------- */
+
+.ha-footer__top {
+    display: flex; align-items: flex-start; justify-content: space-between;
+    gap: 1.6rem; flex-wrap: wrap;
+    padding-block-end: 1.8rem; margin-block-end: 1.8rem;
+    border-block-end: 1px solid rgba(255, 255, 255, .12);
+}
+.ha-footer__brand { display: flex; gap: .9rem; align-items: flex-start; }
+.ha-footer__name { margin: 0 0 .25rem; font-weight: 700; color: #fff; font-size: 1.05rem; }
+.ha-footer__blurb { margin: 0; font-size: .89rem; color: var(--ha-on-dark-soft); max-width: 42ch; }
+.ha-footer__cta { flex: 0 0 auto; }
+
+.ha-footer__nav ul {
+    list-style: none; margin: 0; padding: 0;
+    display: grid; gap: .5rem 1.2rem;
+    grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+}
+
+.ha-footer__base {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 1rem; flex-wrap: wrap;
+    margin-block-start: 1.8rem; padding-block-start: 1.4rem;
+    border-block-start: 1px solid rgba(255, 255, 255, .12);
+    font-size: .84rem; color: var(--ha-on-dark-soft);
+}
+.ha-footer__base p { margin: 0; }
+.ha-footer__base p:last-child { display: flex; gap: 1.1rem; flex-wrap: wrap; }
+
+@media (max-width: 780px) {
+    .ha-utility__inner { justify-content: center; }
+    .ha-utility__note { display: none; }
+    .ha-footer__top { flex-direction: column; }
+    .ha-footer__cta { width: 100%; }
+}
+
+/* ------------------------------------------------------- chrome corrections */
+
+/* The closing section runs straight into the footer. The default footer
+   margin left a white band between two dark blocks. */
+.ha-footer { margin-top: 0; }
+.ha-close + .ha-footer { border-block-start: 0; }
+.ha-main > section:last-child:not(.ha-close) + .ha-footer { margin-top: 3rem; }
+
+/* The footer link colour was winning over the button's own colour, which
+   made the inverted CTA white text on a white face. */
+.ha-footer a.ha-btn--invert { color: var(--ha-ink); }
+.ha-footer a.ha-btn--invert:hover { color: var(--ha-ink); }
+.ha-footer a.ha-btn--outline,
+.ha-footer a.ha-btn--outline:hover { color: #fff; }
+
+/* The search field was clipping its own placeholder at the default width. */
+.ha-search { flex: 1 1 320px; max-width: 420px; }
+.ha-search input { flex: 1 1 auto; min-width: 0; }
+
+/* The header stacks brand, navigation and search on their own rows, so give
+   the rows a little breathing room and keep the bar from feeling cramped. */
+.ha-header__inner { padding-block: .7rem; row-gap: .5rem; }
+
+/* Account actions in the public header, matching the sign-in page's chrome. */
+.ha-account { display: flex; align-items: center; gap: .7rem; flex: 0 0 auto; }
+.ha-account__link {
+    color: var(--ha-ink); font-weight: 600; font-size: .92rem; text-decoration: none;
+    padding: .4rem .2rem; min-height: 32px; display: inline-flex; align-items: center;
+}
+.ha-account__link:hover { color: var(--ha-action); }
+.ha-btn--sm { padding: .5rem 1.05rem; font-size: .92rem; }
+@media (max-width: 780px) { .ha-account { width: 100%; justify-content: flex-start; } }
+
+/* The tools row spans the header, so the account actions sit against the
+   right edge the way they do on the sign-in page's chrome. min-width:0 is
+   what keeps the search field from forcing the row wider than the viewport:
+   a flex item defaults to min-width:auto and refuses to shrink past its
+   content, which pushed the phone layout 103px wide. */
+.ha-header__tools { flex: 1 1 100%; min-width: 0; gap: 1rem; flex-wrap: wrap; }
+.ha-account { margin-inline-start: auto; min-width: 0; }
+@media (max-width: 780px) {
+    .ha-account { margin-inline-start: 0; width: auto; }
+    .ha-header__tools { gap: .6rem; }
+}
+
+/* An administrator-uploaded logo replaces the built-in mark and wordmark.
+   Height is capped so a large upload cannot push the header open. */
+/*
+ * The mark is a stacked lockup, near square, with the wordmark under the palm
+ * and a tagline under that. At the 38px it used to be given, "ALTUS" rendered
+ * about three pixels tall and the tagline was a grey smudge. These heights are
+ * what the wordmark needs to be readable; the header's 68px min-height has the
+ * room, and the footer has more.
+ */
+.ha-brand__logo { display: block; height: 66px; width: auto; max-width: 300px; object-fit: contain; }
+.ha-footer__logo { display: block; height: 68px; width: auto; max-width: 300px; object-fit: contain; }
+@media (max-width: 780px) {
+    .ha-brand__logo { height: 52px; max-width: 220px; }
+    .ha-footer__logo { height: 60px; }
+}
+
+/* ===================================================================
+   Page furniture shared by every listing and detail page
+   =================================================================== */
+
+/*
+ * A hero with a picture beside the words.
+ *
+ * Every page but the home page opened with a heading, two lines of copy and
+ * roughly half a screen of empty violet. It read as a page that had not
+ * loaded rather than as a page with room to breathe. This gives the hero a
+ * second column carrying a photograph the record already owns, so the first
+ * screen says what the section is about before a word is read.
+ *
+ * The picture is decorative here: the heading carries the meaning, so a
+ * missing image degrades to the old single-column hero rather than breaking.
+ */
+.ha-hero--split .ha-hero__body {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+    gap: clamp(1.6rem, 1rem + 3vw, 3.4rem);
+    align-items: center;
+}
+.ha-hero--split .ha-hero__lede { max-width: 46ch; }
+
+.ha-hero__art {
+    position: relative;
+    border-radius: var(--ha-radius-lg);
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(13, 27, 42, .18);
+    aspect-ratio: 4 / 3;
+    background: var(--ha-surface-2);
+}
+.ha-hero__art img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* A small figure resting on the corner of the picture, carrying one real
+   number. It is the only place a count appears in a hero, so it reads as a
+   fact rather than as decoration. */
+.ha-hero__stat {
+    position: absolute; inset-inline-start: 1rem; inset-block-end: 1rem;
+    background: rgba(255, 255, 255, .94);
+    backdrop-filter: blur(6px);
+    border-radius: var(--ha-radius);
+    padding: .6rem .9rem;
+    box-shadow: 0 8px 24px rgba(13, 27, 42, .16);
+}
+.ha-hero__stat b { display: block; font-size: 1.45rem; line-height: 1.1; color: var(--ha-ink); }
+.ha-hero__stat span { font-size: .78rem; color: var(--ha-ink-faint); }
+
+@media (max-width: 880px) {
+    .ha-hero--split .ha-hero__body { grid-template-columns: 1fr; }
+    .ha-hero__art { aspect-ratio: 16 / 9; order: -1; }
+}
+
+/* A card that leads with its picture. The frame is fixed so a grid of cards
+   keeps one baseline whatever shape the photographs are. */
+.ha-card__cover {
+    display: block; margin: -1.15rem -1.15rem 1rem;
+    aspect-ratio: 16 / 10; overflow: hidden;
+    background: var(--ha-surface-2);
+    border-start-start-radius: var(--ha-radius-lg);
+    border-start-end-radius: var(--ha-radius-lg);
+}
+.ha-card__cover img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    transition: transform .5s cubic-bezier(.2, .7, .3, 1);
+}
+.ha-card:hover .ha-card__cover img { transform: scale(1.04); }
+
+@media (prefers-reduced-motion: reduce) {
+    .ha-card__cover img { transition: none; }
+    .ha-card:hover .ha-card__cover img { transform: none; }
+}

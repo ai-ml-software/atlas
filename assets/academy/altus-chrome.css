@@ -1,0 +1,639 @@
+/*
+ * ALTUS — site chrome: utility bar, masthead, footer.
+ *
+ * Loaded after academy.css and owns the header and footer outright.
+ *
+ * DIRECTION: "Hairline". The brand's restraint made structural. An obsidian
+ * plate, an ivory field, and a single Executive Gold rule as the connective
+ * tissue between them. The guide permits gold as line and border only, never
+ * as fill, so the hairline is not decoration applied to the chrome -- it IS
+ * the chrome's identity, and the only ornament on the page.
+ *
+ * The masthead condenses on scroll: the utility rail retracts, the mast
+ * tightens, the logo steps down, and a navy-tinted shadow lifts the bar off
+ * the page. That is the one authored motion moment in the frame. Everything
+ * else holds still on purpose -- an advisory firm that animates its furniture
+ * looks like it is selling software.
+ */
+
+:root {
+    --chrome-rail-h: 40px;
+    --chrome-mast-h: 96px;
+    --chrome-mast-h-stuck: 68px;
+    --chrome-ease: cubic-bezier(.16, 1, .3, 1);
+    --chrome-dur: .34s;
+    --chrome-hairline: rgba(200, 157, 79, .55);
+}
+
+/* ------------------------------------------------------------------ shell */
+
+.ha-chrome {
+    position: sticky;
+    top: 0;
+    z-index: 120;
+    background: var(--ha-page);
+}
+
+/* The hairline. One pixel of Executive Gold, full bleed, under everything.
+   It is the signature and it is the entire ornament budget. */
+.ha-chrome::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    bottom: 0;
+    height: 1px;
+    background: var(--ha-accent);
+    opacity: .85;
+}
+
+/* ------------------------------------------------------------- utility rail */
+
+.ha-rail {
+    background: var(--ha-ink);
+    color: var(--ha-on-dark);
+    overflow: hidden;
+    height: var(--chrome-rail-h);
+    transition: height var(--chrome-dur) var(--chrome-ease),
+                opacity calc(var(--chrome-dur) * .6) var(--chrome-ease);
+}
+.ha-chrome--stuck .ha-rail { height: 0; opacity: 0; }
+
+.ha-rail__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    height: var(--chrome-rail-h);
+}
+.ha-rail__note {
+    margin: 0;
+    font-size: .75rem;
+    letter-spacing: .02em;
+    color: var(--ha-on-dark-soft);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ha-rail__links { display: flex; align-items: center; gap: .35rem; }
+.ha-rail__links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    min-width: 44px;
+    justify-content: center;
+    padding-inline: .7rem;
+    font-size: .6875rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--ha-on-dark);
+    text-decoration: none;
+    white-space: nowrap;
+}
+.ha-rail__links a:hover { color: #fff; }
+
+/* The language control is the one place gold carries text. Gold on obsidian
+   measures 7:1; gold on ivory measures 2.3:1, which is why it never appears
+   as text anywhere below this bar. */
+.ha-rail__lang {
+    border: 1px solid var(--chrome-hairline);
+    color: var(--ha-accent) !important;
+    border-radius: 2px;
+}
+.ha-rail__lang:hover { border-color: var(--ha-accent); background: rgba(200, 157, 79, .1); }
+
+/* -------------------------------------------------------------- masthead */
+
+/*
+ * Two tiers, not one. The navigation is administrator-managed and currently
+ * carries eleven items; at any readable size that cannot share a row with a
+ * logo and an account CTA, and forcing it to try produced a wrapped, centred
+ * tangle. Brand over navigation, divided by a rule, is also the pattern
+ * institutions actually use -- it reads as a masthead rather than as an app
+ * bar, which is the right register for an advisory firm.
+ */
+.ha-mast { background: var(--ha-page); }
+.ha-mast__inner { display: block; }
+
+.ha-mast__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(1rem, 2.5vw, 2.5rem);
+    min-height: var(--chrome-mast-h);
+    transition: min-height var(--chrome-dur) var(--chrome-ease);
+}
+.ha-chrome--stuck .ha-mast__row { min-height: var(--chrome-mast-h-stuck); }
+
+.ha-chrome--stuck {
+    box-shadow: 0 1px 0 rgba(13, 27, 42, .06), 0 14px 34px -18px rgba(13, 27, 42, .38);
+}
+
+.ha-mast__brand {
+    display: inline-flex;
+    align-items: center;
+    flex: 0 0 auto;
+    min-height: 44px;
+    text-decoration: none;
+    color: var(--ha-ink);
+}
+.ha-mast__logo {
+    display: block;
+    width: auto;
+    height: 64px;
+    max-width: 260px;
+    object-fit: contain;
+    transition: height var(--chrome-dur) var(--chrome-ease);
+}
+.ha-chrome--stuck .ha-mast__logo { height: 46px; }
+
+/* ------------------------------------------------------------------- nav */
+
+.ha-mast__nav { border-block-start: 1px solid rgba(13, 27, 42, .1); }
+.ha-mast__nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 clamp(.75rem, 1.8vw, 1.6rem);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*
+ * The nav row retracts with the rail, so a reader who has scrolled keeps the
+ * brand and the account actions but gains back the vertical space.
+ *
+ * max-height is only clamped once JavaScript has measured the row and moved
+ * whatever overflows into the More disclosure. Without JavaScript the list
+ * wraps and every link stays reachable -- clamping first would simply hide
+ * navigation from anyone the script never reached.
+ */
+.ha-mast__nav {
+    transition: max-height var(--chrome-dur) var(--chrome-ease),
+                opacity calc(var(--chrome-dur) * .7) var(--chrome-ease);
+}
+/* No clipping while the row is open, or the More panel is cut off by the very
+   container it hangs from. nowrap already guarantees a single row; overflow is
+   only needed for the collapse. */
+/* is-measuring is applied synchronously, before the fonts resolve: without it
+   the row wraps to two lines, then snaps to one when the script moves the
+   overflow into the panel, and that snap is a layout shift (measured 0.037 on
+   desktop, against a 0.1 budget). Clipping during the measurement keeps the
+   row one line high from the first paint. */
+.ha-mast__nav.is-measured { max-height: 60px; }
+.ha-mast__nav.is-measuring { overflow: hidden; }
+.ha-chrome--stuck .ha-mast__nav.is-measured { overflow: hidden; }
+.ha-mast__nav.is-measured ul { flex-wrap: nowrap; }
+.ha-chrome--stuck .ha-mast__nav.is-measured { max-height: 0; opacity: 0; }
+
+/* The overflow disclosure. Hidden until the script finds something to put in
+   it, so a menu that fits never shows an empty control. */
+.ha-more { position: relative; display: none; }
+.ha-more.is-shown { display: inline-flex; }
+.ha-more__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    min-height: 44px;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    font: inherit;
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--ha-ink-soft);
+}
+.ha-more__btn:hover { color: var(--ha-ink); }
+.ha-more__btn svg { width: 12px; height: 12px; transition: transform .2s var(--chrome-ease); }
+.ha-more__btn[aria-expanded="true"] svg { transform: rotate(180deg); }
+.ha-more__panel {
+    position: absolute;
+    inset-block-start: calc(100% - .35rem);
+    inset-inline-end: 0;
+    z-index: 10;
+    min-width: 220px;
+    margin: 0;
+    padding: .4rem 0;
+    list-style: none;
+    background: var(--ha-canvas);
+    border: 1px solid var(--ha-line);
+    border-block-start: 2px solid var(--ha-accent);
+    box-shadow: 0 18px 40px -22px rgba(13, 27, 42, .5);
+    display: none;
+}
+.ha-more__panel.is-open { display: block; }
+.ha-more__panel a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding-inline: 1rem;
+    white-space: nowrap;
+}
+.ha-more__panel a::after { content: none; }
+.ha-more__panel a:hover { background: var(--ha-accent-soft); color: var(--ha-ink); }
+.ha-mast__nav a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding-block: .2rem;
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--ha-ink-soft);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color .18s var(--chrome-ease);
+}
+/* The rule draws from the leading edge, so it reads left-to-right in English
+   and right-to-left in Arabic without a mirrored stylesheet. */
+.ha-mast__nav a::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    bottom: .5rem;
+    height: 2px;
+    background: var(--ha-accent);
+    transform: scaleX(0);
+    transform-origin: inline-start;
+    transition: transform .26s var(--chrome-ease);
+}
+.ha-mast__nav a:hover,
+.ha-mast__nav a[aria-current="page"] { color: var(--ha-ink); }
+.ha-mast__nav a:hover::after,
+.ha-mast__nav a[aria-current="page"]::after { transform: scaleX(1); }
+
+/* --------------------------------------------------------------- actions */
+
+.ha-mast__actions { display: flex; align-items: center; gap: .5rem; flex: 0 0 auto; }
+
+.ha-iconbtn {
+    display: inline-grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--ha-line);
+    border-radius: 2px;
+    background: transparent;
+    color: var(--ha-ink);
+    cursor: pointer;
+    transition: border-color .18s var(--chrome-ease), background .18s var(--chrome-ease);
+}
+.ha-iconbtn:hover { border-color: var(--ha-accent); background: var(--ha-accent-soft); }
+.ha-iconbtn svg { width: 19px; height: 19px; }
+
+.ha-mast__signin {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding-inline: .5rem;
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--ha-ink);
+    text-decoration: none;
+    white-space: nowrap;
+}
+.ha-mast__signin:hover { color: var(--ha-accent-on-light); }
+
+.ha-mast__cta {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding-inline: 1.15rem;
+    border: 1px solid var(--ha-action);
+    border-radius: 2px;
+    background: var(--ha-action);
+    color: var(--ha-action-ink);
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background .18s var(--chrome-ease), border-color .18s var(--chrome-ease);
+}
+.ha-mast__cta:hover { background: var(--ha-action-deep); border-color: var(--ha-action-deep); }
+
+/* The search field is a disclosure: closed it is a 44px control, open it is a
+   field. It is not hidden behind a modal, because searching a catalogue is not
+   an interruption. */
+.ha-mast__search { display: flex; align-items: center; gap: .35rem; }
+.ha-mast__search input {
+    font: inherit;
+    font-size: .82rem;
+    min-height: 44px;
+    width: 0;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    background: var(--ha-canvas);
+    color: var(--ha-ink);
+    opacity: 0;
+    /* Closed, the field is not merely small -- it is inert. A zero-width input
+       still reports a box, which is a 2x44 "control" to an auditor and a stray
+       hit target to a thumb. visibility takes it out of hit-testing and the
+       accessibility tree, and still animates as a discrete step. */
+    visibility: hidden;
+    transition: width var(--chrome-dur) var(--chrome-ease),
+                opacity .2s var(--chrome-ease),
+                padding var(--chrome-dur) var(--chrome-ease),
+                visibility var(--chrome-dur);
+}
+.ha-mast__search.is-open input {
+    width: clamp(160px, 20vw, 260px);
+    padding-inline: .75rem;
+    border-color: var(--ha-line);
+    opacity: 1;
+    visibility: visible;
+}
+.ha-mast__search input:focus-visible { border-color: var(--ha-action); }
+
+/* -------------------------------------------------------------- mobile nav */
+
+.ha-mast__burger,
+.ha-mast__close { display: none; }
+
+@media (max-width: 1080px) {
+    .ha-mast__nav,
+    .ha-mast__nav.is-measured {
+        max-height: none;
+        overflow-y: auto;
+        border-block-start: 0;
+        position: fixed;
+        inset-block-start: 0;
+        inset-inline-end: 0;
+        z-index: 200;
+        width: min(86vw, 360px);
+        height: 100dvh;
+        padding: 5.5rem 1.5rem 2rem;
+        background: var(--ha-ink);
+        overflow-y: auto;
+        transform: translateX(100%);
+        visibility: hidden;
+        transition: transform var(--chrome-dur) var(--chrome-ease), visibility var(--chrome-dur);
+    }
+    [dir="rtl"] .ha-mast__nav { transform: translateX(-100%); }
+    .ha-mast__nav.is-open { transform: translateX(0); visibility: visible; }
+
+    .ha-mast__nav ul,
+    .ha-mast__nav.is-measured ul { flex-direction: column; flex-wrap: nowrap; align-items: stretch; gap: 0; }
+    .ha-more { display: none !important; }
+    .ha-mast__nav a {
+        /* The rule has to span the panel, not the label: an inline-flex anchor
+           shrinks to its text and the dividers came out ragged. */
+        display: flex;
+        width: 100%;
+        min-height: 52px;
+        padding-block: .5rem;
+        font-size: .875rem;
+        color: var(--ha-on-dark);
+        border-block-end: 1px solid rgba(247, 246, 242, .1);
+    }
+    .ha-mast__nav li { width: 100%; }
+    .ha-mast__close {
+        display: inline-grid;
+        position: absolute;
+        inset-block-start: 1.5rem;
+        inset-inline-end: 1.5rem;
+        border-color: rgba(247, 246, 242, .25);
+        color: var(--ha-on-dark);
+    }
+    .ha-mast__close:hover { border-color: var(--ha-accent); background: transparent; color: var(--ha-accent); }
+    .ha-mast__nav a::after { bottom: .75rem; }
+    .ha-mast__nav a:hover,
+    .ha-mast__nav a[aria-current="page"] { color: #fff; }
+
+    .ha-mast__burger { display: inline-grid; order: 3; }
+    .ha-mast__actions { margin-inline-start: auto; }
+    .ha-mast__signin { display: none; }
+
+    /*
+     * BELOW the chrome, not above it. .ha-chrome is position:sticky with a
+     * z-index, which makes it a stacking context -- so the nav panel's z-index
+     * is scoped inside it and a scrim above the chrome covers the panel and
+     * its close button too, however high the panel's own z-index goes.
+     */
+    .ha-scrim {
+        position: fixed;
+        inset: 0;
+        z-index: 110;
+        background: rgba(6, 14, 23, .55);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity var(--chrome-dur) var(--chrome-ease), visibility var(--chrome-dur);
+    }
+    .ha-scrim.is-open { opacity: 1; visibility: visible; }
+}
+
+@media (max-width: 680px) {
+    .ha-rail__note { display: none; }
+    .ha-rail__inner { justify-content: flex-end; }
+    .ha-mast__logo { height: 52px; }
+    .ha-chrome--stuck .ha-mast__logo { height: 42px; }
+    .ha-mast__cta { padding-inline: .85rem; }
+    .ha-mast__search.is-open input { width: clamp(120px, 40vw, 200px); }
+    /* On a phone the open field, the join CTA and the menu button do not fit
+       one row -- measured at 371px inside a 390px viewport. The field is the
+       thing the visitor just asked for, so the CTA yields to it and returns
+       when the field closes. */
+    .ha-mast__search.is-open ~ .ha-mast__cta,
+    .ha-mast__search.is-open ~ .ha-mast__signin { display: none; }
+}
+
+/* ---------------------------------------------------------------- footer */
+
+.ha-foot {
+    position: relative;
+    overflow: hidden;
+    background: var(--ha-ink);
+    color: var(--ha-on-dark);
+    border-block-start: 1px solid var(--ha-accent);
+}
+
+/*
+ * The palm from the mark, oversized and bled off the trailing edge. It is the
+ * actual brand asset rather than a geometric stand-in, and it sits at 4%
+ * opacity: present as texture, never as an element competing with the text
+ * over it. Hidden on small screens, where there is no room for it to be
+ * anything but clutter.
+ */
+.ha-foot__watermark {
+    position: absolute;
+    inset-block-start: -8%;
+    inset-inline-end: -4%;
+    width: min(380px, 34vw);
+    opacity: .04;
+    pointer-events: none;
+    user-select: none;
+}
+
+.ha-foot__inner { position: relative; padding-block: clamp(3rem, 6vw, 5rem) 0; }
+
+/* Band 1: the mark, the promise, the ask. */
+.ha-foot__lead {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: start;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    padding-block-end: clamp(2.5rem, 4vw, 3.5rem);
+}
+.ha-foot__logo { display: block; width: auto; height: 74px; max-width: 280px; object-fit: contain; }
+.ha-foot__statement {
+    margin: 1.5rem 0 0;
+    max-width: 30ch;
+    font-family: var(--ha-font-display);
+    font-size: clamp(1.35rem, 1.1rem + 1vw, 1.75rem);
+    line-height: 1.3;
+    font-weight: 700;
+    color: #fff;
+}
+body.ha--rtl .ha-foot__statement { font-family: var(--ha-font-ar); line-height: 1.5; }
+
+.ha-foot__cta {
+    display: inline-flex;
+    align-items: center;
+    min-height: 48px;
+    padding-inline: 1.5rem;
+    border: 1px solid var(--ha-accent);
+    border-radius: 2px;
+    background: transparent;
+    color: var(--ha-accent);
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background .2s var(--chrome-ease), color .2s var(--chrome-ease);
+}
+.ha-foot__cta:hover { background: var(--ha-accent); color: var(--ha-ink); }
+
+/* Band 2: grouped navigation. The previous footer put fourteen links in one
+   undifferentiated row, which is a list, not wayfinding. */
+.ha-foot__cols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: clamp(1.75rem, 3vw, 2.5rem);
+    padding-block: clamp(2.5rem, 4vw, 3rem);
+    border-block-start: 1px solid rgba(247, 246, 242, .12);
+}
+.ha-foot__col h2 {
+    margin: 0 0 1.1rem;
+    font-family: var(--ha-font);
+    font-size: .8125rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--ha-accent);
+}
+/*
+ * Arabic ranks by size, because the devices Latin uses here are unavailable to
+ * it: Arabic has no uppercase, and letter-spacing breaks the cursive joins, so
+ * a 13px tracked small-cap label carries no hierarchy at all in Arabic -- it is
+ * just smaller text in gold. Size and weight do the work instead.
+ */
+body.ha--rtl .ha-foot__col h2 {
+    font-family: var(--ha-font-ar);
+    letter-spacing: 0;
+    text-transform: none;
+    /* 1rem is 16px against a 17px body -- rem is root-relative, the body is
+       not. --fs-sub-sm is the scale's own step above body. */
+    font-size: var(--fs-sub-sm);
+}
+.ha-foot__col ul { margin: 0; padding: 0; list-style: none; display: grid; gap: .1rem; }
+.ha-foot__col a,
+.ha-foot__meta a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+    font-size: .875rem;
+    color: var(--ha-on-dark);
+    text-decoration: none;
+    transition: color .18s var(--chrome-ease);
+}
+.ha-foot__col a:hover,
+.ha-foot__meta a:hover { color: #fff; text-decoration: underline; text-underline-offset: 4px; }
+
+.ha-foot__meta { display: grid; gap: .1rem; font-size: .875rem; color: var(--ha-on-dark-soft); }
+.ha-foot__meta address { font-style: normal; margin: 0 0 .4rem; line-height: 1.6; }
+
+.ha-foot__social { display: flex; gap: .5rem; margin-block-start: 1rem; }
+.ha-foot__social a {
+    display: inline-grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(247, 246, 242, .18);
+    border-radius: 2px;
+    color: var(--ha-on-dark);
+    transition: border-color .18s var(--chrome-ease), color .18s var(--chrome-ease);
+}
+.ha-foot__social a:hover { border-color: var(--ha-accent); color: var(--ha-accent); }
+.ha-foot__social svg { width: 18px; height: 18px; }
+
+/* Band 3: the legal rail. */
+.ha-foot__base {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: .75rem 1.5rem;
+    padding-block: 1.5rem;
+    border-block-start: 1px solid rgba(247, 246, 242, .12);
+    font-size: .8125rem;
+    color: var(--ha-on-dark-faint);
+}
+.ha-foot__base p { margin: 0; max-width: 70ch; }
+.ha-foot__base nav { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; }
+.ha-foot__base a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+    color: var(--ha-on-dark-faint);
+    text-decoration: none;
+}
+.ha-foot__base a:hover { color: var(--ha-on-dark); text-decoration: underline; text-underline-offset: 4px; }
+
+@media (max-width: 720px) {
+    .ha-foot__lead { grid-template-columns: minmax(0, 1fr); }
+    .ha-foot__watermark { display: none; }
+}
+
+/*
+ * Browser surfaces. Selection, caret, scrollbar and focus ring ship with
+ * defaults that belong to no design system; theming them from the palette is
+ * the difference between a page that was assembled and one that was built.
+ */
+::selection { background: var(--ha-accent); color: var(--ha-ink); }
+body.ha { caret-color: var(--ha-action); accent-color: var(--ha-action); }
+body.ha--rtl ::selection { background: var(--ha-accent); color: var(--ha-ink); }
+
+@supports selector(::-webkit-scrollbar) {
+    .ha-mast__nav::-webkit-scrollbar { width: 8px; }
+    .ha-mast__nav::-webkit-scrollbar-track { background: transparent; }
+    .ha-mast__nav::-webkit-scrollbar-thumb {
+        background: rgba(247, 246, 242, .22);
+        border-radius: 99px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .ha-rail,
+    .ha-mast__inner,
+    .ha-mast__logo,
+    .ha-mast__nav,
+    .ha-mast__search input,
+    .ha-scrim,
+    .ha-mast__nav a::after { transition-duration: .01ms !important; }
+}
+
+@media print {
+    .ha-chrome, .ha-foot__social, .ha-foot__cta { display: none !important; }
+}

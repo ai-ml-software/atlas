@@ -1,0 +1,103 @@
+/*
+ * ALTUS ADVISORY — brand token layer
+ *
+ * The approved palette from the Brand Implementation Guide, Phase II, as the
+ * single source of colour for both frontends. Loaded BEFORE academy.css, which
+ * defines its own --ha-* tokens in terms of these.
+ *
+ * Nothing in this file is a decision about where a colour goes. It states what
+ * the brand colours are; academy.css decides what they are used for. That split
+ * is what lets the whole site re-skin per tenant (see enhance.md §1.4) by
+ * overriding a handful of values rather than editing a stylesheet.
+ *
+ * THREE RULES THIS FILE EXISTS TO ENFORCE, from the guide's Phase VII:
+ *
+ *   1. Executive Gold is an ACCENT. Never a background fill, never behind text,
+ *      maximum 5% of any composition. Gold on Ivory measures 2.3:1, which fails
+ *      WCAG AA for text at any size; gold on Navy measures 7:1, which passes.
+ *      That asymmetry is why --altus-gold appears below with two companions:
+ *      --altus-gold-deep for gold-family text on light surfaces, and
+ *      --altus-gold-tint for gold-family backgrounds.
+ *   2. Obsidian Navy anchors every high-authority surface.
+ *   3. Executive Ivory is the page background. Not plain white.
+ *
+ * The 60/25/10/5 proportion rule (Ivory / Navy / Charcoal / Gold) is checked
+ * mechanically by .lab/design_check.py, not by eye.
+ */
+
+:root {
+    /* -------------------------------------------------- primary palette
+     * Guide Phase II. These six are the brand. Everything below is derived
+     * from them and exists only because a screen needs tones a print palette
+     * does not specify.
+     */
+    --altus-navy:      #0D1B2A;  /* anchor: headers, dark sections. 25%       */
+    --altus-gold:      #C89D4F;  /* accent ONLY. Never fill. Max 5%           */
+    --altus-charcoal:  #333333;  /* body text. 10%                            */
+    --altus-gray:      #E6E8EB;  /* dividers, hairlines, subtle borders       */
+    --altus-teal:      #0F3D3E;  /* digital & AI surfaces. 5-8%               */
+    --altus-ivory:     #F7F6F2;  /* page background, white space. 60%         */
+
+    /* -------------------------------------------------- secondary palette
+     * Guide Phase II, "Secondary data visualisation. Chart fills and
+     * supporting metrics." Charts draw from these and from nothing else.
+     */
+    --altus-steel:     #1E2A38;
+    --altus-slate:     #4A6572;
+    --altus-stone:     #8A7961;
+    --altus-taupe:     #BDB6AD;
+    --altus-sage:      #556B5C;  /* positive KPI movement                     */
+    --altus-sand:      #EDE4D3;  /* large-block callout shading               */
+
+    /* -------------------------------------------------- derived: surfaces
+     * A page needs three steps of depth; the guide names one. Ivory is the
+     * page, white lifts a card off it, and the tints give tinted sections
+     * their rhythm without introducing a colour that is not in the palette.
+     */
+    --altus-navy-deep:    #060E17;  /* gradient partner beneath navy          */
+    --altus-card:         #ffffff;  /* cards and panels lift off ivory        */
+    --altus-ivory-tint:   #F0EEE7;  /* alternating tinted section             */
+    --altus-ivory-tint-2: #E7E4DA;  /* deepest neutral band                   */
+
+    /* -------------------------------------------------- derived: text tones
+     * Every value here was measured against the surface it is used on. The
+     * ratio in the comment is the WCAG 2.1 contrast against that surface.
+     */
+    --altus-slate-soft:    #5F6B77;  /* secondary text on ivory      5.1:1    */
+    --altus-on-navy:       #D8DCE1;  /* primary text on navy        12.6:1    */
+    --altus-on-navy-soft:  #A6B0BC;  /* secondary text on navy       7.8:1    */
+    --altus-on-navy-faint: #8A94A1;  /* tertiary text on navy        5.7:1    */
+
+    /* -------------------------------------------------- derived: gold family
+     * Executive Gold cannot carry text. These two let gold-family meaning
+     * survive on light surfaces without breaking either the brand rule or
+     * the contrast floor.
+     */
+    --altus-gold-deep: #7A5F28;  /* gold-family TEXT on ivory        5.6:1    */
+    --altus-gold-tint: #F7F0E2;  /* gold-family BACKGROUND, not gold         */
+
+    /* -------------------------------------------------- derived: status
+     * Functional states, kept inside the palette's register. Sage is the
+     * guide's own positive-movement colour; the other two are its neighbours
+     * in saturation and weight rather than stock red and amber.
+     */
+    --altus-sage-deep:  #43584A;  /* success text on ivory            7.0:1   */
+    --altus-sage-tint:  #E8EDE9;
+    --altus-brick:      #8C2F24;  /* error text on ivory              7.6:1   */
+    --altus-brick-tint: #F6E9E7;
+
+    /* -------------------------------------------------- elevation
+     * Shadows tinted with navy rather than neutral black, so depth reads as
+     * part of the palette instead of as grey haze over it.
+     */
+    --altus-shadow-sm: 0 1px 2px rgba(13, 27, 42, .06);
+    --altus-shadow-md: 0 1px 2px rgba(13, 27, 42, .06), 0 10px 28px rgba(13, 27, 42, .08);
+    --altus-shadow-lg: 0 24px 60px rgba(13, 27, 42, .18);
+
+    /* -------------------------------------------------- governance
+     * Documentation, not enforcement: CSS cannot police a proportion. The
+     * gold ceiling is enforced by .lab/design_check.py, which fails the build
+     * when painted gold area exceeds this share or sits behind text.
+     */
+    --altus-gold-max-share: 5%;
+}

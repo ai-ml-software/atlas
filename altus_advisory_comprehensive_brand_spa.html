@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALTUS ADVISORY | Executive Brand Governance System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --obsidian: #0D1B2A;
+            --gold: #C89D4F;
+            --charcoal: #333333;
+            --teal: #0F3D3E;
+            --ivory: #F7F6F2;
+            --light-gray: #E6E8EB;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--ivory);
+            color: var(--obsidian);
+            scroll-behavior: smooth;
+            line-height: 1.6;
+        }
+
+        .playfair { font-family: 'Playfair Display', serif; }
+        
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 650px;
+            margin: 0 auto;
+            height: 380px;
+            max-height: 450px;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(200, 157, 79, 0.15);
+        }
+
+        .nav-active {
+            color: var(--gold);
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .pillar-card {
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .pillar-card:hover { transform: translateY(-8px); }
+
+        .pitch-tab.active {
+            background-color: var(--obsidian);
+            color: white;
+            border-color: var(--obsidian);
+        }
+
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--ivory); }
+        ::-webkit-scrollbar-thumb { background: var(--gold); }
+    </style>
+</head>
+<body class="antialiased text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/95 border-b border-gold/10 px-8 py-5 flex justify-between items-center backdrop-blur-md">
+        <div class="flex items-center gap-4">
+            <div class="w-10 h-10 bg-[#0D1B2A] flex items-center justify-center rounded-sm">
+                <span class="text-[#C89D4F] font-bold text-2xl playfair">A</span>
+            </div>
+            <div>
+                <h1 class="text-xl font-bold uppercase tracking-tighter playfair leading-none">Altus Advisory</h1>
+                <p class="text-[9px] uppercase tracking-[0.3em] text-gold font-bold">Performance Elevated</p>
+            </div>
+        </div>
+        <div class="hidden lg:flex gap-10 text-[10px] font-bold uppercase tracking-[0.2em]">
+            <a href="#identity" class="hover:text-gold transition-colors">Identity</a>
+            <a href="#strategy" class="hover:text-gold transition-colors">Strategy</a>
+            <a href="#messaging" class="hover:text-gold transition-colors">Messaging</a>
+            <a href="#visuals" class="hover:text-gold transition-colors">Visuals</a>
+            <a href="#compliance" class="hover:text-gold transition-colors">Compliance</a>
+        </div>
+        <div class="text-[10px] font-bold uppercase tracking-widest px-4 py-2 border border-gold/30 text-gold rounded-full">
+            Vision 2030 Aligned
+        </div>
+    </nav>
+
+    <!-- Hero / Manifesto -->
+    <header class="min-h-screen pt-40 pb-20 px-8 flex flex-col justify-center items-center text-center bg-white relative overflow-hidden">
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-gold/5 rounded-full blur-[120px]"></div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-teal/5 rounded-full blur-[120px]"></div>
+        
+        <p class="text-gold font-bold tracking-[0.5em] uppercase mb-8 text-xs">The Official Governance System</p>
+        <h2 class="text-5xl md:text-8xl font-bold text-obsidian max-w-5xl leading-tight mb-10 playfair">
+            Architecting <span class="italic text-teal">Resilience</span>, Engineering Growth.
+        </h2>
+        <div class="max-w-3xl mx-auto space-y-6">
+            <p class="text-xl text-slate-600 leading-relaxed font-light">
+                Altus Advisory is a premium strategic fiduciary bridging elite hospitality mastery and AI-driven business intelligence for the GCC’s most ambitious leaders.
+            </p>
+            <div class="h-16 w-px bg-gold mx-auto my-10"></div>
+            <p class="playfair italic text-2xl text-obsidian px-10">
+                "The future belongs to the prepared. We do not adapt to the market; we define it."
+            </p>
+        </div>
+        <div class="mt-16 flex gap-8">
+            <a href="#identity" class="bg-obsidian text-white px-10 py-5 text-xs font-bold uppercase tracking-widest hover:bg-teal transition-all">Enter Governance</a>
+            <a href="#visuals" class="border border-gold text-gold px-10 py-5 text-xs font-bold uppercase tracking-widest hover:bg-gold hover:text-white transition-all">Identity Hub</a>
+        </div>
+    </header>
+
+    <!-- Brand Identity Deep Dive -->
+    <section id="identity" class="py-32 px-8 bg-gray-50 border-y border-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-20">
+                <span class="text-gold font-bold tracking-widest uppercase text-xs block mb-4">Phase I</span>
+                <h3 class="text-4xl font-bold playfair mb-6">The DNA Architecture</h3>
+                <p class="text-slate-500 max-w-2xl">A dual-archetype system combining analytical rigor with uncompromising premium standards.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div class="space-y-12">
+                    <div class="glass-panel p-8 rounded-sm shadow-sm border-l-4 border-gold">
+                        <h4 class="text-obsidian font-bold uppercase text-xs tracking-widest mb-4">Archetype Synthesis</h4>
+                        <p class="text-sm text-slate-600 mb-6 italic">The Sage meets The Ruler: Data-validated truth paired with institutional control.</p>
+                        <div class="chart-container">
+                            <canvas id="archetypeRadar"></canvas>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="p-6 bg-white border border-gray-100 text-center">
+                            <h5 class="text-[10px] font-bold text-gold uppercase mb-2">Emotional</h5>
+                            <p class="text-xs font-semibold">Supreme Confidence</p>
+                        </div>
+                        <div class="p-6 bg-white border border-gray-100 text-center">
+                            <h5 class="text-[10px] font-bold text-gold uppercase mb-2">Rational</h5>
+                            <p class="text-xs font-semibold">Data-Validated ROI</p>
+                        </div>
+                        <div class="p-6 bg-white border border-gray-100 text-center">
+                            <h5 class="text-[10px] font-bold text-gold uppercase mb-2">Aspirational</h5>
+                            <p class="text-xs font-semibold">Market Dominance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center">
+                    <h4 class="text-gold font-bold uppercase text-xs tracking-widest mb-10">Brand Essence Matrix</h4>
+                    <div class="space-y-4" id="dna-matrix">
+                        <!-- Injected via JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategy & Growth Pillars -->
+    <section id="strategy" class="py-32 px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24">
+                <span class="text-gold font-bold tracking-widest uppercase text-xs block mb-4">Phase II</span>
+                <h3 class="text-4xl font-bold playfair mb-6">Business Performance Framework</h3>
+                <p class="text-slate-500 max-w-2xl mx-auto">Five architectural pillars that transform standard operations into high-yielding digital-first enterprises.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6 mb-20" id="pillar-grid">
+                <!-- Injected via JS -->
+            </div>
+
+            <!-- Core Value Matrix -->
+            <div class="bg-obsidian rounded-sm p-12 text-white relative">
+                <h4 class="text-gold font-bold uppercase text-xs tracking-widest mb-12 text-center">The Value-Behavior Matrix</h4>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12" id="value-matrix">
+                    <!-- Injected via JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Messaging Architecture -->
+    <section id="messaging" class="py-32 px-8 bg-gray-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row gap-20">
+                <div class="lg:w-1/3">
+                    <span class="text-gold font-bold tracking-widest uppercase text-xs block mb-4">Phase III</span>
+                    <h3 class="text-4xl font-bold playfair mb-8 leading-tight">Corporate Voice & Messaging</h3>
+                    <p class="text-slate-600 mb-10 text-sm leading-relaxed">Consistency in narrative is the bedrock of credibility. We speak with authority, precision, and an unswerving focus on the future.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="p-6 border-l-2 border-gold bg-white shadow-sm">
+                            <h5 class="text-[10px] font-bold uppercase tracking-widest mb-2">Voice Tone</h5>
+                            <p class="text-xs text-slate-500 italic">"Authoritative, objective, third-person executive tone. Never hyperbolic."</p>
+                        </div>
+                        <div class="p-6 border-l-2 border-teal bg-white shadow-sm">
+                            <h5 class="text-[10px] font-bold uppercase tracking-widest mb-2">Lexicon Rule</h5>
+                            <p class="text-xs text-slate-500 italic">"Frame everything around ROI, Nitaqat compliance, and enterprise value enhancement."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-2/3 bg-white p-10 border border-gray-100 shadow-xl">
+                    <div class="flex border-b border-gray-100 mb-8">
+                        <button onclick="switchPitch(30)" class="pitch-tab active px-8 py-4 text-xs font-bold uppercase tracking-widest border-t-2 border-transparent transition-all" id="tab-30">30s Pitch</button>
+                        <button onclick="switchPitch(60)" class="pitch-tab px-8 py-4 text-xs font-bold uppercase tracking-widest border-t-2 border-transparent transition-all" id="tab-60">60s Pitch</button>
+                        <button onclick="switchPitch(120)" class="pitch-tab px-8 py-4 text-xs font-bold uppercase tracking-widest border-t-2 border-transparent transition-all" id="tab-120">Executive Intro</button>
+                    </div>
+                    
+                    <div id="pitch-content" class="min-h-[250px] flex flex-col justify-center">
+                        <h4 id="pitch-title" class="text-gold font-bold uppercase text-xs tracking-widest mb-6">Elevator Pitch</h4>
+                        <p id="pitch-text" class="text-lg playfair text-slate-800 leading-relaxed italic">
+                            Select a duration to view the optimized brand narrative.
+                        </p>
+                    </div>
+                    
+                    <div class="mt-12 pt-8 border-t border-gray-100 flex items-center gap-6">
+                        <div class="w-12 h-12 rounded-full border border-gold flex items-center justify-center text-gold text-xl italic playfair">A</div>
+                        <p class="text-[10px] uppercase font-bold tracking-[0.2em] text-slate-400">Master Corporate Message (Approved for all channels)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Identity Governance -->
+    <section id="visuals" class="py-32 px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24">
+                <span class="text-gold font-bold tracking-widest uppercase text-xs block mb-4">Phase IV</span>
+                <h3 class="text-4xl font-bold playfair mb-6">Visual Identity & Standards</h3>
+                <p class="text-slate-500 max-w-2xl mx-auto">Luxury is engineered. Our visual standards enforce premium perception through obsidian-anchored palettes and dual-language typography.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-20">
+                <!-- Color Systems -->
+                <div>
+                    <h4 class="text-obsidian font-bold uppercase text-xs tracking-widest mb-10 pb-4 border-b border-gray-100">Official Color Ecosystem</h4>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4" id="color-palette-grid">
+                        <!-- Injected via JS -->
+                    </div>
+                    
+                    <div class="mt-10 p-8 glass-panel flex flex-col md:flex-row items-center gap-10">
+                        <div class="chart-container !h-64">
+                            <canvas id="colorMixChart"></canvas>
+                        </div>
+                        <div>
+                            <h5 class="text-[10px] font-bold text-gold uppercase mb-2">Usage Doctrine</h5>
+                            <p class="text-xs text-slate-500">Obsidian Navy anchors 45% of visual assets. White space and Executive Ivory provide 40% breathing room. Gold is for accentuation only.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Typography -->
+                <div class="space-y-16">
+                    <div>
+                        <h4 class="text-obsidian font-bold uppercase text-xs tracking-widest mb-10 pb-4 border-b border-gray-100">Typography System</h4>
+                        <div class="space-y-12">
+                            <div>
+                                <p class="text-[10px] text-gold uppercase font-bold tracking-widest mb-2">Primary Heading (English)</p>
+                                <p class="playfair text-5xl font-bold mb-2">Playfair Display</p>
+                                <p class="text-xs text-slate-400 uppercase tracking-widest">Sophistication / Authority / Luxury</p>
+                            </div>
+                            <div>
+                                <p class="text-[10px] text-gold uppercase font-bold tracking-widest mb-2">Primary Body (English)</p>
+                                <p class="font-sans text-2xl font-semibold mb-2">Montserrat Regular</p>
+                                <p class="text-xs text-slate-400 uppercase tracking-widest">Modernity / Precision / Clarity</p>
+                            </div>
+                            <div class="pt-8 border-t border-gray-100">
+                                <p class="text-[10px] text-teal uppercase font-bold tracking-widest mb-2">Arabic Corporate Identity</p>
+                                <div class="flex justify-between items-end">
+                                    <div>
+                                        <p class="text-3xl font-bold mb-2" style="font-family: serif;">DIN Next Arabic</p>
+                                        <p class="text-xs text-slate-400 uppercase tracking-widest">Headings</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="text-2xl font-medium mb-2" style="font-family: sans-serif;">Cairo</p>
+                                        <p class="text-xs text-slate-400 uppercase tracking-widest">Body Text</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Governance Guardrails -->
+    <section id="compliance" class="py-32 px-8 bg-obsidian text-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-20">
+                <span class="text-gold font-bold tracking-widest uppercase text-xs block mb-4">Phase V</span>
+                <h3 class="text-4xl font-bold playfair mb-6 text-white">Compliance Guardrails</h3>
+                <p class="text-slate-400">Ensuring the Altus brand remains a fiduciary asset through strict behavioral and visual adherence.</p>
+                
+                <div class="flex justify-center gap-6 mt-12">
+                    <button onclick="toggleGuardrails('do')" id="btn-do" class="px-10 py-4 bg-gold text-obsidian text-[10px] font-bold uppercase tracking-widest transition-all">Approved Action</button>
+                    <button onclick="toggleGuardrails('dont')" id="btn-dont" class="px-10 py-4 border border-white/20 text-white text-[10px] font-bold uppercase tracking-widest transition-all">Non-Compliant</button>
+                </div>
+            </div>
+
+            <div id="guardrail-content" class="grid gap-6">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 px-8 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+            <div class="flex items-center gap-6">
+                <div class="w-12 h-12 bg-obsidian flex items-center justify-center">
+                    <span class="text-gold font-bold text-3xl playfair">A</span>
+                </div>
+                <div>
+                    <h5 class="font-bold playfair uppercase tracking-tighter text-2xl">Altus Advisory</h5>
+                    <p class="text-[10px] uppercase tracking-[0.4em] text-gold">Corporate Brand System v1.0</p>
+                </div>
+            </div>
+            
+            <div class="text-center md:text-right">
+                <p class="text-xs text-slate-400 uppercase tracking-widest mb-2">Saudi Vision 2030 Catalyst</p>
+                <p class="text-xs font-bold text-obsidian tracking-widest">© 2024 ALTUS ADVISORY. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // --- Data Repositories ---
+        const BRAND_ENGINE = {
+            dna: [
+                { label: 'Essence', val: 'Elevated Strategic Mastery', desc: 'The fundamental core of all output.' },
+                { label: 'Positioning', val: 'The Premier Strategic Fiduciary', desc: 'Alignment with GCC executives and hotel owners.' },
+                { label: 'Attributes', val: 'Executive, Analytical, Transformative', desc: 'The three pillars of our personality.' },
+                { label: 'UVP', val: 'High-Touch Mastery x High-Tech AI', desc: 'Synthesizing service excellence and predictive intel.' }
+            ],
+            pillars: [
+                { title: 'Hospitality Mastery', kpi: 'QA Audit Pass Rates', impact: 'Asset Valuation Max' },
+                { title: 'Strategic Growth', kpi: 'Market Penetration', impact: 'Regional Dominance' },
+                { title: 'Digital Transformation', kpi: 'Automation ROI', impact: 'Efficiency Lockdown' },
+                { title: 'Leadership Development', kpi: 'Saudization Alignment', impact: 'Talent Resilience' },
+                { title: 'Performance Intel', kpi: 'GOPPAR / RevPAR Uplift', impact: 'Bottom-Line Mastery' }
+            ],
+            values: [
+                { name: 'Integrity', behavior: 'Unbiased Counsel', apply: 'ROI Reporting' },
+                { name: 'Excellence', behavior: 'Zero-Defect Output', apply: 'Quality Audits' },
+                { name: 'Innovation', behavior: 'AI Integration', apply: 'Predictive Yield' },
+                { name: 'Partnership', behavior: 'Fiduciary Ownership', apply: 'Owner Representation' },
+                { name: 'Accountability', behavior: 'Measurable Impact', apply: 'Financial Upside' },
+                { name: 'Transformation', behavior: 'Structural Evolution', apply: 'Corporate Turnaround' },
+                { name: 'Human-Centric', behavior: 'Localized Upskilling', apply: 'Vision 2030 Goals' }
+            ],
+            pitches: {
+                30: { 
+                    title: 'The Elevator Pitch', 
+                    text: 'Altus Advisory engineers growth for the GCC’s most ambitious leaders. By combining elite hospitality operational standards with AI-driven revenue optimization, we transform standard business operations into highly profitable, future-ready enterprises.' 
+                },
+                60: { 
+                    title: 'Company Introduction', 
+                    text: 'True business excellence requires the seamless integration of localized human capital and technological innovation. Operating at the intersection of Hospitality Solutions and Strategic Business Growth, Altus Advisory addresses margin pressures and digital disruptions with proprietary methodologies that empower businesses across the GCC to scale profitably.' 
+                },
+                120: { 
+                    title: 'Executive Introduction', 
+                    text: 'Legacy operational frameworks are no longer sufficient in the Vision 2030 era. Altus Advisory operates as a premium strategic fiduciary. Our Hospitality division ensures flawless hotel development, while our Business Growth division drives AI implementation and revenue optimization. We replace intuition with advanced analytics to transform physical assets into high-yielding digital-first enterprises.' 
+                }
+            },
+            palette: [
+                { name: 'Obsidian Navy', hex: '#0D1B2A', usage: 'Primary Anchor', code: '13-27-42' },
+                { name: 'Executive Gold', hex: '#C89D4F', usage: 'Premium Accent', code: '200-157-79' },
+                { name: 'Innovation Teal', hex: '#0F3D3E', usage: 'Digital Future', code: '15-61-62' },
+                { name: 'Executive Ivory', hex: '#F7F6F2', usage: 'Sophistication', code: '247-246-242' },
+                { name: 'Precision Charcoal', hex: '#333333', usage: 'Stability', code: '51-51-51' },
+                { name: 'Clarity Gray', hex: '#E6E8EB', usage: 'Balance', code: '230-232-235' }
+            ],
+            guardrails: {
+                do: [
+                    'Project an image of calm, calculated authority.',
+                    'Align all structural messaging with Saudi Vision 2030 goals.',
+                    'Use high-contrast layouts anchored in Obsidian Navy.',
+                    'Frame recommendations around ROI and measurable KPIs.',
+                    'Utilize White Space as a luxury visual indicator.'
+                ],
+                dont: [
+                    'Never stretch, distort, or recolor the primary logo.',
+                    'Avoid overly aggressive or "salesy" marketing language.',
+                    'Do not mix non-approved fonts in executive decks.',
+                    'Avoid generic stock imagery that lacks luxury context.',
+                    'Never use Executive Gold as a background fill.'
+                ]
+            }
+        };
+
+        // --- Core Functions ---
+
+        function initApp() {
+            renderDNA();
+            renderPillars();
+            renderValues();
+            renderPalette();
+            initCharts();
+            switchPitch(30);
+            toggleGuardrails('do');
+        }
+
+        function renderDNA() {
+            const container = document.getElementById('dna-matrix');
+            container.innerHTML = BRAND_ENGINE.dna.map(item => `
+                <div class="flex gap-6 p-6 bg-white border border-gray-100 hover:border-gold transition-colors group">
+                    <div class="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-gray-50 group-hover:bg-gold/10 text-gold font-bold text-xs uppercase tracking-tighter">
+                        ${item.label.substring(0,2)}
+                    </div>
+                    <div>
+                        <h5 class="text-[10px] font-bold uppercase tracking-widest text-gold mb-1">${item.label}</h5>
+                        <p class="font-bold text-slate-800 text-sm mb-1">${item.val}</p>
+                        <p class="text-xs text-slate-400">${item.desc}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderPillars() {
+            const container = document.getElementById('pillar-grid');
+            container.innerHTML = BRAND_ENGINE.pillars.map(p => `
+                <div class="pillar-card p-8 bg-white border border-gray-100 flex flex-col items-center text-center shadow-sm hover:shadow-xl transition-all">
+                    <div class="w-1 h-8 bg-gold mb-6"></div>
+                    <h5 class="text-xs font-bold uppercase tracking-widest mb-4 leading-relaxed h-12">${p.title}</h5>
+                    <div class="mt-auto space-y-4 pt-6 border-t border-gray-50 w-full">
+                        <div>
+                            <p class="text-[9px] uppercase text-slate-400 tracking-widest">Core KPI</p>
+                            <p class="text-[10px] font-bold text-obsidian uppercase">${p.kpi}</p>
+                        </div>
+                        <div>
+                            <p class="text-[9px] uppercase text-slate-400 tracking-widest">Market Impact</p>
+                            <p class="text-[10px] font-bold text-teal uppercase">${p.impact}</p>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderValues() {
+            const container = document.getElementById('value-matrix');
+            container.innerHTML = BRAND_ENGINE.values.map(v => `
+                <div class="group border-l border-white/10 pl-6">
+                    <h5 class="text-gold font-bold text-xs uppercase tracking-[0.2em] mb-4">${v.name}</h5>
+                    <p class="text-xs text-white/80 font-semibold mb-2 group-hover:text-gold transition-colors">${v.behavior}</p>
+                    <p class="text-[10px] text-white/40 uppercase tracking-widest">Applied to: ${v.apply}</p>
+                </div>
+            `).join('');
+        }
+
+        function renderPalette() {
+            const container = document.getElementById('color-palette-grid');
+            container.innerHTML = BRAND_ENGINE.palette.map(c => `
+                <div class="flex flex-col">
+                    <div class="h-24 w-full shadow-inner mb-3 border border-gray-100" style="background-color: ${c.hex}"></div>
+                    <h5 class="text-[10px] font-bold uppercase tracking-widest mb-1">${c.name}</h5>
+                    <p class="text-[9px] text-slate-400 font-mono">${c.hex} | ${c.code}</p>
+                    <p class="text-[8px] uppercase tracking-tighter text-gold font-bold mt-1">${c.usage}</p>
+                </div>
+            `).join('');
+        }
+
+        function switchPitch(dur) {
+            const pitch = BRAND_ENGINE.pitches[dur];
+            document.getElementById('pitch-title').innerText = pitch.title;
+            document.getElementById('pitch-text').innerText = `"${pitch.text}"`;
+            
+            document.querySelectorAll('.pitch-tab').forEach(t => t.classList.remove('active'));
+            document.getElementById(`tab-${dur}`).classList.add('active');
+        }
+
+        function toggleGuardrails(type) {
+            const container = document.getElementById('guardrail-content');
+            const data = BRAND_ENGINE.guardrails[type];
+            
+            const btnDo = document.getElementById('btn-do');
+            const btnDont = document.getElementById('btn-dont');
+
+            if(type === 'do') {
+                btnDo.className = "px-10 py-4 bg-gold text-obsidian text-[10px] font-bold uppercase tracking-widest transition-all";
+                btnDont.className = "px-10 py-4 border border-white/20 text-white text-[10px] font-bold uppercase tracking-widest transition-all";
+            } else {
+                btnDont.className = "px-10 py-4 bg-teal text-white text-[10px] font-bold uppercase tracking-widest transition-all";
+                btnDo.className = "px-10 py-4 border border-white/20 text-white text-[10px] font-bold uppercase tracking-widest transition-all";
+            }
+
+            container.innerHTML = data.map(item => `
+                <div class="flex items-center gap-6 p-6 border border-white/10 hover:bg-white/5 transition-all">
+                    <span class="text-2xl text-gold">${type === 'do' ? '✓' : '✕'}</span>
+                    <p class="text-sm text-white/80 font-medium">${item}</p>
+                </div>
+            `).join('');
+        }
+
+        function initCharts() {
+            // Radar Chart for Archetypes
+            const radarCtx = document.getElementById('archetypeRadar').getContext('2d');
+            new Chart(radarCtx, {
+                type: 'radar',
+                data: {
+                    labels: ['Analytical', 'Control', 'Growth', 'Prestige', 'Innovation', 'Clarity'],
+                    datasets: [{
+                        label: 'Brand Balance',
+                        data: [95, 90, 85, 92, 88, 90],
+                        backgroundColor: 'rgba(200, 157, 79, 0.15)',
+                        borderColor: '#C89D4F',
+                        pointBackgroundColor: '#0D1B2A',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: {
+                            angleLines: { color: '#eee' },
+                            grid: { color: '#eee' },
+                            pointLabels: { font: { size: 9, family: 'Montserrat' } },
+                            ticks: { display: false }
+                        }
+                    },
+                    plugins: { legend: { display: false } }
+                }
+            });
+
+            // Doughnut Chart for Color Mix
+            const mixCtx = document.getElementById('colorMixChart').getContext('2d');
+            new Chart(mixCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Obsidian', 'Ivory/White', 'Gold', 'Teal/Other'],
+                    datasets: [{
+                        data: [45, 40, 10, 5],
+                        backgroundColor: ['#0D1B2A', '#F7F6F2', '#C89D4F', '#0F3D3E'],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    cutout: '75%',
+                    plugins: {
+                        legend: { position: 'bottom', labels: { boxWidth: 8, font: { size: 9 } } }
+                    }
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', initApp);
+    </script>
+</body>
+</html>

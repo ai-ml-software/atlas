@@ -1,0 +1,116 @@
+# Hospitality Academy / Academy LMS
+#
+# Written for a shared host serving the application from a subdirectory, for
+# example https://example.com/atlas/. It deliberately avoids the directives
+# that most often cause an immediate HTTP 500 on shared hosting:
+#
+#   php_value / php_flag   fatal under PHP-FPM or CGI, which most hosts use
+#   Options +FollowSymLinks forbidden unless AllowOverride Options is granted
+#   AddHandler for a PHP version  host specific, breaks on the wrong one
+#
+# If you still get a 500 with this file in place, rename it to htaccess.txt
+# and reload. If the error disappears, the cause is a directive here that your
+# host does not allow, and the <IfModule> guards below will tell you which.
+
+# ----------------------------------------------------------------- rewriting
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # RewriteBase is deliberately not set. The rule below is relative to the
+    # directory holding this file, so the same .htaccess works at a domain
+    # root, at /atlas/, or at any other subdirectory without editing.
+    #
+    # Only if your host rewrites to the wrong place (a redirect loop, or every
+    # URL resolving to the document root) uncomment the next line and set it
+    # to the path the site is served at, with both slashes:
+    # RewriteBase /atlas/
+
+    # Send everything that is not a real file or directory to the front
+    # controller. The query string form keeps CodeIgniter's URI parsing
+    # working on hosts where PATH_INFO is unavailable.
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+    # Without mod_rewrite there is no pretty URL routing at all, so make the
+    # failure obvious rather than serving a directory listing.
+    ErrorDocument 404 "mod_rewrite is not enabled. The application cannot route requests."
+</IfModule>
+
+# ------------------------------------------------------------------ security
+
+# Never serve the application source or the framework. Written as a rewrite
+# rather than RedirectMatch so it does not need to know the install path.
+<IfModule mod_rewrite.c>
+    RewriteRule ^(application|system)(/|$) - [F,L]
+</IfModule>
+
+# Apache 2.4 access syntax, guarded so an Apache 2.2 host does not 500 here.
+<IfModule mod_authz_core.c>
+    <FilesMatch "^\.">
+        Require all denied
+    </FilesMatch>
+    <FilesMatch "\.(sql|log|md|lock|ini|sh|py|bak|dist|example)$">
+        Require all denied
+    </FilesMatch>
+</IfModule>
+
+<IfModule !mod_authz_core.c>
+    <FilesMatch "^\.">
+        Order allow,deny
+        Deny from all
+    </FilesMatch>
+    <FilesMatch "\.(sql|log|md|lock|ini|sh|py|bak|dist|example)$">
+        Order allow,deny
+        Deny from all
+    </FilesMatch>
+</IfModule>
+
+# Uploaded files are data, not code. Refuse to execute anything in there even
+# if something manages to write a script into an upload directory.
+<IfModule mod_rewrite.c>
+    RewriteCond %{REQUEST_URI} ^.*/uploads/.*\.(php|phtml|php[0-9]|pl|py|cgi|asp|jsp|sh)$ [NC]
+    RewriteRule .* - [F,L]
+</IfModule>
+
+# Do not advertise the directory contents.
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+
+# ------------------------------------------------------------------- headers
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    # Only meaningful once the site is served over HTTPS everywhere.
+    # Header always set Strict-Transport-Security "max-age=31536000"
+</IfModule>
+
+# ------------------------------------------------------------------- caching
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/webp              "access plus 1 year"
+    ExpiresByType image/jpeg              "access plus 1 year"
+    ExpiresByType image/png               "access plus 1 year"
+    ExpiresByType image/svg+xml           "access plus 1 year"
+    ExpiresByType text/css                "access plus 1 month"
+    ExpiresByType application/javascript  "access plus 1 month"
+    ExpiresByType font/woff2              "access plus 1 year"
+    ExpiresDefault                        "access plus 2 days"
+</IfModule>
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+    AddOutputFilterByType DEFLATE application/javascript application/json
+    AddOutputFilterByType DEFLATE application/xml image/svg+xml
+</IfModule>
+
+# ------------------------------------------------------------------- charset
+
+AddDefaultCharset UTF-8

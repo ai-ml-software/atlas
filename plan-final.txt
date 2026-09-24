@@ -1,0 +1,2708 @@
+# Hospitality Academy — Laravel 100% Completion Master Plan
+
+Based on your requested scope, the system should be built as a **complete, production-ready Hospitality LMS + SOP Knowledge Hub + Hospitality Academy + SEO/CMS + Competitor Intelligence platform**, not as a simple course website.
+
+The implementation standard should be:
+
+> **No TODO, no PARTIAL, no FAILED, no placeholder page, no fake button, no dead sidebar item, and no “coming soon” functionality. Every documented requirement must end in a working implementation with automated tests and browser verification.**
+
+The available Dyafa material already establishes a strong Saudi-market direction: bilingual EN/AR, full RTL, structured SEO, mobile performance, measurable CTAs, and hospitality-specific content rather than generic business content.  The existing Saudi hospitality keyword research also identifies high-intent areas such as hotel management software, compliance, training/operational content, and Saudi hospitality search intent. 
+
+---
+
+# 1. Product Definition
+
+## Product name
+
+**Hospitality Academy**
+
+Suggested positioning:
+
+**Hospitality Academy — Learn. Certify. Standardize. Perform.**
+
+Arabic:
+
+**أكاديمية الضيافة — تعلّم، اعتمد، وحّد المعايير، وطوّر الأداء**
+
+The platform should combine five products into one Laravel application:
+
+| Module              | Purpose                                                                |
+| ------------------- | ---------------------------------------------------------------------- |
+| LMS                 | Courses, lessons, quizzes, exams, assignments, certificates            |
+| Hospitality Academy | Role-based hospitality education and career development                |
+| SOP Hub             | Hotel SOPs, checklists, policies, procedures and operational knowledge |
+| Workforce Training  | Assign training by hotel, department, role, employee and skill         |
+| SEO/CMS             | Public academy website, articles, landing pages and search acquisition |
+
+A sixth management layer should connect everything:
+
+**Analytics + competency matrix + training compliance + reporting.**
+
+---
+
+# 2. Main User Roles
+
+Implement proper RBAC rather than hiding buttons manually.
+
+### Super Admin
+
+Full system control:
+
+* users
+* organizations
+* hotels/properties
+* departments
+* roles
+* courses
+* SOPs
+* certificates
+* payments if enabled
+* SEO
+* CMS
+* competitor research
+* system settings
+* audit logs
+* integrations
+
+### Academy Admin
+
+Manages the academy itself:
+
+* programs
+* courses
+* instructors
+* learners
+* assignments
+* examinations
+* certificates
+* reports
+* content approvals
+
+### Instructor
+
+Can:
+
+* create courses
+* create lessons
+* upload videos/PDFs
+* create quizzes
+* grade assignments
+* monitor learners
+* issue completion recommendations
+* respond to learner questions
+
+### Hotel / Organization Admin
+
+Can manage only their organization:
+
+* hotel/property
+* employees
+* departments
+* training assignments
+* required courses
+* SOP access
+* compliance status
+* reports
+
+### Manager / Supervisor
+
+Can:
+
+* see team
+* assign training
+* monitor completion
+* review assessments
+* monitor expired certificates
+* verify SOP acknowledgement
+
+### Learner / Employee
+
+Can:
+
+* browse assigned courses
+* continue lessons
+* complete quizzes
+* take exams
+* download certificates
+* read SOPs
+* acknowledge procedures
+* track progress
+* maintain profile/skills
+
+### Auditor / Viewer
+
+Read-only access to:
+
+* reports
+* audit trails
+* compliance
+* certificates
+* training history
+
+---
+
+# 3. Complete Sidebar
+
+The sidebar must not contain links that are merely decorative.
+
+## Dashboard
+
+`/admin/dashboard`
+
+Widgets:
+
+* total learners
+* active learners
+* courses
+* published courses
+* enrollments
+* completion rate
+* overdue training
+* certificates issued
+* certificates expiring
+* SOP acknowledgements
+* failed assessments
+* active organizations
+* hotels/properties
+* training hours
+* monthly learning activity
+
+Charts:
+
+* enrollment trend
+* completion trend
+* department completion
+* hotel/property comparison
+* course performance
+* certification trend
+
+Quick actions:
+
+* Add course
+* Add learner
+* Create training assignment
+* Upload SOP
+* Create assessment
+* Create certificate template
+* Create article
+
+---
+
+# 4. People
+
+## Users
+
+Full CRUD:
+
+* name
+* email
+* mobile
+* avatar
+* language
+* timezone
+* employee ID
+* job title
+* department
+* organization
+* hotel/property
+* manager
+* status
+* role
+
+Features:
+
+* search
+* filters
+* bulk import
+* bulk export
+* bulk activation/deactivation
+* password reset
+* role assignment
+* training history
+
+## Learners
+
+Dedicated learner-management interface.
+
+Show:
+
+* profile
+* assigned learning
+* progress
+* scores
+* certificates
+* competency
+* SOP acknowledgements
+* attendance
+* overdue items
+
+## Instructors
+
+Track:
+
+* courses
+* learners
+* ratings
+* lesson activity
+* assessment activity
+
+## Managers
+
+Manager/team structure.
+
+---
+
+# 5. Organizations
+
+## Organizations
+
+Multi-tenant-ready architecture.
+
+Each organization can contain:
+
+```text
+Organization
+ ├── Properties
+ │    ├── Departments
+ │    │    ├── Roles
+ │    │    └── Employees
+ │    └── Training
+ └── SOP Library
+```
+
+## Properties / Hotels
+
+Fields:
+
+* property name
+* brand
+* city
+* region
+* country
+* property type
+* room count
+* operational status
+* contact
+* manager
+
+Saudi localization:
+
+* Riyadh
+* Jeddah
+* Makkah
+* Madinah
+* Al Khobar
+* Dammam
+* AlUla
+* Abha
+* other cities
+
+## Departments
+
+Examples:
+
+* Front Office
+* Housekeeping
+* Food & Beverage
+* Kitchen
+* Engineering
+* Maintenance
+* Security
+* Sales
+* Revenue Management
+* Finance
+* HR
+* Procurement
+* Guest Relations
+* Events
+* Spa / Wellness
+* Laundry
+
+---
+
+# 6. Hospitality Academy
+
+This is the core educational area.
+
+## Academy Dashboard
+
+Display:
+
+* Recommended courses
+* Mandatory courses
+* Continue learning
+* New courses
+* Certificates
+* Skills progress
+* Upcoming examinations
+* Recently completed
+* SOP updates
+
+## Programs
+
+A program groups multiple courses.
+
+Example:
+
+**Hotel Front Office Professional**
+
+```text
+Program
+ ├── Front Office Fundamentals
+ ├── Guest Service Excellence
+ ├── PMS Fundamentals
+ ├── Complaint Handling
+ ├── Upselling
+ ├── Night Audit
+ └── Final Assessment
+```
+
+Program functionality:
+
+* duration
+* level
+* prerequisites
+* target roles
+* target departments
+* courses
+* final exam
+* certificate
+* completion rules
+
+---
+
+# 7. Course Management
+
+Complete course lifecycle:
+
+```text
+Draft
+→ Internal Review
+→ Approved
+→ Published
+→ Archived
+```
+
+Never allow unpublished content to appear as public.
+
+Course fields:
+
+* title EN
+* title AR
+* slug EN
+* slug AR
+* short description EN
+* short description AR
+* full description
+* thumbnail
+* instructor
+* department
+* category
+* level
+* duration
+* price/free
+* certificate eligibility
+* requirements
+* learning outcomes
+* SEO metadata
+
+Course page:
+
+* overview
+* curriculum
+* instructor
+* duration
+* learning outcomes
+* prerequisites
+* certificate
+* FAQ
+* reviews
+* related courses
+
+---
+
+# 8. Lessons
+
+Support:
+
+* video
+* audio
+* text
+* PDF
+* presentation
+* external resource
+* downloadable checklist
+* SOP reference
+* interactive content
+
+Lesson configuration:
+
+* title
+* objective
+* estimated duration
+* mandatory/optional
+* order
+* attachments
+* transcript
+* captions
+* Arabic version
+* English version
+
+Completion rules:
+
+* watched percentage
+* lesson duration
+* quiz completion
+* acknowledgement
+* assignment submission
+
+Prevent false completion.
+
+---
+
+# 9. Hospitality Course Catalog
+
+Create a serious hotel-focused curriculum.
+
+## Front Office
+
+* Front Office Fundamentals
+* Reception Operations
+* Check-in
+* Check-out
+* Guest Registration
+* Room Assignment
+* Concierge
+* Guest Complaints
+* VIP Handling
+* Telephone Etiquette
+* Upselling
+* Night Audit
+* Guest Privacy
+
+## Housekeeping
+
+* Housekeeping Fundamentals
+* Room Cleaning SOP
+* Bed Making
+* Bathroom Cleaning
+* Room Inspection
+* Lost & Found
+* Laundry
+* Public Areas
+* Deep Cleaning
+* Chemical Safety
+* Room Turnaround
+* Housekeeping Productivity
+
+## Food & Beverage
+
+* Restaurant Service
+* Guest Greeting
+* Table Service
+* Food Safety
+* HACCP basics
+* Hygiene
+* Beverage Service
+* Banquet Operations
+* POS procedures
+* Upselling
+
+## Kitchen
+
+* Culinary Fundamentals
+* Food Safety
+* Kitchen Hygiene
+* Knife Safety
+* Storage
+* Receiving
+* Temperature Control
+* Allergen Handling
+* Waste Control
+* Kitchen Cleaning
+
+## Engineering
+
+* Hotel Engineering
+* Preventive Maintenance
+* HVAC
+* Electrical Safety
+* Plumbing
+* Fire Safety
+* Maintenance Work Orders
+* Asset Inspection
+* Emergency Response
+
+## Management
+
+* Hotel Management
+* Leadership
+* Team Management
+* Hospitality Finance
+* Revenue Management
+* Cost Control
+* Guest Experience
+* Quality Management
+* Crisis Management
+* Hotel KPIs
+
+## Digital Hospitality
+
+* PMS
+* Channel Management
+* Booking Engine
+* Direct Booking
+* OTA Management
+* Revenue Analytics
+* Hotel Digital Marketing
+* Hotel SEO
+* Reputation Management
+* Hospitality Technology
+
+The existing Saudi keyword research specifically highlights commercial demand around hotel systems, direct booking, revenue management, compliance and Saudi-specific hospitality software topics, making these useful adjacent content pillars for the platform. 
+
+---
+
+# 10. Learning Paths
+
+Create automatic career paths.
+
+Examples:
+
+### Front Office Career Path
+
+```text
+Introduction
+↓
+Front Office Associate
+↓
+Senior Front Office Associate
+↓
+Supervisor
+↓
+Assistant Front Office Manager
+↓
+Front Office Manager
+```
+
+### Housekeeping Career Path
+
+```text
+Room Attendant
+↓
+Senior Room Attendant
+↓
+Housekeeping Supervisor
+↓
+Assistant Executive Housekeeper
+↓
+Executive Housekeeper
+```
+
+### F&B Career Path
+
+```text
+F&B Associate
+↓
+Captain
+↓
+Supervisor
+↓
+Assistant Manager
+↓
+Restaurant Manager
+```
+
+Each path has:
+
+* required courses
+* optional courses
+* required SOPs
+* assessments
+* skills
+* certificates
+* target job roles
+
+---
+
+# 11. Training Assignment Engine
+
+Managers can assign:
+
+* one course
+* multiple courses
+* program
+* learning path
+* SOP
+* assessment
+
+Assignment options:
+
+* individual
+* department
+* property
+* job role
+* organization
+
+Set:
+
+* start date
+* due date
+* reminder schedule
+* mandatory/optional
+* passing score
+* certification requirement
+
+Automated reminders:
+
+```text
+Assignment created
+→ reminder
+→ due soon
+→ overdue
+→ escalation
+```
+
+---
+
+# 12. SOP Knowledge Hub
+
+This needs to be a first-class module rather than storing PDFs in a generic media folder.
+
+## SOP Dashboard
+
+Show:
+
+* total SOPs
+* published
+* draft
+* review required
+* expired
+* acknowledgement rate
+* recently updated
+
+## SOP Categories
+
+* Front Office
+* Housekeeping
+* Engineering
+* Maintenance
+* F&B
+* Kitchen
+* Safety
+* Security
+* HR
+* Finance
+* Procurement
+* Guest Experience
+* Emergency
+* Pre-opening
+
+## SOP structure
+
+Every SOP should support:
+
+```text
+SOP
+ ├── Title
+ ├── Department
+ ├── Role
+ ├── Purpose
+ ├── Scope
+ ├── Responsibilities
+ ├── Required Tools
+ ├── Procedure
+ ├── Checklist
+ ├── Safety Notes
+ ├── Quality Standard
+ ├── Escalation
+ ├── Related Documents
+ ├── Version
+ ├── Effective Date
+ ├── Review Date
+ └── Approval
+```
+
+---
+
+# 13. SOP Version Control
+
+Never overwrite an important SOP silently.
+
+Use:
+
+```text
+v1.0
+v1.1
+v2.0
+```
+
+Show:
+
+* author
+* approver
+* published date
+* change summary
+* previous version
+* current version
+
+Historical versions remain auditable.
+
+---
+
+# 14. SOP Acknowledgement
+
+For mandatory procedures:
+
+```text
+Employee opens SOP
+→ reads/views
+→ confirms understanding
+→ acknowledges
+→ timestamp recorded
+```
+
+Store:
+
+* user
+* SOP
+* version
+* IP
+* timestamp
+
+Managers can see:
+
+**Required: 52 / Acknowledged: 47 / Missing: 5**
+
+---
+
+# 15. Checklists
+
+Create reusable operational checklists.
+
+Examples:
+
+### Opening Checklist
+
+* Lobby ready
+* Reception ready
+* PMS operational
+* Keys/cards prepared
+* Cash drawer checked
+* Emergency contacts available
+
+### Housekeeping Room Checklist
+
+* Bed
+* Linen
+* Bathroom
+* Amenities
+* Lighting
+* HVAC
+* TV
+* Minibar
+* Cleanliness
+* Final inspection
+
+### Engineering Preventive Maintenance
+
+* HVAC
+* electrical
+* plumbing
+* pumps
+* fire systems
+* equipment
+* safety inspection
+
+Checklists should support:
+
+* recurring schedules
+* completion
+* notes
+* photos
+* signatures
+* escalation
+* overdue status
+
+---
+
+# 16. Assessments
+
+Full question engine:
+
+* multiple choice
+* true/false
+* multiple response
+* matching
+* scenario question
+* short answer
+* essay/manual grading
+
+Features:
+
+* question banks
+* random questions
+* random answers
+* time limit
+* attempts
+* passing grade
+* automatic grading
+* manual grading
+
+Anti-cheating options:
+
+* question randomization
+* attempt limits
+* time limits
+* submission history
+
+---
+
+# 17. Assignments
+
+Support:
+
+* file upload
+* written answer
+* practical task
+* photo evidence
+* manager verification
+
+Workflow:
+
+```text
+Assigned
+→ Submitted
+→ Instructor Review
+→ Approved / Changes Requested
+→ Completed
+```
+
+---
+
+# 18. Exams
+
+Build:
+
+* exam templates
+* question bank
+* exam sessions
+* pass/fail rules
+* retakes
+* result history
+
+Example:
+
+**Hospitality Operations Certification Exam**
+
+---
+
+# 19. Certificates
+
+Certificate generator:
+
+* learner name
+* course/program
+* completion date
+* certificate number
+* verification URL
+* QR code
+* instructor
+* academy logo
+* signature
+* expiry date if applicable
+
+Public verification:
+
+`/verify/{certificate-code}`
+
+A third party should be able to verify:
+
+```text
+Certificate valid
+Learner
+Course
+Issued date
+Status
+```
+
+---
+
+# 20. Skills Matrix
+
+This is important for hotel workforce management.
+
+Example:
+
+| Employee   | Front Office | Guest Service | PMS         | Complaint Handling | Upselling |
+| ---------- | ------------ | ------------- | ----------- | ------------------ | --------- |
+| Employee A | Certified    | Certified     | In Progress | Missing            | Certified |
+
+Skill levels:
+
+* Not Started
+* Learning
+* Basic
+* Competent
+* Advanced
+* Certified
+
+Managers can identify training gaps immediately.
+
+---
+
+# 21. Attendance
+
+For classroom/blended training:
+
+* sessions
+* instructor
+* location
+* date/time
+* attendance
+* absent
+* late
+* excused
+
+Attendance should feed course completion where appropriate.
+
+---
+
+# 22. Notifications
+
+Channels:
+
+* in-app
+* email
+* optionally WhatsApp/SMS through approved provider integration
+
+Notifications:
+
+* new assignment
+* due soon
+* overdue
+* certificate issued
+* certificate expiring
+* course approved
+* assessment result
+* SOP updated
+* SOP acknowledgement required
+
+Notification center:
+
+```text
+Unread
+All
+Training
+Certificates
+SOP
+System
+```
+
+---
+
+# 23. Reports
+
+## Training Reports
+
+* completion
+* overdue
+* pass/fail
+* training hours
+* attendance
+* certificates
+* learner progress
+
+## Property Reports
+
+* property completion
+* department completion
+* manager compliance
+
+## Employee Reports
+
+* learner history
+* competency
+* certifications
+* expired certificates
+
+## SOP Reports
+
+* acknowledgement
+* overdue acknowledgement
+* version compliance
+
+## Executive Report
+
+One page:
+
+```text
+Workforce Readiness
+Training Compliance
+Certification
+SOP Compliance
+Top Gaps
+Upcoming Expiries
+```
+
+Support:
+
+* Excel/CSV
+* PDF
+* print
+* scheduled reports
+
+---
+
+# 24. Analytics
+
+Track:
+
+* active users
+* learning hours
+* lesson completion
+* course completion
+* quiz average
+* exam pass rate
+* drop-off rate
+* most popular courses
+* least completed courses
+* department gaps
+* property gaps
+* certification rate
+
+Filters:
+
+* date
+* organization
+* property
+* department
+* role
+* course
+* instructor
+
+---
+
+# 25. Public Academy Website
+
+The public website needs a separate SEO-oriented navigation.
+
+## Public Header
+
+**Home**
+
+**Courses**
+
+**Programs**
+
+**Learning Paths**
+
+**Hospitality Topics**
+
+**SOP Resources**
+
+**Articles**
+
+**Certifications**
+
+**About Academy**
+
+**For Hotels**
+
+**Contact**
+
+Arabic/English language switch.
+
+---
+
+# 26. Public Pages
+
+### `/`
+
+Academy landing page.
+
+### `/courses`
+
+Course marketplace/catalog.
+
+### `/courses/{slug}`
+
+Course detail.
+
+### `/programs`
+
+Programs.
+
+### `/programs/{slug}`
+
+Program detail.
+
+### `/learning-paths`
+
+Career paths.
+
+### `/learning-paths/{slug}`
+
+Learning path.
+
+### `/certificates`
+
+Certificate information.
+
+### `/verify/{code}`
+
+Certificate verification.
+
+### `/hospitality-topics`
+
+Topic hub.
+
+### `/hospitality-topics/{slug}`
+
+Topic landing page.
+
+### `/sop`
+
+Public SOP knowledge resources where permitted.
+
+### `/articles`
+
+SEO blog.
+
+### `/articles/{slug}`
+
+Article.
+
+### `/about`
+
+Academy information.
+
+### `/hotels`
+
+B2B hospitality training.
+
+### `/hotels/training`
+
+Hotel workforce training.
+
+### `/contact`
+
+Lead/contact form.
+
+### `/privacy`
+
+Privacy.
+
+### `/terms`
+
+Terms.
+
+---
+
+# 27. SEO System
+
+SEO must not depend on developers editing source code manually.
+
+Create an admin SEO center.
+
+For every indexable page:
+
+* SEO title EN
+* SEO title AR
+* meta description EN
+* meta description AR
+* canonical URL
+* robots
+* OG title
+* OG description
+* OG image
+* Twitter/X card
+* schema JSON-LD
+* focus keyword
+* secondary keywords
+* related keywords
+* internal-link suggestions
+
+---
+
+# 28. SEO Technical Requirements
+
+Implement:
+
+* XML sitemap
+* image sitemap where appropriate
+* robots.txt
+* canonical tags
+* hreflang EN/AR
+* clean slugs
+* 301 redirect manager
+* 404 page
+* breadcrumbs
+* Article schema
+* Course schema
+* Organization schema
+* Person schema where appropriate
+* FAQ schema where valid
+* BreadcrumbList schema
+* WebSite schema
+* SearchAction only when appropriate
+
+The existing Dyafa website requirements already call for bilingual metadata, hreflang, XML sitemap and Organization structured data. 
+
+---
+
+# 29. Saudi SEO Architecture
+
+Build landing pages around actual search intent rather than keyword stuffing.
+
+Examples:
+
+### English
+
+* Hotel Training Courses in Saudi Arabia
+* Hospitality Training in Saudi Arabia
+* Hotel Staff Training
+* Front Office Training
+* Housekeeping Training
+* Hotel Management Courses
+* Hospitality Certification
+* Hotel SOP Training
+* Hotel Employee Training
+* Hospitality LMS Saudi Arabia
+* Hotel Training Management System
+* Hotel Workforce Training
+* Hotel Compliance Training
+* Hospitality Online Courses Saudi Arabia
+
+### Arabic
+
+* دورات تدريبية للفنادق في السعودية
+* تدريب موظفي الفنادق
+* دورات الضيافة
+* دورات إدارة الفنادق
+* تدريب الاستقبال الفندقي
+* تدريب التدبير الفندقي
+* أنظمة التشغيل الفندقي
+* إجراءات التشغيل القياسية للفنادق
+* تدريب موظفي الضيافة
+* شهادات الضيافة
+* التدريب الفندقي في السعودية
+
+Build city pages only where there is useful localized content:
+
+* Riyadh
+* Jeddah
+* Makkah
+* Madinah
+* Eastern Province
+* Al Khobar
+* Dammam
+* AlUla
+
+Do not generate hundreds of thin doorway pages.
+
+The available Saudi keyword research supports city-specific SEO as an important local-search pattern, while also emphasizing dedicated compliance, direct-booking and hospitality solution pages. 
+
+---
+
+# 30. Hospitality Academy Content Engine
+
+Create a content taxonomy:
+
+```text
+Hospitality
+ ├── Hotels
+ ├── Front Office
+ ├── Housekeeping
+ ├── F&B
+ ├── Culinary
+ ├── Engineering
+ ├── Management
+ ├── Guest Experience
+ ├── Revenue
+ ├── Sales
+ ├── Technology
+ ├── Safety
+ └── Compliance
+```
+
+Every article should connect to:
+
+* course
+* program
+* SOP
+* learning path
+* related articles
+* relevant CTA
+
+This creates an SEO → learning → conversion loop.
+
+---
+
+# 31. Competitor Intelligence
+
+Create an admin-only:
+
+**Competitor Academy**
+
+Track public competitors and their observable features, not copied content.
+
+Current research shows Typsy positioning itself around hospitality-specific LMS delivery, 2,000+ short video lessons, certificates, mobile learning, custom SOP content and performance intelligence. ([Typsy][1])
+
+Saudi Tourism Authority also provides an electronic learning service for tourism-sector businesses with possible attendance certificates. ([My Government][2])
+
+FSI advertises free hospitality workforce tracks covering hotel, restaurant and café sectors and offers accredited certificates with verification codes on qualifying programs. ([شركة مهارات المستقبل للتدريب][3])
+
+These are **benchmark inputs**, not a reason to copy another provider's product.
+
+## Competitor record
+
+Fields:
+
+* competitor
+* website
+* country
+* target audience
+* LMS
+* courses
+* mobile learning
+* certificates
+* SOP support
+* assessments
+* analytics
+* hotel deployment
+* organization training
+* languages
+* content type
+* pricing model
+* SEO topics
+* content frequency
+* public strengths/features
+* gaps/opportunities
+* evidence URL
+* last checked date
+
+Never present speculative competitor claims as facts.
+
+---
+
+# 32. SEO Competitor Research
+
+Admin can record:
+
+```text
+Competitor
+Keyword
+URL
+Search intent
+Country
+Language
+Content type
+Observed title
+Observed topic
+Observed SERP position
+Our page
+Content gap
+Last checked
+Source
+```
+
+Add:
+
+* keyword clustering
+* content gap
+* topic gap
+* page gap
+* internal linking gap
+
+---
+
+# 33. CMS
+
+Admin sidebar:
+
+### Pages
+
+* homepage
+* landing pages
+* static pages
+
+### Articles
+
+* draft
+* review
+* scheduled
+* published
+* archived
+
+### Categories
+
+### Authors
+
+### Media
+
+### Menus
+
+### Redirects
+
+### FAQs
+
+### Testimonials
+
+### SEO
+
+### Translations
+
+Use independent English/Arabic content rather than automatic translation. This follows the existing Dyafa bilingual-content principle that EN and AR should be first-class parallel structures. 
+
+---
+
+# 34. Admin Content Workflow
+
+For important content:
+
+```text
+Draft
+↓
+Editor Review
+↓
+SEO Review
+↓
+Approval
+↓
+Publish
+```
+
+For normal operational administration, do not create artificial approval gates that block routine work.
+
+---
+
+# 35. Search
+
+Global search should search:
+
+* users
+* courses
+* lessons
+* SOPs
+* articles
+* certificates
+* programs
+* properties
+* departments
+
+Learner search should only expose content the learner is allowed to see.
+
+---
+
+# 36. Laravel Architecture
+
+Use the existing repository architecture where possible.
+
+Do **not** rewrite the project unnecessarily.
+
+Recommended structure:
+
+```text
+app/
+ ├── Actions/
+ ├── Console/
+ ├── Domain/
+ │    ├── Academy/
+ │    ├── LMS/
+ │    ├── SOP/
+ │    ├── Certification/
+ │    ├── Competency/
+ │    ├── Organization/
+ │    ├── SEO/
+ │    └── CMS/
+ ├── Http/
+ │    ├── Controllers/
+ │    ├── Requests/
+ │    └── Resources/
+ ├── Models/
+ ├── Policies/
+ ├── Services/
+ ├── Jobs/
+ ├── Notifications/
+ └── Rules/
+```
+
+Separate business logic from controllers.
+
+---
+
+# 37. Database
+
+Core tables:
+
+```text
+users
+roles
+permissions
+organizations
+properties
+departments
+job_roles
+
+programs
+program_courses
+courses
+course_translations
+lessons
+lesson_translations
+
+enrollments
+learning_progress
+lesson_progress
+
+question_banks
+questions
+question_options
+assessments
+assessment_questions
+assessment_attempts
+assessment_answers
+
+assignments
+assignment_submissions
+
+certificates
+certificate_templates
+certificate_verifications
+
+learning_paths
+learning_path_courses
+skills
+user_skills
+
+sops
+sop_versions
+sop_acknowledgements
+
+checklists
+checklist_items
+checklist_runs
+
+training_assignments
+training_assignment_targets
+
+attendance_sessions
+attendance_records
+
+notifications
+
+articles
+article_categories
+tags
+article_tags
+
+pages
+faqs
+seo_metadata
+redirects
+
+competitors
+competitor_pages
+competitor_keywords
+competitor_observations
+
+media
+audit_logs
+```
+
+Every tenant-owned table needs proper organization/property ownership rules where the application's business model requires them.
+
+---
+
+# 38. Security
+
+Mandatory:
+
+* CSRF
+* XSS protection
+* SQL injection prevention
+* mass-assignment protection
+* authorization policies
+* role permissions
+* rate limiting
+* secure password hashing
+* encrypted sensitive values
+* signed URLs where necessary
+* upload validation
+* MIME validation
+* antivirus/scanning hook where infrastructure supports it
+* audit log
+* session management
+* secure headers
+
+Never trust:
+
+* hidden form fields
+* route IDs
+* user-selected organization IDs
+* user-selected property IDs
+
+Every request must be authorized server-side.
+
+---
+
+# 39. File Upload Security
+
+Supported:
+
+* MP4
+* PDF
+* JPG/JPEG
+* PNG
+* DOCX
+* PPTX where needed
+
+Apply:
+
+* extension validation
+* MIME validation
+* file-size limits
+* filename normalization
+* private storage for sensitive documents
+
+SOPs belonging to one organization must never become publicly downloadable by changing an ID in the URL.
+
+---
+
+# 40. Multilingual Architecture
+
+Every relevant content object:
+
+```text
+English
+Arabic
+```
+
+Use:
+
+* locale-aware URLs
+* RTL
+* translated navigation
+* translated metadata
+* translated slugs
+* translated breadcrumbs
+* language-aware sitemap
+* hreflang
+
+Arabic must be designed as a genuine RTL interface, not English markup mirrored mechanically. That is consistent with the existing Dyafa design requirements. 
+
+---
+
+# 41. Easy-to-Use UI
+
+The system should be designed around:
+
+**Dashboard → Find → Do → Confirm**
+
+Every admin list should support:
+
+* search
+* filters
+* sort
+* pagination
+* bulk actions
+* export
+* clear empty state
+* clear loading state
+* success message
+* validation errors
+
+Every destructive action:
+
+```text
+Delete
+↓
+Confirmation
+↓
+Delete
+↓
+Audit log
+```
+
+---
+
+# 42. Learner UX
+
+The learner should never need to understand the database structure.
+
+Home screen:
+
+```text
+Continue Learning
+Required Training
+Recommended
+Certificates
+My Skills
+Recent SOPs
+```
+
+One-click:
+
+**Continue Course**
+
+Progress:
+
+```text
+Course
+████████░░ 80%
+```
+
+---
+
+# 43. Mobile-First
+
+Learners may access training from phones during operational downtime.
+
+Must support:
+
+* mobile navigation
+* responsive video
+* downloadable resources
+* readable tables
+* Arabic RTL mobile
+* touch-friendly buttons
+* fast page loading
+
+---
+
+# 44. Email Templates
+
+Create professional templates for:
+
+* welcome
+* account verification
+* password reset
+* course assigned
+* reminder
+* overdue
+* course completed
+* certificate issued
+* certificate expiring
+* SOP acknowledgement required
+* assessment result
+* instructor assignment
+
+---
+
+# 45. Dashboard Permissions
+
+Do not show all data to all users.
+
+Example:
+
+```text
+Super Admin → Everything
+
+Organization Admin → Their organization
+
+Property Manager → Their property
+
+Department Manager → Their department/team
+
+Instructor → Assigned courses/learners
+
+Learner → Own data
+
+Auditor → Read-only authorized reporting
+```
+
+---
+
+# 46. API
+
+Create versioned API:
+
+```text
+/api/v1/auth
+/api/v1/courses
+/api/v1/programs
+/api/v1/lessons
+/api/v1/enrollments
+/api/v1/progress
+/api/v1/assessments
+/api/v1/certificates
+/api/v1/sops
+/api/v1/users
+/api/v1/properties
+/api/v1/reports
+```
+
+Use:
+
+* Form Requests
+* API Resources
+* validation
+* authorization
+* consistent error responses
+* API tests
+
+The general Laravel architecture should follow the same separation of controllers, domain actions, queues, policies and auditable business logic recommended in the existing Dyafa/BeePost architecture work. 
+
+---
+
+# 47. Queue Jobs
+
+Move expensive work to queues:
+
+```text
+GenerateCertificate
+SendTrainingReminder
+GenerateReport
+ProcessVideo
+GenerateSitemap
+SendNotification
+ImportUsers
+GenerateAnalytics
+UpdateCompetitorData
+```
+
+Jobs must be:
+
+* retryable
+* idempotent
+* logged
+* observable
+
+---
+
+# 48. Scheduled Tasks
+
+Daily:
+
+* training reminders
+* overdue detection
+* certificate expiry warnings
+* scheduled article publishing
+* analytics aggregation
+* SOP review reminders
+* sitemap regeneration where required
+
+Weekly:
+
+* management summary
+* competency gap report
+
+---
+
+# 49. Audit Log
+
+Track:
+
+```text
+Login
+Logout
+Create
+Update
+Delete
+Publish
+Unpublish
+Approve
+Reject
+Assign
+Complete
+Certificate Issue
+Certificate Revoke
+SOP Acknowledge
+Permission Change
+Role Change
+```
+
+Store:
+
+* user
+* action
+* model
+* record
+* before
+* after
+* IP
+* user agent
+* timestamp
+
+---
+
+# 50. Testing Standard
+
+The phrase **100% complete** should mean:
+
+### Backend
+
+* PHPUnit/Pest tests
+* model tests
+* policy tests
+* service tests
+* validation tests
+* API tests
+* database tests
+
+### Frontend
+
+Browser automation for every major flow.
+
+Example:
+
+```text
+Login
+Dashboard
+Users
+Organizations
+Properties
+Departments
+Courses
+Lessons
+Programs
+Learning Paths
+Assignments
+Assessments
+Certificates
+SOPs
+Checklists
+Reports
+SEO
+CMS
+Competitors
+Settings
+Logout
+```
+
+---
+
+# 51. Critical E2E Tests
+
+## Admin flow
+
+```text
+Login
+→ create organization
+→ create property
+→ create department
+→ create learner
+→ create instructor
+→ create course
+→ create lessons
+→ create quiz
+→ publish
+```
+
+## Learner flow
+
+```text
+Login
+→ assigned course
+→ lesson
+→ quiz
+→ pass
+→ course completion
+→ certificate
+→ certificate verification
+```
+
+## SOP flow
+
+```text
+Create SOP
+→ approve
+→ publish
+→ assign
+→ learner acknowledgement
+→ manager report
+```
+
+## Training flow
+
+```text
+Assign training
+→ notification
+→ learner starts
+→ completes
+→ manager dashboard updates
+```
+
+---
+
+# 52. Failure Testing
+
+Do not only test the happy path.
+
+Test:
+
+* invalid login
+* unauthorized URL
+* unauthorized organization access
+* unauthorized property access
+* expired certificate
+* failed quiz
+* failed final exam
+* second attempt
+* deleted course
+* unpublished course
+* deleted user
+* expired SOP
+* outdated SOP acknowledgement
+* invalid upload
+* duplicate email
+* duplicate certificate
+* malformed URL
+* missing translation
+* Arabic RTL layout
+* mobile layout
+
+---
+
+# 53. SEO Automated Tests
+
+Check automatically:
+
+```text
+Every indexable page has:
+✓ title
+✓ meta description
+✓ canonical
+✓ correct locale
+✓ hreflang
+✓ H1
+✓ valid URL
+✓ OpenGraph
+✓ schema
+✓ breadcrumb where appropriate
+```
+
+Also verify:
+
+* no duplicate canonical
+* no broken sitemap URL
+* no accidental `noindex`
+* no orphaned important pages
+* no broken internal links
+
+---
+
+# 54. Accessibility
+
+Target:
+
+**WCAG 2.1 AA**
+
+Check:
+
+* keyboard navigation
+* labels
+* focus states
+* contrast
+* form errors
+* semantic HTML
+* screen reader labels
+* heading hierarchy
+* RTL navigation
+
+The existing Dyafa website briefs use WCAG 2.1 AA as the working accessibility target. 
+
+---
+
+# 55. Performance
+
+Target:
+
+* fast mobile page loads
+* optimized images
+* lazy loading
+* caching
+* query optimization
+* pagination
+* minimized JavaScript
+* queued media processing
+
+Measure:
+
+* TTFB
+* LCP
+* CLS
+* INP
+* database query counts
+
+---
+
+# 56. Production Readiness
+
+Before final completion:
+
+```text
+.env production audit
+database migrations
+seed validation
+storage configuration
+queue configuration
+scheduler
+mail
+HTTPS
+backups
+logging
+error pages
+monitoring
+cache
+permissions
+file access
+```
+
+Do not claim production readiness if infrastructure itself is unavailable or failing.
+
+---
+
+# 57. Final Completion Gate
+
+The coding agent must create a machine-readable completion document:
+
+```text
+IMPLEMENTATION_STATUS.md
+```
+
+with:
+
+```text
+Requirement ID
+Requirement
+Location
+Implementation
+Test
+Result
+Status
+```
+
+Allowed final statuses:
+
+```text
+IMPLEMENTED
+VERIFIED
+```
+
+Do not leave:
+
+```text
+PARTIAL
+FAILED
+TODO
+PENDING
+SKIPPED
+PLACEHOLDER
+```
+
+unless the requirement itself is technically impossible because of an external dependency; in that case the agent must clearly identify the dependency rather than falsely marking it complete.
+
+---
+
+# 58. Important Reality Rule
+
+The instruction **“auto approve everything”** should not mean bypassing safety or publishing obviously broken code.
+
+The implementation workflow should automatically move routine code changes through the project workflow, but a change is only marked complete **after tests and browser verification prove it works**.
+
+Likewise, external services cannot be fabricated. For example, competitor APIs, certificate verification services, email providers, video storage or payment providers require real credentials/configuration. The application should implement the integration completely and report an explicit configuration failure rather than showing a fake success.
+
+---
+
+# 59. MASTER CLAUDE CODE EXECUTION PROMPT
+
+Use this as the top-level implementation instruction for the Laravel coding agent:
+
+```text
+PROJECT: HOSPITALITY ACADEMY
+STACK: EXISTING LARAVEL APPLICATION
+OBJECTIVE: COMPLETE THE ENTIRE HOSPITALITY ACADEMY/LMS/SOP/SEO/CMS SYSTEM END-TO-END.
+
+NON-NEGOTIABLE:
+1. DO NOT SKIP ANY REQUIREMENT FOUND IN THE PROVIDED DOCUMENTATION, EXISTING ROUTES, SIDEBAR, DATABASE, UI, OR ACCEPTANCE CRITERIA.
+2. DO NOT LEAVE TODO, PARTIAL, FAILED, PLACEHOLDER, COMING SOON, DUMMY BUTTON, DEAD LINK, EMPTY PAGE, OR FAKE FUNCTIONALITY.
+3. DO NOT ASK FOR APPROVAL FOR NORMAL IMPLEMENTATION CHANGES. Proceed automatically.
+4. Preserve existing working functionality unless a documented requirement replaces it.
+5. Do not rewrite the entire application unnecessarily.
+6. Inspect the repository before changing architecture.
+7. Reuse existing Laravel conventions where practical.
+8. Implement backend, frontend, database, permissions, validation, queues, scheduler, notifications, SEO, CMS, LMS, SOPs, certificates, analytics and tests together.
+9. Every sidebar item must resolve to a working page or intentionally be removed from the sidebar.
+10. Every create/edit/delete/action button must have a working backend operation.
+11. Every API endpoint must have authorization and validation.
+12. Every tenant/property/department-owned resource must enforce server-side authorization.
+13. English and Arabic are first-class content.
+14. Arabic pages require real RTL layout.
+15. Public pages must be SEO-ready.
+16. Do not invent business proof points.
+17. Do not copy competitor content.
+18. Competitor research must store evidence URLs and dates.
+19. Do not fabricate external API success.
+20. Do not claim 100% completion until the full test matrix passes.
+
+PHASE 0 — DISCOVERY
+- Inspect all documentation files.
+- Search repository for TODO, FIXME, PARTIAL, FAILED, placeholder, coming soon, disabled buttons, empty controllers, empty views, dead routes and broken links.
+- Build REQUIREMENTS_MATRIX.md.
+- Map every requirement to:
+  route
+  controller
+  model
+  migration
+  view/component
+  policy
+  test.
+- Discover all existing sidebar/navigation entries.
+- Verify current Laravel version and preserve it unless upgrade is necessary.
+
+PHASE 1 — DATA MODEL
+Implement all required migrations/models/relationships/factories/seeders.
+Primary entities:
+users
+roles
+permissions
+organizations
+properties
+departments
+job_roles
+programs
+courses
+lessons
+enrollments
+progress
+learning_paths
+assessments
+questions
+attempts
+assignments
+certificates
+certificate_verifications
+skills
+user_skills
+sops
+sop_versions
+sop_acknowledgements
+checklists
+training_assignments
+attendance
+notifications
+articles
+pages
+seo_metadata
+redirects
+competitors
+competitor_observations
+audit_logs
+media.
+
+PHASE 2 — RBAC
+Implement:
+Super Admin
+Academy Admin
+Instructor
+Organization Admin
+Property Manager
+Department Manager
+Learner
+Auditor/Viewer.
+
+Use policies and middleware.
+Never rely only on hidden UI controls.
+
+PHASE 3 — ADMIN SIDEBAR
+Implement and verify:
+Dashboard
+People
+Users
+Learners
+Instructors
+Managers
+Organizations
+Properties
+Departments
+Job Roles
+Academy
+Programs
+Courses
+Lessons
+Learning Paths
+Enrollments
+Assignments
+Assessments
+Exams
+Certificates
+Skills
+SOP Library
+SOP Versions
+Checklists
+Attendance
+Notifications
+Reports
+Analytics
+CMS
+Pages
+Articles
+Categories
+Media
+FAQs
+SEO
+Redirects
+Competitor Intelligence
+Competitor Keywords
+Settings
+Audit Logs.
+
+Every item must work.
+
+PHASE 4 — LMS
+Implement:
+courses
+programs
+lessons
+video
+PDF
+downloads
+quizzes
+assessments
+assignments
+progress
+completion
+prerequisites
+course publishing
+enrollment
+automatic assignments
+certificates
+verification
+learning paths.
+
+PHASE 5 — HOSPITALITY ACADEMY
+Implement complete hospitality curriculum taxonomy:
+Front Office
+Housekeeping
+F&B
+Kitchen
+Engineering
+Maintenance
+Guest Experience
+Revenue
+Sales
+Management
+Safety
+Security
+Technology
+Compliance.
+
+Implement role-based career paths and skill matrices.
+
+PHASE 6 — SOP SYSTEM
+Implement:
+SOP CRUD
+EN/AR content
+version control
+approval
+effective date
+review date
+acknowledgement
+attachments
+checklists
+related SOPs
+audit trail
+mandatory assignments
+manager compliance reports.
+
+PHASE 7 — PUBLIC WEBSITE
+Implement:
+Home
+Courses
+Course Detail
+Programs
+Program Detail
+Learning Paths
+Topics
+SOP resources
+Articles
+Article Detail
+Certificates
+Verification
+For Hotels
+About
+Contact
+Privacy
+Terms.
+
+PHASE 8 — SEO
+Implement:
+SEO metadata
+canonical
+hreflang
+EN/AR URLs
+XML sitemap
+robots.txt
+schema.org
+breadcrumbs
+OpenGraph
+Twitter/X metadata
+redirects
+404
+internal linking
+FAQ
+Course structured data
+Article structured data
+Organization structured data.
+
+Do not create thin keyword pages.
+
+PHASE 9 — CONTENT/CMS
+Implement:
+page builder or structured CMS using existing project patterns
+article workflow
+draft/review/published states
+EN/AR parallel content
+authors
+categories
+tags
+FAQ
+media
+SEO controls.
+
+PHASE 10 — COMPETITOR INTELLIGENCE
+Create admin-only competitor research system.
+Track:
+competitor
+URL
+country
+audience
+courses
+LMS
+certificates
+SOP
+mobile
+analytics
+pricing if publicly verified
+SEO topics
+observed features
+content gaps
+keyword gaps
+evidence URL
+checked date.
+
+Do not claim unsupported competitor facts.
+
+PHASE 11 — NOTIFICATIONS
+Implement:
+welcome
+verification
+training assigned
+training reminder
+overdue
+course completion
+certificate
+certificate expiry
+assessment result
+SOP updated
+SOP acknowledgement.
+
+PHASE 12 — REPORTS/ANALYTICS
+Implement dashboards for:
+training
+completion
+compliance
+properties
+departments
+learners
+certificates
+SOPs
+skills
+attendance.
+
+Support export and print.
+
+PHASE 13 — SECURITY
+Audit:
+authorization
+IDOR
+CSRF
+XSS
+SQL injection
+mass assignment
+file uploads
+private documents
+rate limiting
+secure sessions
+audit logging.
+
+PHASE 14 — PERFORMANCE
+Optimize:
+queries
+indexes
+pagination
+cache
+assets
+images
+videos
+queues
+scheduled jobs.
+
+PHASE 15 — TESTS
+Create/repair:
+unit tests
+feature tests
+policy tests
+API tests
+integration tests
+browser E2E tests
+SEO tests
+Arabic RTL tests
+authorization tests
+upload tests.
+
+Required E2E:
+login
+dashboard
+create user
+create organization
+create property
+create department
+create course
+create lesson
+publish course
+enroll learner
+complete lesson
+take quiz
+pass/fail quiz
+complete course
+issue certificate
+verify certificate
+create SOP
+publish SOP
+assign SOP
+acknowledge SOP
+create training assignment
+complete assignment
+generate report
+SEO metadata
+article publish
+competitor entry
+logout.
+
+PHASE 16 — DEFECT SWEEP
+Run:
+tests
+lint
+static checks
+route audit
+migration audit
+browser audit
+broken-link audit
+SEO audit
+access-control audit.
+
+Fix every failure.
+Do not simply document failures.
+
+PHASE 17 — FINAL VERIFICATION
+Generate:
+IMPLEMENTATION_STATUS.md
+REQUIREMENTS_MATRIX.md
+TEST_REPORT.md
+SEO_AUDIT.md
+SECURITY_AUDIT.md
+SIDEBAR_AUDIT.md
+
+For every original documented requirement:
+mark IMPLEMENTED only after code exists.
+mark VERIFIED only after automated/browser test proves it.
+
+No PARTIAL status is permitted in the final implementation state.
+
+PHASE 18 — FINAL SIDEBAR AUDIT
+Visit every sidebar item with an authorized user.
+Confirm:
+page loads
+data loads
+buttons work
+forms submit
+validation works
+permissions work
+pagination works
+search works
+filters work
+Arabic works
+mobile layout works.
+
+PHASE 19 — FINAL RELEASE
+Run the complete test suite again from a clean state.
+Run database migrations on a test database.
+Run seed verification.
+Run browser E2E.
+Check logs for unexpected exceptions.
+Check all routes.
+Check all sidebar links.
+Check all public SEO pages.
+Only then declare COMPLETE.
+
+FINAL RESPONSE FROM AGENT MUST CONTAIN:
+- total requirements
+- implemented count
+- verified count
+- test count
+- passed count
+- failed count
+- remaining count
+- list of modified files
+- database migrations
+- routes added/changed
+- final URLs
+- final test commands/results
+
+Do not claim 100% unless the final remaining count is zero and all mandatory tests pass.
+```
+
+---
+
+# 60. Final System Architecture
+
+The end result should function as this single connected loop:
+
+```text
+SEO / Google Search
+        ↓
+Public Hospitality Academy
+        ↓
+Course / Program / Article
+        ↓
+Registration
+        ↓
+Learning
+        ↓
+Assessment
+        ↓
+Certificate
+        ↓
+Skill Profile
+        ↓
+Hotel / Manager
+        ↓
+Training Assignment
+        ↓
+SOP
+        ↓
+Operational Checklist
+        ↓
+Compliance
+        ↓
+Analytics
+        ↓
+Training Gap
+        ↓
+Recommended Course
+        ↓
+Continuous Learning
+```
+
+That is the important difference between a normal LMS and a **hospitality workforce operating/training platform**.
+
+The competitive evidence supports making SOPs, mobile learning, certificates, role-based assignment and operational reporting first-class capabilities: Typsy publicly combines hospitality LMS features with custom SOP content, mobile learning, certificates and performance-oriented reporting, while Saudi public-sector and training providers already offer hospitality/tourism learning and certificate-oriented programs. ([Typsy][1])
+
+One limitation is important: I found the available Dyafa website/SEO documents and hospitality-training competitor evidence in your Library, but **not a dedicated “Hospitality Academy” source document containing a definitive list of requirements**. So the blueprint above is a complete target specification derived from your stated scope rather than a claim that every line of an unseen Academy document has already been reconciled. The implementation prompt deliberately makes the coding agent perform that repository/document reconciliation first.
+
+[1]: https://www.typsy.com/?utm_source=chatgpt.com "Typsy | Hospitality LMS & Performance Intelligence Platform"
+[2]: https://my.gov.sa/en/services/2706562?utm_source=chatgpt.com "Learning Courses | National Platform (National Portal)"
+[3]: https://fsi.edu.sa/en/free-courses?utm_source=chatgpt.com "Free Accredited Training in Hospitality"
