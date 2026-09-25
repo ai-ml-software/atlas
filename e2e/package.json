@@ -1,16 +1,21 @@
 {
-  "name": "e2e",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "devDependencies": {
-    "@playwright/test": "^1.63.0"
-  }
+    "name":  "altus-hkp-e2e",
+    "version":  "1.0.0",
+    "description":  "Playwright end-to-end tests for altus HK\u0026P (runs against local Laragon only)",
+    "scripts":  {
+                    "test":  "playwright test",
+                    "test:desktop":  "playwright test --project=desktop",
+                    "test:mobile":  "playwright test --project=mobile",
+                    "report":  "playwright show-report report",
+                    "test:headed":  "playwright test --project=desktop --headed"
+                },
+    "keywords":  [
+
+                 ],
+    "author":  "",
+    "license":  "ISC",
+    "type":  "commonjs",
+    "devDependencies":  {
+                            "@playwright/test":  "^1.63.0"
+                        }
 }

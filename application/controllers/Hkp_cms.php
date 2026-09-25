@@ -228,7 +228,7 @@ class Hkp_cms extends Hkp_Controller {
     // ============================================================== modules
 
     public function modules() {
-        $this->need('courses.view');
+        $this->need(array('courses.create', 'courses.update', 'lessons.create', 'lessons.update'));   // editor screens: viewing a course is not enough
         $q = trim((string) $this->input->get('q'));
         $db = $this->db->select("c.*, te.title AS title_en, ta.title AS title_ar, d.name_en AS domain_en, d.name_ar AS domain_ar,
                 (SELECT COUNT(*) FROM ha_lesson l WHERE l.course_id = c.id) lessons", false)
@@ -256,7 +256,7 @@ class Hkp_cms extends Hkp_Controller {
     }
 
     public function module($id = 0) {
-        $this->need('courses.view');
+        $this->need(array('courses.create', 'courses.update', 'lessons.create', 'lessons.update'));   // editor screens: viewing a course is not enough
         $this->load->library('ha_ai_assist');
         $c = $id ? $this->module_row($id) : null;
         if ($id && !$c) {
@@ -381,7 +381,7 @@ class Hkp_cms extends Hkp_Controller {
     }
 
     public function lesson($id = 0) {
-        $this->need('lessons.view');
+        $this->need(array('courses.create', 'courses.update', 'lessons.create', 'lessons.update'));
         $this->load->library('ha_ai_assist');
         $course_id = (int) $this->input->get('module');
         $l = $id ? $this->db->get_where('ha_lesson', array('id' => (int) $id))->row_array() : null;

@@ -59,6 +59,7 @@ Live URL: <http://localhost/atlas-lms/Academy-LMS/> (root redirects to `/en` or
 **Last full test run (2026-09-25): 136 tests, 136 passed, 0 failed, 2,100+ assertions.**
 **Last authenticated crawl (2026-09-25, production data copy): 9 roles, 1,100+ pages, 0 errors, 0 dead links.**
 **Arabic interface coverage: 1,673 / 1,673 strings (enforced by `Test_cms`).**
+**Last Playwright browser run (2026-09-25): 170 passed, 0 failed, 0 skipped, on desktop 1440 px and phone 390 px, in Edge (`e2e/`, `npm test`).**
 
 Figures below this line that predate 2026-09-24 are kept as history:
 

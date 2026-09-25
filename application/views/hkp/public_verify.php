@@ -2,7 +2,7 @@
 <html lang="<?php echo hkp_locale(); ?>" dir="<?php echo hkp_dir(); ?>">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex">
 <title><?php echo hkp_e('Certificate verification'); ?> · <?php echo hkp_h(hkp_pick($brand, 'brand_name')); ?></title>
-<link rel="stylesheet" href="<?php echo base_url('assets/hkp/hkp.css?v=3'); ?>"></head>
+<link rel="stylesheet" href="<?php echo hkp_asset('assets/hkp/hkp.css'); ?>"></head>
 <body class="hkp <?php echo hkp_locale() === 'ar' ? 'is-ar' : 'is-en'; ?>">
 <main class="hkp-main" style="max-width:760px;margin:2rem auto">
   <div class="hkp-actions" style="justify-content:space-between;margin-bottom:1rem">

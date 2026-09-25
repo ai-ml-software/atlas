@@ -21,7 +21,7 @@ $schema = array('@context' => 'https://schema.org', '@type' => 'Organization', '
 <link rel="alternate" hreflang="x-default" href="<?php echo site_url('en/' . $path); ?>">
 <meta property="og:title" content="<?php echo hkp_h($title); ?>"><meta property="og:description" content="<?php echo hkp_h($desc); ?>"><meta property="og:type" content="website"><meta property="og:locale" content="<?php echo $lang === 'ar' ? 'ar_SA' : 'en_US'; ?>">
 <script type="application/ld+json"><?php echo json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES); ?></script>
-<link rel="stylesheet" href="<?php echo base_url('assets/hkp/hkp.css?v=3'); ?>">
+<link rel="stylesheet" href="<?php echo hkp_asset('assets/hkp/hkp.css'); ?>">
 </head>
 <body class="hkp <?php echo $lang === 'ar' ? 'is-ar' : 'is-en'; ?>">
 <main class="hkp-main" style="max-width:1100px;margin:0 auto">
@@ -51,7 +51,8 @@ $schema = array('@context' => 'https://schema.org', '@type' => 'Organization', '
 <?php endif; ?>
 
 <?php if ($page === 'cases' || $cases): ?>
-  <h2 style="margin:1.5rem 0 .75rem"><?php echo hkp_e('Illustrative case studies'); ?></h2>
+  <?php $ht = $page === 'cases' ? 'h1' : 'h2'; /* the case-studies page needs its own single H1 */ ?>
+  <<?php echo $ht; ?> style="margin:1.5rem 0 .75rem"><?php echo hkp_e('Illustrative case studies'); ?></<?php echo $ht; ?>>
   <div class="hkp-grid hkp-grid--2"><?php foreach ($cases as $c): ?>
     <section class="hkp-card"><?php if ((int) $c['is_illustrative']): ?><div class="hkp-eyebrow"><?php echo hkp_e('ILLUSTRATIVE CASE STUDY'); ?></div><?php endif; ?>
       <h3><?php echo hkp_h(hkp_pick($c, 'title')); ?></h3><p class="hkp-small hkp-muted"><?php echo hkp_h($c['case_type'] . ' · ' . $c['geography']); ?></p>

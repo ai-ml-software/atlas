@@ -194,6 +194,34 @@ php index.php hkp_cli status         # scheduler and queue state
 them again. **Do not run the plain `seed` against production data.** The
 curriculum and content seeders would overwrite real content.
 
+### Browser end-to-end tests (Playwright)
+
+The `e2e/` folder holds **170 browser tests**. They cover every role and every
+main use case: the public site and SEO files, sign-in, the learner journey,
+theory and practical assessment, management, certification, the page builder,
+the modules CMS, AI help, the executive view, access control and security,
+and phone layouts. They run in the Microsoft Edge that ships with Windows, so
+no browser download is needed.
+
+```powershell
+cd C:\laragon\www\atlas\atlas\e2e
+npm install            # first time only (installs @playwright/test)
+npm test               # everything: desktop 1440px + phone 390px
+npm run test:desktop   # or: npm run test:mobile / npm run test:headed
+npm run report         # open the HTML report (screenshots + traces on failure)
+```
+
+- **Local only.** The suite refuses to start unless `database.local.php`
+  points at `127.0.0.1` or `localhost`.
+- **Setup.** Each role signs in once and the session is reused. Setup clears
+  the device lists, so repeated runs never hit the 5-device limit.
+- **AI.** A mock OpenAI-compatible server on `127.0.0.1:8765`
+  (`e2e/support/mock-ai.mjs`) is enabled only during the run. The AI tests
+  exercise the real path: browser → PHP → HTTP → model.
+- **Test data.** Everything the tests create is prefixed `E2E`/`e2e-`, and
+  teardown deletes it or archives it. That includes pages, the fixture
+  certificate, modules, and the mock provider switch.
+
 ### Email on a local machine
 
 Local email is **recorded, not sent**. The setting is `email.delivery = auto`, and

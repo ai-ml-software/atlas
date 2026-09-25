@@ -166,6 +166,15 @@ if (!function_exists('hkp_locale')) {
     }
 
     /**
+     * Static asset URL versioned by file time. The service worker caches assets
+     * cache-first, so a fixed version string would pin users to old CSS/JS forever.
+     */
+    function hkp_asset($path) {
+        $file = FCPATH . ltrim($path, '/');
+        return base_url(ltrim($path, '/')) . '?v=' . (is_file($file) ? filemtime($file) : '1');
+    }
+
+    /**
      * Opening tag for a person's name: a link to the employee record when the
      * viewer may open it (learners.view, same check as the page), plain text
      * otherwise, so executives and assessors never meet a dead link.

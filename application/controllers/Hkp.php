@@ -482,9 +482,10 @@ class Hkp extends Hkp_Controller {
 
     /** Service worker: caches the app shell for fast loads; learner data is always fetched live. */
     public function sw() {
-        $css = base_url('assets/hkp/hkp.css?v=3');
-        $js = base_url('assets/hkp/hkp.js?v=3');
-        $js_src = "const C='hkp-shell-v3';self.addEventListener('install',e=>{e.waitUntil(caches.open(C).then(c=>c.addAll(" . json_encode(array($css, $js)) . ")));self.skipWaiting();});"
+        $css = hkp_asset('assets/hkp/hkp.css');
+        $js = hkp_asset('assets/hkp/hkp.js');
+        // The cache name follows the asset versions, so a deploy replaces the old cache.
+        $js_src = "const C='hkp-shell-" . substr(md5($css . $js), 0, 10) . "';self.addEventListener('install',e=>{e.waitUntil(caches.open(C).then(c=>c.addAll(" . json_encode(array($css, $js)) . ")));self.skipWaiting();});"
             . "self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==C).map(x=>caches.delete(x)))));});"
             . "self.addEventListener('fetch',e=>{const u=e.request.url;if(e.request.method==='GET'&&/\\/assets\\/(hkp|academy\\/fonts)\\//.test(u)){e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request).then(res=>{const cp=res.clone();caches.open(C).then(c=>c.put(e.request,cp));return res;})));}});";
         $this->output->set_content_type('application/javascript', 'utf-8')->set_header('Service-Worker-Allowed: ' . parse_url(hkp_url(), PHP_URL_PATH) . '/')->set_output($js_src);

@@ -215,8 +215,15 @@
         var target = document.querySelector(ins.getAttribute('data-ai-insert'));
         if (!target) { return; }
         var j = out.getAttribute('data-json') ? JSON.parse(out.getAttribute('data-json')) : null;
-        target.value = j && j.body ? j.body : out.value;
-        target.dispatchEvent(new Event('input', { bubbles: true }));
+        var set = function (el, v) { el.value = v; el.dispatchEvent(new Event('input', { bubbles: true })); };
+        if (j && j.meta_description) {
+          // SEO suggestion: description into this field, title into its paired meta-title field (md* -> mt*).
+          set(target, j.meta_description);
+          var titleField = document.getElementById(target.id.replace(/^md/, 'mt'));
+          if (titleField && titleField !== target && j.meta_title) { set(titleField, j.meta_title); }
+        } else {
+          set(target, j && j.body ? j.body : out.value);
+        }
         target.focus();
       });
     }

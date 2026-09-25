@@ -330,6 +330,21 @@ It had none of the following:
 | "Website pages" link pointed to a route that does not exist | 404 | Now points to `/hkp/cms` |
 | 142 new interface strings had no Arabic | Mixed-language UI | Translated. The test enforces 100% coverage |
 
+### Found by the Playwright browser suite (170 tests, `e2e/`)
+
+| Issue | Impact | Fix |
+|---|---|---|
+| `/robots.txt` and `/llms.txt` served the HTML 404 page with status 200 | Crawlers and answer engines got no robots file and no llms.txt | Routed to `Academy::robots/llms/llms_full` (`config/routes.php`) |
+| `/sitemap.xml` (the address in robots.txt) served the legacy LMS map: login and sign-up URLs, which robots.txt disallows | Google never saw the 236 bilingual academy URLs | `/sitemap.xml` is now the index of the academy, image and LMS maps. The legacy map moved to `/lms-sitemap.xml` |
+| Unknown non-locale URLs returned 200 ("soft 404") | SEO penalty | `Home::page_not_found` now sends a real 404 |
+| The case-studies page had no H1 | Accessibility and SEO rule broken | The section title is the page H1 there (`public_corporate.php`) |
+| Learners could open the module and lesson editor screens (`/hkp/cms/modules` returned 200) | Editors' drafts were visible to learners | The editor screens need course/lesson create or update permission (`Hkp_cms`) |
+| Phone layout 430–435 px wide on a 390 px screen: grid tracks could not shrink below the tables, and the top bar overflowed | Horizontal scrolling on every workspace page | Grid items use `min-width: 0` and `minmax(0, 1fr)`. The top bar can shrink (`hkp.css`) |
+| Nav tap targets 40 px, and the closed off-canvas menu was still in the keyboard tab order | Touch and keyboard accessibility | 44 px targets. The closed menu is `visibility: hidden` |
+| Cache-first service worker with a fixed `?v=3` on CSS and JS | Installed users would never receive CSS or JS updates | `hkp_asset()` versions each file by its modification time, and the cache name follows those versions |
+| "Suggest meta title and description": Insert pasted both lines into the description | The meta title was never filled | Each value goes into its own field (`hkp.js`) |
+| `X-Content-Type-Options`, `X-Frame-Options` and `Referrer-Policy` were each sent twice, and the two Referrer-Policy values conflicted | Ambiguous security headers | Apache is the single source (`.htaccess`) |
+
 ## Production database merge
 
 1. **Backup.** `atlas_local` was saved as a file and as the database `atlas_local_premerge`. `atlas_local` itself was **not** modified.

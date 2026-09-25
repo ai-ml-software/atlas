@@ -223,20 +223,27 @@ textarea.hkp-input { min-height: 110px; resize: vertical; }
 .hkp-quad .is-here { background: var(--ok-bg); font-weight: 700; }
 .hkp-quad .hkp-pin { position: absolute; width: 16px; height: 16px; background: var(--accent); border: 3px solid #fff; border-radius: 50%; box-shadow: 0 0 0 2px var(--brand-ink); transform: translate(-50%, 50%); }
 
+/* Grid items must be allowed to shrink below their content (tables scroll inside .hkp-table-wrap
+   instead of widening the page). `1fr` alone is minmax(auto, 1fr) and would not shrink. */
+.hkp-grid > *, .hkp-main > * { min-width: 0; }
 @media (max-width: 1100px) {
   .hkp-grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .hkp-grid--main, .hkp-grid--3 { grid-template-columns: 1fr; }
+  .hkp-grid--main, .hkp-grid--3 { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 860px) {
-  .hkp-shell { grid-template-columns: 1fr; }
-  .hkp-side { position: fixed; inset-block: 0; inset-inline-start: 0; width: 86vw; max-width: 320px; z-index: 50; transform: translateX(-105%); transition: transform .2s ease; }
+  .hkp-shell { grid-template-columns: minmax(0, 1fr); }
+  /* Off-canvas menu: hidden from view AND from keyboard focus / screen readers while closed. */
+  .hkp-side { position: fixed; inset-block: 0; inset-inline-start: 0; width: 86vw; max-width: 320px; z-index: 50; transform: translateX(-105%); visibility: hidden; transition: transform .2s ease, visibility 0s linear .2s; }
   [dir="rtl"] .hkp-side { transform: translateX(105%); }
-  .hkp-side.is-open { transform: none; box-shadow: 0 0 0 100vmax rgba(0,0,0,.4); }
+  .hkp-side.is-open { transform: none; visibility: visible; transition: transform .2s ease; box-shadow: 0 0 0 100vmax rgba(0,0,0,.4); }
+  .hkp-top > * { flex-shrink: 0; }
+  .hkp-top .hkp-search { flex: 1 1 0; min-width: 0; padding: 0 .6rem; }
+  .hkp-nav__item { min-height: 44px; }
   .hkp-only-mobile { display: inline-flex; }
   .hkp-hide-mobile, .hkp-context { display: none; }
   .hkp-top { padding: .6rem .75rem; gap: .5rem; }
   .hkp-main { padding: 1rem .75rem; }
-  .hkp-grid--2, .hkp-grid--4 { grid-template-columns: 1fr; }
+  .hkp-grid--2, .hkp-grid--4 { grid-template-columns: minmax(0, 1fr); }
   .hkp-tile__value { font-size: 1.5rem; }
   .hkp-msg { max-width: 100%; }
   .hkp-cert { padding: 1.2rem; }

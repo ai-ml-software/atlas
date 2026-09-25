@@ -1446,6 +1446,8 @@ class Home extends CI_Controller
 
     public function page_not_found()
     {
+        // A real 404 status: a "not found" page served as 200 is a soft 404 to search engines.
+        $this->output->set_status_header(404);
         $page_data['page_name']  = '404';
         $page_data['page_title'] = site_phrase('404 not found');
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);

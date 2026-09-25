@@ -87,6 +87,10 @@
     Header always set X-Content-Type-Options "nosniff"
     Header always set X-Frame-Options "SAMEORIGIN"
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    # PHP also sends these (for servers without mod_headers); drop PHP's copy so each header appears once.
+    Header onsuccess unset X-Content-Type-Options
+    Header onsuccess unset X-Frame-Options
+    Header onsuccess unset Referrer-Policy
     # Only meaningful once the site is served over HTTPS everywhere.
     # Header always set Strict-Transport-Security "max-age=31536000"
 </IfModule>

@@ -16,7 +16,7 @@ $chosen_property = (int) $this->session->userdata('hkp_property');
 <title><?php echo hkp_h($page_title ? $page_title . ' · ' : ''); ?><?php echo hkp_h($brand_name); ?></title>
 <link rel="manifest" href="<?php echo hkp_url('manifest'); ?>">
 <?php if ($brand['favicon_path']): ?><link rel="icon" href="<?php echo base_url(ltrim($brand['favicon_path'], '/')); ?>"><?php endif; ?>
-<link rel="stylesheet" href="<?php echo base_url('assets/hkp/hkp.css?v=3'); ?>">
+<link rel="stylesheet" href="<?php echo hkp_asset('assets/hkp/hkp.css'); ?>">
 <style><?php echo $this->ha_tenant->css_vars($brand); ?></style>
 </head>
 <body class="hkp <?php echo $loc === 'ar' ? 'is-ar' : 'is-en'; ?>">
@@ -134,6 +134,6 @@ $chosen_property = (int) $this->session->userdata('hkp_property');
   </div>
 </div>
 <script>window.HKP = {csrf: <?php echo json_encode(ha_csrf_token()); ?>, base: <?php echo json_encode(hkp_url()); ?>, rtl: <?php echo hkp_is_rtl() ? 'true' : 'false'; ?>, sw: <?php echo json_encode(hkp_url('sw.js')); ?>};</script>
-<script src="<?php echo base_url('assets/hkp/hkp.js?v=3'); ?>" defer></script>
+<script src="<?php echo hkp_asset('assets/hkp/hkp.js'); ?>" defer></script>
 </body>
 </html>

@@ -101,7 +101,6 @@ $route['my_bookings']               = "addons/tutor_booking/booked_schedules_stu
 $route['courses']       = 'home/courses';
 $route['course/(:any)'] = 'home/course/$1';
 
-$route['sitemap.xml'] = 'sitemap';
 
 // Versioned, API-key authenticated JSON API. The legacy /api/* (mobile app,
 // JWT) is a separate controller and unaffected.
@@ -141,6 +140,15 @@ $route['(en|ar)/altus/case-studies'] = 'hkp_public/case_studies/$1';
 // ---------------------------------------------------------------------------
 $route['academy-sitemap.xml']                 = 'academy/sitemap';
 $route['academy-robots.txt']                  = 'academy/robots';
+// Crawler and answer-engine files at the addresses they are looked for.
+// /sitemap.xml is the index (academy + image + LMS maps) that robots.txt names;
+// the legacy LMS map moves to /lms-sitemap.xml, which the index lists.
+$route['robots.txt']                          = 'academy/robots';
+$route['sitemap.xml']                         = 'academy/sitemap_index';
+$route['image-sitemap.xml']                   = 'academy/image_sitemap';
+$route['lms-sitemap.xml']                     = 'sitemap';
+$route['llms.txt']                            = 'academy/llms';
+$route['llms-full.txt']                       = 'academy/llms_full';
 
 $route['(en|ar)']                             = 'academy/home/$1';
 $route['(en|ar)/courses']                     = 'academy/courses/$1';
