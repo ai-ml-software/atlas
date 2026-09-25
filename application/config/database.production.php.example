@@ -1,0 +1,15 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+/*
+ * Copy to database.production.php ON THE SERVER ONLY (it is git-ignored and the
+ * cPanel deployment never touches it), then fill in the real values.
+ * Alternatively set HA_DB_HOST / HA_DB_USER / HA_DB_PASS / HA_DB_NAME in the
+ * hosting panel's environment.
+ */
+return array(
+    'hostname' => 'your-db-host',
+    'username' => 'your-db-user',
+    'password' => 'your-db-password',
+    'database' => 'your-db-name',
+);

@@ -1,0 +1,48 @@
+---
+# cPanel Git Version Control deployment (cPanel » Files » Git Version Control).
+# This file is read by cPanel only. It is NOT a GitHub Actions workflow; those live
+# in .github/workflows/ and use name/on/jobs syntax (see .github/workflows/ci.yml).
+#
+# Runs as the cPanel account user on "Deploy HEAD Commit" (pull deployment) or
+# automatically after a push to the cPanel-managed repository (push deployment).
+# Only explicitly named files and directories are copied: never a wildcard, so
+# .git, .github, e2e, dumps, docs and local files are never published.
+deployment:
+  tasks:
+    # Production document root. Change only this line for an addon-domain subdirectory.
+    - export DEPLOYPATH=/home/altugpaa/public_html/
+    - /bin/mkdir -p "${DEPLOYPATH}"
+
+    # Keep the server's own database configuration. The tracked database.php holds no
+    # credentials; production credentials live in database.production.php (never in Git)
+    # or in the legacy server copy of database.php, which is backed up and restored here.
+    - if [ -f "${DEPLOYPATH}application/config/database.php" ]; then /bin/cp -p "${DEPLOYPATH}application/config/database.php" "${DEPLOYPATH}.database.php.deploy-backup"; fi
+
+    # Application entry points and root assets
+    - /bin/cp index.php "${DEPLOYPATH}"
+    - /bin/cp .htaccess "${DEPLOYPATH}"
+    - /bin/cp image.png "${DEPLOYPATH}"
+    - /bin/cp logo.png "${DEPLOYPATH}"
+
+    # Application code and runtime assets (cp -R merges: files uploaded on the server are kept)
+    - /bin/cp -R application "${DEPLOYPATH}"
+    - /bin/cp -R assets "${DEPLOYPATH}"
+    - /bin/cp -R languages "${DEPLOYPATH}"
+    - /bin/cp -R system "${DEPLOYPATH}"
+    - /bin/cp -R update "${DEPLOYPATH}"
+    - /bin/cp -R uploads "${DEPLOYPATH}"
+
+    # Restore the server database configuration only when the server does not use
+    # database.production.php yet (legacy servers keep working unchanged).
+    - if [ -f "${DEPLOYPATH}.database.php.deploy-backup" ] && [ ! -f "${DEPLOYPATH}application/config/database.production.php" ]; then /bin/cp -p "${DEPLOYPATH}.database.php.deploy-backup" "${DEPLOYPATH}application/config/database.php"; fi
+    - /bin/rm -f "${DEPLOYPATH}.database.php.deploy-backup"
+
+    # Never leave development-only or diagnostic files on the server
+    - /bin/rm -f "${DEPLOYPATH}application/config/database.local.php"
+    - /bin/rm -f "${DEPLOYPATH}deploy-check.php"
+    - /bin/rm -rf "${DEPLOYPATH}application/tests"
+
+    # Runtime directories: present and writable by the account (no world-writable modes)
+    - /bin/mkdir -p "${DEPLOYPATH}application/cache" "${DEPLOYPATH}application/logs" "${DEPLOYPATH}application/storage/private" "${DEPLOYPATH}uploads/academy" "${DEPLOYPATH}uploads/thumbnails" "${DEPLOYPATH}uploads/pages" "${DEPLOYPATH}uploads/lessons" "${DEPLOYPATH}uploads/modules"
+    - /bin/chmod 755 "${DEPLOYPATH}application/cache" "${DEPLOYPATH}application/logs" "${DEPLOYPATH}uploads" "${DEPLOYPATH}uploads/academy" "${DEPLOYPATH}uploads/thumbnails" "${DEPLOYPATH}uploads/pages" "${DEPLOYPATH}uploads/lessons" "${DEPLOYPATH}uploads/modules"
+    - /bin/chmod 700 "${DEPLOYPATH}application/storage/private"

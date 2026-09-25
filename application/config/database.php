@@ -73,12 +73,18 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $active_group  = 'default';
 $query_builder = true;
 
+// No credentials live in this tracked file. They come from, in order of precedence:
+//   1. database.local.php       - a developer workstation (git-ignored)
+//   2. database.production.php  - the server, created once by hand (git-ignored, never deployed)
+//   3. environment variables HA_DB_HOST / HA_DB_USER / HA_DB_PASS / HA_DB_NAME
+// Each file returns an array of the keys below. With none present the app fails
+// closed (cannot connect) instead of silently reaching a real database.
 $db['default'] = [
     'dsn'          => '',
-    'hostname'     => 'mysql-khidmat.alwaysdata.net',
-    'username'     => 'khidmat',
-    'password'     => 'Fandaqah@2020',
-    'database'     => 'khidmat_atlas',
+    'hostname'     => (string) getenv('HA_DB_HOST'),
+    'username'     => (string) getenv('HA_DB_USER'),
+    'password'     => (string) getenv('HA_DB_PASS'),
+    'database'     => (string) getenv('HA_DB_NAME'),
     'dbdriver'     => 'mysqli',
     'dbprefix'     => '',
     'pconnect'     => false,
@@ -95,9 +101,12 @@ $db['default'] = [
     'save_queries' => true,
 ];
 
-// Machine-local override (development only, never deployed): a file that
-// returns an array of connection keys replaces the matching values above, so a
-// workstation can run against its own MySQL without editing this file.
+// Server-only credentials (production / staging). Created on the server, never committed or deployed.
+if (is_file(__DIR__ . '/database.production.php')) {
+    $db['default'] = array_merge($db['default'], (array) include __DIR__ . '/database.production.php');
+}
+// Machine-local override (development only, never deployed): wins over everything above,
+// so a workstation always runs against its own MySQL.
 if (is_file(__DIR__ . '/database.local.php')) {
     $db['default'] = array_merge($db['default'], (array) include __DIR__ . '/database.local.php');
 }

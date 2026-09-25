@@ -1,0 +1,95 @@
+# GitHub Actions: continuous integration only. It never deploys.
+# Deployment is cPanel's job, driven by /.cpanel.yml (a different format, read by cPanel,
+# not by GitHub). Keeping the two apart is what makes both files valid.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  guard:
+    name: Repository hygiene & deployment config
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: No secrets, dumps or machine files are tracked
+        run: |
+          bad=$(git ls-files | grep -E '(^|/)(database\.(local|production)\.php|\.env)$|\.sql(\.gz)?$|^application/logs/log-|^e2e/(node_modules|\.auth)/' | grep -v '^uploads/install\.sql$' || true)
+          if [ -n "$bad" ]; then echo "::error::These files must not be committed:"; echo "$bad"; exit 1; fi
+          if git grep -nE "'password'\s*=>\s*'[^']+'" -- application/config/database.php; then
+            echo "::error::application/config/database.php must not contain a password"; exit 1; fi
+
+      - name: .cpanel.yml is valid cPanel YAML (and not inside .github/workflows)
+        run: |
+          python3 - <<'PY'
+          import sys, yaml, pathlib
+          doc = yaml.safe_load(pathlib.Path('.cpanel.yml').read_text())
+          tasks = doc['deployment']['tasks']
+          assert isinstance(tasks, list) and tasks, 'deployment.tasks must be a non-empty list'
+          assert tasks[0].startswith('export DEPLOYPATH='), 'first task must export DEPLOYPATH'
+          for t in tasks:
+              assert isinstance(t, str), f'task must be a string: {t!r}'
+              assert ' * ' not in f' {t} ' and not t.rstrip().endswith('*'), f'wildcard deploy is not allowed: {t}'
+              if t.startswith('/bin/cp'):
+                  assert '.git' not in t.replace('.gitkeep', ''), f'never deploy .git/.github: {t}'
+          print(f'ok: {len(tasks)} deployment tasks')
+          PY
+          if ls .github/workflows/*cpanel* 2>/dev/null; then echo "::error::cPanel config must not live in .github/workflows"; exit 1; fi
+
+  lint:
+    name: PHP syntax (8.1)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          coverage: none
+      - name: php -l on application code
+        run: |
+          find application/controllers application/core application/helpers application/migrations application/seeds \
+               application/tests application/views application/config application/language \
+               application/libraries -maxdepth 1 -name '*.php' -print0 \
+            | xargs -0 -n1 -P4 php -l > /tmp/lint.txt || { grep -v '^No syntax errors' /tmp/lint.txt; exit 1; }
+          find application/views -name '*.php' -print0 | xargs -0 -n1 -P4 php -l > /tmp/lint2.txt || { grep -v '^No syntax errors' /tmp/lint2.txt; exit 1; }
+          echo "PHP syntax OK"
+
+  tests:
+    name: PHP test suite (MySQL 8)
+    runs-on: ubuntu-latest
+    needs: [guard, lint]
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: root
+        ports: ['3306:3306']
+        options: >-
+          --health-cmd="mysqladmin ping -proot" --health-interval=5s --health-timeout=5s --health-retries=20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          extensions: mysqli, gd, mbstring, curl, zip, fileinfo
+          coverage: none
+      - name: Point the app at the CI database (never production)
+        run: |
+          cat > application/config/database.local.php <<'PHP'
+          <?php
+          return array('hostname' => '127.0.0.1', 'username' => 'root', 'password' => 'root', 'database' => 'atlas_ci');
+          PHP
+          mysql -h127.0.0.1 -uroot -proot -e "CREATE DATABASE IF NOT EXISTS atlas_ci CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci"
+      - name: Run tests (rebuilds atlas_hospitality_test from install.sql + migrations)
+        run: php index.php ha_test run
