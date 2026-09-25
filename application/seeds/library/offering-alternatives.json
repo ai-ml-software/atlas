@@ -1,0 +1,545 @@
+{
+    "slug": "offering-alternatives",
+    "category": "guest-handling",
+    "level": "foundation",
+    "source_pdf": "Offering-Alternatives-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/offering-alternatives.webp",
+    "videos": [
+        {
+            "id": "Nk4Lz_m0uLs",
+            "title": "20 Ways to Say \"No\" to a Customer Without Saying the Word \"No\"",
+            "channel": "Myra Golden",
+            "why": "A customer service trainer shares practical phrases for declining a request while leading with what you can do, matching the deck's rule to start with what we can offer."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Offering Alternatives",
+            "subtitle": "Turn \"no\" into a solution",
+            "short_description": "Learn to turn an unavailable or not-permitted request into a solution with five steps: Apologise, Explain, Offer, Agree and Follow up.",
+            "description": "<p>No hotel can provide every request, but a guest should never be left facing a bare \"no\". This course, built from the Dyafa Hotels &amp; Resorts training deck, shows hotel colleagues how to guide the guest towards the best available solution.</p><p>You will learn to identify why a request cannot be met, apply the five-step flow Apologise, Explain, Offer, Agree, Follow up, recognise a good alternative, use professional language instead of dead-end phrases and apply alternatives to common hotel situations.</p>",
+            "requirements": "No prior training is needed; the course suits any guest-facing colleague.",
+            "outcomes": [
+                "Explain why a suitable alternative protects guest satisfaction",
+                "Tell whether a request is unavailable or not permitted before offering an alternative",
+                "Apply the five steps Apologise, Explain, Offer, Agree, Follow up",
+                "Choose alternatives that stay close to the guest's real need",
+                "Replace dead-end phrases with professional language that starts with what you can offer"
+            ],
+            "faqs": [
+                {
+                    "question": "What are the five steps?",
+                    "answer": "Apologise with sincere empathy, Explain with a brief reason, Offer two suitable alternatives, Agree on the option and time, and Follow up until the solution is complete."
+                },
+                {
+                    "question": "Can I just say \"this is the hotel policy\"?",
+                    "answer": "No. The deck says explain briefly without blaming the guest or hiding behind the phrase \"this is the policy\", and move quickly to what you can offer."
+                },
+                {
+                    "question": "What if the guest does not like either alternative?",
+                    "answer": "Ask what they would suggest, and ask your supervisor for help when needed. Never promise an alternative before checking it is available and can be delivered."
+                }
+            ],
+            "meta_title": "Offering Alternatives to Hotel Guests",
+            "meta_description": "Hotel training on offering alternatives: turn a no into a solution with Apologise, Explain, Offer, Agree, Follow up and professional guest language.",
+            "focus_keyword": "offering alternatives to guests",
+            "chapters": [
+                {
+                    "title": "Why Alternatives Matter",
+                    "lessons": [
+                        {
+                            "title": "A Solution, Not a Dead End",
+                            "minutes": 5,
+                            "body": "<h2>The right alternative protects guest satisfaction</h2><p>Every day, guests ask for things the hotel cannot give them at that moment: a sea-view room on a full night, a dish the kitchen has run out of, a late spa appointment after closing. How you respond decides whether the guest leaves the conversation disappointed or looked after. The deck's message is clear: offer <strong>a solution instead of a harsh refusal</strong>.</p><h2>Five reasons alternatives matter</h2><ul><li><strong>The hotel cannot always provide every request.</strong> This is normal. Rooms fill up, items run out and facilities close. Accepting this lets you focus on what happens next.</li><li><strong>The request may be unavailable or not permitted.</strong> Some things are temporarily out of reach; others are not allowed. Both can still lead to a helpful answer.</li><li><strong>The word \"no\" on its own makes the experience negative.</strong> A bare refusal ends the conversation and leaves the guest alone with their problem.</li><li><strong>A suitable alternative shows care and flexibility.</strong> It tells the guest you took their need seriously and looked for a way to meet it.</li><li><strong>Offering choices gives the guest a sense of participation.</strong> When guests choose between options, they feel in control of their stay instead of being told what they cannot have.</li></ul><blockquote class=\"bk-quote\">The goal is not to refuse the request, but to help the guest reach the best possible solution.</blockquote><h2>From refusal to guidance</h2><p>Think of your role as a guide, not a gatekeeper. The guest has a destination in mind, for example a relaxing evening, a quiet room or a meal their child will eat. Their first request is only one route to that destination. When that route is closed, your job is to show them another one that still gets them there.</p><p>This changes the way you listen. Instead of hearing only \"I want the rooftop table at nine,\" you also hear the need behind it: a special view for a celebration. That need is what your alternative must protect.</p><p>It also changes how the guest remembers the moment. Guests rarely remember that one item was unavailable. They remember whether the colleague in front of them tried to help.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest calls the front desk asking to extend his stay by one night, but the hotel is fully booked. Instead of saying \"We have no rooms,\" the receptionist apologises, explains that tonight is full, and offers two options: a late check-out until 4 p.m. so he can rest before his flight, or a booking at a nearby sister property. The guest chooses the late check-out and thanks her for thinking of his flight.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Before you say anything, ask yourself: what is the guest really trying to achieve? Your alternative should protect that.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> A bare \"no\" makes the experience negative. A suitable alternative shows care, flexibility and respect for the guest's choice.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: A solution, not a dead end",
+                                "questions": [
+                                    {
+                                        "question": "A guest asks for a dish the kitchen has run out of. What is the goal of your response?",
+                                        "options": [
+                                            "To explain the kitchen's stock problems in detail",
+                                            "To refuse clearly so there is no confusion",
+                                            "To tell the guest to order next time earlier",
+                                            "To help the guest reach the best possible solution"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says the goal is not to refuse the request but to help the guest reach the best possible solution."
+                                    },
+                                    {
+                                        "question": "Why does offering two options help the guest?",
+                                        "options": [
+                                            "It gives them a sense of participation",
+                                            "It makes the conversation longer",
+                                            "It shifts responsibility to the guest",
+                                            "It avoids the need to apologise"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The slide says offering choices gives the guest a sense of participation."
+                                    },
+                                    {
+                                        "question": "What effect does the word \"no\" on its own have, according to the deck?",
+                                        "options": [
+                                            "It saves time for everyone",
+                                            "It makes the experience negative",
+                                            "It shows professionalism",
+                                            "It is fine if said politely"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck states that the word \"no\" on its own makes the experience negative."
+                                    },
+                                    {
+                                        "question": "A guest asks for a rooftop table that is fully booked for a birthday dinner. What should your alternative protect?",
+                                        "options": [
+                                            "The hotel's booking system",
+                                            "Your own time",
+                                            "The guest's main need, a special setting for the celebration",
+                                            "The rule that bookings are final"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "A suitable alternative shows care by meeting the need behind the request."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Unavailable or Not Permitted?",
+                            "minutes": 5,
+                            "body": "<h2>Identify the reason before offering an alternative</h2><p>Before you can offer a good alternative, you need to know why the original request cannot be met. The deck separates requests into two groups: <strong>unavailable</strong> and <strong>not permitted</strong>. The reason shapes both your explanation and the kind of alternative you can offer.</p><h3>Unavailable</h3><p>The request is acceptable, but the hotel cannot provide it right now. The deck lists four common reasons:</p><ul><li>The product or service has <strong>run out temporarily</strong>.</li><li>The department is <strong>closed at the current time</strong>.</li><li>The <strong>requested time is not possible</strong>.</li><li>The <strong>supplier or facility is not available</strong>.</li></ul><p>Here the alternative is usually a different time, a similar item or another facility. The guest's need is legitimate; you are simply finding another way to meet it.</p><h3>Not permitted</h3><p>The request itself cannot be granted, because it:</p><ul><li><strong>Conflicts with safety.</strong></li><li><strong>Conflicts with privacy or regulations.</strong></li><li><strong>Goes beyond the colleague's authority.</strong></li><li><strong>Breaches approved hotel policy.</strong></li></ul><p>Here the alternative must stay within the rules. You cannot bend safety or privacy to please a guest, but you can still offer something that meets their underlying need safely. If the request is beyond your authority, the right alternative may be involving your supervisor.</p><table class=\"bk-say\"><thead><tr><th>Unavailable</th><th>Not permitted</th></tr></thead><tbody><tr><td>Run out temporarily</td><td>Conflicts with safety</td></tr><tr><td>Department closed now</td><td>Conflicts with privacy or regulations</td></tr><tr><td>Requested time not possible</td><td>Beyond the colleague's authority</td></tr><tr><td>Supplier or facility unavailable</td><td>Breaches approved hotel policy</td></tr></tbody></table><h2>Explain briefly, without blame</h2><blockquote class=\"bk-quote\">Explain briefly, without blaming the guest or hiding behind the phrase \"this is the policy\".</blockquote><p>Once you know the reason, give it in one short, clear sentence. Two mistakes make guests feel worse. The first is blaming them: \"You should have booked earlier.\" The second is hiding behind a phrase such as \"this is the policy\" without any explanation or help. Both close the door. A simple reason, such as \"the pool closes at ten for cleaning and safety checks,\" followed straight away by an alternative, keeps the conversation moving towards a solution.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest asks housekeeping for the key to a neighbouring room so she can leave a gift for her friend. This is not permitted, because it conflicts with privacy and safety. The attendant does not say \"That's the policy.\" He explains briefly that he cannot open another guest's room, then offers to deliver the gift with a note through the front desk, or to hold it until her friend returns. The guest happily chooses delivery.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Decide first whether the request is unavailable or not permitted. Then explain in one short sentence, without blame, and move to what you can offer.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Unavailable or not permitted",
+                                "questions": [
+                                    {
+                                        "question": "A guest wants a massage at 11 p.m., but the spa closes at 9 p.m. Which type of reason is this?",
+                                        "options": [
+                                            "Not permitted: breaches privacy",
+                                            "Unavailable: the department is closed at that time",
+                                            "Not permitted: conflicts with safety",
+                                            "Not a valid reason at all"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The department being closed at the current time is one of the deck's unavailable reasons."
+                                    },
+                                    {
+                                        "question": "A guest asks you to give them another guest's room number. Why can't you?",
+                                        "options": [
+                                            "It conflicts with privacy or regulations",
+                                            "The product has run out",
+                                            "The requested time is not possible",
+                                            "The supplier is unavailable"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Conflicting with privacy or regulations is on the deck's not-permitted list."
+                                    },
+                                    {
+                                        "question": "Which explanation follows the deck's guidance?",
+                                        "options": [
+                                            "\"This is the policy.\"",
+                                            "\"You should have asked earlier.\"",
+                                            "A long account of the supplier's delivery problems",
+                                            "\"The pool closes at ten for cleaning; may I suggest an early morning swim or the jacuzzi until then?\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Explain briefly without blaming the guest or hiding behind \"this is the policy\", then offer an alternative."
+                                    },
+                                    {
+                                        "question": "A request goes beyond your authority. What is a suitable next step?",
+                                        "options": [
+                                            "Grant it anyway to please the guest",
+                                            "Refuse and end the conversation",
+                                            "Explain briefly and involve your supervisor",
+                                            "Tell the guest to email management"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Going beyond the colleague's authority is a not-permitted reason; the alternative stays within the rules, such as supervisor help."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "The Alternative Flow",
+                    "lessons": [
+                        {
+                            "title": "Five Steps and What Makes a Good Alternative",
+                            "minutes": 6,
+                            "body": "<h2>Five steps that turn refusal into service</h2><p>The deck gives a simple flow for every request you cannot meet as asked:</p><ol><li><strong>Apologise</strong> with sincere empathy. Show that you understand the disappointment.</li><li><strong>Explain</strong> with a brief reason. One short sentence is enough.</li><li><strong>Offer</strong> two suitable alternatives. Two options give a real choice without overwhelming.</li><li><strong>Agree</strong> on the option and the time. Confirm exactly what will happen and when.</li><li><strong>Follow up</strong> until the solution is complete. Make sure what you agreed actually happens.</li></ol><blockquote class=\"bk-quote\">Offer the solution first, and do not dwell on the reason it is unavailable.</blockquote><p>In practice, the apology and explanation should take a few seconds. The weight of the conversation belongs to steps three to five. Focus on what can be done, not only on what cannot. Guests lose patience quickly when a colleague spends a minute explaining why something is impossible and only then mentions a solution.</p><h2>A good alternative is close to the guest's need</h2><p>Not every alternative is a good one. Offering \"a room\" to a guest who asked for a quiet room misses the point. The deck lists six qualities of a suitable alternative:</p><ul><li>It <strong>achieves the main purpose of the request</strong>.</li><li>It is <strong>close to the quality or value requested</strong>.</li><li>It is <strong>available within a suitable time</strong>.</li><li>It <strong>adds no cost without explanation and agreement</strong>.</li><li>It is <strong>consistent with safety and policy</strong>.</li><li>The hotel <strong>can commit to delivering it</strong>.</li></ul><h2>How to present the options</h2><p>The deck also explains how to offer the choices:</p><ul><li>Offer two suitable options if possible.</li><li>Explain the difference between them briefly.</li><li>State the time and cost clearly.</li><li>Let the guest choose without pressure.</li><li>Ask for their suggestion if the alternative does not suit them.</li><li>Ask for your supervisor's help when needed.</li></ul><blockquote class=\"bk-quote\">A good alternative protects the guest's main need.</blockquote><p>Cost deserves special care. If one option costs more, say so plainly before the guest decides. A surprise charge on the bill turns a good alternative into a new complaint.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A family asks for connecting rooms, but none are free tonight. The receptionist apologises and explains briefly that the connecting rooms are occupied. She offers two options: two rooms opposite each other on the same corridor at the same rate, or a suite with a sofa bed for a supplement, which she states clearly. The parents choose the rooms opposite each other. She confirms the room numbers and, after they settle in, calls to check that everything suits them.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Check availability before you mention an option. Offering something and then withdrawing it is worse than the original \"no\".</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Apologise, Explain, Offer, Agree, Follow up. Keep the reason short, offer two options close to the guest's need with clear time and cost, and let the guest choose.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: The five steps",
+                                "questions": [
+                                    {
+                                        "question": "After apologising and giving a short reason, what is the next step?",
+                                        "options": [
+                                            "Follow up the next day",
+                                            "Offer two suitable alternatives",
+                                            "Explain the policy in more detail",
+                                            "Ask the guest to decide what they want"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The flow is Apologise, Explain, Offer, Agree, Follow up; Offer means two suitable alternatives."
+                                    },
+                                    {
+                                        "question": "One of your two options has an extra charge. What should you do?",
+                                        "options": [
+                                            "Mention it only if the guest asks",
+                                            "Add it to the bill later",
+                                            "Avoid offering it",
+                                            "State the cost clearly before the guest chooses"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "A good alternative adds no cost without explanation and agreement, and you state time and cost clearly."
+                                    },
+                                    {
+                                        "question": "A guest rejects both options you offered. What does the deck suggest?",
+                                        "options": [
+                                            "Ask for their suggestion, and involve your supervisor if needed",
+                                            "Repeat the same options more firmly",
+                                            "End the conversation politely",
+                                            "Offer something you have not checked"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck says ask about their suggestion if the alternative does not suit them and ask for supervisor help when needed."
+                                    },
+                                    {
+                                        "question": "What does the Follow up step mean?",
+                                        "options": [
+                                            "Sending a survey after checkout",
+                                            "Repeating the apology",
+                                            "Staying with it until the solution is complete",
+                                            "Telling your supervisor what happened"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Follow up means until the solution is complete."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Alternatives in Practice",
+                    "lessons": [
+                        {
+                            "title": "Professional Language, Practical Examples and Guest Expectations",
+                            "minutes": 7,
+                            "body": "<h2>Start with what we can offer</h2><p>The words you choose decide whether the guest hears a closed door or an open one. The deck contrasts professional phrases with dead-end ones:</p><table class=\"bk-say\"><thead><tr><th>Say</th><th>Avoid</th></tr></thead><tbody><tr><td>\"I apologise, this option is not available at the moment.\"</td><td>\"There isn't any.\"</td></tr><tr><td>\"I would be happy to offer you two alternatives.\"</td><td>\"It's forbidden.\"</td></tr><tr><td>\"We can provide ... within ...\"</td><td>\"This is the hotel policy.\"</td></tr><tr><td>\"Does this option suit you?\"</td><td>\"I can't help you.\"</td></tr><tr><td>\"Allow me to ask for my supervisor's help.\"</td><td>\"There is no other solution.\"</td></tr></tbody></table><blockquote class=\"bk-quote\">I'm sorry, that option is unavailable. May I offer you two alternatives?</blockquote><p>Notice that every \"say\" phrase points forward: an apology, an offer, a time, a question that invites the guest to choose, or a way to get more help. Every \"avoid\" phrase ends the conversation.</p><h2>Apply the alternative to the situation</h2><p>The deck gives four common examples:</p><ol><li><strong>Room type unavailable:</strong> suggest the nearest available category and explain the difference.</li><li><strong>Menu item unavailable:</strong> suggest a dish similar in ingredients or price.</li><li><strong>Facility closed:</strong> suggest another time or an alternative facility.</li><li><strong>Unsafe request:</strong> explain the reason and suggest a safe option.</li></ol><blockquote class=\"bk-quote\">Do not promise an alternative before confirming it is available and can be delivered.</blockquote><h2>What the guest expects</h2><p>The deck sums up the guest's view: <strong>the guest expects a clear solution, not a long excuse</strong>. Five expectations follow:</p><ol><li><strong>Empathy and respect:</strong> a sincere apology without defensiveness.</li><li><strong>Brief explanation:</strong> an understandable reason without confusing details.</li><li><strong>Relevant alternatives:</strong> close to the value and the need.</li><li><strong>Clear choice:</strong> with the time, cost and conditions.</li><li><strong>Delivery and follow-up:</strong> as agreed, while confirming satisfaction.</li></ol><h2>Closing thought</h2><p>The deck ends: <strong>do not leave the guest facing the word \"no\"; offer the best available solution.</strong> Apologise, Explain, Offer, Agree, Follow up. The right alternative protects trust and guest satisfaction.</p><aside class=\"bk-scene\"><strong>Scene:</strong> At breakfast, a guest asks for fresh mango juice, which has run out. The waiter says, \"I apologise, the mango juice is not available this morning. I would be happy to offer you two alternatives: fresh orange and mango smoothie made with frozen fruit, or our fresh pineapple juice. Does either suit you?\" He had checked with the bar first. The guest picks the smoothie, and the waiter returns a few minutes later to check she is enjoying it.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Lead with what you can offer, match the alternative to the situation, confirm it is deliverable before promising it, and give the guest a clear choice followed by delivery and follow-up.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Alternatives in practice",
+                                "questions": [
+                                    {
+                                        "question": "Which phrase should replace \"I can't help you\"?",
+                                        "options": [
+                                            "\"There is no other solution.\"",
+                                            "\"This is the hotel policy.\"",
+                                            "\"Allow me to ask for my supervisor's help.\"",
+                                            "\"It's forbidden.\""
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck lists \"Allow me to ask for my supervisor's help\" as a phrase to say; the others are on the avoid list."
+                                    },
+                                    {
+                                        "question": "A guest's booked room type is unavailable. What does the deck suggest?",
+                                        "options": [
+                                            "Offer the nearest available category and explain the difference",
+                                            "Offer any free room without explanation",
+                                            "Ask the guest to come back tomorrow",
+                                            "Offer a discount only"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "For room type unavailable, suggest the nearest available category and explain the difference."
+                                    },
+                                    {
+                                        "question": "You think the gym might reopen early tomorrow but have not checked. What should you do?",
+                                        "options": [
+                                            "Promise the guest it will open early",
+                                            "Say nothing about the gym",
+                                            "Tell the guest to ask someone else",
+                                            "Confirm availability before promising it as an alternative"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says do not promise an alternative before confirming it is available and can be delivered."
+                                    },
+                                    {
+                                        "question": "A guest asks to take glassware to the pool deck, which is unsafe. What is the right approach?",
+                                        "options": [
+                                            "Allow it this once",
+                                            "Explain the reason and suggest a safe option, such as an unbreakable cup",
+                                            "Say \"It's forbidden\" and walk away",
+                                            "Ignore the request"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "For an unsafe request, the deck says explain the reason and suggest a safe option."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "تقديم البدائل للنزيل",
+            "subtitle": "حوّل كلمة لا إلى حل",
+            "short_description": "تعلّم تحويل الطلب غير المتوفر أو غير المسموح إلى حل بخمس خطوات: اعتذر، اشرح، اقترح، اتفق، تابع.",
+            "description": "<p>لا يمكن لأي فندق توفير كل طلب، لكن لا ينبغي أن يُترك النزيل أمام كلمة \"لا\" وحدها. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتعلّم الموظفين كيف يساعدون النزيل على الوصول إلى أفضل حل متاح.</p><p>ستتعلم تحديد سبب عدم تلبية الطلب، وتطبيق الخطوات الخمس: اعتذر، اشرح، اقترح، اتفق، تابع، ومعرفة البديل الجيد، واستخدام لغة مهنية بدل العبارات المغلقة، وتطبيق البدائل في مواقف فندقية شائعة.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظف يتعامل مع النزلاء.",
+            "outcomes": [
+                "اشرح لماذا يحافظ البديل المناسب على رضا النزيل",
+                "حدّد هل الطلب غير متوفر أم غير مسموح قبل تقديم البديل",
+                "طبّق الخطوات الخمس: اعتذر، اشرح، اقترح، اتفق، تابع",
+                "اختر بدائل قريبة من احتياج النزيل الحقيقي",
+                "استبدل العبارات المغلقة بلغة مهنية تبدأ بما نستطيع تقديمه"
+            ],
+            "faqs": [
+                {
+                    "question": "ما الخطوات الخمس؟",
+                    "answer": "اعتذر بتعاطف صادق، واشرح بسبب مختصر، واقترح بديلين مناسبين، واتفق على الخيار والوقت، وتابع حتى اكتمال الحل."
+                },
+                {
+                    "question": "هل يكفي أن أقول \"هذه سياسة الفندق\"؟",
+                    "answer": "لا. تقول المادة: اشرح باختصار دون لوم النزيل أو الاختباء خلف عبارة \"هذه هي السياسة\"، وانتقل سريعًا إلى ما تستطيع تقديمه."
+                },
+                {
+                    "question": "ماذا لو لم يناسب النزيل أيٌّ من البديلين؟",
+                    "answer": "اسأل عن اقتراحه، واطلب مساعدة المشرف عند الحاجة. ولا تعد ببديل قبل التأكد من توفره وإمكانية تنفيذه."
+                }
+            ],
+            "meta_title": "تقديم البدائل لنزلاء الفنادق",
+            "meta_description": "تدريب فندقي على تقديم البدائل: حوّل كلمة لا إلى حل بخطوات اعتذر، اشرح، اقترح، اتفق، تابع، مع لغة مهنية مع النزلاء.",
+            "focus_keyword": "تقديم البدائل للنزيل",
+            "chapters": [
+                {
+                    "title": "لماذا البدائل مهمة",
+                    "lessons": [
+                        {
+                            "title": "حل بدل الرفض الجاف",
+                            "minutes": 5,
+                            "body": "<h2>البديل المناسب يحافظ على رضا النزيل</h2><p>يطلب النزلاء كل يوم أشياء لا يستطيع الفندق توفيرها في تلك اللحظة: غرفة مطلة على البحر في ليلة ممتلئة، أو طبقًا نفد من المطبخ، أو موعدًا متأخرًا في السبا بعد الإغلاق. وطريقة ردك تحدد هل يخرج النزيل من الحديث محبطًا أم يشعر بالاهتمام. ورسالة المادة واضحة: قدّم <strong>حلًا بدل الرفض الجاف</strong>.</p><h2>خمسة أسباب تجعل البدائل مهمة</h2><ul><li><strong>لا يمكن للفندق توفير كل طلب دائمًا.</strong> هذا أمر طبيعي؛ فالغرف تمتلئ والأصناف تنفد والمرافق تُغلق، وتقبّل ذلك يجعلك تركز على الخطوة التالية.</li><li><strong>قد يكون المطلوب غير متوفر أو غير مسموح.</strong> بعض الأمور بعيدة مؤقتًا وبعضها غير مسموح، وكلاهما يمكن أن ينتهي بإجابة مفيدة.</li><li><strong>كلمة لا وحدها تجعل التجربة سلبية.</strong> فالرفض المجرد ينهي الحديث ويترك النزيل وحده مع مشكلته.</li><li><strong>البديل المناسب يظهر الاهتمام والمرونة.</strong> فهو يخبر النزيل أنك أخذت احتياجه بجدية وبحثت عن طريقة لتلبيته.</li><li><strong>عرض الخيارات يمنح النزيل إحساسًا بالمشاركة.</strong> فعندما يختار بين خيارات يشعر أنه يتحكم في إقامته.</li></ul><blockquote class=\"bk-quote\">الهدف ليس رفض الطلب، بل مساعدة النزيل على الوصول إلى أفضل حل ممكن.</blockquote><h2>من الرفض إلى التوجيه</h2><p>انظر إلى دورك كمرشد لا كحارس بوابة. للنزيل وجهة في ذهنه، مثل أمسية مريحة أو غرفة هادئة أو وجبة يأكلها طفله، وطلبه الأول مجرد طريق واحد إليها. فإذا أُغلق هذا الطريق فمهمتك أن تدله على طريق آخر يوصله إلى الوجهة نفسها.</p><p>وهذا يغيّر طريقة استماعك؛ فبدل أن تسمع فقط \"أريد طاولة السطح الساعة التاسعة\"، تسمع أيضًا الحاجة خلفها: إطلالة مميزة لمناسبة خاصة، وهذه الحاجة هي ما يجب أن يحميه البديل. كما يغيّر ما يتذكره النزيل؛ فنادرًا ما يتذكر أن صنفًا لم يكن متوفرًا، بل يتذكر هل حاول الموظف أمامه مساعدته.</p><aside class=\"bk-scene\"><strong>موقف:</strong> اتصل نزيل بالاستقبال يطلب تمديد إقامته ليلة، لكن الفندق ممتلئ. بدل أن تقول الموظفة \"لا توجد غرف\"، اعتذرت وأوضحت أن الليلة ممتلئة، وعرضت خيارين: تأخير المغادرة حتى الرابعة عصرًا ليرتاح قبل رحلته، أو حجزًا في فندق شقيق قريب. اختار النزيل تأخير المغادرة وشكرها لأنها فكرت في رحلته.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> قبل أن تتكلم اسأل نفسك: ما الذي يريد النزيل تحقيقه فعلًا؟ فالبديل يجب أن يحمي ذلك.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> كلمة لا وحدها تجعل التجربة سلبية، والبديل المناسب يظهر الاهتمام والمرونة واحترام اختيار النزيل.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: حل بدل الرفض الجاف",
+                                "questions": [
+                                    {
+                                        "question": "طلب نزيل طبقًا نفد من المطبخ. ما هدف ردك؟",
+                                        "options": [
+                                            "شرح مشكلات مخزون المطبخ بالتفصيل",
+                                            "الرفض بوضوح حتى لا يحدث التباس",
+                                            "إخبار النزيل أن يطلب مبكرًا في المرة القادمة",
+                                            "مساعدة النزيل على الوصول إلى أفضل حل ممكن"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: الهدف ليس رفض الطلب، بل مساعدة النزيل على الوصول إلى أفضل حل ممكن."
+                                    },
+                                    {
+                                        "question": "لماذا يفيد عرض خيارين على النزيل؟",
+                                        "options": [
+                                            "يمنحه إحساسًا بالمشاركة",
+                                            "يطيل المحادثة",
+                                            "ينقل المسؤولية إلى النزيل",
+                                            "يغني عن الاعتذار"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تقول الشريحة: عرض الخيارات يمنح النزيل إحساسًا بالمشاركة."
+                                    },
+                                    {
+                                        "question": "ما أثر كلمة لا وحدها حسب المادة؟",
+                                        "options": [
+                                            "توفر الوقت على الجميع",
+                                            "تجعل التجربة سلبية",
+                                            "تُظهر الاحترافية",
+                                            "لا بأس بها إن قيلت بأدب"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تذكر المادة أن كلمة لا وحدها تجعل التجربة سلبية."
+                                    },
+                                    {
+                                        "question": "طلب نزيل طاولة على السطح محجوزة بالكامل لعشاء عيد ميلاد. ما الذي يجب أن يحميه البديل؟",
+                                        "options": [
+                                            "نظام الحجوزات في الفندق",
+                                            "وقتك الخاص",
+                                            "حاجة النزيل الأساسية، وهي أجواء مميزة للمناسبة",
+                                            "قاعدة أن الحجوزات نهائية"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "البديل المناسب يظهر الاهتمام بتلبية الحاجة التي خلف الطلب."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "غير متوفر أم غير مسموح؟",
+                            "minutes": 5,
+                            "body": "<h2>حدّد سبب عدم تلبية الطلب قبل تقديم البديل</h2><p>قبل أن تقدم بديلًا جيدًا عليك أن تعرف لماذا لا يمكن تلبية الطلب الأصلي. وتقسم المادة الطلبات إلى مجموعتين: <strong>غير متوفر</strong> و<strong>غير مسموح</strong>. والسبب يحدد طريقة شرحك ونوع البديل الذي تقدمه.</p><h3>غير متوفر</h3><p>الطلب مقبول، لكن الفندق لا يستطيع توفيره الآن. وتذكر المادة أربعة أسباب:</p><ul><li>المنتج أو الخدمة <strong>نفدت مؤقتًا</strong>.</li><li>القسم <strong>مغلق في الوقت الحالي</strong>.</li><li>الوقت المطلوب <strong>غير ممكن</strong>.</li><li>المورد أو المرفق <strong>غير متاح</strong>.</li></ul><p>هنا يكون البديل غالبًا وقتًا آخر أو صنفًا مشابهًا أو مرفقًا آخر؛ فحاجة النزيل مشروعة وأنت تبحث عن طريقة أخرى لتلبيتها.</p><h3>غير مسموح</h3><p>الطلب نفسه لا يمكن تلبيته لأنه:</p><ul><li><strong>يتعارض مع السلامة.</strong></li><li><strong>يتعارض مع الخصوصية أو الأنظمة.</strong></li><li><strong>يتجاوز صلاحية الموظف.</strong></li><li><strong>يخالف سياسة الفندق المعتمدة.</strong></li></ul><p>هنا يجب أن يبقى البديل ضمن القواعد؛ فلا يمكنك التهاون في السلامة أو الخصوصية لإرضاء نزيل، لكن يمكنك تقديم ما يلبي حاجته الأساسية بأمان. وإذا كان الطلب يتجاوز صلاحيتك فقد يكون البديل الصحيح هو إشراك مشرفك.</p><table class=\"bk-say\"><thead><tr><th>غير متوفر</th><th>غير مسموح</th></tr></thead><tbody><tr><td>نفد مؤقتًا</td><td>يتعارض مع السلامة</td></tr><tr><td>القسم مغلق حاليًا</td><td>يتعارض مع الخصوصية أو الأنظمة</td></tr><tr><td>الوقت المطلوب غير ممكن</td><td>يتجاوز صلاحية الموظف</td></tr><tr><td>المورد أو المرفق غير متاح</td><td>يخالف سياسة الفندق المعتمدة</td></tr></tbody></table><h2>اشرح باختصار دون لوم</h2><blockquote class=\"bk-quote\">اشرح باختصار دون لوم النزيل أو الاختباء خلف عبارة \"هذه هي السياسة\".</blockquote><p>بعد أن تعرف السبب، اذكره في جملة قصيرة وواضحة. وهناك خطآن يزيدان استياء النزيل: الأول لومه، مثل \"كان عليك الحجز مبكرًا\"، والثاني الاختباء خلف عبارة \"هذه هي السياسة\" دون شرح أو مساعدة. كلاهما يغلق الباب. أما السبب البسيط، مثل \"يُغلق المسبح الساعة العاشرة للتنظيف وفحوص السلامة\"، متبوعًا مباشرة ببديل، فيبقي الحديث متجهًا نحو الحل.</p><aside class=\"bk-scene\"><strong>موقف:</strong> طلبت نزيلة من موظف التدبير الفندقي مفتاح الغرفة المجاورة لتترك هدية لصديقتها. هذا غير مسموح لأنه يتعارض مع الخصوصية والسلامة. لم يقل الموظف \"هذه هي السياسة\"، بل أوضح باختصار أنه لا يستطيع فتح غرفة نزيل آخر، ثم عرض توصيل الهدية مع بطاقة عبر الاستقبال، أو حفظها حتى عودة صديقتها. فاختارت النزيلة التوصيل بسرور.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> حدّد أولًا هل الطلب غير متوفر أم غير مسموح، ثم اشرح في جملة قصيرة دون لوم، وانتقل إلى ما تستطيع تقديمه.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: غير متوفر أم غير مسموح",
+                                "questions": [
+                                    {
+                                        "question": "يريد نزيل جلسة تدليك الساعة 11 ليلًا، والسبا يُغلق الساعة 9. ما نوع السبب؟",
+                                        "options": [
+                                            "غير مسموح: يتعارض مع الخصوصية",
+                                            "غير متوفر: القسم مغلق في ذلك الوقت",
+                                            "غير مسموح: يتعارض مع السلامة",
+                                            "ليس سببًا مقبولًا أصلًا"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "إغلاق القسم في الوقت الحالي من أسباب عدم التوفر في المادة."
+                                    },
+                                    {
+                                        "question": "طلب نزيل رقم غرفة نزيل آخر. لماذا لا تستطيع إعطاءه؟",
+                                        "options": [
+                                            "لأنه يتعارض مع الخصوصية أو الأنظمة",
+                                            "لأن المنتج نفد",
+                                            "لأن الوقت المطلوب غير ممكن",
+                                            "لأن المورد غير متاح"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "التعارض مع الخصوصية أو الأنظمة ضمن قائمة غير المسموح."
+                                    },
+                                    {
+                                        "question": "أي شرح يتبع توجيه المادة؟",
+                                        "options": [
+                                            "\"هذه هي السياسة\"",
+                                            "\"كان عليك أن تطلب مبكرًا\"",
+                                            "رواية طويلة عن مشكلات توصيل المورد",
+                                            "\"يُغلق المسبح الساعة العاشرة للتنظيف، هل أقترح عليك السباحة صباحًا باكرًا أو الجاكوزي حتى ذلك الوقت؟\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "اشرح باختصار دون لوم النزيل أو الاختباء خلف عبارة \"هذه هي السياسة\"، ثم اقترح بديلًا."
+                                    },
+                                    {
+                                        "question": "طلب يتجاوز صلاحيتك. ما الخطوة المناسبة التالية؟",
+                                        "options": [
+                                            "توافق عليه على أي حال لإرضاء النزيل",
+                                            "ترفض وتنهي الحديث",
+                                            "تشرح باختصار وتُشرك مشرفك",
+                                            "تطلب من النزيل مراسلة الإدارة"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تجاوز صلاحية الموظف سبب غير مسموح، والبديل يبقى ضمن القواعد مثل الاستعانة بالمشرف."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "خطوات تقديم البديل",
+                    "lessons": [
+                        {
+                            "title": "خمس خطوات وصفات البديل الجيد",
+                            "minutes": 6,
+                            "body": "<h2>خمس خطوات تحول الرفض إلى خدمة</h2><p>تقدم المادة تسلسلًا بسيطًا لكل طلب لا تستطيع تلبيته كما هو:</p><ol><li><strong>اعتذر</strong> بتعاطف صادق، وأظهر أنك تفهم خيبة الأمل.</li><li><strong>اشرح</strong> بسبب مختصر، وتكفي جملة قصيرة واحدة.</li><li><strong>اقترح</strong> بديلين مناسبين، فخياران يمنحان اختيارًا حقيقيًا دون إرباك.</li><li><strong>اتفق</strong> على الخيار والوقت، وأكد ما سيحدث بالضبط ومتى.</li><li><strong>تابع</strong> حتى اكتمال الحل، وتأكد أن ما اتفقتما عليه تحقق فعلًا.</li></ol><blockquote class=\"bk-quote\">قدّم الحل أولًا، ولا تُطِل الحديث عن سبب عدم التوفر.</blockquote><p>عمليًا يجب أن يستغرق الاعتذار والشرح ثوانيَ معدودة، وأن يكون ثقل الحديث في الخطوات من الثالثة إلى الخامسة. ركّز على ما يمكن فعله لا على ما لا يمكن فقط؛ فالنزلاء يفقدون صبرهم سريعًا عندما يقضي الموظف دقيقة يشرح لماذا الأمر مستحيل ثم يذكر الحل بعد ذلك.</p><h2>البديل الجيد قريب من احتياج النزيل</h2><p>ليس كل بديل جيدًا؛ فعرض \"غرفة\" على نزيل طلب غرفة هادئة يخطئ الهدف. وتذكر المادة ست صفات للبديل المناسب:</p><ul><li><strong>يحقق الغرض الأساسي من الطلب.</strong></li><li><strong>يقارب الجودة أو القيمة المطلوبة.</strong></li><li><strong>يتوفر خلال وقت مناسب.</strong></li><li><strong>لا يضيف تكلفة دون توضيح وموافقة.</strong></li><li><strong>يتوافق مع السلامة والسياسة.</strong></li><li><strong>يمكن للفندق الالتزام بتنفيذه.</strong></li></ul><h2>كيف تعرض الخيارات</h2><ul><li>قدّم خيارين مناسبين إن أمكن.</li><li>اشرح الفرق بينهما بإيجاز.</li><li>اذكر الوقت والتكلفة بوضوح.</li><li>دع النزيل يختار دون ضغط.</li><li>اسأل عن اقتراحه إذا لم يناسبه البديل.</li><li>اطلب مساعدة المشرف عند الحاجة.</li></ul><blockquote class=\"bk-quote\">البديل الجيد يحمي احتياج النزيل الأساسي.</blockquote><p>والتكلفة تحتاج عناية خاصة؛ فإذا كان أحد الخيارين أعلى تكلفة فقل ذلك بوضوح قبل أن يقرر النزيل، لأن رسومًا مفاجئة في الفاتورة تحوّل البديل الجيد إلى شكوى جديدة.</p><aside class=\"bk-scene\"><strong>موقف:</strong> طلبت عائلة غرفتين متصلتين، ولا توجد غرف متصلة شاغرة الليلة. اعتذرت موظفة الاستقبال وأوضحت باختصار أن الغرف المتصلة مشغولة، وعرضت خيارين: غرفتين متقابلتين في الممر نفسه بالسعر نفسه، أو جناحًا بسرير إضافي مقابل مبلغ إضافي ذكرته بوضوح. اختار الوالدان الغرفتين المتقابلتين، فأكدت أرقام الغرف، وبعد أن استقروا اتصلت لتتأكد أن كل شيء يناسبهم.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> تأكد من التوفر قبل أن تذكر أي خيار؛ فعرض شيء ثم سحبه أسوأ من كلمة \"لا\" الأولى.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> اعتذر، اشرح، اقترح، اتفق، تابع. اجعل السبب قصيرًا، واعرض خيارين قريبين من احتياج النزيل مع وقت وتكلفة واضحين، ودعه يختار.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الخطوات الخمس",
+                                "questions": [
+                                    {
+                                        "question": "بعد الاعتذار وذكر سبب مختصر، ما الخطوة التالية؟",
+                                        "options": [
+                                            "المتابعة في اليوم التالي",
+                                            "اقتراح بديلين مناسبين",
+                                            "شرح السياسة بتفصيل أكبر",
+                                            "الطلب من النزيل أن يقرر ما يريد"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "التسلسل: اعتذر، اشرح، اقترح، اتفق، تابع؛ واقترح تعني بديلين مناسبين."
+                                    },
+                                    {
+                                        "question": "أحد الخيارين عليه تكلفة إضافية. ماذا تفعل؟",
+                                        "options": [
+                                            "تذكرها فقط إذا سأل النزيل",
+                                            "تضيفها إلى الفاتورة لاحقًا",
+                                            "تتجنب عرضه",
+                                            "تذكر التكلفة بوضوح قبل أن يختار النزيل"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "البديل الجيد لا يضيف تكلفة دون توضيح وموافقة، واذكر الوقت والتكلفة بوضوح."
+                                    },
+                                    {
+                                        "question": "رفض النزيل الخيارين اللذين عرضتهما. ماذا تقترح المادة؟",
+                                        "options": [
+                                            "اسأل عن اقتراحه، واطلب مساعدة المشرف عند الحاجة",
+                                            "كرر الخيارين نفسيهما بحزم أكبر",
+                                            "أنهِ الحديث بأدب",
+                                            "اعرض شيئًا لم تتأكد منه"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تقول المادة: اسأل عن اقتراحه إذا لم يناسبه البديل، واطلب مساعدة المشرف عند الحاجة."
+                                    },
+                                    {
+                                        "question": "ماذا تعني خطوة تابع؟",
+                                        "options": [
+                                            "إرسال استبيان بعد المغادرة",
+                                            "تكرار الاعتذار",
+                                            "المتابعة حتى اكتمال الحل",
+                                            "إخبار المشرف بما حدث"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تابع تعني: حتى اكتمال الحل."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "البدائل في الممارسة",
+                    "lessons": [
+                        {
+                            "title": "اللغة المهنية والأمثلة العملية وتوقعات النزيل",
+                            "minutes": 7,
+                            "body": "<h2>ابدأ بما نستطيع تقديمه</h2><p>الكلمات التي تختارها تحدد هل يسمع النزيل بابًا مغلقًا أم مفتوحًا. وتقارن المادة بين العبارات المهنية والعبارات المغلقة:</p><table class=\"bk-say\"><thead><tr><th>قل</th><th>تجنّب</th></tr></thead><tbody><tr><td>\"أعتذر، هذا الخيار غير متوفر حاليًا\"</td><td>\"لا يوجد\"</td></tr><tr><td>\"يسعدني أن أقدم لك بديلين\"</td><td>\"ممنوع\"</td></tr><tr><td>\"يمكننا توفير... خلال...\"</td><td>\"هذه سياسة الفندق\"</td></tr><tr><td>\"هل يناسبك هذا الخيار؟\"</td><td>\"لا أستطيع مساعدتك\"</td></tr><tr><td>\"اسمح لي بطلب مساعدة المشرف\"</td><td>\"لا يوجد حل آخر\"</td></tr></tbody></table><blockquote class=\"bk-quote\">أعتذر، هذا الخيار غير متوفر حاليًا. هل تسمح لي بأن أقدم لك بديلين؟</blockquote><p>لاحظ أن كل عبارة في عمود \"قل\" تتجه إلى الأمام: اعتذار، أو عرض، أو وقت، أو سؤال يدعو النزيل للاختيار، أو طريقة للحصول على مساعدة أكبر. أما كل عبارة في عمود \"تجنّب\" فتنهي الحديث.</p><h2>طبّق البديل بحسب الموقف</h2><ol><li><strong>نوع الغرفة غير متوفر:</strong> اقترح أقرب فئة متاحة مع شرح الفرق.</li><li><strong>طبق الطعام غير متوفر:</strong> اقترح طبقًا مشابهًا في المكونات أو السعر.</li><li><strong>المرفق مغلق:</strong> اقترح موعدًا آخر أو مرفقًا بديلًا.</li><li><strong>الطلب مخالف للسلامة:</strong> اشرح السبب واقترح خيارًا آمنًا.</li></ol><blockquote class=\"bk-quote\">لا تعد ببديل قبل التأكد من توفره وإمكانية تنفيذه.</blockquote><h2>ما يتوقعه النزيل</h2><p>تلخص المادة نظرة النزيل: <strong>النزيل يتوقع حلًا واضحًا لا عذرًا طويلًا</strong>. وتتبع ذلك خمسة توقعات:</p><ol><li><strong>تعاطف واحترام:</strong> اعتذار صادق دون دفاعية.</li><li><strong>شرح مختصر:</strong> سبب مفهوم دون تفاصيل مربكة.</li><li><strong>بدائل مناسبة:</strong> قريبة من القيمة والاحتياج.</li><li><strong>اختيار واضح:</strong> مع الوقت والتكلفة والشروط.</li><li><strong>تنفيذ ومتابعة:</strong> كما تم الاتفاق مع تأكيد الرضا.</li></ol><h2>كلمة ختامية</h2><p>تختم المادة: <strong>لا تترك النزيل أمام كلمة \"لا\"، قدّم أفضل حل متاح.</strong> اعتذر، اشرح، اقترح، اتفق، تابع؛ فالبديل المناسب يحافظ على الثقة ورضا النزيل.</p><aside class=\"bk-scene\"><strong>موقف:</strong> على الإفطار طلبت نزيلة عصير مانجو طازجًا، وكان قد نفد. قال النادل: \"أعتذر، عصير المانجو غير متوفر هذا الصباح. يسعدني أن أقدم لك بديلين: سموذي المانجو المحضّر من فاكهة مجمدة، أو عصير الأناناس الطازج. هل يناسبك أحدهما؟\" وكان قد تأكد من البار أولًا. اختارت النزيلة السموذي، فعاد بعد دقائق ليتأكد أنها تستمتع به.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> ابدأ بما تستطيع تقديمه، وطابق البديل مع الموقف، وتأكد من إمكانية تنفيذه قبل أن تعد به، وامنح النزيل اختيارًا واضحًا يتبعه تنفيذ ومتابعة.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: البدائل في الممارسة",
+                                "questions": [
+                                    {
+                                        "question": "أي عبارة تستبدل بها \"لا أستطيع مساعدتك\"؟",
+                                        "options": [
+                                            "\"لا يوجد حل آخر\"",
+                                            "\"هذه سياسة الفندق\"",
+                                            "\"اسمح لي بطلب مساعدة المشرف\"",
+                                            "\"ممنوع\""
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تذكر المادة \"اسمح لي بطلب مساعدة المشرف\" ضمن عبارات قل، والبقية في قائمة تجنّب."
+                                    },
+                                    {
+                                        "question": "نوع الغرفة الذي حجزه النزيل غير متوفر. ماذا تقترح المادة؟",
+                                        "options": [
+                                            "اقترح أقرب فئة متاحة مع شرح الفرق",
+                                            "اعرض أي غرفة شاغرة دون شرح",
+                                            "اطلب من النزيل العودة غدًا",
+                                            "اعرض خصمًا فقط"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "عندما يكون نوع الغرفة غير متوفر: اقترح أقرب فئة متاحة مع شرح الفرق."
+                                    },
+                                    {
+                                        "question": "تظن أن النادي الرياضي قد يفتح مبكرًا غدًا لكنك لم تتأكد. ماذا تفعل؟",
+                                        "options": [
+                                            "تعد النزيل بأنه سيفتح مبكرًا",
+                                            "لا تذكر النادي إطلاقًا",
+                                            "تطلب من النزيل سؤال شخص آخر",
+                                            "تتأكد من التوفر قبل أن تعد به كبديل"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: لا تعد ببديل قبل التأكد من توفره وإمكانية تنفيذه."
+                                    },
+                                    {
+                                        "question": "طلب نزيل أخذ أكواب زجاجية إلى سطح المسبح، وهذا غير آمن. ما التصرف الصحيح؟",
+                                        "options": [
+                                            "تسمح بذلك هذه المرة",
+                                            "تشرح السبب وتقترح خيارًا آمنًا مثل كوب غير قابل للكسر",
+                                            "تقول \"ممنوع\" وتنصرف",
+                                            "تتجاهل الطلب"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "عندما يكون الطلب مخالفًا للسلامة تقول المادة: اشرح السبب واقترح خيارًا آمنًا."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

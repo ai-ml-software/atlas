@@ -1,0 +1,545 @@
+{
+    "slug": "suspicious-behaviour-and-items",
+    "category": "safety-security",
+    "level": "foundation",
+    "source_pdf": "Suspicious-Behaviour-and-Items-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/suspicious-behaviour-and-items.webp",
+    "videos": [
+        {
+            "id": "Y8_rcK0V9ZY",
+            "title": "Suspicious Activity Awareness Video: No Reservations; Suspicious Behavior in Hotels",
+            "channel": "California Hotel & Lodging Association",
+            "why": "A hotel-industry awareness video that shows front-line colleagues which behaviours in a hotel deserve attention and why observing and reporting, rather than confronting, is the right response."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Suspicious Behaviour and Items",
+            "subtitle": "Observe calmly, move others away and report immediately",
+            "short_description": "Learn to notice behaviour rather than appearance, recognise items that may be suspicious, and follow Observe, Distance, Protect, Report, Follow safely.",
+            "description": "<p>Every colleague in the hotel can help keep guests and teammates safe. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows you how to notice what really matters and what to do next without putting yourself or anyone else at risk.</p><p>You will learn to focus on behaviour and context rather than clothing or nationality, recognise the indicators that deserve attention, understand when an item may be suspicious, and follow the four safe response steps. You will also learn exactly what to include in a report, what to avoid, and how to act when danger is immediate.</p>",
+            "requirements": "No prior training is needed; the course suits every colleague in every department, guest-facing or back of house.",
+            "outcomes": [
+                "Focus on observed behaviour and context, never on appearance or nationality",
+                "Recognise indicators linked to access, unusual observation and threats",
+                "Identify when an item may be suspicious and never touch, move or open it",
+                "Apply the four safe steps: Stop, Distance, Isolate, Report",
+                "Give a clear factual report and escalate immediately when danger is present"
+            ],
+            "faqs": [
+                {
+                    "question": "Should I question a person whose behaviour worries me?",
+                    "answer": "No. Do not accuse, confront or try to hold the person. Observe the facts from a safe place and report them to security or your supervisor immediately."
+                },
+                {
+                    "question": "What should I do if I find an unattended bag?",
+                    "answer": "Do not touch, move, open or inspect it. Move calmly to a safe place, keep guests away without causing panic, and report the location, description and time to security."
+                },
+                {
+                    "question": "Can I take a photo of the item to send to security?",
+                    "answer": "No. The deck says not to photograph it with your personal phone or share information or images online. Describe it clearly in your report instead."
+                }
+            ],
+            "meta_title": "Suspicious Behaviour and Items for Hotel Staff",
+            "meta_description": "Hotel security awareness: observe behaviour not appearance, recognise suspicious items, follow Stop, Distance, Isolate, Report and give clear reports.",
+            "focus_keyword": "suspicious behaviour in hotels",
+            "chapters": [
+                {
+                    "title": "Observe the Facts",
+                    "lessons": [
+                        {
+                            "title": "Behaviour, Not Appearance",
+                            "minutes": 5,
+                            "body": "<h2>Everyone has a part in safety</h2><p>Security in a hotel is not only the job of the security team. Housekeepers, receptionists, waiters, drivers and engineers move through every part of the building every day. You are often the first person to notice that something is not right. The deck gives one clear instruction for these moments: <strong>observe calmly, move others away and report immediately.</strong></p><p>It also gives a simple sequence to remember: <strong>Observe, Distance, Protect, Report, Follow.</strong> Observe what is happening, keep your distance, protect guests by keeping them away, report to security, and then follow their instructions. This course builds on each of these words.</p><h2>Watch what a person does</h2><p>The first rule is to observe the right thing. The deck says: <strong>observe behaviour, not appearance.</strong> What matters is what a person is doing, where and when, not who they are or how they look.</p><ul><li><strong>Focus on what the person is doing.</strong> Actions are facts; impressions are not.</li><li><strong>Notice the place, the time and the context.</strong> Standing near a service door is normal for a colleague at shift change; it is less normal for an unknown person at 3 a.m. trying the handle.</li><li><strong>Do not judge because of clothing or nationality.</strong> Dress, origin or language tell you nothing about intent, and judging on them is unfair to guests.</li><li><strong>Do not accuse or confront the person.</strong> Confronting may put you in danger and may insult an innocent guest.</li><li><strong>Report facts only to security.</strong> Tell security what you saw, not what you imagine.</li></ul><blockquote class=\"bk-quote\">Appearance alone is not evidence. Behaviour and circumstances are what we report.</blockquote><h2>Why appearance misleads</h2><p>Hotels welcome people from every culture. A guest in traditional dress, a traveller carrying a large bag or a visitor who speaks little Arabic or English is simply a guest. If we report people because of how they look, we insult our guests and we waste the attention of the security team. At the same time, we may miss the person whose appearance is ordinary but whose behaviour is genuinely worrying.</p><p>Behaviour is different because it can be described objectively. \"A man tried three staff doors on the service corridor and walked away when a colleague appeared\" is a fact security can act on. \"He looked suspicious\" is not.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A room attendant notices a guest in the lobby wearing a heavy coat on a hot day. She feels uneasy but, remembering the rule, she looks at behaviour instead: the guest is reading, drinking coffee and chatting with reception. Nothing he does is unusual, so there is nothing to report. Later the same day she sees a different person, dressed normally, repeatedly trying a door marked Staff Only. That is behaviour, and she reports it to security with the location and time.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Before reporting, ask yourself: what exactly did I see or hear this person do? If you can only describe how they look, keep observing rather than reporting an impression.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Observe actions, place, time and context. Never judge by clothing or nationality, never confront, and report facts only.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Behaviour, not appearance",
+                                "questions": [
+                                    {
+                                        "question": "A colleague says a guest looks suspicious because of his nationality. What is the correct response?",
+                                        "options": [
+                                            "Report the guest to security straight away",
+                                            "Ask the guest for his passport",
+                                            "Remind the colleague to judge behaviour, not nationality or clothing",
+                                            "Follow the guest around the hotel"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says not to judge because of clothing or nationality; appearance alone is not evidence."
+                                    },
+                                    {
+                                        "question": "You see an unknown person trying several staff-only doors late at night. What should you do?",
+                                        "options": [
+                                            "Report the facts of what you saw to security",
+                                            "Confront the person and ask what they are doing",
+                                            "Ignore it because they might be a guest",
+                                            "Post a warning in the staff group chat"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Focus on what the person is doing and report the facts only to security; do not accuse or confront."
+                                    },
+                                    {
+                                        "question": "Which of these is a fact security can act on?",
+                                        "options": [
+                                            "He looked nervous and out of place",
+                                            "She was wearing unusual clothes",
+                                            "He seemed like a foreigner",
+                                            "He tried the service door three times and left when staff appeared"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck asks you to report observed behaviour and circumstances, never identity or appearance alone."
+                                    },
+                                    {
+                                        "question": "What do the five words Observe, Distance, Protect, Report, Follow describe?",
+                                        "options": [
+                                            "The steps for checking a guest in",
+                                            "The safe sequence for handling suspicious behaviour or items",
+                                            "How to search a suspicious bag",
+                                            "The order of security patrols"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck's opening slide summarises the response as Observe, Distance, Protect, Report, Follow."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Indicators That Deserve Attention",
+                            "minutes": 5,
+                            "body": "<h2>Three groups of indicators</h2><p>Most of what happens in a hotel is completely normal. Guests get lost, ask odd questions and forget their key cards. The deck does not ask you to be suspicious of everyone. It gives three groups of indicators that <strong>deserve attention</strong>: access, observation and threats.</p><h3>1. Unauthorised access</h3><ul><li><strong>Trying to enter a restricted area,</strong> such as back-of-house corridors, plant rooms, the roof or staff-only floors.</li><li><strong>Using a card or key belonging to someone else,</strong> or asking a colleague to open a door with theirs.</li><li><strong>Ignoring a staff member's instructions,</strong> for example continuing into an area after being politely told it is closed.</li></ul><h3>2. Unusual interest</h3><ul><li><strong>Watching the cameras or the exits for a long time,</strong> beyond what an ordinary guest would do.</li><li><strong>Secretly photographing security points,</strong> such as cameras, entrances, barriers or the security office.</li><li><strong>Repeated questions about security procedures,</strong> such as when patrols happen, how many guards are on duty or where cameras do not reach.</li></ul><h3>3. Threats or tampering</h3><ul><li><strong>An explicit or implied threat,</strong> spoken, written or shown.</li><li><strong>Tampering with a lock, a device or a door.</strong></li><li><strong>Leaving an item and then leaving quickly.</strong></li></ul><table class=\"bk-say\"><thead><tr><th>Group</th><th>What you might notice</th></tr></thead><tbody><tr><td>Access</td><td>Restricted areas, someone else's card or key, ignoring instructions</td></tr><tr><td>Observation</td><td>Long watching of cameras or exits, hidden photos, repeated security questions</td></tr><tr><td>Threats</td><td>Threats, tampering with locks or devices, leaving an item and hurrying away</td></tr></tbody></table><blockquote class=\"bk-quote\">Behaviour may have an innocent explanation. Security assesses the situation.</blockquote><h2>You report; security decides</h2><p>An indicator is not proof. A guest may photograph the lobby because it is beautiful, or ask about exits because they are worried about fire safety. That is why your role is not to decide whether someone is dangerous. Your role is to notice the behaviour and pass the facts to security, who are trained to assess the situation. If there is an innocent explanation, security will find it without the guest ever feeling accused.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A waiter on the terrace notices a visitor who has spent forty minutes photographing the service entrance and the camera above it, and who asked him twice what time the night guard arrives. The waiter does not challenge him. He answers politely that he does not know, then quietly tells his supervisor and security what he saw, where and for how long. Security takes over the assessment.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Never answer detailed questions about security procedures, patrol times or camera positions. Politely say you are not sure and mention the question to security.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Watch for indicators linked to access, unusual observation and threats. Report what you notice; let security judge what it means.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Indicators",
+                                "questions": [
+                                    {
+                                        "question": "A visitor asks you several times when the security patrols happen. Which indicator group does this belong to?",
+                                        "options": [
+                                            "Access",
+                                            "Threats",
+                                            "Unusual interest or observation",
+                                            "None; it is always normal"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Repeated questions about security procedures appear under unusual interest in the deck."
+                                    },
+                                    {
+                                        "question": "A person drops a bag near the entrance and walks away quickly. What does the deck call this?",
+                                        "options": [
+                                            "A threat or tampering indicator",
+                                            "Normal guest behaviour",
+                                            "An access indicator only",
+                                            "A lost and found case that needs no report"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Leaving an item and then leaving quickly is listed under threats or tampering."
+                                    },
+                                    {
+                                        "question": "A man asks you to open a staff door with your card because he forgot his. What is the concern?",
+                                        "options": [
+                                            "There is none if he is polite",
+                                            "It is an unusual photography indicator",
+                                            "It is only a housekeeping matter",
+                                            "Using someone else's card or key is an unauthorised access indicator"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Using a card or key belonging to someone else is listed under unauthorised access."
+                                    },
+                                    {
+                                        "question": "You have noticed a worrying indicator but it may have an innocent explanation. What should you do?",
+                                        "options": [
+                                            "Ask the person to explain themselves",
+                                            "Report the facts and let security assess the situation",
+                                            "Wait until you are completely sure before telling anyone",
+                                            "Warn nearby guests about the person"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck states behaviour may have an innocent explanation and security assesses the situation."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Suspicious Items",
+                    "lessons": [
+                        {
+                            "title": "When an Item Becomes Suspicious and the Four Safe Steps",
+                            "minutes": 6,
+                            "body": "<h2>An unusual item in an unusual context</h2><p>Hotels are full of bags, boxes and parcels. Most belong to guests or deliveries, and most forgotten items end up in lost and found. The deck explains that an item becomes a concern when <strong>its location, condition and context cause worry.</strong> It lists five signs:</p><ul><li><strong>Left behind with no known owner.</strong> No guest or colleague claims it and nobody saw who left it.</li><li><strong>Placed near an entrance or a sensitive area,</strong> such as a main door, a plant room, a lift lobby or a crowded event space.</li><li><strong>Hidden or placed in an unnatural way,</strong> for example pushed behind a planter, under a sofa or inside a service cupboard.</li><li><strong>Has an unusual smell, sound or leak.</strong></li><li><strong>Linked to a threatening message or worrying behaviour,</strong> such as a bag left by a person who then hurried away.</li></ul><blockquote class=\"bk-quote\">Do not touch the item, do not move it and do not open it.</blockquote><p>This is the most important rule in the deck. Do not touch, move, open or inspect the item yourself, even to look for a name tag or to carry it to a quieter place. Moving it could put you and others at risk, and it could make security's assessment harder.</p><h2>Four safe response steps</h2><p>When you find an item that may be suspicious, follow four steps in order:</p><ol><li><strong>Stop.</strong> Do not touch the item or examine it.</li><li><strong>Distance.</strong> Move away calmly to a safe place.</li><li><strong>Isolate.</strong> Keep guests away without causing panic. Use calm, simple words and a practical reason rather than alarming language.</li><li><strong>Report to security.</strong> Give the location, the description and the time.</li></ol><p>After reporting, the deck adds one more instruction: <strong>remain available to security and follow their instructions from a safe place.</strong> Security may need you to describe the item again, show them where it is from a distance, or help guide guests.</p><h3>Keeping guests away without panic</h3><p>Isolating the area does not mean shouting a warning. Panic can cause injuries and makes the situation harder to manage. A calm, polite request such as \"May I ask you to use the other entrance, please? This area is closed for a moment\" keeps guests safe without frightening them.</p><aside class=\"bk-scene\"><strong>Scene:</strong> Early in the morning, a housekeeping supervisor sees a closed cardboard box pushed behind a column next to the ballroom entrance, with a faint chemical smell. Nobody is nearby and there was no delivery. She does not touch it. She steps back to a safe distance, politely directs two approaching guests to the side corridor, and radios security: \"Ballroom main entrance, behind the left column, a closed brown box about the size of a microwave, chemical smell, noticed at 6:40.\" She then waits at the safe point and follows security's instructions.</aside><aside class=\"bk-note\"><strong>Tip:</strong> If an item is simply forgotten, such as a shopping bag on a lobby chair while its owner is at the desk, it may not be suspicious at all. The signs above are about location, condition and context together. If you are unsure, report and let security decide.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> If an item's place, condition or context worries you: Stop, Distance, Isolate, Report, then stay available to security from a safe place.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Suspicious items",
+                                "questions": [
+                                    {
+                                        "question": "You find a bag hidden under a sofa near the main entrance and nobody claims it. What is your first step?",
+                                        "options": [
+                                            "Open it to look for the owner's name",
+                                            "Carry it to lost and found",
+                                            "Stop: do not touch or examine it",
+                                            "Take a photo and post it in the staff chat"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The first of the four safe steps is Stop: do not touch the item or examine it."
+                                    },
+                                    {
+                                        "question": "Guests are walking towards the area with the item. How should you keep them away?",
+                                        "options": [
+                                            "Calmly direct them another way without causing panic",
+                                            "Shout a warning so everyone leaves quickly",
+                                            "Tell them there may be a bomb",
+                                            "Let them pass since it is not your job"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The Isolate step says to move guests away without causing alarm."
+                                    },
+                                    {
+                                        "question": "What three details does the deck ask you to give when reporting the item?",
+                                        "options": [
+                                            "Your name, department and shift",
+                                            "The guest list, room numbers and time",
+                                            "The owner's name, nationality and room",
+                                            "The location, description and time"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The Report step says: state the location, the description and the time."
+                                    },
+                                    {
+                                        "question": "You have reported the item to security. What should you do next?",
+                                        "options": [
+                                            "Return to the item to guard it closely",
+                                            "Remain available to security and follow their instructions from a safe place",
+                                            "Go home, as your part is finished",
+                                            "Move the item somewhere quieter"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says to remain available to security and follow their instructions from a safe place."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Reporting and Immediate Danger",
+                    "lessons": [
+                        {
+                            "title": "Do and Avoid, What to Report and When Danger Is Immediate",
+                            "minutes": 7,
+                            "body": "<h2>Do and avoid when something looks suspicious</h2><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Keep a safe distance</td><td>Touching or moving the item</td></tr><tr><td>Move others away calmly</td><td>Confronting the person or trying to hold them</td></tr><tr><td>Report to security or your supervisor immediately</td><td>Taking a photo with your personal phone</td></tr><tr><td>Record accurately what you saw</td><td>Telling guests unconfirmed details</td></tr><tr><td>Follow the hotel plan and security's instructions</td><td>Sharing information or images online</td></tr></tbody></table><blockquote class=\"bk-quote\">Report discreetly and let security assess and act.</blockquote><p>Discretion protects everyone. Rumours among guests can cause panic, and images or posts online can spread false information, embarrass an innocent person and interfere with security's work.</p><h2>What to say in your report</h2><p>A good report is short, clear and factual. The deck gives four elements:</p><ol><li><strong>Location:</strong> the exact place and the nearest clear landmark, for example \"third floor, outside room 312, next to the fire extinguisher\".</li><li><strong>Description:</strong> describe the item or the person without judgements. Say \"a black backpack\" or \"a man in a grey jacket\", not \"a dangerous-looking man\".</li><li><strong>Behaviour:</strong> what you actually saw or heard.</li><li><strong>Time and direction:</strong> when it happened and where the person went.</li></ol><blockquote class=\"bk-quote\">State the facts clearly. Do not add guesses or rumours.</blockquote><h2>When danger is immediate</h2><p>Some situations cannot wait. The deck says to <strong>escalate immediately</strong> when there is:</p><ul><li>A threat to harm a person or the property.</li><li>A weapon or violence.</li><li>A worrying smell, leak or sound.</li><li>An attempt to force entry.</li><li>An object in a sensitive location.</li></ul><p>In these cases, start with these steps:</p><ol><li>Move away and protect guests from the area.</li><li>Inform security and the control centre.</li><li>Call emergency services according to the hotel plan.</li><li>Follow the decision to evacuate or shelter.</li><li>Do not return until security allows it.</li></ol><blockquote class=\"bk-quote\">Do not try to confirm it yourself. Your safety and the safety of guests come first.</blockquote><aside class=\"bk-scene\"><strong>Scene:</strong> A night receptionist hears a guest in the lobby shout a threat to hurt someone, and sees a sharp object in his hand. She does not approach him or try to calm him physically. She moves the two guests near the desk away through the back office, calls security and the control centre, and follows the hotel plan for emergency services. When security decides to keep guests sheltered in the restaurant, she helps guide them there and waits until security says it is safe to return.</aside><h2>Closing thought</h2><p>The deck ends with a simple message: <strong>if you notice something, report it.</strong> Observe the behaviour, keep your distance and let security act. Observe, Distance, Protect, Report, Follow. Do not touch, do not confront and do not share information.</p><aside class=\"bk-key\"><strong>Key takeaway:</strong> Report location, description, behaviour and time as facts. When danger is immediate, move away, protect guests, escalate and never try to confirm it yourself.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Reporting and danger",
+                                "questions": [
+                                    {
+                                        "question": "A guest asks you what is happening near a cordoned-off area. What should you avoid?",
+                                        "options": [
+                                            "Politely asking them to use another route",
+                                            "Following security's instructions",
+                                            "Keeping a safe distance",
+                                            "Telling them unconfirmed details about a suspicious bag"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck lists telling guests unconfirmed details as something to avoid."
+                                    },
+                                    {
+                                        "question": "Which description belongs in a good report?",
+                                        "options": [
+                                            "A man in a grey jacket carrying a black backpack",
+                                            "A dangerous-looking foreigner",
+                                            "Someone who is clearly up to something",
+                                            "A person I did not like the look of"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The Description element says to describe the item or person without judgements."
+                                    },
+                                    {
+                                        "question": "You notice a strong smell and a leak from a parcel in a plant room. What should you do?",
+                                        "options": [
+                                            "Open the parcel to find the source",
+                                            "Wait to see whether the smell gets worse",
+                                            "Move away, protect others and escalate immediately to security and the control centre",
+                                            "Photograph it and send it to friends to ask their opinion"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "A worrying smell or leak requires immediate escalation; do not try to confirm it yourself."
+                                    },
+                                    {
+                                        "question": "Security has evacuated an area. When can you return?",
+                                        "options": [
+                                            "As soon as the area looks quiet",
+                                            "Only when security allows it",
+                                            "After fifteen minutes",
+                                            "When your supervisor's shift ends"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says: do not return until security allows it."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "التعامل مع السلوك أو الأشياء المشبوهة",
+            "subtitle": "لاحظ بهدوء وأبعد الآخرين وأبلغ فورًا",
+            "short_description": "تعلّم أن تلاحظ السلوك لا المظهر، وأن تميّز الأشياء التي قد تكون مشبوهة، وأن تطبّق: لاحظ، ابتعد، امنع الاقتراب، أبلغ، تابع بأمان.",
+            "description": "<p>كل موظف في الفندق يستطيع أن يسهم في سلامة النزلاء والزملاء. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتوضح لك ما الذي يستحق الملاحظة فعلًا وماذا تفعل بعد ذلك دون أن تعرّض نفسك أو غيرك للخطر.</p><p>ستتعلم التركيز على السلوك والسياق لا على اللباس أو الجنسية، وتمييز المؤشرات التي تستحق الانتباه، ومعرفة متى يصبح الشيء مشبوهًا، وتطبيق خطوات الاستجابة الآمنة الأربع. كما ستتعرف على ما تقوله في البلاغ، وما يجب تجنبه، وكيف تتصرف عند وجود خطر مباشر.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظف في جميع الأقسام، سواء تعامل مع النزلاء أو عمل في المناطق الخلفية.",
+            "outcomes": [
+                "ركّز على السلوك الملاحظ والسياق، لا على المظهر أو الجنسية",
+                "ميّز المؤشرات المرتبطة بالدخول غير المصرح والاهتمام غير المعتاد والتهديد",
+                "حدّد متى يكون الشيء مشبوهًا ولا تلمسه ولا تحركه ولا تفتحه",
+                "طبّق الخطوات الآمنة الأربع: توقف، ابتعد، امنع الاقتراب، أبلغ الأمن",
+                "قدّم بلاغًا واضحًا بالحقائق وصعّد فورًا عند وجود خطر"
+            ],
+            "faqs": [
+                {
+                    "question": "هل أسأل الشخص الذي يقلقني سلوكه؟",
+                    "answer": "لا. لا تتهمه ولا تواجهه ولا تحاول احتجازه. لاحظ الوقائع من مكان آمن وأبلغ الأمن أو المشرف فورًا."
+                },
+                {
+                    "question": "ماذا أفعل إذا وجدت حقيبة متروكة؟",
+                    "answer": "لا تلمسها ولا تحركها ولا تفتحها ولا تفحصها. ابتعد بهدوء إلى مكان آمن، وأبعد النزلاء دون إثارة الذعر، وأبلغ الأمن بالموقع والوصف والوقت."
+                },
+                {
+                    "question": "هل ألتقط صورة للشيء لأرسلها إلى الأمن؟",
+                    "answer": "لا. تنص المادة على ألا تلتقط صورة بهاتفك الشخصي وألا تنشر معلومات أو صورًا على الإنترنت، بل صف الشيء بوضوح في بلاغك."
+                }
+            ],
+            "meta_title": "السلوك والأشياء المشبوهة لموظفي الفنادق",
+            "meta_description": "توعية أمنية فندقية: لاحظ السلوك لا المظهر، وميّز الأشياء المشبوهة، وطبّق توقف وابتعد وامنع الاقتراب وأبلغ، وقدّم بلاغًا واضحًا.",
+            "focus_keyword": "السلوك المشبوه في الفنادق",
+            "chapters": [
+                {
+                    "title": "لاحظ الوقائع",
+                    "lessons": [
+                        {
+                            "title": "لاحظ السلوك لا المظهر",
+                            "minutes": 5,
+                            "body": "<h2>لكل منا دور في السلامة</h2><p>الأمن في الفندق ليس مهمة فريق الأمن وحده؛ فموظفو التدبير الفندقي والاستقبال والمطاعم والسائقون والفنيون يتنقلون في كل أرجاء المبنى يوميًا، وكثيرًا ما تكون أول من يلاحظ أن شيئًا ما ليس على ما يرام. وتعطي المادة توجيهًا واضحًا لهذه اللحظات: <strong>لاحظ بهدوء وأبعد الآخرين وأبلغ فورًا.</strong></p><p>كما تقدم تسلسلًا سهل التذكر: <strong>لاحظ، ابتعد، امنع الاقتراب، أبلغ، تابع.</strong> لاحظ ما يحدث، وحافظ على مسافة آمنة، واحمِ النزلاء بإبعادهم، وأبلغ الأمن، ثم اتبع تعليماتهم.</p><h2>راقب المؤشرات الفعلية</h2><p>القاعدة الأولى أن تلاحظ الشيء الصحيح. تقول المادة: <strong>لاحظ السلوك لا المظهر.</strong> المهم هو ما يفعله الشخص وأين ومتى، لا من هو أو كيف يبدو.</p><ul><li><strong>ركز على ما يفعله الشخص،</strong> فالأفعال وقائع أما الانطباعات فليست كذلك.</li><li><strong>لاحظ المكان والوقت والسياق؛</strong> فوقوف زميل قرب باب الخدمة عند تبديل المناوبة أمر طبيعي، أما شخص مجهول يحاول فتح المقبض في الثالثة فجرًا فليس كذلك.</li><li><strong>لا تحكم بسبب اللباس أو الجنسية،</strong> فهي لا تدل على النية، والحكم بناءً عليها ظلم للنزلاء.</li><li><strong>لا تتهم ولا تواجه الشخص،</strong> فالمواجهة قد تعرضك للخطر وقد تسيء إلى نزيل بريء.</li><li><strong>أبلغ الأمن بالوقائع فقط،</strong> أي بما رأيته لا بما تتخيله.</li></ul><blockquote class=\"bk-quote\">المظهر وحده ليس دليلًا — السلوك والموقف هما ما نبلّغ عنه.</blockquote><h2>لماذا يضلّلنا المظهر</h2><p>يستقبل الفندق نزلاء من ثقافات متعددة؛ فالنزيل بلباسه التقليدي، أو المسافر بحقيبة كبيرة، أو الزائر الذي لا يتقن العربية أو الإنجليزية، هو ببساطة نزيل. وإذا أبلغنا عن الناس بسبب مظهرهم فإننا نسيء إلى نزلائنا ونشتت انتباه فريق الأمن، وقد يفوتنا في الوقت نفسه شخص مظهره عادي لكن سلوكه مقلق فعلًا.</p><p>السلوك مختلف لأنه يمكن وصفه بموضوعية. فعبارة \"حاول رجل فتح ثلاثة أبواب للموظفين في ممر الخدمة وابتعد عندما ظهر زميل\" واقعة يستطيع الأمن التصرف بناءً عليها، أما \"كان يبدو مريبًا\" فليست كذلك.</p><aside class=\"bk-scene\"><strong>موقف:</strong> لاحظت موظفة التدبير الفندقي نزيلًا في الردهة يرتدي معطفًا ثقيلًا في يوم حار، فشعرت بعدم الارتياح، لكنها تذكرت القاعدة ونظرت إلى سلوكه: كان يقرأ ويشرب القهوة ويتحدث مع الاستقبال، ولا شيء غير معتاد فيما يفعله، فلم يكن هناك ما يُبلَّغ عنه. وفي اليوم نفسه رأت شخصًا آخر بملابس عادية يحاول مرارًا فتح باب مكتوب عليه \"للموظفين فقط\"؛ وهذا سلوك، فأبلغت الأمن بالمكان والوقت.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> قبل أن تبلّغ اسأل نفسك: ما الذي رأيت هذا الشخص يفعله أو سمعته يقوله بالضبط؟ إذا لم تستطع إلا وصف مظهره فاستمر في الملاحظة بدل الإبلاغ عن انطباع.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> لاحظ الأفعال والمكان والوقت والسياق، ولا تحكم باللباس أو الجنسية، ولا تواجه، وأبلغ بالوقائع فقط.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: السلوك لا المظهر",
+                                "questions": [
+                                    {
+                                        "question": "قال زميل إن نزيلًا يبدو مريبًا بسبب جنسيته. ما التصرف الصحيح؟",
+                                        "options": [
+                                            "تبلّغ الأمن عن النزيل فورًا",
+                                            "تطلب من النزيل جواز سفره",
+                                            "تذكّر زميلك بأن الحكم يكون على السلوك لا على الجنسية أو اللباس",
+                                            "تتبع النزيل في أرجاء الفندق"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تنص المادة على ألا تحكم بسبب اللباس أو الجنسية، فالمظهر وحده ليس دليلًا."
+                                    },
+                                    {
+                                        "question": "رأيت شخصًا مجهولًا يحاول فتح عدة أبواب للموظفين في وقت متأخر ليلًا. ماذا تفعل؟",
+                                        "options": [
+                                            "تبلّغ الأمن بوقائع ما رأيته",
+                                            "تواجهه وتسأله عمّا يفعل",
+                                            "تتجاهل الأمر لأنه قد يكون نزيلًا",
+                                            "تنشر تحذيرًا في مجموعة الموظفين"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "ركز على ما يفعله الشخص وأبلغ الأمن بالوقائع فقط، ولا تتهم ولا تواجه."
+                                    },
+                                    {
+                                        "question": "أيّ مما يلي واقعة يستطيع الأمن التصرف بناءً عليها؟",
+                                        "options": [
+                                            "كان يبدو متوترًا وغريبًا عن المكان",
+                                            "كانت ترتدي ملابس غير مألوفة",
+                                            "بدا أنه أجنبي",
+                                            "حاول فتح باب الخدمة ثلاث مرات وغادر عندما ظهر الموظفون"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تطلب المادة الإبلاغ عن السلوك والظروف الملاحظة، لا عن الهوية أو المظهر وحده."
+                                    },
+                                    {
+                                        "question": "ماذا تصف الكلمات: لاحظ، ابتعد، امنع الاقتراب، أبلغ، تابع؟",
+                                        "options": [
+                                            "خطوات تسجيل وصول النزيل",
+                                            "التسلسل الآمن للتعامل مع السلوك أو الأشياء المشبوهة",
+                                            "طريقة تفتيش حقيبة مشبوهة",
+                                            "ترتيب جولات الأمن"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تلخص الشريحة الافتتاحية الاستجابة في: لاحظ، ابتعد، امنع الاقتراب، أبلغ، تابع."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "مؤشرات تستحق الانتباه",
+                            "minutes": 5,
+                            "body": "<h2>ثلاث مجموعات من المؤشرات</h2><p>معظم ما يحدث في الفندق طبيعي تمامًا؛ فالنزلاء يضلّون الطريق ويطرحون أسئلة غريبة وينسون بطاقات غرفهم. ولا تطلب منك المادة أن تشك في الجميع، بل تحدد ثلاث مجموعات من المؤشرات <strong>تستحق الانتباه</strong>: الدخول، والاهتمام، والتهديد.</p><h3>١. دخول غير مصرح</h3><ul><li><strong>محاولة دخول منطقة مقيدة،</strong> مثل ممرات الخدمة أو غرف المعدات أو السطح أو طوابق الموظفين.</li><li><strong>استخدام بطاقة أو مفتاح للغير،</strong> أو طلب فتح الباب ببطاقة زميل.</li><li><strong>تجاوز تعليمات الموظف،</strong> كأن يواصل الدخول بعد إبلاغه بلطف أن المنطقة مغلقة.</li></ul><h3>٢. اهتمام غير معتاد</h3><ul><li><strong>مراقبة الكاميرات أو المخارج طويلًا</strong> بما يتجاوز ما يفعله النزيل العادي.</li><li><strong>تصوير نقاط الأمن بصورة خفية،</strong> كالكاميرات والمداخل والحواجز ومكتب الأمن.</li><li><strong>أسئلة متكررة عن الإجراءات الأمنية،</strong> مثل مواعيد الجولات أو عدد الحراس أو الأماكن التي لا تغطيها الكاميرات.</li></ul><h3>٣. تهديد أو عبث</h3><ul><li><strong>تهديد صريح أو ضمني،</strong> بالكلام أو الكتابة أو الإشارة.</li><li><strong>العبث بقفل أو جهاز أو باب.</strong></li><li><strong>ترك شيء ثم المغادرة بسرعة.</strong></li></ul><table class=\"bk-say\"><thead><tr><th>المجموعة</th><th>ما قد تلاحظه</th></tr></thead><tbody><tr><td>الدخول</td><td>مناطق مقيدة، بطاقة أو مفتاح للغير، تجاوز التعليمات</td></tr><tr><td>الاهتمام</td><td>مراقبة طويلة للكاميرات أو المخارج، تصوير خفي، أسئلة أمنية متكررة</td></tr><tr><td>التهديد</td><td>تهديد، عبث بالأقفال أو الأجهزة، ترك شيء والمغادرة مسرعًا</td></tr></tbody></table><blockquote class=\"bk-quote\">قد يكون للسلوك تفسير بريء — الأمن يقيّم الموقف.</blockquote><h2>أنت تبلّغ والأمن يقرر</h2><p>المؤشر ليس دليلًا؛ فقد يصوّر النزيل الردهة لأنها جميلة، أو يسأل عن المخارج لأنه قلق من الحريق. لذلك ليس دورك أن تقرر هل الشخص خطر أم لا، بل أن تلاحظ السلوك وتنقل الوقائع إلى الأمن المدرب على تقييم الموقف. وإن كان هناك تفسير بريء فسيعرفه الأمن دون أن يشعر النزيل بأنه متهم.</p><aside class=\"bk-scene\"><strong>موقف:</strong> لاحظ نادل في الشرفة زائرًا قضى أربعين دقيقة يصوّر مدخل الخدمة والكاميرا فوقه، وسأله مرتين عن موعد وصول حارس الليل. لم يواجهه النادل، بل أجابه بلطف أنه لا يعرف، ثم أخبر مشرفه والأمن بهدوء بما رآه وأين وكم استمر، فتولى الأمن التقييم.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> لا تجب أبدًا عن أسئلة تفصيلية حول الإجراءات الأمنية أو مواعيد الجولات أو مواقع الكاميرات. قل بلطف إنك لست متأكدًا، وأخبر الأمن بالسؤال.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> انتبه للمؤشرات المرتبطة بالدخول والاهتمام غير المعتاد والتهديد، وأبلغ بما تلاحظه، ودع الأمن يقيّم معناه.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: المؤشرات",
+                                "questions": [
+                                    {
+                                        "question": "سألك زائر عدة مرات عن مواعيد جولات الأمن. إلى أي مجموعة ينتمي هذا المؤشر؟",
+                                        "options": [
+                                            "الدخول غير المصرح",
+                                            "التهديد أو العبث",
+                                            "الاهتمام غير المعتاد",
+                                            "لا شيء، فهو أمر طبيعي دائمًا"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "الأسئلة المتكررة عن الإجراءات الأمنية مذكورة في المادة ضمن الاهتمام غير المعتاد."
+                                    },
+                                    {
+                                        "question": "ترك شخص حقيبة قرب المدخل ثم غادر بسرعة. بمَ تصف المادة ذلك؟",
+                                        "options": [
+                                            "مؤشر تهديد أو عبث",
+                                            "سلوك طبيعي للنزيل",
+                                            "مؤشر دخول فقط",
+                                            "مفقودات لا تحتاج إلى بلاغ"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "ترك شيء ثم المغادرة بسرعة مذكور ضمن التهديد أو العبث."
+                                    },
+                                    {
+                                        "question": "طلب منك رجل أن تفتح له باب الموظفين ببطاقتك لأنه نسي بطاقته. ما مصدر القلق؟",
+                                        "options": [
+                                            "لا قلق ما دام مهذبًا",
+                                            "إنه مؤشر تصوير غير معتاد",
+                                            "إنه أمر يخص التدبير الفندقي فقط",
+                                            "استخدام بطاقة أو مفتاح للغير مؤشر دخول غير مصرح"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "استخدام بطاقة أو مفتاح للغير مذكور ضمن الدخول غير المصرح."
+                                    },
+                                    {
+                                        "question": "لاحظت مؤشرًا مقلقًا لكن قد يكون له تفسير بريء. ماذا تفعل؟",
+                                        "options": [
+                                            "تطلب من الشخص أن يبرر تصرفه",
+                                            "تبلّغ بالوقائع وتترك للأمن تقييم الموقف",
+                                            "تنتظر حتى تتأكد تمامًا قبل إخبار أحد",
+                                            "تحذّر النزلاء القريبين من الشخص"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: قد يكون للسلوك تفسير بريء، والأمن يقيّم الموقف."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "الأشياء المشبوهة",
+                    "lessons": [
+                        {
+                            "title": "متى يصبح الشيء مشبوهًا والخطوات الآمنة الأربع",
+                            "minutes": 6,
+                            "body": "<h2>شيء غير معتاد في سياق غير معتاد</h2><p>الفندق مليء بالحقائب والصناديق والطرود، ومعظمها يخص النزلاء أو التوريدات، ومعظم المنسيات تنتهي في قسم المفقودات. وتوضح المادة أن الشيء يصبح مصدر قلق عندما <strong>يثير مكانه وحالته وسياقه القلق.</strong> وتذكر خمس علامات:</p><ul><li><strong>متروك ولا يُعرف صاحبه،</strong> فلا يطالب به نزيل أو زميل ولم يرَ أحد من تركه.</li><li><strong>موضوع قرب مدخل أو منطقة حساسة،</strong> كالباب الرئيسي أو غرفة المعدات أو ردهة المصاعد أو قاعة مزدحمة.</li><li><strong>مخفي أو موضوع بطريقة غير طبيعية،</strong> كأن يُدفع خلف أصيص نبات أو تحت أريكة أو داخل خزانة خدمة.</li><li><strong>له رائحة أو صوت أو تسرب غير معتاد.</strong></li><li><strong>مرتبط برسالة تهديد أو تصرف مقلق،</strong> كحقيبة تركها شخص ثم غادر مسرعًا.</li></ul><blockquote class=\"bk-quote\">لا تلمس الشيء ولا تحركه ولا تفتحه.</blockquote><p>هذه أهم قاعدة في المادة: لا تلمس الشيء ولا تحركه ولا تفتحه ولا تفحصه بنفسك، حتى لو أردت البحث عن اسم صاحبه أو نقله إلى مكان أهدأ؛ فتحريكه قد يعرضك ويعرض غيرك للخطر، وقد يصعّب على الأمن تقييم الموقف.</p><h2>أربع خطوات عند العثور على شيء مشبوه</h2><ol><li><strong>توقف:</strong> لا تلمس الشيء أو تفحصه.</li><li><strong>ابتعد:</strong> ابتعد بهدوء إلى مكان آمن.</li><li><strong>امنع الاقتراب:</strong> أبعد النزلاء دون إثارة الذعر، بكلمات هادئة وبسيطة وسبب عملي لا بعبارات مخيفة.</li><li><strong>أبلغ الأمن:</strong> اذكر الموقع والوصف والوقت.</li></ol><p>وبعد الإبلاغ تضيف المادة توجيهًا آخر: <strong>ابقَ متاحًا للأمن واتبع تعليماتهم من مكان آمن.</strong> فقد يحتاج الأمن إلى أن تعيد وصف الشيء، أو تدلّهم على مكانه من مسافة، أو تساعد في توجيه النزلاء.</p><h3>إبعاد النزلاء دون ذعر</h3><p>منع الاقتراب لا يعني الصراخ بالتحذير؛ فالذعر قد يسبب إصابات ويصعّب إدارة الموقف. أما طلب هادئ ومهذب مثل: \"هل يمكنك استخدام المدخل الآخر من فضلك؟ هذه المنطقة مغلقة لبعض الوقت\" فيحمي النزلاء دون أن يخيفهم.</p><aside class=\"bk-scene\"><strong>موقف:</strong> في الصباح الباكر رأت مشرفة التدبير الفندقي صندوقًا كرتونيًا مغلقًا مدفوعًا خلف عمود قرب مدخل القاعة الكبرى، تنبعث منه رائحة كيميائية خفيفة، ولم يكن هناك أحد ولا توريد متوقع. لم تلمسه، بل ابتعدت إلى مسافة آمنة، ووجهت بلطف نزيلين قادمين إلى الممر الجانبي، ثم أبلغت الأمن باللاسلكي: \"المدخل الرئيسي للقاعة الكبرى، خلف العمود الأيسر، صندوق بني مغلق بحجم فرن الميكروويف تقريبًا، رائحة كيميائية، لاحظته الساعة 6:40\". ثم انتظرت في المكان الآمن واتبعت تعليمات الأمن.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> الشيء المنسي ببساطة، ككيس تسوق على كرسي في الردهة وصاحبه عند مكتب الاستقبال، قد لا يكون مشبوهًا أصلًا؛ فالعلامات السابقة تتعلق بالمكان والحالة والسياق معًا. وإذا لم تكن متأكدًا فأبلغ ودع الأمن يقرر.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> إذا أقلقك مكان الشيء أو حالته أو سياقه: توقف، ابتعد، امنع الاقتراب، أبلغ الأمن، ثم ابقَ متاحًا لهم من مكان آمن.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الأشياء المشبوهة",
+                                "questions": [
+                                    {
+                                        "question": "وجدت حقيبة مخفية تحت أريكة قرب المدخل الرئيسي ولم يطالب بها أحد. ما خطوتك الأولى؟",
+                                        "options": [
+                                            "تفتحها للبحث عن اسم صاحبها",
+                                            "تحملها إلى قسم المفقودات",
+                                            "توقف: لا تلمسها ولا تفحصها",
+                                            "تصوّرها وتنشر الصورة في مجموعة الموظفين"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "الخطوة الأولى من الخطوات الآمنة الأربع هي: توقف، لا تلمس الشيء أو تفحصه."
+                                    },
+                                    {
+                                        "question": "يتجه نزلاء نحو المنطقة التي فيها الشيء. كيف تبعدهم؟",
+                                        "options": [
+                                            "توجههم بهدوء إلى طريق آخر دون إثارة الذعر",
+                                            "تصرخ بالتحذير ليغادر الجميع بسرعة",
+                                            "تخبرهم أنه قد تكون هناك قنبلة",
+                                            "تتركهم يمرون لأن هذا ليس من عملك"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "خطوة امنع الاقتراب تقول: أبعد النزلاء دون إثارة الذعر."
+                                    },
+                                    {
+                                        "question": "ما المعلومات الثلاث التي تطلب المادة ذكرها عند إبلاغ الأمن عن الشيء؟",
+                                        "options": [
+                                            "اسمك وقسمك ومناوبتك",
+                                            "قائمة النزلاء وأرقام الغرف والوقت",
+                                            "اسم صاحبه وجنسيته وغرفته",
+                                            "الموقع والوصف والوقت"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "خطوة أبلغ الأمن تقول: اذكر الموقع والوصف والوقت."
+                                    },
+                                    {
+                                        "question": "أبلغت الأمن عن الشيء. ماذا تفعل بعد ذلك؟",
+                                        "options": [
+                                            "تعود إلى الشيء لتحرسه عن قرب",
+                                            "تبقى متاحًا للأمن وتتبع تعليماتهم من مكان آمن",
+                                            "تغادر لأن دورك انتهى",
+                                            "تنقل الشيء إلى مكان أهدأ"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: ابقَ متاحًا للأمن واتبع تعليماتهم من مكان آمن."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "البلاغ والخطر المباشر",
+                    "lessons": [
+                        {
+                            "title": "افعل وتجنب، وماذا تقول في البلاغ، وعند وجود خطر مباشر",
+                            "minutes": 7,
+                            "body": "<h2>افعل وتجنب عند الاشتباه</h2><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنب</th></tr></thead><tbody><tr><td>احفظ مسافة آمنة</td><td>أن تلمس الشيء أو تحركه</td></tr><tr><td>أبعد الآخرين بهدوء</td><td>أن تواجه الشخص أو تحاول احتجازه</td></tr><tr><td>أبلغ الأمن أو المشرف فورًا</td><td>أن تلتقط صورة بهاتفك الشخصي</td></tr><tr><td>سجل ما شاهدته بدقة</td><td>أن تخبر النزلاء بتفاصيل غير مؤكدة</td></tr><tr><td>اتبع خطة الفندق وتعليمات الأمن</td><td>أن تنشر معلومات أو صورًا على الإنترنت</td></tr></tbody></table><blockquote class=\"bk-quote\">أبلغ بسرية ودع الأمن يقيّم ويتصرف.</blockquote><p>السرية تحمي الجميع؛ فالشائعات بين النزلاء قد تسبب الذعر، والصور أو المنشورات على الإنترنت قد تنشر معلومات خاطئة وتسيء إلى شخص بريء وتعيق عمل الأمن.</p><h2>ماذا تقول في البلاغ؟</h2><p>البلاغ الجيد قصير وواضح وقائم على الحقائق، وتحدد المادة أربعة عناصر:</p><ol><li><strong>الموقع:</strong> المكان الدقيق وأقرب علامة واضحة، مثل: \"الطابق الثالث، أمام الغرفة 312، بجانب طفاية الحريق\".</li><li><strong>الوصف:</strong> وصف الشيء أو الشخص دون أحكام؛ قل \"حقيبة ظهر سوداء\" أو \"رجل بسترة رمادية\"، لا \"رجل يبدو خطيرًا\".</li><li><strong>السلوك:</strong> ما شاهدته أو سمعته فعلًا.</li><li><strong>الاتجاه والوقت:</strong> متى حدث وإلى أين تحرك الشخص.</li></ol><blockquote class=\"bk-quote\">قل الحقائق بوضوح — لا تضف تخمينًا أو شائعة.</blockquote><h2>عند وجود خطر مباشر</h2><p>بعض المواقف لا تحتمل الانتظار. تقول المادة: <strong>صعّد الحالة فورًا عند:</strong></p><ul><li>تهديد بإيذاء شخص أو المنشأة.</li><li>وجود سلاح أو عنف.</li><li>رائحة أو تسرب أو صوت مقلق.</li><li>محاولة دخول بالقوة.</li><li>وجود جسم في موقع حساس.</li></ul><p>وابدأ بهذه الخطوات:</p><ol><li>ابتعد واحمِ النزلاء من المكان.</li><li>أبلغ الأمن ومركز التحكم.</li><li>اتصل بالطوارئ وفق خطة الفندق.</li><li>اتبع قرار الإخلاء أو الاحتماء.</li><li>لا تعد حتى يسمح الأمن بذلك.</li></ol><blockquote class=\"bk-quote\">لا تحاول التأكد بنفسك — سلامتك وسلامة النزلاء أولًا.</blockquote><aside class=\"bk-scene\"><strong>موقف:</strong> سمعت موظفة الاستقبال الليلي نزيلًا في الردهة يصرخ مهددًا بإيذاء شخص ما، ورأت في يده أداة حادة. لم تقترب منه ولم تحاول تهدئته جسديًا، بل أبعدت النزيلين القريبين من المكتب عبر المكتب الخلفي، واتصلت بالأمن ومركز التحكم، واتبعت خطة الفندق في الاتصال بالطوارئ. وعندما قرر الأمن إبقاء النزلاء محتمين في المطعم ساعدت في توجيههم وانتظرت حتى أعلن الأمن أن العودة آمنة.</aside><h2>ختامًا</h2><p>تختم المادة برسالة بسيطة: <strong>إذا لاحظت شيئًا فبلّغ.</strong> لاحظ السلوك، واحفظ المسافة، ودع الأمن يتصرف: لاحظ، ابتعد، احمِ، أبلغ، تابع. لا تلمس، ولا تواجه، ولا تنشر معلومات.</p><aside class=\"bk-key\"><strong>الخلاصة:</strong> أبلغ بالموقع والوصف والسلوك والوقت بوصفها حقائق، وعند وجود خطر مباشر ابتعد واحمِ النزلاء وصعّد فورًا، ولا تحاول التأكد بنفسك.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: البلاغ والخطر",
+                                "questions": [
+                                    {
+                                        "question": "سألك نزيل عمّا يحدث قرب منطقة مغلقة. ما الذي يجب تجنبه؟",
+                                        "options": [
+                                            "أن تطلب منه بلطف استخدام طريق آخر",
+                                            "أن تتبع تعليمات الأمن",
+                                            "أن تحفظ مسافة آمنة",
+                                            "أن تخبره بتفاصيل غير مؤكدة عن حقيبة مشبوهة"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تذكر المادة إخبار النزلاء بتفاصيل غير مؤكدة ضمن ما يجب تجنبه."
+                                    },
+                                    {
+                                        "question": "أي وصف يصلح في بلاغ جيد؟",
+                                        "options": [
+                                            "رجل بسترة رمادية يحمل حقيبة ظهر سوداء",
+                                            "أجنبي يبدو خطيرًا",
+                                            "شخص واضح أنه ينوي شيئًا",
+                                            "شخص لم يعجبني شكله"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "عنصر الوصف يطلب وصف الشيء أو الشخص دون أحكام."
+                                    },
+                                    {
+                                        "question": "لاحظت رائحة قوية وتسربًا من طرد في غرفة المعدات. ماذا تفعل؟",
+                                        "options": [
+                                            "تفتح الطرد لمعرفة المصدر",
+                                            "تنتظر لترى هل تزداد الرائحة",
+                                            "تبتعد وتحمي الآخرين وتصعّد فورًا إلى الأمن ومركز التحكم",
+                                            "تصوّره وترسله لأصدقائك لأخذ رأيهم"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "الرائحة أو التسرب المقلق يستوجب التصعيد فورًا، ولا تحاول التأكد بنفسك."
+                                    },
+                                    {
+                                        "question": "أخلى الأمن منطقة ما. متى يمكنك العودة؟",
+                                        "options": [
+                                            "عندما تبدو المنطقة هادئة",
+                                            "فقط عندما يسمح الأمن بذلك",
+                                            "بعد خمس عشرة دقيقة",
+                                            "عند انتهاء مناوبة مشرفك"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: لا تعد حتى يسمح الأمن بذلك."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,545 @@
+{
+    "slug": "serving-vips-and-repeat-guests",
+    "category": "personalised-service",
+    "level": "intermediate",
+    "source_pdf": "Serving-VIPs-and-Repeat-Guests-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/serving-vips-and-repeat-guests.webp",
+    "videos": [
+        {
+            "id": "j7GbVJFc_cI",
+            "title": "The Secrets of Unreasonable Hospitality | Will Guidara",
+            "channel": "Leadership Lessons | Big Think+",
+            "why": "Restaurateur Will Guidara explains how noticing and remembering what matters to each guest creates personal, memorable service, which supports the deck's Recognize and Personalize steps."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Serving VIPs and Repeat Guests",
+            "subtitle": "Prepare, personalise and protect privacy",
+            "short_description": "Learn to prepare before arrival, recognise returning guests discreetly, personalise service in four points and protect every guest's preferences and privacy.",
+            "description": "<p>VIPs and repeat guests notice the details. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows how exceptional service comes from preparation, accuracy and thoughtful attention, not from exaggeration.</p><p>You will follow five steps: Prepare, Recognize, Personalize, Protect and Follow up. You will learn how to get ready before arrival, deliver service across three stages of the stay, welcome guests personally and discreetly, handle preferences responsibly and know when to call your supervisor.</p>",
+            "requirements": "Suitable for guest-facing colleagues who already know basic service standards; no specific prior course is required.",
+            "outcomes": [
+                "Prepare for a VIP or repeat guest before arrival using approved instructions",
+                "Deliver service across three stages: before arrival, during the stay and before departure",
+                "Recognise returning guests personally and discreetly",
+                "Personalise room, contact, comfort and follow-up while confirming preferences",
+                "Protect guest information and call the supervisor when a decision is needed"
+            ],
+            "faqs": [
+                {
+                    "question": "What are the five steps in this course?",
+                    "answer": "Prepare, Recognize, Personalize, Protect and Follow up."
+                },
+                {
+                    "question": "Should I greet a repeat guest by name?",
+                    "answer": "Yes, if the name is confirmed and appropriate. Welcome them warmly, then let the guest choose the level of interaction, and never ask about past visits in front of others."
+                },
+                {
+                    "question": "Can I promise a VIP an upgrade or gift?",
+                    "answer": "No. Do not offer a gift or compensation without authority, and do not promise a privilege or exception before approval; ask your supervisor."
+                }
+            ],
+            "meta_title": "Serving VIPs and Repeat Guests in Hotels",
+            "meta_description": "Hotel training on serving VIPs and repeat guests: prepare before arrival, recognise discreetly, personalise service and protect guest preferences and privacy.",
+            "focus_keyword": "serving VIP hotel guests",
+            "chapters": [
+                {
+                    "title": "Preparation and the Stay",
+                    "lessons": [
+                        {
+                            "title": "Exceptional Service Starts Before Arrival",
+                            "minutes": 5,
+                            "body": "<h2>Readiness before the guest arrives</h2><p>When a VIP or a repeat guest walks into the hotel, the quality of their welcome has largely been decided already. The deck's message is clear: <strong>exceptional service starts before the guest arrives</strong>. The key word is <strong>readiness</strong>, or preparing early.</p><p>The whole course follows five steps, shown on the deck's opening slide: <strong>Prepare, Recognize, Personalize, Protect, Follow up</strong>. This lesson focuses on the first.</p><h2>Five things to do before arrival</h2><ol><li><strong>Review the booking and the approved instructions.</strong> Check arrival time, room type and any guidance that has been approved for this guest.</li><li><strong>Make sure the room and services are ready.</strong> A VIP should never wait while a room is finished or an amenity is fetched.</li><li><strong>Share the necessary information with the team.</strong> The colleagues who will serve the guest need to know what to prepare, and nothing more.</li><li><strong>Prepare the recorded and permitted preferences.</strong> Use only the preferences that are on record and allowed to be used.</li><li><strong>Assign a colleague responsible for follow-up.</strong> One named person makes sure nothing falls between departments.</li></ol><p>Notice the careful words: <em>approved</em> instructions, <em>necessary</em> information, <em>recorded and permitted</em> preferences. Preparation for important guests is not about gathering everything we can; it is about using the right information, correctly.</p><h2>Not exaggeration, but attention to detail</h2><p>Some colleagues think serving a VIP means doing more: more staff at the door, more fuss, more attention in public. The deck corrects this: <strong>exceptional service is not exaggeration; it is preparation, accuracy and attention to detail.</strong> A guest who is used to high standards notices the pillow they asked for last time far more than a crowd at the entrance.</p><table class=\"bk-say\"><thead><tr><th>Before arrival</th><th>Why it matters</th></tr></thead><tbody><tr><td>Review booking and instructions</td><td>You serve the guest as agreed</td></tr><tr><td>Check room and services</td><td>No waiting on arrival</td></tr><tr><td>Brief the team</td><td>Everyone knows their part</td></tr><tr><td>Prepare permitted preferences</td><td>Personal touches are ready</td></tr><tr><td>Name a follow-up owner</td><td>Requests are closed properly</td></tr></tbody></table><blockquote class=\"bk-quote\">Exceptional service means preparation, accuracy, and thoughtful attention.</blockquote><aside class=\"bk-scene\"><strong>Scene:</strong> A repeat guest is due at 4 pm. In the morning the front office supervisor reviews the booking, sees the approved note for a quiet high-floor room and extra water, checks with housekeeping that the room is ready by 2 pm, and tells only the concierge and housekeeping what they need. She names the duty manager as follow-up owner. When the guest arrives, the room is ready and everything he usually asks for is already there, without any fuss.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Use a short pre-arrival checklist based on the five points, so preparation does not depend on memory during a busy shift.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Prepare early: review, check, brief, prepare permitted preferences and name a follow-up owner. Exceptional service is preparation, not exaggeration.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Before arrival",
+                                "questions": [
+                                    {
+                                        "question": "A VIP arrives this afternoon. What should you review first in the morning?",
+                                        "options": [
+                                            "The guest's social media",
+                                            "The booking and the approved instructions",
+                                            "Which colleagues want to meet the guest",
+                                            "The guest's spending on past stays"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck's first preparation step is to review the booking and approved instructions."
+                                    },
+                                    {
+                                        "question": "Which preferences should be prepared before arrival?",
+                                        "options": [
+                                            "Anything colleagues remember about the guest",
+                                            "Preferences guessed from the guest's profile",
+                                            "Recorded and permitted preferences",
+                                            "Every detail found online"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says prepare the recorded and permitted preferences."
+                                    },
+                                    {
+                                        "question": "According to the deck, what is exceptional service?",
+                                        "options": [
+                                            "Preparation, accuracy and attention to detail",
+                                            "A large team at the entrance",
+                                            "Extra attention in public areas",
+                                            "Free upgrades for every VIP"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck states exceptional service is not exaggeration but preparation, accuracy and attention to detail."
+                                    },
+                                    {
+                                        "question": "Why does the deck ask you to assign a colleague responsible for follow-up?",
+                                        "options": [
+                                            "So the guest has someone to complain to",
+                                            "So other colleagues can ignore the guest",
+                                            "To replace the supervisor",
+                                            "So requests do not fall between departments and are followed through"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Naming a follow-up owner is one of the five pre-arrival steps, ensuring requests are followed through."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Service in Three Stages",
+                            "minutes": 5,
+                            "body": "<h2>Prepare, Personalize, Follow up</h2><p>Serving an important or returning guest is not a single moment at check-in. The deck breaks it into three stages across the stay, each with its own focus.</p><h3>Stage 1: Before arrival (Prepare)</h3><ul><li>Review the instructions and the arrival time.</li><li>Confirm the room and services are ready.</li><li>Inform the relevant departments only.</li></ul><p>“Relevant departments only” is important. A guest's arrival details and preferences should reach the people who need them to serve the guest, not everyone in the hotel.</p><h3>Stage 2: During the stay (Personalize)</h3><ul><li>Welcome the guest in a natural and respectful way.</li><li>Apply the approved preferences accurately.</li><li>Follow up on requests without extra disturbance.</li></ul><p>Personalisation during the stay should feel easy and natural. If the guest likes their newspaper in a certain language, it simply appears. If they ask for something, it is done and checked, without repeated calls or knocks that disturb them.</p><h3>Stage 3: Before departure (Follow up)</h3><ul><li>Make sure the guest is satisfied with the service.</li><li>Record suitable preferences for the future.</li><li>Thank the guest and say goodbye sincerely, inviting them to return.</li></ul><p>The last stage is where the next stay begins. A preference recorded properly today becomes tomorrow's preparation.</p><table class=\"bk-say\"><thead><tr><th>Stage</th><th>Focus</th><th>Key actions</th></tr></thead><tbody><tr><td>Before arrival</td><td>Prepare</td><td>Instructions, arrival time, room ready, inform relevant departments</td></tr><tr><td>During the stay</td><td>Personalize</td><td>Natural welcome, accurate preferences, quiet follow-up</td></tr><tr><td>Before departure</td><td>Follow up</td><td>Check satisfaction, record preferences, sincere thanks</td></tr></tbody></table><h2>Remembered, not watched</h2><p>The deck adds a sentence that defines the whole approach: <strong>the repeat guest should feel that we remember their needs, not that we are watching them.</strong> There is a fine line between “they know I like a quiet room” and “they know too much about me.” Using preferences naturally, and never commenting on everything we know, keeps the guest on the right side of that line.</p><blockquote class=\"bk-quote\">The repeat guest should feel we remember their needs, not that we are watching them.</blockquote><aside class=\"bk-scene\"><strong>Scene:</strong> A returning guest always takes breakfast early. On her second morning, the restaurant host has her usual table ready and simply says, “Good morning, your table is ready.” He does not say, “We know you always come at six.” At check-out, the receptionist asks if everything was comfortable; the guest mentions she would like a firmer pillow next time, and the receptionist records it in the approved system.</aside><aside class=\"bk-note\"><strong>Tip:</strong> When following up on a request during the stay, choose one clear moment, such as a single call or a note, instead of repeated check-ins that disturb the guest.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Prepare before arrival, personalise during the stay, follow up before departure, and always make the guest feel remembered, not watched.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Three stages",
+                                "questions": [
+                                    {
+                                        "question": "Before a VIP arrives, who should be informed about the arrival?",
+                                        "options": [
+                                            "Every department in the hotel",
+                                            "Only the relevant departments",
+                                            "Nobody, to protect privacy",
+                                            "Other guests on the same floor"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says inform the relevant departments only."
+                                    },
+                                    {
+                                        "question": "During the stay, a guest asks for extra towels. How should you follow up?",
+                                        "options": [
+                                            "Call the room several times to check",
+                                            "Knock every hour to ask if they need more",
+                                            "Leave it, since follow-up is only for departure",
+                                            "Follow up on the request without extra disturbance"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "During the stay, the deck says follow up on requests without extra disturbance."
+                                    },
+                                    {
+                                        "question": "Which action belongs to the before-departure stage?",
+                                        "options": [
+                                            "Record suitable preferences for the future",
+                                            "Review the arrival time",
+                                            "Confirm the room is ready",
+                                            "Apply approved preferences for the first time"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Before departure, the deck lists checking satisfaction, recording suitable preferences and sincere thanks."
+                                    },
+                                    {
+                                        "question": "A colleague tells a repeat guest, “We know you always order the same dinner at nine.” What is the problem?",
+                                        "options": [
+                                            "There is no problem; it shows good memory",
+                                            "The colleague should have said it louder",
+                                            "It can make the guest feel watched rather than remembered",
+                                            "The dinner time should not be recorded at all"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says the repeat guest should feel we remember their needs, not that we are watching them."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Recognition and Personalisation",
+                    "lessons": [
+                        {
+                            "title": "Recognise Professionally, Personalise in Four Points",
+                            "minutes": 6,
+                            "body": "<h2>A personal and discreet welcome</h2><p>Recognition is one of the most powerful moments for a returning guest. The deck describes the right welcome as <strong>personal and respectful</strong>, and gives the principle behind it: <strong>use what you know to serve the guest, not to embarrass them.</strong></p><p>Five practical guidelines:</p><ul><li><strong>Welcome the guest by name if it is confirmed and appropriate.</strong> Using a name wrongly, or in a setting where the guest prefers not to be identified, does more harm than not using it.</li><li><strong>Mention their return to the hotel warmly.</strong> A simple acknowledgement makes the guest feel valued.</li><li><strong>Do not ask about previous visits in front of others.</strong> Other guests do not need to know how often this person stays or what they did last time.</li><li><strong>Do not assume their preferences have not changed.</strong> What was true last year may not be true today.</li><li><strong>Ask gently whether they need something different.</strong></li></ul><p>The deck offers a model sentence and a rule: say, <strong>“We are happy to welcome you again,”</strong> then let the guest decide how much interaction they want. Some returning guests enjoy a conversation; others want a quick, quiet check-in. Both are right.</p><blockquote class=\"bk-quote\">Welcome the guest warmly, then let them choose the level of interaction.</blockquote><h2>Personalise service in four points</h2><p>The deck identifies four areas where service can be personalised:</p><ol><li><strong>Room:</strong> apply the approved room preferences.</li><li><strong>Contact:</strong> use the communication channel the guest prefers.</li><li><strong>Comfort:</strong> respect their time and privacy, and avoid disturbing them.</li><li><strong>Follow-up:</strong> follow the request up at the right time, without exaggeration.</li></ol><table class=\"bk-say\"><thead><tr><th>Point</th><th>In practice</th></tr></thead><tbody><tr><td>Room</td><td>Approved room preferences applied</td></tr><tr><td>Contact</td><td>The guest's preferred channel, for example a message instead of a call</td></tr><tr><td>Comfort</td><td>Time, privacy, no disturbance</td></tr><tr><td>Follow-up</td><td>At the right time, not excessively</td></tr></tbody></table><h2>Ask before changing the service</h2><p>The deck closes this topic with an important reminder: <strong>confirm preferences before changing the service, because preferences may change from one stay to another.</strong> A guest who always had a king bed may be travelling with a colleague this time. A guest who liked a high floor may now prefer to be near the lift. A quick, gentle question avoids the embarrassment of getting it wrong.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A regular guest arrives with his family for the first time. The receptionist says, “Welcome back, Mr Salem, we are happy to welcome you again.” Instead of assigning his usual single room automatically, she asks, “Would you like the same arrangement as before, or something different for this stay?” He asks for connecting rooms. Because she asked rather than assumed, the family's stay started perfectly.</aside><aside class=\"bk-note\"><strong>Tip:</strong> If you are not sure the name is right, or the guest is in a public group, a warm “Welcome back” without the name is always safe.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Recognise warmly and discreetly, personalise room, contact, comfort and follow-up, and always confirm preferences before applying them.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Recognise and personalise",
+                                "questions": [
+                                    {
+                                        "question": "A repeat guest checks in while other guests are waiting beside him. What should you avoid?",
+                                        "options": [
+                                            "Welcoming him warmly",
+                                            "Asking about his previous visits in front of others",
+                                            "Using his name if confirmed and appropriate",
+                                            "Letting him choose the level of interaction"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says do not ask the guest about previous visits in front of others."
+                                    },
+                                    {
+                                        "question": "A returning guest always had a high-floor room. What should you do this time?",
+                                        "options": [
+                                            "Assign it automatically without asking",
+                                            "Give a different room as a surprise",
+                                            "Ask gently whether they need anything different",
+                                            "Tell them high floors are no longer available"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says do not assume preferences have not changed; ask gently if they need something different."
+                                    },
+                                    {
+                                        "question": "A guest's profile says she prefers text messages to phone calls. Which personalisation point is this?",
+                                        "options": [
+                                            "Contact",
+                                            "Room",
+                                            "Comfort",
+                                            "Follow-up"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Contact means using the communication channel the guest prefers."
+                                    },
+                                    {
+                                        "question": "What model sentence does the deck suggest for a returning guest?",
+                                        "options": [
+                                            "“You are one of our most important guests.”",
+                                            "“How many times have you stayed with us?”",
+                                            "“Nothing has changed since your last visit, I assume?”",
+                                            "“We are happy to welcome you again.”"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck suggests saying “We are happy to welcome you again,” then letting the guest choose the level of interaction."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Protecting Guests and Knowing Your Limits",
+                    "lessons": [
+                        {
+                            "title": "Do and Avoid, Preferences and When to Call the Supervisor",
+                            "minutes": 7,
+                            "body": "<h2>Do and avoid in exceptional service</h2><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Review the approved instructions before arrival</td><td>Announcing in front of others that the guest is an important person</td></tr><tr><td>Coordinate with the necessary departments only</td><td>Sharing details of their stay without need</td></tr><tr><td>Use the name and preferences respectfully</td><td>Offering a gift or compensation without authority</td></tr><tr><td>Keep calm and protect privacy</td><td>Promising an exception that is not approved</td></tr><tr><td>Follow up requests until they are closed</td><td>Neglecting other guests or showing them less respect</td></tr></tbody></table><p>The deck summarises the balance: <strong>serving VIPs does not mean revealing their identity or neglecting other guests.</strong> Every guest in the lobby deserves the same respect; the VIP simply receives service that is prepared for them.</p><h2>Handle preferences responsibly</h2><p>Guest preferences are valuable, and they must be handled with care. The deck gives four tests:</p><ol><li><strong>Useful:</strong> record only what helps provide better service.</li><li><strong>Current:</strong> confirm the preference is still suitable.</li><li><strong>Necessary:</strong> share the information only with those who need it.</li><li><strong>Protected:</strong> use the approved system and do not keep it on your phone.</li></ol><blockquote class=\"bk-quote\">Do not record sensitive or personal information that the service does not need.</blockquote><p>A preferred pillow type is useful. A comment about a guest's private life is not, and should never be written down. Photos or notes on a personal phone are not protected, even if they seem convenient.</p><h2>When to call the supervisor</h2><p>Ask for your supervisor when there is:</p><ul><li>A special instruction that is unclear.</li><li>A request for an exception or a service outside your authority.</li><li>A setup or agreed preference that cannot be delivered.</li><li>A complaint or clear dissatisfaction.</li><li>An additional security or privacy need.</li></ul><h3>Explain the situation without revealing extra information</h3><ul><li>State the request, the time and what has been done so far.</li><li>Explain what needs a decision or authority.</li><li>Suggest a suitable alternative if possible.</li><li>Inform the colleague responsible for following up with the guest.</li><li>Follow up until it is resolved and the guest's satisfaction is confirmed.</li></ul><blockquote class=\"bk-quote\">Do not promise a privilege or an exception before getting approval.</blockquote><h2>Closing message</h2><p>The deck ends: <strong>make appreciation felt and keep privacy protected; prepare, personalise and follow up with care.</strong> Prepare, Recognize, Personalize, Protect, Follow up: exceptional service with calm, accuracy and respect for everyone.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A VIP asks the concierge for a late check-out at 6 pm, beyond what he can approve. The concierge does not promise anything. He tells the guest he will arrange it with his manager, then calls the duty manager: “Suite 1204 is asking for a 6 pm check-out, requested at 10 am. I have checked the room is not needed until tomorrow. It needs your approval; we could also offer 4 pm with luggage storage.” He informs the follow-up owner and calls the guest back with the confirmed answer.</aside><aside class=\"bk-note\"><strong>Tip:</strong> When briefing your supervisor in a public area, use the room number or booking reference rather than saying the guest's name or status aloud.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Keep preferences useful, current, necessary and protected; escalate what is beyond your authority, and never promise an exception before approval.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Protect and escalate",
+                                "questions": [
+                                    {
+                                        "question": "A colleague wants to announce to the lobby team that “a very important guest is here.” What does the deck say?",
+                                        "options": [
+                                            "Avoid announcing in front of others that the guest is an important person",
+                                            "Do it, so everyone gives extra attention",
+                                            "Do it only if the guest is smiling",
+                                            "Announce it but without the room number"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck lists announcing that the guest is an important person in front of others as something to avoid."
+                                    },
+                                    {
+                                        "question": "You learn a guest's favourite drink. Where should you keep this preference?",
+                                        "options": [
+                                            "In a note on your personal phone",
+                                            "On a sticky note at the desk",
+                                            "In the approved system",
+                                            "In a group chat with colleagues"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The Protected test says use the approved system and do not keep it on your phone."
+                                    },
+                                    {
+                                        "question": "A VIP asks for a complimentary upgrade that you are not authorised to give. What should you do?",
+                                        "options": [
+                                            "Promise it, then ask the supervisor later",
+                                            "Refuse and end the conversation",
+                                            "Offer a gift instead to keep the guest happy",
+                                            "Do not promise; ask the supervisor and explain the request clearly"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says do not promise a privilege or exception before approval; a request outside your authority is a reason to call the supervisor."
+                                    },
+                                    {
+                                        "question": "When you brief the supervisor, which information should you give?",
+                                        "options": [
+                                            "The guest's full history and personal details",
+                                            "The request, the time and what has been done so far",
+                                            "Only the guest's name",
+                                            "Your opinion of the guest"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says explain the situation without revealing extra information: the request, the time and what has been done so far."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "خدمة كبار الشخصيات والنزلاء المتكررين",
+            "subtitle": "استعد وخصّص الخدمة واحفظ الخصوصية",
+            "short_description": "تعلّم الاستعداد قبل الوصول، والتعرف على النزيل العائد بلباقة، وتخصيص الخدمة في أربع نقاط، وحماية تفضيلات كل نزيل وخصوصيته.",
+            "description": "<p>كبار الشخصيات والنزلاء المتكررون يلاحظون التفاصيل. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتوضح أن الخدمة المميزة ليست مبالغة، بل استعداد ودقة واهتمام بالتفاصيل.</p><p>ستتبع خمس خطوات: استعد، تعرّف، خصّص، احمِ، تابع. وستتعلم كيف تستعد قبل الوصول، وتقدم الخدمة في ثلاث مراحل، وترحب بالنزيل بطريقة شخصية ومحترمة، وتحفظ التفضيلات بمسؤولية، وتعرف متى تستدعي المشرف.</p>",
+            "requirements": "مناسبة للموظفين الذين يتعاملون مع النزلاء ويعرفون معايير الخدمة الأساسية، ولا يلزم اجتياز دورة سابقة محددة.",
+            "outcomes": [
+                "استعد لاستقبال كبار الشخصيات والنزلاء المتكررين قبل الوصول وفق التوجيهات المعتمدة",
+                "قدّم الخدمة في ثلاث مراحل: قبل الوصول وأثناء الإقامة وقبل المغادرة",
+                "تعرّف على النزيل العائد بطريقة شخصية ومحترمة",
+                "خصّص الغرفة والتواصل والراحة والمتابعة مع التأكد من التفضيلات",
+                "احمِ معلومات النزيل واستدعِ المشرف عند الحاجة إلى قرار"
+            ],
+            "faqs": [
+                {
+                    "question": "ما الخطوات الخمس في هذه الدورة؟",
+                    "answer": "استعد، تعرّف، خصّص، احمِ، تابع."
+                },
+                {
+                    "question": "هل أرحب بالنزيل المتكرر باسمه؟",
+                    "answer": "نعم، إذا كان الاسم مؤكدًا ومناسبًا. رحّب به بدفء، ثم دع النزيل يحدد مقدار التفاعل، ولا تسأله أمام الآخرين عن زيارات سابقة."
+                },
+                {
+                    "question": "هل أستطيع أن أعد كبار الشخصيات بترقية أو هدية؟",
+                    "answer": "لا. لا تقدم هدية أو تعويضًا دون صلاحية، ولا تعد بامتياز أو استثناء قبل الحصول على الموافقة، واطلب المشرف."
+                }
+            ],
+            "meta_title": "خدمة كبار الشخصيات والنزلاء المتكررين",
+            "meta_description": "تدريب فندقي على خدمة كبار الشخصيات والنزلاء المتكررين: الاستعداد قبل الوصول، والتعرف بلباقة، وتخصيص الخدمة، وحماية التفضيلات والخصوصية.",
+            "focus_keyword": "خدمة كبار الشخصيات في الفنادق",
+            "chapters": [
+                {
+                    "title": "الاستعداد ومراحل الإقامة",
+                    "lessons": [
+                        {
+                            "title": "الخدمة المميزة تبدأ قبل وصول النزيل",
+                            "minutes": 5,
+                            "body": "<h2>جاهزية قبل الوصول</h2><p>حين يدخل أحد كبار الشخصيات أو نزيل متكرر إلى الفندق، تكون جودة استقباله قد تحددت إلى حد كبير مسبقًا. ورسالة المادة واضحة: <strong>الخدمة المميزة تبدأ قبل وصول النزيل</strong>، والكلمة المفتاحية هي <strong>الجاهزية</strong>. وتتبع الدورة كلها خمس خطوات: <strong>استعد، تعرّف، خصّص، احمِ، تابع</strong>، وهذا الدرس يركز على الأولى.</p><h2>خمسة أمور قبل الوصول</h2><ol><li><strong>راجع الحجز والتوجيهات المعتمدة:</strong> موعد الوصول ونوع الغرفة وأي توجيه معتمد لهذا النزيل.</li><li><strong>تأكد من جاهزية الغرفة والخدمات،</strong> فلا ينبغي أن ينتظر النزيل حتى تُجهّز غرفته.</li><li><strong>شارك المعلومات الضرورية مع الفريق،</strong> أي ما يحتاجه الزملاء لخدمته فقط.</li><li><strong>حضّر التفضيلات المسجلة والمسموح بها،</strong> لا غير.</li><li><strong>حدد موظفًا مسؤولًا عن المتابعة،</strong> حتى لا يضيع شيء بين الأقسام.</li></ol><p>لاحظ الكلمات الدقيقة: توجيهات <em>معتمدة</em>، ومعلومات <em>ضرورية</em>، وتفضيلات <em>مسجلة ومسموح بها</em>. فالاستعداد لا يعني جمع كل ما نستطيع، بل استخدام المعلومة الصحيحة بالطريقة الصحيحة.</p><h2>ليست مبالغة بل اهتمام بالتفاصيل</h2><p>يظن بعض الموظفين أن خدمة كبار الشخصيات تعني المزيد: موظفين أكثر عند الباب، واهتمامًا ظاهرًا أكثر. وتصحح المادة ذلك: <strong>الخدمة المميزة ليست مبالغة، إنها استعداد ودقة واهتمام بالتفاصيل.</strong> فالنزيل المعتاد على المعايير العالية يلاحظ الوسادة التي طلبها في المرة السابقة أكثر مما يلاحظ حشدًا عند المدخل.</p><table class=\"bk-say\"><thead><tr><th>قبل الوصول</th><th>لماذا</th></tr></thead><tbody><tr><td>مراجعة الحجز والتوجيهات</td><td>تخدم النزيل كما هو متفق عليه</td></tr><tr><td>التأكد من الغرفة والخدمات</td><td>لا انتظار عند الوصول</td></tr><tr><td>إبلاغ الفريق</td><td>كلٌّ يعرف دوره</td></tr><tr><td>تحضير التفضيلات المسموح بها</td><td>اللمسات الشخصية جاهزة</td></tr><tr><td>تحديد مسؤول المتابعة</td><td>تُغلق الطلبات كما يجب</td></tr></tbody></table><blockquote class=\"bk-quote\">الخدمة المميزة ليست مبالغة — إنها استعداد ودقة واهتمام بالتفاصيل.</blockquote><aside class=\"bk-scene\"><strong>موقف:</strong> نزيل متكرر يصل الساعة الرابعة. في الصباح راجعت مشرفة المكاتب الأمامية الحجز، ووجدت ملاحظة معتمدة بطلب غرفة هادئة في طابق مرتفع وماء إضافي، فتأكدت مع التدبير الفندقي أن الغرفة جاهزة قبل الثانية، وأبلغت الكونسيرج والتدبير الفندقي بما يلزمهما فقط، وحددت مدير المناوبة مسؤولًا عن المتابعة. وصل النزيل فوجد غرفته جاهزة وكل ما اعتاد طلبه موجودًا، دون أي مبالغة.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> استخدم قائمة تحقق قصيرة قبل الوصول مبنية على النقاط الخمس، حتى لا يعتمد الاستعداد على الذاكرة في زحمة العمل.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> استعد مبكرًا: راجع، وتأكد، وأبلغ، وحضّر التفضيلات المسموح بها، وحدد مسؤول المتابعة. الخدمة المميزة استعداد لا مبالغة.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: قبل الوصول",
+                                "questions": [
+                                    {
+                                        "question": "يصل أحد كبار الشخصيات عصر اليوم. ماذا تراجع أولًا في الصباح؟",
+                                        "options": [
+                                            "حسابات النزيل على وسائل التواصل",
+                                            "الحجز والتوجيهات المعتمدة",
+                                            "الزملاء الذين يرغبون في مقابلته",
+                                            "إنفاق النزيل في إقاماته السابقة"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "أول خطوات الاستعداد في المادة: راجع الحجز والتوجيهات المعتمدة."
+                                    },
+                                    {
+                                        "question": "ما التفضيلات التي تُحضّر قبل الوصول؟",
+                                        "options": [
+                                            "أي شيء يتذكره الزملاء عن النزيل",
+                                            "تفضيلات مستنتجة من ملفه",
+                                            "التفضيلات المسجلة والمسموح بها",
+                                            "كل تفصيل موجود على الإنترنت"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: حضّر التفضيلات المسجلة والمسموح بها."
+                                    },
+                                    {
+                                        "question": "بحسب المادة، ما الخدمة المميزة؟",
+                                        "options": [
+                                            "استعداد ودقة واهتمام بالتفاصيل",
+                                            "فريق كبير عند المدخل",
+                                            "اهتمام زائد في الأماكن العامة",
+                                            "ترقية مجانية لكل شخصية مهمة"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تنص المادة على أن الخدمة المميزة ليست مبالغة، بل استعداد ودقة واهتمام بالتفاصيل."
+                                    },
+                                    {
+                                        "question": "لماذا تطلب المادة تحديد موظف مسؤول عن المتابعة؟",
+                                        "options": [
+                                            "ليكون للنزيل من يشتكي إليه",
+                                            "ليتجاهل بقية الزملاء النزيل",
+                                            "ليحل محل المشرف",
+                                            "حتى لا تضيع الطلبات بين الأقسام وتُتابع حتى النهاية"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تحديد مسؤول المتابعة من خطوات الاستعداد الخمس لضمان متابعة الطلبات."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "قدّم الخدمة في ثلاث مراحل",
+                            "minutes": 5,
+                            "body": "<h2>استعد، خصّص، تابع</h2><p>خدمة النزيل المهم أو العائد ليست لحظة واحدة عند تسجيل الوصول، بل تقسمها المادة إلى ثلاث مراحل خلال الإقامة.</p><h3>المرحلة الأولى: قبل الوصول (استعد)</h3><ul><li>راجع التوجيهات وموعد الوصول.</li><li>أكّد جاهزية الغرفة والخدمات.</li><li>أبلغ الأقسام المعنية فقط.</li></ul><p>عبارة “الأقسام المعنية فقط” مهمة؛ فتفاصيل وصول النزيل وتفضيلاته تصل إلى من يحتاجها لخدمته، لا إلى الفندق كله.</p><h3>المرحلة الثانية: أثناء الإقامة (خصّص)</h3><ul><li>رحّب به بطريقة طبيعية ومحترمة.</li><li>نفّذ التفضيلات المعتمدة بدقة.</li><li>تابع الطلبات دون إزعاج زائد.</li></ul><p>التخصيص أثناء الإقامة يجب أن يبدو سلسًا وطبيعيًا؛ فإذا كان النزيل يفضل صحيفة بلغة معينة فإنها تصله ببساطة، وإذا طلب شيئًا يُنفّذ ويُتحقق منه دون اتصالات أو طرقات متكررة تزعجه.</p><h3>المرحلة الثالثة: قبل المغادرة (تابع)</h3><ul><li>تأكد من رضا النزيل عن الخدمة.</li><li>سجّل التفضيلات المناسبة للمستقبل.</li><li>اشكره وودّعه للعودة بصدق.</li></ul><p>في المرحلة الأخيرة تبدأ الإقامة القادمة؛ فالتفضيل المسجل جيدًا اليوم هو استعداد الغد.</p><table class=\"bk-say\"><thead><tr><th>المرحلة</th><th>التركيز</th><th>أهم الإجراءات</th></tr></thead><tbody><tr><td>قبل الوصول</td><td>استعد</td><td>التوجيهات، موعد الوصول، جاهزية الغرفة، إبلاغ الأقسام المعنية</td></tr><tr><td>أثناء الإقامة</td><td>خصّص</td><td>ترحيب طبيعي، تفضيلات دقيقة، متابعة هادئة</td></tr><tr><td>قبل المغادرة</td><td>تابع</td><td>التأكد من الرضا، تسجيل التفضيلات، شكر صادق</td></tr></tbody></table><h2>نتذكر ولا نراقب</h2><p>تضيف المادة جملة تحدد المنهج كله: <strong>النزيل المتكرر يجب أن يشعر بأننا نتذكر احتياجاته — لا أننا نراقبه.</strong> فهناك خط رفيع بين “يعرفون أنني أحب الغرفة الهادئة” و“يعرفون عني أكثر مما ينبغي”. واستخدام التفضيلات بطبيعية، دون التعليق على كل ما نعرفه، يبقي النزيل على الجانب الصحيح من هذا الخط.</p><blockquote class=\"bk-quote\">النزيل المتكرر يجب أن يشعر بأننا نتذكر احتياجاته — لا أننا نراقبه.</blockquote><aside class=\"bk-scene\"><strong>موقف:</strong> نزيلة عائدة تتناول الفطور مبكرًا دائمًا. في صباحها الثاني جهّز مضيف المطعم طاولتها المعتادة وقال ببساطة: “صباح الخير، طاولتك جاهزة”، ولم يقل: “نعرف أنك تأتين دائمًا في السادسة”. وعند المغادرة سألها موظف الاستقبال إن كان كل شيء مريحًا، فذكرت أنها تفضل وسادة أكثر صلابة في المرة القادمة، فسجّل ذلك في النظام المعتمد.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> عند متابعة طلب أثناء الإقامة اختر لحظة واحدة واضحة، كاتصال واحد أو ملاحظة، بدل تكرار السؤال الذي يزعج النزيل.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> استعد قبل الوصول، وخصّص أثناء الإقامة، وتابع قبل المغادرة، واجعل النزيل يشعر دائمًا بأنك تتذكره لا تراقبه.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: المراحل الثلاث",
+                                "questions": [
+                                    {
+                                        "question": "قبل وصول أحد كبار الشخصيات، من يُبلَّغ بوصوله؟",
+                                        "options": [
+                                            "جميع أقسام الفندق",
+                                            "الأقسام المعنية فقط",
+                                            "لا أحد، حمايةً للخصوصية",
+                                            "النزلاء الآخرون في الطابق نفسه"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: أبلغ الأقسام المعنية فقط."
+                                    },
+                                    {
+                                        "question": "طلب نزيل مناشف إضافية أثناء إقامته. كيف تتابع الطلب؟",
+                                        "options": [
+                                            "تتصل بالغرفة عدة مرات للتأكد",
+                                            "تطرق الباب كل ساعة لتسأل إن كان يحتاج المزيد",
+                                            "تتركه، فالمتابعة تكون عند المغادرة فقط",
+                                            "تتابع الطلب دون إزعاج زائد"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "أثناء الإقامة تقول المادة: تابع الطلبات دون إزعاج زائد."
+                                    },
+                                    {
+                                        "question": "أي إجراء ينتمي إلى مرحلة ما قبل المغادرة؟",
+                                        "options": [
+                                            "تسجيل التفضيلات المناسبة للمستقبل",
+                                            "مراجعة موعد الوصول",
+                                            "تأكيد جاهزية الغرفة",
+                                            "تنفيذ التفضيلات المعتمدة لأول مرة"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "قبل المغادرة تذكر المادة التأكد من الرضا وتسجيل التفضيلات المناسبة والشكر بصدق."
+                                    },
+                                    {
+                                        "question": "قال موظف لنزيل متكرر: “نعرف أنك تطلب العشاء نفسه دائمًا في التاسعة”. ما المشكلة؟",
+                                        "options": [
+                                            "لا مشكلة، فهذا يدل على ذاكرة جيدة",
+                                            "كان عليه أن يقولها بصوت أعلى",
+                                            "قد يشعر النزيل بأنه مراقَب لا بأننا نتذكره",
+                                            "لا يجوز تسجيل موعد العشاء أبدًا"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة إن النزيل المتكرر يجب أن يشعر بأننا نتذكر احتياجاته لا أننا نراقبه."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "التعرف والتخصيص",
+                    "lessons": [
+                        {
+                            "title": "تعرّف على النزيل بمهنية وخصّص الخدمة في أربع نقاط",
+                            "minutes": 6,
+                            "body": "<h2>ترحيب شخصي ومحترم</h2><p>لحظة التعرف من أقوى اللحظات لدى النزيل العائد. وتصف المادة الترحيب الصحيح بأنه <strong>شخصي ومحترم</strong>، والمبدأ وراءه: <strong>استخدم ما تعرفه لخدمته — لا لإحراجه.</strong></p><ul><li><strong>رحّب بالنزيل باسمه إذا كان مؤكدًا ومناسبًا،</strong> فالخطأ في الاسم أو ذكره في موقف لا يرغب فيه النزيل أسوأ من عدم ذكره.</li><li><strong>اذكر عودته للفندق بطريقة دافئة.</strong></li><li><strong>لا تسأله أمام الآخرين عن زيارات سابقة،</strong> فالنزلاء الآخرون لا يحتاجون إلى معرفة ذلك.</li><li><strong>لا تفترض أن تفضيلاته لم تتغير.</strong></li><li><strong>اسأله بلطف إن كان يحتاج إلى شيء مختلف.</strong></li></ul><p>وتقترح المادة عبارة وقاعدة: قل <strong>“يسعدنا الترحيب بكم مجددًا”</strong>، ثم دع النزيل يحدد مقدار التفاعل. فبعض النزلاء العائدين يحبون الحديث، وبعضهم يريد تسجيلًا سريعًا وهادئًا، وكلاهما صحيح.</p><blockquote class=\"bk-quote\">قل: يسعدنا الترحيب بكم مجددًا — ثم دع النزيل يحدد مقدار التفاعل.</blockquote><h2>خصّص الخدمة في أربع نقاط</h2><ol><li><strong>الغرفة:</strong> طبّق تفضيلات الغرفة المعتمدة.</li><li><strong>التواصل:</strong> استخدم قناة التواصل التي يفضلها.</li><li><strong>الراحة:</strong> راعِ الوقت والخصوصية وعدم الإزعاج.</li><li><strong>المتابعة:</strong> تابع الطلب في الوقت المناسب دون مبالغة.</li></ol><table class=\"bk-say\"><thead><tr><th>النقطة</th><th>في التطبيق</th></tr></thead><tbody><tr><td>الغرفة</td><td>تطبيق تفضيلات الغرفة المعتمدة</td></tr><tr><td>التواصل</td><td>القناة التي يفضلها النزيل، كالرسالة بدل الاتصال</td></tr><tr><td>الراحة</td><td>الوقت والخصوصية وعدم الإزعاج</td></tr><tr><td>المتابعة</td><td>في الوقت المناسب دون مبالغة</td></tr></tbody></table><h2>اسأل قبل تغيير الخدمة</h2><p>وتختم المادة هذا الجزء بتذكير مهم: <strong>اسأل قبل تغيير الخدمة — فالتفضيلات قد تتغير من زيارة إلى أخرى.</strong> فالنزيل الذي اعتاد سريرًا كبيرًا قد يسافر هذه المرة مع زميل، ومن أحب الطابق المرتفع قد يفضل الآن القرب من المصعد. وسؤال سريع لطيف يجنبك إحراج الخطأ.</p><aside class=\"bk-scene\"><strong>موقف:</strong> وصل نزيل دائم مع عائلته لأول مرة. قالت موظفة الاستقبال: “أهلًا بعودتك أستاذ سالم، يسعدنا الترحيب بكم مجددًا”. وبدل أن تخصص له غرفته المفردة المعتادة تلقائيًا، سألته: “هل تفضل الترتيب نفسه كالمرة السابقة أم شيئًا مختلفًا لهذه الإقامة؟” فطلب غرفًا متصلة. ولأنها سألت ولم تفترض، بدأت إقامة العائلة بشكل مثالي.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> إذا لم تكن متأكدًا من الاسم، أو كان النزيل ضمن مجموعة في مكان عام، فعبارة “أهلًا بعودتك” دون الاسم آمنة دائمًا.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> تعرّف على النزيل بدفء ولباقة، وخصّص الغرفة والتواصل والراحة والمتابعة، وتأكد دائمًا من التفضيلات قبل تطبيقها.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: التعرف والتخصيص",
+                                "questions": [
+                                    {
+                                        "question": "نزيل متكرر يسجل وصوله وبجانبه نزلاء آخرون ينتظرون. ما الذي يجب تجنبه؟",
+                                        "options": [
+                                            "الترحيب به بدفء",
+                                            "سؤاله أمام الآخرين عن زياراته السابقة",
+                                            "استخدام اسمه إذا كان مؤكدًا ومناسبًا",
+                                            "تركه يحدد مقدار التفاعل"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: لا تسأله أمام الآخرين عن زيارات سابقة."
+                                    },
+                                    {
+                                        "question": "اعتاد نزيل عائد غرفة في طابق مرتفع. ماذا تفعل هذه المرة؟",
+                                        "options": [
+                                            "تخصصها تلقائيًا دون سؤال",
+                                            "تعطيه غرفة مختلفة كمفاجأة",
+                                            "تسأله بلطف إن كان يحتاج إلى شيء مختلف",
+                                            "تخبره أن الطوابق المرتفعة لم تعد متاحة"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: لا تفترض أن تفضيلاته لم تتغير، واسأله بلطف إن كان يحتاج إلى شيء مختلف."
+                                    },
+                                    {
+                                        "question": "ملف نزيلة يفيد بأنها تفضل الرسائل النصية على الاتصالات. أي نقطة تخصيص هذه؟",
+                                        "options": [
+                                            "التواصل",
+                                            "الغرفة",
+                                            "الراحة",
+                                            "المتابعة"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "التواصل يعني استخدام قناة التواصل التي يفضلها النزيل."
+                                    },
+                                    {
+                                        "question": "ما العبارة التي تقترحها المادة للنزيل العائد؟",
+                                        "options": [
+                                            "“أنت من أهم نزلائنا”",
+                                            "“كم مرة أقمت عندنا؟”",
+                                            "“أفترض أن شيئًا لم يتغير منذ زيارتك الأخيرة؟”",
+                                            "“يسعدنا الترحيب بكم مجددًا”"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقترح المادة قول: يسعدنا الترحيب بكم مجددًا، ثم ترك النزيل يحدد مقدار التفاعل."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "حماية النزيل ومعرفة حدود الصلاحية",
+                    "lessons": [
+                        {
+                            "title": "افعل وتجنب، وحفظ التفضيلات، ومتى تستدعي المشرف",
+                            "minutes": 7,
+                            "body": "<h2>افعل وتجنب في الخدمة المميزة</h2><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنب</th></tr></thead><tbody><tr><td>راجع التعليمات المعتمدة قبل الوصول</td><td>أن تعلن أن النزيل شخصية مهمة أمام الآخرين</td></tr><tr><td>نسّق مع الأقسام الضرورية فقط</td><td>أن تشارك تفاصيل إقامته بلا حاجة</td></tr><tr><td>استخدم الاسم والتفضيلات باحترام</td><td>أن تقدم هدية أو تعويضًا دون صلاحية</td></tr><tr><td>حافظ على الهدوء والخصوصية</td><td>أن تعده باستثناء غير معتمد</td></tr><tr><td>تابع الطلبات حتى الإغلاق</td><td>أن تهمل بقية النزلاء أو تقلل من احترامهم</td></tr></tbody></table><p>وتلخص المادة التوازن: <strong>خدمة كبار الشخصيات لا تعني كشف هويتهم أو إهمال بقية النزلاء.</strong> فكل نزيل في البهو يستحق الاحترام نفسه، والشخصية المهمة تحصل ببساطة على خدمة مُعدّة لها.</p><h2>احفظ التفضيلات بطريقة مسؤولة</h2><ol><li><strong>مفيد:</strong> سجّل ما يساعد على تقديم خدمة أفضل.</li><li><strong>حديث:</strong> أكّد أن التفضيل ما زال مناسبًا.</li><li><strong>ضروري:</strong> شارك المعلومة مع من يحتاجها فقط.</li><li><strong>محمي:</strong> استخدم النظام المعتمد ولا تحفظها في هاتفك.</li></ol><blockquote class=\"bk-quote\">لا تسجل معلومات حساسة أو شخصية لا تحتاجها الخدمة.</blockquote><p>نوع الوسادة المفضل معلومة مفيدة، أما التعليق على حياة النزيل الخاصة فليس كذلك ولا يُكتب أبدًا. والصور أو الملاحظات على الهاتف الشخصي ليست محمية مهما بدت مريحة.</p><h2>متى تستدعي المشرف؟</h2><p>اطلب المشرف عند:</p><ul><li>وجود توجيه خاص غير واضح.</li><li>طلب استثناء أو خدمة خارج الصلاحية.</li><li>تعذر تنفيذ تجهيز أو تفضيل متفق عليه.</li><li>وجود شكوى أو عدم رضا واضح.</li><li>وجود حاجة أمنية أو خصوصية إضافية.</li></ul><h3>وضّح الحالة دون كشف معلومات زائدة</h3><ul><li>اذكر الطلب والوقت وما تم حتى الآن.</li><li>وضّح ما يحتاج إلى قرار أو صلاحية.</li><li>اقترح بديلًا مناسبًا إن أمكن.</li><li>أبلغ الموظف المسؤول عن متابعة النزيل.</li><li>تابع حتى الحل وتأكيد رضا النزيل.</li></ul><blockquote class=\"bk-quote\">لا تعد بامتياز أو استثناء قبل الحصول على الموافقة.</blockquote><h2>رسالة الختام</h2><p>تختم المادة: <strong>اجعل التقدير محسوسًا والخصوصية محفوظة، استعد وخصّص الخدمة وتابع باهتمام.</strong> استعد، تعرّف، خصّص، احمِ، تابع: خدمة مميزة بهدوء ودقة واحترام للجميع.</p><aside class=\"bk-scene\"><strong>موقف:</strong> طلب أحد كبار الشخصيات من الكونسيرج تمديد المغادرة حتى السادسة مساءً، وهذا خارج صلاحيته. لم يعده بشيء، بل أخبره أنه سيرتب الأمر مع مديره، ثم اتصل بمدير المناوبة: “الجناح 1204 يطلب المغادرة الساعة السادسة، وكان الطلب الساعة العاشرة صباحًا. تأكدت أن الغرفة غير مطلوبة حتى الغد. الأمر يحتاج موافقتك، ويمكن أن نعرض الرابعة مع حفظ الأمتعة”. ثم أبلغ مسؤول المتابعة وعاد إلى النزيل بالرد المؤكد.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> عند إبلاغ المشرف في مكان عام استخدم رقم الغرفة أو رقم الحجز بدل ذكر اسم النزيل أو مكانته بصوت مسموع.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> اجعل التفضيلات مفيدة وحديثة وضرورية ومحمية، وصعّد ما يتجاوز صلاحيتك، ولا تعد باستثناء قبل الموافقة.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الحماية والتصعيد",
+                                "questions": [
+                                    {
+                                        "question": "يريد زميل أن يعلن لفريق البهو أن “شخصية مهمة جدًا وصلت”. ماذا تقول المادة؟",
+                                        "options": [
+                                            "تجنب أن تعلن أن النزيل شخصية مهمة أمام الآخرين",
+                                            "افعل ذلك ليمنحه الجميع اهتمامًا إضافيًا",
+                                            "افعل ذلك فقط إذا كان النزيل مبتسمًا",
+                                            "أعلن ذلك دون ذكر رقم الغرفة"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تضع المادة الإعلان أمام الآخرين أن النزيل شخصية مهمة ضمن ما يجب تجنبه."
+                                    },
+                                    {
+                                        "question": "عرفت المشروب المفضل لنزيل. أين تحفظ هذا التفضيل؟",
+                                        "options": [
+                                            "في ملاحظة على هاتفك الشخصي",
+                                            "في ورقة لاصقة على المكتب",
+                                            "في النظام المعتمد",
+                                            "في مجموعة محادثة مع الزملاء"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "معيار محمي يعني: استخدم النظام المعتمد ولا تحفظها في هاتفك."
+                                    },
+                                    {
+                                        "question": "طلب أحد كبار الشخصيات ترقية مجانية لا تملك صلاحية منحها. ماذا تفعل؟",
+                                        "options": [
+                                            "تعده بها ثم تسأل المشرف لاحقًا",
+                                            "ترفض وتنهي الحديث",
+                                            "تقدم له هدية بدلًا منها لإرضائه",
+                                            "لا تعده، واطلب المشرف واشرح الطلب بوضوح"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: لا تعد بامتياز أو استثناء قبل الموافقة، وطلب ما هو خارج الصلاحية سبب لاستدعاء المشرف."
+                                    },
+                                    {
+                                        "question": "عند إبلاغ المشرف، ما المعلومات التي تقدمها؟",
+                                        "options": [
+                                            "تاريخ النزيل كاملًا وبياناته الشخصية",
+                                            "الطلب والوقت وما تم حتى الآن",
+                                            "اسم النزيل فقط",
+                                            "رأيك الشخصي في النزيل"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: وضّح الحالة دون كشف معلومات زائدة، واذكر الطلب والوقت وما تم حتى الآن."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

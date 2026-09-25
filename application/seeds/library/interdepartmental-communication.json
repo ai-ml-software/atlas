@@ -1,0 +1,545 @@
+{
+    "slug": "interdepartmental-communication",
+    "category": "communication",
+    "level": "foundation",
+    "source_pdf": "Interdepartmental-Communication-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/interdepartmental-communication.webp",
+    "videos": [
+        {
+            "id": "eIho2S0ZahI",
+            "title": "How to Speak So That People Want to Listen | Julian Treasure | TED",
+            "channel": "TED",
+            "why": "Julian Treasure explains how to speak clearly, honestly and with intention, which supports short, clear handovers between colleagues and departments."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Interdepartmental Communication",
+            "subtitle": "Clear message, clear owner, complete follow-up",
+            "short_description": "Learn to hand requests between departments with a short, complete message, a named owner and follow-up until the request is closed.",
+            "description": "<p>The guest sees one hotel, not separate departments. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows colleagues how to pass requests between departments so that nothing is lost, repeated or forgotten.</p><p>You will learn the three points every good handover covers, how to give a short and complete message, the four steps Record, Send, Confirm, Follow up, a consistent handover format, what to do and avoid, and when and how to escalate to a supervisor.</p>",
+            "requirements": "No prior training is needed; the course suits every colleague who passes requests to another department.",
+            "outcomes": [
+                "Explain why good communication prevents delays and mistakes",
+                "Give a short, complete handover that states who, what, where, priority and time",
+                "Apply the four steps Record, Send, Confirm, Follow up to every request",
+                "Use the approved channel and avoid blaming another department in front of the guest",
+                "Recognise when to escalate and brief a supervisor clearly"
+            ],
+            "faqs": [
+                {
+                    "question": "When is a request considered handed over?",
+                    "answer": "Only when the receiving department confirms receipt. If they have not confirmed, do not consider the request delivered."
+                },
+                {
+                    "question": "What should every handover include?",
+                    "answer": "Who asked, what is needed and where, the priority (immediate, urgent, important or routine) and the name of the owner and time for action or an update."
+                },
+                {
+                    "question": "Is escalating a request a complaint about a colleague?",
+                    "answer": "No. Escalation protects the request and the hotel's promise to the guest; it is not a complaint about a colleague."
+                }
+            ],
+            "meta_title": "Interdepartmental Communication for Hotel Staff",
+            "meta_description": "Hotel training on handing requests between departments: complete messages, clear owners, Record-Send-Confirm-Follow up and escalation.",
+            "focus_keyword": "interdepartmental communication in hotels",
+            "chapters": [
+                {
+                    "title": "One Hotel Team",
+                    "lessons": [
+                        {
+                            "title": "Good Communication Prevents Delays",
+                            "minutes": 5,
+                            "body": "<h2>The guest sees one hotel</h2><p>When a guest asks the front desk for extra towels, or tells a waiter that the room's air conditioning is not working, they do not think about which department will solve it. For the guest, there is only the hotel. The deck puts it clearly: <strong>the guest sees one hotel, not separate departments.</strong> Whether the request is carried out on time depends on how well colleagues pass it to each other.</p><p>This is why the deck frames interdepartmental communication as teamwork: <strong>cooperation, as one hotel team</strong>. A request that falls between two departments is not \"their\" problem or \"our\" problem. It is the hotel's promise to a guest, and every colleague who touches it shares responsibility for keeping it.</p><h2>What good communication does</h2><p>The deck lists five things that good communication between departments achieves:</p><ul><li><strong>It moves the request to the right department.</strong> The first step to solving a problem is making sure the people who can solve it know about it.</li><li><strong>It makes the priority and required time clear.</strong> Housekeeping, engineering or room service can only plan their work if they know how urgent the request is and when the guest expects it.</li><li><strong>It prevents work from being repeated or forgotten.</strong> Without a clear message, two colleagues may do the same task, or each may assume the other did it.</li><li><strong>It keeps the hotel's promise to the guest.</strong> When the front desk says \"in fifteen minutes\", that promise is only kept if the receiving department hears it.</li><li><strong>It helps departments solve the problem together.</strong> Some problems need more than one team, for example a leak that needs engineering and a room move that needs the front desk.</li></ul><blockquote class=\"bk-quote\">The guest sees one hotel, not separate departments.</blockquote><h2>The approach in one line</h2><p>The deck's cover gives the whole method in five words: <strong>Listen, Record, Inform, Confirm, Follow up</strong>. Listen to the request fully, record the details, inform the right department, confirm that someone has received it and follow up until it is closed. Its subtitle sets the standard: <strong>a clear message, a known owner and follow-up until closure.</strong></p><p>These are small habits, but they make the difference between a guest who waits an hour for a pillow and a guest who receives it before they have unpacked.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest tells the restaurant host that the shower in room 512 is leaking. The host says, \"I'll tell someone,\" and mentions it to a passing colleague, who forgets. Two hours later the guest calls reception, angry. Now compare: the host records room 512 and the problem, calls engineering on the approved line, gets a confirmation from the named technician with a time, and tells the guest when to expect help. Same guest, same leak, very different experience.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Every request belongs to one hotel team. Good communication gets it to the right department, with the right priority, and keeps the promise made to the guest.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Good communication prevents delays",
+                                "questions": [
+                                    {
+                                        "question": "A guest tells the pool attendant about a broken lamp in their room. How does the guest see this request?",
+                                        "options": [
+                                            "As a problem only for engineering",
+                                            "As a request to one hotel, not to separate departments",
+                                            "As something the pool attendant cannot help with",
+                                            "As a request they should repeat at reception"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck states that the guest sees one hotel, not separate departments."
+                                    },
+                                    {
+                                        "question": "Two colleagues both delivered the same extra bed to a room because neither knew the other had it. What did good communication fail to do?",
+                                        "options": [
+                                            "Prevent work from being repeated or forgotten",
+                                            "Make the guest wait longer",
+                                            "Keep the request inside one department",
+                                            "Reduce the number of requests"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "One of the deck's five points is that good communication prevents repeating or forgetting work."
+                                    },
+                                    {
+                                        "question": "Reception promised a guest a room-service tray in twenty minutes. Why must that time be passed to room service?",
+                                        "options": [
+                                            "So room service can charge extra",
+                                            "Because every request must be urgent",
+                                            "To keep the hotel's promise to the guest and make the time clear",
+                                            "It does not need to be passed on"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Good communication clarifies priority and required time and keeps the hotel's promise to the guest."
+                                    },
+                                    {
+                                        "question": "Which sequence summarises the deck's approach?",
+                                        "options": [
+                                            "Record, Blame, Close",
+                                            "Wait, Guess, Act",
+                                            "Send, Forget, Repeat",
+                                            "Listen, Record, Inform, Confirm, Follow up"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The cover of the deck lists Listen, Record, Inform, Confirm, Follow up."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "The Three Points of a Good Handover",
+                            "minutes": 6,
+                            "body": "<h2>A good handover answers three questions</h2><p>Most lost requests are not lost because a colleague did not care. They are lost because the message was missing something: the room number, the time, or the name of the person who will do it. The deck sets out <strong>three points that every good handover makes clear: the request, the owner and the follow-up.</strong></p><h3>1. The request and the location</h3><ul><li><strong>What exactly is needed?</strong> \"The guest has a problem\" is not a request. \"Two extra pillows\" or \"the TV remote is not working\" is.</li><li><strong>Where is the guest, or where is the fault?</strong> A room number, a table, a meeting room or a corridor near the lift.</li><li><strong>What is the priority?</strong> Is this a safety issue, a basic need or a simple comfort request?</li></ul><h3>2. The owner and the time</h3><ul><li><strong>Which department or colleague will receive it?</strong> A request with no owner has no one responsible for it.</li><li><strong>When is action expected to start?</strong> The receiver and the guest both need a time.</li><li><strong>Has the owner confirmed receipt?</strong> Until they do, the request has not really moved.</li></ul><h3>3. The update and the closure</h3><ul><li><strong>Has a new update arrived?</strong> If the plan changes, everyone involved needs to know.</li><li><strong>Has the guest been told about any delay?</strong> A guest who is told about a delay is far calmer than one who discovers it.</li><li><strong>Is the request complete, and have we confirmed it?</strong> A request is closed only when someone checks that it was done.</li></ul><blockquote class=\"bk-quote\">Do not send an incomplete request and expect the other department to guess.</blockquote><h2>Why guessing fails</h2><p>When a message is incomplete, the receiving colleague has two choices: call back to ask, which costs time, or guess, which risks doing the wrong thing. Either way the guest waits longer. Taking ten extra seconds to include the location, the priority and the owner saves minutes for everyone.</p><table class=\"bk-say\"><thead><tr><th>Point</th><th>Check</th></tr></thead><tbody><tr><td>Request</td><td>What exactly? Where? What priority?</td></tr><tr><td>Owner</td><td>Which department or colleague? When? Receipt confirmed?</td></tr><tr><td>Follow-up</td><td>Any update? Guest told of delay? Completed and confirmed?</td></tr></tbody></table><aside class=\"bk-scene\"><strong>Scene:</strong> A reservations colleague messages housekeeping: \"Baby cot needed.\" Housekeeping does not know which room or when. Later the colleague resends: \"Baby cot for room 318, family arriving at 3 pm, please confirm who will deliver.\" A housekeeping supervisor replies with a name and says it will be in the room by 2:30. The second message covers request, location, time and owner, so nothing is left to guesswork.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Every handover must make the request, the owner and the follow-up clear. If the other department has to guess, the message is not complete.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: The three points",
+                                "questions": [
+                                    {
+                                        "question": "You message engineering: \"The guest has a problem with the room.\" What is missing?",
+                                        "options": [
+                                            "Nothing, engineering will work it out",
+                                            "Only the guest's nationality",
+                                            "The exact request, the location and the priority",
+                                            "Only a thank-you"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The first point asks what exactly is needed, where the guest or fault is and what the priority is."
+                                    },
+                                    {
+                                        "question": "You sent a request but no one has confirmed receiving it. Which point of the handover is incomplete?",
+                                        "options": [
+                                            "The owner and the time",
+                                            "The request and the location",
+                                            "The guest's name only",
+                                            "None, it was sent"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The owner point includes checking that the responsible person has confirmed receipt."
+                                    },
+                                    {
+                                        "question": "A repair will take longer than planned. Under the follow-up point, what must be checked?",
+                                        "options": [
+                                            "Whether engineering can be blamed",
+                                            "Whether the guest has been informed of the delay",
+                                            "Whether the request can be closed now",
+                                            "Whether a new department can take it"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The follow-up point asks: has the guest been told about the delay?"
+                                    },
+                                    {
+                                        "question": "What does the deck say about incomplete requests?",
+                                        "options": [
+                                            "They are fine if the other department is experienced",
+                                            "Send them quickly and add details later",
+                                            "They should always go to the supervisor",
+                                            "Do not send them and expect the other department to guess"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The slide warns: do not send an incomplete request and wait for the other department to guess."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "The Handover Method",
+                    "lessons": [
+                        {
+                            "title": "A Short, Clear Handover in Four Steps",
+                            "minutes": 6,
+                            "body": "<h2>Use a short, clear handover</h2><p>A good handover is not long. It is <strong>complete and clear</strong>. The deck gives five instructions for every message you pass to another department:</p><ul><li><strong>Introduce yourself and your department.</strong> \"This is Sara from the front desk.\" The receiver knows who to call back.</li><li><strong>State the room number or exact location.</strong></li><li><strong>Explain the request in one specific sentence.</strong> \"Room 204 needs two extra towels,\" not a long story.</li><li><strong>Make the priority clear, and the time promised to the guest.</strong></li><li><strong>Ask the receiver to confirm understanding and receipt.</strong></li></ul><p>The deck's reminder is simple: mention <strong>who, what, where, the priority and the time</strong>.</p><blockquote class=\"bk-quote\">If the department has not confirmed receipt, do not consider the request delivered.</blockquote><h2>Hand over with a consistent format</h2><p>Using the same order every time makes handovers faster and harder to get wrong. The deck's format has four parts:</p><ol><li><strong>Who?</strong> The guest or the department that asked for the service.</li><li><strong>What and where?</strong> The specific request and the room number or location.</li><li><strong>What priority?</strong> Immediate, urgent, important or routine.</li><li><strong>Who owns it, and when?</strong> The receiver's name and the time for action or for an update.</li></ol><p>Finish by <strong>repeating the key information and asking for confirmation of receipt.</strong></p><h2>Four steps for every request</h2><p>Behind every handover sits a simple routine:</p><ol><li><strong>Record.</strong> Write the request, the location and the time.</li><li><strong>Send.</strong> Send it to the right department with complete information.</li><li><strong>Confirm.</strong> Make sure a specific colleague has received it.</li><li><strong>Follow up.</strong> Check the work was done and close the request only after confirming.</li></ol><p>The deck stresses the third step: <strong>naming the owner prevents requests from getting lost between departments.</strong> \"Housekeeping knows\" is not an owner; \"Ahmed in housekeeping will deliver it by 9:15\" is.</p><table class=\"bk-say\"><thead><tr><th>Part</th><th>Example</th></tr></thead><tbody><tr><td>Who</td><td>\"This is Omar from the front desk, for the guest in 407.\"</td></tr><tr><td>What and where</td><td>\"The safe in room 407 will not open.\"</td></tr><tr><td>Priority</td><td>\"Urgent, the guest is leaving for the airport.\"</td></tr><tr><td>Owner and time</td><td>\"Who will attend, and can you be there in ten minutes? Please confirm.\"</td></tr></tbody></table><aside class=\"bk-scene\"><strong>Scene:</strong> At 7 am a guest in room 611 asks reception for an iron urgently before a meeting. The receptionist records it, calls housekeeping and says, \"This is Lina at reception. Room 611 needs an iron now, urgent, the guest has a meeting at eight. Who can take it?\" The housekeeper replies, \"Fatima, it will be there in ten minutes.\" Lina repeats, \"Fatima, room 611, iron, ten minutes,\" and notes it. At 7:15 she calls the guest to check it arrived before closing the request.</aside><aside class=\"bk-note\"><strong>Tip:</strong> If the line is busy or no one answers, the request has not been handed over. Try again or use the approved alternative, and keep ownership until someone confirms.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Give who, what, where, priority and time in a short message; then Record, Send, Confirm and Follow up, with a named owner every time.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: The handover method",
+                                "questions": [
+                                    {
+                                        "question": "You emailed a request to housekeeping but have had no reply. What is the status of the request?",
+                                        "options": [
+                                            "Delivered, since the email was sent",
+                                            "Closed",
+                                            "Not yet handed over, because receipt has not been confirmed",
+                                            "Housekeeping's responsibility now"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says: if the department has not confirmed receipt, do not consider the request delivered."
+                                    },
+                                    {
+                                        "question": "Which is the best way to describe a request to another department?",
+                                        "options": [
+                                            "A long explanation of everything the guest said",
+                                            "One specific sentence stating the request",
+                                            "Only the room number",
+                                            "\"Please check the guest\""
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The slide says to explain the request in one specific sentence."
+                                    },
+                                    {
+                                        "question": "In the consistent handover format, what belongs under 'owner and time'?",
+                                        "options": [
+                                            "The receiver's name and the time for action or update",
+                                            "The guest's room type",
+                                            "The priority level",
+                                            "Your own department"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The fourth part of the format is the receiver's name and the time for action or update."
+                                    },
+                                    {
+                                        "question": "Housekeeping has delivered the item. When can you close the request?",
+                                        "options": [
+                                            "As soon as you sent it",
+                                            "When housekeeping says they are busy",
+                                            "At the end of the shift regardless",
+                                            "After you have checked it was done and confirmed it"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Follow up means review the work and close the request only after confirming."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Communication in Practice",
+                    "lessons": [
+                        {
+                            "title": "Do, Avoid and When to Escalate",
+                            "minutes": 7,
+                            "body": "<h2>Do and avoid between departments</h2><p>The way we speak to colleagues in other departments affects the guest as much as the way we speak to the guest. The deck lists five habits to build and five to avoid.</p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Use the approved communication channel</td><td>Sending an incomplete or unclear message</td></tr><tr><td>Share only the necessary information</td><td>Blaming another department in front of the guest</td></tr><tr><td>Speak respectfully and in a clear voice</td><td>Assuming the message was read or understood</td></tr><tr><td>Confirm the owner's name and the time</td><td>Passing guest information to unauthorised people</td></tr><tr><td>Follow the request until it is closed</td><td>Closing the request before confirming it is done</td></tr></tbody></table><p>Two of these deserve extra attention. First, <strong>share only what is necessary</strong> and never pass guest information to anyone who is not authorised to have it. Engineering needs the room number and the fault; it does not need the guest's billing details. Second, <strong>never blame a colleague in front of the guest.</strong> Saying \"housekeeping always forgets\" does not help the guest; it only tells them the hotel is disorganised.</p><blockquote class=\"bk-quote\">We are one team: discuss the problem internally, and do not blame your colleague in front of the guest.</blockquote><h2>When to escalate</h2><p>Sometimes a request does not move, despite a good handover. The deck lists five situations in which you should escalate the case:</p><ul><li>There is a risk to safety, or an emergency.</li><li>The department has not responded within the approved time.</li><li>The time promised to the guest is expected to be missed.</li><li>Departments disagree about who is responsible.</li><li>The problem keeps repeating, or the guest is becoming more upset.</li></ul><h2>Brief the supervisor clearly</h2><p>When you escalate, speak to your supervisor clearly:</p><ol><li>State the request, the time and what has been done so far.</li><li>Explain the effect of the delay on the guest.</li><li>Ask for a decision, a named owner and a specific time.</li><li>Inform the departments involved of the update.</li><li>Follow up until the problem is solved and the guest's satisfaction is confirmed.</li></ol><blockquote class=\"bk-quote\">Escalation is not a complaint about a colleague; it protects the request and the hotel's promise.</blockquote><aside class=\"bk-scene\"><strong>Scene:</strong> A guest in room 220 reported no hot water forty minutes ago. Engineering confirmed receipt but has not arrived, and the guest has called twice, increasingly upset. The front desk colleague does not complain about engineering to the guest. She calls the duty manager: \"Room 220, no hot water, reported 40 minutes ago, engineering confirmed but not attended, the guest has called twice and has a dinner at eight. Can we decide who attends and by when?\" The manager assigns a technician for ten minutes and approves a room move if needed. She updates engineering and the guest, then checks back until the guest confirms all is well.</aside><h2>Closing thought</h2><p>The deck ends with a simple commitment: <strong>we communicate as one team, with clear information, a known owner and complete follow-up, so that no request is lost between departments.</strong></p><aside class=\"bk-key\"><strong>Key takeaway:</strong> Use the approved channel, share only what is needed, never blame in front of the guest, and escalate early with a clear briefing when a request is stuck.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Communication in practice",
+                                "questions": [
+                                    {
+                                        "question": "A guest complains that their minibar was not refilled. What should you avoid saying?",
+                                        "options": [
+                                            "\"I will arrange this for you now.\"",
+                                            "\"I am sorry, let me check with the team.\"",
+                                            "\"May I confirm your room number?\"",
+                                            "\"Housekeeping always forgets these things.\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says to avoid blaming another department in front of the guest."
+                                    },
+                                    {
+                                        "question": "Engineering asks for details about a fault in room 305. What information should you share?",
+                                        "options": [
+                                            "The guest's full billing and passport details",
+                                            "Only the information needed, such as room and fault",
+                                            "Everything you know about the guest",
+                                            "Nothing until the guest agrees in writing"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Share only the necessary information and do not pass guest data to unauthorised people."
+                                    },
+                                    {
+                                        "question": "Two departments disagree about who should move a heavy piece of furniture for a guest. What should you do?",
+                                        "options": [
+                                            "Escalate to the supervisor, since there is disagreement on responsibility",
+                                            "Tell the guest to wait until they agree",
+                                            "Close the request",
+                                            "Move it yourself without telling anyone"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Disagreement between departments about responsibility is one of the deck's reasons to escalate."
+                                    },
+                                    {
+                                        "question": "When briefing your supervisor on a stuck request, what should you ask for?",
+                                        "options": [
+                                            "A written warning for the other department",
+                                            "Permission to close the request",
+                                            "A decision, a named owner and a specific time",
+                                            "A discount for yourself"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says to ask for a decision, a responsible person and a specific time."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "التواصل بين الأقسام",
+            "subtitle": "معلومة واضحة ومسؤول معروف ومتابعة حتى الإغلاق",
+            "short_description": "تعلّم نقل الطلبات بين الأقسام ببلاغ قصير وكامل، ومسؤول محدد بالاسم، ومتابعة حتى إغلاق الطلب.",
+            "description": "<p>النزيل يرى فندقًا واحدًا، وليس أقسامًا منفصلة. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتعلّم الموظفين كيف ينقلون الطلبات بين الأقسام دون أن يضيع طلب أو يتكرر أو يُنسى.</p><p>ستتعرف على النقاط الثلاث التي يوضحها كل بلاغ جيد، وكيف تقدّم بلاغًا قصيرًا وكاملًا، والخطوات الأربع: سجّل، أرسل، أكّد، تابع، وصيغة ثابتة لتسليم الطلب، وما تفعله وما تتجنبه، ومتى وكيف تصعّد الحالة إلى المشرف.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظف ينقل طلبات إلى قسم آخر.",
+            "outcomes": [
+                "اشرح لماذا يمنع التواصل الجيد التأخير والأخطاء",
+                "قدّم بلاغًا قصيرًا وكاملًا يذكر من وماذا وأين والأولوية والوقت",
+                "طبّق خطوات سجّل، أرسل، أكّد، تابع على كل طلب",
+                "استخدم قناة التواصل المعتمدة وتجنب لوم أي قسم أمام النزيل",
+                "تعرّف متى تصعّد الحالة وكيف تتواصل مع المشرف بوضوح"
+            ],
+            "faqs": [
+                {
+                    "question": "متى يُعتبر الطلب قد سُلّم؟",
+                    "answer": "فقط عندما يؤكد القسم المستلم استلامه. إذا لم يؤكد القسم الاستلام، لا تعتبر الطلب قد وصل."
+                },
+                {
+                    "question": "ماذا يجب أن يتضمن كل بلاغ؟",
+                    "answer": "من طلب الخدمة، وما المطلوب وأين، ودرجة الأولوية (فوري، عاجل، مهم، عادي)، واسم المستلم ووقت التنفيذ أو التحديث."
+                },
+                {
+                    "question": "هل التصعيد شكوى على زميل؟",
+                    "answer": "لا. التصعيد ليس شكوى على زميل، بل حماية للطلب ووعد الفندق للنزيل."
+                }
+            ],
+            "meta_title": "التواصل بين الأقسام لموظفي الفنادق",
+            "meta_description": "تدريب فندقي على نقل الطلبات بين الأقسام: بلاغ كامل ومسؤول واضح وخطوات سجّل وأرسل وأكّد وتابع، ومتى تصعّد الحالة.",
+            "focus_keyword": "التواصل بين الأقسام في الفنادق",
+            "chapters": [
+                {
+                    "title": "فريق فندقي واحد",
+                    "lessons": [
+                        {
+                            "title": "التواصل الجيد يمنع التأخير والأخطاء",
+                            "minutes": 5,
+                            "body": "<h2>النزيل يرى فندقًا واحدًا</h2><p>عندما يطلب النزيل من الاستقبال مناشف إضافية، أو يخبر النادل أن المكيف في غرفته لا يعمل، فهو لا يفكر في القسم الذي سيحل المشكلة. بالنسبة إليه هناك فندق واحد فقط. وتقولها المادة بوضوح: <strong>النزيل يرى فندقًا واحدًا، وليس أقسامًا منفصلة.</strong> وتنفيذ الطلب في وقته يعتمد على جودة انتقاله بين الزملاء.</p><p>لذلك تقدّم المادة التواصل بين الأقسام على أنه <strong>تعاون كفريق واحد</strong>. فالطلب الذي يقع بين قسمين ليس مشكلة \"قسمهم\" أو \"قسمنا\"، بل هو وعد الفندق للنزيل، وكل موظف يمر به الطلب يشارك في مسؤولية الوفاء به.</p><h2>ماذا يحقق التواصل الجيد؟</h2><ul><li><strong>ينقل الطلب إلى القسم الصحيح،</strong> فأول خطوة في حل المشكلة أن يعرف بها من يستطيع حلها.</li><li><strong>يوضح الأولوية والوقت المطلوب،</strong> حتى يستطيع التدبير الفندقي أو الصيانة أو خدمة الغرف تنظيم عملهم.</li><li><strong>يمنع تكرار العمل أو نسيانه،</strong> فبدون رسالة واضحة قد ينفذ زميلان المهمة نفسها، أو يظن كل منهما أن الآخر نفذها.</li><li><strong>يحافظ على وعد الفندق للنزيل،</strong> فحين يقول الاستقبال \"خلال ربع ساعة\" لا يتحقق الوعد إلا إذا عرفه القسم المستلم.</li><li><strong>يساعد الأقسام على حل المشكلة معًا،</strong> فبعض المشكلات تحتاج أكثر من فريق، مثل تسرب مياه يحتاج الصيانة ونقل غرفة يحتاج الاستقبال.</li></ul><blockquote class=\"bk-quote\">النزيل يرى فندقًا واحدًا — وليس أقسامًا منفصلة.</blockquote><h2>المنهج في سطر واحد</h2><p>تلخص المادة المنهج كله في خمس كلمات: <strong>استمع، سجّل، أبلغ، أكّد، تابع</strong>. استمع إلى الطلب كاملًا، وسجّل التفاصيل، وأبلغ القسم الصحيح، وتأكد أن أحدًا استلمه، وتابع حتى يُغلق. والمعيار كما في عنوانها: <strong>معلومة واضحة ومسؤول معروف ومتابعة حتى الإغلاق.</strong></p><p>هذه عادات صغيرة، لكنها الفرق بين نزيل ينتظر ساعة من أجل وسادة، ونزيل تصله قبل أن يفرغ حقيبته.</p><aside class=\"bk-scene\"><strong>موقف:</strong> أخبر نزيل مضيف المطعم أن الدش في الغرفة 512 يسرّب الماء، فقال المضيف: \"سأبلغ أحدًا\"، وذكر ذلك لزميل عابر نسي الأمر. بعد ساعتين اتصل النزيل بالاستقبال غاضبًا. قارن ذلك بمضيف يسجل رقم الغرفة والمشكلة، ويتصل بالصيانة عبر الخط المعتمد، ويحصل على تأكيد من الفني المسؤول بالاسم مع وقت محدد، ثم يخبر النزيل متى يتوقع المساعدة. النزيل نفسه والتسرب نفسه، لكن التجربة مختلفة تمامًا.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> كل طلب يخص فريقًا فندقيًا واحدًا. التواصل الجيد يوصله إلى القسم الصحيح بالأولوية الصحيحة، ويحافظ على الوعد المقدم للنزيل.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: التواصل الجيد يمنع التأخير",
+                                "questions": [
+                                    {
+                                        "question": "أخبر نزيل موظف المسبح بمصباح معطل في غرفته. كيف يرى النزيل هذا الطلب؟",
+                                        "options": [
+                                            "مشكلة تخص الصيانة وحدها",
+                                            "طلبًا لفندق واحد، وليس لأقسام منفصلة",
+                                            "أمرًا لا يستطيع موظف المسبح المساعدة فيه",
+                                            "طلبًا عليه أن يكرره في الاستقبال"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تنص المادة على أن النزيل يرى فندقًا واحدًا وليس أقسامًا منفصلة."
+                                    },
+                                    {
+                                        "question": "أوصل زميلان السرير الإضافي نفسه إلى غرفة لأن أحدهما لم يعرف أن الآخر تولاه. ما الذي فشل التواصل في تحقيقه؟",
+                                        "options": [
+                                            "منع تكرار العمل أو نسيانه",
+                                            "جعل النزيل ينتظر أكثر",
+                                            "إبقاء الطلب داخل قسم واحد",
+                                            "تقليل عدد الطلبات"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "من النقاط الخمس في المادة أن التواصل الجيد يمنع تكرار العمل أو نسيانه."
+                                    },
+                                    {
+                                        "question": "وعد الاستقبال نزيلًا بصينية من خدمة الغرف خلال عشرين دقيقة. لماذا يجب إبلاغ خدمة الغرف بهذا الوقت؟",
+                                        "options": [
+                                            "لكي تضيف خدمة الغرف رسومًا",
+                                            "لأن كل طلب يجب أن يكون عاجلًا",
+                                            "للحفاظ على وعد الفندق للنزيل وتوضيح الوقت المطلوب",
+                                            "لا حاجة إلى إبلاغها"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "التواصل الجيد يوضح الأولوية والوقت المطلوب ويحافظ على وعد الفندق للنزيل."
+                                    },
+                                    {
+                                        "question": "أي تسلسل يلخص منهج المادة؟",
+                                        "options": [
+                                            "سجّل، لُم، أغلق",
+                                            "انتظر، خمّن، نفّذ",
+                                            "أرسل، انسَ، كرر",
+                                            "استمع، سجّل، أبلغ، أكّد، تابع"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "يذكر غلاف المادة: استمع، سجّل، أبلغ، أكّد، تابع."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "البلاغ الجيد يوضح ثلاث نقاط",
+                            "minutes": 6,
+                            "body": "<h2>البلاغ الجيد يجيب عن ثلاثة أسئلة</h2><p>معظم الطلبات الضائعة لا تضيع لأن الزميل لا يهتم، بل لأن الرسالة كان ينقصها شيء: رقم الغرفة، أو الوقت، أو اسم من سينفذ. وتحدد المادة <strong>ثلاث نقاط يوضحها كل بلاغ جيد: الطلب، والمسؤول، والمتابعة.</strong></p><h3>١. الطلب والموقع</h3><ul><li><strong>ما المطلوب بالتحديد؟</strong> عبارة \"النزيل عنده مشكلة\" ليست طلبًا، أما \"وسادتان إضافيتان\" أو \"جهاز التحكم بالتلفاز لا يعمل\" فهي طلب.</li><li><strong>أين يوجد النزيل أو العطل؟</strong> رقم الغرفة أو الطاولة أو قاعة الاجتماعات أو الممر قرب المصعد.</li><li><strong>ما درجة الأولوية؟</strong> هل هي مسألة سلامة، أم حاجة أساسية، أم طلب راحة بسيط؟</li></ul><h3>٢. المسؤول والوقت</h3><ul><li><strong>أي قسم أو موظف سيستلم؟</strong> الطلب الذي لا مسؤول له لا أحد يتحمله.</li><li><strong>متى يُتوقع بدء التنفيذ؟</strong> المستلم والنزيل كلاهما يحتاج إلى وقت محدد.</li><li><strong>هل أكد المسؤول استلامه؟</strong> قبل ذلك لم يتحرك الطلب فعلًا.</li></ul><h3>٣. التحديث والإغلاق</h3><ul><li><strong>هل وصل تحديث جديد؟</strong> إذا تغيرت الخطة فيجب أن يعرف كل المعنيين.</li><li><strong>هل أُبلغ النزيل بالتأخير؟</strong> النزيل الذي يُبلَّغ بالتأخير أهدأ بكثير ممن يكتشفه بنفسه.</li><li><strong>هل اكتمل الطلب وتأكدنا منه؟</strong> لا يُغلق الطلب إلا بعد التأكد من إنجازه.</li></ul><blockquote class=\"bk-quote\">لا ترسل طلبًا ناقصًا وتنتظر من القسم الآخر أن يخمّن.</blockquote><h2>لماذا يفشل التخمين؟</h2><p>عندما تكون الرسالة ناقصة، يكون أمام الزميل المستلم خياران: أن يتصل ليسأل فيضيع الوقت، أو أن يخمّن فيخاطر بتنفيذ شيء خاطئ. وفي الحالتين ينتظر النزيل أكثر. عشر ثوانٍ إضافية لذكر الموقع والأولوية والمسؤول توفر دقائق على الجميع.</p><table class=\"bk-say\"><thead><tr><th>النقطة</th><th>تحقق</th></tr></thead><tbody><tr><td>الطلب</td><td>ما المطلوب بالتحديد؟ أين؟ ما الأولوية؟</td></tr><tr><td>المسؤول</td><td>أي قسم أو موظف؟ متى؟ هل أكد الاستلام؟</td></tr><tr><td>المتابعة</td><td>تحديث جديد؟ أُبلغ النزيل بالتأخير؟ اكتمل وتأكدنا؟</td></tr></tbody></table><aside class=\"bk-scene\"><strong>موقف:</strong> أرسل موظف الحجوزات إلى التدبير الفندقي: \"مطلوب سرير أطفال\". لم يعرف القسم أي غرفة ولا متى. ثم أعاد الإرسال: \"سرير أطفال للغرفة 318، العائلة تصل الساعة الثالثة عصرًا، أرجو تأكيد من سيوصله\". فردت مشرفة التدبير باسم الموظفة وأكدت أنه سيكون في الغرفة الساعة الثانية والنصف. الرسالة الثانية وضحت الطلب والموقع والوقت والمسؤول، فلم يبق شيء للتخمين.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> كل بلاغ يجب أن يوضح الطلب والمسؤول والمتابعة. إذا اضطر القسم الآخر إلى التخمين فالرسالة غير مكتملة.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: النقاط الثلاث",
+                                "questions": [
+                                    {
+                                        "question": "أرسلت إلى الصيانة: \"النزيل عنده مشكلة في الغرفة\". ما الناقص؟",
+                                        "options": [
+                                            "لا شيء، الصيانة ستعرف",
+                                            "جنسية النزيل فقط",
+                                            "المطلوب بالتحديد والموقع ودرجة الأولوية",
+                                            "كلمة شكر فقط"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "النقطة الأولى تسأل: ما المطلوب بالتحديد؟ أين يوجد النزيل أو العطل؟ ما درجة الأولوية؟"
+                                    },
+                                    {
+                                        "question": "أرسلت طلبًا ولم يؤكد أحد استلامه. أي نقطة في البلاغ غير مكتملة؟",
+                                        "options": [
+                                            "المسؤول والوقت",
+                                            "الطلب والموقع",
+                                            "اسم النزيل فقط",
+                                            "لا شيء، فقد أُرسل"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "نقطة المسؤول تشمل التحقق من أن المسؤول أكد استلامه."
+                                    },
+                                    {
+                                        "question": "سيستغرق الإصلاح وقتًا أطول من المخطط. ما الذي يجب التحقق منه ضمن نقطة المتابعة؟",
+                                        "options": [
+                                            "هل يمكن لوم الصيانة",
+                                            "هل أُبلغ النزيل بالتأخير",
+                                            "هل يمكن إغلاق الطلب الآن",
+                                            "هل يمكن نقله إلى قسم جديد"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "نقطة التحديث والإغلاق تسأل: هل أُبلغ النزيل بالتأخير؟"
+                                    },
+                                    {
+                                        "question": "ماذا تقول المادة عن الطلبات الناقصة؟",
+                                        "options": [
+                                            "لا بأس بها إذا كان القسم الآخر خبيرًا",
+                                            "أرسلها بسرعة وأضف التفاصيل لاحقًا",
+                                            "يجب أن تذهب دائمًا إلى المشرف",
+                                            "لا ترسل طلبًا ناقصًا وتنتظر من القسم الآخر أن يخمّن"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تحذر الشريحة: لا ترسل طلبًا ناقصًا وتنتظر من القسم الآخر أن يخمّن."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "منهج تسليم الطلب",
+                    "lessons": [
+                        {
+                            "title": "بلاغ قصير وواضح في أربع خطوات",
+                            "minutes": 6,
+                            "body": "<h2>استخدم بلاغًا قصيرًا وواضحًا</h2><p>البلاغ الجيد ليس طويلًا، بل <strong>كامل وواضح</strong>. وتقدّم المادة خمسة توجيهات لكل رسالة تنقلها إلى قسم آخر:</p><ul><li><strong>عرّف بنفسك والقسم الذي تعمل فيه.</strong> \"معك سارة من الاستقبال\"، فيعرف المستلم بمن يتصل.</li><li><strong>اذكر رقم الغرفة أو الموقع الصحيح.</strong></li><li><strong>اشرح الطلب بجملة محددة،</strong> مثل \"الغرفة 204 تحتاج منشفتين إضافيتين\"، لا بقصة طويلة.</li><li><strong>وضّح الأولوية والوقت الذي وُعد به النزيل.</strong></li><li><strong>اطلب من المستلم تأكيد الفهم والاستلام.</strong></li></ul><p>والتذكير في المادة بسيط: <strong>اذكر: من، ماذا، أين، الأولوية، والوقت.</strong></p><blockquote class=\"bk-quote\">إذا لم يؤكد القسم الاستلام، لا تعتبر الطلب قد وصل.</blockquote><h2>سلّم الطلب بصيغة ثابتة</h2><p>استخدام الترتيب نفسه كل مرة يجعل التسليم أسرع وأقل عرضة للخطأ. والصيغة في المادة من أربعة أجزاء:</p><ol><li><strong>من؟</strong> النزيل أو القسم الذي طلب الخدمة.</li><li><strong>ماذا وأين؟</strong> الطلب المحدد ورقم الغرفة أو الموقع.</li><li><strong>ما الأولوية؟</strong> فوري، عاجل، مهم، أو عادي.</li><li><strong>من المسؤول ومتى؟</strong> اسم المستلم ووقت التنفيذ أو التحديث.</li></ol><p>ثم <strong>كرر المعلومات الأساسية واطلب تأكيد الاستلام.</strong></p><h2>اتبع أربع خطوات في كل طلب</h2><ol><li><strong>سجّل:</strong> اكتب الطلب والموقع والوقت.</li><li><strong>أرسل:</strong> أرسله للقسم الصحيح بالمعلومات كاملة.</li><li><strong>أكّد:</strong> تأكد أن موظفًا محددًا استلمه.</li><li><strong>تابع:</strong> راجع التنفيذ وأغلق الطلب بعد التأكد.</li></ol><p>وتؤكد المادة على الخطوة الثالثة: <strong>تحديد المسؤول بالاسم يمنع ضياع الطلب بين الأقسام.</strong> فعبارة \"التدبير الفندقي يعرف\" لا تحدد مسؤولًا، أما \"أحمد من التدبير الفندقي سيوصله الساعة 9:15\" فتحدده.</p><table class=\"bk-say\"><thead><tr><th>الجزء</th><th>مثال</th></tr></thead><tbody><tr><td>من</td><td>\"معك عمر من الاستقبال، بخصوص نزيل الغرفة 407.\"</td></tr><tr><td>ماذا وأين</td><td>\"الخزنة في الغرفة 407 لا تفتح.\"</td></tr><tr><td>الأولوية</td><td>\"عاجل، النزيل مغادر إلى المطار.\"</td></tr><tr><td>المسؤول والوقت</td><td>\"من سيحضر، وهل يمكن الوصول خلال عشر دقائق؟ أرجو التأكيد.\"</td></tr></tbody></table><aside class=\"bk-scene\"><strong>موقف:</strong> في السابعة صباحًا طلب نزيل الغرفة 611 من الاستقبال مكواة بشكل عاجل قبل اجتماع. سجلت الموظفة الطلب واتصلت بالتدبير الفندقي: \"معك لينا من الاستقبال، الغرفة 611 تحتاج مكواة الآن، عاجل، لدى النزيل اجتماع الساعة الثامنة، من سيتولى الطلب؟\" فردت الموظفة: \"فاطمة، ستصل خلال عشر دقائق\". كررت لينا: \"فاطمة، الغرفة 611، مكواة، عشر دقائق\" ودوّنت ذلك. وفي السابعة والربع اتصلت بالنزيل لتتأكد من وصولها قبل أن تغلق الطلب.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> إذا كان الخط مشغولًا أو لم يرد أحد، فالطلب لم يُسلَّم بعد. أعد المحاولة أو استخدم البديل المعتمد، وابق مسؤولًا عنه حتى يؤكد أحد استلامه.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> اذكر من وماذا وأين والأولوية والوقت في رسالة قصيرة، ثم سجّل وأرسل وأكّد وتابع، مع تحديد المسؤول بالاسم كل مرة.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: منهج التسليم",
+                                "questions": [
+                                    {
+                                        "question": "أرسلت طلبًا بالبريد إلى التدبير الفندقي ولم يصلك رد. ما حالة الطلب؟",
+                                        "options": [
+                                            "وصل، لأن البريد أُرسل",
+                                            "مغلق",
+                                            "لم يُسلَّم بعد، لأن الاستلام لم يُؤكد",
+                                            "أصبح مسؤولية التدبير الفندقي"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: إذا لم يؤكد القسم الاستلام، لا تعتبر الطلب قد وصل."
+                                    },
+                                    {
+                                        "question": "ما أفضل طريقة لوصف طلب لقسم آخر؟",
+                                        "options": [
+                                            "شرح طويل لكل ما قاله النزيل",
+                                            "جملة واحدة محددة تذكر الطلب",
+                                            "رقم الغرفة فقط",
+                                            "\"أرجو متابعة النزيل\""
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول الشريحة: اشرح الطلب بجملة محددة."
+                                    },
+                                    {
+                                        "question": "في الصيغة الثابتة للتسليم، ماذا يندرج تحت \"من المسؤول ومتى\"؟",
+                                        "options": [
+                                            "اسم المستلم ووقت التنفيذ أو التحديث",
+                                            "نوع غرفة النزيل",
+                                            "درجة الأولوية",
+                                            "قسمك أنت"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "الجزء الرابع من الصيغة هو اسم المستلم ووقت التنفيذ أو التحديث."
+                                    },
+                                    {
+                                        "question": "أوصل التدبير الفندقي الغرض. متى يمكنك إغلاق الطلب؟",
+                                        "options": [
+                                            "بمجرد أن أرسلته",
+                                            "عندما يقول القسم إنه مشغول",
+                                            "في نهاية المناوبة على أي حال",
+                                            "بعد أن تراجع التنفيذ وتتأكد منه"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "خطوة تابع تعني: راجع التنفيذ وأغلق الطلب بعد التأكد."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "التواصل في الممارسة",
+                    "lessons": [
+                        {
+                            "title": "افعل وتجنب ومتى تصعّد التواصل",
+                            "minutes": 7,
+                            "body": "<h2>افعل وتجنب عند التواصل بين الأقسام</h2><p>طريقة حديثنا مع زملاء الأقسام الأخرى تؤثر في النزيل بقدر طريقة حديثنا معه. وتذكر المادة خمس عادات يجب ممارستها وخمسًا يجب تجنبها.</p><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنب</th></tr></thead><tbody><tr><td>استخدم قناة التواصل المعتمدة</td><td>أن ترسل رسالة ناقصة أو غامضة</td></tr><tr><td>شارك المعلومات المهمة فقط</td><td>أن تلوم قسمًا آخر أمام النزيل</td></tr><tr><td>تحدث باحترام وبصوت واضح</td><td>أن تفترض أن الرسالة قُرئت أو فُهمت</td></tr><tr><td>أكد اسم الموظف المسؤول والوقت</td><td>أن تنقل معلومات النزيل لغير المخول</td></tr><tr><td>تابع الطلب حتى الإغلاق</td><td>أن تغلق الطلب قبل التأكد من إنجازه</td></tr></tbody></table><p>أمران يستحقان انتباهًا خاصًا. الأول: <strong>شارك المعلومات المهمة فقط</strong> ولا تنقل معلومات النزيل لغير المخول؛ فالصيانة تحتاج رقم الغرفة والعطل، لا بيانات فاتورة النزيل. والثاني: <strong>لا تلُم زميلك أمام النزيل.</strong> فعبارة \"التدبير الفندقي ينسى دائمًا\" لا تساعد النزيل، بل تخبره أن الفندق غير منظم.</p><blockquote class=\"bk-quote\">نحن فريق واحد — ناقش المشكلة داخليًا ولا تلُم زميلك أمام النزيل.</blockquote><h2>متى تصعّد التواصل؟</h2><p>أحيانًا لا يتحرك الطلب رغم البلاغ الجيد. وتذكر المادة خمس حالات تستدعي تصعيد الحالة:</p><ul><li>وجود خطر على السلامة أو حالة طارئة.</li><li>عدم رد القسم خلال الوقت المعتمد.</li><li>توقع تأخير الوعد المقدم للنزيل.</li><li>اختلاف الأقسام على المسؤولية.</li><li>تكرار المشكلة أو زيادة انزعاج النزيل.</li></ul><h2>تواصل مع المشرف بوضوح</h2><ol><li>اذكر الطلب والوقت وما تم حتى الآن.</li><li>وضّح أثر التأخير على النزيل.</li><li>اطلب قرارًا ومسؤولًا ووقتًا محددًا.</li><li>أبلغ الأقسام المعنية بالتحديث.</li><li>تابع حتى الحل وتأكيد رضا النزيل.</li></ol><blockquote class=\"bk-quote\">التصعيد ليس شكوى على زميل — بل حماية للطلب ووعد الفندق.</blockquote><aside class=\"bk-scene\"><strong>موقف:</strong> أبلغ نزيل الغرفة 220 عن انقطاع الماء الساخن قبل أربعين دقيقة. أكدت الصيانة الاستلام لكنها لم تحضر، واتصل النزيل مرتين وانزعاجه يزداد. لم تشتكِ موظفة الاستقبال من الصيانة أمام النزيل، بل اتصلت بالمدير المناوب: \"الغرفة 220، لا يوجد ماء ساخن، أُبلغ عنه قبل 40 دقيقة، أكدت الصيانة ولم تحضر، اتصل النزيل مرتين ولديه عشاء الساعة الثامنة. هل نحدد من سيحضر ومتى؟\" فكلف المدير فنيًا خلال عشر دقائق ووافق على نقل الغرفة عند الحاجة. أبلغت الموظفة الصيانة والنزيل بالتحديث، وتابعت حتى أكد النزيل أن كل شيء على ما يرام.</aside><h2>كلمة ختامية</h2><p>تختم المادة بالتزام بسيط: <strong>نتواصل كفريق واحد، بمعلومة واضحة ومسؤول معروف ومتابعة كاملة، حتى لا يضيع أي طلب بين الأقسام.</strong></p><aside class=\"bk-key\"><strong>الخلاصة:</strong> استخدم القناة المعتمدة، وشارك ما يلزم فقط، ولا تلُم أحدًا أمام النزيل، وصعّد مبكرًا مع إحاطة واضحة عندما يتعثر الطلب.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: التواصل في الممارسة",
+                                "questions": [
+                                    {
+                                        "question": "اشتكى نزيل من أن الثلاجة الصغيرة لم تُملأ. ما العبارة التي يجب تجنبها؟",
+                                        "options": [
+                                            "\"سأرتب ذلك لك الآن.\"",
+                                            "\"أعتذر، دعني أتحقق مع الفريق.\"",
+                                            "\"هل تسمح بتأكيد رقم غرفتك؟\"",
+                                            "\"التدبير الفندقي ينسى هذه الأمور دائمًا.\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: تجنب أن تلوم قسمًا آخر أمام النزيل."
+                                    },
+                                    {
+                                        "question": "طلبت الصيانة تفاصيل عن عطل في الغرفة 305. ما المعلومات التي تشاركها؟",
+                                        "options": [
+                                            "بيانات فاتورة النزيل وجواز سفره كاملة",
+                                            "المعلومات المهمة فقط، مثل الغرفة والعطل",
+                                            "كل ما تعرفه عن النزيل",
+                                            "لا شيء حتى يوافق النزيل كتابيًا"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "شارك المعلومات المهمة فقط ولا تنقل معلومات النزيل لغير المخول."
+                                    },
+                                    {
+                                        "question": "اختلف قسمان على من يجب أن ينقل قطعة أثاث ثقيلة لنزيل. ماذا تفعل؟",
+                                        "options": [
+                                            "تصعّد الحالة إلى المشرف لوجود اختلاف على المسؤولية",
+                                            "تطلب من النزيل الانتظار حتى يتفقا",
+                                            "تغلق الطلب",
+                                            "تنقلها بنفسك دون إبلاغ أحد"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "اختلاف الأقسام على المسؤولية من حالات التصعيد في المادة."
+                                    },
+                                    {
+                                        "question": "عند إحاطة المشرف بطلب متعثر، ماذا تطلب منه؟",
+                                        "options": [
+                                            "إنذارًا مكتوبًا للقسم الآخر",
+                                            "الإذن بإغلاق الطلب",
+                                            "قرارًا ومسؤولًا ووقتًا محددًا",
+                                            "خصمًا لنفسك"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: اطلب قرارًا ومسؤولًا ووقتًا محددًا."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

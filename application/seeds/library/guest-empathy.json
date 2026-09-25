@@ -1,0 +1,551 @@
+{
+    "slug": "guest-empathy",
+    "category": "guest-handling",
+    "level": "foundation",
+    "source_pdf": "Guest-Empathy-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/guest-empathy.webp",
+    "videos": [
+        {
+            "id": "1Evwgu369Jw",
+            "title": "Brené Brown on Empathy",
+            "channel": "Royal Society of Arts",
+            "why": "A short animated explanation of the difference between empathy and sympathy, showing why acknowledging a feeling matters more than rushing to fix or minimise it."
+        },
+        {
+            "id": "cDDWvj_q-o8",
+            "title": "Empathy: The Human Connection to Patient Care",
+            "channel": "Cleveland Clinic",
+            "why": "A powerful reminder that every person we serve carries feelings we cannot see, which is the starting point of noticing how a guest feels before offering a solution."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Guest Empathy",
+            "subtitle": "Understand the feeling before the solution",
+            "short_description": "Learn to notice how a guest feels, acknowledge it sincerely and follow the steps Listen, Notice, Acknowledge, Help, Follow up without promising what you cannot deliver.",
+            "description": "<p>A guest who is tired, worried or upset needs to feel understood before any solution will satisfy them. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows hotel colleagues how to put the feeling first.</p><p>You will learn why empathy makes guests feel respected, how to read feelings through words, voice and body language, and how to use simple steps and sincere phrases. You will also learn why empathy does not mean agreeing to every request, and how to stay safe and calm when a guest is very upset.</p>",
+            "requirements": "No prior training is needed; the course suits any guest-facing colleague.",
+            "outcomes": [
+                "Explain why empathy makes the guest feel respected",
+                "Notice a guest's feelings through words, voice and body language",
+                "Apply the empathy steps: listen, acknowledge, apologise, state the next step, follow up",
+                "Use sincere empathy phrases without promising what you cannot deliver",
+                "Stay calm, safe and respectful with a very upset guest"
+            ],
+            "faqs": [
+                {
+                    "question": "Does empathy mean I must agree with the guest?",
+                    "answer": "No. Empathy means understanding and respecting the feeling, not agreeing to every request. You can say \"I understand how you feel\" and still offer only what you are able to do."
+                },
+                {
+                    "question": "What are the empathy steps?",
+                    "answer": "Listen without interrupting or defending, acknowledge the feeling you heard, apologise for the upsetting experience, state the step you will take and follow up after it is done."
+                },
+                {
+                    "question": "What if the guest becomes threatening?",
+                    "answer": "Do not argue, keep a suitable distance, stay calm and respectful, call your supervisor and follow hotel procedures. Empathy never cancels safety procedures."
+                }
+            ],
+            "meta_title": "Guest Empathy Training for Hotel Staff",
+            "meta_description": "Hotel training on guest empathy: noticing feelings, the listen-acknowledge-help-follow up steps, sincere phrases and handling very upset guests safely.",
+            "focus_keyword": "guest empathy in hotels",
+            "chapters": [
+                {
+                    "title": "Why Empathy Matters",
+                    "lessons": [
+                        {
+                            "title": "Empathy Makes the Guest Feel Respected",
+                            "minutes": 5,
+                            "body": "<h2>Feeling first, solution second</h2><p>The deck opens with one simple idea: <strong>understand the feeling before the solution</strong>. When a guest arrives at the desk after a long wait, a delayed flight or a room that was not ready, they bring two things with them: a problem and a feeling about that problem. Most of us are trained to jump straight to the problem. But if the feeling is ignored, even a perfect solution can leave the guest unhappy.</p><p>Empathy is the skill of noticing that feeling and showing the guest that you respect it. The deck summarises the whole approach in five words: <strong>Listen, Notice, Acknowledge, Help, Follow up</strong>. This course walks through each of them.</p><h2>Five behaviours that show respect</h2><p>According to the deck, empathy makes the guest feel respected when you:</p><ul><li><strong>Listen to the guest without interrupting.</strong> Let them tell the whole story. Interrupting tells the guest that your time matters more than their experience.</li><li><strong>Acknowledge that the situation upset them.</strong> A short, honest sentence such as \"I understand this was frustrating\" shows you have heard more than the facts.</li><li><strong>Use a calm and respectful voice.</strong> Your tone should lower the tension, not match it.</li><li><strong>Explain what you will do to help.</strong> Once the feeling has been acknowledged, the guest needs to know what happens next.</li><li><strong>Follow up so the guest knows what happened.</strong> Empathy does not end when the guest walks away. Returning with an update shows your care was real.</li></ul><blockquote class=\"bk-quote\">Remember: feeling first.</blockquote><h2>Empathy is not agreement</h2><p>Many colleagues worry that showing empathy means promising the guest whatever they ask for. The deck is clear: <strong>empathy does not mean agreeing to every request; it means understanding the feeling and respecting it.</strong> You can fully respect a guest's disappointment and still explain honestly what is and is not possible. We return to this idea in the final lesson.</p><h2>Why it works</h2><p>Guests who feel understood calm down faster. They listen to your explanation, they accept alternatives more easily and they are more likely to remember the stay positively. Guests who feel ignored often repeat the complaint louder, ask for a manager or leave with a lasting bad impression, even when the actual problem was small. The deck's closing message puts it well: empathy turns a difficult moment into a human connection.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A family arrives at 2 a.m. after a delayed flight, and their room is not ready because of a late check-out. The father starts explaining sharply. The night receptionist does not defend the hotel or explain the late check-out. She lets him finish, then says calmly: \"I can see this has been a very long night for your family, and I am sorry you have to wait. Let me get the children somewhere comfortable while I check the room.\" The father's voice softens immediately. She then follows up in ten minutes with the room key.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Before you speak about the solution, ask yourself: \"Have I said anything that shows I understand how the guest feels?\" If not, start there.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Empathy makes the guest feel respected. Listen without interrupting, acknowledge the feeling, speak calmly, explain the help and follow up.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Empathy shows respect",
+                                "questions": [
+                                    {
+                                        "question": "A guest starts complaining about a long wait at check-in. What should come first?",
+                                        "options": [
+                                            "Explain why the queue was long",
+                                            "Listen without interrupting and acknowledge the feeling",
+                                            "Offer a discount immediately",
+                                            "Ask them to calm down"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says: understand the feeling before the solution, starting with listening without interruption."
+                                    },
+                                    {
+                                        "question": "Which of these is part of showing empathy according to the deck?",
+                                        "options": [
+                                            "Matching the guest's raised voice",
+                                            "Promising whatever the guest asks",
+                                            "Following up so the guest knows what happened",
+                                            "Keeping the solution secret until it is done"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The slide lists following up so the guest knows what happened."
+                                    },
+                                    {
+                                        "question": "A colleague says, \"If I show empathy, I have to agree to everything.\" What is the correct response?",
+                                        "options": [
+                                            "Yes, empathy means saying yes",
+                                            "Empathy means respecting the feeling, not agreeing to every request",
+                                            "Empathy only applies to VIP guests",
+                                            "Empathy means avoiding the guest"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck states that empathy does not mean agreeing to every request but understanding and respecting the feeling."
+                                    },
+                                    {
+                                        "question": "What voice should you use with a frustrated guest?",
+                                        "options": [
+                                            "A calm and respectful voice",
+                                            "A fast voice to finish quickly",
+                                            "A loud voice so they hear you",
+                                            "A cold, formal voice"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The slide lists using a calm and respectful voice."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "How to Notice the Guest's Feelings",
+                            "minutes": 5,
+                            "body": "<h2>Three places to look</h2><p>You cannot respect a feeling you have not noticed. Guests rarely say \"I feel anxious\" or \"I am disappointed\". Instead, their feelings show in how they speak and behave. The deck asks you to look in three places: <strong>words, voice and body language</strong>.</p><h3>1. Words</h3><p>Listen for words that carry emotion. The deck gives three examples:</p><ul><li><strong>The guest says: \"I have waited a long time.\"</strong> This is not only information; it tells you they feel their time has not been respected.</li><li><strong>The guest says: \"I am tired\" or \"I am worried.\"</strong> They are telling you directly how they feel. Take it seriously.</li><li><strong>The guest repeats the problem more than once.</strong> Repetition usually means the guest does not yet feel heard. The answer is not to explain more, but to acknowledge more.</li></ul><h3>2. Voice</h3><p>The tone of voice often tells you more than the words:</p><ul><li><strong>A raised or fast voice</strong> can signal anger, stress or urgency.</li><li><strong>A low or hesitant voice</strong> can signal worry, embarrassment or uncertainty, for example a guest who is unsure how to ask for something.</li><li><strong>A voice that changes during the conversation</strong> shows that the feeling is shifting, either calming down or becoming more upset. Notice the change and adjust.</li></ul><h3>3. Body language</h3><p>Watch the guest as well as listening:</p><ul><li><strong>Tense facial expressions</strong>, such as a frown or tight lips.</li><li><strong>A closed stance or quick movements</strong>, such as crossed arms, tapping or pacing.</li><li><strong>Moving away or looking for help</strong>, such as stepping back from the desk or looking around for another colleague or a manager.</li></ul><table class=\"bk-say\"><thead><tr><th>Channel</th><th>Signs to notice</th></tr></thead><tbody><tr><td>Words</td><td>\"I waited a long time\"; \"I am tired or worried\"; repeating the problem</td></tr><tr><td>Voice</td><td>Raised or fast; low or hesitant; changing during the talk</td></tr><tr><td>Body language</td><td>Tense face; closed stance or quick movement; moving away or looking for help</td></tr></tbody></table><h2>Do not assume, ask gently</h2><p>Signs are clues, not certainties. A guest with crossed arms may simply be cold. The deck's rule is: <strong>do not assume their feeling; notice, then ask gently.</strong> A soft question such as \"Is everything all right with your stay so far?\" or \"You seem to have had a long day; how can I help?\" invites the guest to share without making them feel judged.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest asks the concierge in a low, hesitant voice about pharmacies nearby, glancing around the lobby. The concierge notices the hesitation and does not simply read out an address. He says quietly, \"Of course. Is there anything I can help arrange for you?\" The guest explains that her child has a fever. The concierge informs his supervisor, who follows the hotel's procedure to help the family get the right support. Noticing the voice turned a directions request into real care.</aside><aside class=\"bk-note\"><strong>Tip:</strong> If a guest repeats the same point twice, stop explaining and acknowledge instead: \"I understand, the wait has been really frustrating.\"</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Feelings show in words, voice and body language. Notice the signs, do not assume, and ask gently.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Noticing feelings",
+                                "questions": [
+                                    {
+                                        "question": "A guest repeats the same complaint for the third time. What does this most likely show?",
+                                        "options": [
+                                            "They enjoy talking to staff",
+                                            "They do not yet feel heard",
+                                            "They did not understand your language",
+                                            "They want to leave the hotel"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck lists repeating the problem more than once as a word signal of the guest's feeling."
+                                    },
+                                    {
+                                        "question": "Which is a body language sign mentioned in the deck?",
+                                        "options": [
+                                            "A low or hesitant voice",
+                                            "Saying \"I am worried\"",
+                                            "A closed stance or quick movements",
+                                            "Asking for the Wi-Fi password"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Closed stance or quick movement is listed under body language."
+                                    },
+                                    {
+                                        "question": "You notice a guest frowning with crossed arms. What should you do?",
+                                        "options": [
+                                            "Assume they are angry and call security",
+                                            "Ignore it because they have not complained",
+                                            "Tell them to relax",
+                                            "Ask gently if everything is all right"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says: do not assume their feeling; notice, then ask gently."
+                                    },
+                                    {
+                                        "question": "A guest's voice becomes louder as they speak. Which channel is giving you this signal?",
+                                        "options": [
+                                            "Voice",
+                                            "Words",
+                                            "Body language",
+                                            "None; it is not important"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "A raised voice or a voice that changes during the conversation are voice signals."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "The Empathy Method",
+                    "lessons": [
+                        {
+                            "title": "Simple Steps and Empathy Phrases",
+                            "minutes": 6,
+                            "body": "<h2>Listen first</h2><p>The deck gives a short sequence to follow whenever a guest shares a problem or a feeling. It starts with one instruction: <strong>listen first; let the guest finish speaking.</strong> Everything else depends on it.</p><ol><li><strong>Listen without interrupting or defending.</strong> The natural reaction when a guest criticises the hotel is to explain or protect your department. Hold it back. Defending too early tells the guest their feeling is wrong.</li><li><strong>Acknowledge the feeling you heard.</strong> Name it simply: \"I understand this has been frustrating.\"</li><li><strong>Apologise for the upsetting experience.</strong> You are apologising for how the experience felt, not necessarily admitting a mistake that has not been confirmed.</li><li><strong>State the step you will take.</strong> Be specific: who will do what, and roughly when.</li><li><strong>Follow up with the guest after it is done.</strong> Return, call or send a message to check that the problem is solved.</li></ol><blockquote class=\"bk-quote\">Start with the feeling, then move to the solution.</blockquote><p>In English the deck puts the same idea as: acknowledge the feeling, then explain the next step. If you jump straight to the solution, the guest may still feel unheard. If you only acknowledge and never act, the guest feels you are just being polite.</p><h2>Four phrases that show empathy</h2><p>The deck offers four types of phrase, each with an example:</p><table class=\"bk-say\"><thead><tr><th>Purpose</th><th>Example phrase</th></tr></thead><tbody><tr><td>Understand</td><td>\"I understand that this situation upset you.\"</td></tr><tr><td>Recognise</td><td>\"I can see that the wait was tiring.\"</td></tr><tr><td>Apologise</td><td>\"I am sorry for the experience you went through.\"</td></tr><tr><td>Help</td><td>\"Let me help you with the next step.\"</td></tr></tbody></table><p>The first two phrases show the guest you noticed the feeling. The third apologises for the experience. The fourth moves the conversation towards action.</p><h2>One sincere phrase is enough</h2><p>The deck's advice is: <strong>use one sincere, simple phrase that fits the situation.</strong> Stacking several phrases together (\"I understand, I see, I am so sorry, I apologise...\") sounds scripted and can make the guest more irritated. Choose the phrase that matches what you noticed. If the guest waited, recognise the wait. If they were embarrassed, acknowledge that gently. Then move on to the help.</p><p>Sincerity also comes from your face and voice. The same words said while looking at a screen sound empty. Look at the guest, speak calmly and mean what you say.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A business guest calls housekeeping, annoyed that his room was not cleaned before an important video meeting. The attendant lets him finish without explaining the schedule. She says, \"I understand this has made your afternoon harder, and I am sorry for that. I will send someone to your room within fifteen minutes.\" After the room is done, she calls back: \"Your room is ready. Is there anything else you need before your meeting?\" The guest thanks her by name.</aside><aside class=\"bk-note\"><strong>Tip:</strong> \"I am sorry for the experience\" is different from \"It is our fault.\" Apologise for the feeling; let the facts be checked before admitting a specific error.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Listen without defending, acknowledge, apologise, state the next step and follow up. Use one sincere phrase that fits.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Steps and phrases",
+                                "questions": [
+                                    {
+                                        "question": "A guest criticises the restaurant's slow service. Your first reaction is to explain that the kitchen is busy. What does the deck advise?",
+                                        "options": [
+                                            "Explain immediately so the guest understands",
+                                            "Listen without interrupting or defending",
+                                            "Transfer them to the restaurant manager",
+                                            "Agree that the kitchen is poorly run"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The first step is to listen without interruption or defence."
+                                    },
+                                    {
+                                        "question": "What comes after acknowledging and apologising?",
+                                        "options": [
+                                            "Ending the conversation",
+                                            "Asking for a positive review",
+                                            "Stating the step you will take",
+                                            "Repeating the apology several times"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck lists stating the step you will take, then following up after it is done."
+                                    },
+                                    {
+                                        "question": "A guest waited 30 minutes for a taxi you booked. Which phrase fits best?",
+                                        "options": [
+                                            "\"I can see that the wait was tiring.\"",
+                                            "\"That is how taxis are.\"",
+                                            "\"I understand, I see, I am so sorry, I apologise.\"",
+                                            "\"Please calm down.\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The Recognise phrase fits a wait; the deck says to use one sincere, simple phrase that fits the situation."
+                                    },
+                                    {
+                                        "question": "Why should you follow up after solving the problem?",
+                                        "options": [
+                                            "To ask for a tip",
+                                            "It is optional if the guest did not ask",
+                                            "To collect a complaint form",
+                                            "So the guest knows it was done and feels cared for"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The last step is to follow up with the guest after carrying out the solution."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Empathy in Practice",
+                    "lessons": [
+                        {
+                            "title": "Boundaries, Do and Avoid, and Very Upset Guests",
+                            "minutes": 7,
+                            "body": "<h2>What to do, and what to avoid</h2><p>The deck lists five behaviours that show empathy and five that destroy it.</p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Keep a calm voice</td><td>Telling the guest: \"Calm down.\"</td></tr><tr><td>Use the guest's own words</td><td>Saying: \"This is not my problem.\"</td></tr><tr><td>Acknowledge their feeling clearly</td><td>Arguing or saying: \"You are wrong.\"</td></tr><tr><td>Ask: \"What is most important to you now?\"</td><td>Repeating: \"This is just the system.\"</td></tr><tr><td>Follow up after the solution is done</td><td>Promising something you cannot deliver</td></tr></tbody></table><p>Using the guest's own words is powerful. If the guest says \"the room is freezing\", reply with \"freezing\", not \"a little cool\". Asking what matters most right now helps when a guest has several complaints at once and you need to know where to start.</p><blockquote class=\"bk-quote\">Respect the feeling, and keep to the limits of service.</blockquote><h2>Empathy does not mean agreement</h2><p>The deck explains what each empathy phrase does and does not mean:</p><ol><li><strong>\"I understand how you feel\"</strong> does not mean accepting an impossible request.</li><li><strong>\"I am sorry for the experience\"</strong> does not mean admitting an unconfirmed mistake.</li><li><strong>\"I want to help you\"</strong> does not mean a promise you cannot keep.</li><li><strong>\"I will look for a solution\"</strong> means taking a clear step and following it up.</li></ol><p>The rule: <strong>understand their feeling, then offer what you are able to do.</strong></p><h2>When the guest is very upset</h2><p>Sometimes a guest is extremely angry. Empathy still applies, but so does safety. The deck gives two lists.</p><h3>What to do</h3><ul><li>Listen to the problem.</li><li>Acknowledge the feeling.</li><li>State the next step.</li><li>Ask for supervisor support when needed.</li><li>Follow up with the guest after the situation calms down.</li></ul><h3>Stay safe</h3><ul><li>Do not get into an argument.</li><li>Keep a suitable distance.</li><li>Stay calm and respectful.</li><li>Call the supervisor if there is a threat.</li><li>Follow hotel procedures if there is danger.</li></ul><blockquote class=\"bk-quote\">Empathy does not cancel safety procedures.</blockquote><aside class=\"bk-scene\"><strong>Scene:</strong> A guest at the front desk is shouting because his booking shows the wrong dates, and he wants the hotel to give him three free nights. The receptionist keeps a calm voice and the desk between them. She says, \"I understand you are very frustrated, and I am sorry for this experience. I cannot promise free nights, but I will ask my supervisor to review the booking with you now.\" When he slaps the counter and steps closer, she calmly calls the duty manager as the procedure says. Later that evening she checks with the guest that the dates were corrected.</aside><h2>Closing thought</h2><p>The deck ends with: empathy starts with listening and shows in your words and actions. Listen, acknowledge, help and follow up, and make the guest feel they are not alone.</p><aside class=\"bk-key\"><strong>Key takeaway:</strong> Respect the feeling without over-promising. With a very upset guest, stay calm, keep your distance, involve the supervisor and follow safety procedures.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Empathy in practice",
+                                "questions": [
+                                    {
+                                        "question": "A guest shouts about a noisy room. Which response should you avoid?",
+                                        "options": [
+                                            "\"I understand the noise has been disturbing.\"",
+                                            "\"What is most important to you now?\"",
+                                            "\"Calm down, please.\"",
+                                            "\"Let me help you with the next step.\""
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Telling the guest to calm down is on the deck's avoid list."
+                                    },
+                                    {
+                                        "question": "A guest asks for a free upgrade you are not authorised to give. How do you show empathy correctly?",
+                                        "options": [
+                                            "Promise the upgrade to calm them",
+                                            "Acknowledge the feeling and offer what you are able to do",
+                                            "Say it is just the system",
+                                            "Tell them they are wrong to ask"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Empathy is not agreement: understand the feeling, then offer what you are able to do."
+                                    },
+                                    {
+                                        "question": "What does \"I am sorry for the experience\" NOT mean?",
+                                        "options": [
+                                            "Respect for the guest's feeling",
+                                            "Admitting a mistake that has not been confirmed",
+                                            "Care for how the stay went",
+                                            "A willingness to help"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says the apology does not mean admitting an unconfirmed mistake."
+                                    },
+                                    {
+                                        "question": "A very upset guest steps closer and makes a threatening remark. What should you do?",
+                                        "options": [
+                                            "Argue back firmly to show confidence",
+                                            "Keep a suitable distance, stay calm and call the supervisor",
+                                            "Walk away without saying anything",
+                                            "Offer compensation to end the situation"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The Stay safe list says keep a suitable distance, stay calm and call the supervisor if there is a threat."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "التعاطف مع النزيل",
+            "subtitle": "افهم شعوره قبل تقديم الحل",
+            "short_description": "تعلّم كيف تلاحظ شعور النزيل وتعترف به بصدق، وطبّق خطوات: استمع، لاحظ، اعترف، ساعد، تابع دون أن تعد بما لا تستطيع تنفيذه.",
+            "description": "<p>النزيل المتعب أو القلق أو المنزعج يحتاج إلى أن يشعر بأنه مفهوم قبل أن يرضيه أي حل. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتعلّم الموظفين كيف يضعون الشعور أولًا.</p><p>ستتعرف على سبب شعور النزيل بالاحترام عند التعاطف معه، وكيف تقرأ مشاعره من الكلمات ونبرة الصوت ولغة الجسد، وكيف تستخدم خطوات بسيطة وعبارات صادقة. كما ستتعلم لماذا لا يعني التعاطف الموافقة على كل طلب، وكيف تحافظ على الهدوء والأمان عندما يكون النزيل شديد الانفعال.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظف يتعامل مع النزلاء.",
+            "outcomes": [
+                "اشرح لماذا يجعل التعاطف النزيل يشعر بالاحترام",
+                "لاحظ شعور النزيل من الكلمات ونبرة الصوت ولغة الجسد",
+                "طبّق خطوات التعاطف: استمع، اعترف، اعتذر، اذكر الخطوة، تابع",
+                "استخدم عبارات تعاطف صادقة دون أن تعد بما لا تستطيع تنفيذه",
+                "حافظ على الهدوء والأمان والاحترام مع النزيل شديد الانفعال"
+            ],
+            "faqs": [
+                {
+                    "question": "هل يعني التعاطف أن أوافق النزيل على كل شيء؟",
+                    "answer": "لا. التعاطف لا يعني الموافقة على كل طلب، بل فهم الشعور واحترامه. يمكنك أن تقول \"أتفهم شعورك\" ثم تقدم ما تستطيع فعله فقط."
+                },
+                {
+                    "question": "ما خطوات التعاطف؟",
+                    "answer": "استمع دون مقاطعة أو دفاع، واعترف بالشعور الذي سمعته، واعتذر عن التجربة المزعجة، واذكر الخطوة التي ستقوم بها، ثم تابع مع النزيل بعد تنفيذها."
+                },
+                {
+                    "question": "ماذا أفعل إذا أصبح النزيل مهددًا؟",
+                    "answer": "لا تدخل في جدال، وحافظ على مسافة مناسبة، وابقَ هادئًا ومحترمًا، واطلب المشرف، واتبع إجراءات الفندق. التعاطف لا يلغي إجراءات السلامة."
+                }
+            ],
+            "meta_title": "التعاطف مع النزيل لموظفي الفنادق",
+            "meta_description": "تدريب فندقي على التعاطف مع النزيل: ملاحظة الشعور، وخطوات استمع واعترف وساعد وتابع، وعبارات صادقة، والتعامل الآمن مع النزيل المنفعل.",
+            "focus_keyword": "التعاطف مع النزيل في الفنادق",
+            "chapters": [
+                {
+                    "title": "لماذا التعاطف مهم",
+                    "lessons": [
+                        {
+                            "title": "التعاطف يجعل النزيل يشعر بالاحترام",
+                            "minutes": 5,
+                            "body": "<h2>الشعور أولًا ثم الحل</h2><p>تبدأ المادة بفكرة بسيطة: <strong>افهم شعوره قبل تقديم الحل</strong>. عندما يصل النزيل إلى مكتب الاستقبال بعد انتظار طويل أو رحلة متأخرة أو غرفة لم تجهز بعد، فهو يحمل أمرين: مشكلة، وشعورًا تجاه هذه المشكلة. وكثير منا اعتاد القفز مباشرة إلى المشكلة، لكن إذا تجاهلنا الشعور فقد يبقى النزيل غير راضٍ حتى مع الحل المثالي.</p><p>التعاطف هو مهارة ملاحظة هذا الشعور وإظهار احترامك له. وتلخص المادة المنهج كله في خمس كلمات: <strong>استمع، لاحظ، اعترف، ساعد، تابع</strong>.</p><h2>خمسة تصرفات تُشعر النزيل بالاحترام</h2><p>بحسب المادة، يجعل التعاطف النزيل يشعر بالاحترام عندما:</p><ul><li><strong>تستمع إلى النزيل دون مقاطعة،</strong> وتتركه يروي القصة كاملة؛ فالمقاطعة توحي بأن وقتك أهم من تجربته.</li><li><strong>تعترف بأن الموقف أزعجه،</strong> بجملة قصيرة صادقة مثل: \"أتفهم أن هذا كان مزعجًا\".</li><li><strong>تستخدم صوتًا هادئًا ومحترمًا،</strong> يخفف التوتر ولا يجاريه.</li><li><strong>تشرح ما ستفعله لمساعدته،</strong> فبعد الاعتراف بالشعور يحتاج النزيل إلى معرفة ما سيحدث.</li><li><strong>تتابع حتى يعرف النزيل ما حدث،</strong> فالتعاطف لا ينتهي عندما يبتعد النزيل، والعودة إليه بالنتيجة دليل على أن اهتمامك حقيقي.</li></ul><blockquote class=\"bk-quote\">تذكّر: الشعور قبل الحل.</blockquote><h2>التعاطف ليس موافقة</h2><p>يخشى بعض الزملاء أن يعني التعاطف الوعد بكل ما يطلبه النزيل. والمادة واضحة: <strong>التعاطف لا يعني الموافقة على كل طلب، بل فهم الشعور واحترامه.</strong> يمكنك أن تحترم خيبة أمل النزيل تمامًا وأن توضح له بصدق ما هو ممكن وما ليس ممكنًا، وسنعود إلى هذه الفكرة في الدرس الأخير.</p><h2>لماذا ينجح التعاطف</h2><p>النزيل الذي يشعر بأنه مفهوم يهدأ أسرع، ويستمع إلى شرحك، ويتقبل البدائل بسهولة أكبر، ويتذكر إقامته بصورة إيجابية. أما النزيل الذي يشعر بالتجاهل فغالبًا ما يكرر الشكوى بصوت أعلى أو يطلب المدير أو يغادر بانطباع سيئ، حتى لو كانت المشكلة صغيرة. وكما تختم المادة: التعاطف يحوّل اللحظة الصعبة إلى تواصل إنساني.</p><aside class=\"bk-scene\"><strong>موقف:</strong> وصلت عائلة في الثانية فجرًا بعد رحلة متأخرة، والغرفة لم تجهز بسبب مغادرة متأخرة. بدأ الأب يشرح بحدة. لم تدافع موظفة الاستقبال الليلية عن الفندق ولم تشرح سبب التأخير، بل تركته يكمل ثم قالت بهدوء: \"أرى أنها كانت ليلة طويلة جدًا على عائلتك، وأعتذر عن الانتظار. دعني أجلس الأطفال في مكان مريح بينما أتحقق من الغرفة\". فهدأ صوت الأب فورًا، وعادت إليه بعد عشر دقائق بمفتاح الغرفة.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> قبل أن تتحدث عن الحل اسأل نفسك: \"هل قلت شيئًا يُظهر أنني أفهم شعور النزيل؟\" إن لم تفعل، فابدأ من هنا.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> التعاطف يجعل النزيل يشعر بالاحترام: استمع دون مقاطعة، واعترف بالشعور، وتحدث بهدوء، واشرح المساعدة، وتابع.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: التعاطف يُشعر بالاحترام",
+                                "questions": [
+                                    {
+                                        "question": "بدأ نزيل يشتكي من انتظار طويل عند تسجيل الوصول. ما الذي يأتي أولًا؟",
+                                        "options": [
+                                            "تشرح سبب طول الطابور",
+                                            "تستمع دون مقاطعة وتعترف بشعوره",
+                                            "تعرض خصمًا فورًا",
+                                            "تطلب منه أن يهدأ"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: افهم شعوره قبل تقديم الحل، بدءًا بالاستماع دون مقاطعة."
+                                    },
+                                    {
+                                        "question": "أيٌّ مما يلي من صور التعاطف بحسب المادة؟",
+                                        "options": [
+                                            "مجاراة صوت النزيل المرتفع",
+                                            "الوعد بكل ما يطلبه النزيل",
+                                            "المتابعة حتى يعرف النزيل ما حدث",
+                                            "إخفاء الحل حتى يتم تنفيذه"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تذكر الشريحة: تابع حتى يعرف النزيل ما حدث."
+                                    },
+                                    {
+                                        "question": "قال زميل: \"إذا تعاطفت فعليّ أن أوافق على كل شيء\". ما الرد الصحيح؟",
+                                        "options": [
+                                            "نعم، التعاطف يعني الموافقة",
+                                            "التعاطف يعني احترام الشعور لا الموافقة على كل طلب",
+                                            "التعاطف خاص بكبار الشخصيات فقط",
+                                            "التعاطف يعني تجنب النزيل"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تنص المادة على أن التعاطف لا يعني الموافقة على كل طلب، بل فهم الشعور واحترامه."
+                                    },
+                                    {
+                                        "question": "بأي صوت تتحدث مع نزيل منزعج؟",
+                                        "options": [
+                                            "بصوت هادئ ومحترم",
+                                            "بصوت سريع لتنتهي بسرعة",
+                                            "بصوت مرتفع ليسمعك",
+                                            "بصوت رسمي بارد"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تذكر الشريحة: استخدم صوتًا هادئًا ومحترمًا."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "كيف تلاحظ شعور النزيل؟",
+                            "minutes": 5,
+                            "body": "<h2>ثلاثة أماكن للملاحظة</h2><p>لا يمكنك احترام شعور لم تلاحظه. نادرًا ما يقول النزيل \"أنا قلق\" أو \"أنا محبط\" بشكل مباشر، بل تظهر مشاعره في طريقة كلامه وتصرفه. وتطلب منك المادة أن تنتبه إلى ثلاثة أمور: <strong>الكلمات، ونبرة الصوت، ولغة الجسد</strong>.</p><h3>١. الكلمات</h3><p>استمع إلى الكلمات التي تحمل شعورًا، ومن أمثلة المادة:</p><ul><li><strong>يقول: انتظرت طويلًا.</strong> هذه ليست معلومة فقط، بل تعني أنه يشعر بأن وقته لم يُحترم.</li><li><strong>يقول: أنا متعب أو قلق.</strong> هنا يخبرك بشعوره مباشرة، فخذ ذلك بجدية.</li><li><strong>يكرر المشكلة أكثر من مرة.</strong> التكرار يعني غالبًا أنه لم يشعر بعد بأنه مسموع، والحل ليس مزيدًا من الشرح بل مزيدًا من الاعتراف.</li></ul><h3>٢. نبرة الصوت</h3><ul><li><strong>صوته مرتفع أو سريع:</strong> قد يدل على الغضب أو التوتر أو الاستعجال.</li><li><strong>صوته منخفض أو متردد:</strong> قد يدل على القلق أو الحرج أو عدم اليقين، كنزيل لا يعرف كيف يطلب شيئًا.</li><li><strong>يتغير صوته أثناء الحديث:</strong> أي أن شعوره يتبدل، هدوءًا أو انزعاجًا، فلاحظ التغير وتكيّف معه.</li></ul><h3>٣. لغة الجسد</h3><ul><li><strong>تعابير وجه متوترة،</strong> كالعبوس أو شد الشفتين.</li><li><strong>وقفة مغلقة أو حركة سريعة،</strong> كتشبيك الذراعين أو النقر أو المشي ذهابًا وإيابًا.</li><li><strong>يبتعد أو يبحث عن المساعدة،</strong> كأن يتراجع عن المكتب أو يتلفت بحثًا عن زميل آخر أو مدير.</li></ul><table class=\"bk-say\"><thead><tr><th>القناة</th><th>علامات تلاحظها</th></tr></thead><tbody><tr><td>الكلمات</td><td>\"انتظرت طويلًا\"؛ \"أنا متعب أو قلق\"؛ تكرار المشكلة</td></tr><tr><td>نبرة الصوت</td><td>مرتفع أو سريع؛ منخفض أو متردد؛ يتغير أثناء الحديث</td></tr><tr><td>لغة الجسد</td><td>وجه متوتر؛ وقفة مغلقة أو حركة سريعة؛ يبتعد أو يبحث عن المساعدة</td></tr></tbody></table><h2>لا تفترض، اسأل بلطف</h2><p>العلامات مؤشرات لا حقائق؛ فقد يشبك النزيل ذراعيه لأنه يشعر بالبرد فقط. وقاعدة المادة: <strong>لا تفترض شعوره — لاحظ ثم اسأل بلطف.</strong> سؤال رقيق مثل \"هل كل شيء على ما يرام في إقامتك؟\" أو \"يبدو أن يومك كان طويلًا، كيف أستطيع مساعدتك؟\" يدعوه إلى المشاركة دون أن يشعر بأنه موضع حكم.</p><aside class=\"bk-scene\"><strong>موقف:</strong> سألت نزيلة موظف الكونسيرج بصوت منخفض ومتردد عن صيدلية قريبة وهي تتلفت في البهو. لاحظ الموظف ترددها فلم يكتفِ بإعطاء العنوان، بل قال بهدوء: \"بكل سرور، هل هناك ما أستطيع ترتيبه لك؟\" فأوضحت أن طفلها مصاب بالحمى. أبلغ الموظف مشرفه الذي اتبع إجراء الفندق لمساعدة العائلة في الحصول على الدعم المناسب. ملاحظة الصوت حولت سؤالًا عن الاتجاه إلى اهتمام حقيقي.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> إذا كرر النزيل النقطة نفسها مرتين، فتوقف عن الشرح واعترف بشعوره: \"أتفهم، الانتظار كان مزعجًا فعلًا\".</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> يظهر الشعور في الكلمات ونبرة الصوت ولغة الجسد. لاحظ العلامات، ولا تفترض، واسأل بلطف.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: ملاحظة الشعور",
+                                "questions": [
+                                    {
+                                        "question": "كرر نزيل الشكوى نفسها للمرة الثالثة. ماذا يدل ذلك غالبًا؟",
+                                        "options": [
+                                            "أنه يستمتع بالحديث مع الموظفين",
+                                            "أنه لم يشعر بعد بأنه مسموع",
+                                            "أنه لم يفهم لغتك",
+                                            "أنه يريد مغادرة الفندق"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تذكر المادة تكرار المشكلة أكثر من مرة ضمن علامات الكلمات."
+                                    },
+                                    {
+                                        "question": "أيٌّ مما يلي من علامات لغة الجسد في المادة؟",
+                                        "options": [
+                                            "صوت منخفض أو متردد",
+                                            "قوله: أنا قلق",
+                                            "وقفة مغلقة أو حركة سريعة",
+                                            "سؤاله عن كلمة مرور الإنترنت"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "الوقفة المغلقة أو الحركة السريعة مذكورة تحت لغة الجسد."
+                                    },
+                                    {
+                                        "question": "لاحظت نزيلًا عابسًا ويشبك ذراعيه. ماذا تفعل؟",
+                                        "options": [
+                                            "تفترض أنه غاضب وتستدعي الأمن",
+                                            "تتجاهل ذلك لأنه لم يشتكِ",
+                                            "تطلب منه أن يسترخي",
+                                            "تسأله بلطف إن كان كل شيء على ما يرام"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: لا تفترض شعوره — لاحظ ثم اسأل بلطف."
+                                    },
+                                    {
+                                        "question": "أصبح صوت النزيل أعلى أثناء حديثه. أي قناة تعطيك هذه الإشارة؟",
+                                        "options": [
+                                            "نبرة الصوت",
+                                            "الكلمات",
+                                            "لغة الجسد",
+                                            "لا شيء، فهي غير مهمة"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "الصوت المرتفع أو المتغير أثناء الحديث من علامات نبرة الصوت."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "منهج التعاطف",
+                    "lessons": [
+                        {
+                            "title": "خطوات بسيطة وعبارات تُظهر التعاطف",
+                            "minutes": 6,
+                            "body": "<h2>استمع أولًا</h2><p>تقدم المادة تسلسلًا قصيرًا تتبعه كلما شارك النزيل مشكلة أو شعورًا، ويبدأ بتوجيه واحد: <strong>استمع أولًا، ودع النزيل يكمل كلامه.</strong> وكل ما بعده يعتمد عليه.</p><ol><li><strong>استمع دون مقاطعة أو دفاع.</strong> ردة الفعل الطبيعية عند انتقاد الفندق هي الشرح أو الدفاع عن قسمك، فتمهّل؛ لأن الدفاع المبكر يوحي للنزيل بأن شعوره خاطئ.</li><li><strong>اعترف بالشعور الذي سمعته،</strong> وسمّه ببساطة: \"أتفهم أن هذا كان مزعجًا\".</li><li><strong>اعتذر عن التجربة المزعجة.</strong> أنت تعتذر عن التجربة التي مر بها، لا بالضرورة عن خطأ لم يتأكد بعد.</li><li><strong>اذكر الخطوة التي ستقوم بها،</strong> بوضوح: من سيفعل ماذا، ومتى تقريبًا.</li><li><strong>تابع مع النزيل بعد تنفيذها،</strong> بالعودة إليه أو الاتصال به للتأكد من حل المشكلة.</li></ol><blockquote class=\"bk-quote\">ابدأ بالشعور، ثم انتقل إلى الحل.</blockquote><p>إذا قفزت مباشرة إلى الحل فقد يبقى النزيل شاعرًا بأنه غير مسموع، وإذا اكتفيت بالاعتراف دون تنفيذ فسيشعر بأنك تجامله فقط.</p><h2>أربع عبارات تُظهر التعاطف</h2><table class=\"bk-say\"><thead><tr><th>الغرض</th><th>العبارة</th></tr></thead><tbody><tr><td>أتفهم شعورك</td><td>\"أتفهم أن هذا الموقف أزعجك.\"</td></tr><tr><td>أرى أن الانتظار أتعبك</td><td>\"أرى أن الانتظار كان متعبًا.\"</td></tr><tr><td>أعتذر عن التجربة</td><td>\"أعتذر عن التجربة التي مررت بها.\"</td></tr><tr><td>دعني أساعدك</td><td>\"دعني أساعدك في الخطوة التالية.\"</td></tr></tbody></table><p>العبارتان الأوليان تُظهران أنك لاحظت الشعور، والثالثة تعتذر عن التجربة، والرابعة تنقل الحديث إلى التنفيذ.</p><h2>عبارة صادقة واحدة تكفي</h2><p>نصيحة المادة: <strong>استخدم عبارة صادقة وبسيطة تناسب الموقف.</strong> تكديس العبارات (\"أتفهم، أرى، آسف جدًا، أعتذر...\") يبدو محفوظًا وقد يزيد انزعاج النزيل. اختر العبارة التي تناسب ما لاحظته؛ فإن كان قد انتظر فاعترف بالانتظار، ثم انتقل إلى المساعدة. والصدق يظهر أيضًا في وجهك وصوتك؛ فالكلمات نفسها تبدو فارغة إذا قيلت والعين على الشاشة.</p><aside class=\"bk-scene\"><strong>موقف:</strong> اتصل نزيل من رجال الأعمال بالتدبير الفندقي منزعجًا لأن غرفته لم تُنظَّف قبل اجتماع مرئي مهم. تركته الموظفة يكمل دون أن تشرح جدول العمل، ثم قالت: \"أتفهم أن هذا صعّب عليك فترة ما بعد الظهر، وأعتذر عن ذلك. سأرسل من ينظف غرفتك خلال خمس عشرة دقيقة\". وبعد الانتهاء اتصلت به: \"غرفتك جاهزة، هل تحتاج شيئًا آخر قبل اجتماعك؟\" فشكرها باسمها.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> عبارة \"أعتذر عن التجربة\" تختلف عن \"الخطأ خطؤنا\". اعتذر عن الشعور، واترك الوقائع لتُتحقق قبل الاعتراف بخطأ محدد.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> استمع دون دفاع، واعترف، واعتذر، واذكر الخطوة التالية، وتابع. واستخدم عبارة صادقة واحدة تناسب الموقف.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الخطوات والعبارات",
+                                "questions": [
+                                    {
+                                        "question": "انتقد نزيل بطء الخدمة في المطعم، وأول ما خطر لك أن تشرح أن المطبخ مزدحم. بماذا تنصح المادة؟",
+                                        "options": [
+                                            "تشرح فورًا ليفهم النزيل",
+                                            "تستمع دون مقاطعة أو دفاع",
+                                            "تحوله إلى مدير المطعم",
+                                            "توافقه على أن المطبخ سيئ الإدارة"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "الخطوة الأولى: استمع دون مقاطعة أو دفاع."
+                                    },
+                                    {
+                                        "question": "ما الذي يأتي بعد الاعتراف والاعتذار؟",
+                                        "options": [
+                                            "إنهاء المحادثة",
+                                            "طلب تقييم إيجابي",
+                                            "ذكر الخطوة التي ستقوم بها",
+                                            "تكرار الاعتذار عدة مرات"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تذكر المادة: اذكر الخطوة التي ستقوم بها، ثم تابع بعد تنفيذها."
+                                    },
+                                    {
+                                        "question": "انتظر نزيل ثلاثين دقيقة سيارة أجرة حجزتها له. أي عبارة أنسب؟",
+                                        "options": [
+                                            "\"أرى أن الانتظار كان متعبًا.\"",
+                                            "\"هكذا هي سيارات الأجرة.\"",
+                                            "\"أتفهم، أرى، آسف جدًا، أعتذر.\"",
+                                            "\"اهدأ من فضلك.\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "عبارة \"أرى أن الانتظار أتعبك\" تناسب الانتظار، والمادة تنصح بعبارة صادقة وبسيطة تناسب الموقف."
+                                    },
+                                    {
+                                        "question": "لماذا تتابع مع النزيل بعد حل المشكلة؟",
+                                        "options": [
+                                            "لتطلب إكرامية",
+                                            "المتابعة اختيارية إن لم يطلبها",
+                                            "لتجمع نموذج شكوى",
+                                            "ليعرف أن الأمر تم ويشعر بالاهتمام"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "الخطوة الأخيرة: تابع مع النزيل بعد تنفيذ الحل."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "التعاطف في الممارسة",
+                    "lessons": [
+                        {
+                            "title": "حدود التعاطف وافعل وتجنب والنزيل شديد الانفعال",
+                            "minutes": 7,
+                            "body": "<h2>ما الذي تفعله؟ وما الذي تتجنبه؟</h2><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنب</th></tr></thead><tbody><tr><td>حافظ على صوت هادئ</td><td>أن تقول له: اهدأ</td></tr><tr><td>استخدم كلمات النزيل نفسها</td><td>أن تقول: هذه ليست مشكلتي</td></tr><tr><td>اعترف بشعوره بوضوح</td><td>أن تجادله أو تقول: أنت مخطئ</td></tr><tr><td>اسأل: ما المهم لك الآن؟</td><td>أن تكرر: هذا هو النظام فقط</td></tr><tr><td>تابع معه بعد تنفيذ الحل</td><td>أن تعده بشيء لا تستطيع تنفيذه</td></tr></tbody></table><p>استخدام كلمات النزيل نفسها أسلوب مؤثر؛ فإذا قال \"الغرفة باردة جدًا\" فردّ بالكلمة نفسها ولا تقل \"باردة قليلًا\". وسؤال \"ما المهم لك الآن؟\" يفيد عندما يذكر النزيل عدة شكاوى وتحتاج إلى معرفة من أين تبدأ.</p><blockquote class=\"bk-quote\">احترم الشعور، وحافظ على حدود الخدمة.</blockquote><h2>التعاطف لا يعني الموافقة</h2><ol><li><strong>\"أفهم شعورك\"</strong> لا يعني قبول طلب غير ممكن.</li><li><strong>\"أعتذر عن التجربة\"</strong> لا يعني الاعتراف بخطأ غير مؤكد.</li><li><strong>\"أريد مساعدتك\"</strong> لا يعني وعدًا لا تستطيع تنفيذه.</li><li><strong>\"سأبحث عن حل\"</strong> يعني اتخاذ خطوة واضحة ومتابعتها.</li></ol><p>والقاعدة: <strong>افهم شعوره، ثم قدّم ما تستطيع فعله.</strong></p><h2>عندما يكون النزيل شديد الانفعال</h2><p>أحيانًا يكون النزيل غاضبًا جدًا، وهنا يبقى التعاطف مطلوبًا، لكن السلامة مطلوبة أيضًا. وتقدم المادة قائمتين:</p><h3>ماذا تفعل؟</h3><ul><li>استمع إلى المشكلة.</li><li>اعترف بالشعور.</li><li>اذكر الخطوة التالية.</li><li>اطلب دعم المشرف عند الحاجة.</li><li>تابع النزيل بعد هدوء الموقف.</li></ul><h3>حافظ على الأمان</h3><ul><li>لا تدخل في جدال.</li><li>حافظ على مسافة مناسبة.</li><li>ابقَ هادئًا ومحترمًا.</li><li>اطلب المشرف عند وجود تهديد.</li><li>اتبع إجراءات الفندق عند الخطر.</li></ul><blockquote class=\"bk-quote\">التعاطف لا يلغي إجراءات السلامة.</blockquote><aside class=\"bk-scene\"><strong>موقف:</strong> كان نزيل يصرخ في الاستقبال لأن حجزه يظهر بتواريخ خاطئة، ويطالب بثلاث ليالٍ مجانية. حافظت الموظفة على صوت هادئ وعلى المكتب بينهما، وقالت: \"أتفهم أنك منزعج جدًا، وأعتذر عن هذه التجربة. لا أستطيع أن أعدك بليالٍ مجانية، لكنني سأطلب من المشرف مراجعة الحجز معك الآن\". وعندما ضرب المكتب بيده واقترب منها، اتصلت بهدوء بالمدير المناوب كما ينص الإجراء. وفي المساء تأكدت مع النزيل من تصحيح التواريخ.</aside><h2>خاتمة</h2><p>تختم المادة بقولها: التعاطف يبدأ بالاستماع ويظهر في كلامك وتصرفك. استمع، واعترف، وساعد، وتابع، واجعل النزيل يشعر أنه ليس وحده.</p><aside class=\"bk-key\"><strong>الخلاصة:</strong> احترم الشعور دون وعود مبالغ فيها. ومع النزيل شديد الانفعال: ابقَ هادئًا، وحافظ على المسافة، واطلب المشرف، واتبع إجراءات السلامة.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: التعاطف في الممارسة",
+                                "questions": [
+                                    {
+                                        "question": "يصرخ نزيل بسبب إزعاج في غرفته. أي رد يجب تجنبه؟",
+                                        "options": [
+                                            "\"أتفهم أن الإزعاج كان مزعجًا لك.\"",
+                                            "\"ما المهم لك الآن؟\"",
+                                            "\"اهدأ من فضلك.\"",
+                                            "\"دعني أساعدك في الخطوة التالية.\""
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "قول \"اهدأ\" للنزيل من قائمة ما يجب تجنبه."
+                                    },
+                                    {
+                                        "question": "طلب نزيل ترقية مجانية لا تملك صلاحية منحها. كيف تتعاطف بالشكل الصحيح؟",
+                                        "options": [
+                                            "تعده بالترقية لتهدئته",
+                                            "تعترف بشعوره وتقدم ما تستطيع فعله",
+                                            "تقول: هذا هو النظام فقط",
+                                            "تقول له إنه مخطئ في طلبه"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "التعاطف لا يعني الموافقة: افهم شعوره، ثم قدم ما تستطيع فعله."
+                                    },
+                                    {
+                                        "question": "ماذا لا تعني عبارة \"أعتذر عن التجربة\"؟",
+                                        "options": [
+                                            "احترام شعور النزيل",
+                                            "الاعتراف بخطأ غير مؤكد",
+                                            "الاهتمام بتجربة الإقامة",
+                                            "الاستعداد للمساعدة"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة إن الاعتذار لا يعني الاعتراف بخطأ غير مؤكد."
+                                    },
+                                    {
+                                        "question": "اقترب نزيل شديد الانفعال منك وقال كلامًا فيه تهديد. ماذا تفعل؟",
+                                        "options": [
+                                            "تجادله بحزم لتُظهر ثقتك",
+                                            "تحافظ على مسافة مناسبة وتبقى هادئًا وتطلب المشرف",
+                                            "تبتعد دون أن تقول شيئًا",
+                                            "تعرض تعويضًا لإنهاء الموقف"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "قائمة \"حافظ على الأمان\" تقول: حافظ على مسافة مناسبة، وابقَ هادئًا، واطلب المشرف عند وجود تهديد."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

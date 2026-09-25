@@ -1,0 +1,545 @@
+{
+    "slug": "guest-farewell-and-lasting-impression",
+    "category": "personalised-service",
+    "level": "foundation",
+    "source_pdf": "Guest-Farewell-and-Lasting-Impression-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/guest-farewell-and-lasting-impression.webp",
+    "videos": [
+        {
+            "id": "bwcyXcOpWVs",
+            "title": "The Secret Ingredients of Great Hospitality | Will Guidara | TED",
+            "channel": "TED",
+            "why": "A restaurateur explains how small, sincere personal moments create memories guests keep long after they leave, which is exactly what a warm farewell aims to do."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Guest Farewell and Lasting Impression",
+            "subtitle": "Close the stay with care, help and a sincere goodbye",
+            "short_description": "Learn to close every stay well: check the experience, assist with departure, thank, invite back and say farewell warmly, and handle last-minute concerns.",
+            "description": "<p>Guests may forget many details of their stay, but they remember how you made them feel as they left. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows hotel colleagues how to turn departure into a lasting positive impression.</p><p>You will learn the three stages of closing a stay, five simple farewell steps, short professional phrases, what to do and avoid at departure, how to handle a concern raised on the way out and when to call the supervisor before the guest leaves.</p>",
+            "requirements": "No prior training is needed; the course suits any colleague who meets guests at check-out, in the lobby or at the entrance.",
+            "outcomes": [
+                "Explain why the last moment stays in the guest's memory",
+                "Close the stay in three stages: check, assist, thank and farewell",
+                "Apply the five farewell steps with warmth and full attention",
+                "Use one or two sincere farewell phrases without pressure",
+                "Handle departure concerns and know when to call the supervisor"
+            ],
+            "faqs": [
+                {
+                    "question": "What are the five farewell steps?",
+                    "answer": "Make sure departure procedures are complete, ask if the guest needs help, thank them for choosing the hotel, use their name if known and appropriate, and say goodbye with eye contact, a smile and a clear phrase."
+                },
+                {
+                    "question": "Can I ask the guest for a review at check-out?",
+                    "answer": "Ask for feedback respectfully, but do not ask for a high rating in front of others or pressure the guest to write a comment or mention your name."
+                },
+                {
+                    "question": "What if the guest raises a complaint while leaving?",
+                    "answer": "Listen without interrupting, thank them and apologise for the experience, fix it quickly within your authority if possible, then record it and inform the person responsible. Call the supervisor for serious or unresolved issues."
+                }
+            ],
+            "meta_title": "Guest Farewell and Lasting Impression Training",
+            "meta_description": "Hotel training on guest departure: check, assist, thank, invite and farewell steps, sincere phrases, handling concerns and when to call the supervisor.",
+            "focus_keyword": "hotel guest farewell",
+            "chapters": [
+                {
+                    "title": "Why the Last Moment Matters",
+                    "lessons": [
+                        {
+                            "title": "The Last Moment Stays with the Guest",
+                            "minutes": 5,
+                            "body": "<h2>A lasting memory</h2><p>A stay has a beginning, a middle and an end, and the end carries more weight than we often think. The deck's message is clear: <strong>the last moment stays in the guest's memory</strong>, and the impression it leaves lasts after departure. A guest may forget the colour of the carpet or the name of the restaurant, but they remember whether someone smiled, helped with the bags and said a real goodbye.</p><p>The deck sums up the whole approach in five words: <strong>Check, Assist, Thank, Invite, Farewell</strong>. It asks us to close the experience with care, help and a sincere farewell.</p><h2>Five reasons a good farewell matters</h2><ul><li><strong>A good farewell shows care until the very end.</strong> If attention drops as soon as the bill is settled, the guest notices, and the warmth of the whole stay is weakened.</li><li><strong>It allows a concern to be handled before departure.</strong> Check-out is often the last chance to hear about a problem while the guest is still with us and something can still be done.</li><li><strong>It eases the tiredness of luggage, transport and waiting.</strong> Departure days are stressful: packing, checking flights, arranging a car. Practical help at this moment is remembered.</li><li><strong>It thanks the guest for choosing the hotel.</strong> Guests have many choices. A sincere thank-you recognises that.</li><li><strong>It encourages the guest to return, without pressure or exaggeration.</strong> A warm invitation is welcome; a hard sell or an over-the-top speech is not.</li></ul><blockquote class=\"bk-quote\">Guests may forget many details, but they remember how you said goodbye.</blockquote><h2>Farewell is part of the service</h2><p>It is easy to think of check-out as an administrative task: print the bill, take the payment, return the card. The deck's closing slide reminds us that <strong>the last impression is part of the guest's experience</strong>. Every colleague the guest passes on the way out, from the front desk to the bell desk and the door, contributes to that last impression.</p><p>That does not require long speeches or special gifts. It requires attention: looking up from the screen, noticing the guest who is struggling with a suitcase, checking that the taxi has arrived, and saying goodbye as if you mean it.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A couple checks out after a three-night stay that had a small problem on the first night with the air conditioning, which was fixed. At the desk, the receptionist asks, \"How was the rest of your stay? I hope the room was comfortable after the first night.\" The guests are surprised she remembered and say it was perfect. She thanks them, confirms their airport car is outside and walks them to the door. The review they write later mentions the goodbye, not the air conditioning.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> The last moment stays with the guest. A good farewell shows care to the end, catches concerns, eases departure, thanks the guest and leaves the door open to return.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: The last moment",
+                                "questions": [
+                                    {
+                                        "question": "According to the deck, what does a guest remember most at departure?",
+                                        "options": [
+                                            "The exact amount on the bill",
+                                            "How you made them feel as they left",
+                                            "The number of their room",
+                                            "The check-out time policy"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says guests may forget details but remember how you made them feel at departure."
+                                    },
+                                    {
+                                        "question": "Why is check-out a good time to hear about a concern?",
+                                        "options": [
+                                            "It can still be handled before the guest leaves",
+                                            "It is when guests are least busy",
+                                            "It lets you add charges",
+                                            "It is required for every guest"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "A good farewell allows a concern to be handled before departure."
+                                    },
+                                    {
+                                        "question": "How should you invite a guest to return?",
+                                        "options": [
+                                            "With a long speech about hotel offers",
+                                            "By insisting they book now",
+                                            "Sincerely, without pressure or exaggeration",
+                                            "Only if they ask about returning"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The slide says a good farewell encourages return without pressure or exaggeration."
+                                    },
+                                    {
+                                        "question": "A guest is struggling with heavy bags and waiting for a car on departure day. Which benefit of a good farewell applies?",
+                                        "options": [
+                                            "Thanking them for their choice",
+                                            "Selling another stay",
+                                            "Collecting a review",
+                                            "Easing the tiredness of luggage, transport and waiting"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck lists easing the tiredness of luggage, transport and waiting."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Close the Stay in Three Stages",
+                            "minutes": 5,
+                            "body": "<h2>Three stages of a good ending</h2><p>The deck divides the end of a stay into three stages: <strong>Check, Assist and Farewell</strong>. Each stage has three simple actions.</p><h3>1. Check the experience</h3><ul><li><strong>Ask kindly about the stay.</strong> A simple, open question such as \"How was your stay with us?\" invites the guest to share. Avoid questions that only allow \"yes\", such as \"Everything was fine, right?\"</li><li><strong>Listen to any comment until the end.</strong> If the guest mentions something, do not interrupt to explain or to hurry the payment. Let them finish.</li><li><strong>Deal with what you can before they leave.</strong> A wrong charge, a missing item, a request for a receipt copy: fix what you can on the spot.</li></ul><h3>2. Assist with departure</h3><ul><li><strong>Offer help with luggage.</strong> Arrange a bell colleague or a trolley when needed.</li><li><strong>Confirm the transport or the direction.</strong> Check whether the guest has a car, a taxi or directions to where they are going next.</li><li><strong>Make the departure procedures easy and quick.</strong> Prepare the bill in advance where possible, explain it clearly and do not keep the guest waiting unnecessarily.</li></ul><h3>3. Thank and say farewell</h3><ul><li><strong>Thank them for staying with us.</strong></li><li><strong>Wish them a safe journey and a happy day.</strong></li><li><strong>Invite them back in a sincere way.</strong></li></ul><table class=\"bk-say\"><thead><tr><th>Stage</th><th>What you do</th></tr></thead><tbody><tr><td>Check</td><td>Ask about the stay; listen to the end; handle what you can</td></tr><tr><td>Assist</td><td>Offer luggage help; confirm transport or direction; keep departure easy and quick</td></tr><tr><td>Farewell</td><td>Thank them; wish a safe journey; invite them back sincerely</td></tr></tbody></table><h2>The person, not the payment</h2><p>The deck adds an important warning: <strong>do not let payment procedures stop you from caring about the guest as a person.</strong> At check-out, it is tempting to focus on the screen, the card machine and the invoice. These tasks matter, but they should not replace eye contact, a friendly word or noticing that the guest looks rushed. Do the process while keeping your attention on the guest.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest arrives at the desk in a hurry, saying her flight leaves in two hours. The receptionist already has her bill ready. While the payment goes through, she asks, \"How was your stay?\" The guest mentions a minibar item she did not take. The receptionist removes it immediately, then asks, \"Do you have transport to the airport?\" The guest does not, so the receptionist asks the bell desk to call a taxi and has her bags brought down. The whole check-out takes five minutes, and the guest leaves thanking her.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Prepare express check-outs the night before for guests with early departures, so the morning can focus on the guest rather than the paperwork.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Check the experience, assist with departure, then thank and say farewell, and never let the payment process replace care for the person.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Three stages",
+                                "questions": [
+                                    {
+                                        "question": "During check-out a guest mentions a charge she does not recognise. Which stage are you in, and what do you do?",
+                                        "options": [
+                                            "Farewell: thank her and let her go",
+                                            "Assist: call a taxi first",
+                                            "Check: listen to the end and handle what you can before she leaves",
+                                            "None: tell her to email the hotel later"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The Check stage says listen to any comment until the end and handle what you can before departure."
+                                    },
+                                    {
+                                        "question": "Which action belongs to the Assist stage?",
+                                        "options": [
+                                            "Confirm the transport or direction",
+                                            "Ask kindly about the stay",
+                                            "Invite them back sincerely",
+                                            "Thank them for staying"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Assist includes offering luggage help, confirming transport or direction and keeping departure easy."
+                                    },
+                                    {
+                                        "question": "You are processing a payment and the card machine is slow. What should you avoid?",
+                                        "options": [
+                                            "Chatting kindly with the guest",
+                                            "Asking about their stay",
+                                            "Offering help with luggage",
+                                            "Focusing only on the machine and ignoring the guest"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says do not let payment procedures stop you caring about the guest as a person."
+                                    },
+                                    {
+                                        "question": "Which is the best question to check the guest's experience?",
+                                        "options": [
+                                            "\"Everything was fine, right?\"",
+                                            "\"How was your stay with us?\"",
+                                            "\"Did you use the minibar?\"",
+                                            "\"Can you pay now?\""
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck asks you to ask kindly about the stay; an open question invites a real answer."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "The Farewell Method",
+                    "lessons": [
+                        {
+                            "title": "Five Farewell Steps and Simple Phrases",
+                            "minutes": 6,
+                            "body": "<h2>Warm and professional</h2><p>The deck describes the ideal farewell in two words: <strong>warm and professional</strong>. Its guiding line is: <strong>end the stay with care, not with memorised words.</strong> A goodbye that sounds like a script can feel cold, even when the words are polite.</p><h2>Five simple farewell steps</h2><ol><li><strong>Make sure departure procedures are complete.</strong> The bill is settled, keys are returned, any deposit is handled and the guest has the documents they need. Nothing should call them back to the desk later.</li><li><strong>Ask if they need help.</strong> Luggage, a taxi, directions, storing bags until a later flight: offer before they have to ask.</li><li><strong>Thank them for choosing the hotel.</strong> Keep it short and sincere.</li><li><strong>Use their name if it is known and appropriate.</strong> Using the guest's name makes the goodbye personal. Use it naturally, and only when you are sure of it and the setting is suitable.</li><li><strong>Say goodbye with eye contact, a smile and a clear phrase.</strong> Look at the guest, smile genuinely and say one clear closing sentence.</li></ol><blockquote class=\"bk-quote\">Do not say goodbye to the guest while looking at a screen or talking to a colleague.</blockquote><p>The deck highlights this last point in English too: give the guest your attention; do not farewell them while looking at a screen. A goodbye said to the keyboard tells the guest they are already forgotten.</p><h2>Simple, professional phrases</h2><p>The deck offers four short phrases, each with a purpose:</p><table class=\"bk-say\"><thead><tr><th>Purpose</th><th>Phrase</th></tr></thead><tbody><tr><td>Thank</td><td>\"Thank you for choosing to stay with us.\"</td></tr><tr><td>Care</td><td>\"May I help you with your luggage or transport?\"</td></tr><tr><td>Return</td><td>\"We would be happy to welcome you again.\"</td></tr><tr><td>Journey</td><td>\"We wish you a safe journey and a happy day.\"</td></tr></tbody></table><h2>One or two phrases, said sincerely</h2><p>The rule is: <strong>choose one or two phrases and say them sincerely, and do not turn the farewell into a long speech.</strong> In English: use one or two sincere phrases and keep the farewell natural. A guest with a taxi waiting does not want a list of hotel facilities or three different versions of \"thank you\". Choose what fits the moment: the care phrase for a family with luggage, the journey phrase for a guest heading to the airport, the return phrase for a regular guest.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A regular business guest, Mr. Al-Harbi, checks out on a Thursday afternoon. The receptionist confirms the bill is settled and his parking is validated, then asks if he needs help with his bags. He says no. She looks up, smiles and says, \"Thank you for staying with us again, Mr. Al-Harbi. We wish you a safe journey and would be happy to welcome you next week.\" It takes ten seconds, and it is personal, warm and professional.</aside><aside class=\"bk-note\"><strong>Tip:</strong> If you are on the phone when a departing guest passes, pause briefly, make eye contact and smile or wave. Even a small gesture is better than no farewell.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Complete the procedures, offer help, thank, use the name when appropriate and say goodbye with eye contact and a smile. One or two sincere phrases are enough.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Farewell steps and phrases",
+                                "questions": [
+                                    {
+                                        "question": "A guest is leaving while you are finishing an email. What does the deck say?",
+                                        "options": [
+                                            "Finish the email and say goodbye without looking up",
+                                            "Let a colleague say goodbye",
+                                            "Stop, look at the guest and say goodbye with a smile",
+                                            "Wave without stopping your work"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says do not say goodbye while looking at a screen or talking to a colleague."
+                                    },
+                                    {
+                                        "question": "When should you use the guest's name in the farewell?",
+                                        "options": [
+                                            "Always, even if you are unsure of it",
+                                            "Never, it is too personal",
+                                            "Only for VIP guests",
+                                            "When it is known and appropriate"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The fourth step is to use the name if it is known and appropriate."
+                                    },
+                                    {
+                                        "question": "A family with a lot of luggage is at the desk. Which phrase fits best?",
+                                        "options": [
+                                            "\"May I help you with your luggage or transport?\"",
+                                            "\"Please rate us five stars.\"",
+                                            "\"Here is a list of all our facilities.\"",
+                                            "\"Your bill is ready, goodbye.\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The Care phrase offers help with luggage or transport."
+                                    },
+                                    {
+                                        "question": "How long should the farewell be?",
+                                        "options": [
+                                            "A detailed speech about the hotel",
+                                            "One or two sincere phrases, kept natural",
+                                            "At least five phrases",
+                                            "No words, just the receipt"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says choose one or two sincere phrases and do not make the farewell a long speech."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Farewell in Practice",
+                    "lessons": [
+                        {
+                            "title": "Do and Avoid, Departure Concerns and the Supervisor",
+                            "minutes": 7,
+                            "body": "<h2>Do and avoid at departure</h2><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Stop and look at the guest with attention</td><td>Asking for a high rating in front of others</td></tr><tr><td>Ask if they need help</td><td>Pressuring them to write a comment or mention your name</td></tr><tr><td>Thank them with a sincere, short phrase</td><td>Arguing about a comment at departure</td></tr><tr><td>Pass their comment to the supervisor when needed</td><td>Ignoring them once payment is finished</td></tr><tr><td>See them off until they leave the reception area</td><td>Discussing their stay details in front of unauthorised people</td></tr></tbody></table><blockquote class=\"bk-quote\">Ask for feedback respectfully, and do not ask for praise or a rating in front of others.</blockquote><p>Privacy matters at departure. Lobbies are busy, and bill details, room numbers or complaints should never be discussed where other people can hear.</p><h2>When the guest shares a concern at departure</h2><p>The deck gives four steps:</p><ol><li><strong>Listen:</strong> let the guest finish without interrupting.</li><li><strong>Acknowledge:</strong> thank them for telling you and apologise for the experience.</li><li><strong>Recover if possible:</strong> offer a quick solution within your authority.</li><li><strong>Record and follow up:</strong> record the comment and inform the person responsible for follow-up.</li></ol><blockquote class=\"bk-quote\">Do not let a quick departure be a reason to neglect an important comment.</blockquote><h2>When to call the supervisor before the guest leaves</h2><p>Call the supervisor when there is:</p><ul><li>An important complaint that has not been resolved.</li><li>A dispute about an invoice or a payment.</li><li>Lost luggage or belongings.</li><li>A request for compensation or a higher authority.</li><li>Clear anger or dissatisfaction from the guest.</li></ul><h3>Stay responsible for the last moment</h3><ul><li>Listen and record the problem briefly.</li><li>Explain to the supervisor what happened and what the guest wants.</li><li>Do not make the guest repeat the story from the beginning.</li><li>Stay available until the supervisor takes over the case.</li><li>Say goodbye to the guest respectfully, whatever the outcome.</li></ul><aside class=\"bk-scene\"><strong>Scene:</strong> While checking out, a guest says quietly that a laundry item never came back and that he is disappointed. The receptionist thanks him for telling her and apologises. She checks with laundry, but the item cannot be found in time. Because it is lost belongings, she calls the duty manager and briefs her away from the guest: the item, the room, and that he leaves in thirty minutes. The manager takes over without asking him to repeat the story. The receptionist stays nearby, and when the guest leaves, she thanks him and wishes him a safe journey.</aside><blockquote class=\"bk-quote\">The last chance to correct the experience may be at departure. Do not waste it.</blockquote><h2>Closing thought</h2><p>The deck ends: close the experience with sincere care; help, thank, say goodbye and leave the door open to return. The last impression is part of the guest's experience.</p><aside class=\"bk-key\"><strong>Key takeaway:</strong> Give full attention to the end, protect privacy, never pressure for ratings, handle departure concerns with Listen, Acknowledge, Recover, Record, and involve the supervisor when needed.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Farewell in practice",
+                                "questions": [
+                                    {
+                                        "question": "A guest is happy at check-out. What should you avoid?",
+                                        "options": [
+                                            "Thanking them with a short, sincere phrase",
+                                            "Asking loudly for a five-star rating in front of other guests",
+                                            "Asking if they need help",
+                                            "Seeing them off from reception"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says avoid asking for a high rating in front of others."
+                                    },
+                                    {
+                                        "question": "A guest mentions a noisy room as she leaves. What is the first step?",
+                                        "options": [
+                                            "Record it and let her go",
+                                            "Explain the cause of the noise",
+                                            "Offer compensation immediately",
+                                            "Let her finish without interrupting"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "When a concern is raised at departure, the first step is Listen: let the guest finish without interruption."
+                                    },
+                                    {
+                                        "question": "A guest disputes a charge on the invoice and cannot be satisfied. What should you do?",
+                                        "options": [
+                                            "Call the supervisor and brief them so the guest does not repeat the story",
+                                            "Argue until the guest accepts the charge",
+                                            "Remove the charge without authority",
+                                            "Ask the guest to email later"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "A dispute about an invoice or payment is a reason to call the supervisor, and the guest should not have to repeat the story."
+                                    },
+                                    {
+                                        "question": "The supervisor has decided the guest's complaint cannot be resolved as the guest wished. How should you say goodbye?",
+                                        "options": [
+                                            "Avoid the guest so as not to upset them more",
+                                            "Let the supervisor do everything",
+                                            "Say goodbye respectfully, whatever the outcome",
+                                            "Apologise for the supervisor's decision"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says say goodbye to the guest respectfully, whatever the outcome."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "توديع النزيل وترك الانطباع الأخير",
+            "subtitle": "اختم التجربة باهتمام ومساعدة ووداع صادق",
+            "short_description": "تعلّم كيف تختم كل إقامة بشكل جيد: تحقق من التجربة، وساعد في المغادرة، واشكر، وادعُ للعودة، وودّع بدفء، وتعامل مع ملاحظات اللحظة الأخيرة.",
+            "description": "<p>قد ينسى النزيل تفاصيل كثيرة من إقامته، لكنه يتذكر كيف ودّعته. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتعلّم الموظفين كيف يحولون لحظة المغادرة إلى انطباع إيجابي يبقى.</p><p>ستتعرف على مراحل ختام الإقامة الثلاث، وخطوات التوديع الخمس، وعبارات مهنية قصيرة، وما تفعله وما تتجنبه عند المغادرة، وكيف تتعامل مع ملاحظة يذكرها النزيل وهو يغادر، ومتى تستدعي المشرف قبل مغادرته.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظف يقابل النزلاء عند المغادرة أو في البهو أو عند المدخل.",
+            "outcomes": [
+                "اشرح لماذا تبقى اللحظة الأخيرة في ذاكرة النزيل",
+                "اختم الإقامة في ثلاث مراحل: تحقق، ساعد، اشكر وودّع",
+                "طبّق خطوات التوديع الخمس بدفء وانتباه كامل",
+                "استخدم عبارة أو اثنتين بصدق ودون ضغط على النزيل",
+                "تعامل مع ملاحظات المغادرة واعرف متى تستدعي المشرف"
+            ],
+            "faqs": [
+                {
+                    "question": "ما خطوات التوديع الخمس؟",
+                    "answer": "تأكد أن إجراءات المغادرة مكتملة، واسأل إن كان يحتاج إلى مساعدة، واشكره على اختياره الفندق، واستخدم اسمه إذا كان معروفًا ومناسبًا، وودّعه بنظرة وابتسامة وعبارة واضحة."
+                },
+                {
+                    "question": "هل أطلب من النزيل تقييمًا عند المغادرة؟",
+                    "answer": "اطلب الملاحظات باحترام، لكن لا تسأله عن تقييم مرتفع أمام الآخرين، ولا تضغط عليه لكتابة تعليق أو ذكر اسمك."
+                },
+                {
+                    "question": "ماذا أفعل إذا ذكر النزيل شكوى أثناء مغادرته؟",
+                    "answer": "استمع دون مقاطعة، واشكره واعتذر عن التجربة، وقدّم حلًا سريعًا ضمن صلاحيتك إن أمكن، ثم سجّل الملاحظة وأبلغ المسؤول. واطلب المشرف في الحالات المهمة أو غير المحلولة."
+                }
+            ],
+            "meta_title": "توديع النزيل وترك الانطباع الأخير",
+            "meta_description": "تدريب فندقي على توديع النزيل: خطوات تحقق وساعد واشكر وادعُ وودّع، وعبارات صادقة، والتعامل مع الملاحظات، ومتى تستدعي المشرف.",
+            "focus_keyword": "توديع النزيل في الفندق",
+            "chapters": [
+                {
+                    "title": "لماذا اللحظة الأخيرة مهمة",
+                    "lessons": [
+                        {
+                            "title": "اللحظة الأخيرة تبقى في ذاكرة النزيل",
+                            "minutes": 5,
+                            "body": "<h2>انطباع يبقى بعد الرحيل</h2><p>للإقامة بداية ووسط ونهاية، والنهاية أثقل وزنًا مما نظن. ورسالة المادة واضحة: <strong>اللحظة الأخيرة تبقى في ذاكرة النزيل</strong>، والانطباع الذي تتركه يبقى بعد الرحيل. قد ينسى النزيل لون السجاد أو اسم المطعم، لكنه يتذكر هل ابتسم له أحد، وهل ساعده في الأمتعة، وهل ودّعه وداعًا حقيقيًا.</p><p>وتلخص المادة المنهج في خمس كلمات: <strong>تحقق، ساعد، اشكر، ادعُ، ودّع</strong>، وتطلب منا أن نختم التجربة باهتمام ومساعدة ووداع صادق.</p><h2>خمسة أسباب تجعل الوداع الجيد مهمًا</h2><ul><li><strong>الوداع الجيد يُظهر الاهتمام حتى النهاية.</strong> إذا تراجع الاهتمام بمجرد دفع الفاتورة لاحظ النزيل ذلك، وضعف دفء الإقامة كلها.</li><li><strong>يسمح بمعالجة ملاحظة قبل المغادرة.</strong> لحظة المغادرة غالبًا آخر فرصة لسماع مشكلة والنزيل ما زال معنا ويمكن فعل شيء.</li><li><strong>يخفف تعب الأمتعة والنقل والانتظار.</strong> يوم المغادرة مرهق: حزم الأمتعة ومتابعة الرحلة وترتيب السيارة، والمساعدة العملية في هذه اللحظة لا تُنسى.</li><li><strong>يشكر النزيل على اختياره الفندق.</strong> أمام النزيل خيارات كثيرة، والشكر الصادق تقدير لذلك.</li><li><strong>يشجعه على العودة دون ضغط أو مبالغة.</strong> الدعوة الدافئة مرحّب بها، أما الإلحاح أو الخطاب المبالغ فيه فلا.</li></ul><blockquote class=\"bk-quote\">قد ينسى النزيل تفاصيل كثيرة، لكنه يتذكر كيف ودّعته.</blockquote><h2>الوداع جزء من الخدمة</h2><p>من السهل أن نعدّ المغادرة مهمة إدارية: طباعة الفاتورة، وتحصيل المبلغ، واستلام البطاقة. لكن الشريحة الختامية تذكّرنا بأن <strong>الانطباع الأخير جزء من تجربة النزيل</strong>. وكل زميل يمر به النزيل في طريقه إلى الخارج، من الاستقبال إلى مكتب الأمتعة والباب، يساهم في هذا الانطباع.</p><p>ولا يتطلب ذلك خطابات طويلة أو هدايا خاصة، بل انتباهًا: أن ترفع نظرك عن الشاشة، وأن تلاحظ النزيل الذي يتعب مع حقيبته، وأن تتأكد من وصول سيارة الأجرة، وأن تودّعه وأنت تعني ما تقول.</p><aside class=\"bk-scene\"><strong>موقف:</strong> غادر زوجان بعد إقامة ثلاث ليالٍ حدثت في أولها مشكلة بسيطة في التكييف تم إصلاحها. سألتهما موظفة الاستقبال: \"كيف كانت بقية إقامتكما؟ أرجو أن الغرفة كانت مريحة بعد الليلة الأولى\". فوجئا بأنها تذكرت وقالا إن كل شيء كان ممتازًا. شكرتهما، وأكدت أن سيارة المطار تنتظر، ورافقتهما إلى الباب. وفي تقييمهما لاحقًا ذكرا الوداع لا التكييف.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> اللحظة الأخيرة تبقى مع النزيل. الوداع الجيد يُظهر الاهتمام حتى النهاية، ويلتقط الملاحظات، ويخفف عناء المغادرة، ويشكر النزيل، ويترك باب العودة مفتوحًا.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: اللحظة الأخيرة",
+                                "questions": [
+                                    {
+                                        "question": "بحسب المادة، ما الذي يتذكره النزيل أكثر عند المغادرة؟",
+                                        "options": [
+                                            "المبلغ الدقيق في الفاتورة",
+                                            "كيف ودّعته وكيف جعلته يشعر",
+                                            "رقم غرفته",
+                                            "سياسة وقت المغادرة"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: قد ينسى النزيل تفاصيل كثيرة، لكنه يتذكر كيف ودّعته."
+                                    },
+                                    {
+                                        "question": "لماذا تُعد المغادرة وقتًا مناسبًا لسماع الملاحظات؟",
+                                        "options": [
+                                            "لأنه ما زال يمكن معالجتها قبل رحيل النزيل",
+                                            "لأن النزيل يكون أقل انشغالًا",
+                                            "لأنها تتيح إضافة رسوم",
+                                            "لأنها إلزامية لكل نزيل"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "الوداع الجيد يسمح بمعالجة ملاحظة قبل المغادرة."
+                                    },
+                                    {
+                                        "question": "كيف تدعو النزيل للعودة؟",
+                                        "options": [
+                                            "بخطاب طويل عن عروض الفندق",
+                                            "بالإصرار على أن يحجز الآن",
+                                            "بصدق ودون ضغط أو مبالغة",
+                                            "فقط إذا سأل عن العودة"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تذكر الشريحة أن الوداع الجيد يشجع على العودة دون ضغط أو مبالغة."
+                                    },
+                                    {
+                                        "question": "نزيل يتعب مع أمتعة ثقيلة وينتظر سيارة يوم المغادرة. أي فائدة للوداع الجيد تنطبق هنا؟",
+                                        "options": [
+                                            "شكره على اختياره",
+                                            "بيع إقامة أخرى",
+                                            "جمع تقييم",
+                                            "تخفيف تعب الأمتعة والنقل والانتظار"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تذكر المادة أن الوداع الجيد يخفف تعب الأمتعة والنقل والانتظار."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "اختم تجربة النزيل في ثلاث مراحل",
+                            "minutes": 5,
+                            "body": "<h2>ثلاث مراحل لنهاية جيدة</h2><p>تقسم المادة نهاية الإقامة إلى ثلاث مراحل: <strong>تحقق، ساعد، ودّع</strong>، ولكل مرحلة ثلاثة تصرفات بسيطة.</p><h3>١. تحقق من التجربة</h3><ul><li><strong>اسأل بلطف عن الإقامة.</strong> سؤال مفتوح مثل \"كيف كانت إقامتك معنا؟\" يدعو النزيل إلى المشاركة، وتجنب الأسئلة التي لا تحتمل إلا \"نعم\" مثل \"كل شيء كان جيدًا، صحيح؟\".</li><li><strong>استمع لأي ملاحظة حتى النهاية،</strong> ولا تقاطعه لتشرح أو لتستعجل الدفع.</li><li><strong>عالج ما يمكن قبل مغادرته،</strong> كرسوم خاطئة أو غرض ناقص أو طلب نسخة من الإيصال.</li></ul><h3>٢. ساعد في المغادرة</h3><ul><li><strong>اعرض المساعدة في الأمتعة،</strong> برتيب زميل من مكتب الأمتعة أو عربة عند الحاجة.</li><li><strong>أكد وسيلة النقل أو الاتجاه،</strong> وتحقق هل لديه سيارة أو سيارة أجرة أو يعرف طريقه.</li><li><strong>اجعل إجراءات المغادرة سهلة وسريعة،</strong> بتجهيز الفاتورة مسبقًا حين يمكن، وشرحها بوضوح، وعدم إبقائه منتظرًا دون داعٍ.</li></ul><h3>٣. اشكر وودّع</h3><ul><li><strong>اشكره على الإقامة معنا.</strong></li><li><strong>تمنَّ له رحلة آمنة ويومًا سعيدًا.</strong></li><li><strong>ادعه للعودة بطريقة صادقة.</strong></li></ul><table class=\"bk-say\"><thead><tr><th>المرحلة</th><th>ما تفعله</th></tr></thead><tbody><tr><td>تحقق من التجربة</td><td>اسأل عن الإقامة؛ استمع حتى النهاية؛ عالج ما يمكن</td></tr><tr><td>ساعد في المغادرة</td><td>اعرض المساعدة في الأمتعة؛ أكد وسيلة النقل أو الاتجاه؛ اجعل الإجراءات سهلة وسريعة</td></tr><tr><td>اشكر وودّع</td><td>اشكره؛ تمنَّ له رحلة آمنة؛ ادعه للعودة بصدق</td></tr></tbody></table><h2>الشخص قبل الدفع</h2><p>وتضيف المادة تنبيهًا مهمًا: <strong>لا تجعل إجراءات الدفع تمنعك من الاهتمام بالنزيل كشخص.</strong> عند المغادرة يسهل التركيز على الشاشة وجهاز البطاقات والفاتورة، وهذه مهام مهمة، لكنها لا تحل محل النظر إلى النزيل أو الكلمة الودية أو ملاحظة أنه مستعجل. أنجز الإجراء وانتباهك مع النزيل.</p><aside class=\"bk-scene\"><strong>موقف:</strong> وصلت نزيلة مستعجلة إلى الاستقبال وقالت إن رحلتها بعد ساعتين. كانت الموظفة قد جهزت فاتورتها مسبقًا، وأثناء إتمام الدفع سألتها: \"كيف كانت إقامتك؟\" فذكرت النزيلة أن في الفاتورة صنفًا من الميني بار لم تأخذه، فأزالته الموظفة فورًا، ثم سألت: \"هل لديك وسيلة نقل إلى المطار؟\" ولم تكن لديها، فطلبت من مكتب الأمتعة سيارة أجرة وإنزال الحقائب. استغرقت المغادرة خمس دقائق، وغادرت النزيلة وهي تشكرها.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> جهّز فواتير المغادرة المبكرة في الليلة السابقة، ليتفرغ الصباح للنزيل لا للأوراق.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> تحقق من التجربة، وساعد في المغادرة، ثم اشكر وودّع، ولا تجعل إجراءات الدفع تحل محل الاهتمام بالشخص.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: المراحل الثلاث",
+                                "questions": [
+                                    {
+                                        "question": "ذكرت نزيلة عند المغادرة رسومًا لا تعرفها. في أي مرحلة أنت وماذا تفعل؟",
+                                        "options": [
+                                            "ودّع: تشكرها وتتركها تغادر",
+                                            "ساعد: تطلب سيارة أجرة أولًا",
+                                            "تحقق: تستمع حتى النهاية وتعالج ما يمكن قبل مغادرتها",
+                                            "لا شيء: تطلب منها مراسلة الفندق لاحقًا"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "مرحلة التحقق تقول: استمع لأي ملاحظة حتى النهاية، وعالج ما يمكن قبل مغادرته."
+                                    },
+                                    {
+                                        "question": "أي تصرف ينتمي إلى مرحلة المساعدة في المغادرة؟",
+                                        "options": [
+                                            "أكد وسيلة النقل أو الاتجاه",
+                                            "اسأل بلطف عن الإقامة",
+                                            "ادعه للعودة بصدق",
+                                            "اشكره على الإقامة"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تشمل مرحلة المساعدة عرض المساعدة في الأمتعة وتأكيد وسيلة النقل وتسهيل الإجراءات."
+                                    },
+                                    {
+                                        "question": "أثناء الدفع كان جهاز البطاقات بطيئًا. ما الذي يجب تجنبه؟",
+                                        "options": [
+                                            "الحديث بلطف مع النزيل",
+                                            "سؤاله عن إقامته",
+                                            "عرض المساعدة في الأمتعة",
+                                            "التركيز على الجهاز وتجاهل النزيل"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: لا تجعل إجراءات الدفع تمنعك من الاهتمام بالنزيل كشخص."
+                                    },
+                                    {
+                                        "question": "ما أفضل سؤال للتحقق من تجربة النزيل؟",
+                                        "options": [
+                                            "\"كل شيء كان جيدًا، صحيح؟\"",
+                                            "\"كيف كانت إقامتك معنا؟\"",
+                                            "\"هل استخدمت الميني بار؟\"",
+                                            "\"هل يمكنك الدفع الآن؟\""
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تطلب المادة أن تسأل بلطف عن الإقامة، والسؤال المفتوح يدعو إلى إجابة حقيقية."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "منهج التوديع",
+                    "lessons": [
+                        {
+                            "title": "خمس خطوات للتوديع وعبارات بسيطة",
+                            "minutes": 6,
+                            "body": "<h2>وداع دافئ ومهني</h2><p>تصف المادة الوداع المثالي بكلمتين: <strong>دافئ ومهني</strong>، وتوجيهها: <strong>أنهِ الإقامة باهتمام لا بكلمات محفوظة.</strong> فالوداع الذي يبدو نصًا محفوظًا قد يكون باردًا حتى لو كانت كلماته مهذبة.</p><h2>خمس خطوات بسيطة في التوديع</h2><ol><li><strong>تأكد أن إجراءات المغادرة مكتملة:</strong> الفاتورة مسددة، والمفاتيح مستلمة، والتأمين معالج، ولدى النزيل ما يحتاجه من مستندات، فلا شيء يعيده إلى المكتب لاحقًا.</li><li><strong>اسأل إن كان يحتاج إلى مساعدة:</strong> الأمتعة، أو سيارة أجرة، أو الاتجاهات، أو حفظ الحقائب حتى موعد رحلة متأخرة؛ اعرض قبل أن يطلب.</li><li><strong>اشكره على اختياره الفندق،</strong> باختصار وصدق.</li><li><strong>استخدم اسمه إذا كان معروفًا ومناسبًا،</strong> فالاسم يجعل الوداع شخصيًا، واستخدمه بطبيعية وعندما تكون متأكدًا منه والموقف مناسب.</li><li><strong>ودّعه بنظرة وابتسامة وعبارة واضحة،</strong> انظر إليه وابتسم بصدق وقل جملة ختامية واحدة واضحة.</li></ol><blockquote class=\"bk-quote\">لا تودّع النزيل وأنت تنظر إلى الشاشة أو تتحدث مع زميل.</blockquote><p>فالوداع الموجه إلى لوحة المفاتيح يخبر النزيل بأنه نُسي بالفعل.</p><h2>عبارات توديع بسيطة ومناسبة</h2><table class=\"bk-say\"><thead><tr><th>الغرض</th><th>العبارة</th></tr></thead><tbody><tr><td>الشكر</td><td>\"شكرًا لاختياركم الإقامة معنا.\"</td></tr><tr><td>الاهتمام</td><td>\"هل يمكنني مساعدتكم في الأمتعة أو النقل؟\"</td></tr><tr><td>العودة</td><td>\"يسعدنا الترحيب بكم مرة أخرى.\"</td></tr><tr><td>الرحلة</td><td>\"نتمنى لكم رحلة آمنة ويومًا سعيدًا.\"</td></tr></tbody></table><h2>عبارة أو اثنتان بصدق</h2><p>والقاعدة: <strong>اختر عبارة واحدة أو اثنتين بصدق، ولا تجعل الوداع خطابًا طويلًا.</strong> فالنزيل الذي تنتظره سيارة لا يريد قائمة بمرافق الفندق ولا ثلاث صيغ مختلفة للشكر. اختر ما يناسب اللحظة: عبارة الاهتمام لعائلة معها أمتعة، وعبارة الرحلة لنزيل متجه إلى المطار، وعبارة العودة لنزيل دائم.</p><aside class=\"bk-scene\"><strong>موقف:</strong> غادر نزيل دائم من رجال الأعمال، الأستاذ الحربي، ظهر يوم خميس. تأكدت الموظفة أن الفاتورة مسددة وأن الموقف مختوم، ثم سألته إن كان يحتاج مساعدة في حقائبه فشكرها. رفعت نظرها وابتسمت وقالت: \"شكرًا لإقامتك معنا مرة أخرى أستاذ الحربي، نتمنى لك رحلة آمنة ويسعدنا الترحيب بك الأسبوع القادم\". استغرق ذلك عشر ثوانٍ، وكان شخصيًا ودافئًا ومهنيًا.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> إذا كنت على الهاتف ومرّ نزيل مغادر، فتوقف لحظة وانظر إليه وابتسم أو لوّح بيدك؛ فالإشارة الصغيرة أفضل من غياب الوداع.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> أكمل الإجراءات، واعرض المساعدة، واشكر، واستخدم الاسم عند المناسبة، وودّع بنظرة وابتسامة. عبارة أو اثنتان بصدق تكفيان.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: خطوات التوديع والعبارات",
+                                "questions": [
+                                    {
+                                        "question": "يغادر نزيل وأنت تنهي بريدًا إلكترونيًا. ماذا تقول المادة؟",
+                                        "options": [
+                                            "تنهي البريد وتودعه دون أن ترفع نظرك",
+                                            "تترك زميلًا يودعه",
+                                            "تتوقف وتنظر إليه وتودعه بابتسامة",
+                                            "تلوّح له دون أن تتوقف عن العمل"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: لا تودّع النزيل وأنت تنظر إلى الشاشة أو تتحدث مع زميل."
+                                    },
+                                    {
+                                        "question": "متى تستخدم اسم النزيل في الوداع؟",
+                                        "options": [
+                                            "دائمًا حتى لو لم تكن متأكدًا منه",
+                                            "أبدًا، فهو أمر شخصي جدًا",
+                                            "لكبار الشخصيات فقط",
+                                            "إذا كان معروفًا ومناسبًا"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "الخطوة الرابعة: استخدم اسمه إذا كان معروفًا ومناسبًا."
+                                    },
+                                    {
+                                        "question": "عائلة معها أمتعة كثيرة عند الاستقبال. أي عبارة أنسب؟",
+                                        "options": [
+                                            "\"هل يمكنني مساعدتكم في الأمتعة أو النقل؟\"",
+                                            "\"من فضلكم قيّمونا بخمس نجوم.\"",
+                                            "\"هذه قائمة بكل مرافقنا.\"",
+                                            "\"فاتورتكم جاهزة، مع السلامة.\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "عبارة الاهتمام تعرض المساعدة في الأمتعة أو النقل."
+                                    },
+                                    {
+                                        "question": "كم ينبغي أن يطول الوداع؟",
+                                        "options": [
+                                            "خطاب مفصل عن الفندق",
+                                            "عبارة أو اثنتان بصدق وبشكل طبيعي",
+                                            "خمس عبارات على الأقل",
+                                            "بلا كلمات، الإيصال فقط"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: اختر عبارة واحدة أو اثنتين بصدق، ولا تجعل الوداع خطابًا طويلًا."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "التوديع في الممارسة",
+                    "lessons": [
+                        {
+                            "title": "افعل وتجنب وملاحظات المغادرة ودور المشرف",
+                            "minutes": 7,
+                            "body": "<h2>افعل وتجنب عند توديع النزيل</h2><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنب</th></tr></thead><tbody><tr><td>توقف وانظر إلى النزيل باهتمام</td><td>أن تسأله عن تقييم مرتفع أمام الآخرين</td></tr><tr><td>اسأله إن كان يحتاج إلى مساعدة</td><td>أن تضغط عليه لكتابة تعليق أو ذكر اسمك</td></tr><tr><td>اشكره بعبارة صادقة ومختصرة</td><td>أن تجادله في ملاحظة عند المغادرة</td></tr><tr><td>اذكر ملاحظته للمشرف عند الحاجة</td><td>أن تتجاهله بعد انتهاء الدفع</td></tr><tr><td>ودّعه حتى يغادر منطقة الاستقبال</td><td>أن تناقش تفاصيل إقامته أمام غير المخولين</td></tr></tbody></table><blockquote class=\"bk-quote\">اطلب الملاحظات باحترام — ولا تطلب المدح أو التقييم أمام الآخرين.</blockquote><p>والخصوصية مهمة عند المغادرة؛ فالبهو مزدحم، ولا يجوز مناقشة تفاصيل الفاتورة أو رقم الغرفة أو الشكوى حيث يسمعها الآخرون.</p><h2>إذا ذكر النزيل ملاحظة عند المغادرة</h2><ol><li><strong>استمع:</strong> دع النزيل يكمل كلامه دون مقاطعة.</li><li><strong>اعترف:</strong> اشكره على إخبارك واعتذر عن التجربة.</li><li><strong>صحّح إن أمكن:</strong> قدّم حلًا سريعًا ضمن صلاحيتك.</li><li><strong>سجّل وتابع:</strong> سجّل الملاحظة وأبلغ المسؤول للمتابعة.</li></ol><blockquote class=\"bk-quote\">لا تجعل سرعة المغادرة سببًا لإهمال ملاحظة مهمة.</blockquote><h2>متى تستدعي المشرف قبل مغادرة النزيل؟</h2><p>اطلب المشرف عند:</p><ul><li>وجود شكوى مهمة لم تُحل.</li><li>وجود خلاف في فاتورة أو دفعة.</li><li>فقدان أمتعة أو ممتلكات.</li><li>طلب تعويض أو صلاحية أعلى.</li><li>إظهار النزيل غضبًا أو عدم رضا واضحًا.</li></ul><h3>ابقَ مسؤولًا عن اللحظة الأخيرة</h3><ul><li>استمع وسجّل المشكلة باختصار.</li><li>اشرح للمشرف ما حدث وما يريده النزيل.</li><li>لا تجعل النزيل يكرر القصة من البداية.</li><li>ابقَ متاحًا حتى يتولى المشرف الحالة.</li><li>ودّع النزيل باحترام مهما كانت النتيجة.</li></ul><aside class=\"bk-scene\"><strong>موقف:</strong> أثناء المغادرة قال نزيل بهدوء إن قطعة من الغسيل لم تُرجع إليه وإنه مستاء. شكرته الموظفة على إخبارها واعتذرت، وتواصلت مع المغسلة لكن القطعة لم توجد في الوقت المتاح. ولأنها حالة فقدان ممتلكات، استدعت المدير المناوب وشرحت له بعيدًا عن النزيل: القطعة، والغرفة، وأنه يغادر بعد ثلاثين دقيقة. فتولى المدير الحالة دون أن يطلب من النزيل إعادة القصة، وبقيت الموظفة قريبة، وعند مغادرته شكرته وتمنت له رحلة آمنة.</aside><blockquote class=\"bk-quote\">آخر فرصة لتصحيح التجربة قد تكون عند المغادرة — لا تضيعها.</blockquote><h2>خاتمة</h2><p>تختم المادة بقولها: اختم التجربة باهتمام صادق؛ ساعد واشكر وودّع واترك باب العودة مفتوحًا، فالانطباع الأخير جزء من تجربة النزيل.</p><aside class=\"bk-key\"><strong>الخلاصة:</strong> امنح النزيل انتباهك حتى النهاية، واحفظ خصوصيته، ولا تضغط لطلب التقييم، وتعامل مع ملاحظات المغادرة بخطوات: استمع، اعترف، صحّح، سجّل وتابع، واستدعِ المشرف عند الحاجة.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: التوديع في الممارسة",
+                                "questions": [
+                                    {
+                                        "question": "نزيل سعيد عند المغادرة. ما الذي يجب تجنبه؟",
+                                        "options": [
+                                            "شكره بعبارة صادقة ومختصرة",
+                                            "مطالبته بصوت عالٍ بتقييم خمس نجوم أمام النزلاء",
+                                            "سؤاله إن كان يحتاج إلى مساعدة",
+                                            "توديعه حتى يغادر الاستقبال"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: تجنب أن تسأله عن تقييم مرتفع أمام الآخرين."
+                                    },
+                                    {
+                                        "question": "ذكرت نزيلة إزعاجًا في غرفتها وهي تغادر. ما الخطوة الأولى؟",
+                                        "options": [
+                                            "تسجل الملاحظة وتتركها تغادر",
+                                            "تشرح سبب الإزعاج",
+                                            "تعرض تعويضًا فورًا",
+                                            "تدعها تكمل كلامها دون مقاطعة"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "عند ذكر ملاحظة عند المغادرة، الخطوة الأولى: استمع، ودع النزيل يكمل كلامه دون مقاطعة."
+                                    },
+                                    {
+                                        "question": "اعترض نزيل على رسوم في الفاتورة ولم يقتنع. ماذا تفعل؟",
+                                        "options": [
+                                            "تستدعي المشرف وتشرح له حتى لا يكرر النزيل القصة",
+                                            "تجادله حتى يقبل الرسوم",
+                                            "تحذف الرسوم دون صلاحية",
+                                            "تطلب منه المراسلة لاحقًا"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "الخلاف في فاتورة أو دفعة سبب لاستدعاء المشرف، ولا تجعل النزيل يكرر القصة من البداية."
+                                    },
+                                    {
+                                        "question": "قرر المشرف أن الشكوى لا يمكن حلها كما أراد النزيل. كيف تودّعه؟",
+                                        "options": [
+                                            "تتجنبه حتى لا يزداد انزعاجه",
+                                            "تترك كل شيء للمشرف",
+                                            "تودّعه باحترام مهما كانت النتيجة",
+                                            "تعتذر له عن قرار المشرف"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: ودّع النزيل باحترام مهما كانت النتيجة."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,545 @@
+{
+    "slug": "professional-deportment",
+    "category": "communication",
+    "level": "foundation",
+    "source_pdf": "Professional-Deportment-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/professional-deportment.webp",
+    "videos": [
+        {
+            "id": "Ks-_Mh1QhMc",
+            "title": "Your Body Language May Shape Who You Are | Amy Cuddy | TED",
+            "channel": "TED",
+            "why": "Social psychologist Amy Cuddy explains how posture and body language shape how others see us and how we feel, which supports the deck's message that your presence speaks before your words."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Professional Deportment in Hotels",
+            "subtitle": "Your professional presence is part of the guest experience",
+            "short_description": "Learn how appearance, standing, walking, eye contact, distance and body language create a confident, welcoming presence that guests notice before you speak.",
+            "description": "<p>Guests form their first impression of a hotel in seconds, and much of it comes from the colleagues they see. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows how your professional presence speaks before you say a word.</p><p>You will learn what professional deportment means, why it raises the value of the guest experience, how to stand and walk with confidence, how to manage eye contact, distance and body language in face-to-face service, and the five things every guest expects before they ask.</p>",
+            "requirements": "No prior training is needed; the course suits every colleague who works where guests can see them.",
+            "outcomes": [
+                "Explain professional deportment through appearance, movement, body language and attention",
+                "Stand in a confident, relaxed posture that shows readiness to serve",
+                "Walk through guest areas calmly, confidently and with awareness",
+                "Use balanced eye contact, a comfortable distance and open body language with guests",
+                "Meet the five guest expectations: full attention, presence, alertness, respect and readiness"
+            ],
+            "faqs": [
+                {
+                    "question": "Who is this course for?",
+                    "answer": "Every colleague who can be seen by guests, from reception and concierge to restaurant, housekeeping, security and engineering teams."
+                },
+                {
+                    "question": "What is professional deportment?",
+                    "answer": "It is the way we appear in front of guests, made up of four elements: appearance, movement, body language and attention."
+                },
+                {
+                    "question": "What is the right distance when speaking with a guest?",
+                    "answer": "The deck gives a usual comfortable distance of one to one and a half metres, while facing the guest fully and never turning your back."
+                }
+            ],
+            "meta_title": "Professional Deportment for Hotel Staff",
+            "meta_description": "Hotel training on professional deportment: posture, walking, eye contact, distance and body language that create a confident, welcoming guest experience.",
+            "focus_keyword": "professional deportment in hotels",
+            "chapters": [
+                {
+                    "title": "Presence Before Words",
+                    "lessons": [
+                        {
+                            "title": "What Professional Deportment Means",
+                            "minutes": 5,
+                            "body": "<h2>Your presence speaks before your words</h2><p>Before a guest hears your greeting, they have already seen you. They noticed how you were standing, whether you looked up, whether your uniform was neat and whether you seemed ready to help. The deck calls this <strong>professional deportment</strong>: the way we appear in front of guests.</p><p>Deportment is not about being stiff or formal. It is about showing, through the way you look and move, that the guest is welcome and that you are ready to serve them.</p><h2>The four elements</h2><p>The deck describes deportment through four elements that work together:</p><ul><li><strong>Appearance.</strong> How you look: grooming, uniform and overall neatness.</li><li><strong>Movement.</strong> How you stand, walk and move through guest areas.</li><li><strong>Body language.</strong> Your face, hands, posture and gestures.</li><li><strong>Attention.</strong> Where your focus is, and whether the guest can see that it is on them.</li></ul><p>A colleague can have a perfect uniform but lose the guest's confidence by leaning on the counter. Another can stand well but look at their phone. Deportment works only when all four elements are right at the same time.</p><h2>What professional presence looks like</h2><p>The deck lists six visible signs of a professional presence:</p><ol><li>A neat, well-kept personal appearance.</li><li>Standing and walking with confidence.</li><li>Positive facial expressions.</li><li>Balanced eye contact.</li><li>Respect for personal space.</li><li>Readiness to serve.</li></ol><p>Each of these can be seen from across the lobby. That is the point: guests judge our service from a distance long before they reach the desk.</p><table class=\"bk-say\"><thead><tr><th>Element</th><th>The guest sees</th></tr></thead><tbody><tr><td>Appearance</td><td>A neat, well-kept colleague</td></tr><tr><td>Movement</td><td>Confident standing and walking</td></tr><tr><td>Body language</td><td>Positive expressions, respect for space</td></tr><tr><td>Attention</td><td>Balanced eye contact and readiness to serve</td></tr></tbody></table><blockquote class=\"bk-quote\">Your professional presence speaks before you say a word.</blockquote><aside class=\"bk-scene\"><strong>Scene:</strong> A family walks into the lobby after a long drive. At the desk, one colleague is standing upright, looking towards the entrance with a calm smile; she lifts her head and nods as they approach. The family relaxes before a single word is spoken, because her appearance, posture and attention have already told them they are expected and welcome.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Before each shift, check yourself against the four elements: appearance, movement, body language and attention. A few seconds in front of a mirror can shape the whole day.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Deportment is the way you appear to guests: appearance, movement, body language and attention, all working together.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: What deportment means",
+                                "questions": [
+                                    {
+                                        "question": "According to the deck, what is professional deportment?",
+                                        "options": [
+                                            "The way we appear in front of guests",
+                                            "The hotel's written uniform policy only",
+                                            "The words we use when greeting guests",
+                                            "The speed at which we complete tasks"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck defines professional deportment as the way we appear in front of guests."
+                                    },
+                                    {
+                                        "question": "A colleague has a perfect uniform but is leaning on the counter and looking at a phone. What is missing?",
+                                        "options": [
+                                            "Nothing, because appearance is the main element",
+                                            "Only a smile",
+                                            "Movement, body language and attention",
+                                            "A name badge"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Deportment combines appearance, movement, body language and attention; all four must be right together."
+                                    },
+                                    {
+                                        "question": "Which of these is one of the six signs of professional presence in the deck?",
+                                        "options": [
+                                            "Speaking loudly so guests hear you",
+                                            "Respect for personal space",
+                                            "Standing very close to show warmth",
+                                            "Keeping your eyes on the screen"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Respecting personal space is listed among the six signs of professional presence."
+                                    },
+                                    {
+                                        "question": "Why does the deck say your presence speaks before your words?",
+                                        "options": [
+                                            "Because guests rarely listen to staff",
+                                            "Because greetings are not important",
+                                            "Because uniforms replace conversation",
+                                            "Because guests see how you look and stand before you greet them"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck states: your professional presence speaks before you say a word."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Why Deportment Raises the Guest Experience",
+                            "minutes": 5,
+                            "body": "<h2>First impressions form in seconds</h2><p>The deck makes a simple point: it takes only <strong>seconds</strong> to create the first impression. A guest arriving at the hotel, entering the restaurant or stepping out of the lift makes a quick judgement about the place based on the colleagues they see. That judgement is hard to change later.</p><p>This is why deportment is not a detail. It is part of the value the guest receives. The same room, the same breakfast and the same service feel better when the people delivering them look confident, calm and attentive.</p><h2>Five ways deportment adds value</h2><p>The deck lists five reasons professional deportment matters:</p><ul><li><strong>The colleague reflects the hotel's image and standards.</strong> To the guest, you are the hotel. Your posture and appearance show what standards the hotel keeps.</li><li><strong>It gives the guest a feeling of trust and care.</strong> A composed, attentive colleague tells the guest they are in good hands.</li><li><strong>It strengthens the sense of quality and professionalism.</strong> Guests connect a neat, confident team with a well-run property.</li><li><strong>It helps create a distinctive hospitality experience.</strong> Small signs of care, such as standing ready and making eye contact, turn ordinary service into memorable hospitality.</li><li><strong>It contributes to the hotel's reputation and guest loyalty.</strong> Guests return to, and recommend, places where they felt welcomed and respected.</li></ul><h2>We are always being observed</h2><p>The deck's reminder is clear: <strong>we are always in front of the guests' eyes</strong>. Guests notice how we behave not only when we serve them, but also when we walk past them, talk to a colleague or wait for a lift. A colleague who slouches in a corridor, or laughs loudly behind the desk, sends a message even if they never speak to that guest.</p><p>This does not mean acting nervously or being on stage. It means keeping the same professional standard wherever guests can see you, in the lobby, the corridors, the restaurant and the car park.</p><blockquote class=\"bk-quote\">Guests are always observing how we behave.</blockquote><aside class=\"bk-scene\"><strong>Scene:</strong> A guest waiting for a taxi watches two colleagues near the entrance. One is leaning on a pillar, chatting and checking his phone. The other stands upright, glances around and opens the door for a guest with bags. Later, in a review, the guest writes about the second colleague by name. Neither had served her directly, yet both shaped her impression of the hotel.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Whenever you step into a guest area, treat that moment as the start of your service, even if no guest has spoken to you yet.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> First impressions form in seconds, and guests are always watching. Your deportment reflects the hotel, builds trust and supports loyalty.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Why deportment matters",
+                                "questions": [
+                                    {
+                                        "question": "How long does the deck say it takes to form a first impression?",
+                                        "options": [
+                                            "About an hour",
+                                            "Seconds",
+                                            "The whole first day",
+                                            "Until check-out"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says first impressions form in seconds."
+                                    },
+                                    {
+                                        "question": "You are walking through the lobby on a break and no guest is talking to you. What applies?",
+                                        "options": [
+                                            "Deportment does not matter because you are not serving anyone",
+                                            "You can use your phone freely",
+                                            "Guests are still observing how you behave",
+                                            "Only your uniform matters at this time"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck reminds us that we are always in front of the guests' eyes."
+                                    },
+                                    {
+                                        "question": "Which of these is one of the five reasons deportment matters?",
+                                        "options": [
+                                            "It contributes to the hotel's reputation and guest loyalty",
+                                            "It allows colleagues to skip greetings",
+                                            "It replaces the need for good service",
+                                            "It helps colleagues finish shifts early"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck lists building reputation and guest loyalty among the reasons deportment matters."
+                                    },
+                                    {
+                                        "question": "What does a composed, attentive colleague give the guest, according to the deck?",
+                                        "options": [
+                                            "A reason to complain",
+                                            "A discount on the stay",
+                                            "A feeling of being watched",
+                                            "A feeling of trust and care"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck states that deportment gives the guest a feeling of trust and care."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Standing and Walking",
+                    "lessons": [
+                        {
+                            "title": "Confident Standing and Professional Walking",
+                            "minutes": 6,
+                            "body": "<h2>A confident stance shows readiness to serve</h2><p>Much of hotel work is spent standing: at the desk, at the restaurant entrance, at the door or beside a lift. The deck's message is that a confident stance reflects your readiness for service. The summary is four short instructions: <strong>stand upright, stay relaxed, face the guest, remain ready</strong>.</p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Stand straight and keep your head naturally raised</td><td>Leaning on walls or furniture</td></tr><tr><td>Keep your shoulders relaxed</td><td>Standing on one foot</td></tr><tr><td>Spread your weight evenly on both feet</td><td>Crossing your arms in front of your chest</td></tr><tr><td>Place your hands naturally, according to the hotel standard</td><td>Putting your hands in your pockets</td></tr><tr><td>Face the guest with your whole body</td><td>Standing in a rigid, stiff way</td></tr><tr><td>Show attention and readiness to serve</td><td>Turning your back to the guest</td></tr></tbody></table><p>Notice that the deck warns against both extremes. Leaning and standing on one foot look careless; standing rigidly looks tense and unwelcoming. The goal is upright but relaxed. Crossed arms and hands in pockets can look closed or bored, even when you do not mean them to.</p><h2>Walk calmly, confidently and with awareness</h2><p>Walking is also part of service. Guests see you crossing the lobby, moving along corridors and going between tables. The deck describes professional walking with six points:</p><ul><li>A moderate, confident pace.</li><li>An upright body and raised head.</li><li>Natural, light movement of the arms.</li><li>Attention to guests and to the corridor around you.</li><li>Giving the guest priority to pass.</li><li>Stopping safely to offer help.</li></ul><h3>What to avoid while walking</h3><ul><li>Walking very slowly or much too fast.</li><li>Running, except in emergencies.</li><li>Dragging your feet or making noise.</li><li>Swinging your arms in an exaggerated way.</li><li>Using your phone in guest areas.</li><li>Ignoring a guest as you pass.</li></ul><p>Running tells guests something is wrong and can be unsafe, so keep it for real emergencies. Walking too slowly can look like you do not care; walking too fast can make guests feel they should not stop you. A moderate, confident pace invites guests to ask for help.</p><blockquote class=\"bk-quote\">Move calmly, confidently, and with awareness.</blockquote><aside class=\"bk-scene\"><strong>Scene:</strong> A housekeeping colleague is pushing a trolley along a corridor when a guest steps out of a room, looking at the signs. She slows down, moves the trolley aside to give the guest priority, stops safely and asks, “May I help you find something?” The guest was looking for the gym. Because she was walking with awareness instead of rushing past, a moment of confusion became a moment of care.</aside><aside class=\"bk-note\"><strong>Tip:</strong> When you must hurry, keep a brisk but controlled pace, never a run, and still make brief eye contact with any guest you pass.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Stand upright, stay relaxed, face the guest and remain ready; walk at a moderate pace, aware of guests and giving them priority.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Standing and walking",
+                                "questions": [
+                                    {
+                                        "question": "You are waiting at the restaurant entrance during a quiet period. Which posture matches the deck?",
+                                        "options": [
+                                            "Leaning on the host stand to rest",
+                                            "Arms crossed so you look serious",
+                                            "Upright and relaxed, weight on both feet, hands placed to the hotel standard",
+                                            "Hands in pockets so they are out of the way"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says stand straight, relax your shoulders, spread your weight evenly and place your hands to the hotel standard."
+                                    },
+                                    {
+                                        "question": "Which of these does the deck list as something to avoid when standing?",
+                                        "options": [
+                                            "Facing the guest with your whole body",
+                                            "Standing in a rigid, stiff way",
+                                            "Keeping your shoulders relaxed",
+                                            "Raising your head naturally"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Standing rigidly is on the deck's avoid list, alongside leaning and standing on one foot."
+                                    },
+                                    {
+                                        "question": "You are late delivering an item to a room. How should you move through the lobby?",
+                                        "options": [
+                                            "At a moderate, confident pace, aware of guests",
+                                            "Run, because the guest is waiting",
+                                            "Walk while calling the guest on your phone",
+                                            "Walk quickly and avoid eye contact so no one stops you"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck says walk at a moderate, confident pace and avoid running except in emergencies."
+                                    },
+                                    {
+                                        "question": "A guest is coming towards you in a narrow corridor. What does professional walking require?",
+                                        "options": [
+                                            "Keep walking at the same speed",
+                                            "Wait for the guest to move aside",
+                                            "Turn around and use another route",
+                                            "Give the guest priority to pass"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Giving the guest priority to pass is one of the deck's points for professional walking."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Face-to-Face Presence",
+                    "lessons": [
+                        {
+                            "title": "Eye Contact, Body Language and What Guests Expect",
+                            "minutes": 7,
+                            "body": "<h2>Face-to-face service needs a balanced presence</h2><p>When a guest is standing in front of you, small details become very visible. The deck lists five elements of a balanced face-to-face interaction:</p><table class=\"bk-say\"><thead><tr><th>Element</th><th>What to do</th></tr></thead><tbody><tr><td>Eye contact</td><td>Natural and balanced, without staring</td></tr><tr><td>Suitable distance</td><td>Usually 1 to 1.5 metres</td></tr><tr><td>Facing the guest</td><td>Face the guest fully, with your whole body</td></tr><tr><td>Attention</td><td>Listen carefully and do not interrupt</td></tr><tr><td>Respect</td><td>Never turn your back to the guest</td></tr></tbody></table><p>Balance is the key word. Too little eye contact looks uninterested; too much becomes staring. Standing too close invades personal space; standing too far looks distant. The usual one to one and a half metres lets the guest feel both served and comfortable.</p><h2>Body language creates a feeling of welcome</h2><p>Your face and hands say a great deal. The deck gives six things to do and six to avoid:</p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Smile naturally and warmly</td><td>Frowning or showing boredom</td></tr><tr><td>Use calm, professional gestures</td><td>Staring at the guest</td></tr><tr><td>Nod to show you are listening and understand</td><td>Pointing with your finger</td></tr><tr><td>Keep positive expressions</td><td>Moving your hands nervously</td></tr><tr><td>Keep your body language open</td><td>Yawning or looking at your watch</td></tr><tr><td>Stay calm when handling complaints</td><td>Sarcastic or inappropriate expressions</td></tr></tbody></table><p>Pointing with one finger can feel rude; use an open hand to show a direction. Yawning or checking your watch tells the guest you want them to leave. During a complaint, calm expressions and a steady voice help the guest calm down too.</p><blockquote class=\"bk-quote\">Be warm without exaggeration, and professional without pretence.</blockquote><h2>The guest expects care before asking for it</h2><p>The deck sums up what every guest expects, even before they make a request:</p><ol><li><strong>Full attention:</strong> the colleague sees them and listens to them.</li><li><strong>Professional presence:</strong> a neat appearance and confident movement.</li><li><strong>Alertness:</strong> noticing a need early.</li><li><strong>Respect:</strong> respecting privacy and culture.</li><li><strong>Readiness to serve:</strong> a quick and polite response.</li></ol><p>The deck closes with a short rule: <strong>stand straight, move with confidence, respect the guest, listen with interest and smile sincerely.</strong> Professional deportment is not just appearance; it is how we make every guest feel welcomed and respected.</p><aside class=\"bk-scene\"><strong>Scene:</strong> An upset guest approaches reception about a delayed room. The receptionist faces him fully, keeps a comfortable distance across the desk, makes steady eye contact and nods while he speaks, without interrupting. When he asks where to wait, she uses an open hand to show the lounge instead of pointing. Her calm body language lowers the tension before she has even offered a solution.</aside><aside class=\"bk-note\"><strong>Tip:</strong> If you need to turn away to fetch something, tell the guest first, for example “One moment, I will bring it for you,” so you never simply turn your back.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Keep eye contact balanced, distance comfortable and body language open and calm, and meet the five expectations before the guest has to ask.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Face-to-face presence",
+                                "questions": [
+                                    {
+                                        "question": "What distance does the deck usually recommend when serving a guest face to face?",
+                                        "options": [
+                                            "As close as possible to show warmth",
+                                            "At least three metres",
+                                            "Usually one to one and a half metres",
+                                            "Any distance, as long as you smile"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck gives a suitable distance of usually 1 to 1.5 metres."
+                                    },
+                                    {
+                                        "question": "A guest asks where the spa is. How should you show the direction?",
+                                        "options": [
+                                            "Point with one finger",
+                                            "Use a calm, open-hand gesture",
+                                            "Nod towards it without speaking",
+                                            "Turn your back and walk off"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck lists pointing with the finger as something to avoid and asks for calm, professional gestures."
+                                    },
+                                    {
+                                        "question": "A guest is complaining about noise. Which behaviour matches the deck?",
+                                        "options": [
+                                            "Show calm while handling the complaint and nod as you listen",
+                                            "Look at your watch to signal you are busy",
+                                            "Stare firmly so the guest knows you are serious",
+                                            "Use a light sarcastic comment to relax the mood"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck says show calm when handling complaints and nod to show listening; it lists watch-checking, staring and sarcasm as things to avoid."
+                                    },
+                                    {
+                                        "question": "A colleague notices a guest struggling with bags before the guest asks. Which guest expectation does this meet?",
+                                        "options": [
+                                            "Professional presence",
+                                            "Respect for culture",
+                                            "Full attention only",
+                                            "Alertness: noticing the need early"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck defines alertness as noticing the need early."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "الوقار والحضور المهني في بيئة الفنادق",
+            "subtitle": "صورتك المهنية جزء من تجربة النزيل",
+            "short_description": "تعلّم كيف يصنع المظهر والوقوف والمشي والتواصل البصري والمسافة ولغة الجسد حضورًا واثقًا ومرحّبًا يلاحظه النزيل قبل أن تتكلم.",
+            "description": "<p>يكوّن النزيل انطباعه الأول عن الفندق في ثوانٍ، وجزء كبير منه يأتي من الموظفين الذين يراهم. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتوضح كيف يتحدث حضورك المهني قبل كلماتك.</p><p>ستتعرف على معنى الوقار المهني، ولماذا يعزز قيمة التجربة، وكيف تقف وتمشي بثقة، وكيف تدير التواصل البصري والمسافة ولغة الجسد في التعامل المباشر، وما الأمور الخمسة التي يتوقعها كل نزيل قبل أن يطلبها.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظف يعمل حيث يراه النزلاء.",
+            "outcomes": [
+                "اشرح الوقار المهني من خلال المظهر والحركة ولغة الجسد والانتباه",
+                "قف وقفة واثقة ومسترخية تعكس الاستعداد للخدمة",
+                "امشِ في مناطق النزلاء بهدوء وثقة ووعي بمن حولك",
+                "استخدم تواصلًا بصريًا متوازنًا ومسافة مناسبة ولغة جسد منفتحة",
+                "لبِّ توقعات النزيل الخمسة: الاهتمام الكامل والحضور المهني واليقظة والاحترام والاستعداد للخدمة"
+            ],
+            "faqs": [
+                {
+                    "question": "لمن هذه الدورة؟",
+                    "answer": "لكل موظف يراه النزلاء، من الاستقبال والكونسيرج إلى المطعم والتدبير الفندقي والأمن والصيانة."
+                },
+                {
+                    "question": "ما الوقار المهني؟",
+                    "answer": "هو الطريقة التي نظهر بها أمام النزلاء، ويتكون من أربعة عناصر: المظهر والحركة ولغة الجسد والانتباه."
+                },
+                {
+                    "question": "ما المسافة المناسبة عند التحدث مع النزيل؟",
+                    "answer": "تذكر المادة أن المسافة المناسبة عادةً من متر إلى متر ونصف، مع مواجهة النزيل بكامل الجسم وعدم إعطائه ظهرك."
+                }
+            ],
+            "meta_title": "الوقار والحضور المهني لموظفي الفنادق",
+            "meta_description": "تدريب فندقي على الوقار المهني: الوقفة والمشي والتواصل البصري والمسافة ولغة الجسد التي تصنع حضورًا واثقًا وتجربة مرحّبة للنزيل.",
+            "focus_keyword": "الوقار المهني في الفنادق",
+            "chapters": [
+                {
+                    "title": "الحضور قبل الكلمات",
+                    "lessons": [
+                        {
+                            "title": "ما معنى الوقار المهني",
+                            "minutes": 5,
+                            "body": "<h2>حضورك المهني يتحدث قبل كلماتك</h2><p>قبل أن يسمع النزيل ترحيبك يكون قد رآك: كيف تقف، وهل رفعت رأسك، وهل زيّك مرتب، وهل تبدو مستعدًا للمساعدة. وتسمي المادة ذلك <strong>الوقار المهني</strong>: هو الطريقة التي نظهر بها أمام النزلاء. وليس المقصود التصلب أو الرسمية الزائدة، بل أن تُظهر بمظهرك وحركتك أن النزيل مرحّب به وأنك مستعد لخدمته.</p><h2>العناصر الأربعة</h2><ul><li><strong>المظهر:</strong> العناية الشخصية والزي والترتيب العام.</li><li><strong>الحركة:</strong> طريقة وقوفك ومشيك وتنقلك في مناطق النزلاء.</li><li><strong>لغة الجسد:</strong> تعابير الوجه واليدان والوقفة والإيماءات.</li><li><strong>الانتباه:</strong> أين يتجه تركيزك، وهل يرى النزيل أنه عليه.</li></ul><p>قد يكون زي الموظف مثاليًا لكنه يفقد ثقة النزيل حين يتكئ على الكاونتر، وقد يقف آخر وقفة جيدة لكنه ينظر إلى هاتفه. الوقار لا يكتمل إلا حين تكون العناصر الأربعة صحيحة معًا.</p><h2>كيف يبدو الحضور المهني</h2><ol><li>مظهر شخصي مرتب.</li><li>وقوف ومشي بثقة.</li><li>تعابير وجه إيجابية.</li><li>تواصل بصري متوازن.</li><li>احترام المساحة الشخصية.</li><li>الاستعداد لتقديم الخدمة.</li></ol><p>كل هذه العلامات تُرى من طرف البهو، فالنزلاء يحكمون على خدمتنا من بعيد قبل أن يصلوا إلى المكتب.</p><table class=\"bk-say\"><thead><tr><th>العنصر</th><th>ما يراه النزيل</th></tr></thead><tbody><tr><td>المظهر</td><td>موظف مرتب ومعتنٍ بنفسه</td></tr><tr><td>الحركة</td><td>وقوف ومشي بثقة</td></tr><tr><td>لغة الجسد</td><td>تعابير إيجابية واحترام للمساحة</td></tr><tr><td>الانتباه</td><td>تواصل بصري متوازن واستعداد للخدمة</td></tr></tbody></table><blockquote class=\"bk-quote\">حضورك المهني يتحدث قبل كلماتك.</blockquote><aside class=\"bk-scene\"><strong>موقف:</strong> دخلت عائلة البهو بعد رحلة طويلة بالسيارة. كانت موظفة الاستقبال واقفة باستقامة، تنظر نحو المدخل بابتسامة هادئة، فرفعت رأسها وأومأت لهم عند اقترابهم. شعرت العائلة بالارتياح قبل أي كلمة، لأن مظهرها ووقفتها وانتباهها أخبرتهم بأنهم مرحّب بهم.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> قبل كل مناوبة راجع نفسك على العناصر الأربعة: المظهر والحركة ولغة الجسد والانتباه. ثوانٍ أمام المرآة قد تصنع يومك كله.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> الوقار هو الطريقة التي تظهر بها أمام النزلاء: مظهر وحركة ولغة جسد وانتباه تعمل معًا.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: معنى الوقار المهني",
+                                "questions": [
+                                    {
+                                        "question": "بحسب المادة، ما الوقار المهني؟",
+                                        "options": [
+                                            "الطريقة التي نظهر بها أمام النزلاء",
+                                            "سياسة الزي المكتوبة فقط",
+                                            "الكلمات التي نرحب بها بالنزلاء",
+                                            "سرعة إنجاز المهام"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تعرّف المادة الوقار المهني بأنه الطريقة التي نظهر بها أمام النزلاء."
+                                    },
+                                    {
+                                        "question": "موظف زيّه مثالي لكنه يتكئ على الكاونتر وينظر إلى هاتفه. ما الذي ينقصه؟",
+                                        "options": [
+                                            "لا شيء، فالمظهر هو العنصر الأهم",
+                                            "الابتسامة فقط",
+                                            "الحركة ولغة الجسد والانتباه",
+                                            "بطاقة الاسم"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "الوقار يجمع المظهر والحركة ولغة الجسد والانتباه، ويجب أن تكون كلها صحيحة معًا."
+                                    },
+                                    {
+                                        "question": "أي مما يلي من علامات الحضور المهني الست في المادة؟",
+                                        "options": [
+                                            "التحدث بصوت عالٍ ليسمعك النزيل",
+                                            "احترام المساحة الشخصية",
+                                            "الوقوف قريبًا جدًا لإظهار الود",
+                                            "إبقاء النظر على الشاشة"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "احترام المساحة الشخصية من علامات الحضور المهني الست."
+                                    },
+                                    {
+                                        "question": "لماذا تقول المادة إن حضورك يتحدث قبل كلماتك؟",
+                                        "options": [
+                                            "لأن النزلاء نادرًا ما يستمعون للموظفين",
+                                            "لأن الترحيب غير مهم",
+                                            "لأن الزي يغني عن الحديث",
+                                            "لأن النزيل يرى مظهرك ووقفتك قبل أن ترحب به"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: حضورك المهني يتحدث قبل كلماتك."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "الوقار المهني يعزز قيمة التجربة",
+                            "minutes": 5,
+                            "body": "<h2>الانطباع الأول يُصنع في ثوانٍ</h2><p>تؤكد المادة أن صناعة الانطباع الأول لا تحتاج إلا إلى <strong>ثوانٍ</strong>. فالنزيل الذي يصل إلى الفندق أو يدخل المطعم أو يخرج من المصعد يحكم سريعًا على المكان من خلال الموظفين الذين يراهم، ويصعب تغيير هذا الحكم لاحقًا. لذلك ليس الوقار تفصيلًا ثانويًا، بل جزء من القيمة التي يحصل عليها النزيل؛ فالغرفة نفسها والفطور نفسه يبدوان أفضل حين يقدمهما أشخاص واثقون وهادئون ومنتبهون.</p><h2>خمس طرق يضيف بها الوقار قيمة</h2><ul><li><strong>يعكس الموظف صورة الفندق ومعاييره،</strong> فأنت في نظر النزيل الفندق نفسه.</li><li><strong>يمنح النزيل شعورًا بالثقة والاهتمام،</strong> فالموظف الهادئ المنتبه يطمئنه.</li><li><strong>يعزز الإحساس بالجودة والاحترافية،</strong> إذ يربط النزيل الفريق المرتب الواثق بفندق حسن الإدارة.</li><li><strong>يساعد على خلق تجربة ضيافة مميزة،</strong> فعلامات الاهتمام الصغيرة تحوّل الخدمة العادية إلى ضيافة لا تُنسى.</li><li><strong>يسهم في بناء السمعة وولاء النزلاء،</strong> فالنزيل يعود إلى المكان الذي شعر فيه بالترحيب والاحترام ويوصي به.</li></ul><h2>نحن دائمًا أمام أنظار النزلاء</h2><p>يلاحظ النزلاء سلوكنا ليس فقط حين نخدمهم، بل حين نمر بجانبهم أو نتحدث مع زميل أو ننتظر المصعد. الموظف المترهل في الممر أو الذي يضحك بصوت عالٍ خلف المكتب يرسل رسالة حتى لو لم يكلم ذلك النزيل. وهذا لا يعني التوتر أو التمثيل، بل الحفاظ على المعيار المهني نفسه في كل مكان يراك فيه النزلاء: البهو والممرات والمطعم ومواقف السيارات.</p><blockquote class=\"bk-quote\">نحن دائمًا أمام أنظار النزلاء.</blockquote><aside class=\"bk-scene\"><strong>موقف:</strong> كانت نزيلة تنتظر سيارة أجرة وتراقب موظفين عند المدخل؛ أحدهما يتكئ على عمود ويتحدث وينظر إلى هاتفه، والآخر يقف باستقامة ويتلفت حوله ويفتح الباب لنزيل يحمل حقائب. وفي تقييمها لاحقًا ذكرت الموظف الثاني باسمه. لم يخدمها أيٌّ منهما مباشرة، لكن كليهما صنع انطباعها عن الفندق.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> كلما دخلت منطقة للنزلاء فاعتبر تلك اللحظة بداية خدمتك، حتى لو لم يكلمك أحد بعد.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> الانطباع الأول يُصنع في ثوانٍ والنزلاء يراقبون دائمًا. وقارك يعكس الفندق ويبني الثقة ويدعم الولاء.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: لماذا يهم الوقار",
+                                "questions": [
+                                    {
+                                        "question": "كم تقول المادة إن صناعة الانطباع الأول تستغرق؟",
+                                        "options": [
+                                            "نحو ساعة",
+                                            "ثوانٍ",
+                                            "اليوم الأول كاملًا",
+                                            "حتى المغادرة"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تذكر المادة أن الانطباع الأول يُصنع في ثوانٍ."
+                                    },
+                                    {
+                                        "question": "تمر في البهو أثناء استراحتك ولا يكلمك أي نزيل. ماذا ينطبق؟",
+                                        "options": [
+                                            "الوقار غير مهم لأنك لا تخدم أحدًا",
+                                            "يمكنك استخدام هاتفك بحرية",
+                                            "النزلاء ما زالوا يلاحظون سلوكك",
+                                            "الزي وحده هو المهم في هذا الوقت"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تذكّرنا المادة بأننا دائمًا أمام أنظار النزلاء."
+                                    },
+                                    {
+                                        "question": "أي مما يلي من الأسباب الخمسة لأهمية الوقار؟",
+                                        "options": [
+                                            "يسهم في بناء السمعة وولاء النزلاء",
+                                            "يسمح للموظف بتجاوز الترحيب",
+                                            "يغني عن الخدمة الجيدة",
+                                            "يساعد الموظف على إنهاء المناوبة مبكرًا"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تذكر المادة بناء السمعة وولاء النزلاء ضمن أسباب أهمية الوقار."
+                                    },
+                                    {
+                                        "question": "ماذا يمنح الموظف الهادئ المنتبه للنزيل بحسب المادة؟",
+                                        "options": [
+                                            "سببًا للشكوى",
+                                            "خصمًا على الإقامة",
+                                            "شعورًا بأنه مراقَب",
+                                            "شعورًا بالثقة والاهتمام"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تنص المادة على أن الوقار يمنح النزيل شعورًا بالثقة والاهتمام."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "الوقوف والمشي",
+                    "lessons": [
+                        {
+                            "title": "الوقفة الواثقة والمشي المهني",
+                            "minutes": 6,
+                            "body": "<h2>الوقفة الواثقة تعكس الاستعداد للخدمة</h2><p>يقضي الموظف جزءًا كبيرًا من عمله واقفًا: عند المكتب، أو مدخل المطعم، أو الباب، أو بجانب المصعد. وتلخص المادة الوقفة المهنية في أربع كلمات: <strong>قف باستقامة، ابقَ مسترخيًا، واجه النزيل، كن مستعدًا</strong>.</p><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنّب</th></tr></thead><tbody><tr><td>قف باستقامة وارفع الرأس طبيعيًا</td><td>الاتكاء على الجدران أو الأثاث</td></tr><tr><td>حافظ على استرخاء الكتفين</td><td>الوقوف على قدم واحدة</td></tr><tr><td>وزّع الوزن بالتساوي على القدمين</td><td>تقاطع الذراعين أمام الصدر</td></tr><tr><td>ضع اليدين طبيعيًا وفق معيار الفندق</td><td>وضع اليدين في الجيوب</td></tr><tr><td>واجه النزيل بكامل الجسم</td><td>الوقوف بطريقة متصلبة</td></tr><tr><td>أظهر الانتباه والاستعداد للخدمة</td><td>إعطاء النزيل ظهرك</td></tr></tbody></table><p>لاحظ أن المادة تحذر من الطرفين: فالاتكاء والوقوف على قدم واحدة يبدوان إهمالًا، والتصلب يبدو توترًا وجفاءً. المطلوب استقامة مع استرخاء. أما تقاطع الذراعين ووضع اليدين في الجيوب فقد يبدوان انغلاقًا أو مللًا حتى لو لم تقصد ذلك.</p><h2>امشِ بهدوء وثقة ووعي بمن حولك</h2><p>المشي أيضًا جزء من الخدمة، والمشي المهني في المادة يعني:</p><ul><li>سرعة معتدلة وواثقة.</li><li>جسم مستقيم ورأس مرفوع.</li><li>حركة طبيعية وخفيفة للذراعين.</li><li>الانتباه للنزلاء والممر.</li><li>منح النزيل أولوية المرور.</li><li>التوقف بأمان لتقديم المساعدة.</li></ul><h3>تجنّب أثناء المشي</h3><ul><li>المشي ببطء شديد أو بسرعة مفرطة.</li><li>الجري إلا في حالات الطوارئ.</li><li>جرّ القدمين أو إصدار الضوضاء.</li><li>مرجحة الذراعين بصورة مبالغ فيها.</li><li>استخدام الهاتف في مناطق النزلاء.</li><li>تجاهل النزيل أثناء المرور.</li></ul><p>الجري يوحي للنزلاء بأن هناك خطبًا وقد يكون غير آمن، فاتركه للطوارئ الحقيقية. والمشي البطيء جدًا قد يبدو لا مبالاة، والسريع جدًا يجعل النزيل يتردد في إيقافك. أما السرعة المعتدلة الواثقة فتدعوه إلى طلب المساعدة.</p><blockquote class=\"bk-quote\">امشِ بهدوء وثقة ووعي بمن حولك.</blockquote><aside class=\"bk-scene\"><strong>موقف:</strong> كانت موظفة التدبير الفندقي تدفع عربتها في الممر حين خرجت نزيلة من غرفتها تنظر إلى اللافتات. أبطأت الموظفة، وأزاحت العربة لتمنحها أولوية المرور، وتوقفت بأمان وسألت: “هل أستطيع مساعدتك في الوصول إلى مكان ما؟” كانت النزيلة تبحث عن النادي الرياضي. ولأن الموظفة كانت تمشي بوعي لا باستعجال، تحولت لحظة حيرة إلى لحظة اهتمام.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> إذا اضطررت إلى الإسراع فحافظ على خطوة سريعة منضبطة لا جري، وتواصل بصريًا ولو لحظة مع أي نزيل تمر به.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> قف باستقامة، ابقَ مسترخيًا، واجه النزيل، كن مستعدًا؛ وامشِ بسرعة معتدلة منتبهًا للنزلاء ومانحًا إياهم أولوية المرور.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الوقوف والمشي",
+                                "questions": [
+                                    {
+                                        "question": "تنتظر عند مدخل المطعم في وقت هادئ. أي وقفة تتوافق مع المادة؟",
+                                        "options": [
+                                            "الاتكاء على منصة الاستقبال للراحة",
+                                            "تقاطع الذراعين لتبدو جادًا",
+                                            "استقامة واسترخاء، والوزن على القدمين، واليدان وفق معيار الفندق",
+                                            "اليدان في الجيوب حتى لا تعيقا الحركة"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: قف باستقامة، وحافظ على استرخاء الكتفين، ووزّع الوزن بالتساوي، وضع اليدين وفق معيار الفندق."
+                                    },
+                                    {
+                                        "question": "أي مما يلي تذكره المادة ضمن ما يجب تجنبه عند الوقوف؟",
+                                        "options": [
+                                            "مواجهة النزيل بكامل الجسم",
+                                            "الوقوف بطريقة متصلبة",
+                                            "استرخاء الكتفين",
+                                            "رفع الرأس طبيعيًا"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "الوقوف المتصلب ضمن قائمة التجنب مع الاتكاء والوقوف على قدم واحدة."
+                                    },
+                                    {
+                                        "question": "تأخرت في إيصال غرض إلى غرفة. كيف تتحرك في البهو؟",
+                                        "options": [
+                                            "بسرعة معتدلة وواثقة مع الانتباه للنزلاء",
+                                            "تجري لأن النزيل ينتظر",
+                                            "تمشي وأنت تتصل بالنزيل عبر هاتفك",
+                                            "تمشي بسرعة وتتجنب النظر حتى لا يوقفك أحد"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تقول المادة: سرعة معتدلة وواثقة، وتجنّب الجري إلا في حالات الطوارئ."
+                                    },
+                                    {
+                                        "question": "نزيل يتجه نحوك في ممر ضيق. ماذا يتطلب المشي المهني؟",
+                                        "options": [
+                                            "تستمر بالسرعة نفسها",
+                                            "تنتظر أن يتنحى النزيل",
+                                            "تستدير وتسلك طريقًا آخر",
+                                            "تمنح النزيل أولوية المرور"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "منح النزيل أولوية المرور من نقاط المشي المهني في المادة."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "الحضور في التعامل المباشر",
+                    "lessons": [
+                        {
+                            "title": "التواصل البصري ولغة الجسد وتوقعات النزيل",
+                            "minutes": 7,
+                            "body": "<h2>التعامل المباشر يحتاج حضورًا متوازنًا</h2><p>حين يقف النزيل أمامك تصبح التفاصيل الصغيرة واضحة جدًا. وتذكر المادة خمسة عناصر للتعامل المباشر:</p><table class=\"bk-say\"><thead><tr><th>العنصر</th><th>ماذا تفعل</th></tr></thead><tbody><tr><td>التواصل البصري</td><td>طبيعي ومتوازن دون تحديق</td></tr><tr><td>المسافة المناسبة</td><td>عادةً من متر إلى متر ونصف</td></tr><tr><td>مواجهة النزيل</td><td>واجه النزيل بكامل الجسم</td></tr><tr><td>الاهتمام</td><td>استمع بانتباه ولا تقاطع</td></tr><tr><td>الاحترام</td><td>لا تعطِ ظهرك للنزيل</td></tr></tbody></table><p>التوازن هو الكلمة المفتاحية: فقلة النظر توحي بعدم الاهتمام، وكثرته تصبح تحديقًا. والقرب الزائد يقتحم المساحة الشخصية، والبعد الزائد يبدو جفاءً. والمسافة المعتادة من متر إلى متر ونصف تُشعر النزيل بالخدمة والراحة معًا.</p><h2>لغة الجسد تصنع شعور الترحيب</h2><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنّب</th></tr></thead><tbody><tr><td>ابتسم بصورة طبيعية ودافئة</td><td>العبوس أو إظهار الملل</td></tr><tr><td>استخدم إيماءات هادئة ومهنية</td><td>التحديق في النزيل</td></tr><tr><td>أومئ لإظهار الاستماع والفهم</td><td>الإشارة بالإصبع</td></tr><tr><td>حافظ على تعابير إيجابية</td><td>تحريك اليدين بصورة عصبية</td></tr><tr><td>اجعل لغة جسدك منفتحة</td><td>التثاؤب أو النظر إلى الساعة</td></tr><tr><td>أظهر الهدوء عند معالجة الشكاوى</td><td>التعابير الساخرة أو غير المناسبة</td></tr></tbody></table><p>الإشارة بإصبع واحد قد تبدو غير لائقة، فاستخدم اليد المفتوحة لتوضيح الاتجاه. والتثاؤب أو النظر إلى الساعة يوحيان للنزيل بأنك تريده أن يغادر. وأثناء الشكوى تساعد التعابير الهادئة والصوت الثابت النزيل على الهدوء أيضًا.</p><blockquote class=\"bk-quote\">كن ودودًا دون مبالغة، ومهنيًا دون تصنّع.</blockquote><h2>النزيل يتوقع الاهتمام قبل أن يطلبه</h2><ol><li><strong>الاهتمام الكامل:</strong> يراه الموظف ويستمع إليه.</li><li><strong>الحضور المهني:</strong> مظهر مرتب وحركة واثقة.</li><li><strong>اليقظة:</strong> ملاحظة الاحتياج مبكرًا.</li><li><strong>الاحترام:</strong> احترام الخصوصية والثقافة.</li><li><strong>الاستعداد للخدمة:</strong> استجابة سريعة ولبقة.</li></ol><p>وتختم المادة بقاعدة قصيرة: <strong>قف باستقامة، تحرّك بثقة، احترم النزيل، استمع باهتمام، ابتسم بصدق.</strong> فالوقار المهني ليس مجرد مظهر، بل هو الطريقة التي نجعل بها النزيل يشعر بالترحيب والاحترام.</p><aside class=\"bk-scene\"><strong>موقف:</strong> جاء نزيل منزعج إلى الاستقبال بسبب تأخر غرفته. واجهته الموظفة بكامل جسمها، وحافظت على مسافة مريحة عبر المكتب، وتواصلت معه بصريًا بثبات، وأومأت وهو يتكلم دون أن تقاطعه. وحين سأل أين ينتظر، أشارت إلى الردهة بيد مفتوحة لا بالإصبع. خففت لغة جسدها الهادئة التوتر قبل أن تعرض أي حل.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> إذا احتجت إلى الالتفات لإحضار شيء فأخبر النزيل أولًا، مثل: “لحظة من فضلك، سأحضره لك”، حتى لا تعطيه ظهرك دون تفسير.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> اجعل التواصل البصري متوازنًا والمسافة مريحة ولغة الجسد منفتحة وهادئة، ولبِّ التوقعات الخمسة قبل أن يطلبها النزيل.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الحضور في التعامل المباشر",
+                                "questions": [
+                                    {
+                                        "question": "ما المسافة التي توصي بها المادة عادةً عند خدمة النزيل مباشرة؟",
+                                        "options": [
+                                            "أقرب ما يمكن لإظهار الود",
+                                            "ثلاثة أمتار على الأقل",
+                                            "عادةً من متر إلى متر ونصف",
+                                            "أي مسافة ما دمت تبتسم"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تذكر المادة أن المسافة المناسبة عادةً من متر إلى متر ونصف."
+                                    },
+                                    {
+                                        "question": "سألك نزيل عن مكان السبا. كيف توضح له الاتجاه؟",
+                                        "options": [
+                                            "تشير بإصبع واحد",
+                                            "تستخدم إيماءة هادئة باليد المفتوحة",
+                                            "تومئ برأسك نحوه دون كلام",
+                                            "تعطيه ظهرك وتمشي"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تضع المادة الإشارة بالإصبع ضمن ما يجب تجنبه وتطلب إيماءات هادئة ومهنية."
+                                    },
+                                    {
+                                        "question": "نزيل يشتكي من الإزعاج. أي سلوك يتوافق مع المادة؟",
+                                        "options": [
+                                            "إظهار الهدوء عند معالجة الشكوى والإيماء أثناء الاستماع",
+                                            "النظر إلى الساعة لتوضيح أنك مشغول",
+                                            "التحديق بحزم ليعرف أنك جاد",
+                                            "تعليق ساخر خفيف لتلطيف الجو"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تقول المادة: أظهر الهدوء عند معالجة الشكاوى وأومئ لإظهار الاستماع، وتذكر النظر إلى الساعة والتحديق والسخرية ضمن ما يجب تجنبه."
+                                    },
+                                    {
+                                        "question": "لاحظ موظف أن نزيلًا يعاني مع حقائبه قبل أن يطلب المساعدة. أي توقع لبّى؟",
+                                        "options": [
+                                            "الحضور المهني",
+                                            "احترام الثقافة",
+                                            "الاهتمام الكامل فقط",
+                                            "اليقظة: ملاحظة الاحتياج مبكرًا"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تعرّف المادة اليقظة بأنها ملاحظة الاحتياج مبكرًا."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

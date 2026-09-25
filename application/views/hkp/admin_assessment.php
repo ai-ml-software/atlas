@@ -1,5 +1,5 @@
 <?php $st = array(); foreach ($stats as $s) { $st[$s['id']] = $s; } ?>
-<div class="hkp-head"><div><div class="hkp-eyebrow"><a href="<?php echo hkp_url('admin/assessments'); ?>"><?php echo hkp_e('Assessments'); ?></a> · <?php echo hkp_h($a['code']); ?></div><h1><?php echo hkp_h(hkp_pick($a, 'title')); ?></h1></div><?php echo hkp_badge($a['status']); ?></div>
+<div class="hkp-head"><div><div class="hkp-eyebrow"><a href="<?php echo hkp_url('admin/assessments'); ?>"><?php echo hkp_e('Assessments'); ?></a> · <?php echo hkp_h($a['code']); ?><?php if ($module): ?> · <a href="<?php echo hkp_url('cms/module/' . $module['id']); ?>"><?php echo hkp_e('Back to the module'); ?></a><?php endif; ?></div><h1><?php echo hkp_h(hkp_pick($a, 'title')); ?></h1></div><?php echo hkp_badge($a['status']); ?></div>
 <div class="hkp-grid hkp-grid--main">
 <div class="hkp-grid">
 <section class="hkp-card"><h2><?php echo hkp_e('Questions and analytics'); ?></h2>
@@ -21,6 +21,14 @@
   <?php for ($i = 0; $i < 6; $i++): ?><div class="hkp-actions"><input type="checkbox" name="correct[]" value="<?php echo $i; ?>" aria-label="<?php echo hkp_e('Correct'); ?>"><input class="hkp-input" style="flex:2" name="opt[<?php echo $i; ?>][en]" placeholder="<?php echo hkp_e('Option (English)'); ?>" aria-label="<?php echo hkp_e('Option (English)'); ?>"><input class="hkp-input" style="flex:2" dir="rtl" name="opt[<?php echo $i; ?>][ar]" placeholder="<?php echo hkp_e('Option (Arabic)'); ?>" aria-label="<?php echo hkp_e('Option (Arabic)'); ?>"><input class="hkp-input" style="flex:1" name="opt[<?php echo $i; ?>][match]" placeholder="<?php echo hkp_e('Match'); ?>" aria-label="<?php echo hkp_e('Match'); ?>"></div><?php endfor; ?>
   <div class="hkp-grid hkp-grid--2"><div class="hkp-field"><label for="xe"><?php echo hkp_e('Explanation (English)'); ?></label><input id="xe" class="hkp-input" name="explanation_en"></div><div class="hkp-field"><label for="xa"><?php echo hkp_e('Explanation (Arabic)'); ?></label><input id="xa" class="hkp-input" dir="rtl" name="explanation_ar"></div></div>
   <div><button class="hkp-btn"><?php echo hkp_e('Add question'); ?></button></div></form>
+<form class="hkp-card hkp-form" method="post" action="<?php echo hkp_url('admin/assessments/ai_questions/' . $a['id']); ?>" data-ai-quiz><?php echo ha_csrf_field(); ?><h2><?php echo hkp_e('Generate questions with AI'); ?></h2>
+  <p class="hkp-small hkp-muted"><?php echo hkp_e('The AI drafts five multiple-choice questions and adds them to this quiz. Review every question, correct anything wrong and add the Arabic text before learners take it.'); ?></p>
+  <?php if (!$models): ?><div class="hkp-empty"><?php echo hkp_e('No AI provider is enabled. Open AI Studio → Providers.'); ?></div><?php else: ?>
+  <div class="hkp-field"><label for="aqm"><?php echo hkp_e('Model'); ?></label><select id="aqm" class="hkp-select" name="ai_model"><option value=""><?php echo hkp_e('Automatic (task route)'); ?></option>
+    <?php foreach ($models as $p): ?><optgroup label="<?php echo hkp_h($p['name']); ?>"><?php foreach ($p['models'] as $m): ?><option value="<?php echo hkp_h($p['slug'] . '|' . $m['id']); ?>"><?php echo hkp_h($m['label']); ?></option><?php endforeach; ?></optgroup><?php endforeach; ?></select></div>
+  <div class="hkp-field"><label for="aqp"><?php echo hkp_e('What should the questions test?'); ?></label><input id="aqp" class="hkp-input" name="prompt" required placeholder="<?php echo hkp_e('e.g. Greeting guests at check-in and confirming their booking'); ?>"></div>
+  <div class="hkp-field"><label for="aqc"><?php echo hkp_e('Lesson text to base them on (optional)'); ?></label><textarea id="aqc" class="hkp-input" name="context" rows="4"></textarea></div>
+  <div><button class="hkp-btn"><?php echo hkp_e('Generate and add questions'); ?></button></div><?php endif; ?></form>
 </div>
 <form class="hkp-card hkp-form" method="post" action="<?php echo hkp_url('admin/assessments/settings/' . $a['id']); ?>"><?php echo ha_csrf_field(); ?><h2><?php echo hkp_e('Settings'); ?></h2>
   <div class="hkp-field"><label for="sp"><?php echo hkp_e('Pass mark (%)'); ?></label><input id="sp" class="hkp-input" type="number" name="pass_percentage" value="<?php echo (int) $a['pass_percentage']; ?>"></div>

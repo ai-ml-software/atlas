@@ -1,0 +1,538 @@
+{
+    "slug": "lost-and-found-and-valuables",
+    "category": "safety-security",
+    "level": "foundation",
+    "source_pdf": "Lost-and-Found-and-Valuables-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/lost-and-found-and-valuables.webp",
+    "videos": [],
+    "locales": {
+        "en": {
+            "title": "Lost and Found and Valuables",
+            "subtitle": "Report, record and keep it safe",
+            "short_description": "Learn what to do when you find a guest's item: secure it, report it, record it, hand it over officially and return it only after verification.",
+            "description": "<p>Every lost item is a trust. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows colleagues how to handle found items and valuables so that the guest, the employee and the hotel are all protected.</p><p>You will learn the first actions when you find something, the five steps to protect a lost item, exactly what to record, what to do and avoid, the extra care needed for cash, jewellery and documents, and how to return an item safely to its owner.</p>",
+            "requirements": "No prior training is needed; the course suits every colleague, in every department, who may find a guest's item.",
+            "outcomes": [
+                "Explain why the correct lost-and-found procedure protects the guest, the employee and the hotel",
+                "Secure the place, report to the supervisor and hand over a found item officially",
+                "Record the description, place, time, finder and condition without guessing",
+                "Apply the Stop, Witness, Record, Hand over steps for valuable items",
+                "Verify the claimant and obtain a signature before returning any item"
+            ],
+            "faqs": [
+                {
+                    "question": "What is the first thing to do when I find an item?",
+                    "answer": "Secure the place and report to the supervisor immediately. If possible, contact the supervisor before moving the item."
+                },
+                {
+                    "question": "Can I keep a found item with me until the end of my shift?",
+                    "answer": "No. Hand it over officially to the authorised person, obtain the register or receipt number and do not keep it with you."
+                },
+                {
+                    "question": "Someone says the item is theirs. Can I give it to them?",
+                    "answer": "Not directly. Ask for an exact description, verify their identity, match the details with the register and ask for a signature; involve the supervisor where needed."
+                }
+            ],
+            "meta_title": "Lost and Found and Valuables for Hotel Staff",
+            "meta_description": "Hotel training on lost and found: secure, report, record and hand over items, extra care for valuables, and verified return to the owner.",
+            "focus_keyword": "hotel lost and found procedure",
+            "chapters": [
+                {
+                    "title": "Trust Starts at the First Moment",
+                    "lessons": [
+                        {
+                            "title": "Every Lost Item Is a Trust",
+                            "minutes": 5,
+                            "body": "<h2>Trust starts from the first moment</h2><p>A guest who leaves a watch on a lobby sofa, a phone charger in a meeting room or a wallet in a taxi at the hotel entrance is trusting the hotel, often without knowing it. What the first colleague does in the first minute decides whether that trust is kept. The deck's message is direct: <strong>secure it and follow the procedure.</strong></p><p>The deck gives five first rules:</p><ul><li><strong>Do not use the item you found.</strong> Not to check whether a phone works, not to try on a jacket, not to read a document.</li><li><strong>Keep it in place if the place is safe.</strong> Leaving the item where it is, when it is safe to do so, protects details that may help identify the owner.</li><li><strong>Inform the supervisor immediately.</strong> Do not wait until the end of the task or the shift.</li><li><strong>Record the details without guessing.</strong> Write what you see, not what you think.</li><li><strong>Hand the item over using the approved method.</strong></li></ul><blockquote class=\"bk-quote\">Every lost item is a trust, and the correct procedure protects the guest, the employee and the hotel.</blockquote><h2>Why the procedure protects you too</h2><p>It is natural to think that lost-and-found rules exist only for the guest. In fact they protect three parties. The <strong>guest</strong> is more likely to get the item back, complete and in the same condition. The <strong>employee</strong> is protected, because a clear record shows exactly what they found and to whom they gave it; no one can later suggest something went missing in their hands. The <strong>hotel</strong> is protected, because it can show a clear, fair process if there is ever a question.</p><p>When colleagues skip steps, even with good intentions, such as carrying a wallet around to \"find the owner\", all three lose that protection.</p><h2>The approach in one line</h2><p>The deck summarises the whole process in five words: <strong>Find, Report, Record, Hand over, Secure</strong>. Its subtitle gives the rule in short: <strong>report, record and keep it safe.</strong> The rest of this course explains each step.</p><aside class=\"bk-scene\"><strong>Scene:</strong> During turndown, a housekeeper notices a gold bracelet under the chair in room 709; the guest has already checked out. She does not pick it up to look at it more closely, and she does not put it in her pocket to take to the office later. She leaves it where it is, calls her supervisor on the radio and waits. The supervisor arrives, they record the details together and the bracelet goes to the approved storage. When the guest calls from the airport an hour later, the hotel can answer at once.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Do not use the item, keep it in place if safe, tell your supervisor at once, record without guessing and hand it over by the approved method.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Every lost item is a trust",
+                                "questions": [
+                                    {
+                                        "question": "You find a phone on a restaurant table after the guest has left. You want to see whether it works so you can call the owner. What should you do?",
+                                        "options": [
+                                            "Unlock it and check the contacts",
+                                            "Do not use it; inform the supervisor immediately",
+                                            "Charge it in the staff room",
+                                            "Keep it until the guest returns"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says do not use the item you found and inform the supervisor immediately."
+                                    },
+                                    {
+                                        "question": "A found bag is in a quiet, safe spot in a meeting room. What does the deck advise?",
+                                        "options": [
+                                            "Move it straight to your locker",
+                                            "Open it to look for an ID",
+                                            "Keep it in place if the place is safe, and inform the supervisor",
+                                            "Give it to the next guest who asks"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The slide says keep it in place if safe and inform the supervisor immediately."
+                                    },
+                                    {
+                                        "question": "Who does the correct lost-and-found procedure protect?",
+                                        "options": [
+                                            "The guest, the employee and the hotel",
+                                            "Only the guest",
+                                            "Only the hotel's insurance",
+                                            "Only the security department"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck states that the correct procedure protects the guest, the employee and the hotel."
+                                    },
+                                    {
+                                        "question": "When recording a found item, what must you avoid?",
+                                        "options": [
+                                            "Writing the time",
+                                            "Writing the place",
+                                            "Describing the colour",
+                                            "Guessing details you cannot see"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says to record the details without guessing."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "What to Do When You Find an Item",
+                            "minutes": 6,
+                            "body": "<h2>Three actions: secure, report, hand over</h2><p>The deck breaks the first response into three clear actions.</p><h3>1. Secure the place</h3><ul><li><strong>Do not move the item without need.</strong></li><li><strong>Prevent anyone from tampering with it, if possible.</strong></li><li><strong>Do not leave it unattended.</strong> Stay with the item, or make sure someone responsible does, until the supervisor arrives.</li></ul><h3>2. Report and record</h3><ul><li><strong>Inform the supervisor immediately.</strong></li><li><strong>Record the place, the time and the description.</strong></li><li><strong>Note who was present.</strong> This helps confirm what happened later.</li></ul><h3>3. Hand over officially</h3><ul><li><strong>Hand it to the authorised person.</strong></li><li><strong>Get the register number or receipt.</strong> This is your proof of handover.</li><li><strong>Do not keep it with you.</strong></li></ul><blockquote class=\"bk-quote\">Do not pass a lost item from hand to hand without recording it.</blockquote><h2>Five steps to protect a lost item</h2><p>The deck then sets out five steps that apply to every lost item:</p><ol><li>Secure the place where it was found.</li><li>Inform the supervisor immediately.</li><li>Record the description, place and time.</li><li>Hand the item over officially.</li><li>Keep it in the approved location.</li></ol><p>The first step is emphasised: <strong>report first.</strong> If possible, contact the supervisor before moving the item.</p><h2>When the owner is known</h2><p>Sometimes the owner is obvious, for example a room key wallet with a name, or an item left in an occupied room. Even then, do not call or visit the guest yourself. The deck is clear: <strong>if the owner is known, the supervisor or authorised person contacts them by phone or through an approved hotel channel.</strong> This keeps the record complete and protects the guest's privacy.</p><table class=\"bk-say\"><thead><tr><th>Action</th><th>What it means</th></tr></thead><tbody><tr><td>Secure</td><td>Do not move without need, prevent tampering, do not leave unattended</td></tr><tr><td>Report</td><td>Supervisor immediately; place, time, description; who was present</td></tr><tr><td>Hand over</td><td>Authorised person; register or receipt number; do not keep it</td></tr></tbody></table><aside class=\"bk-scene\"><strong>Scene:</strong> A bellman finds a laptop bag beside a lobby pillar. He stays beside it and radios the duty supervisor, noting that it is 10:40 and that a concierge colleague is with him. The supervisor records the details, the bag is handed to the authorised colleague and the bellman receives a register number. A tag inside shows a guest name. The bellman does not phone the room; the supervisor contacts the guest through the approved channel.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Keep the register or receipt number in your notes. If anyone asks later what happened to the item, you can show exactly when and to whom you handed it over.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Secure, report and hand over officially. Report first, never pass the item hand to hand unrecorded, and let the supervisor contact a known owner.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: When you find an item",
+                                "questions": [
+                                    {
+                                        "question": "You find a handbag in the spa lounge and need to fetch your supervisor. What should you avoid?",
+                                        "options": [
+                                            "Leaving the bag unattended",
+                                            "Radioing the supervisor",
+                                            "Noting the time",
+                                            "Noting who is present"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Under 'secure the place', the deck says do not leave it unattended."
+                                    },
+                                    {
+                                        "question": "A colleague offers to take a found scarf to the office for you, with no record. What does the deck say?",
+                                        "options": [
+                                            "That is fine if they are a supervisor's friend",
+                                            "Do not pass a lost item from hand to hand without recording it",
+                                            "Only valuable items need recording",
+                                            "Let them take it and record it tomorrow"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The slide says do not pass a lost item from hand to hand without recording."
+                                    },
+                                    {
+                                        "question": "After handing over a found item, what should you receive?",
+                                        "options": [
+                                            "A reward",
+                                            "The item back at the end of the shift",
+                                            "The register number or a receipt",
+                                            "The guest's phone number"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says to obtain the register number or receipt when handing over officially."
+                                    },
+                                    {
+                                        "question": "A found wallet contains a guest's business card with a room number. Who contacts the guest?",
+                                        "options": [
+                                            "You, by knocking on the room door",
+                                            "Any colleague who is free",
+                                            "No one; wait for the guest to ask",
+                                            "The supervisor or authorised person, through an approved hotel channel"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "If the owner is known, the supervisor or authorised person contacts them by phone or an approved channel."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Recording and Valuables",
+                    "lessons": [
+                        {
+                            "title": "Recording, Do and Avoid, and Valuable Items",
+                            "minutes": 7,
+                            "body": "<h2>What information should you record?</h2><p>The record is the item's story. The deck lists four pieces of information:</p><ol><li><strong>Description of the item:</strong> the type, the colour and any clear mark.</li><li><strong>Place and time:</strong> the exact place and time it was found.</li><li><strong>Found by:</strong> the name of the employee, their department and any witness.</li><li><strong>Condition and handover:</strong> the condition of the item and to whom it was handed.</li></ol><blockquote class=\"bk-quote\">Write only what you see. Do not guess the value or the owner.</blockquote><p>For example, write \"black leather wallet, small scratch on the front\", not \"expensive designer wallet, probably Mr Khan's\". A guess about value or ownership can cause a wrong return or an unfair dispute later.</p><h2>Do and avoid when you find a lost item</h2><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Inform the supervisor immediately</td><td>Using the item or trying it</td></tr><tr><td>Use an approved bag or container</td><td>Opening a wallet or bag on your own</td></tr><tr><td>Ask for a witness for valuable items</td><td>Photographing the item with your personal phone</td></tr><tr><td>Protect the guest's privacy</td><td>Telling others what you found</td></tr><tr><td>Complete the record clearly</td><td>Handing it directly to someone who claims it</td></tr></tbody></table><blockquote class=\"bk-quote\">Do not share a photo of the lost item or its details. Privacy is part of trust.</blockquote><p>A photo on a personal phone can be shared, lost or misused; a comment in the staff canteen about \"the guest who left cash in the drawer\" breaks the guest's privacy. Keep information inside the approved process.</p><h2>When the item is valuable</h2><p>Cash, jewellery and documents need extra care. The deck gives four steps:</p><ol><li><strong>Stop.</strong> Do not open or count the contents on your own.</li><li><strong>Call a witness.</strong> Ask for the supervisor or an authorised employee to be present.</li><li><strong>Document.</strong> Record the condition and the contents according to policy.</li><li><strong>Hand over.</strong> Place it in a secure safe and store it officially.</li></ol><blockquote class=\"bk-quote\">Cash, jewellery and documents need a witness and a clear chain of handover.</blockquote><p>A chain of handover means that at every moment someone is recorded as holding the item, from the finder to the witness to the secure storage. There are no gaps where the item was \"somewhere\".</p><aside class=\"bk-scene\"><strong>Scene:</strong> A room attendant finds a thick envelope in the bedside drawer of a vacated room. She does not open it to see what is inside. She calls her supervisor, who comes with a second authorised colleague. Together they open it according to policy, find cash and a passport, record the contents and condition, sign the record and place everything in the secure safe. No one mentions it outside the team.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Record type, colour, marks, place, time, finder, witness and condition, without guessing. For cash, jewellery and documents: Stop, call a witness, document and hand over to secure storage.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Recording and valuables",
+                                "questions": [
+                                    {
+                                        "question": "You find a silver watch. Which record entry follows the deck?",
+                                        "options": [
+                                            "\"Expensive watch, worth a lot\"",
+                                            "\"Probably belongs to the VIP in 1201\"",
+                                            "\"Silver-coloured watch, brown strap, scratch on face, pool bar, 15:20\"",
+                                            "\"Watch\""
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Record type, colour, clear marks, place and time; write what you see and do not guess value or owner."
+                                    },
+                                    {
+                                        "question": "A colleague wants to photograph a found necklace on their personal phone to share in a staff group. What does the deck say?",
+                                        "options": [
+                                            "Avoid it; do not share photos or details, privacy is part of trust",
+                                            "It is fine if the group is private",
+                                            "It helps find the owner faster",
+                                            "Only if the supervisor is in the group"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck lists photographing with a personal phone and telling others as things to avoid."
+                                    },
+                                    {
+                                        "question": "You find a closed envelope that may contain cash. What is the first step?",
+                                        "options": [
+                                            "Count the money to record it accurately",
+                                            "Stop: do not open or count the contents on your own",
+                                            "Take it to the front desk",
+                                            "Leave it for the guest"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "For valuable items, step one is Stop: do not open or count contents alone."
+                                    },
+                                    {
+                                        "question": "What do cash, jewellery and documents require according to the deck?",
+                                        "options": [
+                                            "Only a photograph",
+                                            "Immediate return to anyone who asks",
+                                            "Storage in the finder's locker",
+                                            "A witness and a clear chain of handover"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The slide states that cash, jewellery and documents need a witness and a clear chain of handover."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Returning Items Safely",
+                    "lessons": [
+                        {
+                            "title": "Returning the Item to Its Owner",
+                            "minutes": 6,
+                            "body": "<h2>Verify before you hand over</h2><p>The moment of return is where good intentions can go wrong. A person at the desk says \"that's my phone\" and it feels helpful to hand it over at once. But if the phone belongs to someone else, the hotel has now lost it twice. The deck lists five checks before any item is returned:</p><ul><li><strong>Ask for an exact description of the item.</strong> The real owner can usually describe the colour, the case, a mark or what is inside.</li><li><strong>Verify the identity of the person receiving it.</strong></li><li><strong>Match the details with the record.</strong> This is where a clear, factual record pays off.</li><li><strong>Ask for a signature on receipt.</strong> The signature closes the chain of handover.</li><li><strong>Do not reveal details that could help a false claim.</strong> Ask \"Can you describe it?\" rather than \"Is it a black iPhone with a red case?\"</li></ul><h2>Ask for the supervisor's support</h2><p>Some returns need a supervisor. The deck lists five situations:</p><ul><li>The item includes cash, jewellery or documents.</li><li>The description or the identity does not match.</li><li>Someone asks for the item to be handed to another person.</li><li>The item is dangerous or suspicious.</li><li>Any exception to hotel policy.</li></ul><p>A dangerous or suspicious item is not a lost-and-found task for one colleague. Do not handle it further; inform the supervisor so the hotel's security procedure can take over.</p><blockquote class=\"bk-quote\">Do not hand over any lost item before verification, signature and the required approval.</blockquote><table class=\"bk-say\"><thead><tr><th>Say</th><th>Instead of</th></tr></thead><tbody><tr><td>\"Could you describe the item for me, please?\"</td><td>\"Is it a blue bag with a gold zip?\"</td></tr><tr><td>\"May I see your ID so I can match it with our record?\"</td><td>\"Here you are, I'm sure it's yours.\"</td></tr><tr><td>\"Please sign here to confirm you have received it.\"</td><td>Handing it over without a signature</td></tr></tbody></table><aside class=\"bk-scene\"><strong>Scene:</strong> A visitor at reception says his friend, a checked-out guest, asked him to collect a laptop left in the room. The receptionist does not hand it over, and she does not confirm what the hotel is holding. She says politely, \"Let me ask my supervisor to help you,\" because this is a request to hand an item to another person. The supervisor contacts the guest through the approved channel and follows the hotel's authorisation process before anything is released.</aside><h2>Closing thought</h2><p>The deck ends with the full sequence: <strong>Report, Record, Keep, Verify, Hand over.</strong> Every lost item is a trust: report, record and keep it, then return it safely. <strong>Your trustworthiness protects the guest and builds the hotel's reputation for trust.</strong></p><aside class=\"bk-key\"><strong>Key takeaway:</strong> Before any return, get an exact description, verify identity, match the record and obtain a signature. Involve the supervisor for valuables, mismatches, third parties, suspicious items and exceptions.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Returning items safely",
+                                "questions": [
+                                    {
+                                        "question": "A guest asks whether the hotel found their phone. How should you start?",
+                                        "options": [
+                                            "\"Yes, the black one with the red case?\"",
+                                            "\"Here it is.\"",
+                                            "\"We found three phones, which one?\"",
+                                            "\"Could you describe it for me, please?\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Ask for an exact description and do not reveal details that help a false claim."
+                                    },
+                                    {
+                                        "question": "The claimant's description of a bag does not match the record. What should you do?",
+                                        "options": [
+                                            "Ask for the supervisor's support",
+                                            "Hand it over anyway to avoid an argument",
+                                            "Show them the bag so they can describe it",
+                                            "Tell them it is not here"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "A mismatch in description or identity is one of the cases where the deck says to ask for supervisor support."
+                                    },
+                                    {
+                                        "question": "What closes the chain of handover when an item is returned?",
+                                        "options": [
+                                            "A thank-you from the guest",
+                                            "Taking a photo of the guest",
+                                            "The receiver's signature on receipt, after verification",
+                                            "Deleting the record"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says to ask for a signature on receipt after verifying identity and matching the record."
+                                    },
+                                    {
+                                        "question": "A caller asks the hotel to give a guest's forgotten passport to their driver. Why involve the supervisor?",
+                                        "options": [
+                                            "Because drivers are never allowed in the lobby",
+                                            "Because it is a document and a request to hand it to another person",
+                                            "Because passports must be destroyed",
+                                            "There is no need; give it to the driver"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Documents and requests to hand over to another person both require supervisor support."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "التعامل مع المفقودات والأشياء الثمينة",
+            "subtitle": "أبلغ وسجّل واحفظ بأمان",
+            "short_description": "تعلّم ما تفعله عند العثور على غرض لنزيل: أمّن المكان، وأبلغ، وسجّل، وسلّم رسميًا، ولا تُعِده إلا بعد التحقق.",
+            "description": "<p>كل مفقود أمانة. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتعلّم الموظفين كيف يتعاملون مع المفقودات والأشياء الثمينة بطريقة تحمي النزيل والموظف والفندق.</p><p>ستتعرف على أول ما تفعله عند العثور على شيء، وخمس خطوات لحماية المفقود، وما المعلومات التي تسجلها بالضبط، وما تفعله وما تتجنبه، والعناية الإضافية بالنقد والمجوهرات والوثائق، وكيف تعيد المفقود إلى صاحبه بأمان.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظف في أي قسم قد يعثر على غرض لنزيل.",
+            "outcomes": [
+                "اشرح لماذا يحمي الإجراء الصحيح للمفقودات النزيل والموظف والفندق",
+                "أمّن المكان وأبلغ المشرف وسلّم المفقود رسميًا",
+                "سجّل الوصف والمكان والوقت ومن وجده وحالته دون تخمين",
+                "طبّق خطوات توقف، استدعِ شاهدًا، وثّق، سلّم للأشياء الثمينة",
+                "تحقق من المستلم واطلب توقيعه قبل إعادة أي مفقود"
+            ],
+            "faqs": [
+                {
+                    "question": "ما أول ما أفعله عند العثور على شيء؟",
+                    "answer": "أمّن المكان وأبلغ المشرف فورًا، واتصل بالمشرف قبل تحريك الشيء إن أمكن."
+                },
+                {
+                    "question": "هل أحتفظ بالمفقود معي حتى نهاية المناوبة؟",
+                    "answer": "لا. سلّمه رسميًا للشخص المخول، واحصل على رقم السجل أو الإيصال، ولا تحتفظ به معك."
+                },
+                {
+                    "question": "شخص يقول إن الشيء له، هل أسلّمه إياه؟",
+                    "answer": "ليس مباشرة. اطلب وصفًا دقيقًا للشيء، وتحقق من هويته، وطابق التفاصيل مع السجل، واطلب التوقيع، واستعن بالمشرف عند الحاجة."
+                }
+            ],
+            "meta_title": "المفقودات والأشياء الثمينة لموظفي الفنادق",
+            "meta_description": "تدريب فندقي على المفقودات: أمّن وأبلغ وسجّل وسلّم رسميًا، مع عناية خاصة بالأشياء الثمينة وإعادة المفقود بعد التحقق.",
+            "focus_keyword": "إجراءات المفقودات في الفنادق",
+            "chapters": [
+                {
+                    "title": "الأمانة تبدأ من أول لحظة",
+                    "lessons": [
+                        {
+                            "title": "كل مفقود أمانة",
+                            "minutes": 5,
+                            "body": "<h2>الأمانة تبدأ من أول لحظة</h2><p>النزيل الذي ينسى ساعة على أريكة في البهو، أو شاحن هاتف في قاعة اجتماعات، أو محفظة عند مدخل الفندق، يضع ثقته في الفندق دون أن يدري في أغلب الأحيان. وما يفعله أول موظف في أول دقيقة هو ما يحدد هل تُحفظ هذه الثقة أم لا. ورسالة المادة مباشرة: <strong>أمّن واتبع الإجراء.</strong></p><ul><li><strong>لا تستخدم الشيء الذي وجدته،</strong> لا لتجربة الهاتف، ولا لقياس سترة، ولا لقراءة وثيقة.</li><li><strong>حافظ على مكانه إن كان آمنًا،</strong> فتركه في مكانه يحفظ تفاصيل قد تساعد في معرفة صاحبه.</li><li><strong>أبلغ المشرف فورًا،</strong> ولا تنتظر حتى تنهي مهمتك أو مناوبتك.</li><li><strong>سجّل التفاصيل دون تخمين،</strong> اكتب ما تراه لا ما تظنه.</li><li><strong>سلّم الشيء بالطريقة المعتمدة.</strong></li></ul><blockquote class=\"bk-quote\">كل مفقود أمانة — والإجراء الصحيح يحمي النزيل والموظف والفندق.</blockquote><h2>لماذا يحميك الإجراء أنت أيضًا؟</h2><p>قد يبدو أن قواعد المفقودات وُضعت من أجل النزيل وحده، لكنها في الحقيقة تحمي ثلاثة أطراف. <strong>النزيل</strong> تزداد فرصته في استعادة غرضه كاملًا وبحالته نفسها. و<strong>الموظف</strong> محمي، لأن السجل الواضح يبيّن بالضبط ما وجده ولمن سلّمه، فلا يستطيع أحد لاحقًا أن يدّعي أن شيئًا فُقد بين يديه. و<strong>الفندق</strong> محمي، لأنه يستطيع أن يُظهر إجراءً واضحًا وعادلًا إذا طُرح أي سؤال.</p><p>وعندما يتجاوز الموظف خطوة، حتى بنية حسنة، كأن يتجول بمحفظة \"ليبحث عن صاحبها\"، يخسر الأطراف الثلاثة هذه الحماية.</p><h2>المنهج في سطر واحد</h2><p>تلخص المادة العملية كلها في خمس كلمات: <strong>اكتشف، أبلغ، سجّل، سلّم، احفظ</strong>. وعنوانها يختصر القاعدة: <strong>أبلغ وسجّل واحفظ بأمان.</strong></p><aside class=\"bk-scene\"><strong>موقف:</strong> أثناء تجهيز الغرفة 709 للمساء، لاحظت عاملة التدبير الفندقي سوارًا ذهبيًا تحت الكرسي، وكان النزيل قد غادر. لم تلتقطه لتتفحصه، ولم تضعه في جيبها لتأخذه إلى المكتب لاحقًا. تركته في مكانه واتصلت بمشرفتها عبر اللاسلكي وانتظرت. حضرت المشرفة وسجّلتا التفاصيل معًا، ثم نُقل السوار إلى مكان الحفظ المعتمد. وعندما اتصل النزيل من المطار بعد ساعة، استطاع الفندق أن يجيبه فورًا.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> لا تستخدم الشيء، وحافظ على مكانه إن كان آمنًا، وأبلغ المشرف فورًا، وسجّل دون تخمين، وسلّمه بالطريقة المعتمدة.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: كل مفقود أمانة",
+                                "questions": [
+                                    {
+                                        "question": "وجدت هاتفًا على طاولة في المطعم بعد مغادرة النزيل، وتريد أن تتأكد أنه يعمل لتتصل بصاحبه. ماذا تفعل؟",
+                                        "options": [
+                                            "تفتحه وتتفقد جهات الاتصال",
+                                            "لا تستخدمه، وتبلغ المشرف فورًا",
+                                            "تشحنه في غرفة الموظفين",
+                                            "تحتفظ به حتى يعود النزيل"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: لا تستخدم الشيء الذي وجدته، وأبلغ المشرف فورًا."
+                                    },
+                                    {
+                                        "question": "حقيبة مفقودة في ركن هادئ وآمن من قاعة اجتماعات. بماذا تنصح المادة؟",
+                                        "options": [
+                                            "انقلها مباشرة إلى خزانتك",
+                                            "افتحها لتبحث عن هوية",
+                                            "حافظ على مكانها إن كان آمنًا وأبلغ المشرف",
+                                            "سلّمها لأول نزيل يسأل عنها"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول الشريحة: حافظ على مكانه إن كان آمنًا وأبلغ المشرف فورًا."
+                                    },
+                                    {
+                                        "question": "من يحميه الإجراء الصحيح للمفقودات؟",
+                                        "options": [
+                                            "النزيل والموظف والفندق",
+                                            "النزيل فقط",
+                                            "تأمين الفندق فقط",
+                                            "قسم الأمن فقط"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تنص المادة على أن الإجراء الصحيح يحمي النزيل والموظف والفندق."
+                                    },
+                                    {
+                                        "question": "عند تسجيل مفقود، ما الذي يجب تجنبه؟",
+                                        "options": [
+                                            "كتابة الوقت",
+                                            "كتابة المكان",
+                                            "وصف اللون",
+                                            "تخمين تفاصيل لا تراها"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: سجّل التفاصيل دون تخمين."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "ماذا تفعل عند العثور على شيء؟",
+                            "minutes": 6,
+                            "body": "<h2>ثلاثة إجراءات: أمّن، أبلغ، سلّم</h2><p>تقسم المادة الاستجابة الأولى إلى ثلاثة إجراءات واضحة.</p><h3>١. أمّن المكان</h3><ul><li><strong>لا تحرك الشيء دون حاجة.</strong></li><li><strong>امنع العبث به إن أمكن.</strong></li><li><strong>لا تتركه دون مراقبة،</strong> ابقَ معه أو تأكد أن شخصًا مسؤولًا معه حتى يصل المشرف.</li></ul><h3>٢. أبلغ وسجّل</h3><ul><li><strong>أبلغ المشرف فورًا.</strong></li><li><strong>سجّل المكان والوقت والوصف.</strong></li><li><strong>اذكر من كان حاضرًا،</strong> فذلك يساعد على تأكيد ما حدث لاحقًا.</li></ul><h3>٣. سلّم رسميًا</h3><ul><li><strong>سلّمه للشخص المخول.</strong></li><li><strong>احصل على رقم السجل أو الإيصال،</strong> فهو دليلك على التسليم.</li><li><strong>لا تحتفظ به معك.</strong></li></ul><blockquote class=\"bk-quote\">لا تنقل المفقود من يد إلى يد دون تسجيل.</blockquote><h2>خمس خطوات لحماية المفقود</h2><ol><li>أمّن مكان العثور عليه.</li><li>أبلغ المشرف فورًا.</li><li>سجّل الوصف والمكان والوقت.</li><li>سلّم المفقود رسميًا.</li><li>احفظه في الموقع المعتمد.</li></ol><p>وتؤكد المادة على الخطوة الأولى: <strong>أبلغ أولًا،</strong> واتصل بالمشرف قبل تحريك الشيء إن أمكن.</p><h2>عندما يكون صاحبه معروفًا</h2><p>أحيانًا يكون صاحب الغرض واضحًا، كمحفظة مفتاح الغرفة عليها اسم، أو غرض في غرفة مشغولة. ومع ذلك لا تتصل بالنزيل أو تزوره بنفسك. فالمادة واضحة: <strong>إذا عُرف صاحبه، يتواصل معه المشرف أو المسؤول عبر الهاتف أو وسيلة الفندق المعتمدة.</strong> وهذا يحفظ اكتمال السجل وخصوصية النزيل.</p><table class=\"bk-say\"><thead><tr><th>الإجراء</th><th>معناه</th></tr></thead><tbody><tr><td>أمّن</td><td>لا تحركه دون حاجة، امنع العبث، لا تتركه دون مراقبة</td></tr><tr><td>أبلغ</td><td>المشرف فورًا؛ المكان والوقت والوصف؛ من كان حاضرًا</td></tr><tr><td>سلّم</td><td>للشخص المخول؛ رقم السجل أو الإيصال؛ لا تحتفظ به</td></tr></tbody></table><aside class=\"bk-scene\"><strong>موقف:</strong> وجد موظف الأمتعة حقيبة حاسوب بجوار عمود في البهو. بقي بجانبها واتصل بالمشرف المناوب عبر اللاسلكي، ودوّن أن الساعة 10:40 وأن زميلًا من الكونسيرج كان معه. سجّل المشرف التفاصيل، وسُلّمت الحقيبة للموظف المخول، وحصل موظف الأمتعة على رقم السجل. كانت داخل الحقيبة بطاقة باسم نزيل، لكنه لم يتصل بالغرفة، بل تواصل المشرف مع النزيل عبر الوسيلة المعتمدة.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> احتفظ برقم السجل أو الإيصال في ملاحظاتك، فإذا سأل أحد لاحقًا عن مصير الغرض استطعت أن تبيّن متى ولمن سلّمته بالضبط.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> أمّن، وأبلغ، وسلّم رسميًا. أبلغ أولًا، ولا تنقل المفقود من يد إلى يد دون تسجيل، واترك للمشرف التواصل مع صاحبه إن عُرف.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: عند العثور على شيء",
+                                "questions": [
+                                    {
+                                        "question": "وجدت حقيبة يد في صالة السبا وتحتاج إلى استدعاء المشرف. ما الذي يجب تجنبه؟",
+                                        "options": [
+                                            "ترك الحقيبة دون مراقبة",
+                                            "الاتصال بالمشرف عبر اللاسلكي",
+                                            "تدوين الوقت",
+                                            "تدوين من كان حاضرًا"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "ضمن \"أمّن المكان\" تقول المادة: لا تتركه دون مراقبة."
+                                    },
+                                    {
+                                        "question": "عرض عليك زميل أن يأخذ وشاحًا مفقودًا إلى المكتب دون تسجيل. ماذا تقول المادة؟",
+                                        "options": [
+                                            "لا بأس إن كان صديقًا للمشرف",
+                                            "لا تنقل المفقود من يد إلى يد دون تسجيل",
+                                            "الأشياء الثمينة وحدها تحتاج إلى تسجيل",
+                                            "دعه يأخذه وسجّله غدًا"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول الشريحة: لا تنقل المفقود من يد إلى يد دون تسجيل."
+                                    },
+                                    {
+                                        "question": "بعد تسليم المفقود، ما الذي يجب أن تحصل عليه؟",
+                                        "options": [
+                                            "مكافأة",
+                                            "استعادة الغرض في نهاية المناوبة",
+                                            "رقم السجل أو الإيصال",
+                                            "رقم هاتف النزيل"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: احصل على رقم السجل أو الإيصال عند التسليم الرسمي."
+                                    },
+                                    {
+                                        "question": "في محفظة مفقودة بطاقة عمل لنزيل مع رقم غرفته. من يتواصل مع النزيل؟",
+                                        "options": [
+                                            "أنت، بطرق باب غرفته",
+                                            "أي زميل متفرغ",
+                                            "لا أحد، ننتظر حتى يسأل النزيل",
+                                            "المشرف أو المسؤول عبر وسيلة الفندق المعتمدة"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "إذا عُرف صاحبه، يتواصل معه المشرف أو المسؤول عبر الهاتف أو وسيلة الفندق المعتمدة."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "التسجيل والأشياء الثمينة",
+                    "lessons": [
+                        {
+                            "title": "التسجيل وافعل وتجنب والأشياء الثمينة",
+                            "minutes": 7,
+                            "body": "<h2>ما المعلومات التي تسجلها؟</h2><p>السجل هو قصة المفقود. وتحدد المادة أربع معلومات:</p><ol><li><strong>وصف الشيء:</strong> النوع واللون وأي علامة واضحة.</li><li><strong>المكان والوقت:</strong> المكان الدقيق ووقت العثور.</li><li><strong>اسم من وجده:</strong> اسم الموظف والقسم والشاهد.</li><li><strong>الحالة والتسليم:</strong> حالة الشيء ولمن تم تسليمه.</li></ol><blockquote class=\"bk-quote\">اكتب ما تراه فقط — لا تخمّن القيمة أو صاحب الشيء.</blockquote><p>مثلًا اكتب: \"محفظة جلدية سوداء، خدش صغير في الواجهة\"، لا \"محفظة ماركة غالية، غالبًا للسيد فلان\". فتخمين القيمة أو المالك قد يؤدي إلى تسليم خاطئ أو خلاف غير عادل لاحقًا.</p><h2>افعل وتجنب عند العثور على مفقود</h2><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنب</th></tr></thead><tbody><tr><td>أبلغ المشرف فورًا</td><td>أن تستخدم الشيء أو تجربه</td></tr><tr><td>استخدم كيسًا أو حافظة معتمدة</td><td>أن تفتح المحفظة أو الحقيبة وحدك</td></tr><tr><td>اطلب شاهدًا للأشياء الثمينة</td><td>أن تصور الشيء بهاتفك الشخصي</td></tr><tr><td>احفظ خصوصية النزيل</td><td>أن تخبر الآخرين بما وجدت</td></tr><tr><td>أكمل السجل بوضوح</td><td>أن تسلّمه لمن يدّعي ملكيته مباشرة</td></tr></tbody></table><blockquote class=\"bk-quote\">لا تنشر صورة المفقود أو تفاصيله — الخصوصية جزء من الأمانة.</blockquote><p>الصورة على الهاتف الشخصي قد تُنشر أو تضيع أو يُساء استخدامها، والحديث في مطعم الموظفين عن \"النزيل الذي نسي نقودًا في الدرج\" يمس خصوصيته. أبقِ المعلومات داخل الإجراء المعتمد.</p><h2>عندما يكون المفقود ثمينًا</h2><p>النقد والمجوهرات والوثائق تحتاج إلى عناية إضافية، وتحدد المادة أربع خطوات:</p><ol><li><strong>توقف:</strong> لا تفتح أو تعد المحتويات وحدك.</li><li><strong>استدعِ شاهدًا:</strong> اطلب حضور المشرف أو موظف مخول.</li><li><strong>وثّق:</strong> سجّل الحالة والمحتويات حسب السياسة.</li><li><strong>سلّم:</strong> ضعه في حافظة محكمة واحفظه رسميًا.</li></ol><blockquote class=\"bk-quote\">النقد والمجوهرات والوثائق تحتاج شاهدًا وسلسلة تسليم واضحة.</blockquote><p>وسلسلة التسليم تعني أن هناك في كل لحظة شخصًا مسجلًا بأنه يحمل الغرض، من الذي وجده إلى الشاهد إلى الحفظ الآمن، دون فجوات يكون فيها الغرض \"في مكان ما\".</p><aside class=\"bk-scene\"><strong>موقف:</strong> وجدت عاملة الغرف ظرفًا سميكًا في درج السرير بغرفة غادرها النزيل. لم تفتحه لترى ما فيه، بل اتصلت بمشرفتها التي حضرت مع زميل مخول آخر. فتحوه معًا حسب السياسة، فوجدوا نقودًا وجواز سفر، فسجّلوا المحتويات والحالة ووقّعوا السجل، ووضعوا كل شيء في الحافظة المحكمة. ولم يتحدث أحد عن الأمر خارج الفريق.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> سجّل النوع واللون والعلامات والمكان والوقت ومن وجده والشاهد والحالة دون تخمين. وللنقد والمجوهرات والوثائق: توقف، واستدعِ شاهدًا، ووثّق، وسلّم للحفظ الآمن.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: التسجيل والأشياء الثمينة",
+                                "questions": [
+                                    {
+                                        "question": "وجدت ساعة فضية. أي تسجيل يتفق مع المادة؟",
+                                        "options": [
+                                            "\"ساعة غالية الثمن\"",
+                                            "\"غالبًا تخص كبار الشخصيات في الغرفة 1201\"",
+                                            "\"ساعة بلون فضي، سوار بني، خدش على الواجهة، بار المسبح، 15:20\"",
+                                            "\"ساعة\""
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "سجّل النوع واللون والعلامة الواضحة والمكان والوقت، واكتب ما تراه دون تخمين القيمة أو المالك."
+                                    },
+                                    {
+                                        "question": "يريد زميل تصوير عقد مفقود بهاتفه الشخصي ونشره في مجموعة الموظفين. ماذا تقول المادة؟",
+                                        "options": [
+                                            "تجنب ذلك؛ لا تنشر صورة المفقود أو تفاصيله فالخصوصية جزء من الأمانة",
+                                            "لا بأس إن كانت المجموعة خاصة",
+                                            "يساعد ذلك على إيجاد صاحبه أسرع",
+                                            "فقط إن كان المشرف في المجموعة"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تذكر المادة تصوير الشيء بالهاتف الشخصي وإخبار الآخرين ضمن ما يجب تجنبه."
+                                    },
+                                    {
+                                        "question": "وجدت ظرفًا مغلقًا قد يحتوي نقودًا. ما الخطوة الأولى؟",
+                                        "options": [
+                                            "تعد النقود لتسجلها بدقة",
+                                            "توقف: لا تفتح أو تعد المحتويات وحدك",
+                                            "تأخذه إلى الاستقبال",
+                                            "تتركه للنزيل"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "للأشياء الثمينة، الخطوة الأولى: توقف، لا تفتح أو تعد المحتويات وحدك."
+                                    },
+                                    {
+                                        "question": "ماذا تحتاج النقود والمجوهرات والوثائق بحسب المادة؟",
+                                        "options": [
+                                            "صورة فقط",
+                                            "إعادة فورية لكل من يطلبها",
+                                            "حفظها في خزانة من وجدها",
+                                            "شاهدًا وسلسلة تسليم واضحة"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تنص الشريحة: النقد والمجوهرات والوثائق تحتاج شاهدًا وسلسلة تسليم واضحة."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "إعادة المفقود بأمان",
+                    "lessons": [
+                        {
+                            "title": "إعادة المفقود إلى صاحبه",
+                            "minutes": 6,
+                            "body": "<h2>تحقق قبل التسليم</h2><p>لحظة الإعادة هي اللحظة التي قد تنقلب فيها النية الحسنة إلى خطأ. يقول شخص عند المكتب \"هذا هاتفي\"، فيبدو من اللطف أن تسلّمه إياه فورًا. لكن إن كان الهاتف لشخص آخر، فقد أضاعه الفندق مرتين. وتذكر المادة خمسة إجراءات قبل إعادة أي غرض:</p><ul><li><strong>اطلب وصفًا دقيقًا للشيء،</strong> فصاحبه الحقيقي يستطيع عادة وصف اللون أو الغلاف أو علامة أو ما بداخله.</li><li><strong>تحقق من هوية المستلم.</strong></li><li><strong>طابق التفاصيل مع السجل،</strong> وهنا تظهر قيمة السجل الواضح الدقيق.</li><li><strong>اطلب التوقيع عند الاستلام،</strong> فالتوقيع يغلق سلسلة التسليم.</li><li><strong>لا تكشف تفاصيل تساعد على الادعاء.</strong> اسأل \"هل يمكنك وصفه؟\" لا \"هل هو هاتف أسود بغلاف أحمر؟\"</li></ul><h2>اطلب دعم المشرف عند</h2><ul><li>وجود نقد أو مجوهرات أو وثائق.</li><li>اختلاف الوصف أو الهوية.</li><li>طلب التسليم لشخص آخر.</li><li>وجود شيء خطِر أو مشبوه.</li><li>أي استثناء من سياسة الفندق.</li></ul><p>الشيء الخطِر أو المشبوه ليس مهمة مفقودات يتولاها موظف واحد؛ لا تتعامل معه أكثر، وأبلغ المشرف ليتولى إجراء الأمن في الفندق الأمر.</p><blockquote class=\"bk-quote\">لا تسلّم أي مفقود قبل التحقق والتوقيع والموافقة المطلوبة.</blockquote><table class=\"bk-say\"><thead><tr><th>قل</th><th>بدلًا من</th></tr></thead><tbody><tr><td>\"هل يمكنك أن تصف لي الغرض من فضلك؟\"</td><td>\"هل هي حقيبة زرقاء بسحّاب ذهبي؟\"</td></tr><tr><td>\"هل تسمح برؤية هويتك لأطابقها مع السجل؟\"</td><td>\"تفضل، أنا متأكد أنها لك.\"</td></tr><tr><td>\"أرجو التوقيع هنا لتأكيد الاستلام.\"</td><td>التسليم دون توقيع</td></tr></tbody></table><aside class=\"bk-scene\"><strong>موقف:</strong> قال زائر في الاستقبال إن صديقه، وهو نزيل غادر الفندق، طلب منه استلام حاسوب محمول نسيه في الغرفة. لم تسلّمه الموظفة الحاسوب، ولم تؤكد له ما يحتفظ به الفندق، بل قالت بلطف: \"دعني أطلب من المشرف مساعدتك\"، لأن هذا طلب تسليم لشخص آخر. تواصل المشرف مع النزيل عبر الوسيلة المعتمدة واتبع إجراءات التفويض في الفندق قبل تسليم أي شيء.</aside><h2>كلمة ختامية</h2><p>تختم المادة بالتسلسل الكامل: <strong>أبلغ، سجّل، احفظ، تحقق، سلّم.</strong> المفقود أمانة: أبلغ وسجّل واحفظ ثم سلّم بأمان. <strong>أمانتك تحمي النزيل وتبني ثقة الفندق.</strong></p><aside class=\"bk-key\"><strong>الخلاصة:</strong> قبل أي تسليم: وصف دقيق، وتحقق من الهوية، ومطابقة مع السجل، وتوقيع. واستعن بالمشرف في الأشياء الثمينة واختلاف البيانات والتسليم لشخص آخر والأشياء المشبوهة والاستثناءات.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: إعادة المفقود بأمان",
+                                "questions": [
+                                    {
+                                        "question": "سأل نزيل هل عثر الفندق على هاتفه. كيف تبدأ؟",
+                                        "options": [
+                                            "\"نعم، الأسود ذو الغلاف الأحمر؟\"",
+                                            "\"تفضل، هذا هو.\"",
+                                            "\"وجدنا ثلاثة هواتف، أيها لك؟\"",
+                                            "\"هل يمكنك أن تصفه لي من فضلك؟\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "اطلب وصفًا دقيقًا للشيء ولا تكشف تفاصيل تساعد على الادعاء."
+                                    },
+                                    {
+                                        "question": "وصف المدّعي للحقيبة لا يطابق السجل. ماذا تفعل؟",
+                                        "options": [
+                                            "تطلب دعم المشرف",
+                                            "تسلّمها على أي حال لتجنب الجدال",
+                                            "تريه الحقيبة ليصفها",
+                                            "تخبره أنها غير موجودة"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "اختلاف الوصف أو الهوية من الحالات التي تطلب فيها دعم المشرف."
+                                    },
+                                    {
+                                        "question": "ما الذي يغلق سلسلة التسليم عند إعادة المفقود؟",
+                                        "options": [
+                                            "شكر النزيل",
+                                            "تصوير النزيل",
+                                            "توقيع المستلم عند الاستلام بعد التحقق",
+                                            "حذف السجل"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: اطلب التوقيع عند الاستلام بعد التحقق من الهوية ومطابقة السجل."
+                                    },
+                                    {
+                                        "question": "اتصل شخص يطلب تسليم جواز سفر نسيه نزيل إلى سائقه. لماذا تستعين بالمشرف؟",
+                                        "options": [
+                                            "لأن السائقين ممنوعون من البهو",
+                                            "لأنه وثيقة وطلب تسليم لشخص آخر",
+                                            "لأن الجوازات يجب إتلافها",
+                                            "لا حاجة، سلّمه للسائق"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "الوثائق وطلب التسليم لشخص آخر كلاهما يستدعي دعم المشرف."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

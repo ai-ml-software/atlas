@@ -274,7 +274,9 @@ class Hkp_cms extends Hkp_Controller {
                 ->join('ha_lesson_translation te', "te.lesson_id = l.id AND te.locale = 'en'", 'left')->join('ha_lesson_translation ta', "ta.lesson_id = l.id AND ta.locale = 'ar'", 'left')
                 ->where('l.course_id', (int) $id)->order_by('l.sort_order')->get()->result_array();
         }
-        $this->render('cms_module_edit', array('c' => $c, 'tr' => $tr, 'sections' => $sections, 'lessons' => $lessons,
+        $quizzes = $c ? $this->db->select('a.id, a.code, a.title_en, a.title_ar, a.pass_percentage, a.status, (SELECT COUNT(*) FROM ha_assessment_question q WHERE q.assessment_id = a.id) questions', false)
+            ->from('ha_assessment a')->where('a.course_id', (int) $id)->order_by('a.id')->get()->result_array() : array();
+        $this->render('cms_module_edit', array('c' => $c, 'tr' => $tr, 'sections' => $sections, 'lessons' => $lessons, 'quizzes' => $quizzes,
             'domains' => $this->db->order_by('sort_order')->get('ha_domain')->result_array(),
             'categories' => $this->db->select('c.id, t.name')->from('ha_category c')->join('ha_category_translation t', "t.category_id = c.id AND t.locale = 'en'")->get()->result_array(),
             'orgs' => $this->db->get('ha_organization')->result_array(), 'models' => $this->ha_ai_assist->catalogue()), $c ? ($tr['en']['title'] ?? $c['code']) : hkp_t('New module'), 'cms_modules');

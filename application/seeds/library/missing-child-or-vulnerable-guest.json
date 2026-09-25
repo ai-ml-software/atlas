@@ -1,0 +1,545 @@
+{
+    "slug": "missing-child-or-vulnerable-guest",
+    "category": "safety-security",
+    "level": "intermediate",
+    "source_pdf": "Missing-Child-or-Vulnerable-Guest-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/missing-child-or-vulnerable-guest.webp",
+    "videos": [
+        {
+            "id": "baFir05VtnA",
+            "title": "Ask the Edmonds Cop: Code Adam business training for missing children",
+            "channel": "My Neighborhood News Group",
+            "why": "A police sergeant explains the Code Adam approach businesses use when a child goes missing on their premises: alert immediately, describe the child, cover the exits and search in an organised way."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Missing Child or Vulnerable Guest",
+            "subtitle": "Report immediately, search systematically, verify before handover",
+            "short_description": "Learn what to do when a child or vulnerable guest goes missing: report now, collect a clear description, search by zone and verify before handing the person over.",
+            "description": "<p>When a child or a vulnerable guest goes missing, every minute matters. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows hotel colleagues how to respond calmly and in an organised way.</p><p>You will learn the first steps (Alert, Describe, Organise), the information to collect, the key search zones, what to do and avoid during a search, how to care for the person once found and how to verify the receiving person before any handover. The approach in five words: Report, Describe, Organise, Search, Verify.</p>",
+            "requirements": "No prior training is needed; the course suits every colleague, guest-facing or not, because anyone may receive the first report.",
+            "outcomes": [
+                "Start the hotel response immediately by alerting security and the supervisor",
+                "Collect a clear, factual description of the missing person",
+                "Search your assigned zone systematically and report every update",
+                "Care for a found person safely without questioning them",
+                "Verify the receiving person and escalate before any handover"
+            ],
+            "faqs": [
+                {
+                    "question": "Should I wait a few minutes in case the child comes back on their own?",
+                    "answer": "No. The deck is clear: do not wait for the person to return alone. Alert security and the supervisor immediately and start the hotel response."
+                },
+                {
+                    "question": "Can I hand a found child to someone who says they are the parent?",
+                    "answer": "Not without verification. Match their details with the report, check identity and relationship, get approval from security or the supervisor, and record the time and place of the handover."
+                },
+                {
+                    "question": "When are the police or emergency services called?",
+                    "answer": "Following the hotel plan, when there is danger or suspicion: for example the person is afraid of the claimed relative, details do not match, abduction or abuse is suspected, there is an injury or the person is not found quickly."
+                }
+            ],
+            "meta_title": "Missing Child or Vulnerable Guest Response",
+            "meta_description": "Hotel training for a missing child or vulnerable guest: report now, collect a description, search by zone, and verify identity before any handover.",
+            "focus_keyword": "missing child in hotel",
+            "chapters": [
+                {
+                    "title": "Every Minute Matters",
+                    "lessons": [
+                        {
+                            "title": "Report Now and Take the First Steps",
+                            "minutes": 6,
+                            "body": "<h2>Start with an immediate report</h2><p>A parent runs up to the front desk: their child was beside them at the lobby shop a moment ago and now cannot be seen. Or a family member tells a housekeeping colleague that their elderly father, who becomes confused easily, has left the room and not returned. In these moments the most important thing you can give is speed. The deck's first message is simple: <strong>every minute matters</strong>.</p><p>The response begins with you, whoever you are and whatever your department. You do not need to be from security to start it. The deck lists five things to do straight away:</p><ul><li><strong>Stay calm.</strong> Your calm voice helps the person reporting to think clearly and give you useful details.</li><li><strong>Inform security and the supervisor immediately.</strong> This is what starts the hotel's organised response.</li><li><strong>Take a clear description of the person.</strong> Without a description, nobody knows who they are looking for.</li><li><strong>Start the search according to the hotel plan.</strong> Not a random search, but the one your property has prepared.</li><li><strong>Stay with the person who reported it.</strong> They are worried, they hold the information, and they must not be left alone.</li></ul><blockquote class=\"bk-quote\">Do not wait for them to come back alone. Start the hotel response immediately.</blockquote><p>It is natural to hope that the child is just around the corner, or that the older guest has simply gone for a walk. Often that is true. But waiting \"just a few minutes\" costs time that cannot be recovered if something is wrong. Reporting early never harms anyone; reporting late can.</p><h2>The first steps: Alert, Describe, Organise</h2><p>The deck groups the first actions into three steps.</p><h3>01 Alert (Report immediately)</h3><ul><li>Contact security and the supervisor.</li><li>State the place and time the person went missing.</li><li>Do not delay the report.</li></ul><h3>02 Describe (Collect the description)</h3><ul><li>Name and age, if known.</li><li>Clothes and distinctive appearance.</li><li>The last place they were seen.</li></ul><h3>03 Organise (Organise the search)</h3><ul><li>Distribute the team across the areas.</li><li>Watch the entrances and exits.</li><li>Use the cameras according to authorisation.</li></ul><p>The order matters. An alert without a description sends colleagues searching blindly. A description without organisation means five people check the lobby while nobody watches the exits.</p><blockquote class=\"bk-quote\">An organised search is faster and safer.</blockquote><aside class=\"bk-scene\"><strong>Scene:</strong> A mother tells the concierge that her six-year-old son has disappeared near the pool entrance. The concierge keeps his voice low and calm, radios security and the duty manager at once, and gives the location and time: \"Pool entrance, about five minutes ago.\" While security organises colleagues, he stays beside the mother and asks for her son's name, age and what he is wearing. He does not leave her to go searching on his own.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Know in advance how to reach security and your supervisor quickly from your position, so you never lose time looking for a number.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Stay calm, alert security and the supervisor at once, and follow Alert, Describe, Organise. Never wait for the person to return alone.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Report now",
+                                "questions": [
+                                    {
+                                        "question": "A father says his daughter wandered off in the lobby a few minutes ago but is probably nearby. What should you do?",
+                                        "options": [
+                                            "Wait ten minutes to see if she returns",
+                                            "Walk around the lobby alone to look for her",
+                                            "Inform security and the supervisor immediately",
+                                            "Ask him to check his room first"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says do not wait for the person to return alone; inform security and the supervisor immediately."
+                                    },
+                                    {
+                                        "question": "What should you tell security in the Alert step?",
+                                        "options": [
+                                            "The place and time the person went missing",
+                                            "Your opinion of the parents",
+                                            "Which guests you think are suspicious",
+                                            "Only the room number of the family"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The Alert step says contact security and the supervisor and state the place and time of the loss."
+                                    },
+                                    {
+                                        "question": "After reporting, what should you do with the person who told you?",
+                                        "options": [
+                                            "Send them to search the car park",
+                                            "Stay with them",
+                                            "Ask them to wait in their room",
+                                            "Leave them to join the search"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck lists 'stay with the person who reported it' among the immediate actions."
+                                    },
+                                    {
+                                        "question": "Which action belongs to the Organise step?",
+                                        "options": [
+                                            "Recording the child's clothes",
+                                            "Calming the reporting parent",
+                                            "Asking for the child's age",
+                                            "Watching the entrances and exits"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Organise means distributing the team across areas, watching entrances and exits and using cameras according to authorisation."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "The Information to Collect",
+                            "minutes": 5,
+                            "body": "<h2>A precise and clear description</h2><p>Once the alert is raised, the search can only be as good as the description behind it. Colleagues in the lobby, at the exits and in front of the cameras all need the same accurate picture of who they are looking for. The deck summarises this in one word: <strong>describe</strong>, and adds that the description must be <strong>precise and clear, facts only</strong>.</p><h2>Five pieces of information</h2><p>Collect these details from the person reporting, calmly and one at a time:</p><ol><li><strong>Name and age, if known.</strong> A name lets colleagues call out gently when they think they have found the person; an age helps them look for the right height and appearance.</li><li><strong>Clothes, colours and clear marks.</strong> A red cap, a striped shirt, a walking stick, glasses or a backpack are what searchers will actually notice from a distance.</li><li><strong>The last place and time they were seen.</strong> This tells the team where to start and how far the person may have gone.</li><li><strong>Any medical need or communication difficulty.</strong> A child who does not speak the local language, an older guest with memory difficulties, or someone who needs medication changes how the team approaches them and how urgent the search is.</li><li><strong>The name and contact number of the person reporting.</strong> The team must be able to reach them the moment there is news.</li></ol><blockquote class=\"bk-quote\">Write what was said, without guessing.</blockquote><h2>Facts, not assumptions</h2><p>Under pressure it is tempting to fill gaps: \"She is probably wearing the hotel slippers\" or \"He must have gone to the beach.\" Guesses spread quickly over the radio and can send the team to the wrong place or looking for the wrong clothes. Write down exactly what the reporting person tells you. If they do not know something, record that it is unknown.</p><p>Read the details back to confirm them before you pass them on. One wrong colour can make a searcher walk straight past the person.</p><h2>Protect privacy</h2><p>The deck adds an important rule: <strong>record the facts only and do not share the details with the public</strong>. The description is for the response team, not for other guests. Protecting the privacy of the child or vulnerable person, and of their family, is part of protecting their safety. Pass the information through the channels your hotel uses, such as the radio or a direct call to security, and not by announcing personal details in public spaces.</p><table class=\"bk-say\"><thead><tr><th>Collect</th><th>Why it helps</th></tr></thead><tbody><tr><td>Name and age</td><td>Identify the right person</td></tr><tr><td>Clothes, colours, clear marks</td><td>What searchers can see from a distance</td></tr><tr><td>Last place and time seen</td><td>Where to start searching</td></tr><tr><td>Medical need or communication difficulty</td><td>How to approach and how urgent</td></tr><tr><td>Reporter's name and number</td><td>Reach the family with news</td></tr></tbody></table><aside class=\"bk-scene\"><strong>Scene:</strong> A daughter reports that her father, who has dementia, has left the restaurant. The receptionist writes down his name, that he is 78, wearing a grey jacket and brown hat, last seen at the restaurant door ten minutes ago, and that he speaks only Arabic and may not remember his room number. She notes the daughter's mobile number, reads everything back and passes it to security by radio. She does not repeat his condition aloud in the busy lobby.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Collect five facts: name and age, clothes and marks, last place and time, medical or communication needs, and the reporter's contact. Write what was said, and keep it private.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: The information to collect",
+                                "questions": [
+                                    {
+                                        "question": "The mother is unsure whether her son took his jacket. What do you record?",
+                                        "options": [
+                                            "That he is probably wearing it",
+                                            "That he is probably not wearing it",
+                                            "Nothing about clothes at all",
+                                            "Only what she is sure of, and that the jacket is unknown"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says write what was said without guessing, and record facts only."
+                                    },
+                                    {
+                                        "question": "Why ask whether the missing person has a medical need or communication difficulty?",
+                                        "options": [
+                                            "It is one of the details the deck lists, and it affects how the team approaches and prioritises",
+                                            "To decide whether the search is worth doing",
+                                            "To tell other guests in the lobby",
+                                            "It is only needed for children"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Any medical need or communication difficulty is one of the five pieces of information to collect."
+                                    },
+                                    {
+                                        "question": "A guest in the lobby asks what is happening and who is missing. What should you do?",
+                                        "options": [
+                                            "Give the full description so they can help",
+                                            "Share the family's room number",
+                                            "Keep the personal details private; they are for the response team",
+                                            "Show them a photo on your phone"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says record facts only and do not share the details with the public."
+                                    },
+                                    {
+                                        "question": "Which detail lets the team reach the family the moment there is news?",
+                                        "options": [
+                                            "The last place the person was seen",
+                                            "The reporter's name and contact number",
+                                            "The colour of the clothes",
+                                            "The person's age"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The name and contact number of the person reporting is on the deck's list."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Searching Systematically",
+                    "lessons": [
+                        {
+                            "title": "Key Search Zones and Conduct During the Search",
+                            "minutes": 6,
+                            "body": "<h2>Four key search zones</h2><p>A hotel is a large place with many rooms, floors, corridors and doors. A search where everyone runs to the same spot wastes the most valuable resource you have: time. The deck divides the search into four key zones, and every colleague is given one.</p><ol><li><strong>Entrances and exits.</strong> Assign a colleague to every entrance or exit. This is the first priority, because it keeps the person inside the property where they can be found.</li><li><strong>Public areas.</strong> Check the lobby, the restaurant and the toilets. Children and confused guests often go where there are people, food or somewhere to sit.</li><li><strong>Lifts and stairs.</strong> Check the lifts, the stairs and the corridors. A child may have pressed a lift button; an older guest may be on the wrong floor looking for their room.</li><li><strong>Cameras and perimeter.</strong> Review the cameras and the car parks according to authorisation. Only authorised colleagues view CCTV, following hotel procedure.</li></ol><blockquote class=\"bk-quote\">Stay in your assigned zone and report every update immediately.</blockquote><p>If you are given the east stairwell, search the east stairwell properly, then report. Do not leave it because you heard something on the radio about the pool. If you leave, that zone becomes a gap, and the person may pass through exactly there.</p><h2>Do and avoid during the search</h2><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Speak calmly and use the radio discreetly</td><td>Calling out the details in front of guests</td></tr><tr><td>Stay in the area you are assigned to</td><td>Posting a photo or information on social media</td></tr><tr><td>Protect the privacy of the child or person</td><td>Searching randomly or leaving your position</td></tr><tr><td>Report any new information</td><td>Accusing anyone or getting into an argument</td></tr><tr><td>Follow the instructions of security and the supervisor</td><td>Handing the person to any claimant without verification</td></tr></tbody></table><h3>Why these rules matter</h3><p>Shouting details across the lobby or posting a photo online may feel helpful, but it exposes a vulnerable person's identity and can attract the wrong attention. Accusing a guest or arguing with someone you think is suspicious can escalate a situation that security should handle. Instead, report what you saw, where and when, and let security decide the next step.</p><p>New information, however small, belongs on the radio: \"Child's shoe found by the lift on floor three\" or \"Staff at the gym saw a boy in a red cap ten minutes ago.\" This is how the team narrows the search.</p><blockquote class=\"bk-quote\">Privacy and organisation protect the person and speed up finding them.</blockquote><aside class=\"bk-scene\"><strong>Scene:</strong> During a search for a missing girl, a restaurant colleague is assigned the restaurant and its toilets. A guest asks loudly what is going on. She answers politely that the team is assisting a family and continues her check. She finds the girl's hair clip near the terrace door, reports it discreetly by radio with the exact location, and stays in her zone as security directs colleagues to the terrace.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Cover exits first, then public areas, lifts and stairs, and cameras and perimeter. Stay in your zone, speak discreetly, report every update and never hand over without verification.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Searching systematically",
+                                "questions": [
+                                    {
+                                        "question": "You are assigned the main exit. You hear on the radio that the child may be near the pool. What do you do?",
+                                        "options": [
+                                            "Run to the pool to help",
+                                            "Stay at your exit and report anything you see",
+                                            "Leave to check the car park",
+                                            "Go back to your normal duties"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says stay in your assigned zone and report every update; leaving your position is on the avoid list."
+                                    },
+                                    {
+                                        "question": "Which zone includes the lobby, the restaurant and the toilets?",
+                                        "options": [
+                                            "Public areas",
+                                            "Entrances and exits",
+                                            "Lifts and stairs",
+                                            "Cameras and perimeter"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck's public areas zone is: check the lobby, the restaurant and the toilets."
+                                    },
+                                    {
+                                        "question": "A colleague suggests posting the child's photo on social media to speed things up. What is correct?",
+                                        "options": [
+                                            "Post it on the hotel account only",
+                                            "Post it if the parents agree verbally",
+                                            "Share it with guests by phone instead",
+                                            "Avoid it; the deck lists posting photos or information on social media as something to avoid"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Posting a photo or information on social media is on the deck's avoid list; protect the person's privacy."
+                                    },
+                                    {
+                                        "question": "You notice a guest behaving oddly near the stairs during the search. What should you do?",
+                                        "options": [
+                                            "Accuse them directly",
+                                            "Argue until they explain",
+                                            "Report what you saw to security and follow their instructions",
+                                            "Ignore it completely"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says avoid accusing anyone or arguing; report new information and follow security and the supervisor."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Found and Verified",
+                    "lessons": [
+                        {
+                            "title": "When the Person Is Found and Verifying Before Handover",
+                            "minutes": 7,
+                            "body": "<h2>When we find the person</h2><p>Finding the child or vulnerable guest is a relief, but the response is not over. The next minutes need the same care. The deck gives four steps:</p><ol><li><strong>Stay with them.</strong> Stay with the person in a public, safe place. Do not take them to a private room or leave them to go and fetch someone.</li><li><strong>Reassure them.</strong> Speak calmly and do not interrogate them. A frightened child or a confused older guest needs comfort, not a list of questions.</li><li><strong>Notify security.</strong> Tell security immediately, and do not hand the person to anyone before verification.</li><li><strong>Check their condition.</strong> Notice any injury or medical need. If there is one, call for trained help according to the hotel plan.</li></ol><blockquote class=\"bk-quote\">Do not promise that their family is coming until it has been confirmed.</blockquote><p>It is kind to want to say \"Your mum is on her way,\" but if that turns out not to be true, you lose the person's trust at the moment they need it most. Say what you know: \"You are safe. I am staying with you, and my colleagues are helping.\"</p><h2>Verify before handover</h2><p>The deck's title for this stage is <strong>verify before reunification</strong>. Most of the time the person who comes forward is exactly who they say they are. Verification protects them too, and it protects the vulnerable person in the rare case they are not. Verify the receiving person:</p><ul><li>Match their information with the original report.</li><li>Check their identity and their relationship to the person.</li><li>Get the approval of security or the supervisor.</li><li>Record the time and place of the handover.</li><li>Follow the hotel's form and witness procedure.</li></ul><h2>Escalate immediately if</h2><ul><li>The person is afraid of the claimed relative.</li><li>The information does not match.</li><li>Abduction or abuse is suspected.</li><li>An injury or medical need is found.</li><li>The person is not found quickly.</li></ul><blockquote class=\"bk-quote\">Contact the police or emergency services according to the hotel plan when there is danger or suspicion.</blockquote><p>Escalation is not your judgement alone; it is a signal to security and the supervisor, who follow the hotel plan. Your role is to notice, report and keep the person safe until trained responders take over.</p><h2>Closing thought</h2><p>The deck ends with a clear message: <strong>their safety is our responsibility</strong>. Report immediately, search systematically and verify before handover: <strong>Report, Describe, Organise, Search, Verify</strong>. Never delay the report, and never hand over the person without verification.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A housekeeping colleague finds a crying boy by the lifts on the fourth floor. She kneels to his level in the corridor, tells him he is safe and that she will stay with him, and radios security. A man arrives saying he is the boy's uncle, but the boy steps behind her. She stays calm, does not hand him over and tells security that the child seems afraid. Security checks the details against the mother's report and contacts the mother before any handover takes place.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Stay with the person in a safe public place, reassure without questioning, notify security, check their condition, and verify the receiving person before any handover. Escalate at any sign of danger or suspicion.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Found and verified",
+                                "questions": [
+                                    {
+                                        "question": "You find the missing child. Where should you wait with them?",
+                                        "options": [
+                                            "In a quiet staff office with the door closed",
+                                            "In a public, safe place",
+                                            "In the family's room",
+                                            "At the hotel entrance outside"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says stay with them in a public, safe place."
+                                    },
+                                    {
+                                        "question": "A found child keeps asking if his mother is coming. What is the best reply?",
+                                        "options": [
+                                            "\"Yes, she will be here in two minutes.\"",
+                                            "\"Why did you run away?\"",
+                                            "\"You are safe, I am staying with you and my colleagues are helping.\"",
+                                            "\"I don't know, stop asking.\""
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Reassure calmly without interrogating, and do not promise the family is coming until confirmed."
+                                    },
+                                    {
+                                        "question": "A woman says she is the older guest's daughter and wants to take him to his room now. What must happen first?",
+                                        "options": [
+                                            "Match her details with the report, check identity and relationship, and get security or supervisor approval",
+                                            "Nothing, her word is enough",
+                                            "Ask the guest if he is tired",
+                                            "Let her take him and inform security later"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck's verification steps: match with the report, check identity and relationship, get approval, record time and place, follow the form."
+                                    },
+                                    {
+                                        "question": "The child seems frightened of the man claiming to be his father. What should you do?",
+                                        "options": [
+                                            "Hand the child over; children are often shy",
+                                            "Ask the man to prove it by describing the child",
+                                            "Leave them to sort it out",
+                                            "Keep the child with you and escalate to security immediately"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Escalate immediately if the person is afraid of the claimed relative; police or emergency services follow the hotel plan."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "التعامل مع طفل مفقود أو شخص تائه",
+            "subtitle": "أبلغ فورًا وابحث بنظام وتحقق قبل التسليم",
+            "short_description": "تعلّم التصرف الصحيح عند فقدان طفل أو شخص تائه: أبلغ فورًا، واجمع وصفًا دقيقًا، وابحث حسب المناطق، وتحقق قبل التسليم.",
+            "description": "<p>عندما يُفقد طفل أو شخص تائه فكل دقيقة مهمة. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتعلّم الموظفين كيف يتصرفون بهدوء وتنظيم.</p><p>ستتعرف على الخطوات الأولى (أبلغ فورًا، اجمع الوصف، نظّم البحث)، والمعلومات التي تجمعها، ومناطق البحث الأساسية، وما تفعله وتتجنبه أثناء البحث، وكيف تعتني بالشخص عند العثور عليه، وكيف تتحقق من الشخص المستلم قبل التسليم. والمنهج في خمس كلمات: أبلغ، صف، نظّم، ابحث، تحقق.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظف سواء كان يتعامل مع النزلاء أم لا، لأن أي شخص قد يتلقى البلاغ الأول.",
+            "outcomes": [
+                "ابدأ الإجراء فورًا بإبلاغ الأمن والمشرف",
+                "اجمع وصفًا دقيقًا وواضحًا للشخص المفقود يقوم على الحقائق",
+                "ابحث في منطقتك المكلف بها بنظام وأبلغ عن كل تحديث",
+                "اعتنِ بالشخص عند العثور عليه بأمان ودون استجواب",
+                "تحقق من الشخص المستلم وصعّد الحالة قبل أي تسليم"
+            ],
+            "faqs": [
+                {
+                    "question": "هل أنتظر قليلًا لعل الطفل يعود وحده؟",
+                    "answer": "لا. المادة واضحة: لا تنتظر عودته وحده. أبلغ الأمن والمشرف فورًا وابدأ الإجراء."
+                },
+                {
+                    "question": "هل أسلّم الطفل لمن يقول إنه والده؟",
+                    "answer": "ليس دون تحقق. طابق معلوماته مع البلاغ، وتحقق من الهوية وصلة القرابة، واحصل على موافقة الأمن أو المشرف، وسجل وقت ومكان التسليم."
+                },
+                {
+                    "question": "متى يُتصل بالشرطة أو الطوارئ؟",
+                    "answer": "وفق خطة الفندق عند وجود خطر أو اشتباه، مثل خوف الشخص من مدّعي القرابة، أو عدم تطابق المعلومات، أو الاشتباه بخطف أو إساءة، أو وجود إصابة، أو عدم العثور عليه سريعًا."
+                }
+            ],
+            "meta_title": "التعامل مع طفل مفقود أو شخص تائه في الفندق",
+            "meta_description": "تدريب فندقي على التعامل مع طفل مفقود أو شخص تائه: البلاغ الفوري، وجمع الوصف، والبحث حسب المناطق، والتحقق قبل التسليم.",
+            "focus_keyword": "طفل مفقود في الفندق",
+            "chapters": [
+                {
+                    "title": "كل دقيقة مهمة",
+                    "lessons": [
+                        {
+                            "title": "ابدأ بالبلاغ الفوري والخطوات الأولى",
+                            "minutes": 6,
+                            "body": "<h2>ابدأ بالبلاغ الفوري</h2><p>تأتي أم مسرعة إلى مكتب الاستقبال: كان طفلها بجانبها عند متجر الردهة قبل لحظات، والآن لا تراه. أو يخبر أحد أفراد العائلة موظف التدبير الفندقي بأن والده المسن، الذي يرتبك بسهولة، خرج من الغرفة ولم يعد. في هذه اللحظات أهم ما تقدمه هو السرعة. ورسالة المادة الأولى بسيطة: <strong>كل دقيقة مهمة</strong>.</p><p>يبدأ الإجراء منك أيًا كان قسمك، فلا يلزم أن تكون من الأمن لتبدأه. وتذكر المادة خمسة أمور تفعلها فورًا:</p><ul><li><strong>حافظ على هدوئك،</strong> فصوتك الهادئ يساعد المبلّغ على التفكير وتقديم تفاصيل مفيدة.</li><li><strong>أبلغ الأمن والمشرف فورًا،</strong> فهذا ما يطلق الإجراء المنظم للفندق.</li><li><strong>خذ وصفًا واضحًا للشخص،</strong> فدون وصف لا يعرف أحد عمّن يبحث.</li><li><strong>ابدأ البحث حسب خطة الفندق،</strong> لا بحثًا عشوائيًا.</li><li><strong>ابقَ مع الشخص الذي أبلغك،</strong> فهو قلق ولديه المعلومات ولا يجوز تركه وحده.</li></ul><blockquote class=\"bk-quote\">لا تنتظر عودته وحده — ابدأ الإجراء فورًا.</blockquote><p>من الطبيعي أن نأمل أن الطفل قريب، أو أن النزيل المسن خرج ليتمشى، وكثيرًا ما يكون ذلك صحيحًا. لكن انتظار \"بضع دقائق\" يضيّع وقتًا لا يمكن تعويضه إذا كان هناك خطر. البلاغ المبكر لا يضر أحدًا، أما المتأخر فقد يضر.</p><h2>الخطوات الأولى: أبلغ، صف، نظّم</h2><h3>01 أبلغ فورًا</h3><ul><li>اتصل بالأمن والمشرف.</li><li>اذكر مكان ووقت الفقد.</li><li>لا تؤخر البلاغ.</li></ul><h3>02 اجمع الوصف</h3><ul><li>الاسم والعمر إن عُرفا.</li><li>الملابس والشكل المميز.</li><li>آخر مكان شوهد فيه.</li></ul><h3>03 نظّم البحث</h3><ul><li>وزّع الفريق على المناطق.</li><li>راقب المداخل والمخارج.</li><li>استخدم الكاميرات حسب الصلاحية.</li></ul><p>الترتيب مهم؛ فالبلاغ دون وصف يجعل الزملاء يبحثون بلا هدف، والوصف دون تنظيم يعني أن خمسة يفتشون الردهة ولا أحد يراقب المخارج.</p><blockquote class=\"bk-quote\">بحث منظم أسرع وأكثر أمانًا.</blockquote><aside class=\"bk-scene\"><strong>موقف:</strong> أخبرت أم موظف الكونسيرج أن ابنها ذا الست سنوات اختفى قرب مدخل المسبح. حافظ الموظف على صوت منخفض وهادئ، وأبلغ الأمن ومدير المناوبة فورًا عبر جهاز الاتصال، وذكر المكان والوقت: \"مدخل المسبح، قبل خمس دقائق تقريبًا\". وبينما نظّم الأمن الزملاء، بقي بجانب الأم وسألها عن اسم ابنها وعمره وملابسه، ولم يتركها ليبحث وحده.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> اعرف مسبقًا كيف تصل إلى الأمن ومشرفك بسرعة من موقعك، حتى لا تضيع وقتًا في البحث عن رقم.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> حافظ على هدوئك، وأبلغ الأمن والمشرف فورًا، واتبع: أبلغ، صف، نظّم. ولا تنتظر عودة الشخص وحده.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: البلاغ الفوري",
+                                "questions": [
+                                    {
+                                        "question": "قال أب إن ابنته ابتعدت في الردهة قبل دقائق لكنها غالبًا قريبة. ماذا تفعل؟",
+                                        "options": [
+                                            "تنتظر عشر دقائق لعلها تعود",
+                                            "تتجول في الردهة وحدك بحثًا عنها",
+                                            "تبلغ الأمن والمشرف فورًا",
+                                            "تطلب منه أن يتفقد غرفته أولًا"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: لا تنتظر عودته وحده، وأبلغ الأمن والمشرف فورًا."
+                                    },
+                                    {
+                                        "question": "ماذا تذكر للأمن في خطوة أبلغ فورًا؟",
+                                        "options": [
+                                            "مكان ووقت الفقد",
+                                            "رأيك في الوالدين",
+                                            "النزلاء الذين تشك فيهم",
+                                            "رقم غرفة العائلة فقط"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "خطوة أبلغ فورًا: اتصل بالأمن والمشرف واذكر مكان ووقت الفقد."
+                                    },
+                                    {
+                                        "question": "بعد البلاغ، ماذا تفعل مع الشخص الذي أبلغك؟",
+                                        "options": [
+                                            "ترسله ليبحث في المواقف",
+                                            "تبقى معه",
+                                            "تطلب منه الانتظار في غرفته",
+                                            "تتركه لتنضم إلى البحث"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تذكر المادة: ابقَ مع الشخص الذي أبلغك."
+                                    },
+                                    {
+                                        "question": "أي إجراء ينتمي إلى خطوة نظّم البحث؟",
+                                        "options": [
+                                            "تسجيل ملابس الطفل",
+                                            "تهدئة الأم المبلّغة",
+                                            "السؤال عن عمر الطفل",
+                                            "مراقبة المداخل والمخارج"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "نظّم البحث: وزّع الفريق على المناطق، وراقب المداخل والمخارج، واستخدم الكاميرات حسب الصلاحية."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "المعلومات التي تجمعها",
+                            "minutes": 5,
+                            "body": "<h2>وصف دقيق وواضح</h2><p>بعد البلاغ لا يكون البحث أفضل من الوصف الذي يقوم عليه. فالزملاء في الردهة وعند المخارج وأمام الكاميرات يحتاجون جميعًا إلى الصورة الدقيقة نفسها. وتلخص المادة ذلك بكلمة: <strong>وصف</strong>، وتضيف أنه يجب أن يكون <strong>دقيقًا وواضحًا، حقائق فقط</strong>.</p><h2>خمس معلومات</h2><p>اجمعها من المبلّغ بهدوء وواحدة تلو الأخرى:</p><ol><li><strong>الاسم والعمر إن عُرفا.</strong> الاسم يسمح للزملاء بمناداته بلطف، والعمر يساعدهم على البحث عن الطول والمظهر المناسبين.</li><li><strong>الملابس واللون والعلامات الواضحة.</strong> قبعة حمراء أو قميص مخطط أو عصا أو نظارة أو حقيبة ظهر هي ما يلاحظه الباحثون من بعيد.</li><li><strong>آخر مكان ووقت شوهد فيه.</strong> يخبر الفريق من أين يبدأ وإلى أي مدى قد يكون ابتعد.</li><li><strong>أي احتياج طبي أو صعوبة تواصل.</strong> طفل لا يتحدث اللغة المحلية، أو مسن لديه ضعف في الذاكرة، أو شخص يحتاج إلى دواء؛ كل ذلك يغيّر طريقة الاقتراب منه ومدى الإلحاح.</li><li><strong>اسم المبلّغ ورقم التواصل.</strong> يجب أن يتمكن الفريق من الوصول إليه فور وجود أي خبر.</li></ol><blockquote class=\"bk-quote\">اكتب ما قيل دون تخمين.</blockquote><h2>حقائق لا افتراضات</h2><p>تحت الضغط يغري ملء الفراغات: \"غالبًا يلبس نعال الفندق\" أو \"لا بد أنه ذهب إلى الشاطئ\". والتخمينات تنتشر بسرعة عبر جهاز الاتصال وقد ترسل الفريق إلى المكان الخطأ. اكتب ما يقوله المبلّغ بالضبط، وإذا لم يعرف أمرًا فسجّل أنه غير معروف. ثم أعد قراءة التفاصيل عليه للتأكد قبل نقلها؛ فلون واحد خاطئ قد يجعل الباحث يمر بجانب الشخص دون أن يعرفه.</p><h2>احمِ الخصوصية</h2><p>تضيف المادة قاعدة مهمة: <strong>سجل الحقائق فقط ولا تنشر التفاصيل للعامة</strong>. الوصف لفريق الاستجابة لا للنزلاء الآخرين، وحماية خصوصية الطفل أو الشخص وعائلته جزء من حماية سلامته. انقل المعلومات عبر القنوات المعتمدة مثل جهاز الاتصال أو الاتصال المباشر بالأمن، لا بإعلان التفاصيل الشخصية في الأماكن العامة.</p><table class=\"bk-say\"><thead><tr><th>اجمع</th><th>لماذا يفيد</th></tr></thead><tbody><tr><td>الاسم والعمر</td><td>تحديد الشخص الصحيح</td></tr><tr><td>الملابس واللون والعلامات</td><td>ما يراه الباحثون من بعيد</td></tr><tr><td>آخر مكان ووقت</td><td>من أين يبدأ البحث</td></tr><tr><td>الاحتياج الطبي أو صعوبة التواصل</td><td>كيف نقترب ومدى الإلحاح</td></tr><tr><td>اسم المبلّغ ورقمه</td><td>إبلاغ العائلة بالأخبار</td></tr></tbody></table><aside class=\"bk-scene\"><strong>موقف:</strong> أبلغت ابنة أن والدها المصاب بالخرف خرج من المطعم. دوّنت موظفة الاستقبال اسمه، وأن عمره 78 عامًا، ويرتدي سترة رمادية وقبعة بنية، وشوهد آخر مرة عند باب المطعم قبل عشر دقائق، ولا يتحدث إلا العربية وقد لا يتذكر رقم غرفته. سجلت رقم جوال الابنة، وأعادت قراءة كل شيء، ونقلته إلى الأمن عبر جهاز الاتصال، دون أن تذكر حالته بصوت مرتفع في الردهة المزدحمة.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> اجمع خمس حقائق: الاسم والعمر، والملابس والعلامات، وآخر مكان ووقت، والاحتياج الطبي أو صعوبة التواصل، وبيانات المبلّغ. اكتب ما قيل، وحافظ على الخصوصية.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: المعلومات التي تجمعها",
+                                "questions": [
+                                    {
+                                        "question": "الأم غير متأكدة هل أخذ ابنها سترته. ماذا تسجل؟",
+                                        "options": [
+                                            "أنه غالبًا يرتديها",
+                                            "أنه غالبًا لا يرتديها",
+                                            "لا شيء عن الملابس",
+                                            "ما هي متأكدة منه فقط، وأن السترة غير معروفة"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: اكتب ما قيل دون تخمين، وسجل الحقائق فقط."
+                                    },
+                                    {
+                                        "question": "لماذا تسأل عن أي احتياج طبي أو صعوبة تواصل؟",
+                                        "options": [
+                                            "لأنها من المعلومات التي تذكرها المادة، وتؤثر في طريقة الاقتراب والأولوية",
+                                            "لتقرر هل يستحق البحث",
+                                            "لتخبر النزلاء في الردهة",
+                                            "لأنها مطلوبة للأطفال فقط"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "أي احتياج طبي أو صعوبة تواصل من المعلومات الخمس التي تجمعها."
+                                    },
+                                    {
+                                        "question": "سألك نزيل في الردهة عمّا يحدث ومن المفقود. ماذا تفعل؟",
+                                        "options": [
+                                            "تعطيه الوصف كاملًا ليساعد",
+                                            "تخبره برقم غرفة العائلة",
+                                            "تحافظ على خصوصية التفاصيل فهي لفريق الاستجابة",
+                                            "تريه صورة على هاتفك"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: سجل الحقائق فقط ولا تنشر التفاصيل للعامة."
+                                    },
+                                    {
+                                        "question": "أي معلومة تمكّن الفريق من الوصول إلى العائلة فور وجود خبر؟",
+                                        "options": [
+                                            "آخر مكان شوهد فيه",
+                                            "اسم المبلّغ ورقم التواصل",
+                                            "لون الملابس",
+                                            "عمر الشخص"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "اسم المبلّغ ورقم التواصل ضمن قائمة المادة."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "البحث بنظام",
+                    "lessons": [
+                        {
+                            "title": "مناطق البحث الأساسية والتصرف أثناء البحث",
+                            "minutes": 6,
+                            "body": "<h2>أربع مناطق بحث أساسية</h2><p>الفندق مكان واسع بغرفه وطوابقه وممراته وأبوابه، والبحث الذي يركض فيه الجميع إلى المكان نفسه يضيّع أثمن ما لديك: الوقت. لذلك تقسم المادة البحث إلى أربع مناطق أساسية، ويُكلَّف كل موظف بواحدة منها.</p><ol><li><strong>المداخل والمخارج:</strong> عيّن موظفًا لكل مدخل أو مخرج. هذه الأولوية الأولى لأنها تبقي الشخص داخل الفندق حيث يمكن العثور عليه.</li><li><strong>المناطق العامة:</strong> افحص الردهة والمطعم ودورات المياه، فالأطفال والتائهون كثيرًا ما يتجهون إلى حيث يوجد الناس أو الطعام أو مكان للجلوس.</li><li><strong>المصاعد والسلالم:</strong> افحص المصاعد والسلالم والممرات؛ فقد يضغط طفل زر مصعد، وقد يكون المسن في طابق خاطئ يبحث عن غرفته.</li><li><strong>الكاميرات والمحيط:</strong> راجع الكاميرات والمواقف حسب الصلاحية، ولا يطّلع على الكاميرات إلا المصرّح لهم وفق إجراءات الفندق.</li></ol><blockquote class=\"bk-quote\">التزم بمنطقتك وأبلغ عن أي تحديث فورًا.</blockquote><p>إذا كُلّفت بالدرج الشرقي فافحصه جيدًا ثم أبلغ، ولا تتركه لأنك سمعت عبر الجهاز شيئًا عن المسبح؛ فإذا تركته أصبحت منطقتك ثغرة قد يمر منها الشخص تمامًا.</p><h2>افعل وتجنب أثناء البحث</h2><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنب</th></tr></thead><tbody><tr><td>تحدث بهدوء واستخدم جهاز الاتصال بسرية</td><td>تنادي بالتفاصيل أمام النزلاء</td></tr><tr><td>ابقَ في المنطقة المكلف بها</td><td>تنشر صورة أو معلومة في التواصل الاجتماعي</td></tr><tr><td>حافظ على خصوصية الطفل أو الشخص</td><td>تبحث بعشوائية أو تترك موقعك</td></tr><tr><td>أبلغ عن أي معلومة جديدة</td><td>تتهم أحدًا أو تدخل في جدال</td></tr><tr><td>اتبع تعليمات الأمن والمشرف</td><td>تسلّم الشخص لأي مدّعٍ دون تحقق</td></tr></tbody></table><h3>لماذا هذه القواعد مهمة</h3><p>قد يبدو الصراخ بالتفاصيل في الردهة أو نشر صورة على الإنترنت مفيدًا، لكنه يكشف هوية شخص ضعيف وقد يجذب اهتمامًا غير مرغوب. واتهام نزيل أو مجادلة من تشك فيه قد يصعّد موقفًا يجب أن يتولاه الأمن. بدلًا من ذلك أبلغ عمّا رأيت وأين ومتى، ودع الأمن يقرر الخطوة التالية.</p><p>وأي معلومة جديدة مهما صغرت مكانها جهاز الاتصال: \"وُجد حذاء طفل عند مصعد الطابق الثالث\" أو \"رأى موظف النادي الرياضي ولدًا بقبعة حمراء قبل عشر دقائق\"؛ هكذا يضيّق الفريق نطاق البحث.</p><blockquote class=\"bk-quote\">الخصوصية والتنظيم يحميان الشخص ويسرّعان العثور عليه.</blockquote><aside class=\"bk-scene\"><strong>موقف:</strong> أثناء البحث عن طفلة مفقودة كُلّفت موظفة المطعم بالمطعم ودورات المياه التابعة له. سألها نزيل بصوت مرتفع عمّا يحدث، فأجابت بلطف أن الفريق يساعد عائلة، وتابعت فحصها. وجدت مشبك شعر الطفلة قرب باب الشرفة، فأبلغت بسرية عبر الجهاز مع تحديد المكان بدقة، وبقيت في منطقتها بينما وجّه الأمن الزملاء إلى الشرفة.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> غطِّ المخارج أولًا، ثم المناطق العامة، والمصاعد والسلالم، والكاميرات والمحيط. التزم بمنطقتك، وتحدث بسرية، وأبلغ عن كل تحديث، ولا تسلّم أحدًا دون تحقق.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: البحث بنظام",
+                                "questions": [
+                                    {
+                                        "question": "كُلّفت بالمخرج الرئيسي، وسمعت عبر الجهاز أن الطفل قد يكون قرب المسبح. ماذا تفعل؟",
+                                        "options": [
+                                            "تركض إلى المسبح للمساعدة",
+                                            "تبقى عند مخرجك وتبلغ عن أي شيء تراه",
+                                            "تغادر لتفحص المواقف",
+                                            "تعود إلى عملك المعتاد"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: التزم بمنطقتك وأبلغ عن أي تحديث، وترك الموقع من الأمور التي تُتجنب."
+                                    },
+                                    {
+                                        "question": "أي منطقة تشمل الردهة والمطعم ودورات المياه؟",
+                                        "options": [
+                                            "المناطق العامة",
+                                            "المداخل والمخارج",
+                                            "المصاعد والسلالم",
+                                            "الكاميرات والمحيط"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "منطقة المناطق العامة في المادة: افحص الردهة والمطعم ودورات المياه."
+                                    },
+                                    {
+                                        "question": "اقترح زميل نشر صورة الطفل على التواصل الاجتماعي لتسريع البحث. ما الصحيح؟",
+                                        "options": [
+                                            "تنشرها على حساب الفندق فقط",
+                                            "تنشرها إذا وافق الوالدان شفهيًا",
+                                            "ترسلها للنزلاء عبر الهاتف بدلًا من ذلك",
+                                            "تتجنب ذلك؛ فالمادة تذكر نشر الصور أو المعلومات في التواصل الاجتماعي ضمن ما يُتجنب"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "نشر صورة أو معلومة في التواصل الاجتماعي من قائمة تجنب، وحافظ على خصوصية الشخص."
+                                    },
+                                    {
+                                        "question": "لاحظت نزيلًا يتصرف بغرابة قرب السلالم أثناء البحث. ماذا تفعل؟",
+                                        "options": [
+                                            "تتهمه مباشرة",
+                                            "تجادله حتى يوضح",
+                                            "تبلغ الأمن بما رأيت وتتبع تعليماتهم",
+                                            "تتجاهل الأمر تمامًا"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: تجنب اتهام أحد أو الدخول في جدال، وأبلغ عن أي معلومة جديدة واتبع تعليمات الأمن والمشرف."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "العثور والتحقق",
+                    "lessons": [
+                        {
+                            "title": "عندما نعثر على الشخص والتحقق قبل التسليم",
+                            "minutes": 7,
+                            "body": "<h2>عندما نعثر على الشخص</h2><p>العثور على الطفل أو الشخص التائه مصدر ارتياح، لكن الإجراء لم ينتهِ، والدقائق التالية تحتاج العناية نفسها. تذكر المادة أربع خطوات:</p><ol><li><strong>ابقَ معه:</strong> ابقَ معه في مكان عام وآمن، ولا تأخذه إلى غرفة خاصة ولا تتركه لتذهب وتنادي أحدًا.</li><li><strong>طمئنه:</strong> تحدث بهدوء ولا تستجوبه؛ فالطفل الخائف أو المسن المرتبك يحتاج إلى الطمأنينة لا إلى قائمة أسئلة.</li><li><strong>أبلغ الأمن:</strong> أبلغ الأمن فورًا، ولا تسلّمه لأحد قبل التحقق.</li><li><strong>افحص حالته:</strong> لاحظ أي إصابة أو احتياج طبي، وإن وُجد فاطلب المساعدة المختصة وفق خطة الفندق.</li></ol><blockquote class=\"bk-quote\">لا تعده بوصول أهله حتى يتم التأكد.</blockquote><p>من اللطف أن تقول \"أمك في الطريق\"، لكن إن لم يكن ذلك صحيحًا فستفقد ثقته في اللحظة التي يحتاجك فيها أكثر. قل ما تعرفه: \"أنت بأمان، وأنا باقٍ معك، وزملائي يساعدون\".</p><h2>التحقق قبل التسليم</h2><p>في أغلب الحالات يكون من يتقدم هو فعلًا من يقول إنه هو، والتحقق يحميه أيضًا، ويحمي الشخص الضعيف في الحالات النادرة التي لا يكون فيها كذلك. تحقق من الشخص المستلم:</p><ul><li>طابق معلوماته مع البلاغ.</li><li>تحقق من الهوية وصلة القرابة.</li><li>احصل على موافقة الأمن أو المشرف.</li><li>سجل وقت ومكان التسليم.</li><li>اتبع نموذج الفندق والشهود.</li></ul><h2>صعّد الحالة فورًا إذا</h2><ul><li>خاف الشخص من مدّعي القرابة.</li><li>لم تتطابق المعلومات.</li><li>ظهر اشتباه بخطف أو إساءة.</li><li>وُجدت إصابة أو احتياج طبي.</li><li>لم يتم العثور عليه سريعًا.</li></ul><blockquote class=\"bk-quote\">اتصل بالشرطة أو الطوارئ وفق خطة الفندق عند وجود خطر أو اشتباه.</blockquote><p>التصعيد ليس حكمك وحدك، بل إشارة إلى الأمن والمشرف اللذين يتبعان خطة الفندق. دورك أن تلاحظ وتبلغ وتحافظ على سلامة الشخص حتى يتولى المختصون الأمر.</p><h2>كلمة ختامية</h2><p>تختم المادة برسالة واضحة: <strong>سلامتهم مسؤوليتنا</strong>. أبلغ فورًا وابحث بنظام وتحقق قبل التسليم: <strong>أبلغ، صف، نظّم، ابحث، تحقق</strong>. لا تؤخر البلاغ، ولا تسلّم الشخص دون تحقق.</p><aside class=\"bk-scene\"><strong>موقف:</strong> وجدت موظفة التدبير الفندقي ولدًا يبكي عند مصاعد الطابق الرابع. انحنت إلى مستواه في الممر، وأخبرته أنه بأمان وأنها باقية معه، وأبلغت الأمن عبر الجهاز. وصل رجل يقول إنه عم الطفل، لكن الطفل اختبأ خلفها. حافظت على هدوئها ولم تسلّمه، وأبلغت الأمن بأن الطفل يبدو خائفًا. فطابق الأمن المعلومات مع بلاغ الأم وتواصل معها قبل أي تسليم.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> ابقَ مع الشخص في مكان عام وآمن، وطمئنه دون استجواب، وأبلغ الأمن، وافحص حالته، وتحقق من الشخص المستلم قبل أي تسليم. وصعّد الحالة عند أي خطر أو اشتباه.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: العثور والتحقق",
+                                "questions": [
+                                    {
+                                        "question": "عثرت على الطفل المفقود. أين تنتظر معه؟",
+                                        "options": [
+                                            "في مكتب موظفين هادئ والباب مغلق",
+                                            "في مكان عام وآمن",
+                                            "في غرفة العائلة",
+                                            "خارج مدخل الفندق"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: ابقَ معه في مكان عام وآمن."
+                                    },
+                                    {
+                                        "question": "يسأل الطفل الذي وجدته باستمرار هل ستأتي أمه. ما أفضل رد؟",
+                                        "options": [
+                                            "\"نعم، ستصل خلال دقيقتين\"",
+                                            "\"لماذا هربت؟\"",
+                                            "\"أنت بأمان، وأنا باقٍ معك، وزملائي يساعدون\"",
+                                            "\"لا أعرف، توقف عن السؤال\""
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "طمئنه بهدوء دون استجواب، ولا تعده بوصول أهله حتى يتم التأكد."
+                                    },
+                                    {
+                                        "question": "قالت امرأة إنها ابنة النزيل المسن وتريد أخذه إلى غرفته الآن. ما الذي يجب أولًا؟",
+                                        "options": [
+                                            "مطابقة معلوماتها مع البلاغ، والتحقق من الهوية وصلة القرابة، وموافقة الأمن أو المشرف",
+                                            "لا شيء، كلامها يكفي",
+                                            "سؤال النزيل هل هو متعب",
+                                            "تركها تأخذه ثم إبلاغ الأمن لاحقًا"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "خطوات التحقق: طابق مع البلاغ، وتحقق من الهوية والقرابة، واحصل على الموافقة، وسجل الوقت والمكان، واتبع النموذج."
+                                    },
+                                    {
+                                        "question": "يبدو الطفل خائفًا من الرجل الذي يقول إنه والده. ماذا تفعل؟",
+                                        "options": [
+                                            "تسلّمه؛ فالأطفال يخجلون أحيانًا",
+                                            "تطلب من الرجل أن يصف الطفل ليثبت ذلك",
+                                            "تتركهما يتفاهمان",
+                                            "تبقي الطفل معك وتصعّد الحالة إلى الأمن فورًا"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "صعّد الحالة فورًا إذا خاف الشخص من مدّعي القرابة، ويُتصل بالشرطة أو الطوارئ وفق خطة الفندق."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

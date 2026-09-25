@@ -1,0 +1,545 @@
+{
+    "slug": "telephone-service-standards",
+    "category": "communication",
+    "level": "foundation",
+    "source_pdf": "Telephone-Service-Standards-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/telephone-service-standards.webp",
+    "videos": [
+        {
+            "id": "KsDqa3eqvuw",
+            "title": "Answering Telephone in Hotel and Restaurant Dos and Donts - Tutorial 65",
+            "channel": "Hospitality School",
+            "why": "A hospitality training tutorial on answering calls in hotels and restaurants, with practical do and don't examples that mirror the greeting, voice and call-handling standards in this course."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Telephone Service Standards",
+            "subtitle": "Your voice represents the hotel",
+            "short_description": "Answer within three rings, greet clearly, speak with a warm voice, listen and confirm, hold and transfer politely, take accurate messages and close professionally.",
+            "description": "<p>On the phone, the guest cannot see your smile, but they can hear it. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows every colleague who answers a hotel telephone how to make each call feel as warm and professional as a face-to-face welcome.</p><p>You will learn why telephone courtesy matters, the standard for answering and greeting, how to use your voice clearly, how to listen and confirm details, how to hold and transfer calls with permission, how to take a complete message and how to close a call so the caller feels cared for.</p>",
+            "requirements": "No prior training is needed; the course suits any colleague who answers or makes calls with guests.",
+            "outcomes": [
+                "Explain why the voice carries the welcome on every call",
+                "Answer within three rings using the standard greeting",
+                "Speak clearly, calmly and courteously while avoiding common voice mistakes",
+                "Listen, confirm details and ask permission before holding or transferring",
+                "Take complete messages and close every call professionally"
+            ],
+            "faqs": [
+                {
+                    "question": "How quickly should I answer the phone?",
+                    "answer": "Within three rings at most, unless hotel policy states otherwise."
+                },
+                {
+                    "question": "What should the greeting include?",
+                    "answer": "A greeting such as Assalamu alaikum, good morning or good evening, the hotel or department name, your name and an immediate offer of help, in a warm and confident tone."
+                },
+                {
+                    "question": "Can I put a caller on hold without asking?",
+                    "answer": "No. Explain the reason, ask permission before pressing Hold, give the expected time if possible, return if the wait is long and thank the caller when you come back."
+                }
+            ],
+            "meta_title": "Telephone Service Standards for Hotel Staff",
+            "meta_description": "Hotel telephone training: answer within three rings, greet clearly, use a warm voice, confirm details, hold and transfer politely and close professionally.",
+            "focus_keyword": "hotel telephone etiquette",
+            "chapters": [
+                {
+                    "title": "Your Voice Is the Welcome",
+                    "lessons": [
+                        {
+                            "title": "Why Telephone Courtesy Matters",
+                            "minutes": 5,
+                            "body": "<h2>The guest cannot see your smile, but hears it</h2><p>A large part of guest service happens over the telephone: reservations, room service orders, wake-up calls, housekeeping requests, questions before arrival and problems during the stay. For many guests, the first contact with the hotel is a voice on the phone. The deck's title for this course says it clearly: <strong>your voice represents the hotel.</strong></p><p>Face to face, you can rely on a smile, eye contact and body language to show that you care. On the phone, all of that disappears. <strong>The voice carries the welcome.</strong></p><h2>Five reasons telephone courtesy matters</h2><ul><li><strong>A large part of guest service happens by phone.</strong> Every call is a service moment, not an interruption to your work.</li><li><strong>The caller cannot see your body language.</strong> A friendly face means nothing if your voice sounds flat or rushed.</li><li><strong>The experience depends on words, tone and clarity.</strong> These three are all the caller has to judge the hotel.</li><li><strong>English may be a second language for both the caller and the colleague.</strong> Clear, simple speech matters even more when neither side is speaking their first language.</li><li><strong>Listening and confirming prevent misunderstanding.</strong> A wrong time, room number or name on the phone becomes a real problem later.</li></ul><blockquote class=\"bk-quote\">Do not assume the caller understood you. Speak clearly, calmly and courteously.</blockquote><h2>The four habits in one line</h2><p>The deck summarises good telephone service in four words: <strong>Smile, Speak clearly, Listen, Confirm.</strong> Smile, because a smile changes the sound of your voice. Speak clearly, because the caller cannot read your lips. Listen, because the caller needs to know you are still there. Confirm, because details heard over the phone are easy to mishear.</p><p>The rest of this course turns these four habits into standards for every stage of a call: answering, speaking, listening, holding, transferring, taking messages and closing.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest calls from the airport, tired after a long flight, speaking English as a second language. The reservations agent, also not a native English speaker, notices the guest is struggling. She slows down, uses short sentences and smiles as she speaks. When the guest mentions the arrival time, she repeats it back to be sure. The guest later says the call made them feel expected before they had even arrived.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Keep a small mirror or simply sit up straight before you pick up. Posture and a real smile both change how your voice sounds.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> On the phone, your words, tone and clarity are the whole welcome. Never assume you were understood.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Why courtesy matters",
+                                "questions": [
+                                    {
+                                        "question": "Why does your tone of voice matter more on the phone than at the desk?",
+                                        "options": [
+                                            "Calls are recorded for training",
+                                            "The caller cannot see your body language",
+                                            "Phone calls are always complaints",
+                                            "Guests speak louder on the phone"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck states the caller cannot see your body language; the experience depends on words, tone and clarity."
+                                    },
+                                    {
+                                        "question": "A caller speaks English as a second language. What should you do?",
+                                        "options": [
+                                            "Speak faster to keep the call short",
+                                            "Use hotel jargon so you sound professional",
+                                            "Speak clearly and calmly and do not assume they understood",
+                                            "Transfer them immediately to another colleague"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "English may be a second language for both sides, so do not assume the caller understood; speak clearly, calmly and courteously."
+                                    },
+                                    {
+                                        "question": "What are the four telephone habits in the deck?",
+                                        "options": [
+                                            "Smile, Speak clearly, Listen, Confirm",
+                                            "Answer, Hold, Transfer, Close",
+                                            "Greet, Sell, Upsell, Thank",
+                                            "Listen, Write, Repeat, Hang up"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck's opening slide lists Smile, Speak clearly, Listen, Confirm."
+                                    },
+                                    {
+                                        "question": "What prevents misunderstanding on the phone?",
+                                        "options": [
+                                            "Speaking louder",
+                                            "Keeping the call as short as possible",
+                                            "Relying on the guest to call back",
+                                            "Listening and confirming"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The slide states that listening and confirming prevent misunderstanding."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Answering the Call and Using Your Voice",
+                            "minutes": 6,
+                            "body": "<h2>Start the call quickly with a clear greeting</h2><p>The first seconds of a call set the tone for everything after. The deck's standard is simple: <strong>answer within three rings at most</strong>, unless hotel policy states otherwise. A phone that rings on and on tells the caller the hotel is too busy for them.</p><h3>The standard greeting</h3><ul><li><strong>Greet the caller:</strong> Assalamu alaikum, good morning or good evening.</li><li><strong>Say the name of the hotel or the department.</strong></li><li><strong>Introduce yourself clearly.</strong></li><li><strong>Offer help immediately.</strong></li><li><strong>Use a warm, confident tone.</strong></li></ul><blockquote class=\"bk-quote\">Good morning, Dyafa Hotel, Hussam speaking. How may I assist you?</blockquote><p>Every part of this greeting has a purpose. The greeting shows courtesy, the hotel or department name tells the caller they have reached the right place, your name makes the call personal, and the offer of help invites the caller to speak.</p><h2>A clear tone matters more than a loud voice</h2><p>Once the call has started, your voice does all the work. The deck lists what to do and what to avoid.</p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Smile before and while you speak</td><td>Shouting or speaking too quietly</td></tr><tr><td>Speak at a moderate pace</td><td>Speaking too fast or too slowly</td></tr><tr><td>Use a clear, audible voice</td><td>Mumbling or stumbling because you are rushing</td></tr><tr><td>Pronounce words and names accurately</td><td>Eating or drinking during the call</td></tr><tr><td>Use professional, polite expressions</td><td>Covering the receiver and talking to others</td></tr><tr><td>Reduce background noise as much as possible</td><td>Using slang or abbreviated words</td></tr></tbody></table><blockquote class=\"bk-quote\">A calm, clear voice builds confidence.</blockquote><h3>Why these details matter</h3><p>Covering the receiver does not block sound completely; the caller often hears side conversations and feels ignored. Eating or drinking is clearly audible. Slang and abbreviations may confuse a caller who speaks a different language. Names are especially important: a guest whose name is mispronounced or misspelt feels the hotel was not paying attention.</p><aside class=\"bk-scene\"><strong>Scene:</strong> The phone at the concierge desk rings while Hussam is finishing a note. On the second ring he stops writing, smiles and answers: \"Good evening, Dyafa Hotel concierge, Hussam speaking. How may I assist you?\" The lobby is noisy, so he turns away from the group near the desk and speaks at a steady pace. The caller asks for a restaurant recommendation, and Hussam spells the restaurant's name slowly so the guest can write it down.</aside><aside class=\"bk-note\"><strong>Tip:</strong> If you are not sure how to pronounce a caller's name, ask politely: \"Could you please spell your name for me?\" It is better than guessing.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Answer within three rings, greet with the hotel or department name and your own, offer help, and let a calm, clear voice do the rest.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Answering and voice",
+                                "questions": [
+                                    {
+                                        "question": "The phone rings while you are busy with paperwork. By when should you answer?",
+                                        "options": [
+                                            "Within three rings, unless hotel policy states otherwise",
+                                            "When you finish the paperwork",
+                                            "Within six rings",
+                                            "Only if no colleague picks up"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck sets three rings as the maximum unless hotel policy states otherwise."
+                                    },
+                                    {
+                                        "question": "Which greeting follows the deck's standard?",
+                                        "options": [
+                                            "Hello?",
+                                            "Yes, reception.",
+                                            "Dyafa, hold please.",
+                                            "Good morning, Dyafa Hotel, Hussam speaking. How may I assist you?"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The standard greeting includes a greeting, the hotel or department name, your name and an offer of help."
+                                    },
+                                    {
+                                        "question": "A colleague asks you a question during a call. What should you avoid?",
+                                        "options": [
+                                            "Smiling while you speak",
+                                            "Covering the receiver and talking to them",
+                                            "Speaking at a moderate pace",
+                                            "Reducing background noise"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Covering the receiver and talking to others is on the deck's avoid list."
+                                    },
+                                    {
+                                        "question": "The lobby behind you is noisy. What does the deck recommend?",
+                                        "options": [
+                                            "Shout so the caller can hear",
+                                            "Ask the caller to call back later",
+                                            "Reduce background noise as much as possible and speak clearly",
+                                            "Speak very quickly to finish the call"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says to reduce ambient noise as much as possible and use a clear, audible voice, not to shout."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Listen, Confirm, Hold and Transfer",
+                    "lessons": [
+                        {
+                            "title": "Let the Caller Know You Are Still Listening",
+                            "minutes": 6,
+                            "body": "<h2>Listening you can hear</h2><p>On the phone, silence is confusing. The caller cannot see you nodding or writing, so they may wonder whether you are still there. The deck's instruction is: <strong>let the caller know you are still listening.</strong></p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Listen without interrupting</td><td>Complete silence for a long time</td></tr><tr><td>Use short, professional acknowledgements</td><td>Doing another task while listening</td></tr><tr><td>Write down names, numbers and details</td><td>Interrupting the caller or finishing their sentence</td></tr><tr><td>Repeat important information to confirm</td><td>Relying on memory only</td></tr><tr><td>Ask for spelling when needed</td><td>Assuming the name or room number</td></tr><tr><td>Ask one question at a time</td><td>Pretending to understand unclear information</td></tr></tbody></table><p>Short acknowledgements such as \"yes\", \"certainly\" or \"I understand\" show you are present without interrupting. Writing things down is essential, because names, room numbers and times are easy to forget or mix up. And never pretend to understand: if the line is poor or the accent is unfamiliar, ask again politely.</p><blockquote class=\"bk-quote\">To confirm: room 305 and delivery at 8:00, correct?</blockquote><p>This confirmation example from the deck is short, repeats only the key facts and ends with a question so the caller can correct you.</p><h2>Ask permission before holding or transferring</h2><h3>Placing a caller on hold</h3><ul><li><strong>Explain the reason for the wait.</strong></li><li><strong>Ask permission before pressing Hold.</strong></li><li><strong>Give the expected time if possible.</strong></li><li><strong>Return to the caller if the wait becomes long.</strong></li><li><strong>Thank them when you come back to the call.</strong></li></ul><blockquote class=\"bk-quote\">May I place you on hold while I check that for you?</blockquote><h3>Transferring a call</h3><ul><li><strong>Make sure the transfer is the right solution.</strong> If you can answer the question yourself, do so.</li><li><strong>Say the name of the department or person.</strong></li><li><strong>Explain to the caller that you will transfer them.</strong></li><li><strong>Pass a summary of the request to the colleague if possible,</strong> so the caller does not have to repeat everything.</li><li><strong>Do not transfer the call without explanation.</strong></li></ul><aside class=\"bk-scene\"><strong>Scene:</strong> A guest calls reception asking whether the spa can fit in a massage this afternoon. The receptionist asks, \"May I place you on hold for about one minute while I check with the spa?\" The guest agrees. The spa line is busy, so after a minute she returns: \"Thank you for waiting. The spa is on another call; may I transfer you to them directly?\" She tells the spa colleague, \"Mr Khalid in 214 would like a massage this afternoon,\" and then connects the call.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Wait for the caller's answer after asking to place them on hold. Asking and pressing Hold in the same breath is not really asking.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Show you are listening, write and confirm details, ask permission before holding and always explain and summarise when transferring.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Listen, hold, transfer",
+                                "questions": [
+                                    {
+                                        "question": "A caller gives a surname you have never heard before. What should you do?",
+                                        "options": [
+                                            "Write your best guess",
+                                            "Ask them politely to spell it",
+                                            "Pretend you understood and move on",
+                                            "Use only their room number"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says to ask for spelling when needed and to avoid assuming the name."
+                                    },
+                                    {
+                                        "question": "You need to check availability with another department. What should you do before pressing Hold?",
+                                        "options": [
+                                            "Nothing; press Hold quickly to save time",
+                                            "Tell the caller to call back",
+                                            "Transfer the call without explanation",
+                                            "Explain the reason and ask the caller's permission"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says to explain the reason for the wait and ask permission before pressing Hold."
+                                    },
+                                    {
+                                        "question": "The caller has been on hold longer than you expected. What does the deck say?",
+                                        "options": [
+                                            "Return to the caller if the wait is long",
+                                            "Leave them on hold until you have the answer",
+                                            "Hang up and call them later",
+                                            "Transfer them to any free extension"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "One of the hold standards is to return to the caller if the wait becomes long."
+                                    },
+                                    {
+                                        "question": "Which action best supports a good transfer?",
+                                        "options": [
+                                            "Transferring as soon as the caller starts speaking",
+                                            "Transferring without telling the caller where",
+                                            "Passing a summary of the request to the colleague if possible",
+                                            "Asking the caller to repeat everything to the next colleague"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says to pass a summary of the request to the colleague if possible and never transfer without explanation."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Messages and Closing the Call",
+                    "lessons": [
+                        {
+                            "title": "Accurate Messages, a Kind Close and What the Caller Expects",
+                            "minutes": 6,
+                            "body": "<h2>An accurate message and a kind close complete the service</h2><p>A call is only successful if what was agreed actually happens. That depends on two things the deck brings together: an accurate message and a courteous ending.</p><h3>Taking a message</h3><p>When the person the caller wants is not available, write the message so that anyone could act on it without calling the guest back. Include:</p><ol><li><strong>The caller's name and contact details.</strong></li><li><strong>The room number or the organisation.</strong></li><li><strong>The time and date of the call.</strong></li><li><strong>The request or message, written clearly.</strong></li><li><strong>The level of urgency and the time needed.</strong></li><li><strong>The name of the colleague who took the message.</strong></li></ol><p>The last point is often forgotten, but it matters: if something is unclear, the recipient knows who to ask.</p><h3>Closing the call</h3><ul><li><strong>Summarise what was agreed.</strong></li><li><strong>Ask whether there is anything else.</strong></li><li><strong>Thank the caller by name when you know it.</strong></li><li><strong>Use a warm closing phrase.</strong></li><li><strong>Let the caller hang up first.</strong></li><li><strong>Do not put the receiver down roughly.</strong></li></ul><blockquote class=\"bk-quote\">Thank you for calling. Have a wonderful day.</blockquote><h2>What the caller expects</h2><p>The deck sums up the whole standard: <strong>the caller expects speed, clarity and ownership of the request.</strong></p><table class=\"bk-say\"><thead><tr><th>Expectation</th><th>What it means</th></tr></thead><tbody><tr><td>Prompt answer</td><td>Within three rings, according to policy</td></tr><tr><td>Clear identification</td><td>The hotel, the department and the colleague's name</td></tr><tr><td>Full listening</td><td>No interrupting, with details confirmed</td></tr><tr><td>Correct action</td><td>A solution or a clear transfer, with follow-up</td></tr><tr><td>Professional close</td><td>A summary, thanks and a suitable farewell</td></tr></tbody></table><aside class=\"bk-scene\"><strong>Scene:</strong> A caller asks for the sales manager, who is in a meeting. The colleague writes: \"Ms Noura, 050-xxx, ABC Events, 26 Sept 10:15, wants to confirm meeting room for 40 people next Tuesday, please call back before 2 p.m. today, taken by Salma.\" She closes: \"So Ms Noura, the sales manager will call you back before two o'clock today. Is there anything else I can help with? Thank you for calling, Ms Noura, have a wonderful day.\" She waits until the caller hangs up before putting the receiver down gently.</aside><h2>Closing thought</h2><p>The deck ends with the full set of habits: <strong>answer quickly, introduce yourself, speak clearly, listen, confirm, and ask permission before holding or transferring.</strong> Your voice is the impression the guest hears.</p><aside class=\"bk-key\"><strong>Key takeaway:</strong> Write complete messages, summarise and thank the caller by name, let them hang up first, and give every caller speed, clarity and ownership.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Messages and closing",
+                                "questions": [
+                                    {
+                                        "question": "You take a message for a colleague. Which detail is often forgotten but required by the deck?",
+                                        "options": [
+                                            "The caller's nationality",
+                                            "The weather at the time of the call",
+                                            "The name of the colleague who took the message",
+                                            "The caller's reason for staying at the hotel"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The message list ends with the name of the colleague who received the message."
+                                    },
+                                    {
+                                        "question": "The call is finished. Who should hang up first?",
+                                        "options": [
+                                            "The caller",
+                                            "You, to free the line",
+                                            "Whoever finishes speaking last",
+                                            "It does not matter"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck says to let the caller hang up first."
+                                    },
+                                    {
+                                        "question": "What should you do before ending the call?",
+                                        "options": [
+                                            "Hang up as soon as the request is noted",
+                                            "Transfer the caller to the operator",
+                                            "Tell the caller the line is busy",
+                                            "Summarise what was agreed and ask whether there is anything else"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Closing the call starts with summarising what was agreed and asking if there is another request."
+                                    },
+                                    {
+                                        "question": "According to the deck, what does correct action mean for the caller?",
+                                        "options": [
+                                            "Transferring every call to a manager",
+                                            "A solution or a clear transfer, with follow-up",
+                                            "Promising a callback without noting it",
+                                            "Answering only the first question"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "In the caller expectations table, correct action means a solution or a clear transfer with follow-up."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "معايير الخدمة الهاتفية",
+            "subtitle": "صوتك هو صورة الفندق",
+            "short_description": "أجب خلال ثلاث رنات، وحيِّ بوضوح، وتحدث بصوت دافئ، واستمع وأكد، واطلب الإذن قبل الانتظار أو التحويل، ودوّن الرسالة بدقة، وأنهِ المكالمة بمهنية.",
+            "description": "<p>عبر الهاتف لا يرى النزيل ابتسامتك لكنه يسمعها. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتوضح لكل موظف يرد على هاتف الفندق كيف يجعل كل مكالمة دافئة ومهنية كالترحيب وجهًا لوجه.</p><p>ستتعرف على أهمية اللباقة الهاتفية، ومعيار الرد والتحية، وكيف تستخدم صوتك بوضوح، وكيف تستمع وتؤكد التفاصيل، وكيف تضع المتصل على الانتظار أو تحوّل المكالمة بعد الاستئذان، وكيف تدوّن رسالة كاملة وتنهي المكالمة بطريقة تُشعر المتصل بالاهتمام.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظف يرد على مكالمات النزلاء أو يجريها.",
+            "outcomes": [
+                "اشرح لماذا يحمل الصوت رسالة الترحيب في كل مكالمة",
+                "أجب خلال ثلاث رنات باستخدام التحية النموذجية",
+                "تحدث بوضوح وهدوء ولطف وتجنب أخطاء الصوت الشائعة",
+                "استمع وأكد التفاصيل واطلب الإذن قبل الانتظار أو التحويل",
+                "دوّن رسائل كاملة وأنهِ كل مكالمة بمهنية"
+            ],
+            "faqs": [
+                {
+                    "question": "ما السرعة المطلوبة للرد على الهاتف؟",
+                    "answer": "خلال ثلاث رنات كحد أقصى، ما لم تحدد سياسة الفندق خلاف ذلك."
+                },
+                {
+                    "question": "ماذا تتضمن التحية؟",
+                    "answer": "السلام عليكم، صباح الخير أو مساء الخير، ثم اسم الفندق أو القسم، والتعريف بنفسك، وعرض المساعدة مباشرة، بنبرة دافئة وواثقة."
+                },
+                {
+                    "question": "هل أضع المتصل على الانتظار دون أن أسأله؟",
+                    "answer": "لا. اشرح سبب الانتظار، واطلب الإذن قبل الضغط على Hold، واذكر المدة المتوقعة إن أمكن، وعد إليه إذا طال الانتظار، واشكره عند العودة."
+                }
+            ],
+            "meta_title": "معايير الخدمة الهاتفية لموظفي الفنادق",
+            "meta_description": "تدريب فندقي على الخدمة الهاتفية: الرد خلال ثلاث رنات، والتحية الواضحة، والصوت الدافئ، وتأكيد التفاصيل، والانتظار والتحويل بلباقة، والإنهاء المهني.",
+            "focus_keyword": "آداب الهاتف في الفنادق",
+            "chapters": [
+                {
+                    "title": "الصوت يحمل رسالة الترحيب",
+                    "lessons": [
+                        {
+                            "title": "عبر الهاتف لا يرى النزيل ابتسامتك لكنه يسمعها",
+                            "minutes": 5,
+                            "body": "<h2>الصوت يحمل رسالة الترحيب</h2><p>جزء كبير من خدمة النزلاء يتم عبر الهاتف: الحجوزات، وطلبات خدمة الغرف، ومكالمات الإيقاظ، وطلبات التدبير الفندقي، والاستفسارات قبل الوصول، والمشكلات أثناء الإقامة. وكثير من النزلاء يكون أول تواصل لهم مع الفندق صوتًا عبر الهاتف. وعنوان المادة يقولها بوضوح: <strong>صوتك هو صورة الفندق.</strong></p><p>وجهًا لوجه تستطيع أن تعتمد على الابتسامة والتواصل البصري ولغة الجسد لتُظهر اهتمامك، أما عبر الهاتف فيختفي ذلك كله، و<strong>يحمل الصوت وحده رسالة الترحيب.</strong></p><h2>خمسة أسباب تجعل اللباقة الهاتفية مهمة</h2><ul><li><strong>جزء كبير من خدمة النزلاء يتم عبر الهاتف،</strong> فكل مكالمة لحظة خدمة لا مقاطعة لعملك.</li><li><strong>لا يستطيع المتصل رؤية لغة جسدك،</strong> فالوجه البشوش لا يفيد إذا بدا صوتك باهتًا أو مستعجلًا.</li><li><strong>تعتمد التجربة على الكلمات والنبرة والوضوح،</strong> وهي كل ما يملكه المتصل ليحكم على الفندق.</li><li><strong>قد تكون الإنجليزية لغة ثانية للمتصل والموظف،</strong> فيصبح الكلام الواضح البسيط أهم.</li><li><strong>الاستماع والتأكيد يمنعان سوء الفهم،</strong> فالوقت أو رقم الغرفة أو الاسم الخاطئ عبر الهاتف يصبح مشكلة حقيقية لاحقًا.</li></ul><blockquote class=\"bk-quote\">لا تفترض أن المتصل فهمك — تحدث بوضوح وهدوء ولطف.</blockquote><h2>أربع عادات في سطر واحد</h2><p>تلخص المادة الخدمة الهاتفية الجيدة في أربع كلمات: <strong>ابتسم، تحدث بوضوح، استمع، أكّد.</strong> ابتسم لأن الابتسامة تغيّر صوتك، وتحدث بوضوح لأن المتصل لا يرى شفتيك، واستمع لأن المتصل يحتاج أن يعرف أنك ما زلت معه، وأكّد لأن التفاصيل المسموعة عبر الهاتف يسهل سماعها خطأً.</p><p>وبقية الدورة تحوّل هذه العادات الأربع إلى معايير لكل مرحلة من المكالمة: الرد، والتحدث، والاستماع، والانتظار، والتحويل، وتدوين الرسالة، والإنهاء.</p><aside class=\"bk-scene\"><strong>موقف:</strong> اتصل نزيل من المطار متعبًا بعد رحلة طويلة، ويتحدث الإنجليزية لغةً ثانية. لاحظت موظفة الحجوزات، وهي أيضًا ليست متحدثة أصلية بالإنجليزية، أنه يجد صعوبة، فأبطأت كلامها واستخدمت جملًا قصيرة وابتسمت وهي تتحدث، وعندما ذكر موعد وصوله كررته للتأكد. وقال النزيل لاحقًا إن المكالمة جعلته يشعر بأنهم ينتظرونه قبل أن يصل.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> اجلس معتدلًا قبل أن ترفع السماعة؛ فوضعية الجسم والابتسامة الحقيقية كلاهما يغيّر طريقة سماع صوتك.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> عبر الهاتف تصبح كلماتك ونبرتك ووضوحك هي الترحيب كله، ولا تفترض أبدًا أنك فُهمت.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: أهمية اللباقة الهاتفية",
+                                "questions": [
+                                    {
+                                        "question": "لماذا تكون نبرة صوتك أهم عبر الهاتف منها عند المكتب؟",
+                                        "options": [
+                                            "لأن المكالمات تُسجل للتدريب",
+                                            "لأن المتصل لا يستطيع رؤية لغة جسدك",
+                                            "لأن المكالمات دائمًا شكاوى",
+                                            "لأن النزلاء يتحدثون بصوت أعلى في الهاتف"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تنص المادة على أن المتصل لا يرى لغة جسدك، وأن التجربة تعتمد على الكلمات والنبرة والوضوح."
+                                    },
+                                    {
+                                        "question": "متصل يتحدث الإنجليزية لغةً ثانية. ماذا تفعل؟",
+                                        "options": [
+                                            "تسرع في الكلام لتقصير المكالمة",
+                                            "تستخدم مصطلحات فندقية لتبدو محترفًا",
+                                            "تتحدث بوضوح وهدوء ولا تفترض أنه فهمك",
+                                            "تحوّله فورًا إلى زميل آخر"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "قد تكون الإنجليزية لغة ثانية للطرفين، فلا تفترض أن المتصل فهمك، وتحدث بوضوح وهدوء ولطف."
+                                    },
+                                    {
+                                        "question": "ما العادات الهاتفية الأربع في المادة؟",
+                                        "options": [
+                                            "ابتسم، تحدث بوضوح، استمع، أكّد",
+                                            "أجب، انتظر، حوّل، أنهِ",
+                                            "حيِّ، بِع، زد البيع، اشكر",
+                                            "استمع، اكتب، كرر، أغلق"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تذكر الشريحة الافتتاحية: ابتسم، تحدث بوضوح، استمع، أكّد."
+                                    },
+                                    {
+                                        "question": "ما الذي يمنع سوء الفهم عبر الهاتف؟",
+                                        "options": [
+                                            "رفع الصوت",
+                                            "تقصير المكالمة قدر الإمكان",
+                                            "الاعتماد على أن يعاود النزيل الاتصال",
+                                            "الاستماع والتأكيد"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول الشريحة: الاستماع والتأكيد يمنعان سوء الفهم."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "ابدأ المكالمة بسرعة وتحية واضحة",
+                            "minutes": 6,
+                            "body": "<h2>ابدأ المكالمة بسرعة وتحية واضحة</h2><p>الثواني الأولى من المكالمة تحدد طابع كل ما يليها. ومعيار المادة بسيط: <strong>ثلاث رنات كحد أقصى</strong>، ما لم تحدد سياسة الفندق خلاف ذلك. فالهاتف الذي يرن طويلًا يخبر المتصل بأن الفندق مشغول عنه.</p><h3>التحية النموذجية</h3><ul><li><strong>السلام عليكم، صباح الخير أو مساء الخير.</strong></li><li><strong>اذكر اسم الفندق أو القسم.</strong></li><li><strong>عرّف بنفسك بوضوح.</strong></li><li><strong>اعرض المساعدة مباشرة.</strong></li><li><strong>استخدم نبرة دافئة وواثقة.</strong></li></ul><blockquote class=\"bk-quote\">Good morning, Dyafa Hotel, Hussam speaking. How may I assist you?</blockquote><p>ولكل جزء من هذه التحية غرض: فالتحية تُظهر اللباقة، واسم الفندق أو القسم يطمئن المتصل بأنه وصل إلى المكان الصحيح، واسمك يجعل المكالمة شخصية، وعرض المساعدة يدعو المتصل إلى الحديث.</p><h2>النبرة الواضحة أهم من رفع الصوت</h2><p>بعد بدء المكالمة يقوم صوتك بكل العمل، وتذكر المادة ما تفعله وما تتجنبه.</p><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنّب</th></tr></thead><tbody><tr><td>ابتسم قبل الحديث وأثناءه</td><td>الصراخ أو التحدث بصوت منخفض جدًا</td></tr><tr><td>تحدث بسرعة معتدلة</td><td>السرعة المفرطة أو البطء الشديد</td></tr><tr><td>استخدم صوتًا واضحًا ومسموعًا</td><td>التمتمة أو التلعثم بسبب الاستعجال</td></tr><tr><td>انطق الكلمات والأسماء بدقة</td><td>الأكل أو الشرب أثناء المكالمة</td></tr><tr><td>استخدم عبارات مهنية ومهذبة</td><td>تغطية السماعة والتحدث مع الآخرين</td></tr><tr><td>اخفض الضوضاء المحيطة قدر الإمكان</td><td>استخدام كلمات عامية أو مختصرة</td></tr></tbody></table><blockquote class=\"bk-quote\">الصوت الهادئ الواضح يبني الثقة.</blockquote><h3>لماذا تهم هذه التفاصيل</h3><p>تغطية السماعة لا تحجب الصوت تمامًا، وكثيرًا ما يسمع المتصل الأحاديث الجانبية فيشعر بالتجاهل. والأكل أو الشرب مسموع بوضوح. والكلمات العامية والمختصرة قد تربك متصلًا يتحدث لغة أخرى. أما الأسماء فمهمة بشكل خاص؛ فالنزيل الذي يُنطق اسمه أو يُكتب خطأً يشعر بأن الفندق لم يكن منتبهًا له.</p><aside class=\"bk-scene\"><strong>موقف:</strong> رنّ هاتف الكونسيرج بينما كان حسام ينهي ملاحظة. عند الرنة الثانية توقف عن الكتابة وابتسم وأجاب: \"مساء الخير، فندق ضيافة، الكونسيرج، معك حسام، كيف أستطيع مساعدتك؟\" كانت الردهة مزدحمة، فابتعد عن المجموعة القريبة من المكتب وتحدث بسرعة ثابتة. وعندما طلب المتصل ترشيح مطعم، تهجّى حسام اسم المطعم ببطء ليتمكن النزيل من كتابته.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> إذا لم تكن متأكدًا من نطق اسم المتصل فاسأله بلطف: \"هل تسمح بتهجئة اسمك؟\" فهذا أفضل من التخمين.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> أجب خلال ثلاث رنات، وحيِّ باسم الفندق أو القسم واسمك، واعرض المساعدة، ودع الصوت الهادئ الواضح يكمل الباقي.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الرد والصوت",
+                                "questions": [
+                                    {
+                                        "question": "رنّ الهاتف وأنت منشغل بأوراق. متى يجب أن ترد؟",
+                                        "options": [
+                                            "خلال ثلاث رنات، ما لم تحدد سياسة الفندق خلاف ذلك",
+                                            "عندما تنتهي من الأوراق",
+                                            "خلال ست رنات",
+                                            "فقط إذا لم يرد زميل"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تحدد المادة ثلاث رنات كحد أقصى ما لم تحدد سياسة الفندق خلاف ذلك."
+                                    },
+                                    {
+                                        "question": "أي تحية تتبع معيار المادة؟",
+                                        "options": [
+                                            "ألو؟",
+                                            "نعم، الاستقبال.",
+                                            "ضيافة، انتظر من فضلك.",
+                                            "صباح الخير، فندق ضيافة، معك حسام، كيف أستطيع مساعدتك؟"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "التحية النموذجية تتضمن التحية واسم الفندق أو القسم والتعريف بالنفس وعرض المساعدة."
+                                    },
+                                    {
+                                        "question": "سألك زميل سؤالًا أثناء المكالمة. ما الذي يجب تجنبه؟",
+                                        "options": [
+                                            "الابتسام أثناء الحديث",
+                                            "تغطية السماعة والتحدث معه",
+                                            "التحدث بسرعة معتدلة",
+                                            "خفض الضوضاء المحيطة"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تغطية السماعة والتحدث مع الآخرين من قائمة ما يجب تجنبه."
+                                    },
+                                    {
+                                        "question": "الردهة خلفك مزدحمة. بمَ توصي المادة؟",
+                                        "options": [
+                                            "أن تصرخ ليسمعك المتصل",
+                                            "أن تطلب من المتصل معاودة الاتصال لاحقًا",
+                                            "أن تخفض الضوضاء المحيطة قدر الإمكان وتتحدث بوضوح",
+                                            "أن تتحدث بسرعة كبيرة لتنهي المكالمة"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: اخفض الضوضاء المحيطة قدر الإمكان واستخدم صوتًا واضحًا ومسموعًا، لا الصراخ."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "الاستماع والتأكيد والانتظار والتحويل",
+                    "lessons": [
+                        {
+                            "title": "دع المتصل يعرف أنك ما زلت تستمع",
+                            "minutes": 6,
+                            "body": "<h2>استماع يمكن سماعه</h2><p>الصمت عبر الهاتف مربك؛ فالمتصل لا يراك تومئ أو تكتب، وقد يتساءل هل ما زلت معه. وتوجيه المادة: <strong>دع المتصل يعرف أنك ما زلت تستمع.</strong></p><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنّب</th></tr></thead><tbody><tr><td>استمع دون مقاطعة</td><td>الصمت التام لفترة طويلة</td></tr><tr><td>استخدم تأكيدات قصيرة ومهنية</td><td>القيام بمهمة أخرى أثناء الاستماع</td></tr><tr><td>دوّن الأسماء والأرقام والتفاصيل</td><td>مقاطعة المتصل أو إنهاء عبارته</td></tr><tr><td>أعد المعلومات المهمة للتأكد</td><td>الاعتماد على الذاكرة فقط</td></tr><tr><td>اطلب التهجئة عند الحاجة</td><td>افتراض الاسم أو رقم الغرفة</td></tr><tr><td>اسأل سؤالًا واحدًا في كل مرة</td><td>التظاهر بفهم معلومات غير واضحة</td></tr></tbody></table><p>التأكيدات القصيرة مثل \"نعم\" و\"بالتأكيد\" و\"مفهوم\" تُظهر حضورك دون مقاطعة. والتدوين ضروري لأن الأسماء وأرقام الغرف والمواعيد يسهل نسيانها أو الخلط بينها. ولا تتظاهر بالفهم أبدًا؛ فإذا كان الخط ضعيفًا أو اللهجة غير مألوفة فاسأل مرة أخرى بلطف.</p><blockquote class=\"bk-quote\">للتأكيد: رقم الغرفة 305 والطلب الساعة الثامنة، صحيح؟</blockquote><p>هذا المثال من المادة قصير، ويكرر الحقائق الأساسية فقط، وينتهي بسؤال ليتمكن المتصل من تصحيحك.</p><h2>اطلب الإذن قبل الانتظار أو التحويل</h2><h3>وضع المتصل على الانتظار</h3><ul><li><strong>اشرح سبب الانتظار.</strong></li><li><strong>اطلب الإذن قبل الضغط على Hold.</strong></li><li><strong>اذكر المدة المتوقعة إن أمكن.</strong></li><li><strong>عد إلى المتصل إذا طال الانتظار.</strong></li><li><strong>اشكره عند العودة للمكالمة.</strong></li></ul><blockquote class=\"bk-quote\">May I place you on hold while I check that for you?</blockquote><h3>تحويل المكالمة</h3><ul><li><strong>تأكد أن التحويل هو الحل الصحيح،</strong> فإن استطعت الإجابة بنفسك فافعل.</li><li><strong>اذكر اسم القسم أو الشخص.</strong></li><li><strong>اشرح للمتصل أنك ستقوم بالتحويل.</strong></li><li><strong>انقل ملخص الطلب للزميل إن أمكن،</strong> حتى لا يضطر المتصل لتكرار كل شيء.</li><li><strong>لا تحوّل المكالمة دون شرح.</strong></li></ul><aside class=\"bk-scene\"><strong>موقف:</strong> اتصل نزيل بالاستقبال يسأل هل يستطيع السبا تخصيص موعد تدليك بعد الظهر. سألته الموظفة: \"هل تسمح لي بوضعك على الانتظار دقيقة تقريبًا لأتحقق من السبا؟\" فوافق. كان خط السبا مشغولًا، فعادت إليه بعد دقيقة: \"شكرًا لانتظارك، السبا على مكالمة أخرى، هل تسمح لي بتحويلك إليهم مباشرة؟\" ثم قالت لزميلة السبا: \"السيد خالد في الغرفة 214 يرغب في جلسة تدليك بعد الظهر\"، وبعدها حوّلت المكالمة.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> انتظر جواب المتصل بعد أن تستأذنه في الانتظار؛ فأن تسأل وتضغط Hold في النفَس نفسه ليس استئذانًا حقيقيًا.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> أظهر أنك تستمع، ودوّن التفاصيل وأكدها، واطلب الإذن قبل الانتظار، واشرح ولخّص دائمًا عند التحويل.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الاستماع والانتظار والتحويل",
+                                "questions": [
+                                    {
+                                        "question": "ذكر المتصل اسم عائلة لم تسمعه من قبل. ماذا تفعل؟",
+                                        "options": [
+                                            "تكتب أقرب تخمين",
+                                            "تطلب منه بلطف تهجئته",
+                                            "تتظاهر بالفهم وتكمل",
+                                            "تكتفي برقم غرفته"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: اطلب التهجئة عند الحاجة وتجنب افتراض الاسم."
+                                    },
+                                    {
+                                        "question": "تحتاج إلى التحقق من التوفر لدى قسم آخر. ماذا تفعل قبل الضغط على Hold؟",
+                                        "options": [
+                                            "لا شيء، تضغط Hold بسرعة لتوفير الوقت",
+                                            "تطلب من المتصل معاودة الاتصال",
+                                            "تحوّل المكالمة دون شرح",
+                                            "تشرح السبب وتطلب إذن المتصل"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: اشرح سبب الانتظار واطلب الإذن قبل الضغط على Hold."
+                                    },
+                                    {
+                                        "question": "طال انتظار المتصل أكثر مما توقعت. ماذا تقول المادة؟",
+                                        "options": [
+                                            "عد إلى المتصل إذا طال الانتظار",
+                                            "اتركه على الانتظار حتى تحصل على الإجابة",
+                                            "أغلق الخط واتصل به لاحقًا",
+                                            "حوّله إلى أي تحويلة متاحة"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "من معايير الانتظار: عد إلى المتصل إذا طال الانتظار."
+                                    },
+                                    {
+                                        "question": "أي تصرف يدعم التحويل الجيد؟",
+                                        "options": [
+                                            "التحويل بمجرد أن يبدأ المتصل الكلام",
+                                            "التحويل دون إخبار المتصل بالجهة",
+                                            "نقل ملخص الطلب للزميل إن أمكن",
+                                            "مطالبة المتصل بتكرار كل شيء للزميل التالي"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: انقل ملخص الطلب للزميل إن أمكن، ولا تحوّل المكالمة دون شرح."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "الرسالة وإنهاء المكالمة",
+                    "lessons": [
+                        {
+                            "title": "الرسالة الدقيقة والنهاية اللطيفة وما يتوقعه المتصل",
+                            "minutes": 6,
+                            "body": "<h2>الرسالة الدقيقة والنهاية اللطيفة تكملان الخدمة</h2><p>لا تنجح المكالمة إلا إذا تحقق ما تم الاتفاق عليه فعلًا، وهذا يعتمد على أمرين تجمعهما المادة: رسالة دقيقة وإنهاء لبق.</p><h3>تدوين الرسالة</h3><p>عندما لا يكون الشخص المطلوب متاحًا، اكتب الرسالة بحيث يستطيع أي زميل التصرف بناءً عليها دون الاتصال بالنزيل مجددًا، وتضمَّن:</p><ol><li><strong>اسم المتصل ووسيلة التواصل.</strong></li><li><strong>رقم الغرفة أو الجهة.</strong></li><li><strong>وقت وتاريخ المكالمة.</strong></li><li><strong>نص الطلب أو الرسالة بوضوح.</strong></li><li><strong>درجة الاستعجال والوقت المطلوب.</strong></li><li><strong>اسم الموظف الذي استلم الرسالة.</strong></li></ol><p>كثيرًا ما يُنسى البند الأخير مع أهميته؛ فإذا لم يتضح شيء عرف المستلم من يسأل.</p><h3>إنهاء المكالمة</h3><ul><li><strong>لخّص ما تم الاتفاق عليه.</strong></li><li><strong>اسأل إن كان هناك طلب آخر.</strong></li><li><strong>اشكر المتصل باسمه عند معرفته.</strong></li><li><strong>استخدم عبارة ختامية دافئة.</strong></li><li><strong>دع المتصل يغلق الخط أولًا.</strong></li><li><strong>لا تغلق السماعة بعنف.</strong></li></ul><blockquote class=\"bk-quote\">Thank you for calling. Have a wonderful day.</blockquote><h2>ما يتوقعه المتصل</h2><p>تلخص المادة المعيار كله: <strong>المتصل يتوقع سرعة ووضوحًا وملكية للطلب.</strong></p><table class=\"bk-say\"><thead><tr><th>التوقع</th><th>معناه</th></tr></thead><tbody><tr><td>رد سريع</td><td>خلال ثلاث رنات وفق السياسة</td></tr><tr><td>تعريف واضح</td><td>الفندق والقسم واسم الموظف</td></tr><tr><td>استماع كامل</td><td>دون مقاطعة مع تأكيد التفاصيل</td></tr><tr><td>إجراء صحيح</td><td>حل أو تحويل واضح مع متابعة</td></tr><tr><td>نهاية مهنية</td><td>تلخيص وشكر ووداع مناسب</td></tr></tbody></table><aside class=\"bk-scene\"><strong>موقف:</strong> طلبت متصلة مدير المبيعات وكان في اجتماع، فكتبت الموظفة سلمى: \"السيدة نورة، 050-xxx، شركة ABC للفعاليات، 26 سبتمبر الساعة 10:15، تريد تأكيد قاعة اجتماعات لأربعين شخصًا الثلاثاء القادم، يُرجى معاودة الاتصال قبل الثانية ظهر اليوم، استلمتها سلمى\". ثم أنهت المكالمة: \"إذن يا سيدة نورة، سيتصل بك مدير المبيعات قبل الثانية اليوم. هل هناك أمر آخر أستطيع مساعدتك فيه؟ شكرًا لاتصالك يا سيدة نورة، أتمنى لك يومًا رائعًا\". وانتظرت حتى أغلقت المتصلة الخط، ثم وضعت السماعة بهدوء.</aside><h2>ختامًا</h2><p>تختم المادة بالعادات كاملة: <strong>أجب بسرعة، وعرّف بنفسك، وتحدث بوضوح، واستمع، وأكّد، واطلب الإذن قبل الانتظار أو التحويل.</strong> صوتك هو الانطباع الذي يسمعه النزيل.</p><aside class=\"bk-key\"><strong>الخلاصة:</strong> دوّن رسائل كاملة، ولخّص واشكر المتصل باسمه، ودعه يغلق الخط أولًا، وامنح كل متصل السرعة والوضوح وملكية الطلب.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الرسالة وإنهاء المكالمة",
+                                "questions": [
+                                    {
+                                        "question": "دوّنت رسالة لزميل. أي بند كثيرًا ما يُنسى مع أن المادة تطلبه؟",
+                                        "options": [
+                                            "جنسية المتصل",
+                                            "حالة الطقس وقت المكالمة",
+                                            "اسم الموظف الذي استلم الرسالة",
+                                            "سبب إقامة المتصل في الفندق"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تنتهي قائمة تدوين الرسالة باسم الموظف الذي استلم الرسالة."
+                                    },
+                                    {
+                                        "question": "انتهت المكالمة. من يغلق الخط أولًا؟",
+                                        "options": [
+                                            "المتصل",
+                                            "أنت، لتحرير الخط",
+                                            "آخر من يتحدث",
+                                            "لا يهم ذلك"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تقول المادة: دع المتصل يغلق الخط أولًا."
+                                    },
+                                    {
+                                        "question": "ماذا تفعل قبل إنهاء المكالمة؟",
+                                        "options": [
+                                            "تغلق بمجرد تدوين الطلب",
+                                            "تحوّل المتصل إلى المقسم",
+                                            "تخبر المتصل أن الخط مشغول",
+                                            "تلخّص ما تم الاتفاق عليه وتسأل إن كان هناك طلب آخر"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "يبدأ إنهاء المكالمة بتلخيص ما تم الاتفاق عليه والسؤال عن طلب آخر."
+                                    },
+                                    {
+                                        "question": "بحسب المادة، ماذا يعني الإجراء الصحيح بالنسبة للمتصل؟",
+                                        "options": [
+                                            "تحويل كل مكالمة إلى مدير",
+                                            "حل أو تحويل واضح مع متابعة",
+                                            "الوعد بمعاودة الاتصال دون تدوين",
+                                            "الإجابة عن السؤال الأول فقط"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "في جدول توقعات المتصل: الإجراء الصحيح حل أو تحويل واضح مع متابعة."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

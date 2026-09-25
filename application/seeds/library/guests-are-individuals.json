@@ -1,0 +1,551 @@
+{
+    "slug": "guests-are-individuals",
+    "category": "personalised-service",
+    "level": "foundation",
+    "source_pdf": "Guests-Are-Individuals-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/guests-are-individuals.webp",
+    "videos": [
+        {
+            "id": "bwcyXcOpWVs",
+            "title": "The Secret Ingredients of Great Hospitality | Will Guidara | TED",
+            "channel": "TED",
+            "why": "The restaurateur behind Eleven Madison Park explains how small, personal gestures built around each guest turn a consistent service into an unforgettable one."
+        },
+        {
+            "id": "yuuk3pStM24",
+            "title": "The Bar is So Low - The Realities of Memorable Service | Alex Cabañas | TEDxWilmingtonSalon",
+            "channel": "TEDx Talks",
+            "why": "Shows how noticing the individual in front of you, rather than following a script, is what makes service memorable."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Guests Are Individuals",
+            "subtitle": "One standard. A personal touch.",
+            "short_description": "Keep the Dyafa standard consistent while adapting how you deliver it, using five steps: Observe, Listen, Confirm, Adapt, Follow up.",
+            "description": "<p>Every guest has different needs and expectations. What delights one guest may not suit another. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows colleagues how to keep one consistent service standard while giving each guest a personal touch.</p><p>You will learn what must never change and what can flex, the five-step personal service flow, what to notice without judging, the questions that personalise service, practical everyday examples, and how to respect privacy and fairness while personalising.</p>",
+            "requirements": "No prior training is needed; the course suits any guest-facing colleague.",
+            "outcomes": [
+                "Explain why individual service creates an unforgettable experience",
+                "Separate the fixed service standard from the flexible personal details",
+                "Apply the five steps Observe, Listen, Confirm, Adapt, Follow up",
+                "Ask questions that personalise service instead of assuming",
+                "Personalise fairly while respecting guest privacy and hotel policy"
+            ],
+            "faqs": [
+                {
+                    "question": "Does personalising service mean breaking hotel standards?",
+                    "answer": "No. The deck is clear: personalisation does not mean breaking the hotel's standards. Respect, cleanliness, safety, accuracy, speed, privacy and fairness stay fixed; only the way you deliver them adapts."
+                },
+                {
+                    "question": "What are the five steps of personal service?",
+                    "answer": "Observe the signals and context, listen without interrupting, confirm what you understood and record it, adapt the style and the options, and follow up until the guest is fully satisfied."
+                },
+                {
+                    "question": "Can I record a guest's preferences?",
+                    "answer": "Only information the guest has allowed and that is linked to their service. Use recorded preferences with the guest's permission."
+                }
+            ],
+            "meta_title": "Guests Are Individuals: Personalised Hotel Service",
+            "meta_description": "Hotel training on personalised service: a consistent standard, flexible delivery, the Observe-Listen-Confirm-Adapt-Follow up flow and fair, private service.",
+            "focus_keyword": "personalised hotel service",
+            "chapters": [
+                {
+                    "title": "Why Individual Service Matters",
+                    "lessons": [
+                        {
+                            "title": "Every Guest Is Different",
+                            "minutes": 5,
+                            "body": "<h2>Individual service creates an unforgettable experience</h2><p>Two guests can arrive at the same desk, in the same hour, with the same type of booking, and still need completely different things from you. One wants to be in their room in three minutes. The other wants to hear about the city, the restaurant and the pool. The deck opens with a simple message: <strong>every guest is a unique person</strong>, and treating each one as an individual is what turns a good stay into one they do not forget.</p><h2>Five truths about individual service</h2><ul><li><strong>Every guest has different needs and expectations.</strong> Their reason for travelling, their energy, their language and their company all shape what good service looks like for them.</li><li><strong>What delights one guest may not suit another.</strong> A long, warm welcome can charm a leisure guest and frustrate a tired traveller who arrived at midnight.</li><li><strong>Attention to detail makes service personal.</strong> Remembering a name, a preferred pillow or a request from yesterday shows the guest they are seen.</li><li><strong>Personalisation does not mean breaking the hotel's standards.</strong> You are not inventing new rules for each guest; you are delivering the same standard in a way that fits them.</li><li><strong>Small differences create a big impression.</strong> Personal service is rarely about grand gestures. It is usually about small adjustments done well.</li></ul><blockquote class=\"bk-quote\">We adapt how we deliver it for each guest, and we provide a consistent service standard.</blockquote><h2>One standard, a personal touch</h2><p>The phrase that runs through the whole deck is <strong>one standard, a personal touch</strong>. The standard is what every guest can rely on at Dyafa, whoever they are. The personal touch is the way you shape that standard around the person in front of you. Both are needed. A standard without a personal touch feels cold and mechanical. A personal touch without a standard feels inconsistent and unfair.</p><p>Think of it as a promise and a style. The promise never changes: the guest will be treated with respect, their room will be clean and safe, the information will be accurate. The style changes: how much you explain, how quickly you move, which options you suggest first.</p><h2>Why it matters for the hotel</h2><p>Guests talk about how a hotel made them feel. When service is shaped around them, they feel recognised rather than processed. That feeling is what brings them back and what they describe to others. The small differences you make, such as slowing down for one guest and speeding up for another, create the big impression they carry home.</p><aside class=\"bk-scene\"><strong>Scene:</strong> Two guests check in back to back. The first is a business traveller on the phone, glancing at his watch. The receptionist keeps it short: key, Wi-Fi, breakfast time, done. The second is a couple on their first visit to the city. The same receptionist takes a little longer, explains the restaurant and the nearby sights and asks if they need anything for the evening. Both received the same standard; each received it in the way that suited them.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Every guest is different. Keep the standard the same and adapt the way you deliver it.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Every guest is different",
+                                "questions": [
+                                    {
+                                        "question": "A colleague says personalising service means changing the hotel's rules for each guest. What is correct?",
+                                        "options": [
+                                            "Yes, each guest should get their own rules",
+                                            "Personalisation does not mean breaking the hotel's standards",
+                                            "Only VIP guests can have personalised service",
+                                            "Standards matter only at check-in"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck states that personalisation does not mean breaking the hotel's standards."
+                                    },
+                                    {
+                                        "question": "A long, warm welcome delighted one guest, so you give the same long welcome to a guest arriving exhausted at midnight. What does the deck warn about?",
+                                        "options": [
+                                            "What delights one guest may not suit another",
+                                            "Welcomes should always be long",
+                                            "Night guests do not need a welcome",
+                                            "Every guest wants the same experience"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The slide says what makes one guest happy may not suit another guest."
+                                    },
+                                    {
+                                        "question": "What creates a big impression on guests, according to the deck?",
+                                        "options": [
+                                            "Expensive upgrades only",
+                                            "Following one script for everyone",
+                                            "Small differences",
+                                            "Long explanations"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says small differences create a big impression."
+                                    },
+                                    {
+                                        "question": "Which phrase best summarises this course?",
+                                        "options": [
+                                            "Different standards for different guests",
+                                            "The same service delivered the same way",
+                                            "Personal touch instead of standards",
+                                            "One standard, a personal touch"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck's message is a consistent standard delivered with a personal touch."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Fix the Standard, Personalise the Details",
+                            "minutes": 5,
+                            "body": "<h2>Two sides of every service moment</h2><p>To personalise service without losing consistency, you need to know which parts of your work are fixed and which parts can flex. The deck puts it in one line: <strong>fix the standard and personalise the details</strong>. It then lists five items on each side.</p><h3>The standard is fixed</h3><p>These are the things every guest receives, every time, regardless of who they are:</p><ul><li><strong>Respect and courtesy.</strong> Every guest is greeted and spoken to politely.</li><li><strong>Cleanliness and safety.</strong> No guest receives a room or a service that is less clean or less safe.</li><li><strong>Accuracy of information.</strong> Times, prices and directions are correct for everyone.</li><li><strong>Speed of response.</strong> Every request is answered promptly.</li><li><strong>Privacy and fairness.</strong> Every guest's information is protected and every guest is treated justly.</li></ul><h3>The details are flexible</h3><p>These are the things you adjust to fit the individual:</p><ul><li><strong>Style and level of speech.</strong> More formal or more relaxed, shorter or fuller, depending on the guest.</li><li><strong>Speed of explanation and service.</strong> Quick and focused for a guest in a hurry; calm and unhurried for a guest who wants detail.</li><li><strong>Order of priorities.</strong> Which part of the request to handle first.</li><li><strong>Choices and preferences.</strong> Which options to suggest, such as a quiet room or a room near the lift.</li><li><strong>Amount of assistance needed.</strong> Some guests want help with everything; others prefer to do things themselves.</li></ul><table class=\"bk-say\"><thead><tr><th>Standard is fixed</th><th>Details are flexible</th></tr></thead><tbody><tr><td>Respect and courtesy</td><td>Style and level of speech</td></tr><tr><td>Cleanliness and safety</td><td>Speed of explanation and service</td></tr><tr><td>Accuracy of information</td><td>Order of priorities</td></tr><tr><td>Speed of response</td><td>Choices and preferences</td></tr><tr><td>Privacy and fairness</td><td>Amount of assistance needed</td></tr></tbody></table><blockquote class=\"bk-quote\">Do not treat everyone the same way; treat everyone fairly.</blockquote><h2>Same is not the same as fair</h2><p>Treating everyone exactly the same way sounds fair, but it often is not. A guest with a small child and a guest travelling alone for a meeting both deserve the same respect and the same accuracy. They do not need the same explanation, the same pace or the same options. Fairness means everyone gets the full standard; personalisation means each person gets it in the form that works for them.</p><p>The test is simple. Before you adapt something, ask: is this a detail, or is this the standard? If it is a detail, adapt it freely. If it is the standard, such as safety, accuracy or privacy, it does not change for anyone.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest who is in a hurry asks the concierge to “skip the details” about the airport transfer. The concierge shortens the explanation (a flexible detail) but still confirms the pick-up time and the meeting point accurately (the fixed standard). The guest leaves quickly and with the right information.</aside><aside class=\"bk-note\"><strong>Tip:</strong> When you shorten or speed up service, never shorten accuracy. Confirm the key facts even in a thirty-second conversation.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Respect, cleanliness, safety, accuracy, speed, privacy and fairness never change. Style, pace, priorities, options and level of help can.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Standard and details",
+                                "questions": [
+                                    {
+                                        "question": "A guest says they are in a hurry. Which part of your service can you adapt?",
+                                        "options": [
+                                            "The accuracy of the information",
+                                            "The cleanliness of the room",
+                                            "The speed of explanation and service",
+                                            "The guest's privacy"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Speed of explanation and service is listed among the flexible details."
+                                    },
+                                    {
+                                        "question": "Which of these belongs to the fixed standard?",
+                                        "options": [
+                                            "Privacy and fairness",
+                                            "Order of priorities",
+                                            "Amount of assistance needed",
+                                            "Style of speech"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Privacy and fairness are part of the consistent standard."
+                                    },
+                                    {
+                                        "question": "A colleague says, “To be fair, I explain everything in exactly the same way to every guest.” What does the deck say?",
+                                        "options": [
+                                            "That is the ideal approach",
+                                            "Do not treat everyone the same way; treat everyone fairly",
+                                            "Only explain things to VIP guests",
+                                            "Let guests read the information themselves"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The slide closes with: do not treat everyone the same way, treat everyone fairly."
+                                    },
+                                    {
+                                        "question": "A guest prefers to carry their own bags, while another wants help with everything. Which flexible detail is this?",
+                                        "options": [
+                                            "Accuracy of information",
+                                            "Speed of response",
+                                            "Cleanliness and safety",
+                                            "Amount of assistance needed"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The amount of assistance needed is one of the flexible details."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "The Personal Service Flow",
+                    "lessons": [
+                        {
+                            "title": "Five Steps, What to Notice and What to Ask",
+                            "minutes": 7,
+                            "body": "<h2>Five steps to personal service</h2><p>The deck gives a simple flow you can use in any department:</p><ol><li><strong>Observe</strong> the signals and the context.</li><li><strong>Listen</strong> without interrupting.</li><li><strong>Confirm</strong> what you understood, and record it.</li><li><strong>Adapt</strong> the style and the options.</li><li><strong>Follow up</strong> until the guest is fully satisfied.</li></ol><blockquote class=\"bk-quote\">Do not assume the guest's need. Ask, confirm, and then act.</blockquote><h2>Observe what helps you understand the guest</h2><p>Observation is the first step, and the deck divides it into two groups.</p><h3>Clear signals</h3><ul><li>The reason for the visit: business or leisure.</li><li>Whether the guest is in a hurry or wants an explanation.</li><li>Their preferred language of communication.</li><li>Whether there are children or older people with them.</li><li>Any mobility or access needs.</li></ul><h3>Preferences to discover</h3><ul><li>A quiet room or a room close to the lift or exit.</li><li>The most suitable way to communicate with them.</li><li>Preferred times for cleaning or a wake-up call.</li><li>Food preferences the guest has stated.</li><li>Previous requests that the guest has allowed to be recorded.</li></ul><p>Signals can be seen; preferences usually have to be discovered by asking. The deck adds an important limit: <strong>do not judge a guest by their appearance; observe their behaviour.</strong> Clothing, age or nationality tell you nothing reliable about what someone needs or can afford.</p><h2>Ask to understand, do not assume</h2><p>Good questions are the fastest way from observation to personal service. The deck gives five phrases to use and five to avoid.</p><table class=\"bk-say\"><thead><tr><th>Say</th><th>Avoid</th></tr></thead><tbody><tr><td>“How can I make your stay more comfortable?”</td><td>“This is what everyone prefers.”</td></tr><tr><td>“Would you prefer a short or a detailed explanation?”</td><td>“I know what you need.”</td></tr><tr><td>“Which of the two options suits you better?”</td><td>“This option should suit you.”</td></tr><tr><td>“Is the suggested time convenient for you?”</td><td>“All guests do that.”</td></tr><tr><td>“Just to confirm, your request is… correct?”</td><td>“There is no difference between the options.”</td></tr></tbody></table><p>The phrases on the left hand the choice to the guest. The phrases on the right take it away. Two short questions summarise the approach: <strong>“What would work best for you?”</strong> and <strong>“May I confirm your preference?”</strong></p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest arrives with two young children and a pushchair. The receptionist notices the children (a clear signal) but does not decide for the family. She asks, “Would you prefer a room close to the lift, or a quieter room further along the corridor?” The parents choose the lift. She confirms, “Just to confirm, a room near the lift and a cot, correct?”, records it, and later calls to check the cot arrived.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Offer two options rather than an open question when the guest is tired or in a hurry; it is easier to choose.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Observe behaviour, not appearance; ask instead of assuming; confirm, adapt and follow up.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: The personal service flow",
+                                "questions": [
+                                    {
+                                        "question": "After listening to a guest's request, what is the next step in the personal service flow?",
+                                        "options": [
+                                            "Adapt the options immediately",
+                                            "Follow up the next day",
+                                            "Confirm what you understood and record it",
+                                            "Observe the guest's appearance"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The flow is Observe, Listen, Confirm, Adapt, Follow up."
+                                    },
+                                    {
+                                        "question": "A guest arrives in casual clothes. A colleague suggests offering only the cheapest options. What does the deck say?",
+                                        "options": [
+                                            "Do not judge a guest by their appearance; observe their behaviour",
+                                            "Appearance is a reliable guide to budget",
+                                            "Offer no options at all",
+                                            "Ask the guest about their income"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The slide warns not to judge a guest by appearance and to observe behaviour instead."
+                                    },
+                                    {
+                                        "question": "Which phrase should you avoid?",
+                                        "options": [
+                                            "“Which of the two options suits you better?”",
+                                            "“Is the suggested time convenient for you?”",
+                                            "“How can I make your stay more comfortable?”",
+                                            "“I know what you need.”"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "“I know what you need” is on the avoid list because it assumes."
+                                    },
+                                    {
+                                        "question": "Which of these is a preference you usually need to discover rather than see?",
+                                        "options": [
+                                            "Whether children are travelling with the guest",
+                                            "Preferred times for cleaning or a wake-up call",
+                                            "Whether the guest is using a wheelchair",
+                                            "Whether the guest is in a hurry"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Cleaning or wake-up times are listed under preferences to discover."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Personalisation in Practice",
+                    "lessons": [
+                        {
+                            "title": "Everyday Examples, Privacy and Fairness",
+                            "minutes": 6,
+                            "body": "<h2>Apply personalisation in everyday situations</h2><p>The deck gives four common guest profiles and one clear action for each.</p><ol><li><strong>A business traveller in a hurry:</strong> shorten the explanation and speed up the procedures accurately.</li><li><strong>A family with children:</strong> suggest options suited to the family and flexible timings.</li><li><strong>An older guest:</strong> offer help politely, without assuming inability.</li><li><strong>A returning guest:</strong> use the recorded preferences, with the guest's permission.</li></ol><p>Notice that each action changes a flexible detail (pace, options, level of help, preferences) while the standard stays the same. The business traveller still gets accurate information; the older guest still decides whether to accept help.</p><blockquote class=\"bk-quote\">Successful personalisation is simple, noticeable and achievable.</blockquote><p>You do not need a budget or a special programme. A remembered preference, a well-timed offer or a shorter explanation is enough, as long as the guest notices it and you can deliver it every time.</p><h2>Respect privacy and avoid assumptions</h2><p>Personalisation depends on information about the guest, so it must be handled carefully. The deck gives four principles:</p><table class=\"bk-say\"><thead><tr><th>Principle</th><th>What it means</th></tr></thead><tbody><tr><td>Observe, do not label</td><td>Appearance does not define a guest's needs or budget.</td></tr><tr><td>Ask, do not assume</td><td>Let the guest express their preferences themselves.</td></tr><tr><td>Record with permission</td><td>Keep only information that is permitted and linked to the service.</td></tr><tr><td>Personalise fairly</td><td>Offer flexibility to everyone, according to policy and what is possible.</td></tr></tbody></table><blockquote class=\"bk-quote\">Protect what is personal to the guest. Know only what is needed to serve them.</blockquote><p>Recording a preference for a feather-free pillow helps service. Noting personal comments about a guest does not, and does not belong in any record. Similarly, flexibility such as a later check-out request is offered to every guest in line with policy and availability, not only to guests who seem important.</p><h2>Closing message</h2><p>The deck ends with a line worth remembering: <strong>do not serve a room number; serve a person with their own needs.</strong> Observe, listen, confirm, adapt and follow up. Keep the standard consistent, and make the experience personal.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A returning guest checks in. The system shows, with her permission, that she prefers a high floor and extra towels. The receptionist says, “Welcome back. We have a high-floor room ready and extra towels as last time. Would you like the same again?” The guest smiles. The colleague used only permitted, service-related information and still let the guest confirm.</aside><aside class=\"bk-note\"><strong>Tip:</strong> With older guests, offer rather than insist: “Would you like help with your bag?” lets them decide.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Keep personalisation simple and fair, record only what is permitted, and serve the person, not the room number.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Personalisation in practice",
+                                "questions": [
+                                    {
+                                        "question": "An older guest arrives with one small bag. What does the deck recommend?",
+                                        "options": [
+                                            "Take the bag without asking",
+                                            "Offer help politely without assuming inability",
+                                            "Do not offer help to avoid offence",
+                                            "Call a wheelchair immediately"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "For older guests the deck says: offer help politely without assuming inability."
+                                    },
+                                    {
+                                        "question": "A returning guest's profile shows a preference she agreed to have recorded. How should you use it?",
+                                        "options": [
+                                            "Use it, with the guest's permission, to personalise the stay",
+                                            "Ignore it and treat her as a new guest",
+                                            "Share it with other guests as an example",
+                                            "Add personal comments about her appearance"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Use recorded preferences with the guest's permission."
+                                    },
+                                    {
+                                        "question": "A colleague wants to note in the system that a guest “looks wealthy”. Which principle does this break?",
+                                        "options": [
+                                            "Follow up until satisfied",
+                                            "Personalise fairly",
+                                            "Shorten the explanation",
+                                            "Record with permission: keep only permitted, service-related information"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Only information that is permitted and linked to the service should be kept; appearance does not define needs or budget."
+                                    },
+                                    {
+                                        "question": "A family with children asks about meal times. What personalisation does the deck suggest?",
+                                        "options": [
+                                            "Give them the fastest possible check-in only",
+                                            "Tell them all guests eat at the same time",
+                                            "Suggest family-friendly options and flexible timings",
+                                            "Refer them to another hotel"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "For a family with children, suggest options suited to the family and flexible timings."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "كل نزيل شخص متفرّد",
+            "subtitle": "خدمة واحدة بروح شخصية",
+            "short_description": "حافظ على معيار خدمة ثابت في ضيافة وكيّف طريقة تقديمه لكل نزيل عبر خمس خطوات: لاحظ، استمع، تأكد، خصّص، تابع.",
+            "description": "<p>لكل نزيل احتياجات وتوقعات مختلفة، وما يُسعد نزيلًا قد لا يناسب نزيلًا آخر. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتوضح كيف نقدم معيار خدمة ثابتًا ونكيّف طريقة تقديمه لكل نزيل.</p><p>ستتعرف على ما يبقى ثابتًا وما يمكن تخصيصه، وخطوات الخدمة الشخصية الخمس، وما يجب ملاحظته دون حكم مسبق، والأسئلة التي تخصص الخدمة، وأمثلة يومية عملية، وكيف تحترم الخصوصية والعدالة أثناء التخصيص.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظف يتعامل مع النزلاء.",
+            "outcomes": [
+                "اشرح لماذا يصنع التعامل الفردي تجربة لا تُنسى",
+                "ميّز بين المعيار الثابت والتفاصيل المرنة في الخدمة",
+                "طبّق خطوات: لاحظ، استمع، تأكد، خصّص، تابع",
+                "اطرح أسئلة تخصص الخدمة بدل الافتراض",
+                "خصّص الخدمة بعدل مع احترام خصوصية النزيل وسياسة الفندق"
+            ],
+            "faqs": [
+                {
+                    "question": "هل يعني تخصيص الخدمة كسر معايير الفندق؟",
+                    "answer": "لا. تنص المادة على أن التخصيص لا يعني كسر معايير الفندق؛ فالاحترام والنظافة والسلامة والدقة وسرعة الاستجابة والخصوصية والعدالة ثابتة، وما يتغير هو طريقة التقديم فقط."
+                },
+                {
+                    "question": "ما خطوات الخدمة الشخصية الخمس؟",
+                    "answer": "لاحظ الإشارات والسياق، واستمع دون مقاطعة، وتأكد مما فهمته ودوّنه، وخصّص الأسلوب والخيار، وتابع حتى اكتمال الرضا."
+                },
+                {
+                    "question": "هل يمكنني تسجيل تفضيلات النزيل؟",
+                    "answer": "احفظ فقط المعلومات المسموح بها والمرتبطة بالخدمة، واستخدم التفضيلات المسجلة بإذن النزيل."
+                }
+            ],
+            "meta_title": "كل نزيل شخص متفرّد: الخدمة الفندقية الشخصية",
+            "meta_description": "تدريب فندقي على الخدمة الشخصية: معيار ثابت وتفاصيل مرنة، وخطوات لاحظ واستمع وتأكد وخصّص وتابع، وخدمة عادلة تحترم الخصوصية.",
+            "focus_keyword": "الخدمة الشخصية في الفنادق",
+            "chapters": [
+                {
+                    "title": "لماذا يهم التعامل الفردي",
+                    "lessons": [
+                        {
+                            "title": "كل نزيل مختلف",
+                            "minutes": 5,
+                            "body": "<h2>التعامل الفردي يصنع تجربة لا تُنسى</h2><p>قد يصل نزيلان إلى المكتب نفسه في الساعة نفسها وبنوع الحجز نفسه، ومع ذلك يحتاج كل منهما إلى شيء مختلف تمامًا. أحدهما يريد أن يكون في غرفته خلال ثلاث دقائق، والآخر يريد أن يسمع عن المدينة والمطعم والمسبح. تبدأ المادة برسالة بسيطة: <strong>كل نزيل شخص متفرّد</strong>، ومعاملته بوصفه فردًا هي ما يحوّل الإقامة الجيدة إلى تجربة لا تُنسى.</p><h2>خمس حقائق عن التعامل الفردي</h2><ul><li><strong>لكل نزيل احتياجات وتوقعات مختلفة،</strong> فسبب السفر والطاقة واللغة والمرافقون كلها تحدد شكل الخدمة المناسبة.</li><li><strong>ما يسعد نزيلًا قد لا يناسب نزيلًا آخر،</strong> فالترحيب الطويل قد يسعد نزيلًا في رحلة ترفيه ويزعج مسافرًا متعبًا وصل منتصف الليل.</li><li><strong>الاهتمام بالتفاصيل يجعل الخدمة شخصية،</strong> كتذكّر الاسم أو نوع الوسادة المفضل أو طلب الأمس.</li><li><strong>التخصيص لا يعني كسر معايير الفندق،</strong> فأنت لا تضع قواعد جديدة لكل نزيل، بل تقدم المعيار نفسه بطريقة تناسبه.</li><li><strong>الفروق الصغيرة تصنع انطباعًا كبيرًا،</strong> فالخدمة الشخصية نادرًا ما تكون لفتات ضخمة، بل تعديلات صغيرة تُنفَّذ بإتقان.</li></ul><blockquote class=\"bk-quote\">نقدم معيار خدمة ثابتًا، ونكيّف طريقة تقديمه لكل نزيل.</blockquote><h2>خدمة واحدة بروح شخصية</h2><p>العبارة التي تتكرر في المادة كلها هي <strong>خدمة واحدة بروح شخصية</strong>. المعيار هو ما يمكن لكل نزيل أن يعتمد عليه في ضيافة أيًّا كان، واللمسة الشخصية هي طريقة تشكيل هذا المعيار حول الشخص الذي أمامك. والاثنان ضروريان؛ فالمعيار بلا لمسة شخصية يبدو باردًا وآليًا، واللمسة الشخصية بلا معيار تبدو متقلبة وغير عادلة.</p><p>فكّر في الأمر كوعد وأسلوب: الوعد لا يتغير، فالنزيل سيُعامل باحترام وستكون غرفته نظيفة وآمنة والمعلومة دقيقة. أما الأسلوب فيتغير: مقدار الشرح، وسرعة الحركة، والخيارات التي تقترحها أولًا.</p><h2>لماذا يهم ذلك للفندق</h2><p>يتحدث النزلاء عن شعورهم في الفندق. وعندما تُشكَّل الخدمة حولهم يشعرون بأنهم معروفون لا مجرد أرقام، وهذا الشعور هو ما يعيدهم ويجعلهم يتحدثون عنا للآخرين.</p><aside class=\"bk-scene\"><strong>موقف:</strong> سجّل نزيلان دخولهما واحدًا تلو الآخر. الأول رجل أعمال يتحدث في الهاتف وينظر إلى ساعته، فاختصر موظف الاستقبال: المفتاح، والإنترنت، وموعد الإفطار، وانتهى. والثاني زوجان في أول زيارة للمدينة، فأخذ الموظف نفسه وقتًا أطول وشرح المطعم والأماكن القريبة وسأل إن كانا يحتاجان شيئًا للمساء. حصل الاثنان على المعيار نفسه، وكلٌّ بالطريقة التي تناسبه.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> كل نزيل مختلف. ثبّت المعيار وكيّف طريقة تقديمه.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: كل نزيل مختلف",
+                                "questions": [
+                                    {
+                                        "question": "قال زميل إن تخصيص الخدمة يعني تغيير قواعد الفندق لكل نزيل. ما الصحيح؟",
+                                        "options": [
+                                            "نعم، لكل نزيل قواعده الخاصة",
+                                            "التخصيص لا يعني كسر معايير الفندق",
+                                            "الخدمة الشخصية لكبار الشخصيات فقط",
+                                            "المعايير مهمة عند تسجيل الدخول فقط"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تنص المادة على أن التخصيص لا يعني كسر معايير الفندق."
+                                    },
+                                    {
+                                        "question": "أسعد ترحيب طويل أحد النزلاء، فكررته مع نزيل وصل منهكًا منتصف الليل. مما تحذر المادة؟",
+                                        "options": [
+                                            "ما يسعد نزيلًا قد لا يناسب نزيلًا آخر",
+                                            "يجب أن يكون الترحيب طويلًا دائمًا",
+                                            "نزلاء الليل لا يحتاجون إلى ترحيب",
+                                            "كل النزلاء يريدون التجربة نفسها"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تقول الشريحة: ما يسعد نزيلًا قد لا يناسب نزيلًا آخر."
+                                    },
+                                    {
+                                        "question": "ما الذي يصنع انطباعًا كبيرًا لدى النزلاء بحسب المادة؟",
+                                        "options": [
+                                            "الترقيات المكلفة فقط",
+                                            "اتباع نص واحد مع الجميع",
+                                            "الفروق الصغيرة",
+                                            "الشروح الطويلة"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تذكر المادة أن الفروق الصغيرة تصنع انطباعًا كبيرًا."
+                                    },
+                                    {
+                                        "question": "أي عبارة تلخص هذه الدورة؟",
+                                        "options": [
+                                            "معايير مختلفة لنزلاء مختلفين",
+                                            "الخدمة نفسها بالطريقة نفسها",
+                                            "لمسة شخصية بدل المعايير",
+                                            "خدمة واحدة بروح شخصية"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "رسالة المادة: معيار ثابت يُقدَّم بلمسة شخصية."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "ثبّت المعيار وخصّص التفاصيل",
+                            "minutes": 5,
+                            "body": "<h2>وجهان لكل موقف خدمة</h2><p>لكي تخصص الخدمة دون أن تفقد الثبات، يجب أن تعرف ما الثابت في عملك وما المرن. وتلخص المادة ذلك في عبارة واحدة: <strong>ثبّت المعيار وخصّص التفاصيل</strong>، ثم تذكر خمسة عناصر لكل جانب.</p><h3>المعيار ثابت</h3><ul><li><strong>الاحترام واللباقة</strong> مع كل نزيل.</li><li><strong>النظافة والسلامة</strong> دون أي تفاوت.</li><li><strong>الدقة في المعلومات</strong> من مواعيد وأسعار واتجاهات.</li><li><strong>سرعة الاستجابة</strong> لكل طلب.</li><li><strong>الخصوصية والعدالة</strong> لكل نزيل.</li></ul><h3>التفاصيل مرنة</h3><ul><li><strong>أسلوب الحديث ودرجته،</strong> رسميًا أكثر أو أبسط، مختصرًا أو مفصلًا.</li><li><strong>سرعة الشرح والخدمة،</strong> سريعة ومركزة للمستعجل وهادئة لمن يريد التفاصيل.</li><li><strong>ترتيب الأولويات،</strong> أي جزء من الطلب يُنجز أولًا.</li><li><strong>الاختيارات والتفضيلات،</strong> كغرفة هادئة أو قريبة من المصعد.</li><li><strong>مقدار المساعدة المطلوبة،</strong> فبعض النزلاء يريدون المساعدة في كل شيء، وآخرون يفضلون الاعتماد على أنفسهم.</li></ul><table class=\"bk-say\"><thead><tr><th>المعيار ثابت</th><th>التفاصيل مرنة</th></tr></thead><tbody><tr><td>الاحترام واللباقة</td><td>أسلوب الحديث ودرجته</td></tr><tr><td>النظافة والسلامة</td><td>سرعة الشرح والخدمة</td></tr><tr><td>الدقة في المعلومات</td><td>ترتيب الأولويات</td></tr><tr><td>سرعة الاستجابة</td><td>الاختيارات والتفضيلات</td></tr><tr><td>الخصوصية والعدالة</td><td>مقدار المساعدة المطلوبة</td></tr></tbody></table><blockquote class=\"bk-quote\">لكن لا تعامل الجميع بالطريقة نفسها — عامِل الجميع بعدل.</blockquote><h2>التماثل ليس هو العدل</h2><p>قد تبدو معاملة الجميع بالطريقة نفسها عدلًا، لكنها كثيرًا ما لا تكون كذلك. النزيل الذي معه طفل صغير والنزيل المسافر وحده لاجتماع يستحقان الاحترام نفسه والدقة نفسها، لكنهما لا يحتاجان الشرح نفسه أو الإيقاع نفسه أو الخيارات نفسها. العدل أن يحصل الجميع على المعيار كاملًا، والتخصيص أن يحصل كل شخص عليه بالشكل الذي يناسبه.</p><p>والاختبار بسيط: قبل أن تكيّف شيئًا اسأل نفسك: هل هذا تفصيل أم جزء من المعيار؟ إن كان تفصيلًا فكيّفه بحرية، وإن كان من المعيار كالسلامة أو الدقة أو الخصوصية فلا يتغير لأحد.</p><aside class=\"bk-scene\"><strong>موقف:</strong> طلب نزيل مستعجل من الكونسيرج أن \"يختصر التفاصيل\" عن التوصيل إلى المطار. اختصر الموظف الشرح (تفصيل مرن)، لكنه أكد بدقة موعد الاستلام ومكان اللقاء (المعيار الثابت). غادر النزيل بسرعة ومعه المعلومة الصحيحة.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> عندما تختصر الخدمة أو تسرّعها لا تختصر الدقة أبدًا؛ أكد المعلومات الأساسية حتى في محادثة من ثلاثين ثانية.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> الاحترام والنظافة والسلامة والدقة وسرعة الاستجابة والخصوصية والعدالة لا تتغير، أما الأسلوب والسرعة والأولويات والخيارات ومقدار المساعدة فتتغير.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: المعيار والتفاصيل",
+                                "questions": [
+                                    {
+                                        "question": "أخبرك نزيل أنه مستعجل. أي جزء من خدمتك يمكنك تكييفه؟",
+                                        "options": [
+                                            "دقة المعلومات",
+                                            "نظافة الغرفة",
+                                            "سرعة الشرح والخدمة",
+                                            "خصوصية النزيل"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "سرعة الشرح والخدمة من التفاصيل المرنة."
+                                    },
+                                    {
+                                        "question": "أي مما يلي من المعيار الثابت؟",
+                                        "options": [
+                                            "الخصوصية والعدالة",
+                                            "ترتيب الأولويات",
+                                            "مقدار المساعدة المطلوبة",
+                                            "أسلوب الحديث"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "الخصوصية والعدالة جزء من المعيار الثابت."
+                                    },
+                                    {
+                                        "question": "قال زميل: \"لكي أكون عادلًا أشرح كل شيء بالطريقة نفسها لكل نزيل\". ماذا تقول المادة؟",
+                                        "options": [
+                                            "هذا هو الأسلوب المثالي",
+                                            "لا تعامل الجميع بالطريقة نفسها، عامِل الجميع بعدل",
+                                            "اشرح لكبار الشخصيات فقط",
+                                            "اترك النزلاء يقرؤون المعلومات بأنفسهم"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تختم الشريحة بعبارة: لا تعامل الجميع بالطريقة نفسها، عامِل الجميع بعدل."
+                                    },
+                                    {
+                                        "question": "نزيل يفضل حمل حقائبه بنفسه وآخر يريد المساعدة في كل شيء. أي تفصيل مرن هذا؟",
+                                        "options": [
+                                            "الدقة في المعلومات",
+                                            "سرعة الاستجابة",
+                                            "النظافة والسلامة",
+                                            "مقدار المساعدة المطلوبة"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "مقدار المساعدة المطلوبة من التفاصيل المرنة."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "خطوات الخدمة الشخصية",
+                    "lessons": [
+                        {
+                            "title": "خمس خطوات، وما تلاحظه وما تسأل عنه",
+                            "minutes": 7,
+                            "body": "<h2>خمس خطوات لخدمة شخصية</h2><ol><li><strong>لاحظ</strong> الإشارات والسياق.</li><li><strong>استمع</strong> دون مقاطعة.</li><li><strong>تأكد</strong> مما فهمته ودوّنه.</li><li><strong>خصّص</strong> الأسلوب والخيار.</li><li><strong>تابع</strong> حتى اكتمال الرضا.</li></ol><blockquote class=\"bk-quote\">اسأل وتأكد ثم تصرّف — لا تفترض احتياج النزيل.</blockquote><h2>لاحظ ما يساعدك على فهم النزيل</h2><p>الملاحظة هي الخطوة الأولى، وتقسمها المادة إلى مجموعتين.</p><h3>إشارات واضحة</h3><ul><li>سبب الزيارة: عمل أم ترفيه.</li><li>هل النزيل مستعجل أم يريد شرحًا.</li><li>لغة التواصل المفضلة.</li><li>وجود أطفال أو كبار سن.</li><li>احتياجات الحركة أو الوصول.</li></ul><h3>تفضيلات تُكتشف</h3><ul><li>الغرفة الهادئة أو القريبة.</li><li>طريقة التواصل المناسبة.</li><li>مواعيد التنظيف أو الإيقاظ.</li><li>تفضيلات الطعام المعلنة.</li><li>الطلبات السابقة المسموح بتسجيلها.</li></ul><p>الإشارات تُرى، أما التفضيلات فتُكتشف عادةً بالسؤال. وتضع المادة حدًّا مهمًا: <strong>ولا تحكم على النزيل من مظهره — لاحظ السلوك.</strong> فالملابس أو العمر أو الجنسية لا تخبرك بشيء موثوق عن احتياجاته أو ميزانيته.</p><h2>اسأل لتفهم ولا تفترض</h2><table class=\"bk-say\"><thead><tr><th>قل</th><th>تجنّب</th></tr></thead><tbody><tr><td>\"كيف يمكنني جعل إقامتكم أكثر راحة؟\"</td><td>\"هذا ما يفضله الجميع.\"</td></tr><tr><td>\"هل تفضلون شرحًا مختصرًا أم تفصيليًا؟\"</td><td>\"أعرف ما تحتاجه.\"</td></tr><tr><td>\"أي الخيارين يناسبكم أكثر؟\"</td><td>\"يجب أن يناسبك هذا الخيار.\"</td></tr><tr><td>\"هل الوقت المقترح مناسب لكم؟\"</td><td>\"كل الضيوف يفعلون ذلك.\"</td></tr><tr><td>\"للتأكد: طلبكم هو... صحيح؟\"</td><td>\"لا فرق بين الخيارات.\"</td></tr></tbody></table><p>العبارات في العمود الأول تترك الاختيار للنزيل، والعبارات في العمود الثاني تسلبه إياه. ويلخص الأسلوب سؤالان قصيران: <strong>\"ما الأنسب لكم؟\"</strong> و<strong>\"هل تسمحون لي بتأكيد تفضيلكم؟\"</strong></p><aside class=\"bk-scene\"><strong>موقف:</strong> وصلت عائلة مع طفلين صغيرين وعربة أطفال. لاحظت موظفة الاستقبال وجود الأطفال (إشارة واضحة)، لكنها لم تقرر نيابة عن العائلة، بل سألت: \"هل تفضلون غرفة قريبة من المصعد أم غرفة أهدأ في نهاية الممر؟\" فاختار الوالدان القريبة من المصعد. فأكدت: \"للتأكد: غرفة قريبة من المصعد مع سرير أطفال، صحيح؟\"، ودوّنت ذلك، ثم اتصلت لاحقًا للتأكد من وصول السرير.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> اعرض خيارين بدل سؤال مفتوح عندما يكون النزيل متعبًا أو مستعجلًا، فالاختيار يصبح أسهل.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> لاحظ السلوك لا المظهر، واسأل بدل أن تفترض، ثم تأكد وخصّص وتابع.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: خطوات الخدمة الشخصية",
+                                "questions": [
+                                    {
+                                        "question": "بعد الاستماع لطلب النزيل، ما الخطوة التالية في خطوات الخدمة الشخصية؟",
+                                        "options": [
+                                            "تخصيص الخيارات فورًا",
+                                            "المتابعة في اليوم التالي",
+                                            "التأكد مما فهمته وتدوينه",
+                                            "ملاحظة مظهر النزيل"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "الخطوات: لاحظ، استمع، تأكد، خصّص، تابع."
+                                    },
+                                    {
+                                        "question": "وصل نزيل بملابس بسيطة، فاقترح زميل أن تعرض عليه أرخص الخيارات فقط. ماذا تقول المادة؟",
+                                        "options": [
+                                            "لا تحكم على النزيل من مظهره، لاحظ السلوك",
+                                            "المظهر دليل موثوق على الميزانية",
+                                            "لا تعرض عليه أي خيار",
+                                            "اسأل النزيل عن دخله"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تحذر الشريحة من الحكم على النزيل من مظهره وتدعو إلى ملاحظة السلوك."
+                                    },
+                                    {
+                                        "question": "أي عبارة يجب تجنبها؟",
+                                        "options": [
+                                            "\"أي الخيارين يناسبكم أكثر؟\"",
+                                            "\"هل الوقت المقترح مناسب لكم؟\"",
+                                            "\"كيف يمكنني جعل إقامتكم أكثر راحة؟\"",
+                                            "\"أعرف ما تحتاجه.\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "عبارة \"أعرف ما تحتاجه\" في قائمة التجنب لأنها افتراض."
+                                    },
+                                    {
+                                        "question": "أي مما يلي تفضيل يُكتشف عادةً ولا يُرى؟",
+                                        "options": [
+                                            "وجود أطفال مع النزيل",
+                                            "مواعيد التنظيف أو الإيقاظ",
+                                            "استخدام النزيل كرسيًا متحركًا",
+                                            "هل النزيل مستعجل"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "مواعيد التنظيف أو الإيقاظ ضمن التفضيلات التي تُكتشف."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "التخصيص في الممارسة",
+                    "lessons": [
+                        {
+                            "title": "مواقف يومية والخصوصية والعدالة",
+                            "minutes": 6,
+                            "body": "<h2>طبّق التخصيص في مواقف يومية</h2><ol><li><strong>نزيل أعمال مستعجل:</strong> اختصر الشرح وسرّع الإجراءات بدقة.</li><li><strong>عائلة مع أطفال:</strong> اقترح خيارات مناسبة للعائلة ومواعيد مرنة.</li><li><strong>نزيل متقدم في السن:</strong> اعرض المساعدة بلباقة دون افتراض العجز.</li><li><strong>نزيل يكرر الإقامة:</strong> استخدم التفضيلات المسجلة بإذن النزيل.</li></ol><p>لاحظ أن كل إجراء يغيّر تفصيلًا مرنًا (السرعة، والخيارات، ومقدار المساعدة، والتفضيلات) بينما يبقى المعيار كما هو؛ فنزيل الأعمال يحصل على معلومة دقيقة، والنزيل المتقدم في السن هو من يقرر قبول المساعدة.</p><blockquote class=\"bk-quote\">التخصيص الناجح بسيط وملحوظ وقابل للتنفيذ.</blockquote><p>لا تحتاج إلى ميزانية أو برنامج خاص؛ فتفضيل متذكَّر، أو عرض في وقته، أو شرح أقصر يكفي، ما دام النزيل يلاحظه وتستطيع تقديمه كل مرة.</p><h2>احترم الخصوصية وتجنّب الافتراضات</h2><table class=\"bk-say\"><thead><tr><th>المبدأ</th><th>معناه</th></tr></thead><tbody><tr><td>لاحظ ولا تُصنّف</td><td>المظهر لا يحدد احتياجات النزيل أو ميزانيته.</td></tr><tr><td>اسأل ولا تفترض</td><td>دع النزيل يعبّر عن تفضيلاته بنفسه.</td></tr><tr><td>سجّل بإذن</td><td>احفظ فقط المعلومات المسموح بها والمرتبطة بالخدمة.</td></tr><tr><td>خصّص بعدل</td><td>قدّم المرونة للجميع وفق السياسة والإمكانات.</td></tr></tbody></table><blockquote class=\"bk-quote\">واحمِ ما يخصه — اعرف ما يلزم لخدمة النزيل.</blockquote><p>تسجيل تفضيل النزيل لوسادة خالية من الريش يخدمه، أما تدوين ملاحظات شخصية عنه فلا يخدمه ولا مكان له في أي سجل. وكذلك تُعرض المرونة، كطلب تأخير المغادرة، على كل النزلاء وفق السياسة والإمكانات، لا على من يبدو مهمًا فقط.</p><h2>رسالة الختام</h2><p>تختم المادة بعبارة تستحق التذكر: <strong>لا تخدم رقم غرفة، اخدم شخصًا له احتياجاته.</strong> لاحظ، استمع، تأكد، خصّص، تابع. المعيار ثابت، أما اللمسة فشخصية.</p><aside class=\"bk-scene\"><strong>موقف:</strong> عادت نزيلة للإقامة، ويُظهر النظام بإذنها أنها تفضل طابقًا مرتفعًا ومناشف إضافية. قال موظف الاستقبال: \"أهلًا بعودتك. جهزنا لك غرفة في طابق مرتفع مع مناشف إضافية كالمرة السابقة، هل تفضلين الشيء نفسه؟\" فابتسمت. استخدم الموظف معلومات مسموحًا بها ومرتبطة بالخدمة فقط، وترك لها التأكيد.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> مع كبار السن اعرض ولا تُلحّ؛ فعبارة \"هل تسمح لي بمساعدتك في الحقيبة؟\" تترك القرار له.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> اجعل التخصيص بسيطًا وعادلًا، وسجّل ما هو مسموح به فقط، واخدم الشخص لا رقم الغرفة.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: التخصيص في الممارسة",
+                                "questions": [
+                                    {
+                                        "question": "وصل نزيل متقدم في السن ومعه حقيبة صغيرة. بماذا توصي المادة؟",
+                                        "options": [
+                                            "خذ الحقيبة دون سؤال",
+                                            "اعرض المساعدة بلباقة دون افتراض العجز",
+                                            "لا تعرض المساعدة حتى لا يتضايق",
+                                            "اطلب كرسيًا متحركًا فورًا"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "مع النزيل المتقدم في السن: اعرض المساعدة بلباقة دون افتراض العجز."
+                                    },
+                                    {
+                                        "question": "يُظهر ملف نزيلة عائدة تفضيلًا وافقت على تسجيله. كيف تستخدمه؟",
+                                        "options": [
+                                            "تستخدمه بإذنها لتخصيص إقامتها",
+                                            "تتجاهله وتعاملها كنزيلة جديدة",
+                                            "تشاركه مع نزلاء آخرين كمثال",
+                                            "تضيف ملاحظات شخصية عن مظهرها"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "استخدم التفضيلات المسجلة بإذن النزيل."
+                                    },
+                                    {
+                                        "question": "أراد زميل أن يدوّن في النظام أن النزيل \"يبدو ثريًا\". أي مبدأ يخالف ذلك؟",
+                                        "options": [
+                                            "تابع حتى اكتمال الرضا",
+                                            "خصّص بعدل",
+                                            "اختصر الشرح",
+                                            "سجّل بإذن: احفظ فقط المعلومات المسموح بها والمرتبطة بالخدمة"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "احفظ فقط المعلومات المسموح بها والمرتبطة بالخدمة، والمظهر لا يحدد الاحتياجات أو الميزانية."
+                                    },
+                                    {
+                                        "question": "سألت عائلة مع أطفال عن مواعيد الوجبات. أي تخصيص تقترحه المادة؟",
+                                        "options": [
+                                            "أسرع تسجيل دخول ممكن فقط",
+                                            "إخبارهم أن الجميع يأكلون في الوقت نفسه",
+                                            "اقتراح خيارات مناسبة للعائلة ومواعيد مرنة",
+                                            "إحالتهم إلى فندق آخر"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "مع العائلة والأطفال: اقترح خيارات مناسبة للعائلة ومواعيد مرنة."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,545 @@
+{
+    "slug": "assisting-sick-or-injured-guests",
+    "category": "safety-security",
+    "level": "foundation",
+    "source_pdf": "Assisting-Sick-or-Injured-Guests-Dyafa (1).pdf",
+    "thumbnail": "uploads/academy/library/assisting-sick-or-injured-guests.webp",
+    "videos": [
+        {
+            "id": "5fK2oCiz8VU",
+            "title": "First aid for someone who is unresponsive but breathing | First aid training | British Red Cross",
+            "channel": "British Red Cross",
+            "why": "A recognised first-aid body shows, at awareness level, how to check a person who is not responding and why calling the emergency services quickly matters, which supports the deck's Secure, Call, Stay approach."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Assisting Sick or Injured Guests",
+            "subtitle": "Stay calm and get the right help",
+            "short_description": "Learn what to do in the first minutes when a guest is sick or injured: secure the area, call trained help or 997, stay with the guest and follow up professionally.",
+            "description": "<p>When a guest falls ill or is hurt, the first minutes matter. You are not expected to diagnose anything; your role is to protect the guest, call the right help and follow instructions. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows every colleague how to do that calmly.</p><p>You will learn the three first steps Safe, Call, Stay, the signs that mean you must call the Saudi Red Crescent on 997 immediately, the four pieces of information the dispatcher needs, what to do and avoid while helping, how to act when a guest is injured, and how to support the medical team and close the case properly.</p>",
+            "requirements": "No prior training is needed; the course suits every colleague in every department. It is an awareness course and does not replace certified first-aid training.",
+            "outcomes": [
+                "Explain your role: protect the guest, get trained help and follow instructions without diagnosing",
+                "Apply the first steps Safe, Call, Stay when a guest is sick or injured",
+                "Recognise the signs that require an immediate call to the ambulance on 997",
+                "Give the dispatcher the location, condition, hazard and callback number clearly",
+                "Support the medical team and handle privacy, records and follow-up after the case"
+            ],
+            "faqs": [
+                {
+                    "question": "Do I need to know first aid to take this course?",
+                    "answer": "No. The course explains your role at awareness level: secure the area, call trained help or 997 and stay with the guest. Only give first aid if you are trained and authorised."
+                },
+                {
+                    "question": "When should I call 997?",
+                    "answer": "Immediately when there is a danger to life, for example the guest is not responding, not breathing normally, has severe or sudden chest pain, severe bleeding or a serious injury, continuous seizures or a condition that is getting worse quickly."
+                },
+                {
+                    "question": "Can I give the guest a painkiller or something to eat?",
+                    "answer": "No. Do not give the guest any medicine or food without guidance. Ask for medical help and follow the instructions you are given."
+                }
+            ],
+            "meta_title": "Assisting Sick or Injured Hotel Guests",
+            "meta_description": "Hotel staff training on sick or injured guests: secure the area, call trained help or 997, what to tell the dispatcher, do and avoid, and follow-up.",
+            "focus_keyword": "assisting sick or injured hotel guests",
+            "chapters": [
+                {
+                    "title": "Your Role in the First Minutes",
+                    "lessons": [
+                        {
+                            "title": "Stay Calm, Protect and Get Help",
+                            "minutes": 5,
+                            "body": "<h2>Stay calm and act without panic</h2><p>A guest collapses in the lobby, feels faint at breakfast or slips beside the pool. In moments like these, everyone nearby looks at the nearest colleague in uniform. The deck gives that colleague a clear message: <strong>stay calm, and act quickly without panic</strong>. Calm is not the same as slow. It means your actions are controlled and purposeful, so the guest and the people around you feel that someone is in charge.</p><p>Panic spreads. If you run, shout or look frightened, the guest becomes more anxious and bystanders crowd in. A calm voice and steady movements do the opposite: they lower the tension and give you space to think.</p><h2>Your role is to protect and get the right help</h2><p>The deck describes your role in five points:</p><ul><li><strong>Make sure the place is safe.</strong> Check that there is no ongoing danger to the guest, to others or to you.</li><li><strong>Speak to the guest calmly.</strong> Tell them who you are and that help is coming.</li><li><strong>Ask for trained help immediately.</strong> Do not wait to see whether the guest improves by themselves.</li><li><strong>Stay with the guest and do not leave them alone.</strong> Your presence reassures them and lets you notice any change.</li><li><strong>Protect their privacy and dignity.</strong> A person who is unwell in a public area can feel exposed; shield them from onlookers.</li></ul><blockquote class=\"bk-quote\">You are not expected to diagnose. Your job is to protect the guest, call for help and follow instructions.</blockquote><h2>Why you should not diagnose</h2><p>It is natural to want to explain what is happening: \"It is probably low sugar\" or \"He just fainted from the heat.\" But guessing can be dangerous. A wrong guess may delay the right help or lead someone to give the wrong thing. You do not need to know what is wrong in order to help well. What you do need is to secure the scene, get trained people there and follow what they tell you.</p><h2>The approach in one line</h2><p>The deck summarises the whole response as <strong>Secure, Ask, Call, Stay, Follow up</strong>: secure the place, ask the guest and those around what happened, call the supervisor, security, a first aider or emergency services, stay with the guest, and follow up once the situation is handled. The rest of this course builds on this sequence.</p><aside class=\"bk-scene\"><strong>Scene:</strong> During the breakfast rush, an older guest becomes pale and sits down heavily. A waiter notices, walks over calmly and kneels beside him: \"Sir, I am Faisal from the restaurant team. I am staying with you and I am calling for help now.\" He uses his radio to call his supervisor and the trained first aider, asks a colleague to move a nearby table to give space, and stays beside the guest. He does not guess what is wrong; he simply protects, calls and stays.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Introduce yourself by name. A guest who feels unwell is reassured to know exactly who is with them.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Stay calm, protect the guest's safety and dignity, call trained help immediately and never try to diagnose.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Your role",
+                                "questions": [
+                                    {
+                                        "question": "A guest feels dizzy in the lobby and a colleague says, \"It's just the heat, give him a minute.\" What should you do?",
+                                        "options": [
+                                            "Agree and wait to see if the guest improves",
+                                            "Tell the guest it is the heat so they relax",
+                                            "Ask for trained help immediately without diagnosing",
+                                            "Take the guest to their room to rest"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says you are not expected to diagnose: ask for trained help immediately and follow instructions."
+                                    },
+                                    {
+                                        "question": "What is the best way to show you are in control of the situation?",
+                                        "options": [
+                                            "Act quickly but calmly, without panic",
+                                            "Run and shout so others notice",
+                                            "Wait until a manager arrives before doing anything",
+                                            "Leave the guest to find help yourself"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck's message is to stay calm and act quickly without panic."
+                                    },
+                                    {
+                                        "question": "Other guests start gathering around an unwell guest in the restaurant. Which part of your role does this affect?",
+                                        "options": [
+                                            "Diagnosing the condition",
+                                            "Offering the guest food",
+                                            "Finishing your current task first",
+                                            "Protecting the guest's privacy and dignity"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "One of the five role points is to protect the guest's privacy and dignity."
+                                    },
+                                    {
+                                        "question": "You have called for help. What should you do while waiting?",
+                                        "options": [
+                                            "Return to your station and check back later",
+                                            "Stay with the guest and do not leave them alone",
+                                            "Look for the guest's family in the hotel",
+                                            "Take photos to share with the team"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says stay with the guest and do not leave them alone."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "The First Steps: Safe, Call, Stay",
+                            "minutes": 6,
+                            "body": "<h2>Three steps for any illness or injury</h2><p>Whatever has happened, the deck gives the same three first steps: <strong>Safe, Call, Stay</strong>. They are easy to remember under pressure and they work for a guest who has fainted, fallen, cut themselves or suddenly feels unwell.</p><h3>1. Secure the place (Safe)</h3><ul><li><strong>Remove sources of danger.</strong> A wet floor, broken glass, a moving trolley or an open door onto a road can cause further harm.</li><li><strong>Provide space and privacy.</strong> Ask onlookers to step back and, where possible, screen the guest.</li><li><strong>Do not put yourself in danger.</strong> If the danger cannot be removed safely, for example a fire or electrical risk, keep your distance and call for help. An injured colleague cannot help anyone.</li></ul><h3>2. Ask for help (Call)</h3><ul><li><strong>Inform the supervisor or security.</strong> They coordinate the hotel's response.</li><li><strong>Ask for the first aider or trained colleague.</strong> Trained people should handle care.</li><li><strong>Call emergency services when needed.</strong> The next lesson explains exactly when to call 997.</li></ul><h3>3. Stay and follow up (Stay)</h3><ul><li><strong>Stay with the guest calmly.</strong> Speak gently and reassure them that help is on its way.</li><li><strong>Watch for any clear change.</strong> If the guest becomes less responsive, their breathing changes or they seem to get worse, tell the people you have called straight away.</li><li><strong>Direct the ambulance team to the location.</strong> Make sure responders can find the guest quickly.</li></ul><table class=\"bk-say\"><thead><tr><th>Step</th><th>What you do</th></tr></thead><tbody><tr><td>Safe</td><td>Remove danger, give space and privacy, keep yourself safe</td></tr><tr><td>Call</td><td>Supervisor or security, first aider or trained colleague, emergency services when needed</td></tr><tr><td>Stay</td><td>Stay calmly, watch for changes, guide the ambulance team</td></tr></tbody></table><blockquote class=\"bk-quote\">Do not leave the guest alone until help arrives.</blockquote><h2>Why staying matters</h2><p>It can feel more useful to run and fetch help yourself. But a guest left alone may get worse with nobody to notice, may try to stand and fall, or may simply feel frightened. Use your radio or phone, or ask a colleague to go, so that you can remain beside the guest. If you are alone and must fetch help, make sure the area is safe first and come back as quickly as possible.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A housekeeping attendant finds a guest sitting on the bathroom floor after a fall, holding her wrist. The floor is wet. The attendant places a towel over the water so no one else slips, tells the guest she is staying with her, and radios her supervisor and the trained first aider. While waiting, she notices the guest looks paler and tells the supervisor at once. When security arrives, she makes sure the lift is ready for the medical team.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Know in advance who the trained first aiders are on your shift and how to reach security. In an emergency there is no time to look this up.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Safe, Call, Stay: secure the place, ask for trained help and stay with the guest until help arrives.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Safe, Call, Stay",
+                                "questions": [
+                                    {
+                                        "question": "A guest has fallen near a spill of water and broken glass. What is your first step?",
+                                        "options": [
+                                            "Help the guest stand up and walk away",
+                                            "Remove the sources of danger if you can do so safely",
+                                            "Take the guest's details for the report",
+                                            "Call the guest's family"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The Safe step starts with removing sources of danger, without putting yourself at risk."
+                                    },
+                                    {
+                                        "question": "Which people does the Call step include?",
+                                        "options": [
+                                            "Only the guest's travel companions",
+                                            "The front office manager only",
+                                            "Other guests who may be doctors",
+                                            "Supervisor or security, the first aider or trained colleague, and emergency services when needed"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck lists informing the supervisor or security, asking for the first aider or trained colleague and calling emergency services when needed."
+                                    },
+                                    {
+                                        "question": "While you wait with a guest, their breathing seems to change. What should you do?",
+                                        "options": [
+                                            "Tell the people you called straight away",
+                                            "Wait until the medical team arrives to mention it",
+                                            "Give the guest water to drink",
+                                            "Move the guest to a quieter room"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The Stay step includes watching for any clear change, which must be reported immediately."
+                                    },
+                                    {
+                                        "question": "There is an electrical hazard near an injured guest that you cannot safely remove. What should you do?",
+                                        "options": [
+                                            "Reach in quickly to pull the guest out",
+                                            "Ignore the hazard and focus on the guest",
+                                            "Keep your distance and call for help",
+                                            "Leave the area and continue your shift"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says do not put yourself in danger."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Calling for Emergency Help",
+                    "lessons": [
+                        {
+                            "title": "When to Call 997 and What to Say",
+                            "minutes": 6,
+                            "body": "<h2>When to call the ambulance on 997</h2><p>Many situations can be handled by the hotel's trained first aider. Some cannot wait. The deck is clear: <strong>call the ambulance immediately when there is a danger to life</strong>. In Saudi Arabia that means calling the Saudi Red Crescent on <strong>997</strong>.</p><p>Call 997 straight away if the guest shows any of these signs:</p><ul><li>No response, or loss of consciousness.</li><li>Not breathing normally, or severe difficulty breathing.</li><li>Severe or sudden chest pain.</li><li>Severe bleeding, or a serious injury.</li><li>Continuous seizures, or a condition that is getting worse quickly.</li></ul><p>Do not delay the call to find a manager first or to see whether the guest improves. You can inform your supervisor and security at the same time, or ask a colleague to do so while you make the call.</p><blockquote class=\"bk-quote\">Call the Saudi Red Crescent on 997 and follow the dispatcher's instructions.</blockquote><h2>What to tell the dispatcher</h2><p>The person who answers, the dispatcher, needs four pieces of information to send the right help to the right place:</p><ol><li><strong>Location.</strong> The hotel name, the address and the exact place, for example \"Room 814, eighth floor\" or \"the pool deck, next to the children's pool.\"</li><li><strong>Guest's condition.</strong> What happened and what you can see now: \"A man in his sixties collapsed and is not responding.\" Describe; do not diagnose.</li><li><strong>Hazard.</strong> Any danger that could stop responders reaching the guest safely, such as smoke, a blocked access or an aggressive person.</li><li><strong>Callback number.</strong> Your name and a number where you can be reached.</li></ol><table class=\"bk-say\"><thead><tr><th>Tell them</th><th>Example</th></tr></thead><tbody><tr><td>Location</td><td>\"Dyafa hotel, [address], lobby near the main entrance.\"</td></tr><tr><td>Condition</td><td>\"A woman fell and is bleeding heavily from her leg. She is awake.\"</td></tr><tr><td>Hazard</td><td>\"There is broken glass on the floor; we have cleared a path.\"</td></tr><tr><td>Callback</td><td>\"My name is Omar, you can reach me on this number.\"</td></tr></tbody></table><h2>Stay on the line</h2><p><strong>Do not hang up until the dispatcher tells you to end the call.</strong> The dispatcher may ask more questions or give you instructions to follow until the ambulance arrives. Keep the phone with you, beside the guest if possible, and do exactly what you are told. If a trained first aider is with you, pass on the instructions clearly.</p><aside class=\"bk-scene\"><strong>Scene:</strong> At the gym, a guest suddenly grips his chest and sits down, struggling to breathe. The gym attendant recognises two of the signs on the list and calls 997 immediately, while a colleague radios security. She gives the hotel name, address and \"the gym on the second floor\", describes what she sees, mentions that the corridor is clear, and gives her name and mobile number. She stays on the line and follows the dispatcher's instructions until the Red Crescent team arrives.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Make sure you know the hotel's full address and how to describe each area clearly. Ask your supervisor if you are not sure.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> When there is a danger to life, call 997 immediately, give location, condition, hazard and callback, and stay on the line.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Calling 997",
+                                "questions": [
+                                    {
+                                        "question": "A guest in the restaurant is not responding when you speak to him. What should happen?",
+                                        "options": [
+                                            "Wait five minutes to see if he wakes",
+                                            "Look for the duty manager before calling anyone",
+                                            "Give him a glass of water",
+                                            "Call the ambulance on 997 immediately"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "No response or loss of consciousness is one of the signs that require an immediate 997 call."
+                                    },
+                                    {
+                                        "question": "Which of these is a sign on the deck's list for calling 997?",
+                                        "options": [
+                                            "A mild headache after a long flight",
+                                            "Severe or sudden chest pain",
+                                            "A small scratch on the hand",
+                                            "Feeling tired after the gym"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Severe or sudden chest pain is listed as a reason to call the ambulance immediately."
+                                    },
+                                    {
+                                        "question": "The dispatcher asks where you are. What is the best answer?",
+                                        "options": [
+                                            "The hotel name, the address and the exact place, such as the room number or area",
+                                            "\"At the hotel, please hurry\"",
+                                            "Only the city name",
+                                            "\"I will call back when I find out\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Location means the hotel name, the address and the exact place."
+                                    },
+                                    {
+                                        "question": "You have given the dispatcher all the information. When can you end the call?",
+                                        "options": [
+                                            "Straight away, so you can help the guest",
+                                            "When your supervisor arrives",
+                                            "When the dispatcher tells you to end the call",
+                                            "After two minutes"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says do not hang up until the dispatcher allows you to."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Helping Safely and Following Up",
+                    "lessons": [
+                        {
+                            "title": "Do and Avoid, Injured Guests and After Help Arrives",
+                            "minutes": 7,
+                            "body": "<h2>Do and avoid while helping</h2><p>While you wait for help, a few simple habits protect the guest, and a few common mistakes can cause harm. The deck lists five of each.</p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Speak calmly and protect privacy</td><td>Giving medicine or food without guidance</td></tr><tr><td>Follow the instructions of the first aider or trained colleague</td><td>Diagnosing the condition or making medical promises</td></tr><tr><td>Use protective equipment when available</td><td>Moving the injured person without need</td></tr><tr><td>Move onlookers away and open the access route</td><td>Taking photos or sharing details</td></tr><tr><td>Record the facts once the case is over</td><td>Leaving the guest alone or causing panic</td></tr></tbody></table><p>Avoid reassurances such as \"You will be fine\" or \"It is nothing serious\"; you cannot know this, and it is a medical promise. Say instead, \"Help is coming, and I am staying with you.\"</p><blockquote class=\"bk-quote\">Do not give the guest medicine. Ask for medical help and follow instructions.</blockquote><h2>If the guest is injured</h2><p>For an injury, such as a fall or an accident, the deck gives four steps:</p><ol><li><strong>Secure.</strong> Stop the danger and keep others away.</li><li><strong>Do not move them.</strong> Especially if a head, neck or back injury is possible.</li><li><strong>Call trained help.</strong> Give first aid only if you are trained and authorised.</li><li><strong>Clear access.</strong> Guide the responders to the place quickly.</li></ol><p>The rule is firm: <strong>do not move the injured person unless there is immediate danger, or unless the competent person instructs you to.</strong></p><h2>After medical help arrives</h2><p>When the medical team arrives, your role changes to support. The deck lists five actions:</p><ul><li>Give them short, accurate information about what happened.</li><li>Move onlookers away and protect privacy.</li><li>Provide access to the lift or entrance.</li><li>Inform management and security according to policy.</li><li>Record the time, the actions taken and the facts.</li></ul><h2>After the case is over</h2><ul><li>Do not discuss the details with people who are not authorised.</li><li>Clean the area according to safety procedures.</li><li>Keep any report or record officially.</li><li>Follow up with the guest only through the responsible person.</li><li>Review the response with the team so you can improve.</li></ul><aside class=\"bk-scene\"><strong>Scene:</strong> A guest trips on the steps by the entrance and lies still, complaining of neck pain. The doorman keeps him where he is, asks another guest to stop walking through, and radios security and the trained first aider, who calls 997. When the ambulance arrives, he tells the paramedics briefly what he saw and when, clears the entrance for the stretcher, and later writes down the times and actions. When a passer-by asks what happened, he answers politely that he cannot share details.</aside><blockquote class=\"bk-quote\">Calm, speed and privacy are the foundation of a professional response.</blockquote><h2>Closing thought</h2><p>The deck ends with a simple reminder: the guest's safety comes first. Secure the place, ask for help and stay with the guest. In an emergency, call the ambulance on 997 and follow the instructions. Secure, report, call, stay, follow up.</p><aside class=\"bk-key\"><strong>Key takeaway:</strong> Never give medicine, never diagnose and never move an injured guest without need; support the medical team, protect privacy and record the facts.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Helping safely",
+                                "questions": [
+                                    {
+                                        "question": "An unwell guest asks you for a painkiller from your bag. What should you do?",
+                                        "options": [
+                                            "Give one tablet only",
+                                            "Politely decline and ask for medical help, then follow instructions",
+                                            "Buy one from the hotel shop",
+                                            "Ask another guest if they have medicine"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says avoid giving medicine or food without guidance; ask for medical help."
+                                    },
+                                    {
+                                        "question": "A guest fell and says their neck hurts. There is no other danger nearby. What should you do?",
+                                        "options": [
+                                            "Help them sit up to feel more comfortable",
+                                            "Carry them to a sofa",
+                                            "Walk them to the first-aid room",
+                                            "Do not move them and call trained help"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Do not move them, especially when a head, neck or back injury is possible."
+                                    },
+                                    {
+                                        "question": "The paramedics arrive at the scene. How do you support them?",
+                                        "options": [
+                                            "Give short, accurate information and clear the access to the lift or entrance",
+                                            "Tell them what you think the diagnosis is",
+                                            "Leave immediately to go back to work",
+                                            "Take photos to send to management"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck lists giving short, accurate information and providing access among the ways to support the medical team."
+                                    },
+                                    {
+                                        "question": "The next day, a colleague from another department asks for the details of the incident. What do you do?",
+                                        "options": [
+                                            "Share the full story since they work at the hotel",
+                                            "Send them the photos you took",
+                                            "Do not discuss the details with people who are not authorised",
+                                            "Post a short summary in the staff group chat"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "After the case, the deck says do not discuss details with unauthorised people."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "التعامل مع النزيل المريض أو المصاب",
+            "subtitle": "اهدأ واطلب المساعدة الصحيحة",
+            "short_description": "تعلّم ما تفعله في الدقائق الأولى عند مرض النزيل أو إصابته: أمّن المكان، واطلب المساعدة المدربة أو اتصل بالإسعاف 997، وابقَ مع النزيل، وتابع باحترافية.",
+            "description": "<p>عندما يمرض النزيل أو يُصاب، تكون الدقائق الأولى مهمة. لست مطالبًا بالتشخيص؛ مهمتك هي الحماية وطلب المساعدة واتباع التعليمات. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتعلّم كل موظف كيف يفعل ذلك بهدوء.</p><p>ستتعرف على الخطوات الأولى: أمّن المكان، اطلب المساعدة، ابقَ وتابع، وعلى العلامات التي تستوجب الاتصال فورًا بالهلال الأحمر على 997، والمعلومات الأربع التي يحتاجها موظف البلاغات، وما تفعله وما تتجنبه أثناء المساعدة، وكيف تتصرف إذا كان النزيل مصابًا، وكيف تساند الفريق الطبي وتُنهي الحالة بصورة صحيحة.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظف في كل قسم. هي دورة توعوية ولا تغني عن التدريب المعتمد على الإسعافات الأولية.",
+            "outcomes": [
+                "اشرح دورك: أن تحمي النزيل وتطلب المساعدة المدربة وتتبع التعليمات دون تشخيص",
+                "طبّق الخطوات الأولى: أمّن المكان، اطلب المساعدة، ابقَ وتابع",
+                "تعرّف على العلامات التي تستوجب الاتصال بالإسعاف 997 فورًا",
+                "أعطِ موظف البلاغات الموقع وحالة النزيل والخطر الموجود ورقم التواصل بوضوح",
+                "ساند الفريق الطبي وحافظ على الخصوصية والسجلات والمتابعة بعد انتهاء الحالة"
+            ],
+            "faqs": [
+                {
+                    "question": "هل أحتاج إلى معرفة الإسعافات الأولية لأخذ هذه الدورة؟",
+                    "answer": "لا. تشرح الدورة دورك على مستوى التوعية: أمّن المكان، واطلب المساعدة المدربة أو اتصل بـ997، وابقَ مع النزيل. ولا تقدّم الإسعاف إلا إذا كنت مدربًا ومخولًا."
+                },
+                {
+                    "question": "متى أتصل بـ997؟",
+                    "answer": "فورًا عند وجود خطر على الحياة، مثل عدم الاستجابة أو فقدان الوعي، أو عدم التنفس طبيعيًا أو صعوبة شديدة فيه، أو ألم صدر شديد أو مفاجئ، أو نزيف شديد أو إصابة خطرة، أو تشنج مستمر أو حالة تتدهور بسرعة."
+                },
+                {
+                    "question": "هل يمكنني إعطاء النزيل مسكّنًا أو شيئًا يأكله؟",
+                    "answer": "لا. لا تعطِ النزيل دواءً أو طعامًا دون توجيه. اطلب المساعدة الطبية واتبع التعليمات."
+                }
+            ],
+            "meta_title": "التعامل مع النزيل المريض أو المصاب",
+            "meta_description": "تدريب فندقي على التعامل مع النزيل المريض أو المصاب: أمّن المكان، اطلب المساعدة أو اتصل بـ997، ماذا تقول، افعل وتجنب، والمتابعة.",
+            "focus_keyword": "التعامل مع النزيل المريض أو المصاب",
+            "chapters": [
+                {
+                    "title": "دورك في الدقائق الأولى",
+                    "lessons": [
+                        {
+                            "title": "اهدأ واحمِ واطلب المساعدة",
+                            "minutes": 5,
+                            "body": "<h2>اهدأ وتصرف بسرعة</h2><p>قد يسقط نزيل في البهو، أو يشعر بالإغماء أثناء الفطور، أو ينزلق بجوار المسبح. في مثل هذه اللحظات ينظر الجميع إلى أقرب موظف بالزي الرسمي. والمادة تعطي هذا الموظف رسالة واضحة: <strong>اهدأ وتصرف بسرعة دون ذعر</strong>. الهدوء لا يعني البطء، بل يعني أن تصرفاتك منضبطة وهادفة، فيشعر النزيل ومن حوله بأن هناك من يتولى الموقف.</p><p>الذعر ينتقل إلى الآخرين؛ فإذا ركضت أو صرخت أو بدا عليك الخوف، ازداد قلق النزيل وتجمهر الناس. أما الصوت الهادئ والحركة الثابتة فيخففان التوتر ويمنحانك مساحة للتفكير.</p><h2>دورك أن تحمي وتطلب المساعدة</h2><p>تصف المادة دورك في خمس نقاط:</p><ul><li><strong>تأكد أن المكان آمن،</strong> وأنه لا يوجد خطر مستمر على النزيل أو على الآخرين أو عليك.</li><li><strong>تحدث مع النزيل بهدوء،</strong> وعرّفه بنفسك وأخبره أن المساعدة في الطريق.</li><li><strong>اطلب المساعدة المدربة فورًا،</strong> ولا تنتظر لترى هل سيتحسن وحده.</li><li><strong>ابقَ معه ولا تتركه وحده،</strong> فوجودك يطمئنه ويتيح لك ملاحظة أي تغير.</li><li><strong>احفظ خصوصيته وكرامته،</strong> فالمريض في مكان عام قد يشعر بالحرج، فاحمه من أنظار الآخرين.</li></ul><blockquote class=\"bk-quote\">لست مطالبًا بالتشخيص — مهمتك الحماية وطلب المساعدة واتباع التعليمات.</blockquote><h2>لماذا لا تشخّص؟</h2><p>من الطبيعي أن ترغب في تفسير ما يحدث: \"ربما هبوط في السكر\" أو \"أُغمي عليه من الحر\". لكن التخمين قد يكون خطرًا؛ فالتخمين الخاطئ قد يؤخر المساعدة الصحيحة أو يدفع أحدهم لإعطاء شيء غير مناسب. لست بحاجة إلى معرفة المشكلة لكي تساعد جيدًا؛ ما تحتاجه هو أن تؤمّن المكان، وتُحضر المدربين، وتتبع ما يطلبونه منك.</p><h2>المنهج في سطر واحد</h2><p>تلخص المادة الاستجابة كلها في: <strong>أمّن، اسأل، أبلغ، ابقَ، تابع</strong>؛ أمّن المكان، واسأل النزيل ومن حوله عمّا حدث، وأبلغ المشرف أو الأمن أو المسعف أو الطوارئ، وابقَ مع النزيل، وتابع بعد انتهاء الموقف.</p><aside class=\"bk-scene\"><strong>موقف:</strong> في ذروة الفطور شحب وجه نزيل كبير في السن وجلس بثقل. لاحظه النادل فاقترب بهدوء وانحنى بجانبه: \"أنا فيصل من فريق المطعم، سأبقى معك وأطلب المساعدة الآن\". استخدم جهاز اللاسلكي لإبلاغ مشرفه والمسعف المدرب، وطلب من زميل إبعاد طاولة قريبة لتوفير مساحة، وبقي بجانب النزيل. لم يخمّن ما به، بل حمى وطلب وبقي.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> عرّف بنفسك باسمك؛ فالنزيل المريض يطمئن حين يعرف من معه بالضبط.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> اهدأ، واحمِ سلامة النزيل وكرامته، واطلب المساعدة المدربة فورًا، ولا تحاول التشخيص أبدًا.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: دورك",
+                                "questions": [
+                                    {
+                                        "question": "شعر نزيل بالدوار في البهو، فقال زميل: \"إنه الحر فقط، امنحه دقيقة\". ماذا تفعل؟",
+                                        "options": [
+                                            "توافق وتنتظر لترى هل يتحسن",
+                                            "تخبر النزيل أنه الحر ليطمئن",
+                                            "تطلب المساعدة المدربة فورًا دون تشخيص",
+                                            "تأخذ النزيل إلى غرفته ليرتاح"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة إنك لست مطالبًا بالتشخيص: اطلب المساعدة المدربة فورًا واتبع التعليمات."
+                                    },
+                                    {
+                                        "question": "ما أفضل طريقة لتُظهر أنك تتولى الموقف؟",
+                                        "options": [
+                                            "أن تتصرف بسرعة وبهدوء دون ذعر",
+                                            "أن تركض وتصرخ لينتبه الآخرون",
+                                            "أن تنتظر وصول المدير قبل أي تصرف",
+                                            "أن تترك النزيل لتبحث عن المساعدة بنفسك"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "رسالة المادة: اهدأ وتصرف بسرعة دون ذعر."
+                                    },
+                                    {
+                                        "question": "بدأ نزلاء آخرون يتجمعون حول نزيل مريض في المطعم. أي جزء من دورك يرتبط بذلك؟",
+                                        "options": [
+                                            "تشخيص الحالة",
+                                            "تقديم الطعام للنزيل",
+                                            "إنهاء مهمتك الحالية أولًا",
+                                            "حفظ خصوصية النزيل وكرامته"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "من نقاط دورك الخمس: احفظ خصوصيته وكرامته."
+                                    },
+                                    {
+                                        "question": "طلبت المساعدة. ماذا تفعل أثناء الانتظار؟",
+                                        "options": [
+                                            "تعود إلى مكان عملك وتتابع لاحقًا",
+                                            "تبقى مع النزيل ولا تتركه وحده",
+                                            "تبحث عن عائلة النزيل في الفندق",
+                                            "تلتقط صورًا لمشاركتها مع الفريق"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: ابقَ معه ولا تتركه وحده."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "الخطوات الأولى: أمّن، اطلب، ابقَ",
+                            "minutes": 6,
+                            "body": "<h2>ثلاث خطوات عند المرض أو الإصابة</h2><p>مهما كان ما حدث، تعطي المادة الخطوات الأولى نفسها: <strong>أمّن المكان، اطلب المساعدة، ابقَ وتابع</strong>. وهي سهلة التذكر تحت الضغط، وتصلح لنزيل أُغمي عليه أو سقط أو جُرح أو شعر بتوعك مفاجئ.</p><h3>١. أمّن المكان</h3><ul><li><strong>أبعد مصادر الخطر،</strong> كالأرضية المبللة أو الزجاج المكسور أو عربة متحركة أو باب مفتوح على طريق.</li><li><strong>وفّر مساحة وخصوصية،</strong> واطلب من المتجمهرين الابتعاد، واستر النزيل إن أمكن.</li><li><strong>لا تعرّض نفسك للخطر.</strong> إذا لم يمكن إزالة الخطر بأمان، كحريق أو خطر كهربائي، فابتعد واطلب المساعدة؛ فالموظف المصاب لا يستطيع مساعدة أحد.</li></ul><h3>٢. اطلب المساعدة</h3><ul><li><strong>أبلغ المشرف أو الأمن،</strong> فهم ينسقون استجابة الفندق.</li><li><strong>اطلب المسعف أو الموظف المدرب،</strong> فالرعاية مسؤولية المدربين.</li><li><strong>اتصل بالطوارئ عند الحاجة،</strong> وسيشرح الدرس التالي متى تتصل بـ997.</li></ul><h3>٣. ابقَ وتابع</h3><ul><li><strong>ابقَ مع النزيل بهدوء،</strong> وتحدث معه بلطف وطمئنه أن المساعدة في الطريق.</li><li><strong>راقب أي تغير واضح،</strong> فإذا قلّت استجابته أو تغير تنفسه أو بدا أنه يسوء، فأخبر من طلبتهم فورًا.</li><li><strong>وجّه فريق الإسعاف إلى الموقع،</strong> ليصل المستجيبون إلى النزيل بسرعة.</li></ul><table class=\"bk-say\"><thead><tr><th>الخطوة</th><th>ما تفعله</th></tr></thead><tbody><tr><td>أمّن المكان</td><td>أبعد الخطر، ووفّر مساحة وخصوصية، ولا تعرّض نفسك للخطر</td></tr><tr><td>اطلب المساعدة</td><td>المشرف أو الأمن، والمسعف أو الموظف المدرب، والطوارئ عند الحاجة</td></tr><tr><td>ابقَ وتابع</td><td>ابقَ بهدوء، وراقب أي تغير، ووجّه فريق الإسعاف</td></tr></tbody></table><blockquote class=\"bk-quote\">لا تترك النزيل وحده حتى تصل المساعدة.</blockquote><h2>لماذا البقاء مهم؟</h2><p>قد تشعر أن الركض لإحضار المساعدة بنفسك أنفع، لكن النزيل الذي يُترك وحده قد تسوء حالته دون أن يلاحظ أحد، أو يحاول الوقوف فيسقط، أو يشعر بالخوف. استخدم اللاسلكي أو الهاتف، أو اطلب من زميل الذهاب، لتبقى أنت بجانبه. وإذا كنت وحدك واضطررت لإحضار المساعدة، فتأكد أولًا أن المكان آمن وعد بأسرع ما يمكن.</p><aside class=\"bk-scene\"><strong>موقف:</strong> وجدت موظفة التدبير الفندقي نزيلة جالسة على أرضية الحمام بعد سقوطها وهي تمسك معصمها، والأرضية مبللة. وضعت منشفة على الماء حتى لا ينزلق أحد، وأخبرت النزيلة أنها ستبقى معها، وأبلغت مشرفتها والمسعف المدرب عبر اللاسلكي. وأثناء الانتظار لاحظت أن النزيلة ازدادت شحوبًا فأخبرت المشرفة فورًا، وعند وصول الأمن تأكدت من تجهيز المصعد للفريق الطبي.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> اعرف مسبقًا من هم المسعفون المدربون في مناوبتك وكيف تتواصل مع الأمن؛ ففي الطوارئ لا وقت للبحث.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> أمّن المكان، واطلب المساعدة المدربة، وابقَ مع النزيل حتى تصل المساعدة.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: أمّن، اطلب، ابقَ",
+                                "questions": [
+                                    {
+                                        "question": "سقط نزيل قرب ماء مسكوب وزجاج مكسور. ما خطوتك الأولى؟",
+                                        "options": [
+                                            "تساعده على الوقوف والابتعاد",
+                                            "تُبعد مصادر الخطر إذا أمكنك ذلك بأمان",
+                                            "تأخذ بياناته من أجل التقرير",
+                                            "تتصل بعائلته"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تبدأ خطوة أمّن المكان بإبعاد مصادر الخطر دون تعريض نفسك له."
+                                    },
+                                    {
+                                        "question": "من تشمل خطوة اطلب المساعدة؟",
+                                        "options": [
+                                            "مرافقي النزيل فقط",
+                                            "مدير المكتب الأمامي فقط",
+                                            "نزلاء آخرين قد يكونون أطباء",
+                                            "المشرف أو الأمن، والمسعف أو الموظف المدرب، والطوارئ عند الحاجة"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تذكر المادة: أبلغ المشرف أو الأمن، واطلب المسعف أو الموظف المدرب، واتصل بالطوارئ عند الحاجة."
+                                    },
+                                    {
+                                        "question": "أثناء بقائك مع النزيل بدا أن تنفسه تغيّر. ماذا تفعل؟",
+                                        "options": [
+                                            "تخبر من طلبتهم فورًا",
+                                            "تنتظر وصول الفريق الطبي لتذكر ذلك",
+                                            "تعطيه ماءً ليشرب",
+                                            "تنقله إلى غرفة أهدأ"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "خطوة ابقَ وتابع تشمل مراقبة أي تغير واضح، ويجب الإبلاغ عنه فورًا."
+                                    },
+                                    {
+                                        "question": "يوجد خطر كهربائي قرب نزيل مصاب ولا يمكنك إزالته بأمان. ماذا تفعل؟",
+                                        "options": [
+                                            "تمد يدك بسرعة لسحب النزيل",
+                                            "تتجاهل الخطر وتركّز على النزيل",
+                                            "تبتعد وتطلب المساعدة",
+                                            "تغادر المكان وتكمل عملك"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: لا تعرّض نفسك للخطر."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "طلب الإسعاف",
+                    "lessons": [
+                        {
+                            "title": "متى تتصل بالإسعاف 997 وماذا تقول",
+                            "minutes": 6,
+                            "body": "<h2>متى تتصل بالإسعاف 997؟</h2><p>يمكن للمسعف المدرب في الفندق التعامل مع حالات كثيرة، لكن بعضها لا يحتمل الانتظار. والمادة واضحة: <strong>اطلب الإسعاف عند وجود خطر على الحياة، واتصل فورًا</strong>. وفي المملكة يعني ذلك الاتصال بالهلال الأحمر السعودي على <strong>997</strong>.</p><p>اتصل بـ997 فورًا إذا ظهرت على النزيل أي من هذه العلامات:</p><ul><li>عدم الاستجابة أو فقدان الوعي.</li><li>عدم التنفس طبيعيًا أو صعوبة شديدة فيه.</li><li>ألم صدر شديد أو مفاجئ.</li><li>نزيف شديد أو إصابة خطرة.</li><li>تشنج مستمر أو حالة تتدهور بسرعة.</li></ul><p>لا تؤخر الاتصال للبحث عن مدير أولًا أو لترى هل سيتحسن النزيل. يمكنك إبلاغ المشرف والأمن في الوقت نفسه، أو تطلب من زميل ذلك بينما تتصل أنت.</p><blockquote class=\"bk-quote\">اتصل بالهلال الأحمر على 997 واتبع تعليمات موظف البلاغات.</blockquote><h2>ماذا تقول عند طلب الإسعاف؟</h2><p>يحتاج موظف البلاغات إلى أربع معلومات ليرسل المساعدة المناسبة إلى المكان الصحيح:</p><ol><li><strong>الموقع:</strong> اسم الفندق والعنوان والمكان الدقيق، مثل \"الغرفة 814 في الدور الثامن\" أو \"سطح المسبح بجوار مسبح الأطفال\".</li><li><strong>حالة النزيل:</strong> ما حدث وما تراه الآن: \"رجل في الستينات سقط ولا يستجيب\". صِف ولا تشخّص.</li><li><strong>الخطر الموجود:</strong> أي خطر يمنع الوصول الآمن، كالدخان أو مدخل مغلق أو شخص عدواني.</li><li><strong>رقم التواصل:</strong> اسمك ورقم يمكن الاتصال به.</li></ol><table class=\"bk-say\"><thead><tr><th>أخبرهم بـ</th><th>مثال</th></tr></thead><tbody><tr><td>الموقع</td><td>\"فندق ضيافة، [العنوان]، البهو قرب المدخل الرئيسي\"</td></tr><tr><td>حالة النزيل</td><td>\"سقطت سيدة وتنزف بشدة من ساقها، وهي واعية\"</td></tr><tr><td>الخطر الموجود</td><td>\"يوجد زجاج مكسور على الأرض، وقد فتحنا ممرًا\"</td></tr><tr><td>رقم التواصل</td><td>\"اسمي عمر، ويمكنكم الاتصال بي على هذا الرقم\"</td></tr></tbody></table><h2>لا تغلق الاتصال</h2><p><strong>لا تغلق الاتصال حتى يسمح لك موظف البلاغات.</strong> فقد يطرح أسئلة إضافية أو يعطيك تعليمات تتبعها حتى وصول الإسعاف. أبقِ الهاتف معك، وبجانب النزيل إن أمكن، ونفّذ ما يُطلب منك بدقة. وإذا كان معك مسعف مدرب، فانقل إليه التعليمات بوضوح.</p><aside class=\"bk-scene\"><strong>موقف:</strong> في النادي الرياضي أمسك نزيل صدره فجأة وجلس وهو يتنفس بصعوبة. تعرّفت الموظفة على علامتين من القائمة فاتصلت بـ997 فورًا، بينما أبلغ زميلها الأمن عبر اللاسلكي. ذكرت اسم الفندق والعنوان و\"النادي الرياضي في الدور الثاني\"، ووصفت ما تراه، وأوضحت أن الممر خالٍ، وأعطت اسمها ورقم جوالها، وبقيت على الخط تتبع التعليمات حتى وصل فريق الهلال الأحمر.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> تأكد أنك تعرف العنوان الكامل للفندق وكيف تصف كل منطقة بوضوح، واسأل مشرفك إن لم تكن متأكدًا.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> عند وجود خطر على الحياة اتصل بـ997 فورًا، واذكر الموقع والحالة والخطر ورقم التواصل، ولا تغلق الخط.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الاتصال بـ997",
+                                "questions": [
+                                    {
+                                        "question": "نزيل في المطعم لا يستجيب عندما تحدثه. ما الذي يجب أن يحدث؟",
+                                        "options": [
+                                            "الانتظار خمس دقائق لعله يفيق",
+                                            "البحث عن المدير المناوب قبل الاتصال بأحد",
+                                            "إعطاؤه كوب ماء",
+                                            "الاتصال بالإسعاف 997 فورًا"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "عدم الاستجابة أو فقدان الوعي من العلامات التي تستوجب الاتصال بـ997 فورًا."
+                                    },
+                                    {
+                                        "question": "أيٌّ مما يلي من علامات الاتصال بـ997 في المادة؟",
+                                        "options": [
+                                            "صداع خفيف بعد رحلة طويلة",
+                                            "ألم صدر شديد أو مفاجئ",
+                                            "خدش صغير في اليد",
+                                            "تعب بعد التمرين"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "ألم الصدر الشديد أو المفاجئ من أسباب طلب الإسعاف فورًا."
+                                    },
+                                    {
+                                        "question": "سألك موظف البلاغات عن مكانك. ما أفضل إجابة؟",
+                                        "options": [
+                                            "اسم الفندق والعنوان والمكان الدقيق كرقم الغرفة أو المنطقة",
+                                            "\"في الفندق، أسرعوا من فضلكم\"",
+                                            "اسم المدينة فقط",
+                                            "\"سأعاود الاتصال عندما أعرف\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "الموقع يعني اسم الفندق والعنوان والمكان الدقيق."
+                                    },
+                                    {
+                                        "question": "أعطيت موظف البلاغات كل المعلومات. متى يمكنك إنهاء الاتصال؟",
+                                        "options": [
+                                            "فورًا لتتفرغ للنزيل",
+                                            "عندما يصل مشرفك",
+                                            "عندما يسمح لك موظف البلاغات",
+                                            "بعد دقيقتين"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: لا تغلق الاتصال حتى يسمح لك موظف البلاغات."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "المساعدة الآمنة والمتابعة",
+                    "lessons": [
+                        {
+                            "title": "افعل وتجنب، والنزيل المصاب، وبعد وصول المساعدة",
+                            "minutes": 7,
+                            "body": "<h2>افعل وتجنب أثناء المساعدة</h2><p>أثناء انتظار المساعدة، هناك عادات بسيطة تحمي النزيل، وأخطاء شائعة قد تؤذيه. وتذكر المادة خمسًا من كل منها.</p><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنب</th></tr></thead><tbody><tr><td>تحدث بهدوء واحفظ الخصوصية</td><td>أن تعطي دواءً أو طعامًا دون توجيه</td></tr><tr><td>اتبع تعليمات المسعف أو الموظف المدرب</td><td>أن تشخّص الحالة أو تقدّم وعدًا طبيًا</td></tr><tr><td>استخدم معدات الوقاية عند توفرها</td><td>أن تحرك المصاب دون ضرورة</td></tr><tr><td>أبعد المتجمهرين وافتح طريق الوصول</td><td>أن تلتقط صورة أو تشارك التفاصيل</td></tr><tr><td>سجل الوقائع بعد انتهاء الحالة</td><td>أن تترك النزيل وحده أو تثير الذعر</td></tr></tbody></table><p>تجنب عبارات مثل \"ستكون بخير\" أو \"الأمر بسيط\"؛ فأنت لا تعرف ذلك، وهي وعد طبي. قل بدلًا منها: \"المساعدة في الطريق، وأنا باقٍ معك\".</p><blockquote class=\"bk-quote\">لا تعطِ النزيل دواءً — اطلب المساعدة الطبية واتبع التعليمات.</blockquote><h2>إذا كان النزيل مصابًا</h2><p>عند الإصابة، كالسقوط أو الحوادث، تعطي المادة أربع خطوات:</p><ol><li><strong>أمّن:</strong> أوقف الخطر وأبعد الآخرين.</li><li><strong>لا تحركه:</strong> خصوصًا عند احتمال إصابة الرأس أو الرقبة أو الظهر.</li><li><strong>اطلب مسعفًا:</strong> قدّم الإسعاف فقط إذا كنت مدربًا ومخولًا.</li><li><strong>افتح الطريق:</strong> وجّه المسعفين إلى المكان بسرعة.</li></ol><p>والقاعدة حازمة: <strong>لا تحرك المصاب إلا لوجود خطر مباشر أو وفق تعليمات المختص.</strong></p><h2>بعد وصول المساعدة الطبية</h2><p>عند وصول الفريق الطبي يتحول دورك إلى المساندة. وتذكر المادة خمسة أمور:</p><ul><li>أعطهم معلومات مختصرة ودقيقة.</li><li>أبعد المتجمهرين واحفظ الخصوصية.</li><li>وفّر الوصول للمصعد أو المدخل.</li><li>أبلغ الإدارة والأمن حسب السياسة.</li><li>سجل الوقت والإجراءات والوقائع.</li></ul><h2>بعد انتهاء الحالة</h2><ul><li>لا تناقش التفاصيل مع غير المخولين.</li><li>نظف الموقع وفق إجراءات السلامة.</li><li>احفظ أي تقرير أو سجل رسميًا.</li><li>تابع مع النزيل عبر المسؤول فقط.</li><li>راجع الاستجابة مع الفريق للتحسين.</li></ul><aside class=\"bk-scene\"><strong>موقف:</strong> تعثّر نزيل على درج المدخل وبقي ممددًا يشكو ألمًا في رقبته. أبقاه موظف الاستقبال عند الباب في مكانه، وطلب من المارة عدم العبور، وأبلغ الأمن والمسعف المدرب الذي اتصل بـ997. وعند وصول الإسعاف أخبر المسعفين باختصار بما رآه ومتى، وأخلى المدخل للنقالة، ثم دوّن الأوقات والإجراءات. وعندما سأله أحد المارة عمّا حدث، أجاب بلطف أنه لا يستطيع مشاركة التفاصيل.</aside><blockquote class=\"bk-quote\">الهدوء والسرعة والخصوصية أساس الاستجابة المهنية.</blockquote><h2>كلمة أخيرة</h2><p>تختم المادة بتذكير بسيط: سلامة النزيل أولًا. أمّن المكان واطلب المساعدة وابقَ معه، وعند الطوارئ اتصل بالإسعاف 997 واتبع التعليمات. أمّن، أبلغ، اتصل، ابقَ، تابع.</p><aside class=\"bk-key\"><strong>الخلاصة:</strong> لا تعطِ دواءً، ولا تشخّص، ولا تحرك المصاب دون ضرورة؛ ساند الفريق الطبي، واحفظ الخصوصية، وسجل الوقائع.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: المساعدة الآمنة",
+                                "questions": [
+                                    {
+                                        "question": "طلب منك نزيل مريض مسكّنًا من حقيبتك. ماذا تفعل؟",
+                                        "options": [
+                                            "تعطيه حبة واحدة فقط",
+                                            "تعتذر بلطف وتطلب المساعدة الطبية ثم تتبع التعليمات",
+                                            "تشتري له واحدًا من متجر الفندق",
+                                            "تسأل نزيلًا آخر إن كان لديه دواء"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: تجنب إعطاء دواء أو طعام دون توجيه، واطلب المساعدة الطبية."
+                                    },
+                                    {
+                                        "question": "سقط نزيل ويقول إن رقبته تؤلمه، ولا يوجد خطر آخر قريب. ماذا تفعل؟",
+                                        "options": [
+                                            "تساعده على الجلوس ليرتاح",
+                                            "تحمله إلى الأريكة",
+                                            "ترافقه مشيًا إلى غرفة الإسعاف",
+                                            "لا تحركه وتطلب المساعدة المدربة"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "لا تحركه، خصوصًا عند احتمال إصابة الرأس أو الرقبة أو الظهر."
+                                    },
+                                    {
+                                        "question": "وصل المسعفون إلى المكان. كيف تساندهم؟",
+                                        "options": [
+                                            "تعطيهم معلومات مختصرة ودقيقة وتوفر الوصول للمصعد أو المدخل",
+                                            "تخبرهم بتشخيصك للحالة",
+                                            "تغادر فورًا للعودة إلى عملك",
+                                            "تلتقط صورًا لإرسالها إلى الإدارة"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "من طرق مساندة الفريق الطبي: أعطهم معلومات مختصرة ودقيقة، ووفّر الوصول للمصعد أو المدخل."
+                                    },
+                                    {
+                                        "question": "في اليوم التالي سألك زميل من قسم آخر عن تفاصيل الحادثة. ماذا تفعل؟",
+                                        "options": [
+                                            "تروي له القصة كاملة لأنه يعمل في الفندق",
+                                            "ترسل له الصور التي التقطتها",
+                                            "لا تناقش التفاصيل مع غير المخولين",
+                                            "تنشر ملخصًا قصيرًا في مجموعة الموظفين"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "بعد انتهاء الحالة تقول المادة: لا تناقش التفاصيل مع غير المخولين."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

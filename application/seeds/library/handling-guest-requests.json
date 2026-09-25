@@ -1,0 +1,545 @@
+{
+    "slug": "handling-guest-requests",
+    "category": "guest-handling",
+    "level": "foundation",
+    "source_pdf": "Handling-Guest-Requests-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/handling-guest-requests.webp",
+    "videos": [
+        {
+            "id": "fHrhmJDhP6k",
+            "title": "An Empowerment Lesson From the Ritz-Carlton",
+            "channel": "Shep Hyken: Customer Service & CX Expert",
+            "why": "A recognised customer-service expert shows how a luxury hotel colleague owned a guest request from start to finish, which mirrors the deck's rule that a request ends only when satisfaction is confirmed."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Handling Guest Requests",
+            "subtitle": "From listening to follow-up",
+            "short_description": "Turn every guest request into complete service with five steps: Listen, Confirm, Commit, Deliver and Follow up, and never promise what you cannot deliver.",
+            "description": "<p>A guest request is a small moment of trust. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows colleagues how to handle any request from the first word to the final check.</p><p>You will learn why a clear response gives guests confidence, the five-step service flow, how to listen and confirm, what to do when a request is unclear, how to make realistic promises and handle delays, the professional language that confirms understanding and commitment, and the five things every guest expects.</p>",
+            "requirements": "No prior training is needed; the course suits any guest-facing colleague.",
+            "outcomes": [
+                "Explain why a clear response builds guest trust",
+                "Apply the five steps Listen, Confirm, Commit, Deliver, Follow up",
+                "Ask for clarification instead of pretending to understand",
+                "Promise only what can be delivered, on time, and manage delays honestly",
+                "Use professional language that confirms understanding and commitment"
+            ],
+            "faqs": [
+                {
+                    "question": "When is a guest request finished?",
+                    "answer": "Not at delivery. The deck says a request ends when guest satisfaction is confirmed: delivered as agreed and followed up."
+                },
+                {
+                    "question": "What should I do if I did not understand the request?",
+                    "answer": "Apologise politely and ask the guest to repeat, ask about the unclear point, repeat what you understood, ask a colleague or supervisor if needed, and tell the guest what you will do before you leave."
+                },
+                {
+                    "question": "What if I cannot deliver at the agreed time?",
+                    "answer": "Inform the guest before the time, apologise sincerely without long excuses, offer a new time or a suitable alternative and follow up until it is solved. Never let the guest discover the delay alone."
+                }
+            ],
+            "meta_title": "Handling Guest Requests: Hotel Staff Training",
+            "meta_description": "Hotel training on guest requests: Listen, Confirm, Commit, Deliver, Follow up; clarifying unclear requests, realistic promises and professional language.",
+            "focus_keyword": "handling guest requests",
+            "chapters": [
+                {
+                    "title": "Why Requests Matter",
+                    "lessons": [
+                        {
+                            "title": "A Clear Response Builds Trust",
+                            "minutes": 5,
+                            "body": "<h2>Trust, comfort and welcome</h2><p>Every request, whether it is extra towels, a late check-out or a taxi at six in the morning, is a small test of trust. The guest is handing a need to someone they do not know and hoping it will be handled. The deck's first message is: <strong>a clear response gives the guest trust</strong>, and with trust come comfort and a sense of welcome.</p><h2>What a clear response achieves</h2><ul><li><strong>The guest is sure we understood the request.</strong> They do not have to wonder whether the message got through.</li><li><strong>The guest feels the colleague cares and is ready to serve.</strong> A clear, confident reply shows willingness, not reluctance.</li><li><strong>The chance of misunderstanding or repeating the request is reduced.</strong> A guest who has to ask twice feels ignored.</li><li><strong>Expectations are managed with a clear, realistic time.</strong> The guest knows when to expect the service.</li><li><strong>Service delivery becomes more accurate and smoother.</strong> Everyone involved knows exactly what is needed.</li></ul><blockquote class=\"bk-quote\">Clear acknowledgement reassures guests that they have been understood.</blockquote><p>The deck also reminds us to confirm our understanding clearly and not to assume the guest has followed us. Language levels differ, and what feels clear to you may not be clear to the guest.</p><h2>Five steps that turn a request into complete service</h2><p>The deck gives one flow for every request:</p><ol><li><strong>Listen</strong> without interrupting.</li><li><strong>Confirm</strong> by repeating the request accurately.</li><li><strong>Commit</strong> by setting a realistic time.</li><li><strong>Deliver</strong> as agreed.</li><li><strong>Follow up</strong> to confirm the guest is satisfied.</li></ol><p>Each step protects the next. Listening fully gives you the right information to confirm. Confirming gives you the right request to commit to. A realistic commitment makes on-time delivery possible, and following up tells you whether the guest is truly satisfied.</p><blockquote class=\"bk-quote\">A request does not end at delivery. It ends when guest satisfaction is confirmed.</blockquote><p>This is the most important idea in the course. Handing over an iron or sending a technician is not the end of the job. The job ends when you know the guest got what they needed.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest calls reception asking for a baby cot. The receptionist listens, confirms “a baby cot for room 512”, commits to “within twenty minutes”, and passes it to housekeeping. Twenty-five minutes later she calls the room: “I wanted to check the cot arrived and is set up as you need.” The guest thanks her; it had arrived but they needed an extra blanket, which she then arranged.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> A clear response builds trust. Listen, Confirm, Commit, Deliver, Follow up, and do not stop at delivery.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: A clear response builds trust",
+                                "questions": [
+                                    {
+                                        "question": "Housekeeping delivered the extra pillows a guest asked for. According to the deck, is the request complete?",
+                                        "options": [
+                                            "Yes, delivery completes it",
+                                            "Only if the guest calls back",
+                                            "No, it ends when the guest's satisfaction is confirmed",
+                                            "Only after check-out"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says the request ends when guest satisfaction is confirmed, not at delivery."
+                                    },
+                                    {
+                                        "question": "Which step comes straight after Confirm in the five-step flow?",
+                                        "options": [
+                                            "Commit: set a realistic time",
+                                            "Deliver",
+                                            "Follow up",
+                                            "Listen"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The flow is Listen, Confirm, Commit, Deliver, Follow up."
+                                    },
+                                    {
+                                        "question": "A guest had to repeat the same request three times to different colleagues. Which benefit of a clear response was missing?",
+                                        "options": [
+                                            "A lower room rate",
+                                            "A faster check-out",
+                                            "A longer conversation",
+                                            "Reducing misunderstanding or repeating the request"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "A clear response reduces the chance of misunderstanding or repeating the request."
+                                    },
+                                    {
+                                        "question": "How does giving a clear, realistic time help?",
+                                        "options": [
+                                            "It lets you delay the task",
+                                            "It manages the guest's expectations",
+                                            "It removes the need to follow up",
+                                            "It shows the hotel is busy"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Expectations are managed with a clear and realistic time."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Listen, Confirm and Clarify",
+                            "minutes": 6,
+                            "body": "<h2>Listen without interrupting, then confirm what you understood</h2><p>The first two steps of the flow decide whether everything after them will be right. The deck describes how to show your attention and gives four useful phrases.</p><h3>Show your interest</h3><ul><li>Face the guest and focus on them.</li><li>Listen until they finish explaining the request.</li><li>Nod naturally to show you understand.</li><li>Write notes when needed.</li><li>Repeat the request in clear words.</li><li>Ask the guest to confirm the important details.</li></ul><h3>Useful phrases</h3><table class=\"bk-say\"><thead><tr><th>Situation</th><th>Say</th></tr></thead><tbody><tr><td>Repeating the request</td><td>“To confirm, you would like… Is that correct?”</td></tr><tr><td>Accepting the request</td><td>“Certainly, I will arrange that.”</td></tr><tr><td>Checking the timing</td><td>“Would you prefer the service now or at a specific time?”</td></tr><tr><td>Checking the details</td><td>“Allow me to confirm the details.”</td></tr></tbody></table><p>Repeating the request is not a formality. It is the moment when a wrong room number, a wrong time or a missing detail is caught, before anyone has walked to the wrong room.</p><h2>If you do not understand, ask; do not pretend</h2><p>Sometimes, despite your attention, you do not understand. The accent is strong, the line is poor, or the request has several parts. The deck is clear: <strong>ask for clarification and do not pretend to understand.</strong></p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Apologise politely and ask the guest to repeat the request</td><td>Pretending to understand the request</td></tr><tr><td>Ask for clarification on the unclear point</td><td>Just nodding your head</td></tr><tr><td>Repeat what you understood to confirm</td><td>Saying yes without knowing what is needed</td></tr><tr><td>Ask a colleague or supervisor for help when needed</td><td>Acting on a guess that may be wrong</td></tr><tr><td>Tell the guest what you will do before you leave</td><td>Leaving the guest without explanation or follow-up</td></tr></tbody></table><blockquote class=\"bk-quote\">“I'm sorry, could you please repeat that?”</blockquote><p>Asking again may feel awkward, but guests almost always prefer it to a wrong result. Pretending, nodding or guessing saves a few seconds and costs far more when the wrong thing arrives.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest calls from the room and asks quickly for “the adaptor and a late something”. The colleague says, “I'm sorry, could you please repeat that?” The guest explains: a UK plug adaptor and a late check-out. The colleague repeats, “To confirm, you would like a UK adaptor now and a late check-out tomorrow. Is that correct?” He checks the late check-out with his supervisor and tells the guest, “I will bring the adaptor now and call you back about the check-out time.”</aside><aside class=\"bk-note\"><strong>Tip:</strong> Ask about the unclear point only. “Which time did you say?” is easier for the guest than repeating the whole request.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Listen fully, repeat the request clearly, and if anything is unclear, ask; never nod and guess.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Listen, confirm and clarify",
+                                "questions": [
+                                    {
+                                        "question": "On a noisy phone line you only half-hear a guest's request. What should you do?",
+                                        "options": [
+                                            "Say yes and work it out later",
+                                            "Nod and hope for the best",
+                                            "Apologise politely and ask the guest to repeat the request",
+                                            "Send the most common item"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says apologise politely and ask for the request to be repeated; do not pretend to understand."
+                                    },
+                                    {
+                                        "question": "Which phrase best confirms a request before acting?",
+                                        "options": [
+                                            "“To confirm, you would like… Is that correct?”",
+                                            "“OK, fine.”",
+                                            "“No problem.”",
+                                            "“That's not my job.”"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "This is the deck's confirmation phrase for repeating the request."
+                                    },
+                                    {
+                                        "question": "You understood the request but cannot handle it alone. What is on the deck's Do list?",
+                                        "options": [
+                                            "Act on your best guess",
+                                            "Leave without explaining",
+                                            "Tell the guest it is impossible",
+                                            "Ask a colleague or supervisor for help and tell the guest what you will do"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Ask for a colleague's or supervisor's help when needed, and tell the guest what you will do before you leave."
+                                    },
+                                    {
+                                        "question": "A guest asks for room service but does not say when. Which phrase fits?",
+                                        "options": [
+                                            "“It will come when the kitchen is ready.”",
+                                            "“Would you prefer the service now or at a specific time?”",
+                                            "“Everyone orders now.”",
+                                            "“I'll guess a time for you.”"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck lists this phrase to check the preferred timing."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Commitments You Can Keep",
+                    "lessons": [
+                        {
+                            "title": "Realistic Promises and Professional Language",
+                            "minutes": 7,
+                            "body": "<h2>Promise only what you can deliver, and on time</h2><p>The third step, Commit, is where many requests go wrong. A colleague wants to please the guest and says “five minutes” when the real answer is thirty. The guest plans around five minutes, and a good service becomes a broken promise. The deck's rule is simple: <strong>do not promise anything except what you can deliver, and at the agreed time.</strong></p><h3>Before you promise</h3><ul><li>Check that the request can be carried out.</li><li>Set a realistic and precise time.</li><li>Mention any cost or condition clearly.</li><li>Record the request and the agreed time.</li><li>Make sure it reaches the responsible department.</li></ul><h3>If the agreement changes</h3><ul><li>Inform the guest before the agreed time.</li><li>Apologise sincerely, without long excuses.</li><li>Offer a new time or a suitable alternative.</li><li>Follow up until the solution is delivered.</li><li>Do not let the guest discover the delay alone.</li></ul><blockquote class=\"bk-quote\">Under-promise only when necessary, and always deliver as agreed.</blockquote><p>Delays happen: a lift is out of service, the laundry is late, an order is held up. The guest can accept a delay they hear about in advance. What damages trust is waiting past the promised time, calling reception and finding out that nobody told them.</p><h2>Use language that confirms understanding and commitment</h2><p>The words you use tell the guest how seriously you take the request. The deck compares five professional phrases with five to avoid.</p><table class=\"bk-say\"><thead><tr><th>Say</th><th>Avoid</th></tr></thead><tbody><tr><td>“With pleasure, I will arrange that.”</td><td>“OK” / “Fine” (casual)</td></tr><tr><td>“To confirm, your request is…”</td><td>“Yes” / “Okay”</td></tr><tr><td>“The request will be ready within…”</td><td>“No problem”</td></tr><tr><td>“I will follow up the request and update you.”</td><td>“Sure”, without checking</td></tr><tr><td>“Is there anything else?”</td><td>“This is not my responsibility.”</td></tr></tbody></table><p>The phrases on the left each do a job: they show willingness, confirm the request, set a time, promise a follow-up and invite further needs. The phrases on the right are vague, casual or, in the last case, push the guest away. Even when a request belongs to another department, the guest should hear that you will make sure it reaches the right person.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest asks for a suit to be pressed before a 9:00 meeting. The colleague checks with laundry, which can return it by 8:30. She tells the guest, “With pleasure, I will arrange that. The suit will be ready by 8:30, and there is a pressing charge on the laundry list.” At 8:10 laundry reports a delay. She calls the guest at once, apologises briefly and offers to bring the suit at 8:40 or to send the iron to the room now. The guest chooses the iron, and she checks later that it arrived.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Always record the agreed time with the request, so any colleague who picks it up knows the commitment.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Check before you promise, say the time and any cost clearly, warn the guest before a delay and use language that commits.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Realistic promises",
+                                "questions": [
+                                    {
+                                        "question": "You promised a guest their order by 7:00, but at 6:45 you learn it will be late. What should you do?",
+                                        "options": [
+                                            "Wait and see whether the guest notices",
+                                            "Inform the guest before the time, apologise sincerely and offer a new time or alternative",
+                                            "Give a long explanation of what went wrong in the kitchen",
+                                            "Ask another colleague to take the call when the guest complains"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "If the agreement changes: inform the guest before the time, apologise without long excuses and offer a new time or alternative."
+                                    },
+                                    {
+                                        "question": "A guest requests a service that has a fee. When should you mention it?",
+                                        "options": [
+                                            "Only if the guest asks",
+                                            "On the final bill",
+                                            "Never; it may upset them",
+                                            "Clearly, before you promise"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Before you promise, mention any cost or condition clearly."
+                                    },
+                                    {
+                                        "question": "Which reply should you avoid when a guest's request belongs to another department?",
+                                        "options": [
+                                            "“This is not my responsibility.”",
+                                            "“I will follow up the request and update you.”",
+                                            "“With pleasure, I will arrange that.”",
+                                            "“Is there anything else?”"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "“This is not my responsibility” is on the deck's avoid list."
+                                    },
+                                    {
+                                        "question": "Before committing to a time for an airport car, what should you check first?",
+                                        "options": [
+                                            "The guest's loyalty status",
+                                            "Whether the guest will tip",
+                                            "That the request can actually be carried out",
+                                            "Whether a colleague is free to chat"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The first item before promising is to check that the request can be carried out."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Meeting Guest Expectations",
+                    "lessons": [
+                        {
+                            "title": "What the Guest Expects",
+                            "minutes": 5,
+                            "body": "<h2>The guest expects accuracy, commitment and follow-up</h2><p>The deck brings the course together in five things every guest expects when they make a request. Each one matches a step of the service flow.</p><table class=\"bk-say\"><thead><tr><th>Expectation</th><th>What it means</th></tr></thead><tbody><tr><td>1. Full listening</td><td>No interrupting and no assuming.</td></tr><tr><td>2. Accurate confirmation</td><td>Repeating the request and its details.</td></tr><tr><td>3. Clear timing</td><td>Informing the guest of any delay in advance.</td></tr><tr><td>4. Delivery as agreed</td><td>Or offering a suitable alternative.</td></tr><tr><td>5. Satisfaction confirmed</td><td>Asking the guest after completion.</td></tr></tbody></table><h3>1. Full listening</h3><p>The guest expects you to hear the whole request, not the first half. Interrupting or assuming you already know what they want breaks this expectation before the service has started.</p><h3>2. Accurate confirmation</h3><p>The guest expects you to repeat the request and its details: the item, the quantity, the room, the time. This is their chance to correct you.</p><h3>3. Clear timing</h3><p>The guest expects to know when the service will happen, and to be told in advance if it will be late. Silence is what turns a delay into a complaint.</p><h3>4. Delivery as agreed</h3><p>The guest expects to receive exactly what was agreed. If that is not possible, they expect a suitable alternative to be offered, not a different result without explanation.</p><h3>5. Satisfaction confirmed</h3><p>The guest expects someone to check. A short call or question after completion, such as “Did the technician fix the air conditioning to your satisfaction?”, closes the request properly.</p><h2>The whole course in two lines</h2><p>The closing slide repeats the flow, <strong>Listen, Confirm, Commit, Deliver, Follow up on the guest's satisfaction</strong>, and adds two warnings: <strong>do not assume understanding</strong> and <strong>do not make an unrealistic promise.</strong></p><blockquote class=\"bk-quote\">A successful request is one delivered as agreed. A request is complete only when it is delivered as agreed and satisfaction is confirmed.</blockquote><aside class=\"bk-scene\"><strong>Scene:</strong> A guest asks the concierge for a table for four at a nearby restaurant at 8 p.m. The concierge listens fully, confirms “four people, tonight at eight”, and says he will call back within fifteen minutes. The restaurant only has 8:30. He calls the guest within the fifteen minutes and offers 8:30 or another restaurant at 8:00. The guest takes 8:30. The next morning he asks how the dinner was. All five expectations were met, even though the original time was not available.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Ending with “Is there anything else?” after confirming satisfaction often uncovers a second need before the guest has to call again.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Meet all five expectations: full listening, accurate confirmation, clear timing, delivery as agreed and confirmed satisfaction.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: What the guest expects",
+                                "questions": [
+                                    {
+                                        "question": "The exact item a guest requested is unavailable. Which expectation guides you?",
+                                        "options": [
+                                            "Full listening",
+                                            "Delivery as agreed, or offering a suitable alternative",
+                                            "Clear timing only",
+                                            "Satisfaction confirmed only"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Delivery as agreed includes offering a suitable alternative."
+                                    },
+                                    {
+                                        "question": "What does “satisfaction confirmed” mean in practice?",
+                                        "options": [
+                                            "Waiting for the guest to complain",
+                                            "Checking the guest's review after check-out",
+                                            "Delivering the item quickly",
+                                            "Asking the guest after the request is completed"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck defines it as asking the guest after completion."
+                                    },
+                                    {
+                                        "question": "Which two warnings appear on the closing slide?",
+                                        "options": [
+                                            "Do not assume understanding; do not make an unrealistic promise",
+                                            "Do not smile; do not use names",
+                                            "Do not write notes; do not call back",
+                                            "Do not involve supervisors; do not offer alternatives"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The closing slide says: do not assume understanding and do not make an unrealistic promise."
+                                    },
+                                    {
+                                        "question": "A delivery will be 20 minutes late. Which expectation says you must tell the guest in advance?",
+                                        "options": [
+                                            "Full listening",
+                                            "Accurate confirmation",
+                                            "Clear timing",
+                                            "Satisfaction confirmed"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Clear timing means informing the guest of any delay in advance."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "التعامل مع طلبات النزلاء",
+            "subtitle": "من الاستماع إلى المتابعة",
+            "short_description": "حوّل كل طلب إلى خدمة مكتملة بخمس خطوات: استمع، أكّد، التزم، نفّذ، تابع، ولا تعد إلا بما يمكنك تنفيذه.",
+            "description": "<p>طلب النزيل لحظة ثقة صغيرة. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتوضح كيف تتعامل مع أي طلب من أول كلمة حتى التأكد الأخير.</p><p>ستتعرف على سبب منح الاستجابة الواضحة النزيلَ الثقة، وخطوات الخدمة الخمس، وكيف تستمع وتؤكد، وماذا تفعل إذا لم يكن الطلب واضحًا، وكيف تقدم وعودًا واقعية وتتعامل مع التأخير، واللغة المهنية التي تؤكد الفهم والالتزام، والأمور الخمسة التي يتوقعها كل نزيل.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظف يتعامل مع النزلاء.",
+            "outcomes": [
+                "اشرح لماذا تمنح الاستجابة الواضحة النزيل الثقة",
+                "طبّق خطوات: استمع، أكّد، التزم، نفّذ، تابع",
+                "اطلب التوضيح بدل التظاهر بالفهم",
+                "لا تعد إلا بما يمكنك تنفيذه وفي الوقت المحدد، وتعامل مع التأخير بصدق",
+                "استخدم لغة مهنية تؤكد الفهم والالتزام"
+            ],
+            "faqs": [
+                {
+                    "question": "متى ينتهي طلب النزيل؟",
+                    "answer": "لا ينتهي عند التسليم؛ تقول المادة إن الطلب ينتهي عندما يتأكد رضا النزيل، أي بعد تنفيذه كما تم الاتفاق عليه ومتابعته."
+                },
+                {
+                    "question": "ماذا أفعل إذا لم أفهم الطلب؟",
+                    "answer": "اعتذر بلطف واطلب إعادة الطلب، واطلب التوضيح في النقطة غير الواضحة، وأعد ما فهمته للتأكيد، واطلب مساعدة زميل أو مشرف عند الحاجة، وأخبر النزيل بما ستقوم به قبل أن تبتعد."
+                },
+                {
+                    "question": "ماذا لو لم أستطع التنفيذ في الوقت المتفق عليه؟",
+                    "answer": "أبلغ النزيل قبل الموعد، واعتذر بصدق ودون أعذار طويلة، وقدّم وقتًا جديدًا أو بديلًا مناسبًا، وتابع حتى تنفيذ الحل، ولا تترك النزيل يكتشف التأخير بنفسه."
+                }
+            ],
+            "meta_title": "التعامل مع طلبات النزلاء: تدريب موظفي الفنادق",
+            "meta_description": "تدريب فندقي على طلبات النزلاء: استمع وأكّد والتزم ونفّذ وتابع، وتوضيح الطلبات غير الواضحة، والوعود الواقعية، واللغة المهنية.",
+            "focus_keyword": "التعامل مع طلبات النزلاء",
+            "chapters": [
+                {
+                    "title": "لماذا تهم الطلبات",
+                    "lessons": [
+                        {
+                            "title": "الاستجابة الواضحة تمنح النزيل الثقة",
+                            "minutes": 5,
+                            "body": "<h2>ثقة وراحة وترحيب</h2><p>كل طلب، سواء كان مناشف إضافية أو تأخير المغادرة أو سيارة أجرة في السادسة صباحًا، هو اختبار صغير للثقة؛ فالنزيل يسلّم حاجته لشخص لا يعرفه ويأمل أن تُنجز. والرسالة الأولى في المادة: <strong>الاستجابة الواضحة تمنح النزيل الثقة</strong>، ومع الثقة تأتي الراحة والشعور بالترحيب.</p><h2>ما الذي تحققه الاستجابة الواضحة</h2><ul><li><strong>يتأكد النزيل أننا فهمنا طلبه،</strong> فلا يتساءل هل وصلت رسالته.</li><li><strong>يشعر بأن الموظف مهتم ومستعد للخدمة،</strong> فالرد الواضح الواثق يدل على الرغبة لا التردد.</li><li><strong>يقل احتمال سوء الفهم أو تكرار الطلب،</strong> فالنزيل الذي يطلب مرتين يشعر بالتجاهل.</li><li><strong>تُدار التوقعات بوقت واضح وواقعي،</strong> فيعرف النزيل متى ينتظر الخدمة.</li><li><strong>يصبح تنفيذ الخدمة أكثر دقة وسلاسة،</strong> لأن كل من يشارك يعرف المطلوب تمامًا.</li></ul><blockquote class=\"bk-quote\">أكّد فهمك بوضوح — لا تفترض أن النزيل يعرف مستوى لغتك.</blockquote><p>فمستويات اللغة تختلف، وما يبدو واضحًا لك قد لا يكون واضحًا للنزيل.</p><h2>خمس خطوات تحول الطلب إلى خدمة مكتملة</h2><ol><li><strong>استمع</strong> دون مقاطعة.</li><li><strong>أكّد</strong> وأعد الطلب بدقة.</li><li><strong>التزم</strong> وحدد الوقت الواقعي.</li><li><strong>نفّذ</strong> كما تم الاتفاق.</li><li><strong>تابع</strong> وأكّد رضا النزيل.</li></ol><p>كل خطوة تحمي التي تليها؛ فالاستماع الكامل يعطيك المعلومة الصحيحة لتؤكدها، والتأكيد يعطيك الطلب الصحيح لتلتزم به، والالتزام الواقعي يجعل التنفيذ في الوقت ممكنًا، والمتابعة تخبرك هل النزيل راضٍ فعلًا.</p><blockquote class=\"bk-quote\">لا ينتهي الطلب عند التسليم — ينتهي عندما يتأكد رضا النزيل.</blockquote><p>هذه أهم فكرة في الدورة؛ فتسليم المكواة أو إرسال الفني ليس نهاية العمل، بل ينتهي العمل عندما تعرف أن النزيل حصل على ما يحتاجه.</p><aside class=\"bk-scene\"><strong>موقف:</strong> اتصل نزيل بالاستقبال يطلب سرير أطفال. استمعت الموظفة وأكدت: \"سرير أطفال للغرفة 512\"، والتزمت بوقت: \"خلال عشرين دقيقة\"، وأحالت الطلب إلى التدبير الفندقي. وبعد خمس وعشرين دقيقة اتصلت بالغرفة: \"أردت التأكد من وصول السرير وتجهيزه كما تحتاجون.\" شكرها النزيل؛ فقد وصل لكنهم احتاجوا بطانية إضافية، فرتبتها لهم.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> الاستجابة الواضحة تبني الثقة. استمع، أكّد، التزم، نفّذ، تابع، ولا تتوقف عند التسليم.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الاستجابة الواضحة تمنح الثقة",
+                                "questions": [
+                                    {
+                                        "question": "سلّم التدبير الفندقي الوسائد الإضافية التي طلبها النزيل. هل اكتمل الطلب بحسب المادة؟",
+                                        "options": [
+                                            "نعم، التسليم يكمله",
+                                            "فقط إذا اتصل النزيل مرة أخرى",
+                                            "لا، ينتهي عندما يتأكد رضا النزيل",
+                                            "فقط بعد المغادرة"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة إن الطلب ينتهي عندما يتأكد رضا النزيل لا عند التسليم."
+                                    },
+                                    {
+                                        "question": "أي خطوة تأتي مباشرة بعد \"أكّد\" في الخطوات الخمس؟",
+                                        "options": [
+                                            "التزم: حدد الوقت الواقعي",
+                                            "نفّذ",
+                                            "تابع",
+                                            "استمع"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "الخطوات: استمع، أكّد، التزم، نفّذ، تابع."
+                                    },
+                                    {
+                                        "question": "اضطر نزيل إلى تكرار الطلب نفسه ثلاث مرات لموظفين مختلفين. أي فائدة للاستجابة الواضحة غابت؟",
+                                        "options": [
+                                            "سعر غرفة أقل",
+                                            "مغادرة أسرع",
+                                            "محادثة أطول",
+                                            "تقليل احتمال سوء الفهم أو تكرار الطلب"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "الاستجابة الواضحة تقلل احتمال سوء الفهم أو تكرار الطلب."
+                                    },
+                                    {
+                                        "question": "كيف يساعد تحديد وقت واضح وواقعي؟",
+                                        "options": [
+                                            "يسمح لك بتأجيل المهمة",
+                                            "يدير توقعات النزيل",
+                                            "يغني عن المتابعة",
+                                            "يُظهر أن الفندق مشغول"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تُدار التوقعات بوقت واضح وواقعي."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "استمع وأكّد واطلب التوضيح",
+                            "minutes": 6,
+                            "body": "<h2>استمع دون مقاطعة ثم أكّد ما فهمته</h2><p>الخطوتان الأوليان تحددان هل سيكون كل ما بعدهما صحيحًا. وتصف المادة كيف تُظهر اهتمامك، وتقدم أربع عبارات مفيدة.</p><h3>أظهر اهتمامك</h3><ul><li>واجه النزيل وركّز معه.</li><li>استمع حتى ينتهي من شرح الطلب.</li><li>أومئ بصورة طبيعية لإظهار الفهم.</li><li>دوّن الملاحظات عند الحاجة.</li><li>أعد الطلب بكلمات واضحة.</li><li>اطلب تأكيد التفاصيل المهمة.</li></ul><h3>عبارات مفيدة</h3><table class=\"bk-say\"><thead><tr><th>الموقف</th><th>قل</th></tr></thead><tbody><tr><td>إعادة الطلب</td><td>\"للتأكيد، طلبك هو... صحيح؟\"</td></tr><tr><td>قبول الطلب</td><td>\"بالتأكيد، سأقوم بترتيب ذلك.\"</td></tr><tr><td>التحقق من الوقت</td><td>\"هل تفضل الخدمة الآن أم في وقت محدد؟\"</td></tr><tr><td>التحقق من التفاصيل</td><td>\"اسمح لي أن أتأكد من التفاصيل.\"</td></tr></tbody></table><p>إعادة الطلب ليست إجراءً شكليًا؛ إنها اللحظة التي يُكتشف فيها رقم غرفة خاطئ أو وقت خاطئ أو تفصيل ناقص قبل أن يذهب أحد إلى الغرفة الخطأ.</p><h2>إذا لم تفهم، اطلب التوضيح ولا تتظاهر بالفهم</h2><p>أحيانًا لا تفهم رغم انتباهك؛ فاللهجة قوية، أو الخط ضعيف، أو الطلب متعدد الأجزاء. والمادة واضحة: <strong>اطلب التوضيح ولا تتظاهر بالفهم.</strong></p><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنّب</th></tr></thead><tbody><tr><td>اعتذر بلطف واطلب إعادة الطلب</td><td>التظاهر بفهم الطلب</td></tr><tr><td>اطلب التوضيح في النقطة غير الواضحة</td><td>الاكتفاء بهز الرأس</td></tr><tr><td>أعد ما فهمته للتأكيد</td><td>قول نعم دون معرفة المطلوب</td></tr><tr><td>اطلب مساعدة زميل أو مشرف عند الحاجة</td><td>تنفيذ تخمين قد يكون خاطئًا</td></tr><tr><td>أخبر النزيل بما ستقوم به قبل أن تبتعد</td><td>ترك النزيل دون شرح أو متابعة</td></tr></tbody></table><blockquote class=\"bk-quote\">\"أعتذر، هل يمكنك تكرار الطلب من فضلك؟\"</blockquote><p>قد تشعر بالحرج من السؤال مرة أخرى، لكن النزلاء يفضلونه دائمًا تقريبًا على نتيجة خاطئة. فالتظاهر أو هز الرأس أو التخمين يوفر ثواني قليلة ويكلف أكثر بكثير عندما يصل الشيء الخطأ.</p><aside class=\"bk-scene\"><strong>موقف:</strong> اتصل نزيل من غرفته وطلب بسرعة \"المحوّل وشيئًا متأخرًا\". قال الموظف: \"أعتذر، هل يمكنك تكرار الطلب من فضلك؟\" فأوضح النزيل: محوّل قابس بريطاني وتأخير المغادرة. فأعاد الموظف: \"للتأكيد، طلبك محوّل بريطاني الآن وتأخير المغادرة غدًا، صحيح؟\" ثم راجع تأخير المغادرة مع مشرفه، وأخبر النزيل: \"سأحضر المحوّل الآن وأعاود الاتصال بك بشأن موعد المغادرة.\"</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> اسأل عن النقطة غير الواضحة فقط؛ فسؤال \"أي وقت ذكرت؟\" أسهل على النزيل من إعادة الطلب كاملًا.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> استمع حتى النهاية، وأعد الطلب بوضوح، وإذا لم يتضح شيء فاسأل، ولا تكتفِ بهز الرأس والتخمين.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: استمع وأكّد واطلب التوضيح",
+                                "questions": [
+                                    {
+                                        "question": "على خط هاتف مشوش لم تسمع إلا نصف طلب النزيل. ماذا تفعل؟",
+                                        "options": [
+                                            "تقول نعم وتفكر فيه لاحقًا",
+                                            "تهز رأسك وتأمل الأفضل",
+                                            "تعتذر بلطف وتطلب منه إعادة الطلب",
+                                            "ترسل الشيء الأكثر طلبًا"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: اعتذر بلطف واطلب إعادة الطلب ولا تتظاهر بالفهم."
+                                    },
+                                    {
+                                        "question": "أي عبارة تؤكد الطلب قبل التنفيذ بأفضل صورة؟",
+                                        "options": [
+                                            "\"للتأكيد، طلبك هو... صحيح؟\"",
+                                            "\"طيب، ماشي.\"",
+                                            "\"لا مشكلة.\"",
+                                            "\"هذه ليست مسؤوليتي.\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "هذه عبارة التأكيد في المادة لإعادة الطلب."
+                                    },
+                                    {
+                                        "question": "فهمت الطلب لكنك لا تستطيع تنفيذه وحدك. ماذا تقول قائمة \"افعل\"؟",
+                                        "options": [
+                                            "نفّذ أفضل تخمين لديك",
+                                            "ابتعد دون شرح",
+                                            "أخبر النزيل أن ذلك مستحيل",
+                                            "اطلب مساعدة زميل أو مشرف وأخبر النزيل بما ستقوم به"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "اطلب مساعدة زميل أو مشرف عند الحاجة، وأخبر النزيل بما ستقوم به قبل أن تبتعد."
+                                    },
+                                    {
+                                        "question": "طلب نزيل خدمة الغرف دون أن يحدد الوقت. أي عبارة تناسب؟",
+                                        "options": [
+                                            "\"سيصل عندما يجهز المطبخ.\"",
+                                            "\"هل تفضل الخدمة الآن أم في وقت محدد؟\"",
+                                            "\"الجميع يطلبون الآن.\"",
+                                            "\"سأختار لك وقتًا.\""
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تذكر المادة هذه العبارة للتحقق من الوقت المفضل."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "التزامات يمكنك الوفاء بها",
+                    "lessons": [
+                        {
+                            "title": "وعود واقعية ولغة مهنية",
+                            "minutes": 7,
+                            "body": "<h2>لا تعد إلا بما يمكنك تنفيذه وفي الوقت المحدد</h2><p>الخطوة الثالثة، التزم، هي التي تتعثر فيها طلبات كثيرة؛ فالموظف يريد إرضاء النزيل فيقول \"خمس دقائق\" والجواب الحقيقي ثلاثون، فيخطط النزيل على خمس دقائق، وتتحول الخدمة الجيدة إلى وعد مكسور. والقاعدة في المادة بسيطة: <strong>لا تعد إلا بما يمكنك تنفيذه وفي الوقت المحدد.</strong></p><h3>قبل أن تَعِد</h3><ul><li>تحقق من إمكانية تنفيذ الطلب.</li><li>حدد وقتًا واقعيًا ودقيقًا.</li><li>اذكر أي تكلفة أو شرط بوضوح.</li><li>سجّل الطلب والموعد المتفق عليه.</li><li>تأكد من وصوله إلى القسم المسؤول.</li></ul><h3>إذا تغيّر الاتفاق</h3><ul><li>أبلغ النزيل قبل الموعد.</li><li>اعتذر بصدق ودون أعذار طويلة.</li><li>قدّم وقتًا جديدًا أو بديلًا مناسبًا.</li><li>تابع حتى تنفيذ الحل.</li><li>لا تترك النزيل يكتشف التأخير بنفسه.</li></ul><blockquote class=\"bk-quote\">قلّل الوعد فقط عند الضرورة — ونفّذ دائمًا كما تم الاتفاق.</blockquote><p>التأخير يحدث: مصعد معطل، أو غسيل متأخر، أو طلب عالق. والنزيل يتقبل تأخيرًا يعرفه مسبقًا، أما ما يهز الثقة فهو الانتظار بعد الموعد، ثم الاتصال بالاستقبال واكتشاف أن أحدًا لم يخبره.</p><h2>استخدم لغة تؤكد الفهم والالتزام</h2><table class=\"bk-say\"><thead><tr><th>قل</th><th>تجنّب</th></tr></thead><tbody><tr><td>\"بكل سرور، سأرتب ذلك.\"</td><td>\"ماشي\" / \"طيب\"</td></tr><tr><td>\"للتأكيد، طلبك هو...\"</td><td>\"أوكي\" / \"نعم\"</td></tr><tr><td>\"سيكون الطلب جاهزًا خلال...\"</td><td>\"لا مشكلة\"</td></tr><tr><td>\"سأتابع الطلب وأبلغك.\"</td><td>\"أكيد\" دون تحقق</td></tr><tr><td>\"هل هناك أي شيء آخر؟\"</td><td>\"هذه ليست مسؤوليتي\"</td></tr></tbody></table><p>كل عبارة في العمود الأول تؤدي وظيفة: تُظهر الرغبة، وتؤكد الطلب، وتحدد الوقت، وتعد بالمتابعة، وتفتح الباب لاحتياجات أخرى. أما عبارات العمود الثاني فمبهمة أو عامية، والأخيرة تُبعد النزيل. وحتى عندما يخص الطلب قسمًا آخر، يجب أن يسمع النزيل أنك ستتأكد من وصوله إلى الشخص المناسب.</p><aside class=\"bk-scene\"><strong>موقف:</strong> طلب نزيل كيّ بدلته قبل اجتماع في التاسعة. راجعت الموظفة المغسلة التي تستطيع إعادتها في الثامنة والنصف، فقالت للنزيل: \"بكل سرور، سأرتب ذلك. ستكون البدلة جاهزة في الثامنة والنصف، وهناك رسوم كيّ حسب قائمة المغسلة.\" وفي الثامنة وعشر دقائق أبلغتها المغسلة بتأخير، فاتصلت بالنزيل فورًا واعتذرت باختصار، وعرضت إحضار البدلة في الثامنة وأربعين دقيقة أو إرسال مكواة إلى الغرفة الآن. اختار النزيل المكواة، وتأكدت لاحقًا من وصولها.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> سجّل دائمًا الوقت المتفق عليه مع الطلب، ليعرف أي زميل يتسلمه الالتزامَ المقدَّم.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> تحقق قبل أن تعد، واذكر الوقت وأي تكلفة بوضوح، وأبلغ النزيل قبل التأخير، واستخدم لغة تلتزم.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الوعود الواقعية",
+                                "questions": [
+                                    {
+                                        "question": "وعدت النزيل بطلبه في السابعة، وفي السابعة إلا ربعًا علمت أنه سيتأخر. ماذا تفعل؟",
+                                        "options": [
+                                            "تنتظر لترى هل سيلاحظ النزيل",
+                                            "تبلغ النزيل قبل الموعد وتعتذر بصدق وتقدم وقتًا جديدًا أو بديلًا",
+                                            "تشرح بالتفصيل ما حدث في المطبخ",
+                                            "تطلب من زميل الرد عندما يشتكي النزيل"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "إذا تغيّر الاتفاق: أبلغ النزيل قبل الموعد، واعتذر دون أعذار طويلة، وقدّم وقتًا جديدًا أو بديلًا."
+                                    },
+                                    {
+                                        "question": "طلب نزيل خدمة لها رسوم. متى تذكرها؟",
+                                        "options": [
+                                            "فقط إذا سأل النزيل",
+                                            "في الفاتورة النهائية",
+                                            "أبدًا، فقد تزعجه",
+                                            "بوضوح قبل أن تعد"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "قبل أن تعد: اذكر أي تكلفة أو شرط بوضوح."
+                                    },
+                                    {
+                                        "question": "أي رد يجب تجنبه عندما يخص طلب النزيل قسمًا آخر؟",
+                                        "options": [
+                                            "\"هذه ليست مسؤوليتي.\"",
+                                            "\"سأتابع الطلب وأبلغك.\"",
+                                            "\"بكل سرور، سأرتب ذلك.\"",
+                                            "\"هل هناك أي شيء آخر؟\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "عبارة \"هذه ليست مسؤوليتي\" في قائمة التجنب."
+                                    },
+                                    {
+                                        "question": "قبل الالتزام بموعد سيارة إلى المطار، ما الذي تتحقق منه أولًا؟",
+                                        "options": [
+                                            "مستوى ولاء النزيل",
+                                            "هل سيعطي النزيل إكرامية",
+                                            "إمكانية تنفيذ الطلب فعلًا",
+                                            "هل هناك زميل متفرغ للحديث"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "أول بند قبل الوعد: تحقق من إمكانية تنفيذ الطلب."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "تلبية توقعات النزيل",
+                    "lessons": [
+                        {
+                            "title": "ما الذي يتوقعه النزيل",
+                            "minutes": 5,
+                            "body": "<h2>النزيل يتوقع الدقة والالتزام والمتابعة</h2><p>تجمع المادة الدورة في خمسة أمور يتوقعها كل نزيل عندما يقدم طلبًا، وكل منها يقابل خطوة من خطوات الخدمة.</p><table class=\"bk-say\"><thead><tr><th>التوقع</th><th>معناه</th></tr></thead><tbody><tr><td>١. استماع كامل</td><td>دون مقاطعة أو افتراض.</td></tr><tr><td>٢. تأكيد دقيق</td><td>إعادة الطلب والتفاصيل.</td></tr><tr><td>٣. وقت واضح</td><td>إبلاغه بأي تأخير مسبقًا.</td></tr><tr><td>٤. تنفيذ مطابق</td><td>أو تقديم بديل مناسب.</td></tr><tr><td>٥. تأكيد الرضا</td><td>سؤال النزيل بعد الإنجاز.</td></tr></tbody></table><h3>١. استماع كامل</h3><p>يتوقع النزيل أن تسمع طلبه كاملًا لا نصفه الأول؛ فالمقاطعة أو افتراض أنك تعرف ما يريد تكسر هذا التوقع قبل أن تبدأ الخدمة.</p><h3>٢. تأكيد دقيق</h3><p>يتوقع أن تعيد الطلب وتفاصيله: الصنف والكمية والغرفة والوقت، وهذه فرصته لتصحيحك.</p><h3>٣. وقت واضح</h3><p>يتوقع أن يعرف متى ستتم الخدمة، وأن يُبلَّغ مسبقًا إذا تأخرت؛ فالصمت هو ما يحوّل التأخير إلى شكوى.</p><h3>٤. تنفيذ مطابق</h3><p>يتوقع أن يحصل على ما تم الاتفاق عليه بالضبط، وإن تعذّر ذلك فيتوقع أن يُعرض عليه بديل مناسب، لا نتيجة مختلفة دون تفسير.</p><h3>٥. تأكيد الرضا</h3><p>يتوقع أن يتحقق أحد؛ فاتصال أو سؤال قصير بعد الإنجاز، مثل: \"هل أصلح الفني المكيف بما يرضيك؟\"، يغلق الطلب كما يجب.</p><h2>الدورة كلها في سطرين</h2><p>تعيد الشريحة الختامية الخطوات: <strong>استمع، أكّد، التزم، نفّذ، تابع رضا النزيل</strong>، وتضيف تحذيرين: <strong>لا تفترض الفهم</strong>، و<strong>لا تقدم وعدًا غير واقعي.</strong></p><blockquote class=\"bk-quote\">الطلب الناجح هو طلب نُفّذ كما تم الاتفاق عليه.</blockquote><aside class=\"bk-scene\"><strong>موقف:</strong> طلب نزيل من الكونسيرج طاولة لأربعة أشخاص في مطعم قريب الساعة الثامنة مساءً. استمع الموظف كاملًا وأكد: \"أربعة أشخاص، الليلة الساعة الثامنة\"، ووعد بمعاودة الاتصال خلال ربع ساعة. لم يتوفر لدى المطعم إلا الثامنة والنصف، فاتصل بالنزيل خلال الربع ساعة وعرض الثامنة والنصف أو مطعمًا آخر في الثامنة، فاختار النزيل الثامنة والنصف. وفي الصباح التالي سأله عن العشاء. تحققت التوقعات الخمسة رغم أن الموعد الأصلي لم يكن متاحًا.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> إنهاء المكالمة بسؤال \"هل هناك أي شيء آخر؟\" بعد تأكيد الرضا يكشف كثيرًا حاجة ثانية قبل أن يضطر النزيل للاتصال مجددًا.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> لبِّ التوقعات الخمسة: استماع كامل، وتأكيد دقيق، ووقت واضح، وتنفيذ مطابق، وتأكيد الرضا.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: ما الذي يتوقعه النزيل",
+                                "questions": [
+                                    {
+                                        "question": "الصنف الذي طلبه النزيل غير متوفر. أي توقع يوجّهك؟",
+                                        "options": [
+                                            "استماع كامل",
+                                            "تنفيذ مطابق أو تقديم بديل مناسب",
+                                            "وقت واضح فقط",
+                                            "تأكيد الرضا فقط"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "التنفيذ المطابق يشمل تقديم بديل مناسب."
+                                    },
+                                    {
+                                        "question": "ما معنى \"تأكيد الرضا\" عمليًا؟",
+                                        "options": [
+                                            "انتظار شكوى النزيل",
+                                            "مراجعة تقييمه بعد المغادرة",
+                                            "تسليم الصنف بسرعة",
+                                            "سؤال النزيل بعد الإنجاز"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تعرّفه المادة بسؤال النزيل بعد الإنجاز."
+                                    },
+                                    {
+                                        "question": "ما التحذيران في الشريحة الختامية؟",
+                                        "options": [
+                                            "لا تفترض الفهم، ولا تقدم وعدًا غير واقعي",
+                                            "لا تبتسم، ولا تستخدم الأسماء",
+                                            "لا تدوّن، ولا تعاود الاتصال",
+                                            "لا تُشرك المشرفين، ولا تعرض بدائل"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تقول الشريحة الختامية: لا تفترض الفهم، ولا تقدم وعدًا غير واقعي."
+                                    },
+                                    {
+                                        "question": "سيتأخر التسليم عشرين دقيقة. أي توقع يلزمك بإبلاغ النزيل مسبقًا؟",
+                                        "options": [
+                                            "استماع كامل",
+                                            "تأكيد دقيق",
+                                            "وقت واضح",
+                                            "تأكيد الرضا"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "الوقت الواضح يعني إبلاغ النزيل بأي تأخير مسبقًا."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

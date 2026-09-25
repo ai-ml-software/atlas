@@ -1,0 +1,545 @@
+{
+    "slug": "building-self-confidence",
+    "category": "professional-wellbeing",
+    "level": "foundation",
+    "source_pdf": "Building-Self-Confidence-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/building-self-confidence.webp",
+    "videos": [
+        {
+            "id": "w-HYZv6HzAs",
+            "title": "The skill of self confidence | Dr. Ivan Joseph | TEDxRyersonU",
+            "channel": "TEDx Talks",
+            "why": "A coach explains that confidence is a skill built through repetition, persistence and positive self-talk, which matches the deck's message that confidence grows with practice, step by step."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Building Self-Confidence",
+            "subtitle": "Learn, practise and grow step by step",
+            "short_description": "Understand how confidence grows through practice, notice what weakens it, and use simple steps and supportive words to act calmly and professionally at work.",
+            "description": "<p>Confidence does not mean knowing everything. It means being ready to learn, to act calmly and to improve. This course, built from the Dyafa Hotels &amp; Resorts training deck, helps hotel colleagues build that kind of confidence one step at a time.</p><p>You will learn why confidence is built through practice, how to notice what weakens it in your body, your thoughts and your behaviour, and how to use five simple steps and four supportive phrases. You will also learn how to show confidence professionally, what to do when a situation feels difficult and when to ask for support if your confidence drops.</p>",
+            "requirements": "No prior training is needed; the course suits every colleague, especially those who are new to a role or a task.",
+            "outcomes": [
+                "Explain why confidence is built through practice, not perfection",
+                "Notice signs in your body, thoughts and behaviour that weaken your confidence",
+                "Apply five steps to prepare for and grow in a new task",
+                "Use supportive words and show confidence calmly and professionally",
+                "Handle difficult moments with Pause, Think, Speak, Get support and know when to ask for help"
+            ],
+            "faqs": [
+                {
+                    "question": "Do I need to feel confident before I start a new task?",
+                    "answer": "No. The deck says do not wait to feel fully confident: start, practise, and confidence will grow with practice."
+                },
+                {
+                    "question": "Is asking for help a sign of weak confidence?",
+                    "answer": "No. Pausing and asking for support is a sign of awareness, not weakness. Admitting you do not know an answer and asking for clarification are part of professional confidence."
+                },
+                {
+                    "question": "When should I ask for more support?",
+                    "answer": "When fear continues for a long time, you keep avoiding tasks, it affects your work or daily life, there is bullying or mistreatment from others, or you need additional training or guidance."
+                }
+            ],
+            "meta_title": "Building Self-Confidence for Hotel Staff",
+            "meta_description": "Hotel staff training on self-confidence: practice over perfection, spotting what weakens confidence, five steps, supportive words and handling difficult moments.",
+            "focus_keyword": "building self-confidence at work",
+            "chapters": [
+                {
+                    "title": "Understanding Confidence",
+                    "lessons": [
+                        {
+                            "title": "Confidence Grows with Practice",
+                            "minutes": 5,
+                            "body": "<h2>Do not wait for perfection</h2><p>Think about the first time you checked in a guest, carried a tray of drinks or answered the phone in a second language. It probably felt awkward. Now, many of those tasks feel natural. Nothing magical happened in between; you practised. The deck's message is simple: <strong>confidence is built through practice</strong>, and you should <strong>not wait for perfection</strong> before you begin.</p><h2>Five things to remember</h2><ul><li><strong>Every skill starts with a first attempt.</strong> The most experienced colleague in your department once did your job for the first time too.</li><li><strong>Preparation reduces fear and hesitation.</strong> When you know the steps before you start, there is less to worry about.</li><li><strong>Mistakes help you learn.</strong> A mistake shows you exactly what to do differently next time.</li><li><strong>Repetition makes the task easier.</strong> The tenth time is always easier than the first.</li><li><strong>Asking for guidance increases your experience.</strong> Every question you ask adds to what you know.</li></ul><blockquote class=\"bk-quote\">Confidence does not mean knowing everything. It means being ready to learn, act calmly and improve.</blockquote><h2>What confidence really looks like</h2><p>Many people imagine a confident person as someone who always has the answer, never hesitates and speaks loudly. In a hotel, that picture is misleading. A truly confident colleague is someone who can say, \"I am not sure, let me check that for you,\" without feeling embarrassed; who tries a new task even though they might not do it perfectly; and who stays calm when something goes wrong.</p><p>This kind of confidence is available to everyone, because it does not depend on talent or personality. It depends on small actions, repeated over time.</p><h2>The approach in one line</h2><p>The deck summarises the path in five words: <strong>Prepare, Try, Learn, Speak, Grow</strong>. Prepare for the task, try it, learn from what happens, speak to yourself and others in a supportive way, and grow step by step. The rest of this course builds on this path.</p><aside class=\"bk-scene\"><strong>Scene:</strong> Noura has just moved from reservations to the front desk. On her first late shift, a guest asks her to split a bill between two cards, something she has never done. She feels her face go warm. Instead of guessing, she says, \"Of course, one moment please,\" and asks the shift leader to guide her through it. The next week she does it alone. A month later, she is showing a new colleague how.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Keep a short list of tasks you could not do three months ago and can do now. It is a reminder that practice works.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Do not wait for perfection. Confidence comes from preparing, trying, learning from mistakes and repeating.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Confidence grows with practice",
+                                "questions": [
+                                    {
+                                        "question": "A new colleague says, \"I will volunteer for VIP arrivals once I feel totally confident.\" What does the deck suggest?",
+                                        "options": [
+                                            "Wait until they feel perfect",
+                                            "Only experienced staff should handle VIPs",
+                                            "Confidence comes from never making mistakes",
+                                            "Do not wait for perfection; every skill starts with a first attempt"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says do not wait for perfection and that every skill starts with a first attempt."
+                                    },
+                                    {
+                                        "question": "According to the deck, what does confidence mean?",
+                                        "options": [
+                                            "Being ready to learn, act calmly and improve",
+                                            "Knowing everything about your job",
+                                            "Speaking louder than others",
+                                            "Never asking for help"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Confidence does not mean knowing everything; it means being ready to learn, act calmly and improve."
+                                    },
+                                    {
+                                        "question": "You feel nervous before running your first team briefing. What reduces that fear most directly?",
+                                        "options": [
+                                            "Avoiding the briefing",
+                                            "Improvising on the day",
+                                            "Preparing the steps before you start",
+                                            "Asking someone else to do it every time"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says preparation reduces fear and hesitation."
+                                    },
+                                    {
+                                        "question": "You made a mistake entering a guest's booking dates. How does the deck ask you to see it?",
+                                        "options": [
+                                            "As proof you are not suited to the job",
+                                            "As something that helps you learn",
+                                            "As something to hide",
+                                            "As a reason to avoid bookings"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "One of the five reminders is that mistakes help you learn."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Notice What Weakens Your Confidence",
+                            "minutes": 5,
+                            "body": "<h2>Three places to look</h2><p>Before you can build confidence, it helps to notice what is weakening it. The deck asks you to look in three places: <strong>your body, your thoughts and your behaviour</strong>. Low confidence usually shows in all three, and each one affects the others.</p><h3>1. In your body</h3><ul><li><strong>A low or hesitant voice.</strong> The guest has to ask you to repeat yourself, which can make you feel even less sure.</li><li><strong>Avoiding looking at others.</strong> Looking at the desk or the screen instead of the guest can seem unfriendly, even when you are simply nervous.</li><li><strong>Clear tension in your movements.</strong> Stiff shoulders, fidgeting hands or rushed steps show others that you are uncomfortable.</li></ul><h3>2. In your thoughts</h3><ul><li><strong>\"I can't do it.\"</strong> The thought appears before you have even tried.</li><li><strong>\"I am afraid of making any mistake.\"</strong> Fear of error stops you from acting at all.</li><li><strong>\"I compare myself with others.\"</strong> You measure your first month against a colleague's fifth year.</li></ul><h3>3. In your behaviour</h3><ul><li><strong>Avoiding new tasks.</strong> You let others take anything unfamiliar.</li><li><strong>Not asking when you do not understand.</strong> You stay quiet to avoid looking unsure, and then guess.</li><li><strong>Giving up after the first attempt.</strong> One difficult experience becomes the reason never to try again.</li></ul><table class=\"bk-say\"><thead><tr><th>Area</th><th>Signs to notice</th></tr></thead><tbody><tr><td>Body</td><td>Low or hesitant voice, avoiding eye contact, tension in movement</td></tr><tr><td>Thoughts</td><td>\"I can't\", fear of any mistake, comparing yourself with others</td></tr><tr><td>Behaviour</td><td>Avoiding new tasks, not asking, giving up after the first try</td></tr></tbody></table><blockquote class=\"bk-quote\">Notice the negative thought, then replace it with a small step you can take.</blockquote><h2>From noticing to acting</h2><p>Noticing is not about criticising yourself. It is about catching the moment so you can choose a different response. When you hear yourself think \"I can't do this,\" do not argue with the whole thought. Simply ask: what is one small step I can take right now? Perhaps it is reading the procedure again, asking one question or trying the first part of the task. A small step you can carry out is more powerful than a big promise you cannot keep.</p><aside class=\"bk-scene\"><strong>Scene:</strong> Khalid, a new concierge colleague, is asked to recommend restaurants to a guest in English. He notices his voice dropping and his eyes moving to the screen, and the thought \"my English is not good enough\" appears. He takes a breath, looks up, and chooses one small step: he opens the hotel's recommendation list and reads two options clearly. The guest thanks him and books one. The next time, his voice is steadier.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Comparing yourself with others is unfair to you. Compare yourself with who you were last month instead.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Watch your body, thoughts and behaviour for signs of low confidence, and answer each negative thought with one small, doable step.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: What weakens confidence",
+                                "questions": [
+                                    {
+                                        "question": "You notice that you always let colleagues handle any unfamiliar request. Which area is this sign in?",
+                                        "options": [
+                                            "Body",
+                                            "Thoughts",
+                                            "Behaviour",
+                                            "It is not a sign of low confidence"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Avoiding new tasks is listed under behaviour."
+                                    },
+                                    {
+                                        "question": "Which of these is a body sign of low confidence in the deck?",
+                                        "options": [
+                                            "A low or hesitant voice",
+                                            "Asking a question when unsure",
+                                            "Preparing before a task",
+                                            "Standing comfortably"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck lists a low or hesitant voice under body."
+                                    },
+                                    {
+                                        "question": "The thought \"I can't do it\" appears before a new task. What does the deck recommend?",
+                                        "options": [
+                                            "Ignore the task until the thought goes away",
+                                            "Tell your supervisor you are not suited to the task",
+                                            "Compare yourself with a more experienced colleague",
+                                            "Notice the thought and replace it with a small step you can take"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says notice the negative thought, then replace it with a small step you can carry out."
+                                    },
+                                    {
+                                        "question": "A colleague did not understand an instruction but stayed quiet and guessed. Which sign of low confidence is this?",
+                                        "options": [
+                                            "Tension in movement",
+                                            "Not asking when you do not understand",
+                                            "Comparing yourself with others",
+                                            "Giving up after the first attempt"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Not asking when you do not understand is a behaviour sign in the deck."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Building Confidence Step by Step",
+                    "lessons": [
+                        {
+                            "title": "Five Steps and Words That Support You",
+                            "minutes": 6,
+                            "body": "<h2>Build your confidence in five steps</h2><p>The deck's first step is to <strong>prepare for the task</strong>: know what is required and get ready what you need. From there, confidence is built through a simple sequence you can use for any new task, whether it is a new system at the front desk, a new dish to present or a new procedure in housekeeping.</p><ol><li><strong>Learn the steps before you start.</strong> Read the procedure, watch a colleague or ask for a quick explanation.</li><li><strong>Start with a small and clear task.</strong> Do not begin with the hardest case. Choose a simple version so you can succeed early.</li><li><strong>Practise and repeat the task.</strong> Each repetition makes it more familiar and less stressful.</li><li><strong>Learn from mistakes without punishing yourself.</strong> Ask what went wrong and what to do differently, then move on.</li><li><strong>Ask for feedback that helps you improve.</strong> A colleague or supervisor can see things you cannot.</li></ol><blockquote class=\"bk-quote\">Do not wait to feel fully confident. Start, practise, and confidence will grow with practice.</blockquote><p>Notice that feeling confident comes at the end of this list, not the beginning. Many people wait for the feeling before they act. The deck reverses that order: act first, in small steps, and the feeling follows.</p><h2>Words that support your progress</h2><p>The way you talk to yourself shapes how you act. The deck gives four short phrases to replace self-doubt:</p><table class=\"bk-say\"><thead><tr><th>Phrase</th><th>What it means</th></tr></thead><tbody><tr><td><strong>\"I can learn\"</strong></td><td>\"I may not know it now, but I can learn.\"</td></tr><tr><td><strong>\"I will start with one step\"</strong></td><td>\"I will start with one clear step.\"</td></tr><tr><td><strong>\"I will ask to understand\"</strong></td><td>\"I will ask until I understand what is required well.\"</td></tr><tr><td><strong>\"I will try again\"</strong></td><td>\"I will learn from the mistake and try again.\"</td></tr></tbody></table><p>These phrases are not about pretending. Each one is true and realistic. \"I can learn\" does not claim you already know; \"I will try again\" accepts that the first try may not work.</p><blockquote class=\"bk-quote\">Speak to yourself as you would encourage someone you respect.</blockquote><p>If a new colleague made a small mistake, you would not tell them they are useless. You would say, \"It is fine, next time you will know.\" Give yourself the same kindness.</p><aside class=\"bk-scene\"><strong>Scene:</strong> Sara, a restaurant hostess, is asked to take over the new table-booking tablet. She learns the steps from the supervisor, then starts by entering walk-in tables during a quiet lunch. She repeats it every shift. Once she books a table for the wrong date, fixes it, and tells herself, \"I will learn from this and try again.\" She asks her supervisor what she could do better. Two weeks later, she runs the evening service bookings calmly.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Choose one of the four phrases and say it silently before your next unfamiliar task.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Prepare, start small, practise, learn from mistakes and ask for feedback, and support yourself with realistic, encouraging words.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Five steps and supportive words",
+                                "questions": [
+                                    {
+                                        "question": "You must learn a new housekeeping checklist. Where should you begin?",
+                                        "options": [
+                                            "With the most difficult suite",
+                                            "Learn the steps, then start with a small and clear task",
+                                            "Skip the explanation and learn by guessing",
+                                            "Wait until you feel fully confident"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says learn the steps before you start and begin with a small, clear task."
+                                    },
+                                    {
+                                        "question": "After a mistake on a new task, what does the deck recommend?",
+                                        "options": [
+                                            "Punish yourself so you remember",
+                                            "Stop doing the task",
+                                            "Learn from the mistake without punishing yourself",
+                                            "Hide it from your supervisor"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The fourth step is learning from mistakes without punishing yourself."
+                                    },
+                                    {
+                                        "question": "You are unsure what a guest's request involves. Which supportive phrase fits best?",
+                                        "options": [
+                                            "\"I will ask to understand\"",
+                                            "\"I already know everything\"",
+                                            "\"I can't do this\"",
+                                            "\"Someone else should do it\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "\"I will ask to understand\" means asking until you understand what is required well."
+                                    },
+                                    {
+                                        "question": "How does the deck suggest you speak to yourself?",
+                                        "options": [
+                                            "Harshly, so you improve faster",
+                                            "Only positively, even when it is not true",
+                                            "Not at all; ignore your thoughts",
+                                            "As you would encourage someone you respect"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says speak to yourself as you would encourage someone you respect."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Confidence in Action",
+                    "lessons": [
+                        {
+                            "title": "Showing Confidence, Difficult Moments and Getting Support",
+                            "minutes": 7,
+                            "body": "<h2>Show your confidence professionally</h2><p>Confidence is visible in how you stand, speak and handle what you do not know. The deck lists five things to do and five to avoid.</p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Stand in a comfortable, balanced way</td><td>Pretending you know everything</td></tr><tr><td>Speak in a clear, calm voice</td><td>Speaking in an aggressive or arrogant tone</td></tr><tr><td>Look at the person respectfully</td><td>Apologising for every word you say</td></tr><tr><td>Admit it if you do not know the answer</td><td>Avoiding a task only because of fear</td></tr><tr><td>Ask for clarification or help</td><td>Hiding a mistake instead of learning from it</td></tr></tbody></table><p>Notice that the avoid list contains both extremes: too little confidence, such as apologising for everything, and false confidence, such as pretending to know everything or sounding arrogant. Real confidence sits between them.</p><blockquote class=\"bk-quote\">Confidence is calm and clarity, not arrogance or a raised voice.</blockquote><h2>When a situation feels difficult</h2><p>An upset guest, an unexpected question from a manager or a task that goes wrong can shake anyone. The deck gives four steps:</p><ol><li><strong>Pause for a moment.</strong> Take a breath and calm down before you reply.</li><li><strong>Organise your thoughts.</strong> Identify what you know and what you need to find out.</li><li><strong>Speak clearly.</strong> Use short words and a calm voice.</li><li><strong>Get support.</strong> Call on your supervisor if the situation goes beyond your experience.</li></ol><blockquote class=\"bk-quote\">Pausing for a moment and asking for support is a sign of awareness, not weakness.</blockquote><h2>When your confidence drops</h2><p>Everyone has periods when confidence is low. The deck suggests starting with these steps:</p><ul><li>Remember a skill you have mastered before.</li><li>Divide the task into small steps.</li><li>Prepare, then carry out the first step.</li><li>Ask for specific feedback after the attempt.</li><li>Record what you learned and what improved.</li></ul><p>Sometimes these steps are not enough, and that is normal. <strong>Ask for support when:</strong></p><ul><li>Fear continues for a long time.</li><li>You keep avoiding tasks.</li><li>It affects your work or your daily life.</li><li>There is bullying or mistreatment from others.</li><li>You need additional training or guidance.</li></ul><p>Speak to your supervisor, your manager or Human Resources. <strong>Asking for training or guidance is a healthy step towards building confidence and progress.</strong></p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest at the front desk asks Ahmed a detailed question about a corporate billing arrangement he has never seen. He feels the urge to guess. Instead he pauses, breathes, and says calmly, \"That is a good question. I want to give you the correct answer, so let me check with my supervisor.\" He knows what he does not know, speaks clearly and gets support. Later, he asks the supervisor to show him the process and writes down what he learned.</aside><h2>Closing thought</h2><p>The deck ends with a message for every colleague: believe in your ability to learn, and build your future step by step. Prepare, try, learn, speak, grow. Confidence grows every time you learn, try and keep going.</p><aside class=\"bk-key\"><strong>Key takeaway:</strong> Show confidence through calm and clarity, use Pause, Think, Speak, Get support in hard moments, and ask for help early when confidence stays low.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Confidence in action",
+                                "questions": [
+                                    {
+                                        "question": "A guest asks a question you cannot answer. What shows professional confidence?",
+                                        "options": [
+                                            "Give an answer anyway so you do not look unsure",
+                                            "Apologise repeatedly for not knowing",
+                                            "Admit you do not know and ask for clarification or help",
+                                            "Change the subject"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck lists admitting you do not know the answer and asking for help as things to do."
+                                    },
+                                    {
+                                        "question": "Which behaviour is on the deck's avoid list?",
+                                        "options": [
+                                            "Speaking in a clear, calm voice",
+                                            "Looking at the person respectfully",
+                                            "Standing in a balanced way",
+                                            "Apologising for every word you say"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Apologising for every word you say is listed under avoid."
+                                    },
+                                    {
+                                        "question": "An angry guest challenges you and you feel your mind go blank. What is the first step?",
+                                        "options": [
+                                            "Pause for a moment and breathe before replying",
+                                            "Reply immediately so there is no silence",
+                                            "Raise your voice to show confidence",
+                                            "Walk away from the desk"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The first step in a difficult situation is to pause, take a breath and calm down before replying."
+                                    },
+                                    {
+                                        "question": "For several weeks, a colleague has avoided tasks because of fear and it is affecting their work. What should they do?",
+                                        "options": [
+                                            "Keep it to themselves and hope it passes",
+                                            "Ask for support or additional training",
+                                            "Resign from the role",
+                                            "Only take tasks they already know"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says ask for support when fear continues, you keep avoiding tasks or it affects your work."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "بناء الثقة بالنفس",
+            "subtitle": "تعلّم، تدرّب، وتقدم خطوة بعد خطوة",
+            "short_description": "افهم كيف تُبنى الثقة بالممارسة، ولاحظ ما يضعفها، واستخدم خطوات بسيطة وكلمات داعمة لتتصرف بهدوء واحترافية في العمل.",
+            "description": "<p>الثقة لا تعني معرفة كل شيء، بل الاستعداد للتعلم والتصرف بهدوء والتحسن. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتساعد الموظفين على بناء هذه الثقة خطوة بعد خطوة.</p><p>ستتعرف على سبب أن الثقة تُبنى بالممارسة، وكيف تلاحظ ما يضعفها في جسمك وأفكارك وتصرفك، وكيف تستخدم خمس خطوات بسيطة وأربع عبارات داعمة. كما ستتعلم كيف تُظهر ثقتك بصورة مهنية، وماذا تفعل عندما تواجه موقفًا صعبًا، ومتى تطلب الدعم إذا انخفضت ثقتك بنفسك.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظف، وخاصة من هو جديد في دور أو مهمة.",
+            "outcomes": [
+                "اشرح لماذا تُبنى الثقة بالممارسة لا بانتظار الكمال",
+                "لاحظ العلامات التي تضعف ثقتك في جسمك وأفكارك وتصرفك",
+                "طبّق خمس خطوات للاستعداد لمهمة جديدة والتقدم فيها",
+                "استخدم كلمات داعمة وأظهر ثقتك بهدوء وبصورة مهنية",
+                "تعامل مع المواقف الصعبة بـ: توقف، رتب أفكارك، تحدث بوضوح، اطلب الدعم، واعرف متى تطلب المساعدة"
+            ],
+            "faqs": [
+                {
+                    "question": "هل يجب أن أشعر بالثقة قبل أن أبدأ مهمة جديدة؟",
+                    "answer": "لا. تقول المادة: لا تنتظر أن تشعر بالثقة كاملة — ابدأ، وستنمو الثقة مع الممارسة."
+                },
+                {
+                    "question": "هل طلب المساعدة علامة على ضعف الثقة؟",
+                    "answer": "لا. التوقف للحظة وطلب الدعم علامة وعي وليسا ضعفًا، والاعتراف بعدم معرفة الإجابة وطلب التوضيح جزء من الثقة المهنية."
+                },
+                {
+                    "question": "متى أطلب دعمًا إضافيًا؟",
+                    "answer": "عند استمرار الخوف مدة طويلة، أو تجنبك المستمر للمهام، أو تأثر عملك أو حياتك اليومية، أو وجود تنمر أو إساءة من الآخرين، أو حاجتك إلى تدريب أو توجيه إضافي."
+                }
+            ],
+            "meta_title": "بناء الثقة بالنفس لموظفي الفنادق",
+            "meta_description": "تدريب فندقي على بناء الثقة بالنفس: الممارسة لا الكمال، وملاحظة ما يضعف الثقة، وخمس خطوات، وكلمات داعمة، والتعامل مع المواقف الصعبة.",
+            "focus_keyword": "بناء الثقة بالنفس في العمل",
+            "chapters": [
+                {
+                    "title": "فهم الثقة بالنفس",
+                    "lessons": [
+                        {
+                            "title": "الثقة تُبنى بالممارسة",
+                            "minutes": 5,
+                            "body": "<h2>لا تنتظر الكمال</h2><p>تذكّر أول مرة سجّلت فيها دخول نزيل، أو حملت صينية مشروبات، أو أجبت على الهاتف بلغة غير لغتك. ربما شعرت بالارتباك، والآن أصبحت كثير من هذه المهام طبيعية. لم يحدث شيء سحري بين المرتين؛ لقد تدربت. ورسالة المادة بسيطة: <strong>الثقة تُبنى بالممارسة</strong>، و<strong>لا تنتظر الكمال</strong> قبل أن تبدأ.</p><h2>تذكّر خمسة أمور</h2><ul><li><strong>كل مهارة تبدأ بمحاولة أولى،</strong> فأكثر زملائك خبرة أدّى عملك يومًا لأول مرة.</li><li><strong>الاستعداد يقلل الخوف والتردد،</strong> فحين تعرف الخطوات قبل البدء يقل ما يقلقك.</li><li><strong>الأخطاء تساعدك على التعلم،</strong> فالخطأ يريك بالضبط ما تفعله بشكل مختلف في المرة القادمة.</li><li><strong>التكرار يجعل المهمة أسهل،</strong> فالمرة العاشرة أسهل دائمًا من الأولى.</li><li><strong>طلب التوجيه يزيد خبرتك،</strong> فكل سؤال تطرحه يضيف إلى معرفتك.</li></ul><blockquote class=\"bk-quote\">الثقة لا تعني معرفة كل شيء — بل الاستعداد للتعلم والتصرف بهدوء.</blockquote><h2>كيف تبدو الثقة حقًا</h2><p>يتخيل كثيرون الشخص الواثق بأنه يملك الإجابة دائمًا ولا يتردد ويتكلم بصوت عالٍ، وهذه الصورة مضللة في الفندق. الموظف الواثق حقًا هو من يستطيع أن يقول: \"لست متأكدًا، دعني أتحقق لك\" دون حرج، ومن يجرب مهمة جديدة وإن لم يؤدها بإتقان، ومن يبقى هادئًا عندما يسوء أمر ما.</p><p>هذه الثقة متاحة للجميع، لأنها لا تعتمد على الموهبة أو الشخصية، بل على أفعال صغيرة تتكرر مع الوقت.</p><h2>المنهج في سطر واحد</h2><p>تلخص المادة الطريق في خمس كلمات: <strong>استعد، جرّب، تعلّم، تحدث، تقدم</strong>. استعد للمهمة، وجرّبها، وتعلّم مما يحدث، وتحدث مع نفسك ومع غيرك بطريقة داعمة، وتقدم خطوة بعد خطوة.</p><aside class=\"bk-scene\"><strong>موقف:</strong> انتقلت نورة حديثًا من الحجوزات إلى الاستقبال. وفي أول مناوبة مسائية طلب منها نزيل تقسيم الفاتورة على بطاقتين، وهو أمر لم تفعله من قبل، فشعرت بحرارة في وجهها. بدل أن تخمّن قالت: \"بكل سرور، لحظة من فضلك\"، وطلبت من قائدة المناوبة أن ترشدها. وفي الأسبوع التالي فعلتها وحدها، وبعد شهر كانت تعلّمها لزميلة جديدة.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> احتفظ بقائمة قصيرة بالمهام التي لم تكن تستطيعها قبل ثلاثة أشهر وتستطيعها الآن؛ فهي تذكير بأن الممارسة تنجح.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> لا تنتظر الكمال؛ الثقة تأتي من الاستعداد والتجربة والتعلم من الأخطاء والتكرار.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الثقة تُبنى بالممارسة",
+                                "questions": [
+                                    {
+                                        "question": "قال زميل جديد: \"سأتطوع لاستقبال كبار الشخصيات عندما أشعر بثقة كاملة\". ماذا تقترح المادة؟",
+                                        "options": [
+                                            "أن ينتظر حتى يصل إلى الكمال",
+                                            "أن كبار الشخصيات للموظفين ذوي الخبرة فقط",
+                                            "أن الثقة تأتي من عدم ارتكاب الأخطاء أبدًا",
+                                            "ألا ينتظر الكمال، فكل مهارة تبدأ بمحاولة أولى"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: لا تنتظر الكمال، وكل مهارة تبدأ بمحاولة أولى."
+                                    },
+                                    {
+                                        "question": "ماذا تعني الثقة وفق المادة؟",
+                                        "options": [
+                                            "الاستعداد للتعلم والتصرف بهدوء والتحسن",
+                                            "معرفة كل شيء عن عملك",
+                                            "التحدث بصوت أعلى من الآخرين",
+                                            "عدم طلب المساعدة أبدًا"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "الثقة لا تعني معرفة كل شيء، بل الاستعداد للتعلم والتصرف بهدوء."
+                                    },
+                                    {
+                                        "question": "تشعر بالتوتر قبل أول اجتماع إحاطة تديره للفريق. ما الذي يقلل هذا الخوف مباشرة؟",
+                                        "options": [
+                                            "أن تتجنب الاجتماع",
+                                            "أن ترتجل في يومه",
+                                            "أن تستعد وتعرف الخطوات قبل أن تبدأ",
+                                            "أن تطلب من غيرك إدارته في كل مرة"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: الاستعداد يقلل الخوف والتردد."
+                                    },
+                                    {
+                                        "question": "أخطأت في إدخال تواريخ حجز نزيل. كيف تطلب منك المادة أن تنظر إلى ذلك؟",
+                                        "options": [
+                                            "دليل على أنك غير مناسب للعمل",
+                                            "أمر يساعدك على التعلم",
+                                            "شيء يجب إخفاؤه",
+                                            "سبب لتجنب الحجوزات"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "من الأمور الخمسة: الأخطاء تساعدك على التعلم."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "لاحظ ما يضعف ثقتك بنفسك",
+                            "minutes": 5,
+                            "body": "<h2>ثلاثة أماكن تنظر فيها</h2><p>قبل أن تبني ثقتك، من المفيد أن تلاحظ ما يضعفها. تطلب منك المادة أن تنظر في ثلاثة أماكن: <strong>في جسمك، وفي أفكارك، وفي تصرفك</strong>. فضعف الثقة يظهر عادة في الثلاثة معًا، وكل منها يؤثر في الآخر.</p><h3>١. في جسمك</h3><ul><li><strong>صوت منخفض أو متردد،</strong> فيطلب منك النزيل أن تعيد كلامك، فتشعر بتردد أكبر.</li><li><strong>تجنب النظر إلى الآخرين،</strong> فالنظر إلى المكتب أو الشاشة بدل النزيل قد يبدو جفاءً وأنت متوتر فقط.</li><li><strong>توتر واضح في الحركة،</strong> ككتفين متصلبين أو يدين قلقتين أو خطوات مستعجلة.</li></ul><h3>٢. في أفكارك</h3><ul><li><strong>\"أقول: لن أستطيع\"،</strong> وتظهر الفكرة قبل أن تحاول أصلًا.</li><li><strong>\"أخاف من ارتكاب أي خطأ\"،</strong> فيمنعك الخوف من التصرف كليًا.</li><li><strong>\"أقارن نفسي بالآخرين\"،</strong> فتقيس شهرك الأول بسنة زميلك الخامسة.</li></ul><h3>٣. في تصرفك</h3><ul><li><strong>أتجنب المهام الجديدة،</strong> وأترك لغيري كل ما هو غير مألوف.</li><li><strong>لا أسأل عندما لا أفهم،</strong> فأصمت حتى لا أبدو مترددًا ثم أخمّن.</li><li><strong>أستسلم بعد المحاولة الأولى،</strong> فتصبح تجربة صعبة واحدة سببًا لعدم المحاولة مجددًا.</li></ul><table class=\"bk-say\"><thead><tr><th>المجال</th><th>علامات تلاحظها</th></tr></thead><tbody><tr><td>في جسمك</td><td>صوت منخفض أو متردد، تجنب النظر، توتر في الحركة</td></tr><tr><td>في أفكارك</td><td>لن أستطيع، الخوف من أي خطأ، المقارنة بالآخرين</td></tr><tr><td>في تصرفك</td><td>تجنب المهام الجديدة، عدم السؤال، الاستسلام بعد المحاولة الأولى</td></tr></tbody></table><blockquote class=\"bk-quote\">لاحظ الفكرة السلبية، ثم استبدلها بخطوة صغيرة تستطيع تنفيذها.</blockquote><h2>من الملاحظة إلى الفعل</h2><p>الملاحظة ليست لوم الذات، بل التقاط اللحظة لتختار استجابة مختلفة. عندما تسمع نفسك تقول \"لن أستطيع\"، لا تجادل الفكرة كلها، بل اسأل: ما الخطوة الصغيرة التي أستطيع فعلها الآن؟ ربما قراءة الإجراء مرة أخرى، أو طرح سؤال واحد، أو تجربة الجزء الأول من المهمة. فالخطوة الصغيرة التي تنفذها أقوى من وعد كبير لا تستطيع الوفاء به.</p><aside class=\"bk-scene\"><strong>موقف:</strong> طُلب من خالد، الموظف الجديد في الكونسيرج، أن يقترح مطاعم على نزيل باللغة الإنجليزية. لاحظ أن صوته ينخفض وعينيه تتجهان إلى الشاشة، وظهرت فكرة \"لغتي ليست جيدة بما يكفي\". أخذ نفسًا، ورفع نظره، واختار خطوة صغيرة: فتح قائمة الترشيحات المعتمدة في الفندق وقرأ خيارين بوضوح. شكره النزيل وحجز أحدهما، وفي المرة التالية كان صوته أثبت.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> مقارنة نفسك بالآخرين ظلم لك؛ قارن نفسك بما كنت عليه الشهر الماضي.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> راقب جسمك وأفكارك وتصرفك بحثًا عن علامات ضعف الثقة، وواجه كل فكرة سلبية بخطوة صغيرة قابلة للتنفيذ.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: ما يضعف الثقة",
+                                "questions": [
+                                    {
+                                        "question": "لاحظت أنك تترك لزملائك دائمًا أي طلب غير مألوف. في أي مجال تقع هذه العلامة؟",
+                                        "options": [
+                                            "في جسمك",
+                                            "في أفكارك",
+                                            "في تصرفك",
+                                            "ليست علامة على ضعف الثقة"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تجنب المهام الجديدة مذكور تحت \"في تصرفك\"."
+                                    },
+                                    {
+                                        "question": "أي مما يلي علامة جسدية على ضعف الثقة في المادة؟",
+                                        "options": [
+                                            "صوت منخفض أو متردد",
+                                            "طرح سؤال عند عدم التأكد",
+                                            "الاستعداد قبل المهمة",
+                                            "الوقوف بطريقة مريحة"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تذكر المادة الصوت المنخفض أو المتردد تحت \"في جسمك\"."
+                                    },
+                                    {
+                                        "question": "ظهرت فكرة \"لن أستطيع\" قبل مهمة جديدة. بماذا توصي المادة؟",
+                                        "options": [
+                                            "تجاهل المهمة حتى تزول الفكرة",
+                                            "إخبار المشرف أنك غير مناسب للمهمة",
+                                            "مقارنة نفسك بزميل أكثر خبرة",
+                                            "ملاحظة الفكرة واستبدالها بخطوة صغيرة تستطيع تنفيذها"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: لاحظ الفكرة السلبية، ثم استبدلها بخطوة صغيرة تستطيع تنفيذها."
+                                    },
+                                    {
+                                        "question": "لم يفهم زميل تعليمات ما لكنه صمت وخمّن. أي علامة من علامات ضعف الثقة هذه؟",
+                                        "options": [
+                                            "توتر في الحركة",
+                                            "لا أسأل عندما لا أفهم",
+                                            "أقارن نفسي بالآخرين",
+                                            "أستسلم بعد المحاولة الأولى"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "عدم السؤال عند عدم الفهم من علامات التصرف في المادة."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "بناء الثقة خطوة بعد خطوة",
+                    "lessons": [
+                        {
+                            "title": "ابنِ ثقتك في خمس خطوات وكلمات تساعدك على التقدم",
+                            "minutes": 6,
+                            "body": "<h2>ابنِ ثقتك في خمس خطوات</h2><p>الخطوة الأولى في المادة هي أن <strong>تستعد للمهمة</strong>: اعرف المطلوب وجهّز ما تحتاجه. ومن هناك تُبنى الثقة بتسلسل بسيط يصلح لأي مهمة جديدة، سواء كان نظامًا جديدًا في الاستقبال أو طبقًا جديدًا تقدمه أو إجراءً جديدًا في التدبير الفندقي.</p><ol><li><strong>تعلم الخطوات قبل أن تبدأ:</strong> اقرأ الإجراء، أو شاهد زميلًا، أو اطلب شرحًا سريعًا.</li><li><strong>ابدأ بمهمة صغيرة وواضحة:</strong> لا تبدأ بأصعب حالة، بل اختر نسخة بسيطة لتنجح مبكرًا.</li><li><strong>تدرب وكرر المهمة:</strong> فكل تكرار يجعلها مألوفة وأقل ضغطًا.</li><li><strong>تعلم من الخطأ دون جلد نفسك:</strong> اسأل ما الذي حدث وما الذي تغيّره، ثم امضِ.</li><li><strong>اطلب ملاحظة تساعدك على التحسن:</strong> فالزميل أو المشرف يرى ما لا تراه.</li></ol><blockquote class=\"bk-quote\">لا تنتظر أن تشعر بالثقة كاملة — ابدأ، وستنمو الثقة مع الممارسة.</blockquote><p>لاحظ أن الشعور بالثقة يأتي في نهاية هذه القائمة لا في بدايتها؛ فكثيرون ينتظرون الشعور قبل الفعل، والمادة تعكس الترتيب: افعل أولًا بخطوات صغيرة، وسيتبعك الشعور.</p><h2>كلمات تساعدك على التقدم</h2><p>طريقة حديثك مع نفسك تشكّل تصرفك. وتقدم المادة أربع عبارات قصيرة تحل محل الشك:</p><table class=\"bk-say\"><thead><tr><th>العبارة</th><th>معناها</th></tr></thead><tbody><tr><td><strong>\"أستطيع أن أتعلم\"</strong></td><td>قد لا أعرف الآن، لكنني أستطيع أن أتعلم.</td></tr><tr><td><strong>\"سأبدأ بخطوة\"</strong></td><td>سأبدأ بخطوة واحدة واضحة.</td></tr><tr><td><strong>\"سأسأل لأفهم\"</strong></td><td>سأسأل حتى أفهم المطلوب جيدًا.</td></tr><tr><td><strong>\"سأحاول مرة أخرى\"</strong></td><td>سأتعلم من الخطأ وأحاول مرة أخرى.</td></tr></tbody></table><p>هذه العبارات ليست تظاهرًا؛ فكل منها صادقة وواقعية. \"أستطيع أن أتعلم\" لا تدّعي أنك تعرف، و\"سأحاول مرة أخرى\" تقبل أن المحاولة الأولى قد لا تنجح.</p><blockquote class=\"bk-quote\">تحدث مع نفسك كما تتحدث مع شخص تريد تشجيعه.</blockquote><p>لو أخطأ زميل جديد خطأً صغيرًا، لن تقول له إنه لا يصلح، بل ستقول: \"لا بأس، ستعرف في المرة القادمة\". امنح نفسك اللطف نفسه.</p><aside class=\"bk-scene\"><strong>موقف:</strong> طُلب من سارة، مضيفة المطعم، تولي جهاز حجز الطاولات الجديد. تعلمت الخطوات من المشرف، ثم بدأت بإدخال طاولات الزوار المباشرين في غداء هادئ، وكررت ذلك كل مناوبة. وذات مرة حجزت طاولة بتاريخ خاطئ، فصححته وقالت لنفسها: \"سأتعلم من هذا وأحاول مرة أخرى\"، وسألت مشرفها عمّا يمكنها تحسينه. وبعد أسبوعين أدارت حجوزات العشاء بهدوء.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> اختر إحدى العبارات الأربع وقلها في نفسك قبل مهمتك غير المألوفة القادمة.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> استعد، وابدأ صغيرًا، وتدرب، وتعلم من الخطأ، واطلب الملاحظة، وادعم نفسك بكلمات واقعية مشجعة.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الخطوات الخمس والكلمات الداعمة",
+                                "questions": [
+                                    {
+                                        "question": "عليك تعلم قائمة تدقيق جديدة في التدبير الفندقي. من أين تبدأ؟",
+                                        "options": [
+                                            "بأصعب جناح",
+                                            "تتعلم الخطوات ثم تبدأ بمهمة صغيرة وواضحة",
+                                            "تتجاوز الشرح وتتعلم بالتخمين",
+                                            "تنتظر حتى تشعر بثقة كاملة"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: تعلم الخطوات قبل أن تبدأ، وابدأ بمهمة صغيرة وواضحة."
+                                    },
+                                    {
+                                        "question": "بعد خطأ في مهمة جديدة، بماذا توصي المادة؟",
+                                        "options": [
+                                            "أن تجلد نفسك لتتذكر",
+                                            "أن تتوقف عن أداء المهمة",
+                                            "أن تتعلم من الخطأ دون جلد نفسك",
+                                            "أن تخفيه عن مشرفك"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "الخطوة الرابعة: تعلم من الخطأ دون جلد نفسك."
+                                    },
+                                    {
+                                        "question": "لست متأكدًا مما يتطلبه طلب النزيل. أي عبارة داعمة تناسب الموقف؟",
+                                        "options": [
+                                            "\"سأسأل لأفهم\"",
+                                            "\"أنا أعرف كل شيء\"",
+                                            "\"لن أستطيع\"",
+                                            "\"فليقم به غيري\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "\"سأسأل لأفهم\" تعني: سأسأل حتى أفهم المطلوب جيدًا."
+                                    },
+                                    {
+                                        "question": "كيف تقترح المادة أن تتحدث مع نفسك؟",
+                                        "options": [
+                                            "بقسوة لتتحسن أسرع",
+                                            "بإيجابية دائمًا حتى لو لم يكن ذلك صحيحًا",
+                                            "لا تتحدث مع نفسك وتجاهل أفكارك",
+                                            "كما تتحدث مع شخص تريد تشجيعه"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: تحدث مع نفسك كما تتحدث مع شخص تريد تشجيعه."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "الثقة في الممارسة",
+                    "lessons": [
+                        {
+                            "title": "أظهر ثقتك، والمواقف الصعبة، وطلب الدعم",
+                            "minutes": 7,
+                            "body": "<h2>أظهر ثقتك بصورة مهنية</h2><p>تظهر الثقة في طريقة وقوفك وحديثك وتعاملك مع ما لا تعرفه. وتذكر المادة خمسة أمور تفعلها وخمسة تتجنبها.</p><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنب</th></tr></thead><tbody><tr><td>قف بطريقة مريحة ومعتدلة</td><td>أن تتظاهر بأنك تعرف كل شيء</td></tr><tr><td>تحدث بصوت واضح وهادئ</td><td>أن تتكلم بصوت عدواني أو متعالٍ</td></tr><tr><td>انظر إلى الشخص باحترام</td><td>أن تعتذر عن كل كلمة تقولها</td></tr><tr><td>اعترف إذا لم تعرف الإجابة</td><td>أن تتجنب المهمة بسبب الخوف فقط</td></tr><tr><td>اطلب التوضيح أو المساعدة</td><td>أن تخفي الخطأ بدل أن تتعلم منه</td></tr></tbody></table><p>لاحظ أن قائمة \"تجنب\" تضم الطرفين: قلة الثقة كالاعتذار عن كل شيء، والثقة الزائفة كالتظاهر بمعرفة كل شيء أو التعالي. والثقة الحقيقية تقع بينهما.</p><blockquote class=\"bk-quote\">الثقة هدوء ووضوح — وليست غرورًا أو صوتًا مرتفعًا.</blockquote><h2>عندما تواجه موقفًا صعبًا</h2><p>قد يهز الثقةَ نزيلٌ منزعج، أو سؤال مفاجئ من مدير، أو مهمة تسير على غير ما يرام. وتعطي المادة أربع خطوات:</p><ol><li><strong>توقف لحظة:</strong> خذ نفسًا واهدأ قبل الرد.</li><li><strong>رتب أفكارك:</strong> حدد ما تعرفه وما تحتاج إلى معرفته.</li><li><strong>تحدث بوضوح:</strong> استخدم كلمات قصيرة وصوتًا هادئًا.</li><li><strong>اطلب الدعم:</strong> استعن بالمشرف إذا تجاوز الموقف خبرتك.</li></ol><blockquote class=\"bk-quote\">التوقف للحظة وطلب الدعم علامة وعي — وليسا ضعفًا.</blockquote><h2>عندما تنخفض ثقتك بنفسك</h2><p>يمر الجميع بفترات تنخفض فيها الثقة. وتقترح المادة أن تبدأ بهذه الخطوات:</p><ul><li>اذكر مهارة أتقنتها من قبل.</li><li>قسّم المهمة إلى خطوات صغيرة.</li><li>استعد ثم نفّذ الخطوة الأولى.</li><li>اطلب ملاحظة محددة بعد المحاولة.</li><li>سجل ما تعلمته وما تحسن.</li></ul><p>وأحيانًا لا تكفي هذه الخطوات، وهذا طبيعي. <strong>اطلب الدعم عند:</strong></p><ul><li>استمرار الخوف مدة طويلة.</li><li>تجنبك المستمر للمهام.</li><li>تأثر عملك أو حياتك اليومية.</li><li>وجود تنمر أو إساءة من الآخرين.</li><li>حاجتك إلى تدريب أو توجيه إضافي.</li></ul><p>تحدث مع مشرفك أو مديرك أو الموارد البشرية؛ ف<strong>طلب التدريب أو التوجيه خطوة صحيحة لبناء الثقة والتقدم.</strong></p><aside class=\"bk-scene\"><strong>موقف:</strong> سأل نزيل في الاستقبال أحمد سؤالًا تفصيليًا عن ترتيب فوترة لشركة لم يره من قبل، فشعر برغبة في التخمين. لكنه توقف، وأخذ نفسًا، وقال بهدوء: \"سؤال مهم، وأريد أن أعطيك الإجابة الصحيحة، فاسمح لي أن أتحقق مع المشرف\". عرف ما لا يعرفه، وتحدث بوضوح، وطلب الدعم. ولاحقًا طلب من المشرف أن يشرح له الإجراء ودوّن ما تعلمه.</aside><h2>كلمة أخيرة</h2><p>تختم المادة برسالة لكل موظف: ثق بقدرتك على التعلم، وابنِ مستقبلك خطوة بعد خطوة. استعد، جرّب، تعلّم، تحدث، تقدم. فالثقة تنمو كلما تعلمت وحاولت واستمررت.</p><aside class=\"bk-key\"><strong>الخلاصة:</strong> أظهر ثقتك بالهدوء والوضوح، واستخدم: توقف، رتب أفكارك، تحدث بوضوح، اطلب الدعم في المواقف الصعبة، واطلب المساعدة مبكرًا إذا بقيت ثقتك منخفضة.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الثقة في الممارسة",
+                                "questions": [
+                                    {
+                                        "question": "سألك نزيل سؤالًا لا تعرف إجابته. ما الذي يُظهر الثقة المهنية؟",
+                                        "options": [
+                                            "أن تجيب على أي حال حتى لا تبدو مترددًا",
+                                            "أن تعتذر مرارًا لأنك لا تعرف",
+                                            "أن تعترف بأنك لا تعرف وتطلب التوضيح أو المساعدة",
+                                            "أن تغيّر الموضوع"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تذكر المادة ضمن \"افعل\": اعترف إذا لم تعرف الإجابة، واطلب التوضيح أو المساعدة."
+                                    },
+                                    {
+                                        "question": "أي سلوك مما يلي في قائمة \"تجنب\"؟",
+                                        "options": [
+                                            "التحدث بصوت واضح وهادئ",
+                                            "النظر إلى الشخص باحترام",
+                                            "الوقوف بطريقة معتدلة",
+                                            "الاعتذار عن كل كلمة تقولها"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "الاعتذار عن كل كلمة مذكور ضمن ما يجب تجنبه."
+                                    },
+                                    {
+                                        "question": "واجهك نزيل غاضب وشعرت أن ذهنك توقف. ما الخطوة الأولى؟",
+                                        "options": [
+                                            "توقف لحظة وخذ نفسًا قبل الرد",
+                                            "ترد فورًا حتى لا يكون هناك صمت",
+                                            "ترفع صوتك لتُظهر الثقة",
+                                            "تبتعد عن المكتب"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "الخطوة الأولى في الموقف الصعب: توقف لحظة، خذ نفسًا واهدأ قبل الرد."
+                                    },
+                                    {
+                                        "question": "منذ أسابيع يتجنب زميل المهام بسبب الخوف، وبدأ ذلك يؤثر في عمله. ماذا يفعل؟",
+                                        "options": [
+                                            "يحتفظ بالأمر لنفسه على أمل أن يزول",
+                                            "يطلب الدعم أو تدريبًا إضافيًا",
+                                            "يستقيل من الوظيفة",
+                                            "يكتفي بالمهام التي يعرفها"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: اطلب الدعم عند استمرار الخوف أو تجنب المهام أو تأثر عملك."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

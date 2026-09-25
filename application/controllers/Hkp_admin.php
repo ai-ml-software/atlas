@@ -294,6 +294,85 @@ class Hkp_admin extends Hkp_Controller {
     public function assessments($op = '', $id = 0) {
         $this->need(array('assessments.create', 'question_banks.view'));
         $this->load->library('ha_theory');
+        if ($op === 'create') {
+            // A new quiz for a module (course); lessons then pick it as their checkpoint.
+            $this->post_guard();
+            $this->need('assessments.create');
+            $this->attempt(function () {
+                $course_id = (int) $this->input->post('course_id');
+                $c = $this->db->get_where('ha_course', array('id' => $course_id))->row_array();
+                if (!$c) {
+                    throw new InvalidArgumentException(hkp_t('Module not found.'));
+                }
+                $title = trim((string) $this->input->post('title_en'));
+                if ($title === '') {
+                    throw new InvalidArgumentException(hkp_t('Give the quiz an English title.'));
+                }
+                $now = date('Y-m-d H:i:s');
+                $bank = $this->db->get_where('ha_question_bank', array('course_id' => $course_id))->row_array();
+                if ($bank) {
+                    $bank_id = (int) $bank['id'];
+                } else {
+                    $this->db->insert('ha_question_bank', array('code' => 'qb-' . $c['code'], 'name_en' => $title, 'name_ar' => (string) $this->input->post('title_ar'),
+                        'course_id' => $course_id, 'status' => 'active', 'created_at' => $now, 'updated_at' => $now));
+                    $bank_id = (int) $this->db->insert_id();
+                }
+                $n = 1 + (int) $this->db->where('course_id', $course_id)->count_all_results('ha_assessment');
+                $code = 'as-' . $c['code'] . '-q' . $n;
+                while ($this->db->where('code', $code)->count_all_results('ha_assessment')) {
+                    $code = 'as-' . $c['code'] . '-q' . (++$n);
+                }
+                $this->db->insert('ha_assessment', array('code' => $code, 'title_en' => mb_substr($title, 0, 190), 'title_ar' => mb_substr(trim((string) $this->input->post('title_ar')), 0, 190),
+                    'assessment_type' => 'quiz', 'course_id' => $course_id, 'bank_id' => $bank_id, 'question_selection' => 'fixed',
+                    'pass_percentage' => max(1, min(100, (int) $this->input->post('pass_percentage') ?: 75)), 'max_attempts' => max(0, (int) $this->input->post('max_attempts')),
+                    'time_limit_minutes' => 0, 'show_correct_answers' => 1, 'status' => 'published', 'created_at' => $now, 'updated_at' => $now));
+                $aid = (int) $this->db->insert_id();
+                $this->ha_audit->log('create', 'assessment', $aid, array('description' => 'Quiz ' . $code . ' created'));
+                return $aid;
+            }, hkp_t('Quiz created. Add its questions below, then choose it on a lesson.'), function ($aid) { return hkp_url('admin/assessments/view/' . $aid); });
+            return;
+        }
+        if ($op === 'ai_questions') {
+            // AI drafts multiple-choice questions into the quiz; the editor reviews them on the same page.
+            $this->post_guard();
+            $this->need('question_banks.create');
+            $a = $this->db->get_where('ha_assessment', array('id' => (int) $id))->row_array();
+            $this->attempt(function () use ($a) {
+                if (!$a) {
+                    throw new InvalidArgumentException('Assessment not found.');
+                }
+                $this->load->library('ha_ai_assist');
+                $pick = explode('|', (string) $this->input->post('ai_model'), 2);       // "provider|model", or empty for the task route
+                $res = $this->ha_ai_assist->run(array('task' => 'quiz', 'prompt' => (string) $this->input->post('prompt'), 'context' => (string) $this->input->post('context'),
+                    'provider' => $pick[0], 'model' => isset($pick[1]) ? $pick[1] : '',
+                    'entity_type' => 'assessment', 'entity_id' => (int) $a['id']));
+                $added = 0;
+                $now = date('Y-m-d H:i:s');
+                $order = (int) $this->db->where('assessment_id', $a['id'])->count_all_results('ha_assessment_question');
+                foreach ((array) (isset($res['json']['questions']) ? $res['json']['questions'] : array()) as $q) {
+                    $opts = array_values(array_filter(array_map('trim', array_map('strval', isset($q['options']) ? (array) $q['options'] : array())), 'strlen'));
+                    $correct = (int) (isset($q['correct']) ? $q['correct'] : 0) - 1;       // the model answers 1-4
+                    if (trim((string) (isset($q['q']) ? $q['q'] : '')) === '' || count($opts) < 2 || !isset($opts[$correct])) {
+                        continue;
+                    }
+                    $this->db->insert('ha_question', array('bank_id' => $a['bank_id'], 'question_type' => 'multiple_choice', 'body_en' => trim($q['q']), 'body_ar' => '',
+                        'explanation_en' => isset($q['why']) ? (string) $q['why'] : null, 'marks' => 1, 'difficulty' => 'medium', 'domain_id' => $a['domain_id'],
+                        'requires_manual_grading' => 0, 'status' => 'active', 'created_at' => $now, 'updated_at' => $now));
+                    $qid = (int) $this->db->insert_id();
+                    foreach ($opts as $i => $o) {
+                        $this->db->insert('ha_question_option', array('question_id' => $qid, 'body_en' => $o, 'body_ar' => '', 'is_correct' => $i === $correct ? 1 : 0, 'sort_order' => $i));
+                    }
+                    $this->db->insert('ha_assessment_question', array('assessment_id' => $a['id'], 'question_id' => $qid, 'sort_order' => $order++));
+                    $added++;
+                }
+                if (!$added) {
+                    throw new RuntimeException(hkp_t('The model returned no usable questions. Try again or choose another model.'));
+                }
+                $this->ha_audit->log('create', 'question', (int) $a['id'], array('description' => $added . ' AI-drafted questions added to ' . $a['code'] . ' via ' . $res['provider'] . '/' . $res['model']));
+                return $added;
+            }, hkp_t('AI questions added. Review each one and add the Arabic text before learners take the quiz.'));
+            return;
+        }
         if ($op === 'question') {
             $this->post_guard();
             $this->need('question_banks.create');
@@ -375,7 +454,10 @@ class Hkp_admin extends Hkp_Controller {
             foreach ($this->db->get_where('ha_assessment_competency', array('assessment_id' => (int) $id))->result_array() as $m) {
                 $map[$m['skill_id']] = $m['level_on_pass'];
             }
+            $this->load->library('ha_ai_assist');
             $this->render('admin_assessment', array('a' => $a, 'qs' => $qs, 'stats' => $this->ha_theory->question_stats($id), 'map' => $map,
+                'models' => $this->ha_ai_assist->catalogue(),
+                'module' => $a['course_id'] ? $this->db->get_where('ha_course', array('id' => (int) $a['course_id']))->row_array() : null,
                 'skills' => $this->db->order_by('name_en')->get_where('ha_skill', array('status' => 'active'))->result_array()), hkp_pick($a, 'title'), 'assess_admin');
             return;
         }

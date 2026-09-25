@@ -38,6 +38,17 @@ $ai_tasks = array('lesson' => 'Write a short applied lesson', 'improve' => 'Impr
   <?php if (!$lessons): ?><div class="hkp-empty"><?php echo hkp_e('No lessons yet.'); ?></div><?php endif; ?>
   <form class="hkp-actions" method="post" action="<?php echo hkp_url('cms/section_add/' . $c['id']); ?>" style="margin-top:1rem"><?php echo ha_csrf_field(); ?><label class="hkp-sr" for="nsec"><?php echo hkp_e('Section title'); ?></label><input id="nsec" class="hkp-input" name="title_en" placeholder="<?php echo hkp_e('New section (English)'); ?>" style="max-width:260px"><input class="hkp-input" name="title_ar" dir="rtl" placeholder="<?php echo hkp_e('New section (Arabic)'); ?>" aria-label="<?php echo hkp_e('Section title (Arabic)'); ?>" style="max-width:260px"><button class="hkp-btn hkp-btn--sm hkp-btn--ghost"><?php echo hkp_e('Add section'); ?></button></form>
   <p class="hkp-small hkp-muted"><?php echo hkp_e('Sections: {s}', array('s' => implode(' · ', array_map(function ($s) { return hkp_pick($s, 'title'); }, $sections)))); ?></p></section>
+
+<section class="hkp-card" data-module-quizzes><h2><?php echo hkp_e('Quizzes'); ?></h2>
+  <p class="hkp-small hkp-muted"><?php echo hkp_e('Create a quiz, add its questions (by hand or with AI), then open a lesson and set Completion to "Pass a quiz" with this quiz as its checkpoint: the next lesson stays locked until it is passed.'); ?></p>
+  <?php if ($quizzes): ?><ul class="hkp-small" style="padding-inline-start:1.1rem"><?php foreach ($quizzes as $q): ?><li><a href="<?php echo hkp_url('admin/assessments/view/' . $q['id']); ?>"><?php echo hkp_h(hkp_pick($q, 'title')); ?></a> <span class="hkp-muted">· <?php echo hkp_e('{n} questions', array('n' => (int) $q['questions'])); ?> · <?php echo (int) $q['pass_percentage']; ?>%</span> <?php echo hkp_badge($q['status']); ?></li><?php endforeach; ?></ul>
+  <?php else: ?><div class="hkp-empty"><?php echo hkp_e('No quizzes yet.'); ?></div><?php endif; ?>
+  <form class="hkp-form" method="post" action="<?php echo hkp_url('admin/assessments/create'); ?>" style="margin-top:1rem"><?php echo ha_csrf_field(); ?><input type="hidden" name="course_id" value="<?php echo (int) $c['id']; ?>">
+    <div class="hkp-row"><div class="hkp-field"><label for="nqe"><?php echo hkp_e('Quiz title (English)'); ?></label><input id="nqe" class="hkp-input" name="title_en" required></div>
+      <div class="hkp-field"><label for="nqa"><?php echo hkp_e('Quiz title (Arabic)'); ?></label><input id="nqa" class="hkp-input" name="title_ar" dir="rtl"></div>
+      <div class="hkp-field"><label for="nqp"><?php echo hkp_e('Pass mark (%)'); ?></label><input id="nqp" class="hkp-input" type="number" min="1" max="100" name="pass_percentage" value="75"></div>
+      <div class="hkp-field"><label for="nqm"><?php echo hkp_e('Maximum attempts (0 = unlimited)'); ?></label><input id="nqm" class="hkp-input" type="number" min="0" name="max_attempts" value="0"></div></div>
+    <div><button class="hkp-btn hkp-btn--sm"><?php echo hkp_e('Create quiz'); ?></button></div></form></section>
 <?php endif; ?>
 </div>
 <div class="hkp-grid"><?php $this->load->view('hkp/_ai_panel', compact('models', 'ai_entity', 'ai_id', 'ai_insert', 'ai_tasks')); ?></div>
