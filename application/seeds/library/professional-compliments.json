@@ -1,0 +1,538 @@
+{
+    "slug": "professional-compliments",
+    "category": "communication",
+    "level": "foundation",
+    "source_pdf": "Professional-Compliments-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/professional-compliments.webp",
+    "videos": [],
+    "locales": {
+        "en": {
+            "title": "Professional Compliments",
+            "subtitle": "Sincere words, clear boundaries",
+            "short_description": "Learn how to give sincere, brief, respectful compliments to guests, and how to receive compliments gracefully while staying professional.",
+            "description": "<p>A sincere compliment is a positive human touch: it makes the guest feel appreciated and makes communication warmer. But the same compliment can be misunderstood if it becomes personal or exaggerated. This course, built on the Dyafa Hotels &amp; Resorts training deck, shows where the line is.</p><p>You will learn which compliments are safe and which are too personal, four rules for a good compliment, how to respect culture and avoid stereotypes, and simple phrases to say and avoid. The final chapter covers receiving compliments with humility, including what to do if a personal compliment is repeated.</p>",
+            "requirements": "No prior training is needed; the course suits any colleague who talks with guests.",
+            "outcomes": [
+                "Explain why sincere compliments strengthen the guest experience",
+                "Distinguish professionally appropriate compliments from ones that are too personal",
+                "Apply the four rules: sincere, brief, specific and respectful of boundaries",
+                "Adapt compliments with cultural sensitivity and without stereotypes",
+                "Receive compliments humbly and return smoothly to service"
+            ],
+            "faqs": [
+                {
+                    "question": "What if I am unsure whether a compliment is appropriate?",
+                    "answer": "The deck's rule is clear: when in doubt, keep it short and neutral, or do not say it."
+                },
+                {
+                    "question": "Can I ask a guest where they bought something I admire?",
+                    "answer": "No. Questions about price, brand or where something was bought are listed as too personal."
+                },
+                {
+                    "question": "What should I do if a guest keeps giving me personal compliments?",
+                    "answer": "Refocus on the work and end the conversation politely. If flirting continues, excuse yourself, say you will return to work and step away politely."
+                }
+            ],
+            "meta_title": "Professional Compliments for Hotel Staff",
+            "meta_description": "Hotel training on compliments: give sincere, brief, specific praise, respect boundaries and culture, and receive guest compliments gracefully.",
+            "focus_keyword": "professional compliments in hotels",
+            "chapters": [
+                {
+                    "title": "The Power and Limits of a Compliment",
+                    "lessons": [
+                        {
+                            "title": "Why Compliments Matter and Where the Line Is",
+                            "minutes": 7,
+                            "body": "<h2>A positive human touch</h2><p>Hotel service is full of procedures: registration, keys, bills, directions. A well-placed compliment reminds the guest that a person, not a process, is looking after them. The deck describes a sincere compliment as something that enhances the guest experience, and lists what it does:</p><ul><li>It makes the guest feel <strong>appreciated and welcome</strong>.</li><li>It makes communication <strong>warmer and more natural</strong>.</li><li>It supports the image of a <strong>confident, tactful employee</strong>.</li></ul><p>The same slide adds two warnings. A compliment is <strong>effective only when it is sincere</strong>, and it <strong>may be misunderstood if it is personal or exaggerated</strong>. Both points shape everything else in this course.</p><blockquote class=\"bk-quote\">A professional compliment feels warm — never intrusive.</blockquote><h2>Safe or too personal?</h2><p>The deck divides compliments into two groups. The first group is professionally appropriate because it praises a choice, a decision or the stay, not the person's body or private life.</p><table class=\"bk-say\"><thead><tr><th>Professionally appropriate</th><th>Too personal</th></tr></thead><tbody><tr><td>Elegant taste in choosing colours</td><td>The body, skin or features</td></tr><tr><td>A practical, elegant bag</td><td>Age, weight or attractiveness</td></tr><tr><td>A lovely choice for the occasion</td><td>The guest's partner or companions</td></tr><tr><td>A positive remark about an achievement or decision</td><td>Comments carrying innuendo or flirting</td></tr><tr><td>A compliment linked to the hotel experience</td><td>Questions about price, brand or where it was bought</td></tr></tbody></table><p>Notice the pattern. Safe compliments are about something the guest <em>chose</em> or <em>did</em>. Personal compliments touch on who the guest is physically, who they are with, or what they spent. Even when kindly meant, the second group can make a guest uneasy, because it moves the conversation away from service and into private territory.</p><h2>When in doubt</h2><p>Not every situation is clear. A guest may be dressed for a wedding, celebrating a promotion or travelling with family. The deck gives one rule that settles any doubt: <strong>keep it short and neutral, or do not say it.</strong> Silence is never a service failure; an uncomfortable remark can be.</p><aside class=\"bk-scene\"><p>A guest arrived at the restaurant dressed for a family celebration. The host said, <em>What a lovely choice for the occasion. Your table is ready.</em> The guest smiled and thanked her. The compliment was about her choice and the occasion, lasted one sentence, and led straight back to service, so it felt warm without being intrusive.</p></aside><aside class=\"bk-note\"><p>Ask yourself before speaking: am I praising a choice or a person? If it is the person's body, age or companions, leave it unsaid.</p></aside><aside class=\"bk-key\"><p>A sincere compliment about a choice or the stay adds warmth; anything personal or exaggerated risks being misunderstood. When in doubt, keep it short and neutral, or do not say it.</p></aside>",
+                            "quiz": {
+                                "title": "Check your understanding: safe or too personal",
+                                "questions": [
+                                    {
+                                        "question": "Which compliment is professionally appropriate?",
+                                        "options": [
+                                            "You look much younger than your age.",
+                                            "What a lovely choice for the occasion.",
+                                            "Your husband is very handsome.",
+                                            "That bag must have been expensive."
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "A lovely choice for the occasion praises a choice, which the deck lists as appropriate."
+                                    },
+                                    {
+                                        "question": "You are not sure a compliment will be welcome. What does the deck advise?",
+                                        "options": [
+                                            "Say it anyway to build rapport",
+                                            "Add more detail so it sounds sincere",
+                                            "Keep it short and neutral, or do not say it",
+                                            "Ask a colleague to say it instead"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "When in doubt: keep it short and neutral, or do not say it."
+                                    },
+                                    {
+                                        "question": "Why can a compliment on a guest's weight loss be a problem even if kindly meant?",
+                                        "options": [
+                                            "It is too personal and may be misunderstood",
+                                            "It takes too long",
+                                            "It is not specific enough",
+                                            "It praises the hotel instead of the guest"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Weight is on the too-personal list, and personal compliments may be misunderstood."
+                                    },
+                                    {
+                                        "question": "What makes a compliment effective, according to the deck?",
+                                        "options": [
+                                            "Being enthusiastic and exaggerated",
+                                            "Mentioning the price of the item",
+                                            "Repeating it several times",
+                                            "Being sincere"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says a compliment is effective only when sincere."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Giving a Good Compliment",
+                    "lessons": [
+                        {
+                            "title": "Four Rules and Cultural Sensitivity",
+                            "minutes": 7,
+                            "body": "<h2>Four rules for a good compliment</h2><p>The deck turns good judgement into four short rules that any colleague can remember at the desk, the table or the lift.</p><ol><li><strong>Be sincere.</strong> Do not say what you do not mean. Guests sense empty praise quickly, and it weakens trust in everything else you say.</li><li><strong>Keep it brief.</strong> One sentence is enough. A long compliment starts to feel like attention the guest did not ask for.</li><li><strong>Be specific.</strong> Praise a clear choice, such as a colour or an item, rather than making vague or sweeping comments.</li><li><strong>Respect boundaries.</strong> Do not ask private questions. A compliment is not an invitation to learn more about the guest's life.</li></ol><p>The deck then describes how to deliver the compliment: <strong>smile, keep an appropriate distance, and return naturally to service.</strong> That final step matters. The compliment is a moment of warmth inside the service, not a separate conversation. After it, you carry on with the check-in, the order or the directions.</p><h2>Respect culture and avoid generalising</h2><p>Guests come from many backgrounds, and what feels friendly to one person may feel awkward to another. The deck asks for cultural sensitivity without stereotypes.</p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Watch the guest's comfort and reaction</td><td>Assuming all guests behave the same way</td></tr><tr><td>Use neutral, polite language</td><td>Exaggerated admiration of belongings</td></tr><tr><td>Consider age, context and privacy</td><td>Pressing to know the price or where it was bought</td></tr><tr><td>Respect individual and cultural differences</td><td>Comments that may embarrass the guest</td></tr><tr><td>Stop immediately if the guest seems uncomfortable</td><td>Linking the compliment to nationality or culture</td></tr></tbody></table><blockquote class=\"bk-quote\">Not as a stereotype — treat every guest as an individual.</blockquote><p>Linking a compliment to nationality, for example praising someone as typical of their country, may be meant kindly, but it turns the guest into a category rather than a person. The safer path is to respond to this guest, in this moment, and to read their reaction. If a guest looks away, gives a short reply or steps back, stop there and return to service.</p><aside class=\"bk-scene\"><p>A front office agent noticed a guest's elegant scarf and said, <em>That colour is lovely.</em> The guest gave a brief nod and looked back at the registration card. The agent read the signal, smiled and simply continued: <em>Here is your key; your room is on the fifth floor.</em> By stopping at one sentence and watching the reaction, she kept the moment comfortable.</p></aside><aside class=\"bk-note\"><p>Run a quick check: sincere, brief, specific, no private questions. If any one fails, change the compliment or skip it.</p></aside><aside class=\"bk-key\"><p>Be sincere, brief and specific, respect boundaries, watch the guest's reaction, and treat every guest as an individual, never a stereotype.</p></aside>",
+                            "quiz": {
+                                "title": "Check your understanding: the four rules",
+                                "questions": [
+                                    {
+                                        "question": "You compliment a guest's watch and feel curious about it. What should you do next?",
+                                        "options": [
+                                            "Ask where it was bought",
+                                            "Ask how much it cost",
+                                            "Smile and return naturally to service",
+                                            "Describe how much you love watches"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Respect boundaries and return naturally to service; no private questions."
+                                    },
+                                    {
+                                        "question": "Which compliment follows the rule 'be specific'?",
+                                        "options": [
+                                            "You are amazing!",
+                                            "That colour suits the occasion beautifully.",
+                                            "Everything about you is wonderful.",
+                                            "People from your country always dress well."
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Praising a clear choice such as a colour is specific."
+                                    },
+                                    {
+                                        "question": "After your compliment the guest looks away and gives a short reply. What is right?",
+                                        "options": [
+                                            "Stop immediately and continue the service",
+                                            "Repeat the compliment more warmly",
+                                            "Explain what you meant",
+                                            "Ask if they are offended"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck says stop immediately if the guest seems uncomfortable."
+                                    },
+                                    {
+                                        "question": "Why should you avoid linking a compliment to a guest's nationality?",
+                                        "options": [
+                                            "It is too brief",
+                                            "It is always insincere",
+                                            "It takes too long to say",
+                                            "It treats the guest as a stereotype rather than an individual"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Treat every guest as an individual, not a stereotype."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Simple, Professional Language",
+                            "minutes": 6,
+                            "body": "<h2>The words themselves</h2><p>Knowing the rules is one thing; having the right words ready is another. When a moment for a compliment arrives, there is rarely time to compose a sentence. The deck therefore gives simple, professional phrases to use, and a matching list of phrases to avoid. Learn them as you would learn any service script, so that they come naturally.</p><table class=\"bk-say\"><thead><tr><th>Say</th><th>Avoid</th></tr></thead><tbody><tr><td><em>A very elegant choice, sir / madam.</em></td><td><em>How much did it cost?</em></td></tr><tr><td><em>This colour is lovely and suitable.</em></td><td><em>Where did you buy it?</em></td></tr><tr><td><em>You have distinctive taste.</em></td><td><em>I have never seen anything so wonderful!</em></td></tr><tr><td><em>We are happy the experience met your approval.</em></td><td><em>You are very attractive.</em></td></tr><tr><td><em>Thank you, I am happy to help you.</em></td><td><em>Beautiful / your companion is handsome.</em></td></tr></tbody></table><h2>Why the left column works</h2><p>Look at what the phrases on the left have in common. They are short. They praise a choice, a colour, a taste or the experience. They use respectful forms of address such as <em>sir</em> or <em>madam</em>. And they close the moment rather than opening a new topic. The guest can simply say thank you, and the service continues.</p><h2>Why the right column fails</h2><p>The phrases on the right each break a rule from the previous lesson. Asking about cost or where something was bought crosses a boundary with a private question. <em>I have never seen anything so wonderful!</em> is exaggerated, and exaggeration sounds insincere. Comments on attractiveness or on the guest's companion are too personal and may be heard as flirting, however innocently they were meant.</p><blockquote class=\"bk-quote\">That is a very elegant choice. • Thank you — it is my pleasure to assist you.</blockquote><h2>Putting it into practice</h2><ol><li>Choose one or two phrases from the left column that suit your role.</li><li>Practise saying them with a natural smile and a calm voice.</li><li>Follow each one immediately with a service action: handing over the key, presenting the menu, opening the door.</li></ol><aside class=\"bk-scene\"><p>At the spa reception, a guest showed off a new handbag and asked what the receptionist thought. Instead of asking where it came from, the receptionist said, <em>A very elegant choice, madam.</em> She then added, <em>Your treatment room is ready; let me walk you there.</em> The guest felt noticed, and the conversation stayed within the service.</p></aside><aside class=\"bk-note\"><p>If a guest invites you to talk about price or brand, a warm, neutral line such as <em>You have distinctive taste</em> lets you respond kindly without asking or commenting further.</p></aside><aside class=\"bk-key\"><p>Keep a few simple, professional phrases ready, and avoid questions about price or purchase, exaggeration and comments on attractiveness or companions.</p></aside>",
+                            "quiz": {
+                                "title": "Check your understanding: professional language",
+                                "questions": [
+                                    {
+                                        "question": "A guest shows you a new jacket. Which reply fits the deck?",
+                                        "options": [
+                                            "How much did it cost?",
+                                            "Where did you buy it?",
+                                            "A very elegant choice, sir.",
+                                            "I have never seen anything so wonderful!"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "A very elegant choice is on the Say list; the others are on the Avoid list."
+                                    },
+                                    {
+                                        "question": "Why is 'I have never seen anything so wonderful!' on the avoid list?",
+                                        "options": [
+                                            "It is exaggerated and may sound insincere",
+                                            "It is too short",
+                                            "It mentions the hotel",
+                                            "It uses a formal address"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Exaggeration breaks the rule of sincerity."
+                                    },
+                                    {
+                                        "question": "What should immediately follow a professional compliment?",
+                                        "options": [
+                                            "A question about the guest's plans",
+                                            "A second compliment",
+                                            "A pause for the guest to respond at length",
+                                            "A service action, such as presenting the menu or handing over the key"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck asks you to return naturally to service."
+                                    },
+                                    {
+                                        "question": "A colleague tells a guest, 'Your companion is handsome.' What is the issue?",
+                                        "options": [
+                                            "It is not specific",
+                                            "It is too personal and may be heard as flirting",
+                                            "It is too long",
+                                            "It is fine because it is kind"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Comments about companions are too personal."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "When the Guest Compliments You",
+                    "lessons": [
+                        {
+                            "title": "Receiving Compliments with Humility",
+                            "minutes": 7,
+                            "body": "<h2>Receive it humbly, then continue the service</h2><p>Compliments travel in both directions. Guests often praise the hotel, a colleague, or you personally. How you receive those words matters as much as how you give them. The deck's principle is simple: <strong>receive the compliment with humility, then continue the service.</strong> It gives a three-part pattern: <strong>thank, link the compliment to the service, offer help.</strong></p><h2>Four kinds of compliment</h2><ol><li><strong>About the hotel.</strong> Thank the guest and express your happiness at their satisfaction.</li><li><strong>About a colleague.</strong> Promise to pass it on to the colleague, then keep your promise. A compliment that never reaches the chef or the housekeeper is a lost chance to recognise good work.</li><li><strong>About your service.</strong> Thank the guest and offer additional service. This turns praise into another moment of care.</li><li><strong>A repeated personal compliment.</strong> Refocus on the work and end the conversation politely.</li></ol><h2>Ready-to-use responses</h2><p>A professional reply keeps the warmth of the moment. The deck gives these responses:</p><table class=\"bk-say\"><thead><tr><th>The guest says</th><th>You reply</th></tr></thead><tbody><tr><td><em>Your hotel is wonderful.</em></td><td><em>Thank you very much; we are happy you enjoyed your stay.</em></td></tr><tr><td><em>Your chef is excellent.</em></td><td><em>Thank you; I will pass this lovely compliment to the chef.</em></td></tr><tr><td><em>You really know your job.</em></td><td><em>Thank you for your trust; may I help you with anything else?</em></td></tr><tr><td><em>You are very special.</em></td><td><em>Thank you. I am glad my service met your satisfaction.</em></td></tr></tbody></table><p>Look at the last line carefully. When a compliment becomes personal, the reply gently moves it back to <em>my service</em>. It stays polite and warm, but it does not accept the personal direction of the remark.</p><h2>If the flirting continues</h2><p>Sometimes a guest keeps going. The deck is clear: <strong>excuse yourself, say you will return to work, and step away politely.</strong> You do not need to argue, explain or show offence. A calm exit protects both you and the guest's dignity.</p><aside class=\"bk-scene\"><p>A guest at the bar told the server several times that she was very special. The first time she replied, <em>Thank you. I am glad my service met your satisfaction.</em> When he continued, she smiled, said, <em>Excuse me, I need to return to my tables,</em> and stepped away. She later mentioned it to her supervisor. The guest was never embarrassed, and she kept her professional boundary.</p></aside><blockquote class=\"bk-quote\">Kind words build connection. Professionalism protects it.</blockquote><aside class=\"bk-note\"><p>When a guest praises a colleague, pass it on the same shift if you can; recognition means most when it is fresh.</p></aside><aside class=\"bk-key\"><p>Thank, link the compliment to the service, offer help; pass on praise for colleagues, and step away politely if personal compliments continue.</p></aside>",
+                            "quiz": {
+                                "title": "Check your understanding: receiving compliments",
+                                "questions": [
+                                    {
+                                        "question": "A guest says, 'Your chef is excellent.' What is the best response?",
+                                        "options": [
+                                            "Thank you; I will pass this lovely compliment to the chef.",
+                                            "Yes, he is expensive to employ.",
+                                            "I cook better than him.",
+                                            "Thank you, and forget it afterwards."
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Promise to pass it on, then keep your promise."
+                                    },
+                                    {
+                                        "question": "A guest says, 'You really know your job.' Which reply follows the pattern?",
+                                        "options": [
+                                            "I know, I have been here for years.",
+                                            "It is nothing, really.",
+                                            "Thank you for your trust; may I help you with anything else?",
+                                            "Please tell my manager to raise my salary."
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Thank the guest and offer additional service."
+                                    },
+                                    {
+                                        "question": "A guest repeats personal compliments and starts flirting. What should you do?",
+                                        "options": [
+                                            "Tell the guest firmly that this is inappropriate",
+                                            "Laugh it off and keep chatting",
+                                            "Ignore the guest completely",
+                                            "Excuse yourself, say you will return to work, and step away politely"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck's response to continued flirting is a polite exit."
+                                    },
+                                    {
+                                        "question": "A guest says, 'You are very special.' Which reply keeps the warmth while holding the boundary?",
+                                        "options": [
+                                            "So are you!",
+                                            "Thank you. I am glad my service met your satisfaction.",
+                                            "Can I have your number?",
+                                            "Silence and walking away immediately"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The reply moves the compliment back to your service."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "المجاملات المهنية",
+            "subtitle": "كلمات صادقة بحدود واضحة",
+            "short_description": "تعلّم كيف تقدّم مجاملة صادقة ومختصرة ومحترمة للنزيل، وكيف تستقبل المجاملة بتواضع مع الحفاظ على المهنية.",
+            "description": "<p>المجاملة الصادقة أثر إنساني وإيجابي؛ تُشعر النزيل بالتقدير وتجعل التواصل أكثر دفئًا. لكن المجاملة نفسها قد تُفهم خطأ إذا كانت شخصية أو مبالغًا فيها. تعتمد هذه الدورة على الحقيبة التدريبية لفنادق ومنتجعات ضيافة، وتوضح أين يقع الحد.</p><p>ستتعرّف على المجاملات الآمنة والمجاملات الشخصية أكثر من اللازم، وأربع قواعد للمجاملة المهنية، واحترام الثقافة وتجنّب التعميم، وعبارات بسيطة تقولها وأخرى تتجنّبها. ويتناول الفصل الأخير استقبال المجاملة بتواضع، وما تفعله إذا تكررت المجاملة الشخصية.</p>",
+            "requirements": "لا تحتاج إلى تدريب سابق؛ الدورة مناسبة لكل زميل يتحدث مع النزلاء.",
+            "outcomes": [
+                "اشرح لماذا تعزز المجاملة الصادقة تجربة النزيل",
+                "ميّز بين المجاملة المناسبة مهنيًا والمجاملة الشخصية أكثر من اللازم",
+                "طبّق القواعد الأربع: الصدق والاختصار والتحديد واحترام الحدود",
+                "راعِ الثقافة في مجاملتك وتجنّب الصور النمطية",
+                "استقبل المجاملة بتواضع وعُد بسلاسة إلى الخدمة"
+            ],
+            "faqs": [
+                {
+                    "question": "ماذا أفعل إذا لم أكن متأكدًا من مناسبة المجاملة؟",
+                    "answer": "القاعدة في الحقيبة واضحة: عند الشك التزم بمجاملة قصيرة ومحايدة أو لا تقلها."
+                },
+                {
+                    "question": "هل يمكنني أن أسأل النزيل من أين اشترى شيئًا أعجبني؟",
+                    "answer": "لا. الأسئلة عن السعر أو العلامة أو مكان الشراء من المجاملات الشخصية أكثر من اللازم."
+                },
+                {
+                    "question": "ماذا أفعل إذا استمر النزيل في المجاملات الشخصية؟",
+                    "answer": "أعد التركيز على العمل وأنهِ الحوار بأدب. وإذا استمرت المغازلة: اعتذر، واذكر أنك ستعود للعمل، وابتعد بأدب."
+                }
+            ],
+            "meta_title": "المجاملات المهنية لموظفي الفنادق",
+            "meta_description": "تدريب فندقي على المجاملات: مجاملة صادقة مختصرة ومحددة، واحترام الحدود والثقافة، واستقبال مجاملة النزيل بلباقة.",
+            "focus_keyword": "المجاملات المهنية في الفنادق",
+            "chapters": [
+                {
+                    "title": "أثر المجاملة وحدودها",
+                    "lessons": [
+                        {
+                            "title": "لماذا تهم المجاملة وأين يقع الحد",
+                            "minutes": 7,
+                            "body": "<h2>أثر إنساني وإيجابي</h2><p>الخدمة الفندقية مليئة بالإجراءات: التسجيل والمفاتيح والفواتير والإرشاد. والمجاملة في مكانها تذكّر النزيل بأن شخصًا، لا إجراءً، هو من يعتني به. تقول الحقيبة إن المجاملة الصادقة تعزز تجربة النزيل، فهي:</p><ul><li>تُشعر النزيل بالتقدير والترحيب.</li><li>تجعل التواصل أكثر دفئًا وطبيعية.</li><li>تدعم صورة الموظف الواثق واللبق.</li></ul><p>وتضيف الشريحة تنبيهين: المجاملة <strong>تكون فعالة فقط عندما تكون صادقة</strong>، و<strong>قد تُفهم خطأ إذا كانت شخصية أو مبالغًا فيها</strong>.</p><blockquote class=\"bk-quote\">المجاملة المهنية تُسعد النزيل دون أن تتجاوز حدود الخدمة.</blockquote><h2>اختر مجاملة آمنة ومناسبة للموقف</h2><table class=\"bk-say\"><thead><tr><th>مناسبة مهنيًا</th><th>شخصية أكثر من اللازم</th></tr></thead><tbody><tr><td>ذوق أنيق في اختيار الألوان</td><td>الجسم أو البشرة أو الملامح</td></tr><tr><td>حقيبة عملية وأنيقة</td><td>العمر أو الوزن أو الجاذبية</td></tr><tr><td>اختيار جميل للمناسبة</td><td>شريك النزيل أو مرافقوه</td></tr><tr><td>ملاحظة إيجابية عن إنجاز أو قرار</td><td>تعليقات تحمل إيحاءً أو مغازلة</td></tr><tr><td>مجاملة مرتبطة بتجربة الفندق</td><td>أسئلة عن السعر أو العلامة أو مكان الشراء</td></tr></tbody></table><p>لاحظ النمط: المجاملة الآمنة تتناول شيئًا <em>اختاره</em> النزيل أو <em>فعله</em>، أما الشخصية فتتناول جسده أو مرافقيه أو ما أنفقه، فتنقل الحديث من الخدمة إلى الخصوصية حتى لو كانت النية طيبة.</p><h2>عند الشك</h2><p>ليست كل المواقف واضحة، والقاعدة التي تحسم الأمر: <strong>التزم بمجاملة قصيرة ومحايدة أو لا تقلها.</strong> الصمت لا يعدّ تقصيرًا في الخدمة، أما التعليق المحرج فقد يكون.</p><aside class=\"bk-scene\"><p>وصلت نزيلة إلى المطعم بلباس مناسبة عائلية، فقالت لها المضيفة: <em>اختيار جميل للمناسبة، طاولتكم جاهزة.</em> ابتسمت النزيلة وشكرتها. كانت المجاملة عن اختيارها وعن المناسبة، في جملة واحدة، ثم عادت مباشرة إلى الخدمة، فكانت دافئة دون تطفل.</p></aside><aside class=\"bk-note\"><p>اسأل نفسك قبل الكلام: هل أمدح اختيارًا أم شخصًا؟ إن كان الحديث عن الجسم أو العمر أو المرافقين فلا تقله.</p></aside><aside class=\"bk-key\"><p>المجاملة الصادقة عن اختيار أو عن الإقامة تضيف دفئًا، والشخصية أو المبالغ فيها قد تُفهم خطأ. عند الشك: قصيرة ومحايدة، أو لا تقلها.</p></aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: آمنة أم شخصية أكثر من اللازم",
+                                "questions": [
+                                    {
+                                        "question": "أي مجاملة مناسبة مهنيًا؟",
+                                        "options": [
+                                            "تبدين أصغر بكثير من عمرك.",
+                                            "اختيار جميل للمناسبة.",
+                                            "زوجك وسيم جدًا.",
+                                            "لا بد أن هذه الحقيبة غالية."
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "مدح اختيار جميل للمناسبة من المجاملات المناسبة مهنيًا."
+                                    },
+                                    {
+                                        "question": "لست متأكدًا من أن المجاملة ستكون مقبولة. بماذا تنصح الحقيبة؟",
+                                        "options": [
+                                            "قلها على أي حال لبناء العلاقة",
+                                            "أضف تفاصيل لتبدو صادقة",
+                                            "التزم بمجاملة قصيرة ومحايدة أو لا تقلها",
+                                            "اطلب من زميل أن يقولها"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "عند الشك: التزم بمجاملة قصيرة ومحايدة أو لا تقلها."
+                                    },
+                                    {
+                                        "question": "لماذا قد تكون مجاملة النزيل على نقص وزنه مشكلة حتى لو كانت النية طيبة؟",
+                                        "options": [
+                                            "لأنها شخصية أكثر من اللازم وقد تُفهم خطأ",
+                                            "لأنها طويلة",
+                                            "لأنها غير محددة",
+                                            "لأنها تمدح الفندق بدل النزيل"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "الوزن من قائمة المجاملات الشخصية أكثر من اللازم."
+                                    },
+                                    {
+                                        "question": "ما الذي يجعل المجاملة فعالة بحسب الحقيبة؟",
+                                        "options": [
+                                            "الحماس والمبالغة",
+                                            "ذكر سعر الشيء",
+                                            "تكرارها عدة مرات",
+                                            "أن تكون صادقة"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تكون المجاملة فعالة فقط عندما تكون صادقة."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "كيف تقدّم مجاملة جيدة",
+                    "lessons": [
+                        {
+                            "title": "القواعد الأربع واحترام الثقافة",
+                            "minutes": 7,
+                            "body": "<h2>أربع قواعد للمجاملة المهنية</h2><ol><li><strong>كن صادقًا:</strong> لا تقل ما لا تعنيه؛ فالنزيل يشعر سريعًا بالمديح الفارغ، وهذا يضعف ثقته بكل ما تقوله.</li><li><strong>كن مختصرًا:</strong> جملة واحدة تكفي؛ فالمجاملة الطويلة تتحول إلى اهتمام لم يطلبه النزيل.</li><li><strong>كن محددًا:</strong> امدح اختيارًا واضحًا كاللون أو القطعة، لا عبارات عامة مبالغًا فيها.</li><li><strong>احترم الحدود:</strong> لا تسأل أسئلة خاصة؛ فالمجاملة ليست دعوة للتعرّف على حياة النزيل.</li></ol><p>ثم تصف الحقيبة طريقة التقديم: <strong>ابتسم بلطف، حافظ على مسافة مناسبة، ثم انتقل طبيعيًا إلى الخدمة.</strong> المجاملة لحظة دفء داخل الخدمة، لا حديث مستقل عنها.</p><h2>احترم الثقافة وتجنّب التعميم</h2><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنّب</th></tr></thead><tbody><tr><td>راقب ارتياح النزيل ورد فعله</td><td>افتراض أن جميع الضيوف يتصرفون بالطريقة نفسها</td></tr><tr><td>استخدم لغة محايدة ومهذبة</td><td>المبالغة في الإعجاب بالممتلكات</td></tr><tr><td>راعِ العمر والسياق والخصوصية</td><td>الإلحاح لمعرفة السعر أو مصدر الشراء</td></tr><tr><td>احترم الاختلافات الفردية والثقافية</td><td>التعليقات التي قد تضع النزيل في حرج</td></tr><tr><td>توقف فورًا إذا بدا النزيل غير مرتاح</td><td>ربط المجاملة بالجنسية أو الثقافة</td></tr></tbody></table><blockquote class=\"bk-quote\">لا كصورة نمطية — عامل كل نزيل كشخص مستقل.</blockquote><p>ربط المجاملة بالجنسية قد يكون بنية طيبة، لكنه يحوّل النزيل إلى فئة بدل أن يكون شخصًا. الأسلم أن تتعامل مع هذا النزيل في هذه اللحظة، وأن تقرأ رد فعله؛ فإذا أشاح بنظره أو أجاب باختصار أو تراجع خطوة، فتوقف وعد إلى الخدمة.</p><aside class=\"bk-scene\"><p>لاحظت موظفة الاستقبال وشاحًا أنيقًا لدى نزيلة فقالت: <em>هذا اللون جميل ومناسب.</em> أومأت النزيلة باختصار وعادت إلى بطاقة التسجيل. فهمت الموظفة الإشارة، فابتسمت وتابعت: <em>تفضلي مفتاحك، غرفتك في الطابق الخامس.</em> بالتوقف عند جملة واحدة ومراقبة رد الفعل بقيت اللحظة مريحة.</p></aside><aside class=\"bk-note\"><p>افحص مجاملتك سريعًا: صادقة، مختصرة، محددة، بلا أسئلة خاصة. إن اختل شرط منها فغيّرها أو اتركها.</p></aside><aside class=\"bk-key\"><p>كن صادقًا ومختصرًا ومحددًا، واحترم الحدود، وراقب رد فعل النزيل، وعامل كل نزيل كشخص مستقل لا كصورة نمطية.</p></aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: القواعد الأربع",
+                                "questions": [
+                                    {
+                                        "question": "امتدحت ساعة النزيل وشعرت بفضول تجاهها. ماذا تفعل بعد ذلك؟",
+                                        "options": [
+                                            "تسأله من أين اشتراها",
+                                            "تسأله عن سعرها",
+                                            "تبتسم وتنتقل طبيعيًا إلى الخدمة",
+                                            "تشرح له حبك للساعات"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "احترم الحدود وانتقل طبيعيًا إلى الخدمة دون أسئلة خاصة."
+                                    },
+                                    {
+                                        "question": "أي مجاملة تطبق قاعدة «كن محددًا»؟",
+                                        "options": [
+                                            "أنت رائع!",
+                                            "هذا اللون مناسب جدًا للمناسبة.",
+                                            "كل شيء فيك جميل.",
+                                            "أهل بلدك دائمًا أنيقون."
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "مدح اختيار واضح كاللون مجاملة محددة."
+                                    },
+                                    {
+                                        "question": "بعد مجاملتك أشاح النزيل بنظره وأجاب باختصار. ما الصواب؟",
+                                        "options": [
+                                            "التوقف فورًا ومتابعة الخدمة",
+                                            "تكرار المجاملة بحرارة أكبر",
+                                            "شرح ما قصدته",
+                                            "سؤاله إن كان قد انزعج"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "توقف فورًا إذا بدا النزيل غير مرتاح."
+                                    },
+                                    {
+                                        "question": "لماذا تتجنّب ربط المجاملة بجنسية النزيل؟",
+                                        "options": [
+                                            "لأنها قصيرة جدًا",
+                                            "لأنها دائمًا غير صادقة",
+                                            "لأنها تستغرق وقتًا",
+                                            "لأنها تعامل النزيل كصورة نمطية لا كشخص مستقل"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "عامل كل نزيل كشخص مستقل لا كصورة نمطية."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "لغة بسيطة ومهنية",
+                            "minutes": 6,
+                            "body": "<h2>العبارات نفسها</h2><p>معرفة القواعد شيء، وامتلاك الكلمات المناسبة شيء آخر. حين تأتي لحظة المجاملة لا يكون هناك وقت لصياغة جملة، ولذلك تقدّم الحقيبة عبارات بسيطة ومهنية تقولها، وعبارات تتجنّبها. احفظها كما تحفظ أي عبارة خدمة حتى تأتي بطبيعية.</p><table class=\"bk-say\"><thead><tr><th>قل</th><th>تجنّب</th></tr></thead><tbody><tr><td><em>اختيار أنيق جدًا، سيدي / سيدتي.</em></td><td><em>كم سعرها؟</em></td></tr><tr><td><em>هذا اللون جميل ومناسب.</em></td><td><em>من أين اشتريتها؟</em></td></tr><tr><td><em>ذوقكم مميز في الاختيار.</em></td><td><em>لم أرَ شيئًا بهذه الروعة!</em></td></tr><tr><td><em>سعداء بأن التجربة نالت إعجابكم.</em></td><td><em>أنت جذاب جدًا.</em></td></tr><tr><td><em>شكرًا لك، يسعدني أن أساعدك.</em></td><td><em>جميلة / مرافقك جميل.</em></td></tr></tbody></table><h2>لماذا تنجح العبارات الأولى</h2><p>هي قصيرة، وتمدح اختيارًا أو لونًا أو ذوقًا أو التجربة، وتستخدم مخاطبة محترمة مثل «سيدي» و«سيدتي»، وتُغلق اللحظة بدل أن تفتح موضوعًا جديدًا؛ فيكفي النزيل أن يشكرك وتستمر الخدمة.</p><h2>لماذا تفشل العبارات الثانية</h2><p>كل واحدة منها تخالف قاعدة: السؤال عن السعر أو مكان الشراء سؤال خاص يتجاوز الحدود، و«لم أرَ شيئًا بهذه الروعة!» مبالغة تبدو غير صادقة، والتعليق على الجاذبية أو على المرافق شخصي أكثر من اللازم وقد يُفهم مغازلة.</p><blockquote class=\"bk-quote\">That is a very elegant choice. • Thank you — it is my pleasure to assist you.</blockquote><h2>التطبيق العملي</h2><ol><li>اختر عبارة أو اثنتين تناسبان عملك.</li><li>تدرّب على قولها بابتسامة طبيعية وصوت هادئ.</li><li>أتبع كل مجاملة مباشرة بعمل خدمي: تسليم المفتاح، أو تقديم القائمة، أو فتح الباب.</li></ol><aside class=\"bk-scene\"><p>في استقبال السبا أرت نزيلة الموظفة حقيبتها الجديدة وسألتها عن رأيها. بدل أن تسألها من أين اشترتها قالت: <em>اختيار أنيق جدًا، سيدتي.</em> ثم أضافت: <em>غرفة العلاج جاهزة، دعيني أرافقك إليها.</em> شعرت النزيلة بالاهتمام، وبقي الحديث داخل حدود الخدمة.</p></aside><aside class=\"bk-note\"><p>إذا فتح النزيل حديثًا عن السعر أو العلامة، فعبارة دافئة ومحايدة مثل «ذوقكم مميز في الاختيار» تكفيك للرد بلطف دون سؤال أو تعليق إضافي.</p></aside><aside class=\"bk-key\"><p>احتفظ بعبارات بسيطة ومهنية جاهزة، وتجنّب الأسئلة عن السعر أو الشراء، والمبالغة، والتعليق على الجاذبية أو المرافقين.</p></aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: اللغة المهنية",
+                                "questions": [
+                                    {
+                                        "question": "أراك نزيل سترته الجديدة. أي رد يوافق الحقيبة؟",
+                                        "options": [
+                                            "كم سعرها؟",
+                                            "من أين اشتريتها؟",
+                                            "اختيار أنيق جدًا، سيدي.",
+                                            "لم أرَ شيئًا بهذه الروعة!"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "«اختيار أنيق جدًا» من قائمة «قل»، والبقية من قائمة «تجنّب»."
+                                    },
+                                    {
+                                        "question": "لماذا وُضعت عبارة «لم أرَ شيئًا بهذه الروعة!» في قائمة التجنّب؟",
+                                        "options": [
+                                            "لأنها مبالغة قد تبدو غير صادقة",
+                                            "لأنها قصيرة جدًا",
+                                            "لأنها تذكر الفندق",
+                                            "لأنها تستخدم مخاطبة رسمية"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "المبالغة تخالف قاعدة الصدق."
+                                    },
+                                    {
+                                        "question": "ما الذي يجب أن يلي المجاملة المهنية مباشرة؟",
+                                        "options": [
+                                            "سؤال عن خطط النزيل",
+                                            "مجاملة ثانية",
+                                            "انتظار أن يطيل النزيل الحديث",
+                                            "عمل خدمي مثل تقديم القائمة أو تسليم المفتاح"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تطلب الحقيبة الانتقال طبيعيًا إلى الخدمة."
+                                    },
+                                    {
+                                        "question": "قال زميل لنزيلة: «مرافقك جميل». ما المشكلة؟",
+                                        "options": [
+                                            "أنها غير محددة",
+                                            "أنها شخصية أكثر من اللازم وقد تُفهم مغازلة",
+                                            "أنها طويلة",
+                                            "لا مشكلة لأنها لطيفة"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "التعليق على المرافقين شخصي أكثر من اللازم."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "عندما يجاملك النزيل",
+                    "lessons": [
+                        {
+                            "title": "استقبل المجاملة بتواضع",
+                            "minutes": 7,
+                            "body": "<h2>استقبل المجاملة بتواضع ثم واصل الخدمة</h2><p>المجاملة تسير في الاتجاهين؛ فكثيرًا ما يمتدح النزيل الفندق أو زميلًا أو يمتدحك أنت. وطريقة استقبالك لهذه الكلمات لا تقل أهمية عن طريقة تقديمك لها. والنمط الذي تقدّمه الحقيبة ثلاث خطوات: <strong>اشكر — اربط المجاملة بالخدمة — اعرض المساعدة.</strong></p><h2>أربعة أنواع من المجاملة</h2><ol><li><strong>مجاملة عن الفندق:</strong> اشكر النزيل وعبّر عن سعادتك برضاه.</li><li><strong>مجاملة عن زميل:</strong> اعد بنقلها للزميل، ثم نفّذ وعدك؛ فالمجاملة التي لا تصل إلى الشيف أو عامل التدبير فرصة ضائعة لتقدير العمل الجيد.</li><li><strong>مجاملة عن أدائك:</strong> اشكر النزيل واعرض خدمة إضافية.</li><li><strong>مجاملة شخصية متكررة:</strong> أعد التركيز على العمل وأنهِ الحوار بأدب.</li></ol><h2>الرد المهني يحافظ على الدفء</h2><table class=\"bk-say\"><thead><tr><th>يقول النزيل</th><th>تردّ</th></tr></thead><tbody><tr><td><em>«الفندق رائع»</em></td><td><em>شكرًا جزيلًا، سعداء بأن إقامتكم نالت إعجابكم.</em></td></tr><tr><td><em>«الشيف ممتاز»</em></td><td><em>شكرًا لكم، سأنقل للشيف هذه المجاملة الجميلة.</em></td></tr><tr><td><em>«أنت تعرف عملك جيدًا»</em></td><td><em>شكرًا لثقتكم، هل يمكنني تقديم أي مساعدة أخرى؟</em></td></tr><tr><td><em>«أنت شخص مميز جدًا»</em></td><td><em>شكرًا لك. يسعدني أن خدمتي نالت رضاك.</em></td></tr></tbody></table><p>تأمل الرد الأخير: عندما تصبح المجاملة شخصية، يعيدها الرد بلطف إلى «خدمتي»، فيبقى مهذبًا ودافئًا دون أن يقبل الاتجاه الشخصي.</p><h2>إذا استمرت المغازلة</h2><p>تقول الحقيبة: <strong>اعتذر، اذكر أنك ستعود للعمل، وابتعد بأدب.</strong> لا حاجة للجدال أو الشرح أو إظهار الانزعاج؛ فالانسحاب الهادئ يحفظ كرامتك وكرامة النزيل.</p><aside class=\"bk-scene\"><p>كرر نزيل في المقهى للموظفة أنها مميزة جدًا. في المرة الأولى قالت: <em>شكرًا لك. يسعدني أن خدمتي نالت رضاك.</em> وحين استمر ابتسمت وقالت: <em>اعذرني، عليّ العودة إلى طاولاتي،</em> وابتعدت، ثم أبلغت مشرفها لاحقًا. لم يُحرج النزيل، وحافظت هي على حدودها المهنية.</p></aside><blockquote class=\"bk-quote\">الكلمة اللطيفة تبني علاقة — والاحتراف يحميها.</blockquote><aside class=\"bk-note\"><p>إذا امتدح النزيل زميلًا فانقل المجاملة في الوردية نفسها إن أمكن؛ فالتقدير أجمل حين يكون حاضرًا.</p></aside><aside class=\"bk-key\"><p>اشكر، واربط المجاملة بالخدمة، واعرض المساعدة؛ انقل مديح الزملاء، وابتعد بأدب إذا استمرت المجاملة الشخصية.</p></aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: استقبال المجاملة",
+                                "questions": [
+                                    {
+                                        "question": "قال نزيل: «الشيف ممتاز». ما أفضل رد؟",
+                                        "options": [
+                                            "شكرًا لكم، سأنقل للشيف هذه المجاملة الجميلة.",
+                                            "نعم، راتبه مرتفع.",
+                                            "أنا أطبخ أفضل منه.",
+                                            "شكرًا، ثم تنسى الأمر."
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "اعد بنقلها للزميل ثم نفّذ وعدك."
+                                    },
+                                    {
+                                        "question": "قال نزيل: «أنت تعرف عملك جيدًا». أي رد يتبع النمط؟",
+                                        "options": [
+                                            "أعرف، أعمل هنا منذ سنوات.",
+                                            "لا شيء يذكر.",
+                                            "شكرًا لثقتكم، هل يمكنني تقديم أي مساعدة أخرى؟",
+                                            "أخبر مديري أن يرفع راتبي."
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "اشكر النزيل واعرض خدمة إضافية."
+                                    },
+                                    {
+                                        "question": "كرر نزيل المجاملات الشخصية وبدأ يغازل. ماذا تفعل؟",
+                                        "options": [
+                                            "تخبره بحزم أن هذا غير لائق",
+                                            "تضحك وتواصل الدردشة",
+                                            "تتجاهله تمامًا",
+                                            "تعتذر وتذكر أنك ستعود للعمل وتبتعد بأدب"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "هذا هو رد الحقيبة عند استمرار المغازلة."
+                                    },
+                                    {
+                                        "question": "قال نزيل: «أنت شخص مميز جدًا». أي رد يحافظ على الدفء والحدود معًا؟",
+                                        "options": [
+                                            "وأنت كذلك!",
+                                            "شكرًا لك. يسعدني أن خدمتي نالت رضاك.",
+                                            "هل تعطيني رقمك؟",
+                                            "الصمت والابتعاد فورًا"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "الرد يعيد المجاملة إلى الخدمة."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

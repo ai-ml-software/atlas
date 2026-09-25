@@ -34,18 +34,17 @@
 <script type="text/javascript" src="<?php echo site_url('assets/lessons/flipclock-timer/flipclock.min.js'); ?>"></script>
 
 
-<div class="card">
-    <div class="card-header">
-        <div class="row">
-            <div class="col-md-8">
-                <h5 class="d-md-flex w-100"><?php echo $lesson_details['title']; ?></h5>
-            </div>
-            <div class="col-md-4 fw-bold text-md-end">
-                <span class="text-muted"><?php echo get_phrase('total_questions').': '.$quiz_questions->num_rows(); ?></span>
-                <span class="text-muted">|</span>
-                <span class="text-muted"><?php echo get_phrase('total_marks').': '.json_decode($lesson_details['attachment'], true)['total_marks']; ?></span>
-            </div>
-        </div>
+<?php $ap_quiz_rule = json_decode($lesson_details['attachment'], true); ?>
+<div class="card ap-quiz">
+    <div class="card-header ap-quiz__head">
+        <p class="ap-quiz__kicker"><i class="far fa-question-circle" aria-hidden="true"></i> <?php echo get_phrase('Quiz'); ?></p>
+        <h2 class="ap-quiz__title"><?php echo html_escape($lesson_details['title']); ?></h2>
+        <ul class="ap-quiz__facts" role="list">
+            <li><?php echo get_phrase('total_questions'); ?>: <strong><?php echo $quiz_questions->num_rows(); ?></strong></li>
+            <li><?php echo get_phrase('total_marks'); ?>: <strong><?php echo (int) ($ap_quiz_rule['total_marks'] ?? 0); ?></strong></li>
+            <?php if (!empty($ap_quiz_rule['pass_mark'])): ?><li><?php echo get_phrase('Pass mark'); ?>: <strong><?php echo (int) $ap_quiz_rule['pass_mark']; ?></strong></li><?php endif; ?>
+        </ul>
+        <?php if (trim(strip_tags((string) $lesson_details['summary'])) !== ''): ?><p class="ap-quiz__intro"><?php echo html_escape(strip_tags(htmlspecialchars_decode_($lesson_details['summary']))); ?></p><?php endif; ?>
     </div>
     <div class="card-body">
         <div class="row justify-content-center">
@@ -89,7 +88,7 @@
                             <?php if($quiz_submission_checker == 'on_progress'): ?>
                                 <script type="text/javascript">setTimeout(function(){startQuiz();}, 1500);</script>
                             <?php else: ?>
-                                <button class="btn btn-primary" id="quiz-start-brn" onclick="startQuiz(this)"><?php echo get_phrase('start_quiz'); ?></button>
+                                <button class="btn btn-primary ap-btn ap-btn--primary" id="quiz-start-brn" onclick="startQuiz(this)"><?php echo get_phrase('start_quiz'); ?></button>
                             <?php endif; ?>
                         </div>
                         <div class="col-12" id="quiz_answer_sheet"></div>

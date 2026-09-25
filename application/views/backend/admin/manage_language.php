@@ -75,6 +75,8 @@
 								<thead>
 									<tr>
 										<th><?php echo get_phrase('language'); ?></th>
+										<th><?php echo get_phrase('Interface coverage'); ?></th>
+										<th><?php echo get_phrase('Availability'); ?></th>
 										<th><?php echo get_phrase('Direction'); ?></th>
 										<th><?php echo get_phrase('option'); ?></th>
 									</tr>
@@ -82,6 +84,10 @@
 								<tbody>
 									<?php
 									$language_dirs = get_settings('language_dirs') ? json_decode(get_settings('language_dirs'), true) : ['english' => 'ltr'];
+									// Map legacy column names (english, arabic, hindi ...) to ISO codes from config/ha_locales.php
+									$this->load->helper('ha_locale');
+									$legacy_to_code = array_flip(ha_locale_config()['legacy']);
+									$phrase_total = max(1, (int) $this->db->count_all('language'));
 									foreach ($languages as $language) :
 										if(array_key_exists($language, $language_dirs)){
 											$dir = $language_dirs[$language];
@@ -90,7 +96,20 @@
 										}
 										?>
 										<tr>
-											<td><?php echo ucwords($language); ?></td>
+											<?php
+											$iso = isset($legacy_to_code[$language]) ? $legacy_to_code[$language] : null;
+											$done = $this->db->field_exists($language, 'language') ? (int) $this->db->where("`$language` IS NOT NULL", null, false)->where("`$language` !=", '')->count_all_results('language') : 0;
+											$pct = (int) round(100 * $done / $phrase_total);
+											?>
+											<td><strong><?php echo ucwords($language); ?></strong>
+												<?php if ($iso): ?><br><span class="text-muted" lang="<?php echo $iso; ?>"><?php echo html_escape(ha_locale_name($iso)); ?></span> <span class="badge badge-light"><?php echo $iso; ?></span><?php endif; ?></td>
+											<td style="min-width:160px"><div class="progress" style="height:6px" role="progressbar" aria-valuenow="<?php echo $pct; ?>" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar <?php echo $pct >= 95 ? 'bg-success' : 'bg-warning'; ?>" style="width:<?php echo $pct; ?>%"></div></div>
+												<small class="text-muted"><?php echo $pct; ?>% · <?php echo $done; ?> / <?php echo $phrase_total; ?></small></td>
+											<td><?php if ($iso): ?>
+												<?php echo ($iso === 'en' || is_file(APPPATH . 'language/hkp/' . $iso . '.php')) ? '<span class="badge badge-success-lighten">' . get_phrase('Workspace') . '</span>' : '<span class="badge badge-light">' . get_phrase('Workspace') . ' —</span>'; ?>
+												<?php echo in_array($iso, ha_site_locales(), true) ? '<span class="badge badge-success-lighten">' . get_phrase('Public website') . '</span>' : '<span class="badge badge-light">' . get_phrase('Public website') . ' —</span>'; ?>
+												<?php echo ha_locale_enabled($iso) ? '' : '<br><small class="text-muted">' . get_phrase('Not enabled in config/ha_locales.php') . '</small>'; ?>
+											<?php else: ?><small class="text-muted"><?php echo get_phrase('Legacy LMS only'); ?></small><?php endif; ?></td>
 											<td>
 												<div class="form-group">
 													<form action="#">

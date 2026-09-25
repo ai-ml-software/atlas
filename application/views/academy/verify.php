@@ -50,18 +50,14 @@
         </form>
 
         <p style="margin-top:1.5rem;color:var(--ha-ink-soft);font-size:.92rem">
-            <?= $locale === 'ar'
-                ? 'يعرض التحقق اسم الحامل والدورة وتاريخ الإصدار فقط. ولا يكشف أي معلومات أخرى عن الشخص.'
-                : 'Verification shows only the holder name, the course and the issue date. No other information about the person is disclosed.' ?>
+            <?= ha_pe('Verification shows only the holder name, the course and the issue date. No other information about the person is disclosed.') ?>
         </p>
     </div>
 </section>
 
 <?php $this->load->view('academy/_close', array(
-    'close_title' => $locale === 'ar' ? 'كل شهادة قابلة للتحقق' : 'Every certificate can be checked',
-    'close_text'  => $locale === 'ar'
-        ? 'لا قيمة للشهادة إلا بما تثبته. تحمل كل شهادة رمزاً يمكن لصاحب العمل أو المدقق التحقق منه هنا، دون حساب.'
-        : 'A certificate is only worth what it can prove. Each one carries a code that an employer or an auditor can verify here, without an account.',
+    'close_title' => ha_pt('Every certificate can be checked'),
+    'close_text'  => ha_pt('A certificate is only worth what it can prove. Each one carries a code that an employer or an auditor can verify here, without an account.'),
     'close_primary'   => array('label' => $t['for_hotels'], 'url' => base_url($locale . '/hotels')),
     'close_secondary' => array('label' => $t['contact'], 'url' => base_url($locale . '/contact')),
 )); ?>

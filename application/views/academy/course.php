@@ -94,8 +94,8 @@
                     <li><span class="k"><?= html_escape($t['instructor']) ?></span><span class="v"><?= html_escape($course['instructor_name']) ?></span></li>
                 <?php endif; ?>
                 <li><span class="k"><?= html_escape($t['certificate']) ?></span><span class="v"><?= (int) $course['certificate_eligible'] === 1
-                        ? ($locale === 'ar' ? 'نعم' : 'Yes')
-                        : ($locale === 'ar' ? 'لا' : 'No') ?></span></li>
+                        ? (ha_pe('Yes'))
+                        : (ha_pe('No')) ?></span></li>
                 <?php if ((int) $course['is_free'] === 1): ?>
                     <li><span class="k">&nbsp;</span><span class="v"><span class="ha-pill ha-pill--ok"><?= html_escape($t['free']) ?></span></span></li>
                 <?php endif; ?>
@@ -144,10 +144,8 @@
 <?php endif; ?>
 
 <?php $this->load->view('academy/_close', array(
-    'close_title' => $locale === 'ar' ? 'هذه الدورة ضمن برنامج كامل' : 'This course inside a full programme',
-    'close_text'  => $locale === 'ar'
-        ? 'تأخذ معظم الفرق هذه الدورة ضمن برنامج قسم ينتهي بشهادة واحدة قابلة للتحقق.'
-        : 'Most teams take this as part of a department programme that ends in one verifiable certificate.',
+    'close_title' => ha_pt('This course inside a full programme'),
+    'close_text'  => ha_pt('Most teams take this as part of a department programme that ends in one verifiable certificate.'),
     'close_primary'   => array('label' => $t['programs'], 'url' => base_url($locale . '/programs')),
     'close_secondary' => array('label' => $t['for_hotels'], 'url' => base_url($locale . '/hotels')),
 )); ?>

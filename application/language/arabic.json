@@ -700,6 +700,7 @@
     "write_your_comment": "اكتب تعليقك",
     "course_content": "محتوى الدورة",
     "mark_as_complete": "تعليم كمكتمل",
+    "لوحة_التحكم": "لوحة التحكم",
     "summary": "ملخص",
     "live_class": "فصل مباشر",
     "live_class_is_not_scheduled_yet": "لم يُجدول الفصل المباشر بعد",
@@ -977,5 +978,7 @@
     "what_the_site_root_shows": "ما يعرضه جذر الموقع",
     "front_end_shown_at_the_site_root": "الواجهة المعروضة على جذر الموقع",
     "academy_website,_bilingual_arabic_and_english": "موقع الأكاديمية، بالعربية والإنجليزية",
-    "academy_lms_theme,_built_with_the_home_page_builder": "قالب Academy LMS، المبني بمنشئ الصفحة الرئيسية"
+    "academy_lms_theme,_built_with_the_home_page_builder": "قالب Academy LMS، المبني بمنشئ الصفحة الرئيسية",
+    "الدورات_النشطة": "الدورات النشطة",
+    "إعدادات_النظام": "إعدادات النظام"
 }

@@ -1298,11 +1298,7 @@ class Home extends CI_Controller
 
     public function sign_up()
     {
-        if ($this->session->userdata('admin_login')) {
-            redirect(site_url('admin'), 'refresh');
-        } elseif ($this->session->userdata('user_login')) {
-            redirect(site_url('user'), 'refresh');
-        }
+        $this->user_model->check_session_data('login');
         $page_data['page_name']  = 'sign_up';
         $page_data['page_title'] = site_phrase('sign_up');
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
@@ -1621,7 +1617,55 @@ class Home extends CI_Controller
     // Mark this lesson as completed codes
     public function update_watch_history_manually()
     {
+        if (!$this->may_mark_lesson($this->input->post('lesson_id'), $this->input->post('course_id'))) {
+            echo 0;
+            return;
+        }
         echo $this->crud_model->update_watch_history_manually();
+    }
+
+    /**
+     * In a course taken in order (drip content), a learner can only tick off
+     * the lesson that is open to them, and never a quiz that must be passed:
+     * that quiz completes itself when the pass mark is reached. Without this,
+     * posting a lesson id skipped the quiz gate and unlocked the next lesson.
+     * Unticking is always allowed. Instructors and admins are not restricted.
+     */
+    private function may_mark_lesson($lesson_id, $course_id)
+    {
+        $user_id = (int) $this->session->userdata('user_id');
+        $course = $this->crud_model->get_course_by_id($course_id)->row_array();
+        $lesson = $this->db->get_where('lesson', array('id' => (int) $lesson_id, 'course_id' => (int) $course_id))->row_array();
+        if (!$user_id || !$course || !$lesson) {
+            return false;
+        }
+        if (empty($course['enable_drip_content']) || $this->session->userdata('admin_login')
+            || $this->crud_model->is_course_instructor($course_id, $user_id)) {
+            return true;
+        }
+        $history = $this->crud_model->get_watch_histories($user_id, $course_id)->row_array();
+        $done = $history ? json_decode((string) $history['completed_lesson'], true) : array();
+        $done = is_array($done) ? array_map('intval', $done) : array();
+        if (in_array((int) $lesson_id, $done, true)) {
+            return true;
+        }
+        if ($lesson['lesson_type'] === 'quiz') {
+            $rule = json_decode((string) $lesson['attachment'], true);
+            if (isset($rule['drip_content_for_passing_rule']) && $rule['drip_content_for_passing_rule'] === 'applicable') {
+                return false;
+            }
+        }
+        foreach ($this->crud_model->get_section('course', $course_id)->result_array() as $section) {
+            foreach ($this->crud_model->get_lessons('section', $section['id'])->result_array() as $l) {
+                if ((int) $l['id'] === (int) $lesson_id) {
+                    return true;
+                }
+                if (!in_array((int) $l['id'], $done, true)) {
+                    return false;
+                }
+            }
+        }
+        return false;
     }
 
     public function set_flashdata_for_js($index = "", $message = "")

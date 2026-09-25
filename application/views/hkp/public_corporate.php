@@ -1,5 +1,6 @@
 <?php
-$other = $lang === 'ar' ? 'en' : 'ar';
+$content_locales = array('en', 'ar');   // corporate blocks are authored in English and Arabic
+$indexable = in_array($lang, $content_locales, true);
 $path = $page === 'cases' ? 'altus/case-studies' : 'altus';
 $title = $page === 'cases' ? hkp_t('Illustrative case studies') : 'Altus Advisory';
 $desc = '';
@@ -11,23 +12,25 @@ $schema = array('@context' => 'https://schema.org', '@type' => 'Organization', '
     'areaServed' => array('SA', 'GCC', 'MENA'), 'address' => array('@type' => 'PostalAddress', 'addressLocality' => 'Riyadh', 'addressCountry' => 'SA'),
     'founder' => array_map(function ($l) { return array('@type' => 'Person', 'name' => $l['name_en'], 'jobTitle' => $l['role_en']); }, $leaders));
 ?><!DOCTYPE html>
-<html lang="<?php echo $lang; ?>" dir="<?php echo $lang === 'ar' ? 'rtl' : 'ltr'; ?>">
+<html lang="<?php echo $lang; ?>" dir="<?php echo ha_locale_dir($lang); ?>">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php echo hkp_h($title); ?> · <?php echo hkp_e('Elevating Hospitality & Business Performance'); ?></title>
 <meta name="description" content="<?php echo hkp_h($desc); ?>">
-<link rel="canonical" href="<?php echo site_url($lang . '/' . $path); ?>">
-<link rel="alternate" hreflang="<?php echo $lang; ?>" href="<?php echo site_url($lang . '/' . $path); ?>">
-<link rel="alternate" hreflang="<?php echo $other; ?>" href="<?php echo site_url($other . '/' . $path); ?>">
+<link rel="canonical" href="<?php echo site_url(($indexable ? $lang : 'en') . '/' . $path); ?>">
+<?php if (!$indexable): ?><meta name="robots" content="noindex,follow"><?php endif; ?>
+<?php foreach ($content_locales as $cl): ?><link rel="alternate" hreflang="<?php echo $cl; ?>" href="<?php echo site_url($cl . '/' . $path); ?>">
+<?php endforeach; ?>
 <link rel="alternate" hreflang="x-default" href="<?php echo site_url('en/' . $path); ?>">
-<meta property="og:title" content="<?php echo hkp_h($title); ?>"><meta property="og:description" content="<?php echo hkp_h($desc); ?>"><meta property="og:type" content="website"><meta property="og:locale" content="<?php echo $lang === 'ar' ? 'ar_SA' : 'en_US'; ?>">
+<meta property="og:title" content="<?php echo hkp_h($title); ?>"><meta property="og:description" content="<?php echo hkp_h($desc); ?>"><meta property="og:type" content="website"><meta property="og:locale" content="<?php echo hkp_h(preg_replace('/@.*/', '', ha_locale_icu($lang))); ?>">
 <script type="application/ld+json"><?php echo json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES); ?></script>
 <link rel="stylesheet" href="<?php echo hkp_asset('assets/hkp/hkp.css'); ?>">
 </head>
-<body class="hkp <?php echo $lang === 'ar' ? 'is-ar' : 'is-en'; ?>">
+<body class="hkp is-<?php echo $lang; ?><?php echo ha_locale_dir($lang) === 'rtl' ? ' is-rtl' : ''; ?><?php echo in_array($lang, array('en', 'tl'), true) ? '' : ' is-intl'; ?><?php echo $lang === 'ar' ? ' is-ar' : ''; ?>">
 <main class="hkp-main" style="max-width:1100px;margin:0 auto">
   <div class="hkp-actions" style="justify-content:space-between;margin-bottom:1rem"><strong>ALTUS ADVISORY</strong>
     <span class="hkp-actions"><a href="<?php echo site_url($lang . '/altus'); ?>"><?php echo hkp_e('About'); ?></a><a href="<?php echo site_url($lang . '/altus/case-studies'); ?>"><?php echo hkp_e('Case studies'); ?></a><a href="<?php echo site_url('verify'); ?>"><?php echo hkp_e('Verify a certificate'); ?></a>
-    <a class="hkp-lang" href="<?php echo site_url($other . '/' . $path); ?>" hreflang="<?php echo $other; ?>"><?php echo $lang === 'ar' ? 'English' : 'العربية'; ?></a></span></div>
+    <details class="hkp-langmenu"><summary class="hkp-lang" aria-label="<?php echo hkp_e('Language'); ?>"><span lang="<?php echo $lang; ?>"><?php echo hkp_h(ha_locale_name($lang)); ?></span></summary>
+      <ul class="hkp-langmenu__list" role="list"><?php foreach (ha_locales() as $lc): ?><li><a href="<?php echo site_url($lc . '/' . $path); ?>" hreflang="<?php echo $lc; ?>" lang="<?php echo $lc; ?>" dir="<?php echo ha_locale_dir($lc); ?>"<?php echo $lc === $lang ? ' aria-current="true"' : ''; ?>><?php echo hkp_h(ha_locale_name($lc)); ?></a></li><?php endforeach; ?></ul></details></span></div>
 
 <?php if ($page === 'about'): ?>
   <section class="hkp-card hkp-card--hero" style="margin-bottom:1rem">

@@ -24,7 +24,7 @@ class Hkp_public extends CI_Controller {
 
     public function verify($code = '') {
         $lang = $this->input->get('lang');
-        hkp_locale($lang === 'ar' ? 'ar' : 'en');
+        hkp_locale(ha_locale_enabled($lang) ? $lang : 'en');
         $code = trim(rawurldecode((string) ($code ?: $this->input->get('code'))));
         $result = null;
         if ($code !== '') {
@@ -56,7 +56,7 @@ class Hkp_public extends CI_Controller {
     }
 
     public function corporate($lang = 'en') {
-        hkp_locale($lang === 'ar' ? 'ar' : 'en');
+        hkp_locale(ha_locale_enabled($lang) ? $lang : 'en');
         $this->load->view('hkp/public_corporate', array('lang' => hkp_locale(), 'blocks' => $this->blocks(), 'brand' => $this->ha_tenant->brand(),
             'services' => $this->db->order_by('sort_order')->get_where('ha_service', array('status' => 'published'))->result_array(),
             'sectors' => $this->db->order_by('sort_order')->get_where('ha_sector', array('status' => 'active'))->result_array(),
@@ -67,7 +67,7 @@ class Hkp_public extends CI_Controller {
     }
 
     public function case_studies($lang = 'en') {
-        hkp_locale($lang === 'ar' ? 'ar' : 'en');
+        hkp_locale(ha_locale_enabled($lang) ? $lang : 'en');
         $this->load->view('hkp/public_corporate', array('lang' => hkp_locale(), 'blocks' => array(), 'brand' => $this->ha_tenant->brand(),
             'services' => array(), 'sectors' => array(), 'leaders' => array(), 'partners' => array(),
             'cases' => $this->db->order_by('sort_order')->get_where('ha_case_study', array('status' => 'published', 'visibility' => 'public'))->result_array(),

@@ -26,8 +26,98 @@ class Ha_catalog {
         $this->db = $this->CI->db;
     }
 
+    /** Any enabled language (config/ha_locales.php); anything else is English. */
     private function locale($locale) {
+        if (!function_exists('ha_locale_enabled')) {
+            require_once APPPATH . 'helpers/ha_locale_helper.php';
+        }
+        return ha_locale_enabled($locale) ? $locale : 'en';
+    }
+
+    /**
+     * Suffix for bilingual column pairs (slug_en/slug_ar, title_en/title_ar ...).
+     * Only English and Arabic have columns; every other language uses the English
+     * column (URLs stay stable: /hi/courses/{english-slug}) and gets its text from
+     * translation tables or the ha_i18n_text overlay instead.
+     */
+    private function col($locale) {
         return $locale === 'ar' ? 'ar' : 'en';
+    }
+
+    /**
+     * Translation table to join for $locale. English joins the table filtered by
+     * locale (tr_on). Any other language joins a derived table holding that
+     * language's rows plus the English row for every entity not yet translated,
+     * so an untranslated course shows in English instead of disappearing.
+     */
+    private function tr($table, $fk, $locale) {
+        if ($locale === 'en') {
+            return $table;
+        }
+        $l = $this->db->escape($locale);
+        return "(SELECT * FROM $table WHERE locale = $l UNION ALL SELECT f.* FROM $table f WHERE f.locale = 'en'"
+            . " AND NOT EXISTS (SELECT 1 FROM $table x WHERE x.$fk = f.$fk AND x.locale = $l))";
+    }
+
+    private function tr_on($alias, $locale) {
+        return $locale === 'en' ? " AND $alias.locale = 'en'" : '';
+    }
+
+    /** Rows of a per-locale child table (outcomes, FAQs), falling back to English when none exist in $locale. */
+    private function localised_rows($table, $select, $course_id, $locale) {
+        foreach (array_unique(array($locale, 'en')) as $l) {
+            $rows = $this->db->select($select)->where(array('course_id' => (int) $course_id, 'locale' => $l))
+                ->order_by('sort_order', 'ASC')->get($table)->result_array();
+            if ($rows) {
+                return $rows;
+            }
+        }
+        return array();
+    }
+
+    /**
+     * Whether $locale has its own text for an entity (not the English fallback).
+     * Used to keep untranslated pages out of hreflang/sitemaps (noindex) so a
+     * language never publishes thin duplicates of the English site.
+     */
+    public function is_translated($table, $fk, $id, $locale) {
+        if ($locale === 'en' || $locale === 'ar') {
+            return true;
+        }
+        return (bool) $this->db->where(array($fk => (int) $id, 'locale' => $locale))->count_all_results($table);
+    }
+
+    /**
+     * Overlays translations for entities that store text in en/ar column pairs
+     * (topics, learning paths and steps, FAQs, menu items, SOP categories, departments):
+     * rows of ha_i18n_text (entity, entity_id, field, locale, value) replace the
+     * English value for $locale. Rows must carry `id`.
+     */
+    public function overlay($entity, array $rows, array $fields, $locale, $single = false) {
+        if ($locale === 'en' || $locale === 'ar' || !$rows || !$this->db->table_exists('ha_i18n_text')) {
+            return $rows;
+        }
+        $list = $single ? array($rows) : $rows;
+        $ids = array_filter(array_map(function ($r) { return isset($r['id']) ? (int) $r['id'] : 0; }, $list));
+        if (!$ids) {
+            return $rows;
+        }
+        $map = array();
+        foreach ($this->db->select('entity_id, field, value')->where('entity', $entity)->where('locale', $locale)
+            ->where_in('entity_id', $ids)->where_in('field', $fields)->get('ha_i18n_text')->result_array() as $t) {
+            $map[$t['entity_id']][$t['field']] = $t['value'];
+        }
+        foreach ($list as &$r) {
+            if (isset($r['id'], $map[$r['id']])) {
+                foreach ($map[$r['id']] as $field => $value) {
+                    if (trim((string) $value) !== '') {
+                        $r[$field] = $value;
+                    }
+                }
+            }
+        }
+        unset($r);
+        return $single ? $list[0] : $list;
     }
 
     // --------------------------------------------------------------- courses
@@ -38,14 +128,14 @@ class Ha_catalog {
             ->select('c.id, c.code, c.level, c.duration_minutes, c.thumbnail, c.is_free, c.price,
                       c.currency, c.certificate_eligible, c.department_code, c.rating_avg, c.rating_count,
                       c.enrollment_count, c.published_at')
-            ->select('c.slug_' . $locale . ' AS slug', false)
+            ->select('c.slug_' . $this->col($locale) . ' AS slug', false)
             ->select('t.title, t.short_description', false)
             ->select('ct.name AS category_name, cat.code AS category_code', false)
-            ->select('cat.slug_' . $locale . ' AS category_slug', false)
+            ->select('cat.slug_' . $this->col($locale) . ' AS category_slug', false)
             ->from('ha_course c')
-            ->join('ha_course_translation t', 't.course_id = c.id AND t.locale = ' . $this->db->escape($locale), 'left')
+            ->join($this->tr('ha_course_translation', 'course_id', $locale) . ' t', 't.course_id = c.id' . $this->tr_on('t', $locale), 'left', false)
             ->join('ha_category cat', 'cat.id = c.category_id', 'left')
-            ->join('ha_category_translation ct', 'ct.category_id = cat.id AND ct.locale = ' . $this->db->escape($locale), 'left')
+            ->join($this->tr('ha_category_translation', 'category_id', $locale) . ' ct', 'ct.category_id = cat.id' . $this->tr_on('ct', $locale), 'left', false)
             ->where('c.status', 'published');
 
         if (!empty($params['category'])) {
@@ -84,7 +174,7 @@ class Ha_catalog {
     public function count_courses($locale = 'en', array $params = array()) {
         $locale = $this->locale($locale);
         $db = $this->db->from('ha_course c')
-            ->join('ha_course_translation t', 't.course_id = c.id AND t.locale = ' . $this->db->escape($locale), 'left')
+            ->join($this->tr('ha_course_translation', 'course_id', $locale) . ' t', 't.course_id = c.id' . $this->tr_on('t', $locale), 'left', false)
             ->join('ha_category cat', 'cat.id = c.category_id', 'left')
             ->where('c.status', 'published');
         if (!empty($params['category'])) {
@@ -109,18 +199,18 @@ class Ha_catalog {
         $locale = $this->locale($locale);
         $course = $this->db
             ->select('c.*')
-            ->select('c.slug_' . $locale . ' AS slug', false)
+            ->select('c.slug_' . $this->col($locale) . ' AS slug', false)
             ->select('t.title, t.short_description, t.description, t.requirements', false)
             ->select('ct.name AS category_name, cat.code AS category_code', false)
-            ->select('cat.slug_' . $locale . ' AS category_slug', false)
+            ->select('cat.slug_' . $this->col($locale) . ' AS category_slug', false)
             ->select("TRIM(CONCAT(COALESCE(u.first_name,''),' ',COALESCE(u.last_name,''))) AS instructor_name", false)
             ->select('u.biography AS instructor_bio, u.image AS instructor_image', false)
             ->from('ha_course c')
-            ->join('ha_course_translation t', 't.course_id = c.id AND t.locale = ' . $this->db->escape($locale), 'left')
+            ->join($this->tr('ha_course_translation', 'course_id', $locale) . ' t', 't.course_id = c.id' . $this->tr_on('t', $locale), 'left', false)
             ->join('ha_category cat', 'cat.id = c.category_id', 'left')
-            ->join('ha_category_translation ct', 'ct.category_id = cat.id AND ct.locale = ' . $this->db->escape($locale), 'left')
+            ->join($this->tr('ha_category_translation', 'category_id', $locale) . ' ct', 'ct.category_id = cat.id' . $this->tr_on('ct', $locale), 'left', false)
             ->join('users u', 'u.id = c.instructor_user_id', 'left')
-            ->where('c.slug_' . $locale, $slug)
+            ->where('c.slug_' . $this->col($locale), $slug)
             ->where('c.status', 'published')
             ->get()->row_array();
 
@@ -128,29 +218,24 @@ class Ha_catalog {
             return null;
         }
 
-        $course['outcomes'] = array_column($this->db->select('body')
-            ->where(array('course_id' => $course['id'], 'locale' => $locale))
-            ->order_by('sort_order', 'ASC')->get('ha_course_outcome')->result_array(), 'body');
-
-        $course['faqs'] = $this->db->select('question, answer')
-            ->where(array('course_id' => $course['id'], 'locale' => $locale))
-            ->order_by('sort_order', 'ASC')->get('ha_course_faq')->result_array();
+        $course['outcomes'] = array_column($this->localised_rows('ha_course_outcome', 'body', $course['id'], $locale), 'body');
+        $course['faqs'] = $this->localised_rows('ha_course_faq', 'question, answer', $course['id'], $locale);
 
         $course['curriculum'] = $this->curriculum($course['id'], $locale);
 
         $course['skills'] = $this->db
-            ->select('s.code, s.name_' . $locale . ' AS name, cs.awards_level', false)
+            ->select('s.code, s.name_' . $this->col($locale) . ' AS name, cs.awards_level', false)
             ->from('ha_course_skill cs')
             ->join('ha_skill s', 's.id = cs.skill_id')
             ->where('cs.course_id', $course['id'])
-            ->order_by('s.name_' . $locale, 'ASC')
+            ->order_by('s.name_' . $this->col($locale), 'ASC')
             ->get()->result_array();
 
         $course['prerequisites'] = $this->db
-            ->select('c2.slug_' . $locale . ' AS slug, t2.title', false)
+            ->select('c2.slug_' . $this->col($locale) . ' AS slug, t2.title', false)
             ->from('ha_course_prerequisite p')
             ->join('ha_course c2', 'c2.id = p.prerequisite_course_id')
-            ->join('ha_course_translation t2', 't2.course_id = c2.id AND t2.locale = ' . $this->db->escape($locale), 'left')
+            ->join($this->tr('ha_course_translation', 'course_id', $locale) . ' t2', 't2.course_id = c2.id' . $this->tr_on('t2', $locale), 'left', false)
             ->where('p.course_id', $course['id'])
             ->where('c2.status', 'published')
             ->get()->result_array();
@@ -167,10 +252,10 @@ class Ha_catalog {
         $course['related'] = array_slice(array_values($course['related']), 0, 3);
 
         $course['programs'] = $this->db
-            ->select('p.slug_' . $locale . ' AS slug, pt.title', false)
+            ->select('p.slug_' . $this->col($locale) . ' AS slug, pt.title', false)
             ->from('ha_program_course pc')
             ->join('ha_program p', 'p.id = pc.program_id')
-            ->join('ha_program_translation pt', 'pt.program_id = p.id AND pt.locale = ' . $this->db->escape($locale), 'left')
+            ->join($this->tr('ha_program_translation', 'program_id', $locale) . ' pt', 'pt.program_id = p.id' . $this->tr_on('pt', $locale), 'left', false)
             ->where('pc.course_id', $course['id'])
             ->where('p.status', 'published')
             ->get()->result_array();
@@ -182,7 +267,7 @@ class Ha_catalog {
     public function curriculum($course_id, $locale = 'en') {
         $locale = $this->locale($locale);
         $sections = $this->db
-            ->select('id, title_' . $locale . ' AS title, sort_order', false)
+            ->select('id, title_' . $this->col($locale) . ' AS title, sort_order', false)
             ->where('course_id', (int) $course_id)
             ->order_by('sort_order', 'ASC')
             ->get('ha_course_section')->result_array();
@@ -192,7 +277,7 @@ class Ha_catalog {
                       l.is_mandatory, l.completion_rule, l.sort_order')
             ->select('lt.title, lt.objective', false)
             ->from('ha_lesson l')
-            ->join('ha_lesson_translation lt', 'lt.lesson_id = l.id AND lt.locale = ' . $this->db->escape($locale), 'left')
+            ->join($this->tr('ha_lesson_translation', 'lesson_id', $locale) . ' lt', 'lt.lesson_id = l.id' . $this->tr_on('lt', $locale), 'left', false)
             ->where('l.course_id', (int) $course_id)
             ->where('l.status', 'published')
             ->order_by('l.sort_order', 'ASC')
@@ -217,11 +302,11 @@ class Ha_catalog {
         $locale = $this->locale($locale);
         $db = $this->db
             ->select('p.id, p.code, p.level, p.duration_hours, p.thumbnail')
-            ->select('p.slug_' . $locale . ' AS slug', false)
+            ->select('p.slug_' . $this->col($locale) . ' AS slug', false)
             ->select('t.title, t.short_description', false)
             ->select('(SELECT COUNT(*) FROM ha_program_course pc WHERE pc.program_id = p.id) AS course_count', false)
             ->from('ha_program p')
-            ->join('ha_program_translation t', 't.program_id = p.id AND t.locale = ' . $this->db->escape($locale), 'left')
+            ->join($this->tr('ha_program_translation', 'program_id', $locale) . ' t', 't.program_id = p.id' . $this->tr_on('t', $locale), 'left', false)
             ->where('p.status', 'published')
             ->order_by('t.title', 'ASC');
         if (!empty($params['limit'])) {
@@ -234,11 +319,11 @@ class Ha_catalog {
         $locale = $this->locale($locale);
         $program = $this->db
             ->select('p.*')
-            ->select('p.slug_' . $locale . ' AS slug', false)
+            ->select('p.slug_' . $this->col($locale) . ' AS slug', false)
             ->select('t.title, t.short_description, t.description, t.outcomes, t.prerequisites', false)
             ->from('ha_program p')
-            ->join('ha_program_translation t', 't.program_id = p.id AND t.locale = ' . $this->db->escape($locale), 'left')
-            ->where('p.slug_' . $locale, $slug)
+            ->join($this->tr('ha_program_translation', 'program_id', $locale) . ' t', 't.program_id = p.id' . $this->tr_on('t', $locale), 'left', false)
+            ->where('p.slug_' . $this->col($locale), $slug)
             ->where('p.status', 'published')
             ->get()->row_array();
         if (!$program) {
@@ -246,11 +331,11 @@ class Ha_catalog {
         }
         $program['courses'] = $this->db
             ->select('c.id, c.level, c.duration_minutes, pc.is_mandatory, pc.sort_order')
-            ->select('c.slug_' . $locale . ' AS slug', false)
+            ->select('c.slug_' . $this->col($locale) . ' AS slug', false)
             ->select('t.title, t.short_description', false)
             ->from('ha_program_course pc')
             ->join('ha_course c', 'c.id = pc.course_id')
-            ->join('ha_course_translation t', 't.course_id = c.id AND t.locale = ' . $this->db->escape($locale), 'left')
+            ->join($this->tr('ha_course_translation', 'course_id', $locale) . ' t', 't.course_id = c.id' . $this->tr_on('t', $locale), 'left', false)
             ->where('pc.program_id', $program['id'])
             ->where('c.status', 'published')
             ->order_by('pc.sort_order', 'ASC')
@@ -264,54 +349,56 @@ class Ha_catalog {
         $locale = $this->locale($locale);
         $db = $this->db
             ->select('p.id, p.code, p.department_code, p.thumbnail')
-            ->select('p.slug_' . $locale . ' AS slug', false)
-            ->select('p.title_' . $locale . ' AS title', false)
-            ->select('p.summary_' . $locale . ' AS summary', false)
+            ->select('p.slug_' . $this->col($locale) . ' AS slug', false)
+            ->select('p.title_' . $this->col($locale) . ' AS title', false)
+            ->select('p.summary_' . $this->col($locale) . ' AS summary', false)
             ->select('(SELECT COUNT(*) FROM ha_path_step s WHERE s.path_id = p.id) AS step_count', false)
             ->from('ha_learning_path p')
             ->where('p.status', 'published')
-            ->order_by('p.title_' . $locale, 'ASC');
+            ->order_by('p.title_' . $this->col($locale), 'ASC');
         if (!empty($params['limit'])) {
             $db->limit((int) $params['limit']);
         }
-        return $db->get()->result_array();
+        return $this->overlay('path', $db->get()->result_array(), array('title', 'summary'), $locale);
     }
 
     public function path($slug, $locale = 'en') {
         $locale = $this->locale($locale);
         $path = $this->db
             ->select('p.*')
-            ->select('p.slug_' . $locale . ' AS slug', false)
-            ->select('p.title_' . $locale . ' AS title', false)
-            ->select('p.summary_' . $locale . ' AS summary', false)
-            ->select('p.description_' . $locale . ' AS description', false)
+            ->select('p.slug_' . $this->col($locale) . ' AS slug', false)
+            ->select('p.title_' . $this->col($locale) . ' AS title', false)
+            ->select('p.summary_' . $this->col($locale) . ' AS summary', false)
+            ->select('p.description_' . $this->col($locale) . ' AS description', false)
             ->from('ha_learning_path p')
-            ->where('p.slug_' . $locale, $slug)
+            ->where('p.slug_' . $this->col($locale), $slug)
             ->where('p.status', 'published')
             ->get()->row_array();
         if (!$path) {
             return null;
         }
+        $path = $this->overlay('path', $path, array('title', 'summary', 'description'), $locale, true);
 
         $steps = $this->db
             ->select('s.id, s.sort_order')
-            ->select('s.title_' . $locale . ' AS title', false)
-            ->select('s.description_' . $locale . ' AS description', false)
-            ->select('j.title_' . $locale . ' AS job_title, j.level AS job_level', false)
+            ->select('s.title_' . $this->col($locale) . ' AS title', false)
+            ->select('s.description_' . $this->col($locale) . ' AS description', false)
+            ->select('j.title_' . $this->col($locale) . ' AS job_title, j.level AS job_level', false)
             ->from('ha_path_step s')
             ->join('ha_job_role j', 'j.id = s.job_role_id', 'left')
             ->where('s.path_id', $path['id'])
             ->order_by('s.sort_order', 'ASC')
             ->get()->result_array();
+        $steps = $this->overlay('path_step', $steps, array('title', 'description'), $locale);
 
         foreach ($steps as $i => $step) {
             $steps[$i]['courses'] = $this->db
                 ->select('c.id, c.duration_minutes, c.level, i.is_mandatory')
-                ->select('c.slug_' . $locale . ' AS slug', false)
+                ->select('c.slug_' . $this->col($locale) . ' AS slug', false)
                 ->select('t.title', false)
                 ->from('ha_path_step_item i')
                 ->join('ha_course c', 'c.id = i.item_id')
-                ->join('ha_course_translation t', 't.course_id = c.id AND t.locale = ' . $this->db->escape($locale), 'left')
+                ->join($this->tr('ha_course_translation', 'course_id', $locale) . ' t', 't.course_id = c.id' . $this->tr_on('t', $locale), 'left', false)
                 ->where('i.step_id', $step['id'])
                 ->where('i.item_type', 'course')
                 ->where('c.status', 'published')
@@ -328,51 +415,54 @@ class Ha_catalog {
         $locale = $this->locale($locale);
         $db = $this->db
             ->select('id, code, city, topic_type, sort_order, hero_image')
-            ->select('slug_' . $locale . ' AS slug', false)
-            ->select('title_' . $locale . ' AS title', false)
-            ->select('intro_' . $locale . ' AS intro', false)
+            ->select('slug_' . $this->col($locale) . ' AS slug', false)
+            ->select('title_' . $this->col($locale) . ' AS title', false)
+            ->select('intro_' . $this->col($locale) . ' AS intro', false)
             ->from('ha_topic')
             ->where('status', 'published')
             ->order_by('sort_order', 'ASC');
         if ($type !== null) {
             $db->where('topic_type', $type);
         }
-        return $db->get()->result_array();
+        return $this->overlay('topic', $db->get()->result_array(), array('title', 'intro'), $locale);
     }
 
     public function topic($slug, $locale = 'en') {
         $locale = $this->locale($locale);
         $topic = $this->db
             ->select('*')
-            ->select('slug_' . $locale . ' AS slug', false)
-            ->select('title_' . $locale . ' AS title', false)
-            ->select('intro_' . $locale . ' AS intro', false)
+            ->select('slug_' . $this->col($locale) . ' AS slug', false)
+            ->select('title_' . $this->col($locale) . ' AS title', false)
+            ->select('intro_' . $this->col($locale) . ' AS intro', false)
             ->from('ha_topic')
-            ->where('slug_' . $locale, $slug)
+            ->where('slug_' . $this->col($locale), $slug)
             ->where('status', 'published')
             ->get()->row_array();
         if (!$topic) {
             return null;
         }
+        $topic = $this->overlay('topic', $topic, array('title', 'intro'), $locale, true);
         $topic['courses'] = $this->db
             ->select('c.id, c.level, c.duration_minutes')
-            ->select('c.slug_' . $locale . ' AS slug', false)
+            ->select('c.slug_' . $this->col($locale) . ' AS slug', false)
             ->select('t.title, t.short_description', false)
             ->from('ha_topic_course tc')
             ->join('ha_course c', 'c.id = tc.course_id')
-            ->join('ha_course_translation t', 't.course_id = c.id AND t.locale = ' . $this->db->escape($locale), 'left')
+            ->join($this->tr('ha_course_translation', 'course_id', $locale) . ' t', 't.course_id = c.id' . $this->tr_on('t', $locale), 'left', false)
             ->where('tc.topic_id', $topic['id'])
             ->where('c.status', 'published')
             ->order_by('tc.sort_order', 'ASC')
             ->get()->result_array();
 
         $topic['faqs'] = $this->db
-            ->select('question_' . $locale . ' AS question', false)
-            ->select('answer_' . $locale . ' AS answer', false)
+            ->select('id')
+            ->select('question_' . $this->col($locale) . ' AS question', false)
+            ->select('answer_' . $this->col($locale) . ' AS answer', false)
             ->from('ha_faq')
             ->where(array('scope_type' => 'topic', 'scope_id' => $topic['id'], 'status' => 'published'))
             ->order_by('sort_order', 'ASC')
             ->get()->result_array();
+        $topic['faqs'] = $this->overlay('faq', $topic['faqs'], array('question', 'answer'), $locale);
 
         $topic['articles'] = $this->articles($locale, array('topic_id' => $topic['id'], 'limit' => 4));
         return $topic;
@@ -386,16 +476,16 @@ class Ha_catalog {
             ->select('a.id, a.cover_image, a.reading_minutes, a.published_at, a.view_count')
             // The card renders the cover image, so it needs the alt text with it.
             ->select('a.cover_image_alt_en, a.cover_image_alt_ar')
-            ->select('a.slug_' . $locale . ' AS slug', false)
+            ->select('a.slug_' . $this->col($locale) . ' AS slug', false)
             ->select('t.title, t.excerpt', false)
-            ->select('au.name_' . $locale . ' AS author_name', false)
+            ->select('au.name_' . $this->col($locale) . ' AS author_name', false)
             ->select('ct.name AS category_name', false)
-            ->select('cat.slug_' . $locale . ' AS category_slug, cat.code AS category_code', false)
+            ->select('cat.slug_' . $this->col($locale) . ' AS category_slug, cat.code AS category_code', false)
             ->from('ha_article a')
-            ->join('ha_article_translation t', 't.article_id = a.id AND t.locale = ' . $this->db->escape($locale), 'left')
+            ->join($this->tr('ha_article_translation', 'article_id', $locale) . ' t', 't.article_id = a.id' . $this->tr_on('t', $locale), 'left', false)
             ->join('ha_author au', 'au.id = a.author_id', 'left')
             ->join('ha_category cat', 'cat.id = a.category_id', 'left')
-            ->join('ha_category_translation ct', 'ct.category_id = cat.id AND ct.locale = ' . $this->db->escape($locale), 'left')
+            ->join($this->tr('ha_category_translation', 'category_id', $locale) . ' ct', 'ct.category_id = cat.id' . $this->tr_on('ct', $locale), 'left', false)
             ->where('a.status', 'published')
             ->where('a.published_at <=', date('Y-m-d H:i:s'))
             ->order_by('a.published_at', 'DESC');
@@ -422,7 +512,7 @@ class Ha_catalog {
     public function count_articles($locale = 'en', array $params = array()) {
         $locale = $this->locale($locale);
         $db = $this->db->from('ha_article a')
-            ->join('ha_article_translation t', 't.article_id = a.id AND t.locale = ' . $this->db->escape($locale), 'left')
+            ->join($this->tr('ha_article_translation', 'article_id', $locale) . ' t', 't.article_id = a.id' . $this->tr_on('t', $locale), 'left', false)
             ->join('ha_category cat', 'cat.id = a.category_id', 'left')
             ->where('a.status', 'published')
             ->where('a.published_at <=', date('Y-m-d H:i:s'));
@@ -440,18 +530,18 @@ class Ha_catalog {
         $locale = $this->locale($locale);
         $article = $this->db
             ->select('a.*')
-            ->select('a.slug_' . $locale . ' AS slug', false)
+            ->select('a.slug_' . $this->col($locale) . ' AS slug', false)
             ->select('t.title, t.excerpt, t.body', false)
-            ->select('au.name_' . $locale . ' AS author_name, au.title_' . $locale . ' AS author_title', false)
-            ->select('au.bio_' . $locale . ' AS author_bio, au.avatar AS author_avatar', false)
+            ->select('au.name_' . $this->col($locale) . ' AS author_name, au.title_' . $this->col($locale) . ' AS author_title', false)
+            ->select('au.bio_' . $this->col($locale) . ' AS author_bio, au.avatar AS author_avatar', false)
             ->select('ct.name AS category_name, cat.code AS category_code', false)
-            ->select('cat.slug_' . $locale . ' AS category_slug', false)
+            ->select('cat.slug_' . $this->col($locale) . ' AS category_slug', false)
             ->from('ha_article a')
-            ->join('ha_article_translation t', 't.article_id = a.id AND t.locale = ' . $this->db->escape($locale), 'left')
+            ->join($this->tr('ha_article_translation', 'article_id', $locale) . ' t', 't.article_id = a.id' . $this->tr_on('t', $locale), 'left', false)
             ->join('ha_author au', 'au.id = a.author_id', 'left')
             ->join('ha_category cat', 'cat.id = a.category_id', 'left')
-            ->join('ha_category_translation ct', 'ct.category_id = cat.id AND ct.locale = ' . $this->db->escape($locale), 'left')
-            ->where('a.slug_' . $locale, $slug)
+            ->join($this->tr('ha_category_translation', 'category_id', $locale) . ' ct', 'ct.category_id = cat.id' . $this->tr_on('ct', $locale), 'left', false)
+            ->where('a.slug_' . $this->col($locale), $slug)
             ->where('a.status', 'published')
             ->where('a.published_at <=', date('Y-m-d H:i:s'))
             ->get()->row_array();
@@ -459,7 +549,7 @@ class Ha_catalog {
             return null;
         }
         $article['tags'] = $this->db
-            ->select('tg.slug, tg.name_' . $locale . ' AS name', false)
+            ->select('tg.slug, tg.name_' . $this->col($locale) . ' AS name', false)
             ->from('ha_article_tag at')
             ->join('ha_tag tg', 'tg.id = at.tag_id')
             ->where('at.article_id', $article['id'])
@@ -473,9 +563,9 @@ class Ha_catalog {
 
         if (!empty($article['related_course_id'])) {
             $article['related_course'] = $this->db
-                ->select('c.slug_' . $locale . ' AS slug, t.title', false)
+                ->select('c.slug_' . $this->col($locale) . ' AS slug, t.title', false)
                 ->from('ha_course c')
-                ->join('ha_course_translation t', 't.course_id = c.id AND t.locale = ' . $this->db->escape($locale), 'left')
+                ->join($this->tr('ha_course_translation', 'course_id', $locale) . ' t', 't.course_id = c.id' . $this->tr_on('t', $locale), 'left', false)
                 ->where('c.id', $article['related_course_id'])
                 ->where('c.status', 'published')
                 ->get()->row_array();
@@ -499,13 +589,13 @@ class Ha_catalog {
         $locale = $this->locale($locale);
         $db = $this->db
             ->select('s.id, s.code, s.department_code')
-            ->select('s.slug_' . $locale . ' AS slug', false)
+            ->select('s.slug_' . $this->col($locale) . ' AS slug', false)
             ->select('v.version_label, v.effective_date, v.review_date', false)
             ->select('vt.title, vt.purpose', false)
-            ->select('cat.name_' . $locale . ' AS category_name, cat.code AS category_code', false)
+            ->select('cat.name_' . $this->col($locale) . ' AS category_name, cat.code AS category_code', false)
             ->from('ha_sop_document s')
             ->join('ha_sop_version v', 'v.id = s.current_version_id')
-            ->join('ha_sop_version_translation vt', 'vt.version_id = v.id AND vt.locale = ' . $this->db->escape($locale), 'left')
+            ->join($this->tr('ha_sop_version_translation', 'version_id', $locale) . ' vt', 'vt.version_id = v.id' . $this->tr_on('vt', $locale), 'left', false)
             ->join('ha_sop_category cat', 'cat.id = s.category_id', 'left')
             ->where('s.status', 'published')
             ->where('s.visibility', 'public')
@@ -522,15 +612,15 @@ class Ha_catalog {
         $locale = $this->locale($locale);
         $sop = $this->db
             ->select('s.id, s.code, s.department_code, s.review_interval_months')
-            ->select('s.slug_' . $locale . ' AS slug', false)
+            ->select('s.slug_' . $this->col($locale) . ' AS slug', false)
             ->select('v.id AS version_id, v.version_label, v.effective_date, v.review_date, v.change_summary', false)
             ->select('vt.*', false)
-            ->select('cat.name_' . $locale . ' AS category_name, cat.code AS category_code', false)
+            ->select('cat.name_' . $this->col($locale) . ' AS category_name, cat.code AS category_code', false)
             ->from('ha_sop_document s')
             ->join('ha_sop_version v', 'v.id = s.current_version_id')
-            ->join('ha_sop_version_translation vt', 'vt.version_id = v.id AND vt.locale = ' . $this->db->escape($locale), 'left')
+            ->join($this->tr('ha_sop_version_translation', 'version_id', $locale) . ' vt', 'vt.version_id = v.id' . $this->tr_on('vt', $locale), 'left', false)
             ->join('ha_sop_category cat', 'cat.id = s.category_id', 'left')
-            ->where('s.slug_' . $locale, $slug)
+            ->where('s.slug_' . $this->col($locale), $slug)
             ->where('s.status', 'published')
             ->where('s.visibility', 'public')
             ->where('v.status', 'published')
@@ -546,7 +636,7 @@ class Ha_catalog {
     public function sop_categories($locale = 'en') {
         $locale = $this->locale($locale);
         return $this->db
-            ->select('c.code, c.name_' . $locale . ' AS name', false)
+            ->select('c.code, c.name_' . $this->col($locale) . ' AS name', false)
             ->select('COUNT(s.id) AS sop_count', false)
             ->from('ha_sop_category c')
             ->join('ha_sop_document s', "s.category_id = c.id AND s.status = 'published' AND s.visibility = 'public'", 'left')
@@ -562,11 +652,11 @@ class Ha_catalog {
         $locale = $this->locale($locale);
         return $this->db
             ->select('c.id, c.code, c.icon')
-            ->select('c.slug_' . $locale . ' AS slug', false)
+            ->select('c.slug_' . $this->col($locale) . ' AS slug', false)
             ->select('t.name, t.description', false)
             ->select("(SELECT COUNT(*) FROM ha_course co WHERE co.category_id = c.id AND co.status = 'published') AS course_count", false)
             ->from('ha_category c')
-            ->join('ha_category_translation t', 't.category_id = c.id AND t.locale = ' . $this->db->escape($locale), 'left')
+            ->join($this->tr('ha_category_translation', 'category_id', $locale) . ' t', 't.category_id = c.id' . $this->tr_on('t', $locale), 'left', false)
             ->where('c.status', 'active')
             ->order_by('c.sort_order', 'ASC')
             ->get()->result_array();
@@ -576,8 +666,9 @@ class Ha_catalog {
     public function faqs($locale = 'en', $scope_type = 'global', $scope_id = null) {
         $locale = $this->locale($locale);
         $db = $this->db
-            ->select('question_' . $locale . ' AS question', false)
-            ->select('answer_' . $locale . ' AS answer', false)
+            ->select('id')
+            ->select('question_' . $this->col($locale) . ' AS question', false)
+            ->select('answer_' . $this->col($locale) . ' AS answer', false)
             ->from('ha_faq')
             ->where('scope_type', $scope_type)
             ->where('status', 'published')
@@ -587,7 +678,7 @@ class Ha_catalog {
         } else {
             $db->where('scope_id', (int) $scope_id);
         }
-        return $db->get()->result_array();
+        return $this->overlay('faq', $db->get()->result_array(), array('question', 'answer'), $locale);
     }
 
     /**
@@ -657,12 +748,12 @@ class Ha_catalog {
         $locale = $this->locale($locale);
         $row = $this->db
             ->select('s.code, s.department_code')
-            ->select('s.slug_' . $locale . ' AS slug', false)
+            ->select('s.slug_' . $this->col($locale) . ' AS slug', false)
             ->select('v.version_label, v.effective_date, v.review_date', false)
             ->select('vt.title, vt.purpose, vt.procedure AS steps, vt.checklist', false)
             ->from('ha_sop_document s')
             ->join('ha_sop_version v', 'v.id = s.current_version_id')
-            ->join('ha_sop_version_translation vt', 'vt.version_id = v.id AND vt.locale = ' . $this->db->escape($locale), 'left')
+            ->join($this->tr('ha_sop_version_translation', 'version_id', $locale) . ' vt', 'vt.version_id = v.id' . $this->tr_on('vt', $locale), 'left', false)
             ->where('s.code', $code)
             ->where('s.status', 'published')
             ->get()->row_array();
@@ -680,13 +771,13 @@ class Ha_catalog {
         $locale = $this->locale($locale);
         return $this->db
             ->select('d.code')
-            ->select('d.name_' . $locale . ' AS name', false)
+            ->select('d.name_' . $this->col($locale) . ' AS name', false)
             ->select('COUNT(c.id) AS course_count', false)
             ->from('ha_department d')
             ->join('ha_course c', "c.department_code = d.code AND c.status = 'published'", 'inner')
             // MySQL 8 runs with only_full_group_by, so every selected column
             // that is not aggregated has to be grouped as well.
-            ->group_by(array('d.code', 'd.name_' . $locale))
+            ->group_by(array('d.code', 'd.name_' . $this->col($locale)))
             ->having('course_count >', 0)
             ->order_by('course_count', 'DESC')
             ->get()->result_array();
@@ -696,10 +787,10 @@ class Ha_catalog {
         $locale = $this->locale($locale);
         return $this->db
             ->select('p.id, p.code, p.template, p.slug_en, p.slug_ar')
-            ->select('p.slug_' . $locale . ' AS slug', false)
+            ->select('p.slug_' . $this->col($locale) . ' AS slug', false)
             ->select('t.title, t.subtitle, t.body, t.hero_image, t.cta_label, t.cta_url', false)
             ->from('ha_page p')
-            ->join('ha_page_translation t', 't.page_id = p.id AND t.locale = ' . $this->db->escape($locale), 'left')
+            ->join($this->tr('ha_page_translation', 'page_id', $locale) . ' t', 't.page_id = p.id' . $this->tr_on('t', $locale), 'left', false)
             ->where('p.code', $code)
             ->where('p.status', 'published')
             ->get()->row_array();
@@ -726,9 +817,10 @@ class Ha_catalog {
 
     public function menu($code, $locale = 'en') {
         $locale = $this->locale($locale);
-        return $this->db
-            ->select('i.label_' . $locale . ' AS label', false)
-            ->select('i.url_' . $locale . ' AS url', false)
+        $items = $this->db
+            ->select('i.id')
+            ->select('i.label_' . $this->col($locale) . ' AS label', false)
+            ->select('i.url_' . $this->col($locale) . ' AS url', false)
             ->select('i.open_in_new_tab')
             ->from('ha_menu_item i')
             ->join('ha_menu m', 'm.id = i.menu_id')
@@ -736,6 +828,7 @@ class Ha_catalog {
             ->where('i.status', 'active')
             ->order_by('i.sort_order', 'ASC')
             ->get()->result_array();
+        return $this->overlay('menu_item', $items, array('label'), $locale);
     }
 
     // ----------------------------------------------------- certificate lookup
@@ -801,7 +894,7 @@ class Ha_catalog {
             $results[] = array('type' => 'article', 'title' => $r['title'],
                 'excerpt' => $r['excerpt'], 'slug' => $r['slug']);
         }
-        $locale_col = $this->locale($locale);
+        $locale_col = $this->col($locale);
         $topics = $this->db
             ->select('slug_' . $locale_col . ' AS slug, title_' . $locale_col . ' AS title', false)
             ->from('ha_topic')->where('status', 'published')

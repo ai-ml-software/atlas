@@ -15,7 +15,7 @@ const out = await page.evaluate(() => {
       res.push(`${el.tagName.toLowerCase()}.${[...el.classList].join('.')} right=${Math.round(r.right)} w=${Math.round(r.width)} pos=${cs.position} minw=${cs.minWidth} ws=${cs.whiteSpace}`);
     }
   }
-  return { dir: document.documentElement.dir, tf: getComputedStyle(document.querySelector('aside.hkp-side')).transform, left: document.querySelector('aside.hkp-side').getBoundingClientRect().left, vw, sw: document.documentElement.scrollWidth, res: res.slice(0, 25) };
+  return { dir: document.documentElement.dir, vw, sw: document.documentElement.scrollWidth, res: res.slice(0, 25) };
 });
 console.log(JSON.stringify(out, null, 1));
 await browser.close();

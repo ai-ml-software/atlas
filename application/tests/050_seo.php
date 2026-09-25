@@ -203,7 +203,7 @@ class Test_seo extends Ha_testcase {
         $expected_courses = $this->db->where('status', 'published')->count_all_results('ha_course');
         $course_entries = 0;
         foreach ($urls as $u) {
-            if (strpos($u['en'], '/courses/') !== false) {
+            if (strpos($u['urls']['en'], '/courses/') !== false) {
                 $course_entries++;
             }
         }
@@ -211,8 +211,11 @@ class Test_seo extends Ha_testcase {
             'Every published course belongs in the sitemap');
 
         foreach ($urls as $u) {
-            $this->assertContains('/en', $u['en']);
-            $this->assertContains('/ar', $u['ar']);
+            $this->assertContains('/en', $u['urls']['en']);
+            $this->assertContains('/ar', $u['urls']['ar']);
+            foreach ($u['urls'] as $l => $url) {
+                $this->assertContains('/' . $l . '/', $url . '/', 'Each alternate carries its own language prefix');
+            }
             $this->assertMatches('/^\d{4}-\d{2}-\d{2}$/', $u['lastmod'], 'lastmod must be a date');
         }
     }
@@ -221,8 +224,9 @@ class Test_seo extends Ha_testcase {
         $this->seo->prepare('en', '');
         $seen = array();
         foreach ($this->seo->sitemap_urls() as $u) {
-            $seen[] = $u['en'];
-            $seen[] = $u['ar'];
+            foreach ($u['urls'] as $url) {
+                $seen[] = $url;
+            }
         }
         $this->assertEquals(count($seen), count(array_unique($seen)),
             'The sitemap contains a duplicate URL');
@@ -235,7 +239,7 @@ class Test_seo extends Ha_testcase {
         $this->seo->prepare('en', '');
         $found = false;
         foreach ($this->seo->sitemap_urls() as $u) {
-            if (strpos($u['en'], $course['slug_en']) !== false) {
+            if (strpos($u['urls']['en'], $course['slug_en']) !== false) {
                 $found = true;
             }
         }

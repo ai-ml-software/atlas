@@ -1,0 +1,545 @@
+{
+    "slug": "work-life-balance",
+    "category": "professional-wellbeing",
+    "level": "foundation",
+    "source_pdf": "Work-Life-Balance-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/work-life-balance.webp",
+    "videos": [
+        {
+            "id": "jdpIKXLLYYM",
+            "title": "How to make work-life balance work | Nigel Marsh",
+            "channel": "TED",
+            "why": "Argues that each person must take responsibility for their own balance, and that small daily choices matter."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Work–Life Balance",
+            "subtitle": "Protect your time, energy and life",
+            "short_description": "A practical course for hotel colleagues on noticing when balance slips, planning around shifts, building small habits and asking for support.",
+            "description": "<p>Hotel work runs on shifts, changing rosters and busy days. This course, built from the Dyafa Hotels &amp; Resorts training deck, helps every colleague protect the time and energy that work, rest, family, health and growth all depend on.</p><p>You will learn why balance is not perfection, how to spot the early signs in your body, thoughts and life, how to plan a realistic week, which small habits protect your energy, and how to manage the time before, during and after a shift.</p><p>The course closes with clear guidance on when and how to ask for support, so that tiredness never quietly becomes part of your life.</p>",
+            "requirements": "No prior training is needed; the course is open to every colleague who works shifts or a changing schedule.",
+            "outcomes": [
+                "Explain why balance means the right time for what your life needs, not equal time",
+                "Recognise early signs of lost balance in the body, thoughts and daily life",
+                "Plan a simple, realistic week around your shift schedule",
+                "Apply small daily habits and shift routines that protect sleep, family time and health",
+                "Decide when to ask for support and take the right first steps"
+            ],
+            "faqs": [
+                {
+                    "question": "Does balance mean I must split my time equally?",
+                    "answer": "No. The course teaches that balance is not perfection: it means giving enough time to work, rest, health and life, according to what your life needs."
+                },
+                {
+                    "question": "My shifts change every week. Can I still plan?",
+                    "answer": "Yes. Know your roster early, protect sleep first, then place family and health time around it, and review the plan whenever the schedule changes."
+                },
+                {
+                    "question": "Who should I talk to if I feel I cannot carry on?",
+                    "answer": "Start with your supervisor about your schedule and a person you trust, speak to a doctor or specialist when needed, and seek urgent help if you feel in danger."
+                }
+            ],
+            "meta_title": "Work–Life Balance for Hotel Shift Workers",
+            "meta_description": "Learn to notice lost balance, plan your week around shifts, build small habits that protect your energy, and know when to ask for support.",
+            "focus_keyword": "work life balance for hotel staff",
+            "chapters": [
+                {
+                    "title": "Understanding Balance",
+                    "lessons": [
+                        {
+                            "title": "Balance Is Not Perfection, and How to Notice When It Slips",
+                            "minutes": 7,
+                            "body": "<h2>Why balance matters in hotel work</h2><p>Hospitality asks a lot of the people who deliver it. Rosters change, shifts start early or finish late, and a quiet day can turn busy in minutes. The deck puts it simply: <strong>every day has different circumstances</strong>, and working hours and shifts may change. That is exactly why balance is worth protecting. Your energy is what you bring to every guest and every colleague, and it is also what you take home to your family.</p><blockquote class=\"bk-quote\">Balance does not mean equal time, but the right time for what your life needs.</blockquote><h2>Balance is not perfection</h2><p>Many people give up on balance because they imagine a perfect week: eight hours of work, eight of sleep, a gym session and a family dinner every single day. Real life in a hotel does not look like that, and it does not need to. Balance means giving <em>enough</em> time to work, rest, health and life. Some weeks work will take more; other weeks your family will. What matters, the deck says, is that you:</p><ul><li>protect your rest time, even when the schedule moves;</li><li>set aside time for your health and your family;</li><li>ask for support when balance is lost.</li></ul><h2>Three places to look for warning signs</h2><p>Balance rarely disappears overnight. It slips quietly, and the signs appear in three places.</p><h3>1. In your body</h3><ul><li>Constant tiredness or lack of sleep.</li><li>Headaches or tension in the body.</li><li>Difficulty recovering your energy, even after a day off.</li></ul><h3>2. In your thoughts</h3><ul><li>Constantly thinking about work.</li><li>Feeling there is never enough time.</li><li>Difficulty relaxing.</li></ul><h3>3. In your life</h3><ul><li>Little time for family or friends.</li><li>Neglecting food or movement.</li><li>Irritability at home or at work.</li></ul><aside class=\"bk-note\">Do a quick check at the end of each week: body, thoughts, life. If two or three signs keep appearing, it is time to adjust your plan, not to push harder.</aside><aside class=\"bk-scene\"><strong>What happened:</strong> Faisal, a front office agent, noticed he had snapped at his younger brother twice in one week and was replaying guest complaints in his head late at night. <strong>What he did:</strong> he recognised two signs from his thoughts and one from his life, reviewed his roster and blocked a proper rest evening after his next late shift. <strong>Why it worked:</strong> he caught the signs early and acted on them, instead of waiting until the tiredness became normal.</aside><h2>Early is easier</h2><p>The deck's message is clear: notice the signs early, before tiredness becomes part of your life. A small correction now, such as one earlier night or one protected family evening, is far easier than recovering from weeks of exhaustion.</p><aside class=\"bk-key\">Balance is not equal time or a perfect week; it is the right time for what your life needs. Watch your body, thoughts and life for early signs, and act before tiredness becomes normal.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: balance and early signs",
+                                "questions": [
+                                    {
+                                        "question": "A colleague says, \"Balance is impossible for me because I can never get equal hours for work and family.\" What is the best response based on the course?",
+                                        "options": [
+                                            "Balance means giving enough time to work, rest, health and life, not equal time",
+                                            "They are right; balance is only for people with fixed hours",
+                                            "They should work fewer shifts until the hours are equal",
+                                            "They should focus only on work until their schedule settles"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck states that balance does not mean equal time but the right time for what your life needs."
+                                    },
+                                    {
+                                        "question": "Which of these is a warning sign in your thoughts?",
+                                        "options": [
+                                            "Headaches or body tension",
+                                            "Neglecting food or movement",
+                                            "Feeling there is never enough time",
+                                            "Little time for friends"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Feeling that time is never enough is listed under thoughts; the others are body or life signs."
+                                    },
+                                    {
+                                        "question": "Mona feels tired even after her day off and has had headaches for two weeks. What should she do first?",
+                                        "options": [
+                                            "Ignore it; it is normal in hotels",
+                                            "Recognise these as body signs of lost balance and adjust her rest and plan early",
+                                            "Wait until the tiredness becomes severe before acting",
+                                            "Take on extra shifts to finish her workload faster"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The course asks you to notice signs early, before tiredness becomes part of your life."
+                                    },
+                                    {
+                                        "question": "Which statement best reflects \"balance is not perfection\"?",
+                                        "options": [
+                                            "Every day must follow the same fixed routine",
+                                            "Balance only counts if you exercise daily",
+                                            "If one week is busy, balance has failed",
+                                            "Circumstances change, so protect rest, health and family time as well as you can and ask for support when needed"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The slide accepts that days and shifts change and focuses on protecting rest and asking for support."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Building Balance Every Day",
+                    "lessons": [
+                        {
+                            "title": "Plan Your Week and Build Small Habits",
+                            "minutes": 7,
+                            "body": "<h2>Why a plan helps</h2><p>When your roster changes, time disappears into whatever is most urgent. Without a plan, work usually wins and rest, family and health are pushed to \"later\". The deck's first step for building balance is therefore to <strong>plan your week</strong>: decide when you work, when you rest and when you attend to the things that matter.</p><h2>Planning your week, step by step</h2><ol><li><strong>Know your shift schedule early.</strong> Check the roster as soon as it is published so you can see the week ahead.</li><li><strong>Protect sleep and rest time.</strong> Place your sleep first, around each shift, before anything else fills the space.</li><li><strong>Set aside time for family and health.</strong> Put a family meal, a call home or a walk into the plan as real appointments.</li><li><strong>Leave work where it belongs after the shift.</strong> When the shift ends, the plan says: work is finished for today.</li><li><strong>Review your plan and adjust it when needed.</strong> Rosters move; your plan can move with them.</li></ol><blockquote class=\"bk-quote\">A simple realistic plan is better than a perfect plan you cannot follow.</blockquote><p>Keep the plan short. Three or four protected blocks in a week that you actually keep are worth far more than a colourful timetable you abandon on Tuesday.</p><h2>Four small habits that protect your energy</h2><p>Planning sets the frame. Small habits fill it. The deck names four kinds of time to protect:</p><table class=\"bk-say\"><thead><tr><th>Time for</th><th>Habit</th></tr></thead><tbody><tr><td>Sleep</td><td>Set a sleep time that stays as close to consistent as your shifts allow.</td></tr><tr><td>Family</td><td>Arrange regular time for your family, not only when there happens to be a gap.</td></tr><tr><td>Health</td><td>Move and eat suitable food.</td></tr><tr><td>Yourself</td><td>Do something you enjoy away from work.</td></tr></tbody></table><aside class=\"bk-note\">Write your four kinds of time into your phone calendar the moment the new roster is published. A habit that has a place in your schedule is much more likely to happen.</aside><aside class=\"bk-scene\"><strong>What happened:</strong> Aisha, a housekeeping supervisor, kept promising her children a weekly outing \"when things calm down\". Weeks passed without it. <strong>What she did:</strong> when the roster came out she chose one fixed afternoon after an early shift, told her family, and treated it like a shift she could not miss. <strong>Why it worked:</strong> she stopped waiting for free time and scheduled what mattered.</aside><h2>Do not wait for free time</h2><p>Free time rarely arrives on its own in hotel life. The deck's advice is direct: do not wait for free time; schedule what matters to your life. The habits are small on purpose, so that you can keep them even in a demanding week.</p><aside class=\"bk-key\">Plan your week as soon as you know your shifts: sleep first, then family, health and time for yourself. Keep the plan simple and realistic, and schedule what matters instead of waiting for free time.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: planning and habits",
+                                "questions": [
+                                    {
+                                        "question": "Khalid's new roster has three late shifts and two early shifts. What should he place in his plan first?",
+                                        "options": [
+                                            "Extra overtime",
+                                            "His sleep and rest time around each shift",
+                                            "Catching up on all postponed tasks",
+                                            "Nothing; he should wait and see how the week goes"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck asks you to protect sleep and rest time as part of planning your week."
+                                    },
+                                    {
+                                        "question": "Which plan best matches the course?",
+                                        "options": [
+                                            "A detailed hour-by-hour timetable that is hard to keep",
+                                            "No plan, so you stay flexible",
+                                            "A simple, realistic plan with a few protected blocks you can actually keep",
+                                            "A plan that only covers work tasks"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "A simple realistic plan is better than a perfect plan you cannot follow."
+                                    },
+                                    {
+                                        "question": "A colleague says she will see her family \"when there is free time\". What does the course recommend?",
+                                        "options": [
+                                            "Arrange regular family time and put it in the schedule",
+                                            "Wait for a quiet season",
+                                            "See family only on public holidays",
+                                            "Replace family time with rest"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Do not wait for free time; schedule what matters to your life."
+                                    },
+                                    {
+                                        "question": "What does \"leave work where it belongs after the shift\" mean in practice?",
+                                        "options": [
+                                            "Take guest files home to finish them",
+                                            "Keep checking work messages all evening",
+                                            "Stay late every day to finish everything",
+                                            "When the shift ends, stop thinking about and doing work so rest time is really rest"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Leaving work behind after the shift protects your rest and family time."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Do, Avoid and Balance with Shift Work",
+                            "minutes": 7,
+                            "body": "<h2>Rest is not laziness</h2><p>Some colleagues feel guilty when they rest, as if every free hour should be used for something productive. The deck answers this directly: <strong>rest is not laziness; it is an essential part of your life.</strong> Without rest, you bring less patience, less attention and less warmth to your guests and to the people at home.</p><blockquote class=\"bk-quote\">Rest is not laziness — it is an essential part of your life.</blockquote><h2>What to do and what to avoid</h2><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Actually use your rest time.</td><td>Postponing rest every day.</td></tr><tr><td>Plan your sleep around your shifts.</td><td>Using your phone throughout your rest time.</td></tr><tr><td>Talk with your family about your schedule.</td><td>Thinking about work all evening.</td></tr><tr><td>Turn off work notifications after the shift.</td><td>Neglecting food or sleep.</td></tr><tr><td>Ask for help when pressure increases.</td><td>Waiting until tiredness becomes severe.</td></tr></tbody></table><p>Notice how practical these are. Telling your family your schedule means they can plan with you rather than feel let down. Turning off notifications turns \"after the shift\" into real rest. Asking for help early prevents the last item on the avoid list.</p><h2>Balance across the shift</h2><p>Shift work needs its own routine. The deck divides it into four moments.</p><h3>Before the shift</h3><p>Sleep, have a meal and get ready without rushing. Arriving rested and fed is the start of a calm shift.</p><h3>During the shift</h3><p>Take your break, drink water and move. A break skipped \"because it is busy\" is energy you will be missing at the end of the shift.</p><h3>After the shift</h3><p>Calm down, leave work behind and get ready to sleep. A short wind-down helps your mind let go of the day.</p><h3>On your day off</h3><p>Rest and spend time on your private life.</p><aside class=\"bk-note\">The deck warns: do not make your whole day off about sleeping or catching up on postponed tasks. Keep part of it for the people and activities you enjoy.</aside><aside class=\"bk-scene\"><strong>What happened:</strong> Omar, a restaurant waiter on rotating shifts, spent every day off sleeping until the afternoon and then running errands, and still felt exhausted. <strong>What he did:</strong> he planned his sleep around his shifts, took his breaks during service, and kept his day-off evening for dinner with friends. <strong>Why it worked:</strong> he gave each part of the shift cycle what it needed, so his day off became real recovery.</aside><aside class=\"bk-key\">Use rest time for real rest, plan sleep around your shifts, and look after yourself before, during and after every shift. Your day off is for rest and your private life, not only for sleep and chores.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: do, avoid and shift routines",
+                                "questions": [
+                                    {
+                                        "question": "It is a busy afternoon and Sara thinks about skipping her break. What does the course advise during the shift?",
+                                        "options": [
+                                            "Skip breaks when busy and rest later",
+                                            "Take your break, drink water and move",
+                                            "Work faster so the shift ends sooner",
+                                            "Drink water only at the end of the shift"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "During the shift the deck says to take your break, drink water and move."
+                                    },
+                                    {
+                                        "question": "After a late shift, Hamad scrolls work group messages in bed for an hour. Which habit would help most?",
+                                        "options": [
+                                            "Reply to every message before sleeping",
+                                            "Keep his phone on loud in case of calls",
+                                            "Turn off work notifications after the shift, calm down and get ready to sleep",
+                                            "Stay awake until the next shift"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The do list includes turning off work notifications, and after the shift you should calm down and prepare for sleep."
+                                    },
+                                    {
+                                        "question": "Which day-off plan best matches the course?",
+                                        "options": [
+                                            "Rest, then spend time on your private life with family or friends",
+                                            "Sleep all day to recover",
+                                            "Use the whole day to catch up on postponed tasks",
+                                            "Come in to help at work"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Do not make your whole day off about sleeping or postponed tasks; rest and spend time on your private life."
+                                    },
+                                    {
+                                        "question": "A colleague says resting on his day off makes him feel lazy. What is the course's message?",
+                                        "options": [
+                                            "He should fill every hour with chores",
+                                            "Rest is only for when he is ill",
+                                            "He should rest only after tiredness becomes severe",
+                                            "Rest is not laziness; it is an essential part of life"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck states that rest is not laziness but an essential part of your life."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Getting Support",
+                    "lessons": [
+                        {
+                            "title": "When and How to Ask for Support",
+                            "minutes": 6,
+                            "body": "<h2>Why asking for support matters</h2><p>Even with a good plan and healthy habits, there are times when balance is lost and cannot be restored alone. The roster may be too heavy for a while, a family situation may change, or tiredness may simply build up. The deck is clear that <strong>asking for support helps you protect your health, your life and your future.</strong> Asking is not a weakness; it is part of looking after yourself.</p><h2>Signs that it is time to ask</h2><p>Ask for support when:</p><ul><li>tiredness continues for a long time;</li><li>your sleep, eating or health is affected;</li><li>there is no time for life outside work;</li><li>your relationships or mood are affected;</li><li>you feel you cannot carry on.</li></ul><p>These signs go beyond an ordinary busy week. If they stay with you, a change is needed, and you do not have to find that change on your own.</p><h2>First steps</h2><ol><li><strong>Talk to your supervisor about your schedule.</strong> Supervisors can only help with what they know about. Explain calmly what the roster is doing to your rest and family time.</li><li><strong>Ask a person you trust for support.</strong> A colleague, friend or family member can listen and help you think.</li><li><strong>Review your sleep and rest habits.</strong> Go back to the plan and habits from earlier lessons and see what has slipped.</li><li><strong>Speak to a doctor or specialist when needed.</strong> If your health, sleep or mood is affected, professional advice matters.</li><li><strong>Seek urgent help if you feel in danger.</strong> This step is never to be postponed.</li></ol><table class=\"bk-say\"><thead><tr><th>Say</th><th>Avoid</th></tr></thead><tbody><tr><td>\"Could we talk about my schedule? I am finding it hard to get enough rest between shifts.\"</td><td>Saying nothing and hoping it will pass.</td></tr><tr><td>\"I have not been sleeping well for a while and I would like some advice.\"</td><td>\"I am fine\" when you are not.</td></tr></tbody></table><aside class=\"bk-scene\"><strong>What happened:</strong> Reem, a guest relations officer, had been tired for weeks, was sleeping badly and had stopped seeing her friends. <strong>What she did:</strong> she asked her supervisor for a short conversation about her schedule and booked an appointment with a doctor. <strong>Why it worked:</strong> she recognised that the signs had lasted too long and used the support available instead of carrying on alone.</aside><h2>Balance is built in small steps</h2><p>The deck ends with four simple words: work, rest, connect, take care of yourself. Balance starts with small steps you keep every day. Protect your time and energy, and you build a healthier life and future.</p><aside class=\"bk-note\">Keep the five signs in mind as a personal checklist. If you tick any of them for more than a short period, take the first step the same week.</aside><aside class=\"bk-key\">When tiredness lasts, your health or relationships suffer or you feel you cannot carry on, ask for support: your supervisor, someone you trust, a doctor when needed, and urgent help if you feel in danger.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: asking for support",
+                                "questions": [
+                                    {
+                                        "question": "Yousef's roster has left him no time for life outside work for over a month. What is a good first step?",
+                                        "options": [
+                                            "Keep going until the season ends",
+                                            "Talk to his supervisor about his schedule",
+                                            "Resign without discussing it",
+                                            "Stop taking breaks to finish earlier"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Talking to your supervisor about your schedule is the first step listed on the slide."
+                                    },
+                                    {
+                                        "question": "Which situation calls for seeking urgent help immediately?",
+                                        "options": [
+                                            "Feeling tired after one busy shift",
+                                            "Wanting a different day off",
+                                            "Feeling in danger",
+                                            "Missing one family dinner"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says to seek urgent help if you feel in danger."
+                                    },
+                                    {
+                                        "question": "Nadia's sleep and mood have been affected for weeks. What does the course suggest?",
+                                        "options": [
+                                            "Review her sleep and rest habits and speak to a doctor or specialist when needed",
+                                            "Hide it from everyone so she does not look weak",
+                                            "Drink more coffee and continue",
+                                            "Wait until she cannot carry on"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The steps include reviewing sleep and rest habits and speaking to a doctor or specialist when needed."
+                                    },
+                                    {
+                                        "question": "Why does the course encourage asking for support?",
+                                        "options": [
+                                            "Because it guarantees fewer shifts",
+                                            "Because supervisors require it for every issue",
+                                            "Because it replaces the need for rest",
+                                            "Because it helps you protect your health, life and future"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The slide states that asking for support helps protect your health, your life and your future."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "التوازن بين العمل والحياة",
+            "subtitle": "اعتنِ بوقتك وطاقتك وحياتك",
+            "short_description": "دورة عملية لموظفي الفنادق عن ملاحظة اختلال التوازن، والتخطيط حول المناوبات، وبناء عادات صغيرة، وطلب الدعم في الوقت المناسب.",
+            "description": "<p>يقوم العمل الفندقي على المناوبات وتغيّر الجداول والأيام المزدحمة. تساعد هذه الدورة، المبنية على المادة التدريبية لفنادق ومنتجعات ضيافة، كل موظف على حماية وقته وطاقته اللذين يعتمد عليهما العمل والراحة والأسرة والصحة والتقدم.</p><p>ستتعرف على معنى أن التوازن ليس كمالًا، وكيف تلاحظ العلامات المبكرة في جسمك وأفكارك وحياتك، وكيف تخطط لأسبوع واقعي، وما العادات الصغيرة التي تحمي طاقتك، وكيف تدير وقتك قبل المناوبة وخلالها وبعدها.</p><p>وتختم الدورة بإرشادات واضحة عن متى تطلب الدعم وكيف تبدأ، حتى لا يصبح التعب جزءًا من حياتك.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظف يعمل بنظام المناوبات أو بجدول متغير.",
+            "outcomes": [
+                "توضيح أن التوازن يعني وقتًا مناسبًا لما تحتاجه حياتك وليس وقتًا متساويًا",
+                "التعرّف على علامات اختلال التوازن مبكرًا في الجسم والأفكار والحياة اليومية",
+                "تخطيط أسبوع بسيط وواقعي حول جدول المناوبات",
+                "تطبيق عادات يومية صغيرة وروتين للمناوبات يحمي النوم ووقت الأسرة والصحة",
+                "تحديد الوقت المناسب لطلب الدعم واتخاذ الخطوات الأولى الصحيحة"
+            ],
+            "faqs": [
+                {
+                    "question": "هل يعني التوازن أن أقسّم وقتي بالتساوي؟",
+                    "answer": "لا. التوازن ليس كمالًا، بل هو إعطاء وقت كافٍ للعمل والراحة والصحة والحياة بحسب ما تحتاجه حياتك."
+                },
+                {
+                    "question": "مناوباتي تتغير كل أسبوع، فهل أستطيع التخطيط؟",
+                    "answer": "نعم. اعرف جدول المناوبات مبكرًا، واحمِ وقت النوم أولًا، ثم ضع وقت الأسرة والصحة حوله، وراجع خطتك كلما تغيّر الجدول."
+                },
+                {
+                    "question": "مع من أتحدث إذا شعرت أنني لا أستطيع الاستمرار؟",
+                    "answer": "ابدأ بالحديث مع المشرف عن جدولك ومع شخص تثق به، وتحدث مع طبيب أو مختص عند الحاجة، واطلب مساعدة عاجلة إذا شعرت بالخطر."
+                }
+            ],
+            "meta_title": "التوازن بين العمل والحياة لموظفي الفنادق",
+            "meta_description": "تعلّم ملاحظة اختلال التوازن، والتخطيط لأسبوعك حول المناوبات، وبناء عادات صغيرة تحمي طاقتك، ومعرفة متى تطلب الدعم.",
+            "focus_keyword": "التوازن بين العمل والحياة لموظفي الفنادق",
+            "chapters": [
+                {
+                    "title": "فهم التوازن",
+                    "lessons": [
+                        {
+                            "title": "التوازن ليس كمالًا، وكيف تلاحظ اختلاله",
+                            "minutes": 7,
+                            "body": "<h2>لماذا يهم التوازن في العمل الفندقي؟</h2><p>تتطلب الضيافة الكثير ممن يقدّمونها؛ فالجداول تتغير، والمناوبات تبدأ مبكرًا أو تنتهي متأخرة، وقد يتحول اليوم الهادئ إلى يوم مزدحم في دقائق. وتلخص المادة ذلك بقولها: <strong>لكل يوم ظروف مختلفة</strong>، وقد تتغير أوقات العمل والمناوبات. ولهذا بالذات يستحق التوازن أن تحميه، فطاقتك هي ما تقدمه لكل نزيل ولكل زميل، وهي أيضًا ما تعود به إلى أسرتك.</p><blockquote class=\"bk-quote\">التوازن لا يعني وقتًا متساويًا — بل وقتًا مناسبًا لما تحتاجه حياتك</blockquote><h2>التوازن ليس كمالًا</h2><p>يتخلى كثيرون عن التوازن لأنهم يتخيلون أسبوعًا مثاليًا لا يتغير. لكن الحياة في الفندق ليست كذلك، ولا يلزم أن تكون. التوازن يعني إعطاء وقت <em>كافٍ</em> للعمل والراحة والصحة والحياة؛ ففي بعض الأسابيع يأخذ العمل وقتًا أكبر، وفي غيرها تأخذ الأسرة. والمهم كما تقول المادة أن:</p><ul><li>تحمي وقت الراحة حتى عندما يتغير الجدول؛</li><li>تخصص وقتًا لصحتك وعائلتك؛</li><li>تطلب الدعم عندما يختل التوازن.</li></ul><h2>ثلاثة مواضع تظهر فيها العلامات</h2><p>نادرًا ما يختفي التوازن فجأة، بل يختل بهدوء، وتظهر علاماته في ثلاثة مواضع:</p><h3>١. في جسمك</h3><ul><li>تعب مستمر أو قلة نوم.</li><li>صداع أو شد في الجسم.</li><li>صعوبة في استعادة طاقتك.</li></ul><h3>٢. في أفكارك</h3><ul><li>تفكير دائم في العمل.</li><li>الشعور بأن الوقت لا يكفي.</li><li>صعوبة في الاسترخاء.</li></ul><h3>٣. في حياتك</h3><ul><li>قلة الوقت للأسرة أو الأصدقاء.</li><li>إهمال الطعام أو الحركة.</li><li>العصبية في المنزل أو العمل.</li></ul><aside class=\"bk-note\">راجع نفسك في نهاية كل أسبوع: الجسم، الأفكار، الحياة. إذا تكررت علامتان أو ثلاث، فقد حان وقت تعديل خطتك لا الضغط على نفسك أكثر.</aside><aside class=\"bk-scene\"><strong>ما حدث:</strong> لاحظ فيصل، موظف الاستقبال، أنه انفعل على أخيه الصغير مرتين في أسبوع واحد، وأنه يستعيد شكاوى النزلاء في ذهنه ليلًا. <strong>ما فعله:</strong> تعرّف على علامتين في أفكاره وعلامة في حياته، فراجع جدوله وخصص مساء راحة حقيقيًا بعد مناوبته المسائية التالية. <strong>لماذا نجح:</strong> لأنه لاحظ العلامات مبكرًا وتصرف، بدل أن ينتظر حتى يصبح التعب أمرًا معتادًا.</aside><h2>الملاحظة المبكرة أسهل</h2><p>رسالة المادة واضحة: لاحظ العلامات مبكرًا قبل أن يصبح التعب جزءًا من حياتك. فالتعديل الصغير الآن، كليلة نوم أبكر أو مساء محمي للأسرة، أسهل بكثير من التعافي بعد أسابيع من الإرهاق.</p><aside class=\"bk-key\">التوازن ليس وقتًا متساويًا ولا أسبوعًا مثاليًا، بل وقت مناسب لما تحتاجه حياتك. راقب جسمك وأفكارك وحياتك، وتصرف مبكرًا قبل أن يصبح التعب جزءًا من يومك.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: التوازن والعلامات المبكرة",
+                                "questions": [
+                                    {
+                                        "question": "قال زميل: «التوازن مستحيل لأنني لا أحصل أبدًا على ساعات متساوية للعمل والأسرة». ما أفضل رد بحسب الدورة؟",
+                                        "options": [
+                                            "التوازن يعني إعطاء وقت كافٍ للعمل والراحة والصحة والحياة، لا وقتًا متساويًا",
+                                            "معه حق؛ التوازن فقط لمن لديهم ساعات ثابتة",
+                                            "عليه أن يقلل مناوباته حتى تتساوى الساعات",
+                                            "عليه أن يركز على العمل فقط حتى يستقر جدوله"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تنص المادة على أن التوازن لا يعني وقتًا متساويًا بل وقتًا مناسبًا لما تحتاجه حياتك."
+                                    },
+                                    {
+                                        "question": "أيٌّ مما يلي علامة لاختلال التوازن في أفكارك؟",
+                                        "options": [
+                                            "صداع أو شد في الجسم",
+                                            "إهمال الطعام أو الحركة",
+                                            "الشعور بأن الوقت لا يكفي",
+                                            "قلة الوقت للأصدقاء"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "الشعور بأن الوقت لا يكفي مذكور ضمن علامات الأفكار، أما البقية فعلامات في الجسم أو الحياة."
+                                    },
+                                    {
+                                        "question": "تشعر منى بالتعب حتى بعد يوم إجازتها، ويلازمها الصداع منذ أسبوعين. ماذا تفعل أولًا؟",
+                                        "options": [
+                                            "تتجاهل ذلك لأنه أمر طبيعي في الفنادق",
+                                            "تتعرف على هذه العلامات الجسدية لاختلال التوازن وتعدّل راحتها وخطتها مبكرًا",
+                                            "تنتظر حتى يصل التعب إلى مرحلة شديدة",
+                                            "تأخذ مناوبات إضافية لتنهي عملها أسرع"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تطلب الدورة ملاحظة العلامات مبكرًا قبل أن يصبح التعب جزءًا من حياتك."
+                                    },
+                                    {
+                                        "question": "أي عبارة تعبّر أفضل عن أن «التوازن ليس كمالًا»؟",
+                                        "options": [
+                                            "يجب أن يسير كل يوم على الروتين الثابت نفسه",
+                                            "لا يُحسب التوازن إلا إذا مارست الرياضة يوميًا",
+                                            "إذا كان أسبوع ما مزدحمًا فقد فشل التوازن",
+                                            "الظروف تتغير، فاحمِ وقت الراحة والصحة والأسرة قدر استطاعتك واطلب الدعم عند الحاجة"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقبل المادة أن الأيام والمناوبات تتغير وتركز على حماية الراحة وطلب الدعم."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "بناء التوازن كل يوم",
+                    "lessons": [
+                        {
+                            "title": "خطط لأسبوعك وابنِ عادات صغيرة",
+                            "minutes": 7,
+                            "body": "<h2>لماذا تساعدك الخطة؟</h2><p>عندما يتغير جدولك يضيع الوقت في الأمور الأكثر إلحاحًا، ومن دون خطة يغلب العمل غالبًا، وتؤجَّل الراحة والأسرة والصحة إلى «لاحقًا». لذلك تبدأ المادة خطوات بناء التوازن بـ<strong>خطط لأسبوعك</strong>: حدد وقت العمل والراحة والأمور المهمة.</p><h2>التخطيط للأسبوع خطوة بخطوة</h2><ol><li><strong>اعرف جدول المناوبات مبكرًا.</strong> اطّلع على الجدول فور صدوره لترى أسبوعك كاملًا.</li><li><strong>احمِ وقت النوم والراحة.</strong> ضع نومك أولًا حول كل مناوبة قبل أن يمتلئ الوقت بغيره.</li><li><strong>خصص وقتًا للأسرة والصحة.</strong> اجعل وجبة مع العائلة أو اتصالًا بالأهل أو مشيًا قصيرًا موعدًا حقيقيًا في خطتك.</li><li><strong>اترك العمل في مكانه بعد المناوبة.</strong> عندما تنتهي المناوبة، ينتهي العمل لهذا اليوم.</li><li><strong>راجع خطتك وعدلها عند الحاجة.</strong> الجداول تتغير، وخطتك يمكن أن تتغير معها.</li></ol><blockquote class=\"bk-quote\">خطة بسيطة قابلة للتنفيذ أفضل من جدول مثالي لا تستطيع الالتزام به</blockquote><p>اجعل خطتك قصيرة؛ فثلاث أو أربع فترات محمية تلتزم بها فعلًا خير من جدول مزخرف تتركه في منتصف الأسبوع.</p><h2>أربع عادات صغيرة تحمي طاقتك</h2><p>الخطة تضع الإطار، والعادات الصغيرة تملؤه. وتذكر المادة أربعة أوقات تستحق الحماية:</p><table class=\"bk-say\"><thead><tr><th>وقت لـ</th><th>العادة</th></tr></thead><tbody><tr><td>النوم</td><td>حدد وقت نوم قريبًا من الثبات بقدر ما تسمح المناوبات.</td></tr><tr><td>الأسرة</td><td>رتب وقتًا منتظمًا للعائلة، لا فقط عندما تتوفر فجوة.</td></tr><tr><td>صحتك</td><td>تحرك وتناول طعامًا مناسبًا.</td></tr><tr><td>نفسك</td><td>افعل شيئًا تستمتع به بعيدًا عن العمل.</td></tr></tbody></table><aside class=\"bk-note\">سجّل هذه الأوقات الأربعة في تقويم هاتفك فور صدور الجدول الجديد؛ فالعادة التي لها مكان في جدولك أقرب إلى التحقق.</aside><aside class=\"bk-scene\"><strong>ما حدث:</strong> كانت عائشة، مشرفة التدبير الفندقي، تعد أطفالها بنزهة أسبوعية «عندما تهدأ الأمور»، ومرت الأسابيع دون أن تتحقق. <strong>ما فعلته:</strong> عند صدور الجدول اختارت عصرًا ثابتًا بعد مناوبة صباحية، وأخبرت عائلتها، وتعاملت معه كمناوبة لا يمكن تفويتها. <strong>لماذا نجح:</strong> لأنها توقفت عن انتظار الوقت الفارغ ووضعت الأمور المهمة في جدولها.</aside><h2>لا تنتظر وقتًا فارغًا</h2><p>نادرًا ما يأتي الوقت الفارغ وحده في حياة الفندق. ونصيحة المادة مباشرة: لا تنتظر وقتًا فارغًا — ضع الأمور المهمة في جدولك. والعادات صغيرة عن قصد، لتستطيع المحافظة عليها حتى في الأسبوع المزدحم.</p><aside class=\"bk-key\">خطط لأسبوعك فور معرفة مناوباتك: النوم أولًا، ثم الأسرة والصحة ووقت لنفسك. اجعل خطتك بسيطة وواقعية، وضع ما يهمك في جدولك بدل انتظار الوقت الفارغ.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: التخطيط والعادات",
+                                "questions": [
+                                    {
+                                        "question": "في جدول خالد الجديد ثلاث مناوبات مسائية ومناوبتان صباحيتان. ما الذي يضعه في خطته أولًا؟",
+                                        "options": [
+                                            "ساعات عمل إضافية",
+                                            "وقت النوم والراحة حول كل مناوبة",
+                                            "إنجاز كل المهام المؤجلة",
+                                            "لا شيء؛ ينتظر ليرى كيف يسير الأسبوع"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تطلب المادة حماية وقت النوم والراحة ضمن التخطيط للأسبوع."
+                                    },
+                                    {
+                                        "question": "أي خطة تتوافق أكثر مع الدورة؟",
+                                        "options": [
+                                            "جدول مفصل بالساعة يصعب الالتزام به",
+                                            "بلا خطة لتبقى مرنًا",
+                                            "خطة بسيطة وواقعية فيها فترات محمية قليلة تلتزم بها فعلًا",
+                                            "خطة تشمل مهام العمل فقط"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "خطة بسيطة قابلة للتنفيذ أفضل من جدول مثالي لا تستطيع الالتزام به."
+                                    },
+                                    {
+                                        "question": "تقول زميلة إنها سترى عائلتها «عندما يتوفر وقت فارغ». بماذا توصي الدورة؟",
+                                        "options": [
+                                            "رتّبي وقتًا منتظمًا للعائلة وضعيه في الجدول",
+                                            "انتظري موسمًا هادئًا",
+                                            "اكتفي برؤية العائلة في الإجازات الرسمية",
+                                            "استبدلي وقت العائلة بالراحة"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "لا تنتظر وقتًا فارغًا، بل ضع الأمور المهمة في جدولك."
+                                    },
+                                    {
+                                        "question": "ماذا تعني عبارة «اترك العمل في مكانه بعد المناوبة» عمليًا؟",
+                                        "options": [
+                                            "خذ ملفات النزلاء إلى البيت لإكمالها",
+                                            "استمر في متابعة رسائل العمل طوال المساء",
+                                            "ابقَ متأخرًا كل يوم لإنهاء كل شيء",
+                                            "عندما تنتهي المناوبة توقف عن التفكير في العمل وأدائه لتكون الراحة راحة حقيقية"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "ترك العمل بعد المناوبة يحمي وقت راحتك وأسرتك."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "افعل وتجنب، والتوازن مع المناوبات المختلفة",
+                            "minutes": 7,
+                            "body": "<h2>الراحة ليست كسلًا</h2><p>يشعر بعض الزملاء بالذنب عندما يرتاحون، وكأن كل ساعة فراغ يجب أن تُستغل في عمل منتج. وتجيب المادة عن ذلك مباشرة: <strong>الراحة ليست كسلًا — إنها جزء أساسي من حياتك.</strong> فمن دون راحة تقل صبرك وانتباهك ودفؤك مع النزلاء ومع أهل بيتك.</p><blockquote class=\"bk-quote\">الراحة ليست كسلًا — إنها جزء أساسي من حياتك</blockquote><h2>ما الذي تفعله؟ وما الذي تتجنبه؟</h2><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنب</th></tr></thead><tbody><tr><td>استخدم وقت الراحة فعلًا.</td><td>أن تؤجل الراحة كل يوم.</td></tr><tr><td>خطط للنوم حول المناوبات.</td><td>أن تستخدم الهاتف طوال وقت الراحة.</td></tr><tr><td>تحدث مع الأسرة عن جدولك.</td><td>أن تفكر في العمل طوال المساء.</td></tr><tr><td>أغلق إشعارات العمل بعد المناوبة.</td><td>أن تهمل الطعام أو النوم.</td></tr><tr><td>اطلب المساعدة عند زيادة الضغط.</td><td>أن تنتظر حتى يصل التعب إلى مرحلة شديدة.</td></tr></tbody></table><p>لاحظ كم هي عملية: حديثك مع أسرتك عن جدولك يجعلهم يخططون معك بدل أن يشعروا بالخذلان، وإغلاق الإشعارات يحوّل ما بعد المناوبة إلى راحة حقيقية، وطلب المساعدة مبكرًا يمنعك من الوصول إلى آخر بند في قائمة التجنب.</p><h2>التوازن عبر المناوبة</h2><p>للعمل بالمناوبات روتين خاص، وتقسمه المادة إلى أربع لحظات:</p><h3>قبل المناوبة</h3><p>نم وتناول وجبة واستعد دون استعجال؛ فالوصول مرتاحًا ومتغذيًا بداية مناوبة هادئة.</p><h3>خلال المناوبة</h3><p>خذ الراحة واشرب الماء وتحرك؛ فالاستراحة التي تتركها «لأن العمل مزدحم» طاقة ستفتقدها في آخر المناوبة.</p><h3>بعد المناوبة</h3><p>اهدأ واترك العمل واستعد للنوم.</p><h3>في يوم الإجازة</h3><p>استرح واقضِ وقتًا في حياتك الخاصة.</p><aside class=\"bk-note\">تنبّه المادة: لا تجعل يوم الإجازة كله للنوم أو إنجاز الأعمال المؤجلة، واحتفظ بجزء منه لمن تحب ولما تستمتع به.</aside><aside class=\"bk-scene\"><strong>ما حدث:</strong> كان عمر، النادل في المطعم، يقضي كل يوم إجازة نائمًا حتى العصر ثم ينشغل بالمشاوير، ومع ذلك يبقى مرهقًا. <strong>ما فعله:</strong> خطط لنومه حول المناوبات، وأخذ استراحاته خلال الخدمة، وخصص مساء إجازته للعشاء مع أصدقائه. <strong>لماذا نجح:</strong> لأنه أعطى كل مرحلة من المناوبة ما تحتاجه، فأصبحت إجازته تعافيًا حقيقيًا.</aside><aside class=\"bk-key\">استخدم وقت الراحة للراحة فعلًا، وخطط لنومك حول المناوبات، واعتنِ بنفسك قبل كل مناوبة وخلالها وبعدها. ويوم الإجازة للراحة ولحياتك الخاصة، لا للنوم والمهام المؤجلة فقط.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: افعل وتجنب وروتين المناوبات",
+                                "questions": [
+                                    {
+                                        "question": "العصر مزدحم وتفكر سارة في ترك استراحتها. بماذا تنصح الدورة خلال المناوبة؟",
+                                        "options": [
+                                            "اترك الاستراحة عند الازدحام وارتح لاحقًا",
+                                            "خذ الراحة واشرب الماء وتحرك",
+                                            "اعمل أسرع لتنتهي المناوبة مبكرًا",
+                                            "اشرب الماء في نهاية المناوبة فقط"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة خلال المناوبة: خذ الراحة واشرب الماء وتحرك."
+                                    },
+                                    {
+                                        "question": "بعد مناوبة مسائية يتصفح حمد مجموعات العمل في سريره لساعة. أي عادة تساعده أكثر؟",
+                                        "options": [
+                                            "أن يرد على كل رسالة قبل النوم",
+                                            "أن يبقي هاتفه على الصوت العالي تحسبًا للاتصالات",
+                                            "أن يغلق إشعارات العمل بعد المناوبة ويهدأ ويستعد للنوم",
+                                            "أن يبقى مستيقظًا حتى المناوبة التالية"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "من قائمة افعل إغلاق إشعارات العمل، وبعد المناوبة تهدأ وتستعد للنوم."
+                                    },
+                                    {
+                                        "question": "أي خطة ليوم الإجازة تتوافق مع الدورة؟",
+                                        "options": [
+                                            "الراحة ثم قضاء وقت في الحياة الخاصة مع العائلة أو الأصدقاء",
+                                            "النوم طوال اليوم للتعافي",
+                                            "استغلال اليوم كله لإنجاز المهام المؤجلة",
+                                            "الذهاب إلى العمل للمساعدة"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "لا تجعل يوم الإجازة كله للنوم أو الأعمال المؤجلة، بل استرح واقضِ وقتًا في حياتك الخاصة."
+                                    },
+                                    {
+                                        "question": "يقول زميل إن الراحة في يوم إجازته تشعره بالكسل. ما رسالة الدورة؟",
+                                        "options": [
+                                            "عليه أن يملأ كل ساعة بالمهام",
+                                            "الراحة فقط عند المرض",
+                                            "عليه ألا يرتاح إلا بعد أن يشتد التعب",
+                                            "الراحة ليست كسلًا، بل جزء أساسي من حياته"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تنص المادة على أن الراحة ليست كسلًا بل جزء أساسي من حياتك."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "طلب الدعم",
+                    "lessons": [
+                        {
+                            "title": "متى تطلب الدعم وكيف؟",
+                            "minutes": 6,
+                            "body": "<h2>لماذا يهم طلب الدعم؟</h2><p>حتى مع خطة جيدة وعادات صحية، تأتي أوقات يختل فيها التوازن ولا يمكن استعادته وحدك؛ فقد يثقل الجدول لفترة، أو تتغير ظروف الأسرة، أو يتراكم التعب ببساطة. والمادة واضحة: <strong>طلب الدعم يساعدك على حماية صحتك وحياتك ومستقبلك.</strong> فطلب الدعم ليس ضعفًا، بل جزء من العناية بنفسك.</p><h2>علامات تدل على أن الوقت قد حان</h2><p>اطلب الدعم عند:</p><ul><li>استمرار التعب مدة طويلة؛</li><li>تأثر النوم أو الطعام أو صحتك؛</li><li>عدم وجود وقت للحياة خارج العمل؛</li><li>تأثر علاقاتك أو مزاجك؛</li><li>شعورك بأنك لا تستطيع الاستمرار.</li></ul><p>هذه العلامات أبعد من أسبوع مزدحم عادي. وإذا بقيت معك فأنت بحاجة إلى تغيير، ولست مضطرًا إلى إيجاده وحدك.</p><h2>ابدأ بهذه الخطوات</h2><ol><li><strong>تحدث مع المشرف عن جدولك.</strong> لا يستطيع المشرف المساعدة فيما لا يعرفه، فاشرح بهدوء أثر الجدول على راحتك ووقت أسرتك.</li><li><strong>اطلب دعم شخص تثق به.</strong> زميل أو صديق أو أحد أفراد الأسرة يستطيع أن يستمع ويساعدك على التفكير.</li><li><strong>راجع عادات النوم والراحة.</strong> عد إلى خطتك وعاداتك من الدروس السابقة وانظر ما الذي تراجع.</li><li><strong>تحدث مع طبيب أو مختص عند الحاجة.</strong> إذا تأثرت صحتك أو نومك أو مزاجك فالمشورة المتخصصة مهمة.</li><li><strong>اطلب مساعدة عاجلة إذا شعرت بالخطر.</strong> وهذه خطوة لا تؤجَّل أبدًا.</li></ol><table class=\"bk-say\"><thead><tr><th>قل</th><th>تجنب</th></tr></thead><tbody><tr><td>«هل يمكن أن نتحدث عن جدولي؟ أجد صعوبة في الحصول على راحة كافية بين المناوبات.»</td><td>الصمت على أمل أن يزول الأمر وحده.</td></tr><tr><td>«لم أنم جيدًا منذ فترة وأحتاج إلى نصيحة.»</td><td>أن تقول «أنا بخير» وأنت لست كذلك.</td></tr></tbody></table><aside class=\"bk-scene\"><strong>ما حدث:</strong> كانت ريم، موظفة علاقات النزلاء، متعبة منذ أسابيع، ونومها مضطرب، وتوقفت عن لقاء صديقاتها. <strong>ما فعلته:</strong> طلبت من مشرفتها حديثًا قصيرًا عن جدولها، وحجزت موعدًا مع طبيب. <strong>لماذا نجح:</strong> لأنها أدركت أن العلامات طالت أكثر من اللازم، فاستفادت من الدعم المتاح بدل أن تستمر وحدها.</aside><h2>التوازن يُبنى بخطوات صغيرة</h2><p>تختم المادة بأربع كلمات: اعمل • استرح • تواصل • اعتنِ بنفسك. التوازن يبدأ بخطوات صغيرة تحافظ عليها كل يوم؛ احمِ وقتك وطاقتك لتعيش وتتقدم بصورة أفضل.</p><aside class=\"bk-note\">اجعل العلامات الخمس قائمة مراجعة شخصية، وإذا انطبقت عليك أيٌّ منها لفترة غير قصيرة فاتخذ الخطوة الأولى في الأسبوع نفسه.</aside><aside class=\"bk-key\">عندما يطول التعب، أو تتأثر صحتك أو علاقاتك، أو تشعر أنك لا تستطيع الاستمرار، فاطلب الدعم: من المشرف، ومن شخص تثق به، ومن طبيب عند الحاجة، واطلب مساعدة عاجلة إذا شعرت بالخطر.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: طلب الدعم",
+                                "questions": [
+                                    {
+                                        "question": "لم يترك جدول يوسف له وقتًا للحياة خارج العمل منذ أكثر من شهر. ما الخطوة الأولى الجيدة؟",
+                                        "options": [
+                                            "أن يستمر حتى ينتهي الموسم",
+                                            "أن يتحدث مع المشرف عن جدوله",
+                                            "أن يستقيل دون نقاش",
+                                            "أن يتوقف عن أخذ الاستراحات لينتهي مبكرًا"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "الحديث مع المشرف عن الجدول هو أول خطوة في الشريحة."
+                                    },
+                                    {
+                                        "question": "أي موقف يستدعي طلب مساعدة عاجلة فورًا؟",
+                                        "options": [
+                                            "التعب بعد مناوبة واحدة مزدحمة",
+                                            "الرغبة في يوم إجازة مختلف",
+                                            "الشعور بالخطر",
+                                            "تفويت عشاء عائلي واحد"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: اطلب مساعدة عاجلة إذا شعرت بالخطر."
+                                    },
+                                    {
+                                        "question": "تأثر نوم نادية ومزاجها منذ أسابيع. بماذا تنصح الدورة؟",
+                                        "options": [
+                                            "أن تراجع عادات النوم والراحة وتتحدث مع طبيب أو مختص عند الحاجة",
+                                            "أن تخفي الأمر عن الجميع حتى لا تبدو ضعيفة",
+                                            "أن تكثر من القهوة وتستمر",
+                                            "أن تنتظر حتى لا تستطيع الاستمرار"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "من الخطوات مراجعة عادات النوم والراحة والحديث مع طبيب أو مختص عند الحاجة."
+                                    },
+                                    {
+                                        "question": "لماذا تشجع الدورة على طلب الدعم؟",
+                                        "options": [
+                                            "لأنه يضمن مناوبات أقل",
+                                            "لأن المشرفين يشترطونه في كل مسألة",
+                                            "لأنه يغني عن الراحة",
+                                            "لأنه يساعدك على حماية صحتك وحياتك ومستقبلك"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تنص الشريحة على أن طلب الدعم يساعد على حماية صحتك وحياتك ومستقبلك."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

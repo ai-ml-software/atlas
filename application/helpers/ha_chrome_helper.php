@@ -49,7 +49,13 @@ if (!function_exists('ha_chrome')) {
     function ha_chrome($key, $locale = 'en') {
         static $cache = array();
 
-        $locale = ($locale === 'ar') ? 'ar' : 'en';
+        // Only English and Arabic have admin-editable columns. Any other language uses the
+        // English value, translated through the public-site dictionary when it has an entry.
+        $other = ($locale !== 'ar' && $locale !== 'en') ? $locale : null;
+        if ($other !== null) {
+            $en = ha_chrome($key, 'en');
+            return function_exists('ha_pt') ? ha_pt($en) : $en;
+        }
         $defaults = ha_chrome_defaults();
 
         // Locale-specific key first, then the shared one.

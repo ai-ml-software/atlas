@@ -19,7 +19,7 @@ $chosen_property = (int) $this->session->userdata('hkp_property');
 <link rel="stylesheet" href="<?php echo hkp_asset('assets/hkp/hkp.css'); ?>">
 <style><?php echo $this->ha_tenant->css_vars($brand); ?></style>
 </head>
-<body class="hkp <?php echo $loc === 'ar' ? 'is-ar' : 'is-en'; ?>">
+<body class="hkp is-<?php echo $loc; ?><?php echo hkp_is_rtl() ? ' is-rtl' : ''; ?><?php echo in_array($loc, array('en', 'tl'), true) ? '' : ' is-intl'; ?><?php echo in_array($loc, array('ar'), true) ? ' is-ar' : ''; ?>">
 <a class="hkp-skip" href="#hkp-main"><?php echo hkp_e('Skip to content'); ?></a>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
@@ -110,7 +110,12 @@ $chosen_property = (int) $this->session->userdata('hkp_property');
         </select>
       </form>
       <?php endif; ?>
-      <a class="hkp-lang" href="?lang=<?php echo $loc === 'ar' ? 'en' : 'ar'; ?>" lang="<?php echo $loc === 'ar' ? 'en' : 'ar'; ?>" hreflang="<?php echo $loc === 'ar' ? 'en' : 'ar'; ?>"><?php echo $loc === 'ar' ? 'English' : 'العربية'; ?></a>
+      <details class="hkp-langmenu">
+        <summary class="hkp-lang" aria-label="<?php echo hkp_e('Language'); ?>"><?php echo hkp_icon('globe'); ?> <span lang="<?php echo $loc; ?>"><?php echo hkp_h(ha_locale_name($loc)); ?></span></summary>
+        <ul class="hkp-langmenu__list" role="list">
+          <?php foreach (ha_locales() as $lc): ?><li><a href="?lang=<?php echo $lc; ?>" lang="<?php echo $lc; ?>" hreflang="<?php echo $lc; ?>" dir="<?php echo ha_locale_dir($lc); ?>"<?php echo $lc === $loc ? ' aria-current="true"' : ''; ?>><?php echo hkp_h(ha_locale_name($lc)); ?></a></li><?php endforeach; ?>
+        </ul>
+      </details>
       <a class="hkp-iconbtn" href="<?php echo hkp_url('notifications'); ?>" aria-label="<?php echo hkp_e('Notifications'); ?>"><?php echo hkp_icon('bell'); ?><?php if ($unread): ?><span class="hkp-dot"><?php echo (int) $unread; ?></span><?php endif; ?></a>
       <details class="hkp-user">
         <summary><span class="hkp-avatar" aria-hidden="true"><?php echo hkp_h($initials); ?></span><span class="hkp-hide-mobile"><?php echo hkp_h($me_name); ?></span></summary>

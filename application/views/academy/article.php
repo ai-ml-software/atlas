@@ -79,10 +79,8 @@
 <?php endif; ?>
 
 <?php $this->load->view('academy/_close', array(
-    'close_title' => $locale === 'ar' ? 'حوّل القراءة إلى تدريب' : 'Turn the reading into training',
-    'close_text'  => $locale === 'ar'
-        ? 'الممارسة التي يشرحها هذا المقال تُدرَّس كدورة، بمعيار مكتوب وتقييم في نهايتها.'
-        : 'The practice behind this article is taught as a course, with a written standard and an assessment at the end.',
+    'close_title' => ha_pt('Turn the reading into training'),
+    'close_text'  => ha_pt('The practice behind this article is taught as a course, with a written standard and an assessment at the end.'),
     'close_primary'   => array('label' => $t['courses'], 'url' => base_url($locale . '/courses')),
     'close_secondary' => array('label' => $t['articles'], 'url' => base_url($locale . '/articles')),
 )); ?>

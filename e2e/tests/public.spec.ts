@@ -80,7 +80,8 @@ test.describe('Public website (signed out)', () => {
 
   test('language switch lands on the translated page', async ({ page }) => {
     await open(page, 'en/about');
-    await page.locator('a[hreflang=ar], a[lang=ar]').first().click();
+    await page.locator('details[data-ha-langmenu] > summary').first().click();   // the switcher is a dropdown
+    await page.locator('a[data-ha-lang-switch][hreflang=ar]').first().click();
     await expect(page).toHaveURL(/\/ar\//);
     await expect(page.locator('html')).toHaveAttribute('dir', 'rtl');
   });

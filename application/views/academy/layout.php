@@ -8,9 +8,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * stack changes with the language. Plan sections 40 and 43.
  */
 $is_rtl = $rtl;
-$switch_locale = $locale === 'ar' ? 'en' : 'ar';
 $alt = $seo->get('alternate_path');
-$switch_path = is_array($alt) ? (isset($alt[$switch_locale]) ? $alt[$switch_locale] : '') : $alt;
+// Same page in every published site language (languages without their own slug use the English path).
+$lang_links = array();
+foreach ($site_locales as $lc) {
+    $p = is_array($alt) ? (isset($alt[$lc]) ? $alt[$lc] : (isset($alt['en']) ? $alt['en'] : '')) : $alt;
+    $lang_links[$lc] = base_url($lc . ($p === '' ? '' : '/' . $p));
+}
 
 /*
  * These pages used to read nothing from the admin panel, which is why
@@ -80,7 +84,7 @@ $ha_custom_css = trim((string) get_frontend_settings('custom_css'));
         <style><?= $ha_custom_css ?></style>
     <?php endif; ?>
 </head>
-<body class="ha<?= $is_rtl ? ' ha--rtl' : '' ?>">
+<body class="ha ha--<?= $locale ?><?= $is_rtl ? ' ha--rtl' : '' ?><?= in_array($locale, array('en', 'tl'), true) ? '' : ' ha--intl' ?>">
 
 <a class="ha-skip" href="#ha-main"><?= html_escape($t['skip_to_content']) ?></a>
 
@@ -103,14 +107,17 @@ $ha_social = array_filter($ha_social, function ($v) { return trim((string) $v) !
     <div class="ha-rail">
         <div class="ha-shell ha-rail__inner">
             <p class="ha-rail__note"><?= html_escape(ha_chrome('ha_rail_note', $locale)) ?></p>
-            <nav class="ha-rail__links" aria-label="<?= $locale === 'ar' ? 'روابط سريعة' : 'Utility' ?>">
+            <nav class="ha-rail__links" aria-label="<?= ha_pe('Utility') ?>">
                 <a href="<?= base_url($locale . '/verify') ?>"><?= html_escape($t['verify_title']) ?></a>
                 <a href="<?= base_url($locale . '/contact') ?>"><?= html_escape($t['contact']) ?></a>
-                <a class="ha-rail__lang" data-ha-lang-switch
-                   href="<?= base_url($switch_locale . ($switch_path === '' ? '' : '/' . $switch_path)) ?>"
-                   hreflang="<?= $switch_locale ?>" lang="<?= $switch_locale ?>">
-                    <?= html_escape($t['language_switch']) ?>
-                </a>
+                <details class="ha-langmenu" data-ha-langmenu>
+                    <summary class="ha-rail__lang" aria-label="<?= ha_pe('Language') ?>"><span lang="<?= $locale ?>"><?= html_escape(ha_locale_name($locale)) ?></span></summary>
+                    <ul class="ha-langmenu__list" role="list">
+                        <?php foreach ($lang_links as $lc => $href): ?>
+                        <li><a href="<?= html_escape($href) ?>" hreflang="<?= $lc ?>" lang="<?= $lc ?>" dir="<?= ha_locale_dir($lc) ?>" data-ha-lang-switch<?= $lc === $locale ? ' aria-current="true"' : '' ?>><?= html_escape(ha_locale_name($lc)) ?></a></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </details>
             </nav>
         </div>
     </div>
@@ -153,16 +160,16 @@ $ha_social = array_filter($ha_social, function ($v) { return trim((string) $v) !
                     ?>
                     <?php if ($ha_user || $ha_admin): ?>
                         <a class="ha-mast__cta" href="<?= base_url($ha_admin ? 'admin' : 'home/my_courses') ?>">
-                            <?= $locale === 'ar' ? 'لوحتي' : 'My learning' ?>
+                            <?= ha_pe('My learning') ?>
                         </a>
                     <?php else: ?>
-                        <a class="ha-mast__signin" href="<?= base_url('login') ?>"><?= $locale === 'ar' ? 'تسجيل الدخول' : 'Login' ?></a>
-                        <a class="ha-mast__cta" href="<?= base_url('sign_up') ?>"><?= $locale === 'ar' ? 'انضم الآن' : 'Join Now' ?></a>
+                        <a class="ha-mast__signin" href="<?= base_url('login') ?>"><?= ha_pe('Login') ?></a>
+                        <a class="ha-mast__cta" href="<?= base_url('sign_up') ?>"><?= ha_pe('Join Now') ?></a>
                     <?php endif; ?>
 
                     <button class="ha-iconbtn ha-mast__burger" type="button" data-ha-nav-toggle
                             aria-expanded="false" aria-controls="ha-nav"
-                            aria-label="<?= $locale === 'ar' ? 'القائمة' : 'Menu' ?>">
+                            aria-label="<?= ha_pe('Menu') ?>">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
                              stroke-linecap="round" aria-hidden="true" focusable="false">
                             <path d="M4 7h16M4 12h16M4 17h16"/>
@@ -174,7 +181,7 @@ $ha_social = array_filter($ha_social, function ($v) { return trim((string) $v) !
             <nav class="ha-mast__nav" id="ha-nav" aria-label="<?= html_escape($ha_brand_name) ?>">
                 <?php /* Visible only while the panel is a panel; Escape and the scrim also close it. */ ?>
                 <button class="ha-iconbtn ha-mast__close" type="button" data-ha-nav-close
-                        aria-label="<?= $locale === 'ar' ? 'إغلاق القائمة' : 'Close menu' ?>">
+                        aria-label="<?= ha_pe('Close menu') ?>">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
                          stroke-linecap="round" aria-hidden="true" focusable="false">
                         <path d="M6 6l12 12M18 6L6 18"/>
@@ -188,7 +195,7 @@ $ha_social = array_filter($ha_social, function ($v) { return trim((string) $v) !
                     <?php /* Filled by academy.js with whatever does not fit; hidden when everything does. */ ?>
                     <li class="ha-more" data-ha-more>
                         <button class="ha-more__btn" type="button" aria-expanded="false" aria-haspopup="true">
-                            <?= $locale === 'ar' ? 'المزيد' : 'More' ?>
+                            <?= ha_pe('More') ?>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
                                 <path d="M5 9l7 7 7-7"/>
@@ -255,7 +262,7 @@ $ha_social = array_filter($ha_social, function ($v) { return trim((string) $v) !
          */
         $ha_foot_groups = array(
             array(
-                'title' => $locale === 'ar' ? 'التعلّم' : 'Learn',
+                'title' => ha_pt('Learn'),
                 'links' => array(
                     array('courses', $t['courses']),
                     array('programs', $t['programs']),
@@ -264,7 +271,7 @@ $ha_social = array_filter($ha_social, function ($v) { return trim((string) $v) !
                 ),
             ),
             array(
-                'title' => $locale === 'ar' ? 'المصادر' : 'Resources',
+                'title' => ha_pt('Resources'),
                 'links' => array(
                     array('sop', $t['sop']),
                     array('hospitality-topics', $t['topics']),
@@ -273,12 +280,12 @@ $ha_social = array_filter($ha_social, function ($v) { return trim((string) $v) !
                 ),
             ),
             array(
-                'title' => $locale === 'ar' ? 'الشركة' : 'Company',
+                'title' => ha_pt('Company'),
                 'links' => array(
                     array('about', $t['about']),
                     array('hotels', $t['for_hotels']),
                     array('contact', $t['contact']),
-                    array('credits', $locale === 'ar' ? 'مصادر الصور' : 'Photo credits'),
+                    array('credits', ha_pt('Photo credits')),
                 ),
             ),
         );
@@ -298,7 +305,7 @@ $ha_social = array_filter($ha_social, function ($v) { return trim((string) $v) !
             <?php endforeach; ?>
 
             <div class="ha-foot__col">
-                <h2><?= $locale === 'ar' ? 'تواصل معنا' : 'Contact' ?></h2>
+                <h2><?= ha_pe('Contact') ?></h2>
                 <div class="ha-foot__meta">
                     <address><?= nl2br(html_escape(ha_chrome('ha_contact_address', $locale))) ?></address>
                     <?php if ($ha_email !== ''): ?>
@@ -337,14 +344,12 @@ $ha_social = array_filter($ha_social, function ($v) { return trim((string) $v) !
 
         <div class="ha-foot__base">
             <p>&copy; <?= date('Y') ?> <?= html_escape($ha_brand_name) ?>.
-                <?= $locale === 'ar'
-                    ? 'الصور من ويكيميديا كومنز برخص تسمح بالاستخدام.'
-                    : 'Photography from Wikimedia Commons under licences that permit this use.' ?>
+                <?= ha_pe('Photography from Wikimedia Commons under licences that permit this use.') ?>
             </p>
             <nav aria-label="<?= html_escape($t['legal']) ?>">
                 <a href="<?= base_url($locale . '/privacy') ?>"><?= html_escape($t['privacy']) ?></a>
                 <a href="<?= base_url($locale . '/terms') ?>"><?= html_escape($t['terms']) ?></a>
-                <a href="<?= base_url($locale . '/credits') ?>"><?= $locale === 'ar' ? 'مصادر الصور' : 'Photo credits' ?></a>
+                <a href="<?= base_url($locale . '/credits') ?>"><?= ha_pe('Photo credits') ?></a>
             </nav>
         </div>
     </div>

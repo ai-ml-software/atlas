@@ -5,59 +5,64 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * altus Hospitality Knowledge & Performance - view helpers.
  *
  * Translation is gettext style: the English sentence is the key and
- * application/language/arabic/hkp_lang.php maps it to Arabic. That keeps views
- * readable and lets Test_hkp_i18n scan every hkp_t('...') literal in the
- * workspace views and fail the build when one has no Arabic, so "no hardcoded
- * language strings" is enforced rather than hoped for (ppt-features 7, 79).
+ * application/language/hkp/{code}.php maps it to that language (one file per
+ * enabled language in config/ha_locales.php). That keeps views readable and
+ * lets Test_cms scan every hkp_t('...') literal in the workspace and fail the
+ * build when a shipped language misses one, so "no hardcoded language strings"
+ * is enforced rather than hoped for (ppt-features 7, 79).
  */
 
+require_once APPPATH . 'helpers/ha_locale_helper.php';
+
 if (!function_exists('hkp_locale')) {
-    /** The active workspace locale: explicit choice, then profile, then English. */
+    /** The active workspace locale: explicit choice, then profile, then the default language. */
     function hkp_locale($set = null) {
         static $locale = null;
-        if ($set === 'en' || $set === 'ar') {
+        if ($set !== null && ha_locale_enabled($set)) {
             $locale = $set;
         }
         if ($locale === null) {
             $CI =& get_instance();
             $chosen = (!is_cli() && isset($CI->session)) ? $CI->session->userdata('hkp_locale') : null;
-            if ($chosen === 'en' || $chosen === 'ar') {
+            if (ha_locale_enabled($chosen)) {
                 $locale = $chosen;
-            } elseif (isset($CI->ha_auth) && $CI->ha_auth->check()) {
+            } elseif (isset($CI->ha_auth) && $CI->ha_auth->check() && ha_locale_enabled($CI->ha_auth->locale())) {
                 $locale = $CI->ha_auth->locale();
             } else {
-                $locale = 'en';
+                $locale = ha_locale_default();
             }
         }
         return $locale;
     }
 
     function hkp_is_rtl() {
-        return hkp_locale() === 'ar';
+        return ha_locale_dir(hkp_locale()) === 'rtl';
     }
 
     function hkp_dir() {
         return hkp_is_rtl() ? 'rtl' : 'ltr';
     }
 
-    /** @return array English => Arabic */
-    function hkp_dictionary() {
-        static $dict = null;
-        if ($dict === null) {
-            $file = APPPATH . 'language/arabic/hkp_lang.php';
-            $dict = is_file($file) ? (array) include $file : array();
+    /** @return array English => translation for $locale (default: the active locale) */
+    function hkp_dictionary($locale = null) {
+        static $dicts = array();
+        $locale = $locale ?: hkp_locale();
+        if (!isset($dicts[$locale])) {
+            $file = APPPATH . 'language/hkp/' . preg_replace('/[^a-z]/', '', $locale) . '.php';
+            $dicts[$locale] = ($locale !== 'en' && is_file($file)) ? (array) include $file : array();
         }
-        return $dict;
+        return $dicts[$locale];
     }
 
     /**
      * Translates an interface string. {name} placeholders are replaced after
-     * translation so Arabic word order is preserved. Output is NOT escaped:
-     * wrap in hkp_e() or html_escape() when printing.
+     * translation so each language keeps its own word order. A string missing
+     * from a language falls back to English. Output is NOT escaped: wrap in
+     * hkp_e() or html_escape() when printing.
      */
     function hkp_t($text, array $vars = array()) {
         $out = $text;
-        if (hkp_locale() === 'ar') {
+        if (hkp_locale() !== 'en') {
             $dict = hkp_dictionary();
             if (isset($dict[$text]) && $dict[$text] !== '') {
                 $out = $dict[$text];
@@ -80,21 +85,20 @@ if (!function_exists('hkp_locale')) {
     }
 
     /**
-     * Picks the locale column from a bilingual row: hkp_pick($row, 'title')
-     * reads title_ar in Arabic and falls back to title_en when the Arabic
-     * is empty, so a missing translation shows English rather than nothing.
+     * Picks the locale column from a multilingual row: hkp_pick($row, 'title')
+     * reads title_{locale}, then English, then Arabic, then a plain `title`,
+     * so a missing translation shows the best available text rather than nothing.
      */
     function hkp_pick($row, $field) {
         if (!is_array($row)) {
             return '';
         }
-        $loc = hkp_locale();
-        $primary = isset($row[$field . '_' . $loc]) ? trim((string) $row[$field . '_' . $loc]) : '';
-        if ($primary !== '') {
-            return $row[$field . '_' . $loc];
+        foreach (array_unique(array(hkp_locale(), 'en', 'ar')) as $loc) {
+            if (isset($row[$field . '_' . $loc]) && trim((string) $row[$field . '_' . $loc]) !== '') {
+                return (string) $row[$field . '_' . $loc];
+            }
         }
-        $other = $loc === 'ar' ? 'en' : 'ar';
-        return isset($row[$field . '_' . $other]) ? (string) $row[$field . '_' . $other] : (isset($row[$field]) ? (string) $row[$field] : '');
+        return isset($row[$field]) ? (string) $row[$field] : '';
     }
 
     /** Human label for an enum value such as not_ready -> "Not ready". */
@@ -114,22 +118,21 @@ if (!function_exists('hkp_locale')) {
         if (!$ts) {
             return '—';
         }
-        $out = date($with_time ? 'Y-m-d H:i' : 'Y-m-d', $ts);
-        return $out;
+        return ha_format_date($ts, hkp_locale(), $with_time);
     }
 
     function hkp_number($value, $decimals = 0) {
         if ($value === null || $value === '') {
             return '—';
         }
-        return number_format((float) $value, $decimals);
+        return ha_format_number($value, hkp_locale(), $decimals);
     }
 
     function hkp_pct($value, $decimals = 0) {
         if ($value === null || $value === '') {
             return '—';
         }
-        return number_format((float) $value, $decimals) . '%';
+        return ha_format_number($value, hkp_locale(), $decimals) . '%';
     }
 
     /** A status pill. Tone is derived from the value so every screen colours statuses the same way. */

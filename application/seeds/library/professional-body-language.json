@@ -1,0 +1,551 @@
+{
+    "slug": "professional-body-language",
+    "category": "communication",
+    "level": "foundation",
+    "source_pdf": "Professional-Body-Language-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/professional-body-language.webp",
+    "videos": [
+        {
+            "id": "FRjSS0NrArs",
+            "title": "Improve your body language with a customer service reset",
+            "channel": "Jeff Toister",
+            "why": "A well-known customer service trainer shows how to reset your posture and expression before serving the next customer."
+        },
+        {
+            "id": "Ks-_Mh1QhMc",
+            "title": "Your Body Language May Shape Who You Are | Amy Cuddy | TED",
+            "channel": "TED",
+            "why": "A widely watched talk on how nonverbal signals shape how others see us and how we feel about ourselves."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Professional Body Language",
+            "subtitle": "What your face, hands and stance tell the guest",
+            "short_description": "Learn how words, tone and body language work together, which signals to use with guests and which habits to replace.",
+            "description": "<p>Every guest interaction uses three channels at once: the words we say, the tone we say them in, and what our face and body show. This course, based on the Dyafa Hotels &amp; Resorts training deck, shows why professional service needs all three to agree.</p><p>You will work through the face, the hands and arms, and the stance and movement, learning the professional signals to use and the habits to avoid. Finally you will see how guests may interpret negative signals and how to replace each habit with a professional choice.</p>",
+            "requirements": "No prior training is needed; the course is for any colleague who meets guests face to face.",
+            "outcomes": [
+                "Explain how words, tone of voice and body language combine in every interaction",
+                "Recognise when your signals contradict your words and correct them",
+                "Use professional head, face, hand and arm signals with guests",
+                "Stand, move and face the guest in a way that shows readiness to help",
+                "Replace common negative habits with professional alternatives"
+            ],
+            "faqs": [
+                {
+                    "question": "Is the 7–38–55 rule true for all communication?",
+                    "answer": "No. The deck notes it is not a general rule; it comes from specific research on inconsistent feelings and attitudes. The practical lesson is simply that guests notice when words and body disagree."
+                },
+                {
+                    "question": "What should I do with my hands when I am not gesturing?",
+                    "answer": "Keep them in a natural position, not in your pockets, not crossed over your chest and not fiddling with a pen or phone."
+                },
+                {
+                    "question": "How do I point a guest in the right direction?",
+                    "answer": "Open your palm and indicate the direction with your whole hand. Never point at a guest with a finger."
+                }
+            ],
+            "meta_title": "Professional Body Language for Hotel Staff",
+            "meta_description": "Hotel training on body language: align words, tone and posture, use professional face and hand signals, and replace negative habits.",
+            "focus_keyword": "professional body language for hotel staff",
+            "chapters": [
+                {
+                    "title": "Why Body Language Matters",
+                    "lessons": [
+                        {
+                            "title": "Three Channels, One Message",
+                            "minutes": 7,
+                            "body": "<h2>Every interaction speaks three ways</h2><p>When you greet a guest, answer a question or explain a charge, you are never communicating through words alone. The deck names three channels that are always active together: <strong>words</strong>, which are what we say; <strong>tone of voice</strong>, which is how we say it; and <strong>body language</strong>, which is what the face and body show. A guest receives all three at the same moment and forms one impression from them.</p><blockquote class=\"bk-quote\">Professional service requires all three channels to work together.</blockquote><p>This is why a colleague can say exactly the right sentence and still leave a guest feeling unwelcome. The script was correct, but the other two channels told a different story.</p><h2>When the signals conflict</h2><p>The deck gives a simple example. The words say <em>I am happy to help you</em>, but the body language says <em>I am busy and I do not care</em>. Picture the agent who says those kind words while glancing at a screen, half turned away, arms folded. The guest notices the contradiction immediately, and when signals conflict, the guest believes what he sees.</p><p>A short note on the slide deserves attention. You may have heard of a 7–38–55 rule. The deck is clear that it is <strong>not a general rule for all communication</strong>; it applies to specific research on inconsistent feelings and attitudes. We do not need percentages to act well. We only need to remember that when our body disagrees with our words, the guest trusts the body.</p><h2>How to keep the channels consistent</h2><ol><li><strong>Match your words with your tone of voice.</strong> A warm sentence needs a warm, unhurried voice.</li><li><strong>Keep a natural facial expression.</strong> Not a fixed smile, not a blank face.</li><li><strong>Face the guest and do not look away.</strong> Your attention should be where the guest is.</li><li><strong>Use an open, non-rigid posture.</strong> Relaxed shoulders and uncrossed arms invite conversation.</li><li><strong>Show genuine interest by listening.</strong> Let the guest finish and respond to what was actually said.</li></ol><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Say <em>I am happy to help you</em> while facing the guest and looking at them</td><td>Saying the same words while typing and looking at the screen</td></tr><tr><td>A calm voice and relaxed, open posture</td><td>Kind words delivered in a rushed, flat voice</td></tr></tbody></table><aside class=\"bk-scene\"><p>At a busy check-in, a guest approached while the front office agent was finishing an entry. Instead of answering without looking up, she paused, turned fully towards him, smiled and said, <em>Good evening, I will be with you in one moment.</em> She finished the entry quickly and gave him her full attention. The guest waited calmly because every channel told him the same thing: he had been seen and he mattered.</p></aside><aside class=\"bk-note\"><p>Before speaking to a guest, check yourself in one second: am I facing them, is my face relaxed, are my hands free?</p></aside><aside class=\"bk-key\"><p>Words, tone and body language must say the same thing. When they conflict, the guest believes what he sees.</p></aside>",
+                            "quiz": {
+                                "title": "Check your understanding: three channels",
+                                "questions": [
+                                    {
+                                        "question": "A colleague says 'I am happy to help you' while scrolling on the computer and not looking up. What does the guest most likely believe?",
+                                        "options": [
+                                            "That the colleague is happy to help, because the words were polite",
+                                            "That the colleague is busy and does not care, because the body contradicts the words",
+                                            "Nothing, because guests only listen to words",
+                                            "That the hotel is fully booked"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "When signals conflict, the guest believes what he sees."
+                                    },
+                                    {
+                                        "question": "Which describes 'tone of voice' as a communication channel?",
+                                        "options": [
+                                            "What we say",
+                                            "What the face and body show",
+                                            "How we say it",
+                                            "The language we speak"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck defines tone of voice as how we say what we say."
+                                    },
+                                    {
+                                        "question": "A trainee says: 'The 7–38–55 rule proves body language is 55% of every conversation.' What is the best reply?",
+                                        "options": [
+                                            "It is not a general rule for all communication; it comes from specific research on inconsistent feelings and attitudes",
+                                            "Correct, so words hardly matter",
+                                            "It proves tone is the only channel that counts",
+                                            "It applies only to phone calls"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The slide explicitly warns that the rule is not a general rule for all communication."
+                                    },
+                                    {
+                                        "question": "Which action best keeps your channels consistent while a guest explains a problem?",
+                                        "options": [
+                                            "Nodding while continuing to type",
+                                            "Crossing your arms to look serious",
+                                            "Looking at a colleague to signal you need help",
+                                            "Facing the guest, keeping an open posture and listening with genuine interest"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Facing the guest, open posture and genuine listening all align with the words you use."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Reading and Using the Signals",
+                    "lessons": [
+                        {
+                            "title": "Head and Face: The First Thing the Guest Sees",
+                            "minutes": 6,
+                            "body": "<h2>The face speaks first</h2><p>Before you say a word, the guest has already looked at your face. It is the first thing the guest sees, and it answers silent questions at once: Is this person pleased to see me? Are they paying attention? Will they take me seriously? The deck sets a clear aim for this part of the body.</p><blockquote class=\"bk-quote\">Your face should communicate attention, warmth, and respect.</blockquote><h2>Professional head and face behaviour</h2><ul><li><strong>A natural, calm smile.</strong> Not a wide performance smile, but an easy expression that says you are glad to help.</li><li><strong>Balanced eye contact.</strong> Look at the guest enough to show attention, without staring.</li><li><strong>An attentive facial expression.</strong> Your face should show that you are following what the guest says.</li><li><strong>Head naturally raised.</strong> A lowered head looks tired or uninterested; a raised head looks ready.</li><li><strong>A light nod to show understanding.</strong> It tells the guest you have understood without interrupting.</li></ul><h2>What to avoid</h2><p>The deck lists habits that quietly damage the guest's impression. Most of them are not intended as rude; they happen out of tiredness or habit. That is exactly why we need to know them.</p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>A natural, calm smile</td><td>Frowning or grimacing</td></tr><tr><td>An alert, attentive face</td><td>Yawning in front of the guest</td></tr><tr><td>A composed, professional mouth</td><td>Chewing gum at work</td></tr><tr><td>Balanced, steady eye contact</td><td>Rolling the eyes or the head</td></tr><tr><td>A respectful, neutral expression</td><td>Sarcastic sounds or expressions</td></tr><tr><td>Hands away from the face</td><td>Touching the face repeatedly</td></tr></tbody></table><p>Some of these, such as rolling the eyes or making a sarcastic sound, are especially harmful because the guest may read them as judgement of his request. Even if the reaction was about something else, such as a system delay, the guest sees it on your face while he is standing in front of you.</p><aside class=\"bk-scene\"><p>A guest at the concierge desk asked for the third time how to reach a restaurant. The concierge felt a flash of impatience, but kept a calm smile, gave a light nod and said, <em>Of course, let me show you on the map.</em> The guest later thanked him for being so patient. Nothing in his face told the guest he had asked too many times, so the guest felt respected rather than foolish.</p></aside><aside class=\"bk-note\"><p>If you feel tired late in a shift, reset your face before each guest: lift your head, relax your jaw, and let a natural smile return.</p></aside><aside class=\"bk-key\"><p>Your face is the first thing the guest sees: show attention, warmth and respect, and keep frowns, yawns, gum and eye-rolling away from the guest.</p></aside>",
+                            "quiz": {
+                                "title": "Check your understanding: head and face",
+                                "questions": [
+                                    {
+                                        "question": "A guest explains a long request. How can you show you understand without interrupting?",
+                                        "options": [
+                                            "Say 'yes, yes' repeatedly",
+                                            "A light nod with an attentive expression",
+                                            "Look at your screen to find the answer",
+                                            "Smile widely and look away"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck lists a light nod to show understanding as professional behaviour."
+                                    },
+                                    {
+                                        "question": "The system freezes while a guest waits and you roll your eyes. What is the risk?",
+                                        "options": [
+                                            "None, because it was about the system",
+                                            "The guest will think the system is slow",
+                                            "The guest may read it as annoyance with him, because he sees it on your face",
+                                            "It shows honesty"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Rolling the eyes is on the avoid list because the guest interprets what he sees."
+                                    },
+                                    {
+                                        "question": "Which eye contact is professional?",
+                                        "options": [
+                                            "Balanced eye contact without staring",
+                                            "Constant staring to show focus",
+                                            "Avoiding eye contact to be polite",
+                                            "Looking only at the guest's documents"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The slide calls for balanced eye contact."
+                                    },
+                                    {
+                                        "question": "Late in a long shift you notice you keep yawning at the desk. What is the professional choice?",
+                                        "options": [
+                                            "Yawn openly so guests know you are tired",
+                                            "Chew gum to stay awake",
+                                            "Keep your head down to rest",
+                                            "Avoid yawning in front of guests and reset your face before each interaction"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Yawning in front of the guest is listed as something to avoid."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Hands, Stance and Movement",
+                            "minutes": 7,
+                            "body": "<h2>Calm hands reflect confidence</h2><p>After the face, the guest reads your hands. Busy, restless or hidden hands suggest nervousness or lack of interest; calm hands suggest confidence and control. The deck's guidance is simple: keep your gestures calm, open, and purposeful.</p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Keep the hands in a natural position</td><td>Hands in pockets</td></tr><tr><td>Use calm, clear gestures</td><td>Arms crossed over the chest</td></tr><tr><td>Open the palm when giving directions</td><td>Fiddling with a pen or phone</td></tr><tr><td>Point to the direction with the whole hand</td><td>Scratching the head or body</td></tr><tr><td>Keep hands and nails clean</td><td>Cleaning the nails or touching the nose and ears</td></tr><tr><td>Indicate places, not people</td><td>Pointing at the guest with a finger</td></tr></tbody></table><p>Giving directions is where hand signals matter most. An open palm and the whole hand pointing the way look generous and clear. A single finger, especially if aimed at the guest, feels abrupt and can be taken as disrespectful. Clean hands and nails matter too, because guests watch your hands when you hand over keys, documents or plates.</p><h2>Your stance and movement send a clear message</h2><p>The whole body also speaks: how you stand while waiting, how you walk across the lobby, and whether you turn towards the guest. The deck sums it up in one line.</p><blockquote class=\"bk-quote\">Stand upright. Move calmly. Face the guest.</blockquote><p>The professional behaviour is:</p><ol><li><strong>Stand upright and relaxed</strong>, not stiff and not slouched.</li><li><strong>Distribute your weight on both feet</strong>, so you look steady and ready.</li><li><strong>Walk at a moderate, confident pace</strong>, never rushing in a way that alarms guests.</li><li><strong>Keep a professional distance</strong>, close enough to help, not so close that the guest feels crowded.</li><li><strong>Face the guest with your whole body</strong>, not just your head.</li></ol><p>And the habits to avoid: leaning on walls or furniture, tapping or nervously moving the foot, constantly shifting from one foot to the other, stretching in front of guests, standing on one leg, and turning your back on the guest.</p><aside class=\"bk-scene\"><p>A guest in the lobby asked a bell attendant where the spa was. The attendant had been leaning against a pillar. He straightened up, turned his whole body towards the guest, opened his palm towards the lifts and said, <em>The spa is on the second floor; the lifts are just there on your right.</em> He then walked a few steps with the guest at a calm pace. The guest felt guided, not dismissed, because the attendant's body showed he was ready to help.</p></aside><aside class=\"bk-note\"><p>When you must move away, for example to fetch something, tell the guest first and turn back to face them when you return, rather than simply walking off with your back to them.</p></aside><aside class=\"bk-key\"><p>Keep gestures calm, open and purposeful, and let your stance say you are ready: stand upright, move calmly and face the guest.</p></aside>",
+                            "quiz": {
+                                "title": "Check your understanding: hands and stance",
+                                "questions": [
+                                    {
+                                        "question": "A guest asks where the ballroom is. What is the most professional way to indicate it?",
+                                        "options": [
+                                            "Point with one finger",
+                                            "Nod your head towards it",
+                                            "Open your palm and point the direction with the whole hand",
+                                            "Tell them without gesturing while looking at your phone"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck asks us to open the palm and point with the whole hand."
+                                    },
+                                    {
+                                        "question": "While waiting at the desk during a quiet moment, which stance is correct?",
+                                        "options": [
+                                            "Leaning on the counter to rest",
+                                            "Upright and relaxed, weight on both feet",
+                                            "Standing on one leg",
+                                            "Shifting from foot to foot to stay alert"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Stand upright and relaxed with weight on both feet."
+                                    },
+                                    {
+                                        "question": "You need to walk a guest to a meeting room. Which pace fits the deck?",
+                                        "options": [
+                                            "A moderate, confident pace",
+                                            "As fast as possible to save time",
+                                            "Very slowly so the guest leads",
+                                            "Walking ahead without checking the guest"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Walk at a moderate, confident pace."
+                                    },
+                                    {
+                                        "question": "A colleague keeps his hands in his pockets while talking with guests. What should you suggest?",
+                                        "options": [
+                                            "Cross his arms instead",
+                                            "Hold a pen to keep his hands busy",
+                                            "It is fine if he is smiling",
+                                            "Keep his hands in a natural position and use calm, clear gestures"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Hands in pockets is on the avoid list; natural hands and calm gestures are recommended."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Changing the Habit",
+                    "lessons": [
+                        {
+                            "title": "How Guests Interpret Signals and How to Replace Habits",
+                            "minutes": 7,
+                            "body": "<h2>Negative body language affects how the guest feels</h2><p>Most negative signals are not meant as rudeness. A frown may be concentration; crossed arms may be because you feel cold; a glance at the phone may be about a work message. But the guest does not see your reasons. He sees the signal and draws his own meaning from it. The deck lists five common signals and how a guest may interpret them.</p><table><thead><tr><th>Signal</th><th>What the guest may hear</th></tr></thead><tbody><tr><td>Frowning</td><td><em>You are not welcome.</em></td></tr><tr><td>Crossed arms</td><td><em>I do not want to engage.</em></td></tr><tr><td>Looking at the phone</td><td><em>You are not a priority.</em></td></tr><tr><td>Tapping the foot</td><td><em>I am impatient or annoyed.</em></td></tr><tr><td>Turning your back</td><td><em>I am not listening.</em></td></tr></tbody></table><p>Read these interpretations slowly. None of them is a message any of us wants to send a guest. Yet each can be sent in a second, without a word, by someone who is actually trying to help.</p><h2>Replace the habit with professional behaviour</h2><p>Knowing the risk is only half the work. The deck asks us to replace each negative habit with a specific professional behaviour. Replacing is easier than simply stopping, because it gives your body something to do instead.</p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Instead of</th></tr></thead><tbody><tr><td>Smile naturally</td><td>Frowning</td></tr><tr><td>Keep your hands in a natural position</td><td>Crossing your arms</td></tr><tr><td>Put the phone away and focus on the guest</td><td>Fiddling with the phone</td></tr><tr><td>Stand still calmly and distribute your weight</td><td>Tapping your foot</td></tr><tr><td>Stand upright and relaxed</td><td>Leaning on furniture</td></tr></tbody></table><blockquote class=\"bk-quote\">Awareness turns habits into professional choices.</blockquote><h2>A simple method</h2><ol><li><strong>Notice</strong> which of these habits you tend to fall into, especially when tired or busy.</li><li><strong>Choose</strong> the professional replacement from the table.</li><li><strong>Practise</strong> it deliberately until it becomes your natural reaction.</li></ol><aside class=\"bk-scene\"><p>A restaurant host realised she tapped her foot whenever the reservation list was full. A guest once asked if she was in a hurry. From then on, whenever she caught herself, she stood still, spread her weight on both feet and took a breath before speaking. Guests stopped asking, and she felt calmer too. The pressure had not changed; her choice had.</p></aside><h2>Closing the loop</h2><p>The deck ends with a short reminder of everything in this course: smile sincerely, stand with confidence, move calmly, face the guest, listen attentively and make your body welcoming. Each of these is something you can check in yourself at any moment of a shift.</p><aside class=\"bk-key\"><p>Your body language is part of the service you deliver: notice your habits and replace each one with a professional choice.</p></aside>",
+                            "quiz": {
+                                "title": "Check your understanding: interpretation and habits",
+                                "questions": [
+                                    {
+                                        "question": "You cross your arms because the lobby is cold. What might the guest interpret?",
+                                        "options": [
+                                            "That you are cold",
+                                            "That you do not want to engage",
+                                            "That you are confident",
+                                            "That you are listening carefully"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says crossed arms may be read as 'I do not want to engage', whatever the real reason."
+                                    },
+                                    {
+                                        "question": "A guest approaches while you are reading a message on your phone. What is the professional replacement?",
+                                        "options": [
+                                            "Finish reading, then look up",
+                                            "Keep the phone visible so they know you are busy",
+                                            "Put the phone away and focus on the guest",
+                                            "Hold up a finger to ask them to wait"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Put the phone away and focus on the guest instead of fiddling with it."
+                                    },
+                                    {
+                                        "question": "What does the deck mean by 'Awareness turns habits into professional choices'?",
+                                        "options": [
+                                            "Noticing your habits lets you deliberately choose professional behaviour instead",
+                                            "Habits cannot be changed, only hidden",
+                                            "Guests should be made aware of our habits",
+                                            "Only supervisors need to be aware of body language"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Once you notice a habit, you can replace it with a chosen professional behaviour."
+                                    },
+                                    {
+                                        "question": "Walking away from a guest mid-conversation to check something, you turn your back without a word. What may the guest feel?",
+                                        "options": [
+                                            "That you are being efficient",
+                                            "That you are going to help him",
+                                            "Nothing, because it is brief",
+                                            "That you are not listening"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck links turning your back with 'I am not listening'."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "لغة الجسد المهنية",
+            "subtitle": "ما يقوله وجهك ويداك ووقفتك للنزيل",
+            "short_description": "تعرّف كيف تنسجم الكلمات والنبرة ولغة الجسد، وما الإشارات المهنية التي تستخدمها مع النزيل، والعادات التي يجب استبدالها.",
+            "description": "<p>كل تواصل مع النزيل يجمع ثلاث قنوات في وقت واحد: الكلمات التي نقولها، ونبرة الصوت التي نقولها بها، وما يظهره الوجه والجسد. تعتمد هذه الدورة على الحقيبة التدريبية لفنادق ومنتجعات ضيافة، وتوضح لماذا تحتاج الخدمة المهنية إلى انسجام القنوات الثلاث.</p><p>ستتعرّف على إشارات الوجه والرأس، واليدين والذراعين، والوقفة والحركة: ما الذي تفعله وما الذي تتجنّبه. ثم ترى كيف قد يفسّر النزيل الإشارات السلبية، وكيف تستبدل كل عادة بسلوك مهني.</p>",
+            "requirements": "لا تحتاج إلى تدريب سابق؛ الدورة موجهة لكل زميل يتعامل مع النزلاء وجهًا لوجه.",
+            "outcomes": [
+                "اشرح كيف تجتمع الكلمات ونبرة الصوت ولغة الجسد في كل تواصل",
+                "تعرّف على تعارض إشاراتك مع كلماتك وصحّحه",
+                "استخدم إشارات مهنية للوجه والرأس واليدين مع النزيل",
+                "قف وتحرّك وواجه النزيل بطريقة تُظهر استعدادك للخدمة",
+                "استبدل العادات السلبية الشائعة بسلوك مهني"
+            ],
+            "faqs": [
+                {
+                    "question": "هل قاعدة 7–38–55 صحيحة لكل أنواع التواصل؟",
+                    "answer": "لا. تنبّه الحقيبة إلى أنها ليست قاعدة عامة لكل التواصل، بل تتعلق بأبحاث محددة حول تعارض المشاعر والمواقف. الدرس العملي أن النزيل يلاحظ التعارض بين الكلام والجسد."
+                },
+                {
+                    "question": "ماذا أفعل بيديّ عندما لا أستخدمهما في الإشارة؟",
+                    "answer": "اتركهما بوضع طبيعي، لا في الجيوب، ولا متقاطعتين أمام الصدر، ولا تعبث بهما بالقلم أو الهاتف."
+                },
+                {
+                    "question": "كيف أرشد النزيل إلى الاتجاه الصحيح؟",
+                    "answer": "افتح راحة يدك وأشر إلى الاتجاه بكامل اليد، ولا تشر إلى النزيل بالإصبع أبدًا."
+                }
+            ],
+            "meta_title": "لغة الجسد المهنية لموظفي الفنادق",
+            "meta_description": "تدريب فندقي على لغة الجسد: انسجام الكلمات والنبرة والوقفة، وإشارات الوجه واليدين المهنية، واستبدال العادات السلبية.",
+            "focus_keyword": "لغة الجسد المهنية في الفنادق",
+            "chapters": [
+                {
+                    "title": "لماذا تهم لغة الجسد",
+                    "lessons": [
+                        {
+                            "title": "ثلاث قنوات ورسالة واحدة",
+                            "minutes": 7,
+                            "body": "<h2>كل تواصل يجمع الكلمات والنبرة ولغة الجسد</h2><p>عندما ترحّب بالنزيل أو تجيب عن سؤاله أو تشرح له فاتورة، فأنت لا تتواصل بالكلمات وحدها. تحدد الحقيبة ثلاث قنوات تعمل معًا دائمًا: <strong>الكلمات</strong> وهي ما نقوله، و<strong>نبرة الصوت</strong> وهي كيف نقوله، و<strong>لغة الجسد</strong> وهي ما يظهره الوجه والجسد. يستقبل النزيل القنوات الثلاث في اللحظة نفسها، ويكوّن منها انطباعًا واحدًا.</p><blockquote class=\"bk-quote\">الخدمة المهنية تحتاج إلى انسجام القنوات الثلاث.</blockquote><h2>عندما تتعارض الإشارات يصدّق النزيل ما يراه</h2><p>تقول الكلمات: <em>يسعدني مساعدتك</em>، لكن لغة الجسد تقول: <em>أنا مشغول ولا أهتم</em>. تخيّل موظفًا يقول هذه العبارة اللطيفة وعيناه على الشاشة، وجسده نصف ملتفت، وذراعاه متقاطعتان. سيلاحظ النزيل التعارض فورًا، وسيصدّق ما يراه لا ما يسمعه.</p><p>وتضيف الحقيبة ملاحظة مهمة: قاعدة 7–38–55 <strong>ليست قاعدة عامة لكل التواصل</strong>، بل تتعلق بأبحاث محددة حول تعارض المشاعر والمواقف. لسنا بحاجة إلى نسب مئوية؛ يكفي أن نتذكر أن الجسد إذا خالف الكلام صدّق النزيل الجسد.</p><h2>كيف تحافظ على انسجام القنوات</h2><ol><li>طابق كلماتك مع نبرة صوتك.</li><li>حافظ على تعبير وجه طبيعي.</li><li>واجه النزيل ولا تنظر بعيدًا.</li><li>استخدم وضعية منفتحة وغير متصلبة.</li><li>أظهر الاهتمام الحقيقي بالاستماع.</li></ol><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنّب</th></tr></thead><tbody><tr><td>قل <em>يسعدني مساعدتك</em> وأنت تواجه النزيل وتنظر إليه</td><td>قول العبارة نفسها وأنت تكتب وتنظر إلى الشاشة</td></tr><tr><td>صوت هادئ ووضعية منفتحة مسترخية</td><td>كلمات لطيفة بصوت مستعجل وجاف</td></tr></tbody></table><aside class=\"bk-scene\"><p>في وقت ازدحام تسجيل الوصول، اقترب نزيل من موظفة الاستقبال وهي تنهي إدخال بيانات. بدلًا من أن تجيبه دون أن ترفع رأسها، توقفت والتفتت إليه بكامل جسدها وابتسمت وقالت: <em>مساء الخير، دقيقة واحدة وأكون معك.</em> أنهت الإدخال بسرعة ومنحته انتباهها الكامل. انتظر النزيل بهدوء لأن كل القنوات قالت له الشيء نفسه: لقد رأيناك وأنت مهم.</p></aside><aside class=\"bk-note\"><p>قبل أن تتحدث مع النزيل راجع نفسك في ثانية: هل أواجهه؟ هل وجهي مسترخٍ؟ هل يداي حرّتان؟</p></aside><aside class=\"bk-key\"><p>يجب أن تقول الكلمات والنبرة ولغة الجسد الشيء نفسه؛ فعندما تتعارض يصدّق النزيل ما يراه.</p></aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: القنوات الثلاث",
+                                "questions": [
+                                    {
+                                        "question": "زميل يقول «يسعدني مساعدتك» وهو يتصفح الحاسوب دون أن يرفع نظره. ماذا سيصدّق النزيل غالبًا؟",
+                                        "options": [
+                                            "أن الزميل سعيد بمساعدته لأن الكلمات مهذبة",
+                                            "أن الزميل مشغول ولا يهتم لأن الجسد يعارض الكلمات",
+                                            "لا شيء، لأن النزلاء يسمعون الكلمات فقط",
+                                            "أن الفندق ممتلئ"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "عندما تتعارض الإشارات يصدّق النزيل ما يراه."
+                                    },
+                                    {
+                                        "question": "أي وصف ينطبق على «نبرة الصوت» بوصفها قناة تواصل؟",
+                                        "options": [
+                                            "ما نقوله",
+                                            "ما يظهره الوجه والجسد",
+                                            "كيف نقوله",
+                                            "اللغة التي نتحدث بها"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تعرّف الحقيبة نبرة الصوت بأنها كيف نقول ما نقوله."
+                                    },
+                                    {
+                                        "question": "يقول متدرب: «قاعدة 7–38–55 تثبت أن لغة الجسد 55% من كل حديث». ما الرد الأنسب؟",
+                                        "options": [
+                                            "ليست قاعدة عامة لكل التواصل، بل تتعلق بأبحاث محددة حول تعارض المشاعر والمواقف",
+                                            "صحيح، لذلك لا تهم الكلمات",
+                                            "تثبت أن النبرة هي القناة الوحيدة المهمة",
+                                            "تنطبق على المكالمات الهاتفية فقط"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تنبّه الشريحة صراحة إلى أنها ليست قاعدة عامة لكل التواصل."
+                                    },
+                                    {
+                                        "question": "أي تصرف يحافظ على انسجام قنواتك بينما يشرح النزيل مشكلة؟",
+                                        "options": [
+                                            "الإيماء مع الاستمرار في الكتابة",
+                                            "تقاطع الذراعين لتبدو جادًا",
+                                            "النظر إلى زميل لطلب المساعدة",
+                                            "مواجهة النزيل بوضعية منفتحة والاستماع باهتمام حقيقي"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "المواجهة والوضعية المنفتحة والاستماع الحقيقي تنسجم مع كلماتك."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "قراءة الإشارات واستخدامها",
+                    "lessons": [
+                        {
+                            "title": "الوجه أول ما يراه النزيل",
+                            "minutes": 6,
+                            "body": "<h2>الوجه يتكلم أولًا</h2><p>قبل أن تنطق بكلمة، يكون النزيل قد نظر إلى وجهك. الوجه أول ما يراه النزيل، ويجيب فورًا عن أسئلة صامتة: هل هذا الموظف سعيد بقدومي؟ هل ينتبه لي؟ هل سيأخذ طلبي بجدية؟</p><blockquote class=\"bk-quote\">يجب أن يعبّر وجهك عن الانتباه والدفء والاحترام.</blockquote><h2>السلوك المهني</h2><ul><li><strong>ابتسامة طبيعية وهادئة</strong>، لا ابتسامة مصطنعة عريضة.</li><li><strong>تواصل بصري متوازن</strong> يُظهر الانتباه دون تحديق.</li><li><strong>تعبير وجه منتبه</strong> يدل على أنك تتابع حديث النزيل.</li><li><strong>الرأس مرفوع طبيعيًا</strong>؛ فالرأس المنخفض يوحي بالتعب أو عدم الاهتمام.</li><li><strong>إيماءة خفيفة لإظهار الفهم</strong> دون مقاطعة.</li></ul><h2>ما يجب تجنّبه</h2><p>كثير من هذه العادات لا يقصد بها الموظف الإساءة، بل تأتي من التعب أو التعوّد، ولهذا يجب أن نعرفها.</p><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنّب</th></tr></thead><tbody><tr><td>ابتسامة طبيعية وهادئة</td><td>العبوس أو التكشير</td></tr><tr><td>وجه يقظ منتبه</td><td>التثاؤب أمام النزيل</td></tr><tr><td>مظهر مهني متزن</td><td>مضغ العلكة أثناء العمل</td></tr><tr><td>تواصل بصري ثابت ومتوازن</td><td>تدوير العينين أو الرأس</td></tr><tr><td>تعبير محترم</td><td>إصدار أصوات أو تعابير ساخرة</td></tr><tr><td>إبعاد اليدين عن الوجه</td><td>لمس الوجه بصورة متكررة</td></tr></tbody></table><p>تدوير العينين أو التعبير الساخر ضار بشكل خاص، لأن النزيل قد يفهمه حكمًا على طلبه، حتى لو كان سببه تأخر النظام.</p><aside class=\"bk-scene\"><p>سأل نزيل موظف الكونسيرج للمرة الثالثة عن طريق الوصول إلى مطعم. شعر الموظف بلحظة ضيق، لكنه حافظ على ابتسامة هادئة وأومأ برأسه وقال: <em>بكل سرور، دعني أوضح لك على الخريطة.</em> شكره النزيل لاحقًا على صبره؛ فلم يرَ في وجهه ما يشعره بأنه أكثر من السؤال.</p></aside><aside class=\"bk-note\"><p>إذا شعرت بالتعب آخر الوردية، أعد ضبط وجهك قبل كل نزيل: ارفع رأسك، وأرخِ فكّك، ودع الابتسامة الطبيعية تعود.</p></aside><aside class=\"bk-key\"><p>وجهك أول ما يراه النزيل: أظهر الانتباه والدفء والاحترام، وأبعد العبوس والتثاؤب والعلكة وتدوير العينين عن النزيل.</p></aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الوجه والرأس",
+                                "questions": [
+                                    {
+                                        "question": "يشرح النزيل طلبًا طويلًا. كيف تُظهر أنك فهمت دون أن تقاطعه؟",
+                                        "options": [
+                                            "تكرار «نعم نعم»",
+                                            "إيماءة خفيفة مع تعبير وجه منتبه",
+                                            "النظر إلى الشاشة للبحث عن الحل",
+                                            "ابتسامة عريضة مع النظر بعيدًا"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تذكر الحقيبة الإيماءة الخفيفة لإظهار الفهم سلوكًا مهنيًا."
+                                    },
+                                    {
+                                        "question": "تجمّد النظام والنزيل ينتظر فدوّرت عينيك. ما الخطر؟",
+                                        "options": [
+                                            "لا خطر لأنه بسبب النظام",
+                                            "سيظن النزيل أن النظام بطيء",
+                                            "قد يفهمه النزيل انزعاجًا منه لأنه يراه على وجهك",
+                                            "يدل على الصراحة"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تدوير العينين من المحظورات لأن النزيل يفسّر ما يراه."
+                                    },
+                                    {
+                                        "question": "أي تواصل بصري يعدّ مهنيًا؟",
+                                        "options": [
+                                            "تواصل بصري متوازن دون تحديق",
+                                            "تحديق مستمر لإظهار التركيز",
+                                            "تجنّب النظر احترامًا",
+                                            "النظر إلى أوراق النزيل فقط"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تطلب الشريحة تواصلًا بصريًا متوازنًا."
+                                    },
+                                    {
+                                        "question": "لاحظت آخر وردية طويلة أنك تتثاءب عند المكتب. ما الخيار المهني؟",
+                                        "options": [
+                                            "التثاؤب بوضوح ليعرف النزلاء أنك متعب",
+                                            "مضغ العلكة لتبقى مستيقظًا",
+                                            "خفض الرأس للاستراحة",
+                                            "تجنّب التثاؤب أمام النزيل وإعادة ضبط وجهك قبل كل تعامل"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "التثاؤب أمام النزيل مما يجب تجنّبه."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "اليدان والوقفة والحركة",
+                            "minutes": 7,
+                            "body": "<h2>اليدان الهادئتان تعكسان الثقة</h2><p>بعد الوجه يقرأ النزيل يديك. اليدان المضطربتان أو المخفيتان توحيان بالتوتر أو عدم الاهتمام، أما اليدان الهادئتان فتوحيان بالثقة. وتوصي الحقيبة بأن تكون إيماءاتك هادئة ومنفتحة وهادفة.</p><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنّب</th></tr></thead><tbody><tr><td>اترك اليدين بوضع طبيعي</td><td>وضع اليدين في الجيوب</td></tr><tr><td>استخدم إيماءات هادئة وواضحة</td><td>تقاطع الذراعين أمام الصدر</td></tr><tr><td>افتح راحة اليد عند الإرشاد</td><td>العبث بالقلم أو الهاتف</td></tr><tr><td>أشر إلى الاتجاه بكامل اليد</td><td>حك الرأس أو الجسم</td></tr><tr><td>حافظ على نظافة اليدين والأظافر</td><td>تنظيف الأظافر أو لمس الأنف والأذن</td></tr><tr><td>أشر إلى الأماكن لا إلى الأشخاص</td><td>الإشارة إلى النزيل بالإصبع</td></tr></tbody></table><p>يظهر أثر اليدين أكثر عند إرشاد النزيل؛ فراحة اليد المفتوحة والإشارة بكامل اليد تبدوان كريمتين وواضحتين، أما الإصبع الموجّه إلى النزيل فيبدو جافًا وقد يُفهم قلة احترام.</p><h2>وقفتك وحركتك ترسلان رسالة واضحة</h2><blockquote class=\"bk-quote\">قف باستقامة. تحرّك بهدوء. واجه النزيل.</blockquote><ol><li>قف باستقامة واسترخاء.</li><li>وزّع الوزن على القدمين.</li><li>امشِ بسرعة معتدلة وواثقة.</li><li>حافظ على مسافة مهنية.</li><li>واجه النزيل بكامل الجسم.</li></ol><p>وتجنّب: الاتكاء على الجدران أو الأثاث، والنقر بالقدم أو تحريكها بعصبية، والانتقال المستمر من قدم إلى أخرى، والتمدد أمام النزلاء، والوقوف على قدم واحدة، وإعطاء النزيل ظهرك.</p><aside class=\"bk-scene\"><p>سأل نزيل في البهو موظف الأمتعة عن مكان السبا، وكان الموظف متكئًا على عمود. اعتدل في وقفته، والتفت إليه بكامل جسده، وفتح راحة يده نحو المصاعد وقال: <em>السبا في الطابق الثاني، والمصاعد على يمينك مباشرة.</em> ثم مشى معه خطوات بهدوء. شعر النزيل بأنه موجَّه لا مصروف.</p></aside><aside class=\"bk-note\"><p>إذا احتجت إلى الابتعاد لإحضار شيء، أخبر النزيل أولًا، وعند عودتك واجهه من جديد، ولا تمشِ مبتعدًا وظهرك إليه.</p></aside><aside class=\"bk-key\"><p>اجعل إيماءاتك هادئة ومنفتحة وهادفة، ودع وقفتك تقول إنك مستعد: قف باستقامة، وتحرّك بهدوء، وواجه النزيل.</p></aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: اليدان والوقفة",
+                                "questions": [
+                                    {
+                                        "question": "يسألك نزيل عن قاعة الاحتفالات. ما الطريقة الأكثر مهنية للإرشاد؟",
+                                        "options": [
+                                            "الإشارة بإصبع واحد",
+                                            "الإيماء برأسك نحوها",
+                                            "فتح راحة اليد والإشارة إلى الاتجاه بكامل اليد",
+                                            "إخباره دون إشارة وأنت تنظر إلى هاتفك"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تطلب الحقيبة فتح راحة اليد والإشارة بكامل اليد."
+                                    },
+                                    {
+                                        "question": "أثناء لحظة هدوء عند المكتب، ما الوقفة الصحيحة؟",
+                                        "options": [
+                                            "الاتكاء على الكاونتر للراحة",
+                                            "الوقوف باستقامة واسترخاء وتوزيع الوزن على القدمين",
+                                            "الوقوف على قدم واحدة",
+                                            "الانتقال من قدم إلى أخرى لتبقى يقظًا"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "قف باستقامة واسترخاء ووزّع الوزن على القدمين."
+                                    },
+                                    {
+                                        "question": "ستصطحب نزيلًا إلى قاعة اجتماعات. ما السرعة المناسبة؟",
+                                        "options": [
+                                            "سرعة معتدلة وواثقة",
+                                            "أسرع ما يمكن لتوفير الوقت",
+                                            "ببطء شديد ليقود النزيل",
+                                            "المشي أمامه دون الالتفات إليه"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "امشِ بسرعة معتدلة وواثقة."
+                                    },
+                                    {
+                                        "question": "زميل يضع يديه في جيوبه أثناء الحديث مع النزلاء. بماذا تنصحه؟",
+                                        "options": [
+                                            "أن يقاطع ذراعيه بدلًا من ذلك",
+                                            "أن يمسك قلمًا ليشغل يديه",
+                                            "لا بأس ما دام يبتسم",
+                                            "أن يترك يديه بوضع طبيعي ويستخدم إيماءات هادئة وواضحة"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "وضع اليدين في الجيوب من المحظورات، والوضع الطبيعي والإيماءات الهادئة هما المطلوب."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "تغيير العادة",
+                    "lessons": [
+                        {
+                            "title": "كيف يفسّر النزيل الإشارات وكيف تستبدل العادة",
+                            "minutes": 7,
+                            "body": "<h2>لغة الجسد السلبية تؤثر في شعور النزيل</h2><p>معظم الإشارات السلبية لا يقصد بها الإساءة؛ فالعبوس قد يكون تركيزًا، وتقاطع الذراعين قد يكون بسبب البرد، والنظر إلى الهاتف قد يكون لرسالة عمل. لكن النزيل لا يرى أسبابك، بل يرى الإشارة ويستنتج معناها بنفسه.</p><table><thead><tr><th>الإشارة</th><th>ما قد يفهمه النزيل</th></tr></thead><tbody><tr><td>العبوس</td><td><em>أنت غير مرحب بك.</em></td></tr><tr><td>تقاطع الذراعين</td><td><em>لا أريد التفاعل.</em></td></tr><tr><td>النظر إلى الهاتف</td><td><em>أنت لست أولوية.</em></td></tr><tr><td>النقر بالقدم</td><td><em>أنا مستعجل أو منزعج.</em></td></tr><tr><td>إعطاء الظهر</td><td><em>لا أهتم بما تقول.</em></td></tr></tbody></table><p>لا أحد منا يريد أن يوصل هذه الرسائل إلى النزيل، ومع ذلك يمكن أن تصل في ثانية ودون كلمة من شخص يحاول المساعدة فعلًا.</p><h2>استبدل العادة السلبية بسلوك مهني</h2><p>الاستبدال أسهل من مجرد التوقف، لأنه يعطي جسدك شيئًا يفعله بدلًا من العادة.</p><table class=\"bk-say\"><thead><tr><th>افعل</th><th>بدلًا من</th></tr></thead><tbody><tr><td>ابتسم بصورة طبيعية</td><td>العبوس</td></tr><tr><td>اجعل اليدين بوضع طبيعي</td><td>تقاطع الذراعين</td></tr><tr><td>أبعد الهاتف وركّز مع النزيل</td><td>العبث بالهاتف</td></tr><tr><td>اثبت بهدوء ووزّع الوزن</td><td>النقر بالقدم</td></tr><tr><td>قف باستقامة واسترخاء</td><td>الاتكاء على الأثاث</td></tr></tbody></table><blockquote class=\"bk-quote\">الوعي يحوّل العادات إلى اختيارات مهنية.</blockquote><h2>طريقة بسيطة</h2><ol><li><strong>لاحظ</strong> العادة التي تقع فيها غالبًا، خاصة عند التعب أو الانشغال.</li><li><strong>اختر</strong> البديل المهني من الجدول.</li><li><strong>تدرّب</strong> عليه عمدًا حتى يصبح ردّ فعلك الطبيعي.</li></ol><aside class=\"bk-scene\"><p>لاحظت مضيفة المطعم أنها تنقر بقدمها كلما امتلأت قائمة الحجوزات، وسألها نزيل مرة إن كانت مستعجلة. منذ ذلك الحين، كلما انتبهت لنفسها ثبتت بهدوء ووزّعت وزنها على قدميها وأخذت نفسًا قبل الكلام. توقف النزلاء عن السؤال، وشعرت هي بهدوء أكبر.</p></aside><p>وتختم الحقيبة بتذكير يجمع الدورة كلها: ابتسم بصدق، قف بثقة، تحرّك بهدوء، واجه النزيل، استمع باهتمام، واجعل جسدك مرحبًا.</p><aside class=\"bk-key\"><p>لغة جسدك جزء من الخدمة التي تقدمها: لاحظ عاداتك واستبدل كل واحدة منها باختيار مهني.</p></aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: التفسير واستبدال العادات",
+                                "questions": [
+                                    {
+                                        "question": "قاطعت ذراعيك لأن البهو بارد. ماذا قد يفهم النزيل؟",
+                                        "options": [
+                                            "أنك تشعر بالبرد",
+                                            "أنك لا تريد التفاعل",
+                                            "أنك واثق",
+                                            "أنك تستمع بانتباه"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تذكر الحقيبة أن تقاطع الذراعين قد يُفهم «لا أريد التفاعل» مهما كان السبب."
+                                    },
+                                    {
+                                        "question": "اقترب نزيل وأنت تقرأ رسالة على هاتفك. ما البديل المهني؟",
+                                        "options": [
+                                            "أكمل القراءة ثم ارفع نظرك",
+                                            "أبقِ الهاتف ظاهرًا ليعرف أنك مشغول",
+                                            "أبعد الهاتف وركّز مع النزيل",
+                                            "ارفع إصبعك ليطلب منه الانتظار"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "أبعد الهاتف وركّز مع النزيل بدلًا من العبث به."
+                                    },
+                                    {
+                                        "question": "ما المقصود بعبارة «الوعي يحوّل العادات إلى اختيارات مهنية»؟",
+                                        "options": [
+                                            "ملاحظة عاداتك تمكّنك من اختيار سلوك مهني بدلًا منها عن قصد",
+                                            "لا يمكن تغيير العادات بل إخفاؤها فقط",
+                                            "يجب إعلام النزلاء بعاداتنا",
+                                            "الوعي بلغة الجسد مهمة المشرفين فقط"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "عندما تلاحظ العادة تستطيع استبدالها بسلوك مهني تختاره."
+                                    },
+                                    {
+                                        "question": "ابتعدت عن النزيل وسط الحديث لتتحقق من أمر وأعطيته ظهرك دون كلمة. بماذا قد يشعر؟",
+                                        "options": [
+                                            "بأنك سريع وكفء",
+                                            "بأنك ذاهب لمساعدته",
+                                            "لا شيء لأن الأمر قصير",
+                                            "بأنك لا تهتم بما يقول"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تربط الحقيبة إعطاء الظهر برسالة «لا أهتم بما تقول»."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

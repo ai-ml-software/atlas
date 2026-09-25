@@ -105,10 +105,8 @@
 </section>
 
 <?php $this->load->view('academy/_close', array(
-    'close_title' => $locale === 'ar' ? 'أو ابدأ من الكتالوج' : 'Or start from the catalogue',
-    'close_text'  => $locale === 'ar'
-        ? 'تصفّح الدورات حسب قسم الفندق، أو تحقّق من شهادة أصدرتها الأكاديمية.'
-        : 'Browse the courses by hotel department, or check a certificate the academy has issued.',
+    'close_title' => ha_pt('Or start from the catalogue'),
+    'close_text'  => ha_pt('Browse the courses by hotel department, or check a certificate the academy has issued.'),
     'close_primary'   => array('label' => $t['courses'], 'url' => base_url($locale . '/courses')),
     'close_secondary' => array('label' => $t['verify_title'], 'url' => base_url($locale . '/verify')),
 )); ?>

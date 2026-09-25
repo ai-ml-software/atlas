@@ -76,8 +76,9 @@ class Ha_audit extends CI_Controller {
         $this->ha_seo->prepare('en', '');
         $urls = array();
         foreach ($this->ha_seo->sitemap_urls() as $u) {
-            $urls[] = $u['en'];
-            $urls[] = $u['ar'];
+            foreach ($u['urls'] as $url) {
+                $urls[] = $url;
+            }
         }
         return array_values(array_unique($urls));
     }

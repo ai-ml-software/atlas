@@ -1,0 +1,551 @@
+{
+    "slug": "ownership-and-guest-request-follow-up",
+    "category": "guest-handling",
+    "level": "foundation",
+    "source_pdf": "Ownership-and-Guest-Request-Follow-up-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/ownership-and-guest-request-follow-up.webp",
+    "videos": [
+        {
+            "id": "Ow_TLi8B74s",
+            "title": "Customer Service Training | Taking Ownership and Empowering Customer Success",
+            "channel": "ServiceSkills Customer Service Training",
+            "why": "A training clip on owning a customer's issue end to end instead of passing it on, directly supporting the ownership idea."
+        },
+        {
+            "id": "fHrhmJDhP6k",
+            "title": "An Empowerment Lesson From the Ritz-Carlton",
+            "channel": "Shep Hyken: Customer Service & CX Expert",
+            "why": "Uses a Ritz-Carlton story to show how an empowered employee takes personal responsibility for solving a guest's problem."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Ownership and Guest Request Follow-up",
+            "subtitle": "Listen, confirm, coordinate, update, close",
+            "short_description": "Own every guest request from the first word to confirmed completion, so the guest never has to chase the solution.",
+            "description": "<p>A guest should never have to search for the person responsible for their request. Ownership means that the colleague who receives a request makes sure it is followed through to the end, even when another team carries it out.</p><p>Based on the Dyafa Hotels &amp; Resorts ownership training, this course shows how to receive a request correctly, follow it in five steps, use ownership phrases, hand it off properly and keep the guest's trust when something is delayed.</p><p>It is for every colleague who takes requests from guests, in person, by phone or on the floor.</p>",
+            "requirements": "No prior training is needed; the course suits any colleague who receives guest requests.",
+            "outcomes": [
+                "Receive a request by listening, confirming the details and recording it",
+                "Follow each request through five steps until it is confirmed and closed",
+                "Use ownership phrases that state the next step and a time",
+                "Hand off a request to another team without losing ownership",
+                "Keep the guest updated and trusting when a request is delayed"
+            ],
+            "faqs": [
+                {
+                    "question": "Does ownership mean I must do every request myself?",
+                    "answer": "No. Ownership does not mean doing everything yourself; it means ensuring follow-up, even when another team does the work."
+                },
+                {
+                    "question": "What if the request belongs to another department?",
+                    "answer": "Contact that department yourself, pass on the full details, make sure a specific person received it and agree a time. Never give the guest a number and leave them to call."
+                },
+                {
+                    "question": "When can I close a request?",
+                    "answer": "Only after you have confirmed it was carried out and checked with the guest that it was done as they wished."
+                }
+            ],
+            "meta_title": "Ownership and Guest Request Follow-up Course",
+            "meta_description": "Learn to own hotel guest requests: listen, confirm, coordinate, update and close, with proper handoffs and honest delay updates.",
+            "focus_keyword": "guest request follow-up",
+            "chapters": [
+                {
+                    "title": "The Guest Should Not Chase the Solution",
+                    "lessons": [
+                        {
+                            "title": "Own the Next Step and Receive the Request Correctly",
+                            "minutes": 7,
+                            "body": "<h2>Why ownership matters</h2><p>Think of the last time you had to call a company three times, explaining your problem to a new person each time. That frustration is exactly what ownership prevents. In a hotel, <strong>the guest should not have to look for the person responsible</strong>. The colleague who hears the request owns the next step.</p><p>Owning the next step means five things: listen to the whole request, confirm what you understood and when it will be done, contact the relevant department yourself, update the guest if the time changes, and make sure it is done before you close the request.</p><blockquote class=\"bk-quote\">Ownership means ensuring follow-up, even when another team acts.</blockquote><p>This line removes a common misunderstanding. A receptionist cannot fix a leaking tap, and a waiter cannot deliver extra pillows during a busy dinner. Ownership does not ask you to do everything. It asks you to make sure it gets done and that the guest knows what is happening.</p><h2>Receiving the request: Listen, Confirm, Record</h2><h3>1. Listen</h3><p>Let the guest finish the request. Ask about the important details. Above all, do not assume what they want. A guest asking for <em>another pillow</em> may want a firmer one, a softer one, or a non-feather pillow. One question saves a second trip.</p><h3>2. Confirm the details</h3><p>Repeat the request in a few words. Confirm the room number and the time. Then explain what you will do next. For example: <em>So that is two extra towels to room 512 within twenty minutes. I will send them from housekeeping now.</em></p><h3>3. Record the request</h3><p>Use the approved system or log. Write the time and the responsible department, and set a follow-up time. Memory is not a system; busy shifts make everyone forget.</p><aside class=\"bk-note\">Confirming and recording prevent the request from being forgotten or carried out wrongly. If you only have time for one extra habit, make it writing the request down the moment you hear it.</aside><aside class=\"bk-scene\">A guest stops the bellman, Khalid, in the lobby and asks for a baby cot in her room. Khalid could simply say <em>please call housekeeping</em>. Instead he asks which room and when the cot is needed, repeats: <em>A baby cot for room 318 before 8 pm</em>, logs it, and calls housekeeping himself. At 7:30 he checks it has arrived. The guest never had to think about it again.</aside><aside class=\"bk-key\">Own the next step: listen fully, confirm the details, record the request and make sure it is done, even when another team carries it out.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Owning the request",
+                                "questions": [
+                                    {
+                                        "question": "A guest asks you, a restaurant host, for a late check-out. What reflects ownership?",
+                                        "options": [
+                                            "Tell the guest to go to the front desk",
+                                            "Give the guest the front office extension",
+                                            "Take the details, contact the front office yourself and tell the guest when you will confirm",
+                                            "Say it is not your department"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The guest should not chase the solution; you contact the relevant department yourself."
+                                    },
+                                    {
+                                        "question": "A guest asks for 'another pillow'. What should you do?",
+                                        "options": [
+                                            "Send any pillow immediately",
+                                            "Ask what kind of pillow they need instead of assuming",
+                                            "Wait until housekeeping is less busy",
+                                            "Tell them pillows are limited"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Do not assume what the guest wants; ask about the important details."
+                                    },
+                                    {
+                                        "question": "What is the main purpose of confirming and recording a request?",
+                                        "options": [
+                                            "To have evidence against the guest",
+                                            "To prevent the request being forgotten or done wrongly",
+                                            "To make the guest wait less",
+                                            "To reduce the work of housekeeping"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The slide says confirming and recording prevent forgetting or wrong execution."
+                                    },
+                                    {
+                                        "question": "Which statement about ownership is correct?",
+                                        "options": [
+                                            "You must do every request personally",
+                                            "Ownership ends when you pass the request on",
+                                            "Ownership means ensuring follow-up even when another team acts",
+                                            "Only supervisors take ownership"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Ownership is about ensuring follow-up, not doing everything yourself."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Following the Request Through",
+                    "lessons": [
+                        {
+                            "title": "Follow the Request in Five Steps",
+                            "minutes": 6,
+                            "body": "<h2>From first word to closure</h2><p>Every guest request, large or small, can be followed through the same five steps. The first step is receiving the request, and it begins with a clear understanding of what the guest needs.</p><ol><li><strong>Listen and confirm the details.</strong> Understand the request fully and repeat it back.</li><li><strong>Record the request and the time received.</strong> The time matters, because it is how you and your team know whether the request is on track.</li><li><strong>Carry it out or send it to the relevant department.</strong> If you can do it, do it. If another team must act, pass it on properly.</li><li><strong>Update the guest on progress.</strong> The guest should never wonder whether their request was forgotten.</li><li><strong>Confirm completion and close the request.</strong> Close only when you know it was done.</li></ol><blockquote class=\"bk-quote\">Passing the request to another team does not end your follow-up.</blockquote><h2>The dangerous moment: step three</h2><p>Most requests are lost at step three. A colleague sends the request to engineering or housekeeping and feels the job is done. But nobody has yet checked that it arrived, that someone accepted it, or that it happened. The guest, meanwhile, is still waiting.</p><p>That is why steps four and five exist. Updating the guest keeps them informed. Confirming completion closes the loop. Without them, <em>I sent it to housekeeping</em> becomes an excuse rather than a service.</p><h2>Closing properly</h2><p>Closing a request is not only ticking a box in the system. It means you know the request was carried out, and ideally the guest has confirmed it. A quick call such as <em>Was the request completed as you wished?</em> turns a finished task into a remembered experience.</p><aside class=\"bk-note\">Set your follow-up time when you record the request. If housekeeping says twenty minutes, note a check at twenty-five.</aside><aside class=\"bk-scene\">A guest calls the operator, Sara, at 9 pm to say the TV remote is not working. Sara confirms the room, logs the call at 9:02 and sends it to engineering with a note. She calls the guest at 9:10 to say the technician is on the way. At 9:25 she checks with engineering that it is fixed, then calls the room: <em>Was the request completed as you wished?</em> Only then does she close it in the log.</aside><aside class=\"bk-key\">Receive, record, act or send, update, confirm and close. Passing the request on is a step in the journey, not the end of it.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: The five steps",
+                                "questions": [
+                                    {
+                                        "question": "You sent an extra-bed request to housekeeping. When is your responsibility finished?",
+                                        "options": [
+                                            "As soon as you send it",
+                                            "When housekeeping replies 'noted'",
+                                            "After you confirm it was done and close the request",
+                                            "At the end of your shift"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Passing the request on does not end your follow-up; you confirm completion and close."
+                                    },
+                                    {
+                                        "question": "Why record the time a request was received?",
+                                        "options": [
+                                            "So you can tell whether it is on track and follow up",
+                                            "To blame the guest if they complain",
+                                            "Because the guest asked for it",
+                                            "It is not necessary for small requests"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Recording the time supports follow-up and tracking progress."
+                                    },
+                                    {
+                                        "question": "Engineering is working on a guest's air conditioning. What is step four?",
+                                        "options": [
+                                            "Closing the request",
+                                            "Updating the guest on progress",
+                                            "Sending a second request",
+                                            "Waiting silently"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Step four is updating the guest on progress."
+                                    },
+                                    {
+                                        "question": "Which question best supports closing the request?",
+                                        "options": [
+                                            "Do you need anything else from another department?",
+                                            "Was the request completed as you wished?",
+                                            "Why did you not call earlier?",
+                                            "Can you call housekeeping next time?"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Confirming with the guest that it was done as they wished closes the loop."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ownership Phrases and Professional Follow-up",
+                            "minutes": 7,
+                            "body": "<h2>Words that show you own it</h2><p>The guest cannot see your log or the call you made to housekeeping. What they can hear is how you speak. The training gives four phrases that show ownership at each stage.</p><table class=\"bk-say\"><thead><tr><th>Stage</th><th>Say</th></tr></thead><tbody><tr><td>Own</td><td>I will personally follow up on this request for you.</td></tr><tr><td>Coordinate</td><td>I will contact the relevant department now.</td></tr><tr><td>Update</td><td>I will update you with the result within ten minutes.</td></tr><tr><td>Confirm</td><td>Was the request completed as you wished?</td></tr></tbody></table><p>Look at what the phrases have in common: each one says what you will do, and several give a clear time. That is the rule behind them.</p><blockquote class=\"bk-quote\">Explain the next step, give a time, and follow through.</blockquote><p>A time turns a vague promise into a commitment. <em>I will look into it</em> leaves the guest guessing. <em>I will update you within ten minutes</em> lets them relax. But a time is also a responsibility: if ten minutes pass, you call, even if you only have a progress update.</p><h2>Do and avoid</h2><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Confirm the request and the expected time</td><td>Saying: This is not my department</td></tr><tr><td>Record the request clearly</td><td>Giving a department number and leaving the guest to call</td></tr><tr><td>Contact the appropriate department</td><td>Passing the request on without a clear explanation</td></tr><tr><td>Give an update when there is a delay</td><td>Forgetting to update the guest</td></tr><tr><td>Make sure the guest is satisfied</td><td>Closing the request before confirming it was done</td></tr></tbody></table><p>The first avoid item deserves special attention. <em>This is not my department</em> may be true, but it tells the guest that they are now on their own. The alternative is simple: take the request and connect it to the right team yourself.</p><p>Giving a department number is the polite version of the same problem. The guest still has to explain everything again to someone new.</p><aside class=\"bk-note\">When you pass a request on, tell the guest who will handle it and when. <em>Housekeeping will bring it within fifteen minutes, and I will check it has arrived.</em></aside><aside class=\"bk-scene\">A guest at the pool asks the attendant, Nasser, whether the spa can move her booking. Nasser does not work in the spa. Rather than pointing to the spa phone, he says: <em>I will contact the spa now and update you within ten minutes.</em> He calls, arranges the new time, and returns to her sunbed in eight minutes with the answer.</aside><aside class=\"bk-key\">Don't say 'not my department'. Say what you will do, give a time, and help the guest reach the solution.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Phrases and conduct",
+                                "questions": [
+                                    {
+                                        "question": "A guest asks a housekeeper about a billing error. What is the best response?",
+                                        "options": [
+                                            "That's not my department.",
+                                            "Please call extension 0 for the front desk.",
+                                            "I will contact the front office now and update you within fifteen minutes.",
+                                            "I don't know anything about bills."
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Ownership means coordinating yourself and giving a time."
+                                    },
+                                    {
+                                        "question": "You promised an update within ten minutes, but there is no result yet. What should you do?",
+                                        "options": [
+                                            "Wait until there is a result",
+                                            "Call the guest with a progress update anyway",
+                                            "Ask the guest to call you back",
+                                            "Close the request"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Follow through on the time you gave, even with only a progress update."
+                                    },
+                                    {
+                                        "question": "Which behaviour is on the Avoid list?",
+                                        "options": [
+                                            "Recording the request clearly",
+                                            "Passing the request on without a clear explanation",
+                                            "Contacting the appropriate department",
+                                            "Confirming the expected time"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Passing a request without a clear explanation is to be avoided."
+                                    },
+                                    {
+                                        "question": "What makes 'I will update you within ten minutes' stronger than 'I will look into it'?",
+                                        "options": [
+                                            "It is longer",
+                                            "It gives a clear next step and time",
+                                            "It avoids commitment",
+                                            "It transfers responsibility to the guest"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Explain the next step, give a time and follow through."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Handoffs and Delays",
+                    "lessons": [
+                        {
+                            "title": "A Good Handoff and Handling Delays",
+                            "minutes": 8,
+                            "body": "<h2>A handoff is not getting rid of the request</h2><p>Many requests need another team. The moment you pass a request on is where ownership is most easily lost. The training describes four parts of a good handoff.</p><ol><li><strong>Explain:</strong> pass on the full details, with nothing missing. Room number, the exact item, the time promised and anything special the guest said.</li><li><strong>Assign:</strong> make sure a specific person has received the request. <em>I left a message</em> is not the same as <em>Ahmed in housekeeping has it</em>.</li><li><strong>Agree the time:</strong> set when it will be done, or when you will receive an update.</li><li><strong>Follow up:</strong> go back to the guest and confirm the result.</li></ol><blockquote class=\"bk-quote\">A handoff is not getting rid of the request — it is coordinating how it gets done.</blockquote><h2>When the request is delayed</h2><p>Even with a good handoff, delays happen: a technician is on another job, an item is out of stock, the kitchen is full. A delay does not have to damage the guest's trust. Silence does.</p><h3>What to do</h3><ul><li>Check the request status in the system.</li><li>Contact the responsible department.</li><li>Tell the guest the new time.</li><li>Record the reason for the delay and the update.</li><li>Follow up until it is done.</li></ul><h3>Keeping the guest's trust</h3><ul><li>Do not wait for the guest to ask.</li><li>Give an update even when there is no final solution yet.</li><li>Apologize clearly for the delay.</li><li>Offer a suitable alternative if possible.</li><li>Ask for supervisor support if the delay continues.</li></ul><p>The most important of these is the first: do not wait for the guest to ask. When a guest has to call to find out what happened, they already feel forgotten. A proactive call, even with imperfect news, says the opposite.</p><table class=\"bk-say\"><thead><tr><th>Say</th><th>Avoid</th></tr></thead><tbody><tr><td>I am sorry for the delay. The technician will reach you by 4:30, and I will call you again then.</td><td>Saying nothing and hoping the guest does not notice</td></tr><tr><td>While we wait, may I bring you a fan?</td><td>We are very busy today.</td></tr></tbody></table><aside class=\"bk-note\">If the new time also passes, involve your supervisor. A continuing delay needs more support than you alone can give.</aside><aside class=\"bk-scene\">A guest's requested iron has not arrived after thirty minutes. The front desk agent, Lama, checks the log, calls housekeeping and learns the irons are all in use. She calls the guest before he calls her, apologizes clearly, gives a new time of fifteen minutes and offers the pressing service as an alternative. She records the reason and checks again at fifteen minutes. The guest chooses the pressing service and thanks her for calling.</aside><aside class=\"bk-key\">Regular updates are better than silence. The guest remembers the person who cared about their request until it was done.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Handoffs and delays",
+                                "questions": [
+                                    {
+                                        "question": "You pass a request to engineering. Which step makes the handoff complete?",
+                                        "options": [
+                                            "Leaving a message on the general line",
+                                            "Making sure a specific person received it and agreeing a time",
+                                            "Telling the guest to call engineering",
+                                            "Sending it without details to save time"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "A good handoff includes assigning a specific person and agreeing the time."
+                                    },
+                                    {
+                                        "question": "A request is running late and you have no final solution yet. What should you do?",
+                                        "options": [
+                                            "Wait until you have a solution before calling",
+                                            "Update the guest now, apologize and give the new time",
+                                            "Close the request and open a new one",
+                                            "Let the guest discover the delay themselves"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Give an update even without a final solution; do not wait for the guest to ask."
+                                    },
+                                    {
+                                        "question": "The delay continues after the new time you gave. What is the next step?",
+                                        "options": [
+                                            "Ask for supervisor support",
+                                            "Stop following up",
+                                            "Tell the guest it is housekeeping's fault",
+                                            "Give a third time without checking"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Ask for supervisor support when the delay continues."
+                                    },
+                                    {
+                                        "question": "Why record the reason for the delay?",
+                                        "options": [
+                                            "To keep an accurate record of the request and its update",
+                                            "To show the guest a report",
+                                            "To avoid apologizing",
+                                            "It is not needed"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The slide asks you to record the delay reason and the update."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "تحمّل المسؤولية ومتابعة طلب النزيل",
+            "subtitle": "استمع • أكد • نسّق • حدّث • أغلق",
+            "short_description": "امتلك كل طلب للنزيل من الكلمة الأولى حتى التأكد من تنفيذه، حتى لا يضطر النزيل إلى البحث عن المسؤول.",
+            "description": "<p>النزيل لا يجب أن يبحث عن المسؤول عن طلبه. تحمّل المسؤولية يعني أن الموظف الذي يستلم الطلب يضمن متابعته حتى النهاية، حتى لو نفّذه قسم آخر.</p><p>تستند هذه الدورة إلى تدريب فنادق ومنتجعات ضيافة في تحمّل المسؤولية، وتوضح كيف تستلم الطلب بصورة صحيحة، وتتابعه في خمس خطوات، وتستخدم عبارات تُظهر المسؤولية، وتسلّمه بطريقة صحيحة، وتحافظ على ثقة النزيل عند التأخير.</p><p>الدورة موجهة لكل موظف يستلم طلبات النزلاء، وجهًا لوجه أو بالهاتف أو أثناء العمل في الموقع.</p>",
+            "requirements": "لا يلزم تدريب سابق، والدورة مناسبة لكل موظف يستلم طلبات النزلاء.",
+            "outcomes": [
+                "استلم الطلب بالاستماع وتأكيد التفاصيل وتسجيله",
+                "تابع كل طلب في خمس خطوات حتى تأكيد تنفيذه وإغلاقه",
+                "استخدم عبارات تُظهر المسؤولية وتحدد الخطوة التالية والوقت",
+                "سلّم الطلب لقسم آخر دون أن تفقد مسؤوليتك عنه",
+                "حافظ على ثقة النزيل وأبقه على اطلاع عند تأخر الطلب"
+            ],
+            "faqs": [
+                {
+                    "question": "هل تحمّل المسؤولية يعني أن أنفذ كل طلب بنفسي؟",
+                    "answer": "لا. تحمّل المسؤولية لا يعني أن تنفذ كل شيء، بل أن تضمن المتابعة حتى لو نفّذ الطلب قسم آخر."
+                },
+                {
+                    "question": "ماذا لو كان الطلب من اختصاص قسم آخر؟",
+                    "answer": "تواصل مع القسم بنفسك، وانقل التفاصيل كاملة، وتأكد أن شخصًا محددًا استلمه، واتفق على الوقت. لا تعطِ النزيل رقم قسم وتتركه يتصل."
+                },
+                {
+                    "question": "متى أغلق الطلب؟",
+                    "answer": "بعد أن تتأكد من تنفيذه، وتسأل النزيل إن كان قد نُفذ كما رغب."
+                }
+            ],
+            "meta_title": "دورة تحمّل المسؤولية ومتابعة طلب النزيل",
+            "meta_description": "تعلّم امتلاك طلبات النزلاء في الفندق: استمع، أكد، نسّق، حدّث، أغلق، مع تسليم صحيح وتحديث صادق عند التأخير.",
+            "focus_keyword": "متابعة طلبات النزلاء",
+            "chapters": [
+                {
+                    "title": "النزيل لا يجب أن يبحث عن المسؤول",
+                    "lessons": [
+                        {
+                            "title": "امتلك الخطوة التالية واستلم الطلب بصورة صحيحة",
+                            "minutes": 7,
+                            "body": "<h2>لماذا تحمّل المسؤولية مهم؟</h2><p>تذكّر آخر مرة اضطررت فيها للاتصال بجهة ما ثلاث مرات، تشرح مشكلتك لشخص جديد في كل مرة. هذا الإحباط هو بالضبط ما يمنعه تحمّل المسؤولية. في الفندق، <strong>النزيل لا يجب أن يبحث عن المسؤول</strong>؛ فالموظف الذي يسمع الطلب يمتلك الخطوة التالية.</p><p>امتلاك الخطوة التالية يعني: أن تستمع إلى الطلب كاملًا، وتؤكد ما فهمته ووقت التنفيذ، وتتواصل مع القسم المختص بنفسك، وتحدّث النزيل إذا تغير الوقت، وتتأكد من التنفيذ قبل إغلاق الطلب.</p><blockquote class=\"bk-quote\">تحمّل المسؤولية لا يعني أن تنفذ كل شيء — بل أن تضمن المتابعة</blockquote><p>هذه العبارة تزيل سوء فهم شائعًا. موظف الاستقبال لا يستطيع إصلاح صنبور يسرّب، والنادل لا يستطيع إيصال وسائد إضافية أثناء عشاء مزدحم. تحمّل المسؤولية لا يطلب منك أن تفعل كل شيء، بل أن تضمن تنفيذه وأن يعرف النزيل ما يحدث.</p><h2>استلام الطلب: استمع، أكد، سجل</h2><h3>1. استمع</h3><p>دع النزيل يكمل طلبه، واسأل عن التفاصيل المهمة، والأهم: لا تفترض ما يريده. فالنزيل الذي يطلب <em>وسادة أخرى</em> قد يريدها أكثر صلابة أو أكثر ليونة أو بدون ريش. سؤال واحد يوفر رحلة ثانية.</p><h3>2. أكد التفاصيل</h3><p>كرر الطلب بكلمات قصيرة، وأكد رقم الغرفة والوقت، ثم وضح ما ستفعله بعد ذلك. مثل: <em>إذن منشفتان إضافيتان للغرفة 512 خلال عشرين دقيقة، وسأطلبهما من التدبير الفندقي الآن.</em></p><h3>3. سجل الطلب</h3><p>استخدم النظام أو السجل المعتمد، واكتب الوقت والقسم المسؤول، وحدد موعد المتابعة. الذاكرة ليست نظامًا، وفي الورديات المزدحمة ينسى الجميع.</p><aside class=\"bk-note\">التأكيد والتسجيل يمنعان نسيان الطلب أو تنفيذه بصورة خاطئة. وإن لم يكن لديك وقت إلا لعادة واحدة، فاجعلها تدوين الطلب لحظة سماعه.</aside><aside class=\"bk-scene\">تستوقف نزيلة حامل الحقائب خالد في البهو وتطلب سرير طفل في غرفتها. كان بإمكانه أن يقول: <em>اتصلي بالتدبير الفندقي</em>. لكنه سألها عن رقم الغرفة وموعد الحاجة، وكرر: <em>سرير طفل للغرفة 318 قبل الثامنة مساءً</em>، وسجل الطلب واتصل بالتدبير الفندقي بنفسه. وفي السابعة والنصف تأكد من وصوله. لم تضطر النزيلة للتفكير في الأمر مرة أخرى.</aside><aside class=\"bk-key\">امتلك الخطوة التالية: استمع كاملًا، وأكد التفاصيل، وسجل الطلب، وتأكد من تنفيذه حتى لو نفّذه قسم آخر.</aside>",
+                            "quiz": {
+                                "title": "اختبر فهمك: امتلاك الطلب",
+                                "questions": [
+                                    {
+                                        "question": "يطلب نزيل منك، وأنت مضيف المطعم، تأخير موعد المغادرة. ما التصرف الذي يعكس تحمّل المسؤولية؟",
+                                        "options": [
+                                            "تطلب منه الذهاب إلى الاستقبال",
+                                            "تعطيه رقم تحويلة المكتب الأمامي",
+                                            "تأخذ التفاصيل، وتتواصل مع المكتب الأمامي بنفسك، وتخبره متى ستؤكد له",
+                                            "تقول إنه ليس من اختصاص قسمك"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "النزيل لا يجب أن يبحث عن المسؤول؛ أنت تتواصل مع القسم المختص بنفسك."
+                                    },
+                                    {
+                                        "question": "يطلب نزيل «وسادة أخرى». ماذا تفعل؟",
+                                        "options": [
+                                            "ترسل أي وسادة فورًا",
+                                            "تسأله عن نوع الوسادة التي يحتاجها بدل أن تفترض",
+                                            "تنتظر حتى يخف ضغط التدبير الفندقي",
+                                            "تخبره أن الوسائد محدودة"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "لا تفترض ما يريده النزيل؛ اسأل عن التفاصيل المهمة."
+                                    },
+                                    {
+                                        "question": "ما الهدف الرئيسي من تأكيد الطلب وتسجيله؟",
+                                        "options": [
+                                            "الاحتفاظ بدليل ضد النزيل",
+                                            "منع نسيان الطلب أو تنفيذه بصورة خاطئة",
+                                            "تقليل انتظار النزيل",
+                                            "تقليل عمل التدبير الفندقي"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "التأكيد والتسجيل يمنعان نسيان الطلب أو تنفيذه بصورة خاطئة."
+                                    },
+                                    {
+                                        "question": "أي عبارة عن تحمّل المسؤولية صحيحة؟",
+                                        "options": [
+                                            "يجب أن تنفذ كل طلب بنفسك",
+                                            "المسؤولية تنتهي عند تحويل الطلب",
+                                            "تحمّل المسؤولية يعني ضمان المتابعة حتى لو نفذ قسم آخر",
+                                            "المشرفون فقط يتحملون المسؤولية"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تحمّل المسؤولية يعني ضمان المتابعة لا تنفيذ كل شيء بنفسك."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "متابعة الطلب حتى النهاية",
+                    "lessons": [
+                        {
+                            "title": "تابع الطلب في خمس خطوات",
+                            "minutes": 6,
+                            "body": "<h2>من الكلمة الأولى إلى الإغلاق</h2><p>كل طلب للنزيل، كبيرًا كان أو صغيرًا، يمكن متابعته بالخطوات الخمس نفسها. الخطوة الأولى هي استلام الطلب، وتبدأ بفهم واضح لما يحتاجه النزيل.</p><ol><li><strong>استمع وأكد التفاصيل.</strong> افهم الطلب كاملًا وكرره للنزيل.</li><li><strong>سجل الطلب ووقت الاستلام.</strong> الوقت مهم، لأنه ما يُعرّفك أنت وفريقك إن كان الطلب يسير كما يجب.</li><li><strong>نفذ أو أرسله للقسم المختص.</strong> إن كنت تستطيع التنفيذ فافعل، وإن كان على قسم آخر أن ينفذ فحوّله بالطريقة الصحيحة.</li><li><strong>حدّث النزيل عن التقدم.</strong> لا يجب أن يتساءل النزيل إن كان طلبه قد نُسي.</li><li><strong>أكد التنفيذ وأغلق الطلب.</strong> لا تغلق إلا عندما تعرف أنه نُفذ.</li></ol><blockquote class=\"bk-quote\">لا تعتبر إرسال الطلب إلى قسم آخر نهاية مسؤوليتك</blockquote><h2>اللحظة الخطرة: الخطوة الثالثة</h2><p>معظم الطلبات تضيع في الخطوة الثالثة. يرسل الموظف الطلب إلى الصيانة أو التدبير الفندقي ويشعر بأن مهمته انتهت، بينما لم يتحقق أحد من وصوله أو من قبول أحد له أو من تنفيذه. والنزيل ما زال ينتظر.</p><p>لهذا وُجدت الخطوتان الرابعة والخامسة: تحديث النزيل يبقيه على اطلاع، وتأكيد التنفيذ يغلق الدائرة. ومن دونهما تصبح عبارة <em>أرسلته للتدبير الفندقي</em> عذرًا لا خدمة.</p><h2>الإغلاق الصحيح</h2><p>إغلاق الطلب ليس مجرد علامة في النظام؛ بل يعني أنك تعرف أن الطلب نُفذ، ويُفضّل أن يؤكد النزيل ذلك. اتصال قصير تسأل فيه: <em>هل تم تنفيذ الطلب كما رغبت؟</em> يحوّل مهمة منتهية إلى تجربة تُذكر.</p><aside class=\"bk-note\">حدد موعد المتابعة لحظة تسجيل الطلب. إذا قال التدبير الفندقي عشرين دقيقة، فسجّل تذكيرًا بعد خمس وعشرين.</aside><aside class=\"bk-scene\">يتصل نزيل بموظفة الهاتف سارة في التاسعة مساءً ليقول إن جهاز التحكم بالتلفاز لا يعمل. تؤكد سارة رقم الغرفة، وتسجل المكالمة في 9:02، وترسلها إلى الصيانة مع ملاحظة. في 9:10 تتصل بالنزيل لتخبره أن الفني في الطريق، وفي 9:25 تتأكد من الصيانة أنه أُصلح، ثم تتصل بالغرفة: <em>هل تم تنفيذ الطلب كما رغبت؟</em> وبعدها فقط تغلقه في السجل.</aside><aside class=\"bk-key\">استلم، سجل، نفذ أو أرسل، حدّث، أكد وأغلق. تحويل الطلب خطوة في الطريق، لا نهايته.</aside>",
+                            "quiz": {
+                                "title": "اختبر فهمك: الخطوات الخمس",
+                                "questions": [
+                                    {
+                                        "question": "أرسلت طلب سرير إضافي إلى التدبير الفندقي. متى تنتهي مسؤوليتك؟",
+                                        "options": [
+                                            "فور إرساله",
+                                            "عندما يرد التدبير الفندقي «تم»",
+                                            "بعد أن تتأكد من التنفيذ وتغلق الطلب",
+                                            "في نهاية ورديتك"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "إرسال الطلب لا ينهي متابعتك؛ تؤكد التنفيذ ثم تغلق."
+                                    },
+                                    {
+                                        "question": "لماذا تسجل وقت استلام الطلب؟",
+                                        "options": [
+                                            "لتعرف إن كان يسير كما يجب وتتابعه",
+                                            "لتلوم النزيل إن اشتكى",
+                                            "لأن النزيل طلب ذلك",
+                                            "ليس ضروريًا للطلبات الصغيرة"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تسجيل الوقت يدعم المتابعة ومعرفة التقدم."
+                                    },
+                                    {
+                                        "question": "الصيانة تعمل على تكييف النزيل. ما الخطوة الرابعة؟",
+                                        "options": [
+                                            "إغلاق الطلب",
+                                            "تحديث النزيل عن التقدم",
+                                            "إرسال طلب ثانٍ",
+                                            "الانتظار بصمت"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "الخطوة الرابعة هي تحديث النزيل عن التقدم."
+                                    },
+                                    {
+                                        "question": "أي سؤال يدعم إغلاق الطلب بشكل أفضل؟",
+                                        "options": [
+                                            "هل تحتاج شيئًا آخر من قسم آخر؟",
+                                            "هل تم تنفيذ الطلب كما رغبت؟",
+                                            "لماذا لم تتصل مبكرًا؟",
+                                            "هل يمكنك الاتصال بالتدبير الفندقي في المرة القادمة؟"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "التأكد من النزيل أن الطلب نُفذ كما رغب يغلق الدائرة."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "عبارات تُظهر المسؤولية ومتابعة مهنية",
+                            "minutes": 7,
+                            "body": "<h2>كلمات تُظهر أنك تمتلك الطلب</h2><p>النزيل لا يرى سجلك ولا المكالمة التي أجريتها مع التدبير الفندقي، لكنه يسمع طريقة كلامك. يقدم التدريب أربع عبارات تُظهر المسؤولية في كل مرحلة.</p><table class=\"bk-say\"><thead><tr><th>المرحلة</th><th>قل</th></tr></thead><tbody><tr><td>سأتولى المتابعة</td><td>سأتولى متابعة هذا الطلب من أجلك.</td></tr><tr><td>سأتواصل مع القسم</td><td>سأتواصل الآن مع القسم المختص.</td></tr><tr><td>سأحدثك بالنتيجة</td><td>سأحدثك بالنتيجة خلال عشر دقائق.</td></tr><tr><td>هل تم تنفيذ الطلب؟</td><td>هل تم تنفيذ الطلب كما رغبت؟</td></tr></tbody></table><p>لاحظ القاسم المشترك: كل عبارة تقول ما ستفعله، وبعضها يحدد وقتًا واضحًا. هذه هي القاعدة وراءها.</p><blockquote class=\"bk-quote\">قل ما ستفعله، وحدد وقتًا، ثم التزم بالمتابعة</blockquote><p>الوقت يحوّل الوعد الغامض إلى التزام. عبارة <em>سأنظر في الأمر</em> تترك النزيل يخمّن، أما <em>سأحدثك خلال عشر دقائق</em> فتطمئنه. لكن الوقت مسؤولية أيضًا: إذا مرت العشر دقائق فاتصل، حتى لو لم يكن لديك إلا تحديث عن التقدم.</p><h2>افعل وتجنب</h2><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنب</th></tr></thead><tbody><tr><td>أكد الطلب والوقت المتوقع</td><td>تقول: هذا ليس قسمي</td></tr><tr><td>سجل الطلب بوضوح</td><td>تعطي رقم قسم وتترك النزيل يتصل</td></tr><tr><td>تواصل مع القسم المناسب</td><td>تنقل الطلب دون شرح واضح</td></tr><tr><td>قدم تحديثًا عند التأخير</td><td>تنسى تحديث النزيل</td></tr><tr><td>تأكد من رضا النزيل</td><td>تغلق الطلب قبل التأكد من تنفيذه</td></tr></tbody></table><p>أول بنود التجنب يستحق انتباهًا خاصًا. عبارة <em>هذا ليس قسمي</em> قد تكون صحيحة، لكنها تقول للنزيل إنه أصبح وحده. والبديل بسيط: خذ الطلب وأوصله بنفسك إلى الفريق المناسب.</p><p>وإعطاء رقم القسم هو الصورة المهذبة للمشكلة نفسها؛ فالنزيل ما زال مضطرًا لشرح كل شيء من جديد لشخص آخر.</p><aside class=\"bk-note\">عندما تحوّل الطلب، أخبر النزيل من سيتولاه ومتى: <em>سيحضره التدبير الفندقي خلال ربع ساعة، وسأتأكد من وصوله.</em></aside><aside class=\"bk-scene\">عند المسبح تسأل نزيلة المشرف ناصر إن كان المنتجع الصحي يستطيع تغيير موعدها. ناصر لا يعمل في المنتجع الصحي، لكنه بدل أن يشير إلى هاتفه قال: <em>سأتواصل مع المنتجع الصحي الآن وأحدثك خلال عشر دقائق.</em> اتصل ورتب الموعد الجديد، وعاد إليها بعد ثماني دقائق بالإجابة.</aside><aside class=\"bk-key\">لا تقل: ليس قسمي. قل ما ستفعله، وحدد وقتًا، وساعد النزيل في الوصول إلى الحل.</aside>",
+                            "quiz": {
+                                "title": "اختبر فهمك: العبارات والسلوك",
+                                "questions": [
+                                    {
+                                        "question": "يسأل نزيل عاملة التدبير الفندقي عن خطأ في الفاتورة. ما أفضل رد؟",
+                                        "options": [
+                                            "هذا ليس قسمي.",
+                                            "اتصل بالرقم 0 للاستقبال من فضلك.",
+                                            "سأتواصل مع المكتب الأمامي الآن وأحدثك خلال ربع ساعة.",
+                                            "لا أعرف شيئًا عن الفواتير."
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تحمّل المسؤولية يعني أن تنسق بنفسك وتحدد وقتًا."
+                                    },
+                                    {
+                                        "question": "وعدت بتحديث خلال عشر دقائق ولا توجد نتيجة بعد. ماذا تفعل؟",
+                                        "options": [
+                                            "تنتظر حتى تظهر النتيجة",
+                                            "تتصل بالنزيل بتحديث عن التقدم على أي حال",
+                                            "تطلب من النزيل أن يتصل بك",
+                                            "تغلق الطلب"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "التزم بالوقت الذي حددته حتى لو كان لديك تحديث عن التقدم فقط."
+                                    },
+                                    {
+                                        "question": "أي سلوك من قائمة ما يجب تجنبه؟",
+                                        "options": [
+                                            "تسجيل الطلب بوضوح",
+                                            "نقل الطلب دون شرح واضح",
+                                            "التواصل مع القسم المناسب",
+                                            "تأكيد الوقت المتوقع"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "نقل الطلب دون شرح واضح مما يجب تجنبه."
+                                    },
+                                    {
+                                        "question": "ما الذي يجعل «سأحدثك خلال عشر دقائق» أقوى من «سأنظر في الأمر»؟",
+                                        "options": [
+                                            "أنها أطول",
+                                            "أنها تحدد خطوة تالية ووقتًا واضحًا",
+                                            "أنها تتجنب الالتزام",
+                                            "أنها تنقل المسؤولية إلى النزيل"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "قل ما ستفعله، وحدد وقتًا، ثم التزم بالمتابعة."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "التسليم والتأخير",
+                    "lessons": [
+                        {
+                            "title": "التسليم الصحيح والتعامل مع التأخير",
+                            "minutes": 8,
+                            "body": "<h2>التسليم ليس التخلص من الطلب</h2><p>كثير من الطلبات تحتاج إلى قسم آخر، ولحظة تحويل الطلب هي أسهل لحظة تضيع فيها المسؤولية. يصف التدريب أربعة عناصر للتسليم الصحيح:</p><ol><li><strong>اشرح الطلب:</strong> انقل التفاصيل كاملة دون نقص: رقم الغرفة، والصنف المطلوب بالضبط، والوقت الموعود، وأي أمر خاص ذكره النزيل.</li><li><strong>حدد المسؤول:</strong> تأكد أن شخصًا محددًا استلم الطلب. فعبارة <em>تركت رسالة</em> ليست مثل <em>أحمد في التدبير الفندقي استلمه</em>.</li><li><strong>اتفق على الوقت:</strong> حدد متى سيتم التنفيذ أو التحديث.</li><li><strong>تابع النتيجة:</strong> ارجع للنزيل وتأكد من النتيجة.</li></ol><blockquote class=\"bk-quote\">التسليم ليس التخلص من الطلب — بل تنسيق تنفيذه</blockquote><h2>عندما يتأخر تنفيذ الطلب</h2><p>حتى مع التسليم الجيد يحدث التأخير: الفني مشغول بعمل آخر، أو صنف غير متوفر، أو المطبخ مزدحم. التأخير لا يضر بالضرورة بثقة النزيل، لكن الصمت يضر بها.</p><h3>ماذا تفعل؟</h3><ul><li>راجع حالة الطلب في النظام.</li><li>تواصل مع القسم المسؤول.</li><li>أبلغ النزيل بالوقت الجديد.</li><li>سجل سبب التأخير والتحديث.</li><li>تابع حتى يتم التنفيذ.</li></ul><h3>حافظ على ثقة النزيل</h3><ul><li>لا تنتظر حتى يسأل النزيل.</li><li>قدم تحديثًا حتى دون وجود حل نهائي.</li><li>اعتذر عن التأخير بوضوح.</li><li>قدم بديلًا مناسبًا إذا أمكن.</li><li>اطلب دعم المشرف عند استمرار التأخير.</li></ul><p>أهمها الأول: لا تنتظر حتى يسأل النزيل. عندما يضطر النزيل للاتصال ليعرف ما حدث، يكون قد شعر بأنه منسي. أما الاتصال المبادر، ولو بخبر غير مكتمل، فيقول له العكس.</p><table class=\"bk-say\"><thead><tr><th>قل</th><th>تجنب</th></tr></thead><tbody><tr><td>أعتذر عن التأخير. سيصلك الفني قبل الرابعة والنصف، وسأتصل بك حينها.</td><td>الصمت على أمل ألا يلاحظ النزيل</td></tr><tr><td>هل أحضر لك مروحة أثناء الانتظار؟</td><td>نحن مشغولون جدًا اليوم.</td></tr></tbody></table><aside class=\"bk-note\">إذا مر الوقت الجديد أيضًا، أشرك المشرف؛ فالتأخير المستمر يحتاج إلى دعم أكبر مما تستطيع تقديمه وحدك.</aside><aside class=\"bk-scene\">طلب نزيل مكواة ولم تصل بعد ثلاثين دقيقة. تراجع موظفة الاستقبال لمى السجل، وتتصل بالتدبير الفندقي فتعلم أن كل المكاوي مستخدمة. تتصل بالنزيل قبل أن يتصل هو، وتعتذر بوضوح، وتحدد وقتًا جديدًا بعد ربع ساعة، وتعرض خدمة الكي بديلًا. تسجل سبب التأخير وتتابع بعد ربع ساعة. يختار النزيل خدمة الكي ويشكرها على الاتصال.</aside><aside class=\"bk-key\">التحديث المنتظم أفضل من الصمت وترك النزيل ينتظر. والنزيل يتذكر من اهتم بطلبه حتى تم تنفيذه.</aside>",
+                            "quiz": {
+                                "title": "اختبر فهمك: التسليم والتأخير",
+                                "questions": [
+                                    {
+                                        "question": "حوّلت طلبًا إلى الصيانة. ما الذي يجعل التسليم كاملًا؟",
+                                        "options": [
+                                            "ترك رسالة على الخط العام",
+                                            "التأكد أن شخصًا محددًا استلمه والاتفاق على الوقت",
+                                            "الطلب من النزيل الاتصال بالصيانة",
+                                            "إرساله دون تفاصيل لتوفير الوقت"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "التسليم الصحيح يشمل تحديد المسؤول والاتفاق على الوقت."
+                                    },
+                                    {
+                                        "question": "الطلب متأخر ولا يوجد حل نهائي بعد. ماذا تفعل؟",
+                                        "options": [
+                                            "تنتظر الحل قبل الاتصال",
+                                            "تحدّث النزيل الآن وتعتذر وتبلغه بالوقت الجديد",
+                                            "تغلق الطلب وتفتح طلبًا جديدًا",
+                                            "تترك النزيل يكتشف التأخير بنفسه"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "قدم تحديثًا حتى دون حل نهائي، ولا تنتظر حتى يسأل النزيل."
+                                    },
+                                    {
+                                        "question": "استمر التأخير بعد الوقت الجديد الذي حددته. ما الخطوة التالية؟",
+                                        "options": [
+                                            "اطلب دعم المشرف",
+                                            "توقف عن المتابعة",
+                                            "أخبر النزيل أن الخطأ خطأ التدبير الفندقي",
+                                            "حدد وقتًا ثالثًا دون تحقق"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "اطلب دعم المشرف عند استمرار التأخير."
+                                    },
+                                    {
+                                        "question": "لماذا تسجل سبب التأخير؟",
+                                        "options": [
+                                            "للاحتفاظ بسجل دقيق للطلب وتحديثه",
+                                            "لتعرض تقريرًا على النزيل",
+                                            "لتتجنب الاعتذار",
+                                            "ليس ضروريًا"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تطلب الشريحة تسجيل سبب التأخير والتحديث."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

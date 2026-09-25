@@ -42,6 +42,7 @@ class Ha_seo {
         $this->CI =& get_instance();
         $this->CI->load->database();
         $this->db = $this->CI->db;
+        require_once APPPATH . 'helpers/ha_locale_helper.php';
     }
 
     // ------------------------------------------------------------------ setup
@@ -116,7 +117,7 @@ class Ha_seo {
     protected $media_cache = array();
 
     public function is_rtl() {
-        return $this->locale === 'ar';
+        return ha_locale_dir($this->locale) === 'rtl';
     }
 
     public function brand() {
@@ -132,8 +133,9 @@ class Ha_seo {
      * @param array  $fallback title, description, image, schema
      */
     public function prepare($locale, $path, array $lookup = array(), array $fallback = array()) {
-        $this->locale = ($locale === 'ar') ? 'ar' : 'en';
+        $this->locale = ha_locale_enabled($locale) ? $locale : 'en';
         $this->path = ltrim((string) $path, '/');
+        $this->locales = null;
         $this->breadcrumbs = array();
         $this->extra_schema = array();
 
@@ -233,7 +235,7 @@ class Ha_seo {
     }
 
     public function breadcrumbs() {
-        $home = $this->locale === 'ar' ? 'الرئيسية' : 'Home';
+        $home = ha_pt('Home');
         return array_merge(array(array('label' => $home, 'path' => '')), $this->breadcrumbs);
     }
 
@@ -247,6 +249,12 @@ class Ha_seo {
     /** The complete head block for a public page. */
     public function render_head() {
         $m = $this->meta;
+        // A language this page is not published in is still served (English content, translated
+        // chrome) but never indexed: canonical points at the English page.
+        if (!in_array($this->locale, $this->page_locales(), true)) {
+            $m['robots'] = 'noindex,follow';
+            $m['canonical'] = $this->url($this->path_for('en', $m['alternate_path']), 'en');
+        }
         $out = array();
         $out[] = '<title>' . html_escape($m['title']) . '</title>';
         if ($m['description'] !== '') {
@@ -262,12 +270,18 @@ class Ha_seo {
         // while bare en and ar keep an Arabic reader in the UAE or an English
         // reader anywhere else on the right language rather than falling
         // through to x-default.
+        // One alternate per language this page is actually available in, plus a regional
+        // variant for the Saudi market languages and x-default. A language the page is NOT
+        // translated into is left out of hreflang entirely (see page_locales()).
         $alt = $m['alternate_path'];
-        $en = $this->url($this->path_for('en', $alt), 'en');
-        $ar = $this->url($this->path_for('ar', $alt), 'ar');
-        foreach (array('en' => $en, 'en-SA' => $en, 'ar' => $ar, 'ar-SA' => $ar, 'x-default' => $en) as $lang => $href) {
-            $out[] = '<link rel="alternate" hreflang="' . $lang . '" href="' . html_escape($href) . '">';
+        foreach ($this->page_locales() as $l) {
+            $href = $this->url($this->path_for($l, $alt), $l);
+            $out[] = '<link rel="alternate" hreflang="' . $l . '" href="' . html_escape($href) . '">';
+            if ($l === 'en' || $l === 'ar') {
+                $out[] = '<link rel="alternate" hreflang="' . $l . '-SA" href="' . html_escape($href) . '">';
+            }
         }
+        $out[] = '<link rel="alternate" hreflang="x-default" href="' . html_escape($this->url($this->path_for('en', $alt), 'en')) . '">';
 
         $out[] = '<meta name="theme-color" content="#0D1B2A">';
 
@@ -275,8 +289,12 @@ class Ha_seo {
         // crawler that an article was a site home page.
         $out[] = '<meta property="og:type" content="' . html_escape($m['og_type']) . '">';
         $out[] = '<meta property="og:site_name" content="' . html_escape($this->brand()) . '">';
-        $out[] = '<meta property="og:locale" content="' . ($this->locale === 'ar' ? 'ar_SA' : 'en_US') . '">';
-        $out[] = '<meta property="og:locale:alternate" content="' . ($this->locale === 'ar' ? 'en_US' : 'ar_SA') . '">';
+        $out[] = '<meta property="og:locale" content="' . html_escape(preg_replace('/@.*/', '', ha_locale_icu($this->locale))) . '">';
+        foreach ($this->page_locales() as $l) {
+            if ($l !== $this->locale) {
+                $out[] = '<meta property="og:locale:alternate" content="' . html_escape(preg_replace('/@.*/', '', ha_locale_icu($l))) . '">';
+            }
+        }
         $out[] = '<meta property="og:title" content="' . html_escape($m['og_title']) . '">';
         if ($m['og_description'] !== '') {
             $out[] = '<meta property="og:description" content="' . html_escape($m['og_description']) . '">';
@@ -343,9 +361,33 @@ class Ha_seo {
      */
     private function path_for($locale, $alternate) {
         if (is_array($alternate)) {
-            return isset($alternate[$locale]) ? $alternate[$locale] : $this->path;
+            // Languages without their own slugs use the English path (/hi/courses/{english-slug}).
+            return isset($alternate[$locale]) ? $alternate[$locale] : (isset($alternate['en']) ? $alternate['en'] : $this->path);
         }
         return $alternate;
+    }
+
+    /** @var array|null languages this page is available in (null = every site language) */
+    protected $locales = null;
+
+    /**
+     * Declares which languages this page's CONTENT exists in. Listing pages whose text
+     * is interface chrome leave it unset (every site language). A detail page passes the
+     * languages that have a real translation; when the current language is not among
+     * them the page is served (English content, translated chrome) but marked noindex
+     * with a canonical to English, so no thin duplicate is ever indexed.
+     */
+    public function set_locales(array $locales) {
+        $this->locales = array_values(array_intersect(ha_site_locales(), array_merge(array('en'), $locales)));
+        if (!in_array($this->locale, $this->locales, true)) {
+            $this->meta['robots'] = 'noindex,follow';
+            $this->meta['canonical'] = $this->url($this->path_for('en', $this->meta['alternate_path']), 'en');
+        }
+        return $this;
+    }
+
+    public function page_locales() {
+        return $this->locales !== null ? $this->locales : ha_site_locales();
     }
 
     public function render_schema() {
@@ -508,77 +550,88 @@ class Ha_seo {
     // ---------------------------------------------------------------- sitemap
 
     /**
-     * Every indexable URL, in both locales, with a last modified date.
-     * Plan section 28 requires a language aware sitemap.
+     * Every indexable URL in every site language, with a last modified date.
+     * An entity appears in a language only when it has content in that language
+     * (a translation row, or the English/Arabic columns), so the sitemap never
+     * lists thin machine duplicates. Plan section 28 requires a language aware sitemap.
+     *
+     * @return array of array('urls' => array(locale => url), 'lastmod', 'priority', 'changefreq')
      */
     public function sitemap_urls() {
+        $site = ha_site_locales();
+        $extra = array_values(array_diff($site, array('en', 'ar')));
         $urls = array();
-
-        $add = function ($path_en, $path_ar, $lastmod = null, $priority = '0.6', $changefreq = 'weekly')
-            use (&$urls) {
-            $urls[] = array(
-                'en'         => $this->url($path_en, 'en'),
-                'ar'         => $this->url($path_ar, 'ar'),
-                'lastmod'    => $lastmod ? date('Y-m-d', strtotime($lastmod)) : date('Y-m-d'),
-                'priority'   => $priority,
-                'changefreq' => $changefreq,
-            );
+        // $paths: array(locale => path); $have: extra locales this entity is translated into (null = all).
+        $add = function (array $paths, $lastmod, $priority, $changefreq, $have = null) use (&$urls, $site, $extra) {
+            $set = array();
+            foreach ($site as $l) {
+                if ($l !== 'en' && $l !== 'ar' && $have !== null && !in_array($l, $have, true)) {
+                    continue;
+                }
+                $set[$l] = $this->url(isset($paths[$l]) ? $paths[$l] : $paths['en'], $l);
+            }
+            $urls[] = array('urls' => $set, 'lastmod' => $lastmod ? date('Y-m-d', strtotime($lastmod)) : date('Y-m-d'),
+                'priority' => $priority, 'changefreq' => $changefreq);
+        };
+        // Which entities have a translation in each extra language, one query per table.
+        $translated = function ($table, $fk) use ($extra) {
+            $out = array();
+            if ($extra && $this->db->table_exists($table)) {
+                foreach ($this->db->select("$fk AS id, locale")->where_in('locale', $extra)->get($table)->result_array() as $r) {
+                    $out[(int) $r['id']][] = $r['locale'];
+                }
+            }
+            return function ($id) use ($out) { return isset($out[(int) $id]) ? $out[(int) $id] : array(); };
+        };
+        $overlaid = function ($entity) use ($extra) {
+            $out = array();
+            if ($extra && $this->db->table_exists('ha_i18n_text')) {
+                foreach ($this->db->select('entity_id AS id, locale')->where('entity', $entity)->where('field', 'title')
+                             ->where_in('locale', $extra)->get('ha_i18n_text')->result_array() as $r) {
+                    $out[(int) $r['id']][] = $r['locale'];
+                }
+            }
+            return function ($id) use ($out) { return isset($out[(int) $id]) ? $out[(int) $id] : array(); };
         };
 
         // Static and system pages
-        $pages = $this->db->select('p.code, p.slug_en, p.slug_ar, p.updated_at')
-            ->from('ha_page p')->where('p.status', 'published')->get()->result_array();
-        foreach ($pages as $p) {
-            $add($p['slug_en'], $p['slug_ar'], $p['updated_at'],
-                $p['code'] === 'home' ? '1.0' : '0.7', $p['code'] === 'home' ? 'daily' : 'monthly');
+        $tp = $translated('ha_page_translation', 'page_id');
+        foreach ($this->db->select('p.id, p.code, p.slug_en, p.slug_ar, p.updated_at')->from('ha_page p')
+                     ->where('p.status', 'published')->get()->result_array() as $p) {
+            $add(array('en' => $p['slug_en'], 'ar' => $p['slug_ar']), $p['updated_at'],
+                $p['code'] === 'home' ? '1.0' : '0.7', $p['code'] === 'home' ? 'daily' : 'monthly', $tp($p['id']));
         }
-
-        // Listing routes
-        foreach (array('courses', 'programs', 'learning-paths', 'hospitality-topics',
-                     'sop', 'articles', 'verify') as $route) {
-            $add($route, $route, null, '0.8', 'daily');
+        // Listing routes: their text is interface chrome, translated for every site language
+        foreach (array('courses', 'programs', 'learning-paths', 'hospitality-topics', 'sop', 'articles', 'verify') as $route) {
+            $add(array('en' => $route), null, '0.8', 'daily');
         }
-
-        // Courses
-        $courses = $this->db->select('slug_en, slug_ar, updated_at')->from('ha_course')
-            ->where('status', 'published')->get()->result_array();
-        foreach ($courses as $c) {
-            $add('courses/' . $c['slug_en'], 'courses/' . $c['slug_ar'], $c['updated_at'], '0.8', 'weekly');
+        $tc = $translated('ha_course_translation', 'course_id');
+        foreach ($this->db->select('id, slug_en, slug_ar, updated_at')->from('ha_course')->where('status', 'published')->get()->result_array() as $r) {
+            $add(array('en' => 'courses/' . $r['slug_en'], 'ar' => 'courses/' . $r['slug_ar']), $r['updated_at'], '0.8', 'weekly', $tc($r['id']));
         }
-
-        // Programs
-        foreach ($this->db->select('slug_en, slug_ar, updated_at')->from('ha_program')
-                     ->where('status', 'published')->get()->result_array() as $p) {
-            $add('programs/' . $p['slug_en'], 'programs/' . $p['slug_ar'], $p['updated_at'], '0.8', 'weekly');
+        $tg = $translated('ha_program_translation', 'program_id');
+        foreach ($this->db->select('id, slug_en, slug_ar, updated_at')->from('ha_program')->where('status', 'published')->get()->result_array() as $r) {
+            $add(array('en' => 'programs/' . $r['slug_en'], 'ar' => 'programs/' . $r['slug_ar']), $r['updated_at'], '0.8', 'weekly', $tg($r['id']));
         }
-
-        // Learning paths
-        foreach ($this->db->select('slug_en, slug_ar, updated_at')->from('ha_learning_path')
-                     ->where('status', 'published')->get()->result_array() as $p) {
-            $add('learning-paths/' . $p['slug_en'], 'learning-paths/' . $p['slug_ar'], $p['updated_at'], '0.7', 'monthly');
+        $tl = $overlaid('path');
+        foreach ($this->db->select('id, slug_en, slug_ar, updated_at')->from('ha_learning_path')->where('status', 'published')->get()->result_array() as $r) {
+            $add(array('en' => 'learning-paths/' . $r['slug_en'], 'ar' => 'learning-paths/' . $r['slug_ar']), $r['updated_at'], '0.7', 'monthly', $tl($r['id']));
         }
-
-        // Topics, including the city pages
-        foreach ($this->db->select('slug_en, slug_ar, updated_at, topic_type')->from('ha_topic')
-                     ->where('status', 'published')->get()->result_array() as $t) {
-            $add('hospitality-topics/' . $t['slug_en'], 'hospitality-topics/' . $t['slug_ar'],
-                $t['updated_at'], $t['topic_type'] === 'city' ? '0.7' : '0.8', 'monthly');
+        $tt = $overlaid('topic');
+        foreach ($this->db->select('id, slug_en, slug_ar, updated_at, topic_type')->from('ha_topic')->where('status', 'published')->get()->result_array() as $r) {
+            $add(array('en' => 'hospitality-topics/' . $r['slug_en'], 'ar' => 'hospitality-topics/' . $r['slug_ar']),
+                $r['updated_at'], $r['topic_type'] === 'city' ? '0.7' : '0.8', 'monthly', $tt($r['id']));
         }
-
-        // Public SOP resources
+        // Public SOPs: procedure text exists in English and Arabic only
         foreach ($this->db->select('s.slug_en, s.slug_ar, s.updated_at')->from('ha_sop_document s')
-                     ->where('s.status', 'published')->where('s.visibility', 'public')
-                     ->get()->result_array() as $s) {
-            $add('sop/' . $s['slug_en'], 'sop/' . $s['slug_ar'], $s['updated_at'], '0.6', 'monthly');
+                     ->where('s.status', 'published')->where('s.visibility', 'public')->get()->result_array() as $r) {
+            $add(array('en' => 'sop/' . $r['slug_en'], 'ar' => 'sop/' . $r['slug_ar']), $r['updated_at'], '0.6', 'monthly', array());
         }
-
-        // Articles
-        foreach ($this->db->select('slug_en, slug_ar, updated_at')->from('ha_article')
-                     ->where('status', 'published')
-                     ->where('published_at <=', date('Y-m-d H:i:s'))->get()->result_array() as $a) {
-            $add('articles/' . $a['slug_en'], 'articles/' . $a['slug_ar'], $a['updated_at'], '0.7', 'monthly');
+        $ta = $translated('ha_article_translation', 'article_id');
+        foreach ($this->db->select('id, slug_en, slug_ar, updated_at')->from('ha_article')->where('status', 'published')
+                     ->where('published_at <=', date('Y-m-d H:i:s'))->get()->result_array() as $r) {
+            $add(array('en' => 'articles/' . $r['slug_en'], 'ar' => 'articles/' . $r['slug_ar']), $r['updated_at'], '0.7', 'monthly', $ta($r['id']));
         }
-
         return $urls;
     }
 
@@ -587,15 +640,16 @@ class Ha_seo {
         $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
             . 'xmlns:xhtml="http://www.w3.org/1999/xhtml">' . "\n";
         foreach ($this->sitemap_urls() as $u) {
-            foreach (array('en', 'ar') as $locale) {
+            foreach ($u['urls'] as $locale => $loc) {
                 $xml .= "  <url>\n";
-                $xml .= '    <loc>' . html_escape($u[$locale]) . "</loc>\n";
+                $xml .= '    <loc>' . html_escape($loc) . "</loc>\n";
                 $xml .= '    <lastmod>' . $u['lastmod'] . "</lastmod>\n";
                 $xml .= '    <changefreq>' . $u['changefreq'] . "</changefreq>\n";
                 $xml .= '    <priority>' . $u['priority'] . "</priority>\n";
-                $xml .= '    <xhtml:link rel="alternate" hreflang="en" href="' . html_escape($u['en']) . "\"/>\n";
-                $xml .= '    <xhtml:link rel="alternate" hreflang="ar" href="' . html_escape($u['ar']) . "\"/>\n";
-                $xml .= '    <xhtml:link rel="alternate" hreflang="x-default" href="' . html_escape($u['en']) . "\"/>\n";
+                foreach ($u['urls'] as $alt_locale => $alt) {
+                    $xml .= '    <xhtml:link rel="alternate" hreflang="' . $alt_locale . '" href="' . html_escape($alt) . "\"/>\n";
+                }
+                $xml .= '    <xhtml:link rel="alternate" hreflang="x-default" href="' . html_escape($u['urls']['en']) . "\"/>\n";
                 $xml .= "  </url>\n";
             }
         }

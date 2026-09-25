@@ -305,6 +305,12 @@
                    </div>
                   <ul>
                     <?php if($user_login): ?>
+                      <li class="user-dropdown-menu-item hkp-menu-item">
+                        <a href="<?php echo site_url('hkp'); ?>" data-hkp-menu>
+                          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="7.5" height="7.5" rx="2" stroke="#99A1B7" stroke-width="1.6"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2" stroke="#99A1B7" stroke-width="1.6"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2" stroke="#99A1B7" stroke-width="1.6"/><path d="M14 17.25h6.5M17.25 14v6.5" stroke="#99A1B7" stroke-width="1.6" stroke-linecap="round"/></svg>
+                          <?php echo site_phrase('knowledge_performance'); ?>
+                        </a>
+                      </li>
                       <?php if($user_details['is_instructor'] == 1): ?>
                         <li class="user-dropdown-menu-item">
                           <a href="<?php echo site_url('user/dashboard'); ?>">

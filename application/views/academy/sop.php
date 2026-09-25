@@ -96,10 +96,8 @@
 </section>
 
 <?php $this->load->view('academy/_close', array(
-    'close_title' => $locale === 'ar' ? 'استخدم هذا الإجراء مع فريقك' : 'Use this procedure with your team',
-    'close_text'  => $locale === 'ar'
-        ? 'تُصدر الإجراءات للمنشأة، ويوقّع عليها من تنطبق عليهم، ويُعاد إصدارها عند تغيّرها.'
-        : 'Procedures are issued to a property, acknowledged by the staff it applies to, and re-issued when they change.',
+    'close_title' => ha_pt('Use this procedure with your team'),
+    'close_text'  => ha_pt('Procedures are issued to a property, acknowledged by the staff it applies to, and re-issued when they change.'),
     'close_primary'   => array('label' => $t['for_hotels'], 'url' => base_url($locale . '/hotels')),
     'close_secondary' => array('label' => $t['contact'], 'url' => base_url($locale . '/contact')),
 )); ?>

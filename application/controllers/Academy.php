@@ -17,7 +17,7 @@ class Academy extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->database();
-        $this->load->helper(array('url', 'text', 'ha_media', 'ha_chrome'));
+        $this->load->helper(array('url', 'text', 'ha_media', 'ha_chrome', 'ha_locale'));
         $this->load->library('ha_catalog');
         $this->load->library('ha_seo');
         $this->load->library('form_validation');
@@ -29,7 +29,8 @@ class Academy extends CI_Controller {
     // ------------------------------------------------------------------ setup
 
     private function boot($locale) {
-        $this->locale = ($locale === 'ar') ? 'ar' : 'en';
+        $this->locale = ha_locale_enabled($locale) ? $locale : ha_locale_default();
+        ha_site_locale($this->locale);
         $this->content_security_policy();
         return $this->locale;
     }
@@ -109,11 +110,51 @@ class Academy extends CI_Controller {
         return '';
     }
 
+    /** Site languages that have this record's content in a translation table (plus en/ar). */
+    private function content_locales($table, $fk, $id) {
+        $have = array('en', 'ar');
+        foreach ($this->db->select('locale')->distinct()->where($fk, (int) $id)->get($table)->result_array() as $r) {
+            $have[] = $r['locale'];
+        }
+        return array_values(array_unique($have));
+    }
+
+    /** Same, for records translated through the ha_i18n_text overlay (topics, paths). */
+    private function content_locales_i18n($entity, $id) {
+        $have = array('en', 'ar');
+        if ($this->db->table_exists('ha_i18n_text')) {
+            foreach ($this->db->select('locale')->distinct()->where(array('entity' => $entity, 'entity_id' => (int) $id, 'field' => 'title'))->get('ha_i18n_text')->result_array() as $r) {
+                $have[] = $r['locale'];
+            }
+        }
+        return $have;
+    }
+
+    /**
+     * Picks the best published site language from an Accept-Language header,
+     * honouring q-values (\"ur-PK,ur;q=0.9,en;q=0.8\" -> ur). Falls back to English.
+     */
+    private function negotiate_locale($header) {
+        $site = ha_site_locales();
+        $best = 'en'; $best_q = -1.0;
+        foreach (explode(',', strtolower((string) $header)) as $part) {
+            $bits = explode(';q=', trim($part));
+            $tag = trim($bits[0]);
+            $q = isset($bits[1]) ? (float) $bits[1] : 1.0;
+            $base = $tag === 'fil' ? 'tl' : preg_replace('/[-_].*/', '', $tag);
+            if ($q > $best_q && in_array($base, $site, true)) {
+                $best = $base; $best_q = $q;
+            }
+        }
+        return $best;
+    }
+
     /** Shared view data every public page needs. */
     private function shell(array $data) {
         $data['hero_preload'] = $this->hero_preload($data);
         $data['locale'] = $this->locale;
-        $data['rtl'] = ($this->locale === 'ar');
+        $data['rtl'] = ha_locale_dir($this->locale) === 'rtl';
+        $data['site_locales'] = ha_site_locales();
         $data['dir'] = $data['rtl'] ? 'rtl' : 'ltr';
         $data['seo'] = $this->ha_seo;
         $data['menu'] = $this->ha_catalog->menu('public_header', $this->locale);
@@ -128,7 +169,7 @@ class Academy extends CI_Controller {
     private function not_found($message = null) {
         $this->output->set_status_header(404);
         $this->ha_seo->prepare($this->locale, '404', array(), array(
-            'title' => ($this->locale === 'ar' ? 'الصفحة غير موجودة' : 'Page not found') . ' | ' . $this->ha_seo->brand(),
+            'title' => (ha_pt('Page not found')) . ' | ' . $this->ha_seo->brand(),
             'description' => '',
         ))->set('robots', 'noindex,follow');
         $this->render('404', array('message' => $message));
@@ -191,62 +232,8 @@ class Academy extends CI_Controller {
             'footer_note' => 'Hotel training, standard operating procedures and workforce certification.',
             'legal' => 'Legal', 'privacy' => 'Privacy', 'terms' => 'Terms',
         );
-        $ar = array(
-            'skip_to_content' => 'تخطَّ إلى المحتوى',
-            'search' => 'بحث',
-            'search_placeholder' => 'ابحث في الدورات والمواضيع والمقالات',
-            'search_results_for' => 'نتائج البحث عن',
-            'no_results' => 'لا توجد نتائج مطابقة.',
-            'courses' => 'الدورات', 'programs' => 'البرامج', 'learning_paths' => 'المسارات المهنية',
-            'topics' => 'مواضيع الضيافة', 'sop' => 'موارد الإجراءات', 'articles' => 'المقالات',
-            'certificates' => 'الشهادات', 'about' => 'عن الأكاديمية', 'for_hotels' => 'للفنادق',
-            'contact' => 'تواصل', 'home' => 'الرئيسية',
-            'all_categories' => 'كل التصنيفات', 'all_levels' => 'كل المستويات',
-            'level' => 'المستوى', 'duration' => 'المدة', 'minutes' => 'دقيقة', 'hours' => 'ساعة',
-            'lessons' => 'درساً', 'free' => 'مجاني', 'certificate' => 'شهادة',
-            'overview' => 'نظرة عامة', 'curriculum' => 'المنهج', 'instructor' => 'المدرب',
-            'outcomes' => 'ما ستكون قادراً على فعله', 'requirements' => 'المتطلبات',
-            'prerequisites' => 'المتطلبات السابقة', 'faq' => 'الأسئلة الشائعة',
-            'related_courses' => 'دورات ذات صلة', 'part_of_programs' => 'ضمن هذه البرامج',
-            'skills_awarded' => 'المهارات المسجلة عند الإكمال',
-            'preview' => 'معاينة', 'mandatory' => 'إلزامي', 'optional' => 'اختياري',
-            'enrol' => 'ابدأ هذه الدورة', 'sign_in_to_start' => 'سجّل الدخول للبدء',
-            'read_more' => 'اقرأ المزيد', 'published' => 'نُشر في', 'read_time' => 'دقيقة قراءة',
-            'verify_title' => 'التحقق من شهادة',
-            'verify_help' => 'أدخل رمز التحقق المطبوع على الشهادة.',
-            'verify_code' => 'رمز التحقق', 'verify_button' => 'تحقق من الشهادة',
-            'verify_valid' => 'هذه الشهادة سارية.',
-            'verify_expired' => 'انتهت صلاحية هذه الشهادة.',
-            'verify_revoked' => 'تم إلغاء هذه الشهادة.',
-            'verify_not_found' => 'لا توجد شهادة مطابقة لهذا الرمز.',
-            'certificate_no' => 'رقم الشهادة', 'issued_on' => 'تاريخ الإصدار',
-            'expires_on' => 'تنتهي في', 'holder' => 'الحامل', 'subject' => 'الدورة أو البرنامج',
-            'score' => 'الدرجة النهائية', 'status' => 'الحالة',
-            'contact_name' => 'الاسم', 'contact_email' => 'البريد الإلكتروني الوظيفي', 'contact_phone' => 'الهاتف',
-            'contact_org' => 'الفندق أو المنشأة', 'contact_city' => 'المدينة',
-            'contact_headcount' => 'عدد الموظفين تقريباً',
-            'contact_interest' => 'ما الذي تحتاجه', 'contact_message' => 'الرسالة',
-            'contact_submit' => 'أرسل الطلب',
-            'contact_thanks' => 'شكراً لك. تم تسجيل طلبك وسيصلك رد عبر البريد الإلكتروني.',
-            'required_field' => 'هذا الحقل مطلوب.',
-            'steps' => 'المراحل', 'step' => 'المرحلة', 'in_this_path' => 'دورات هذه المرحلة',
-            'version' => 'الإصدار', 'effective_date' => 'تاريخ السريان', 'review_date' => 'تاريخ المراجعة',
-            'purpose' => 'الغرض', 'scope' => 'النطاق', 'responsibilities' => 'المسؤوليات',
-            'required_tools' => 'الأدوات المطلوبة', 'procedure' => 'الإجراء', 'checklist' => 'قائمة التحقق',
-            'safety_notes' => 'ملاحظات السلامة', 'quality_standard' => 'معيار الجودة',
-            'escalation' => 'التصعيد', 'department' => 'القسم',
-            'showing' => 'عرض', 'of' => 'من', 'results' => 'نتيجة',
-            'previous' => 'السابق', 'next' => 'التالي',
-            'not_found_title' => 'الصفحة غير موجودة',
-            'not_found_body' => 'الصفحة المطلوبة غير موجودة. ربما نُقلت أو أن العنوان مكتوب بشكل خاطئ.',
-            'back_home' => 'العودة للصفحة الرئيسية',
-            'language_switch' => 'English',
-            'in_city' => 'تركيز التدريب في هذه المدينة',
-            'browse_all' => 'تصفح الكل',
-            'footer_note' => 'تدريب فندقي وإجراءات تشغيل قياسية واعتماد للكوادر.',
-            'legal' => 'قانوني', 'privacy' => 'الخصوصية', 'terms' => 'الشروط',
-        );
-        return $this->locale === 'ar' ? $ar : $en;
+        // English is the source; application/language/site/{code}.php translates it.
+        return array_map('ha_pt', $en);
     }
 
     /**
@@ -258,41 +245,29 @@ class Academy extends CI_Controller {
             'courses' => array(
                 'en' => array('Hotel Training Courses',
                     'Courses by professional domain: front office, housekeeping, food and beverage, kitchen, sales and marketing, revenue and reservations, guest experience, quality and audit, security and safety, engineering and hotel management. Every course runs in Arabic and English.'),
-                'ar' => array('دورات التدريب الفندقي',
-                    'دورات حسب المجال المهني: مكتب الاستقبال والتدبير الفندقي والأغذية والمشروبات والمطبخ والمبيعات والتسويق والإيرادات والحجوزات وتجربة الضيف والجودة والتدقيق والأمن والسلامة والهندسة وإدارة الفنادق. كل دورة متاحة بالعربية والإنجليزية.'),
             ),
             'programs' => array(
                 'en' => array('Hospitality Programs',
                     'Programs group several courses into one qualification, from front office professional to food safety certified.'),
-                'ar' => array('برامج الضيافة',
-                    'تجمع البرامج عدة دورات في مؤهل واحد، من محترف مكتب الاستقبال إلى معتمد في سلامة الغذاء.'),
             ),
             'learning-paths' => array(
                 'en' => array('Hospitality Career Paths',
                     'Each path sets out the courses for every rung of a hotel career, from the first day in the role to running the department.'),
-                'ar' => array('المسارات المهنية في الضيافة',
-                    'يحدد كل مسار الدورات المطلوبة لكل درجة في المسار الفندقي، من أول يوم في الوظيفة حتى إدارة القسم.'),
             ),
             'hospitality-topics' => array(
                 'en' => array('Hospitality Topics',
                     'Guides to hotel training by subject and by Saudi city, covering front office, housekeeping, food safety, procedures, certification and compliance.'),
-                'ar' => array('مواضيع الضيافة',
-                    'أدلة التدريب الفندقي حسب الموضوع وحسب المدينة السعودية، تغطي مكتب الاستقبال والتدبير الفندقي وسلامة الغذاء والإجراءات والاعتماد والالتزام.'),
             ),
             'sop' => array(
                 'en' => array('Hotel SOP Resources',
                     'How a standard operating procedure is structured, versioned and acknowledged, with the procedures the academy publishes openly.'),
-                'ar' => array('موارد الإجراءات الفندقية',
-                    'كيف يُبنى إجراء التشغيل القياسي ويُصدر ويُقر به، مع الإجراءات التي تنشرها الأكاديمية للاطلاع العام.'),
             ),
             'articles' => array(
                 'en' => array('Hospitality Articles',
                     'Practical writing on hotel training, standard operating procedures, food safety records, compliance reporting and bilingual delivery.'),
-                'ar' => array('مقالات الضيافة',
-                    'كتابات عملية عن التدريب الفندقي وإجراءات التشغيل وسجلات سلامة الغذاء وتقارير الالتزام والتقديم ثنائي اللغة.'),
             ),
         );
-        $entry = isset($map[$key]) ? $map[$key][$this->locale] : array('', '');
+        $entry = isset($map[$key]) ? array_map('ha_pt', $map[$key]['en']) : array('', '');
         return array('title' => $entry[0], 'lede' => $entry[1]);
     }
 
@@ -308,34 +283,12 @@ class Academy extends CI_Controller {
             array('Assess', 'An assessment checks they can do the work, not that they sat through it. Attempts, timing and score are recorded.'),
             array('Certify', 'A certificate is issued with a verification code a third party can check, and the skill is recorded against the employee.'),
         );
-        $ar = array(
-            array('الإسناد', 'يسند المدير دورة أو برنامجاً أو إجراءً لموظف أو قسم أو فندق أو مسمى وظيفي، مع تاريخ استحقاق.'),
-            array('التعلّم', 'يدرس الموظف الدروس بالعربية أو الإنجليزية، من هاتفه في ساعة هدوء إن كان ذلك ما تسمح به الوردية.'),
-            array('التقييم', 'يتحقق التقييم من قدرته على أداء العمل لا من مجرد حضوره. وتُسجَّل المحاولات والتوقيت والدرجة.'),
-            array('الاعتماد', 'تُصدر شهادة برمز تحقق يمكن لطرف ثالث فحصه، وتُسجَّل المهارة في ملف الموظف.'),
-        );
-        return $this->locale === 'ar' ? $ar : $en;
+        return array_map(function ($s) { return array_map('ha_pt', $s); }, $en);
     }
 
     /** The two audiences the site serves, kept explicitly apart. */
     private function audience_split() {
-        if ($this->locale === 'ar') {
-            return array(
-                array(
-                    'eyebrow' => 'للفنادق والمجموعات',
-                    'title'   => 'درّب فريقك وأثبت التزامه',
-                    'body'    => 'أسند التدريب حسب الفندق أو القسم أو المسمى الوظيفي، وتابع الإكمال والمتأخر والشهادات المقتربة من الانتهاء، واعرف من أقرّ بالإصدار الحالي من كل إجراء.',
-                    'cta'     => 'للفنادق', 'url' => 'hotels',
-                ),
-                array(
-                    'eyebrow' => 'للأفراد',
-                    'title'   => 'ابنِ مسارك المهني في الضيافة',
-                    'body'    => 'ابدأ من دورك الحالي وتقدّم عبر مسار مهني واضح: من عامل غرف إلى مدير التدبير الفندقي، ومن موظف استقبال إلى مدير مكتب الاستقبال.',
-                    'cta'     => 'المسارات المهنية', 'url' => 'learning-paths',
-                ),
-            );
-        }
-        return array(
+        $items = array(
             array(
                 'eyebrow' => 'For hotels and groups',
                 'title'   => 'Train your team, and prove it',
@@ -349,15 +302,16 @@ class Academy extends CI_Controller {
                 'cta'     => 'Career paths', 'url' => 'learning-paths',
             ),
         );
+        return array_map(function ($i) {
+            foreach (array('eyebrow', 'title', 'body', 'cta') as $k) { $i[$k] = ha_pt($i[$k]); }
+            return $i;
+        }, $items);
     }
 
     public function level_label($level) {
         $en = array('foundation' => 'Foundation', 'intermediate' => 'Intermediate',
             'advanced' => 'Advanced', 'leadership' => 'Leadership');
-        $ar = array('foundation' => 'تأسيسي', 'intermediate' => 'متوسط',
-            'advanced' => 'متقدم', 'leadership' => 'قيادي');
-        $map = $this->locale === 'ar' ? $ar : $en;
-        return isset($map[$level]) ? $map[$level] : $level;
+        return isset($en[$level]) ? ha_pt($en[$level]) : $level;
     }
 
     // ------------------------------------------------------------------ home
@@ -375,6 +329,7 @@ class Academy extends CI_Controller {
         $this->ha_seo->prepare($this->locale, '', array('entity_type' => 'page', 'entity_id' => $page['id']),
             array('title' => $page['title'], 'description' => $page['subtitle']));
         $this->ha_seo->set_alternate(array('en' => '', 'ar' => ''));
+        $this->ha_seo->set_locales($this->content_locales('ha_page_translation', 'page_id', $page['id']));
         $faq_schema = $this->ha_seo->faq_schema($faqs);
         if ($faq_schema) {
             $this->ha_seo->add_schema($faq_schema);
@@ -385,9 +340,7 @@ class Academy extends CI_Controller {
         $steps = $this->journey_steps();
         $this->ha_seo->add_schema(array(
             '@type' => 'HowTo',
-            'name'  => $this->locale === 'ar'
-                ? 'كيف يعمل تدريب واعتماد كوادر الفندق'
-                : 'How hotel workforce training and certification works',
+            'name'  => ha_pt('How hotel workforce training and certification works'),
             'inLanguage' => $this->locale,
             'step' => array_map(function ($step, $i) {
                 return array(
@@ -405,7 +358,7 @@ class Academy extends CI_Controller {
         if ($cities) {
             $this->ha_seo->add_schema(array(
                 '@type'       => 'Service',
-                'serviceType' => $this->locale === 'ar' ? 'تدريب كوادر الفنادق' : 'Hotel workforce training',
+                'serviceType' => ha_pt('Hotel workforce training'),
                 'provider'    => array(
                     '@type' => 'EducationalOrganization',
                     'name'  => $this->ha_seo->brand(),
@@ -426,7 +379,7 @@ class Academy extends CI_Controller {
         if ($categories) {
             $this->ha_seo->add_schema(array(
                 '@type' => 'ItemList',
-                'name'  => $this->locale === 'ar' ? 'أقسام التدريب الفندقي' : 'Hotel training departments',
+                'name'  => ha_pt('Hotel training departments'),
                 'itemListElement' => array_map(function ($c, $i) {
                     return array(
                         '@type'    => 'ListItem',
@@ -495,7 +448,7 @@ class Academy extends CI_Controller {
         $total = $this->ha_catalog->count_courses($this->locale, $params);
 
         $this->ha_seo->prepare($this->locale, 'courses', array('route_key' => 'courses'), array(
-            'title' => ($this->locale === 'ar' ? 'دورات التدريب الفندقي' : 'Hotel Training Courses')
+            'title' => (ha_pt('Hotel Training Courses'))
                 . ' | ' . $this->ha_seo->brand(),
         ));
         $this->ha_seo->breadcrumb($this->phrases()['courses'], 'courses');
@@ -527,19 +480,14 @@ class Academy extends CI_Controller {
             return $this->not_found();
         }
 
-        $alt_locale = $this->locale === 'ar' ? 'en' : 'ar';
-        $alt_slug = $course['slug_' . $alt_locale];
-
         $this->ha_seo->prepare($this->locale, 'courses/' . $course['slug'],
             array('entity_type' => 'course', 'entity_id' => $course['id']),
             array(
                 'title' => $course['title'] . ' | ' . $this->ha_seo->brand(),
                 'description' => $course['short_description'],
             ));
-        $this->ha_seo->set_alternate(array(
-            'en' => 'courses/' . ($this->locale === 'en' ? $course['slug'] : $alt_slug),
-            'ar' => 'courses/' . ($this->locale === 'ar' ? $course['slug'] : $alt_slug),
-        ));
+        $this->ha_seo->set_alternate(array('en' => 'courses/' . $course['slug_en'], 'ar' => 'courses/' . $course['slug_ar']));
+        $this->ha_seo->set_locales($this->content_locales('ha_course_translation', 'course_id', $course['id']));
         $this->ha_seo->breadcrumb($this->phrases()['courses'], 'courses');
         if (!empty($course['category_name'])) {
             $this->ha_seo->breadcrumb($course['category_name'], 'courses?category=' . $course['category_code']);
@@ -559,7 +507,7 @@ class Academy extends CI_Controller {
     public function programs($locale = 'en') {
         $this->boot($locale);
         $this->ha_seo->prepare($this->locale, 'programs', array('route_key' => 'programs'), array(
-            'title' => ($this->locale === 'ar' ? 'برامج الضيافة' : 'Hospitality Programs')
+            'title' => (ha_pt('Hospitality Programs'))
                 . ' | ' . $this->ha_seo->brand(),
         ));
         $this->ha_seo->breadcrumb($this->phrases()['programs'], 'programs');
@@ -581,15 +529,12 @@ class Academy extends CI_Controller {
         if (!$program) {
             return $this->not_found();
         }
-        $alt_locale = $this->locale === 'ar' ? 'en' : 'ar';
         $this->ha_seo->prepare($this->locale, 'programs/' . $program['slug'],
             array('entity_type' => 'program', 'entity_id' => $program['id']),
             array('title' => $program['title'] . ' | ' . $this->ha_seo->brand(),
                   'description' => $program['short_description']));
-        $this->ha_seo->set_alternate(array(
-            'en' => 'programs/' . ($this->locale === 'en' ? $program['slug'] : $program['slug_' . $alt_locale]),
-            'ar' => 'programs/' . ($this->locale === 'ar' ? $program['slug'] : $program['slug_' . $alt_locale]),
-        ));
+        $this->ha_seo->set_alternate(array('en' => 'programs/' . $program['slug_en'], 'ar' => 'programs/' . $program['slug_ar']));
+        $this->ha_seo->set_locales($this->content_locales('ha_program_translation', 'program_id', $program['id']));
         $this->ha_seo->breadcrumb($this->phrases()['programs'], 'programs');
         $this->ha_seo->breadcrumb($program['title'], 'programs/' . $program['slug']);
         $this->render('program', array('program' => $program, 'level_label' => array($this, 'level_label')));
@@ -600,7 +545,7 @@ class Academy extends CI_Controller {
     public function paths($locale = 'en') {
         $this->boot($locale);
         $this->ha_seo->prepare($this->locale, 'learning-paths', array('route_key' => 'learning-paths'), array(
-            'title' => ($this->locale === 'ar' ? 'المسارات المهنية في الضيافة' : 'Hospitality Career Paths')
+            'title' => (ha_pt('Hospitality Career Paths'))
                 . ' | ' . $this->ha_seo->brand(),
         ));
         $this->ha_seo->breadcrumb($this->phrases()['learning_paths'], 'learning-paths');
@@ -619,15 +564,12 @@ class Academy extends CI_Controller {
         if (!$path) {
             return $this->not_found();
         }
-        $alt_locale = $this->locale === 'ar' ? 'en' : 'ar';
         $this->ha_seo->prepare($this->locale, 'learning-paths/' . $path['slug'],
             array('entity_type' => 'learning_path', 'entity_id' => $path['id']),
             array('title' => $path['title'] . ' | ' . $this->ha_seo->brand(),
                   'description' => $path['summary']));
-        $this->ha_seo->set_alternate(array(
-            'en' => 'learning-paths/' . ($this->locale === 'en' ? $path['slug'] : $path['slug_' . $alt_locale]),
-            'ar' => 'learning-paths/' . ($this->locale === 'ar' ? $path['slug'] : $path['slug_' . $alt_locale]),
-        ));
+        $this->ha_seo->set_alternate(array('en' => 'learning-paths/' . $path['slug_en'], 'ar' => 'learning-paths/' . $path['slug_ar']));
+        $this->ha_seo->set_locales($this->content_locales_i18n('path', $path['id']));
         $this->ha_seo->breadcrumb($this->phrases()['learning_paths'], 'learning-paths');
         $this->ha_seo->breadcrumb($path['title'], 'learning-paths/' . $path['slug']);
         $this->render('path', array('path' => $path, 'level_label' => array($this, 'level_label')));
@@ -638,7 +580,7 @@ class Academy extends CI_Controller {
     public function topics($locale = 'en') {
         $this->boot($locale);
         $this->ha_seo->prepare($this->locale, 'hospitality-topics', array('route_key' => 'hospitality-topics'), array(
-            'title' => ($this->locale === 'ar' ? 'مواضيع الضيافة' : 'Hospitality Topics')
+            'title' => (ha_pt('Hospitality Topics'))
                 . ' | ' . $this->ha_seo->brand(),
         ));
         $this->ha_seo->breadcrumb($this->phrases()['topics'], 'hospitality-topics');
@@ -666,14 +608,11 @@ class Academy extends CI_Controller {
         if (!$topic) {
             return $this->not_found();
         }
-        $alt_locale = $this->locale === 'ar' ? 'en' : 'ar';
         $this->ha_seo->prepare($this->locale, 'hospitality-topics/' . $topic['slug'],
             array('entity_type' => 'topic', 'entity_id' => $topic['id']),
             array('title' => $topic['title'] . ' | ' . $this->ha_seo->brand()));
-        $this->ha_seo->set_alternate(array(
-            'en' => 'hospitality-topics/' . ($this->locale === 'en' ? $topic['slug'] : $topic['slug_' . $alt_locale]),
-            'ar' => 'hospitality-topics/' . ($this->locale === 'ar' ? $topic['slug'] : $topic['slug_' . $alt_locale]),
-        ));
+        $this->ha_seo->set_alternate(array('en' => 'hospitality-topics/' . $topic['slug_en'], 'ar' => 'hospitality-topics/' . $topic['slug_ar']));
+        $this->ha_seo->set_locales($this->content_locales_i18n('topic', $topic['id']));
         $this->ha_seo->breadcrumb($this->phrases()['topics'], 'hospitality-topics');
         $this->ha_seo->breadcrumb($topic['title'], 'hospitality-topics/' . $topic['slug']);
         $faq_schema = $this->ha_seo->faq_schema($topic['faqs']);
@@ -688,7 +627,7 @@ class Academy extends CI_Controller {
     public function sops($locale = 'en') {
         $this->boot($locale);
         $this->ha_seo->prepare($this->locale, 'sop', array('route_key' => 'sop'), array(
-            'title' => ($this->locale === 'ar' ? 'موارد الإجراءات الفندقية' : 'Hotel SOP Resources')
+            'title' => (ha_pt('Hotel SOP Resources'))
                 . ' | ' . $this->ha_seo->brand(),
         ));
         $this->ha_seo->breadcrumb($this->phrases()['sop'], 'sop');
@@ -716,6 +655,8 @@ class Academy extends CI_Controller {
             array('entity_type' => 'sop', 'entity_id' => $sop['id']),
             array('title' => $sop['title'] . ' | ' . $this->ha_seo->brand(),
                   'description' => $sop['purpose']));
+        $this->ha_seo->set_alternate(array('en' => 'sop/' . $sop['slug_en'], 'ar' => 'sop/' . $sop['slug_ar']));
+        $this->ha_seo->set_locales(array());   // procedure text is authored in English and Arabic only
         $this->ha_seo->breadcrumb($this->phrases()['sop'], 'sop');
         $this->ha_seo->breadcrumb($sop['title'], 'sop/' . $sop['slug']);
         $this->ha_seo->add_schema(array(
@@ -745,7 +686,7 @@ class Academy extends CI_Controller {
         $params['offset'] = ($page - 1) * $per_page;
 
         $this->ha_seo->prepare($this->locale, 'articles', array('route_key' => 'articles'), array(
-            'title' => ($this->locale === 'ar' ? 'مقالات الضيافة' : 'Hospitality Articles')
+            'title' => (ha_pt('Hospitality Articles'))
                 . ' | ' . $this->ha_seo->brand(),
         ));
         $this->ha_seo->breadcrumb($this->phrases()['articles'], 'articles');
@@ -775,8 +716,6 @@ class Academy extends CI_Controller {
             return $this->not_found();
         }
         $this->ha_catalog->increment_article_views($article['id']);
-
-        $alt_locale = $this->locale === 'ar' ? 'en' : 'ar';
         $this->ha_seo->prepare($this->locale, 'articles/' . $article['slug'],
             array('entity_type' => 'article', 'entity_id' => $article['id']),
             array('title' => $article['title'] . ' | ' . $this->ha_seo->brand(),
@@ -786,10 +725,8 @@ class Academy extends CI_Controller {
                   'published_at' => isset($article['published_at']) ? $article['published_at'] : '',
                   'updated_at'   => isset($article['updated_at']) ? $article['updated_at'] : '',
                   'author'       => isset($article['author_name']) ? $article['author_name'] : ''));
-        $this->ha_seo->set_alternate(array(
-            'en' => 'articles/' . ($this->locale === 'en' ? $article['slug'] : $article['slug_' . $alt_locale]),
-            'ar' => 'articles/' . ($this->locale === 'ar' ? $article['slug'] : $article['slug_' . $alt_locale]),
-        ));
+        $this->ha_seo->set_alternate(array('en' => 'articles/' . $article['slug_en'], 'ar' => 'articles/' . $article['slug_ar']));
+        $this->ha_seo->set_locales($this->content_locales('ha_article_translation', 'article_id', $article['id']));
         $this->ha_seo->breadcrumb($this->phrases()['articles'], 'articles');
         $this->ha_seo->breadcrumb($article['title'], 'articles/' . $article['slug']);
         $this->ha_seo->add_schema($this->ha_seo->article_schema($article));
@@ -812,6 +749,7 @@ class Academy extends CI_Controller {
         // Page slugs are translated, so the counterpart URL is the other
         // language's slug, never this one with the locale swapped.
         $this->ha_seo->set_alternate(array('en' => $page['slug_en'], 'ar' => $page['slug_ar']));
+        $this->ha_seo->set_locales($this->content_locales('ha_page_translation', 'page_id', $page['id']));
         $this->ha_seo->breadcrumb($page['title'], $page['slug']);
         // Page-builder sections, their FAQ (AEO) and the page's place (GEO) become structured data.
         $sections = array();
@@ -852,6 +790,7 @@ class Academy extends CI_Controller {
             array('title' => $page['title'] . ' | ' . $this->ha_seo->brand(),
                   'description' => $page['subtitle']));
         $this->ha_seo->set_alternate(array('en' => $page['slug_en'], 'ar' => $page['slug_ar']));
+        $this->ha_seo->set_locales($this->content_locales('ha_page_translation', 'page_id', $page['id']));
         $this->ha_seo->breadcrumb($this->phrases()['certificates'], $page['slug']);
         $this->render('page', array('page' => $page));
     }
@@ -868,7 +807,7 @@ class Academy extends CI_Controller {
         }
 
         $this->ha_seo->prepare($this->locale, 'verify', array('route_key' => 'verify'), array(
-            'title' => ($this->locale === 'ar' ? 'التحقق من شهادة' : 'Verify a Certificate')
+            'title' => (ha_pt('Verify a Certificate'))
                 . ' | ' . $this->ha_seo->brand(),
         ));
         // A result page for one specific code should not be indexed on its own.
@@ -927,6 +866,7 @@ class Academy extends CI_Controller {
                   'description' => $page ? $page['subtitle'] : ''));
         if ($page) {
             $this->ha_seo->set_alternate(array('en' => $page['slug_en'], 'ar' => $page['slug_ar']));
+            $this->ha_seo->set_locales($this->content_locales('ha_page_translation', 'page_id', $page['id']));
         }
         $this->ha_seo->breadcrumb($this->phrases()['contact'], $page ? $page['slug'] : 'contact');
 
@@ -948,10 +888,8 @@ class Academy extends CI_Controller {
     public function credits($locale = 'en') {
         $this->boot($locale);
 
-        $title = $this->locale === 'ar' ? 'مصادر الصور' : 'Photo credits';
-        $lede = $this->locale === 'ar'
-            ? 'كل صورة على هذا الموقع مأخوذة من ويكيميديا كومنز برخصة تسمح بالاستخدام. تُذكر هنا الصور التي تشترط رخصتها ذكر المصوّر.'
-            : 'Every photograph on this site comes from Wikimedia Commons under a licence that permits this use. The images whose licence requires the photographer to be named are listed here.';
+        $title = ha_pt('Photo credits');
+        $lede = ha_pt('Every photograph on this site comes from Wikimedia Commons under a licence that permits this use. The images whose licence requires the photographer to be named are listed here.');
 
         $this->ha_seo->prepare($this->locale, 'credits', array(), array(
             'title' => $title . ' | ' . $this->ha_seo->brand(),
@@ -1052,8 +990,7 @@ class Academy extends CI_Controller {
             redirect(base_url('home'), 'location', 302);
         }
 
-        $accept = isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) ? strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE']) : '';
-        $locale = (strpos($accept, 'ar') === 0 || strpos($accept, ',ar') !== false) ? 'ar' : 'en';
+        $locale = $this->negotiate_locale(isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) ? $_SERVER['HTTP_ACCEPT_LANGUAGE'] : '');
         redirect(base_url($locale), 'location', 302);
     }
 

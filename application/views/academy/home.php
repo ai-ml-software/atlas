@@ -7,7 +7,7 @@
              style="background-image:url('<?= base_url($hero) ?>')"></div>
     <?php endif; ?>
     <div class="ha-shell ha-hero__body">
-        <p class="ha-eyebrow"><?= $locale === 'ar' ? 'السعودية · بالعربية والإنجليزية' : 'Saudi Arabia · Arabic and English' ?></p>
+        <p class="ha-eyebrow"><?= ha_pe('Saudi Arabia · Arabic and English') ?></p>
         <h1><?= html_escape($page['title']) ?></h1>
         <p class="ha-hero__lede"><?= html_escape($page['subtitle']) ?></p>
         <div class="ha-hero__actions">
@@ -22,7 +22,7 @@
 </section>
 
 <!-- What the catalogue actually holds. Every number is a live count. ------- -->
-<section class="ha-factband" aria-label="<?= $locale === 'ar' ? 'حجم المحتوى' : 'What the catalogue holds' ?>">
+<section class="ha-factband" aria-label="<?= ha_pe('What the catalogue holds') ?>">
     <div class="ha-shell">
         <ul class="ha-factband__list">
             <?php
@@ -39,9 +39,7 @@
             <?php endforeach; ?>
         </ul>
         <p class="ha-factband__note">
-            <?= $locale === 'ar'
-                ? 'أرقام محسوبة من الكتالوج المنشور الآن، لا تقديرات تسويقية.'
-                : 'Counted from the published catalogue as this page loaded. Not marketing estimates.' ?>
+            <?= ha_pe('Counted from the published catalogue as this page loaded. Not marketing estimates.') ?>
         </p>
     </div>
 </section>
@@ -68,10 +66,8 @@
 <section class="ha-section ha-section--tint" id="how-it-works">
     <div class="ha-shell">
         <div class="ha-section__head">
-            <h2><?= $locale === 'ar' ? 'كيف يعمل' : 'How it works' ?></h2>
-            <p><?= $locale === 'ar'
-                ? 'من إسناد التدريب إلى شهادة يمكن لطرف ثالث التحقق منها، في أربع خطوات.'
-                : 'From assigning training to a certificate a third party can check, in four steps.' ?></p>
+            <h2><?= ha_pe('How it works') ?></h2>
+            <p><?= ha_pe('From assigning training to a certificate a third party can check, in four steps.') ?></p>
         </div>
         <ol class="ha-steps">
             <?php foreach ($steps as $i => $step): ?>
@@ -97,10 +93,8 @@
 <section class="ha-section ha-section--tint">
     <div class="ha-shell">
         <div class="ha-section__head">
-            <h2><?= $locale === 'ar' ? 'ابدأ من قسمك' : 'Start from your department' ?></h2>
-            <p><?= $locale === 'ar'
-                ? 'كل قسم له مجموعته الخاصة. اختر قسمك لترى ما يخصه.'
-                : 'Each department has its own set. Pick yours to see what belongs to it.' ?></p>
+            <h2><?= ha_pe('Start from your department') ?></h2>
+            <p><?= ha_pe('Each department has its own set. Pick yours to see what belongs to it.') ?></p>
         </div>
         <ul class="ha-chips">
             <?php foreach ($departments as $d): ?>
@@ -147,10 +141,8 @@
 <section class="ha-section ha-bilingual" id="bilingual">
     <div class="ha-shell">
         <div class="ha-section__head">
-            <h2><?= $locale === 'ar' ? 'العربية ليست ترجمة لاحقة' : 'Arabic is not an afterthought' ?></h2>
-            <p><?= $locale === 'ar'
-                ? 'هذا درس واحد حقيقي من الكتالوج، معروضاً بلغتيه. كل نسخة مكتوبة على حدة، والعربية معروضة من اليمين إلى اليسار.'
-                : 'One real lesson from the catalogue, shown in both languages. Each version is written separately, and the Arabic is laid out right to left.' ?></p>
+            <h2><?= ha_pe('Arabic is not an afterthought') ?></h2>
+            <p><?= ha_pe('One real lesson from the catalogue, shown in both languages. Each version is written separately, and the Arabic is laid out right to left.') ?></p>
         </div>
 
         <div class="ha-compare">
@@ -168,7 +160,7 @@
 
         <p class="ha-compare__foot">
             <a href="<?= base_url($locale . '/courses/' . rawurlencode($bilingual['course']['slug_' . $locale])) ?>">
-                <?= $locale === 'ar' ? 'افتح الدورة كاملة' : 'Open the full course' ?>
+                <?= ha_pe('Open the full course') ?>
             </a>
         </p>
     </div>
@@ -180,10 +172,8 @@
 <section class="ha-section ha-section--tint" id="procedures">
     <div class="ha-shell">
         <div class="ha-section__head">
-            <h2><?= $locale === 'ar' ? 'إجراءات لها إصدارات، لا ملفات في مجلد' : 'Procedures with versions, not files in a folder' ?></h2>
-            <p><?= $locale === 'ar'
-                ? 'كل إجراء وثيقة لها إصدار وتاريخ سريان وتاريخ مراجعة، ويُطلب من المعنيين الإقرار بكل إصدار جديد.'
-                : 'Each procedure is a versioned document with an effective date and a review date, and everyone it applies to is asked to acknowledge each new version.' ?></p>
+            <h2><?= ha_pe('Procedures with versions, not files in a folder') ?></h2>
+            <p><?= ha_pe('Each procedure is a versioned document with an effective date and a review date, and everyone it applies to is asked to acknowledge each new version.') ?></p>
         </div>
 
         <div class="ha-sop-demo">
@@ -215,16 +205,14 @@
             </div>
 
             <aside class="ha-sop-demo__side">
-                <h3><?= $locale === 'ar' ? 'ما يراه المدير' : 'What a manager sees' ?></h3>
+                <h3><?= ha_pe('What a manager sees') ?></h3>
                 <ul class="ha-ack">
-                    <li><span><?= $locale === 'ar' ? 'مطلوب منهم' : 'Required' ?></span></li>
-                    <li><span><?= $locale === 'ar' ? 'أقرّوا بالإصدار الحالي' : 'Acknowledged the current version' ?></span></li>
-                    <li><span class="ha-ack__miss"><?= $locale === 'ar' ? 'متبقّون، بالاسم' : 'Still missing, by name' ?></span></li>
+                    <li><span><?= ha_pe('Required') ?></span></li>
+                    <li><span><?= ha_pe('Acknowledged the current version') ?></span></li>
+                    <li><span class="ha-ack__miss"><?= ha_pe('Still missing, by name') ?></span></li>
                 </ul>
                 <p class="ha-ack__note">
-                    <?= $locale === 'ar'
-                        ? 'يعرض التقرير هذه الأرقام لكل قسم وفندق. ويسجل كل إقرار الشخص والإصدار الدقيق والتوقيت، وهذا ما يجعله دليلاً.'
-                        : 'The report gives these three figures per department and per property. Each acknowledgement records the person, the exact version and the timestamp, which is what makes it evidence.' ?>
+                    <?= ha_pe('The report gives these three figures per department and per property. Each acknowledgement records the person, the exact version and the timestamp, which is what makes it evidence.') ?>
                 </p>
                 <a class="ha-btn ha-btn--ghost" href="<?= base_url($locale . '/sop') ?>">
                     <?= html_escape($t['sop']) ?>
@@ -279,10 +267,8 @@
 <section class="ha-section ha-section--tint" id="cities">
     <div class="ha-shell">
         <div class="ha-section__head">
-            <h2><?= $locale === 'ar' ? 'حسب المدينة' : 'By city' ?></h2>
-            <p><?= $locale === 'ar'
-                ? 'يختلف تركيز التدريب باختلاف السوق. لكل مدينة صفحتها بما يخصها فعلاً.'
-                : 'Training emphasis changes with the market. Each city has its own page describing what actually differs there.' ?></p>
+            <h2><?= ha_pe('By city') ?></h2>
+            <p><?= ha_pe('Training emphasis changes with the market. Each city has its own page describing what actually differs there.') ?></p>
         </div>
         <ul class="ha-cities">
             <?php foreach ($cities as $city): ?>
@@ -303,10 +289,8 @@
     <div class="ha-shell">
         <div class="ha-verifyband__inner">
             <div>
-                <h2><?= $locale === 'ar' ? 'شهادة يمكن لأي طرف التحقق منها' : 'A certificate anyone can check' ?></h2>
-                <p><?= $locale === 'ar'
-                    ? 'كل شهادة تحمل رمز تحقق. أدخله وسترى فوراً إن كانت سارية أو منتهية أو ملغاة. لا يلزم حساب.'
-                    : 'Every certificate carries a verification code. Enter it and the answer comes back immediately: valid, expired or revoked. No account needed.' ?></p>
+                <h2><?= ha_pe('A certificate anyone can check') ?></h2>
+                <p><?= ha_pe('Every certificate carries a verification code. Enter it and the answer comes back immediately: valid, expired or revoked. No account needed.') ?></p>
             </div>
             <form class="ha-verifyband__form" method="post" action="<?= base_url($locale . '/verify') ?>">
                 <label class="ha-visually-hidden" for="ha-home-verify"><?= html_escape($t['verify_code']) ?></label>
@@ -363,12 +347,8 @@
 <!-- The close: it resolves, it does not trail off --------------------------- -->
 <section class="ha-close">
     <div class="ha-shell ha-close__inner">
-        <h2><?= $locale === 'ar'
-            ? 'أخبرنا بفندقك، ونعود إليك بهيكل جاهز'
-            : 'Tell us about your property, and we will come back with a structure' ?></h2>
-        <p><?= $locale === 'ar'
-            ? 'الفنادق والأقسام وعدد الموظفين تقريباً. سنعود والهيكل مُعد والتدريب الإلزامي مُسنَد، فيكون أول ما يراه فريقك قائمته الخاصة لا كتالوجاً فارغاً.'
-            : 'The properties, the departments and roughly how many people in each. We come back with the structure set up and the mandatory training already assigned, so the first thing your team sees is their own list rather than an empty catalogue.' ?></p>
+        <h2><?= ha_pe('Tell us about your property, and we will come back with a structure') ?></h2>
+        <p><?= ha_pe('The properties, the departments and roughly how many people in each. We come back with the structure set up and the mandatory training already assigned, so the first thing your team sees is their own list rather than an empty catalogue.') ?></p>
         <div class="ha-close__actions">
             <a class="ha-btn ha-btn--invert" href="<?= base_url($locale . '/contact') ?>">
                 <?= html_escape($t['contact']) ?>

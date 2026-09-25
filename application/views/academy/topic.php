@@ -70,10 +70,8 @@
 <?php endif; ?>
 
 <?php $this->load->view('academy/_close', array(
-    'close_title' => $locale === 'ar' ? 'تدريب يناسب هذا السوق' : 'Training that fits this market',
-    'close_text'  => $locale === 'ar'
-        ? 'تصفّح الدورات التي تناسب هذا الموضوع، أو تحدّث إلينا عمّا تحتاجه منشأتك.'
-        : 'Browse the courses that match this topic, or talk to us about what your property needs.',
+    'close_title' => ha_pt('Training that fits this market'),
+    'close_text'  => ha_pt('Browse the courses that match this topic, or talk to us about what your property needs.'),
     'close_primary'   => array('label' => $t['courses'], 'url' => base_url($locale . '/courses')),
     'close_secondary' => array('label' => $t['contact'], 'url' => base_url($locale . '/contact')),
 )); ?>

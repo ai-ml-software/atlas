@@ -27,6 +27,12 @@ class Login extends CI_Controller
         //Check custom session data
         $this->user_model->check_session_data('login');
 
+        // Already signed in: go to the HK&P workspace instead of showing the form again.
+        // Guarded on a real session user so a half-cleared session can never loop.
+        if ((int) $this->session->userdata('user_id') > 0 && ($this->session->userdata('admin_login') || $this->session->userdata('user_login'))) {
+            redirect(site_url('hkp'), 'refresh');
+        }
+
         $page_data['page_name'] = 'login';
         $page_data['page_title'] = site_phrase('login');
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
@@ -34,10 +40,9 @@ class Login extends CI_Controller
 
     public function sign_up()
     {
-        if ($this->session->userdata('admin_login')) {
-            redirect(site_url('admin'), 'refresh');
-        } elseif ($this->session->userdata('user_login')) {
-            redirect(site_url('user'), 'refresh');
+        // Same rule as index(): signed-in users belong in the HK&P workspace.
+        if ((int) $this->session->userdata('user_id') > 0 && ($this->session->userdata('admin_login') || $this->session->userdata('user_login'))) {
+            redirect(site_url('hkp'), 'refresh');
         }
         $page_data['page_name'] = 'sign_up';
         $page_data['page_title'] = site_phrase('sign_up');

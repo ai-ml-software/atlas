@@ -37,10 +37,8 @@
 </section>
 
 <?php $this->load->view('academy/_close', array(
-    'close_title' => $locale === 'ar' ? 'ابدأ من حيث تبدأ الوظيفة' : 'Start where the job starts',
-    'close_text'  => $locale === 'ar'
-        ? 'يأخذ المسار الموظف الجديد من أول شِفت إلى شهادة موثّقة، بالترتيب الذي يُتعلَّم به العمل.'
-        : 'A learning path runs a new starter from their first shift to a verified certificate, in the order the work is learned.',
+    'close_title' => ha_pt('Start where the job starts'),
+    'close_text'  => ha_pt('A learning path runs a new starter from their first shift to a verified certificate, in the order the work is learned.'),
     'close_primary'   => array('label' => $t['courses'], 'url' => base_url($locale . '/courses')),
     'close_secondary' => array('label' => $t['for_hotels'], 'url' => base_url($locale . '/hotels')),
 )); ?>

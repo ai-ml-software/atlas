@@ -26,7 +26,7 @@
 <section class="ha-section ha-section--tint">
     <div class="ha-shell">
         <div class="ha-section__head">
-            <h2><?= $locale === 'ar' ? 'حسب المدينة' : 'By city' ?></h2>
+            <h2><?= ha_pe('By city') ?></h2>
         </div>
         <div class="ha-grid ha-grid--3">
             <?php foreach ($cities as $topic): ?>
@@ -45,10 +45,8 @@
 <?php endif; ?>
 
 <?php $this->load->view('academy/_close', array(
-    'close_title' => $locale === 'ar' ? 'تدريب فندقي، مدينة بمدينة' : 'Hotel training, city by city',
-    'close_text'  => $locale === 'ar'
-        ? 'تغطي صفحات المواضيع كيف تعمل الضيافة فعلياً في كل مدينة سعودية، وأي الدورات تناسب ذلك السوق.'
-        : 'Topic pages cover how hospitality actually operates in each Saudi city, and which courses match that market.',
+    'close_title' => ha_pt('Hotel training, city by city'),
+    'close_text'  => ha_pt('Topic pages cover how hospitality actually operates in each Saudi city, and which courses match that market.'),
     'close_primary'   => array('label' => $t['courses'], 'url' => base_url($locale . '/courses')),
     'close_secondary' => array('label' => $t['about'], 'url' => base_url($locale . '/about')),
 )); ?>

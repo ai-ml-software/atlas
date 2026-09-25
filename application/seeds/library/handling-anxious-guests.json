@@ -1,0 +1,545 @@
+{
+    "slug": "handling-anxious-guests",
+    "category": "guest-handling",
+    "level": "foundation",
+    "source_pdf": "Handling-Anxious-Guests-Dyafa (1).pdf",
+    "thumbnail": "uploads/academy/library/handling-anxious-guests.webp",
+    "videos": [
+        {
+            "id": "qBEiNNF3zZk",
+            "title": "Watch this before you talk to your next angry customer (3 Keys to De-escalating)",
+            "channel": "Myra Golden",
+            "why": "Three de-escalation keys for calming an upset or anxious customer before trying to solve the problem."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Handling Anxious Guests",
+            "subtitle": "Calm. Clarify. Reassure.",
+            "short_description": "Reassure anxious guests with calm presence, clear facts and reliable follow-up using a simple five-step response.",
+            "description": "<p>An anxious guest is rarely reassured by the words \"don't worry\". What settles uncertainty is a calm colleague, accurate information, clear next steps and an update that arrives exactly when promised. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows front-line teams how to give guests a real reason to feel reassured.</p><p>You will learn to notice the signals of anxiety without diagnosing anyone, to ask respectful questions that uncover the real concern, and to apply the five-step response: stay calm, listen, clarify, act and follow up.</p><p>The final chapter applies the method to everyday situations such as a delayed airport transfer, a room that is not ready, a billing concern and a health request, and explains when a situation must be escalated immediately.</p>",
+            "requirements": "No prior training is needed; the course suits all guest-facing hotel colleagues.",
+            "outcomes": [
+                "Recognise possible signals of anxiety and check the guest's need respectfully",
+                "Apply the five-step response: stay calm, listen, clarify, act and follow up",
+                "Project calm confidence through voice, pace, posture and note-taking",
+                "Reassure guests with facts, options and update times instead of empty promises",
+                "Identify situations that require immediate escalation and act within procedure"
+            ],
+            "faqs": [
+                {
+                    "question": "Should I tell an anxious guest not to worry?",
+                    "answer": "Not on its own. Give a clear reason for reassurance: what will happen now, the options available and when you will update the guest."
+                },
+                {
+                    "question": "What if the guest seems unwell?",
+                    "answer": "Do not diagnose or offer medication. Follow the first-aid or medical support procedure, and escalate immediately for breathing difficulty, fainting or severe pain."
+                },
+                {
+                    "question": "What should I do if I do not yet know the answer?",
+                    "answer": "Avoid \"I don't know, just wait\". Explain who is following it up, give a time for the next update and stay the guest's point of contact."
+                }
+            ],
+            "meta_title": "Handling Anxious Guests | Hotel Training Course",
+            "meta_description": "Learn to reassure anxious hotel guests with calm presence, clear facts, reliable action and follow-up, and know when to escalate.",
+            "focus_keyword": "handling anxious hotel guests",
+            "chapters": [
+                {
+                    "title": "Understanding the Anxious Guest",
+                    "lessons": [
+                        {
+                            "title": "Why Calm Service Matters and How to Recognise Anxiety",
+                            "minutes": 7,
+                            "body": "<h2>Your calm is the guest's first reassurance</h2><p>Guests arrive carrying the pressures of travel: flights, connections, meetings, family plans and unfamiliar places. The deck makes a simple point that sits at the heart of this course: <strong>the colleague's calm reassures the guest</strong>. Calm builds confidence. When the person in front of them is steady, a worried guest begins to believe the situation is under control.</p><p>Anxiety in a hotel is usually linked to one of three things: <strong>travel, time, or unclear information</strong>. A guest who does not know when the car will arrive, whether the room will be ready before a meeting, or why an amount appears on the bill is living with uncertainty. That uncertainty grows when the guest hears <strong>contradictory answers</strong> — one colleague says ten minutes, another says it depends. Every mixed message tells the guest that nobody is really in charge.</p><h3>What you are and are not asked to do</h3><p>You are not asked to diagnose the guest's condition or to discuss their feelings. Your role is practical. <strong>Accurate information and clear steps reduce uncertainty</strong>, and <strong>regular follow-up proves the situation is under control</strong>. That is where your energy should go.</p><blockquote class=\"bk-quote\">Give a clear reason for reassurance — do not just say \"don't worry\". Reassure with facts, actions, and a clear next update.</blockquote><h2>Notice the signals, then ask</h2><p>Anxiety often shows before the guest names it. The deck lists possible signals:</p><ul><li>frequent movement or restlessness;</li><li>a wandering gaze or repeatedly checking the time;</li><li>tense body posture;</li><li>hesitation or unfinished sentences;</li><li>a change in the speed or tone of the voice.</li></ul><p>These are <em>possible</em> signals, not proof. The rule is: notice the signal, then understand the need through a clear question. Never assume a medical disorder from behaviour alone.</p><h3>Checking respectfully</h3><p>Use open, polite questions that invite the guest to tell you what matters most:</p><ul><li>\"May I explain what will happen now?\"</li><li>\"What worries you most in this situation?\"</li><li>\"Would you prefer me to explain the options step by step?\"</li></ul><p>Then listen without interrupting or rushing. The answer tells you where to focus: the time, the information, or the options.</p><aside class=\"bk-scene\"><p>A guest at reception keeps glancing at his phone and starts two sentences without finishing them. The receptionist notices, pauses her paperwork and asks, \"What worries you most right now?\" He explains that he has a presentation in an hour and his room is not ready. She now knows the real need is time and a place to prepare — not a general apology. Asking one clear question saved several minutes of guessing.</p></aside><aside class=\"bk-note\"><p>Before you answer an anxious guest, check the facts with the relevant department so that you never add a second, contradictory answer.</p></aside><aside class=\"bk-key\"><p>Notice the signs, ask a clear question, and reassure with facts, actions and a next update — never with \"don't worry\" alone.</p></aside>",
+                            "quiz": {
+                                "title": "Check your understanding: calm service and recognising anxiety",
+                                "questions": [
+                                    {
+                                        "question": "A guest has been told by the concierge that his car is \"ten minutes away\" and by the bell desk that \"it depends on traffic\". He is now visibly more worried. What does the deck say is happening?",
+                                        "options": [
+                                            "He is simply an impatient person",
+                                            "Contradictory answers are increasing his anxiety",
+                                            "He needs to discuss his feelings with a manager",
+                                            "The drivers are at fault, not the staff"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck states that anxiety may increase when the guest hears contradictory answers."
+                                    },
+                                    {
+                                        "question": "A guest is restless, keeps checking the time and speaks faster than usual. What is the best first move?",
+                                        "options": [
+                                            "Tell her to calm down",
+                                            "Assume she is unwell and call a doctor",
+                                            "Ask respectfully, for example: \"What worries you most in this situation?\"",
+                                            "Ignore it until she raises a complaint"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Signals should be noticed and then checked with a clear, respectful question, not diagnosed."
+                                    },
+                                    {
+                                        "question": "Which response gives the guest a real reason to feel reassured?",
+                                        "options": [
+                                            "\"I have confirmed your room will be ready at 2 p.m.; I will update you at 1:30.\"",
+                                            "\"Don't worry, everything is fine.\"",
+                                            "\"These things happen all the time.\"",
+                                            "\"Please try to relax.\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Reassurance comes from facts, actions and a clear next update."
+                                    },
+                                    {
+                                        "question": "A colleague says, \"That guest is shaking — she must have a medical problem.\" What is the correct view?",
+                                        "options": [
+                                            "Agree and give her medication from the first-aid box",
+                                            "Do not assume a medical disorder from behaviour alone; ask and follow procedure if needed",
+                                            "Tell her she looks ill",
+                                            "Avoid the guest to be safe"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck warns against assuming a medical disorder from behaviour alone."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "The Five-Step Response",
+                    "lessons": [
+                        {
+                            "title": "Stay Calm, Listen, Clarify, Act, Follow Up",
+                            "minutes": 7,
+                            "body": "<h2>Turning the unknown into predictable steps</h2><p>Anxiety feeds on the unknown. The five-step response is designed to <strong>turn uncertainty into clear, predictable next steps</strong>. Each step removes one piece of the unknown until the guest can see exactly what will happen and when.</p><ol><li><strong>Stay calm</strong> — keep your tone of voice steady.</li><li><strong>Listen</strong> — for the real source of the anxiety.</li><li><strong>Clarify</strong> — the steps, the time and the options.</li><li><strong>Act</strong> — do what you promised, immediately.</li><li><strong>Follow up</strong> — with a specific update.</li></ol><h3>1. Stay calm</h3><p>Your voice sets the temperature of the conversation. If you match a worried guest's speed and pitch, you amplify the worry. Keep your tone steady and your pace even; the guest will often slow down to meet you.</p><h3>2. Listen for the real source</h3><p>The first thing a guest says is not always the real concern. \"Where is my car?\" may really mean \"I will miss my flight.\" Listen for what is at stake — the time, the information, the consequence — because that is what your reassurance must address.</p><h3>3. Clarify the steps, time and options</h3><p>Explain what will happen next, how long it will take and what the choices are. Concrete details replace imagined worst cases. If there are two options, name them both so the guest feels some control.</p><h3>4. Act immediately on what you promised</h3><p>Reassurance collapses if nothing happens after it. Make the call, send the message or walk to the department straight away, ideally where the guest can see you doing it.</p><h3>5. Follow up with a specific update</h3><p>A follow-up is not \"we are working on it\". It is a specific piece of news at the time you said you would give it: \"The driver is now at the main gate; he will be at the entrance in five minutes.\" Even when there is no progress, keeping the agreed update time shows the situation is under control.</p><aside class=\"bk-scene\"><p>A family is waiting for a transfer to the airport and the father is pacing. The bell captain speaks slowly and steadily, asks what time their flight departs, and learns the real worry is check-in closing. He explains: \"I am calling the driver now; if he is more than ten minutes away, the alternative is a taxi we can book immediately.\" He makes the call in front of them and returns four minutes later with the driver's exact location. The family stops pacing, because every step was visible and predictable.</p></aside><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Keep a steady tone</td><td>Matching the guest's rushed pace</td></tr><tr><td>Ask what matters most</td><td>Assuming you know the concern</td></tr><tr><td>State the time and the options</td><td>Vague phrases like \"soon\"</td></tr><tr><td>Act right away on your promise</td><td>Promising and then disappearing</td></tr><tr><td>Update at the agreed time</td><td>Waiting for the guest to chase you</td></tr></tbody></table><aside class=\"bk-note\"><p>When you give an update time, choose one you can definitely keep. A small promise kept builds more confidence than a big promise missed.</p></aside><aside class=\"bk-key\"><p>Stay calm, listen, clarify, act and follow up — so the guest can see every next step before it happens.</p></aside>",
+                            "quiz": {
+                                "title": "Check your understanding: the five-step response",
+                                "questions": [
+                                    {
+                                        "question": "A guest asks repeatedly, \"Where is my car?\" What does the \"listen\" step ask you to find out?",
+                                        "options": [
+                                            "The make of the car",
+                                            "The real source of the anxiety, such as a flight time",
+                                            "Whether the guest has complained before",
+                                            "The driver's name"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Step two is listening for the real source of the anxiety."
+                                    },
+                                    {
+                                        "question": "You promised to call housekeeping about a guest's room. When should you do it?",
+                                        "options": [
+                                            "After you finish your other tasks",
+                                            "At the end of the shift",
+                                            "Immediately, as the \"act\" step requires",
+                                            "Only if the guest asks again"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says to do what you promised immediately."
+                                    },
+                                    {
+                                        "question": "Which is a proper follow-up according to the deck?",
+                                        "options": [
+                                            "\"We are still working on it.\"",
+                                            "\"Be patient please.\"",
+                                            "\"It should be soon.\"",
+                                            "\"Housekeeping confirms your room will be ready at 1:15; I will call you then.\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Follow-up means a specific update."
+                                    },
+                                    {
+                                        "question": "What is the overall aim of the five steps?",
+                                        "options": [
+                                            "To turn uncertainty into clear, predictable next steps",
+                                            "To end the conversation quickly",
+                                            "To move responsibility to another department",
+                                            "To avoid giving any times"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck summarises the steps as turning uncertainty into predictable next steps."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Calm Presence and Reassuring Language",
+                            "minutes": 7,
+                            "body": "<h2>Show calm confidence without exaggeration</h2><p>Guests read your body and voice before they process your words. The deck asks for <strong>calm confidence without exaggeration</strong>: not forced cheerfulness, not dramatic concern, but a steady professional who clearly knows what to do.</p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Use a clear, moderately low voice</td><td>Only saying \"calm down\" or \"don't worry\"</td></tr><tr><td>Keep a natural speaking pace</td><td>Raising your voice or talking fast</td></tr><tr><td>Stand upright and open</td><td>Repeating unconfirmed promises</td></tr><tr><td>Keep a professional distance</td><td>Showing tension or confusion</td></tr><tr><td>Write down the details to show you are following up</td><td>Leaving the guest without an update</td></tr></tbody></table><p>Note-taking deserves special mention. When you write down the guest's flight number, room or concern, you show — without saying it — that the matter will not be forgotten. It is a quiet but powerful signal of reliability.</p><blockquote class=\"bk-quote\">Confidence shows in accurate information and keeping to the agreed time.</blockquote><h2>Reassure with facts, not promises</h2><p>Words like \"everything will be fine\" feel kind, but they are promises you cannot guarantee, and an anxious guest often senses that. The deck replaces them with factual, action-based phrases.</p><table class=\"bk-say\"><thead><tr><th>Say</th><th>Avoid</th></tr></thead><tbody><tr><td>\"I will explain what will happen now.\"</td><td>\"Never worry.\"</td></tr><tr><td>\"The two available options are…\"</td><td>\"Everything will be fine.\"</td></tr><tr><td>\"The person in charge is following it up and we will update you at…\"</td><td>\"I promise nothing will happen.\"</td></tr><tr><td>\"I will remain your point of contact.\"</td><td>\"I don't know, just wait.\"</td></tr><tr><td>\"If anything changes, I will inform you immediately.\"</td><td>\"I told you we are working on it.\"</td></tr></tbody></table><p>Notice the pattern in the \"say\" column: each phrase gives the guest something concrete — a plan, a choice, a name, a time, or a commitment. The \"avoid\" column either promises what cannot be guaranteed or leaves the guest alone with the unknown. \"I told you we are working on it\" also sounds impatient, which makes the guest feel like a burden.</p><p>The single sentence to remember is the deck's model line: <strong>\"Here is what will happen next, and I will update you by…\"</strong></p><aside class=\"bk-scene\"><p>A guest is worried because her luggage has not reached her room. Instead of \"Don't worry, it will come,\" the colleague says, \"I will explain what happens now. I have your tag number here; the porter is checking the storage room and I will call you by 4:10. I will remain your point of contact.\" She writes the tag number down in front of the guest. The guest thanks her and goes to her room — she has a plan, a time and a person.</p></aside><aside class=\"bk-note\"><p>If you do not know the answer yet, say who is following it up and when you will speak again. Honest uncertainty with a time is far more reassuring than false certainty.</p></aside><aside class=\"bk-key\"><p>Speak calmly, note the details and say what will happen next and when you will update — facts and times reassure, promises do not.</p></aside>",
+                            "quiz": {
+                                "title": "Check your understanding: calm presence and language",
+                                "questions": [
+                                    {
+                                        "question": "A guest is nervous about a delayed parcel. Which reply follows the deck?",
+                                        "options": [
+                                            "\"Everything will be fine, I promise.\"",
+                                            "\"Never worry about it.\"",
+                                            "\"I don't know, just wait.\"",
+                                            "\"The team is checking now and I will update you at 5 p.m. I will remain your point of contact.\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Reassurance should use facts, a responsible person and an update time rather than promises."
+                                    },
+                                    {
+                                        "question": "Why does the deck recommend writing down the guest's details?",
+                                        "options": [
+                                            "To show that you are following up",
+                                            "To collect data for marketing",
+                                            "To avoid listening",
+                                            "Because it is required for every conversation"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Recording details shows the guest you are following up."
+                                    },
+                                    {
+                                        "question": "A worried guest is talking quickly. How should you speak?",
+                                        "options": [
+                                            "Faster, to match his energy",
+                                            "Loudly, so he hears you clearly",
+                                            "At a natural pace with a clear, moderately low voice",
+                                            "As little as possible"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck asks for a clear, moderately low voice and a natural speaking pace."
+                                    },
+                                    {
+                                        "question": "A guest asks for the third time about her transfer and a colleague replies, \"I told you we are working on it.\" What is wrong?",
+                                        "options": [
+                                            "Nothing, it is accurate",
+                                            "It gives no fact or time and sounds dismissive",
+                                            "It is too formal",
+                                            "It should be said by a manager"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck lists this phrase under \"avoid\" because it offers no update and leaves the guest uncertain."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Situations and Escalation",
+                    "lessons": [
+                        {
+                            "title": "Reassurance by Source of Anxiety and When to Escalate",
+                            "minutes": 8,
+                            "body": "<h2>Match the reassurance to the source</h2><p>Reassurance is not one script. The deck asks you to <strong>apply reassurance according to the source of anxiety</strong>, always combining three elements: <strong>correct information + a clear option + an update time</strong>.</p><h3>Airport transfer delay</h3><p>Confirm the car's location and the expected time, and offer a reliable alternative. The guest's fear is missing the flight, so the most reassuring thing you can give is certainty about the car or a backup that works.</p><h3>Room not ready</h3><p>State the realistic time — not an optimistic guess — and offer a place or service while the guest waits. A realistic time that is kept is always better than an early time that is missed.</p><h3>Billing concern</h3><p>When an amount is wrong or unclear, review the details in front of the guest and explain the procedure and how long it will take. Transparency is the reassurance: the guest sees the figures being checked rather than being told \"it's fine\".</p><h3>Medical concern</h3><p>When a guest asks about health or medication, do not offer a diagnosis or medication. Follow the first-aid or medical support procedure. Your role is to connect the guest quickly to the right help.</p><aside class=\"bk-scene\"><p>A guest questions a charge on his folio and is visibly tense. The cashier turns the screen, goes through each line with him, finds the item in question and says, \"This needs a check by our accounts team; the procedure takes about twenty minutes, and I will call your room with the result by 11:30.\" She calls at 11:25. The guest's tension disappears not because of friendly words but because he saw the process and the promise kept.</p></aside><h2>Escalate immediately when there is danger</h2><p>Some situations are beyond reassurance. The deck is clear: <strong>escalate immediately when there is danger</strong>.</p><table class=\"bk-say\"><thead><tr><th>Situation</th><th>What to do</th></tr></thead><tbody><tr><td>Breathing difficulty or fainting</td><td>Follow the emergency procedure and request medical support</td></tr><tr><td>Severe pain</td><td>Do not delay support and do not offer a diagnosis</td></tr><tr><td>Safety threat</td><td>Inform security or the manager according to procedure</td></tr><tr><td>Escalating panic</td><td>Move the guest to a quiet place and request support</td></tr><tr><td>Beyond your authority</td><td>Escalate without promising an unapproved outcome</td></tr></tbody></table><p>The last line matters every day. When a guest asks for something you cannot approve, escalating is the right step — but do not reassure them by promising the result. \"I am passing this to the duty manager now and will come back to you by…\" keeps your reassurance honest.</p><aside class=\"bk-note\"><p>Know your hotel's emergency and first-aid procedures and who to call before you need them. In a real emergency, speed comes from preparation.</p></aside><aside class=\"bk-key\"><p>Give correct information, a clear option and an update time — and when there is danger or the request is beyond your authority, escalate at once without promising outcomes.</p></aside>",
+                            "quiz": {
+                                "title": "Check your understanding: situations and escalation",
+                                "questions": [
+                                    {
+                                        "question": "A guest's room will not be ready for another hour. What should you do?",
+                                        "options": [
+                                            "Say it will be ready in five minutes to calm her",
+                                            "State the realistic time and offer a place or service while she waits",
+                                            "Tell her to come back later without a time",
+                                            "Offer a free upgrade you are not authorised to give"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says to state the realistic time and offer a waiting place or service."
+                                    },
+                                    {
+                                        "question": "A guest with a headache asks you which tablet to take. What is correct?",
+                                        "options": [
+                                            "Recommend a common painkiller",
+                                            "Give him whatever is in the drawer",
+                                            "Do not diagnose or give medication; follow the first-aid or medical support procedure",
+                                            "Tell him it is probably stress"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck forbids offering a diagnosis or medication."
+                                    },
+                                    {
+                                        "question": "A guest in the lobby is becoming increasingly panicked. What does the deck advise?",
+                                        "options": [
+                                            "Move the guest to a quiet place and request support",
+                                            "Ask the guest to leave the lobby alone",
+                                            "Wait to see if it passes",
+                                            "Tell the guest to stop panicking"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "For escalating panic, move the guest to a quiet place and request support."
+                                    },
+                                    {
+                                        "question": "A guest demands a refund you are not authorised to approve. Which response is right?",
+                                        "options": [
+                                            "\"Of course, you will get a full refund.\"",
+                                            "\"That's impossible.\"",
+                                            "\"I can't help, sorry.\"",
+                                            "\"I am passing this to the duty manager now and will update you by 3 p.m.\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Requests beyond your authority must be escalated without promising an unapproved outcome."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "التعامل مع النزيل القلق",
+            "subtitle": "هدوء ووضوح وطمأنة",
+            "short_description": "طمئن النزيل القلق بهدوئك وبالمعلومة الدقيقة والمتابعة المنتظمة عبر خمس خطوات عملية واضحة.",
+            "description": "<p>نادرًا ما تطمئن عبارة «لا تقلق» النزيل القلق. ما يبدد عدم اليقين هو موظف هادئ، ومعلومة دقيقة، وخطوات واضحة، وتحديث يصل في موعده تمامًا. هذه الدورة مبنية على مادة التدريب في فنادق ومنتجعات ضيافة، وتعلّم فرق الخط الأمامي كيف تمنح النزيل سببًا حقيقيًا للطمأنينة.</p><p>ستتعلم ملاحظة إشارات القلق دون تشخيص أحد، وطرح أسئلة محترمة تكشف مصدر القلق الحقيقي، وتطبيق الخطوات الخمس: اهدأ، استمع، وضّح، نفّذ، تابع.</p><p>ويطبق الفصل الأخير المنهج على مواقف يومية مثل تأخر سيارة المطار، وعدم جاهزية الغرفة، والاستفسار عن مبلغ في الفاتورة، والطلب الصحي، ويوضح متى يجب التصعيد فورًا.</p>",
+            "requirements": "لا يلزم تدريب سابق، والدورة مناسبة لجميع الموظفين الذين يتعاملون مع النزلاء.",
+            "outcomes": [
+                "لاحظ إشارات القلق المحتملة وتحقق من حاجة النزيل باحترام",
+                "طبّق الخطوات الخمس: اهدأ، استمع، وضّح، نفّذ، تابع",
+                "أظهر ثقة هادئة من خلال الصوت والسرعة ووضعية الجسد وتدوين التفاصيل",
+                "طمئن النزيل بالحقائق والخيارات ومواعيد التحديث بدل الوعود",
+                "حدد المواقف التي تتطلب تصعيدًا فوريًا وتصرف وفق الإجراء"
+            ],
+            "faqs": [
+                {
+                    "question": "هل أقول للنزيل القلق «لا تقلق»؟",
+                    "answer": "ليس وحدها. أعطِ سببًا واضحًا للطمأنينة: ما الذي سيحدث الآن، والخيارات المتاحة، ومتى ستحدّث النزيل."
+                },
+                {
+                    "question": "ماذا أفعل إذا بدا النزيل متعبًا صحيًا؟",
+                    "answer": "لا تقدم تشخيصًا أو دواءً. اتبع إجراء الإسعاف أو الدعم الطبي، وصعّد فورًا عند ضيق التنفس أو الإغماء أو الألم الشديد."
+                },
+                {
+                    "question": "ماذا أقول إذا لم أعرف الإجابة بعد؟",
+                    "answer": "تجنب «لا أعرف، انتظر فقط». وضّح من يتابع الأمر، وحدد موعد التحديث القادم، وابقَ نقطة التواصل مع النزيل."
+                }
+            ],
+            "meta_title": "التعامل مع النزيل القلق | دورة تدريب فندقي",
+            "meta_description": "تعلّم طمأنة النزيل القلق بالهدوء والمعلومة الدقيقة والتنفيذ والمتابعة، واعرف متى تصعّد الموقف فورًا.",
+            "focus_keyword": "التعامل مع النزيل القلق",
+            "chapters": [
+                {
+                    "title": "فهم النزيل القلق",
+                    "lessons": [
+                        {
+                            "title": "لماذا يهم الهدوء وكيف تلاحظ القلق",
+                            "minutes": 7,
+                            "body": "<h2>هدوء الموظف يطمئن النزيل</h2><p>يصل النزلاء وهم يحملون ضغوط السفر: رحلات ومواعيد واجتماعات وأماكن غير مألوفة. وتقوم هذه الدورة على فكرة بسيطة: <strong>هدوء الموظف يطمئن النزيل</strong>، والهدوء يبني الطمأنينة. فعندما يكون من أمامه ثابتًا، يبدأ النزيل القلق في الشعور بأن الموقف تحت السيطرة.</p><p>القلق في الفندق يرتبط غالبًا <strong>بالسفر أو الوقت أو معلومات غير واضحة</strong>. ويزداد عندما يسمع النزيل <strong>إجابات متناقضة</strong>؛ فموظف يقول عشر دقائق وآخر يقول «حسب الظروف»، وكل رسالة متضاربة توحي للنزيل بأن لا أحد يتولى الأمر.</p><h3>ما المطلوب منك وما ليس مطلوبًا</h3><p>ليس مطلوبًا منك تشخيص الحالة أو مناقشة المشاعر. دورك عملي: <strong>المعلومات الدقيقة والخطوات الواضحة تقلل عدم اليقين</strong>، و<strong>المتابعة المنتظمة تثبت أن الموقف تحت السيطرة</strong>.</p><blockquote class=\"bk-quote\">أعطِ سببًا واضحًا للطمأنينة — لا تقل «لا تقلق» فقط.</blockquote><h2>لاحظ القلق، ثم اسأل ولا تشخّص</h2><p>من الإشارات المحتملة:</p><ul><li>كثرة الحركة أو التململ؛</li><li>تشتت النظر أو مراقبة الوقت؛</li><li>وضعية جسد مشدودة؛</li><li>تردد أو جمل غير مكتملة؛</li><li>تغير في سرعة الصوت أو نبرته.</li></ul><p>هذه إشارات محتملة وليست دليلًا. لاحظ الإشارة، وافهم الحاجة من سؤال واضح، ولا تفترض وجود اضطراب طبي من السلوك وحده.</p><h3>تحقق باحترام</h3><ul><li>«هل يمكنني توضيح ما سيحدث الآن؟»</li><li>«ما أكثر أمر يقلقكم في هذا الموقف؟»</li><li>«هل تفضلون أن أشرح الخيارات خطوة بخطوة؟»</li></ul><p>ثم استمع دون مقاطعة أو استعجال، فالإجابة تحدد أين تركز: على الوقت أو المعلومة أو الخيارات.</p><aside class=\"bk-scene\"><p>نزيل عند الاستقبال ينظر إلى هاتفه باستمرار ويبدأ جملًا لا يكملها. تلاحظ موظفة الاستقبال ذلك فتتوقف عن أوراقها وتسأله: «ما أكثر أمر يقلقكم الآن؟» فيوضح أن لديه عرضًا تقديميًا بعد ساعة وغرفته غير جاهزة. عرفت الآن أن حاجته الحقيقية هي الوقت ومكان للاستعداد، لا اعتذارًا عامًا.</p></aside><aside class=\"bk-note\"><p>قبل أن تجيب النزيل القلق، تحقق من المعلومة مع القسم المعني حتى لا تضيف إجابة ثانية متناقضة.</p></aside><aside class=\"bk-key\"><p>لاحظ الإشارة، واسأل سؤالًا واضحًا، وطمئن بالحقائق والإجراءات وموعد التحديث القادم، لا بعبارة «لا تقلق» وحدها.</p></aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الهدوء وملاحظة القلق",
+                                "questions": [
+                                    {
+                                        "question": "قيل لنزيل من الكونسيرج إن سيارته «على بعد عشر دقائق»، ومن مكتب الأمتعة إنها «حسب الزحام»، فازداد قلقه. ماذا يحدث بحسب المادة؟",
+                                        "options": [
+                                            "هو شخص غير صبور فقط",
+                                            "الإجابات المتناقضة تزيد قلقه",
+                                            "يحتاج لمناقشة مشاعره مع مدير",
+                                            "الخطأ على السائقين لا الموظفين"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تذكر المادة أن القلق قد يزداد عندما يسمع النزيل إجابات متناقضة."
+                                    },
+                                    {
+                                        "question": "نزيلة متململة، تراقب الوقت، وتتحدث أسرع من المعتاد. ما أفضل خطوة أولى؟",
+                                        "options": [
+                                            "أن تطلب منها أن تهدأ",
+                                            "أن تفترض أنها مريضة وتستدعي طبيبًا",
+                                            "أن تسأل باحترام: «ما أكثر أمر يقلقكم في هذا الموقف؟»",
+                                            "أن تتجاهل الأمر حتى تشتكي"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تُلاحظ الإشارات ثم يُتحقق منها بسؤال واضح ومحترم دون تشخيص."
+                                    },
+                                    {
+                                        "question": "أي رد يمنح النزيل سببًا حقيقيًا للطمأنينة؟",
+                                        "options": [
+                                            "«تأكدت أن غرفتكم ستكون جاهزة الساعة الثانية، وسأحدثكم الساعة الواحدة والنصف.»",
+                                            "«لا تقلق، كل شيء بخير.»",
+                                            "«هذه الأمور تحدث دائمًا.»",
+                                            "«حاول أن ترتاح.»"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "الطمأنة تأتي من الحقائق والإجراءات وموعد تحديث واضح."
+                                    },
+                                    {
+                                        "question": "قال زميل: «تلك النزيلة ترتجف، لا بد أن لديها مشكلة طبية.» ما الرأي الصحيح؟",
+                                        "options": [
+                                            "نوافقه ونعطيها دواءً من صندوق الإسعاف",
+                                            "لا نفترض اضطرابًا طبيًا من السلوك وحده؛ نسأل ونتبع الإجراء عند الحاجة",
+                                            "نخبرها أنها تبدو مريضة",
+                                            "نتجنب النزيلة احتياطًا"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تحذر المادة من افتراض وجود اضطراب طبي من السلوك وحده."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "خمس خطوات لطمأنة النزيل",
+                    "lessons": [
+                        {
+                            "title": "اهدأ، استمع، وضّح، نفّذ، تابع",
+                            "minutes": 7,
+                            "body": "<h2>حوّل الموقف من مجهول إلى خطوات يمكن توقعها</h2><p>القلق يتغذى على المجهول، والخطوات الخمس صُممت لتحويل عدم اليقين إلى <strong>خطوات واضحة يمكن توقعها</strong>. كل خطوة تزيل جزءًا من المجهول حتى يرى النزيل ما سيحدث ومتى.</p><ol><li><strong>اهدأ</strong> — وثبّت نبرة صوتك.</li><li><strong>استمع</strong> — للمصدر الحقيقي للقلق.</li><li><strong>وضّح</strong> — الخطوات والوقت والخيارات.</li><li><strong>نفّذ</strong> — ما وعدت به فورًا.</li><li><strong>تابع</strong> — بتحديث محدد.</li></ol><h3>اهدأ</h3><p>صوتك يحدد حرارة الحديث. إذا جاريت سرعة النزيل القلق ونبرته ضاعفت قلقه، أما النبرة الثابتة فتدعوه إلى التمهل.</p><h3>استمع</h3><p>أول ما يقوله النزيل ليس دائمًا مصدر القلق الحقيقي؛ فسؤال «أين سيارتي؟» قد يعني «سأفوّت رحلتي». استمع لما هو على المحك.</p><h3>وضّح</h3><p>اشرح ما سيحدث، وكم سيستغرق، وما الخيارات. التفاصيل الملموسة تحل محل أسوأ الاحتمالات المتخيلة، وذكر خيارين يمنح النزيل شعورًا بالتحكم.</p><h3>نفّذ</h3><p>الطمأنة تنهار إذا لم يحدث شيء بعدها. اتصل أو أرسل أو اذهب إلى القسم فورًا، ويفضل أن يرى النزيل ذلك.</p><h3>تابع</h3><p>المتابعة ليست «نعمل على الأمر»، بل معلومة محددة في الموعد الذي حددته: «السائق الآن عند البوابة الرئيسية وسيصل خلال خمس دقائق».</p><aside class=\"bk-scene\"><p>عائلة تنتظر سيارة المطار والأب يذرع المكان جيئة وذهابًا. يتحدث رئيس فريق الأمتعة بهدوء، ويسأل عن موعد الرحلة، فيعرف أن القلق الحقيقي هو إغلاق إجراءات السفر. يقول: «سأتصل بالسائق الآن، وإن كان على بعد أكثر من عشر دقائق فالبديل سيارة أجرة نحجزها فورًا.» يتصل أمامهم ويعود بعد أربع دقائق بموقع السائق بدقة، فيهدأ الأب لأن كل خطوة كانت واضحة ومتوقعة.</p></aside><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنّب</th></tr></thead><tbody><tr><td>ثبّت نبرة صوتك</td><td>مجاراة استعجال النزيل</td></tr><tr><td>اسأل عما يهمه أكثر</td><td>افتراض أنك تعرف سبب القلق</td></tr><tr><td>اذكر الوقت والخيارات</td><td>عبارات مبهمة مثل «قريبًا»</td></tr><tr><td>نفّذ وعدك فورًا</td><td>أن تعد ثم تختفي</td></tr><tr><td>حدّث في الموعد المتفق عليه</td><td>انتظار أن يلاحقك النزيل</td></tr></tbody></table><aside class=\"bk-note\"><p>اختر موعد تحديث تستطيع الالتزام به يقينًا؛ فالوعد الصغير المنفّذ يبني ثقة أكبر من وعد كبير لم يتحقق.</p></aside><aside class=\"bk-key\"><p>اهدأ، استمع، وضّح، نفّذ، تابع — ليرى النزيل كل خطوة قادمة قبل أن تحدث.</p></aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الخطوات الخمس",
+                                "questions": [
+                                    {
+                                        "question": "يسأل نزيل مرارًا: «أين سيارتي؟» ما الذي تطلب منك خطوة «استمع» معرفته؟",
+                                        "options": [
+                                            "نوع السيارة",
+                                            "المصدر الحقيقي للقلق مثل موعد الرحلة",
+                                            "هل اشتكى من قبل",
+                                            "اسم السائق"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "الخطوة الثانية هي الاستماع للمصدر الحقيقي للقلق."
+                                    },
+                                    {
+                                        "question": "وعدت نزيلًا بالاتصال بالتدبير المنزلي بشأن غرفته. متى تفعل ذلك؟",
+                                        "options": [
+                                            "بعد إنهاء مهامك الأخرى",
+                                            "في نهاية المناوبة",
+                                            "فورًا كما تتطلب خطوة «نفّذ»",
+                                            "فقط إذا سأل مجددًا"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: نفّذ ما وعدت به فورًا."
+                                    },
+                                    {
+                                        "question": "أي مما يلي متابعة صحيحة بحسب المادة؟",
+                                        "options": [
+                                            "«ما زلنا نعمل على الأمر.»",
+                                            "«اصبر من فضلك.»",
+                                            "«يفترض أن يكون قريبًا.»",
+                                            "«يؤكد التدبير المنزلي أن غرفتكم ستجهز الساعة الواحدة والربع، وسأتصل بكم حينها.»"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "المتابعة تعني تحديثًا محددًا."
+                                    },
+                                    {
+                                        "question": "ما الهدف العام من الخطوات الخمس؟",
+                                        "options": [
+                                            "تحويل الموقف من مجهول إلى خطوات يمكن توقعها",
+                                            "إنهاء الحديث بسرعة",
+                                            "نقل المسؤولية إلى قسم آخر",
+                                            "تجنب ذكر أي أوقات"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تلخص المادة الخطوات بأنها تحول المجهول إلى خطوات متوقعة."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "الحضور الهادئ ولغة الطمأنة",
+                            "minutes": 7,
+                            "body": "<h2>اظهر ثقة هادئة دون مبالغة</h2><p>يقرأ النزيل جسدك وصوتك قبل أن يستوعب كلماتك. والمطلوب <strong>ثقة هادئة دون مبالغة</strong>: لا بهجة مصطنعة ولا قلق مسرحي، بل موظف ثابت يعرف ما يفعل.</p><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنّب</th></tr></thead><tbody><tr><td>استخدم صوتًا واضحًا ومنخفضًا باعتدال</td><td>قول «اهدأ» أو «لا تقلق» فقط</td></tr><tr><td>حافظ على سرعة كلام طبيعية</td><td>رفع الصوت أو التحدث بسرعة</td></tr><tr><td>قف بوضعية مستقيمة ومنفتحة</td><td>تكرار وعود غير مؤكدة</td></tr><tr><td>حافظ على مسافة مهنية</td><td>إظهار التوتر أو الارتباك</td></tr><tr><td>دوّن التفاصيل لتثبت أنك تتابع</td><td>ترك النزيل دون تحديث</td></tr></tbody></table><p>تدوين التفاصيل رسالة صامتة قوية: حين تكتب رقم الرحلة أو الغرفة أمام النزيل، فأنت تقول له دون كلام إن أمره لن يُنسى.</p><blockquote class=\"bk-quote\">الثقة تظهر في دقة المعلومة والالتزام بالموعد.</blockquote><h2>طمئن النزيل بالحقائق لا بالوعود</h2><p>عبارة «كل شيء سيكون بخير» تبدو لطيفة، لكنها وعد لا تملك ضمانه، والنزيل القلق يشعر بذلك.</p><table class=\"bk-say\"><thead><tr><th>قل</th><th>تجنّب</th></tr></thead><tbody><tr><td>«سأوضح لكم ما سيحدث الآن.»</td><td>«لا تقلق أبدًا.»</td></tr><tr><td>«الخياران المتاحان هما…»</td><td>«كل شيء سيكون بخير.»</td></tr><tr><td>«المسؤول يتابع الأمر وسنحدثكم في…»</td><td>«أعدك ألا يحدث شيء.»</td></tr><tr><td>«سأبقى نقطة التواصل معكم.»</td><td>«لا أعرف، انتظر فقط.»</td></tr><tr><td>«إذا تغير شيء، سأبلغكم فورًا.»</td><td>«قلت لك إننا نعمل عليه.»</td></tr></tbody></table><p>كل عبارة في عمود «قل» تمنح النزيل شيئًا ملموسًا: خطة أو خيارًا أو شخصًا أو موعدًا. أما عمود «تجنّب» فإما يعد بما لا يُضمن أو يترك النزيل وحده مع المجهول. والجملة النموذجية: <strong>«Here is what will happen next, and I will update you by…»</strong> أي: «هذا ما سيحدث الآن، وسأحدثكم في موعد…».</p><aside class=\"bk-scene\"><p>نزيلة قلقة لأن حقيبتها لم تصل إلى غرفتها. بدل «لا تقلقي، ستصل» تقول الموظفة: «سأوضح لكم ما سيحدث الآن. رقم البطاقة معي، والحمّال يراجع غرفة الأمتعة، وسأتصل بكم قبل الرابعة وعشر دقائق، وسأبقى نقطة التواصل معكم.» وتدوّن الرقم أمامها، فتصعد النزيلة إلى غرفتها مطمئنة: لديها خطة وموعد وشخص.</p></aside><aside class=\"bk-note\"><p>إذا لم تعرف الإجابة بعد، فاذكر من يتابع ومتى ستتحدثان مجددًا؛ عدم اليقين الصادق مع موعد أكثر طمأنة من يقين زائف.</p></aside><aside class=\"bk-key\"><p>تحدث بهدوء، ودوّن التفاصيل، وقل ما سيحدث ومتى ستحدّث النزيل؛ الحقائق والمواعيد تطمئن، والوعود لا تطمئن.</p></aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الحضور الهادئ واللغة",
+                                "questions": [
+                                    {
+                                        "question": "نزيل متوتر بسبب طرد متأخر. أي رد يتبع المادة؟",
+                                        "options": [
+                                            "«كل شيء سيكون بخير، أعدك.»",
+                                            "«لا تقلق أبدًا.»",
+                                            "«لا أعرف، انتظر فقط.»",
+                                            "«الفريق يتحقق الآن وسأحدثكم الساعة الخامسة، وسأبقى نقطة التواصل معكم.»"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "الطمأنة تكون بالحقائق وبشخص مسؤول وموعد تحديث لا بالوعود."
+                                    },
+                                    {
+                                        "question": "لماذا توصي المادة بتدوين تفاصيل النزيل؟",
+                                        "options": [
+                                            "لتثبت أنك تتابع",
+                                            "لجمع بيانات تسويقية",
+                                            "لتتجنب الاستماع",
+                                            "لأنه مطلوب في كل حديث"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "التدوين يثبت للنزيل أنك تتابع أمره."
+                                    },
+                                    {
+                                        "question": "نزيل قلق يتحدث بسرعة. كيف تتحدث أنت؟",
+                                        "options": [
+                                            "أسرع لمجاراة حماسه",
+                                            "بصوت مرتفع ليسمعك",
+                                            "بسرعة طبيعية وصوت واضح منخفض باعتدال",
+                                            "بأقل قدر ممكن"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تطلب المادة صوتًا واضحًا منخفضًا باعتدال وسرعة كلام طبيعية."
+                                    },
+                                    {
+                                        "question": "سألت نزيلة للمرة الثالثة عن سيارتها فرد زميل: «قلت لك إننا نعمل عليه.» ما الخطأ؟",
+                                        "options": [
+                                            "لا خطأ، فهي معلومة صحيحة",
+                                            "لا تقدم معلومة أو موعدًا وتبدو استخفافًا",
+                                            "رسمية أكثر من اللازم",
+                                            "يجب أن يقولها مدير"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "العبارة مدرجة ضمن «تجنّب» لأنها لا تقدم تحديثًا وتترك النزيل في عدم يقين."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "المواقف العملية والتصعيد",
+                    "lessons": [
+                        {
+                            "title": "الطمأنة بحسب مصدر القلق ومتى تصعّد",
+                            "minutes": 8,
+                            "body": "<h2>طبّق الطمأنة بحسب مصدر القلق</h2><p>الطمأنة ليست نصًا واحدًا، بل تُطبق بحسب مصدر القلق، وتجمع دائمًا ثلاثة عناصر: <strong>معلومة صحيحة + خيار واضح + موعد تحديث</strong>.</p><h3>تأخر سيارة المطار</h3><p>أكد موقع السيارة والوقت، وقدم بديلًا موثوقًا. خوف النزيل هو فوات الرحلة، فأكثر ما يطمئنه يقين بشأن السيارة أو بديل يعمل فعلًا.</p><h3>عدم جاهزية الغرفة</h3><p>اذكر الوقت الواقعي لا التقدير المتفائل، واعرض مكانًا أو خدمة انتظار. الوقت الواقعي الملتزم به أفضل دائمًا من وقت مبكر لا يتحقق.</p><h3>خطأ أو مبلغ غير واضح</h3><p>راجع التفاصيل أمام النزيل، واشرح الإجراء والوقت. الشفافية هنا هي الطمأنة، فالنزيل يرى الأرقام تُراجع بدل أن يسمع «كل شيء سليم».</p><h3>طلب صحي أو دوائي</h3><p>لا تقدم تشخيصًا أو دواءً، واتبع إجراء الإسعاف أو الدعم الطبي. دورك أن توصل النزيل بسرعة إلى المساعدة المناسبة.</p><aside class=\"bk-scene\"><p>نزيل يستفسر متوترًا عن مبلغ في فاتورته. تدير أمينة الصندوق الشاشة نحوه وتراجع البنود معه، ثم تقول: «هذا البند يحتاج مراجعة من فريق الحسابات، ويستغرق الإجراء نحو عشرين دقيقة، وسأتصل بغرفتكم بالنتيجة قبل الحادية عشرة والنصف.» وتتصل قبل الموعد، فيزول توتره لأنه رأى الإجراء ولمس الالتزام بالموعد.</p></aside><h2>صعّد فورًا عند وجود خطر</h2><table class=\"bk-say\"><thead><tr><th>الموقف</th><th>التصرف</th></tr></thead><tbody><tr><td>ضيق تنفس أو إغماء</td><td>اتبع إجراء الطوارئ واطلب الدعم الطبي</td></tr><tr><td>ألم شديد</td><td>لا تؤخر المساندة ولا تقدم تشخيصًا</td></tr><tr><td>تهديد للسلامة</td><td>أبلغ الأمن أو المسؤول حسب الإجراء</td></tr><tr><td>ذعر متصاعد</td><td>انقل النزيل لمكان هادئ واطلب المساندة</td></tr><tr><td>طلب خارج الصلاحية</td><td>صعّد دون وعد بنتيجة غير معتمدة</td></tr></tbody></table><p>البند الأخير يتكرر يوميًا: حين يطلب النزيل ما لا تملك الموافقة عليه فالتصعيد هو الصواب، لكن لا تطمئنه بوعد بالنتيجة. قل: «أحيل الأمر الآن إلى المدير المناوب وسأعود إليكم قبل…».</p><aside class=\"bk-note\"><p>اعرف إجراءات الطوارئ والإسعاف في فندقك ومن تتصل به قبل أن تحتاج إليها؛ فالسرعة في الطوارئ تأتي من الاستعداد.</p></aside><aside class=\"bk-key\"><p>قدّم معلومة صحيحة وخيارًا واضحًا وموعد تحديث، وعند الخطر أو تجاوز الصلاحية صعّد فورًا دون وعد بنتيجة.</p></aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: المواقف والتصعيد",
+                                "questions": [
+                                    {
+                                        "question": "لن تكون غرفة النزيلة جاهزة قبل ساعة. ماذا تفعل؟",
+                                        "options": [
+                                            "تقول إنها ستجهز خلال خمس دقائق لتهدئتها",
+                                            "تذكر الوقت الواقعي وتعرض مكانًا أو خدمة انتظار",
+                                            "تطلب منها العودة لاحقًا دون موعد",
+                                            "تعرض ترقية مجانية لا تملك صلاحيتها"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: اذكر الوقت الواقعي واعرض مكانًا أو خدمة انتظار."
+                                    },
+                                    {
+                                        "question": "نزيل يعاني صداعًا ويسألك أي قرص يتناول. ما الصحيح؟",
+                                        "options": [
+                                            "توصي بمسكن شائع",
+                                            "تعطيه ما في الدرج",
+                                            "لا تقدم تشخيصًا أو دواءً واتبع إجراء الإسعاف أو الدعم الطبي",
+                                            "تقول له إنه غالبًا توتر"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تمنع المادة تقديم التشخيص أو الدواء."
+                                    },
+                                    {
+                                        "question": "نزيل في البهو يتصاعد ذعره. بماذا توصي المادة؟",
+                                        "options": [
+                                            "انقل النزيل لمكان هادئ واطلب المساندة",
+                                            "اطلب منه مغادرة البهو وحده",
+                                            "انتظر حتى يمر الأمر",
+                                            "اطلب منه أن يتوقف عن الذعر"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "عند الذعر المتصاعد: انقل النزيل لمكان هادئ واطلب المساندة."
+                                    },
+                                    {
+                                        "question": "نزيل يطالب باسترداد مبلغ لا تملك صلاحية الموافقة عليه. ما الرد الصحيح؟",
+                                        "options": [
+                                            "«بالتأكيد، سيُسترد المبلغ كاملًا.»",
+                                            "«هذا مستحيل.»",
+                                            "«لا أستطيع المساعدة، آسف.»",
+                                            "«أحيل الأمر الآن إلى المدير المناوب وسأحدثكم قبل الثالثة.»"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "الطلبات خارج الصلاحية تُصعّد دون وعد بنتيجة غير معتمدة."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

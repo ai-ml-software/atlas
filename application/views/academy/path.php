@@ -49,10 +49,8 @@
 </section>
 
 <?php $this->load->view('academy/_close', array(
-    'close_title' => $locale === 'ar' ? 'اتبع المسار من بدايته لنهايته' : 'Follow the path end to end',
-    'close_text'  => $locale === 'ar'
-        ? 'كل خطوة تُبنى على ما قبلها، والشهادة في النهاية تسجّل ما جرى تقييمه فعلاً.'
-        : 'Each step builds on the one before it, and the certificate at the end records what was actually assessed.',
+    'close_title' => ha_pt('Follow the path end to end'),
+    'close_text'  => ha_pt('Each step builds on the one before it, and the certificate at the end records what was actually assessed.'),
     'close_primary'   => array('label' => $t['courses'], 'url' => base_url($locale . '/courses')),
     'close_secondary' => array('label' => $t['for_hotels'], 'url' => base_url($locale . '/hotels')),
 )); ?>

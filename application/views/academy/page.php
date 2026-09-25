@@ -31,10 +31,8 @@
 <?php if (!empty($sections)) { $this->load->view('academy/_sections', array('sections' => $sections, 'locale' => $locale)); } ?>
 
 <?php $this->load->view('academy/_close', array(
-    'close_title' => $locale === 'ar' ? 'ابدأ بتدريب فريقك' : 'Start training your team',
-    'close_text'  => $locale === 'ar'
-        ? 'تصفّح الدورات حسب القسم، أو تحدّث إلينا عمّا تحتاجه منشأتك.'
-        : 'Browse the catalogue by department, or talk to us about what your property needs.',
+    'close_title' => ha_pt('Start training your team'),
+    'close_text'  => ha_pt('Browse the catalogue by department, or talk to us about what your property needs.'),
     'close_primary'   => array('label' => $t['courses'], 'url' => base_url($locale . '/courses')),
     'close_secondary' => array('label' => $t['contact'], 'url' => base_url($locale . '/contact')),
 )); ?>

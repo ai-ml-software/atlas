@@ -85,15 +85,29 @@ class Ha_assessment {
             // Replace rather than duplicate, so this is safe to re-run.
             $existing = $db->where('course_id', $course['id'])
                 ->where('lesson_type', 'quiz')->get('lesson')->result_array();
+            // Quizzes that close a single lesson are the bridge's (ha_lms_link), not this assessment.
+            $per_lesson = $db->table_exists('ha_lms_link') ? array_map('intval', array_column($db->select('legacy_id')
+                ->get_where('ha_lms_link', array('legacy_table' => 'lesson', 'ha_table' => 'ha_assessment', 'legacy_course_id' => $course['id']))
+                ->result_array(), 'legacy_id')) : array();
+            // The first existing assessment is updated in place, so its id - and the
+            // quiz results and completion stored against it - survive a rebuild.
+            $keep = null;
             foreach ($existing as $old) {
+                if (in_array((int) $old['id'], $per_lesson, true)) {
+                    continue;
+                }
+                if ($keep === null) {
+                    $keep = (int) $old['id'];
+                    continue;
+                }
                 $db->where('quiz_id', $old['id'])->delete('question');
                 $db->where('id', $old['id'])->delete('lesson');
             }
 
             $order = (int) $db->select_max('order')->where('section_id', $section_id)
-                ->get('lesson')->row('order');
+                ->where('id !=', (int) $keep)->get('lesson')->row('order');
 
-            $db->insert('lesson', array(
+            $row = array(
                 'title'           => 'Assessment: ' . $course['title'],
                 'course_id'       => $course['id'],
                 'section_id'      => $section_id,
@@ -110,14 +124,25 @@ class Ha_assessment {
                     . self::ATTEMPTS . ' attempts.',
                 'quiz_attempt'    => self::ATTEMPTS,
                 'order'           => $order + 1,
-                'date_added'      => strtotime(date('D, d-M-Y')),
                 'last_modified'   => strtotime(date('D, d-M-Y')),
-            ));
-            $quiz_id = (int) $db->insert_id();
+            );
+            if ($keep) {
+                $db->where('id', $keep)->update('lesson', $row);
+                $quiz_id = $keep;
+            } else {
+                $row['date_added'] = strtotime(date('D, d-M-Y'));
+                $db->insert('lesson', $row);
+                $quiz_id = (int) $db->insert_id();
+            }
+            $old_questions = array_map('intval', array_column($db->select('id')->where('quiz_id', $quiz_id)
+                ->order_by('order', 'ASC')->order_by('id', 'ASC')->get('question')->result_array(), 'id'));
+            foreach (array_slice($old_questions, count($items)) as $gone) {
+                $db->where('id', $gone)->delete('question');
+            }
 
             foreach ($items as $i => $item) {
                 list($title, $options, $correct) = $item;
-                $db->insert('question', array(
+                $question = array(
                     'quiz_id'           => $quiz_id,
                     'title'             => $title,
                     // single_choice renders radio buttons. multiple_choice
@@ -130,7 +155,12 @@ class Ha_assessment {
                     // radio posts and what the grader compares with in_array.
                     'correct_answers'   => json_encode(array((string) $correct)),
                     'order'             => $i + 1,
-                ));
+                );
+                if (isset($old_questions[$i])) {
+                    $db->where('id', $old_questions[$i])->update('question', $question);
+                } else {
+                    $db->insert('question', $question);
+                }
                 $result['questions']++;
             }
             $result['courses']++;

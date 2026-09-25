@@ -1,0 +1,551 @@
+{
+    "slug": "complaint-handling-and-service-recovery",
+    "category": "guest-handling",
+    "level": "foundation",
+    "source_pdf": "Complaint-Handling-and-Service-Recovery-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/complaint-handling-and-service-recovery.webp",
+    "videos": [
+        {
+            "id": "H86jY319fZo",
+            "title": "Customer Service Expert Explains How to Handle Tough Customer Service Situations",
+            "channel": "Shep Hyken: Customer Service & CX Expert",
+            "why": "Shep Hyken walks through how to respond calmly to an upset customer and recover the relationship, supporting the listen-apologise-resolve recovery sequence."
+        },
+        {
+            "id": "Ant6rMAEEWQ",
+            "title": "Stop Customer Complaints Before They Happen",
+            "channel": "Shep Hyken: Customer Service & CX Expert",
+            "why": "Shows how to fix the root cause of a complaint so it does not recur, supporting the follow-through step of service recovery."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Complaint Handling and Service Recovery",
+            "subtitle": "Listen, empathize, apologize, resolve, follow up",
+            "short_description": "Turn a guest complaint into a chance to rebuild trust with a calm start, five clear steps, the right words and real follow-up.",
+            "description": "<p>A complaint does not mean the guest relationship is over. The way a colleague handles the moment can matter more than the problem itself, and a well-handled complaint can rebuild a guest's trust.</p><p>This course, based on the Dyafa Hotels &amp; Resorts complaint-handling training, walks you through starting calmly, the five steps of Listen, Empathize, Apologize, Resolve and Follow up, the phrases to use, the behaviours to avoid, the limits of your authority and the follow-up that continues after the fix.</p><p>It is written for every guest-facing colleague, from front office to food and beverage, housekeeping and concierge.</p>",
+            "requirements": "No prior training is needed; the course suits any colleague who speaks with guests.",
+            "outcomes": [
+                "Start every complaint conversation calmly by pausing, listening and reassuring the guest",
+                "Apply the five steps: listen, empathize, apologize, resolve and follow up",
+                "Use short, sincere phrases and then deliver exactly what you promised",
+                "Decide when to resolve, seek approval, escalate or follow emergency procedures",
+                "Confirm the result with the guest and record the complaint so it does not recur"
+            ],
+            "faqs": [
+                {
+                    "question": "Should I apologize if the problem was not my fault?",
+                    "answer": "Yes. You apologize for the guest's unpleasant experience, not to accept blame. Blaming the guest or a colleague is one of the things to avoid."
+                },
+                {
+                    "question": "Can I offer compensation to calm an upset guest?",
+                    "answer": "Only if it is approved. Simple fixes within your authority can be done straight away, but any compensation must be approved before you offer it."
+                },
+                {
+                    "question": "When is a complaint really finished?",
+                    "answer": "Not when the fix is done. It ends when you have confirmed the guest is satisfied, informed your supervisor and recorded the complaint so it can be prevented."
+                }
+            ],
+            "meta_title": "Complaint Handling and Service Recovery Course",
+            "meta_description": "Learn to handle hotel guest complaints: pause, listen, empathize, apologize, resolve and follow up to restore guest satisfaction.",
+            "focus_keyword": "hotel complaint handling",
+            "chapters": [
+                {
+                    "title": "A Complaint Is a Chance to Recover",
+                    "lessons": [
+                        {
+                            "title": "Starting Right: Pause, Listen, Reassure",
+                            "minutes": 7,
+                            "body": "<h2>The situation is not over yet</h2><p>When a guest comes to you with a complaint, it is easy to feel that something has already gone wrong and cannot be undone. The training asks you to remember one simple idea: <strong>you can still recover</strong>. The guest has not left, has not given up on the hotel, and has chosen to tell you. That choice is an opportunity.</p><blockquote class=\"bk-quote\">How you handle the complaint can rebuild the guest's trust.</blockquote><p>In many cases the way a complaint is handled matters more than the problem itself. A cold room or a late order is quickly forgotten when the colleague who dealt with it was calm, caring and reliable. The same small problem becomes a lasting bad memory when the guest feels ignored or argued with.</p><p>Recovery means five things: listening to the whole complaint, showing that you understand how the guest feels, apologizing for the unpleasant experience, offering a clear and suitable solution, and following up until you are sure the guest is satisfied.</p><h2>The first moment: three moves</h2><h3>1. Pause</h3><p>Before you say anything, take a breath. Keep your voice calm, even if the guest's voice is raised. Do not defend yourself or the hotel; the guest is not asking who is right, they are asking for help. Put your attention on what the guest needs.</p><h3>2. Listen</h3><p>Let the guest finish speaking. Many complaints lose half their heat once the guest has been allowed to say everything. Then ask questions to understand the details: which room, what time, what exactly happened. Finally, repeat back what you understood in a few short words, so the guest can hear that you have it right.</p><h3>3. Reassure</h3><p>Tell the guest plainly: <em>I will help you with this.</em> Explain the next step clearly, and say when you will come back with the result. A guest who knows what happens next and when can relax.</p><table class=\"bk-say\"><thead><tr><th>Say</th><th>Avoid</th></tr></thead><tbody><tr><td>I will help you with this.</td><td>That is not my department.</td></tr><tr><td>So the air conditioning in your room stopped last night, is that right?</td><td>Interrupting with a solution before the guest finishes</td></tr><tr><td>I will check with engineering and call you within fifteen minutes.</td><td>Don't worry, it will be fixed right away (without checking)</td></tr></tbody></table><aside class=\"bk-note\">Remember the three warnings on the slide: do not interrupt, do not argue, do not make quick promises. A quick promise you cannot keep turns one complaint into two.</aside><aside class=\"bk-scene\">A guest arrives at the front desk visibly annoyed: the room was not cleaned while the family was out. The receptionist, Faisal, stops typing, faces the guest and lets her finish. He asks what time they left and whether they need anything urgently. He repeats: <em>So the room was not serviced today and you need fresh towels now.</em> He says he will help, explains he will call housekeeping immediately, and promises to call the room within twenty minutes to confirm. The guest's tone softens because she feels heard and knows what will happen next.</aside><aside class=\"bk-key\">A complaint is not the end of the story. Pause, listen fully and reassure the guest with a clear next step and a time.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Starting right",
+                                "questions": [
+                                    {
+                                        "question": "A guest starts complaining loudly about the noise from the next room. What should you do first?",
+                                        "options": [
+                                            "Explain that the hotel is not responsible for other guests",
+                                            "Keep a calm voice, let the guest finish and focus on what they need",
+                                            "Offer a free night immediately to calm the guest",
+                                            "Ask the guest to lower their voice before you listen"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The first move is to pause and listen calmly without defending yourself or the hotel."
+                                    },
+                                    {
+                                        "question": "After listening, what helps the guest know you understood the problem?",
+                                        "options": [
+                                            "Repeating back what you understood in a few short words",
+                                            "Telling them similar problems happen often",
+                                            "Moving straight to the solution",
+                                            "Asking them to write an email"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Repeating back briefly shows the guest you have the details right."
+                                    },
+                                    {
+                                        "question": "Which reassurance follows the training best?",
+                                        "options": [
+                                            "Don't worry, it will be sorted.",
+                                            "I will try, but I cannot promise anything.",
+                                            "I will help you with this. I will call engineering now and update you within fifteen minutes.",
+                                            "Someone will look at it tomorrow."
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Reassurance includes helping, a clear next step and when you will update the guest."
+                                    },
+                                    {
+                                        "question": "Why does the training say a complaint is a chance to recover?",
+                                        "options": [
+                                            "Because complaints are rare",
+                                            "Because handling it well can rebuild the guest's trust",
+                                            "Because the guest will receive compensation",
+                                            "Because it allows the hotel to explain its policies"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The way the complaint is handled can matter more than the problem and can restore trust."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Five Steps and the Right Words",
+                    "lessons": [
+                        {
+                            "title": "The Five Steps to Handle a Complaint",
+                            "minutes": 7,
+                            "body": "<h2>A method you can use every time</h2><p>Complaints come in every shape: a missing reservation, a cold dish, a slow check-out, a stained towel. The details change, but the method does not. The training gives five steps that work for almost every complaint, and it starts with a clear rule: <strong>understand the problem before you offer a solution.</strong></p><h3>Step 1: Listen without interrupting</h3><p>Listening first is not politeness only; it is how you find out what the real problem is. A guest who complains about the breakfast may really be upset that nobody greeted them. If you jump in too early, you may solve the wrong problem.</p><h3>Step 2: Empathize and acknowledge the feeling</h3><p>Show that you understand how the guest feels. You do not need long speeches. A sentence such as <em>I understand this situation upset you</em> tells the guest their feeling is recognized. Acknowledging a feeling does not mean agreeing with every detail; it means respecting the person.</p><h3>Step 3: Apologize for the experience</h3><p>Apologize for the unpleasant experience the guest had. This is not about finding who made the mistake. It is a sincere recognition that their stay was not what it should be.</p><h3>Step 4: Offer the solution or the available alternative</h3><p>Now, and only now, move to action. Offer a clear, suitable solution. If the exact thing the guest wants is not possible, offer the alternative that is available, and explain it honestly.</p><h3>Step 5: Follow up and make sure the guest is satisfied</h3><p>A solution is not finished until you know it worked. Check back with the guest. This last step is where trust is truly rebuilt, because it shows the guest that you meant what you said.</p><blockquote class=\"bk-quote\">Do not rush to the solution before the guest feels understood.</blockquote><h2>Why the order matters</h2><p>Many colleagues are eager to help and go straight to step four. The intention is good, but the guest may still feel unheard, and even a good solution can be received coldly. When the guest feels understood first, the same solution is welcomed.</p><aside class=\"bk-note\">If you notice yourself explaining the fix while the guest is still talking, stop, return to listening, and let them finish.</aside><aside class=\"bk-scene\">At dinner, a guest tells the waiter, Reem, that his steak is overcooked and that he waited a long time. Reem listens to all of it and learns the wait bothered him more than the steak. She says she understands how frustrating the wait was and apologizes for the experience. She offers a new steak cooked as he asked, and tells him the time it will take. Ten minutes after serving it, she returns to ask whether it is right. He leaves thanking her by name.</aside><aside class=\"bk-key\">Listen, empathize, apologize, resolve, follow up — in that order, so the guest feels understood before you fix anything.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: The five steps",
+                                "questions": [
+                                    {
+                                        "question": "A guest says their room is not what they booked. You already know a better room is free. When should you offer it?",
+                                        "options": [
+                                            "Immediately, before the guest finishes",
+                                            "After listening, acknowledging their feeling and apologizing",
+                                            "Only if the guest asks for a manager",
+                                            "After the guest writes a complaint"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The solution comes after the guest feels understood."
+                                    },
+                                    {
+                                        "question": "What is the purpose of the apology step?",
+                                        "options": [
+                                            "To admit the hotel is legally at fault",
+                                            "To identify which colleague made the mistake",
+                                            "To recognize sincerely that the guest had an unpleasant experience",
+                                            "To end the conversation quickly"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "You apologize for the experience, not to assign blame."
+                                    },
+                                    {
+                                        "question": "The guest wants a late check-out at 6 pm, which is not possible. What fits the method?",
+                                        "options": [
+                                            "Say no and move on",
+                                            "Offer the alternative that is available and explain it clearly",
+                                            "Promise it anyway and hope it works out",
+                                            "Tell the guest to ask another colleague"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Step four is the solution or the available alternative."
+                                    },
+                                    {
+                                        "question": "You replaced a broken kettle. What completes the five steps?",
+                                        "options": [
+                                            "Nothing, the problem is fixed",
+                                            "Checking back with the guest to make sure they are satisfied",
+                                            "Sending the guest a survey next month",
+                                            "Telling your colleagues about the guest"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The fifth step is to follow up and confirm the guest's satisfaction."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Phrases That Help, and What to Avoid",
+                            "minutes": 7,
+                            "body": "<h2>Simple words, then action</h2><p>In a complaint, guests listen closely to your words. Long explanations and scripted lines can sound defensive or cold. The training offers four short phrases, one for each key moment, and a clear rule to go with them.</p><blockquote class=\"bk-quote\">Use simple sincere words, then do what you promised.</blockquote><h3>1. Thank</h3><p><em>Thank you for telling me about this problem.</em> Thanking the guest changes the tone at once. It shows you see the complaint as useful information, not an attack.</p><h3>2. Empathize</h3><p><em>I understand this situation upset you.</em> This acknowledges the feeling without arguing about the facts.</p><h3>3. Help</h3><p><em>Let me check and offer you the right solution.</em> This moves the conversation toward action, while being honest that you need to check before you commit.</p><h3>4. Follow up</h3><p><em>I will follow up with you until it is dealt with.</em> This tells the guest they will not be forgotten. It is also a promise, so you must keep it.</p><h2>What to do and what to avoid</h2><p>Words are only part of the picture. Your behaviour during the conversation either builds trust or destroys it.</p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Stay calm and respectful</td><td>Blaming the guest or a colleague</td></tr><tr><td>Write down the important details</td><td>Arguing to prove you are right</td></tr><tr><td>Explain the solution and the expected time</td><td>Downplaying the problem</td></tr><tr><td>Ask for supervisor support when needed</td><td>Making a promise that is not approved</td></tr><tr><td>Follow up with the guest after the solution</td><td>Ending the conversation without follow-up</td></tr></tbody></table><p>Notice how the two columns mirror each other. Staying calm is the opposite of arguing. Writing details down protects you from forgetting and from blaming others later. Explaining the time sets honest expectations. Asking your supervisor is better than an unapproved promise. And following up is the answer to walking away.</p><p>Downplaying the problem deserves special attention. Phrases such as <em>it's only a small thing</em> may be meant kindly, but to the guest they say that their experience does not matter.</p><aside class=\"bk-note\">Keep a small notepad or use the log. Room number, name, what happened and what you promised: four details that make follow-up possible.</aside><aside class=\"bk-scene\">A guest calls to say the minibar was charged for items she never used. The agent, Omar, thanks her for telling him, says he understands it is annoying to see a wrong charge, and writes down the items. He does not argue about the housekeeping record. He explains he will check with the supervisor and call back within thirty minutes. He calls back on time with the corrected bill.</aside><aside class=\"bk-key\">Solve the problem without blame or argument: short sincere words, calm behaviour, and then do exactly what you said.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Phrases and behaviour",
+                                "questions": [
+                                    {
+                                        "question": "A guest complains the Wi-Fi is slow. Which opening fits the training best?",
+                                        "options": [
+                                            "Thank you for telling me about this problem.",
+                                            "Everyone has had the same issue today.",
+                                            "The Wi-Fi is fine on our side.",
+                                            "It's only a small thing, don't worry."
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Thanking the guest opens the conversation in the right tone."
+                                    },
+                                    {
+                                        "question": "The guest says a colleague was rude. What should you avoid?",
+                                        "options": [
+                                            "Writing down the details",
+                                            "Staying calm and respectful",
+                                            "Blaming your colleague in front of the guest",
+                                            "Asking your supervisor for support"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Blaming the guest or a colleague is on the Avoid list."
+                                    },
+                                    {
+                                        "question": "You told a guest, 'I will follow up with you until it is dealt with.' What does the training expect next?",
+                                        "options": [
+                                            "Nothing, the phrase itself calms the guest",
+                                            "That you actually follow up as promised",
+                                            "That you pass it to another shift without notes",
+                                            "That you wait for the guest to call again"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Use simple sincere words, then do what you promised."
+                                    },
+                                    {
+                                        "question": "Which statement downplays the problem?",
+                                        "options": [
+                                            "I understand this situation upset you.",
+                                            "Let me check and offer you the right solution.",
+                                            "It's just a few minutes' delay, it's nothing.",
+                                            "I will explain the solution and the expected time."
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Calling the problem 'nothing' minimizes the guest's experience."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Authority and Follow-Up",
+                    "lessons": [
+                        {
+                            "title": "Know Your Authority and Keep Going After the Fix",
+                            "minutes": 8,
+                            "body": "<h2>Four situations, four responses</h2><p>Every colleague wants to solve the guest's problem. But solving it well also means knowing where your authority ends. The training describes four situations.</p><ol><li><strong>Simple fix (Resolve):</strong> if it is within your authority, do it. Replacing a towel, fixing a wrong order or moving a restaurant table does not need a meeting.</li><li><strong>Approved compensation (Approved recovery):</strong> make sure it is approved before you offer it. Never tell a guest they will receive something until the right person has agreed.</li><li><strong>Recurring problem (Escalate):</strong> inform your supervisor and record the details. A problem that keeps happening needs a bigger fix than you can give at the desk.</li><li><strong>Dangerous situation (Urgent):</strong> follow security and emergency procedures immediately. Safety comes before any conversation about service.</li></ol><blockquote class=\"bk-quote\">Do not exceed your authority — ask for support at the right time.</blockquote><p>Asking for support is not weakness. A promise you cannot keep, such as a discount you had no right to give, damages trust far more than saying <em>let me bring my supervisor so we can solve this properly</em>.</p><h2>Recovery does not end at the fix</h2><p>Once the solution is in place, the work continues in two directions: with the guest, and with the team.</p><h3>Confirm the result</h3><ul><li>Ask the guest whether the solution was suitable.</li><li>Make sure what was agreed was actually carried out.</li><li>Give an update if the solution is delayed.</li><li>Thank the guest for their patience.</li><li>Inform your supervisor of the outcome.</li></ul><h3>Record and learn</h3><ul><li>Record the complaint and the solution.</li><li>Identify the related department or cause.</li><li>Report a recurring problem.</li><li>Suggest a step that prevents it happening again.</li><li>Share the information with the team concerned.</li></ul><p>The first list rebuilds the guest's trust. The second protects the next guest from the same experience.</p><aside class=\"bk-note\">If a fix is delayed, the update matters more than ever. A short call saying <em>engineering is on the way, I will call again in ten minutes</em> keeps the guest's trust while you wait.</aside><aside class=\"bk-scene\">A guest reports for the second time this week that the shower drains slowly. The supervisor on duty, Huda, apologizes, arranges an immediate fix and, because it is a recurring problem, records it and informs engineering so the drain is checked fully. The next morning she calls the guest to confirm the shower is fine and thanks him for his patience. She logs the case so the room is checked before the next arrival.</aside><aside class=\"bk-key\">The goal is not to close the complaint; it is to restore the guest's satisfaction and prevent it from happening again. Do not leave the complaint until you are sure the guest is satisfied.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Authority and follow-up",
+                                "questions": [
+                                    {
+                                        "question": "A guest demands a free dinner for a delayed room service order. You are not sure you can approve it. What do you do?",
+                                        "options": [
+                                            "Promise the dinner to calm the guest",
+                                            "Refuse firmly and end the conversation",
+                                            "Check for approval before offering any compensation",
+                                            "Tell the guest to email the manager"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Approved compensation must be confirmed before you offer it."
+                                    },
+                                    {
+                                        "question": "A guest reports a smell of smoke in the corridor. What is the right response?",
+                                        "options": [
+                                            "Follow security and emergency procedures immediately",
+                                            "Apologize and promise to look into it later",
+                                            "Record it for the weekly meeting",
+                                            "Offer the guest a room change first"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "A dangerous situation calls for security and emergency procedures at once."
+                                    },
+                                    {
+                                        "question": "The same air-conditioning fault has been reported in a room three times. What should you add to fixing it now?",
+                                        "options": [
+                                            "Nothing more",
+                                            "Inform the supervisor and record the details",
+                                            "Tell the guest it is an old building",
+                                            "Move all future guests without telling anyone"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "A recurring problem must be escalated and recorded."
+                                    },
+                                    {
+                                        "question": "The fix is done. Which action best continues service recovery?",
+                                        "options": [
+                                            "Closing the complaint in the system immediately",
+                                            "Waiting for the guest to mention it again",
+                                            "Asking the guest whether the solution was suitable and thanking them for their patience",
+                                            "Offering a discount without approval"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Recovery continues after the fix by confirming the result with the guest."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "معالجة الشكاوى واستعادة رضا النزيل",
+            "subtitle": "استمع • تعاطف • اعتذر • حل • تابع",
+            "short_description": "حوّل شكوى النزيل إلى فرصة لاستعادة الثقة: بداية هادئة، وخمس خطوات واضحة، وعبارات صادقة، ومتابعة حقيقية.",
+            "description": "<p>الشكوى لا تعني أن العلاقة مع النزيل انتهت. فطريقة التعامل مع الشكوى قد تكون أهم من المشكلة نفسها، والتعامل الجيد معها قادر على استعادة ثقة النزيل.</p><p>تستند هذه الدورة إلى تدريب فنادق ومنتجعات ضيافة في معالجة الشكاوى، وترافقك من البداية الهادئة، إلى الخطوات الخمس: استمع، تعاطف، اعتذر، حل، تابع، ثم العبارات المناسبة، وما يجب تجنبه، وحدود صلاحيتك، والمتابعة التي تستمر بعد الحل.</p><p>الدورة موجهة لكل موظف يتعامل مع النزلاء، من الاستقبال إلى الأغذية والمشروبات والتدبير الفندقي والكونسيرج.</p>",
+            "requirements": "لا يلزم تدريب سابق، والدورة مناسبة لكل موظف يتحدث مع النزلاء.",
+            "outcomes": [
+                "ابدأ كل حديث عن شكوى بهدوء: توقف، واستمع، وطمئن النزيل",
+                "طبّق الخطوات الخمس: استمع، تعاطف، اعتذر، حل، تابع",
+                "استخدم عبارات قصيرة وصادقة ثم نفّذ ما وعدت به بالضبط",
+                "حدد متى تحل بنفسك، ومتى تطلب الموافقة، ومتى تصعّد، ومتى تتبع إجراءات الطوارئ",
+                "تأكد من النتيجة مع النزيل وسجّل الشكوى لمنع تكرارها"
+            ],
+            "faqs": [
+                {
+                    "question": "هل أعتذر إذا لم يكن الخطأ خطئي؟",
+                    "answer": "نعم. أنت تعتذر عن التجربة المزعجة التي مر بها النزيل، لا لتتحمل اللوم. ولوم النزيل أو الزميل من الأمور التي يجب تجنبها."
+                },
+                {
+                    "question": "هل أستطيع تقديم تعويض لتهدئة النزيل؟",
+                    "answer": "فقط إذا كان معتمدًا. الحل البسيط ضمن صلاحيتك تنفذه مباشرة، أما أي تعويض فتأكد من الموافقة عليه قبل تقديمه."
+                },
+                {
+                    "question": "متى تنتهي الشكوى فعلًا؟",
+                    "answer": "ليس عند تنفيذ الحل، بل عندما تتأكد من رضا النزيل، وتخبر المشرف بالنتيجة، وتسجل الشكوى لمنع تكرارها."
+                }
+            ],
+            "meta_title": "دورة معالجة الشكاوى واستعادة رضا النزيل",
+            "meta_description": "تعلّم التعامل مع شكاوى النزلاء في الفندق: توقف، استمع، تعاطف، اعتذر، حل، وتابع لاستعادة رضا النزيل.",
+            "focus_keyword": "معالجة شكاوى النزلاء",
+            "chapters": [
+                {
+                    "title": "الشكوى فرصة لاستعادة الثقة",
+                    "lessons": [
+                        {
+                            "title": "ابدأ بطريقة صحيحة: توقف، استمع، طمئن",
+                            "minutes": 7,
+                            "body": "<h2>الموقف لم ينتهِ بعد</h2><p>عندما يأتيك النزيل بشكوى، قد تشعر أن شيئًا ما قد فسد ولا يمكن إصلاحه. لكن التدريب يطلب منك أن تتذكر فكرة واحدة: <strong>الموقف لم ينتهِ بعد</strong>. النزيل لم يغادر، ولم ييأس من الفندق، واختار أن يخبرك. هذا الاختيار فرصة حقيقية.</p><blockquote class=\"bk-quote\">طريقة التعامل مع الشكوى قد تكون أهم من المشكلة نفسها</blockquote><p>الغرفة الباردة أو الطلب المتأخر يُنسى سريعًا إذا كان الموظف الذي تعامل معه هادئًا ومهتمًا وموثوقًا. أما المشكلة الصغيرة نفسها فتتحول إلى ذكرى سيئة إذا شعر النزيل بالتجاهل أو الجدال.</p><p>استعادة الثقة تعني: أن تستمع إلى الشكوى كاملة، وتُظهر أنك تفهم شعور النزيل، وتعتذر عن التجربة المزعجة، وتقدم حلًا واضحًا ومناسبًا، وتتابع حتى تتأكد من رضاه.</p><h2>اللحظة الأولى: ثلاث خطوات</h2><h3>1. توقف واهدأ</h3><p>قبل أن تتكلم، خذ نفسًا. حافظ على صوت هادئ حتى لو ارتفع صوت النزيل. لا تدافع عن نفسك أو عن الفندق؛ فالنزيل لا يسأل من المحق، بل يطلب المساعدة. ركّز على ما يحتاجه النزيل.</p><h3>2. استمع للنزيل</h3><p>دعه يكمل كلامه، فكثير من الشكاوى تهدأ عندما يُسمح للنزيل بقول كل ما لديه. ثم اسأل لتفهم التفاصيل: أي غرفة، وفي أي وقت، وماذا حدث بالضبط. وبعدها أعد ما فهمته بكلمات قصيرة ليتأكد أنك فهمت الأمر كما هو.</p><h3>3. طمئنه أنك ستساعد</h3><p>قل له بوضوح: <em>سأساعدك في هذا الأمر.</em> اشرح الخطوة التالية بوضوح، وحدد متى ستحدثه بالنتيجة. النزيل الذي يعرف ما سيحدث ومتى، يطمئن.</p><table class=\"bk-say\"><thead><tr><th>قل</th><th>تجنب</th></tr></thead><tbody><tr><td>سأساعدك في هذا الأمر.</td><td>هذا ليس من اختصاص قسمي.</td></tr><tr><td>إذن توقف التكييف في غرفتك ليلة أمس، صحيح؟</td><td>مقاطعة النزيل بالحل قبل أن يكمل</td></tr><tr><td>سأتواصل مع الصيانة وأتصل بك خلال ربع ساعة.</td><td>لا تقلق، سيُصلح فورًا (دون أن تتحقق)</td></tr></tbody></table><aside class=\"bk-note\">تذكّر التحذيرات الثلاثة في الشريحة: لا تقاطع، لا تجادل، لا تقدم وعودًا سريعة. فالوعد السريع الذي لا تستطيع الوفاء به يحول شكوى واحدة إلى شكويين.</aside><aside class=\"bk-scene\">تصل نزيلة إلى الاستقبال منزعجة لأن الغرفة لم تُنظّف أثناء خروج العائلة. يتوقف فيصل عن الكتابة، ويلتفت إليها ويدعها تكمل. يسألها متى خرجوا وهل يحتاجون شيئًا عاجلًا، ثم يعيد: <em>إذن لم تُخدم الغرفة اليوم، وتحتاجون مناشف نظيفة الآن.</em> يطمئنها أنه سيساعد، ويخبرها أنه سيتصل بالتدبير الفندقي فورًا، وسيتصل بالغرفة خلال عشرين دقيقة للتأكيد. تهدأ نبرتها لأنها شعرت بأنه سمعها وعرفت ما سيحدث.</aside><aside class=\"bk-key\">الشكوى ليست نهاية القصة. توقف، واستمع كاملًا، وطمئن النزيل بخطوة تالية واضحة ووقت محدد.</aside>",
+                            "quiz": {
+                                "title": "اختبر فهمك: البداية الصحيحة",
+                                "questions": [
+                                    {
+                                        "question": "بدأ نزيل يشتكي بصوت مرتفع من ضجيج الغرفة المجاورة. ماذا تفعل أولًا؟",
+                                        "options": [
+                                            "توضح أن الفندق غير مسؤول عن النزلاء الآخرين",
+                                            "تحافظ على صوت هادئ، وتدعه يكمل، وتركز على ما يحتاجه",
+                                            "تعرض ليلة مجانية فورًا لتهدئته",
+                                            "تطلب منه خفض صوته قبل أن تستمع"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "الخطوة الأولى أن تتوقف وتستمع بهدوء دون الدفاع عن نفسك أو الفندق."
+                                    },
+                                    {
+                                        "question": "بعد الاستماع، ما الذي يُشعر النزيل بأنك فهمت المشكلة؟",
+                                        "options": [
+                                            "أن تعيد ما فهمته بكلمات قصيرة",
+                                            "أن تخبره أن هذه المشكلة تتكرر كثيرًا",
+                                            "أن تنتقل مباشرة إلى الحل",
+                                            "أن تطلب منه إرسال بريد إلكتروني"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "إعادة ما فهمته باختصار تُظهر أن التفاصيل لديك صحيحة."
+                                    },
+                                    {
+                                        "question": "أي عبارة طمأنة تتبع التدريب بشكل أفضل؟",
+                                        "options": [
+                                            "لا تقلق، سيتم حلها.",
+                                            "سأحاول، لكن لا أعدك بشيء.",
+                                            "سأساعدك في هذا الأمر. سأتواصل مع الصيانة الآن وأحدثك خلال ربع ساعة.",
+                                            "سيطّلع أحدهم عليها غدًا."
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "الطمأنة تشمل المساعدة وخطوة تالية واضحة وموعدًا للتحديث."
+                                    },
+                                    {
+                                        "question": "لماذا يقول التدريب إن الشكوى فرصة لاستعادة الثقة؟",
+                                        "options": [
+                                            "لأن الشكاوى نادرة",
+                                            "لأن التعامل الجيد معها قد يستعيد ثقة النزيل",
+                                            "لأن النزيل سيحصل على تعويض",
+                                            "لأنها تسمح للفندق بشرح سياساته"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "طريقة التعامل مع الشكوى قد تكون أهم من المشكلة نفسها."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "الخطوات الخمس والكلمات المناسبة",
+                    "lessons": [
+                        {
+                            "title": "خمس خطوات لمعالجة الشكوى",
+                            "minutes": 7,
+                            "body": "<h2>طريقة تستخدمها في كل مرة</h2><p>تأتي الشكاوى بأشكال مختلفة: حجز مفقود، طبق بارد، تسجيل مغادرة بطيء، منشفة متسخة. التفاصيل تتغير، لكن الطريقة واحدة. يقدم التدريب خمس خطوات تناسب معظم الشكاوى، ويبدأ بقاعدة واضحة: <strong>افهم المشكلة قبل تقديم الحل.</strong></p><h3>الخطوة 1: استمع دون مقاطعة</h3><p>الاستماع أولًا ليس مجاملة فقط، بل هو طريقتك لمعرفة المشكلة الحقيقية. فالنزيل الذي يشتكي من الإفطار قد يكون منزعجًا في الحقيقة لأن أحدًا لم يرحب به. وإذا قاطعته مبكرًا قد تحل المشكلة الخطأ.</p><h3>الخطوة 2: تعاطف واعترف بالشعور</h3><p>أظهر أنك تفهم شعوره، دون خطب طويلة. جملة مثل <em>أتفهم أن هذا الموقف أزعجك</em> تكفي ليشعر النزيل بأن مشاعره محترمة. والاعتراف بالشعور لا يعني الموافقة على كل تفصيل، بل احترام الشخص.</p><h3>الخطوة 3: اعتذر عن التجربة</h3><p>اعتذر عن التجربة المزعجة التي مر بها النزيل. الهدف ليس البحث عمن أخطأ، بل الاعتراف الصادق بأن إقامته لم تكن كما يجب.</p><h3>الخطوة 4: قدم الحل أو البديل المتاح</h3><p>الآن فقط انتقل إلى الفعل. قدم حلًا واضحًا ومناسبًا، وإذا كان ما يطلبه النزيل غير ممكن فاعرض البديل المتاح واشرحه بصدق.</p><h3>الخطوة 5: تابع وتأكد من رضا النزيل</h3><p>الحل لا يكتمل حتى تعرف أنه نجح. عد إلى النزيل واسأله. في هذه الخطوة تُبنى الثقة فعلًا، لأنها تثبت أنك تعني ما قلت.</p><blockquote class=\"bk-quote\">لا تنتقل إلى الحل قبل أن يشعر النزيل بأنك فهمته</blockquote><h2>لماذا الترتيب مهم؟</h2><p>كثير من الزملاء متحمسون للمساعدة فيقفزون إلى الخطوة الرابعة. النية جيدة، لكن النزيل قد يبقى شاعرًا بأن أحدًا لم يسمعه، فيستقبل الحل الجيد ببرود. أما حين يشعر بأنه مفهوم، فيرحب بالحل نفسه.</p><aside class=\"bk-note\">إذا لاحظت أنك تشرح الحل والنزيل ما زال يتكلم، توقف، وعد إلى الاستماع، ودعه يكمل.</aside><aside class=\"bk-scene\">في العشاء يخبر نزيل النادلة ريم أن شريحة اللحم مطهوة أكثر من اللازم وأنه انتظر طويلًا. تستمع ريم للنهاية وتفهم أن الانتظار أزعجه أكثر من الطبق. تقول إنها تتفهم كم كان الانتظار مزعجًا وتعتذر عن التجربة، ثم تعرض طبقًا جديدًا كما طلب وتخبره بالوقت اللازم. وبعد تقديمه بعشر دقائق تعود لتسأل إن كان مناسبًا. يغادر وهو يشكرها باسمها.</aside><aside class=\"bk-key\">استمع، تعاطف، اعتذر، حل، تابع — بهذا الترتيب، ليشعر النزيل بأنك فهمته قبل أن تصلح أي شيء.</aside>",
+                            "quiz": {
+                                "title": "اختبر فهمك: الخطوات الخمس",
+                                "questions": [
+                                    {
+                                        "question": "يقول النزيل إن غرفته ليست كما حجز، وأنت تعرف أن غرفة أفضل متاحة. متى تعرضها؟",
+                                        "options": [
+                                            "فورًا قبل أن يكمل كلامه",
+                                            "بعد الاستماع والاعتراف بشعوره والاعتذار",
+                                            "فقط إذا طلب المدير",
+                                            "بعد أن يكتب شكوى"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "الحل يأتي بعد أن يشعر النزيل بأنك فهمته."
+                                    },
+                                    {
+                                        "question": "ما الهدف من خطوة الاعتذار؟",
+                                        "options": [
+                                            "الاعتراف بأن الفندق مخطئ قانونيًا",
+                                            "تحديد الزميل الذي أخطأ",
+                                            "الاعتراف الصادق بأن النزيل مر بتجربة مزعجة",
+                                            "إنهاء الحديث بسرعة"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تعتذر عن التجربة، لا لتوزيع اللوم."
+                                    },
+                                    {
+                                        "question": "يريد النزيل تأخير المغادرة إلى السادسة مساءً وهذا غير ممكن. ما الذي يتفق مع الطريقة؟",
+                                        "options": [
+                                            "ترفض وتنتقل لغيره",
+                                            "تعرض البديل المتاح وتشرحه بوضوح",
+                                            "تعده بذلك وتأمل أن ينجح الأمر",
+                                            "تطلب منه سؤال زميل آخر"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "الخطوة الرابعة هي الحل أو البديل المتاح."
+                                    },
+                                    {
+                                        "question": "استبدلت غلاية معطلة. ما الذي يكمل الخطوات الخمس؟",
+                                        "options": [
+                                            "لا شيء، فقد حُلت المشكلة",
+                                            "العودة إلى النزيل للتأكد من رضاه",
+                                            "إرسال استبيان له الشهر القادم",
+                                            "إخبار زملائك عن النزيل"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "الخطوة الخامسة هي المتابعة والتأكد من رضا النزيل."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "عبارات تساعدك وما الذي تتجنبه",
+                            "minutes": 7,
+                            "body": "<h2>كلمات بسيطة ثم فعل</h2><p>أثناء الشكوى يصغي النزيل جيدًا لكلماتك. الشرح الطويل والعبارات المحفوظة قد تبدو دفاعية أو باردة. لذلك يقدم التدريب أربع عبارات قصيرة، لكل لحظة مهمة عبارة، مع قاعدة واضحة.</p><blockquote class=\"bk-quote\">استخدم كلمات قصيرة وصادقة — ثم نفّذ ما قلته</blockquote><h3>1. أشكرك لإخباري</h3><p><em>أشكرك لإخباري بهذه المشكلة.</em> الشكر يغير نبرة الحديث فورًا، ويُظهر أنك ترى الشكوى معلومة مفيدة لا هجومًا.</p><h3>2. أتفهم استياءك</h3><p><em>أتفهم أن هذا الموقف أزعجك.</em> عبارة تعترف بالشعور دون جدال حول الوقائع.</p><h3>3. دعني أساعدك</h3><p><em>دعني أتحقق وأقدم لك الحل المناسب.</em> تنقل الحديث إلى الفعل، وتبقى صادقة بأنك تحتاج إلى التحقق قبل الالتزام.</p><h3>4. سأتابع معك</h3><p><em>سأتابع معك حتى يتم التعامل معها.</em> تخبر النزيل أنه لن يُنسى، وهي وعد يجب أن تفي به.</p><h2>ما الذي تفعله؟ وما الذي تتجنبه؟</h2><p>الكلمات جزء من الصورة فقط؛ فسلوكك أثناء الحديث إما أن يبني الثقة أو يهدمها.</p><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنب</th></tr></thead><tbody><tr><td>حافظ على هدوئك واحترامك</td><td>تلوم النزيل أو زميلك</td></tr><tr><td>دوّن التفاصيل المهمة</td><td>تجادل لتثبت أنك محق</td></tr><tr><td>اشرح الحل والوقت المتوقع</td><td>تقلل من أهمية المشكلة</td></tr><tr><td>اطلب دعم المشرف عند الحاجة</td><td>تقدم وعدًا غير معتمد</td></tr><tr><td>تابع النزيل بعد الحل</td><td>تنهي الحديث دون متابعة</td></tr></tbody></table><p>لاحظ أن العمودين متقابلان: الهدوء عكس الجدال، وتدوين التفاصيل يحميك من النسيان ومن لوم الآخرين لاحقًا، وشرح الوقت يضع توقعات صادقة، وطلب دعم المشرف أفضل من وعد غير معتمد، والمتابعة هي الرد على إنهاء الحديث والابتعاد.</p><p>والتقليل من أهمية المشكلة يستحق انتباهًا خاصًا؛ فعبارة مثل <em>إنها مسألة بسيطة</em> قد تُقال بحسن نية، لكنها تقول للنزيل إن تجربته لا تهم.</p><aside class=\"bk-note\">احتفظ بمفكرة صغيرة أو استخدم السجل: رقم الغرفة، والاسم، وما حدث، وما وعدت به. أربع معلومات تجعل المتابعة ممكنة.</aside><aside class=\"bk-scene\">تتصل نزيلة لتقول إن فاتورتها تتضمن مشتريات من الميني بار لم تستخدمها. يشكرها عمر لإخباره، ويقول إنه يتفهم انزعاجها من رسوم خاطئة، ويدوّن الأصناف. لا يجادل حول سجل التدبير الفندقي، بل يوضح أنه سيتحقق مع المشرف ويتصل بها خلال نصف ساعة، ويتصل في الموعد ومعه الفاتورة المصححة.</aside><aside class=\"bk-key\">حل المشكلة دون لوم أو جدال: كلمات قصيرة وصادقة، وسلوك هادئ، ثم نفّذ ما قلته بالضبط.</aside>",
+                            "quiz": {
+                                "title": "اختبر فهمك: العبارات والسلوك",
+                                "questions": [
+                                    {
+                                        "question": "يشتكي نزيل من بطء الإنترنت. أي افتتاح يناسب التدريب أكثر؟",
+                                        "options": [
+                                            "أشكرك لإخباري بهذه المشكلة.",
+                                            "الجميع واجه المشكلة نفسها اليوم.",
+                                            "الإنترنت يعمل جيدًا من جهتنا.",
+                                            "إنها مسألة بسيطة، لا تقلق."
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "شكر النزيل يفتح الحديث بالنبرة الصحيحة."
+                                    },
+                                    {
+                                        "question": "يقول النزيل إن أحد الزملاء كان غير لبق. ما الذي يجب تجنبه؟",
+                                        "options": [
+                                            "تدوين التفاصيل",
+                                            "الحفاظ على الهدوء والاحترام",
+                                            "لوم زميلك أمام النزيل",
+                                            "طلب دعم المشرف"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "لوم النزيل أو الزميل من قائمة ما يجب تجنبه."
+                                    },
+                                    {
+                                        "question": "قلت للنزيل: «سأتابع معك حتى يتم التعامل معها». ماذا يتوقع التدريب بعد ذلك؟",
+                                        "options": [
+                                            "لا شيء، فالعبارة نفسها تهدئه",
+                                            "أن تتابع فعلًا كما وعدت",
+                                            "أن تسلمها للوردية التالية دون ملاحظات",
+                                            "أن تنتظر اتصاله مرة أخرى"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "استخدم كلمات قصيرة وصادقة ثم نفّذ ما قلته."
+                                    },
+                                    {
+                                        "question": "أي عبارة تقلل من أهمية المشكلة؟",
+                                        "options": [
+                                            "أتفهم أن هذا الموقف أزعجك.",
+                                            "دعني أتحقق وأقدم لك الحل المناسب.",
+                                            "إنه تأخير بضع دقائق فقط، لا شيء.",
+                                            "سأشرح لك الحل والوقت المتوقع."
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "وصف المشكلة بأنها «لا شيء» يقلل من تجربة النزيل."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "الصلاحيات والمتابعة",
+                    "lessons": [
+                        {
+                            "title": "اعرف حدود صلاحيتك واستمر بعد الحل",
+                            "minutes": 8,
+                            "body": "<h2>أربع حالات وأربع استجابات</h2><p>كل موظف يريد حل مشكلة النزيل، لكن الحل الجيد يعني أيضًا أن تعرف أين تنتهي صلاحيتك. يصف التدريب أربع حالات:</p><ol><li><strong>حل بسيط:</strong> نفّذه إذا كان ضمن صلاحيتك، مثل استبدال منشفة أو تصحيح طلب أو تغيير طاولة في المطعم.</li><li><strong>تعويض معتمد:</strong> تأكد من الموافقة قبل تقديمه، ولا تخبر النزيل بأنه سيحصل على شيء قبل موافقة الشخص المختص.</li><li><strong>مشكلة متكررة:</strong> أبلغ المشرف وسجل التفاصيل، فالمشكلة التي تتكرر تحتاج إلى حل أكبر مما تستطيع تقديمه من مكتبك.</li><li><strong>حالة خطرة:</strong> اتبع إجراءات الأمن والطوارئ فورًا، فالسلامة تأتي قبل أي حديث عن الخدمة.</li></ol><blockquote class=\"bk-quote\">لا تتجاوز صلاحيتك — اطلب الدعم في الوقت المناسب</blockquote><p>طلب الدعم ليس ضعفًا. فالوعد الذي لا تستطيع الوفاء به، مثل خصم لا تملك صلاحية منحه، يضر بالثقة أكثر بكثير من قولك: <em>دعني أستدعي المشرف لنحل الأمر بالشكل الصحيح.</em></p><h2>استعادة الرضا لا تنتهي عند الحل</h2><p>بعد تنفيذ الحل يستمر العمل في اتجاهين: مع النزيل، ومع الفريق.</p><h3>تأكد من النتيجة</h3><ul><li>اسأل النزيل إن كان الحل مناسبًا.</li><li>تأكد من تنفيذ ما تم الاتفاق عليه.</li><li>قدم تحديثًا إذا تأخر الحل.</li><li>اشكر النزيل على صبره.</li><li>أخبر المشرف بالنتيجة.</li></ul><h3>سجل وتعلم</h3><ul><li>سجل الشكوى والحل.</li><li>وضح القسم أو السبب المرتبط بها.</li><li>أبلغ عن المشكلة المتكررة.</li><li>اقترح خطوة تمنع تكرارها.</li><li>شارك المعلومة مع الفريق المعني.</li></ul><p>القائمة الأولى تستعيد ثقة النزيل، والثانية تحمي النزيل القادم من التجربة نفسها.</p><aside class=\"bk-note\">إذا تأخر الحل فالتحديث أهم من أي وقت. اتصال قصير تقول فيه <em>فريق الصيانة في الطريق، وسأتصل بك مجددًا بعد عشر دقائق</em> يحفظ ثقة النزيل أثناء الانتظار.</aside><aside class=\"bk-scene\">يبلغ نزيل للمرة الثانية هذا الأسبوع أن تصريف الدش بطيء. تعتذر المشرفة المناوبة هدى، وترتب إصلاحًا فوريًا، ولأنها مشكلة متكررة تسجلها وتبلغ الصيانة لفحص التصريف بالكامل. وفي صباح اليوم التالي تتصل بالنزيل لتتأكد أن الدش يعمل جيدًا وتشكره على صبره، ثم تسجل الحالة ليتم فحص الغرفة قبل وصول النزيل التالي.</aside><aside class=\"bk-key\">الهدف ليس إغلاق الشكوى، بل استعادة رضا النزيل ومنع تكرارها. لا تترك الشكوى حتى تتأكد من رضا النزيل.</aside>",
+                            "quiz": {
+                                "title": "اختبر فهمك: الصلاحيات والمتابعة",
+                                "questions": [
+                                    {
+                                        "question": "يطالب نزيل بعشاء مجاني بسبب تأخر خدمة الغرف، ولست متأكدًا من صلاحيتك. ماذا تفعل؟",
+                                        "options": [
+                                            "تعده بالعشاء لتهدئته",
+                                            "ترفض بحزم وتنهي الحديث",
+                                            "تتأكد من الموافقة قبل تقديم أي تعويض",
+                                            "تطلب منه مراسلة المدير"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "التعويض يجب أن يكون معتمدًا قبل تقديمه."
+                                    },
+                                    {
+                                        "question": "يبلغ نزيل عن رائحة دخان في الممر. ما الاستجابة الصحيحة؟",
+                                        "options": [
+                                            "اتباع إجراءات الأمن والطوارئ فورًا",
+                                            "الاعتذار والوعد بالنظر في الأمر لاحقًا",
+                                            "تسجيلها لاجتماع الأسبوع",
+                                            "عرض تغيير الغرفة أولًا"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "الحالة الخطرة تتطلب إجراءات الأمن والطوارئ فورًا."
+                                    },
+                                    {
+                                        "question": "تكرر عطل التكييف نفسه في غرفة ثلاث مرات. ماذا تضيف إلى إصلاحه الآن؟",
+                                        "options": [
+                                            "لا شيء",
+                                            "إبلاغ المشرف وتسجيل التفاصيل",
+                                            "إخبار النزيل أن المبنى قديم",
+                                            "نقل كل النزلاء القادمين دون إخبار أحد"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "المشكلة المتكررة تُصعّد وتُسجل."
+                                    },
+                                    {
+                                        "question": "تم الحل. أي إجراء يواصل استعادة رضا النزيل بشكل أفضل؟",
+                                        "options": [
+                                            "إغلاق الشكوى في النظام فورًا",
+                                            "انتظار أن يذكرها النزيل مرة أخرى",
+                                            "سؤال النزيل إن كان الحل مناسبًا وشكره على صبره",
+                                            "تقديم خصم دون موافقة"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "استعادة الرضا تستمر بعد الحل بالتأكد من النتيجة مع النزيل."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

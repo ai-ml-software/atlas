@@ -50,6 +50,7 @@
           <h2 class="accordion-header" id="section<?php echo $section['id']; ?>">
             <button class="accordion-button <?php if($lesson_details['section_id'] != $section['id']) echo 'collapsed'; ?>" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne<?php echo $section['id'] ?>" aria-expanded="true" aria-controls="collapseOne<?php echo $section['id'] ?>">
               <div class="d-flex flex-column" style="line-height:28px">
+                <small class="ap-side__chapter"><?php echo get_phrase('Chapter'); ?> <?php echo $key + 1; ?></small>
                 <span><?php echo $section['title']; ?></span>
 
                 <!-- Study plan start-->
@@ -86,7 +87,8 @@
 
                 <?php
                 $lessons = $this->crud_model->get_lessons('section', $section['id'])->result_array();
-                foreach($lessons as $key => $lesson):
+                if (isset($this->ha_lms_i18n)) { $lessons = $this->ha_lms_i18n->lessons($lessons); }
+                foreach($lessons as $lesson_key => $lesson):
 
                   //Check is bundle or course
                   if(isset($bundle_id) && $bundle_id > 0):
@@ -148,7 +150,11 @@
                           <?php endif; ?>
                         </span>
                       </span>
-                      <span class="ms-auto"><?php echo $lesson['duration']; ?></span>
+                      <span class="ms-auto ap-side__time"><?php
+                        $lesson_time = trim((string) $lesson['duration']);
+                        if ($lesson_time !== '' && trim($lesson_time, '0:') !== '') {
+                          echo html_escape(isset($ap_duration) ? $ap_duration($lesson_time) : $lesson_time);
+                        } ?></span>
                     </a>
                   </li>
 

@@ -1,0 +1,538 @@
+{
+    "slug": "serving-children",
+    "category": "personalised-service",
+    "level": "foundation",
+    "source_pdf": "Serving-Children-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/serving-children.webp",
+    "videos": [],
+    "locales": {
+        "en": {
+            "title": "Serving Children",
+            "subtitle": "Warm welcome. Safety first.",
+            "short_description": "Welcome children as guests, follow the parents' lead, offer family support and keep every child safe across the hotel.",
+            "description": "<p>Travelling with children can be tiring for parents, who are watching over safety and comfort all the time. This course shows hotel colleagues how to welcome children as real guests, direct every decision to the parents and offer practical support that lets the whole family relax.</p><p>Built on the Dyafa Hotels &amp; Resorts training deck, it follows four simple actions: Welcome, Ask parents, Assist and Protect. You will learn respectful ways to speak with children, what to offer at arrival, in the room, in the restaurant and when moving around, and how to put safety first however busy you are.</p><p>Each lesson ends with a short scenario quiz so you can check your judgement before your next family arrival.</p>",
+            "requirements": "No prior training is needed; the course suits every guest-facing colleague.",
+            "outcomes": [
+                "Welcome children warmly as guests while keeping clear professional boundaries",
+                "Direct decisions and offers to the parents before giving anything to a child",
+                "Offer family support at arrival, in the room, in the restaurant and on the move",
+                "Set a safe table and serve children quickly, safely and flexibly",
+                "Stop danger, inform parents and ask for support while avoiding common mistakes"
+            ],
+            "faqs": [
+                {
+                    "question": "Can I give a child sweets or a small gift?",
+                    "answer": "Only with the parents' approval. Ask the parents first and never promise the child anything they have not agreed to."
+                },
+                {
+                    "question": "Is it ever acceptable to touch or carry a child?",
+                    "answer": "No, with one exception: preventing immediate danger, in line with the child protection policy. Otherwise ask the parents to help."
+                },
+                {
+                    "question": "Should I offer a cot or high chair to every family?",
+                    "answer": "Offer it warmly, but do not assume the family needs it. Let the parents decide."
+                }
+            ],
+            "meta_title": "Serving Children: Hotel Family Service Training",
+            "meta_description": "Hotel training on serving children: welcome them as guests, follow the parents' lead, support families and put safety first.",
+            "focus_keyword": "serving children in hotels",
+            "chapters": [
+                {
+                    "title": "Why Family Service Matters",
+                    "lessons": [
+                        {
+                            "title": "Care for the Whole Family",
+                            "minutes": 6,
+                            "body": "<h2>Helping children gives parents greater comfort</h2><p>A family arriving at the hotel is rarely one guest. It is a small team of people with different needs, and at the centre of it are parents who are carrying most of the load. Travelling with children can be tiring. Parents have packed, organised, answered questions in the car or on the plane and, all the way to our door, they have been watching over two things without a break: their children's safety and their children's comfort.</p><p>That is why family service is not a side task. When we help the children, we are also helping the parents. Every small thing we take off their shoulders lets them breathe a little and start enjoying the stay.</p><blockquote class=\"bk-quote\">When children feel welcome and safe, parents can relax.</blockquote><h2>Five ideas to hold on to</h2><ul><li><strong>Travelling with children can be tiring for parents.</strong> Expect a family to arrive a little stretched, and be patient.</li><li><strong>Parents constantly watch over safety and comfort.</strong> Anything we do near their child, they will notice.</li><li><strong>Proactive service eases pressure on the family.</strong> Offering before they have to ask removes one more task from their list.</li><li><strong>A child is a guest who deserves welcome and respect.</strong> Children are not luggage that comes with the booking; they are guests in their own right.</li><li><strong>The child's experience influences the family's decision to return.</strong> Parents remember where their children were happy and safe.</li></ul><h2>The four actions of this course</h2><p>The deck sums up family service in four words, and the rest of this course unpacks each of them:</p><ol><li><strong>Welcome</strong> the child as a guest.</li><li><strong>Ask parents</strong> before offering, deciding or promising anything.</li><li><strong>Assist</strong> the family with practical, proactive support.</li><li><strong>Protect</strong> the child by putting safety first, however busy you are.</li></ol><p>Notice the order. Warmth opens the relationship, the parents stay in charge, practical help follows, and protection runs underneath everything. A warm greeting without safety is not enough, and safety delivered coldly leaves the family feeling judged rather than cared for.</p><aside class=\"bk-note\">Before a family reaches the desk, take one second to count the children and note their approximate ages. It helps you greet everyone and think ahead about what the parents might want to be offered.</aside><aside class=\"bk-scene\">A couple arrived late in the evening with two tired young children and a stroller. The front office colleague greeted the parents, then smiled and said hello to the children by name after the mother introduced them. While the check-in was processed, a bell colleague took the bags and folded the stroller. The father later told the manager that it was the first moment of the trip he had been able to stand still. Nothing unusual was done; it simply arrived before he had to ask.</aside><aside class=\"bk-key\">Good service to the child means comfort for the whole family: welcome, ask the parents, assist and protect.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Care for the whole family",
+                                "questions": [
+                                    {
+                                        "question": "A family checks in and the parents look tired and distracted. What is the most helpful mindset?",
+                                        "options": [
+                                            "Process the check-in quickly and let them manage alone",
+                                            "See that helping the children will also ease the parents' pressure",
+                                            "Wait until the parents make a specific request",
+                                            "Focus only on the adult who holds the booking"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck teaches that helping children gives parents greater comfort and that proactive service eases pressure on the family."
+                                    },
+                                    {
+                                        "question": "Why does the deck say a child's experience matters to the hotel?",
+                                        "options": [
+                                            "It influences the family's decision to return",
+                                            "Children pay a separate room rate",
+                                            "Children write the online reviews",
+                                            "It shortens the check-in process"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The slide states that the child's experience influences the family's decision to return."
+                                    },
+                                    {
+                                        "question": "Which order best reflects the four actions of family service?",
+                                        "options": [
+                                            "Protect, Assist, Welcome, Ask parents",
+                                            "Assist, Welcome, Protect, Ask parents",
+                                            "Ask parents, Protect, Assist, Welcome",
+                                            "Welcome, Ask parents, Assist, Protect"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck lists the actions as Welcome, Ask parents, Assist, Protect."
+                                    },
+                                    {
+                                        "question": "A colleague says, 'The child isn't the guest, the parents are.' What is the best response?",
+                                        "options": [
+                                            "Agree, because only adults sign the registration card",
+                                            "Say children should be served only after all adults",
+                                            "Explain that a child is a guest who deserves welcome and respect",
+                                            "Ignore the comment because it does not affect service"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck states clearly that a child is a guest who deserves welcome and respect."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Children Are Guests Too",
+                    "lessons": [
+                        {
+                            "title": "Respectful Communication and the Parents' Lead",
+                            "minutes": 7,
+                            "body": "<h2>Recognise children as guests too</h2><p>Children notice immediately whether an adult sees them. A colleague who talks over a child's head as if they were not there sends a message the parents feel too. The deck asks us to do two things at once: speak to children warmly and respectfully, and leave every decision with their parents. The line under the slide says it well: clear professional boundaries, with warmth in communication.</p><h2>Respectful communication</h2><ol><li><strong>Welcome the child without ignoring them.</strong> A smile and a simple greeting, directed at the child, is enough.</li><li><strong>Ask the parents before using the name.</strong> Do not call a child by a name you overheard or read on a form; let the parents introduce them.</li><li><strong>Use simple, age-appropriate words.</strong> Short sentences, friendly tone, no adult jokes.</li><li><strong>Come down to the child's eye level if appropriate.</strong> Bending slightly can make a small child feel less intimidated; judge the situation and keep a respectful distance.</li><li><strong>Give them time to answer without pressure.</strong> Some children are shy. If they do not reply, smile and move on.</li></ol><h2>Follow the parents' lead</h2><ul><li><strong>Direct decisions to the parents.</strong> The child may tell you what they want; the parents decide.</li><li><strong>Ask before offering the child anything</strong>, whether food, a drink, a toy or a treat.</li><li><strong>Do not promise the child anything without approval.</strong> A broken promise to a child becomes a problem for the parents.</li><li><strong>Do not compare children.</strong> Not siblings, not other guests' children.</li><li><strong>Treat all children with the same attention.</strong> The quiet one deserves the same greeting as the talkative one.</li></ul><h2>Language that reassures</h2><p>What we say to a family shows whether we are on their side. The deck gives clear examples.</p><table class=\"bk-say\"><thead><tr><th>Say</th><th>Avoid</th></tr></thead><tbody><tr><td>Would you like a high chair?</td><td>Control your children.</td></tr><tr><td>Does this option suit your child?</td><td>Your child is making a mess.</td></tr><tr><td>Don't worry, I will help clean it.</td><td>Why is he scared?</td></tr><tr><td>Shall I bring alternative tableware?</td><td>Look how his brother eats.</td></tr><tr><td>Do you need anything else for the children?</td><td>Children are always annoying.</td></tr></tbody></table><p>Every phrase on the left is a question or an offer addressed to the parents. Every phrase on the right blames, compares or judges. Even when a child is noisy or has spilled a drink, the parents are usually already embarrassed; our job is to reduce that feeling, not add to it.</p><blockquote class=\"bk-quote\">Would you prefer child-safe tableware?</blockquote><aside class=\"bk-scene\">At breakfast a young boy knocked over his juice and began to cry. His mother apologised again and again. The server knelt beside the table, said, \"Don't worry, I will help clean it,\" and brought fresh napkins and a new glass. Before pouring, she asked the mother, \"Would you like a cup with a lid for him?\" The mother relaxed, the boy stopped crying, and the table carried on with breakfast.</aside><aside class=\"bk-key\">Be warm with the child and let the parents decide: offer, ask and reassure, never blame or compare.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Communication and the parents' lead",
+                                "questions": [
+                                    {
+                                        "question": "A child at the desk asks you for a lollipop from the counter jar. What should you do?",
+                                        "options": [
+                                            "Give it quickly so the child is happy",
+                                            "Ask the parents first whether it is all right",
+                                            "Tell the child sweets are not allowed",
+                                            "Promise one later when they check out"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says to ask before offering the child anything and to direct decisions to the parents."
+                                    },
+                                    {
+                                        "question": "You read a child's name on a booking note. When should you use it?",
+                                        "options": [
+                                            "Straight away, to seem personal",
+                                            "Only if the child asks you",
+                                            "After the parents have introduced the child or agreed",
+                                            "Never, children should not be addressed"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck asks you to check with the parents before using the child's name."
+                                    },
+                                    {
+                                        "question": "A toddler spills water across the table. Which phrase fits the deck's guidance?",
+                                        "options": [
+                                            "Don't worry, I will help clean it.",
+                                            "Your child is making a mess.",
+                                            "Please control your children.",
+                                            "Children are always like this."
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Reassuring, helpful language is on the Say list; blaming phrases are on the Avoid list."
+                                    },
+                                    {
+                                        "question": "Two siblings are at the table; one eats neatly and one refuses food. What is the professional approach?",
+                                        "options": [
+                                            "Praise the neat one so the other copies him",
+                                            "Point out to the parents how well the older one eats",
+                                            "Encourage the child to be more like his brother",
+                                            "Give both children the same attention and make no comparisons"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says not to compare children and to treat all children with the same attention."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Proactive Family Support and Restaurant Service",
+                            "minutes": 7,
+                            "body": "<h2>Take the initiative to make the stay easier</h2><p>Families often need small things that a single traveller never thinks of. The deck asks us to be proactive, to offer those things before the family has to hunt for them, but with one important condition written under the slide: do not assume the family needs them. Offer help gladly, and let the parents decide.</p><blockquote class=\"bk-quote\">Offer warmly, and let the parents decide.</blockquote><h2>Four moments of proactive support</h2><table><thead><tr><th>Moment</th><th>What to offer</th></tr></thead><tbody><tr><td>Arrival</td><td>A cot or children's supplies</td></tr><tr><td>Guest room</td><td>Extra towels and pillows</td></tr><tr><td>Restaurant</td><td>A high chair and safe tableware</td></tr><tr><td>Moving around</td><td>Help with luggage and the stroller</td></tr></tbody></table><p>The skill is in the offer. \"Would you like a cot in the room?\" gives the parents a choice. Sending a cot up without asking may clutter a room they had planned differently, and some families bring their own equipment. A warm question respects both their needs and their judgement.</p><h2>In the restaurant: speed, safety and flexibility</h2><p>The restaurant is where families spend a large part of their stay and where small risks sit close to small hands. The deck divides restaurant service into two parts.</p><h3>A safe table</h3><ul><li>Move glass and breakable items away from the child's reach.</li><li>Offer alternative tableware after asking the parents.</li><li>Move knives and hot plates away.</li><li>Do not serve sweets without the parents' approval.</li><li>Consider allergies and dietary restrictions; check with the parents before serving.</li></ul><h3>Suitable service</h3><ul><li>Serve children first, unless the parents ask otherwise. A hungry child waiting for adults' dishes quickly becomes an unhappy child.</li><li>Speed up bread or a suitable meal so the child has something while waiting.</li><li>Alert the parents to spicy or unsuitable food on the menu or plate.</li><li>Use a plate that is not hot when serving the child.</li><li>Bring extra napkins and water without waiting to be asked.</li></ul><p>The closing line of the slide ties these together: ask the parents, then offer the safest option. You are not deciding for the family; you are making sure the safe choice is available and clearly offered.</p><aside class=\"bk-note\">When you seat a family, reset the table before the child sits down: glasses and knives to the adults' side, the hot bread basket away from the edge. It takes seconds and prevents most accidents.</aside><aside class=\"bk-scene\">A family of five sat down for dinner. The server greeted the children, then asked the father, \"Would you like a high chair for the little one, and shall I bring some bread for the children while you choose?\" She moved the wine glasses and steak knives away from the small child, mentioned that one dish on the children's menu was spicy, and served the children's plates first on a cool plate. The parents were able to order calmly, and the meal started on the right foot.</aside><aside class=\"bk-key\">Offer proactively but never assume: set a safe table, serve children quickly, and let the parents choose the safest option.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Family support and restaurant service",
+                                "questions": [
+                                    {
+                                        "question": "A family with a baby is checking in. What is the best way to handle a cot?",
+                                        "options": [
+                                            "Send one to the room automatically",
+                                            "Wait for the family to call housekeeping",
+                                            "Warmly offer a cot and let the parents decide",
+                                            "Tell them cots are only for long stays"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says to offer help warmly and not to assume the family needs it."
+                                    },
+                                    {
+                                        "question": "At dinner, the parents have not asked about the order of service. Whose food should normally come first?",
+                                        "options": [
+                                            "The children's, unless the parents ask otherwise",
+                                            "The oldest guest's",
+                                            "The parent who ordered first",
+                                            "All plates must arrive together"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck says to serve children first unless the parents ask otherwise."
+                                    },
+                                    {
+                                        "question": "A child's dish on the menu is quite spicy. What should you do?",
+                                        "options": [
+                                            "Say nothing; parents read the menu",
+                                            "Replace it without asking",
+                                            "Refuse to serve it to a child",
+                                            "Alert the parents that the dish is spicy"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Suitable service includes alerting parents to spicy or unsuitable food."
+                                    },
+                                    {
+                                        "question": "While setting a family table, which action is most important before the young child sits down?",
+                                        "options": [
+                                            "Add extra decorative glassware",
+                                            "Move glass, knives and hot plates away from the child",
+                                            "Bring the dessert menu",
+                                            "Place the bread basket at the child's edge"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "A safe table means moving breakables, knives and hot plates away."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Safety First",
+                    "lessons": [
+                        {
+                            "title": "Protecting Children and Avoiding Common Mistakes",
+                            "minutes": 7,
+                            "body": "<h2>Safety first, however busy you are</h2><p>The fourth action of family service is Protect, and the deck is firm about it: safety comes first however busy you are. A full restaurant or a queue at the desk does not change our duty to notice a child in danger. Children move quickly and do not see risks the way adults do, so we have to see them first.</p><h2>Four areas to watch</h2><ol><li><strong>Doors and walkways.</strong> Watch for a child near a closing door, a revolving entrance or a moving trolley. Slow down and wait rather than push through.</li><li><strong>Buffet and tables.</strong> Move hot dishes and tablecloths a child could pull away from the edge.</li><li><strong>Dangerous objects.</strong> If a child picks up something dangerous, do not snatch it from their hand; ask the parents to step in immediately.</li><li><strong>Pools and public areas.</strong> Apply the safety instructions and call the person in charge when there is danger.</li></ol><p>When something goes wrong, the deck gives a clear sequence: <strong>stop the danger, inform the parents, ask for support.</strong> You do not have to handle it alone, and you should not stay silent.</p><h2>Mistakes that upset the family</h2><p>The deck also lists four mistakes that can undo a family's trust in a moment.</p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Keep your hands to yourself and ask the parents to help; touch only to prevent immediate danger, per policy.</td><td>Touching or carrying a child.</td></tr><tr><td>Speak kindly and neutrally about every child.</td><td>Mocking age, appearance or behaviour, or comparing siblings.</td></tr><tr><td>Deal patiently with noise or spills and help calmly.</td><td>Sighing, frowning or showing irritation.</td></tr><tr><td>Protect the children's and family's data; do not give a room connected to another guest.</td><td>Ignoring the family's privacy.</td></tr></tbody></table><p>Touching deserves a special word. Even a friendly pat on the head or lifting a child to see something can make parents deeply uncomfortable, and in Saudi Arabia as elsewhere families expect their children's personal space to be respected. The only exception the deck allows is preventing immediate danger, in line with the child protection policy.</p><p>Privacy matters for families too. A connecting door to another guest's room, or sharing a child's name or room number within earshot of others, puts the family at risk. Treat children's information with the same care as any guest's data.</p><blockquote class=\"bk-quote\">Respect the child — follow the parents — apply the child protection policy.</blockquote><aside class=\"bk-scene\">By the pool, a lifeguard noticed a small child walking alone towards the deep end while his mother was on the phone. He called out calmly, stepped between the child and the edge without grabbing him, and told the mother at once. He then reported it to the recreation supervisor so extra attention could be given to that area. The mother thanked him, and the family came back to the pool the next day with confidence.</aside><aside class=\"bk-key\">Stop the danger, inform the parents and ask for support; never touch, mock, show irritation or ignore privacy.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Safety and common mistakes",
+                                "questions": [
+                                    {
+                                        "question": "A child at the buffet picks up a sharp serving knife. What should you do?",
+                                        "options": [
+                                            "Pull the knife out of the child's hand quickly",
+                                            "Ignore it because the parents are nearby",
+                                            "Ask the parents to step in immediately without snatching it",
+                                            "Scold the child loudly so they drop it"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says not to snatch a dangerous object from a child's hand and to ask the parents to step in immediately."
+                                    },
+                                    {
+                                        "question": "The restaurant is full and you notice a tablecloth corner a toddler is pulling on under hot dishes. What is correct?",
+                                        "options": [
+                                            "Act now and move the hot dishes, because safety comes first however busy you are",
+                                            "Deal with it after the rush",
+                                            "Tell the child to stop and walk away",
+                                            "Ask another guest to watch the child"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Safety comes first however busy you are; move hot dishes and pullable tablecloths away."
+                                    },
+                                    {
+                                        "question": "A family asks for two rooms. The only available room next to theirs connects to another guest's room. What should you do?",
+                                        "options": [
+                                            "Assign it, since the doors can be locked",
+                                            "Assign it and tell the other guest",
+                                            "Let the child choose the room",
+                                            "Avoid giving a room connected to another guest and find a better option"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says not to give a room connected to another guest and to protect the family's privacy."
+                                    },
+                                    {
+                                        "question": "A cheerful colleague often lifts young children to show them the lobby aquarium. What is the right advice?",
+                                        "options": [
+                                            "It is fine if the child is smiling",
+                                            "Do not touch or carry a child; the only exception is preventing immediate danger",
+                                            "Only do it when the parents are busy",
+                                            "Ask the child's permission first"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck lists touching a child as a mistake, with the only exception being immediate danger per policy."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "خدمة الأطفال",
+            "subtitle": "دفء للعائلة وسلامة أولًا",
+            "short_description": "رحّب بالأطفال كنزلاء، واتبع توجيه الوالدين، وقدّم الدعم للأسرة، واحرص على سلامة كل طفل في أرجاء الفندق.",
+            "description": "<p>السفر مع الأطفال قد يكون مرهقًا للوالدين، فهما يراقبان السلامة والراحة باستمرار. تعلّمك هذه الدورة كيف ترحّب بالطفل كنزيل حقيقي، وتوجّه القرارات إلى الوالدين، وتقدّم دعمًا عمليًا يمنح الأسرة كلها الراحة.</p><p>بُنيت الدورة على حقيبة تدريب فنادق ومنتجعات ضيافة، وتقوم على أربع خطوات بسيطة: رحّب، اسأل الوالدين، ساعد، احمِ. ستتعلم أسلوب التواصل المحترم مع الأطفال، وما تعرضه عند الوصول وفي الغرفة وفي المطعم وعند الحركة، وكيف تضع السلامة أولًا مهما كنت مشغولًا.</p><p>ينتهي كل درس باختبار قصير قائم على مواقف واقعية لتتحقق من حسن تقديرك قبل استقبال أسرتك القادمة.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظف يتعامل مع النزلاء.",
+            "outcomes": [
+                "رحّب بالأطفال كنزلاء بدفء مع الحفاظ على حدود مهنية واضحة",
+                "وجّه القرارات والعروض إلى الوالدين قبل تقديم أي شيء للطفل",
+                "قدّم الدعم للأسرة عند الوصول وفي الغرفة وفي المطعم وعند الحركة",
+                "جهّز طاولة آمنة واخدم الأطفال بسرعة وأمان ومرونة",
+                "أوقف الخطر وأبلغ الوالدين واطلب المساندة مع تجنّب الأخطاء الشائعة"
+            ],
+            "faqs": [
+                {
+                    "question": "هل يمكنني تقديم حلوى أو هدية صغيرة للطفل؟",
+                    "answer": "فقط بموافقة الوالدين. اسألهما أولًا، ولا تعد الطفل بشيء دون موافقتهما."
+                },
+                {
+                    "question": "هل يجوز لمس الطفل أو حمله؟",
+                    "answer": "لا، والاستثناء الوحيد هو منع خطر فوري وفق سياسة حماية الطفل. في غير ذلك اطلب مساعدة الوالدين."
+                },
+                {
+                    "question": "هل أعرض سرير أطفال أو كرسي أطفال على كل أسرة؟",
+                    "answer": "اعرضه بسعادة، لكن لا تفترض أن الأسرة تحتاجه، واترك القرار للوالدين."
+                }
+            ],
+            "meta_title": "خدمة الأطفال: تدريب الفنادق على خدمة الأسرة",
+            "meta_description": "تدريب فندقي على خدمة الأطفال: رحّب بهم كنزلاء، واتبع توجيه الوالدين، وادعم الأسرة، وضع السلامة أولًا.",
+            "focus_keyword": "خدمة الأطفال في الفنادق",
+            "chapters": [
+                {
+                    "title": "لماذا تهمّ خدمة الأسرة",
+                    "lessons": [
+                        {
+                            "title": "راحة للعائلة كلها",
+                            "minutes": 6,
+                            "body": "<h2>مساعدة الأطفال تمنح الوالدين راحة أكبر</h2><p>الأسرة التي تصل إلى الفندق ليست نزيلًا واحدًا، بل فريق صغير باحتياجات مختلفة، وفي قلبه والدان يحملان العبء الأكبر. السفر مع الأطفال قد يكون مرهقًا، فالوالدان حزما الأمتعة ونظّما الرحلة وأجابا عن أسئلة الطريق، وطوال الوقت كانا يراقبان أمرين دون توقف: سلامة أطفالهما وراحتهم.</p><p>لذلك فخدمة الأسرة ليست مهمة جانبية. حين نساعد الأطفال فإننا نساعد الوالدين أيضًا، وكل أمر صغير نرفعه عن كاهلهما يمنحهما فرصة للاسترخاء والاستمتاع بالإقامة.</p><blockquote class=\"bk-quote\">تشعر الأسرة كلها بالراحة — حين يشعر الطفل بالأمان والترحيب</blockquote><h2>خمس أفكار أساسية</h2><ul><li><strong>السفر مع الأطفال قد يكون مرهقًا للوالدين.</strong> توقّع وصول الأسرة متعبة قليلًا وكن صبورًا.</li><li><strong>الوالدان يراقبان السلامة والراحة باستمرار.</strong> كل ما تفعله قرب طفلهما سيلاحظانه.</li><li><strong>الخدمة الاستباقية تخفف الضغط عن الأسرة.</strong> العرض قبل الطلب يرفع مهمة إضافية عنهما.</li><li><strong>الطفل نزيل يستحق الترحيب والاحترام.</strong> وليس مجرد مرافق في الحجز.</li><li><strong>تجربة الطفل تؤثر في قرار الأسرة بالعودة.</strong> يتذكر الوالدان المكان الذي كان فيه أطفالهما سعداء وآمنين.</li></ul><h2>الخطوات الأربع لهذه الدورة</h2><ol><li><strong>رحّب</strong> بالطفل كنزيل.</li><li><strong>اسأل الوالدين</strong> قبل أن تعرض أو تقرر أو تعد بأي شيء.</li><li><strong>ساعد</strong> الأسرة بدعم عملي استباقي.</li><li><strong>احمِ</strong> الطفل بوضع السلامة أولًا مهما كنت مشغولًا.</li></ol><p>لاحظ الترتيب: الدفء يفتح العلاقة، والوالدان يبقيان صاحبي القرار، ثم تأتي المساعدة العملية، والحماية حاضرة في كل خطوة.</p><aside class=\"bk-note\">قبل أن تصل الأسرة إلى المكتب، خذ لحظة لتعرف عدد الأطفال وأعمارهم التقريبية؛ فذلك يساعدك على الترحيب بالجميع والتفكير فيما قد يرغب الوالدان في عرضه عليهما.</aside><aside class=\"bk-scene\">وصل زوجان في وقت متأخر ومعهما طفلان متعبان وعربة أطفال. رحّب موظف الاستقبال بالوالدين، ثم ابتسم وحيّا الطفلين باسميهما بعد أن عرّفته الأم بهما. وأثناء إنهاء إجراءات الوصول تولّى زميل الأمتعة الحقائب وطوى العربة. أخبر الأب المدير لاحقًا أنها كانت أول لحظة في الرحلة استطاع فيها أن يقف مرتاحًا. لم يحدث شيء استثنائي؛ فقط جاءت المساعدة قبل أن يطلبها.</aside><aside class=\"bk-key\">خدمة الطفل الجيدة تعني راحة الأسرة كلها: رحّب، اسأل الوالدين، ساعد، احمِ.</aside>",
+                            "quiz": {
+                                "title": "تحقّق من فهمك: راحة للعائلة كلها",
+                                "questions": [
+                                    {
+                                        "question": "أسرة تنهي إجراءات الوصول ويبدو الوالدان متعبين ومشتتين. ما التفكير الأنسب؟",
+                                        "options": [
+                                            "أنهِ الإجراءات بسرعة واتركهما يتدبران أمرهما",
+                                            "أدرك أن مساعدة الأطفال ستخفف الضغط عن الوالدين أيضًا",
+                                            "انتظر حتى يطلب الوالدان شيئًا محددًا",
+                                            "ركّز فقط على صاحب الحجز"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تعلّمنا الحقيبة أن مساعدة الأطفال تمنح الوالدين راحة أكبر وأن الخدمة الاستباقية تخفف الضغط عن الأسرة."
+                                    },
+                                    {
+                                        "question": "لماذا تهمّ تجربة الطفل الفندق بحسب الحقيبة؟",
+                                        "options": [
+                                            "لأنها تؤثر في قرار الأسرة بالعودة",
+                                            "لأن للأطفال سعر غرفة مستقلًا",
+                                            "لأن الأطفال يكتبون التقييمات",
+                                            "لأنها تختصر إجراءات الوصول"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تنص الشريحة على أن تجربة الطفل تؤثر في قرار الأسرة بالعودة."
+                                    },
+                                    {
+                                        "question": "أي ترتيب يعبّر عن الخطوات الأربع لخدمة الأسرة؟",
+                                        "options": [
+                                            "احمِ، ساعد، رحّب، اسأل الوالدين",
+                                            "ساعد، رحّب، احمِ، اسأل الوالدين",
+                                            "اسأل الوالدين، احمِ، ساعد، رحّب",
+                                            "رحّب، اسأل الوالدين، ساعد، احمِ"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تعرض الحقيبة الخطوات بترتيب: رحّب، اسأل الوالدين، ساعد، احمِ."
+                                    },
+                                    {
+                                        "question": "قال زميل: «الطفل ليس النزيل، الوالدان هما النزيلان». ما الرد الأنسب؟",
+                                        "options": [
+                                            "أوافقه لأن البالغين فقط يوقّعون بطاقة التسجيل",
+                                            "أقول إن الأطفال يُخدمون بعد جميع البالغين",
+                                            "أوضح أن الطفل نزيل يستحق الترحيب والاحترام",
+                                            "أتجاهل التعليق لأنه لا يؤثر في الخدمة"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تؤكد الحقيبة أن الطفل نزيل يستحق الترحيب والاحترام."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "الأطفال ضيوف أيضًا",
+                    "lessons": [
+                        {
+                            "title": "التواصل باحترام واحترام دور الوالدين",
+                            "minutes": 7,
+                            "body": "<h2>اعترف بالأطفال كضيوف أيضًا</h2><p>يلاحظ الطفل فورًا إن كان الكبار يرونه أم لا. والموظف الذي يتحدث فوق رأس الطفل كأنه غير موجود يرسل رسالة يشعر بها الوالدان أيضًا. تطلب منا الحقيبة أمرين معًا: أن نتحدث مع الطفل بدفء واحترام، وأن نترك كل قرار للوالدين. وكما تقول الشريحة: حدود مهنية واضحة — دفء في التواصل.</p><h2>تواصل باحترام</h2><ol><li><strong>رحّب بالطفل دون تجاهله</strong>، فابتسامة وتحية بسيطة موجهة إليه تكفي.</li><li><strong>اسأل الوالدين قبل استخدام الاسم</strong>، ولا تنادِ الطفل باسم سمعته أو قرأته في النموذج.</li><li><strong>استخدم كلمات بسيطة تناسب العمر</strong>، بجمل قصيرة ونبرة ودودة.</li><li><strong>انخفض لمستوى نظر الطفل إن كان مناسبًا</strong>، مع الحفاظ على مسافة محترمة.</li><li><strong>امنحه وقتًا للإجابة دون ضغط</strong>؛ فبعض الأطفال خجولون.</li></ol><h2>احترم دور الوالدين</h2><ul><li>وجّه القرارات إلى الوالدين.</li><li>اسأل قبل تقديم أي شيء للطفل.</li><li>لا تعد الطفل بشيء دون موافقة.</li><li>لا تقارن بين الأطفال.</li><li>عامل جميع الأطفال بالاهتمام نفسه.</li></ul><h2>استخدم لغة مطمئنة ومحترمة</h2><table class=\"bk-say\"><thead><tr><th>قل</th><th>تجنّب</th></tr></thead><tbody><tr><td>هل ترغبون في كرسي أطفال؟</td><td>سيطروا على أطفالكم.</td></tr><tr><td>هل يناسب طفلكم هذا الخيار؟</td><td>طفلكم يسبب الفوضى.</td></tr><tr><td>لا تقلقوا، سأساعد في تنظيفه.</td><td>لماذا هو خائف؟</td></tr><tr><td>هل أحضر أدوات طعام بديلة؟</td><td>انظر كيف يأكل أخوه.</td></tr><tr><td>هل تحتاجون شيئًا آخر للأطفال؟</td><td>الأطفال دائمًا مزعجون.</td></tr></tbody></table><p>كل عبارة في العمود الأول سؤال أو عرض موجّه إلى الوالدين، وكل عبارة في العمود الثاني تلوم أو تقارن أو تحكم. وحين يسكب الطفل شيئًا يكون الوالدان محرجين غالبًا، ومهمتنا أن نخفف هذا الشعور لا أن نزيده.</p><blockquote class=\"bk-quote\">Would you prefer child-safe tableware?</blockquote><aside class=\"bk-scene\">أثناء الإفطار أسقط طفل صغير كأس العصير وبدأ يبكي، وأخذت أمه تعتذر مرارًا. انحنت الموظفة بجانب الطاولة وقالت: «لا تقلقوا، سأساعد في تنظيفه»، وأحضرت مناديل وكأسًا جديدًا، ثم سألت الأم قبل أن تصب: «هل تفضلين كوبًا بغطاء له؟». هدأت الأم وتوقف الطفل عن البكاء واستمر الإفطار.</aside><aside class=\"bk-key\">كن دافئًا مع الطفل واترك القرار للوالدين: اعرض واسأل وطمئن، ولا تلُم ولا تقارن.</aside>",
+                            "quiz": {
+                                "title": "تحقّق من فهمك: التواصل ودور الوالدين",
+                                "questions": [
+                                    {
+                                        "question": "طلب منك طفل عند المكتب حلوى من الوعاء. ماذا تفعل؟",
+                                        "options": [
+                                            "أعطه إياها بسرعة ليفرح",
+                                            "اسأل الوالدين أولًا إن كان ذلك مناسبًا",
+                                            "أخبره أن الحلوى ممنوعة",
+                                            "عِده بواحدة عند المغادرة"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "توجّهنا الحقيبة إلى السؤال قبل تقديم أي شيء للطفل وتوجيه القرارات إلى الوالدين."
+                                    },
+                                    {
+                                        "question": "قرأت اسم الطفل في ملاحظة الحجز. متى تستخدمه؟",
+                                        "options": [
+                                            "فورًا لتبدو الخدمة شخصية",
+                                            "فقط إذا سألك الطفل",
+                                            "بعد أن يعرّفك به الوالدان أو يوافقا",
+                                            "أبدًا، فلا يُخاطَب الأطفال"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تطلب الحقيبة سؤال الوالدين قبل استخدام اسم الطفل."
+                                    },
+                                    {
+                                        "question": "سكب طفل صغير الماء على الطاولة. أي عبارة تتوافق مع الحقيبة؟",
+                                        "options": [
+                                            "لا تقلقوا، سأساعد في تنظيفه.",
+                                            "طفلكم يسبب الفوضى.",
+                                            "سيطروا على أطفالكم.",
+                                            "الأطفال دائمًا هكذا."
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "العبارات المطمئنة المساعدة في قائمة «قل»، وعبارات اللوم في قائمة «تجنّب»."
+                                    },
+                                    {
+                                        "question": "على الطاولة أخوان؛ أحدهما يأكل بترتيب والآخر يرفض الطعام. ما التصرف المهني؟",
+                                        "options": [
+                                            "امدح الأول ليقلده الآخر",
+                                            "نبّه الوالدين إلى حسن أكل الأكبر",
+                                            "شجّع الطفل ليكون مثل أخيه",
+                                            "امنح الطفلين الاهتمام نفسه دون أي مقارنة"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول الحقيبة: لا تقارن بين الأطفال، وعامل جميع الأطفال بالاهتمام نفسه."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "دعم الأسرة بمبادرة وخدمة الأطفال في المطعم",
+                            "minutes": 7,
+                            "body": "<h2>بادر بما يسهّل إقامة الأسرة</h2><p>تحتاج الأسر غالبًا إلى أشياء صغيرة لا يفكر فيها المسافر وحده. تطلب منا الحقيبة أن نبادر ونعرض هذه الأشياء قبل أن تبحث عنها الأسرة، لكن بشرط مهم مكتوب أسفل الشريحة: لا تفترض أن الأسرة تحتاجها — اعرض المساعدة بسعادة، واترك القرار للوالدين.</p><h2>أربع لحظات للدعم الاستباقي</h2><table><thead><tr><th>اللحظة</th><th>ما تعرضه</th></tr></thead><tbody><tr><td>عند الوصول</td><td>سرير أطفال أو مستلزمات</td></tr><tr><td>في الغرفة</td><td>مناشف ووسائد إضافية</td></tr><tr><td>في المطعم</td><td>كرسي أطفال وأدوات آمنة</td></tr><tr><td>عند الحركة</td><td>المساعدة في الأمتعة والعربة</td></tr></tbody></table><p>المهارة في طريقة العرض. سؤال مثل «هل ترغبون في سرير أطفال في الغرفة؟» يمنح الوالدين الخيار، أما إرسال السرير دون سؤال فقد يربك ترتيب الغرفة، وبعض الأسر تحضر مستلزماتها معها.</p><h2>في المطعم: السرعة والسلامة والمرونة</h2><h3>طاولة آمنة</h3><ul><li>أبعد الزجاج والأدوات القابلة للكسر.</li><li>قدّم أدوات بديلة بعد سؤال الوالدين.</li><li>أبعد السكاكين والأطباق الساخنة.</li><li>لا تقدم حلوى دون موافقة الوالدين.</li><li>راعِ الحساسية والقيود الغذائية.</li></ul><h3>خدمة مناسبة</h3><ul><li>اخدم الأطفال أولًا ما لم يطلب الوالدان غير ذلك.</li><li>سرّع الخبز أو الوجبة المناسبة.</li><li>نبّه الوالدين للطعام الحار أو غير الملائم.</li><li>استخدم طبقًا غير ساخن عند التقديم.</li><li>أحضر مناديل وماءً إضافيًا.</li></ul><blockquote class=\"bk-quote\">ثم قدّم الخيار الأكثر أمانًا — اسأل الوالدين</blockquote><p>أنت لا تقرر نيابة عن الأسرة، بل تتأكد أن الخيار الآمن متاح ومعروض بوضوح.</p><aside class=\"bk-note\">عند إجلاس الأسرة، رتّب الطاولة قبل جلوس الطفل: الكؤوس والسكاكين إلى جهة الكبار، وسلة الخبز الساخن بعيدًا عن الحافة.</aside><aside class=\"bk-scene\">جلست أسرة من خمسة أفراد للعشاء. رحّبت الموظفة بالأطفال ثم سألت الأب: «هل ترغبون في كرسي أطفال للصغير، وهل أحضر خبزًا للأطفال ريثما تختارون؟». أبعدت الكؤوس والسكاكين عن الطفل الصغير، ونبّهت إلى أن أحد أطباق قائمة الأطفال حار، وقدّمت أطباق الأطفال أولًا في أطباق غير ساخنة، فطلب الوالدان بهدوء وبدأت الوجبة بداية موفقة.</aside><aside class=\"bk-key\">بادر بالعرض ولا تفترض: جهّز طاولة آمنة، واخدم الأطفال بسرعة، ودع الوالدين يختاران الخيار الأكثر أمانًا.</aside>",
+                            "quiz": {
+                                "title": "تحقّق من فهمك: دعم الأسرة وخدمة المطعم",
+                                "questions": [
+                                    {
+                                        "question": "أسرة معها رضيع تنهي إجراءات الوصول. ما الطريقة الأفضل بشأن سرير الأطفال؟",
+                                        "options": [
+                                            "أرسله إلى الغرفة تلقائيًا",
+                                            "انتظر حتى تتصل الأسرة بالتدبير الفندقي",
+                                            "اعرض السرير بسعادة ودع الوالدين يقرران",
+                                            "أخبرهم أن الأسرّة للإقامات الطويلة فقط"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول الحقيبة: اعرض المساعدة بسعادة ولا تفترض أن الأسرة تحتاجها."
+                                    },
+                                    {
+                                        "question": "لم يحدد الوالدان ترتيب التقديم في العشاء. طعام من يُقدَّم أولًا عادة؟",
+                                        "options": [
+                                            "طعام الأطفال، ما لم يطلب الوالدان غير ذلك",
+                                            "طعام أكبر الحاضرين سنًا",
+                                            "طعام من طلب أولًا",
+                                            "يجب أن تصل الأطباق كلها معًا"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تنص الحقيبة على خدمة الأطفال أولًا ما لم يطلب الوالدان غير ذلك."
+                                    },
+                                    {
+                                        "question": "أحد أطباق الأطفال في القائمة حار نسبيًا. ماذا تفعل؟",
+                                        "options": [
+                                            "لا تقل شيئًا فالوالدان يقرآن القائمة",
+                                            "استبدله دون سؤال",
+                                            "ارفض تقديمه للطفل",
+                                            "نبّه الوالدين إلى أن الطبق حار"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "من الخدمة المناسبة تنبيه الوالدين للطعام الحار أو غير الملائم."
+                                    },
+                                    {
+                                        "question": "أثناء تجهيز طاولة أسرة، ما أهم إجراء قبل جلوس الطفل الصغير؟",
+                                        "options": [
+                                            "إضافة كؤوس زجاجية للزينة",
+                                            "إبعاد الزجاج والسكاكين والأطباق الساخنة عن الطفل",
+                                            "إحضار قائمة الحلويات",
+                                            "وضع سلة الخبز عند طرف الطفل"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "الطاولة الآمنة تعني إبعاد القابل للكسر والسكاكين والأطباق الساخنة."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "السلامة أولًا",
+                    "lessons": [
+                        {
+                            "title": "حماية الأطفال وتجنّب الأخطاء الشائعة",
+                            "minutes": 7,
+                            "body": "<h2>السلامة أولًا مهما كنت مشغولًا</h2><p>الخطوة الرابعة في خدمة الأسرة هي «احمِ»، والحقيبة حازمة في ذلك: السلامة أولًا مهما كنت مشغولًا. المطعم الممتلئ أو الطابور عند المكتب لا يغيّر واجبنا في ملاحظة طفل معرّض للخطر، فالأطفال يتحركون بسرعة ولا يرون المخاطر كما يراها الكبار.</p><h2>أربع مناطق تتطلب الانتباه</h2><ol><li><strong>الأبواب والممرات:</strong> انتبه لطفل قريب من باب أو عربة متحركة.</li><li><strong>البوفيه والطاولات:</strong> أبعد الأطباق الساخنة والمفارش القابلة للسحب.</li><li><strong>الأدوات الخطرة:</strong> لا تنتزع أداة من يد الطفل؛ اطلب تدخل الوالدين فورًا.</li><li><strong>المسابح والمناطق العامة:</strong> طبّق تعليمات السلامة واستدعِ المسؤول عند الخطر.</li></ol><blockquote class=\"bk-quote\">أوقف الخطر — أبلغ الوالدين — اطلب المساندة</blockquote><h2>تجنّب الأخطاء التي تزعج الأسرة</h2><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنّب</th></tr></thead><tbody><tr><td>اطلب مساعدة الوالدين، ولا تلمس الطفل إلا لمنع خطر فوري وفق السياسة.</td><td>لمس الطفل أو حمله.</td></tr><tr><td>تحدث عن كل طفل بلطف وحياد.</td><td>السخرية من العمر أو الشكل أو السلوك، أو المقارنة بين الإخوة.</td></tr><tr><td>تعامل بصبر مع الضوضاء أو الانسكاب وساعد بهدوء.</td><td>إظهار الضيق.</td></tr><tr><td>احمِ بيانات الأطفال والأسرة، ولا تمنح غرفة متصلة بضيف آخر.</td><td>إهمال الخصوصية.</td></tr></tbody></table><p>مسألة اللمس تستحق وقفة خاصة؛ فحتى الربت على رأس الطفل أو رفعه ليرى شيئًا قد يزعج الوالدين كثيرًا، والأسر في المملكة تتوقع احترام المساحة الشخصية لأطفالها. الاستثناء الوحيد هو منع خطر فوري وفق سياسة حماية الطفل.</p><p>والخصوصية مهمة للأسرة أيضًا؛ فالباب الموصل بغرفة نزيل آخر، أو ذكر اسم الطفل ورقم الغرفة أمام الآخرين، يعرّض الأسرة للخطر.</p><blockquote class=\"bk-quote\">طبّق سياسة حماية الطفل — اتبع الوالدين — احترم الطفل</blockquote><aside class=\"bk-scene\">عند المسبح لاحظ المنقذ طفلًا صغيرًا يمشي وحده نحو الجزء العميق بينما كانت أمه تتحدث في الهاتف. نادى بهدوء ووقف بين الطفل والحافة دون أن يمسكه، وأبلغ الأم فورًا، ثم أخبر مشرف الترفيه ليزيد الانتباه في تلك المنطقة. شكرته الأم، وعادت الأسرة إلى المسبح في اليوم التالي بثقة.</aside><aside class=\"bk-key\">أوقف الخطر وأبلغ الوالدين واطلب المساندة، ولا تلمس ولا تسخر ولا تُظهر الضيق ولا تهمل الخصوصية.</aside>",
+                            "quiz": {
+                                "title": "تحقّق من فهمك: السلامة والأخطاء الشائعة",
+                                "questions": [
+                                    {
+                                        "question": "التقط طفل عند البوفيه سكين تقديم حادة. ماذا تفعل؟",
+                                        "options": [
+                                            "انتزع السكين من يده بسرعة",
+                                            "تجاهل الأمر لأن الوالدين قريبان",
+                                            "اطلب تدخل الوالدين فورًا دون أن تنتزعها",
+                                            "وبّخ الطفل بصوت عالٍ ليتركها"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول الحقيبة: لا تنتزع أداة من يد الطفل، واطلب تدخل الوالدين فورًا."
+                                    },
+                                    {
+                                        "question": "المطعم ممتلئ ولاحظت طفلًا يسحب طرف مفرش تحت أطباق ساخنة. ما الصواب؟",
+                                        "options": [
+                                            "تصرّف الآن وأبعد الأطباق الساخنة، فالسلامة أولًا مهما كنت مشغولًا",
+                                            "تعامل معه بعد انتهاء الازدحام",
+                                            "اطلب من الطفل التوقف وامضِ",
+                                            "اطلب من نزيل آخر مراقبة الطفل"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "السلامة أولًا مهما كنت مشغولًا؛ أبعد الأطباق الساخنة والمفارش القابلة للسحب."
+                                    },
+                                    {
+                                        "question": "طلبت أسرة غرفتين، والغرفة المتاحة بجوارهم متصلة بغرفة نزيل آخر. ماذا تفعل؟",
+                                        "options": [
+                                            "خصّصها لأن الأبواب تُقفل",
+                                            "خصّصها وأبلغ النزيل الآخر",
+                                            "دع الطفل يختار الغرفة",
+                                            "تجنّب منح غرفة متصلة بضيف آخر وابحث عن خيار أنسب"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تنص الحقيبة على عدم منح غرفة متصلة بضيف آخر وحماية خصوصية الأسرة."
+                                    },
+                                    {
+                                        "question": "زميل مرح يرفع الأطفال الصغار كثيرًا ليريهم حوض السمك في البهو. ما النصيحة الصحيحة؟",
+                                        "options": [
+                                            "لا بأس ما دام الطفل مبتسمًا",
+                                            "لا تلمس الطفل أو تحمله؛ الاستثناء فقط لمنع خطر فوري",
+                                            "افعل ذلك فقط حين يكون الوالدان مشغولين",
+                                            "اطلب إذن الطفل أولًا"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تعدّ الحقيبة لمس الطفل خطأً، والاستثناء فقط لمنع خطر فوري وفق السياسة."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

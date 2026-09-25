@@ -53,6 +53,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
 // language and lands them on /en or /ar. Every legacy Academy LMS route
 // (login, admin, user area) is untouched and keeps working.
 $route['default_controller'] = 'academy';
+
+// Public URL prefixes: every language enabled in config/ha_locales.php (/en/, /ar/, /hi/, /ur/ ...).
+require_once APPPATH . 'helpers/ha_locale_helper.php';
+$HA_LOCALES = ha_locale_route_pattern();
 $route['404_override']       = 'home/page_not_found';
 $route['certificate/(:any)'] = "addons/certificate/generate_certificate/$1";
 
@@ -130,8 +134,8 @@ $route['verify/certificate/(:any)'] = 'hkp_public/verify/$1';
 $route['verify/(:any)']             = 'hkp_public/verify/$1';
 $route['verify']                    = 'hkp_public/verify';
 // Public Altus corporate pages, CMS-managed (ppt-features 46, 161, 162).
-$route['(en|ar)/altus']             = 'hkp_public/corporate/$1';
-$route['(en|ar)/altus/case-studies'] = 'hkp_public/case_studies/$1';
+$route['(' . $HA_LOCALES . ')/altus']             = 'hkp_public/corporate/$1';
+$route['(' . $HA_LOCALES . ')/altus/case-studies'] = 'hkp_public/case_studies/$1';
 
 // ---------------------------------------------------------------------------
 // Hospitality Academy public website (plan sections 25, 26, 28, 40).
@@ -150,34 +154,34 @@ $route['lms-sitemap.xml']                     = 'sitemap';
 $route['llms.txt']                            = 'academy/llms';
 $route['llms-full.txt']                       = 'academy/llms_full';
 
-$route['(en|ar)']                             = 'academy/home/$1';
-$route['(en|ar)/courses']                     = 'academy/courses/$1';
-$route['(en|ar)/courses/(:any)']              = 'academy/course/$1/$2';
-$route['(en|ar)/programs']                    = 'academy/programs/$1';
-$route['(en|ar)/programs/(:any)']             = 'academy/program/$1/$2';
-$route['(en|ar)/learning-paths']              = 'academy/paths/$1';
-$route['(en|ar)/learning-paths/(:any)']       = 'academy/path/$1/$2';
-$route['(en|ar)/hospitality-topics']          = 'academy/topics/$1';
-$route['(en|ar)/hospitality-topics/(:any)']   = 'academy/topic/$1/$2';
-$route['(en|ar)/sop']                         = 'academy/sops/$1';
-$route['(en|ar)/sop/(:any)']                  = 'academy/sop/$1/$2';
-$route['(en|ar)/articles']                    = 'academy/articles/$1';
-$route['(en|ar)/articles/(:any)']             = 'academy/article/$1/$2';
-$route['(en|ar)/certificates']                = 'academy/certificates/$1';
-$route['(en|ar)/verify']                      = 'academy/verify/$1';
-$route['(en|ar)/verify/(:any)']               = 'academy/verify/$1/$2';
-$route['(en|ar)/about']                       = 'academy/about/$1';
-$route['(en|ar)/hotels']                      = 'academy/hotels/$1';
-$route['(en|ar)/hotels/training']             = 'academy/hotels_training/$1';
-$route['(en|ar)/contact']                     = 'academy/contact/$1';
-$route['(en|ar)/privacy']                     = 'academy/privacy/$1';
-$route['(en|ar)/terms']                       = 'academy/terms/$1';
-$route['(en|ar)/search']                      = 'academy/search/$1';
-$route['(en|ar)/credits']                     = 'academy/credits/$1';
+$route['(' . $HA_LOCALES . ')']                             = 'academy/home/$1';
+$route['(' . $HA_LOCALES . ')/courses']                     = 'academy/courses/$1';
+$route['(' . $HA_LOCALES . ')/courses/(:any)']              = 'academy/course/$1/$2';
+$route['(' . $HA_LOCALES . ')/programs']                    = 'academy/programs/$1';
+$route['(' . $HA_LOCALES . ')/programs/(:any)']             = 'academy/program/$1/$2';
+$route['(' . $HA_LOCALES . ')/learning-paths']              = 'academy/paths/$1';
+$route['(' . $HA_LOCALES . ')/learning-paths/(:any)']       = 'academy/path/$1/$2';
+$route['(' . $HA_LOCALES . ')/hospitality-topics']          = 'academy/topics/$1';
+$route['(' . $HA_LOCALES . ')/hospitality-topics/(:any)']   = 'academy/topic/$1/$2';
+$route['(' . $HA_LOCALES . ')/sop']                         = 'academy/sops/$1';
+$route['(' . $HA_LOCALES . ')/sop/(:any)']                  = 'academy/sop/$1/$2';
+$route['(' . $HA_LOCALES . ')/articles']                    = 'academy/articles/$1';
+$route['(' . $HA_LOCALES . ')/articles/(:any)']             = 'academy/article/$1/$2';
+$route['(' . $HA_LOCALES . ')/certificates']                = 'academy/certificates/$1';
+$route['(' . $HA_LOCALES . ')/verify']                      = 'academy/verify/$1';
+$route['(' . $HA_LOCALES . ')/verify/(:any)']               = 'academy/verify/$1/$2';
+$route['(' . $HA_LOCALES . ')/about']                       = 'academy/about/$1';
+$route['(' . $HA_LOCALES . ')/hotels']                      = 'academy/hotels/$1';
+$route['(' . $HA_LOCALES . ')/hotels/training']             = 'academy/hotels_training/$1';
+$route['(' . $HA_LOCALES . ')/contact']                     = 'academy/contact/$1';
+$route['(' . $HA_LOCALES . ')/privacy']                     = 'academy/privacy/$1';
+$route['(' . $HA_LOCALES . ')/terms']                       = 'academy/terms/$1';
+$route['(' . $HA_LOCALES . ')/search']                      = 'academy/search/$1';
+$route['(' . $HA_LOCALES . ')/credits']                     = 'academy/credits/$1';
 // Static pages resolve their slug from the database, in either language, so
 // an Arabic page keeps an Arabic URL. This must stay last: every specific
 // route above wins first. (.+) rather than (:any) so a nested slug such as
 // "للفنادق/التدريب" still resolves.
-$route['(en|ar)/(.+)']                        = 'academy/page_by_slug/$1/$2';
+$route['(' . $HA_LOCALES . ')/(.+)']                        = 'academy/page_by_slug/$1/$2';
 
 $route['translate_uri_dashes'] = false;

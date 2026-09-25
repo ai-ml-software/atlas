@@ -50,10 +50,8 @@
 </section>
 
 <?php $this->load->view('academy/_close', array(
-    'close_title' => $locale === 'ar' ? 'أدخل فريقك في هذا البرنامج' : 'Put a team through this programme',
-    'close_text'  => $locale === 'ar'
-        ? 'تشتري الفنادق مقاعد وتسند البرنامج إلى القسم، وتتابع الإكمال لكل موظف.'
-        : 'Hotels buy seats, assign the programme to a department and follow completion per employee.',
+    'close_title' => ha_pt('Put a team through this programme'),
+    'close_text'  => ha_pt('Hotels buy seats, assign the programme to a department and follow completion per employee.'),
     'close_primary'   => array('label' => $t['for_hotels'], 'url' => base_url($locale . '/hotels')),
     'close_secondary' => array('label' => $t['contact'], 'url' => base_url($locale . '/contact')),
 )); ?>

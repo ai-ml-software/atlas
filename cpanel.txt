@@ -1,0 +1,1213 @@
+"continue current finish fully functional error free then start below task"
+/nateherk-design:scroll-craft
+using theme design beautiful attractive eye caching new stylish corporate looks realestic unique  /home/lesson/front-office-fundamentals/1
+'unique/proffesional some thing show me your senior experties frontend + backend etc fully functional' playwrite test all use cases after finish explain which files change
+GitHub Actions
+/ .github/workflows/.cpanel.yml
+Invalid workflow file
+
+(Line: 2, Col: 1): Unexpected value 'deployment', (Line: 2, Col: 1): Required property is missing: jobs
+error free complete properly push code
+User Image
+Omar Al Suwailem
+omar.learner@dyafagroup.sa
+
+ Become an instructor
+ My courses
+ My wishlist
+ My messages
+ Purchase history
+ User profile
+ Log out
+>add hkp menu
+after login redirect hkp 
+>complete properly course add any language no skip any country language 
+> my website all pages no skip any page translate complete properly all languages translated act like a senior expert seo/aeo/geo optimized fully all languages
+> here is idea website content act like a senior expert content writer: C:\laragon\www\atlas\atlas\ppt-text.txt
+Below is a stronger, implementation-focused prompt that clearly separates the **cPanel deployment configuration** from the **GitHub Actions workflow**, while preserving all your requirements.
+
+You are a **senior full-stack architect, PHP/Laravel developer, LMS engineer, DevOps engineer, UX/content specialist, and multilingual localization expert**.
+
+Work on my existing project:
+
+**Project:** Atlas LMS / Knowledge & Performance (HKP)
+**Local project:** `C:\laragon\www\atlas\atlas`
+**Content source:** `C:\laragon\www\atlas\atlas\ppt-text.txt`
+
+Your job is to **inspect the complete existing project first, understand its architecture, database, authentication, frontend, backend, routes, controllers, models, views/components, middleware, translations, and deployment configuration, and then implement the requirements below without breaking existing functionality.**
+
+## 1. Git / GitHub / cPanel deployment — fix completely
+
+The current file:
+
+`.github/workflows/.cpanel.yml`
+
+is producing this GitHub Actions error:
+
+```text
+Invalid workflow file
+
+(Line: 2, Col: 1): Unexpected value 'deployment'
+(Line: 2, Col: 1): Required property is missing: jobs
+```
+
+### Root cause to handle
+
+`.cpanel.yml` is a **cPanel deployment configuration file**, not a GitHub Actions workflow file.
+
+Therefore:
+
+* Do **not** put cPanel `deployment:` YAML directly inside `.github/workflows/`.
+* Create the correct top-level `.cpanel.yml` required by cPanel Git Version Control.
+* Create a valid GitHub Actions workflow separately inside `.github/workflows/` only if GitHub Actions is actually required.
+* The GitHub Actions YAML must contain valid `name`, `on`, and `jobs` structure.
+* Do not mix cPanel deployment syntax with GitHub Actions syntax.
+
+### Required deployment result
+
+Configure the repository so that:
+
+1. Code can be committed locally.
+2. Code can be pushed to GitHub without workflow validation errors.
+3. The repository remains compatible with cPanel Git Version Control.
+4. cPanel can automatically deploy the repository using `.cpanel.yml`.
+5. Deployment copies only the required production files/directories.
+6. Never deploy `.git`, `.github`, local development files, secrets, temporary files, caches, or unnecessary files.
+7. Use safe explicit deployment commands rather than a wildcard such as `*`.
+8. Preserve Laravel/PHP application structure correctly.
+9. Do not overwrite production configuration such as `.env` unless explicitly required.
+10. Do not expose API keys, database credentials, SMTP passwords, tokens, or other secrets in Git.
+11. Use production-safe permissions and commands where required.
+12. Validate the final YAML syntax.
+13. Test the GitHub Actions workflow syntax.
+14. Verify that cPanel deployment and GitHub Actions are two separate mechanisms and do not conflict.
+
+### Deployment configuration requirements
+
+Create or correct:
+
+```text
+.cpanel.yml
+```
+
+at the repository root.
+
+If GitHub Actions is needed, create a separate workflow such as:
+
+```text
+.github/workflows/deploy.yml
+```
+
+Do not rename or misuse `.cpanel.yml` as a GitHub Actions workflow.
+
+Use the actual project structure and hosting configuration discovered from the repository rather than blindly copying an example.
+
+Before modifying deployment configuration, inspect:
+
+* repository structure
+* current Git remotes
+* branches
+* existing workflows
+* existing `.cpanel.yml`
+* Laravel/framework configuration
+* public directory
+* storage directories
+* environment files
+* build requirements
+* database migration requirements
+* existing deployment scripts
+
+Then implement the correct solution.
+
+---
+
+# 2. HKP menu after login
+
+Add **HKP / Knowledge & Performance** to the website navigation/menu.
+
+Requirements:
+
+* Add the HKP menu item in the correct navigation area.
+* Respect the existing design system and responsive layout.
+* Do not duplicate menus.
+* Do not break desktop or mobile navigation.
+* The menu must be visible only where appropriate according to the application's authentication/authorization model.
+* Use the correct existing route if one already exists.
+* If the HKP route does not exist, create it properly.
+
+## Login redirect
+
+After a successful login:
+
+* Redirect the user to the appropriate **HKP landing/dashboard page**.
+* Do not redirect users to an incorrect or broken page.
+* Preserve existing authentication behavior.
+* Respect user roles and permissions.
+* Handle already-authenticated users correctly.
+* Avoid redirect loops.
+
+Inspect the current login flow before changing it.
+
+---
+
+# 3. Complete course functionality
+
+Implement the course system completely and professionally.
+
+The course functionality must support:
+
+* course creation
+* course editing
+* course deletion where authorized
+* course listing
+* course detail page
+* course categories
+* instructors
+* students
+* lessons/modules
+* course enrollment
+* course progress
+* lesson completion
+* quizzes/tests where supported
+* course completion
+* certificates where supported
+* search/filtering
+* pagination where required
+* authorization and role restrictions
+* responsive UI
+* validation
+* error handling
+* database relationships
+* proper empty states
+* loading states
+* success/error notifications
+
+### Important
+
+Do not implement only the visible UI.
+
+Trace and complete the full flow:
+
+```text
+UI
+→ Route
+→ Controller
+→ Validation
+→ Service/Business Logic
+→ Model
+→ Database
+→ Response
+→ UI state
+```
+
+Fix incomplete backend functionality wherever necessary.
+
+---
+
+# 4. Language and country support
+
+The website must support **all required languages and countries without silently skipping content**.
+
+Do not assume English and Arabic are the only languages.
+
+First inspect:
+
+* existing language system
+* translation files
+* locale configuration
+* database translation structure
+* language selector
+* country selector
+* RTL/LTR handling
+* hard-coded text
+* validation messages
+* notifications
+* emails
+* menus
+* buttons
+* forms
+* course content
+* dashboard content
+* system messages
+
+Then implement a complete localization architecture.
+
+## Translation requirements
+
+Every user-facing text must be identified and handled, including:
+
+* navigation
+* headers
+* footers
+* buttons
+* forms
+* validation messages
+* authentication pages
+* dashboards
+* course pages
+* lessons
+* quizzes
+* certificates
+* profile pages
+* instructor pages
+* student pages
+* notifications
+* email templates
+* modal dialogs
+* alerts
+* error messages
+* empty states
+* placeholders
+* accessibility labels
+* tooltips
+* pagination
+* filters
+* search
+* system-generated messages
+
+Do not leave random untranslated English strings inside the application.
+
+Do not hard-code user-facing text where the application's localization architecture should be used.
+
+### Language selector
+
+Ensure the language selector actually changes:
+
+* interface language
+* content where translations exist
+* RTL/LTR layout where applicable
+* date/number formatting where appropriate
+* validation messages
+* navigation labels
+
+Preserve the selected locale across navigation and authentication where appropriate.
+
+---
+
+# 5. Translate the entire website
+
+I want the **entire website translated**, not just selected pages.
+
+Audit every route/page in the project and create a translation coverage checklist.
+
+Do not skip:
+
+* homepage
+* about
+* contact
+* authentication
+* login
+* registration
+* forgot password
+* reset password
+* profile
+* dashboard
+* courses
+* course details
+* lessons
+* quizzes
+* instructor pages
+* student pages
+* HKP pages
+* reports
+* certificates
+* settings
+* admin pages where localization is applicable
+* menus
+* footer
+* modals
+* emails
+* notifications
+* validation messages
+* error pages
+* 404/403/500 pages
+* legal pages
+* any additional route discovered in the project
+
+For every page:
+
+1. Identify visible text.
+2. Identify dynamic text.
+3. Identify backend-generated text.
+4. Identify validation/error messages.
+5. Move translatable strings into the proper localization system.
+6. Add translations for every supported locale.
+7. Verify the page visually in each relevant language.
+8. Verify RTL behavior for RTL languages.
+
+Do not claim translation is complete until all application routes and user-facing strings have been audited.
+
+---
+
+# 6. Country support
+
+Do not hard-code one country's assumptions.
+
+Inspect the application for:
+
+* country lists
+* phone formats
+* currency
+* timezone
+* date formats
+* address fields
+* country selectors
+* country-specific validation
+* registration
+* profiles
+* reporting
+* certificates
+* payment-related logic
+* localization
+
+Support countries through a maintainable data/configuration structure.
+
+Do not create a fake "all countries" implementation by simply adding names to a dropdown while leaving the underlying validation and formatting incompatible.
+
+Use the existing architecture where possible.
+
+---
+
+# 7. Content writing and website copy
+
+Use this file as the primary content/idea reference:
+
+```text
+C:\laragon\www\atlas\atlas\ppt-text.txt
+```
+
+Read and analyze the complete file before writing website content.
+
+Act as a **senior corporate content strategist and professional B2B website copywriter**.
+
+Transform the source material into polished website content that is:
+
+* professional
+* corporate
+* clear
+* persuasive without exaggerated claims
+* concise where appropriate
+* technically credible
+* hospitality/L&D/business focused
+* suitable for enterprise decision-makers
+* consistent in terminology
+* SEO-friendly
+* easy to localize
+* aligned with the Atlas/HKP product positioning
+
+Do not blindly copy the PPT text.
+
+Instead:
+
+1. Understand the business proposition.
+2. Identify key services/products.
+3. Identify target audiences.
+4. Identify pain points.
+5. Identify benefits.
+6. Identify differentiators.
+7. Build a consistent messaging hierarchy.
+8. Rewrite weak or repetitive content.
+9. Remove contradictions.
+10. Improve grammar and professionalism.
+11. Keep claims evidence-based.
+12. Ensure the final content fits the actual functionality of the platform.
+
+Do not invent products, clients, statistics, certifications, partnerships, awards, or capabilities that do not exist in the source material or application.
+
+---
+
+# 8. Website content architecture
+
+Review the current website structure and improve the copy page-by-page.
+
+For each page determine:
+
+* page purpose
+* target audience
+* primary message
+* headline
+* subheadline
+* sections
+* benefits
+* feature descriptions
+* calls to action
+* trust content
+* FAQs where appropriate
+* SEO title
+* meta description
+* headings structure
+* internal linking opportunities
+
+Keep the copy consistent with the actual application.
+
+---
+
+# 9. Code quality
+
+Work as a senior developer.
+
+Before making changes:
+
+* inspect the codebase
+* identify existing architecture
+* identify reusable components
+* identify duplicate logic
+* identify technical debt relevant to this task
+* identify broken routes
+* identify incomplete functionality
+* identify translation gaps
+
+Do not unnecessarily rewrite working components.
+
+Prefer:
+
+* reusable components
+* clean separation of concerns
+* secure validation
+* proper authorization
+* maintainable naming
+* typed structures where supported
+* reusable translation keys
+* centralized configuration
+* safe database queries
+* clean error handling
+* production-safe code
+
+Avoid:
+
+* duplicated code
+* hard-coded credentials
+* hard-coded production URLs
+* insecure SQL
+* unnecessary dependencies
+* temporary hacks
+* commented-out dead code
+* fake implementations
+
+---
+
+# 10. Testing and verification
+
+After implementation, test the complete application.
+
+Verify at minimum:
+
+### Authentication
+
+* login
+* logout
+* registration
+* password recovery
+* session handling
+* redirect behavior
+
+### Navigation
+
+* HKP menu
+* desktop navigation
+* mobile navigation
+* authenticated vs guest navigation
+
+### Courses
+
+* create
+* update
+* view
+* enroll
+* progress
+* completion
+* related functionality
+
+### Localization
+
+* language switching
+* translated navigation
+* translated pages
+* forms
+* errors
+* notifications
+* RTL/LTR
+* persistent locale
+
+### Deployment
+
+* Git status clean
+* commits work
+* push works
+* GitHub workflow YAML valid
+* `.cpanel.yml` valid
+* cPanel deployment commands valid
+* production path correct
+* sensitive files excluded
+
+### Responsive design
+
+Test major pages at:
+
+* desktop
+* tablet
+* mobile
+
+---
+
+# 11. Do not skip existing functionality
+
+This is very important.
+
+**Do not remove, ignore, replace, or skip existing pages, routes, components, functionality, languages, or database structures unless there is a clear technical reason.**
+
+Before completing the task, compare:
+
+```text
+Existing functionality
+vs.
+Updated functionality
+```
+
+and ensure nothing important was accidentally removed.
+
+---
+
+# 12. Final audit
+
+Before declaring the task complete, perform a final audit.
+
+Provide a concise implementation report containing:
+
+1. Files created.
+2. Files modified.
+3. Routes added/changed.
+4. Database changes.
+5. Authentication changes.
+6. HKP changes.
+7. Course-system changes.
+8. Translation/localization changes.
+9. Country-support changes.
+10. Content-writing changes.
+11. GitHub Actions changes.
+12. cPanel deployment changes.
+13. Tests performed.
+14. Any remaining issues that could not be verified.
+
+Most importantly:
+
+**Do not report success merely because the code was edited. Verify the implementation and identify anything that still needs attention.**
+
+The final result must be **production-ready, maintainable, secure, multilingual, responsive, and deployable through GitHub + cPanel without the current workflow YAML error.**
+
+This version fixes the key conceptual problem in your original request: **`.cpanel.yml` belongs in the repository root for cPanel deployment, while `.github/workflows/*.yml` must use GitHub Actions syntax with `jobs`.**
+'unique/proffesional some thing show me your senior experties frontend + backend etc fully functional' playwrite test all use cases after finish explain which files change
+GitHub Actions
+/ .github/workflows/.cpanel.yml
+Invalid workflow file
+
+(Line: 2, Col: 1): Unexpected value 'deployment', (Line: 2, Col: 1): Required property is missing: jobs
+error free complete properly push code
+User Image
+Omar Al Suwailem
+omar.learner@dyafagroup.sa
+
+ Become an instructor
+ My courses
+ My wishlist
+ My messages
+ Purchase history
+ User profile
+ Log out
+>add hkp menu
+after login redirect hkp 
+>complete properly course add any language no skip any country language 
+> my website all pages no skip any page translate complete properly all languages translated act like a senior expert seo/aeo/geo optimized fully all languages
+> here is idea website content act like a senior expert content writer: C:\laragon\www\atlas\atlas\ppt-text.txt
+Below is a stronger, implementation-focused prompt that clearly separates the **cPanel deployment configuration** from the **GitHub Actions workflow**, while preserving all your requirements.
+
+You are a **senior full-stack architect, PHP/Laravel developer, LMS engineer, DevOps engineer, UX/content specialist, and multilingual localization expert**.
+
+Work on my existing project:
+
+**Project:** Atlas LMS / Knowledge & Performance (HKP)
+**Local project:** `C:\laragon\www\atlas\atlas`
+**Content source:** `C:\laragon\www\atlas\atlas\ppt-text.txt`
+
+Your job is to **inspect the complete existing project first, understand its architecture, database, authentication, frontend, backend, routes, controllers, models, views/components, middleware, translations, and deployment configuration, and then implement the requirements below without breaking existing functionality.**
+
+## 1. Git / GitHub / cPanel deployment — fix completely
+
+The current file:
+
+`.github/workflows/.cpanel.yml`
+
+is producing this GitHub Actions error:
+
+```text
+Invalid workflow file
+
+(Line: 2, Col: 1): Unexpected value 'deployment'
+(Line: 2, Col: 1): Required property is missing: jobs
+```
+
+### Root cause to handle
+
+`.cpanel.yml` is a **cPanel deployment configuration file**, not a GitHub Actions workflow file.
+
+Therefore:
+
+* Do **not** put cPanel `deployment:` YAML directly inside `.github/workflows/`.
+* Create the correct top-level `.cpanel.yml` required by cPanel Git Version Control.
+* Create a valid GitHub Actions workflow separately inside `.github/workflows/` only if GitHub Actions is actually required.
+* The GitHub Actions YAML must contain valid `name`, `on`, and `jobs` structure.
+* Do not mix cPanel deployment syntax with GitHub Actions syntax.
+
+### Required deployment result
+
+Configure the repository so that:
+
+1. Code can be committed locally.
+2. Code can be pushed to GitHub without workflow validation errors.
+3. The repository remains compatible with cPanel Git Version Control.
+4. cPanel can automatically deploy the repository using `.cpanel.yml`.
+5. Deployment copies only the required production files/directories.
+6. Never deploy `.git`, `.github`, local development files, secrets, temporary files, caches, or unnecessary files.
+7. Use safe explicit deployment commands rather than a wildcard such as `*`.
+8. Preserve Laravel/PHP application structure correctly.
+9. Do not overwrite production configuration such as `.env` unless explicitly required.
+10. Do not expose API keys, database credentials, SMTP passwords, tokens, or other secrets in Git.
+11. Use production-safe permissions and commands where required.
+12. Validate the final YAML syntax.
+13. Test the GitHub Actions workflow syntax.
+14. Verify that cPanel deployment and GitHub Actions are two separate mechanisms and do not conflict.
+
+### Deployment configuration requirements
+
+Create or correct:
+
+```text
+.cpanel.yml
+```
+
+at the repository root.
+
+If GitHub Actions is needed, create a separate workflow such as:
+
+```text
+.github/workflows/deploy.yml
+```
+
+Do not rename or misuse `.cpanel.yml` as a GitHub Actions workflow.
+
+Use the actual project structure and hosting configuration discovered from the repository rather than blindly copying an example.
+
+Before modifying deployment configuration, inspect:
+
+* repository structure
+* current Git remotes
+* branches
+* existing workflows
+* existing `.cpanel.yml`
+* Laravel/framework configuration
+* public directory
+* storage directories
+* environment files
+* build requirements
+* database migration requirements
+* existing deployment scripts
+
+Then implement the correct solution.
+
+---
+
+# 2. HKP menu after login
+
+Add **HKP / Knowledge & Performance** to the website navigation/menu.
+
+Requirements:
+
+* Add the HKP menu item in the correct navigation area.
+* Respect the existing design system and responsive layout.
+* Do not duplicate menus.
+* Do not break desktop or mobile navigation.
+* The menu must be visible only where appropriate according to the application's authentication/authorization model.
+* Use the correct existing route if one already exists.
+* If the HKP route does not exist, create it properly.
+
+## Login redirect
+
+After a successful login:
+
+* Redirect the user to the appropriate **HKP landing/dashboard page**.
+* Do not redirect users to an incorrect or broken page.
+* Preserve existing authentication behavior.
+* Respect user roles and permissions.
+* Handle already-authenticated users correctly.
+* Avoid redirect loops.
+
+Inspect the current login flow before changing it.
+
+---
+
+# 3. Complete course functionality
+
+Implement the course system completely and professionally.
+
+The course functionality must support:
+
+* course creation
+* course editing
+* course deletion where authorized
+* course listing
+* course detail page
+* course categories
+* instructors
+* students
+* lessons/modules
+* course enrollment
+* course progress
+* lesson completion
+* quizzes/tests where supported
+* course completion
+* certificates where supported
+* search/filtering
+* pagination where required
+* authorization and role restrictions
+* responsive UI
+* validation
+* error handling
+* database relationships
+* proper empty states
+* loading states
+* success/error notifications
+
+### Important
+
+Do not implement only the visible UI.
+
+Trace and complete the full flow:
+
+```text
+UI
+→ Route
+→ Controller
+→ Validation
+→ Service/Business Logic
+→ Model
+→ Database
+→ Response
+→ UI state
+```
+
+Fix incomplete backend functionality wherever necessary.
+
+---
+
+# 4. Language and country support
+
+The website must support **all required languages and countries without silently skipping content**.
+
+Do not assume English and Arabic are the only languages.
+
+First inspect:
+
+* existing language system
+* translation files
+* locale configuration
+* database translation structure
+* language selector
+* country selector
+* RTL/LTR handling
+* hard-coded text
+* validation messages
+* notifications
+* emails
+* menus
+* buttons
+* forms
+* course content
+* dashboard content
+* system messages
+
+Then implement a complete localization architecture.
+
+## Translation requirements
+
+Every user-facing text must be identified and handled, including:
+
+* navigation
+* headers
+* footers
+* buttons
+* forms
+* validation messages
+* authentication pages
+* dashboards
+* course pages
+* lessons
+* quizzes
+* certificates
+* profile pages
+* instructor pages
+* student pages
+* notifications
+* email templates
+* modal dialogs
+* alerts
+* error messages
+* empty states
+* placeholders
+* accessibility labels
+* tooltips
+* pagination
+* filters
+* search
+* system-generated messages
+
+Do not leave random untranslated English strings inside the application.
+
+Do not hard-code user-facing text where the application's localization architecture should be used.
+
+### Language selector
+
+Ensure the language selector actually changes:
+
+* interface language
+* content where translations exist
+* RTL/LTR layout where applicable
+* date/number formatting where appropriate
+* validation messages
+* navigation labels
+
+Preserve the selected locale across navigation and authentication where appropriate.
+
+---
+
+# 5. Translate the entire website
+
+I want the **entire website translated**, not just selected pages.
+
+Audit every route/page in the project and create a translation coverage checklist.
+
+Do not skip:
+
+* homepage
+* about
+* contact
+* authentication
+* login
+* registration
+* forgot password
+* reset password
+* profile
+* dashboard
+* courses
+* course details
+* lessons
+* quizzes
+* instructor pages
+* student pages
+* HKP pages
+* reports
+* certificates
+* settings
+* admin pages where localization is applicable
+* menus
+* footer
+* modals
+* emails
+* notifications
+* validation messages
+* error pages
+* 404/403/500 pages
+* legal pages
+* any additional route discovered in the project
+
+For every page:
+
+1. Identify visible text.
+2. Identify dynamic text.
+3. Identify backend-generated text.
+4. Identify validation/error messages.
+5. Move translatable strings into the proper localization system.
+6. Add translations for every supported locale.
+7. Verify the page visually in each relevant language.
+8. Verify RTL behavior for RTL languages.
+
+Do not claim translation is complete until all application routes and user-facing strings have been audited.
+
+---
+
+# 6. Country support
+
+Do not hard-code one country's assumptions.
+
+Inspect the application for:
+
+* country lists
+* phone formats
+* currency
+* timezone
+* date formats
+* address fields
+* country selectors
+* country-specific validation
+* registration
+* profiles
+* reporting
+* certificates
+* payment-related logic
+* localization
+
+Support countries through a maintainable data/configuration structure.
+
+Do not create a fake "all countries" implementation by simply adding names to a dropdown while leaving the underlying validation and formatting incompatible.
+
+Use the existing architecture where possible.
+
+---
+
+# 7. Content writing and website copy
+
+Use this file as the primary content/idea reference:
+
+```text
+C:\laragon\www\atlas\atlas\ppt-text.txt
+```
+
+Read and analyze the complete file before writing website content.
+
+Act as a **senior corporate content strategist and professional B2B website copywriter**.
+
+Transform the source material into polished website content that is:
+
+* professional
+* corporate
+* clear
+* persuasive without exaggerated claims
+* concise where appropriate
+* technically credible
+* hospitality/L&D/business focused
+* suitable for enterprise decision-makers
+* consistent in terminology
+* SEO-friendly
+* easy to localize
+* aligned with the Atlas/HKP product positioning
+
+Do not blindly copy the PPT text.
+
+Instead:
+
+1. Understand the business proposition.
+2. Identify key services/products.
+3. Identify target audiences.
+4. Identify pain points.
+5. Identify benefits.
+6. Identify differentiators.
+7. Build a consistent messaging hierarchy.
+8. Rewrite weak or repetitive content.
+9. Remove contradictions.
+10. Improve grammar and professionalism.
+11. Keep claims evidence-based.
+12. Ensure the final content fits the actual functionality of the platform.
+
+Do not invent products, clients, statistics, certifications, partnerships, awards, or capabilities that do not exist in the source material or application.
+
+---
+
+# 8. Website content architecture
+
+Review the current website structure and improve the copy page-by-page.
+
+For each page determine:
+
+* page purpose
+* target audience
+* primary message
+* headline
+* subheadline
+* sections
+* benefits
+* feature descriptions
+* calls to action
+* trust content
+* FAQs where appropriate
+* SEO title
+* meta description
+* headings structure
+* internal linking opportunities
+
+Keep the copy consistent with the actual application.
+
+---
+
+# 9. Code quality
+
+Work as a senior developer.
+
+Before making changes:
+
+* inspect the codebase
+* identify existing architecture
+* identify reusable components
+* identify duplicate logic
+* identify technical debt relevant to this task
+* identify broken routes
+* identify incomplete functionality
+* identify translation gaps
+
+Do not unnecessarily rewrite working components.
+
+Prefer:
+
+* reusable components
+* clean separation of concerns
+* secure validation
+* proper authorization
+* maintainable naming
+* typed structures where supported
+* reusable translation keys
+* centralized configuration
+* safe database queries
+* clean error handling
+* production-safe code
+
+Avoid:
+
+* duplicated code
+* hard-coded credentials
+* hard-coded production URLs
+* insecure SQL
+* unnecessary dependencies
+* temporary hacks
+* commented-out dead code
+* fake implementations
+
+---
+
+# 10. Testing and verification
+
+After implementation, test the complete application.
+
+Verify at minimum:
+
+### Authentication
+
+* login
+* logout
+* registration
+* password recovery
+* session handling
+* redirect behavior
+
+### Navigation
+
+* HKP menu
+* desktop navigation
+* mobile navigation
+* authenticated vs guest navigation
+
+### Courses
+
+* create
+* update
+* view
+* enroll
+* progress
+* completion
+* related functionality
+
+### Localization
+
+* language switching
+* translated navigation
+* translated pages
+* forms
+* errors
+* notifications
+* RTL/LTR
+* persistent locale
+
+### Deployment
+
+* Git status clean
+* commits work
+* push works
+* GitHub workflow YAML valid
+* `.cpanel.yml` valid
+* cPanel deployment commands valid
+* production path correct
+* sensitive files excluded
+
+### Responsive design
+
+Test major pages at:
+
+* desktop
+* tablet
+* mobile
+
+---
+
+# 11. Do not skip existing functionality
+
+This is very important.
+
+**Do not remove, ignore, replace, or skip existing pages, routes, components, functionality, languages, or database structures unless there is a clear technical reason.**
+
+Before completing the task, compare:
+
+```text
+Existing functionality
+vs.
+Updated functionality
+```
+
+and ensure nothing important was accidentally removed.
+
+---
+
+# 12. Final audit
+
+Before declaring the task complete, perform a final audit.
+
+Provide a concise implementation report containing:
+
+1. Files created.
+2. Files modified.
+3. Routes added/changed.
+4. Database changes.
+5. Authentication changes.
+6. HKP changes.
+7. Course-system changes.
+8. Translation/localization changes.
+9. Country-support changes.
+10. Content-writing changes.
+11. GitHub Actions changes.
+12. cPanel deployment changes.
+13. Tests performed.
+14. Any remaining issues that could not be verified.
+
+Most importantly:
+
+**Do not report success merely because the code was edited. Verify the implementation and identify anything that still needs attention.**
+
+The final result must be **production-ready, maintainable, secure, multilingual, responsive, and deployable through GitHub
+ + cPanel without the current workflow YAML error.**
+
+This version fixes the key conceptual problem in your original request: **`.cpanel.yml` belongs in the repository root for cPanel deployment, while `.github/workflows/*.yml` must use GitHub Actions syntax with `jobs`.**
+Manage language
+Language list
+Add language
+Import language
+Language	Direction	Option
+Arabic	
+ Ltr     Rtl
+  
+English	
+ Ltr     Rtl
+update languages admin
+'unique/proffesional some thing show me your senior experties frontend + backend etc fully functional' playwrite test all use cases after finish explain which files change
+
+/nateherk-design:scroll-craft
+
+>here is my real courses: C:\laragon\www\atlas\atlas\pdf-20260925T132712Z-1-001
+"properly deeply extract all course currently need these courses properly arrange complete properly all languages people learning complete properly no skip any language beautifull atrractive eye caching new stylish corporate realestic unique looks course sections like books read design courses relevant videos using check google/youtube etc best rating videos using quiz etc you make each lesson quiz finish then start new lesson"
+
+'unique/proffesional some thing show me your senior experties frontend + backend etc fully functional' playwrite test all use cases after finish explain which files change

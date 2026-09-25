@@ -23,15 +23,12 @@ class Sign_up extends CI_Controller
 
     public function index()
     {
+        // Signed-in users go to the HK&P workspace before any sign-up setting is consulted.
+        $this->user_model->check_session_data('login');
+
          if (get_settings('public_signup') != 'enable') {
              redirect(site_url(), 'refresh');
             return;
-        }
-
-        if ($this->session->userdata('admin_login')) {
-            redirect(site_url('admin'), 'refresh');
-        } elseif ($this->session->userdata('user_login')) {
-            redirect(site_url('user'), 'refresh');
         }
         $page_data['page_name'] = 'sign_up';
         $page_data['page_title'] = site_phrase('sign_up');

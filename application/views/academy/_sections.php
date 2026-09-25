@@ -39,7 +39,7 @@ foreach ($sections as $s):
     <?php foreach ((array) $g('items') as $it): ?>
       <?= $type === 'steps' ? '<li>' : '<div class="ha-block-card' . ($type === 'stats' ? ' ha-block-card--stat' : '') . '">' ?>
         <strong class="ha-block-card__title"><?= html_escape($it['title']) ?></strong><?php if (!empty($it['text'])): ?><p><?= html_escape($it['text']) ?></p><?php endif; ?>
-        <?php if (!empty($it['link'])): ?><a href="<?= html_escape($link($it['link'])) ?>"><?= $locale === 'ar' ? 'المزيد' : 'Learn more' ?> →</a><?php endif; ?>
+        <?php if (!empty($it['link'])): ?><a href="<?= html_escape($link($it['link'])) ?>"><?= ha_pe('Learn more') ?> →</a><?php endif; ?>
       <?= $type === 'steps' ? '</li>' : '</div>' ?>
     <?php endforeach; ?>
     <?= $type === 'steps' ? '</ol>' : '</div>' ?>

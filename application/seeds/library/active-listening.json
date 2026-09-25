@@ -1,0 +1,551 @@
+{
+    "slug": "active-listening",
+    "category": "communication",
+    "level": "foundation",
+    "source_pdf": "Active-Listening-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/active-listening.webp",
+    "videos": [
+        {
+            "id": "cSohjlYQI2A",
+            "title": "5 ways to listen better | Julian Treasure | TED",
+            "channel": "TED",
+            "why": "Julian Treasure gives practical listening exercises such as the RASA technique (Receive, Appreciate, Summarize, Ask), which support attentive listening to guests."
+        },
+        {
+            "id": "saXfavo1OQo",
+            "title": "The power of listening | William Ury | TEDxSanDiego",
+            "channel": "TEDx Talks",
+            "why": "A negotiation expert shows how truly listening calms conflict and builds trust, which is the core reason active listening matters with guests."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Active Listening",
+            "subtitle": "Understand before you answer",
+            "short_description": "Learn to listen to words, tone and body language, and use the four steps Listen, Ask, Confirm, Act to get every guest request right.",
+            "description": "<p>Every good service moment starts with understanding what the guest really needs. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows hotel colleagues how to listen fully before replying.</p><p>You will learn why listening makes guests feel cared for, how to read tone and body language as well as words, and how to apply four simple steps: Listen, Ask, Confirm, Act. You will also practise clear confirmation phrases and learn what to do when a request is unclear.</p>",
+            "requirements": "No prior training is needed; the course suits any guest-facing colleague.",
+            "outcomes": [
+                "Explain why listening fully makes guests feel cared for",
+                "Notice the guest's words, tone of voice and body language together",
+                "Apply the four steps Listen, Ask, Confirm, Act to every request",
+                "Use clear confirmation phrases before taking action",
+                "Handle unclear requests by clarifying instead of assuming"
+            ],
+            "faqs": [
+                {
+                    "question": "Who is this course for?",
+                    "answer": "Any colleague who speaks with guests, in person or by phone, in any department."
+                },
+                {
+                    "question": "What are the four listening steps?",
+                    "answer": "Listen, Ask, Confirm and Act: let the guest finish, ask one clear question, repeat the request simply, then act or contact the person responsible."
+                },
+                {
+                    "question": "What should I do if I still do not understand the guest?",
+                    "answer": "Ask kindly for clarification, break the request into short points, use approved translation if needed and ask your supervisor for help if it remains unclear."
+                }
+            ],
+            "meta_title": "Active Listening for Hotel Staff",
+            "meta_description": "Hotel training on active listening: words, tone and body language, the Listen-Ask-Confirm-Act steps and phrases to confirm guest requests.",
+            "focus_keyword": "active listening in hotels",
+            "chapters": [
+                {
+                    "title": "Why Listening Comes First",
+                    "lessons": [
+                        {
+                            "title": "Listening Shows Care",
+                            "minutes": 5,
+                            "body": "<h2>Care begins with listening</h2><p>When a guest approaches the desk, calls housekeeping or stops you in a corridor, they want one thing before anything else: to be understood. The deck puts it simply: care starts with listening. Before you solve, explain or apologise, the guest needs to feel that the person in front of them has actually heard what they said.</p><p>This sounds obvious, yet in a busy hotel it is easy to half-listen. We hear the first few words, recognise a familiar situation and start preparing our answer. The guest notices. They feel rushed, and a small request can turn into a frustrating experience.</p><h2>Five reasons listening matters</h2><ul><li><strong>The guest wants the staff member to understand them.</strong> Being understood is part of the service itself, not a step before it.</li><li><strong>Interrupting may increase anger or worry.</strong> A guest who is already upset becomes more upset when they cannot finish a sentence.</li><li><strong>Listening helps you find the real request.</strong> The first thing a guest says is not always the real need. A complaint about noise may really be a request for a different room.</li><li><strong>The right question prevents misunderstanding.</strong> Listening well tells you which question to ask.</li><li><strong>Confirming the request reduces mistakes and delays.</strong> A few seconds of confirmation save the time of redoing a task.</li></ul><blockquote class=\"bk-quote\">Do not prepare your reply while the guest is speaking. Listen first.</blockquote><h2>Stop preparing your answer</h2><p>The hardest habit to break is building a reply in your head while the guest is still talking. When you do this, your attention moves from the guest to yourself. You miss details, such as a room number, a time or a name, and you may answer a question the guest did not ask.</p><p>Instead, let the guest finish completely. Only then think about the answer. If the guest pauses, do not rush to fill the silence; they may have more to say.</p><h2>The approach in one line</h2><p>The deck summarises active listening in five words: <strong>Pause, Listen, Ask, Confirm, Act</strong>. Pause what you are doing, listen to the whole message, ask if something is unclear, confirm what you understood and then act. The rest of this course builds on this sequence.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest at reception begins, \"The air conditioning in my room...\" The receptionist already knows the usual fix and starts to say that engineering will come. Instead, she stops herself and lets the guest finish: \"...is fine now, but I need a quieter room because of the lift.\" By waiting, she found the real request and offered a room change instead of sending an engineer who was not needed.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Listening is the first act of care. Let the guest finish before you think about your reply.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Listening shows care",
+                                "questions": [
+                                    {
+                                        "question": "A guest starts describing a problem you have heard many times. What should you do?",
+                                        "options": [
+                                            "Interrupt politely to save time with the usual solution",
+                                            "Let the guest finish completely before replying",
+                                            "Start typing the request while they talk",
+                                            "Call the department before they finish"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says not to prepare your reply while the guest is speaking; listen until they finish."
+                                    },
+                                    {
+                                        "question": "Why can interrupting an upset guest make things worse?",
+                                        "options": [
+                                            "It makes the conversation longer",
+                                            "It may increase their anger or worry",
+                                            "It breaks hotel policy on greetings",
+                                            "It stops you from writing notes"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The slide states that interrupting may increase the guest's anger or worry."
+                                    },
+                                    {
+                                        "question": "A guest complains about noise. What does listening fully help you discover?",
+                                        "options": [
+                                            "Whether the guest is exaggerating",
+                                            "The real request behind the complaint",
+                                            "Which colleague caused the noise",
+                                            "How long the guest will stay"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Listening helps you find the real request, which may differ from the first words."
+                                    },
+                                    {
+                                        "question": "What is the main benefit of confirming a request before acting?",
+                                        "options": [
+                                            "It makes the guest wait longer",
+                                            "It shows you are senior",
+                                            "It reduces mistakes and delays",
+                                            "It replaces the need to act"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Confirming the request reduces mistakes and delays."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Listen to More Than Words",
+                            "minutes": 5,
+                            "body": "<h2>Three channels of meaning</h2><p>A guest communicates through more than the words they choose. The deck asks you to listen to three things at the same time: <strong>words, tone of voice and body language</strong>. Each one gives you part of the picture, and together they tell you what the guest needs and how they feel.</p><h3>1. The words</h3><p>Start with the content. Ask yourself three questions while the guest speaks:</p><ul><li>What is the guest asking for?</li><li>What information did they mention, such as a room number, a time or a name?</li><li>What is the most important point in what they said?</li></ul><p>Guests often give several details at once. Your job is to find the one that matters most and keep hold of the facts you will need later.</p><h3>2. The tone of voice</h3><p>How something is said often matters as much as what is said. Notice whether the guest is speaking quickly or slowly. Fast speech may mean they are in a hurry or stressed; slow, careful speech may mean they are tired, unsure or speaking in a second language. Ask yourself whether they need time to explain the problem, and give it to them.</p><p>You cannot hear tone properly if your attention is elsewhere, so the deck repeats the rule: do not look at your phone or talk to someone else while the guest is speaking.</p><h3>3. The body language</h3><p>Watch as well as listen. Does the guest look uncomfortable? Are they pointing to something or to a place, perhaps a direction, an item or a part of their room key? Do they seem to need some space, or do they need practical help, for example with luggage or a child?</p><p>Body language often tells you what the guest has not said yet. A guest who keeps looking at the clock may be worried about a transfer. A guest holding their back may need a seat.</p><table class=\"bk-say\"><thead><tr><th>Notice</th><th>Ask yourself</th></tr></thead><tbody><tr><td>Words</td><td>What is the request and the key detail?</td></tr><tr><td>Tone</td><td>Fast or slow? Do they need more time?</td></tr><tr><td>Body language</td><td>Uncomfortable? Pointing? Need space or help?</td></tr></tbody></table><blockquote class=\"bk-quote\">Listen to words, voice and behaviour together.</blockquote><aside class=\"bk-scene\"><strong>Scene:</strong> An older guest asks a concierge colleague, slowly, where the restaurant is, while pointing at the lift and holding the handrail. The colleague hears the words, but also notices the careful speech and the hand on the rail. He gives the directions calmly and offers to walk with the guest to the lift. The guest had asked for directions, but what he really needed was support, and the colleague saw it.</aside><aside class=\"bk-note\"><strong>Tip:</strong> If tone and words do not match, for example a guest says \"it's fine\" in a tense voice, gently check: \"Is there anything else I can help with?\"</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Words tell you the request; tone and body language tell you how the guest feels and what else they may need.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: More than words",
+                                "questions": [
+                                    {
+                                        "question": "A guest speaks very quickly while checking their watch. What is the best reading of the situation?",
+                                        "options": [
+                                            "They are rude and should be slowed down",
+                                            "They may be in a hurry, so keep your help focused",
+                                            "They do not need your attention",
+                                            "They want a long explanation"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck asks whether the guest speaks fast or slowly; fast speech and checking the time suggest urgency."
+                                    },
+                                    {
+                                        "question": "Which question belongs to listening to the words?",
+                                        "options": [
+                                            "Do they look uncomfortable?",
+                                            "Are they speaking slowly?",
+                                            "What is the most important point in what they said?",
+                                            "Do they need space?"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Finding the key point is part of listening to the words."
+                                    },
+                                    {
+                                        "question": "A guest keeps pointing at the corridor while describing a problem. What should you do?",
+                                        "options": [
+                                            "Ignore it and focus on words only",
+                                            "Notice it: they may be showing you a place linked to the problem",
+                                            "Ask them to stop pointing",
+                                            "Send them to another department"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The slide asks whether the guest is pointing to something or a place."
+                                    },
+                                    {
+                                        "question": "Why should you avoid looking at your phone while a guest speaks?",
+                                        "options": [
+                                            "Phones are forbidden in all hotels",
+                                            "You will miss tone and other cues and the guest feels ignored",
+                                            "It is only a problem in the restaurant",
+                                            "It is fine if you are waiting for a message"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Full attention is needed to hear tone and read behaviour."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "The Listening Method",
+                    "lessons": [
+                        {
+                            "title": "Full Attention and the Four Steps",
+                            "minutes": 6,
+                            "body": "<h2>Give the guest your full attention</h2><p>Active listening is not only something you do with your ears. It is a posture and a set of small behaviours that tell the guest: right now, you are the only thing that matters. The deck's instruction is clear: <strong>listen, and do not get busy with anything else</strong>.</p><ul><li><strong>Stop writing or moving if possible.</strong> Pause the task in front of you so the guest sees you are available.</li><li><strong>Face the guest comfortably.</strong> Turn your body towards them in a relaxed, natural way.</li><li><strong>Let them finish speaking.</strong> Do not complete their sentences for them.</li><li><strong>Do not look at your phone or talk to someone else.</strong> Side conversations tell the guest they are second in line.</li><li><strong>Use a simple sign that you are listening,</strong> such as a nod or a short \"yes\".</li><li><strong>Write down important information after you understand it.</strong> Notes are useful, but writing while you still do not understand splits your attention.</li></ul><blockquote class=\"bk-quote\">Full attention saves time and prevents mistakes.</blockquote><p>This may feel slower, but it is actually faster. When you understand the request the first time, you do not need to call the guest back, correct an order or apologise for a mistake.</p><h2>The four listening steps</h2><p>Once you are fully present, follow four steps in order.</p><ol><li><strong>Listen.</strong> Let the guest finish speaking. Take in the words, the tone and the body language.</li><li><strong>Ask.</strong> Ask one clear question if anything is missing or uncertain. One question at a time keeps the conversation simple.</li><li><strong>Confirm.</strong> Repeat the request back in simple words, so both of you agree on what will happen.</li><li><strong>Act.</strong> Carry out the request yourself, or contact the person responsible.</li></ol><p>The order matters. Many service errors happen because a colleague jumps from step one straight to step four. The deck's guidance is: <strong>listen first, then move to the solution.</strong></p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest calls room service and asks for \"breakfast for two tomorrow.\" The colleague lets the guest finish, then asks one question: \"What time would you like it?\" The guest says eight o'clock. The colleague confirms: \"Just to confirm, breakfast for two in your room tomorrow at eight?\" The guest adds that one person has a nut allergy. Because the colleague confirmed before acting, the allergy reached the kitchen before the order was prepared.</aside><aside class=\"bk-note\"><strong>Tip:</strong> If you must keep your hands on the keyboard, say so: \"I am noting this for you now,\" so the guest knows you are still with them.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Be fully present, then follow Listen, Ask, Confirm, Act in that order.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: The four steps",
+                                "questions": [
+                                    {
+                                        "question": "You are typing an email when a guest approaches. What should you do first?",
+                                        "options": [
+                                            "Finish the email, then look up",
+                                            "Stop typing if possible and face the guest",
+                                            "Keep typing and say 'go ahead'",
+                                            "Ask a colleague to deal with them"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says to stop writing or moving if possible and face the guest."
+                                    },
+                                    {
+                                        "question": "When should you write down the important details?",
+                                        "options": [
+                                            "Before the guest starts speaking",
+                                            "While they are still explaining, even if unclear",
+                                            "After you have understood them",
+                                            "Only if the guest asks you to"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The slide says to note important information after understanding it."
+                                    },
+                                    {
+                                        "question": "A guest's request is missing the time. Which step are you in, and what do you do?",
+                                        "options": [
+                                            "Act: guess a sensible time",
+                                            "Ask: ask one clear question about the time",
+                                            "Confirm: repeat the request without the time",
+                                            "Listen: wait silently for them to mention it"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The Ask step means asking one clear question."
+                                    },
+                                    {
+                                        "question": "What does the Act step include?",
+                                        "options": [
+                                            "Only doing the task yourself",
+                                            "Doing the task or contacting the person responsible",
+                                            "Explaining hotel policy to the guest",
+                                            "Repeating the request again"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Act means carry it out or contact the responsible person."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Listening in Practice",
+                    "lessons": [
+                        {
+                            "title": "Phrases, Habits and Unclear Requests",
+                            "minutes": 7,
+                            "body": "<h2>What helps listening, and what gets in the way</h2><p>Good listening is a set of habits. The deck lists five to build and five to avoid.</p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Look at the guest naturally</td><td>Interrupting the guest</td></tr><tr><td>Let them finish speaking</td><td>Looking at the phone</td></tr><tr><td>Use short words such as \"yes, I understand\"</td><td>Arguing before understanding the problem</td></tr><tr><td>Ask a question when needed</td><td>Assuming what the guest wants</td></tr><tr><td>Confirm what you understood before acting</td><td>Jumping to the solution too quickly</td></tr></tbody></table><blockquote class=\"bk-quote\">Good listening is faster than correcting a misunderstanding.</blockquote><h2>Four phrases that confirm understanding</h2><p>The deck gives four phrases to use, each with an example:</p><ol><li><strong>\"I understand that...\"</strong> - \"I understand that the room needs cleaning.\"</li><li><strong>\"Do you mean...?\"</strong> - \"Do you mean you need a car now?\"</li><li><strong>\"Just to confirm...\"</strong> - \"Just to confirm, you want the order at eight o'clock?\"</li><li><strong>\"I will now...\"</strong> - \"I will now inform the relevant department.\"</li></ol><p>The first three check understanding; the last tells the guest what happens next. Use one clear phrase, then wait for the answer. Do not stack several questions together.</p><h2>When the request is unclear</h2><p>Sometimes, even with full attention, the request is not clear. The deck lists five situations where you must not assume:</p><ul><li>You did not understand a word or a name.</li><li>There is more than one request in the conversation.</li><li>The guest's words change while they explain.</li><li>There is a language barrier.</li><li>You are not able to carry out the request yourself.</li></ul><p>In these moments, follow these steps:</p><ol><li>Kindly ask the guest to clarify.</li><li>Break the request into short points.</li><li>Repeat what you understood.</li><li>Use approved translation when needed.</li><li>Ask for your supervisor's help if the request is still unclear.</li></ol><aside class=\"bk-scene\"><strong>Scene:</strong> A guest asks for \"the thing for the phone and a taxi, and also the booking.\" The colleague does not guess. She says, \"Let me make sure I have everything: first, a phone charger; second, a taxi; and third, which booking do you mean?\" The guest explains it is a dinner reservation. By breaking the request into points, she handled three needs correctly instead of one.</aside><blockquote class=\"bk-quote\">Clarifying is better than carrying out a request wrongly.</blockquote><h2>Closing thought</h2><p>The deck ends with a simple rule: listen to understand, then speak to help. Correct understanding is the start of correct service.</p><aside class=\"bk-key\"><strong>Key takeaway:</strong> Use one clear confirmation phrase, wait for the answer, and never assume when a request is unclear.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Listening in practice",
+                                "questions": [
+                                    {
+                                        "question": "A guest asks for two things and mentions a third halfway through. What should you do?",
+                                        "options": [
+                                            "Handle the first request and forget the rest",
+                                            "Break the request into short points and repeat them back",
+                                            "Assume the third is not important",
+                                            "Ask the guest to come back later"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "With more than one request, the deck says break it into short points and repeat what you understood."
+                                    },
+                                    {
+                                        "question": "Which phrase tells the guest what will happen next?",
+                                        "options": [
+                                            "\"Do you mean...?\"",
+                                            "\"Just to confirm...\"",
+                                            "\"I understand that...\"",
+                                            "\"I will now inform the relevant department.\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "\"I will now...\" states the action you are taking."
+                                    },
+                                    {
+                                        "question": "A guest disagrees with your explanation before you fully understand the issue. What should you avoid?",
+                                        "options": [
+                                            "Arguing before understanding the problem",
+                                            "Asking a clarifying question",
+                                            "Letting them finish",
+                                            "Using 'yes, I understand'"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck lists arguing before understanding the problem as a habit to avoid."
+                                    },
+                                    {
+                                        "question": "You have asked for clarification twice and the request is still unclear. What is the next step?",
+                                        "options": [
+                                            "Guess the most likely meaning",
+                                            "Tell the guest you cannot help",
+                                            "Ask your supervisor for help",
+                                            "Ignore the request"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The slide says to ask for a supervisor's help if the request remains unclear."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "الاستماع الفعّال",
+            "subtitle": "افهم النزيل قبل أن تجيب",
+            "short_description": "تعلّم الاستماع للكلمات ونبرة الصوت ولغة الجسد، وطبّق خطوات: استمع، اسأل، أكد، نفّذ لتنفيذ طلبات النزلاء بدقة.",
+            "description": "<p>تبدأ كل خدمة جيدة بفهم ما يحتاجه النزيل فعلًا. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتعلّم الموظفين كيف يستمعون بالكامل قبل أن يردّوا.</p><p>ستتعرف على سبب شعور النزيل بالاهتمام عندما نستمع إليه، وكيف تقرأ نبرة الصوت ولغة الجسد إلى جانب الكلمات، وكيف تطبّق أربع خطوات بسيطة: استمع، اسأل، أكد، نفّذ. كما ستتدرب على عبارات التأكيد الواضحة وعلى التصرف الصحيح عندما لا يكون الطلب واضحًا.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظف يتعامل مع النزلاء.",
+            "outcomes": [
+                "اشرح لماذا يشعر النزيل بالاهتمام عندما تستمع إليه بالكامل",
+                "لاحظ كلمات النزيل ونبرة صوته ولغة جسده معًا",
+                "طبّق خطوات استمع، اسأل، أكد، نفّذ على كل طلب",
+                "استخدم عبارات تأكيد واضحة قبل التنفيذ",
+                "تعامل مع الطلبات غير الواضحة بالتوضيح لا بالافتراض"
+            ],
+            "faqs": [
+                {
+                    "question": "لمن هذه الدورة؟",
+                    "answer": "لكل موظف يتحدث مع النزلاء وجهًا لوجه أو عبر الهاتف في أي قسم."
+                },
+                {
+                    "question": "ما خطوات الاستماع الأربع؟",
+                    "answer": "استمع، اسأل، أكد، نفّذ: دع النزيل يكمل كلامه، واطرح سؤالًا واحدًا واضحًا، وكرر الطلب بكلمات بسيطة، ثم نفّذ أو تواصل مع المسؤول."
+                },
+                {
+                    "question": "ماذا أفعل إذا بقيت لا أفهم طلب النزيل؟",
+                    "answer": "اطلب التوضيح بلطف، وقسّم الطلب إلى نقاط قصيرة، واستخدم الترجمة المعتمدة عند الحاجة، واطلب مساعدة المشرف إذا بقي الطلب غير واضح."
+                }
+            ],
+            "meta_title": "الاستماع الفعّال لموظفي الفنادق",
+            "meta_description": "تدريب فندقي على الاستماع الفعّال: الكلمات ونبرة الصوت ولغة الجسد، وخطوات استمع واسأل وأكد ونفّذ، وعبارات تأكيد طلبات النزلاء.",
+            "focus_keyword": "الاستماع الفعال في الفنادق",
+            "chapters": [
+                {
+                    "title": "لماذا يأتي الاستماع أولًا",
+                    "lessons": [
+                        {
+                            "title": "الاستماع يجعل النزيل يشعر بالاهتمام",
+                            "minutes": 5,
+                            "body": "<h2>الاهتمام يبدأ بالاستماع</h2><p>عندما يقترب النزيل من مكتب الاستقبال، أو يتصل بالتدبير الفندقي، أو يوقفك في الممر، فهو يريد قبل كل شيء أن يُفهم. وتلخص المادة ذلك بعبارة بسيطة: الاهتمام يبدأ بالاستماع. فقبل أن تحل المشكلة أو تشرح أو تعتذر، يحتاج النزيل إلى أن يشعر بأن من أمامه قد سمع ما قاله فعلًا.</p><p>يبدو هذا بديهيًا، لكن في زحمة العمل من السهل أن نستمع بنصف انتباه؛ نسمع الكلمات الأولى، ونظن أننا نعرف الموقف، ونبدأ بتجهيز الرد. والنزيل يلاحظ ذلك، فيشعر بالاستعجال، وقد يتحول طلب صغير إلى تجربة مزعجة.</p><h2>خمسة أسباب تجعل الاستماع مهمًا</h2><ul><li><strong>النزيل يريد أن يفهمه الموظف،</strong> فالفهم جزء من الخدمة نفسها.</li><li><strong>المقاطعة قد تزيد غضبه أو قلقه،</strong> خاصة إذا كان منزعجًا من البداية.</li><li><strong>الاستماع يساعدك على معرفة الطلب الحقيقي،</strong> فقد تكون الشكوى من الإزعاج طلبًا لتغيير الغرفة.</li><li><strong>السؤال الصحيح يمنع سوء الفهم،</strong> والاستماع الجيد يدلك على السؤال المناسب.</li><li><strong>تأكيد الطلب يقلل الأخطاء والتأخير،</strong> فثوانٍ قليلة توفر عليك إعادة العمل.</li></ul><blockquote class=\"bk-quote\">لا تستعد للرد أثناء حديث النزيل — استمع حتى ينتهي.</blockquote><h2>توقف عن تجهيز الرد</h2><p>أصعب عادة يجب تركها هي بناء الرد في ذهنك بينما النزيل ما زال يتحدث. عندها ينتقل انتباهك من النزيل إلى نفسك، فتفوتك تفاصيل مثل رقم الغرفة أو الوقت أو الاسم، وقد تجيب عن سؤال لم يطرحه. دع النزيل يكمل كلامه تمامًا، ثم فكّر في الرد، وإذا توقف قليلًا فلا تسارع إلى ملء الصمت.</p><h2>المنهج في سطر واحد</h2><p>تلخص المادة الاستماع الفعّال في خمس كلمات: <strong>توقف، استمع، اسأل، أكد، نفّذ</strong>. أوقف ما تفعله، واستمع إلى الرسالة كاملة، واسأل عمّا لم يتضح، وأكد ما فهمته، ثم نفّذ.</p><aside class=\"bk-scene\"><strong>موقف:</strong> بدأ نزيل حديثه في الاستقبال قائلًا: \"المكيف في غرفتي...\"، فهمّت الموظفة بأن تقول إن الصيانة ستحضر، لكنها تمهلت وتركته يكمل: \"...يعمل الآن، لكني أحتاج غرفة أهدأ بعيدًا عن المصعد\". بانتظارها عرفت الطلب الحقيقي وعرضت تغيير الغرفة بدل إرسال فني لا حاجة إليه.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> الاستماع أول صور الاهتمام. دع النزيل يكمل قبل أن تفكر في ردك.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الاستماع يُشعر بالاهتمام",
+                                "questions": [
+                                    {
+                                        "question": "بدأ نزيل يشرح مشكلة سمعتها كثيرًا من قبل. ماذا تفعل؟",
+                                        "options": [
+                                            "تقاطعه بلطف لتوفير الوقت بالحل المعتاد",
+                                            "تتركه يكمل كلامه تمامًا قبل أن ترد",
+                                            "تبدأ بكتابة الطلب أثناء حديثه",
+                                            "تتصل بالقسم قبل أن ينتهي"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تنص المادة على ألا تستعد للرد أثناء حديث النزيل وأن تستمع حتى ينتهي."
+                                    },
+                                    {
+                                        "question": "لماذا قد تزيد مقاطعة النزيل المنزعج من سوء الموقف؟",
+                                        "options": [
+                                            "لأنها تطيل المحادثة",
+                                            "لأنها قد تزيد غضبه أو قلقه",
+                                            "لأنها تخالف سياسة الترحيب",
+                                            "لأنها تمنعك من التدوين"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تذكر الشريحة أن المقاطعة قد تزيد غضب النزيل أو قلقه."
+                                    },
+                                    {
+                                        "question": "اشتكى نزيل من الإزعاج. ما الذي يساعدك الاستماع الكامل على اكتشافه؟",
+                                        "options": [
+                                            "هل يبالغ النزيل أم لا",
+                                            "الطلب الحقيقي خلف الشكوى",
+                                            "الزميل المتسبب في الإزعاج",
+                                            "مدة إقامة النزيل"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "الاستماع يساعدك على معرفة الطلب الحقيقي."
+                                    },
+                                    {
+                                        "question": "ما الفائدة الأساسية من تأكيد الطلب قبل التنفيذ؟",
+                                        "options": [
+                                            "أنه يجعل النزيل ينتظر أكثر",
+                                            "أنه يُظهر أقدميتك",
+                                            "أنه يقلل الأخطاء والتأخير",
+                                            "أنه يغني عن التنفيذ"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تأكيد الطلب يقلل الأخطاء والتأخير."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "استمع إلى أكثر من الكلمات",
+                            "minutes": 5,
+                            "body": "<h2>ثلاث قنوات للمعنى</h2><p>لا يعبّر النزيل عن نفسه بالكلمات وحدها. تطلب منك المادة أن تستمع إلى ثلاثة أمور في الوقت نفسه: <strong>الكلمات، ونبرة الصوت، ولغة الجسد</strong>. كل واحد منها يعطيك جزءًا من الصورة، ومعًا تخبرك بما يحتاجه النزيل وبما يشعر به.</p><h3>١. الكلمات</h3><p>ابدأ بالمضمون، واسأل نفسك أثناء حديثه:</p><ul><li>ما الذي يطلبه النزيل؟</li><li>ما المعلومات التي ذكرها، مثل رقم الغرفة أو الوقت أو الاسم؟</li><li>ما النقطة الأهم في حديثه؟</li></ul><h3>٢. نبرة الصوت</h3><p>طريقة الكلام مهمة بقدر الكلام نفسه. لاحظ هل يتحدث بسرعة أو ببطء؛ فالسرعة قد تعني الاستعجال أو التوتر، والبطء قد يعني التعب أو التردد أو أنه يتحدث بلغة غير لغته. واسأل نفسك: هل يحتاج إلى وقت لشرح المشكلة؟ ثم امنحه هذا الوقت. ولن تسمع النبرة جيدًا إذا كان انتباهك في مكان آخر، لذلك تكرر المادة القاعدة: لا تنظر إلى الهاتف أو تتحدث مع غيره.</p><h3>٣. لغة الجسد</h3><p>راقب كما تستمع. هل يبدو غير مرتاح؟ هل يشير إلى شيء أو مكان؟ هل يحتاج إلى مساحة أو إلى مساعدة عملية، كحمل الأمتعة أو الاعتناء بطفل؟ كثيرًا ما تكشف لغة الجسد ما لم يقله النزيل بعد.</p><table class=\"bk-say\"><thead><tr><th>لاحظ</th><th>اسأل نفسك</th></tr></thead><tbody><tr><td>الكلمات</td><td>ما الطلب وما التفصيل الأهم؟</td></tr><tr><td>النبرة</td><td>سريع أم بطيء؟ هل يحتاج وقتًا أطول؟</td></tr><tr><td>لغة الجسد</td><td>غير مرتاح؟ يشير إلى شيء؟ يحتاج مساحة أو مساعدة؟</td></tr></tbody></table><blockquote class=\"bk-quote\">استمع للكلمات والصوت والسلوك معًا.</blockquote><aside class=\"bk-scene\"><strong>موقف:</strong> سأل نزيل كبير في السن موظف الكونسيرج ببطء عن مكان المطعم، وهو يشير إلى المصعد ويمسك بالدرابزين. سمع الموظف الكلمات، ولاحظ أيضًا بطء الكلام واليد على الدرابزين، فشرح الطريق بهدوء وعرض أن يرافقه حتى المصعد. كان النزيل يسأل عن الاتجاه، لكنه كان يحتاج إلى المساندة، والموظف انتبه لذلك.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> إذا لم تتطابق الكلمات مع النبرة، كأن يقول النزيل \"لا بأس\" بصوت متوتر، فاسأله بلطف: \"هل هناك أمر آخر أستطيع مساعدتك فيه؟\"</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> الكلمات تخبرك بالطلب، والنبرة ولغة الجسد تخبرانك بمشاعر النزيل وبما قد يحتاجه أيضًا.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: أكثر من الكلمات",
+                                "questions": [
+                                    {
+                                        "question": "نزيل يتحدث بسرعة كبيرة وينظر إلى ساعته. ما القراءة الأنسب للموقف؟",
+                                        "options": [
+                                            "أنه غير مهذب ويجب تهدئته",
+                                            "قد يكون مستعجلًا، فاجعل مساعدتك مركزة",
+                                            "أنه لا يحتاج إلى انتباهك",
+                                            "أنه يريد شرحًا طويلًا"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تسأل المادة هل يتحدث بسرعة أو ببطء، والسرعة مع النظر إلى الساعة تدل على الاستعجال."
+                                    },
+                                    {
+                                        "question": "أي الأسئلة التالية يخص الاستماع إلى الكلمات؟",
+                                        "options": [
+                                            "هل يبدو غير مرتاح؟",
+                                            "هل يتحدث ببطء؟",
+                                            "ما النقطة الأهم في حديثه؟",
+                                            "هل يحتاج إلى مساحة؟"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تحديد النقطة الأهم جزء من الاستماع إلى الكلمات."
+                                    },
+                                    {
+                                        "question": "نزيل يشير باستمرار إلى الممر وهو يصف مشكلة. ماذا تفعل؟",
+                                        "options": [
+                                            "تتجاهل ذلك وتركّز على الكلمات فقط",
+                                            "تنتبه لإشارته، فقد يدلك على مكان مرتبط بالمشكلة",
+                                            "تطلب منه التوقف عن الإشارة",
+                                            "تحيله إلى قسم آخر"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تسأل الشريحة: هل يشير إلى شيء أو مكان؟"
+                                    },
+                                    {
+                                        "question": "لماذا تتجنب النظر إلى هاتفك أثناء حديث النزيل؟",
+                                        "options": [
+                                            "لأن الهواتف ممنوعة في كل الفنادق",
+                                            "لأنك ستفوت النبرة والإشارات ويشعر النزيل بالتجاهل",
+                                            "لأنها مشكلة في المطعم فقط",
+                                            "لا بأس إن كنت تنتظر رسالة"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "الانتباه الكامل ضروري لسماع النبرة وقراءة السلوك."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "منهج الاستماع",
+                    "lessons": [
+                        {
+                            "title": "الانتباه الكامل والخطوات الأربع",
+                            "minutes": 6,
+                            "body": "<h2>أعطِ النزيل انتباهك الكامل</h2><p>الاستماع الفعّال ليس عمل الأذن وحدها، بل هو وضعية وسلوكيات صغيرة تقول للنزيل: أنت الآن محور اهتمامي. وتوجيه المادة واضح: <strong>استمع ولا تنشغل بشيء آخر</strong>.</p><ul><li><strong>توقف عن الكتابة أو الحركة إن أمكن،</strong> ليرى النزيل أنك متفرغ له.</li><li><strong>واجه النزيل بطريقة مريحة،</strong> ووجّه جسدك نحوه بشكل طبيعي.</li><li><strong>اتركه يكمل كلامه،</strong> ولا تُكمل الجمل نيابة عنه.</li><li><strong>لا تنظر إلى الهاتف أو تتحدث مع غيره.</strong></li><li><strong>استخدم إشارة بسيطة تدل على أنك تستمع،</strong> كإيماءة أو كلمة \"نعم\".</li><li><strong>دوّن المعلومات المهمة بعد فهمها،</strong> لا قبل ذلك.</li></ul><blockquote class=\"bk-quote\">الانتباه الكامل يقلل الوقت والأخطاء.</blockquote><p>قد يبدو ذلك أبطأ، لكنه في الحقيقة أسرع؛ فحين تفهم الطلب من المرة الأولى لا تحتاج إلى معاودة الاتصال بالنزيل أو تصحيح طلب أو الاعتذار عن خطأ.</p><h2>أربع خطوات للاستماع الفعّال</h2><ol><li><strong>استمع:</strong> دع النزيل يكمل كلامه.</li><li><strong>اسأل:</strong> اطرح سؤالًا واحدًا واضحًا إذا نقص شيء.</li><li><strong>أكد:</strong> كرر الطلب بكلمات بسيطة حتى تتفقا على ما سيحدث.</li><li><strong>نفّذ:</strong> نفّذ الطلب أو تواصل مع المسؤول.</li></ol><p>الترتيب مهم؛ فكثير من الأخطاء يحدث عندما يقفز الموظف من الخطوة الأولى إلى الرابعة مباشرة. والقاعدة: <strong>استمع أولًا، ثم انتقل إلى الحل.</strong></p><aside class=\"bk-scene\"><strong>موقف:</strong> اتصل نزيل بخدمة الغرف يطلب \"فطورًا لشخصين غدًا\". ترك الموظف النزيل يكمل، ثم سأل سؤالًا واحدًا: \"في أي ساعة تفضّل؟\" فأجاب: الثامنة. فأكد الموظف: \"للتأكد فقط، فطور لشخصين في غرفتك غدًا الساعة الثامنة؟\" فأضاف النزيل أن أحدهما لديه حساسية من المكسرات. ولأن الموظف أكد قبل التنفيذ، وصلت المعلومة إلى المطبخ في وقتها.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> إذا اضطررت لإبقاء يديك على لوحة المفاتيح فقل: \"أسجل طلبك الآن\"، ليعرف النزيل أنك ما زلت معه.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> كن حاضرًا بالكامل، ثم اتبع: استمع، اسأل، أكد، نفّذ بهذا الترتيب.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الخطوات الأربع",
+                                "questions": [
+                                    {
+                                        "question": "كنت تكتب بريدًا إلكترونيًا عندما اقترب نزيل. ماذا تفعل أولًا؟",
+                                        "options": [
+                                            "تنهي البريد ثم ترفع رأسك",
+                                            "تتوقف عن الكتابة إن أمكن وتواجه النزيل",
+                                            "تستمر في الكتابة وتقول له تفضّل",
+                                            "تطلب من زميل أن يتولاه"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تنص المادة على التوقف عن الكتابة أو الحركة إن أمكن ومواجهة النزيل."
+                                    },
+                                    {
+                                        "question": "متى تدوّن التفاصيل المهمة؟",
+                                        "options": [
+                                            "قبل أن يبدأ النزيل بالكلام",
+                                            "أثناء شرحه حتى لو لم تتضح",
+                                            "بعد أن تفهمها",
+                                            "فقط إذا طلب النزيل ذلك"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول الشريحة: دوّن المعلومات المهمة بعد فهمها."
+                                    },
+                                    {
+                                        "question": "طلب النزيل ينقصه الوقت. في أي خطوة أنت وماذا تفعل؟",
+                                        "options": [
+                                            "نفّذ: تخمّن وقتًا مناسبًا",
+                                            "اسأل: تطرح سؤالًا واحدًا واضحًا عن الوقت",
+                                            "أكد: تكرر الطلب دون الوقت",
+                                            "استمع: تنتظر بصمت حتى يذكره"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "خطوة اسأل تعني طرح سؤال واحد واضح."
+                                    },
+                                    {
+                                        "question": "ماذا تشمل خطوة نفّذ؟",
+                                        "options": [
+                                            "أن تنجز المهمة بنفسك فقط",
+                                            "أن تنفّذ أو تتواصل مع المسؤول",
+                                            "أن تشرح سياسة الفندق للنزيل",
+                                            "أن تكرر الطلب مرة أخرى"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "نفّذ تعني التنفيذ أو التواصل مع المسؤول."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "الاستماع في الممارسة",
+                    "lessons": [
+                        {
+                            "title": "العبارات والعادات والطلبات غير الواضحة",
+                            "minutes": 7,
+                            "body": "<h2>ما الذي يساعد على الاستماع وما الذي يعيقه</h2><p>الاستماع الجيد مجموعة عادات، وتذكر المادة خمسًا يجب ممارستها وخمسًا يجب تجنبها.</p><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنب</th></tr></thead><tbody><tr><td>انظر إلى النزيل بطريقة طبيعية</td><td>مقاطعة النزيل</td></tr><tr><td>اتركه يكمل كلامه</td><td>النظر إلى الهاتف</td></tr><tr><td>استخدم كلمات قصيرة مثل: نعم، أفهم</td><td>الجدال قبل فهم المشكلة</td></tr><tr><td>اطرح سؤالًا عند الحاجة</td><td>افتراض ما يريده النزيل</td></tr><tr><td>أكد ما فهمته قبل التنفيذ</td><td>الانتقال إلى الحل بسرعة</td></tr></tbody></table><blockquote class=\"bk-quote\">الاستماع الجيد أسرع من تصحيح سوء الفهم.</blockquote><h2>عبارات تساعدك على التأكد</h2><ol><li><strong>\"أفهم منك أن...\"</strong> — أفهم منك أن الغرفة تحتاج إلى تنظيف.</li><li><strong>\"هل تقصد أن...؟\"</strong> — هل تقصد أنك تحتاج إلى سيارة الآن؟</li><li><strong>\"للتأكد فقط...\"</strong> — للتأكد فقط، تريد الطلب الساعة الثامنة؟</li><li><strong>\"سأقوم الآن بـ...\"</strong> — سأقوم الآن بإبلاغ القسم المختص.</li></ol><p>العبارات الثلاث الأولى تتحقق من الفهم، والرابعة تخبر النزيل بما سيحدث. استخدم عبارة واحدة واضحة ثم انتظر الإجابة، ولا تجمع عدة أسئلة معًا.</p><h2>عندما لا يكون الطلب واضحًا</h2><p>لا تفترض عند:</p><ul><li>عدم فهم كلمة أو اسم.</li><li>وجود أكثر من طلب في الحديث.</li><li>تغير كلام النزيل أثناء الشرح.</li><li>وجود حاجز في اللغة.</li><li>عدم قدرتك على تنفيذ الطلب.</li></ul><p>ماذا تفعل؟</p><ol><li>اطلب من النزيل التوضيح بلطف.</li><li>قسّم الطلب إلى نقاط قصيرة.</li><li>كرر ما فهمته.</li><li>استخدم الترجمة المعتمدة عند الحاجة.</li><li>اطلب مساعدة المشرف إذا بقي الطلب غير واضح.</li></ol><aside class=\"bk-scene\"><strong>موقف:</strong> طلب نزيل \"الشيء الخاص بالهاتف، وسيارة أجرة، والحجز أيضًا\". لم تخمّن الموظفة، بل قالت: \"دعني أتأكد أنني فهمت كل شيء: أولًا شاحن للهاتف، ثانيًا سيارة أجرة، وثالثًا أي حجز تقصد؟\" فأوضح أنه حجز عشاء. بتقسيم الطلب إلى نقاط أنجزت ثلاث حاجات بدل واحدة.</aside><blockquote class=\"bk-quote\">التوضيح أفضل من تنفيذ طلب بصورة خاطئة.</blockquote><p>وتختم المادة بقاعدة بسيطة: استمع لتفهم، ثم تحدث لتساعد؛ فالفهم الصحيح هو بداية الخدمة الصحيحة.</p><aside class=\"bk-key\"><strong>الخلاصة:</strong> استخدم عبارة تأكيد واحدة واضحة وانتظر الإجابة، ولا تفترض أبدًا عندما يكون الطلب غير واضح.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الاستماع في الممارسة",
+                                "questions": [
+                                    {
+                                        "question": "طلب نزيل أمرين ثم ذكر ثالثًا في منتصف الحديث. ماذا تفعل؟",
+                                        "options": [
+                                            "تنفذ الطلب الأول وتنسى الباقي",
+                                            "تقسّم الطلب إلى نقاط قصيرة وتكررها عليه",
+                                            "تفترض أن الثالث غير مهم",
+                                            "تطلب منه العودة لاحقًا"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "عند وجود أكثر من طلب، تقول المادة: قسّم الطلب إلى نقاط قصيرة وكرر ما فهمته."
+                                    },
+                                    {
+                                        "question": "أي عبارة تخبر النزيل بما سيحدث بعد ذلك؟",
+                                        "options": [
+                                            "\"هل تقصد أن...؟\"",
+                                            "\"للتأكد فقط...\"",
+                                            "\"أفهم منك أن...\"",
+                                            "\"سأقوم الآن بإبلاغ القسم المختص\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "عبارة \"سأقوم الآن بـ\" توضح الإجراء الذي ستتخذه."
+                                    },
+                                    {
+                                        "question": "اعترض نزيل على شرحك قبل أن تفهم المشكلة كاملة. ما الذي يجب تجنبه؟",
+                                        "options": [
+                                            "الجدال قبل فهم المشكلة",
+                                            "طرح سؤال توضيحي",
+                                            "تركه يكمل كلامه",
+                                            "قول: نعم، أفهم"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تذكر المادة الجدال قبل فهم المشكلة ضمن ما يجب تجنبه."
+                                    },
+                                    {
+                                        "question": "طلبت التوضيح مرتين وما زال الطلب غير واضح. ما الخطوة التالية؟",
+                                        "options": [
+                                            "تخمّن المعنى الأقرب",
+                                            "تخبر النزيل أنك لا تستطيع المساعدة",
+                                            "تطلب مساعدة المشرف",
+                                            "تتجاهل الطلب"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول الشريحة: اطلب مساعدة المشرف إذا بقي الطلب غير واضح."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

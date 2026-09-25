@@ -44,7 +44,7 @@ a:hover { color: var(--brand-ink); }
 .hkp-brand__name { color: #fff; font-weight: 700; font-size: .92rem; line-height: 1.25; }
 .hkp-brand__by { color: var(--accent); font-size: .68rem; margin-top: .15rem; }
 .hkp-nav__section { text-transform: uppercase; letter-spacing: .08em; font-size: .66rem; color: #8d99a6; padding: 1rem .75rem .35rem; }
-.is-ar .hkp-nav__section { letter-spacing: 0; font-size: .75rem; }
+.is-intl .hkp-nav__section { letter-spacing: 0; font-size: .75rem; }
 .hkp-nav__item { display: flex; gap: .7rem; align-items: center; color: #d7dde4; text-decoration: none; padding: .55rem .75rem; border-radius: 10px; font-size: .9rem; min-height: 40px; }
 .hkp-nav__item:hover { background: rgba(255,255,255,.06); color: #fff; }
 .hkp-nav__item.is-active { background: linear-gradient(90deg, rgba(200,157,79,.22), rgba(200,157,79,.05)); color: #fff; box-shadow: inset 3px 0 0 var(--accent); }
@@ -78,7 +78,7 @@ a:hover { color: var(--brand-ink); }
 .hkp-head { display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-end; justify-content: space-between; margin-bottom: 1.25rem; }
 .hkp-head p { margin: .2rem 0 0; color: var(--muted); max-width: 70ch; }
 .hkp-eyebrow { text-transform: uppercase; letter-spacing: .1em; font-size: .7rem; color: var(--accent); font-weight: 700; margin-bottom: .35rem; }
-.is-ar .hkp-eyebrow { letter-spacing: 0; font-size: .8rem; }
+.is-intl .hkp-eyebrow { letter-spacing: 0; font-size: .8rem; }
 .hkp-question { font-size: .8rem; color: var(--muted); font-style: italic; }
 .hkp-grid { display: grid; gap: 1rem; }
 .hkp-grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
@@ -92,7 +92,7 @@ a:hover { color: var(--brand-ink); }
 .hkp-card--hero .hkp-muted { color: #c6d2d4; }
 .hkp-tile { display: flex; flex-direction: column; gap: .2rem; }
 .hkp-tile__label { font-size: .74rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 600; }
-.is-ar .hkp-tile__label { letter-spacing: 0; font-size: .82rem; }
+.is-intl .hkp-tile__label { letter-spacing: 0; font-size: .82rem; }
 .hkp-tile__value { font-size: 1.85rem; font-weight: 700; color: var(--brand-ink); line-height: 1.1; font-variant-numeric: tabular-nums; }
 .hkp-tile__foot { font-size: .78rem; color: var(--muted); }
 .hkp-tile a { font-size: .82rem; }
@@ -120,7 +120,7 @@ a:hover { color: var(--brand-ink); }
 .hkp-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .hkp-table { width: 100%; border-collapse: collapse; font-size: .88rem; }
 .hkp-table th { text-align: start; font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); font-weight: 600; padding: .55rem .6rem; border-bottom: 1px solid var(--line); white-space: nowrap; }
-.is-ar .hkp-table th { letter-spacing: 0; font-size: .8rem; }
+.is-intl .hkp-table th { letter-spacing: 0; font-size: .8rem; }
 .hkp-table td { padding: .6rem; border-bottom: 1px solid var(--line); vertical-align: top; }
 .hkp-table tr:last-child td { border-bottom: 0; }
 .hkp-table tbody tr:hover { background: #fbfaf7; }
@@ -254,3 +254,23 @@ textarea.hkp-input { min-height: 110px; resize: vertical; }
   .hkp-shell { display: block; } body.hkp { background: #fff; } .hkp-main { padding: 0; max-width: none; }
   .hkp-card { box-shadow: none; break-inside: avoid; }
 }
+
+/* ---------------------------------------------------------------- languages
+   Scripts other than Latin: system fonts that ship with Windows, macOS, Android
+   and iOS (no web-font download), no Latin letter-spacing/uppercase tricks. */
+.is-intl .hkp-eyebrow, .is-intl .hkp-nav__section, .is-intl .hkp-tile__label, .is-intl .hkp-table th { text-transform: none; }
+:lang(ur) body.hkp, body.hkp.is-ur { font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Urdu Typesetting", "Segoe UI", Tahoma, sans-serif; line-height: 1.9; }
+body.hkp.is-hi, body.hkp.is-ne { font-family: "Noto Sans Devanagari", "Nirmala UI", "Mangal", "Kohinoor Devanagari", sans-serif; }
+body.hkp.is-bn { font-family: "Noto Sans Bengali", "Nirmala UI", "Vrinda", "Kohinoor Bangla", sans-serif; }
+body.hkp.is-ml { font-family: "Noto Sans Malayalam", "Nirmala UI", "Kartika", "Malayalam Sangam MN", sans-serif; }
+.is-intl h1, .is-intl h2, .is-intl h3 { font-family: inherit; }
+.hkp-langmenu { position: relative; }
+.hkp-langmenu > summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: .35rem; min-height: 36px; }
+.hkp-langmenu > summary::-webkit-details-marker { display: none; }
+.hkp-langmenu > summary .hkp-icon { width: 16px; height: 16px; }
+.hkp-langmenu__list { position: absolute; inset-inline-end: 0; top: calc(100% + .35rem); z-index: 40; margin: 0; padding: .35rem; list-style: none; min-width: 190px; max-height: 70vh; overflow-y: auto;
+  background: var(--card, #fff); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 12px 32px rgba(15, 23, 42, .14); }
+.hkp-langmenu__list a { display: block; padding: .55rem .7rem; min-height: 44px; border-radius: 8px; color: var(--ink); text-decoration: none; }
+.hkp-langmenu__list a:hover, .hkp-langmenu__list a:focus-visible { background: var(--bg); }
+.hkp-langmenu__list a[aria-current] { font-weight: 700; color: var(--brand); }
+@media (max-width: 860px) { .hkp-langmenu > summary span { display: none; } }

@@ -102,10 +102,8 @@
 </section>
 
 <?php $this->load->view('academy/_close', array(
-    'close_title' => $locale === 'ar' ? 'درّب على الدور، لا على المسمى' : 'Train the role, not the job title',
-    'close_text'  => $locale === 'ar'
-        ? 'الدورات مرتّبة حسب أقسام الفندق، بحيث يحصل كل موظف على ما يحتاجه شِفته تحديداً.'
-        : 'Courses are grouped by hotel department so a housekeeper and a front desk agent each get what their own shift needs.',
+    'close_title' => ha_pt('Train the role, not the job title'),
+    'close_text'  => ha_pt('Courses are grouped by hotel department so a housekeeper and a front desk agent each get what their own shift needs.'),
     'close_primary'   => array('label' => $t['programs'], 'url' => base_url($locale . '/programs')),
     'close_secondary' => array('label' => $t['for_hotels'], 'url' => base_url($locale . '/hotels')),
 )); ?>

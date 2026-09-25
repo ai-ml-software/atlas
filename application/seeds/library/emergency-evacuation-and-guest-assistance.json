@@ -1,0 +1,551 @@
+{
+    "slug": "emergency-evacuation-and-guest-assistance",
+    "category": "safety-security",
+    "level": "foundation",
+    "source_pdf": "Emergency-Evacuation-and-Guest-Assistance-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/emergency-evacuation-and-guest-assistance.webp",
+    "videos": [
+        {
+            "id": "6MDqTba8pX4",
+            "title": "Evacuation Training from SafetyVideos.com",
+            "channel": "SafetyVideos.com",
+            "why": "Covers alarms, exit routes, not using lifts and going to the assembly point during a building evacuation."
+        },
+        {
+            "id": "51tTgJn7ago",
+            "title": "Learn Fire Safety Evacuation and PEEPs",
+            "channel": "Training Express",
+            "why": "Explains fire evacuation and Personal Emergency Evacuation Plans for people who need help to get out, matching the job of assisting guests."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Emergency Evacuation and Guest Assistance",
+            "subtitle": "Alert, guide, assist, assemble, account",
+            "short_description": "What every hotel colleague does when the alarm sounds: act at once, guide guests on the safe route, help those who need it and account for everyone.",
+            "description": "<p>When the alarm sounds, guests look to the nearest uniform. This course prepares every colleague of Dyafa Hotels &amp; Resorts to answer that look with calm, fast and organized action: stop work, listen, report danger and guide guests to the nearest safe exit.</p><p>You will learn the three team roles during an evacuation, how to use the safe route, how to help older guests, guests with disabilities, children and guests facing a language barrier, what to do when a route becomes unsafe, and how to keep and account for your group at the assembly point.</p><p>The golden rule runs through every chapter: use the stairs, reach the assembly point, and do not re-enter.</p>",
+            "requirements": "No prior training is needed; you should know your own hotel's emergency procedure and assigned role.",
+            "outcomes": [
+                "Act immediately and calmly when the alarm sounds, following the five first actions",
+                "Carry out an assigned team role: guide, check or coordinate",
+                "Lead guests along the nearest safe exit route using the stairs, not the lift",
+                "Support older guests, guests with disabilities, children and guests facing a language barrier",
+                "Keep, count and report your group at the assembly point without re-entering the building"
+            ],
+            "faqs": [
+                {
+                    "question": "Should I use the evacuation chair to help a guest with a disability?",
+                    "answer": "Only if you are trained and authorized to use it. Otherwise ask the guest before helping, follow the plan and request help through the control centre."
+                },
+                {
+                    "question": "What if a guest is missing at the assembly point?",
+                    "answer": "Report the name and last-seen location to the person in charge. Do not go back into the building to search; leave rescue to the emergency teams."
+                },
+                {
+                    "question": "What do I do if my exit route is full of smoke?",
+                    "answer": "Stop and change route: use the approved alternative exit, guide guests away from the danger, inform security and the control centre, and follow the evacuation leader."
+                }
+            ],
+            "meta_title": "Hotel Emergency Evacuation and Guest Assistance",
+            "meta_description": "Hotel staff training on evacuation: act at the alarm, team roles, safe routes, helping vulnerable guests and accounting for everyone at the assembly point.",
+            "focus_keyword": "hotel emergency evacuation training",
+            "chapters": [
+                {
+                    "title": "When the Alarm Sounds",
+                    "lessons": [
+                        {
+                            "title": "Act Now: The First Actions and Your Team Role",
+                            "minutes": 7,
+                            "body": "<h2>The moment that matters most</h2><p>An alarm changes the job of every colleague in the building in a single second. Whatever you were doing — checking in a family, clearing a table, making up a room — stops being the priority. Guests do not know the building the way you do. They do not know where the stairs are, which exit is nearest, or where the assembly point is. They will look at you, and how you behave in the first minute shapes how they behave.</p><blockquote class=\"bk-quote\">Calm, fast, organized action protects lives.</blockquote><h2>Stay calm and start the procedure</h2><p>The deck asks for three qualities together. Calm, because panic spreads faster than smoke. Fast, because time matters. Organized, because a hundred people moving in different directions is more dangerous than the event itself. Your five first actions are:</p><ol><li><strong>Stop work and listen to instructions.</strong> Put down what you are holding and listen for announcements from the control centre or your supervisor.</li><li><strong>Report any danger you see.</strong> Smoke, fire, a blocked door: tell security or the control centre immediately.</li><li><strong>Guide guests to the nearest safe exit.</strong> Do not wait for them to find it themselves.</li><li><strong>Ask for security or supervisor support</strong> when a situation is more than you can handle.</li><li><strong>Leave after carrying out your assigned role</strong> — not before, and not after taking unnecessary risks.</li></ol><h2>Three roles: guide, check, coordinate</h2><p>An evacuation works because everyone does one clear job. Your hotel's emergency procedure will assign you one of three roles.</p><h3>01 Guide guests</h3><p>Use short, clear words, point to the nearest safe exit and prevent crowding and pushing. A long explanation in an emergency is lost; \"This way, please — the stairs are here\" is understood.</p><h3>02 Check your area</h3><p>Check the rooms and facilities assigned to you, alert anyone who did not hear the alarm — a guest in the spa, a sleeping guest, a colleague in a storeroom — and close doors if it is safe to do so.</p><h3>03 Coordinate and report</h3><p>Report updates to the control centre, request help for guests who need it and report any missing person. Information is what allows the people in charge to send help to the right place.</p><aside class=\"bk-note\">Know your assigned role before the alarm ever sounds. An emergency is not the time to learn it.</aside><aside class=\"bk-scene\">During an evening alarm, a waiter in the restaurant stopped serving, raised his hand and said, \"Please leave your table and follow me to the exit.\" His colleague checked the private dining room and found a couple who had not heard the alarm. The supervisor reported both groups to the control centre. Each did one job, and the restaurant was clear quickly and without pushing.</aside><h2>Do not act alone</h2><p>The slide ends with a clear instruction: carry out your assigned role and do not act alone. Heroic improvisation — running back to check a floor that is not yours, or trying to fight a fire you were not trained for — puts you at risk and leaves your own area uncovered.</p><aside class=\"bk-key\">When the alarm sounds: stop, listen, report danger, guide guests to the nearest safe exit and carry out your assigned role as part of the team.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: acting at the alarm",
+                                "questions": [
+                                    {
+                                        "question": "The alarm sounds while you are finishing a guest's check-in. What should you do first?",
+                                        "options": [
+                                            "Complete the check-in quickly so the record is correct",
+                                            "Stop work, listen to instructions and start your role",
+                                            "Call the guest's room to explain what is happening",
+                                            "Wait to see if it is a false alarm"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The first action is to stop work and listen to instructions, then start the procedure."
+                                    },
+                                    {
+                                        "question": "Your role is to check your area. In the gym you find a guest wearing headphones who has not noticed the alarm. What do you do?",
+                                        "options": [
+                                            "Leave him, because guests are responsible for themselves",
+                                            "Report him later at the assembly point",
+                                            "Alert him, guide him to the nearest safe exit and continue checking",
+                                            "Wait with him until security arrives"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Checking your area includes alerting anyone who did not hear the alarm."
+                                    },
+                                    {
+                                        "question": "Which instruction best fits the 'guide' role?",
+                                        "options": [
+                                            "\"This way, please — the stairs are here.\"",
+                                            "A full explanation of what caused the alarm",
+                                            "\"Please collect your things and then come down.\"",
+                                            "\"Run, quickly, everyone run!\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Guiding means short, clear words and pointing to the nearest safe exit without causing panic."
+                                    },
+                                    {
+                                        "question": "You are assigned to the lobby, but you think a colleague's floor may not have been checked. What is correct?",
+                                        "options": [
+                                            "Leave the lobby and check that floor yourself",
+                                            "Ignore it, as it is not your area",
+                                            "Ask guests to check it for you",
+                                            "Stay in your role and report your concern to the control centre"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Carry out your assigned role, do not act alone, and pass updates to the control centre."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Moving Guests Safely",
+                    "lessons": [
+                        {
+                            "title": "The Safe Route and Guests Who Need Extra Help",
+                            "minutes": 7,
+                            "body": "<h2>The nearest safe exit</h2><p>The safe evacuation route is not simply the shortest way out; it is the nearest exit that is clear and safe. Follow the exit signs and the team's instructions, because they reflect the plan that has been prepared for your building.</p><ul><li><strong>Use the nearest safe exit.</strong></li><li><strong>Use the stairs, not the lift.</strong> Many guests instinctively walk to the lifts; stand where you can redirect them.</li><li><strong>Walk quickly without running or pushing.</strong> A fall on a staircase can block everyone behind.</li><li><strong>Stay low if there is smoke.</strong></li><li><strong>Close the door behind you if it is safe.</strong></li></ul><blockquote class=\"bk-quote\">Do not return for luggage or personal belongings.</blockquote><p>Guests will ask to go back for a passport, a laptop or a handbag. The answer is kind but firm, because things can be replaced and people cannot.</p><table class=\"bk-say\"><thead><tr><th>Say</th><th>Avoid</th></tr></thead><tbody><tr><td>\"Please leave your things and follow me to the stairs.\"</td><td>\"Go and get it quickly, I'll wait.\"</td></tr><tr><td>\"The lift is not safe now — the stairs are this way.\"</td><td>\"Take the lift, it's faster.\"</td></tr><tr><td>\"Walk quickly, please, and hold the rail.\"</td><td>\"Run!\"</td></tr></tbody></table><h2>Who may need extra help?</h2><p>Not every guest can move at the same speed or understand the same instruction. The deck names four groups to watch for.</p><h3>01 Older guests</h3><p>Walk beside them and adjust your pace. Hurrying an older guest down stairs risks a fall. Stay with them and keep them calm.</p><h3>02 Guests with disabilities</h3><p>Ask before helping and follow the plan. The guest knows best how to be assisted; a well-meant grab can cause injury. Where the plan exists for that guest, follow it and request help through the coordinator.</p><h3>03 Children and families</h3><p>Keep children with their companions. A family separated in a crowd becomes a search, so help parents keep children close and move together.</p><h3>04 Language barriers</h3><p>Use gestures and simple words. Pointing to the exit sign, a hand on the rail, one word — \"stairs\", \"exit\", \"this way\" — often works better than any sentence.</p><aside class=\"bk-note\">Use the evacuation chair only if you are trained and authorized. If you are not, ask for the colleague who is, through your supervisor or the control centre.</aside><aside class=\"bk-scene\">A housekeeping attendant met an elderly guest walking slowly toward the lift, holding his wife's arm. She said, \"The stairs are safer now — I'll walk with you,\" took the outer side, and matched their pace, stopping on each landing. At the same time she radioed that she was escorting two slow-moving guests on the east stairs. The couple arrived calm, and the coordinator knew where they were.</aside><h2>Why it works</h2><p>Safe routes and patient assistance both come from the same idea: the goal is for everyone to reach safety, not for the fastest to get out first. Your calm pace sets the pace for those you are guiding.</p><aside class=\"bk-key\">Use the nearest safe exit and the stairs, never return for belongings, and give extra help in the right way: walk beside older guests, ask before helping, keep children with companions and use gestures and simple words.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: route and extra help",
+                                "questions": [
+                                    {
+                                        "question": "A guest insists on going back to her room for her passport. What do you say?",
+                                        "options": [
+                                            "\"Please leave your things and follow me to the stairs.\"",
+                                            "\"Go quickly, the alarm may be false.\"",
+                                            "\"I will go and fetch it for you.\"",
+                                            "\"Take the lift so it is faster.\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Do not return for luggage or personal belongings; guide the guest to the safe route."
+                                    },
+                                    {
+                                        "question": "A guest in a wheelchair is in the corridor. You have not been trained on the evacuation chair. What do you do?",
+                                        "options": [
+                                            "Use the evacuation chair carefully anyway",
+                                            "Lift the guest yourself without asking",
+                                            "Ask how you can help, follow the plan and request trained help",
+                                            "Take the guest down in the lift"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Ask before helping, follow the plan and use evacuation equipment only if trained and authorized."
+                                    },
+                                    {
+                                        "question": "A guest who speaks no language you share looks confused. What is the best approach?",
+                                        "options": [
+                                            "Explain the situation in full detail",
+                                            "Use gestures and simple words and point to the exit",
+                                            "Leave him to follow the crowd",
+                                            "Ask him to wait until a translator is found"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "For language barriers the deck says to use gestures and simple words."
+                                    },
+                                    {
+                                        "question": "There is light smoke on the landing of your route. What is correct?",
+                                        "options": [
+                                            "Run through it as fast as possible",
+                                            "Open all doors to let the smoke out",
+                                            "Wait for the smoke to clear",
+                                            "Stay low and, if the route is unsafe, change to another safe exit"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Stay low if there is smoke, and change route when the way is not safe."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Do and Avoid, and What to Do When the Route Is Unsafe",
+                            "minutes": 7,
+                            "body": "<h2>Behaviour that keeps people safe</h2><p>During an evacuation, small behaviours have large effects. One colleague shouting can start a rush on the stairs; one colleague speaking calmly can slow a whole corridor down to a safe walk. The deck sets out clearly what to do and what to avoid.</p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Speak in a calm, firm voice.</td><td>Shouting or causing panic.</td></tr><tr><td>Keep corridors and exits clear.</td><td>Using the lift during a fire.</td></tr><tr><td>Help according to your role and training.</td><td>Going back to the room or collecting luggage.</td></tr><tr><td>Report smoke and danger immediately.</td><td>Opening a hot door or entering smoke.</td></tr><tr><td>Head to the designated assembly point.</td><td>Leaving the assembly point without permission.</td></tr></tbody></table><p>A calm, firm voice is not a quiet voice. It is loud enough to be heard, steady, and made of short instructions. Firmness matters because some guests will hesitate or argue; they need to hear that you are sure.</p><blockquote class=\"bk-quote\">Do not put yourself in danger — leave specialist rescue to the emergency teams.</blockquote><h2>When to stop and change route</h2><p>Plans assume the route is clear, but you must watch for signs that it is not. Stop and change route when you meet:</p><ul><li>thick smoke or fire;</li><li>a hot door or door handle;</li><li>an obstruction or collapse;</li><li>crowding that prevents safe passage;</li><li>the designated exit is closed.</li></ul><h2>Then start these steps</h2><ol><li><strong>Use the approved alternative exit.</strong> Know in advance which one it is for your area.</li><li><strong>Guide guests away from danger.</strong> Turn the group before they reach the hazard.</li><li><strong>Inform security and the control centre</strong> so others are not sent the same way.</li><li><strong>Wait for emergency teams in a safe place</strong> if no safe way forward exists.</li><li><strong>Follow the evacuation leader's instructions.</strong></li></ol><aside class=\"bk-note\">Before opening a door on your route, check whether the door or handle is hot. If it is, do not open it — turn back and use the alternative exit.</aside><aside class=\"bk-scene\">A front office agent leading guests to the north stairs found the door handle hot. She did not open it. She raised her arm and said, \"Stop here, please. We are going to the other stairs — follow me.\" Then she reported the hot door to the control centre. The group turned calmly, and the emergency teams knew where the danger was.</aside><h2>Why reporting matters</h2><p>When you find a route unsafe, your report protects people you will never see: the colleagues and guests who would otherwise be sent to the same blocked door. Changing route and reporting go together.</p><p>And after you are out, the rule is simple: do not return to the building until the competent authority declares it safe.</p><aside class=\"bk-key\">Speak calmly and firmly, keep exits clear and never enter smoke or open a hot door; if the route is unsafe, stop, use the approved alternative exit and inform security and the control centre.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: do, avoid and unsafe routes",
+                                "questions": [
+                                    {
+                                        "question": "You reach the stairwell door and the handle feels hot. What should you do?",
+                                        "options": [
+                                            "Open it slowly to check for smoke",
+                                            "Do not open it; guide guests to the approved alternative exit and report it",
+                                            "Wait by the door for the fire to pass",
+                                            "Ask guests to decide which way to go"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "A hot door is a reason to stop and change route, and the danger must be reported."
+                                    },
+                                    {
+                                        "question": "Guests start to crowd and push at the exit. Which response is best?",
+                                        "options": [
+                                            "Shout loudly so everyone hurries",
+                                            "Step aside and let them sort it out",
+                                            "Speak in a calm, firm voice, slow the group and keep the exit clear",
+                                            "Send some guests to the lift"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Do speak calmly and firmly and keep corridors and exits clear; avoid shouting or causing panic."
+                                    },
+                                    {
+                                        "question": "You hear a guest calling for help from a smoke-filled corridor. You have no rescue training. What is correct?",
+                                        "options": [
+                                            "Report the location immediately to security or the control centre and stay out of the smoke",
+                                            "Go into the smoke to reach the guest",
+                                            "Ignore it and continue to the assembly point",
+                                            "Open the nearby doors to clear the smoke"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Do not put yourself in danger; report immediately and leave specialist rescue to the emergency teams."
+                                    },
+                                    {
+                                        "question": "Your group is safely outside. A guest wants to go back in because things 'look fine now'. What do you tell him?",
+                                        "options": [
+                                            "He may go in if he is quick",
+                                            "He can go in once the alarm stops",
+                                            "He should ask the front desk",
+                                            "No one returns until the competent authority declares the building safe"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Do not return to the building until the competent authority declares it safe."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "At the Assembly Point",
+                    "lessons": [
+                        {
+                            "title": "Stay, Keep Together, Account and Report",
+                            "minutes": 6,
+                            "body": "<h2>Reaching the assembly point is not the end</h2><p>It is tempting to feel that the job is done once everyone is outside. In fact, the assembly point is where the most important question gets answered: is everyone safe? That question can only be answered if people stay where they are and the count is accurate.</p><h2>Four steps at the assembly point</h2><h3>01 Stay</h3><p>Do not leave the assembly point. Guests may want to go to their car, a nearby café or back to the entrance to watch. Every person who drifts away becomes a person who might be counted as missing, and a missing person can send emergency teams back into danger for nothing.</p><h3>02 Keep together</h3><p>Keep your group together and away from danger. Gather the guests you brought out in one place, where you can see them, and away from the entrance and the emergency vehicles.</p><h3>03 Account</h3><p>Use the lists or the information available. Depending on your hotel's procedure, this may be an in-house list, a restaurant booking list, a staff roster or simply your own knowledge of who was in your area.</p><h3>04 Report</h3><p>Report to the person in charge. If someone is missing, give their name and the location where they were last seen. That precise information is what the emergency teams need.</p><blockquote class=\"bk-quote\">Do not go back into the building to search for a missing person.</blockquote><aside class=\"bk-note\">When you report a missing person, keep it short and exact: who, and where last seen. \"Mr. Ahmed, room 512, last seen in the spa changing area\" is far more useful than \"someone from upstairs is not here\".</aside><table class=\"bk-say\"><thead><tr><th>Say</th><th>Avoid</th></tr></thead><tbody><tr><td>\"Please stay here with the group until we receive instructions.\"</td><td>\"You can go wherever you like now.\"</td></tr><tr><td>\"I am reporting the name and last location to the person in charge.\"</td><td>\"I'll run back in and look for him.\"</td></tr></tbody></table><aside class=\"bk-scene\">At the assembly point, a restaurant supervisor counted her guests against the booking list and found one table of two missing. She asked the other guests, learned they had gone to the washroom before the alarm, and reported the names and that last-seen location to the evacuation leader. Minutes later the emergency team confirmed the couple had left through another exit. She had resisted the urge to go back inside; her report did the work safely.</aside><h2>Bringing it all together</h2><p>The whole course fits in five words: alert, guide, assist, assemble, account. Alert others and report danger; guide guests along the safe route; assist those who need extra help within your training; assemble at the designated point; account for everyone and report. Throughout, everyone's safety comes first — including yours.</p><blockquote class=\"bk-quote\">Use the stairs, reach the assembly point, and do not re-enter.</blockquote><aside class=\"bk-key\">At the assembly point, stay, keep your group together, account for everyone with the lists available and report any missing person's name and last-seen location — never go back in to search.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: the assembly point",
+                                "questions": [
+                                    {
+                                        "question": "A guest at the assembly point says he will wait in his car across the road. What do you do?",
+                                        "options": [
+                                            "Let him go, since he is outside the building",
+                                            "Ask him to stay with the group until instructions are given",
+                                            "Take his name and let him leave",
+                                            "Walk with him to the car"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Stay: do not leave the assembly point, so the count stays accurate."
+                                    },
+                                    {
+                                        "question": "Your count shows one guest from your area is missing. What is the right action?",
+                                        "options": [
+                                            "Go back into the building quickly to check",
+                                            "Wait until the end of the event before saying anything",
+                                            "Ask guests to call her mobile and do nothing else",
+                                            "Report her name and last-seen location to the person in charge"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Report the name and last-seen location; do not go back in to search."
+                                    },
+                                    {
+                                        "question": "Which report is most useful to the evacuation leader?",
+                                        "options": [
+                                            "\"Ms. Sara, room 310, last seen at the pool.\"",
+                                            "\"I think someone might be missing.\"",
+                                            "\"Many guests are here, a few are not.\"",
+                                            "\"Someone from the third floor, not sure who.\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Give the name and last-seen location of the missing person."
+                                    },
+                                    {
+                                        "question": "Your group is standing close to the entrance where emergency vehicles are arriving. What should you do?",
+                                        "options": [
+                                            "Leave them, they are already outside",
+                                            "Send them back into the lobby",
+                                            "Move the group together to a spot away from danger",
+                                            "Tell each guest to find their own space"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Keep together: keep your group together and away from danger."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "الإخلاء ومساعدة النزلاء أثناء الطوارئ",
+            "subtitle": "أنذر، وجّه، ساعد، اجمع، تحقّق",
+            "short_description": "ما يفعله كل موظف عند سماع الإنذار: التحرك فورًا، وتوجيه النزلاء عبر المسار الآمن، ومساعدة من يحتاج، والتحقق من الجميع.",
+            "description": "<p>عندما يدوي الإنذار، ينظر النزلاء إلى أقرب موظف. تُعدّ هذه الدورة كل فرد في فنادق ومنتجعات ضيافة ليجيب عن تلك النظرة بتصرف هادئ وسريع ومنظّم: التوقف عن العمل، والاستماع للتعليمات، والإبلاغ عن الخطر، وتوجيه النزلاء إلى أقرب مخرج آمن.</p><p>ستتعلم أدوار الفريق الثلاثة أثناء الإخلاء، وكيفية استخدام المسار الآمن، ومساعدة كبار السن وذوي الإعاقة والأطفال ومن يواجهون حاجز اللغة، وما تفعله إذا أصبح الطريق غير آمن، وكيف تجمع مجموعتك وتتحقق من عددها عند نقطة التجمع.</p><p>وتتكرر القاعدة الذهبية في كل فصل: استخدم السلالم واتجه إلى نقطة التجمع ولا تعد دون إذن.</p>",
+            "requirements": "لا يلزم تدريب سابق؛ ويُفترض أن تعرف إجراء الطوارئ في فندقك ودورك المحدد فيه.",
+            "outcomes": [
+                "تتحرك فورًا وبهدوء عند سماع الإنذار وفق الخطوات الأولى الخمس",
+                "تنفّذ دورك المحدد في الفريق: التوجيه أو الفحص أو التنسيق",
+                "تقود النزلاء إلى أقرب مخرج آمن عبر السلالم لا المصعد",
+                "تساعد كبار السن وذوي الإعاقة والأطفال ومن يواجهون حاجز اللغة",
+                "تجمع مجموعتك وتتحقق من عددها وتبلغ عند نقطة التجمع دون العودة إلى المبنى"
+            ],
+            "faqs": [
+                {
+                    "question": "هل أستخدم كرسي الإخلاء لمساعدة نزيل من ذوي الإعاقة؟",
+                    "answer": "فقط إذا كنت مدربًا ومخولًا باستخدامه. وإلا فاسأل النزيل قبل المساعدة، واتبع الخطة، واطلب المساعدة عبر مركز التحكم."
+                },
+                {
+                    "question": "ماذا أفعل إذا كان أحد النزلاء مفقودًا عند نقطة التجمع؟",
+                    "answer": "أبلغ المسؤول باسمه وموقع آخر مشاهدة له، ولا تعد إلى المبنى للبحث عنه؛ اترك الإنقاذ لفرق الطوارئ."
+                },
+                {
+                    "question": "ماذا أفعل إذا امتلأ مسار الخروج بالدخان؟",
+                    "answer": "توقف وغيّر المسار: استخدم المخرج البديل المعتمد، ووجّه النزلاء بعيدًا عن الخطر، وأبلغ الأمن ومركز التحكم، واتبع تعليمات قائد الإخلاء."
+                }
+            ],
+            "meta_title": "الإخلاء ومساعدة النزلاء في الفنادق أثناء الطوارئ",
+            "meta_description": "تدريب موظفي الفنادق على الإخلاء: التحرك عند الإنذار، وأدوار الفريق، والمسار الآمن، ومساعدة النزلاء، والتحقق من الجميع عند نقطة التجمع.",
+            "focus_keyword": "تدريب الإخلاء في الفنادق",
+            "chapters": [
+                {
+                    "title": "عند سماع الإنذار",
+                    "lessons": [
+                        {
+                            "title": "تحرّك فورًا: الخطوات الأولى ودورك في الفريق",
+                            "minutes": 7,
+                            "body": "<h2>اللحظة الأهم</h2><p>يغيّر الإنذار مهمة كل موظف في المبنى خلال ثانية واحدة. فمهما كان عملك — تسجيل وصول عائلة، أو رفع طاولة، أو تجهيز غرفة — لم يعد هو الأولوية. النزلاء لا يعرفون المبنى كما تعرفه؛ لا يعرفون مكان السلالم ولا أقرب مخرج ولا نقطة التجمع. سينظرون إليك، وطريقة تصرفك في الدقيقة الأولى تحدد طريقة تصرفهم.</p><blockquote class=\"bk-quote\">الهدوء والسرعة والتنظيم تحمي الأرواح</blockquote><h2>اهدأ وابدأ الإجراء</h2><p>يطلب العرض ثلاث صفات معًا: الهدوء لأن الذعر ينتشر أسرع من الدخان، والسرعة لأن الوقت مهم، والتنظيم لأن تحرك الناس في اتجاهات متفرقة أخطر أحيانًا من الحدث نفسه. وخطواتك الأولى الخمس هي:</p><ol><li><strong>توقف عن العمل واستمع للتعليمات.</strong></li><li><strong>أبلغ عن أي خطر تراه</strong> كالدخان أو النار أو باب مسدود.</li><li><strong>وجّه النزلاء إلى أقرب مخرج آمن</strong> ولا تنتظر أن يجدوه بأنفسهم.</li><li><strong>اطلب دعم الأمن أو المشرف</strong> عندما يفوق الموقف قدرتك.</li><li><strong>غادر بعد تنفيذ دورك المحدد.</strong></li></ol><h2>ثلاثة أدوار: وجّه، افحص، نسّق</h2><h3>01 وجّه النزلاء</h3><p>استخدم كلمات قصيرة وواضحة، وأشر إلى أقرب مخرج آمن، وامنع الازدحام والتدافع. فالشرح الطويل يضيع في الطوارئ، أما «من هنا من فضلك، السلالم هنا» فتُفهم فورًا.</p><h3>02 افحص منطقتك</h3><p>افحص الغرف والمرافق المكلف بها، ونبّه من لم يسمع الإنذار — نزيلًا في النادي الصحي، أو نائمًا، أو زميلًا في مستودع — وأغلق الأبواب إن كان ذلك آمنًا.</p><h3>03 نسّق وأبلغ</h3><p>أبلغ مركز التحكم بالتحديثات، واطلب المساعدة للفئات المحتاجة، وأبلغ عن أي شخص مفقود؛ فالمعلومة هي ما يوجّه المساعدة إلى المكان الصحيح.</p><aside class=\"bk-note\">اعرف دورك المحدد قبل أن يدوي الإنذار؛ فالطوارئ ليست وقت التعلّم.</aside><aside class=\"bk-scene\">أثناء إنذار مسائي، توقف نادل في المطعم عن الخدمة ورفع يده قائلًا: «تفضلوا باتباعي إلى المخرج». وفحص زميله قاعة الطعام الخاصة فوجد زوجين لم يسمعا الإنذار، وأبلغ المشرف مركز التحكم بالمجموعتين. أدى كل منهم مهمة واحدة، فخلا المطعم بسرعة ودون تدافع.</aside><h2>لا تعمل بشكل فردي</h2><p>يختم العرض بتعليمة واضحة: نفّذ دورك المحدد ولا تعمل بشكل فردي. فالارتجال — كالعودة لفحص طابق ليس من مسؤوليتك — يعرّضك للخطر ويترك منطقتك دون تغطية.</p><aside class=\"bk-key\">عند سماع الإنذار: توقف، واستمع، وأبلغ عن الخطر، ووجّه النزلاء إلى أقرب مخرج آمن، ونفّذ دورك المحدد ضمن الفريق.</aside>",
+                            "quiz": {
+                                "title": "اختبر فهمك: التحرك عند الإنذار",
+                                "questions": [
+                                    {
+                                        "question": "دوّى الإنذار وأنت تنهي تسجيل وصول نزيل. ما أول ما تفعله؟",
+                                        "options": [
+                                            "تنهي التسجيل بسرعة ليكون السجل صحيحًا",
+                                            "تتوقف عن العمل وتستمع للتعليمات وتبدأ دورك",
+                                            "تتصل بغرفة النزيل لتشرح ما يحدث",
+                                            "تنتظر لترى إن كان الإنذار كاذبًا"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "الخطوة الأولى هي التوقف عن العمل والاستماع للتعليمات ثم بدء الإجراء."
+                                    },
+                                    {
+                                        "question": "دورك فحص منطقتك، ووجدت في النادي الرياضي نزيلًا يضع سماعات ولم ينتبه للإنذار. ماذا تفعل؟",
+                                        "options": [
+                                            "تتركه لأن النزيل مسؤول عن نفسه",
+                                            "تبلغ عنه لاحقًا عند نقطة التجمع",
+                                            "تنبّهه وتوجهه إلى أقرب مخرج آمن وتكمل الفحص",
+                                            "تنتظر معه حتى يصل الأمن"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "فحص المنطقة يشمل تنبيه من لم يسمع الإنذار."
+                                    },
+                                    {
+                                        "question": "أي عبارة تناسب دور التوجيه؟",
+                                        "options": [
+                                            "«من هنا من فضلك، السلالم هنا».",
+                                            "شرح كامل لسبب الإنذار",
+                                            "«اجمعوا أغراضكم ثم انزلوا».",
+                                            "«اركضوا بسرعة جميعًا!»"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "التوجيه يعني كلمات قصيرة وواضحة والإشارة إلى أقرب مخرج آمن دون إثارة الذعر."
+                                    },
+                                    {
+                                        "question": "أنت مكلف بالردهة، وتظن أن طابق زميلك ربما لم يُفحص. ما الصحيح؟",
+                                        "options": [
+                                            "تترك الردهة وتفحص الطابق بنفسك",
+                                            "تتجاهل الأمر لأنه ليس منطقتك",
+                                            "تطلب من النزلاء فحصه",
+                                            "تبقى في دورك وتبلغ مركز التحكم بقلقك"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "نفّذ دورك المحدد ولا تعمل بشكل فردي، وأبلغ مركز التحكم بالتحديثات."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "تحريك النزلاء بأمان",
+                    "lessons": [
+                        {
+                            "title": "المسار الآمن ومن يحتاج إلى مساعدة إضافية",
+                            "minutes": 7,
+                            "body": "<h2>أقرب مخرج آمن</h2><p>المسار الآمن ليس بالضرورة أقصر طريق للخروج، بل هو أقرب مخرج واضح وآمن. اتبع علامات الخروج وتعليمات الفريق، لأنها تعكس الخطة المعدّة لمبناك.</p><ul><li><strong>استخدم أقرب مخرج آمن.</strong></li><li><strong>استخدم السلالم وليس المصعد.</strong> كثير من النزلاء يتجهون تلقائيًا إلى المصاعد، فقف حيث تستطيع إعادة توجيههم.</li><li><strong>امشِ بسرعة دون ركض أو تدافع</strong>؛ فسقطة واحدة على الدرج قد تسد الطريق على الجميع.</li><li><strong>ابقَ منخفضًا إذا وُجد دخان.</strong></li><li><strong>أغلق الباب خلفك إن كان ذلك آمنًا.</strong></li></ul><blockquote class=\"bk-quote\">لا تعد لجلب الأمتعة أو الممتلكات</blockquote><p>سيطلب بعض النزلاء العودة لجلب جواز سفر أو حاسوب أو حقيبة، والجواب لطيف لكنه حازم: الأشياء تُعوَّض والأرواح لا تُعوَّض.</p><table class=\"bk-say\"><thead><tr><th>قل</th><th>تجنب</th></tr></thead><tbody><tr><td>«من فضلك اترك أغراضك واتبعني إلى السلالم».</td><td>«اذهب وأحضرها بسرعة، سأنتظرك».</td></tr><tr><td>«المصعد غير آمن الآن، السلالم من هنا».</td><td>«خذ المصعد فهو أسرع».</td></tr><tr><td>«امشِ بسرعة من فضلك وأمسك الدرابزين».</td><td>«اركض!»</td></tr></tbody></table><h2>من يحتاج إلى مساعدة إضافية؟</h2><h3>01 كبار السن</h3><p>امشِ بجانبهم واضبط السرعة؛ فاستعجالهم على الدرج يعرّضهم للسقوط.</p><h3>02 ذوو الإعاقة</h3><p>اسأل قبل المساعدة واتبع الخطة؛ فالنزيل أعلم بالطريقة التي تناسبه، والإمساك المفاجئ قد يسبب إصابة.</p><h3>03 الأطفال والعائلات</h3><p>أبقِ الأطفال مع المرافقين؛ فالعائلة التي تتفرق في الزحام تتحول إلى عملية بحث.</p><h3>04 حاجز اللغة</h3><p>استخدم الإشارة وكلمات بسيطة: الإشارة إلى علامة الخروج، وكلمة واحدة مثل «سلالم» أو «مخرج» أو «من هنا».</p><aside class=\"bk-note\">استخدم كرسي الإخلاء فقط إذا كنت مدربًا ومخولًا، وإلا فاطلب الزميل المؤهل عبر مشرفك أو مركز التحكم.</aside><aside class=\"bk-scene\">صادفت موظفة التدبير الفندقي نزيلًا مسنًّا يمشي ببطء نحو المصعد ممسكًا بذراع زوجته، فقالت: «السلالم أكثر أمانًا الآن، سأمشي معكما»، ومشت بجانبهما بسرعتهما وتوقفت عند كل منبسط، وأبلغت عبر اللاسلكي أنها ترافق نزيلين بطيئي الحركة على السلالم الشرقية. وصلا بهدوء، وعرف المنسق مكانهما.</aside><aside class=\"bk-key\">استخدم أقرب مخرج آمن والسلالم، ولا تعد لجلب الأمتعة، وقدّم المساعدة الإضافية بالطريقة الصحيحة: امشِ بجانب كبار السن، واسأل قبل المساعدة، وأبقِ الأطفال مع مرافقيهم، واستخدم الإشارة والكلمات البسيطة.</aside>",
+                            "quiz": {
+                                "title": "اختبر فهمك: المسار والمساعدة الإضافية",
+                                "questions": [
+                                    {
+                                        "question": "نزيلة تصر على العودة إلى غرفتها لجلب جواز سفرها. ماذا تقول؟",
+                                        "options": [
+                                            "«من فضلك اتركي أغراضك واتبعيني إلى السلالم».",
+                                            "«اذهبي بسرعة فقد يكون الإنذار كاذبًا».",
+                                            "«سأذهب أنا لإحضاره».",
+                                            "«خذي المصعد ليكون أسرع»."
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "لا تعد لجلب الأمتعة أو الممتلكات؛ وجّه النزيلة إلى المسار الآمن."
+                                    },
+                                    {
+                                        "question": "نزيل على كرسي متحرك في الممر، ولم تتدرب على كرسي الإخلاء. ماذا تفعل؟",
+                                        "options": [
+                                            "تستخدم كرسي الإخلاء بحذر على أي حال",
+                                            "ترفع النزيل بنفسك دون سؤاله",
+                                            "تسأله كيف تساعده وتتبع الخطة وتطلب مساعدة مدربة",
+                                            "تنزل به في المصعد"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "اسأل قبل المساعدة واتبع الخطة، ولا تستخدم كرسي الإخلاء إلا إذا كنت مدربًا ومخولًا."
+                                    },
+                                    {
+                                        "question": "نزيل لا تتحدثان لغة مشتركة ويبدو مرتبكًا. ما الأسلوب الأفضل؟",
+                                        "options": [
+                                            "تشرح له الوضع بالتفصيل",
+                                            "تستخدم الإشارة وكلمات بسيطة وتشير إلى المخرج",
+                                            "تتركه يتبع الحشد",
+                                            "تطلب منه الانتظار حتى يحضر مترجم"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "مع حاجز اللغة استخدم الإشارة والكلمات البسيطة."
+                                    },
+                                    {
+                                        "question": "يوجد دخان خفيف على منبسط الدرج في مسارك. ما الصحيح؟",
+                                        "options": [
+                                            "تركض خلاله بأقصى سرعة",
+                                            "تفتح كل الأبواب لإخراج الدخان",
+                                            "تنتظر حتى ينقشع الدخان",
+                                            "تبقى منخفضًا، وإن كان الطريق غير آمن تنتقل إلى مخرج آمن آخر"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "ابقَ منخفضًا إذا وُجد دخان، وغيّر المسار إذا لم يكن الطريق آمنًا."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "افعل وتجنب، وماذا تفعل إذا كان الطريق غير آمن",
+                            "minutes": 7,
+                            "body": "<h2>سلوك يحفظ السلامة</h2><p>في الإخلاء، للتصرفات الصغيرة آثار كبيرة؛ فموظف واحد يصرخ قد يُحدث اندفاعًا على الدرج، وموظف واحد يتحدث بهدوء قد يُبطئ ممرًا كاملًا إلى مشي آمن.</p><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنب</th></tr></thead><tbody><tr><td>تحدث بصوت هادئ وحازم.</td><td>أن تصرخ أو تسبب الذعر.</td></tr><tr><td>أبقِ الممرات والمخارج خالية.</td><td>أن تستخدم المصعد أثناء الحريق.</td></tr><tr><td>ساعد حسب دورك وتدريبك.</td><td>أن تعود إلى الغرفة أو تجمع الأمتعة.</td></tr><tr><td>أبلغ عن الدخان والخطر فورًا.</td><td>أن تفتح بابًا ساخنًا أو تدخل الدخان.</td></tr><tr><td>اتجه إلى نقطة التجمع المحددة.</td><td>أن تترك نقطة التجمع دون إذن.</td></tr></tbody></table><p>الصوت الهادئ الحازم ليس صوتًا خافتًا؛ بل مسموع وثابت ومكوّن من تعليمات قصيرة، فبعض النزلاء سيترددون أو يجادلون ويحتاجون أن يسمعوا ثقتك.</p><blockquote class=\"bk-quote\">لا تعرض نفسك للخطر — اترك الإنقاذ المتخصص لفرق الطوارئ</blockquote><h2>متى تتوقف وتغيّر المسار</h2><ul><li>وجود دخان كثيف أو نار.</li><li>سخونة الباب أو مقبضه.</li><li>وجود عائق أو انهيار.</li><li>ازدحام يمنع المرور الآمن.</li><li>إغلاق المخرج المحدد.</li></ul><h2>ثم ابدأ بهذه الخطوات</h2><ol><li><strong>استخدم المخرج البديل المعتمد</strong>، واعرفه مسبقًا لمنطقتك.</li><li><strong>وجّه النزلاء بعيدًا عن الخطر</strong> قبل أن يصلوا إليه.</li><li><strong>أبلغ الأمن ومركز التحكم</strong> حتى لا يُرسل آخرون في الطريق نفسه.</li><li><strong>انتظر فرق الطوارئ في مكان آمن</strong> إذا لم يوجد طريق آمن.</li><li><strong>اتبع تعليمات قائد الإخلاء.</strong></li></ol><aside class=\"bk-note\">قبل فتح أي باب في مسارك، تحقق من سخونة الباب أو مقبضه؛ فإن كان ساخنًا فلا تفتحه وعد إلى المخرج البديل.</aside><aside class=\"bk-scene\">كانت موظفة الاستقبال تقود النزلاء إلى السلالم الشمالية فوجدت مقبض الباب ساخنًا، فلم تفتحه ورفعت ذراعها قائلة: «توقفوا هنا من فضلكم، سنتجه إلى السلالم الأخرى، اتبعوني»، ثم أبلغت مركز التحكم بالباب الساخن. استدارت المجموعة بهدوء، وعرفت فرق الطوارئ مكان الخطر.</aside><p>وبعد الخروج تبقى القاعدة واضحة: لا تعد إلى المبنى حتى تعلن الجهة المختصة أنه آمن.</p><aside class=\"bk-key\">تحدث بهدوء وحزم، وأبقِ المخارج خالية، ولا تدخل الدخان ولا تفتح بابًا ساخنًا؛ وإذا كان الطريق غير آمن فتوقف واستخدم المخرج البديل المعتمد وأبلغ الأمن ومركز التحكم.</aside>",
+                            "quiz": {
+                                "title": "اختبر فهمك: افعل وتجنب والطريق غير الآمن",
+                                "questions": [
+                                    {
+                                        "question": "وصلت إلى باب الدرج ووجدت مقبضه ساخنًا. ماذا تفعل؟",
+                                        "options": [
+                                            "تفتحه ببطء لتتحقق من الدخان",
+                                            "لا تفتحه، وتوجه النزلاء إلى المخرج البديل المعتمد وتبلغ عنه",
+                                            "تنتظر عند الباب حتى تمر النار",
+                                            "تترك النزلاء يقررون الطريق"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "سخونة الباب سبب للتوقف وتغيير المسار، ويجب الإبلاغ عن الخطر."
+                                    },
+                                    {
+                                        "question": "بدأ النزلاء بالازدحام والتدافع عند المخرج. ما الاستجابة الأفضل؟",
+                                        "options": [
+                                            "تصرخ بصوت عالٍ ليسرع الجميع",
+                                            "تبتعد وتتركهم يتدبرون أمرهم",
+                                            "تتحدث بصوت هادئ وحازم وتبطئ المجموعة وتبقي المخرج خاليًا",
+                                            "ترسل بعضهم إلى المصعد"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تحدث بهدوء وحزم وأبقِ المخارج خالية، وتجنب الصراخ وإثارة الذعر."
+                                    },
+                                    {
+                                        "question": "تسمع نزيلًا يستغيث من ممر مليء بالدخان، وليس لديك تدريب على الإنقاذ. ما الصحيح؟",
+                                        "options": [
+                                            "تبلغ الأمن أو مركز التحكم بالموقع فورًا وتبقى خارج الدخان",
+                                            "تدخل الدخان للوصول إليه",
+                                            "تتجاهل الأمر وتكمل إلى نقطة التجمع",
+                                            "تفتح الأبواب القريبة لإخراج الدخان"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "لا تعرض نفسك للخطر؛ أبلغ فورًا واترك الإنقاذ المتخصص لفرق الطوارئ."
+                                    },
+                                    {
+                                        "question": "مجموعتك في الخارج بأمان، ونزيل يريد العودة لأن الوضع «يبدو جيدًا». ماذا تقول له؟",
+                                        "options": [
+                                            "يمكنه الدخول إن كان سريعًا",
+                                            "يمكنه الدخول عندما يتوقف الإنذار",
+                                            "عليه أن يسأل الاستقبال",
+                                            "لا يعود أحد حتى تعلن الجهة المختصة أن المبنى آمن"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "لا تعد إلى المبنى حتى تعلن الجهة المختصة أنه آمن."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "عند نقطة التجمع",
+                    "lessons": [
+                        {
+                            "title": "ابقَ في المكان، اجمع النزلاء، تحقّق وأبلغ",
+                            "minutes": 6,
+                            "body": "<h2>الوصول إلى نقطة التجمع ليس النهاية</h2><p>من السهل أن تشعر بأن المهمة انتهت بمجرد خروج الجميع، لكن نقطة التجمع هي المكان الذي يُجاب فيه عن السؤال الأهم: هل الجميع بأمان؟ ولا يمكن الإجابة إلا إذا بقي الناس في أماكنهم وكان العدد دقيقًا.</p><h2>أربع خطوات عند نقطة التجمع</h2><h3>01 ابقَ في المكان</h3><p>لا تغادر نقطة التجمع. قد يرغب بعض النزلاء في الذهاب إلى سياراتهم أو إلى مقهى قريب أو العودة إلى المدخل للمشاهدة، وكل شخص يبتعد قد يُحسب مفقودًا، والمفقود قد يدفع فرق الطوارئ إلى العودة إلى الخطر بلا داعٍ.</p><h3>02 اجمع النزلاء</h3><p>أبقِ مجموعتك معًا وبعيدة عن الخطر، في مكان تراهم فيه، بعيدًا عن المدخل ومركبات الطوارئ.</p><h3>03 تحقّق من العدد</h3><p>استخدم القوائم أو المعلومات المتاحة، سواء كانت قائمة المقيمين أو حجوزات المطعم أو جدول الموظفين أو معرفتك بمن كان في منطقتك، وفق إجراء فندقك.</p><h3>04 أبلغ المسؤول</h3><p>اذكر اسم المفقود وموقع آخر مشاهدة له؛ فهذه المعلومة الدقيقة هي ما تحتاجه فرق الطوارئ.</p><blockquote class=\"bk-quote\">لا تعد إلى المبنى للبحث عن شخص مفقود</blockquote><aside class=\"bk-note\">اجعل بلاغك قصيرًا ودقيقًا: من هو، وأين شوهد آخر مرة. فعبارة «السيد أحمد، غرفة 512، شوهد آخر مرة في غرف تبديل الملابس بالنادي الصحي» أنفع بكثير من «أحد نزلاء الطوابق العليا غير موجود».</aside><table class=\"bk-say\"><thead><tr><th>قل</th><th>تجنب</th></tr></thead><tbody><tr><td>«من فضلك ابقَ هنا مع المجموعة حتى تصلنا التعليمات».</td><td>«يمكنك الذهاب إلى حيث تشاء الآن».</td></tr><tr><td>«سأبلغ المسؤول بالاسم وآخر موقع».</td><td>«سأعود إلى الداخل لأبحث عنه».</td></tr></tbody></table><aside class=\"bk-scene\">عند نقطة التجمع، راجعت مشرفة المطعم نزلاءها مع قائمة الحجوزات فوجدت طاولة لشخصين غير موجودة. سألت النزلاء فعلمت أنهما ذهبا إلى دورة المياه قبل الإنذار، فأبلغت قائد الإخلاء بالاسمين وآخر موقع لهما. وبعد دقائق أكد فريق الطوارئ أنهما خرجا من مخرج آخر. قاومت رغبتها في العودة، وأدى بلاغها المهمة بأمان.</aside><h2>الصورة الكاملة</h2><p>تُختصر الدورة كلها في خمس كلمات: أنذر، وجّه، ساعد، اجمع، تحقّق. وسلامة الجميع أولًا — بما فيها سلامتك.</p><blockquote class=\"bk-quote\">استخدم السلالم واتجه إلى نقطة التجمع ولا تعد دون إذن</blockquote><aside class=\"bk-key\">عند نقطة التجمع: ابقَ في المكان، واجمع مجموعتك، وتحقق من العدد بالقوائم المتاحة، وأبلغ المسؤول باسم المفقود وموقع آخر مشاهدة له، ولا تعد إلى المبنى للبحث عنه.</aside>",
+                            "quiz": {
+                                "title": "اختبر فهمك: نقطة التجمع",
+                                "questions": [
+                                    {
+                                        "question": "نزيل عند نقطة التجمع يقول إنه سينتظر في سيارته عبر الشارع. ماذا تفعل؟",
+                                        "options": [
+                                            "تتركه يذهب لأنه خارج المبنى",
+                                            "تطلب منه البقاء مع المجموعة حتى تصل التعليمات",
+                                            "تسجل اسمه وتتركه يغادر",
+                                            "ترافقه إلى السيارة"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "ابقَ في المكان: لا تغادر نقطة التجمع حتى يبقى العدد دقيقًا."
+                                    },
+                                    {
+                                        "question": "أظهر العد أن نزيلة من منطقتك مفقودة. ما التصرف الصحيح؟",
+                                        "options": [
+                                            "تعود بسرعة إلى المبنى للتحقق",
+                                            "تنتظر حتى نهاية الحدث قبل أن تقول شيئًا",
+                                            "تطلب من النزلاء الاتصال بها فقط",
+                                            "تبلغ المسؤول باسمها وموقع آخر مشاهدة لها"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "أبلغ بالاسم وموقع آخر مشاهدة، ولا تعد للبحث."
+                                    },
+                                    {
+                                        "question": "أي بلاغ هو الأنفع لقائد الإخلاء؟",
+                                        "options": [
+                                            "«السيدة سارة، غرفة 310، شوهدت آخر مرة عند المسبح».",
+                                            "«أظن أن أحدًا ربما مفقود».",
+                                            "«كثير من النزلاء هنا وبعضهم ليسوا هنا».",
+                                            "«شخص من الطابق الثالث، لست متأكدًا من هو»."
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "اذكر اسم المفقود وموقع آخر مشاهدة له."
+                                    },
+                                    {
+                                        "question": "مجموعتك تقف قرب المدخل حيث تصل مركبات الطوارئ. ماذا تفعل؟",
+                                        "options": [
+                                            "تتركهم فهم في الخارج أصلًا",
+                                            "تعيدهم إلى الردهة",
+                                            "تنقل المجموعة معًا إلى مكان بعيد عن الخطر",
+                                            "تطلب من كل نزيل أن يجد مكانًا لنفسه"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "اجمع النزلاء: أبقِ مجموعتك معًا وبعيدة عن الخطر."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

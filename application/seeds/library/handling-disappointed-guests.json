@@ -1,0 +1,545 @@
+{
+    "slug": "handling-disappointed-guests",
+    "category": "guest-handling",
+    "level": "foundation",
+    "source_pdf": "Handling-Disappointed-Guests-Dyafa (1).pdf",
+    "thumbnail": "uploads/academy/library/handling-disappointed-guests.webp",
+    "videos": [
+        {
+            "id": "yVXUuagWO2M",
+            "title": "3 Simple Steps to Calm Angry Customers | Customer Service English with Practice!",
+            "channel": "English Etc. With Julie",
+            "why": "Gives simple phrases, with practice, for acknowledging a customer's disappointment and moving toward a fix."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Handling Disappointed Guests",
+            "subtitle": "Listen. Recover. Rebuild trust.",
+            "short_description": "Turn guest disappointment into trust with a five-step service recovery: listen, acknowledge, apologise, resolve and follow up.",
+            "description": "<p>Every hotel will sometimes disappoint a guest — an operational error, an expectation that was not met, or a guest who arrives already tired. What matters is the response. This course, based on the Dyafa Hotels &amp; Resorts training deck, treats every disappointment as a chance to recover and rebuild trust.</p><p>You will learn to notice quiet signs of disappointment and check them respectfully, to follow the five-step recovery, and to use body language and words that acknowledge the impact on the guest instead of defending the hotel.</p><p>The final chapter shows how to resolve with clarity — a fix, an alternative, authorised recovery or escalation — and why follow-up is what finally closes the recovery.</p>",
+            "requirements": "No prior training is needed; the course suits all guest-facing hotel colleagues.",
+            "outcomes": [
+                "Recognise possible signs of disappointment and check them respectfully",
+                "Apply the five-step recovery: listen, acknowledge, apologise, resolve and follow up",
+                "Use body language and words that show genuine attention and acknowledge impact",
+                "Offer a clear solution with a defined time and owner, within your authority",
+                "Close each recovery with follow-up, documentation and steps to prevent recurrence"
+            ],
+            "faqs": [
+                {
+                    "question": "What if the problem was not my fault?",
+                    "answer": "Not every disappointment is caused by the employee, but the response is always our responsibility. Understand the impact and start the solution instead of discussing who is at fault."
+                },
+                {
+                    "question": "Can I offer compensation?",
+                    "answer": "Only within your authority. Explain it clearly, never promise what you do not control, and escalate to a supervisor when the impact or cost is high."
+                },
+                {
+                    "question": "When is a recovery finished?",
+                    "answer": "When the guest confirms the issue is resolved. Confirm delivery, check satisfaction, document the case and share the cause to prevent recurrence."
+                }
+            ],
+            "meta_title": "Handling Disappointed Guests | Service Recovery",
+            "meta_description": "A hotel service recovery course: notice disappointment, listen, acknowledge, apologise sincerely, resolve with clarity and follow up.",
+            "focus_keyword": "service recovery for disappointed hotel guests",
+            "chapters": [
+                {
+                    "title": "Seeing Disappointment Early",
+                    "lessons": [
+                        {
+                            "title": "Why Recovery Matters and How to Notice Disappointment",
+                            "minutes": 7,
+                            "body": "<h2>A problem is a chance to recover</h2><p>No hotel is perfect every day. The deck is realistic about why guests become disappointed: sometimes there has been an <strong>operational error</strong>, sometimes an <strong>expectation that was not met</strong>, and sometimes the guest has <strong>arrived tired or stressed for reasons outside the hotel</strong>. You cannot control all of these causes. You can always control the response.</p><blockquote class=\"bk-quote\">The response is our responsibility — not every disappointment is caused by the employee.</blockquote><p>This sentence frees you and obliges you at the same time. It frees you from taking every complaint personally, and it obliges you to act even when the problem began somewhere else. The two behaviours that always make things worse are <strong>ignoring</strong> the guest and becoming <strong>defensive</strong>. Both tell the guest that the hotel cares more about itself than about them.</p><p>The encouraging side is equally clear: <strong>a good response can turn a complaint into loyalty</strong>. A guest who sees a problem handled well often trusts the hotel more than one who never had a problem at all.</p><h3>Impact first, fault later</h3><p>The deck's rule is: <em>understand the impact first, then move toward a solution</em> — do not start by discussing who is at fault. The guest does not need an investigation at the desk; they need to feel understood and see things improving.</p><h2>Notice, then ask — do not assume</h2><p>Disappointed guests do not always complain. Often the signs are quiet:</p><ul><li>silence or short answers;</li><li>sighing or a change in tone of voice;</li><li>repeated looking around or waiting;</li><li>a tense expression or closed posture;</li><li>a drop in enthusiasm or in willingness to engage.</li></ul><p>These signals open the conversation, but they do not tell you the facts. Do not diagnose the guest's feelings from appearance alone. Instead, check respectfully:</p><ul><li>\"Is everything meeting your expectations?\"</li><li>\"I noticed you seem uncomfortable; may I help?\"</li><li>\"Did something not happen as you expected?\"</li></ul><p>Then listen to the answer without interrupting.</p><aside class=\"bk-scene\"><p>At breakfast, a guest who chatted happily the day before now gives one-word answers and keeps looking towards the kitchen. The waiter does not assume she is simply in a bad mood. He asks, \"Did something not happen as you expected this morning?\" She explains that her egg order was forgotten twenty minutes ago. He apologises, checks with the kitchen immediately, and returns with a time. Because he noticed and asked, a silent disappointment became a problem he could solve before check-out.</p></aside><aside class=\"bk-note\"><p>A quiet guest is not always a satisfied guest. A short, respectful check-in question costs you seconds and can save the whole stay.</p></aside><aside class=\"bk-key\"><p>Own the response even when you did not cause the problem: notice the signs, ask instead of assuming, and focus on impact before fault.</p></aside>",
+                            "quiz": {
+                                "title": "Check your understanding: recovery and noticing disappointment",
+                                "questions": [
+                                    {
+                                        "question": "A guest is upset because the airline lost his luggage before he arrived. What does the deck say about your role?",
+                                        "options": [
+                                            "It is not the hotel's problem, so there is nothing to do",
+                                            "The response is still our responsibility, even if we did not cause it",
+                                            "Tell him to contact the airline and end the conversation",
+                                            "Explain that other guests have had the same issue"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Not every disappointment is caused by the employee, but the response is our responsibility."
+                                    },
+                                    {
+                                        "question": "A guest complains that her room was not cleaned. What should you focus on first?",
+                                        "options": [
+                                            "Finding out which attendant was responsible",
+                                            "Explaining the housekeeping schedule",
+                                            "Understanding the impact on her and starting the solution",
+                                            "Asking her to fill in a complaint form"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says to understand the impact and start the solution before discussing fault."
+                                    },
+                                    {
+                                        "question": "A usually chatty guest is giving short answers and sighing. What is the best response?",
+                                        "options": [
+                                            "Ask respectfully: \"Did something not happen as you expected?\"",
+                                            "Assume he is tired and leave him alone",
+                                            "Tell a colleague he is in a bad mood",
+                                            "Offer compensation straight away"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Signals open the conversation; a respectful question confirms the facts."
+                                    },
+                                    {
+                                        "question": "Which behaviour does the deck say makes a disappointed guest's situation worse?",
+                                        "options": [
+                                            "Asking questions",
+                                            "Listening without interrupting",
+                                            "Starting a solution",
+                                            "Ignoring the guest or becoming defensive"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Ignoring or defensiveness make the situation worse."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "The Five-Step Recovery",
+                    "lessons": [
+                        {
+                            "title": "Listen, Acknowledge, Apologise, Resolve, Follow Up",
+                            "minutes": 7,
+                            "body": "<h2>Own the solution from beginning to end</h2><p>The heart of this course is a five-step recovery. Each step has a specific purpose, and skipping one usually means the guest remains disappointed even after the problem is technically fixed.</p><ol><li><strong>Listen</strong> — to the whole story.</li><li><strong>Acknowledge</strong> — the impact on the guest.</li><li><strong>Apologise</strong> — sincerely and without excuses.</li><li><strong>Resolve</strong> — with a clear time and owner.</li><li><strong>Follow up</strong> — to confirm satisfaction.</li></ol><h3>1. Listen to the whole story</h3><p>Let the guest finish. It is tempting to jump in with a solution after the first sentence, but the guest may have more to tell you — and the part you missed may change the solution. Listening fully is also the first sign of respect.</p><h3>2. Acknowledge the impact</h3><p>Acknowledging is not the same as agreeing with every detail. It means recognising what the problem cost the guest: time, rest, a special occasion, peace of mind. \"I understand how disappointing this was for you\" tells the guest you have understood what really matters.</p><h3>3. Apologise sincerely, without excuses</h3><p>An apology followed by \"but the system was down\" or \"but we are short-staffed\" stops being an apology. Keep it sincere and clean. Explanations, if needed, come later and only if they help the guest.</p><h3>4. Resolve with a clear time and owner</h3><p>A solution without a time is a hope, and a solution without an owner is likely to be forgotten. Tell the guest what will happen, who will do it, and when it will be complete.</p><h3>5. Follow up to confirm satisfaction</h3><p>The recovery is not finished when you hand the task to another department. It is finished when the guest confirms that the issue is resolved.</p><blockquote class=\"bk-quote\">Take ownership until the guest confirms the issue is resolved.</blockquote><aside class=\"bk-scene\"><p>A couple celebrating an anniversary find that the room decoration they requested has not been prepared. The front office agent listens to the whole story without interrupting, then says, \"I understand how disappointing this is, especially on your anniversary. I apologise that we did not meet your expectations.\" She arranges with the team for the decoration to be ready within forty minutes while the couple has coffee in the lounge, and tells them she will personally check it before they return. After they go up, she calls the room to ask if everything is now as they hoped. The couple leaves a thank-you note at check-out.</p></aside><aside class=\"bk-note\"><p>Write down the owner and the time of every solution you promise. If you are going off shift, hand it over with those details so ownership continues.</p></aside><aside class=\"bk-key\"><p>Listen fully, acknowledge the impact, apologise without excuses, resolve with a time and owner, and keep ownership until the guest confirms it is resolved.</p></aside>",
+                            "quiz": {
+                                "title": "Check your understanding: the five-step recovery",
+                                "questions": [
+                                    {
+                                        "question": "A guest starts describing a noisy room and you already know the fix. What should you do?",
+                                        "options": [
+                                            "Interrupt with the solution to save time",
+                                            "Let the guest finish the whole story before responding",
+                                            "Transfer the guest to a manager straight away",
+                                            "Tell the guest the noise is normal"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Step one is listening to the whole story."
+                                    },
+                                    {
+                                        "question": "Which is a sincere apology according to the deck?",
+                                        "options": [
+                                            "\"Sorry, but the system was down.\"",
+                                            "\"Sorry, we are very busy today.\"",
+                                            "\"Sorry if you feel that way.\"",
+                                            "\"I apologise that the experience did not meet your expectations.\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The apology must be sincere and without excuses."
+                                    },
+                                    {
+                                        "question": "You arranged for maintenance to fix a guest's shower. When is the recovery complete?",
+                                        "options": [
+                                            "When the guest confirms the issue is resolved",
+                                            "When you send the maintenance request",
+                                            "When your shift ends",
+                                            "When maintenance closes the job"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Take ownership until the guest confirms the issue is resolved."
+                                    },
+                                    {
+                                        "question": "What must a resolution include according to the deck?",
+                                        "options": [
+                                            "A discount",
+                                            "A written report for the guest",
+                                            "A clear time and a clear owner",
+                                            "The name of the colleague who made the mistake"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Resolve with a clear time and owner."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Body Language and Recovery Language",
+                            "minutes": 7,
+                            "body": "<h2>Body language reflects your genuine attention</h2><p>A disappointed guest is watching closely to see whether you really care. Your posture, face and eyes answer that question before you speak. The deck's guidance is precise:</p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Keep a calm, clear tone</td><td>Getting too close to the guest</td></tr><tr><td>Stand in an open, respectful posture</td><td>Staring or excessive eye contact</td></tr><tr><td>Use natural eye contact</td><td>Smiling in a serious situation</td></tr><tr><td>Show a serious, empathetic expression</td><td>Crossing your arms or being busy with the screen</td></tr><tr><td>Keep an appropriate professional distance</td><td>Interrupting or rushing the guest</td></tr></tbody></table><p>Two points deserve attention. First, smiling is usually a hotel strength, but in a serious complaint a smile can look like you are not taking the guest seriously; a calm, empathetic expression fits better. Second, looking at the screen while the guest talks sends a strong message that something else matters more. Turn to the guest, listen, and only then use the system.</p><blockquote class=\"bk-quote\">Stay calm first — so the guest feels you are able to solve it.</blockquote><h2>Words that acknowledge the impact</h2><p>The right words show that you understand what the problem meant to the guest and that you will take ownership.</p><table class=\"bk-say\"><thead><tr><th>Say</th><th>Avoid</th></tr></thead><tbody><tr><td>\"I understand how disappointing this was for you.\"</td><td>\"Please calm down.\"</td></tr><tr><td>\"I apologise that the experience did not meet your expectations.\"</td><td>\"It's not my problem.\"</td></tr><tr><td>\"I will personally follow this up.\"</td><td>\"Nobody else has complained.\"</td></tr><tr><td>\"I can carry out this solution within…\"</td><td>\"This is not our fault.\"</td></tr><tr><td>\"I will contact you at … to confirm.\"</td><td>\"There is nothing that can be done.\"</td></tr></tbody></table><p>Every phrase in the \"avoid\" column is defensive: it protects the colleague or the hotel and pushes the guest away. \"Nobody else has complained\" is especially damaging because it suggests the guest is the problem. The \"say\" column does the opposite — it recognises the impact, accepts ownership and commits to a time.</p><p>The deck's model line brings it together: <strong>\"I'm sorry this happened. I will take ownership and update you by…\"</strong></p><aside class=\"bk-scene\"><p>A guest arrives at the desk unhappy that his requested late check-out was not recorded. The agent steps away from the screen, faces him and listens with a serious expression. \"I understand how frustrating this is. I'm sorry this happened. I will take ownership and update you by 11 a.m.\" At 10:50 she calls to confirm the late check-out. The guest later tells the manager that what impressed him was that she never argued.</p></aside><aside class=\"bk-note\"><p>If you feel the urge to explain why it was not your fault, pause. Replace the explanation with an acknowledgement and a next step.</p></aside><aside class=\"bk-key\"><p>Show attention with calm, open body language and use words that acknowledge the impact and take ownership — never words that defend.</p></aside>",
+                            "quiz": {
+                                "title": "Check your understanding: body and recovery language",
+                                "questions": [
+                                    {
+                                        "question": "A guest is explaining a serious problem with her booking. What should you do with your computer screen?",
+                                        "options": [
+                                            "Keep typing so you can fix it faster",
+                                            "Look at it only occasionally",
+                                            "Turn away from it and give the guest your attention first",
+                                            "Ask her to wait until you finish another task"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck lists being busy with the screen as something to avoid."
+                                    },
+                                    {
+                                        "question": "A guest says, \"This is unacceptable!\" Which reply follows the deck?",
+                                        "options": [
+                                            "\"I understand how disappointing this was for you. I will personally follow this up.\"",
+                                            "\"Please calm down.\"",
+                                            "\"Nobody else has complained.\"",
+                                            "\"This is not our fault.\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Recovery language acknowledges the impact and takes ownership."
+                                    },
+                                    {
+                                        "question": "Why might smiling be a mistake during a complaint?",
+                                        "options": [
+                                            "Smiling is never allowed in hotels",
+                                            "It shows you are nervous",
+                                            "It wastes time",
+                                            "In a serious situation it can seem that you are not taking the guest seriously"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck lists smiling in a serious situation under \"avoid\"."
+                                    },
+                                    {
+                                        "question": "What is the problem with saying, \"There is nothing that can be done\"?",
+                                        "options": [
+                                            "It is too long",
+                                            "It is defensive and leaves the guest with no path forward",
+                                            "It should only be said by managers",
+                                            "It is fine if it is true"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck lists it as a phrase to avoid because it closes the door on recovery."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Resolving and Closing the Recovery",
+                    "lessons": [
+                        {
+                            "title": "Resolve with Clarity and Follow Up to Close",
+                            "minutes": 8,
+                            "body": "<h2>Offer a clear solution with a time and an owner</h2><p>Once you have listened, acknowledged and apologised, the guest wants to see action. The deck describes four kinds of resolution, from the simplest to the most serious:</p><table class=\"bk-say\"><thead><tr><th>Option</th><th>When and how</th></tr></thead><tbody><tr><td>Immediate fix</td><td>Correct the error now if it is safe and within your authority</td></tr><tr><td>Operational alternative</td><td>Suggest a suitable alternative room, service or time</td></tr><tr><td>Authorised recovery</td><td>Explain any compensation clearly and do not promise what you do not control</td></tr><tr><td>Supervisor escalation</td><td>Escalate when the problem repeats or the impact or cost is high</td></tr></tbody></table><p>Start with the immediate fix whenever you safely can; guests value speed. When the original cannot be fixed, an alternative gives the guest a real choice. Compensation must stay within your authority — promising something you then cannot deliver creates a second disappointment worse than the first. And when a problem keeps repeating, or the impact or cost is significant, bring in your supervisor.</p><p>Whatever you choose, confirm three things with the guest:</p><ul><li><strong>What will happen?</strong></li><li><strong>Who is responsible?</strong></li><li><strong>When will it be completed?</strong></li></ul><h2>Follow-up is what proves the solution worked</h2><p>Many recoveries fail not in the solution but in the silence afterwards. The deck lists five follow-up actions:</p><ol><li><strong>Early update</strong> — do not leave the guest waiting without information.</li><li><strong>Confirm delivery</strong> — make sure the solution was carried out as promised.</li><li><strong>Check satisfaction</strong> — ask whether the situation is now satisfactory.</li><li><strong>Document</strong> — record the problem, the solution and any compensation.</li><li><strong>Prevent recurrence</strong> — share the cause and the action with the relevant department.</li></ol><p>The last two steps protect future guests. Documentation means colleagues on the next shift know what happened, and sharing the cause gives the department a chance to stop it happening again.</p><aside class=\"bk-scene\"><p>A guest's air conditioning fails in the evening. The agent cannot fix it herself, so she offers an operational alternative: a similar room on another floor, with a porter to help move. She tells him, \"Engineering will check your original room tonight; I will call you within fifteen minutes to confirm the new room is ready.\" She calls in ten. The next morning she asks whether he slept well, logs the case, and informs engineering of the fault so it is checked across that floor. The guest's disappointment has become confidence that the hotel follows through.</p></aside><aside class=\"bk-note\"><p>Before offering any compensation, be sure it is within your authority. If you are unsure, say, \"Let me confirm with my supervisor and come back to you by…\"</p></aside><aside class=\"bk-key\"><p>Choose the right resolution within your authority, confirm what, who and when, then follow up until it is delivered, satisfying and recorded.</p></aside>",
+                            "quiz": {
+                                "title": "Check your understanding: resolving and following up",
+                                "questions": [
+                                    {
+                                        "question": "A guest's minibar was not restocked and you can fix it now. What is the best option?",
+                                        "options": [
+                                            "Escalate to the supervisor",
+                                            "Offer a discount on the room",
+                                            "Correct it immediately, since it is safe and within your authority",
+                                            "Ask the guest to call room service"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "An immediate fix is right when it is safe and within your authority."
+                                    },
+                                    {
+                                        "question": "A guest demands a free night. You are not authorised to offer it. What do you do?",
+                                        "options": [
+                                            "Promise it anyway to calm him",
+                                            "Refuse and walk away",
+                                            "Tell him it is never possible",
+                                            "Do not promise what you do not control; explain what you can do and involve your supervisor"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Compensation must stay within authority; escalate when impact or cost is high."
+                                    },
+                                    {
+                                        "question": "The same guest has now reported the same fault three times. What does the deck advise?",
+                                        "options": [
+                                            "Escalate to the supervisor because the problem repeats",
+                                            "Offer the same fix again",
+                                            "Ask the guest to be patient",
+                                            "Wait for check-out"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Escalate when the problem repeats or the impact or cost is high."
+                                    },
+                                    {
+                                        "question": "Why does the deck ask you to share the cause with the relevant department?",
+                                        "options": [
+                                            "To identify who to blame",
+                                            "To prevent the problem from recurring",
+                                            "To close the case faster",
+                                            "It is only needed for large complaints"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Sharing the cause and action is the \"prevent recurrence\" step."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "التعامل مع النزيل غير الراضي",
+            "subtitle": "حوّل الإحباط إلى ثقة",
+            "short_description": "حوّل إحباط النزيل إلى ثقة بخمس خطوات لاستعادة الرضا: استمع، اعترف، اعتذر، حلّ، تابع.",
+            "description": "<p>قد يُحبَط النزيل أحيانًا بسبب خطأ تشغيلي أو توقع لم يتحقق أو لأنه وصل متعبًا أصلًا. المهم هو الاستجابة. هذه الدورة مبنية على مادة التدريب في فنادق ومنتجعات ضيافة، وتتعامل مع كل إحباط كفرصة لاستعادة الثقة.</p><p>ستتعلم ملاحظة إشارات الإحباط الهادئة والتحقق منها باحترام، واتباع الخطوات الخمس لاستعادة الرضا، واستخدام لغة جسد وكلمات تعترف بالأثر على النزيل بدل الدفاع.</p><p>ويوضح الفصل الأخير كيف تقدم حلًا واضحًا — إصلاحًا أو بديلًا أو تعويضًا ضمن الصلاحية أو تصعيدًا — ولماذا تُعد المتابعة هي ما يغلق الحالة فعلًا.</p>",
+            "requirements": "لا يلزم تدريب سابق، والدورة مناسبة لجميع الموظفين الذين يتعاملون مع النزلاء.",
+            "outcomes": [
+                "لاحظ إشارات الإحباط المحتملة وتحقق منها باحترام",
+                "طبّق الخطوات الخمس: استمع، اعترف، اعتذر، حلّ، تابع",
+                "استخدم لغة جسد وكلمات تعكس اهتمامًا حقيقيًا وتعترف بالأثر",
+                "قدّم حلًا واضحًا بوقت ومسؤول محددين ضمن صلاحيتك",
+                "أغلق كل حالة بالمتابعة والتوثيق وخطوات منع التكرار"
+            ],
+            "faqs": [
+                {
+                    "question": "ماذا لو لم تكن المشكلة خطئي؟",
+                    "answer": "ليس كل إحباط سببه الموظف، لكن الاستجابة مسؤوليتنا دائمًا. افهم الأثر وابدأ الحل بدل مناقشة من المخطئ."
+                },
+                {
+                    "question": "هل يمكنني تقديم تعويض؟",
+                    "answer": "ضمن صلاحيتك فقط. اشرحه بوضوح ولا تعد بما لا تملك، وصعّد للمشرف عند ارتفاع الأثر أو التكلفة."
+                },
+                {
+                    "question": "متى تنتهي استعادة الخدمة؟",
+                    "answer": "عندما يؤكد النزيل أن المشكلة حُلت. تأكد من التنفيذ، واسأل عن الرضا، ووثّق الحالة، وشارك السبب لمنع التكرار."
+                }
+            ],
+            "meta_title": "التعامل مع النزيل غير الراضي | استعادة الخدمة",
+            "meta_description": "دورة فندقية في استعادة الخدمة: لاحظ الإحباط، استمع، اعترف بالأثر، اعتذر بصدق، قدّم حلًا واضحًا وتابع.",
+            "focus_keyword": "التعامل مع النزيل غير الراضي",
+            "chapters": [
+                {
+                    "title": "ملاحظة الإحباط مبكرًا",
+                    "lessons": [
+                        {
+                            "title": "لماذا تهم استعادة الخدمة وكيف تلاحظ الإحباط",
+                            "minutes": 7,
+                            "body": "<h2>يمكننا استعادة الثقة بعد المشكلة</h2><p>لا يوجد فندق مثالي كل يوم. والمادة واقعية في أسباب الإحباط: قد ينزعج النزيل بسبب <strong>خطأ تشغيلي</strong> أو <strong>توقع غير محقق</strong>، وقد <strong>يصل متعبًا أو متوترًا لأسباب خارج الفندق</strong>. لا تستطيع التحكم في كل الأسباب، لكنك تتحكم دائمًا في الاستجابة.</p><blockquote class=\"bk-quote\">الاستجابة مسؤوليتنا — ليس كل إحباط سببه الموظف.</blockquote><p>هذه العبارة تحررك وتلزمك في آن واحد: تحررك من أخذ كل شكوى بشكل شخصي، وتلزمك بالتصرف حتى لو بدأت المشكلة في مكان آخر. أما <strong>التجاهل أو الدفاعية</strong> فيزيدان الموقف سوءًا دائمًا، لأنهما يوحيان للنزيل بأن الفندق يهتم بنفسه أكثر منه. وفي المقابل، <strong>الاستجابة الجيدة قد تحول الشكوى إلى ولاء</strong>.</p><h3>الأثر أولًا لا المخطئ</h3><p>القاعدة: افهم الأثر وابدأ الحل، ولا تناقش من المخطئ أولًا. النزيل لا يحتاج تحقيقًا عند المكتب، بل يحتاج أن يشعر بأنه مفهوم وأن الأمور تتحسن.</p><h2>لاحظ الإحباط، ثم اسأل ولا تفترض</h2><p>النزيل المحبط لا يشتكي دائمًا، وكثيرًا ما تكون الإشارات هادئة:</p><ul><li>الصمت أو الإجابات المختصرة؛</li><li>التنهّد أو تغيّر نبرة الصوت؛</li><li>تكرار النظر أو الانتظار؛</li><li>ملامح متوترة أو وضعية منغلقة؛</li><li>تراجع الحماس أو الرغبة في التفاعل.</li></ul><p>الملاحظة تفتح الحوار، والسؤال يؤكد الحقيقة. لا تشخّص مشاعر النزيل من مظهره وحده، بل تحقق باحترام:</p><ul><li>«هل كل شيء يلبي توقعاتكم؟»</li><li>«لاحظت أنكم غير مرتاحين؛ هل يمكنني المساعدة؟»</li><li>«هل حدث ما لم يكن كما توقعتم؟»</li></ul><p>ثم استمع للإجابة دون مقاطعة.</p><aside class=\"bk-scene\"><p>في الإفطار، نزيلة كانت تتحدث بمرح في اليوم السابق، أصبحت تجيب بكلمة واحدة وتنظر نحو المطبخ. لم يفترض النادل أنها متعكرة المزاج، بل سألها: «هل حدث ما لم يكن كما توقعتم هذا الصباح؟» فأوضحت أن طلبها نُسي منذ عشرين دقيقة. اعتذر وتحقق من المطبخ فورًا وعاد بموعد محدد، فتحول إحباط صامت إلى مشكلة محلولة.</p></aside><aside class=\"bk-note\"><p>النزيل الهادئ ليس دائمًا نزيلًا راضيًا؛ سؤال قصير ومحترم يكلفك ثواني وقد ينقذ الإقامة كلها.</p></aside><aside class=\"bk-key\"><p>امتلك الاستجابة حتى لو لم تكن سبب المشكلة: لاحظ الإشارات، واسأل بدل أن تفترض، وركّز على الأثر قبل المخطئ.</p></aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: استعادة الخدمة وملاحظة الإحباط",
+                                "questions": [
+                                    {
+                                        "question": "نزيل منزعج لأن شركة الطيران فقدت حقيبته قبل وصوله. ماذا تقول المادة عن دورك؟",
+                                        "options": [
+                                            "ليست مشكلة الفندق فلا شيء نفعله",
+                                            "الاستجابة تبقى مسؤوليتنا حتى لو لم نكن السبب",
+                                            "اطلب منه التواصل مع الطيران وأنهِ الحديث",
+                                            "وضّح أن نزلاء آخرين واجهوا الأمر نفسه"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "ليس كل إحباط سببه الموظف، لكن الاستجابة مسؤوليتنا."
+                                    },
+                                    {
+                                        "question": "تشتكي نزيلة من أن غرفتها لم تُنظف. على ماذا تركز أولًا؟",
+                                        "options": [
+                                            "معرفة العامل المسؤول",
+                                            "شرح جدول التدبير المنزلي",
+                                            "فهم الأثر عليها والبدء في الحل",
+                                            "مطالبتها بتعبئة نموذج شكوى"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "افهم الأثر وابدأ الحل قبل مناقشة المخطئ."
+                                    },
+                                    {
+                                        "question": "نزيل معتاد على الحديث أصبح يجيب باختصار ويتنهد. ما أفضل تصرف؟",
+                                        "options": [
+                                            "اسأله باحترام: «هل حدث ما لم يكن كما توقعتم؟»",
+                                            "افترض أنه متعب واتركه",
+                                            "أخبر زميلك أنه متعكر المزاج",
+                                            "قدّم تعويضًا فورًا"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "الملاحظة تفتح الحوار والسؤال المحترم يؤكد الحقيقة."
+                                    },
+                                    {
+                                        "question": "أي سلوك تقول المادة إنه يزيد موقف النزيل المحبط سوءًا؟",
+                                        "options": [
+                                            "طرح الأسئلة",
+                                            "الاستماع دون مقاطعة",
+                                            "البدء في الحل",
+                                            "التجاهل أو الدفاعية"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "التجاهل أو الدفاعية يزيدان الموقف سوءًا."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "خمس خطوات لاستعادة الرضا",
+                    "lessons": [
+                        {
+                            "title": "استمع، اعترف، اعتذر، حلّ، تابع",
+                            "minutes": 7,
+                            "body": "<h2>امتلك الحل من البداية حتى النهاية</h2><p>جوهر هذه الدورة خمس خطوات، لكل منها غرض محدد، وتجاوز إحداها يعني غالبًا أن يبقى النزيل محبطًا حتى لو أُصلحت المشكلة فنيًا.</p><ol><li><strong>استمع</strong> — للقصة كاملة.</li><li><strong>اعترف</strong> — بالأثر على النزيل.</li><li><strong>اعتذر</strong> — بصدق ودون أعذار.</li><li><strong>حلّ</strong> — بوقت ومسؤول واضحين.</li><li><strong>تابع</strong> — للتأكد من الرضا.</li></ol><h3>استمع للقصة كاملة</h3><p>دع النزيل يكمل حديثه. قد يغريك تقديم الحل بعد الجملة الأولى، لكن ما فاتك قد يغيّر الحل، والاستماع الكامل أول علامات الاحترام.</p><h3>اعترف بالأثر</h3><p>الاعتراف لا يعني الموافقة على كل تفصيل، بل إدراك ما كلّفته المشكلة للنزيل: وقته أو راحته أو مناسبته الخاصة. عبارة «أتفهم كم كان هذا محبطًا لكم» تقول له إنك فهمت ما يهمه.</p><h3>اعتذر بصدق ودون أعذار</h3><p>الاعتذار المتبوع بـ«لكن النظام كان متوقفًا» لم يعد اعتذارًا. اجعله صادقًا وخاليًا من التبرير.</p><h3>حلّ بوقت ومسؤول واضحين</h3><p>الحل بلا وقت أمنية، وبلا مسؤول قد يُنسى. أخبر النزيل ماذا سيحدث، ومن سينفذه، ومتى يكتمل.</p><h3>تابع للتأكد من الرضا</h3><p>لا تنتهي الحالة عند تسليمها لقسم آخر، بل عندما يؤكد النزيل أن المشكلة حُلت.</p><blockquote class=\"bk-quote\">امتلك الحل من البداية حتى النهاية.</blockquote><aside class=\"bk-scene\"><p>زوجان يحتفلان بذكرى زواجهما وجدا أن تزيين الغرفة الذي طلباه لم يُجهز. تستمع موظفة الاستقبال للقصة كاملة ثم تقول: «أتفهم كم كان هذا محبطًا لكم، خاصة في هذه المناسبة، وأعتذر لأن التجربة لم تلبِّ توقعاتكم.» وتنسق مع الفريق لتجهيز الغرفة خلال أربعين دقيقة بينما يتناولان القهوة في الردهة، وتتحقق بنفسها قبل صعودهما، ثم تتصل بهما لتسأل إن كان كل شيء كما تمنيا.</p></aside><aside class=\"bk-note\"><p>دوّن المسؤول والوقت لكل حل تعد به، وإذا انتهت مناوبتك فسلّمه بهذه التفاصيل حتى تستمر المسؤولية.</p></aside><aside class=\"bk-key\"><p>استمع كاملًا، واعترف بالأثر، واعتذر دون أعذار، وحلّ بوقت ومسؤول، وابقَ مسؤولًا حتى يؤكد النزيل أن المشكلة حُلت.</p></aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: خطوات استعادة الرضا",
+                                "questions": [
+                                    {
+                                        "question": "بدأ نزيل يصف ضجيج غرفته وأنت تعرف الحل مسبقًا. ماذا تفعل؟",
+                                        "options": [
+                                            "تقاطعه بالحل لتوفير الوقت",
+                                            "تدعه يكمل القصة كاملة قبل أن ترد",
+                                            "تحوله إلى مدير فورًا",
+                                            "تخبره أن الضجيج طبيعي"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "الخطوة الأولى: استمع للقصة كاملة."
+                                    },
+                                    {
+                                        "question": "أي مما يلي اعتذار صادق بحسب المادة؟",
+                                        "options": [
+                                            "«آسف، لكن النظام كان متوقفًا.»",
+                                            "«آسف، نحن مشغولون جدًا اليوم.»",
+                                            "«آسف إن شعرتم بذلك.»",
+                                            "«أعتذر لأن التجربة لم تلبِّ توقعاتكم.»"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "يجب أن يكون الاعتذار صادقًا ودون أعذار."
+                                    },
+                                    {
+                                        "question": "رتّبت مع الصيانة إصلاح دش النزيل. متى تكتمل استعادة الخدمة؟",
+                                        "options": [
+                                            "عندما يؤكد النزيل أن المشكلة حُلت",
+                                            "عند إرسال طلب الصيانة",
+                                            "عند نهاية مناوبتك",
+                                            "عندما تغلق الصيانة الطلب"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "امتلك الحل حتى يؤكد النزيل أن المشكلة حُلت."
+                                    },
+                                    {
+                                        "question": "ماذا يجب أن يتضمن الحل بحسب المادة؟",
+                                        "options": [
+                                            "خصمًا",
+                                            "تقريرًا مكتوبًا للنزيل",
+                                            "وقتًا ومسؤولًا واضحين",
+                                            "اسم الموظف الذي أخطأ"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "حلّ بوقت ومسؤول واضحين."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "لغة الجسد ولغة استعادة الخدمة",
+                            "minutes": 7,
+                            "body": "<h2>لغة الجسد تعكس اهتمامك الحقيقي</h2><p>النزيل المحبط يراقبك ليعرف هل تهتم فعلًا، وجسدك ووجهك وعيناك يجيبون قبل أن تتكلم.</p><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنّب</th></tr></thead><tbody><tr><td>حافظ على نبرة هادئة وواضحة</td><td>الاقتراب الزائد من النزيل</td></tr><tr><td>قف بوضعية منفتحة ومحترمة</td><td>التحديق أو كثرة التواصل البصري</td></tr><tr><td>استخدم تواصلًا بصريًا طبيعيًا</td><td>الابتسام في موقف جاد</td></tr><tr><td>أظهر تعبيرًا جادًا ومتعاطفًا</td><td>تشبيك الذراعين أو الانشغال بالشاشة</td></tr><tr><td>حافظ على مسافة مهنية مناسبة</td><td>مقاطعة النزيل أو استعجاله</td></tr></tbody></table><p>الابتسامة من نقاط قوة الضيافة عادة، لكنها في شكوى جادة قد توحي بعدم أخذ النزيل على محمل الجد، والتعبير الهادئ المتعاطف أنسب. كما أن النظر إلى الشاشة أثناء حديث النزيل رسالة بأن شيئًا آخر أهم منه؛ التفت إليه واستمع، ثم استخدم النظام.</p><blockquote class=\"bk-quote\">اهدأ أولًا — ليشعر النزيل أنك قادر على الحل.</blockquote><h2>استخدم كلمات تعترف بالأثر</h2><table class=\"bk-say\"><thead><tr><th>قل</th><th>تجنّب</th></tr></thead><tbody><tr><td>«أتفهم كم كان هذا محبطًا لكم.»</td><td>«اهدأ من فضلك.»</td></tr><tr><td>«أعتذر لأن التجربة لم تلبِّ توقعاتكم.»</td><td>«ليست مشكلتي.»</td></tr><tr><td>«سأتولى متابعة الأمر شخصيًا.»</td><td>«لم يشتكِ أحد غيرك.»</td></tr><tr><td>«يمكنني تنفيذ هذا الحل خلال…»</td><td>«هذا ليس خطأنا.»</td></tr><tr><td>«سأتواصل معكم في الساعة… للتأكد.»</td><td>«لا يوجد ما يمكن فعله.»</td></tr></tbody></table><p>كل عبارات «تجنّب» دفاعية تحمي الموظف أو الفندق وتبعد النزيل، وأخطرها «لم يشتكِ أحد غيرك» لأنها توحي بأن النزيل هو المشكلة. أما عبارات «قل» فتعترف بالأثر وتتحمل المسؤولية وتلتزم بموعد. والجملة النموذجية: <strong>«I'm sorry this happened. I will take ownership and update you by…»</strong> أي: «آسف لما حدث، سأتولى الأمر وأحدثكم قبل…».</p><aside class=\"bk-scene\"><p>نزيل غير راضٍ لأن طلبه للمغادرة المتأخرة لم يُسجل. تبتعد الموظفة عن الشاشة وتلتفت إليه وتستمع بتعبير جاد، ثم تقول: «أتفهم كم هذا مزعج، وآسفة لما حدث. سأتولى الأمر وأحدثكم قبل الحادية عشرة.» وتتصل في العاشرة وخمسين دقيقة لتأكيد الطلب. أخبر النزيل المدير لاحقًا أن ما أثار إعجابه أنها لم تجادل إطلاقًا.</p></aside><aside class=\"bk-note\"><p>إذا شعرت برغبة في شرح أن الخطأ ليس خطأك فتوقف، واستبدل التبرير باعتراف بالأثر وخطوة تالية.</p></aside><aside class=\"bk-key\"><p>أظهر اهتمامك بلغة جسد هادئة ومنفتحة، واستخدم كلمات تعترف بالأثر وتتحمل المسؤولية، لا كلمات تدافع.</p></aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: لغة الجسد ولغة الاستعادة",
+                                "questions": [
+                                    {
+                                        "question": "نزيلة تشرح مشكلة جادة في حجزها. ماذا تفعل بشاشة الحاسب؟",
+                                        "options": [
+                                            "تستمر في الكتابة لتصلح الأمر أسرع",
+                                            "تنظر إليها أحيانًا فقط",
+                                            "تبتعد عنها وتمنح النزيلة انتباهك أولًا",
+                                            "تطلب منها الانتظار حتى تنهي مهمة أخرى"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "الانشغال بالشاشة مدرج ضمن «تجنّب»."
+                                    },
+                                    {
+                                        "question": "قال نزيل: «هذا غير مقبول!» أي رد يتبع المادة؟",
+                                        "options": [
+                                            "«أتفهم كم كان هذا محبطًا لكم، وسأتولى متابعة الأمر شخصيًا.»",
+                                            "«اهدأ من فضلك.»",
+                                            "«لم يشتكِ أحد غيرك.»",
+                                            "«هذا ليس خطأنا.»"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "لغة الاستعادة تعترف بالأثر وتتحمل المسؤولية."
+                                    },
+                                    {
+                                        "question": "لماذا قد يكون الابتسام خطأ أثناء الشكوى؟",
+                                        "options": [
+                                            "الابتسام ممنوع في الفنادق",
+                                            "يدل على التوتر",
+                                            "يضيع الوقت",
+                                            "في موقف جاد قد يوحي بعدم أخذ النزيل على محمل الجد"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "الابتسام في موقف جاد مدرج ضمن «تجنّب»."
+                                    },
+                                    {
+                                        "question": "ما مشكلة عبارة «لا يوجد ما يمكن فعله»؟",
+                                        "options": [
+                                            "طويلة جدًا",
+                                            "دفاعية وتترك النزيل بلا طريق للحل",
+                                            "يقولها المديرون فقط",
+                                            "لا بأس بها إن كانت صحيحة"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "المادة تدرجها ضمن ما يُتجنب لأنها تغلق باب الاستعادة."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "الحل وإغلاق الحالة",
+                    "lessons": [
+                        {
+                            "title": "قدّم حلًا واضحًا وتابع لإغلاق الحالة",
+                            "minutes": 8,
+                            "body": "<h2>قدّم حلًا واضحًا بوقت ومسؤول</h2><p>بعد الاستماع والاعتراف والاعتذار، يريد النزيل أن يرى تصرفًا. وتصف المادة أربعة أنواع من الحلول:</p><table class=\"bk-say\"><thead><tr><th>الخيار</th><th>متى وكيف</th></tr></thead><tbody><tr><td>إصلاح فوري</td><td>عالج الخطأ الآن إذا كان آمنًا وضمن صلاحيتك</td></tr><tr><td>بديل تشغيلي</td><td>اقترح غرفة أو خدمة أو موعدًا بديلًا مناسبًا</td></tr><tr><td>تعويض ضمن الصلاحية</td><td>اشرح التعويض بوضوح ولا تعد بما لا تملك</td></tr><tr><td>تصعيد للمشرف</td><td>صعّد عند تكرار المشكلة أو ارتفاع الأثر أو التكلفة</td></tr></tbody></table><p>ابدأ بالإصلاح الفوري متى أمكن بأمان، فالنزيل يقدّر السرعة. وإذا تعذر ذلك فالبديل يمنحه خيارًا حقيقيًا. أما التعويض فيبقى ضمن صلاحيتك، لأن الوعد بما لا تستطيع تنفيذه يصنع إحباطًا ثانيًا أسوأ من الأول. وعند تكرار المشكلة أو ارتفاع أثرها أو تكلفتها، أشرك المشرف.</p><p>وأيًا كان الحل، أكد مع النزيل: <strong>ماذا سيحدث؟ من المسؤول؟ ومتى يكتمل؟</strong></p><h2>المتابعة هي التي تثبت نجاح الحل</h2><ol><li><strong>تحديث مبكر</strong> — لا تترك النزيل ينتظر دون معلومة.</li><li><strong>تأكيد التنفيذ</strong> — تأكد أن الحل نُفذ كما وُعد.</li><li><strong>سؤال عن الرضا</strong> — اسأل إن كان الوضع أصبح مرضيًا.</li><li><strong>توثيق الحالة</strong> — سجل المشكلة والحل والتعويض.</li><li><strong>منع التكرار</strong> — شارك السبب والإجراء مع القسم المعني.</li></ol><p>الخطوتان الأخيرتان تحميان النزلاء القادمين؛ فالتوثيق يُطلع زملاء المناوبة التالية على ما حدث، ومشاركة السبب تمنح القسم فرصة لمنع تكراره.</p><aside class=\"bk-scene\"><p>تعطل التكييف في غرفة نزيل مساءً. لم تستطع الموظفة إصلاحه بنفسها، فعرضت بديلًا تشغيليًا: غرفة مماثلة في طابق آخر مع حمّال للمساعدة، وقالت: «ستفحص الصيانة غرفتكم الليلة، وسأتصل بكم خلال ربع ساعة لتأكيد جاهزية الغرفة الجديدة.» واتصلت بعد عشر دقائق. وفي الصباح سألته إن نام جيدًا، ووثقت الحالة، وأبلغت الصيانة بالعطل لفحص الطابق كله.</p></aside><aside class=\"bk-note\"><p>قبل عرض أي تعويض تأكد أنه ضمن صلاحيتك، وإن لم تكن متأكدًا فقل: «دعني أتأكد من المشرف وأعود إليكم قبل…».</p></aside><aside class=\"bk-key\"><p>اختر الحل المناسب ضمن صلاحيتك، وأكد ماذا ومن ومتى، ثم تابع حتى يُنفذ ويرضى النزيل وتُوثق الحالة.</p></aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الحل والمتابعة",
+                                "questions": [
+                                    {
+                                        "question": "لم يُعَد ملء الميني بار في غرفة نزيل وتستطيع معالجته الآن. ما الخيار الأفضل؟",
+                                        "options": [
+                                            "التصعيد للمشرف",
+                                            "عرض خصم على الغرفة",
+                                            "المعالجة فورًا لأنها آمنة وضمن صلاحيتك",
+                                            "مطالبة النزيل بالاتصال بخدمة الغرف"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "الإصلاح الفوري مناسب إذا كان آمنًا وضمن الصلاحية."
+                                    },
+                                    {
+                                        "question": "يطالب نزيل بليلة مجانية ولا تملك صلاحية ذلك. ماذا تفعل؟",
+                                        "options": [
+                                            "تعده بها لتهدئته",
+                                            "ترفض وتنصرف",
+                                            "تقول إن ذلك مستحيل دائمًا",
+                                            "لا تعد بما لا تملك؛ وضّح ما يمكنك فعله وأشرك المشرف"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "التعويض ضمن الصلاحية، والتصعيد عند ارتفاع الأثر أو التكلفة."
+                                    },
+                                    {
+                                        "question": "أبلغ النزيل نفسه عن العطل نفسه للمرة الثالثة. بماذا توصي المادة؟",
+                                        "options": [
+                                            "التصعيد للمشرف لتكرار المشكلة",
+                                            "تقديم الإصلاح نفسه مجددًا",
+                                            "مطالبة النزيل بالصبر",
+                                            "الانتظار حتى المغادرة"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "صعّد عند تكرار المشكلة أو ارتفاع الأثر أو التكلفة."
+                                    },
+                                    {
+                                        "question": "لماذا تطلب المادة مشاركة السبب مع القسم المعني؟",
+                                        "options": [
+                                            "لتحديد من يُلام",
+                                            "لمنع تكرار المشكلة",
+                                            "لإغلاق الحالة أسرع",
+                                            "لا تلزم إلا في الشكاوى الكبيرة"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "مشاركة السبب والإجراء هي خطوة «منع التكرار»."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -31,8 +31,15 @@ abstract class Hkp_Controller extends CI_Controller {
             @date_default_timezone_set(get_settings('timezone'));
         }
         $lang = $this->input->get('lang');
-        if ($lang === 'en' || $lang === 'ar') {
+        if (ha_locale_enabled($lang)) {
+            // One language choice for the whole product: workspace, legacy LMS pages and the profile.
             $this->session->set_userdata('hkp_locale', $lang);
+            if ($legacy = ha_locale_legacy_column($lang)) {
+                $this->session->set_userdata('language', $legacy);
+            }
+            if ($this->ha_auth->check()) {
+                $this->db->where('user_id', (int) $this->ha_auth->id())->update('ha_profile', array('locale' => $lang));
+            }
         }
         if ($this->public_action()) {
             hkp_locale();

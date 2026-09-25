@@ -139,27 +139,35 @@ class Test_cms extends Ha_testcase {
         $this->assertNotEmpty($own['kpis'], 'The GM\'s own property scorecard is returned');
     }
 
-    public function test_every_interface_string_has_arabic() {
+    public function test_every_interface_string_is_translated_in_every_language() {
         require_once APPPATH . 'libraries/Ha_i18n_keys.php';
-        $dict = include APPPATH . 'language/arabic/hkp_lang.php';
-        $missing = array();
-        foreach (Ha_i18n_keys::collect() as $k) {
-            if (!isset($dict[$k]) || trim((string) $dict[$k]) === '') {
-                $missing[] = $k;
+        $keys = Ha_i18n_keys::collect();
+        foreach (ha_locales() as $code) {
+            if ($code === 'en') {
+                continue;
             }
-        }
-        $this->assertEmpty($missing, count($missing) . ' strings have no Arabic: ' . implode(' | ', array_slice($missing, 0, 15)));
-        foreach ($dict as $en => $ar) {
-            if (preg_match_all('/\{[a-z_]+\}/', $en, $m)) {
-                foreach ($m[0] as $ph) {
-                    if (strpos($ar, $ph) === false) {
-                        $this->fail('Placeholder ' . $ph . ' lost in the Arabic for "' . $en . '"');
+            $file = APPPATH . 'language/hkp/' . $code . '.php';
+            $this->assertTrue(is_file($file), 'language/hkp/' . $code . '.php exists');
+            $dict = include $file;
+            $missing = array();
+            foreach ($keys as $k) {
+                if (!isset($dict[$k]) || trim((string) $dict[$k]) === '') {
+                    $missing[] = $k;
+                }
+            }
+            $this->assertEmpty($missing, count($missing) . ' strings have no ' . $code . ': ' . implode(' | ', array_slice($missing, 0, 15)));
+            foreach ($dict as $en => $tr) {
+                if (preg_match_all('/\{[a-z_]+\}/', $en, $m)) {
+                    foreach ($m[0] as $ph) {
+                        if (strpos($tr, $ph) === false) {
+                            $this->fail('Placeholder ' . $ph . ' lost in the ' . $code . ' text for "' . $en . '"');
+                        }
                     }
                 }
             }
+            hkp_locale($code);
+            $this->assertEquals($dict['Dashboard'], hkp_t('Dashboard'), $code . ' is served in ' . $code . ' mode');
         }
-        hkp_locale('ar');
-        $this->assertEquals($dict['Dashboard'], hkp_t('Dashboard'), 'Arabic is served in Arabic mode');
         hkp_locale('en');
     }
 }

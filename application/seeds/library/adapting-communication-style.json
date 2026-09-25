@@ -1,0 +1,551 @@
+{
+    "slug": "adapting-communication-style",
+    "category": "communication",
+    "level": "intermediate",
+    "source_pdf": "Adapting-Communication-Style-Dyafa (1).pdf",
+    "thumbnail": "uploads/academy/library/adapting-communication-style.webp",
+    "videos": [
+        {
+            "id": "GbxWcuWsXsc",
+            "title": "How DISC Styles Prefer to Communicate",
+            "channel": "Extended DISC® powered by FinxS® ",
+            "why": "Explains the four DISC styles and how each prefers to be spoken to, so staff can adjust their approach to different guests."
+        },
+        {
+            "id": "Fu1YKYz6C4w",
+            "title": "How to Adapt Your Communication Style for Any Environment",
+            "channel": "Achology Academy",
+            "why": "Covers how to read the situation and your listener, then adjust tone and style to match."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Adapting Communication Style",
+            "subtitle": "Match the need, never mimic",
+            "short_description": "Learn to observe each guest, adapt language, pace, volume, tone and detail, and keep the message accurate and respectful.",
+            "description": "<p>Guests differ in language, pace and the way they understand information. This course, based on the Dyafa Hotels &amp; Resorts training deck, teaches hotel colleagues to adjust how they deliver a message so every guest feels comfortable and understands quickly.</p><p>You will learn to observe communication cues and confirm preferences, adapt five elements of your communication, handle fast and calm speakers, set the right volume and tone, and apply the right style to hurried, detail-focused, angry or non-native-speaking guests, all without imitating anyone or changing the facts.</p>",
+            "requirements": "Suited to guest-facing colleagues who already know basic service greetings.",
+            "outcomes": [
+                "Explain why a flexible style reduces misunderstanding and builds comfort",
+                "Observe a guest's communication cues and confirm their preference",
+                "Adapt language, pace, volume, tone and detail without mimicking",
+                "Apply the right approach to hurried, detailed, angry or non-native guests",
+                "Improve your own style through observation, practice and self-check"
+            ],
+            "faqs": [
+                {
+                    "question": "Is adapting my style the same as copying the guest?",
+                    "answer": "No. You adapt your delivery gently for comfort and clarity, but never imitate an accent, emotion or mannerism."
+                },
+                {
+                    "question": "What can I adapt?",
+                    "answer": "Five elements: language, pace, volume, tone and level of detail."
+                },
+                {
+                    "question": "Can I change what I tell an angry guest to calm them down?",
+                    "answer": "No. Adapt the style, but do not change the facts or the policy; use a steady tone and clear boundaries."
+                }
+            ],
+            "meta_title": "Adapting Communication Style in Hotels",
+            "meta_description": "Hotel training on adapting language, pace, volume, tone and detail to each guest, without mimicking, while keeping the message accurate.",
+            "focus_keyword": "adapting communication style with guests",
+            "chapters": [
+                {
+                    "title": "Why and How to Read the Guest",
+                    "lessons": [
+                        {
+                            "title": "Why Adapt Your Communication",
+                            "minutes": 5,
+                            "body": "<h2>Match the need, never mimic</h2><p>Two guests can ask the same question and need two very different answers. One wants the result in a sentence; the other wants every step explained. One speaks quickly and fluently; the other is choosing each word carefully in a second language. A colleague who speaks to both in exactly the same way will leave at least one of them uncomfortable.</p><p>This course is about adapting your communication style: adjusting how you deliver a message so that it suits the person in front of you. The deck sums up the principle in four words: <strong>Observe, Listen, Adapt, Confirm</strong>, and in one warning: match the need, never mimic.</p><h2>Why a flexible style helps</h2><p>The deck gives five reasons why a flexible style makes communication easier:</p><ul><li><strong>Guests differ in language, pace and the way they understand.</strong> There is no single style that fits everyone.</li><li><strong>Fast speech may make some guests feel rushed.</strong> What feels efficient to you may feel dismissive to them.</li><li><strong>Very slow explanation may annoy a guest who wants a quick result.</strong> Too much patience can also be a poor fit.</li><li><strong>Some guests prefer brevity, others need details.</strong> Neither is wrong; they are simply different needs.</li><li><strong>Adapting your style reduces misunderstanding and builds comfort.</strong> The result is comfort and faster understanding.</li></ul><h2>What changes and what stays the same</h2><p>Adapting does not mean saying different things to different guests. The content of your message, the information and the respect you show, stay fixed. Only the delivery changes: the words you choose, the speed, the amount of detail.</p><blockquote class=\"bk-quote\">Keep the message consistent; adapt how you deliver it.</blockquote><p>This protects both the guest and the hotel. Every guest receives the same accurate information and the same courtesy, but in the form that is easiest for them to take in.</p><aside class=\"bk-scene\"><strong>Scene:</strong> Two guests ask a receptionist about late check-out. The first, a business traveller on the phone, says, \"Quickly, can I stay till two?\" She answers: \"Yes, until two is possible today. I have updated your booking.\" The second, a family on holiday, asks many questions. She explains the same option step by step and writes the time on their key card envelope. Same information, same courtesy, two different deliveries, and both guests were comfortable.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Before you reply, ask yourself: does this guest want the short version or the full version?</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Keep the facts and the respect constant; adapt only how you deliver them.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Why adapt",
+                                "questions": [
+                                    {
+                                        "question": "A guest says, 'Just tell me the short version.' What does adapting your style mean here?",
+                                        "options": [
+                                            "Give less accurate information to save time",
+                                            "Give the same accurate information more briefly",
+                                            "Refuse and explain everything anyway",
+                                            "Ask a colleague to answer"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The message stays consistent; only the delivery is adapted."
+                                    },
+                                    {
+                                        "question": "Why can speaking quickly be a problem with some guests?",
+                                        "options": [
+                                            "It is against hotel rules",
+                                            "It may make them feel rushed",
+                                            "It always causes wrong orders",
+                                            "It sounds too formal"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck notes that fast speech may make some guests feel rushed."
+                                    },
+                                    {
+                                        "question": "What stays fixed when you adapt your communication style?",
+                                        "options": [
+                                            "Your speed and volume",
+                                            "The level of detail",
+                                            "The respect and the information",
+                                            "The language you use"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says to keep respect and information fixed and adapt the way you present them."
+                                    },
+                                    {
+                                        "question": "What does 'match the need, never mimic' mean?",
+                                        "options": [
+                                            "Copy the guest's accent to build rapport",
+                                            "Adjust to what the guest needs without imitating them",
+                                            "Always speak exactly like the guest",
+                                            "Avoid any change to your style"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "You adapt to the guest's needs, but never imitate them."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Observe the Preference, Then Confirm",
+                            "minutes": 5,
+                            "body": "<h2>Start by noticing</h2><p>You cannot adapt to a guest until you know what they need. The first step is to observe. The deck lists five communication cues to watch for as soon as the conversation begins:</p><ul><li><strong>The language they use.</strong> Which language do they start in, and how comfortable do they seem in it?</li><li><strong>Their speed of speech and sentence length.</strong> Short, quick sentences often signal someone who wants to move fast.</li><li><strong>Whether they ask for the summary or the details.</strong> \"What time?\" is different from \"How does it work?\"</li><li><strong>The level of voice clarity that suits them.</strong> Do they lean in, or ask you to repeat?</li><li><strong>How much they need repetition or writing.</strong> Some guests will want information written down.</li></ul><h2>Then check, don't assume</h2><p>Cues are helpful, but they can mislead. A guest may speak slowly because they are tired, not because they want more detail. A guest may answer in English but prefer Arabic. So after observing, the deck asks you to confirm the preference with a simple, polite question:</p><table class=\"bk-say\"><thead><tr><th>Ask</th><th>What it checks</th></tr></thead><tbody><tr><td>\"Which language do you prefer?\"</td><td>Language</td></tr><tr><td>\"Would you prefer a brief or a detailed explanation?\"</td><td>Detail</td></tr><tr><td>\"Shall I repeat or write the information?\"</td><td>Repetition and writing</td></tr><tr><td>\"Were the pace and clarity right for you?\"</td><td>Pace and clarity</td></tr><tr><td>\"May I check what you understood?\"</td><td>Understanding</td></tr></tbody></table><blockquote class=\"bk-quote\">Cues help you, but asking prevents assumptions.</blockquote><h2>How to ask naturally</h2><p>These questions work best when they are short and offered as a courtesy rather than a test. You do not need to ask all five; choose the one that fits the moment. With a guest who seems unsure of the language, ask about language first. With a guest who has just received a long explanation, check whether it was the right amount of detail.</p><p>Asking also shows respect. It tells the guest that you want to serve them in the way that suits them, rather than the way that suits you.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest at the concierge desk asks, in careful English, about visiting the old town. The concierge notices the slow pace and the pauses and asks, \"Would you prefer I explain in Arabic, or shall I write the directions down for you?\" The guest smiles, chooses Arabic, and the conversation becomes easy. Without asking, the concierge might have spoken faster English and lost the guest halfway through.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Observe the cues, then confirm the preference with one polite question.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Observe and confirm",
+                                "questions": [
+                                    {
+                                        "question": "A guest speaks slowly. What is the best next move?",
+                                        "options": [
+                                            "Assume they want every detail",
+                                            "Speak much faster to keep things moving",
+                                            "Politely confirm their preference, for example brief or detailed",
+                                            "Switch language without asking"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Cues help, but asking prevents assumptions."
+                                    },
+                                    {
+                                        "question": "Which of these is a communication cue from the deck?",
+                                        "options": [
+                                            "The guest's room category",
+                                            "Whether they ask for the summary or the details",
+                                            "Their nationality on the booking",
+                                            "How much they spend"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck lists asking for summary or details as a cue."
+                                    },
+                                    {
+                                        "question": "You finished a long explanation and the guest looks unsure. Which question fits best?",
+                                        "options": [
+                                            "\"May I check what you understood?\"",
+                                            "\"Did you not listen?\"",
+                                            "\"Any other questions? No? Good.\"",
+                                            "\"Shall I call my manager?\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck suggests checking what the guest understood."
+                                    },
+                                    {
+                                        "question": "Why ask about preference rather than rely only on cues?",
+                                        "options": [
+                                            "Cues are never useful",
+                                            "Asking prevents wrong assumptions and shows respect",
+                                            "It is required by law",
+                                            "It makes the conversation longer"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Cues can mislead; asking prevents assumptions."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "The Five Elements You Can Adapt",
+                    "lessons": [
+                        {
+                            "title": "Language, Pace, Volume, Tone and Detail",
+                            "minutes": 7,
+                            "body": "<h2>Five elements</h2><p>The deck identifies five elements of communication you can adjust:</p><ol><li><strong>Language:</strong> the one the guest prefers and finds clearest.</li><li><strong>Pace:</strong> slightly faster or slightly slower.</li><li><strong>Volume:</strong> audible and comfortable.</li><li><strong>Tone:</strong> friendly and professional.</li><li><strong>Detail:</strong> a summary or a fuller explanation.</li></ol><p>Notice the words <em>slightly</em> and <em>comfortable</em>. Adapting is gentle. You move a little towards the guest's needs; you do not transform yourself.</p><blockquote class=\"bk-quote\">Adapt gently. Never imitate an accent, emotion, or mannerism.</blockquote><h2>Adapting the pace without seeming rushed</h2><p><strong>With a fast speaker:</strong></p><ul><li>Go straight to the point.</li><li>Present options in a clear order.</li><li>Cut unnecessary examples.</li><li>Do not speak so fast that accuracy suffers.</li><li>Finish with a confirmed summary.</li></ul><p><strong>With a calm speaker:</strong></p><ul><li>Slow down a little.</li><li>Leave a pause before replying.</li><li>Use clear, short sentences.</li><li>Do not interrupt or finish their sentence for them.</li><li>Check understanding without rushing.</li></ul><p>The deck is careful here: the goal is not a perfect match but comfortable understanding. You are not trying to speak at exactly the guest's speed; you are trying to make it easy for them to follow.</p><h2>Volume and tone, professionally</h2><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Make your voice audible and comfortable</td><td>Raising your voice just because the guest raises theirs</td></tr><tr><td>Use a friendly, confident tone</td><td>Imitating the accent or pronunciation</td></tr><tr><td>Tone down enthusiasm in serious situations</td><td>Matching an angry or sarcastic tone</td></tr><tr><td>Show suitable energy when welcoming</td><td>Using a childish or condescending voice</td></tr><tr><td>Ask whether your voice is clear</td><td>Switching to an exaggerated, artificial tone</td></tr></tbody></table><p>Each \"avoid\" item is a form of mimicking or overdoing. Raising your voice with a loud guest escalates the situation. Copying an accent can feel like mockery. A sing-song or talking-down voice can offend, even when the intention is to be kind.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest reports, quietly and seriously, that a family member is unwell. The front office colleague, who usually greets guests with bright energy, lowers her enthusiasm, speaks calmly and clearly, and gives the information in short sentences. The guest later thanked her for being \"so steady.\" She changed her tone to suit a serious moment without changing the help she offered.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Adjust language, pace, volume, tone and detail gently for clarity and comfort, and never imitate the guest.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: The five elements",
+                                "questions": [
+                                    {
+                                        "question": "A guest is speaking loudly because they are frustrated. What should you do with your volume?",
+                                        "options": [
+                                            "Raise it to match theirs",
+                                            "Keep it audible and comfortable",
+                                            "Whisper so they calm down",
+                                            "Stop speaking until they are quiet"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Avoid raising your voice just because the guest raises theirs."
+                                    },
+                                    {
+                                        "question": "With a fast-speaking guest, which action is correct?",
+                                        "options": [
+                                            "Go straight to the point and finish with a confirmed summary",
+                                            "Speak as fast as possible even if details slip",
+                                            "Add extra examples to be thorough",
+                                            "Leave long pauses before each reply"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Be direct, but do not let speed harm accuracy; confirm at the end."
+                                    },
+                                    {
+                                        "question": "A guest has a strong regional accent. What is the professional approach?",
+                                        "options": [
+                                            "Copy the accent to build rapport",
+                                            "Speak in your normal clear way and check understanding",
+                                            "Speak in a childish, simple voice",
+                                            "Ask them to change their accent"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Never imitate an accent; adapt only for clarity."
+                                    },
+                                    {
+                                        "question": "What is the goal of adapting your pace?",
+                                        "options": [
+                                            "A perfect match with the guest's speed",
+                                            "Finishing the conversation faster",
+                                            "Comfortable understanding",
+                                            "Showing you are efficient"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says the goal is comfortable understanding, not a perfect match."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Adapting in Real Situations",
+                    "lessons": [
+                        {
+                            "title": "Practical Examples and Self-Check",
+                            "minutes": 7,
+                            "body": "<h2>Apply the style to the situation</h2><p>The deck gives four common hotel situations and the adaptation each one needs.</p><h3>1. The guest in a hurry</h3><p>Give the summary, the time and the fastest option first. A guest rushing to the airport does not need background; they need the answer and the quickest route to it. Details can follow if they ask.</p><h3>2. The detail-focused guest</h3><p>Explain in sequence and write down the important information. Some guests feel comfortable only when they understand every step. Walk them through it in order, and give them a written note of times, names or numbers.</p><h3>3. The guest with a language barrier</h3><p>Use simple words and an approved translation tool when one is available. Short sentences and common words reduce misunderstanding. The word <em>approved</em> matters: use the tools the hotel provides.</p><h3>4. The angry guest</h3><p>Do not match the anger. De-escalate with a steady tone and clear boundaries. A calm, even voice helps bring the temperature down, while clear boundaries mean you stay polite but do not accept abuse or make promises you cannot keep.</p><blockquote class=\"bk-quote\">Adapt the style, but do not change the facts or the policy.</blockquote><p>This is the limit of adaptation. You can make the message shorter, slower, simpler or calmer, but you must not change what is true or what the hotel's policy says, even to please an upset guest.</p><h2>Getting better with practice</h2><p>Adapting your style is a skill, and the deck gives a five-step cycle to improve it:</p><ol><li><strong>Observe</strong> the guest's way of communicating, without judgement.</li><li><strong>Practise</strong> a small adjustment in pace or detail.</li><li><strong>Monitor</strong> whether understanding and comfort increased.</li><li><strong>Ask</strong> the guest: \"Was the explanation right for you?\"</li><li><strong>Improve</strong> by noting what worked and applying it more consciously.</li></ol><p>\"Without judgement\" is important. A guest who speaks slowly is not less intelligent; a guest who is brief is not rude. Observing without judging keeps your attention on their needs.</p><aside class=\"bk-scene\"><strong>Scene:</strong> An angry guest at checkout disputes a minibar charge and raises his voice. The colleague keeps her voice level, says, \"I understand, let me check this with you,\" and reviews the items one by one. When one charge is correct under the hotel's policy, she explains it calmly without changing the facts. The guest's tone softens because he feels heard and treated consistently.</aside><aside class=\"bk-note\"><strong>Tip:</strong> After a difficult conversation, take a moment to ask yourself what worked. That is the Improve step.</aside><p>The deck's closing message: professionalism is delivering the message in the way that suits each guest best, while keeping it accurate and respectful.</p><aside class=\"bk-key\"><strong>Key takeaway:</strong> Fit your style to the situation, never change the facts or the policy, and keep improving through observe, practise, monitor, ask and improve.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Real situations",
+                                "questions": [
+                                    {
+                                        "question": "A guest rushing to a meeting asks where a taxi can be arranged. What do you give first?",
+                                        "options": [
+                                            "A full history of local transport",
+                                            "The summary, the time and the fastest option",
+                                            "A printed city map with all options",
+                                            "A request to wait while you find a manager"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "For a guest in a hurry, the deck says give the summary, time and fastest option first."
+                                    },
+                                    {
+                                        "question": "An angry guest demands a policy exception you cannot give. What is correct?",
+                                        "options": [
+                                            "Match their tone to show you care",
+                                            "Change the policy to calm them",
+                                            "Stay steady, set clear boundaries and do not change the facts or policy",
+                                            "End the conversation immediately"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Adapt the style, but never change the facts or the policy."
+                                    },
+                                    {
+                                        "question": "A detail-focused guest asks how the airport transfer works. What helps most?",
+                                        "options": [
+                                            "Explain in sequence and write down the key information",
+                                            "Give a one-word answer",
+                                            "Speak faster to cover everything",
+                                            "Send them to the website"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck says explain in sequence and write important information."
+                                    },
+                                    {
+                                        "question": "In the self-check cycle, what does 'Observe without judgement' protect against?",
+                                        "options": [
+                                            "Forgetting the guest's name",
+                                            "Assuming things about the guest instead of focusing on their needs",
+                                            "Speaking too slowly",
+                                            "Using the wrong language"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Observing without judgement keeps attention on the guest's actual needs."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "تكييف أسلوب التواصل",
+            "subtitle": "تواصل بطريقة تريح النزيل",
+            "short_description": "تعلّم ملاحظة كل نزيل وتكييف اللغة والسرعة والصوت والنبرة والتفصيل، مع الحفاظ على دقة الرسالة واحترامها.",
+            "description": "<p>يختلف النزلاء في اللغة والسرعة وطريقة فهم المعلومة. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتعلّم الموظفين كيف يكيّفون طريقة إيصال الرسالة ليشعر كل نزيل بالارتياح ويفهم بسرعة.</p><p>ستتعلم ملاحظة إشارات التواصل والتحقق من تفضيل النزيل، وتكييف خمسة عناصر في تواصلك، والتعامل مع المتحدث السريع والهادئ، وضبط الصوت والنبرة، وتطبيق الأسلوب المناسب مع النزيل المستعجل أو الذي يريد التفاصيل أو الغاضب أو الذي لا يتقن اللغة، دون تقليد أحد ودون تغيير الحقيقة.</p>",
+            "requirements": "مناسبة للموظفين الذين يتعاملون مع النزلاء ويعرفون أساسيات الترحيب.",
+            "outcomes": [
+                "اشرح لماذا يقلل الأسلوب المرن سوء الفهم ويبني الارتياح",
+                "لاحظ إشارات تواصل النزيل وتحقق من تفضيله",
+                "كيّف اللغة والسرعة والصوت والنبرة والتفصيل دون تقليد",
+                "طبّق الأسلوب المناسب مع النزيل المستعجل والمهتم بالتفاصيل والغاضب ومن لا يتقن اللغة",
+                "حسّن أسلوبك بالملاحظة والتجربة والمراجعة الذاتية"
+            ],
+            "faqs": [
+                {
+                    "question": "هل تكييف الأسلوب يعني تقليد النزيل؟",
+                    "answer": "لا. أنت تكيّف طريقة الإيصال بدرجة معتدلة من أجل الراحة والوضوح، ولا تقلّد اللهجة أو المشاعر أو السلوك."
+                },
+                {
+                    "question": "ما الذي يمكنني تكييفه؟",
+                    "answer": "خمسة عناصر: اللغة، والسرعة، والصوت، والنبرة، ومستوى التفصيل."
+                },
+                {
+                    "question": "هل أغيّر ما أقوله للنزيل الغاضب لتهدئته؟",
+                    "answer": "لا. كيّف الأسلوب ولا تغيّر الحقيقة أو السياسة، واستخدم نبرة ثابتة وحدودًا واضحة."
+                }
+            ],
+            "meta_title": "تكييف أسلوب التواصل مع نزلاء الفندق",
+            "meta_description": "تدريب فندقي على تكييف اللغة والسرعة والصوت والنبرة والتفصيل لكل نزيل دون تقليد، مع الحفاظ على دقة الرسالة.",
+            "focus_keyword": "تكييف أسلوب التواصل مع النزلاء",
+            "chapters": [
+                {
+                    "title": "لماذا نكيّف الأسلوب وكيف نقرأ النزيل",
+                    "lessons": [
+                        {
+                            "title": "لماذا تكيّف أسلوب تواصلك",
+                            "minutes": 5,
+                            "body": "<h2>لبِّ الحاجة ولا تقلّد</h2><p>قد يطرح نزيلان السؤال نفسه ويحتاج كل منهما إلى إجابة مختلفة تمامًا؛ أحدهما يريد النتيجة في جملة، والآخر يريد شرح كل خطوة. أحدهما يتحدث بسرعة وطلاقة، والآخر يختار كلماته بعناية بلغة ليست لغته. والموظف الذي يخاطب الاثنين بالطريقة نفسها سيترك أحدهما على الأقل غير مرتاح.</p><p>هذه الدورة تدور حول تكييف أسلوب التواصل، أي تعديل طريقة إيصال الرسالة لتناسب من أمامك. وتلخص المادة المبدأ في أربع كلمات: <strong>لاحظ، استمع، كيّف، تأكد</strong>.</p><h2>لماذا يساعد الأسلوب المرن؟</h2><ul><li><strong>الضيوف يختلفون في اللغة والسرعة وطريقة الفهم،</strong> فلا يوجد أسلوب واحد يناسب الجميع.</li><li><strong>الكلام السريع قد يُشعر بعضهم بالاستعجال.</strong></li><li><strong>الشرح البطيء جدًا قد يزعج من يريد نتيجة سريعة.</strong></li><li><strong>بعض الضيوف يفضلون الاختصار وآخرون يحتاجون تفاصيل،</strong> وكلاهما ليس خطأ.</li><li><strong>تكييف الأسلوب يقلل سوء الفهم ويبني الارتياح،</strong> والنتيجة راحة وفهم أسرع.</li></ul><h2>ما الذي يتغير وما الذي يثبت</h2><p>التكييف لا يعني أن تقول لكل نزيل شيئًا مختلفًا؛ فمضمون الرسالة والمعلومة والاحترام ثابتة، والذي يتغير هو طريقة التقديم فقط: الكلمات والسرعة ومقدار التفصيل.</p><blockquote class=\"bk-quote\">ثبّت الاحترام والمعلومة — وكيّف طريقة تقديمها.</blockquote><p>وهذا يحمي النزيل والفندق معًا؛ فكل نزيل يحصل على المعلومة الدقيقة نفسها والاحترام نفسه، ولكن بالشكل الأسهل عليه.</p><aside class=\"bk-scene\"><strong>موقف:</strong> سأل نزيلان موظفة الاستقبال عن تمديد وقت المغادرة. الأول رجل أعمال على الهاتف قال: \"بسرعة، هل يمكنني البقاء حتى الثانية؟\" فأجابت: \"نعم، ممكن اليوم حتى الثانية، وقد حدّثت حجزك\". والثانية عائلة في إجازة سألت أسئلة كثيرة، فشرحت لهم الخيار نفسه خطوة بخطوة وكتبت الوقت على ظرف البطاقة. المعلومة واحدة والاحترام واحد، وطريقتان مختلفتان، وارتاح الجميع.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> قبل أن ترد، اسأل نفسك: هل يريد هذا النزيل النسخة المختصرة أم الكاملة؟</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> ثبّت المعلومة والاحترام، وكيّف طريقة التقديم فقط.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: لماذا نكيّف الأسلوب",
+                                "questions": [
+                                    {
+                                        "question": "قال نزيل: \"أعطني الخلاصة فقط\". ماذا يعني تكييف الأسلوب هنا؟",
+                                        "options": [
+                                            "تقديم معلومة أقل دقة لتوفير الوقت",
+                                            "تقديم المعلومة الدقيقة نفسها باختصار",
+                                            "الرفض وشرح كل شيء على أي حال",
+                                            "الطلب من زميل أن يجيب"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "الرسالة ثابتة، والذي يتكيف هو طريقة التقديم."
+                                    },
+                                    {
+                                        "question": "لماذا قد يكون الكلام السريع مشكلة مع بعض النزلاء؟",
+                                        "options": [
+                                            "لأنه مخالف لأنظمة الفندق",
+                                            "لأنه قد يشعرهم بالاستعجال",
+                                            "لأنه يسبب دائمًا أخطاء في الطلبات",
+                                            "لأنه يبدو رسميًا جدًا"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تذكر المادة أن الكلام السريع قد يشعر بعضهم بالاستعجال."
+                                    },
+                                    {
+                                        "question": "ما الذي يبقى ثابتًا عند تكييف أسلوب التواصل؟",
+                                        "options": [
+                                            "سرعتك وارتفاع صوتك",
+                                            "مستوى التفصيل",
+                                            "الاحترام والمعلومة",
+                                            "اللغة التي تستخدمها"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "ثبّت الاحترام والمعلومة وكيّف طريقة تقديمها."
+                                    },
+                                    {
+                                        "question": "ما معنى \"لبِّ الحاجة ولا تقلّد\"؟",
+                                        "options": [
+                                            "قلّد لهجة النزيل لتقترب منه",
+                                            "تكيّف مع حاجة النزيل دون أن تقلّده",
+                                            "تحدث دائمًا مثل النزيل تمامًا",
+                                            "لا تغيّر أسلوبك أبدًا"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تكيّف مع احتياج النزيل ولا تقلّده."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "لاحظ تفضيل النزيل ثم تحقّق",
+                            "minutes": 5,
+                            "body": "<h2>ابدأ بالملاحظة</h2><p>لا يمكنك التكيف مع النزيل قبل أن تعرف ما يحتاجه، والخطوة الأولى هي الملاحظة. تذكر المادة خمس إشارات تواصل تراقبها منذ بداية الحديث:</p><ul><li><strong>لغة التواصل التي يستخدمها،</strong> ومدى ارتياحه فيها.</li><li><strong>سرعة كلامه وطول الجمل،</strong> فالجمل القصيرة السريعة تدل غالبًا على من يريد الإنجاز.</li><li><strong>هل يسأل عن الخلاصة أم التفاصيل؟</strong> فسؤال \"متى؟\" يختلف عن \"كيف يعمل ذلك؟\".</li><li><strong>درجة وضوح الصوت المناسبة له،</strong> هل يقترب ليسمع أو يطلب التكرار؟</li><li><strong>مدى حاجته للتكرار أو الكتابة.</strong></li></ul><h2>ثم تحقّق ولا تفترض</h2><p>الإشارات مفيدة لكنها قد تضلل؛ فقد يتحدث النزيل ببطء لأنه متعب لا لأنه يريد تفاصيل، وقد يجيب بالإنجليزية وهو يفضّل العربية. لذلك تطلب المادة أن تتحقق من التفضيل بسؤال مهذب بسيط:</p><table class=\"bk-say\"><thead><tr><th>اسأل</th><th>ما الذي تتحقق منه</th></tr></thead><tbody><tr><td>\"ما اللغة التي تفضلونها؟\"</td><td>اللغة</td></tr><tr><td>\"هل تفضلون شرحًا مختصرًا أم تفصيليًا؟\"</td><td>التفصيل</td></tr><tr><td>\"هل أكرر المعلومة أو أكتبها؟\"</td><td>التكرار والكتابة</td></tr><tr><td>\"هل كانت السرعة والوضوح مناسبين؟\"</td><td>السرعة والوضوح</td></tr><tr><td>\"هل يمكنني التأكد مما فهمتموه؟\"</td><td>الفهم</td></tr></tbody></table><blockquote class=\"bk-quote\">الإشارة تساعدك — لكن السؤال يمنع الافتراض.</blockquote><h2>كيف تسأل بشكل طبيعي</h2><p>تنجح هذه الأسئلة حين تكون قصيرة وتُقدَّم كلطف لا كاختبار. لا تحتاج إلى طرحها كلها، بل اختر ما يناسب اللحظة؛ فمع نزيل يبدو غير واثق من اللغة اسأل عن اللغة أولًا، وبعد شرح طويل تحقق هل كان مقدار التفصيل مناسبًا. والسؤال أيضًا دليل احترام، فهو يقول للنزيل إنك تريد خدمته بالطريقة التي تناسبه هو.</p><aside class=\"bk-scene\"><strong>موقف:</strong> سأل نزيل موظف الكونسيرج بإنجليزية متأنية عن زيارة البلدة القديمة. لاحظ الموظف البطء والتوقفات، فسأل: \"هل تفضّل أن أشرح بالعربية، أم أكتب لك الاتجاهات؟\" فابتسم النزيل واختار العربية، وأصبح الحديث سهلًا. ولو لم يسأل لربما تحدث بإنجليزية أسرع وفقد النزيل في منتصف الشرح.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> لاحظ الإشارات، ثم تحقق من التفضيل بسؤال مهذب واحد.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: لاحظ وتحقّق",
+                                "questions": [
+                                    {
+                                        "question": "نزيل يتحدث ببطء. ما الخطوة الأفضل؟",
+                                        "options": [
+                                            "تفترض أنه يريد كل التفاصيل",
+                                            "تسرّع كلامك كثيرًا لتسير الأمور",
+                                            "تتحقق بلطف من تفضيله، كالمختصر أو المفصل",
+                                            "تغيّر اللغة دون أن تسأل"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "الإشارة تساعد، لكن السؤال يمنع الافتراض."
+                                    },
+                                    {
+                                        "question": "أي مما يلي من إشارات التواصل في المادة؟",
+                                        "options": [
+                                            "فئة غرفة النزيل",
+                                            "هل يسأل عن الخلاصة أم التفاصيل",
+                                            "جنسيته في الحجز",
+                                            "مقدار إنفاقه"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تذكر المادة سؤاله عن الخلاصة أو التفاصيل ضمن الإشارات."
+                                    },
+                                    {
+                                        "question": "أنهيت شرحًا طويلًا ويبدو النزيل مترددًا. أي سؤال أنسب؟",
+                                        "options": [
+                                            "\"هل يمكنني التأكد مما فهمتموه؟\"",
+                                            "\"ألم تكن تستمع؟\"",
+                                            "\"أي أسئلة أخرى؟ لا؟ جيد\"",
+                                            "\"هل أتصل بالمدير؟\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تقترح المادة التأكد مما فهمه النزيل."
+                                    },
+                                    {
+                                        "question": "لماذا تسأل عن التفضيل بدل الاعتماد على الإشارات فقط؟",
+                                        "options": [
+                                            "لأن الإشارات غير مفيدة أبدًا",
+                                            "لأن السؤال يمنع الافتراض الخاطئ ويُظهر الاحترام",
+                                            "لأنه مطلوب قانونًا",
+                                            "لأنه يطيل الحديث"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "الإشارات قد تضلل، والسؤال يمنع الافتراض."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "العناصر الخمسة القابلة للتكييف",
+                    "lessons": [
+                        {
+                            "title": "اللغة والسرعة والصوت والنبرة والتفصيل",
+                            "minutes": 7,
+                            "body": "<h2>خمسة عناصر يمكن تكييفها</h2><ol><li><strong>اللغة:</strong> المفضلة والأوضح للنزيل.</li><li><strong>السرعة:</strong> أسرع أو أبطأ قليلًا.</li><li><strong>الصوت:</strong> مسموع ومريح.</li><li><strong>النبرة:</strong> ودودة ومهنية.</li><li><strong>التفصيل:</strong> خلاصة أو شرح أوسع.</li></ol><p>لاحظ كلمتي \"قليلًا\" و\"مريح\"؛ فالتكييف يكون بلطف، تقترب خطوة من حاجة النزيل ولا تتحول إلى شخص آخر.</p><blockquote class=\"bk-quote\">كيّف بدرجة معتدلة — ولا تقلّد اللهجة أو السلوك.</blockquote><h2>كيّف السرعة دون أن تبدو متعجلًا</h2><p><strong>مع المتحدث السريع:</strong></p><ul><li>اذهب مباشرة إلى النقطة.</li><li>قدّم الخيارات بترتيب واضح.</li><li>اختصر الأمثلة غير الضرورية.</li><li>لا تتحدث بسرعة تضر بالدقة.</li><li>استخدم ملخصًا نهائيًا مؤكدًا.</li></ul><p><strong>مع المتحدث الهادئ:</strong></p><ul><li>خفف السرعة قليلًا.</li><li>اترك فاصلًا قبل الرد.</li><li>استخدم جملًا واضحة وقصيرة.</li><li>لا تقاطعه أو تكمل الجملة عنه.</li><li>تحقق من الفهم دون استعجال.</li></ul><p>والمادة واضحة هنا: الهدف ليس المطابقة الكاملة، بل راحة الفهم.</p><h2>اضبط الصوت والنبرة باحتراف</h2><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنّب</th></tr></thead><tbody><tr><td>اجعل صوتك مسموعًا ومريحًا</td><td>رفع الصوت لمجرد أن النزيل يرفعه</td></tr><tr><td>استخدم نبرة ودودة وواثقة</td><td>تقليد اللهجة أو طريقة النطق</td></tr><tr><td>خفف الحماس في المواقف الجادة</td><td>مجاراة نبرة الغضب أو السخرية</td></tr><tr><td>أظهر نشاطًا مناسبًا في الترحيب</td><td>استخدام صوت طفولي أو متعالٍ</td></tr><tr><td>اسأل إن كان الصوت واضحًا</td><td>التحول إلى نبرة مصطنعة مبالغ فيها</td></tr></tbody></table><p>كل بند في عمود \"تجنّب\" هو نوع من التقليد أو المبالغة؛ فرفع الصوت مع النزيل الغاضب يصعّد الموقف، وتقليد اللهجة قد يُفهم سخرية، والصوت الطفولي أو المتعالي يجرح حتى لو كانت النية حسنة.</p><aside class=\"bk-scene\"><strong>موقف:</strong> أبلغت نزيلة بهدوء وجدية أن أحد أفراد عائلتها مريض. موظفة المكتب الأمامي التي اعتادت الترحيب بحيوية خففت حماسها، وتحدثت بهدوء ووضوح وبجمل قصيرة. شكرتها النزيلة لاحقًا على \"ثباتها\". لقد غيّرت نبرتها لتناسب الموقف الجاد دون أن تغيّر المساعدة التي قدمتها.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> كيّف اللغة والسرعة والصوت والنبرة والتفصيل بلطف من أجل الوضوح والراحة، ولا تقلّد النزيل أبدًا.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: العناصر الخمسة",
+                                "questions": [
+                                    {
+                                        "question": "نزيل يتحدث بصوت مرتفع لأنه منزعج. ماذا تفعل بصوتك؟",
+                                        "options": [
+                                            "ترفعه ليوازي صوته",
+                                            "تبقيه مسموعًا ومريحًا",
+                                            "تهمس حتى يهدأ",
+                                            "تتوقف عن الكلام حتى يصمت"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تجنّب رفع الصوت لمجرد أن النزيل يرفعه."
+                                    },
+                                    {
+                                        "question": "مع نزيل يتحدث بسرعة، أي تصرف صحيح؟",
+                                        "options": [
+                                            "اذهب إلى النقطة مباشرة واختم بملخص مؤكد",
+                                            "تحدث بأقصى سرعة حتى لو ضاعت التفاصيل",
+                                            "أضف أمثلة إضافية للشمول",
+                                            "اترك فواصل طويلة قبل كل رد"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "كن مباشرًا، ولا تدع السرعة تضر بالدقة، وأكد في النهاية."
+                                    },
+                                    {
+                                        "question": "نزيل لديه لهجة محلية واضحة. ما الأسلوب المهني؟",
+                                        "options": [
+                                            "تقلّد لهجته لتقترب منه",
+                                            "تتحدث بأسلوبك الواضح المعتاد وتتحقق من الفهم",
+                                            "تتحدث بصوت طفولي مبسّط",
+                                            "تطلب منه تغيير لهجته"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "لا تقلّد اللهجة، وكيّف فقط من أجل الوضوح."
+                                    },
+                                    {
+                                        "question": "ما الهدف من تكييف السرعة؟",
+                                        "options": [
+                                            "المطابقة الكاملة مع سرعة النزيل",
+                                            "إنهاء الحديث بسرعة",
+                                            "راحة الفهم",
+                                            "إظهار كفاءتك"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: الهدف ليس المطابقة الكاملة بل راحة الفهم."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "التكييف في المواقف الواقعية",
+                    "lessons": [
+                        {
+                            "title": "أمثلة عملية ومراجعة ذاتية",
+                            "minutes": 7,
+                            "body": "<h2>طبّق الأسلوب بحسب الموقف</h2><h3>١. نزيل مستعجل</h3><p>قدّم الخلاصة والوقت والخيار الأسرع أولًا. النزيل المتجه إلى المطار لا يحتاج إلى مقدمات، بل إلى الإجابة وأسرع طريق إليها، والتفاصيل تأتي إن سأل عنها.</p><h3>٢. نزيل يريد التفاصيل</h3><p>اشرح بالتسلسل واكتب المعلومات المهمة. بعض النزلاء لا يرتاحون إلا إذا فهموا كل خطوة، فاشرح لهم بالترتيب وأعطهم ملاحظة مكتوبة بالأوقات والأسماء والأرقام.</p><h3>٣. نزيل لا يتقن اللغة</h3><p>استخدم كلمات بسيطة ووسيلة ترجمة معتمدة عند توفرها. الجمل القصيرة والكلمات الشائعة تقلل سوء الفهم، وكلمة \"معتمدة\" مهمة: استخدم الوسائل التي يوفرها الفندق.</p><h3>٤. نزيل غاضب</h3><p>لا تطابق الغضب، واخفض التصعيد بنبرة ثابتة وحدود واضحة. الصوت الهادئ المتزن يخفف حدة الموقف، والحدود الواضحة تعني أن تبقى مهذبًا دون قبول الإساءة ودون وعود لا تستطيع الوفاء بها.</p><blockquote class=\"bk-quote\">كيّف الأسلوب — ولا تغيّر الحقيقة أو السياسة.</blockquote><p>هذا هو حد التكييف؛ يمكنك أن تجعل الرسالة أقصر أو أبطأ أو أبسط أو أهدأ، لكن لا تغيّر ما هو صحيح أو ما تنص عليه سياسة الفندق، حتى لإرضاء نزيل منزعج.</p><h2>المهارة تتحسن بالملاحظة والتدريب</h2><ol><li><strong>لاحظ</strong> طريقة تواصل النزيل دون أحكام.</li><li><strong>جرّب</strong> تعديلًا بسيطًا في السرعة أو التفصيل.</li><li><strong>راقب:</strong> هل زاد الفهم والارتياح؟</li><li><strong>اسأل:</strong> هل كان الشرح مناسبًا لكم؟</li><li><strong>حسّن:</strong> سجل ما نجح وطبقه بوعي أكبر.</li></ol><p>عبارة \"دون أحكام\" مهمة؛ فالنزيل الذي يتحدث ببطء ليس أقل فهمًا، والمختصر ليس فظًا. الملاحظة دون حكم تبقي انتباهك على احتياجه.</p><aside class=\"bk-scene\"><strong>موقف:</strong> اعترض نزيل غاضب عند المغادرة على رسوم الميني بار ورفع صوته. حافظت الموظفة على هدوء صوتها وقالت: \"أفهمك، دعني أراجع ذلك معك\"، وراجعت البنود واحدًا واحدًا. وعندما تبيّن أن أحد البنود صحيح وفق سياسة الفندق، شرحته بهدوء دون تغيير الحقيقة. فهدأت نبرة النزيل لأنه شعر بأنه مسموع وأنه يُعامل بثبات.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> بعد أي محادثة صعبة، خذ لحظة لتسأل نفسك: ما الذي نجح؟ هذه هي خطوة \"حسّن\".</aside><p>وتختم المادة: الاحتراف هو إيصال الرسالة بالطريقة الأنسب لكل نزيل، مع بقائها دقيقة ومحترمة.</p><aside class=\"bk-key\"><strong>الخلاصة:</strong> ناسب أسلوبك مع الموقف، ولا تغيّر الحقيقة أو السياسة، واستمر في التحسن: لاحظ، جرّب، راقب، اسأل، حسّن.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: المواقف الواقعية",
+                                "questions": [
+                                    {
+                                        "question": "نزيل مستعجل إلى اجتماع يسأل أين يطلب سيارة أجرة. ماذا تقدّم أولًا؟",
+                                        "options": [
+                                            "تاريخًا كاملًا عن وسائل النقل المحلية",
+                                            "الخلاصة والوقت والخيار الأسرع",
+                                            "خريطة مطبوعة بكل الخيارات",
+                                            "طلبًا بالانتظار حتى تجد المدير"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "مع النزيل المستعجل تقول المادة: قدّم الخلاصة والوقت والخيار الأسرع أولًا."
+                                    },
+                                    {
+                                        "question": "نزيل غاضب يطالب باستثناء من السياسة لا تستطيع منحه. ما الصحيح؟",
+                                        "options": [
+                                            "تجاري نبرته لتُظهر اهتمامك",
+                                            "تغيّر السياسة لتهدئته",
+                                            "تبقى ثابتًا وتضع حدودًا واضحة ولا تغيّر الحقيقة أو السياسة",
+                                            "تنهي الحديث فورًا"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "كيّف الأسلوب ولا تغيّر الحقيقة أو السياسة."
+                                    },
+                                    {
+                                        "question": "نزيل يهتم بالتفاصيل يسأل كيف تعمل خدمة النقل من المطار. ما الأنفع؟",
+                                        "options": [
+                                            "تشرح بالتسلسل وتكتب المعلومات المهمة",
+                                            "تجيب بكلمة واحدة",
+                                            "تسرّع كلامك لتغطي كل شيء",
+                                            "تحيله إلى الموقع الإلكتروني"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تقول المادة: اشرح بالتسلسل واكتب المعلومات المهمة."
+                                    },
+                                    {
+                                        "question": "في دورة المراجعة الذاتية، مما تحميك عبارة \"لاحظ دون أحكام\"؟",
+                                        "options": [
+                                            "من نسيان اسم النزيل",
+                                            "من الافتراض عن النزيل بدل التركيز على احتياجه",
+                                            "من التحدث ببطء شديد",
+                                            "من استخدام لغة خاطئة"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "الملاحظة دون حكم تبقي الانتباه على احتياج النزيل الفعلي."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

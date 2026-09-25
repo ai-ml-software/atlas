@@ -38,6 +38,24 @@ test.describe('Sign-in (README credentials)', () => {
     await expect(page.locator('.hkp-nav')).toContainText(/My learning/);
   });
 
+  test('login lands in the HK&P workspace; login/sign-up pages bounce signed-in users there', async ({ page }) => {
+    await login(page, USERS.student.email, USERS.student.password);
+    await expect(page).toHaveURL(/\/hkp/);
+    for (const p of ['login', 'sign_up']) {
+      await page.goto(p);
+      await expect(page, p).toHaveURL(/\/hkp/);
+    }
+  });
+
+  test('the site header menu links to the HK&P workspace', async ({ page }) => {
+    await login(page, USERS.student.email, USERS.student.password);
+    await page.goto('home');
+    const link = page.locator('a[data-hkp-menu]').first();
+    await expect(link).toHaveAttribute('href', /\/hkp$/);
+    await page.goto(await link.getAttribute('href'));
+    await expect(page.locator('.hkp-nav')).toBeVisible();
+  });
+
   test('a wrong password is refused', async ({ page }) => {
     await login(page, USERS.student.email, 'wrong-password');
     await page.goto('hkp');

@@ -78,10 +78,8 @@
 </section>
 
 <?php $this->load->view('academy/_close', array(
-    'close_title' => $locale === 'ar' ? 'بقلم من يضعون المعيار' : 'Written by the people who set the standard',
-    'close_text'  => $locale === 'ar'
-        ? 'تأتي المقالات من فريق التحرير نفسه الذي يكتب الدورات والإجراءات، وتذكر مصادرها.'
-        : 'Articles come from the same editorial desk that writes the courses and the procedures, and they cite what they rely on.',
+    'close_title' => ha_pt('Written by the people who set the standard'),
+    'close_text'  => ha_pt('Articles come from the same editorial desk that writes the courses and the procedures, and they cite what they rely on.'),
     'close_primary'   => array('label' => $t['courses'], 'url' => base_url($locale . '/courses')),
     'close_secondary' => array('label' => $t['contact'], 'url' => base_url($locale . '/contact')),
 )); ?>

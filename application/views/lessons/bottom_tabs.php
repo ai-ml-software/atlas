@@ -1,6 +1,16 @@
+<?php
+// When the reading lesson already shows its text as the article, the Summary tab keeps only the attached files.
+$ap_summary_in_article = !empty($ap_summary_in_article);
+$ap_files = (isset($lesson_details) && is_array($lesson_details)) ? $this->db->order_by('id', 'desc')->where('lesson_id', $lesson_details['id'])->get('resource_files')->result_array() : array();
+// Live class tab only when something is actually scheduled for this course (BBB, Zoom or Jitsi).
+$ap_has_live = $this->db->where('course_id', $course_id)->count_all_results('bbb_meetings') > 0
+	|| (addon_status('live-class') && $this->db->where('course_id', $course_id)->count_all_results('live_class') > 0)
+	|| (addon_status('jitsi-live-class') && $this->db->where('course_id', $course_id)->count_all_results('jitsi_live_class') > 0);
+$ap_show_summary = isset($lesson_details) && is_array($lesson_details) && count($lesson_details) > 0 && (!$ap_summary_in_article || count($ap_files) > 0);
+?>
 <ul class="nav nav-tabs ct-tabs-custom-one player-bottom-tabs mt-3" role="tablist">
 
-	<?php if (isset($lesson_details) && is_array($lesson_details) && count($lesson_details) > 0) : ?>
+	<?php if ($ap_show_summary) : ?>
 		<li class="nav-item" role="presentation">
 			<button class="nav-link" id="summary-class-tab" data-bs-toggle="tab" data-bs-target="#summary-class-content" type="button" role="tab" aria-controls="summary-class-content" aria-selected="true">
 				<i class="far fa-bookmark"></i>
@@ -10,6 +20,7 @@
 		</li>
 	<?php endif; ?>
 
+	<?php if ($ap_has_live) : ?>
 	<li class="nav-item" role="presentation">
 		<button class="nav-link" id="live-class-tab" data-bs-toggle="tab" data-bs-target="#live-class-content" type="button" role="tab" aria-controls="live-class-content" aria-selected="true">
 			<i class="fas fa-video"></i>
@@ -17,6 +28,7 @@
 			<span></span>
 		</button>
 	</li>
+	<?php endif; ?>
 
 	<?php if (addon_status('assignment')) : ?>
 		<li class="nav-item" role="presentation">
@@ -66,7 +78,7 @@
 </ul>
 
 <div class="tab-content ct-tabs-content">
-	<?php if (isset($lesson_details) && is_array($lesson_details) && count($lesson_details) > 0) : ?>
+	<?php if ($ap_show_summary) : ?>
 		<div class="tab-pane fade" id="summary-class-content" role="tabpanel" aria-labelledby="summary-class-tab">
 
 
@@ -88,10 +100,11 @@
 					<?php endforeach; ?>
 				</div>
 			<?php endif; ?>
-			<?php echo htmlspecialchars_decode_($lesson_details['summary']); ?>
+			<?php if (!$ap_summary_in_article) echo htmlspecialchars_decode_($lesson_details['summary']); ?>
 		</div>
 	<?php endif; ?>
 
+	<?php if ($ap_has_live) : ?>
 	<div class="tab-pane fade" id="live-class-content" role="tabpanel" aria-labelledby="live-class-tab">
 		
 		<!-- BigBlueButton -->
@@ -162,6 +175,7 @@
 		<?php endif; ?>
 
 	</div>
+	<?php endif; ?>
 
 	<?php if (addon_status('assignment')) : ?>
 		<div class="tab-pane fade" id="assignment-content" role="tabpanel" aria-labelledby="assignment-tab">

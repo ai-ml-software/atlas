@@ -1,0 +1,545 @@
+{
+    "slug": "workplace-wellbeing",
+    "category": "professional-wellbeing",
+    "level": "foundation",
+    "source_pdf": "Workplace-Wellbeing-Dyafa (1).pdf",
+    "thumbnail": "uploads/academy/library/workplace-wellbeing.webp",
+    "videos": [
+        {
+            "id": "fLJsdqxnZb0",
+            "title": "The happy secret to better work | Shawn Achor",
+            "channel": "TED",
+            "why": "A popular talk on how positive habits improve wellbeing and performance at work."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Workplace Wellbeing",
+            "subtitle": "Take care of yourself: your health supports your life and future",
+            "short_description": "Simple daily habits for hotel colleagues: rest, water, balanced food, safe movement, a calm reset, and knowing when to ask for help.",
+            "description": "<p>Every shift in a hotel depends on people who are rested, focused and well. This course, built from the Dyafa Hotels &amp; Resorts wellbeing deck, starts from one idea: you come first, because taking care of yourself supports your life and growth.</p><p>You will build simple habits for before, during and after your working day, learn how to drink water and eat for steady energy, move safely when lifting and pushing, and use a short calm reset when pressure rises.</p><p>The final chapter explains the warning signs that mean you should stop and ask for help, and the responsible steps to take.</p>",
+            "requirements": "No prior training is needed; the course suits every colleague in every department.",
+            "outcomes": [
+                "Explain how rest, water, food, safe movement and asking for help protect your health and focus",
+                "Follow simple habits before, during and after your working day",
+                "Plan water and balanced, safely stored food that suit your working hours",
+                "Move safely at work and use a four-step calm reset under pressure",
+                "Recognise the signs that require help and take the right steps"
+            ],
+            "faqs": [
+                {
+                    "question": "How much water should I drink during a shift?",
+                    "answer": "The amount differs from person to person and depends on heat, activity, health and medical advice. Drink several times during work, more in hot places, and follow any medical instructions you have."
+                },
+                {
+                    "question": "What should I do if a task feels unsafe for my body?",
+                    "answer": "Stop and ask for help. Use the trolley or available equipment, ask for help with heavy items, and never force your body to move."
+                },
+                {
+                    "question": "Is asking for help a sign of weakness?",
+                    "answer": "No. The course states that asking for help is a correct and responsible action, especially when you feel very sleepy, dizzy, confused or under severe stress."
+                }
+            ],
+            "meta_title": "Workplace Wellbeing for Hotel Colleagues",
+            "meta_description": "Build daily wellbeing habits at work: rest, water, balanced food, safe movement, a calm reset, and when to ask for help.",
+            "focus_keyword": "workplace wellbeing for hotel staff",
+            "chapters": [
+                {
+                    "title": "You Come First",
+                    "lessons": [
+                        {
+                            "title": "Why Taking Care of Yourself Matters, and Simple Habits for a Better Day",
+                            "minutes": 7,
+                            "body": "<h2>You come first</h2><p>In hospitality we are trained to put the guest first. That is right, but it only works if the person serving the guest is well. A tired, thirsty, hungry colleague cannot give full attention for long. That is why the deck opens with a clear message: <strong>you come first</strong>. Taking care of yourself is not selfish; it supports your life and your growth.</p><blockquote class=\"bk-quote\">Taking care of yourself supports your life and growth.</blockquote><h2>Five foundations</h2><p>The deck names five things that keep you stronger in your life and your future:</p><ul><li><strong>Rest</strong> protects your health and your focus.</li><li><strong>Drinking water</strong> helps your body work well.</li><li><strong>Good food</strong> gives you energy for your day.</li><li><strong>Safe movement</strong> keeps your body strong.</li><li><strong>Asking for help</strong> protects you at times of pressure.</li></ul><p>Each of these returns later in the course. For now, notice that they are all ordinary. Wellbeing is not a special programme; it is the small things you do every day.</p><h2>Simple habits for a better day</h2><p>The deck organises the day into three moments: start, continue and recover.</p><h3>1. Start your day (before)</h3><ul><li>Sleep well and take enough time to rest.</li><li>Have a suitable meal and drink water.</li><li>Arrive early and get ready calmly.</li></ul><h3>2. During your day</h3><ul><li>Take your break on time.</li><li>Change your body position and move safely.</li><li>Ask for help when the workload increases.</li></ul><h3>3. Recover your energy (after)</h3><ul><li>Rest after work ends.</li><li>Eat and drink water when needed.</li><li>Keep a regular sleep time.</li></ul><aside class=\"bk-note\">Arriving a few minutes early is a wellbeing habit, not only a punctuality rule. It lets you start calmly instead of rushing straight from the road into a busy shift.</aside><aside class=\"bk-scene\"><strong>What happened:</strong> Layla, a room attendant, often skipped breakfast and her mid-morning break to finish rooms faster, and by early afternoon she was exhausted and making small mistakes. <strong>What she did:</strong> she began eating a suitable meal before her shift, kept water on her trolley and took her break on time. <strong>Why it worked:</strong> she protected the start and middle of her day, so she had energy left for the end of it.</aside><h2>Small habits, big difference</h2><p>None of these habits takes long. What makes them powerful is repetition. The deck's line says it best: small habits today make a difference to your future.</p><aside class=\"bk-key\">You come first: rest, water, good food, safe movement and asking for help keep you strong. Protect your day with simple habits before work, during work and after work.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: you come first",
+                                "questions": [
+                                    {
+                                        "question": "A colleague says looking after herself is selfish because guests come first. What does the course teach?",
+                                        "options": [
+                                            "She is right; guests always come before her health",
+                                            "Wellbeing is only for days off",
+                                            "Taking care of yourself supports your life and growth, and lets you serve guests well",
+                                            "Only managers need to think about wellbeing"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck opens with \"you come first\" because self-care supports your life and growth."
+                                    },
+                                    {
+                                        "question": "Which habit belongs to the start of your day?",
+                                        "options": [
+                                            "Arrive early and get ready calmly",
+                                            "Keep a regular sleep time after work",
+                                            "Ask for help when the workload increases",
+                                            "Rest after work ends"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Arriving early and preparing calmly is listed under starting your day."
+                                    },
+                                    {
+                                        "question": "It is very busy and Tariq is tempted to skip his break to keep going. What should he do?",
+                                        "options": [
+                                            "Skip it and rest at home",
+                                            "Take his break later in the week",
+                                            "Drink coffee instead of taking a break",
+                                            "Take his break on time and ask for help if the workload increases"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "During the day the deck says to take your break on time and ask for help when work increases."
+                                    },
+                                    {
+                                        "question": "According to the deck, what does rest protect?",
+                                        "options": [
+                                            "Only your mood",
+                                            "Your health and focus",
+                                            "Your break allowance",
+                                            "Your uniform"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The slide states that rest protects your health and focus."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Energy and Safe Movement",
+                    "lessons": [
+                        {
+                            "title": "Drink Water Regularly and Eat Balanced Food",
+                            "minutes": 7,
+                            "body": "<h2>Why water and food matter at work</h2><p>Hotel work is physical. Colleagues walk long corridors, stand at desks, carry trays and work in hot kitchens, laundries and outdoor areas. Water helps your body work well, and good food gives you energy for your day. When either is missing, focus and patience drop long before the shift ends.</p><h2>Drink water regularly</h2><p>The deck calls water <strong>the best drink during work</strong> and your usual choice. The method is simple:</p><ol><li><strong>Keep water in a place near you.</strong> If it is at hand, you will drink it.</li><li><strong>Drink water several times during work</strong>, not only when you feel very thirsty.</li><li><strong>Drink more when working in a hot place</strong>, such as the kitchen, the laundry or outdoors.</li><li><strong>Take your break on time</strong>, so you have a moment to drink and recover.</li><li><strong>Tell your supervisor if you feel dizzy or very tired.</strong></li></ol><p>The deck is careful to add that the amount of water differs from person to person.</p><blockquote class=\"bk-quote\">Needs vary by heat, activity, health, and medical advice.</blockquote><aside class=\"bk-note\">If you have medical instructions about what or how much to drink, follow them. The general guidance in this course never replaces your doctor's advice.</aside><h2>Eat balanced food</h2><p>The deck gives four simple principles:</p><table class=\"bk-say\"><thead><tr><th>Principle</th><th>What it means</th></tr></thead><tbody><tr><td>Variety</td><td>Choose different kinds of food.</td></tr><tr><td>Balance</td><td>Eat protein with vegetables or fruit.</td></tr><tr><td>Moderation</td><td>Reduce sugar, salt and fatty food.</td></tr><tr><td>Safety</td><td>Store and reheat food safely.</td></tr></tbody></table><p>The practical advice is to <strong>prepare a meal or snack that suits your working hours</strong>. A colleague on an early shift needs something different from one on a night shift. Think ahead about when your break falls and what you will eat then.</p><aside class=\"bk-scene\"><strong>What happened:</strong> Bilal, a commis chef, spent long shifts in a hot kitchen, drank little and ate sweets on his break, then felt drained by evening service. <strong>What he did:</strong> he kept a water bottle at his station and drank several times each hour, and brought a simple meal of protein and vegetables, stored and reheated safely. <strong>Why it worked:</strong> he matched his water to the heat and chose simple food that gave him steady energy.</aside><aside class=\"bk-key\">Keep water near you, drink several times during work and more in the heat, and follow any medical advice. Choose simple, varied, balanced food, stored safely, that suits your working hours and gives you steady energy.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: water and food",
+                                "questions": [
+                                    {
+                                        "question": "Huda is moved to the laundry for a week, where it is very hot. What should she change?",
+                                        "options": [
+                                            "Nothing; water needs are the same everywhere",
+                                            "Drink only at the end of the shift",
+                                            "Keep water near her and drink more because she is working in a hot place",
+                                            "Replace water with sweet drinks for energy"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says to drink more when working in a hot place."
+                                    },
+                                    {
+                                        "question": "A colleague feels dizzy and very tired halfway through the shift. What is the right step?",
+                                        "options": [
+                                            "Tell the supervisor",
+                                            "Keep working quietly until the end",
+                                            "Drink a sweet drink and continue",
+                                            "Go home without telling anyone"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The slide says to tell your supervisor if you feel dizzy or very tired."
+                                    },
+                                    {
+                                        "question": "Which lunch best follows the four food principles?",
+                                        "options": [
+                                            "Fried snacks and a soft drink",
+                                            "Only sweets for quick energy",
+                                            "A large salty meal eaten quickly",
+                                            "Protein with vegetables or fruit, stored and reheated safely"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Balance means protein with vegetables or fruit, moderation limits sugar, salt and fat, and safety covers storing and reheating."
+                                    },
+                                    {
+                                        "question": "A colleague with a medical condition asks how much water she should drink. What is the best answer?",
+                                        "options": [
+                                            "Everyone should drink exactly the same amount",
+                                            "Follow your medical instructions; needs vary by heat, activity and health",
+                                            "Drink as much as possible",
+                                            "Water is not important during work"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck states that needs vary and medical instructions must be followed."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Move Safely and Take a Short Calm Reset",
+                            "minutes": 7,
+                            "body": "<h2>Why safe movement matters</h2><p>Safe movement keeps your body strong. In a hotel, colleagues push trolleys, lift linen, move furniture, carry luggage and stand for hours. Doing this carelessly, day after day, can hurt you. The deck's rule is short and firm: <strong>your safety matters more; do not force your body to move.</strong></p><h2>What to do</h2><ul><li><strong>Change your body position from time to time.</strong> Standing or bending in one position for too long tires the body.</li><li><strong>Use the trolley or available equipment</strong> instead of carrying loads by hand.</li><li><strong>Ask for help when lifting something heavy.</strong></li><li><strong>Keep the walkway clear</strong>, so you and others do not trip.</li><li><strong>Move calmly without forcing your body.</strong></li></ul><h2>When to stop and ask for help</h2><table class=\"bk-say\"><thead><tr><th>Do</th><th>Stop and ask for help if you have</th></tr></thead><tbody><tr><td>Change your position from time to time</td><td>Severe or increasing pain</td></tr><tr><td>Use the trolley or equipment</td><td>Dizziness or difficulty breathing</td></tr><tr><td>Ask for help with heavy items</td><td>Sudden weakness in the body</td></tr><tr><td>Keep the walkway clear</td><td>An unsafe movement</td></tr><tr><td>Move calmly</td><td>A task you cannot do safely</td></tr></tbody></table><blockquote class=\"bk-quote\">Your safety matters more — do not force your body to move.</blockquote><h2>A short calm reset</h2><p>Pressure builds in busy moments: a queue at the desk, a full restaurant, a complaint on the phone. The deck offers a four-step reset you can do in under a minute.</p><ol><li><strong>Stand comfortably.</strong> Place your feet in a comfortable, safe position.</li><li><strong>Relax your body.</strong> Relax your shoulders and hands.</li><li><strong>Breathe calmly.</strong> Take a slow breath in, then let it out slowly.</li><li><strong>Start the next step.</strong> Choose what you need to do now, and begin.</li></ol><p>The last step matters as much as the others. The reset is not a way to stop working; it is a way to return to work calmly and choose one clear next action.</p><aside class=\"bk-note\">You can use the reset in the back office or at the side of the pass without anyone noticing. Pause briefly, calm down, then continue your work.</aside><aside class=\"bk-scene\"><strong>What happened:</strong> During a busy check-in wave, Samer at the front desk felt his shoulders tighten and his thoughts start to race. <strong>What he did:</strong> between two guests he steadied his feet, relaxed his shoulders, took one slow breath and chose his next step: finish the current key card, then call the next guest. <strong>Why it worked:</strong> a short pause turned a rush of tasks into one clear action.</aside><aside class=\"bk-key\">Use equipment, ask for help with heavy loads and never force your body; stop when you feel pain, dizziness or weakness. Under pressure, stand, relax, breathe, then start the next step.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: safe movement and calm reset",
+                                "questions": [
+                                    {
+                                        "question": "A houseman must move a heavy table to a meeting room alone. What should he do?",
+                                        "options": [
+                                            "Lift it quickly to get it done",
+                                            "Drag it across the corridor",
+                                            "Ask for help and use a trolley or available equipment",
+                                            "Leave it for the next shift"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says to use the trolley or equipment and ask for help when lifting something heavy."
+                                    },
+                                    {
+                                        "question": "While pushing a linen cart, Rania feels sudden weakness and increasing pain. What is correct?",
+                                        "options": [
+                                            "Stop and ask for help",
+                                            "Keep going and rest later",
+                                            "Push faster to finish the floor",
+                                            "Change hands and continue"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Sudden weakness and severe or increasing pain are signs to stop and ask for help."
+                                    },
+                                    {
+                                        "question": "What is the final step of the calm reset?",
+                                        "options": [
+                                            "Leave your station for ten minutes",
+                                            "Hold your breath",
+                                            "Tell the guest you are stressed",
+                                            "Choose what you need to do now and begin"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The fourth step is to start the next step: choose what to do now and begin."
+                                    },
+                                    {
+                                        "question": "Which habit helps prevent trips for you and your colleagues?",
+                                        "options": [
+                                            "Leaving the trolley in the middle of the corridor",
+                                            "Keeping the walkway clear",
+                                            "Carrying loads high so you can see",
+                                            "Moving fast between rooms"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Keeping the walkway clear is on the deck's do list."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Asking for Help",
+                    "lessons": [
+                        {
+                            "title": "When to Ask for Help and What to Do",
+                            "minutes": 6,
+                            "body": "<h2>Why asking for help matters</h2><p>Some colleagues keep going when their body is telling them to stop, because they do not want to let the team down. The deck is clear that this is the wrong choice: <strong>asking for help is a correct and responsible action.</strong> A colleague who stops an unsafe task protects themselves, their team and the guests.</p><blockquote class=\"bk-quote\">Asking for help is a correct and responsible action.</blockquote><h2>Signs that you need help</h2><p>Ask for help when you have:</p><ul><li>severe sleepiness while working or driving;</li><li>difficulty concentrating or repeated mistakes;</li><li>ongoing tiredness after rest;</li><li>severe stress affecting your work;</li><li>dizziness, confusion or an unusual symptom.</li></ul><p>Notice that driving is included. Sleepiness does not only matter inside the hotel; it matters on the way home after a long shift.</p><h2>What to do, step by step</h2><ol><li><strong>Stop the unsafe task.</strong> Do not finish \"just this one\" if you are not safe.</li><li><strong>Tell your supervisor about your condition.</strong> Be honest and clear.</li><li><strong>Take the approved break.</strong></li><li><strong>Seek healthcare when needed.</strong></li><li><strong>Follow emergency instructions when there is danger.</strong></li></ol><table class=\"bk-say\"><thead><tr><th>Say</th><th>Avoid</th></tr></thead><tbody><tr><td>\"I feel dizzy and I need to stop for a moment.\"</td><td>Hiding the symptom and carrying on.</td></tr><tr><td>\"I keep making mistakes today; I am not concentrating well.\"</td><td>Saying \"I am fine\" when you are not.</td></tr></tbody></table><aside class=\"bk-scene\"><strong>What happened:</strong> After a double shift, Majed, a night auditor, noticed he was making repeated errors and could barely keep his eyes open, and he was due to drive home. <strong>What he did:</strong> he stopped the task, told his supervisor about his condition and took the approved break instead of driving while severely sleepy. <strong>Why it worked:</strong> he treated asking for help as the responsible action it is.</aside><h2>You deserve care</h2><p>The deck closes with five words that sum up the whole course: rest, drink water, eat well, move, ask for help. Your health is the foundation of your life and progress. Take care of yourself today, and build a stronger tomorrow.</p><aside class=\"bk-note\">Learn where your department's emergency instructions are posted before you need them, so you can follow them quickly when there is danger.</aside><aside class=\"bk-key\">Severe sleepiness, repeated mistakes, lasting tiredness, severe stress, dizziness or confusion are signs to act. Stop the unsafe task, tell your supervisor, take the approved break, seek healthcare when needed and follow emergency instructions.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: asking for help",
+                                "questions": [
+                                    {
+                                        "question": "Halfway through a shift, Dana feels confused and has an unusual symptom she has never had before. What should she do first?",
+                                        "options": [
+                                            "Keep working and see if it passes",
+                                            "Stop the unsafe task and tell her supervisor about her condition",
+                                            "Wait until her break to mention it",
+                                            "Search online and continue"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says to stop the unsafe task and tell your supervisor about your condition."
+                                    },
+                                    {
+                                        "question": "Which of these is listed as a sign to ask for help?",
+                                        "options": [
+                                            "Feeling hungry before lunch",
+                                            "Wanting a different station",
+                                            "Severe sleepiness while working or driving",
+                                            "Being asked a question by a guest"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Severe sleepiness while working or driving is on the list of warning signs."
+                                    },
+                                    {
+                                        "question": "A colleague feels that asking for help will make him look weak. What does the course say?",
+                                        "options": [
+                                            "Asking for help is a correct and responsible action",
+                                            "He should only ask if a manager notices",
+                                            "It is better to finish the task first",
+                                            "Help is only for new staff"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The slide states that asking for help is a correct and responsible action."
+                                    },
+                                    {
+                                        "question": "There is a danger in the work area. What should you do?",
+                                        "options": [
+                                            "Finish your current task first",
+                                            "Wait for a colleague to decide",
+                                            "Take a longer break",
+                                            "Follow the emergency instructions"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says to follow emergency instructions when there is danger."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "العناية بالنفس في بيئة العمل",
+            "subtitle": "اعتنِ بنفسك لأنك تستحق: صحتك اليوم تدعم حياتك ومستقبلك",
+            "short_description": "عادات يومية بسيطة لموظفي الفنادق: الراحة، والماء، والطعام المتوازن، والحركة الآمنة، ولحظة هدوء قصيرة، ومتى تطلب المساعدة.",
+            "description": "<p>تعتمد كل مناوبة في الفندق على موظفين مرتاحين ومركّزين وبصحة جيدة. تنطلق هذه الدورة، المبنية على المادة التدريبية لفنادق ومنتجعات ضيافة، من فكرة واحدة: ابدأ بنفسك أولًا، لأن العناية بنفسك تساعدك في حياتك وتدعم تقدمك.</p><p>ستبني عادات بسيطة لما قبل يوم العمل وخلاله وبعده، وتتعلم كيف تشرب الماء وتأكل طعامًا يمنحك طاقة ثابتة، وكيف تتحرك بأمان عند الرفع والدفع، وكيف تستخدم لحظة هدوء قصيرة عند زيادة الضغط.</p><p>ويشرح الفصل الأخير العلامات التي تعني أن عليك التوقف وطلب المساعدة، والخطوات المسؤولة التي تتخذها.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل الموظفين في جميع الأقسام.",
+            "outcomes": [
+                "توضيح كيف تحمي الراحة والماء والطعام والحركة الآمنة وطلب المساعدة صحتك وتركيزك",
+                "اتباع عادات بسيطة قبل يوم العمل وخلاله وبعده",
+                "تخطيط شرب الماء وطعام متوازن محفوظ بأمان يناسب وقت عملك",
+                "التحرك بأمان في العمل واستخدام خطوات الهدوء الأربع عند الضغط",
+                "التعرّف على العلامات التي تستدعي المساعدة واتخاذ الخطوات الصحيحة"
+            ],
+            "faqs": [
+                {
+                    "question": "كم أشرب من الماء خلال المناوبة؟",
+                    "answer": "تختلف كمية الماء من شخص إلى آخر بحسب الحرارة والنشاط والصحة والتعليمات الطبية. اشرب عدة مرات خلال العمل، وأكثر في الأماكن الحارة، والتزم بأي تعليمات طبية لديك."
+                },
+                {
+                    "question": "ماذا أفعل إذا شعرت أن مهمة ما غير آمنة لجسمي؟",
+                    "answer": "توقف واطلب المساعدة. استخدم العربة أو المعدات المتاحة، واطلب المساعدة عند رفع الأشياء الثقيلة، ولا تجبر جسمك على الحركة."
+                },
+                {
+                    "question": "هل طلب المساعدة علامة ضعف؟",
+                    "answer": "لا. تنص الدورة على أن طلب المساعدة تصرف صحيح ومسؤول، خاصة عند النعاس الشديد أو الدوخة أو الارتباك أو التوتر الشديد."
+                }
+            ],
+            "meta_title": "العناية بالنفس في بيئة العمل لموظفي الفنادق",
+            "meta_description": "ابنِ عادات يومية للعناية بنفسك في العمل: الراحة، والماء، والطعام المتوازن، والحركة الآمنة، ولحظة الهدوء، ومتى تطلب المساعدة.",
+            "focus_keyword": "العناية بالنفس لموظفي الفنادق",
+            "chapters": [
+                {
+                    "title": "ابدأ بنفسك أولًا",
+                    "lessons": [
+                        {
+                            "title": "لماذا تهم العناية بنفسك، وعادات بسيطة ليوم أفضل",
+                            "minutes": 7,
+                            "body": "<h2>ابدأ بنفسك أولًا</h2><p>نتعلم في الضيافة أن نضع النزيل أولًا، وهذا صحيح، لكنه لا ينجح إلا إذا كان من يخدم النزيل بخير؛ فالموظف المتعب أو العطشان أو الجائع لا يستطيع أن يمنح انتباهه الكامل طويلًا. ولهذا تبدأ المادة برسالة واضحة: <strong>ابدأ بنفسك أولًا</strong>. العناية بنفسك ليست أنانية، بل تساعدك في حياتك وتدعم تقدمك.</p><blockquote class=\"bk-quote\">العناية بنفسك تساعدك في حياتك وتدعم تقدمك</blockquote><h2>خمسة أسس</h2><p>تذكر المادة خمسة أمور تجعلك أقوى في حياتك ومستقبلك:</p><ul><li><strong>الراحة</strong> تحافظ على صحتك وتركيزك.</li><li><strong>شرب الماء</strong> يساعد جسمك على العمل جيدًا.</li><li><strong>الطعام الجيد</strong> يمنحك طاقة ليومك.</li><li><strong>الحركة الآمنة</strong> تحافظ على قوة جسمك.</li><li><strong>طلب المساعدة</strong> يحميك وقت الضغط.</li></ul><p>سنعود إلى كل واحد منها في الدورة. ولاحظ الآن أنها كلها أمور عادية؛ فالعناية بالنفس ليست برنامجًا خاصًا، بل أشياء صغيرة تفعلها كل يوم.</p><h2>عادات بسيطة ليوم أفضل</h2><p>تقسم المادة اليوم إلى ثلاث مراحل: ابدأ، واستمر، واستعد طاقتك.</p><h3>١. ابدأ يومك</h3><ul><li>نم جيدًا وخذ وقتًا كافيًا للراحة.</li><li>تناول وجبة مناسبة واشرب الماء.</li><li>احضر مبكرًا واستعد بهدوء.</li></ul><h3>٢. خلال يومك</h3><ul><li>خذ فترة الراحة في وقتها.</li><li>غيّر وضعية جسمك وتحرك بأمان.</li><li>اطلب المساعدة عند زيادة العمل.</li></ul><h3>٣. استعد طاقتك</h3><ul><li>استرحِ بعد انتهاء العمل.</li><li>تناول الطعام واشرب الماء عند الحاجة.</li><li>حافظ على وقت نوم منتظم.</li></ul><aside class=\"bk-note\">الحضور المبكر ببضع دقائق عادة من عادات العناية بالنفس وليس قاعدة انضباط فقط؛ فهو يتيح لك أن تبدأ بهدوء بدل أن تنتقل من الطريق مباشرة إلى مناوبة مزدحمة.</aside><aside class=\"bk-scene\"><strong>ما حدث:</strong> كانت ليلى، عاملة الغرف، تترك الإفطار واستراحة الضحى لتنهي الغرف أسرع، فتصل إلى الظهيرة منهكة وتقع في أخطاء صغيرة. <strong>ما فعلته:</strong> بدأت تتناول وجبة مناسبة قبل المناوبة، ووضعت الماء على عربتها، وأخذت استراحتها في وقتها. <strong>لماذا نجح:</strong> لأنها حمت بداية يومها ووسطه، فبقيت لديها طاقة لآخره.</aside><h2>عادات صغيرة وفرق كبير</h2><p>لا تستغرق أي من هذه العادات وقتًا طويلًا، وقوتها في تكرارها. وتلخص المادة ذلك بقولها: العادات الصغيرة اليوم تصنع فرقًا في مستقبلك.</p><aside class=\"bk-key\">ابدأ بنفسك أولًا: الراحة والماء والطعام الجيد والحركة الآمنة وطلب المساعدة تجعلك أقوى. واحمِ يومك بعادات بسيطة قبل العمل وخلاله وبعده.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: ابدأ بنفسك أولًا",
+                                "questions": [
+                                    {
+                                        "question": "تقول زميلة إن العناية بنفسها أنانية لأن النزيل يأتي أولًا. ماذا تعلّم الدورة؟",
+                                        "options": [
+                                            "معها حق؛ النزيل دائمًا قبل صحتها",
+                                            "العناية بالنفس لأيام الإجازة فقط",
+                                            "العناية بنفسك تساعدك في حياتك وتقدمك وتمكّنك من خدمة النزلاء جيدًا",
+                                            "العناية بالنفس تخص المديرين فقط"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تبدأ المادة بـ«ابدأ بنفسك أولًا» لأن العناية بالنفس تدعم حياتك وتقدمك."
+                                    },
+                                    {
+                                        "question": "أي عادة تنتمي إلى بداية يومك؟",
+                                        "options": [
+                                            "احضر مبكرًا واستعد بهدوء",
+                                            "حافظ على وقت نوم منتظم بعد العمل",
+                                            "اطلب المساعدة عند زيادة العمل",
+                                            "استرحِ بعد انتهاء العمل"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "الحضور المبكر والاستعداد بهدوء مذكوران تحت «ابدأ يومك»."
+                                    },
+                                    {
+                                        "question": "العمل مزدحم جدًا ويفكر طارق في ترك استراحته ليستمر. ماذا يفعل؟",
+                                        "options": [
+                                            "يتركها ويرتاح في البيت",
+                                            "يأخذها لاحقًا في الأسبوع",
+                                            "يشرب القهوة بدل الاستراحة",
+                                            "يأخذ استراحته في وقتها ويطلب المساعدة إذا زاد العمل"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة خلال اليوم: خذ فترة الراحة في وقتها واطلب المساعدة عند زيادة العمل."
+                                    },
+                                    {
+                                        "question": "بحسب المادة، ماذا تحمي الراحة؟",
+                                        "options": [
+                                            "مزاجك فقط",
+                                            "صحتك وتركيزك",
+                                            "رصيد استراحاتك",
+                                            "زيّك الرسمي"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تنص الشريحة على أن الراحة تحافظ على صحتك وتركيزك."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "الطاقة والحركة الآمنة",
+                    "lessons": [
+                        {
+                            "title": "اشرب الماء بانتظام وتناول طعامًا متوازنًا",
+                            "minutes": 7,
+                            "body": "<h2>لماذا يهم الماء والطعام في العمل؟</h2><p>العمل الفندقي عمل بدني؛ فالموظفون يمشون في ممرات طويلة، ويقفون عند المكاتب، ويحملون الصواني، ويعملون في مطابخ ومغاسل وأماكن خارجية حارة. شرب الماء يساعد جسمك على العمل جيدًا، والطعام الجيد يمنحك طاقة ليومك، وعندما يغيب أحدهما يقل التركيز والصبر قبل نهاية المناوبة بكثير.</p><h2>اشرب الماء بانتظام</h2><p>تصف المادة الماء بأنه <strong>أفضل شراب خلال العمل</strong>، والطريقة بسيطة:</p><ol><li><strong>ضع الماء في مكان قريب منك</strong>؛ فإذا كان في متناولك شربته.</li><li><strong>اشرب الماء عدة مرات خلال العمل</strong>، لا عند العطش الشديد فقط.</li><li><strong>اشرب أكثر عند العمل في مكان حار</strong> كالمطبخ أو المغسلة أو الأماكن الخارجية.</li><li><strong>خذ فترة الراحة في وقتها</strong> لتجد لحظة للشرب واستعادة نشاطك.</li><li><strong>أبلغ المشرف إذا شعرت بدوار أو تعب شديد.</strong></li></ol><p>وتحرص المادة على التنبيه بأن كمية الماء تختلف من شخص إلى آخر.</p><blockquote class=\"bk-quote\">إذا لديك تعليمات طبية، التزم بها</blockquote><aside class=\"bk-note\">تختلف الاحتياجات بحسب الحرارة والنشاط والصحة والتعليمات الطبية، والإرشادات العامة في هذه الدورة لا تحل محل نصيحة طبيبك.</aside><h2>تناول طعامًا متوازنًا</h2><p>تقدم المادة أربعة مبادئ بسيطة:</p><table class=\"bk-say\"><thead><tr><th>المبدأ</th><th>معناه</th></tr></thead><tbody><tr><td>نوّع طعامك</td><td>اختر أنواعًا مختلفة من الطعام.</td></tr><tr><td>وازن وجبتك</td><td>تناول البروتين مع الخضار أو الفاكهة.</td></tr><tr><td>لا تكثر</td><td>قلل السكر والملح والطعام الدهني.</td></tr><tr><td>احفظ الطعام</td><td>احفظ الطعام وسخنه بطريقة آمنة.</td></tr></tbody></table><p>والنصيحة العملية: <strong>جهز وجبة أو وجبة خفيفة تناسب وقت عملك</strong>؛ فما يحتاجه موظف المناوبة الصباحية يختلف عما يحتاجه موظف المناوبة الليلية. فكّر مسبقًا في موعد استراحتك وما ستأكله فيها.</p><aside class=\"bk-scene\"><strong>ما حدث:</strong> كان بلال، مساعد الطاهي، يقضي مناوبات طويلة في مطبخ حار، يشرب قليلًا ويأكل الحلوى في استراحته، ثم يشعر بالإنهاك في خدمة العشاء. <strong>ما فعله:</strong> وضع قارورة ماء في محطته وشرب منها مرات عدة، وأحضر وجبة بسيطة من البروتين والخضار محفوظة ومسخنة بطريقة آمنة. <strong>لماذا نجح:</strong> لأنه ناسب شربه للماء مع حرارة المكان، واختار طعامًا بسيطًا يمنحه طاقة ثابتة.</aside><aside class=\"bk-key\">ضع الماء قريبًا منك، واشرب عدة مرات خلال العمل وأكثر في الحر، والتزم بأي تعليمات طبية. واختر طعامًا بسيطًا متنوعًا متوازنًا محفوظًا بأمان يناسب وقت عملك ويمنحك طاقة ثابتة.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الماء والطعام",
+                                "questions": [
+                                    {
+                                        "question": "نُقلت هدى إلى المغسلة لمدة أسبوع والمكان حار جدًا. ما الذي تغيّره؟",
+                                        "options": [
+                                            "لا شيء؛ احتياج الماء واحد في كل مكان",
+                                            "تشرب في نهاية المناوبة فقط",
+                                            "تضع الماء قريبًا منها وتشرب أكثر لأنها تعمل في مكان حار",
+                                            "تستبدل الماء بمشروبات محلاة للطاقة"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: اشرب أكثر عند العمل في مكان حار."
+                                    },
+                                    {
+                                        "question": "يشعر زميل بدوار وتعب شديد في منتصف المناوبة. ما الخطوة الصحيحة؟",
+                                        "options": [
+                                            "أن يبلغ المشرف",
+                                            "أن يستمر بصمت حتى النهاية",
+                                            "أن يشرب مشروبًا محلى ويكمل",
+                                            "أن يذهب إلى البيت دون إخبار أحد"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تقول الشريحة: أبلغ المشرف إذا شعرت بدوار أو تعب شديد."
+                                    },
+                                    {
+                                        "question": "أي وجبة غداء تتبع المبادئ الأربعة؟",
+                                        "options": [
+                                            "وجبات مقلية ومشروب غازي",
+                                            "حلويات فقط لطاقة سريعة",
+                                            "وجبة مالحة كبيرة تؤكل بسرعة",
+                                            "بروتين مع خضار أو فاكهة، محفوظ ومسخن بطريقة آمنة"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "التوازن بروتين مع خضار أو فاكهة، وعدم الإكثار يقلل السكر والملح والدهون، والسلامة تشمل الحفظ والتسخين."
+                                    },
+                                    {
+                                        "question": "تسأل زميلة لديها حالة طبية كم تشرب من الماء. ما أفضل إجابة؟",
+                                        "options": [
+                                            "الجميع يشرب الكمية نفسها بالضبط",
+                                            "التزمي بتعليماتك الطبية؛ فالاحتياج يختلف بحسب الحرارة والنشاط والصحة",
+                                            "اشربي أكبر قدر ممكن",
+                                            "الماء غير مهم خلال العمل"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تنص المادة على أن الاحتياجات تختلف وأن التعليمات الطبية يجب الالتزام بها."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "تحرّك بطريقة آمنة، واهدأ وخذ نفسًا",
+                            "minutes": 7,
+                            "body": "<h2>لماذا تهم الحركة الآمنة؟</h2><p>الحركة الآمنة تحافظ على قوة جسمك. ففي الفندق يدفع الموظفون العربات، ويرفعون البياضات، وينقلون الأثاث، ويحملون الأمتعة، ويقفون ساعات طويلة، وأداء ذلك دون انتباه يومًا بعد يوم قد يؤذيك. وقاعدة المادة قصيرة وحازمة: <strong>سلامتك أهم — لا تجبر جسمك على الحركة.</strong></p><h2>ما الذي تفعله؟</h2><ul><li><strong>غيّر وضعية جسمك من وقت إلى آخر</strong>؛ فالوقوف أو الانحناء بالوضعية نفسها طويلًا يتعب الجسم.</li><li><strong>استخدم العربة أو المعدات المتاحة</strong> بدل حمل الأشياء باليد.</li><li><strong>اطلب المساعدة عند رفع شيء ثقيل.</strong></li><li><strong>حافظ على طريق الحركة خاليًا</strong> حتى لا تتعثر أنت أو غيرك.</li><li><strong>تحرك بهدوء ودون إجبار جسمك.</strong></li></ul><h2>متى تتوقف وتطلب المساعدة؟</h2><table class=\"bk-say\"><thead><tr><th>افعل</th><th>توقف واطلب المساعدة عند</th></tr></thead><tbody><tr><td>غيّر وضعية جسمك من وقت إلى آخر</td><td>ألم شديد أو متزايد</td></tr><tr><td>استخدم العربة أو المعدات المتاحة</td><td>دوخة أو صعوبة في التنفس</td></tr><tr><td>اطلب المساعدة عند رفع شيء ثقيل</td><td>ضعف مفاجئ في الجسم</td></tr><tr><td>حافظ على طريق الحركة خاليًا</td><td>حركة غير آمنة</td></tr><tr><td>تحرك بهدوء</td><td>مهمة لا تستطيع أداءها بأمان</td></tr></tbody></table><blockquote class=\"bk-quote\">سلامتك أهم — لا تجبر جسمك على الحركة</blockquote><h2>اهدأ وخذ نفسًا</h2><p>يتراكم الضغط في اللحظات المزدحمة: طابور عند المكتب، أو مطعم ممتلئ، أو شكوى على الهاتف. وتقدم المادة أربع خطوات للهدوء يمكن أداؤها في أقل من دقيقة:</p><ol><li><strong>قف بطريقة مريحة:</strong> ثبّت قدميك في وضع مريح وآمن.</li><li><strong>أرخِ جسمك:</strong> أرخِ كتفيك ويديك.</li><li><strong>تنفّس بهدوء:</strong> خذ نفسًا ببطء ثم أخرجه ببطء.</li><li><strong>ابدأ بالخطوة التالية:</strong> اختر ما يجب أن تفعله الآن وابدأ.</li></ol><p>والخطوة الأخيرة لا تقل أهمية عن غيرها؛ فالغرض ليس التوقف عن العمل، بل العودة إليه بهدوء واختيار إجراء واحد واضح.</p><aside class=\"bk-note\">يمكنك أداء هذه الخطوات في المكتب الخلفي أو بجانب منطقة التقديم دون أن يلاحظ أحد: توقف قليلًا، اهدأ، ثم أكمل عملك.</aside><aside class=\"bk-scene\"><strong>ما حدث:</strong> خلال موجة تسجيل وصول مزدحمة، شعر سامر في الاستقبال بتوتر كتفيه وتسارع أفكاره. <strong>ما فعله:</strong> بين نزيلين ثبّت قدميه، وأرخى كتفيه، وأخذ نفسًا بطيئًا، ثم اختار خطوته التالية: إنهاء بطاقة الغرفة الحالية ثم استدعاء النزيل التالي. <strong>لماذا نجح:</strong> لأن وقفة قصيرة حوّلت زحمة المهام إلى إجراء واحد واضح.</aside><aside class=\"bk-key\">استخدم المعدات، واطلب المساعدة مع الأحمال الثقيلة، ولا تجبر جسمك أبدًا، وتوقف عند الألم أو الدوخة أو الضعف. وعند الضغط: قف، وأرخِ جسمك، وتنفس، ثم ابدأ بالخطوة التالية.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الحركة الآمنة ولحظة الهدوء",
+                                "questions": [
+                                    {
+                                        "question": "يجب على عامل الخدمات نقل طاولة ثقيلة إلى قاعة اجتماعات وحده. ماذا يفعل؟",
+                                        "options": [
+                                            "يرفعها بسرعة لينهي المهمة",
+                                            "يجرّها على أرض الممر",
+                                            "يطلب المساعدة ويستخدم العربة أو المعدات المتاحة",
+                                            "يتركها للمناوبة التالية"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: استخدم العربة أو المعدات واطلب المساعدة عند رفع شيء ثقيل."
+                                    },
+                                    {
+                                        "question": "أثناء دفع عربة البياضات شعرت رانيا بضعف مفاجئ وألم متزايد. ما التصرف الصحيح؟",
+                                        "options": [
+                                            "أن تتوقف وتطلب المساعدة",
+                                            "أن تستمر وترتاح لاحقًا",
+                                            "أن تدفع أسرع لتنهي الطابق",
+                                            "أن تبدّل يديها وتكمل"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "الضعف المفاجئ والألم الشديد أو المتزايد علامتان للتوقف وطلب المساعدة."
+                                    },
+                                    {
+                                        "question": "ما الخطوة الأخيرة في لحظة الهدوء؟",
+                                        "options": [
+                                            "أن تترك مكانك عشر دقائق",
+                                            "أن تحبس أنفاسك",
+                                            "أن تخبر النزيل أنك متوتر",
+                                            "أن تختار ما يجب أن تفعله الآن وتبدأ"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "الخطوة الرابعة هي: ابدأ بالخطوة التالية، اختر ما يجب فعله الآن وابدأ."
+                                    },
+                                    {
+                                        "question": "أي عادة تساعد على منع التعثر لك ولزملائك؟",
+                                        "options": [
+                                            "ترك العربة في منتصف الممر",
+                                            "الحفاظ على طريق الحركة خاليًا",
+                                            "حمل الأشياء عاليًا لترى أمامك",
+                                            "التنقل بسرعة بين الغرف"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "الحفاظ على طريق الحركة خاليًا من قائمة «افعل» في المادة."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "طلب المساعدة",
+                    "lessons": [
+                        {
+                            "title": "متى تطلب المساعدة وماذا تفعل؟",
+                            "minutes": 6,
+                            "body": "<h2>لماذا يهم طلب المساعدة؟</h2><p>يستمر بعض الزملاء في العمل رغم أن أجسامهم تطلب منهم التوقف، لأنهم لا يريدون أن يخذلوا الفريق. والمادة واضحة في أن هذا اختيار خاطئ: <strong>طلب المساعدة تصرف صحيح ومسؤول.</strong> فالموظف الذي يوقف مهمة غير آمنة يحمي نفسه وفريقه والنزلاء.</p><blockquote class=\"bk-quote\">طلب المساعدة تصرف صحيح ومسؤول</blockquote><h2>علامات تدل على حاجتك إلى المساعدة</h2><p>اطلب المساعدة عند:</p><ul><li>النعاس الشديد أثناء العمل أو القيادة؛</li><li>صعوبة التركيز أو تكرار الأخطاء؛</li><li>تعب مستمر بعد الراحة؛</li><li>توتر شديد يؤثر في عملك؛</li><li>دوخة أو ارتباك أو عرض غير معتاد.</li></ul><p>لاحظ أن القيادة مذكورة؛ فالنعاس لا يهم داخل الفندق فقط، بل يهم أيضًا في طريق العودة إلى البيت بعد مناوبة طويلة.</p><h2>ماذا تفعل؟ خطوة بخطوة</h2><ol><li><strong>توقف عن المهمة غير الآمنة.</strong> لا تكمل «هذه المهمة فقط» إذا لم تكن آمنًا.</li><li><strong>أخبر المشرف بحالتك</strong> بصدق ووضوح.</li><li><strong>خذ فترة الراحة المعتمدة.</strong></li><li><strong>اطلب الرعاية الصحية عند الحاجة.</strong></li><li><strong>اتبع تعليمات الطوارئ عند الخطر.</strong></li></ol><table class=\"bk-say\"><thead><tr><th>قل</th><th>تجنب</th></tr></thead><tbody><tr><td>«أشعر بدوخة وأحتاج إلى التوقف قليلًا.»</td><td>إخفاء العرض والاستمرار في العمل.</td></tr><tr><td>«أكرر الأخطاء اليوم ولا أستطيع التركيز جيدًا.»</td><td>أن تقول «أنا بخير» وأنت لست كذلك.</td></tr></tbody></table><aside class=\"bk-scene\"><strong>ما حدث:</strong> بعد مناوبة مزدوجة لاحظ ماجد، مدقق الحسابات الليلي، أنه يكرر الأخطاء ولا يكاد يفتح عينيه، وكان سيقود سيارته إلى البيت. <strong>ما فعله:</strong> أوقف المهمة، وأخبر المشرف بحالته، وأخذ فترة الراحة المعتمدة بدل القيادة وهو في نعاس شديد. <strong>لماذا نجح:</strong> لأنه تعامل مع طلب المساعدة على أنه التصرف المسؤول الصحيح.</aside><h2>أنت تستحق العناية</h2><p>تختم المادة بخمس كلمات تلخص الدورة كلها: استرح • اشرب الماء • كل جيدًا • تحرك • اطلب المساعدة. صحتك أساس حياتك وتقدمك؛ اعتنِ بنفسك اليوم لتكون أقوى غدًا.</p><aside class=\"bk-note\">اعرف مكان تعليمات الطوارئ في قسمك قبل أن تحتاج إليها، لتتبعها بسرعة عند الخطر.</aside><aside class=\"bk-key\">النعاس الشديد، وتكرار الأخطاء، والتعب المستمر، والتوتر الشديد، والدوخة أو الارتباك، كلها علامات تستدعي التصرف: أوقف المهمة غير الآمنة، وأخبر المشرف، وخذ الراحة المعتمدة، واطلب الرعاية الصحية عند الحاجة، واتبع تعليمات الطوارئ.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: طلب المساعدة",
+                                "questions": [
+                                    {
+                                        "question": "في منتصف المناوبة شعرت دانة بارتباك وبعرض غير معتاد لم تشعر به من قبل. ماذا تفعل أولًا؟",
+                                        "options": [
+                                            "تستمر في العمل لترى إن كان سيزول",
+                                            "توقف المهمة غير الآمنة وتخبر المشرف بحالتها",
+                                            "تنتظر حتى الاستراحة لتذكر الأمر",
+                                            "تبحث على الإنترنت وتكمل"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: توقف عن المهمة غير الآمنة وأخبر المشرف بحالتك."
+                                    },
+                                    {
+                                        "question": "أيٌّ مما يلي من علامات طلب المساعدة؟",
+                                        "options": [
+                                            "الشعور بالجوع قبل الغداء",
+                                            "الرغبة في محطة عمل مختلفة",
+                                            "النعاس الشديد أثناء العمل أو القيادة",
+                                            "سؤال من أحد النزلاء"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "النعاس الشديد أثناء العمل أو القيادة من العلامات المذكورة."
+                                    },
+                                    {
+                                        "question": "يشعر زميل أن طلب المساعدة سيجعله يبدو ضعيفًا. ماذا تقول الدورة؟",
+                                        "options": [
+                                            "طلب المساعدة تصرف صحيح ومسؤول",
+                                            "لا يطلبها إلا إذا لاحظ المدير",
+                                            "الأفضل أن ينهي المهمة أولًا",
+                                            "المساعدة للموظفين الجدد فقط"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تنص الشريحة على أن طلب المساعدة تصرف صحيح ومسؤول."
+                                    },
+                                    {
+                                        "question": "هناك خطر في منطقة العمل. ماذا تفعل؟",
+                                        "options": [
+                                            "تنهي مهمتك الحالية أولًا",
+                                            "تنتظر أن يقرر زميل",
+                                            "تأخذ استراحة أطول",
+                                            "تتبع تعليمات الطوارئ"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: اتبع تعليمات الطوارئ عند الخطر."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

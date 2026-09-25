@@ -46,10 +46,8 @@
 </section>
 
 <?php $this->load->view('academy/_close', array(
-    'close_title' => $locale === 'ar' ? 'لم تجد ما تبحث عنه؟' : 'Not finding it?',
-    'close_text'  => $locale === 'ar'
-        ? 'تصفّح الدورات حسب القسم، أو أخبرنا بما يحتاج فريقك التدرّب عليه.'
-        : 'Browse the catalogue by department, or tell us what your team needs to be trained on.',
+    'close_title' => ha_pt('Not finding it?'),
+    'close_text'  => ha_pt('Browse the catalogue by department, or tell us what your team needs to be trained on.'),
     'close_primary'   => array('label' => $t['courses'], 'url' => base_url($locale . '/courses')),
     'close_secondary' => array('label' => $t['contact'], 'url' => base_url($locale . '/contact')),
 )); ?>

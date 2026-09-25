@@ -12,11 +12,9 @@
     <div class="ha-shell">
         <?php if (!$sops): ?>
             <div class="ha-empty">
-                <p><?= $locale === 'ar'
-                    ? 'لا توجد إجراءات متاحة للاطلاع العام حالياً. إجراءات كل منشأة خاصة بها ولا تظهر هنا.'
-                    : 'No procedures are published for public reading at the moment. Each organization\'s procedures are private to that organization and are not listed here.' ?></p>
+                <p><?= ha_pe('No procedures are published for public reading at the moment. Each organization\'s procedures are private to that organization and are not listed here.') ?></p>
                 <p><a class="ha-btn ha-btn--ghost" href="<?= base_url($locale . '/hospitality-topics/' . rawurlencode($sop_topic_slug)) ?>">
-                    <?= $locale === 'ar' ? 'اقرأ عن بنية الإجراءات' : 'Read how procedures are structured' ?>
+                    <?= ha_pe('Read how procedures are structured') ?>
                 </a></p>
             </div>
         <?php else: ?>
@@ -39,10 +37,8 @@
 </section>
 
 <?php $this->load->view('academy/_close', array(
-    'close_title' => $locale === 'ar' ? 'إجراءات تشغيل يلتزم بها فريقك' : 'Standard operating procedures your team will follow',
-    'close_text'  => $locale === 'ar'
-        ? 'كل إجراء مكتوب كما يُنفَّذ على الشِفت، بالعربية والإنجليزية، مع قائمة تحقق يعتمدها المشرف.'
-        : 'Every procedure is written as it is carried out on shift, in Arabic and English, with a checklist the supervisor can sign off.',
+    'close_title' => ha_pt('Standard operating procedures your team will follow'),
+    'close_text'  => ha_pt('Every procedure is written as it is carried out on shift, in Arabic and English, with a checklist the supervisor can sign off.'),
     'close_primary'   => array('label' => $t['for_hotels'], 'url' => base_url($locale . '/hotels')),
     'close_secondary' => array('label' => $t['contact'], 'url' => base_url($locale . '/contact')),
 )); ?>

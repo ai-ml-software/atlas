@@ -719,19 +719,43 @@ class User_model extends CI_Model
             $this->session->set_userdata('name', $row->first_name . ' ' . $row->last_name);
             $this->session->set_userdata('is_instructor', $row->is_instructor);
             $this->session->set_flashdata('flash_message', get_phrase('welcome') . ' ' . $row->first_name . ' ' . $row->last_name);
+            $this->apply_saved_locale($row->id);
             if ($row->role_id == 1) {
                 $this->session->set_userdata('admin_login', '1');
-                redirect(site_url('admin/dashboard'), 'refresh');
             } else if ($row->role_id == 2) {
                 $this->session->set_userdata('user_login', '1');
-                if($this->session->userdata('url_history')){
-                    redirect($this->session->userdata('url_history'), 'refresh');
+                // A page the visitor was sent to login from wins (deep link), unless it is an auth page.
+                $back = (string) $this->session->userdata('url_history');
+                if ($back !== '' && !preg_match('~/(login|logout|sign_up)(/|$)~', parse_url($back, PHP_URL_PATH) ?: '')) {
+                    redirect($back, 'refresh');
                 }
-                redirect(site_url('home'), 'refresh');
             }
+            // Everyone lands in the HK&P workspace; /hkp routes each role to its own home
+            // (learner dashboard, property team, Altus administration, executive view).
+            redirect(site_url('hkp'), 'refresh');
         } else {
             $this->session->set_flashdata('error_message', get_phrase('invalid_login_credentials'));
             redirect(site_url('login'), 'refresh');
+        }
+    }
+
+    /**
+     * One language across the product: the workspace (hkp_locale) and the legacy LMS
+     * (session 'language' column) follow the language saved on the person's profile.
+     */
+    private function apply_saved_locale($user_id) {
+        if (!$this->db->table_exists('ha_profile')) {
+            return;
+        }
+        $this->load->helper('ha_locale');
+        $locale = (string) $this->db->select('locale')->get_where('ha_profile', array('user_id' => (int) $user_id))->row('locale');
+        if (!ha_locale_enabled($locale)) {
+            return;
+        }
+        $this->session->set_userdata('hkp_locale', $locale);
+        $column = ha_locale_legacy_column($locale);
+        if ($column && $this->db->field_exists($column, 'language')) {
+            $this->session->set_userdata('language', $column);
         }
     }
 
@@ -787,10 +811,9 @@ class User_model extends CI_Model
                 }
             }
         }elseif($user_type == 'login'){
-            if ($this->session->userdata('admin_login')) {
-                redirect(site_url('admin'), 'refresh');
-            } elseif ($this->session->userdata('user_login')) {
-                redirect(site_url('home/my_courses'), 'refresh');
+            // Signed-in users never see the login form again: /hkp routes each role to its home.
+            if ((int) $this->session->userdata('user_id') > 0 && ($this->session->userdata('admin_login') || $this->session->userdata('user_login'))) {
+                redirect(site_url('hkp'), 'refresh');
             }
         }
     }

@@ -348,6 +348,13 @@ class Ha_bridge extends CI_Controller {
             $requirements[] = $course['requirements'];
         }
 
+        // A course whose lessons each end in a quiz is taken in order: the
+        // player's drip mode unlocks a lesson only once the one before it is
+        // complete, and a lesson quiz counts as complete only when passed.
+        $sequential = $this->db->where('course_id', $course['id'])->where('status', 'published')
+            ->where('completion_rule', 'quiz')->where('assessment_id IS NOT NULL', null, false)
+            ->count_all_results('ha_lesson') > 0;
+
         // The legacy course owner must be a real user, or the instructor
         // panel and the course page byline break.
         $instructor = $course['instructor_user_id'];
@@ -382,7 +389,7 @@ class Ha_bridge extends CI_Controller {
             'status'            => 'active',
             'is_free_course'    => ((int) $course['is_free'] === 1) ? 1 : null,
             'multi_instructor'  => 0,
-            'enable_drip_content' => 0,
+            'enable_drip_content' => $sequential ? 1 : 0,
             'expiry_period'     => 0,
             'meta_keywords'     => $marker,
             'meta_description'  => $course['short_description'],
@@ -405,7 +412,22 @@ class Ha_bridge extends CI_Controller {
 
         $this->publish_course_thumbnail($legacy_id, $course['thumbnail'],
             $payload['last_modified'], $previous_stamp);
+        $this->link('course', $legacy_id, 'ha_course', $course['id'], $legacy_id);
         return $legacy_id;
+    }
+
+    /** Records which academy row a mirrored legacy row came from (see ha_lms_link). */
+    private function link($legacy_table, $legacy_id, $ha_table, $ha_id, $legacy_course_id) {
+        if (!$this->db->table_exists('ha_lms_link')) {
+            return;
+        }
+        $row = array('ha_table' => $ha_table, 'ha_id' => (int) $ha_id, 'legacy_course_id' => (int) $legacy_course_id, 'updated_at' => date('Y-m-d H:i:s'));
+        $match = array('legacy_table' => $legacy_table, 'legacy_id' => (int) $legacy_id);
+        if ($this->db->where($match)->count_all_results('ha_lms_link')) {
+            $this->db->where($match)->update('ha_lms_link', $row);
+        } else {
+            $this->db->insert('ha_lms_link', array_merge($match, $row));
+        }
     }
 
     /**
@@ -440,15 +462,40 @@ class Ha_bridge extends CI_Controller {
     }
 
     /**
-     * Sections and lessons are rebuilt rather than diffed. They are wholly
-     * owned by the mirror, so replacing them is simpler than reconciling and
-     * cannot leave an orphan lesson behind.
+     * Sections and lessons are wholly owned by the mirror. They are updated in
+     * place rather than deleted and re-inserted: a learner's completed lessons
+     * and quiz results are stored against legacy lesson ids, and a rebuild that
+     * renumbered every lesson silently reset everyone's progress on each sync.
+     * A row is reused when ha_lms_link says it came from the same academy
+     * record, otherwise by position; rows left over at the end are removed.
+     *
+     * A lesson whose completion rule is its own quiz is followed by that quiz
+     * as a legacy quiz lesson that must be passed ("drip_content_for_passing_rule"
+     * = applicable), which together with the course's drip mode is what makes
+     * "finish the quiz, then the next lesson opens" work in the player.
      */
     private function sync_curriculum(array $course, $legacy_course_id) {
-        $old_sections = $this->db->select('id')
-            ->get_where('section', array('course_id' => $legacy_course_id))->result_array();
-        $this->db->where('course_id', $legacy_course_id)->delete('lesson');
-        $this->db->where('course_id', $legacy_course_id)->delete('section');
+        $old_sections = array_map('intval', array_column($this->db->select('id')->where('course_id', $legacy_course_id)
+            ->order_by('order', 'ASC')->order_by('id', 'ASC')->get('section')->result_array(), 'id'));
+        $old_lessons = $this->db->select('id, lesson_type')->where('course_id', $legacy_course_id)
+            ->order_by('section_id', 'ASC')->order_by('order', 'ASC')->order_by('id', 'ASC')->get('lesson')->result_array();
+
+        $linked = array();
+        if ($this->db->table_exists('ha_lms_link')) {
+            foreach ($this->db->get_where('ha_lms_link', array('legacy_course_id' => $legacy_course_id, 'legacy_table' => 'lesson'))->result_array() as $k) {
+                $linked[$k['ha_table'] . ':' . $k['ha_id']] = (int) $k['legacy_id'];
+            }
+        }
+        $linked_ids = array_flip($linked);
+        // Unlinked rows may be reused by position. The end-of-course assessment
+        // belongs to Ha_assessment::build, which replaces it on its own.
+        $pool = array();
+        foreach ($old_lessons as $o) {
+            if (!isset($linked_ids[(int) $o['id']]) && $o['lesson_type'] !== 'quiz') {
+                $pool[] = (int) $o['id'];
+            }
+        }
+        $used = array();
 
         $sections = $this->db
             ->select('id, title_en AS title, sort_order', false)
@@ -459,19 +506,27 @@ class Ha_bridge extends CI_Controller {
         $section_ids = array();
         $count = array('sections' => 0, 'lessons' => 0);
 
-        foreach ($sections as $s) {
-            $this->db->insert('section', array(
+        foreach ($sections as $si => $s) {
+            $section_row = array(
                 'title'         => $s['title'],
                 'course_id'     => $legacy_course_id,
                 'order'         => (int) $s['sort_order'] + 1,
                 'restricted_by' => '',
-            ));
-            $legacy_section_id = (int) $this->db->insert_id();
+            );
+            if (isset($old_sections[$si])) {
+                $legacy_section_id = $old_sections[$si];
+                $this->db->where('id', $legacy_section_id)->update('section', $section_row);
+            } else {
+                $this->db->insert('section', $section_row);
+                $legacy_section_id = (int) $this->db->insert_id();
+            }
+            $this->link('section', $legacy_section_id, 'ha_course_section', $s['id'], $legacy_course_id);
             $section_ids[] = $legacy_section_id;
             $count['sections']++;
+            $position = 0;
 
             $lessons = $this->db
-                ->select('l.id, l.lesson_type, l.duration_seconds, l.is_preview, l.sort_order')
+                ->select('l.id, l.lesson_type, l.duration_seconds, l.is_preview, l.sort_order, l.completion_rule, l.assessment_id')
                 ->select('lt.title, lt.body', false)
                 ->select('v.video_id, v.embed_url, v.author_name, v.author_url, v.status AS video_status, v.provider AS video_provider, lt.captions_url', false)
                 ->from('ha_lesson l')
@@ -510,7 +565,7 @@ class Ha_bridge extends CI_Controller {
                     $type = 'text';
                 }
 
-                $this->db->insert('lesson', array(
+                $legacy_lesson_id = $this->put_lesson($linked, $pool, $used, 'ha_lesson:' . $l['id'], array(
                     'title'           => $l['title'],
                     'duration'        => gmdate('H:i:s', (int) $l['duration_seconds']),
                     'course_id'       => $legacy_course_id,
@@ -523,11 +578,40 @@ class Ha_bridge extends CI_Controller {
                     'attachment_type' => '',
                     'summary'         => $summary,
                     'is_free'         => ((int) $l['is_preview'] === 1) ? 1 : 0,
-                    'order'           => (int) $l['sort_order'] + 1,
-                    'date_added'      => $this->now,
+                    'quiz_attempt'    => 0,
+                    'order'           => ++$position,
                     'last_modified'   => $this->now,
                 ));
+                $this->link('lesson', $legacy_lesson_id, 'ha_lesson', $l['id'], $legacy_course_id);
                 $count['lessons']++;
+
+                if ($l['completion_rule'] === 'quiz' && !empty($l['assessment_id'])) {
+                    if ($this->put_lesson_quiz($linked, $pool, $used, (int) $l['assessment_id'], $legacy_course_id, $legacy_section_id, ++$position, (int) $l['is_preview'])) {
+                        $count['lessons']++;
+                    } else {
+                        $position--;
+                    }
+                }
+            }
+        }
+
+        // Rows the academy no longer has. The end-of-course assessment is kept
+        // for Ha_assessment::build, which rebuilds it right after a sync.
+        foreach ($old_lessons as $o) {
+            $id = (int) $o['id'];
+            if (isset($used[$id]) || ($o['lesson_type'] === 'quiz' && !isset($linked_ids[$id]))) {
+                continue;
+            }
+            $this->db->where('quiz_id', $id)->delete('question');
+            $this->db->where('id', $id)->delete('lesson');
+            if ($this->db->table_exists('ha_lms_link')) {
+                $this->db->where(array('legacy_table' => 'lesson', 'legacy_id' => $id))->delete('ha_lms_link');
+            }
+        }
+        foreach (array_slice($old_sections, count($sections)) as $sid) {
+            $this->db->where('section_id', $sid)->where('lesson_type !=', 'quiz')->delete('lesson');
+            if (!$this->db->where('section_id', $sid)->count_all_results('lesson')) {
+                $this->db->where('id', $sid)->delete('section');
             }
         }
 
@@ -536,6 +620,106 @@ class Ha_bridge extends CI_Controller {
             array('section' => json_encode($section_ids)));
 
         return $count;
+    }
+
+    /** Update the legacy lesson linked to $key (or the next reusable one), or insert a new row. */
+    private function put_lesson(array $linked, array &$pool, array &$used, $key, array $row) {
+        $id = isset($linked[$key]) ? $linked[$key] : null;
+        if ($id === null || isset($used[$id])) {
+            $id = null;
+            while ($pool && $id === null) {
+                $candidate = array_shift($pool);
+                if (!isset($used[$candidate])) {
+                    $id = $candidate;
+                }
+            }
+        }
+        if ($id !== null && $this->db->where('id', $id)->count_all_results('lesson')) {
+            $this->db->where('id', $id)->update('lesson', $row);
+        } else {
+            $row['date_added'] = $this->now;
+            $this->db->insert('lesson', $row);
+            $id = (int) $this->db->insert_id();
+        }
+        $used[$id] = true;
+        return $id;
+    }
+
+    /**
+     * The quiz that closes a lesson, as a legacy quiz lesson with its questions.
+     * Untimed, retakable, and it has to be passed before the next lesson opens.
+     * Returns false when the assessment is unpublished or has no questions.
+     */
+    private function put_lesson_quiz(array $linked, array &$pool, array &$used, $assessment_id, $legacy_course_id, $legacy_section_id, $order, $is_free) {
+        $a = $this->db->get_where('ha_assessment', array('id' => $assessment_id, 'status' => 'published'))->row_array();
+        if (!$a) {
+            return false;
+        }
+        $questions = $this->db->select('q.id, q.body_en')
+            ->from('ha_assessment_question aq')->join('ha_question q', 'q.id = aq.question_id')
+            ->where('aq.assessment_id', $assessment_id)->where('q.status', 'active')
+            ->order_by('aq.sort_order', 'ASC')->get()->result_array();
+        if (!$questions) {
+            return false;
+        }
+        $marks = count($questions);
+        $legacy_id = $this->put_lesson($linked, $pool, $used, 'ha_assessment:' . $assessment_id, array(
+            'title'           => $a['title_en'],
+            'duration'        => '00:00:00',
+            'course_id'       => $legacy_course_id,
+            'section_id'      => $legacy_section_id,
+            'lesson_type'     => 'quiz',
+            'video_type'      => '',
+            'video_url'       => '',
+            'caption'         => '',
+            'attachment_type' => 'json',
+            'attachment'      => json_encode(array(
+                'total_marks'                   => $marks,
+                'pass_mark'                     => (int) ceil($marks * (int) $a['pass_percentage'] / 100),
+                'drip_content_for_passing_rule' => 'applicable',
+            )),
+            'summary'         => (string) $a['instructions_en'],
+            'is_free'         => $is_free ? 1 : 0,
+            'quiz_attempt'    => max(1, (int) $a['max_attempts']),
+            'order'           => $order,
+            'last_modified'   => $this->now,
+        ));
+        $this->link('lesson', $legacy_id, 'ha_assessment', $assessment_id, $legacy_course_id);
+
+        // Questions are reused by position too: quiz_results key answers by question id.
+        $old = array_map('intval', array_column($this->db->select('id')->where('quiz_id', $legacy_id)
+            ->order_by('order', 'ASC')->order_by('id', 'ASC')->get('question')->result_array(), 'id'));
+        foreach ($questions as $i => $q) {
+            $options = $this->db->select('body_en, is_correct')->where('question_id', $q['id'])
+                ->order_by('sort_order', 'ASC')->get('ha_question_option')->result_array();
+            $correct = array();
+            foreach ($options as $oi => $op) {
+                if ((int) $op['is_correct'] === 1) {
+                    $correct[] = (string) ($oi + 1);
+                }
+            }
+            $row = array(
+                'quiz_id'           => $legacy_id,
+                'title'             => $q['body_en'],
+                'type'              => count($correct) > 1 ? 'multiple_choice' : 'single_choice',
+                'number_of_options' => count($options),
+                'options'           => json_encode(array_column($options, 'body_en'), JSON_UNESCAPED_UNICODE),
+                'correct_answers'   => json_encode($correct),
+                'order'             => $i + 1,
+            );
+            if (isset($old[$i])) {
+                $this->db->where('id', $old[$i])->update('question', $row);
+                $qid = $old[$i];
+            } else {
+                $this->db->insert('question', $row);
+                $qid = (int) $this->db->insert_id();
+            }
+            $this->link('question', $qid, 'ha_question', $q['id'], $legacy_course_id);
+        }
+        foreach (array_slice($old, count($questions)) as $gone) {
+            $this->db->where('id', $gone)->delete('question');
+        }
+        return true;
     }
 
     /**

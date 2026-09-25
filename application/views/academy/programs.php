@@ -27,9 +27,7 @@ $this->load->view('academy/_hero', array(
         <?php else: ?>
             <div class="ha-section__head">
                 <h2><?= html_escape($t['programs']) ?></h2>
-                <p><?= $locale === 'ar'
-                    ? 'كل برنامج يجمع دورات قسم واحد في مؤهل واحد، وينتهي بشهادة قابلة للتحقق.'
-                    : 'Each programme groups one department\'s courses into a single qualification that ends in a verifiable certificate.' ?></p>
+                <p><?= ha_pe('Each programme groups one department\'s courses into a single qualification that ends in a verifiable certificate.') ?></p>
             </div>
             <div class="ha-grid ha-grid--3">
                 <?php foreach ($programs as $p): $url = base_url($locale . '/programs/' . rawurlencode($p['slug'])); ?>
@@ -57,7 +55,7 @@ $this->load->view('academy/_hero', array(
 <section class="ha-section ha-section--tint">
     <div class="ha-shell">
         <div class="ha-section__head">
-            <h2><?= $locale === 'ar' ? 'كيف يعمل البرنامج' : 'How a programme works' ?></h2>
+            <h2><?= ha_pe('How a programme works') ?></h2>
         </div>
         <ol class="ha-steps">
             <?php
@@ -90,10 +88,8 @@ $this->load->view('academy/_hero', array(
 <?php endif; ?>
 
 <?php $this->load->view('academy/_close', array(
-    'close_title' => $locale === 'ar' ? 'تدرّب فريقك على برنامج كامل' : 'Put a team through a full programme',
-    'close_text'  => $locale === 'ar'
-        ? 'تشتري الفنادق مقاعد وتسند البرامج إلى الأقسام، وتتابع الإكمال لكل موظف.'
-        : 'Hotels buy seats, assign a programme to a department and follow completion per employee.',
+    'close_title' => ha_pt('Put a team through a full programme'),
+    'close_text'  => ha_pt('Hotels buy seats, assign a programme to a department and follow completion per employee.'),
     'close_primary'   => array('label' => $t['for_hotels'], 'url' => base_url($locale . '/hotels')),
     'close_secondary' => array('label' => $t['contact'], 'url' => base_url($locale . '/contact')),
 )); ?>
