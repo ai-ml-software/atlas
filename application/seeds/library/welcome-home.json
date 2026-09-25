@@ -1,0 +1,545 @@
+{
+    "slug": "welcome-home",
+    "category": "guest-handling",
+    "level": "foundation",
+    "source_pdf": "Welcome-Home-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/welcome-home.webp",
+    "videos": [
+        {
+            "id": "bwcyXcOpWVs",
+            "title": "The Secret Ingredients of Great Hospitality | Will Guidara | TED",
+            "channel": "TED",
+            "why": "Restaurateur Will Guidara explains how genuine warmth and human connection turn service into hospitality, the same idea behind making every guest feel welcome at home."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Welcome Home",
+            "subtitle": "We welcome every guest",
+            "short_description": "Learn why the welcome creates the first impression, apply the 15-foot and 5-foot rule, use the right greeting and words, and avoid the behaviours that spoil a welcome.",
+            "description": "<p>A warm welcome begins before we speak. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows every colleague how to make each guest feel they have arrived home.</p><p>You will learn why the welcome shapes the first impression, how to use the 15-foot and 5-foot rule, which greetings to use on arrival and during the stay, what to always do and always avoid, and how professional words turn a request into an experience.</p>",
+            "requirements": "No prior training is needed; the course suits every colleague who meets or greets guests.",
+            "outcomes": [
+                "Explain why the welcome creates the first impression and sets the tone of the stay",
+                "Apply the 15-foot and 5-foot rule to acknowledge and greet guests first",
+                "Use \"Welcome home\" on arrival and suitable greetings during the stay",
+                "Practise Smile, Listen, Respect, Assist and avoid behaviours that spoil the welcome",
+                "Replace unprofessional phrases with words that turn a request into an experience"
+            ],
+            "faqs": [
+                {
+                    "question": "When should I say \"Welcome home\"?",
+                    "answer": "On arrival or during the first interaction, for example: Assalamu alaikum, good morning, welcome home."
+                },
+                {
+                    "question": "What is the 15-foot and 5-foot rule?",
+                    "answer": "At about 15 feet (4.5 metres), acknowledge the guest with natural eye contact and a warm smile. At about 5 feet (1.5 metres), greet the guest first in a warm, clear voice."
+                },
+                {
+                    "question": "What should I say instead of \"I don't know\"?",
+                    "answer": "Say \"Allow me to check that for you\", then find the answer or the right colleague."
+                }
+            ],
+            "meta_title": "Welcome Home: Warm Guest Greeting for Hotels",
+            "meta_description": "Hotel training on the warm welcome: first impressions, the 15-foot and 5-foot rule, the right greetings, always do and avoid, and professional words.",
+            "focus_keyword": "hotel guest welcome",
+            "chapters": [
+                {
+                    "title": "Why the Welcome Matters",
+                    "lessons": [
+                        {
+                            "title": "The Welcome Creates the First Impression",
+                            "minutes": 5,
+                            "body": "<h2>We welcome every guest</h2><p>The message of this course is in its title: <strong>Welcome home.</strong> At Dyafa Hotels &amp; Resorts we welcome every guest, and we want each one to feel that arriving at the hotel is like arriving home. The deck opens with an important reminder: <strong>a warm welcome begins before we speak.</strong> It starts with how we look up, how we stand and how we smile, long before the first word.</p><h2>Why the welcome matters</h2><p>The deck lists five reasons:</p><ul><li><strong>The first impression forms within seconds.</strong> The guest decides how they feel about the hotel almost immediately.</li><li><strong>The welcome sets the tone of the guest's experience.</strong> A warm start makes small problems later easier to forgive; a cold start makes everything feel worse.</li><li><strong>A smile makes the guest feel appreciated.</strong></li><li><strong>The welcome reflects the standard of the hotel.</strong> Guests judge the whole property by the first colleague they meet.</li><li><strong>A warm welcome helps build loyalty.</strong> Guests return to places where they felt welcomed.</li></ul><h2>What the research in the deck says</h2><p>The deck supports these points with two figures from Hampton by Hilton and Goldsmiths, University of London (2025):</p><ul><li>Guests felt <strong>51% more welcomed</strong>.</li><li><strong>Friendly service improved the overall stay rating by 22%.</strong></li></ul><p>The message behind the numbers is simple: warmth is not a small extra. It changes how guests feel and how they rate their whole stay.</p><blockquote class=\"bk-quote\">A warm welcome begins before we speak.</blockquote><h2>Every colleague is part of the welcome</h2><p>The welcome is not only the job of reception or the doorman. The housekeeper in the corridor, the waiter at breakfast, the engineer in the lift and the driver at the airport all create first impressions. For a guest who has never met them before, each of these moments is a welcome.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A family arrives late at night after a long drive. The night receptionist looks up as soon as the door opens, stands, smiles and makes eye contact with the parents and the children before they reach the desk. Before a word is spoken, the family already feels expected. The check-in takes the same five minutes as always, but the family later writes that they felt at home from the moment they walked in.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Before each guest interaction, take one second to put down what you are doing and look up. That small pause is the start of the welcome.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> The first impression forms in seconds and sets the tone of the whole stay. Warmth begins before you speak.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: The first impression",
+                                "questions": [
+                                    {
+                                        "question": "How quickly does the deck say a first impression forms?",
+                                        "options": [
+                                            "By the end of the first day",
+                                            "After check-in is completed",
+                                            "Within seconds",
+                                            "After the guest's first meal"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck states the first impression forms within seconds."
+                                    },
+                                    {
+                                        "question": "According to the research quoted in the deck, what did friendly service improve?",
+                                        "options": [
+                                            "The overall stay rating, by 22%",
+                                            "Room revenue, by 51%",
+                                            "Check-in speed, by 22%",
+                                            "Staff attendance, by 51%"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck cites Hampton by Hilton and Goldsmiths (2025): friendly service improved the overall stay rating by 22%."
+                                    },
+                                    {
+                                        "question": "A housekeeper passes a newly arrived guest in the corridor. Is this part of the welcome?",
+                                        "options": [
+                                            "No, only reception welcomes guests",
+                                            "Only if the guest asks for something",
+                                            "No, housekeeping should stay unseen",
+                                            "Yes, every colleague creates first impressions"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The welcome reflects the hotel's standard, and every guest contact can be a first impression."
+                                    },
+                                    {
+                                        "question": "When does a warm welcome begin, according to the deck?",
+                                        "options": [
+                                            "When the guest gives their name",
+                                            "Before we speak",
+                                            "When the room key is handed over",
+                                            "After the guest smiles first"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck's opening message is: a warm welcome begins before we speak."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "The 15-Foot and 5-Foot Rule",
+                            "minutes": 5,
+                            "body": "<h2>Start with a smile, then greet first</h2><p>The deck turns the welcome into a simple rule based on distance. It gives colleagues two moments to act as a guest approaches: one when the guest is still some distance away, and one when they are close enough to speak to.</p><h3>At 15 feet (about 4.5 metres): make eye contact and smile</h3><ul><li><strong>Acknowledge the guest.</strong> Show that you have seen them, even if you are busy.</li><li><strong>Make natural eye contact.</strong> Not a stare, simply a friendly look that says \"I see you\".</li><li><strong>Offer a warm smile.</strong></li></ul><h3>At 5 feet (about 1.5 metres): greet the guest first</h3><ul><li><strong>Maintain natural eye contact.</strong></li><li><strong>Greet the guest first.</strong> Do not wait for the guest to speak to you.</li><li><strong>Use a warm, clear voice.</strong></li></ul><table class=\"bk-say\"><thead><tr><th>Distance</th><th>What you do</th></tr></thead><tbody><tr><td>15 feet / 4.5 metres</td><td>Acknowledge, natural eye contact, warm smile</td></tr><tr><td>5 feet / 1.5 metres</td><td>Keep eye contact, greet first, warm and clear voice</td></tr></tbody></table><blockquote class=\"bk-quote\">Watch, smile, approach, welcome.</blockquote><p>The deck sums the rule up in four words: <strong>watch</strong> for the guest, <strong>smile</strong> when you see them, <strong>approach</strong> or turn towards them, and <strong>welcome</strong> them with a greeting.</p><h2>Why distance matters</h2><p>The 15-foot moment tells the guest they have been noticed. Even if you are on the phone or serving someone else, a look and a smile say \"I will be with you soon\". The 5-foot moment is when the guest is close enough to hear you without raising your voice, so it is the right time to speak first. A guest who has to speak first, or who walks past a colleague who does not look up, feels invisible.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A restaurant host is seating a couple when she notices a guest entering at the far end of the restaurant. She catches his eye and smiles, so he knows he has been seen. As she walks back and he reaches her station, she greets him first: \"Good evening, welcome. A table for one?\" The guest waited less than a minute, but never felt ignored.</aside><aside class=\"bk-note\"><strong>Tip:</strong> In a corridor or lift, the same rule applies. A smile at a distance and a short greeting up close make even a passing moment a welcome.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> At 15 feet, acknowledge with eye contact and a smile. At 5 feet, greet the guest first in a warm, clear voice.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: 15-foot and 5-foot rule",
+                                "questions": [
+                                    {
+                                        "question": "A guest enters the lobby about 15 feet away while you are serving someone else. What should you do?",
+                                        "options": [
+                                            "Ignore them until you are free",
+                                            "Call out loudly across the lobby",
+                                            "Wave them to the front of the queue",
+                                            "Acknowledge them with natural eye contact and a warm smile"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "At 15 feet the deck says: acknowledge the guest, make natural eye contact and offer a warm smile."
+                                    },
+                                    {
+                                        "question": "The guest is now about 5 feet away. What is the rule?",
+                                        "options": [
+                                            "Greet the guest first in a warm, clear voice",
+                                            "Wait for the guest to speak first",
+                                            "Look down at your screen until they speak",
+                                            "Smile but say nothing"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "At 5 feet the deck says to maintain eye contact, greet the guest first and use a warm, clear voice."
+                                    },
+                                    {
+                                        "question": "Roughly how many metres is 5 feet in the deck?",
+                                        "options": [
+                                            "4.5 metres",
+                                            "3 metres",
+                                            "1.5 metres",
+                                            "0.5 metres"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck gives 5 feet as 1.5 metres and 15 feet as 4.5 metres."
+                                    },
+                                    {
+                                        "question": "Which four words summarise the rule in the deck?",
+                                        "options": [
+                                            "Greet, register, key, farewell",
+                                            "Watch, smile, approach, welcome",
+                                            "Listen, ask, confirm, act",
+                                            "Stop, look, point, speak"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The slide summarises the rule as watch, smile, approach, welcome."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "The Right Words",
+                    "lessons": [
+                        {
+                            "title": "The Right Greeting and Professional Words",
+                            "minutes": 6,
+                            "body": "<h2>A warm greeting starts with the right words</h2><p>Once you have made eye contact and smiled, the words you choose complete the welcome. The deck separates two moments: the guest's arrival or first interaction, and the rest of the stay.</p><h3>On arrival or first interaction</h3><ul><li><strong>Assalamu alaikum, good morning. Welcome home.</strong></li><li><strong>Assalamu alaikum, good evening. Welcome home.</strong></li></ul><blockquote class=\"bk-quote\">Use \"Welcome home\" on arrival or during the first interaction.</blockquote><p>\"Welcome home\" is a signature phrase. It tells the guest that the hotel is a place where they belong, not simply a building where they have a booking.</p><h3>During the guest's stay</h3><p>After the first meeting, \"Welcome home\" is replaced by warm everyday greetings:</p><ul><li>Assalamu alaikum, good morning. How may I help you?</li><li>Good evening. I hope you are having a comfortable stay.</li><li>May I help you with anything else?</li><li>I wish you a wonderful day.</li></ul><h2>Professional words turn a request into an experience</h2><p>The deck compares phrases to say with phrases to avoid. The difference is small in words but large in how the guest feels.</p><table class=\"bk-say\"><thead><tr><th>Say</th><th>Avoid</th></tr></thead><tbody><tr><td>Assalamu alaikum, good morning</td><td>What do you want?</td></tr><tr><td>With pleasure</td><td>Yes? / OK</td></tr><tr><td>Certainly, I will help you</td><td>I don't know</td></tr><tr><td>Allow me to check that for you</td><td>That's not my responsibility</td></tr><tr><td>May I help you with anything else?</td><td>We're done</td></tr></tbody></table><blockquote class=\"bk-quote\">Instead of \"I don't know\", say: \"Allow me to check that for you.\"</blockquote><h3>Why the avoid phrases hurt</h3><p>\"What do you want?\" sounds like an interruption. \"Yes?\" or \"OK\" sounds bored. \"I don't know\" and \"That's not my responsibility\" leave the guest with nowhere to go. \"We're done\" ends the conversation for the colleague, not for the guest. Each of the phrases to say keeps the door open and shows the guest you are on their side.</p><aside class=\"bk-scene\"><strong>Scene:</strong> On her second morning, a guest asks a breakfast waiter whether the hotel can arrange a desert trip. The waiter is not sure. Instead of \"I don't know, ask reception\", he smiles and says, \"Good morning. Allow me to check that for you.\" He calls the concierge, returns with the options and ends with, \"May I help you with anything else?\" The guest remembers the waiter, not the trip desk.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Say \"Welcome home\" when you meet the guest for the first time, even if they checked in yesterday with another colleague. For you, it is still the first interaction.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Use \"Welcome home\" on arrival or first interaction, warm greetings during the stay, and professional phrases that keep helping the guest.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: The right words",
+                                "questions": [
+                                    {
+                                        "question": "A guest arrives at reception in the evening. Which greeting follows the deck?",
+                                        "options": [
+                                            "Yes? Name please.",
+                                            "Assalamu alaikum, good evening. Welcome home.",
+                                            "What do you want?",
+                                            "Next, please."
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "On arrival the deck uses: Assalamu alaikum, good evening. Welcome home."
+                                    },
+                                    {
+                                        "question": "A guest asks a question you cannot answer. What should you say?",
+                                        "options": [
+                                            "I don't know.",
+                                            "That's not my responsibility.",
+                                            "Ask someone else.",
+                                            "Allow me to check that for you."
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says: instead of I don't know, say Allow me to check that for you."
+                                    },
+                                    {
+                                        "question": "It is the guest's third day and you greet them in the lobby. Which greeting fits best?",
+                                        "options": [
+                                            "Good morning. How may I help you?",
+                                            "Welcome home, first-time guest.",
+                                            "OK.",
+                                            "We're done."
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "During the stay the deck suggests greetings such as Assalamu alaikum, good morning, how may I help you?"
+                                    },
+                                    {
+                                        "question": "You have finished helping a guest. Which phrase should you use instead of We're done?",
+                                        "options": [
+                                            "Yes?",
+                                            "Anything else? Quickly please.",
+                                            "May I help you with anything else?",
+                                            "That's all."
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The say/avoid list pairs May I help you with anything else? with We're done."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Always Do, Always Avoid",
+                    "lessons": [
+                        {
+                            "title": "Treat Every Guest as the Most Important",
+                            "minutes": 6,
+                            "body": "<h2>Always do</h2><p>The deck asks us to <strong>treat every guest as if they are the most important guest in the hotel.</strong> It summarises this in four words: <strong>Smile, Listen, Respect, Assist.</strong> In practice, this means seven habits:</p><ul><li><strong>Smile a natural, warm smile.</strong></li><li><strong>Greet first and do not wait for the guest.</strong></li><li><strong>Face the guest with your whole body.</strong></li><li><strong>Keep natural eye contact.</strong></li><li><strong>Listen with attention and do not interrupt.</strong></li><li><strong>Use the guest's name in an appropriate way.</strong></li><li><strong>Offer help before it is asked for.</strong></li></ul><h2>What we avoid matters as much as what we say</h2><p>A warm greeting can be undone in a moment by the wrong behaviour. The deck lists eight things to always avoid:</p><table class=\"bk-say\"><thead><tr><th>Always avoid</th><th>Why it hurts the welcome</th></tr></thead><tbody><tr><td>Ignoring the guest or pretending not to see them</td><td>The guest feels invisible</td></tr><tr><td>Frowning or showing boredom and annoyance</td><td>The guest feels like a burden</td></tr><tr><td>Using a phone during the interaction</td><td>The guest feels second in line</td></tr><tr><td>Keeping a guest waiting because of a side conversation</td><td>The guest's time seems unimportant</td></tr><tr><td>Pointing at the guest with a finger</td><td>It feels rude and disrespectful</td></tr><tr><td>Standing uncomfortably close</td><td>The guest loses personal space</td></tr><tr><td>Turning your back during the conversation</td><td>The conversation feels ended</td></tr><tr><td>Judging by appearance or nationality</td><td>Every guest deserves the same welcome</td></tr></tbody></table><blockquote class=\"bk-quote\">End every interaction kindly, and do not walk away before you are sure the conversation has ended.</blockquote><p>The last point is subtle. Many colleagues greet well but leave too early: they turn away while the guest is still thinking of another question. Wait a moment, check with \"May I help you with anything else?\", and only then move on.</p><h2>More than words</h2><p>The deck closes with its central idea: <strong>a warm welcome is more than words. It is a feeling we create for every guest.</strong> The greeting, the smile, the eye contact, the name and the offer of help all add up to one feeling: I am welcome here.</p><aside class=\"bk-scene\"><strong>Scene:</strong> Two colleagues at the front desk are discussing the shift roster when a guest approaches. One continues the conversation while glancing at the guest; the other stops at once, turns her whole body towards the guest, smiles and greets first: \"Good afternoon, Mr Omar, how may I help you?\" She listens without interrupting, arranges a late checkout and, before turning back, asks if there is anything else. The guest leaves the desk feeling like the most important guest in the hotel.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Use the guest's name naturally, once or twice, not in every sentence. Appropriate use feels personal; overuse feels scripted.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Smile, listen, respect and assist every guest equally, avoid the eight behaviours that spoil a welcome, and end every interaction kindly.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Always do, always avoid",
+                                "questions": [
+                                    {
+                                        "question": "You are chatting with a colleague when a guest approaches the desk. What should you do?",
+                                        "options": [
+                                            "Finish your conversation, then help the guest",
+                                            "Stop the conversation, face the guest and greet them first",
+                                            "Nod to the guest but keep talking",
+                                            "Point to show where the guest should stand"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Keeping a guest waiting because of a side conversation is on the avoid list; greet first and face the guest with your whole body."
+                                    },
+                                    {
+                                        "question": "Which four words does the deck use to summarise always do?",
+                                        "options": [
+                                            "Observe, Distance, Protect, Report",
+                                            "Greet, Check, Key, Go",
+                                            "Smile, Listen, Respect, Assist",
+                                            "Listen, Ask, Confirm, Act"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The slide summarises it as Smile, Listen, Respect, Assist."
+                                    },
+                                    {
+                                        "question": "You have answered a guest's question. What should you do before walking away?",
+                                        "options": [
+                                            "Make sure the conversation has ended and close it kindly",
+                                            "Turn away as soon as you finish speaking",
+                                            "Check your phone for messages",
+                                            "Point the guest towards the lifts"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck says to end every interaction kindly and not act before you are sure the conversation has ended."
+                                    },
+                                    {
+                                        "question": "Which behaviour does the deck list as one to always avoid?",
+                                        "options": [
+                                            "Offering help before it is asked for",
+                                            "Using the guest's name appropriately",
+                                            "Keeping natural eye contact",
+                                            "Standing uncomfortably close to the guest"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Standing uncomfortably close is on the always avoid list; the other three are always do habits."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "مرحبًا بك في بيتك",
+            "subtitle": "نرحب بكل نزيل",
+            "short_description": "تعرّف على دور الترحيب في صنع الانطباع الأول، وطبّق قاعدة 15 قدمًا و5 أقدام، واستخدم التحية والكلمات الصحيحة، وتجنب ما يفسد الترحيب.",
+            "description": "<p>يبدأ الترحيب قبل أن نتحدث. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتوضح لكل موظف كيف يجعل كل نزيل يشعر بأنه وصل إلى بيته.</p><p>ستتعرف على سبب أهمية الترحيب في تكوين الانطباع الأول، وكيف تطبّق قاعدة 15 قدمًا و5 أقدام، وما التحيات المناسبة عند الوصول وخلال الإقامة، وما يجب فعله دائمًا وتجنبه دائمًا، وكيف تحوّل الكلمات المهنية الطلب إلى تجربة.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظف يلتقي النزلاء أو يرحب بهم.",
+            "outcomes": [
+                "اشرح لماذا يصنع الترحيب الانطباع الأول ويحدد نبرة الإقامة",
+                "طبّق قاعدة 15 قدمًا و5 أقدام لتنتبه للنزيل وتبادره بالتحية",
+                "استخدم «مرحبًا بك في بيتك» عند الوصول وتحيات مناسبة خلال الإقامة",
+                "مارس: ابتسم، استمع، احترم، ساعد، وتجنب ما يفسد الترحيب",
+                "استبدل العبارات غير المهنية بكلمات تحوّل الطلب إلى تجربة"
+            ],
+            "faqs": [
+                {
+                    "question": "متى أقول «مرحبًا بك في بيتك»؟",
+                    "answer": "عند الوصول أو اللقاء الأول، مثل: السلام عليكم، صباح الخير، مرحبًا بك في بيتك."
+                },
+                {
+                    "question": "ما قاعدة 15 قدمًا و5 أقدام؟",
+                    "answer": "على بعد 15 قدمًا تقريبًا (4.5 أمتار) تواصل بصريًا مع النزيل وابتسم، وعلى بعد 5 أقدام (1.5 متر) بادره بالتحية بصوت دافئ وواضح."
+                },
+                {
+                    "question": "ماذا أقول بدل «لا أعرف»؟",
+                    "answer": "قل: «اسمح لي أن أتحقق من ذلك»، ثم ابحث عن الإجابة أو عن الزميل المناسب."
+                }
+            ],
+            "meta_title": "مرحبًا بك في بيتك: الترحيب الدافئ بالنزلاء",
+            "meta_description": "تدريب فندقي على الترحيب الدافئ: الانطباع الأول، وقاعدة 15 قدمًا و5 أقدام، والتحية الصحيحة، وما نفعله ونتجنبه دائمًا، والكلمات المهنية.",
+            "focus_keyword": "الترحيب بالنزلاء في الفنادق",
+            "chapters": [
+                {
+                    "title": "لماذا يهم الترحيب",
+                    "lessons": [
+                        {
+                            "title": "الترحيب يصنع الانطباع الأول",
+                            "minutes": 5,
+                            "body": "<h2>نرحب بكل نزيل</h2><p>رسالة هذه الدورة في عنوانها: <strong>مرحبًا بك في بيتك.</strong> ففي فنادق ومنتجعات ضيافة نرحب بكل نزيل، ونريد أن يشعر كل واحد منهم بأن وصوله إلى الفندق وصول إلى بيته. وتبدأ المادة بتذكير مهم: <strong>يبدأ الترحيب قبل أن نتحدث.</strong> فهو يبدأ برفع أعيننا ووقفتنا وابتسامتنا قبل الكلمة الأولى بوقت طويل.</p><h2>لماذا يهم الترحيب</h2><p>تذكر المادة خمسة أسباب:</p><ul><li><strong>يتكوّن الانطباع الأول خلال ثوانٍ،</strong> فالنزيل يقرر شعوره تجاه الفندق فورًا تقريبًا.</li><li><strong>يحدد الترحيب نبرة تجربة النزيل؛</strong> فالبداية الدافئة تجعل المشكلات الصغيرة لاحقًا أسهل تقبّلًا، والبداية الباردة تجعل كل شيء أسوأ.</li><li><strong>تجعل الابتسامة النزيل يشعر بالتقدير.</strong></li><li><strong>يعكس الترحيب مستوى الفندق،</strong> فالنزيل يحكم على المنشأة كلها من أول موظف يقابله.</li><li><strong>يساعد الترحيب الدافئ في بناء الولاء،</strong> فالنزلاء يعودون إلى الأماكن التي شعروا فيها بالترحيب.</li></ul><h2>ما تقوله الدراسة في المادة</h2><p>تدعم المادة هذه النقاط برقمين من دراسة Hampton by Hilton وGoldsmiths، جامعة لندن (2025):</p><ul><li><strong>شعور أكبر بالترحيب بنسبة 51%.</strong></li><li><strong>الخدمة الودودة قد تحسّن تقييم تجربة الإقامة بنسبة 22%.</strong></li></ul><p>والرسالة وراء الأرقام بسيطة: الدفء ليس إضافة صغيرة، بل يغيّر شعور النزلاء وتقييمهم للإقامة كلها.</p><blockquote class=\"bk-quote\">يبدأ الترحيب قبل أن نتحدث.</blockquote><h2>كل موظف جزء من الترحيب</h2><p>الترحيب ليس مهمة الاستقبال أو البوّاب وحدهما؛ فموظفة التدبير الفندقي في الممر، والنادل في الإفطار، والفني في المصعد، والسائق في المطار، كلهم يصنعون انطباعات أولى. وبالنسبة إلى نزيل لم يلتقهم من قبل، فكل لحظة من هذه اللحظات ترحيب.</p><aside class=\"bk-scene\"><strong>موقف:</strong> وصلت عائلة في وقت متأخر من الليل بعد رحلة طويلة بالسيارة. رفع موظف الاستقبال الليلي رأسه بمجرد فتح الباب، ووقف وابتسم وتواصل بصريًا مع الوالدين والأطفال قبل أن يصلوا إلى المكتب. وقبل أن تُقال كلمة شعرت العائلة بأنها منتظرة. استغرق تسجيل الوصول الدقائق الخمس المعتادة، لكن العائلة كتبت لاحقًا أنها شعرت بأنها في بيتها منذ لحظة دخولها.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> قبل كل تعامل مع نزيل خذ ثانية واحدة لتضع ما في يدك جانبًا وترفع نظرك؛ فهذه الوقفة الصغيرة بداية الترحيب.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> يتكوّن الانطباع الأول خلال ثوانٍ ويحدد نبرة الإقامة كلها، والدفء يبدأ قبل أن تتحدث.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الانطباع الأول",
+                                "questions": [
+                                    {
+                                        "question": "بحسب المادة، في كم من الوقت يتكوّن الانطباع الأول؟",
+                                        "options": [
+                                            "بنهاية اليوم الأول",
+                                            "بعد إتمام تسجيل الوصول",
+                                            "خلال ثوانٍ",
+                                            "بعد أول وجبة للنزيل"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تنص المادة على أن الانطباع الأول يتكوّن خلال ثوانٍ."
+                                    },
+                                    {
+                                        "question": "بحسب الدراسة المذكورة في المادة، ما الذي حسّنته الخدمة الودودة؟",
+                                        "options": [
+                                            "تقييم تجربة الإقامة بنسبة 22%",
+                                            "إيرادات الغرف بنسبة 51%",
+                                            "سرعة تسجيل الوصول بنسبة 22%",
+                                            "حضور الموظفين بنسبة 51%"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تستشهد المادة بدراسة Hampton by Hilton وGoldsmiths (2025): الخدمة الودودة قد تحسّن تقييم تجربة الإقامة بنسبة 22%."
+                                    },
+                                    {
+                                        "question": "مرّت موظفة التدبير الفندقي بنزيل وصل حديثًا في الممر. هل هذا جزء من الترحيب؟",
+                                        "options": [
+                                            "لا، الاستقبال وحده يرحب بالنزلاء",
+                                            "فقط إذا طلب النزيل شيئًا",
+                                            "لا، يجب ألا يُرى موظفو التدبير الفندقي",
+                                            "نعم، كل موظف يصنع انطباعات أولى"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "الترحيب يعكس مستوى الفندق، وكل تواصل مع النزيل قد يكون انطباعًا أول."
+                                    },
+                                    {
+                                        "question": "متى يبدأ الترحيب الدافئ بحسب المادة؟",
+                                        "options": [
+                                            "عندما يذكر النزيل اسمه",
+                                            "قبل أن نتحدث",
+                                            "عند تسليم مفتاح الغرفة",
+                                            "بعد أن يبتسم النزيل أولًا"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "رسالة المادة الافتتاحية: يبدأ الترحيب قبل أن نتحدث."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "ابدأ بالابتسامة ثم بادر بالتحية",
+                            "minutes": 5,
+                            "body": "<h2>قاعدة 15 قدمًا و5 أقدام</h2><p>تحوّل المادة الترحيب إلى قاعدة بسيطة تعتمد على المسافة، فتمنح الموظف لحظتين للتصرف عند اقتراب النزيل: لحظة وهو ما زال على بعد، ولحظة عندما يصبح قريبًا بما يكفي للحديث.</p><h3>على بعد 15 قدمًا (4.5 أمتار تقريبًا): تواصل بصريًا وابتسم</h3><ul><li><strong>انتبه للنزيل وأشعره بأنك رأيته،</strong> حتى لو كنت منشغلًا.</li><li><strong>تواصل معه بصريًا بشكل طبيعي،</strong> لا تحديقًا بل نظرة ودودة تقول \"أراك\".</li><li><strong>ابتسم ابتسامة دافئة.</strong></li></ul><h3>على بعد 5 أقدام (1.5 متر تقريبًا): بادر النزيل بالتحية</h3><ul><li><strong>حافظ على التواصل البصري الطبيعي.</strong></li><li><strong>بادر النزيل بالتحية،</strong> ولا تنتظر أن يتحدث إليك أولًا.</li><li><strong>استخدم صوتًا دافئًا وواضحًا.</strong></li></ul><table class=\"bk-say\"><thead><tr><th>المسافة</th><th>ماذا تفعل</th></tr></thead><tbody><tr><td>15 قدمًا / 4.5 أمتار</td><td>انتبه للنزيل، تواصل بصري طبيعي، ابتسامة دافئة</td></tr><tr><td>5 أقدام / 1.5 متر</td><td>حافظ على التواصل البصري، بادر بالتحية، صوت دافئ وواضح</td></tr></tbody></table><blockquote class=\"bk-quote\">شاهده، ابتسم، اقترب، رحّب.</blockquote><p>تلخص المادة القاعدة في أربع كلمات: <strong>شاهده</strong> حين يقترب، و<strong>ابتسم</strong> عندما تراه، و<strong>اقترب</strong> أو التفت نحوه، و<strong>رحّب</strong> به بالتحية.</p><h2>لماذا تهم المسافة</h2><p>لحظة الخمسة عشر قدمًا تخبر النزيل بأنه لوحظ؛ فحتى لو كنت على الهاتف أو تخدم شخصًا آخر، تقول النظرة والابتسامة: \"سأكون معك قريبًا\". أما لحظة الأقدام الخمس فهي حين يصبح النزيل قريبًا بما يكفي ليسمعك دون رفع صوتك، فهي الوقت المناسب لتبادر بالكلام. والنزيل الذي يضطر إلى البدء بالكلام، أو يمر بموظف لا يرفع رأسه، يشعر بأنه غير مرئي.</p><aside class=\"bk-scene\"><strong>موقف:</strong> كانت مضيفة المطعم ترافق زوجين إلى طاولتهما عندما لاحظت نزيلًا يدخل من الطرف البعيد، فالتقت عيناها بعينيه وابتسمت، فعرف أنه لوحظ. وعندما عادت ووصل إلى مكانها بادرته بالتحية: \"مساء الخير، أهلًا بك، طاولة لشخص واحد؟\" انتظر النزيل أقل من دقيقة لكنه لم يشعر بالتجاهل أبدًا.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> تنطبق القاعدة نفسها في الممر والمصعد؛ فابتسامة من بعيد وتحية قصيرة عن قرب تجعل حتى اللحظة العابرة ترحيبًا.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> على بعد 15 قدمًا تواصل بصريًا وابتسم، وعلى بعد 5 أقدام بادر النزيل بالتحية بصوت دافئ وواضح.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: قاعدة 15 قدمًا و5 أقدام",
+                                "questions": [
+                                    {
+                                        "question": "دخل نزيل الردهة على بعد 15 قدمًا تقريبًا وأنت تخدم شخصًا آخر. ماذا تفعل؟",
+                                        "options": [
+                                            "تتجاهله حتى تتفرغ",
+                                            "تناديه بصوت عالٍ عبر الردهة",
+                                            "تشير إليه ليتقدم إلى أول الصف",
+                                            "تنتبه له بتواصل بصري طبيعي وابتسامة دافئة"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "على بعد 15 قدمًا تقول المادة: انتبه للنزيل وتواصل معه بصريًا وابتسم ابتسامة دافئة."
+                                    },
+                                    {
+                                        "question": "أصبح النزيل على بعد 5 أقدام تقريبًا. ما القاعدة؟",
+                                        "options": [
+                                            "بادره بالتحية بصوت دافئ وواضح",
+                                            "انتظر أن يتحدث أولًا",
+                                            "انظر إلى الشاشة حتى يتكلم",
+                                            "ابتسم دون أن تقول شيئًا"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "على بعد 5 أقدام تقول المادة: حافظ على التواصل البصري، وبادر بالتحية، واستخدم صوتًا دافئًا وواضحًا."
+                                    },
+                                    {
+                                        "question": "كم مترًا تعادل 5 أقدام تقريبًا في المادة؟",
+                                        "options": [
+                                            "4.5 أمتار",
+                                            "3 أمتار",
+                                            "1.5 متر",
+                                            "نصف متر"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تذكر المادة أن 5 أقدام تعادل 1.5 متر، و15 قدمًا تعادل 4.5 أمتار."
+                                    },
+                                    {
+                                        "question": "ما الكلمات الأربع التي تلخص القاعدة في المادة؟",
+                                        "options": [
+                                            "حيِّ، سجّل، سلّم المفتاح، ودّع",
+                                            "شاهده، ابتسم، اقترب، رحّب",
+                                            "استمع، اسأل، أكد، نفّذ",
+                                            "توقف، انظر، أشر، تكلم"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تلخص الشريحة القاعدة في: شاهده، ابتسم، اقترب، رحّب."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "الكلمات الصحيحة",
+                    "lessons": [
+                        {
+                            "title": "التحية الدافئة تبدأ بكلمات صحيحة",
+                            "minutes": 6,
+                            "body": "<h2>التحية الدافئة تبدأ بكلمات صحيحة</h2><p>بعد التواصل البصري والابتسامة، تكمل الكلمات التي تختارها الترحيب. وتفرّق المادة بين لحظتين: الوصول أو اللقاء الأول، وبقية الإقامة.</p><h3>عند الوصول أو اللقاء الأول</h3><ul><li><strong>السلام عليكم، صباح الخير، مرحبًا بك في بيتك.</strong></li><li><strong>السلام عليكم، مساء الخير، مرحبًا بك في بيتك.</strong></li></ul><blockquote class=\"bk-quote\">استخدم «مرحبًا بك في بيتك» عند الوصول أو اللقاء الأول.</blockquote><p>عبارة \"مرحبًا بك في بيتك\" عبارة مميزة لنا؛ فهي تخبر النزيل بأن الفندق مكان ينتمي إليه، لا مجرد مبنى له فيه حجز.</p><h3>خلال إقامة النزيل</h3><p>بعد اللقاء الأول تحل محلها تحيات يومية دافئة:</p><ul><li>السلام عليكم، صباح الخير، كيف يمكنني مساعدتك؟</li><li>مساء الخير، أتمنى أن تكون إقامتك مريحة.</li><li>هل يمكنني مساعدتك بشيء آخر؟</li><li>أتمنى لك يومًا رائعًا.</li></ul><h2>الكلمات المهنية تحوّل الطلب إلى تجربة</h2><p>تقارن المادة بين عبارات نقولها وعبارات نتجنبها؛ والفرق صغير في الكلمات لكنه كبير في شعور النزيل.</p><table class=\"bk-say\"><thead><tr><th>قل</th><th>تجنّب</th></tr></thead><tbody><tr><td>السلام عليكم، صباح الخير</td><td>ماذا تريد؟</td></tr><tr><td>بكل سرور</td><td>نعم؟ / أوكي</td></tr><tr><td>بالتأكيد، سأساعدك</td><td>لا أعرف</td></tr><tr><td>اسمح لي أن أتحقق من ذلك</td><td>هذه ليست مسؤوليتي</td></tr><tr><td>هل يمكنني مساعدتك بشيء آخر؟</td><td>انتهينا</td></tr></tbody></table><blockquote class=\"bk-quote\">بدل «لا أعرف» قل: «اسمح لي أن أتحقق من ذلك».</blockquote><h3>لماذا تؤذي العبارات التي نتجنبها</h3><p>\"ماذا تريد؟\" تبدو كأن النزيل قاطعك، و\"نعم؟\" أو \"أوكي\" توحيان بالملل، و\"لا أعرف\" و\"هذه ليست مسؤوليتي\" تتركان النزيل بلا وجهة، و\"انتهينا\" تنهي الحديث بالنسبة للموظف لا للنزيل. أما العبارات التي نقولها فتُبقي الباب مفتوحًا وتُظهر للنزيل أنك في صفّه.</p><aside class=\"bk-scene\"><strong>موقف:</strong> في صباحها الثاني سألت نزيلة نادل الإفطار هل يستطيع الفندق ترتيب رحلة إلى الصحراء، ولم يكن متأكدًا. وبدل أن يقول \"لا أعرف، اسألي الاستقبال\" ابتسم وقال: \"صباح الخير، اسمحي لي أن أتحقق من ذلك\". اتصل بالكونسيرج وعاد بالخيارات، ثم ختم: \"هل يمكنني مساعدتك بشيء آخر؟\" وبقي النادل في ذاكرة النزيلة أكثر من مكتب الرحلات.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> قل \"مرحبًا بك في بيتك\" عندما تلتقي النزيل لأول مرة حتى لو سجّل وصوله أمس مع زميل آخر؛ فهو بالنسبة لك لقاء أول.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> استخدم \"مرحبًا بك في بيتك\" عند الوصول أو اللقاء الأول، وتحيات دافئة خلال الإقامة، وعبارات مهنية تُبقيك في خدمة النزيل.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الكلمات الصحيحة",
+                                "questions": [
+                                    {
+                                        "question": "وصل نزيل إلى الاستقبال مساءً. أي تحية تتبع المادة؟",
+                                        "options": [
+                                            "نعم؟ الاسم من فضلك.",
+                                            "السلام عليكم، مساء الخير، مرحبًا بك في بيتك.",
+                                            "ماذا تريد؟",
+                                            "التالي من فضلك."
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "عند الوصول تستخدم المادة: السلام عليكم، مساء الخير، مرحبًا بك في بيتك."
+                                    },
+                                    {
+                                        "question": "سألك نزيل سؤالًا لا تعرف إجابته. ماذا تقول؟",
+                                        "options": [
+                                            "لا أعرف.",
+                                            "هذه ليست مسؤوليتي.",
+                                            "اسأل شخصًا آخر.",
+                                            "اسمح لي أن أتحقق من ذلك."
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: بدل «لا أعرف» قل «اسمح لي أن أتحقق من ذلك»."
+                                    },
+                                    {
+                                        "question": "إنه اليوم الثالث للنزيل وتحييه في الردهة. أي تحية أنسب؟",
+                                        "options": [
+                                            "صباح الخير، كيف يمكنني مساعدتك؟",
+                                            "مرحبًا بك يا نزيلنا الجديد.",
+                                            "أوكي.",
+                                            "انتهينا."
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "خلال الإقامة تقترح المادة تحيات مثل: السلام عليكم، صباح الخير، كيف يمكنني مساعدتك؟"
+                                    },
+                                    {
+                                        "question": "انتهيت من مساعدة نزيل. أي عبارة تستخدم بدل «انتهينا»؟",
+                                        "options": [
+                                            "نعم؟",
+                                            "شيء آخر؟ بسرعة من فضلك.",
+                                            "هل يمكنني مساعدتك بشيء آخر؟",
+                                            "هذا كل شيء."
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "في قائمة قل وتجنّب تقابل «هل يمكنني مساعدتك بشيء آخر؟» عبارة «انتهينا»."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "ما نفعله دائمًا وما نتجنبه دائمًا",
+                    "lessons": [
+                        {
+                            "title": "عامل كل نزيل وكأنه الأهم",
+                            "minutes": 6,
+                            "body": "<h2>ما نفعله دائمًا</h2><p>تطلب منا المادة أن <strong>نعامل كل نزيل وكأنه أهم نزيل في الفندق.</strong> وتلخص ذلك في أربع كلمات: <strong>ابتسم، استمع، احترم، ساعد.</strong> وفي التطبيق يعني ذلك سبع عادات:</p><ul><li><strong>ابتسم ابتسامة طبيعية ودافئة.</strong></li><li><strong>بادر بالتحية ولا تنتظر النزيل.</strong></li><li><strong>واجه النزيل بكامل الجسم.</strong></li><li><strong>حافظ على تواصل بصري طبيعي.</strong></li><li><strong>استمع باهتمام ولا تقاطع.</strong></li><li><strong>استخدم اسم النزيل بطريقة لائقة.</strong></li><li><strong>اعرض المساعدة قبل أن تُطلب.</strong></li></ul><h2>ما نتجنبه مهم بقدر ما نقوله</h2><p>قد تُفسد لحظة واحدة من السلوك الخاطئ تحية دافئة. وتذكر المادة ثمانية أمور نتجنبها دائمًا:</p><table class=\"bk-say\"><thead><tr><th>تجنّب دائمًا</th><th>لماذا يضر بالترحيب</th></tr></thead><tbody><tr><td>تجاهل النزيل أو التظاهر بعدم رؤيته</td><td>يشعر النزيل بأنه غير مرئي</td></tr><tr><td>العبوس أو إظهار الملل والانزعاج</td><td>يشعر النزيل بأنه عبء</td></tr><tr><td>استخدام الهاتف أثناء التعامل</td><td>يشعر النزيل بأنه في المرتبة الثانية</td></tr><tr><td>ترك النزيل ينتظر بسبب حديث جانبي</td><td>يبدو وقته غير مهم</td></tr><tr><td>الإشارة إلى النزيل بالإصبع</td><td>تبدو تصرفًا غير لائق وغير محترم</td></tr><tr><td>الوقوف قريبًا بشكل مزعج</td><td>يفقد النزيل مساحته الشخصية</td></tr><tr><td>إعطاء النزيل ظهرك أثناء الحديث</td><td>يبدو الحديث وكأنه انتهى</td></tr><tr><td>إصدار أحكام بناءً على المظهر أو الجنسية</td><td>كل نزيل يستحق الترحيب نفسه</td></tr></tbody></table><blockquote class=\"bk-quote\">أنهِ كل تفاعل بلطف، ولا تنصرف قبل التأكد من انتهاء الحديث.</blockquote><p>النقطة الأخيرة دقيقة؛ فكثير من الموظفين يرحبون جيدًا لكنهم ينصرفون مبكرًا، فيلتفتون بينما النزيل ما زال يفكر في سؤال آخر. انتظر لحظة، واسأل: \"هل يمكنني مساعدتك بشيء آخر؟\"، ثم انصرف.</p><h2>أكثر من كلمات</h2><p>تختم المادة بفكرتها الأساسية: <strong>الترحيب الدافئ ليس مجرد كلمات، بل هو شعور نصنعه لكل نزيل.</strong> فالتحية والابتسامة والتواصل البصري والاسم وعرض المساعدة تجتمع كلها في شعور واحد: أنا مرحَّب بي هنا.</p><aside class=\"bk-scene\"><strong>موقف:</strong> كانت زميلتان في الاستقبال تتناقشان في جدول المناوبات عندما اقترب نزيل. واصلت إحداهما الحديث وهي تلقي نظرة عليه، أما الأخرى فتوقفت فورًا والتفتت إليه بكامل جسمها وابتسمت وبادرته بالتحية: \"مساء الخير يا أستاذ عمر، كيف يمكنني مساعدتك؟\" استمعت دون مقاطعة، ورتبت له موعد مغادرة متأخرًا، وقبل أن تعود إلى عملها سألته إن كان هناك شيء آخر. غادر النزيل المكتب وهو يشعر بأنه أهم نزيل في الفندق.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> استخدم اسم النزيل بشكل طبيعي مرة أو مرتين، لا في كل جملة؛ فالاستخدام اللائق يبدو شخصيًا، والإفراط فيه يبدو متكلفًا.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> ابتسم واستمع واحترم وساعد كل نزيل بالقدر نفسه، وتجنب الأمور الثمانية التي تفسد الترحيب، وأنهِ كل تفاعل بلطف.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: ما نفعله وما نتجنبه",
+                                "questions": [
+                                    {
+                                        "question": "كنت تتحدث مع زميل عندما اقترب نزيل من المكتب. ماذا تفعل؟",
+                                        "options": [
+                                            "تنهي حديثك ثم تساعد النزيل",
+                                            "توقف الحديث وتواجه النزيل وتبادره بالتحية",
+                                            "تومئ للنزيل وتواصل الحديث",
+                                            "تشير إليه ليقف في مكان معين"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "ترك النزيل ينتظر بسبب حديث جانبي من قائمة ما نتجنبه؛ بادر بالتحية وواجه النزيل بكامل الجسم."
+                                    },
+                                    {
+                                        "question": "ما الكلمات الأربع التي تلخص بها المادة ما نفعله دائمًا؟",
+                                        "options": [
+                                            "لاحظ، ابتعد، احمِ، أبلغ",
+                                            "حيِّ، تحقق، سلّم، انصرف",
+                                            "ابتسم، استمع، احترم، ساعد",
+                                            "استمع، اسأل، أكد، نفّذ"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تلخص الشريحة ذلك في: ابتسم، استمع، احترم، ساعد."
+                                    },
+                                    {
+                                        "question": "أجبت عن سؤال نزيل. ماذا تفعل قبل أن تنصرف؟",
+                                        "options": [
+                                            "تتأكد من انتهاء الحديث وتنهيه بلطف",
+                                            "تلتفت بمجرد أن تنهي كلامك",
+                                            "تتفقد رسائل هاتفك",
+                                            "تشير للنزيل نحو المصاعد"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تقول المادة: أنهِ كل تفاعل بلطف، ولا تنصرف قبل التأكد من انتهاء الحديث."
+                                    },
+                                    {
+                                        "question": "أي سلوك تذكره المادة ضمن ما نتجنبه دائمًا؟",
+                                        "options": [
+                                            "عرض المساعدة قبل أن تُطلب",
+                                            "استخدام اسم النزيل بطريقة لائقة",
+                                            "الحفاظ على تواصل بصري طبيعي",
+                                            "الوقوف قريبًا من النزيل بشكل مزعج"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "الوقوف قريبًا بشكل مزعج من قائمة ما نتجنبه دائمًا، أما الثلاثة الأخرى فمما نفعله دائمًا."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

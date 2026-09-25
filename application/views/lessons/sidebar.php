@@ -87,7 +87,7 @@
 
                 <?php
                 $lessons = $this->crud_model->get_lessons('section', $section['id'])->result_array();
-                if (isset($this->ha_lms_i18n)) { $lessons = $this->ha_lms_i18n->lessons($lessons); }
+                if (isset($ap_i18n)) { $lessons = $ap_i18n->lessons($lessons); }
                 foreach($lessons as $lesson_key => $lesson):
 
                   //Check is bundle or course

@@ -1,0 +1,545 @@
+{
+    "slug": "guest-safety-and-security",
+    "category": "safety-security",
+    "level": "foundation",
+    "source_pdf": "Guest-Safety-and-Security-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/guest-safety-and-security.webp",
+    "videos": [
+        {
+            "id": "LYpd9rhX7WI",
+            "title": "The Be Ready Buzz 36 Hotel Preparedness and Safety",
+            "channel": "Be Ready Utah",
+            "why": "A short public emergency-preparedness briefing on hotel safety, such as knowing exits and evacuation routes, which reinforces why colleagues keep exits clear and guide guests calmly."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Guest Safety and Security",
+            "subtitle": "Notice the danger and act calmly",
+            "short_description": "Learn to notice risks early, protect guests without causing panic, report quickly, respond to suspicious behaviour and follow the emergency plan calmly.",
+            "description": "<p>Every colleague contributes to guest safety, not only the security team. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows hotel colleagues how to notice danger early and act calmly.</p><p>You will learn the three types of risk to watch for, five steps when you notice a hazard, short phrases that guide guests to safety, what to do and avoid, how to respond to a suspicious person or behaviour and how to stay calm in an emergency by following the hotel plan and the emergency team's instructions.</p>",
+            "requirements": "No prior training is needed; the course suits every hotel colleague. It supports, and does not replace, your hotel's emergency plan and official safety training.",
+            "outcomes": [
+                "Explain why every colleague contributes to guest safety",
+                "Recognise risks in the place, from a person or behaviour, and emergencies",
+                "Apply the five safety steps: notice, protect, report, get support, follow up",
+                "Use calm, clear phrases to guide guests to safety",
+                "Respond correctly to suspicious behaviour and emergencies without putting yourself at risk"
+            ],
+            "faqs": [
+                {
+                    "question": "What should I do first when I notice a hazard?",
+                    "answer": "Notice the hazard and identify where it is, then move the guest to a safe place without causing panic, report to your supervisor or security immediately and ask for support rather than acting alone."
+                },
+                {
+                    "question": "Should I stop a suspicious person myself?",
+                    "answer": "No. Stay calm and keep a safe distance, do not accuse or stop the person alone, remember the place, description and direction of movement, and report to security or your supervisor as per procedure."
+                },
+                {
+                    "question": "What must I avoid in an emergency?",
+                    "answer": "Do not use the lift when its use is prohibited, do not return to the danger area, do not give unconfirmed information, do not block the emergency teams and do not leave a guest in need without support."
+                }
+            ],
+            "meta_title": "Guest Safety and Security Training for Hotels",
+            "meta_description": "Hotel training on guest safety: noticing risks, five safety steps, calm phrases, suspicious behaviour and following the emergency plan.",
+            "focus_keyword": "hotel guest safety",
+            "chapters": [
+                {
+                    "title": "Safety Is Everyone's Role",
+                    "lessons": [
+                        {
+                            "title": "Every Colleague Contributes to Guest Safety",
+                            "minutes": 5,
+                            "body": "<h2>Notice it early</h2><p>Guests trust the hotel with something more important than comfort: their safety. The deck's title slide sets the tone: <strong>notice the danger and act calmly</strong>. Its core sequence is five words: <strong>Notice, Protect, Report, Support, Follow up</strong>.</p><p>Safety is not only the job of the security team or the engineers. Housekeeping attendants walk every corridor, servers see every table, bell colleagues watch every entrance and receptionists speak to every arriving guest. Each of us sees things others do not. The deck's key message is to <strong>notice before the danger becomes an incident</strong>.</p><h2>Five things every colleague does</h2><ul><li><strong>Notice floors, corridors and exits.</strong> Wet floors, loose carpets, blocked fire exits or dark stairways are part of what you should see as you move through the hotel.</li><li><strong>Pay attention to people and unusual behaviour.</strong> Someone in a staff-only area, a person trying door handles or lingering near guest rooms deserves attention.</li><li><strong>Listen to a guest's request or call for help.</strong> A guest who says \"someone is knocking on my door repeatedly\" or \"I smell something burning\" must be taken seriously immediately.</li><li><strong>Report a fault or danger immediately.</strong> Do not wait until the end of your shift, and do not assume someone else has already reported it.</li><li><strong>Do not ignore anything that may threaten safety.</strong> Even if it seems small or is outside your department, it is your responsibility to act or report.</li></ul><blockquote class=\"bk-quote\">Early action prevents harm and protects trust.</blockquote><h2>Why early action matters</h2><p>Most incidents in hotels start small: a spill that nobody marks, a propped-open fire door, a stranger who is not questioned. Acting early is almost always simpler and safer than dealing with the consequences. A wet floor sign takes seconds to place; a guest injury can change a family's holiday and damage the hotel's reputation.</p><p>Early action also protects trust. Guests who see colleagues marking a hazard or quickly calling security feel reassured that the hotel is looking after them.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A room service server returning from a delivery notices that an emergency exit door on the fourth floor is propped open with a chair. It is not his department, and he is busy. Still, he removes the chair, checks that the door closes and reports it to security by radio. Security later finds that a contractor had left it open. His ten-second action removed a risk to every guest on that floor.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Know your hotel's reporting route before you need it: who you call for a hazard, who you call for security and how you raise an emergency.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Safety is everyone's role. Notice floors, exits, people and requests for help, report immediately and never ignore what may threaten safety.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Safety is everyone's role",
+                                "questions": [
+                                    {
+                                        "question": "A housekeeping attendant notices a blocked fire exit. It is not her department. What should she do?",
+                                        "options": [
+                                            "Ignore it because engineering handles exits",
+                                            "Mention it at the end of her shift",
+                                            "Report it immediately and not ignore it",
+                                            "Wait to see if a guest complains"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says report a fault or danger immediately and do not ignore what may threaten safety."
+                                    },
+                                    {
+                                        "question": "What is the deck's main message about timing?",
+                                        "options": [
+                                            "Notice before the danger becomes an incident",
+                                            "Wait for security to find hazards",
+                                            "Act only after an incident happens",
+                                            "Report hazards weekly"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The slide says notice it early, before the danger becomes an incident."
+                                    },
+                                    {
+                                        "question": "A guest calls saying they smell burning in the corridor. How should you treat this?",
+                                        "options": [
+                                            "As a minor comment to note later",
+                                            "As a request for air freshener",
+                                            "Tell them it is probably the kitchen",
+                                            "As a call for help to act on and report immediately"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck lists listening to the guest's request or call for help and reporting danger immediately."
+                                    },
+                                    {
+                                        "question": "Why does early action protect trust?",
+                                        "options": [
+                                            "It reduces paperwork",
+                                            "Guests see the hotel is looking after their safety",
+                                            "It avoids involving the supervisor",
+                                            "It keeps incidents secret"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says early action prevents harm and protects trust."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Three Types of Risk",
+                            "minutes": 5,
+                            "body": "<h2>Place, person, emergency</h2><p>To notice danger early, you need to know what to look for. The deck groups risks into three types: <strong>a hazard in the place, a person or behaviour, and an emergency</strong>.</p><h3>1. A hazard in the place</h3><ul><li><strong>A wet floor or an obstacle.</strong> Spills in the lobby, water near the pool, a trolley left in a corridor or cables across a walkway.</li><li><strong>A damaged door or device.</strong> A door that does not lock, a broken handrail, an electrical socket with exposed wires.</li><li><strong>A blocked exit or corridor.</strong> Furniture, boxes or linen trolleys in front of emergency exits or in escape routes.</li></ul><h3>2. A person or behaviour</h3><ul><li><strong>Someone entering an unauthorised area.</strong> A person in back-of-house corridors, plant rooms or guest floors without a reason to be there.</li><li><strong>Filming or watching that raises suspicion.</strong> Someone recording entrances, exits or specific guests, or watching rooms for a long time.</li><li><strong>Asking for a key or information without verification.</strong> A person who asks for a room key, a guest's room number or details about a guest without proving who they are.</li></ul><h3>3. An emergency</h3><ul><li><strong>Fire or smoke.</strong></li><li><strong>An injury or an urgent health situation.</strong> A guest who falls, faints or seems seriously unwell.</li><li><strong>A threat or an evacuation.</strong></li></ul><table class=\"bk-say\"><thead><tr><th>Type</th><th>Examples</th></tr></thead><tbody><tr><td>Place</td><td>Wet floor or obstacle; damaged door or device; blocked exit or corridor</td></tr><tr><td>Person</td><td>Entering an unauthorised area; suspicious filming or watching; asking for a key or information without verification</td></tr><tr><td>Emergency</td><td>Fire or smoke; injury or urgent health situation; threat or evacuation</td></tr></tbody></table><h2>Notice calmly</h2><p>The deck's rule for all three types is: <strong>notice calmly, and do not put yourself or the guest at risk.</strong> Noticing does not mean rushing towards a fire, confronting a stranger or moving an injured person. It means seeing the risk, keeping yourself and guests safe and starting the right response, which the next lesson describes.</p><p>For medical situations in particular, your role is to raise the alarm quickly and call trained responders according to the hotel procedure. Do not attempt treatment beyond what you are trained to do.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A caller asks the switchboard, \"Can you tell me which room my colleague Mr. Saleh is in? I want to surprise him.\" The operator recognises this as a request for information without verification. She politely says she cannot share room details but offers to connect the call to the guest's room or take a message. She also notes the call and informs her supervisor, as the request was unusual.</aside><aside class=\"bk-note\"><strong>Tip:</strong> When in doubt about whether something is a risk, treat it as one and report it. A false alarm reported calmly is far better than a real risk ignored.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Watch for hazards in the place, risks from a person or behaviour, and emergencies. Notice calmly and never put yourself or the guest at risk.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Three types of risk",
+                                "questions": [
+                                    {
+                                        "question": "A person asks reception for a spare key to room 512 but cannot show ID. Which type of risk is this?",
+                                        "options": [
+                                            "A hazard in the place",
+                                            "A person or behaviour risk",
+                                            "An emergency",
+                                            "Not a risk"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Asking for a key or information without verification is listed under person or behaviour."
+                                    },
+                                    {
+                                        "question": "Which of these is a hazard in the place?",
+                                        "options": [
+                                            "A guest fainting",
+                                            "Someone filming the entrance",
+                                            "A threat call",
+                                            "A corridor blocked by linen trolleys"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "A blocked exit or corridor is a hazard in the place."
+                                    },
+                                    {
+                                        "question": "You see smoke coming from a service room. What does the deck's rule say?",
+                                        "options": [
+                                            "Notice calmly and do not put yourself or guests at risk",
+                                            "Run inside to find the source",
+                                            "Wait to see if it gets worse",
+                                            "Open all doors to clear the smoke"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck says notice calmly and do not put yourself or the guest at risk."
+                                    },
+                                    {
+                                        "question": "A guest collapses in the restaurant. What is your role according to this lesson?",
+                                        "options": [
+                                            "Give medicine from the first-aid box",
+                                            "Move the guest to their room",
+                                            "Raise the alarm and call trained responders per hotel procedure",
+                                            "Wait for the guest to recover alone"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "An urgent health situation is an emergency; the lesson says raise the alarm and call trained responders, without treatment beyond your training."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "The Safety Method",
+                    "lessons": [
+                        {
+                            "title": "Five Safety Steps and Calm Phrases",
+                            "minutes": 6,
+                            "body": "<h2>Protect first</h2><p>When you notice a hazard, the deck gives five steps. Its guiding principle is: <strong>protect first; move the guest away from the danger without causing panic.</strong></p><ol><li><strong>Notice the hazard and identify its location.</strong> Be precise: \"water on the floor by lift 2 on the ground floor\" is far more useful than \"there's a spill somewhere\".</li><li><strong>Move the guest to a safe place.</strong> Guide guests away from the risk calmly. Your tone and body language should reassure, not alarm.</li><li><strong>Report to the supervisor or security immediately.</strong> Use the hotel's reporting route, whether radio, phone or emergency number.</li><li><strong>Ask for support; do not work alone.</strong> Many situations need more than one person: one to protect guests, one to report, one to meet the responders.</li><li><strong>Follow up until the hazard is dealt with.</strong> Stay involved until the area is safe or responsibility has been clearly handed over.</li></ol><blockquote class=\"bk-quote\">In immediate danger, follow the emergency plan at once.</blockquote><p>The five steps apply to most hazards. But if the danger is immediate, such as fire, smoke or a threat, the hotel's emergency plan takes priority and must be followed straight away.</p><h2>Phrases that help guests in a dangerous moment</h2><p>In a stressful moment, guests need short, clear instructions. The deck offers four phrases:</p><table class=\"bk-say\"><thead><tr><th>Purpose</th><th>Phrase</th></tr></thead><tbody><tr><td>Guide</td><td>\"Please follow me to a safe place.\"</td></tr><tr><td>Reassure</td><td>\"For your safety, this way is safer.\"</td></tr><tr><td>Call support</td><td>\"I will call security to assist you.\"</td></tr><tr><td>Stay safe</td><td>\"Please stay here until the area is safe.\"</td></tr></tbody></table><h2>One clear step at a time</h2><p>The deck's advice is: <strong>speak in a clear, calm voice and give one step at a time.</strong> A frightened guest cannot process a long explanation. Tell them the next single thing to do, check they have done it and then give the next instruction. Avoid words that spread fear, and never guess at information you are not sure of.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A pipe bursts in a ceiling above the lobby lounge, and water starts dripping near an electrical lamp where a family is sitting. The lounge attendant walks over calmly: \"For your safety, please follow me; this side is safer.\" She seats them at the far end of the lounge, then radios the supervisor and engineering with the exact location. A colleague places warning signs while she stays with the guests. She checks back until engineering confirms the area is isolated and safe.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Practise the phrases aloud. In a real incident, words you have already said many times come out more calmly.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Notice and locate, protect the guest, report immediately, get support and follow up. In immediate danger follow the emergency plan, and give guests one calm step at a time.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Five safety steps",
+                                "questions": [
+                                    {
+                                        "question": "You notice broken glass near the pool where children are playing. What is the first protective action?",
+                                        "options": [
+                                            "Finish your current task first",
+                                            "Shout to everyone to leave immediately",
+                                            "Take a photo for the report",
+                                            "Calmly move the guests away from the danger"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Protect first: move the guest away from the danger without causing panic."
+                                    },
+                                    {
+                                        "question": "Why should you ask for support instead of handling a hazard alone?",
+                                        "options": [
+                                            "The deck says ask for support and do not work alone",
+                                            "So someone else takes the blame",
+                                            "Because you should never report hazards",
+                                            "To avoid talking to guests"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The fourth step is ask for support and do not work alone."
+                                    },
+                                    {
+                                        "question": "The fire alarm sounds and you see smoke. What takes priority?",
+                                        "options": [
+                                            "Finishing the five steps in order",
+                                            "Following the emergency plan at once",
+                                            "Checking the source yourself",
+                                            "Calling the guest's family"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says in immediate danger, follow the emergency plan at once."
+                                    },
+                                    {
+                                        "question": "A frightened guest is asking many questions during an incident. How should you speak?",
+                                        "options": [
+                                            "Give a full explanation of what happened",
+                                            "Tell them you do not know anything",
+                                            "Speak calmly and give one clear step at a time",
+                                            "Guess the cause to reassure them"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says speak in a clear, calm voice and give one step at a time."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Safety in Practice",
+                    "lessons": [
+                        {
+                            "title": "Do and Avoid, Suspicious Behaviour and Emergencies",
+                            "minutes": 7,
+                            "body": "<h2>Act in a way that protects the guest</h2><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Secure the area or place a warning sign</td><td>Leaving the hazard unprotected</td></tr><tr><td>Report to the responsible team quickly</td><td>Confronting a suspicious person alone</td></tr><tr><td>Stay with the guest when needed</td><td>Shouting or spreading fear</td></tr><tr><td>Keep exits and corridors clear</td><td>Moving an injured person without necessity or training</td></tr><tr><td>Record what happened accurately</td><td>Hiding the incident or delaying the report</td></tr></tbody></table><blockquote class=\"bk-quote\">Do not put yourself in danger; ask for the right support.</blockquote><h2>When you notice a suspicious person or behaviour</h2><ol><li><strong>Stay calm:</strong> keep a safe distance.</li><li><strong>Do not confront:</strong> do not accuse or stop the person alone.</li><li><strong>Observe the details:</strong> remember the place, the description and the direction of movement.</li><li><strong>Report immediately:</strong> inform security or the supervisor according to procedure.</li></ol><blockquote class=\"bk-quote\">Do not share guest information or issue a card or key without verification.</blockquote><h2>In an emergency, stay calm</h2><h3>Start with these steps</h3><ul><li>Report the emergency according to the hotel plan.</li><li>Explain the type of danger and its location.</li><li>Direct guests to the safe route.</li><li>Help children and older guests when needed.</li><li>Stay calm and follow instructions.</li></ul><h3>Avoid these mistakes</h3><ul><li>Do not use the lift when its use is prohibited.</li><li>Do not return to the danger area.</li><li>Do not give unconfirmed information.</li><li>Do not block the way of the emergency teams.</li><li>Do not leave a guest in need without support.</li></ul><blockquote class=\"bk-quote\">Always follow the hotel plan and the emergency team's instructions.</blockquote><aside class=\"bk-scene\"><strong>Scene:</strong> A bell colleague notices a man walking slowly along a guest corridor, trying door handles one after another. He does not approach or challenge him. From a safe distance he notes the floor, the man's grey jacket and cap, and that he is heading towards the service stairs. He radios security immediately with those details. Security meets the man at the stairs. Later, the colleague writes an accurate account for the incident report.</aside><h2>Closing thought</h2><p>The deck ends: guest safety is our responsibility. Notice the danger and act without delay: notice, protect, report, support and follow up. Calm and quick reporting protect everyone.</p><aside class=\"bk-key\"><strong>Key takeaway:</strong> Secure, report, stay with the guest, keep exits clear and record accurately. Never confront a suspicious person alone, never share guest information without verification, and in an emergency follow the hotel plan and the emergency team.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Safety in practice",
+                                "questions": [
+                                    {
+                                        "question": "A guest has fallen on the stairs and says their leg hurts badly. What should you avoid?",
+                                        "options": [
+                                            "Staying with the guest",
+                                            "Reporting quickly to the responsible team",
+                                            "Moving the guest without necessity or training",
+                                            "Keeping the area clear"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The avoid list includes moving an injured person without necessity or training."
+                                    },
+                                    {
+                                        "question": "You see someone filming guest room doors on a corridor. What is the correct response?",
+                                        "options": [
+                                            "Keep a safe distance, observe details and report to security",
+                                            "Take their phone away",
+                                            "Accuse them loudly so guests hear",
+                                            "Ignore it; filming is allowed"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Stay calm, do not confront, observe the details and report immediately."
+                                    },
+                                    {
+                                        "question": "During an evacuation a guest wants to take the lift, which is prohibited. What do you do?",
+                                        "options": [
+                                            "Let them, if they are in a hurry",
+                                            "Go back to their room to help them pack",
+                                            "Tell them the fire is probably small",
+                                            "Direct them calmly to the safe route instead of the lift"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Do not use the lift when prohibited; direct guests to the safe route."
+                                    },
+                                    {
+                                        "question": "A minor incident happened on your shift and was resolved. What should you do?",
+                                        "options": [
+                                            "Keep it quiet since it is solved",
+                                            "Record what happened accurately and report it",
+                                            "Report it only if a guest complains",
+                                            "Wait until the monthly meeting"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says record what happened accurately and avoid hiding the incident or delaying the report."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "سلامة وأمن النزيل",
+            "subtitle": "انتبه للخطر وتصرف بهدوء",
+            "short_description": "تعلّم كيف تلاحظ الخطر مبكرًا، وتحمي النزيل دون إثارة الذعر، وتبلغ بسرعة، وتتعامل مع السلوك المشبوه، وتتبع خطة الطوارئ بهدوء.",
+            "description": "<p>كل موظف يساهم في سلامة النزيل، لا فريق الأمن وحده. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتعلّم الموظفين كيف ينتبهون للخطر مبكرًا ويتصرفون بهدوء.</p><p>ستتعرف على ثلاثة أنواع من الخطر يجب الانتباه إليها، وخمس خطوات عند ملاحظة الخطر، وعبارات قصيرة توجه النزيل إلى الأمان، وما تفعله وما تتجنبه، وكيف تتصرف عند ملاحظة شخص أو سلوك مشبوه، وكيف تحافظ على هدوئك في الطوارئ باتباع خطة الفندق وتعليمات فريق الطوارئ.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظفي الفندق. وهي تدعم خطة الطوارئ في فندقك والتدريب الرسمي على السلامة ولا تحل محلهما.",
+            "outcomes": [
+                "اشرح لماذا يساهم كل موظف في سلامة النزيل",
+                "تعرّف على الخطر في المكان، ومن شخص أو سلوك، وفي الحالات الطارئة",
+                "طبّق خطوات السلامة الخمس: لاحظ، احمِ، أبلغ، اطلب الدعم، تابع",
+                "استخدم عبارات هادئة وواضحة لتوجيه النزيل إلى الأمان",
+                "تصرف بشكل صحيح مع السلوك المشبوه والطوارئ دون أن تعرض نفسك للخطر"
+            ],
+            "faqs": [
+                {
+                    "question": "ماذا أفعل أولًا عند ملاحظة خطر؟",
+                    "answer": "لاحظ الخطر وحدد مكانه، ثم أبعد النزيل إلى مكان آمن دون إثارة الذعر، وأبلغ المشرف أو الأمن فورًا، واطلب الدعم ولا تعمل وحدك."
+                },
+                {
+                    "question": "هل أوقف الشخص المشبوه بنفسي؟",
+                    "answer": "لا. حافظ على الهدوء ومسافة آمنة، ولا تتهم الشخص أو توقفه وحدك، وتذكر المكان والوصف واتجاه الحركة، وأبلغ الأمن أو المشرف حسب الإجراء."
+                },
+                {
+                    "question": "ما الذي يجب تجنبه في الطوارئ؟",
+                    "answer": "لا تستخدم المصعد عند منع استخدامه، ولا تعد إلى منطقة الخطر، ولا تعطِ معلومات غير مؤكدة، ولا تعطل طريق فرق الطوارئ، ولا تترك النزيل المحتاج دون دعم."
+                }
+            ],
+            "meta_title": "سلامة وأمن النزيل في الفنادق",
+            "meta_description": "تدريب فندقي على سلامة النزيل: ملاحظة الخطر، وخطوات السلامة الخمس، وعبارات هادئة، والتعامل مع السلوك المشبوه، واتباع خطة الطوارئ.",
+            "focus_keyword": "سلامة النزيل في الفندق",
+            "chapters": [
+                {
+                    "title": "السلامة مسؤولية الجميع",
+                    "lessons": [
+                        {
+                            "title": "كل موظف يساهم في سلامة النزيل",
+                            "minutes": 5,
+                            "body": "<h2>انتبه مبكرًا</h2><p>يأتمن النزيل الفندق على ما هو أهم من الراحة: سلامته. وشريحة العنوان تحدد الاتجاه: <strong>انتبه للخطر وتصرف بهدوء</strong>، وتسلسلها الأساسي خمس كلمات: <strong>لاحظ، أبعد الخطر، أبلغ، ساعد، تابع</strong>.</p><p>السلامة ليست مهمة فريق الأمن أو المهندسين وحدهم؛ فموظفو التدبير الفندقي يمرون في كل ممر، والنادلون يرون كل طاولة، وموظفو الأمتعة يراقبون كل مدخل، وموظفو الاستقبال يتحدثون مع كل نزيل يصل. كل منا يرى ما لا يراه غيره. ورسالة المادة الأساسية: <strong>انتبه قبل أن يصبح الخطر حادثًا</strong>.</p><h2>خمسة أمور يقوم بها كل موظف</h2><ul><li><strong>لاحظ الأرضيات والممرات والمخارج.</strong> الأرضيات المبللة، والسجاد المرتخي، ومخارج الطوارئ المغلقة، والسلالم المظلمة جزء مما يجب أن تراه أثناء تنقلك.</li><li><strong>انتبه للأشخاص والسلوك غير المعتاد،</strong> كشخص في منطقة خاصة بالموظفين، أو يجرب مقابض الأبواب، أو يتردد قرب غرف النزلاء.</li><li><strong>استمع إلى طلب النزيل أو استغاثته.</strong> النزيل الذي يقول \"هناك من يطرق بابي مرارًا\" أو \"أشم رائحة احتراق\" يجب أخذ كلامه بجدية فورًا.</li><li><strong>أبلغ عن العطل أو الخطر فورًا،</strong> ولا تنتظر نهاية مناوبتك، ولا تفترض أن غيرك قد أبلغ.</li><li><strong>لا تتجاهل ما قد يهدد السلامة،</strong> حتى لو بدا صغيرًا أو كان خارج قسمك.</li></ul><blockquote class=\"bk-quote\">التصرف المبكر يمنع الضرر ويحافظ على الثقة.</blockquote><h2>لماذا التصرف المبكر مهم</h2><p>تبدأ معظم الحوادث في الفنادق صغيرة: انسكاب لم يُعلَّم، أو باب طوارئ مفتوح بإسناد، أو شخص غريب لم يُسأل. والتصرف المبكر دائمًا أبسط وأكثر أمانًا من التعامل مع العواقب؛ فوضع لافتة تحذير يستغرق ثوانٍ، أما إصابة نزيل فقد تغير رحلة عائلة وتضر بسمعة الفندق.</p><p>والتصرف المبكر يحفظ الثقة أيضًا؛ فالنزيل الذي يرى الموظفين يعلّمون الخطر أو يتصلون بالأمن بسرعة يطمئن إلى أن الفندق يعتني به.</p><aside class=\"bk-scene\"><strong>موقف:</strong> لاحظ نادل خدمة الغرف وهو عائد من توصيل طلب أن باب مخرج الطوارئ في الطابق الرابع مفتوح بكرسي. لم يكن ذلك من قسمه وكان مشغولًا، لكنه أزال الكرسي، وتأكد من انغلاق الباب، وأبلغ الأمن عبر اللاسلكي. ووجد الأمن لاحقًا أن أحد المقاولين تركه مفتوحًا. تصرفه الذي استغرق عشر ثوانٍ أزال خطرًا عن كل نزلاء الطابق.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> اعرف طريق الإبلاغ في فندقك قبل أن تحتاجه: بمن تتصل عند الخطر، وبمن تتصل للأمن، وكيف تبلغ عن حالة طارئة.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> السلامة مسؤولية الجميع. لاحظ الأرضيات والمخارج والأشخاص وطلبات الاستغاثة، وأبلغ فورًا، ولا تتجاهل ما قد يهدد السلامة.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: السلامة مسؤولية الجميع",
+                                "questions": [
+                                    {
+                                        "question": "لاحظت موظفة تدبير فندقي مخرج طوارئ مغلقًا بعوائق، وهو ليس من قسمها. ماذا تفعل؟",
+                                        "options": [
+                                            "تتجاهله لأن الصيانة مسؤولة عن المخارج",
+                                            "تذكره في نهاية مناوبتها",
+                                            "تبلغ عنه فورًا ولا تتجاهله",
+                                            "تنتظر حتى يشتكي نزيل"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: أبلغ عن العطل أو الخطر فورًا، ولا تتجاهل ما قد يهدد السلامة."
+                                    },
+                                    {
+                                        "question": "ما رسالة المادة الأساسية بشأن التوقيت؟",
+                                        "options": [
+                                            "انتبه قبل أن يصبح الخطر حادثًا",
+                                            "انتظر حتى يكتشف الأمن الخطر",
+                                            "تصرف فقط بعد وقوع الحادث",
+                                            "أبلغ عن المخاطر أسبوعيًا"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تقول الشريحة: انتبه قبل أن يصبح الخطر حادثًا."
+                                    },
+                                    {
+                                        "question": "اتصل نزيل يقول إنه يشم رائحة احتراق في الممر. كيف تتعامل مع ذلك؟",
+                                        "options": [
+                                            "كملاحظة بسيطة تدونها لاحقًا",
+                                            "كطلب معطر جو",
+                                            "تقول له إنها غالبًا من المطبخ",
+                                            "كاستغاثة تتصرف فيها وتبلغ عنها فورًا"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تذكر المادة: استمع إلى طلب النزيل أو استغاثته، وأبلغ عن الخطر فورًا."
+                                    },
+                                    {
+                                        "question": "لماذا يحافظ التصرف المبكر على الثقة؟",
+                                        "options": [
+                                            "لأنه يقلل الأوراق",
+                                            "لأن النزيل يرى أن الفندق يعتني بسلامته",
+                                            "لأنه يغني عن إشراك المشرف",
+                                            "لأنه يبقي الحوادث سرية"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: التصرف المبكر يمنع الضرر ويحافظ على الثقة."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "انتبه إلى ثلاثة أنواع من الخطر",
+                            "minutes": 5,
+                            "body": "<h2>المكان، الشخص، الحالة الطارئة</h2><p>لكي تنتبه للخطر مبكرًا، يجب أن تعرف ما الذي تبحث عنه. وتقسم المادة المخاطر إلى ثلاثة أنواع: <strong>خطر في المكان، وشخص أو سلوك، وحالة طارئة</strong>.</p><h3>١. خطر في المكان</h3><ul><li><strong>أرضية مبللة أو عائق،</strong> كانسكاب في البهو، أو ماء قرب المسبح، أو عربة متروكة في ممر، أو أسلاك في طريق المشاة.</li><li><strong>باب أو جهاز تالف،</strong> كباب لا يُقفل، أو درابزين مكسور، أو مقبس كهربائي بأسلاك مكشوفة.</li><li><strong>مخرج أو ممر مغلق،</strong> بأثاث أو صناديق أو عربات بياضات أمام مخارج الطوارئ أو في طرق الإخلاء.</li></ul><h3>٢. شخص أو سلوك</h3><ul><li><strong>شخص يدخل منطقة غير مسموحة،</strong> كممرات الخدمة أو غرف المعدات أو طوابق النزلاء دون سبب.</li><li><strong>تصوير أو مراقبة تثير الشك،</strong> كتصوير المداخل والمخارج أو نزلاء بعينهم، أو مراقبة الغرف مدة طويلة.</li><li><strong>طلب مفتاح أو معلومات بلا إثبات،</strong> كمن يطلب مفتاح غرفة أو رقم غرفة نزيل أو تفاصيل عنه دون أن يثبت هويته.</li></ul><h3>٣. حالة طارئة</h3><ul><li><strong>حريق أو دخان.</strong></li><li><strong>إصابة أو حالة صحية عاجلة،</strong> كنزيل يسقط أو يُغمى عليه أو يبدو مريضًا بشدة.</li><li><strong>تهديد أو إخلاء.</strong></li></ul><table class=\"bk-say\"><thead><tr><th>النوع</th><th>أمثلة</th></tr></thead><tbody><tr><td>خطر في المكان</td><td>أرضية مبللة أو عائق؛ باب أو جهاز تالف؛ مخرج أو ممر مغلق</td></tr><tr><td>شخص أو سلوك</td><td>دخول منطقة غير مسموحة؛ تصوير أو مراقبة تثير الشك؛ طلب مفتاح أو معلومات بلا إثبات</td></tr><tr><td>حالة طارئة</td><td>حريق أو دخان؛ إصابة أو حالة صحية عاجلة؛ تهديد أو إخلاء</td></tr></tbody></table><h2>لاحظ بهدوء</h2><p>وقاعدة المادة للأنواع الثلاثة: <strong>لاحظ بهدوء ولا تعرض نفسك أو النزيل للخطر.</strong> الملاحظة لا تعني الاندفاع نحو حريق أو مواجهة غريب أو تحريك مصاب، بل تعني رؤية الخطر، والحفاظ على سلامتك وسلامة النزلاء، وبدء الاستجابة الصحيحة التي يشرحها الدرس التالي.</p><p>وفي الحالات الصحية تحديدًا، دورك هو التنبيه السريع واستدعاء المسعفين المدربين وفق إجراء الفندق، دون محاولة أي علاج يتجاوز ما تدربت عليه.</p><aside class=\"bk-scene\"><strong>موقف:</strong> سأل متصل عاملة السنترال: \"هل يمكنك إخباري برقم غرفة زميلي الأستاذ صالح؟ أريد أن أفاجئه\". أدركت أن هذا طلب معلومات بلا إثبات، فاعتذرت بلطف عن مشاركة تفاصيل الغرفة، وعرضت تحويل المكالمة إلى غرفة النزيل أو أخذ رسالة. ثم دونت المكالمة وأبلغت مشرفتها لأن الطلب كان غير معتاد.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> إذا شككت في أن شيئًا ما يمثل خطرًا فتعامل معه كخطر وأبلغ عنه؛ فإنذار غير حقيقي يُبلغ عنه بهدوء أفضل بكثير من خطر حقيقي يُتجاهل.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> انتبه للخطر في المكان، ومن شخص أو سلوك، وفي الحالات الطارئة. لاحظ بهدوء ولا تعرض نفسك أو النزيل للخطر.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: أنواع الخطر الثلاثة",
+                                "questions": [
+                                    {
+                                        "question": "طلب شخص من الاستقبال مفتاحًا إضافيًا للغرفة 512 دون أن يثبت هويته. ما نوع هذا الخطر؟",
+                                        "options": [
+                                            "خطر في المكان",
+                                            "شخص أو سلوك",
+                                            "حالة طارئة",
+                                            "ليس خطرًا"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "طلب مفتاح أو معلومات بلا إثبات مذكور تحت شخص أو سلوك."
+                                    },
+                                    {
+                                        "question": "أيٌّ مما يلي خطر في المكان؟",
+                                        "options": [
+                                            "نزيل يُغمى عليه",
+                                            "شخص يصور المدخل",
+                                            "مكالمة تهديد",
+                                            "ممر مغلق بعربات البياضات"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "المخرج أو الممر المغلق من أمثلة الخطر في المكان."
+                                    },
+                                    {
+                                        "question": "رأيت دخانًا يخرج من غرفة خدمات. ماذا تقول قاعدة المادة؟",
+                                        "options": [
+                                            "لاحظ بهدوء ولا تعرض نفسك أو النزيل للخطر",
+                                            "ادخل بسرعة لمعرفة المصدر",
+                                            "انتظر لترى هل يزداد",
+                                            "افتح كل الأبواب لإخراج الدخان"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تقول المادة: لاحظ بهدوء ولا تعرض نفسك أو النزيل للخطر."
+                                    },
+                                    {
+                                        "question": "سقط نزيل مغشيًا عليه في المطعم. ما دورك بحسب هذا الدرس؟",
+                                        "options": [
+                                            "تعطيه دواء من صندوق الإسعافات",
+                                            "تنقله إلى غرفته",
+                                            "تنبه وتستدعي المسعفين المدربين وفق إجراء الفندق",
+                                            "تنتظر حتى يتعافى وحده"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "الحالة الصحية العاجلة حالة طارئة، ويقول الدرس: نبّه واستدعِ المسعفين المدربين دون علاج يتجاوز تدريبك."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "منهج السلامة",
+                    "lessons": [
+                        {
+                            "title": "خمس خطوات عند ملاحظة الخطر وعبارات هادئة",
+                            "minutes": 6,
+                            "body": "<h2>احمِ أولًا</h2><p>عندما تلاحظ خطرًا تقدم المادة خمس خطوات، ومبدؤها الموجه: <strong>احمِ أولًا، وأبعد النزيل عن الخطر من دون إثارة الذعر.</strong></p><ol><li><strong>لاحظ الخطر وحدد مكانه،</strong> بدقة؛ فعبارة \"ماء على الأرض بجوار المصعد رقم ٢ في الطابق الأرضي\" أنفع بكثير من \"هناك انسكاب في مكان ما\".</li><li><strong>أبعد النزيل إلى مكان آمن،</strong> ووجّهه بهدوء؛ فنبرتك ولغة جسدك يجب أن تطمئن لا أن تثير الخوف.</li><li><strong>أبلغ المشرف أو الأمن فورًا،</strong> عبر طريق الإبلاغ المعتمد في الفندق، باللاسلكي أو الهاتف أو رقم الطوارئ.</li><li><strong>اطلب الدعم ولا تعمل وحدك؛</strong> فكثير من المواقف تحتاج أكثر من شخص: واحد يحمي النزلاء، وآخر يبلغ، وثالث يستقبل فريق الاستجابة.</li><li><strong>تابع حتى تتم معالجة الخطر،</strong> وابقَ مشاركًا حتى يصبح المكان آمنًا أو تُسلَّم المسؤولية بوضوح.</li></ol><blockquote class=\"bk-quote\">في الخطر العاجل، اتبع خطة الطوارئ فورًا.</blockquote><p>تنطبق الخطوات الخمس على معظم المخاطر، لكن إذا كان الخطر عاجلًا كالحريق أو الدخان أو التهديد، فإن خطة الطوارئ في الفندق لها الأولوية ويجب اتباعها فورًا.</p><h2>عبارات تساعد النزيل وقت الخطر</h2><table class=\"bk-say\"><thead><tr><th>الغرض</th><th>العبارة</th></tr></thead><tbody><tr><td>من فضلك اتبعني</td><td>\"من فضلك اتبعني إلى مكان آمن.\"</td></tr><tr><td>حرصًا على سلامتكم</td><td>\"هذا الطريق أكثر أمانًا.\"</td></tr><tr><td>سأطلب الدعم</td><td>\"سأطلب الأمن لمساعدتكم.\"</td></tr><tr><td>ابقَ في مكان آمن</td><td>\"ابقَ هنا حتى يصبح المكان آمنًا.\"</td></tr></tbody></table><h2>خطوة واحدة واضحة كل مرة</h2><p>ونصيحة المادة: <strong>تحدث بصوت واضح وهادئ، وقدم خطوة واحدة كل مرة.</strong> النزيل الخائف لا يستطيع استيعاب شرح طويل، فأخبره بالخطوة التالية فقط، وتأكد أنه نفذها، ثم أعطه التوجيه الذي يليها. وتجنب الكلمات التي تنشر الخوف، ولا تخمّن معلومات لست متأكدًا منها.</p><aside class=\"bk-scene\"><strong>موقف:</strong> انفجر أنبوب في سقف صالة البهو، وبدأ الماء يقطر قرب مصباح كهربائي تجلس بجانبه عائلة. توجهت موظفة الصالة إليهم بهدوء: \"حرصًا على سلامتكم، من فضلكم اتبعوني، هذا الجانب أكثر أمانًا\". أجلستهم في الطرف الآخر من الصالة، ثم أبلغت المشرف والصيانة عبر اللاسلكي بالمكان الدقيق. ووضع زميل لافتات التحذير بينما بقيت مع النزلاء، وظلت تتابع حتى أكدت الصيانة عزل المنطقة وأمانها.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> تدرّب على قول العبارات بصوت مسموع؛ ففي الحادث الحقيقي تخرج الكلمات التي قلتها مرارًا بهدوء أكبر.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> لاحظ وحدد المكان، واحمِ النزيل، وأبلغ فورًا، واطلب الدعم، وتابع. وفي الخطر العاجل اتبع خطة الطوارئ، وقدم للنزيل خطوة واحدة هادئة كل مرة.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: خطوات السلامة الخمس",
+                                "questions": [
+                                    {
+                                        "question": "لاحظت زجاجًا مكسورًا قرب المسبح حيث يلعب الأطفال. ما أول تصرف وقائي؟",
+                                        "options": [
+                                            "تنهي مهمتك الحالية أولًا",
+                                            "تصرخ في الجميع ليغادروا فورًا",
+                                            "تلتقط صورة للتقرير",
+                                            "تُبعد النزلاء عن الخطر بهدوء"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "احمِ أولًا: أبعد النزيل عن الخطر من دون إثارة الذعر."
+                                    },
+                                    {
+                                        "question": "لماذا تطلب الدعم بدل التعامل مع الخطر وحدك؟",
+                                        "options": [
+                                            "لأن المادة تقول: اطلب الدعم ولا تعمل وحدك",
+                                            "ليتحمل غيرك اللوم",
+                                            "لأنه لا ينبغي الإبلاغ عن المخاطر",
+                                            "لتتجنب الحديث مع النزلاء"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "الخطوة الرابعة: اطلب الدعم ولا تعمل وحدك."
+                                    },
+                                    {
+                                        "question": "انطلق إنذار الحريق ورأيت دخانًا. ما الذي له الأولوية؟",
+                                        "options": [
+                                            "إكمال الخطوات الخمس بالترتيب",
+                                            "اتباع خطة الطوارئ فورًا",
+                                            "التحقق من المصدر بنفسك",
+                                            "الاتصال بعائلة النزيل"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: في الخطر العاجل، اتبع خطة الطوارئ فورًا."
+                                    },
+                                    {
+                                        "question": "نزيل خائف يطرح أسئلة كثيرة أثناء حادث. كيف تتحدث معه؟",
+                                        "options": [
+                                            "تشرح له ما حدث بالتفصيل",
+                                            "تقول له إنك لا تعرف شيئًا",
+                                            "تتحدث بهدوء وتقدم خطوة واحدة واضحة كل مرة",
+                                            "تخمّن السبب لتطمئنه"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: تحدث بصوت واضح وهادئ، وقدم خطوة واحدة كل مرة."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "السلامة في الممارسة",
+                    "lessons": [
+                        {
+                            "title": "افعل وتجنب والسلوك المشبوه والطوارئ",
+                            "minutes": 7,
+                            "body": "<h2>تصرف بطريقة تحمي النزيل</h2><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنب</th></tr></thead><tbody><tr><td>أمّن المكان أو ضع علامة تحذير</td><td>أن تترك الخطر دون حماية</td></tr><tr><td>أبلغ الجهة المختصة بسرعة</td><td>أن تواجه شخصًا مشتبهًا به وحدك</td></tr><tr><td>ابقَ مع النزيل عند الحاجة</td><td>أن تصرخ أو تنشر الخوف</td></tr><tr><td>احفظ المخارج والممرات خالية</td><td>أن تنقل مصابًا دون ضرورة أو تدريب</td></tr><tr><td>سجل ما حدث بدقة</td><td>أن تخفي الحادث أو تؤخر الإبلاغ</td></tr></tbody></table><blockquote class=\"bk-quote\">لا تعرض نفسك للخطر — اطلب الدعم المناسب.</blockquote><h2>عند ملاحظة شخص أو سلوك مشبوه</h2><ol><li><strong>حافظ على الهدوء:</strong> حافظ على مسافة آمنة.</li><li><strong>لا تواجه:</strong> لا تتهم الشخص أو توقفه وحدك.</li><li><strong>لاحظ التفاصيل:</strong> تذكر المكان والوصف واتجاه الحركة.</li><li><strong>أبلغ فورًا:</strong> أبلغ الأمن أو المشرف حسب الإجراء.</li></ol><blockquote class=\"bk-quote\">لا تشارك معلومات النزلاء أو تمنح بطاقة أو مفتاحًا دون تحقق.</blockquote><h2>عند الطوارئ حافظ على الهدوء</h2><h3>ابدأ بهذه الخطوات</h3><ul><li>أبلغ الطوارئ حسب خطة الفندق.</li><li>وضّح نوع الخطر ومكانه.</li><li>وجّه النزلاء إلى الطريق الآمن.</li><li>ساعد الأطفال وكبار السن عند الحاجة.</li><li>ابقَ هادئًا واتبع التعليمات.</li></ul><h3>تجنب هذه الأخطاء</h3><ul><li>لا تستخدم المصعد عند منع استخدامه.</li><li>لا تعد إلى منطقة الخطر.</li><li>لا تعطِ معلومات غير مؤكدة.</li><li>لا تعطل طريق فرق الطوارئ.</li><li>لا تترك النزيل المحتاج دون دعم.</li></ul><blockquote class=\"bk-quote\">اتبع خطة الفندق وتعليمات فريق الطوارئ دائمًا.</blockquote><aside class=\"bk-scene\"><strong>موقف:</strong> لاحظ موظف الأمتعة رجلًا يمشي ببطء في ممر النزلاء ويجرب مقابض الأبواب واحدًا تلو الآخر. لم يقترب منه ولم يواجهه، بل دوّن من مسافة آمنة رقم الطابق، وسترة الرجل الرمادية وقبعته، وأنه يتجه نحو سلالم الخدمة، ثم أبلغ الأمن فورًا بهذه التفاصيل عبر اللاسلكي. فالتقاه فريق الأمن عند السلالم، وكتب الموظف لاحقًا وصفًا دقيقًا لتقرير الحادث.</aside><h2>خاتمة</h2><p>تختم المادة بقولها: سلامة النزيل مسؤوليتنا. لاحظ الخطر وتصرف من دون تأخير: لاحظ، احمِ، أبلغ، ساعد، تابع. فالهدوء والإبلاغ السريع يحميان الجميع.</p><aside class=\"bk-key\"><strong>الخلاصة:</strong> أمّن المكان، وأبلغ، وابقَ مع النزيل، واحفظ المخارج خالية، وسجل بدقة. لا تواجه شخصًا مشبوهًا وحدك، ولا تشارك معلومات النزلاء دون تحقق، واتبع في الطوارئ خطة الفندق وفريق الطوارئ.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: السلامة في الممارسة",
+                                "questions": [
+                                    {
+                                        "question": "سقط نزيل على الدرج ويقول إن ساقه تؤلمه بشدة. ما الذي يجب تجنبه؟",
+                                        "options": [
+                                            "البقاء مع النزيل",
+                                            "إبلاغ الجهة المختصة بسرعة",
+                                            "نقل النزيل دون ضرورة أو تدريب",
+                                            "إبقاء المكان خاليًا"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "قائمة التجنب تشمل نقل المصاب دون ضرورة أو تدريب."
+                                    },
+                                    {
+                                        "question": "رأيت شخصًا يصور أبواب غرف النزلاء في أحد الممرات. ما التصرف الصحيح؟",
+                                        "options": [
+                                            "تحافظ على مسافة آمنة وتلاحظ التفاصيل وتبلغ الأمن",
+                                            "تأخذ هاتفه منه",
+                                            "تتهمه بصوت عالٍ ليسمع النزلاء",
+                                            "تتجاهله فالتصوير مسموح"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "حافظ على الهدوء، ولا تواجه، ولاحظ التفاصيل، وأبلغ فورًا."
+                                    },
+                                    {
+                                        "question": "أثناء الإخلاء أراد نزيل استخدام المصعد وهو ممنوع. ماذا تفعل؟",
+                                        "options": [
+                                            "تسمح له إن كان مستعجلًا",
+                                            "تعود معه إلى غرفته لحزم أمتعته",
+                                            "تقول له إن الحريق غالبًا صغير",
+                                            "توجهه بهدوء إلى الطريق الآمن بدل المصعد"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "لا تستخدم المصعد عند منع استخدامه، ووجّه النزلاء إلى الطريق الآمن."
+                                    },
+                                    {
+                                        "question": "وقع حادث بسيط في مناوبتك وتمت معالجته. ماذا تفعل؟",
+                                        "options": [
+                                            "تتكتم عليه لأنه انتهى",
+                                            "تسجل ما حدث بدقة وتبلغ عنه",
+                                            "تبلغ عنه فقط إذا اشتكى نزيل",
+                                            "تنتظر الاجتماع الشهري"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: سجل ما حدث بدقة، وتجنب إخفاء الحادث أو تأخير الإبلاغ."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

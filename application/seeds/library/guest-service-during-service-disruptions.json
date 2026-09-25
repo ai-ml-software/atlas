@@ -1,0 +1,545 @@
+{
+    "slug": "guest-service-during-service-disruptions",
+    "category": "guest-handling",
+    "level": "intermediate",
+    "source_pdf": "Guest-Service-During-Service-Disruptions-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/guest-service-during-service-disruptions.webp",
+    "videos": [
+        {
+            "id": "1Evwgu369Jw",
+            "title": "Brené Brown on Empathy",
+            "channel": "Royal Society of Arts",
+            "why": "Shows why acknowledging how someone feels works better than rushing to explain or minimise, which is the deck's first rule: start with care, not justification."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Guest Service During Service Disruptions",
+            "subtitle": "Apologise, explain, offer an alternative and follow up",
+            "short_description": "Learn to serve guests well when a service fails: acknowledge the impact, explain only confirmed facts, offer an approved alternative, keep the guest updated and escalate when needed.",
+            "description": "<p>Power cuts, broken lifts, Wi-Fi outages and system failures happen in every hotel. The disruption is temporary, but the impression it leaves stays. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows hotel colleagues how to look after guests while a service is down.</p><p>You will learn to start with care rather than excuses, to speak in three steps (acknowledge, explain, offer), what information to give without guessing, how alternatives differ by type of disruption, what to do and avoid, how to keep the guest updated and when to escalate.</p>",
+            "requirements": "Suited to guest-facing colleagues who already know basic guest-handling skills such as active listening and empathy.",
+            "outcomes": [
+                "Start with care for the impact before any explanation",
+                "Talk to the guest in three steps: acknowledge and apologise, explain what you know, offer an alternative",
+                "Give only confirmed information and a clear time for the next update",
+                "Choose alternatives suited to the service, the guest's need and the hotel's capability",
+                "Keep guests updated, avoid unauthorised promises and escalate the right cases"
+            ],
+            "faqs": [
+                {
+                    "question": "What if I do not know when the service will be fixed?",
+                    "answer": "Say so honestly and give a specific time for the next update. Never guess a repair time; mention the expected time only if it is confirmed."
+                },
+                {
+                    "question": "Can I offer compensation during a disruption?",
+                    "answer": "Only within your authority. The deck lists offering compensation without authority as something to avoid; ask your supervisor, and remember that compensation does not replace follow-up."
+                },
+                {
+                    "question": "When should I escalate a disruption?",
+                    "answer": "When there is a risk to safety or health, many guests are affected, the disruption lasts a long time, there is no suitable alternative, or the problem repeats or the guest becomes angrier."
+                }
+            ],
+            "meta_title": "Guest Service During Hotel Service Disruptions",
+            "meta_description": "Hotel training on service disruptions: acknowledge, explain, offer an alternative, keep guests updated, avoid false promises and escalate correctly.",
+            "focus_keyword": "hotel service disruption",
+            "chapters": [
+                {
+                    "title": "Care Before Explanation",
+                    "lessons": [
+                        {
+                            "title": "Start with Care, Not Excuses",
+                            "minutes": 5,
+                            "body": "<h2>When a service stops</h2><p>No hotel can promise that every service will work every minute. Power and water supplies fail, lifts break down, the air conditioning stops, Wi-Fi drops and systems go offline. What a hotel can promise is how its colleagues will respond. The deck's approach is summarised in five words: <strong>Acknowledge, Apologise, Explain, Offer an alternative, Follow up</strong>.</p><h2>Care before explanation</h2><p>When a guest reports a problem, our first instinct is often to explain it: \"The whole building is affected\", \"Engineering is very busy today\", \"It is the supplier's fault\". These may all be true, but they are about us, not about the guest. The deck asks us to <strong>start with care, not with justification</strong>, and to <strong>care about the impact of the problem</strong> on the guest.</p><h3>Five first actions</h3><ul><li><strong>Listen and do not interrupt the guest.</strong> Let them explain how the problem is affecting them. A guest without hot water before a wedding and a guest without Wi-Fi before a video call have different needs.</li><li><strong>Acknowledge that the service is not working.</strong> Do not deny or minimise it. \"You are right, the lift is not working at the moment\" builds trust.</li><li><strong>Apologise clearly for the inconvenience.</strong> A short, direct apology is better than a long one wrapped in excuses.</li><li><strong>Check which service is affected.</strong> Confirm exactly what is not working, where and since when, so the right team can act.</li><li><strong>Inform the responsible department immediately.</strong> Do not assume someone else has reported it. Every report adds useful information.</li></ul><blockquote class=\"bk-quote\">The guest wants care, information and a solution, not long excuses.</blockquote><h2>Why excuses make it worse</h2><p>A long explanation of why something is broken does not fix it. It can sound like the hotel is defending itself or blaming others, and it delays the part the guest actually needs: what happens now. Guests usually accept that things break; what they do not accept is feeling ignored or left without information.</p><p>The deck's closing slide puts it clearly: <strong>the disruption is temporary, but the impression stays.</strong> The same broken lift can lead to an angry review or to a guest who praises the hotel for how it handled the situation.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest calls reception: the room has no hot water, and she has a business dinner in one hour. The receptionist does not start with \"There is maintenance on the boiler today.\" She lets the guest finish and says, \"You are right, and I am sorry. I know you need to get ready for your dinner. Is it only the shower, or the sink as well?\" She informs engineering immediately with the room number and details, then starts looking for an alternative.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Write down what the guest tells you about the impact, such as \"dinner in one hour\". It helps engineering and your supervisor set the right priority.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Start with care, not excuses. Listen, acknowledge the problem, apologise clearly, confirm which service is affected and report immediately.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Care before explanation",
+                                "questions": [
+                                    {
+                                        "question": "A guest reports that the Wi-Fi has stopped. What should your first words focus on?",
+                                        "options": [
+                                            "The internet provider's recent problems",
+                                            "Acknowledging the problem and apologising",
+                                            "How many other guests are affected",
+                                            "The hotel's Wi-Fi terms and conditions"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says start with care, not justification: acknowledge the service is not working and apologise clearly."
+                                    },
+                                    {
+                                        "question": "What does the guest want most during a disruption, according to the deck?",
+                                        "options": [
+                                            "A detailed technical explanation",
+                                            "Long apologies",
+                                            "Care, information and a solution",
+                                            "To speak to engineering directly"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says the guest wants care, information and a solution, not long excuses."
+                                    },
+                                    {
+                                        "question": "You are the fourth colleague to hear about the same broken lift. What should you do?",
+                                        "options": [
+                                            "Inform the responsible department immediately",
+                                            "Assume someone already reported it",
+                                            "Tell the guest it is a known issue and move on",
+                                            "Wait until more guests complain"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The slide says inform the responsible department immediately."
+                                    },
+                                    {
+                                        "question": "Why should you check exactly which service is affected?",
+                                        "options": [
+                                            "To decide if the guest is exaggerating",
+                                            "To avoid reporting it",
+                                            "To calculate compensation",
+                                            "So the right team can act on accurate details"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Checking the affected service is one of the deck's first actions, so the report is accurate."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Talk to the Guest in Three Steps",
+                            "minutes": 5,
+                            "body": "<h2>Acknowledge, Explain, Offer</h2><p>Once you have listened, the deck gives a simple structure for what you say: three steps, each with three example phrases.</p><h3>1. Acknowledge and apologise</h3><ul><li>\"I understand that this is causing you inconvenience.\"</li><li>\"I apologise for the service disruption.\"</li><li>\"I will take care of following this up.\"</li></ul><p>The third phrase matters. It tells the guest that one person now owns the problem, so they will not have to chase several departments.</p><h3>2. Explain what you know</h3><ul><li>\"The service is temporarily stopped.\"</li><li>\"The specialist team is working on it now.\"</li><li>\"I will update you at the set time.\"</li></ul><p>Explain only what you actually know. This step is about honest, confirmed information, not guesses. Giving a set time for your update gives the guest certainty even when the repair time is uncertain.</p><h3>3. Offer an alternative</h3><ul><li>\"I can arrange this alternative for you.\"</li><li>\"Let me check what suits you.\"</li><li>\"I will follow up until it is resolved.\"</li></ul><p>An alternative gives the guest something practical while they wait: another room, another location, another way to get the service. \"Let me check what suits you\" reminds us to match the alternative to the guest's actual need.</p><table class=\"bk-say\"><thead><tr><th>Step</th><th>Example phrase</th></tr></thead><tbody><tr><td>Acknowledge</td><td>\"I understand this is causing you inconvenience. I apologise for the disruption.\"</td></tr><tr><td>Explain</td><td>\"The service is temporarily stopped, and the team is working on it now.\"</td></tr><tr><td>Offer</td><td>\"I can arrange this alternative for you, and I will follow up until it is resolved.\"</td></tr></tbody></table><h2>Simple words, no technical detail</h2><p>The deck adds: <strong>use simple, clear words and do not go into too much technical detail.</strong> The guest does not need to hear about compressors, circuit breakers or server migrations. They need to know what is not working, that it is being handled, what they can do meanwhile and when they will hear from you. Technical language can confuse the guest and make the problem sound bigger than it is.</p><aside class=\"bk-scene\"><strong>Scene:</strong> The air conditioning in a guest's room stops on a hot afternoon. The guest services agent says, \"I understand this is uncomfortable, and I apologise. I will take care of following this up personally. The air conditioning in your room has stopped, and engineering is checking it now. I will call you in twenty minutes with an update. In the meantime, you are welcome to relax in the lounge, and I can have cold drinks sent there. Would that suit you?\" The guest agrees. At twenty minutes, the agent calls as promised.</aside><aside class=\"bk-note\"><strong>Tip:</strong> If you promise an update at a set time, set a reminder immediately. A missed update undoes the trust your first conversation built.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Acknowledge and apologise, explain what you know, offer an alternative, and use simple words without technical detail.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Three steps",
+                                "questions": [
+                                    {
+                                        "question": "Which phrase belongs to the Explain step?",
+                                        "options": [
+                                            "\"I can arrange this alternative for you.\"",
+                                            "\"I apologise for the service disruption.\"",
+                                            "\"The specialist team is working on it now.\"",
+                                            "\"Let me check what suits you.\""
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Explain what you know includes: the service is temporarily stopped, the team is working on it, I will update you at the set time."
+                                    },
+                                    {
+                                        "question": "A guest asks why the TV is not working. How should you explain?",
+                                        "options": [
+                                            "Describe the signal distribution system in detail",
+                                            "Use simple, clear words without too much technical detail",
+                                            "Say you have no idea",
+                                            "Blame the technician on duty"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says use simple, clear words and do not go into too much technical detail."
+                                    },
+                                    {
+                                        "question": "What does \"I will take care of following this up\" tell the guest?",
+                                        "options": [
+                                            "That one person now owns the problem for them",
+                                            "That the problem is already fixed",
+                                            "That they should call engineering",
+                                            "That compensation is coming"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "It is part of Acknowledge and apologise, showing you will personally follow the matter."
+                                    },
+                                    {
+                                        "question": "Before choosing an alternative for the guest, what should you do?",
+                                        "options": [
+                                            "Choose the cheapest option",
+                                            "Offer every option at once",
+                                            "Wait until the service is fixed",
+                                            "Check what suits the guest"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The Offer step includes \"Let me check what suits you.\""
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Information and Alternatives",
+                    "lessons": [
+                        {
+                            "title": "Facts Not Guesses, and Choosing the Right Alternative",
+                            "minutes": 6,
+                            "body": "<h2>Clarity without guessing</h2><p>During a disruption, information is part of the service. The deck's principle is <strong>facts, not guesses</strong>: say what you know and set the time of the next update.</p><h3>What information to give</h3><ul><li><strong>Which service is affected.</strong> Be specific: \"the lift on the east side\", \"hot water on floors 5 to 7\".</li><li><strong>What the hotel is doing now.</strong> \"Engineering is on site\", \"The system provider has been contacted.\"</li><li><strong>Offer a room move or an approved alternative.</strong> Use only alternatives the hotel has approved.</li><li><strong>The alternative available to the guest.</strong> Tell them clearly what they can use meanwhile.</li><li><strong>The time of the next update.</strong> Give a specific time, and keep it.</li></ul><blockquote class=\"bk-quote\">If you do not know the repair time, say so and give a time for the next update.</blockquote><p>Guessing a repair time (\"It will be fixed in ten minutes\") is tempting because it sounds reassuring. But if the guess is wrong, the guest feels misled, and every later message is trusted less. \"I do not have a repair time yet, but I will update you by 4 p.m.\" is honest and still gives certainty.</p><h2>Disruptions take different forms</h2><p>The deck lists four common types of disruption, each with its own first focus:</p><table class=\"bk-say\"><thead><tr><th>Disruption</th><th>What to focus on</th></tr></thead><tbody><tr><td>Power or water</td><td>Protect safety and provide basic needs</td></tr><tr><td>Air conditioning or lift</td><td>Provide an alternative location or means</td></tr><tr><td>Internet or TV</td><td>Explain the alternatives and the update time</td></tr><tr><td>Booking or payment systems</td><td>Record the details and follow the alternative procedure</td></tr></tbody></table><h3>Power or water</h3><p>These affect safety and basic needs. Think about lighting in corridors and stairs, drinking water and guests who may need extra help. Follow hotel procedures and involve your supervisor.</p><h3>Air conditioning or lift</h3><p>Offer another place, such as a cooler lounge or another room, or another way to move, such as a different lift or help with luggage on the stairs where safe and appropriate.</p><h3>Internet or TV</h3><p>Explain what alternatives exist, for example a business centre or another connection point if available, and when you will update the guest.</p><h3>Booking or payment systems</h3><p>Record the guest's details carefully and follow the hotel's alternative (manual) procedure, so nothing is lost when the system returns.</p><blockquote class=\"bk-quote\">The alternative depends on the service, the guest's situation and the hotel's capabilities.</blockquote><aside class=\"bk-scene\"><strong>Scene:</strong> The front office system goes down at 3 p.m., peak check-in time. The receptionist tells arriving guests, \"Our check-in system is temporarily down, and IT is working on it now. We will complete your check-in using our manual procedure so you can go to your room.\" She records each guest's name, room, ID details and payment information carefully on the approved backup form. When the system returns at 4:30, every guest's details are entered correctly.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Give facts, not guesses: the service affected, what the hotel is doing, the approved alternative and the next update time. Match the alternative to the type of disruption, the guest and the hotel's capability.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Information and alternatives",
+                                "questions": [
+                                    {
+                                        "question": "A guest asks when the lift will be fixed. Engineering has not given a time. What should you say?",
+                                        "options": [
+                                            "\"It will be fixed in ten minutes.\"",
+                                            "\"I do not know, sorry.\"",
+                                            "\"Probably by tonight.\"",
+                                            "\"I do not have a repair time yet, but I will update you by 5 p.m.\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "If the repair time is unknown, say so and give a time for the next update."
+                                    },
+                                    {
+                                        "question": "The payment system is down while a guest is checking out. What does the deck advise?",
+                                        "options": [
+                                            "Record the details and follow the alternative procedure",
+                                            "Ask the guest to come back tomorrow",
+                                            "Let the guest leave without paying",
+                                            "Tell the guest to pay online later"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "For booking or payment systems, the deck says record the data and follow the alternative procedure."
+                                    },
+                                    {
+                                        "question": "There is a power cut on several floors. What should you focus on first?",
+                                        "options": [
+                                            "Explaining TV alternatives",
+                                            "Offering discounts",
+                                            "Protecting safety and providing basic needs",
+                                            "Updating booking records"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "For power or water, the deck says protect safety and provide basic needs."
+                                    },
+                                    {
+                                        "question": "What decides which alternative you offer?",
+                                        "options": [
+                                            "Whatever the guest demands",
+                                            "The service, the guest's situation and the hotel's capabilities",
+                                            "Only the cost to the hotel",
+                                            "What the previous shift offered"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says the alternative depends on the service, the guest's situation and the hotel's capabilities."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Following Through",
+                    "lessons": [
+                        {
+                            "title": "Do and Avoid, Updates and Escalation",
+                            "minutes": 7,
+                            "body": "<h2>Do and avoid during a disruption</h2><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Speak calmly and with empathy</td><td>Blaming a department or colleague in front of the guest</td></tr><tr><td>Give only confirmed information</td><td>Using complicated technical terms</td></tr><tr><td>Give a realistic time for the update</td><td>Making an unconfirmed promise</td></tr><tr><td>Notice guests with urgent needs</td><td>Disappearing without updating the guest</td></tr><tr><td>Record the request and follow up until it is closed</td><td>Offering compensation without authority</td></tr></tbody></table><blockquote class=\"bk-quote\">Do not promise what you do not control. Offer what you can, and follow up on what you promised.</blockquote><p>Guests with urgent needs deserve special attention: an older guest on a high floor when the lift stops, a family with a baby when the water is off, a guest who relies on powered medical equipment during a power cut. Notice them and tell your supervisor.</p><h2>Keep the guest updated</h2><p>The deck describes four updates:</p><ol><li><strong>First update:</strong> tell the guest the problem has reached the specialist department.</li><li><strong>Expected time:</strong> mention the time only if it is confirmed.</li><li><strong>New update:</strong> update the guest even if the situation has not changed.</li><li><strong>Confirm the service is restored:</strong> make sure the service works and that the guest is satisfied.</li></ol><blockquote class=\"bk-quote\">Do not make the guest ask every time. Take the initiative to update them.</blockquote><p>The third update is often forgotten. \"There is no change yet, but the team is still working on it, and I will call you again at six\" feels like care. Silence feels like being forgotten.</p><h2>When to escalate</h2><p>Escalate when there is:</p><ul><li>A risk to safety or health.</li><li>A large number of guests affected.</li><li>A disruption lasting a long time.</li><li>No suitable alternative.</li><li>A repeated problem or growing guest anger.</li></ul><h3>The right action</h3><ul><li>Inform the supervisor and the responsible department.</li><li>Give priority to urgent cases.</li><li>Contact emergency services according to the hotel plan.</li><li>Request service recovery within the supervisor's authority.</li><li>Follow up with the guest after the service is restored.</li></ul><blockquote class=\"bk-quote\">Compensation does not replace follow-up. Make sure the service is back and the guest is satisfied.</blockquote><aside class=\"bk-scene\"><strong>Scene:</strong> The Wi-Fi in a guest's room has dropped for the third time in a day, and he is losing patience. The agent recognises two escalation signs: a repeated problem and growing anger. She informs her supervisor and IT, explaining what happened. The supervisor approves moving the guest to a room with a stable connection as a gesture of service recovery. That evening, the agent calls the guest to check that the connection is working and he is satisfied.</aside><h2>Closing thought</h2><p>The deck ends: the disruption is temporary, but the impression stays. Care, explain, offer an alternative and follow up until it is resolved. Never leave the guest without information, an alternative or follow-up.</p><aside class=\"bk-key\"><strong>Key takeaway:</strong> Speak calmly, give confirmed facts and realistic times, never over-promise, update proactively, escalate the right cases and always confirm the service is back and the guest is satisfied.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Following through",
+                                "questions": [
+                                    {
+                                        "question": "An hour has passed and there is still no news about the repair. What should you do?",
+                                        "options": [
+                                            "Wait until the guest calls again",
+                                            "Update the guest even though nothing has changed",
+                                            "Tell the guest it will be fixed soon",
+                                            "Leave it to the next shift"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says update the guest even if the situation has not changed, and do not make them ask every time."
+                                    },
+                                    {
+                                        "question": "A guest demands a free night because the pool is closed. You do not have authority to give it. What should you avoid?",
+                                        "options": [
+                                            "Speaking calmly and with empathy",
+                                            "Informing your supervisor",
+                                            "Offering compensation without authority",
+                                            "Recording the request"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Offering compensation without authority is on the deck's avoid list."
+                                    },
+                                    {
+                                        "question": "A power cut is affecting a whole wing, and one guest uses powered medical equipment. What should you do?",
+                                        "options": [
+                                            "Escalate: inform the supervisor and prioritise the urgent case",
+                                            "Treat it like any Wi-Fi outage",
+                                            "Wait for the power to return",
+                                            "Tell the guest to find their own solution"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "A risk to health and many affected guests are escalation signs; give priority to urgent cases."
+                                    },
+                                    {
+                                        "question": "The supervisor approved a room move as service recovery. What is still needed?",
+                                        "options": [
+                                            "Nothing, compensation closes the case",
+                                            "Asking the guest for a positive review",
+                                            "Blaming the department that caused it",
+                                            "Following up to confirm the service works and the guest is satisfied"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says compensation does not replace follow-up; confirm the service is back and the guest is satisfied."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "خدمة النزيل أثناء تعطل الخدمات",
+            "subtitle": "اعتذر ووضّح وقدّم بديلًا وتابع",
+            "short_description": "تعلّم كيف تخدم النزيل جيدًا عند تعطل الخدمة: اهتم بأثر المشكلة، ووضّح المعلومات المؤكدة فقط، وقدّم بديلًا معتمدًا، واستمر في تحديثه، وصعّد عند الحاجة.",
+            "description": "<p>انقطاع الكهرباء وتعطل المصاعد وانقطاع الإنترنت وتوقف الأنظمة أمور تحدث في كل فندق. التعطل مؤقت، لكن الانطباع يبقى. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتعلّم الموظفين كيف يعتنون بالنزيل أثناء تعطل الخدمة.</p><p>ستتعلم أن تبدأ بالاهتمام لا بالتبرير، وأن تتحدث بثلاث خطوات (اعترف، وضّح، قدّم بديلًا)، وما المعلومات التي تقدمها دون تخمين، وكيف يختلف البديل حسب نوع التعطل، وما تفعله وما تتجنبه، وكيف تستمر في تحديث النزيل، ومتى تصعّد الحالة.</p>",
+            "requirements": "مناسبة للموظفين المتعاملين مع النزلاء ممن يعرفون أساسيات التعامل مع النزيل مثل الاستماع الفعّال والتعاطف.",
+            "outcomes": [
+                "ابدأ بالاهتمام بأثر المشكلة قبل أي تبرير",
+                "تحدث مع النزيل بثلاث خطوات: اعترف واعتذر، وضّح ما تعرفه، قدّم بديلًا",
+                "قدّم المعلومات المؤكدة فقط وحدد موعد التحديث التالي",
+                "اختر بديلًا يناسب الخدمة وحالة النزيل وإمكانات الفندق",
+                "استمر في تحديث النزيل، وتجنب الوعود غير المخولة، وصعّد الحالات المناسبة"
+            ],
+            "faqs": [
+                {
+                    "question": "ماذا أقول إذا لم أعرف موعد الإصلاح؟",
+                    "answer": "قل ذلك بصدق وحدد وقتًا للتحديث التالي. لا تخمّن وقت الإصلاح، واذكر الوقت المتوقع فقط إذا كان مؤكدًا."
+                },
+                {
+                    "question": "هل يمكنني تقديم تعويض أثناء التعطل؟",
+                    "answer": "فقط ضمن صلاحيتك. تذكر المادة تقديم تعويض دون صلاحية ضمن ما يجب تجنبه؛ فاطلب المشرف، وتذكر أن التعويض لا يغني عن المتابعة."
+                },
+                {
+                    "question": "متى أصعّد حالة التعطل؟",
+                    "answer": "عند وجود خطر على السلامة أو الصحة، أو تأثر عدد كبير من النزلاء، أو استمرار التعطل مدة طويلة، أو عدم وجود بديل مناسب، أو تكرار المشكلة أو زيادة غضب النزيل."
+                }
+            ],
+            "meta_title": "خدمة النزيل أثناء تعطل الخدمات في الفندق",
+            "meta_description": "تدريب فندقي على تعطل الخدمات: اعترف ووضّح وقدّم بديلًا، واستمر في تحديث النزيل، وتجنب الوعود غير المؤكدة، وصعّد الحالة بشكل صحيح.",
+            "focus_keyword": "تعطل الخدمات في الفندق",
+            "chapters": [
+                {
+                    "title": "الاهتمام قبل التبرير",
+                    "lessons": [
+                        {
+                            "title": "ابدأ بالاهتمام لا بالتبرير",
+                            "minutes": 5,
+                            "body": "<h2>عندما تتوقف الخدمة</h2><p>لا يستطيع أي فندق أن يعد بأن كل خدمة ستعمل في كل دقيقة؛ فالكهرباء والمياه قد تنقطع، والمصاعد تتعطل، والتكييف يتوقف، والإنترنت ينقطع، والأنظمة تتوقف. لكن الفندق يستطيع أن يعد بطريقة استجابة موظفيه. ويلخص المنهج في خمس كلمات: <strong>اعترف، اعتذر، وضّح، بدّل، تابع</strong>.</p><h2>الاهتمام قبل التبرير</h2><p>عندما يبلغ النزيل عن مشكلة، تكون ردة فعلنا الأولى غالبًا شرحها: \"المبنى كله متأثر\"، \"الصيانة مشغولة جدًا اليوم\"، \"الخطأ من المورد\". وقد يكون كل ذلك صحيحًا، لكنه يتحدث عنا لا عن النزيل. وتطلب منا المادة أن <strong>نبدأ بالاهتمام لا بالتبرير</strong>، وأن <strong>نهتم بأثر المشكلة</strong> على النزيل.</p><h3>خمسة تصرفات أولى</h3><ul><li><strong>استمع ولا تقاطع النزيل،</strong> ودعه يشرح كيف تؤثر المشكلة عليه؛ فنزيل بلا ماء ساخن قبل حفل زفاف يختلف عن نزيل بلا إنترنت قبل مكالمة مرئية.</li><li><strong>اعترف بأن الخدمة متعطلة،</strong> ولا تنكر أو تقلل من الأمر؛ فعبارة \"معك حق، المصعد لا يعمل حاليًا\" تبني الثقة.</li><li><strong>اعتذر عن الإزعاج بوضوح،</strong> فالاعتذار القصير المباشر أفضل من اعتذار طويل مغلف بالأعذار.</li><li><strong>تحقق من الخدمة المتأثرة،</strong> وحدد بدقة ما الذي لا يعمل وأين ومنذ متى، ليتصرف الفريق المناسب.</li><li><strong>أبلغ القسم المسؤول فورًا،</strong> ولا تفترض أن غيرك قد أبلغ؛ فكل بلاغ يضيف معلومة مفيدة.</li></ul><blockquote class=\"bk-quote\">النزيل يريد اهتمامًا ومعلومة وحلًا — لا أعذارًا طويلة.</blockquote><h2>لماذا تزيد الأعذار الأمر سوءًا</h2><p>الشرح الطويل لسبب العطل لا يصلحه، وقد يبدو كأن الفندق يدافع عن نفسه أو يلوم غيره، ويؤخر ما يحتاجه النزيل فعلًا: ماذا سيحدث الآن. فالنزلاء يتقبلون عادة أن الأشياء تتعطل، لكنهم لا يتقبلون التجاهل أو غياب المعلومة.</p><p>وتقول الشريحة الختامية بوضوح: <strong>التعطل مؤقت لكن الانطباع يبقى.</strong> فالمصعد المعطل نفسه قد ينتهي بتقييم غاضب، أو بنزيل يمتدح الفندق على طريقة تعامله مع الموقف.</p><aside class=\"bk-scene\"><strong>موقف:</strong> اتصلت نزيلة بالاستقبال: لا يوجد ماء ساخن في غرفتها، ولديها عشاء عمل بعد ساعة. لم تبدأ الموظفة بقولها \"هناك صيانة للسخان اليوم\"، بل تركتها تكمل ثم قالت: \"معك حق، وأعتذر عن ذلك. أعلم أنك تحتاجين إلى الاستعداد للعشاء. هل المشكلة في الدش فقط أم في المغسلة أيضًا؟\" ثم أبلغت الصيانة فورًا برقم الغرفة والتفاصيل، وبدأت تبحث عن بديل.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> دوّن ما يخبرك به النزيل عن أثر المشكلة، مثل \"عشاء بعد ساعة\"، فذلك يساعد الصيانة والمشرف على تحديد الأولوية الصحيحة.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> ابدأ بالاهتمام لا بالتبرير: استمع، واعترف بالمشكلة، واعتذر بوضوح، وتحقق من الخدمة المتأثرة، وأبلغ فورًا.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الاهتمام قبل التبرير",
+                                "questions": [
+                                    {
+                                        "question": "أبلغ نزيل أن الإنترنت توقف. على ماذا تركز كلماتك الأولى؟",
+                                        "options": [
+                                            "المشكلات الأخيرة لدى مزود الإنترنت",
+                                            "الاعتراف بالمشكلة والاعتذار",
+                                            "عدد النزلاء المتأثرين",
+                                            "شروط استخدام الإنترنت في الفندق"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: ابدأ بالاهتمام لا بالتبرير، واعترف بأن الخدمة متعطلة واعتذر بوضوح."
+                                    },
+                                    {
+                                        "question": "ما الذي يريده النزيل أكثر أثناء التعطل بحسب المادة؟",
+                                        "options": [
+                                            "شرحًا فنيًا مفصلًا",
+                                            "اعتذارات طويلة",
+                                            "اهتمامًا ومعلومة وحلًا",
+                                            "التحدث مع الصيانة مباشرة"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: النزيل يريد اهتمامًا ومعلومة وحلًا — لا أعذارًا طويلة."
+                                    },
+                                    {
+                                        "question": "أنت رابع زميل يسمع عن تعطل المصعد نفسه. ماذا تفعل؟",
+                                        "options": [
+                                            "تبلغ القسم المسؤول فورًا",
+                                            "تفترض أن غيرك أبلغ",
+                                            "تقول للنزيل إنها مشكلة معروفة وتمضي",
+                                            "تنتظر حتى يشتكي نزلاء آخرون"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تقول الشريحة: أبلغ القسم المسؤول فورًا."
+                                    },
+                                    {
+                                        "question": "لماذا تتحقق بدقة من الخدمة المتأثرة؟",
+                                        "options": [
+                                            "لتعرف إن كان النزيل يبالغ",
+                                            "لتتجنب الإبلاغ",
+                                            "لتحسب التعويض",
+                                            "ليتصرف الفريق المناسب بناءً على تفاصيل دقيقة"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "التحقق من الخدمة المتأثرة من التصرفات الأولى في المادة، ليكون البلاغ دقيقًا."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "تحدث مع النزيل بثلاث خطوات",
+                            "minutes": 5,
+                            "body": "<h2>اعترف، وضّح، قدّم بديلًا</h2><p>بعد أن تستمع، تقدم المادة هيكلًا بسيطًا لما تقوله: ثلاث خطوات، في كل منها ثلاث عبارات.</p><h3>١. اعترف واعتذر</h3><ul><li>\"أتفهم أن هذا يسبب لك إزعاجًا.\"</li><li>\"أعتذر عن تعطل الخدمة.\"</li><li>\"سأتولى متابعة الموضوع.\"</li></ul><p>العبارة الثالثة مهمة؛ فهي تخبر النزيل بأن شخصًا واحدًا أصبح مسؤولًا عن مشكلته، فلا يحتاج إلى ملاحقة عدة أقسام.</p><h3>٢. وضّح ما تعرفه</h3><ul><li>\"الخدمة متوقفة مؤقتًا.\"</li><li>\"الفريق المختص يعمل عليها الآن.\"</li><li>\"سأحدثك في الوقت المحدد.\"</li></ul><p>وضّح فقط ما تعرفه فعلًا؛ فهذه الخطوة تعني معلومة صادقة ومؤكدة لا تخمينًا. وتحديد وقت للتحديث يمنح النزيل يقينًا حتى لو كان وقت الإصلاح غير معروف.</p><h3>٣. قدّم بديلًا</h3><ul><li>\"يمكنني أن أوفر لك هذا البديل.\"</li><li>\"دعني أتأكد مما يناسبك.\"</li><li>\"سأتابع حتى يتم الحل.\"</li></ul><p>البديل يمنح النزيل شيئًا عمليًا أثناء الانتظار: غرفة أخرى، أو مكانًا آخر، أو طريقة أخرى للحصول على الخدمة. وعبارة \"دعني أتأكد مما يناسبك\" تذكرنا بأن نطابق البديل مع حاجة النزيل الفعلية.</p><table class=\"bk-say\"><thead><tr><th>الخطوة</th><th>مثال</th></tr></thead><tbody><tr><td>اعترف واعتذر</td><td>\"أتفهم أن هذا يسبب لك إزعاجًا، وأعتذر عن تعطل الخدمة.\"</td></tr><tr><td>وضّح ما تعرفه</td><td>\"الخدمة متوقفة مؤقتًا، والفريق المختص يعمل عليها الآن.\"</td></tr><tr><td>قدّم بديلًا</td><td>\"يمكنني أن أوفر لك هذا البديل، وسأتابع حتى يتم الحل.\"</td></tr></tbody></table><h2>كلمات بسيطة بلا تفاصيل فنية</h2><p>وتضيف المادة: <strong>استخدم كلمات بسيطة وواضحة ولا تكثر من التفاصيل الفنية.</strong> النزيل لا يحتاج إلى سماع شيء عن الضواغط أو القواطع الكهربائية أو نقل الخوادم، بل يحتاج إلى معرفة ما الذي لا يعمل، وأنه قيد المعالجة، وما يمكنه فعله في الأثناء، ومتى سيسمع منك. فالمصطلحات الفنية قد تربكه وتجعل المشكلة تبدو أكبر مما هي.</p><aside class=\"bk-scene\"><strong>موقف:</strong> توقف التكييف في غرفة نزيل بعد ظهر يوم حار. قال موظف خدمة النزلاء: \"أتفهم أن هذا مزعج، وأعتذر عن ذلك، وسأتولى متابعة الموضوع بنفسي. التكييف في غرفتك متوقف، والصيانة تفحصه الآن، وسأتصل بك بعد عشرين دقيقة بآخر المستجدات. وفي الأثناء يسعدنا أن تستريح في الصالة، ويمكنني إرسال مشروبات باردة إليك هناك. هل يناسبك ذلك؟\" فوافق النزيل، وبعد عشرين دقيقة اتصل الموظف كما وعد.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> إذا وعدت بتحديث في وقت محدد فاضبط تذكيرًا فورًا؛ فالتحديث الفائت يهدم الثقة التي بنتها محادثتك الأولى.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> اعترف واعتذر، ووضّح ما تعرفه، وقدّم بديلًا، واستخدم كلمات بسيطة دون تفاصيل فنية.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الخطوات الثلاث",
+                                "questions": [
+                                    {
+                                        "question": "أي عبارة تنتمي إلى خطوة \"وضّح ما تعرفه\"؟",
+                                        "options": [
+                                            "\"يمكنني أن أوفر لك هذا البديل.\"",
+                                            "\"أعتذر عن تعطل الخدمة.\"",
+                                            "\"الفريق المختص يعمل عليها الآن.\"",
+                                            "\"دعني أتأكد مما يناسبك.\""
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "خطوة وضّح ما تعرفه تشمل: الخدمة متوقفة مؤقتًا، والفريق المختص يعمل عليها، وسأحدثك في الوقت المحدد."
+                                    },
+                                    {
+                                        "question": "سأل نزيل لماذا لا يعمل التلفاز. كيف تشرح له؟",
+                                        "options": [
+                                            "تصف نظام توزيع الإشارة بالتفصيل",
+                                            "تستخدم كلمات بسيطة وواضحة دون إكثار من التفاصيل الفنية",
+                                            "تقول إنك لا تعرف شيئًا",
+                                            "تلوم الفني المناوب"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: استخدم كلمات بسيطة وواضحة ولا تكثر من التفاصيل الفنية."
+                                    },
+                                    {
+                                        "question": "ماذا تخبر عبارة \"سأتولى متابعة الموضوع\" النزيل؟",
+                                        "options": [
+                                            "أن شخصًا واحدًا أصبح مسؤولًا عن مشكلته",
+                                            "أن المشكلة حُلّت بالفعل",
+                                            "أن عليه الاتصال بالصيانة",
+                                            "أن هناك تعويضًا قادمًا"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "هي جزء من خطوة اعترف واعتذر، وتُظهر أنك ستتابع الأمر بنفسك."
+                                    },
+                                    {
+                                        "question": "قبل اختيار بديل للنزيل، ماذا تفعل؟",
+                                        "options": [
+                                            "تختار الخيار الأرخص",
+                                            "تعرض كل الخيارات دفعة واحدة",
+                                            "تنتظر حتى تُصلح الخدمة",
+                                            "تتأكد مما يناسب النزيل"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "خطوة قدّم بديلًا تشمل: \"دعني أتأكد مما يناسبك\"."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "المعلومات والبدائل",
+                    "lessons": [
+                        {
+                            "title": "وضوح دون تخمين واختيار البديل المناسب",
+                            "minutes": 6,
+                            "body": "<h2>وضوح دون تخمين</h2><p>أثناء التعطل تصبح المعلومة جزءًا من الخدمة. ومبدأ المادة: <strong>وضوح دون تخمين</strong>؛ قل ما تعرفه وحدد موعد التحديث التالي.</p><h3>ما المعلومات التي تقدمها؟</h3><ul><li><strong>ما الخدمة المتأثرة،</strong> بدقة: \"المصعد في الجهة الشرقية\"، \"الماء الساخن في الطوابق من ٥ إلى ٧\".</li><li><strong>ما الذي يفعله الفندق الآن:</strong> \"الصيانة في الموقع\"، \"تم التواصل مع مزود النظام\".</li><li><strong>قدّم نقل غرفة أو بديلًا معتمدًا،</strong> واستخدم فقط البدائل التي اعتمدها الفندق.</li><li><strong>البديل المتاح للنزيل،</strong> وأخبره بوضوح بما يمكنه استخدامه في الأثناء.</li><li><strong>موعد التحديث التالي،</strong> وقتًا محددًا تلتزم به.</li></ul><blockquote class=\"bk-quote\">إذا لم تعرف وقت الإصلاح، قل ذلك وحدد وقتًا للمتابعة.</blockquote><p>تخمين وقت الإصلاح (\"سيُصلح خلال عشر دقائق\") مغرٍ لأنه يبدو مطمئنًا، لكن إذا كان التخمين خاطئًا شعر النزيل بالتضليل وقلّت ثقته بكل رسالة لاحقة. أما عبارة \"ليس لدي وقت إصلاح بعد، لكنني سأحدثك قبل الرابعة\" فصادقة وتمنح اليقين.</p><h2>تعطل الخدمات قد يأخذ أشكالًا مختلفة</h2><table class=\"bk-say\"><thead><tr><th>التعطل</th><th>ما تركز عليه</th></tr></thead><tbody><tr><td>الكهرباء أو المياه</td><td>احمِ السلامة وقدّم احتياجات أساسية</td></tr><tr><td>التكييف أو المصعد</td><td>وفّر موقعًا أو وسيلة بديلة</td></tr><tr><td>الإنترنت أو التلفاز</td><td>وضّح البدائل ووقت التحديث</td></tr><tr><td>الحجز أو الدفع</td><td>سجّل البيانات واتبع الإجراء البديل</td></tr></tbody></table><h3>الكهرباء أو المياه</h3><p>هذه تمس السلامة والاحتياجات الأساسية؛ ففكر في إضاءة الممرات والسلالم، ومياه الشرب، والنزلاء الذين قد يحتاجون مساعدة إضافية، واتبع إجراءات الفندق وأشرك المشرف.</p><h3>التكييف أو المصعد</h3><p>قدّم مكانًا آخر كصالة أبرد أو غرفة أخرى، أو وسيلة أخرى للتنقل كمصعد آخر أو المساعدة في حمل الأمتعة على السلالم حين يكون ذلك آمنًا ومناسبًا.</p><h3>الإنترنت أو التلفاز</h3><p>وضّح البدائل المتاحة، كمركز الأعمال أو نقطة اتصال أخرى إن وجدت، ومتى ستحدّث النزيل.</p><h3>الحجز أو الدفع</h3><p>سجّل بيانات النزيل بعناية واتبع الإجراء البديل (اليدوي) في الفندق، حتى لا يضيع شيء عند عودة النظام.</p><blockquote class=\"bk-quote\">يختلف البديل حسب الخدمة وحالة النزيل وإمكانات الفندق.</blockquote><aside class=\"bk-scene\"><strong>موقف:</strong> توقف نظام المكتب الأمامي في الثالثة عصرًا، وقت ذروة الوصول. أخبرت موظفة الاستقبال النزلاء القادمين: \"نظام تسجيل الوصول متوقف مؤقتًا، وفريق التقنية يعمل عليه الآن، وسنكمل تسجيل وصولكم بالإجراء اليدوي لتتمكنوا من الصعود إلى غرفكم\". وسجلت بعناية اسم كل نزيل وغرفته وبيانات هويته ومعلومات الدفع في النموذج البديل المعتمد. وعندما عاد النظام في الرابعة والنصف أُدخلت بيانات الجميع بشكل صحيح.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> قدّم الحقائق لا التخمينات: الخدمة المتأثرة، وما يفعله الفندق، والبديل المعتمد، وموعد التحديث التالي. واختر البديل حسب نوع التعطل وحالة النزيل وإمكانات الفندق.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: المعلومات والبدائل",
+                                "questions": [
+                                    {
+                                        "question": "سأل نزيل متى سيُصلح المصعد، ولم تحدد الصيانة وقتًا. ماذا تقول؟",
+                                        "options": [
+                                            "\"سيُصلح خلال عشر دقائق.\"",
+                                            "\"لا أعرف، آسف.\"",
+                                            "\"غالبًا بحلول الليل.\"",
+                                            "\"ليس لدي وقت إصلاح بعد، لكنني سأحدثك قبل الخامسة.\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "إذا لم تعرف وقت الإصلاح، قل ذلك وحدد وقتًا للمتابعة."
+                                    },
+                                    {
+                                        "question": "توقف نظام الدفع أثناء مغادرة نزيل. بماذا تنصح المادة؟",
+                                        "options": [
+                                            "سجّل البيانات واتبع الإجراء البديل",
+                                            "اطلب من النزيل العودة غدًا",
+                                            "دع النزيل يغادر دون دفع",
+                                            "اطلب منه الدفع لاحقًا عبر الإنترنت"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "في الحجز أو الدفع تقول المادة: سجّل البيانات واتبع الإجراء البديل."
+                                    },
+                                    {
+                                        "question": "انقطعت الكهرباء في عدة طوابق. على ماذا تركز أولًا؟",
+                                        "options": [
+                                            "شرح بدائل التلفاز",
+                                            "تقديم الخصومات",
+                                            "حماية السلامة وتقديم الاحتياجات الأساسية",
+                                            "تحديث سجلات الحجز"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "في الكهرباء أو المياه تقول المادة: احمِ السلامة وقدّم احتياجات أساسية."
+                                    },
+                                    {
+                                        "question": "ما الذي يحدد البديل الذي تقدمه؟",
+                                        "options": [
+                                            "كل ما يطلبه النزيل",
+                                            "الخدمة وحالة النزيل وإمكانات الفندق",
+                                            "تكلفة الفندق فقط",
+                                            "ما قدمته المناوبة السابقة"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: يختلف البديل حسب الخدمة وحالة النزيل وإمكانات الفندق."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "المتابعة حتى الحل",
+                    "lessons": [
+                        {
+                            "title": "افعل وتجنب والتحديث المستمر وتصعيد الحالة",
+                            "minutes": 7,
+                            "body": "<h2>افعل وتجنب أثناء تعطل الخدمة</h2><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنب</th></tr></thead><tbody><tr><td>تحدث بهدوء وتعاطف</td><td>أن تلوم قسمًا أو موظفًا أمام النزيل</td></tr><tr><td>قدّم معلومات مؤكدة فقط</td><td>أن تستخدم مصطلحات فنية معقدة</td></tr><tr><td>أعطِ وقتًا واقعيًا للتحديث</td><td>أن تعطي وعدًا غير مؤكد</td></tr><tr><td>لاحظ النزلاء ذوي الاحتياج العاجل</td><td>أن تختفي دون تحديث النزيل</td></tr><tr><td>سجل الطلب وتابع حتى الإغلاق</td><td>أن تقدم تعويضًا دون صلاحية</td></tr></tbody></table><blockquote class=\"bk-quote\">لا تَعِد بما لا تملك — قدّم ما يمكنك وتابع ما وعدت به.</blockquote><p>النزلاء ذوو الاحتياج العاجل يستحقون اهتمامًا خاصًا: نزيل كبير في السن في طابق مرتفع عند تعطل المصعد، أو عائلة معها رضيع عند انقطاع المياه، أو نزيل يعتمد على جهاز طبي كهربائي عند انقطاع الكهرباء. لاحظهم وأبلغ المشرف.</p><h2>استمر في تحديث النزيل</h2><ol><li><strong>التحديث الأول:</strong> أخبره أن المشكلة وصلت للقسم المختص.</li><li><strong>الوقت المتوقع:</strong> اذكر الوقت فقط إذا كان مؤكدًا.</li><li><strong>تحديث جديد:</strong> حدّثه حتى لو لم يتغير الوضع.</li><li><strong>تأكيد عودة الخدمة:</strong> تأكد أن الخدمة تعمل وأن النزيل راضٍ.</li></ol><blockquote class=\"bk-quote\">لا تجعل النزيل يسأل كل مرة — بادر أنت بالتحديث.</blockquote><p>والتحديث الثالث كثيرًا ما يُنسى؛ فعبارة \"لا جديد بعد، لكن الفريق ما زال يعمل، وسأتصل بك مرة أخرى في السادسة\" تُشعر بالاهتمام، أما الصمت فيُشعر بالنسيان.</p><h2>متى تصعّد الحالة؟</h2><p>صعّد الحالة عند:</p><ul><li>وجود خطر على السلامة أو الصحة.</li><li>تأثر عدد كبير من النزلاء.</li><li>استمرار التعطل مدة طويلة.</li><li>عدم وجود بديل مناسب.</li><li>تكرار المشكلة أو زيادة غضب النزيل.</li></ul><h3>الإجراء المناسب</h3><ul><li>أبلغ المشرف والقسم المختص.</li><li>أعطِ الأولوية للحالات العاجلة.</li><li>اتصل بالطوارئ وفق خطة الفندق.</li><li>اطلب استعادة الخدمة بصلاحية المشرف.</li><li>تابع النزيل بعد عودة الخدمة.</li></ul><blockquote class=\"bk-quote\">التعويض لا يغني عن المتابعة — تأكد من عودة الخدمة ورضا النزيل.</blockquote><aside class=\"bk-scene\"><strong>موقف:</strong> انقطع الإنترنت في غرفة نزيل للمرة الثالثة في اليوم نفسه، وبدأ صبره ينفد. لاحظت الموظفة علامتين للتصعيد: تكرار المشكلة وزيادة الغضب، فأبلغت المشرف وقسم التقنية وشرحت ما حدث. ووافق المشرف على نقل النزيل إلى غرفة باتصال مستقر ضمن استعادة الخدمة. وفي المساء اتصلت الموظفة بالنزيل لتتأكد أن الاتصال يعمل وأنه راضٍ.</aside><h2>خاتمة</h2><p>تختم المادة بقولها: التعطل مؤقت لكن الانطباع يبقى. اهتم ووضّح وقدّم بديلًا وتابع حتى الحل، ولا تترك النزيل دون معلومة أو بديل أو متابعة.</p><aside class=\"bk-key\"><strong>الخلاصة:</strong> تحدث بهدوء، وقدّم حقائق مؤكدة وأوقاتًا واقعية، ولا تعد بما لا تملك، وبادر بالتحديث، وصعّد الحالات المناسبة، وتأكد دائمًا من عودة الخدمة ورضا النزيل.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: المتابعة حتى الحل",
+                                "questions": [
+                                    {
+                                        "question": "مرت ساعة ولا جديد عن الإصلاح. ماذا تفعل؟",
+                                        "options": [
+                                            "تنتظر حتى يتصل النزيل مرة أخرى",
+                                            "تحدّث النزيل رغم أن شيئًا لم يتغير",
+                                            "تقول له إنها ستُصلح قريبًا",
+                                            "تترك الأمر للمناوبة التالية"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: حدّثه حتى لو لم يتغير الوضع، ولا تجعل النزيل يسأل كل مرة."
+                                    },
+                                    {
+                                        "question": "طالب نزيل بليلة مجانية لأن المسبح مغلق، ولا تملك صلاحية منحها. ما الذي يجب تجنبه؟",
+                                        "options": [
+                                            "التحدث بهدوء وتعاطف",
+                                            "إبلاغ المشرف",
+                                            "تقديم تعويض دون صلاحية",
+                                            "تسجيل الطلب"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقديم تعويض دون صلاحية من قائمة ما يجب تجنبه."
+                                    },
+                                    {
+                                        "question": "انقطعت الكهرباء عن جناح كامل، وأحد النزلاء يستخدم جهازًا طبيًا كهربائيًا. ماذا تفعل؟",
+                                        "options": [
+                                            "تصعّد: تبلغ المشرف وتعطي الأولوية للحالة العاجلة",
+                                            "تتعامل معها كانقطاع إنترنت عادي",
+                                            "تنتظر عودة الكهرباء",
+                                            "تطلب من النزيل أن يجد حلًا بنفسه"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "الخطر على الصحة وتأثر عدد كبير من النزلاء من أسباب التصعيد، وتُعطى الأولوية للحالات العاجلة."
+                                    },
+                                    {
+                                        "question": "وافق المشرف على نقل الغرفة كاستعادة للخدمة. ما الذي يبقى مطلوبًا؟",
+                                        "options": [
+                                            "لا شيء، التعويض يغلق الحالة",
+                                            "طلب تقييم إيجابي من النزيل",
+                                            "لوم القسم المتسبب",
+                                            "المتابعة للتأكد من عمل الخدمة ورضا النزيل"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: التعويض لا يغني عن المتابعة — تأكد من عودة الخدمة ورضا النزيل."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

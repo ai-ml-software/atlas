@@ -1,7 +1,7 @@
 <?php
 // Questions of mirrored academy courses are shown in the learner's language; option positions (and so grading) are unchanged.
 $this->load->library('ha_lms_i18n');
-$ap_questions = $this->ha_lms_i18n->questions($quiz_questions->result_array());
+$ap_questions = get_instance()->ha_lms_i18n->questions($quiz_questions->result_array());
 ?>
 <div class="ap-quiz__sheet">
 <?php foreach($ap_questions as $question_number => $quiz_question): ?>

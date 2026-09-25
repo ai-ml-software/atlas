@@ -1,0 +1,545 @@
+{
+    "slug": "managing-work-stress",
+    "category": "professional-wellbeing",
+    "level": "foundation",
+    "source_pdf": "Managing-Work-Stress-Dyafa (2).pdf",
+    "thumbnail": "uploads/academy/library/managing-work-stress.webp",
+    "videos": [
+        {
+            "id": "RcGyVTAoXEU",
+            "title": "How to Make Stress Your Friend | Kelly McGonigal | TED",
+            "channel": "TED",
+            "why": "Health psychologist Kelly McGonigal explains how noticing stress and reaching out to others changes how we respond to it, matching the deck's message to notice stress early and ask for support."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Managing Work Stress",
+            "subtitle": "Calm down, prioritise and ask for help",
+            "short_description": "Learn to notice the signs of stress early, reset in one minute, prioritise your work, speak to your supervisor clearly and recover after your shift.",
+            "description": "<p>Hospitality work is busy and demanding, and everyone feels stress at times. This course, built from the Dyafa Hotels &amp; Resorts training deck, helps colleagues deal with stress calmly rather than try to make it disappear.</p><p>You will learn to notice stress early in your body, thoughts and behaviour, use a one-minute reset, prioritise work under pressure with Pause, Prioritise, Act, Follow up, speak to your supervisor in a clear and professional way, separate work from rest and know when to seek more support.</p>",
+            "requirements": "No prior training is needed; the course suits every colleague in every department.",
+            "outcomes": [
+                "Recognise early signs of stress in your body, thoughts and behaviour",
+                "Use a one-minute reset to respond calmly instead of reacting quickly",
+                "Prioritise work under pressure with Pause, Prioritise, Act, Follow up",
+                "Speak to your supervisor clearly about what you can do and what help you need",
+                "Separate work from rest and know when to seek more support"
+            ],
+            "faqs": [
+                {
+                    "question": "Is the goal to stop feeling stress at work?",
+                    "answer": "No. The goal is not to eliminate stress but to deal with it calmly, one step at a time."
+                },
+                {
+                    "question": "Is asking my supervisor for help a sign of weakness?",
+                    "answer": "No. Asking for help at the right time is professional behaviour, and asking for support is strength and responsibility."
+                },
+                {
+                    "question": "When should I seek more support than my supervisor?",
+                    "answer": "When stress lasts a long time, affects your sleep, food or daily life, stops you from working safely, or brings strong fear or anger, or chest pain or difficulty breathing. Tell someone you trust, use occupational health if available, speak to a doctor or specialist, and get urgent help if there is danger."
+                }
+            ],
+            "meta_title": "Managing Work Stress for Hotel Staff",
+            "meta_description": "Hotel training on work stress: notice early signs, a one-minute reset, prioritising under pressure, speaking to your supervisor and recovery.",
+            "focus_keyword": "managing work stress in hotels",
+            "chapters": [
+                {
+                    "title": "Notice Stress Early",
+                    "lessons": [
+                        {
+                            "title": "Stress Is a Message That Needs Attention",
+                            "minutes": 5,
+                            "body": "<h2>Stress is a message</h2><p>A full lobby, a guest who is upset, a phone that keeps ringing and a colleague who called in sick: every hotel colleague knows these moments. Stress in such moments is normal. The deck asks us to see it not as a failure, but as <strong>a message that needs attention</strong>, and to <strong>notice it before stress increases.</strong></p><p>The deck lists what stress can feel like:</p><ul><li><strong>Your pulse or breathing may speed up.</strong></li><li><strong>You may feel tense, or quick to anger.</strong></li><li><strong>You may find it hard to concentrate or remember.</strong></li><li><strong>You may rush, or repeat mistakes.</strong></li><li><strong>Noticing stress early helps you deal with it.</strong></li></ul><p>The last point is the heart of this lesson. The earlier you notice the signs, the smaller the step you need to take to calm down. If you notice only after you have raised your voice at a colleague or made the same mistake three times, the situation is already harder to recover.</p><blockquote class=\"bk-quote\">Pause for a moment and ask yourself: What am I feeling? And what do I need now?</blockquote><h2>Two simple questions</h2><p>These two questions turn a vague feeling of \"too much\" into something you can act on. <em>What am I feeling?</em> Perhaps tense, rushed, or irritated. <em>What do I need now?</em> Perhaps one slow breath, a sip of water, help from a colleague, or simply to deal with one task before the next.</p><p>Asking these questions takes a few seconds. It does not stop your work; it helps you do it better.</p><h2>The approach in one line</h2><p>The deck summarises its method in five words: <strong>Pause, Breathe, Prioritise, Speak, Recover.</strong> Its title gives the same idea in short: <strong>calm down, prioritise and ask for help.</strong></p><aside class=\"bk-scene\"><strong>Scene:</strong> During a busy breakfast, a waiter notices that he has brought the wrong order to two tables in a row, and that he is speaking sharply to the kitchen. Instead of pushing on faster, he pauses for a moment by the service station and asks himself: \"What am I feeling? Rushed. What do I need? To check my orders one at a time.\" He re-reads his notes, fixes the two orders calmly and asks a colleague to cover one section for ten minutes.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Stress is a message. Notice it early, pause and ask: What am I feeling, and what do I need now?</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Stress is a message",
+                                "questions": [
+                                    {
+                                        "question": "You notice your breathing is fast and you are snapping at colleagues during check-in. How does the deck describe this?",
+                                        "options": [
+                                            "A sign you are not suited to the job",
+                                            "A message that needs attention",
+                                            "Something to ignore until the shift ends",
+                                            "Proof that the guest is at fault"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck calls stress a message that needs attention and lists fast breathing and quick anger as signs."
+                                    },
+                                    {
+                                        "question": "Why does the deck stress noticing stress early?",
+                                        "options": [
+                                            "So you can leave work sooner",
+                                            "So a supervisor can record it",
+                                            "Because noticing early helps you deal with it",
+                                            "Because stress only lasts a few minutes"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The slide says noticing stress early helps you deal with it."
+                                    },
+                                    {
+                                        "question": "Which two questions does the deck suggest when you pause?",
+                                        "options": [
+                                            "What am I feeling? And what do I need now?",
+                                            "Who caused this? And who should I tell?",
+                                            "How long until my break? And who is late?",
+                                            "Why me? And why today?"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck says: pause and ask, what am I feeling and what do I need now?"
+                                    },
+                                    {
+                                        "question": "You keep making the same small mistake on guest bills. According to the deck, what might this be a sign of?",
+                                        "options": [
+                                            "A faulty system only",
+                                            "Nothing important",
+                                            "That you need more coffee",
+                                            "Stress, which can cause rushing or repeated mistakes"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck lists rushing or repeating mistakes as a sign of stress."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Know the Signs and Reset in One Minute",
+                            "minutes": 6,
+                            "body": "<h2>Recognise the signs of stress</h2><p>Stress shows itself in three places. The deck groups the signs into your body, your thoughts and your behaviour.</p><h3>1. In your body</h3><ul><li>Tension in the shoulders, or a headache.</li><li>Fast breathing or a fast heartbeat.</li><li>Tiredness, or difficulty relaxing.</li></ul><h3>2. In your thoughts</h3><ul><li>Forgetting, or difficulty concentrating.</li><li>The feeling that everything is urgent.</li></ul><p>The deck also places here a useful instruction for when thoughts start racing: <strong>look around you and identify what is happening now.</strong> Bringing your attention back to the present moment helps you see which things are truly urgent.</p><h3>3. In your behaviour</h3><ul><li>Irritability, or raising your voice.</li><li>Rushing, or repeating mistakes.</li><li>Withdrawing from others.</li></ul><blockquote class=\"bk-quote\">Everyone feels stress in a different way.</blockquote><p>One colleague may feel it in the shoulders; another may become quiet and withdrawn; another may start to rush. Learn your own signs, and be patient with colleagues whose signs are different from yours.</p><h2>Pause for a minute and regain your calm</h2><p>When you notice the signs, the deck offers a <strong>one-minute reset</strong>. Its message is: <strong>pause before you react quickly.</strong></p><ol><li>Steady your feet and relax the tension in your body.</li><li>Take a slow breath in, then breathe out slowly.</li><li>Look around you and identify what is happening now.</li><li>Drink a little water if you need to.</li><li>Choose one step, and start with it.</li></ol><p>If the place is safe, <strong>step away for a moment</strong>, for example to the back office or the service corridor, while a colleague covers.</p><blockquote class=\"bk-quote\">The goal is not to eliminate stress, but to deal with it calmly.</blockquote><aside class=\"bk-scene\"><strong>Scene:</strong> A front desk agent has just dealt with a very angry guest. Her shoulders are tight and her heart is racing, and the next guest is already stepping forward. She asks her colleague for one minute, steps into the back office, plants her feet, takes a slow breath in and out, drinks some water and decides her one next step: \"Greet the next guest by name.\" She returns calmer and serves the next guest well.</aside><aside class=\"bk-note\"><strong>Tip:</strong> You can use part of the reset even at the desk: steady your feet and take one slow breath before you speak.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Watch for signs in your body, thoughts and behaviour. Then steady yourself, breathe slowly, look at what is happening now, and choose one step.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Signs and the reset",
+                                "questions": [
+                                    {
+                                        "question": "A colleague has become very quiet and keeps away from the team during busy shifts. Which group of signs is this?",
+                                        "options": [
+                                            "Behaviour: withdrawing from others",
+                                            "Body: a headache",
+                                            "Thoughts: forgetting",
+                                            "It is not a sign of stress"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck lists withdrawing from others as a behavioural sign of stress."
+                                    },
+                                    {
+                                        "question": "What is the stated goal of the one-minute reset?",
+                                        "options": [
+                                            "To eliminate stress completely",
+                                            "To take a long break",
+                                            "To deal with stress calmly, one step at a time",
+                                            "To avoid guests"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says the goal is not to eliminate stress but to deal with it calmly."
+                                    },
+                                    {
+                                        "question": "After a difficult call, you feel everything is urgent. Which reset step helps you see what really needs doing?",
+                                        "options": [
+                                            "Start all tasks at once",
+                                            "Raise your voice to get attention",
+                                            "Leave the desk unattended",
+                                            "Look around you and identify what is happening now"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The reset includes looking around and identifying what is happening now."
+                                    },
+                                    {
+                                        "question": "When may you step away for a moment during a stressful shift?",
+                                        "options": [
+                                            "Whenever a guest is difficult",
+                                            "If the place is safe",
+                                            "Never",
+                                            "Only at the end of the shift"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says step away if the place is safe."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Working Through Pressure",
+                    "lessons": [
+                        {
+                            "title": "Prioritise Your Work and Speak to Your Supervisor",
+                            "minutes": 6,
+                            "body": "<h2>Prioritise the work when stress increases</h2><p>Stress often comes from the feeling that there is too much to do and no clear place to start. The deck gives four steps:</p><ol><li><strong>Pause:</strong> do not start everything at once.</li><li><strong>Prioritise:</strong> choose the most important task.</li><li><strong>Act:</strong> complete one clear step.</li><li><strong>Follow up:</strong> review what remains.</li></ol><blockquote class=\"bk-quote\">Ask: what is the most important task right now?</blockquote><p>This question cuts through the noise. Starting five tasks at once feels busy but finishes nothing. Completing one clear step gives you control back, and then you can look at what remains.</p><h2>Speak to your supervisor clearly</h2><p>Sometimes the work really is more than one person can do. Then the professional step is to speak to your supervisor. The deck shows how.</p><table class=\"bk-say\"><thead><tr><th>Say</th><th>Avoid</th></tr></thead><tbody><tr><td>Explain what is happening in a few words</td><td>Staying silent until the problem builds up</td></tr><tr><td>State the work you can complete</td><td>Shouting, or blaming others</td></tr><tr><td>Explain what you need help with</td><td>Saying only \"I can't\"</td></tr><tr><td>Suggest an order for the tasks</td><td>Hiding a mistake or a delay</td></tr><tr><td>Agree on the next step</td><td>Continuing a task that is not safe</td></tr></tbody></table><blockquote class=\"bk-quote\">Asking for help at the right time is professional behaviour.</blockquote><p>Compare two messages. \"I can't do this, it's too much!\" leaves the supervisor guessing. \"I have six rooms left, two are VIP arrivals at three o'clock. I can finish the VIP rooms by 2:30 if someone takes the other four. Can we agree that?\" gives the supervisor what they need to decide quickly.</p><p>Notice the last item in the avoid list. If a task has become unsafe, for example because you are too tired to lift safely or equipment is faulty, do not continue it. Stop and tell your supervisor.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A room attendant is behind schedule after two late checkouts. She feels the pressure rising. She pauses, asks herself what is most important now and sees that room 803 has a guest arriving within the hour. She calls her supervisor: \"I'm running forty minutes late because of two late checkouts. I can finish 803 first for the arrival, then 805 and 807. Could someone help with 809 and 811?\" The supervisor agrees and sends help.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Pause, prioritise, act and follow up. When you need help, explain briefly, state what you can do, say what you need, suggest an order and agree the next step.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Prioritise and speak up",
+                                "questions": [
+                                    {
+                                        "question": "You have many tasks and feel overwhelmed. What is the first step of the deck's method?",
+                                        "options": [
+                                            "Start all the tasks together",
+                                            "Complete the easiest task",
+                                            "Pause: do not start everything at once",
+                                            "Leave the tasks for the next shift"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Step one is Pause: do not start everything at once."
+                                    },
+                                    {
+                                        "question": "Which message to your supervisor follows the deck?",
+                                        "options": [
+                                            "\"I can't, it's too much.\"",
+                                            "Saying nothing until the end of the shift",
+                                            "\"It's the other shift's fault.\"",
+                                            "\"I can finish these two; I need help with these three. Can we agree the order?\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says to state what you can complete, what you need help with, suggest an order and agree the next step."
+                                    },
+                                    {
+                                        "question": "You made a mistake that caused a delay. What does the deck say to avoid?",
+                                        "options": [
+                                            "Hiding the mistake or the delay",
+                                            "Explaining it briefly",
+                                            "Suggesting a fix",
+                                            "Agreeing the next step"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck lists hiding a mistake or delay as something to avoid."
+                                    },
+                                    {
+                                        "question": "You are too tired to lift a heavy item safely but want to finish. What should you do?",
+                                        "options": [
+                                            "Continue so the task is done",
+                                            "Stop and tell your supervisor, because continuing an unsafe task should be avoided",
+                                            "Ask a guest to help",
+                                            "Leave it without telling anyone"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck lists continuing a task that is not safe as something to avoid."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Recovery and Support",
+                    "lessons": [
+                        {
+                            "title": "Recover After Work and Know When to Get More Support",
+                            "minutes": 6,
+                            "body": "<h2>Separate work from rest</h2><p>Managing stress does not end when you clock out. The deck is clear: <strong>rest after work is part of dealing with stress.</strong> It gives four steps:</p><ol><li><strong>Finish the shift:</strong> record any unfinished task and hand it over clearly.</li><li><strong>Calm your body:</strong> move a little and have water or food.</li><li><strong>Leave work behind:</strong> do not replay work problems all evening.</li><li><strong>Prepare for tomorrow:</strong> sleep, rest and get ready for a new day.</li></ol><p>The first step makes the others possible. When an unfinished task is written down and handed over, you do not need to carry it in your head. It is easier to let go of work when you know nothing has been left hanging.</p><h2>When do you need more support?</h2><p>Sometimes stress is more than a busy shift. The deck lists five situations in which you should seek support:</p><ul><li>Stress continues for a long time.</li><li>It affects your sleep, your eating or your daily life.</li><li>You are unable to do your work safely.</li><li>You have episodes of strong fear or anger.</li><li>You have chest pain or difficulty breathing.</li></ul><p>Chest pain or difficulty breathing always needs urgent attention. Do not wait to see whether it passes; tell someone at once and get urgent help.</p><h2>Start with these steps</h2><ol><li>Tell your supervisor or someone you trust.</li><li>Use the occupational health service, if one exists.</li><li>Speak to a doctor or a specialist.</li><li>Ask for urgent help if there is danger.</li><li>Do not face the problem alone.</li></ol><blockquote class=\"bk-quote\">Asking for support is strength and responsibility.</blockquote><aside class=\"bk-scene\"><strong>Scene:</strong> For several weeks a night auditor has been sleeping badly and feels anxious before every shift. He has started to make errors he never made before. He tells his supervisor, who listens without judgement and tells him about the occupational health service. He also books an appointment with a doctor. He does not have to deal with it alone, and asking for help is what a responsible colleague does.</aside><h2>Closing thought</h2><p>The deck closes with an encouraging message: <strong>stress does not define your strength; the way you deal with it makes the difference.</strong> Pause, breathe, prioritise, speak. <strong>Calm down and take things one step at a time.</strong></p><aside class=\"bk-key\"><strong>Key takeaway:</strong> Hand over unfinished work, calm your body, leave work at work and rest. If stress lasts, affects daily life or safety, or brings chest pain or breathing difficulty, seek support, urgently if there is danger. Do not face it alone.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Recovery and support",
+                                "questions": [
+                                    {
+                                        "question": "At the end of your shift one task is still unfinished. What should you do before leaving?",
+                                        "options": [
+                                            "Take it home to think about",
+                                            "Leave it and hope the next shift notices",
+                                            "Stay until it is done, whatever the time",
+                                            "Record the unfinished task and hand it over clearly"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "'Finish the shift' means record the unfinished task and hand it over clearly."
+                                    },
+                                    {
+                                        "question": "You keep replaying a difficult guest complaint all evening at home. Which step does this go against?",
+                                        "options": [
+                                            "Calm your body",
+                                            "Leave work behind",
+                                            "Prepare for tomorrow",
+                                            "Finish the shift"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "'Leave work behind' means do not replay work problems all evening."
+                                    },
+                                    {
+                                        "question": "A colleague says they feel chest pain and difficulty breathing during a stressful shift. What should happen?",
+                                        "options": [
+                                            "Get urgent help at once, as there may be danger",
+                                            "Suggest they drink water and carry on",
+                                            "Wait until the end of the shift",
+                                            "Tell them it is only stress"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Chest pain or difficulty breathing is a reason for support, and the deck says ask for urgent help if there is danger."
+                                    },
+                                    {
+                                        "question": "What does the deck say about asking for support?",
+                                        "options": [
+                                            "It should be a last resort",
+                                            "It is only for managers",
+                                            "It is strength and responsibility",
+                                            "It should be kept secret"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The slide states: asking for support is strength and responsibility."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "التعامل مع ضغط العمل",
+            "subtitle": "اهدأ، رتّب، واطلب المساعدة",
+            "short_description": "تعلّم ملاحظة علامات الضغط مبكرًا، واستعادة هدوئك في دقيقة، وترتيب عملك، والتحدث مع المشرف بوضوح، والراحة بعد المناوبة.",
+            "description": "<p>العمل في الضيافة مزدحم ومتطلب، وكل شخص يشعر بالضغط أحيانًا. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتساعد الموظفين على التعامل مع الضغط بهدوء بدل محاولة إلغائه.</p><p>ستتعلم ملاحظة الضغط مبكرًا في جسمك وأفكارك وسلوكك، واستخدام توقف الدقيقة الواحدة، وترتيب العمل تحت الضغط بخطوات: توقف، حدد الأهم، نفّذ خطوة، تابع، والتحدث مع المشرف بطريقة واضحة ومهنية، والفصل بين العمل ووقت الراحة، ومعرفة متى تحتاج إلى دعم أكبر.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظف في أي قسم.",
+            "outcomes": [
+                "تعرّف على العلامات المبكرة للضغط في جسمك وأفكارك وسلوكك",
+                "استخدم توقف الدقيقة الواحدة لتتعامل بهدوء بدل التصرف بسرعة",
+                "رتّب العمل تحت الضغط بخطوات: توقف، حدد الأهم، نفّذ خطوة، تابع",
+                "تحدث مع المشرف بوضوح عما تستطيع إنجازه وما تحتاج إليه من مساعدة",
+                "افصل بين العمل ووقت الراحة واعرف متى تحتاج إلى دعم أكبر"
+            ],
+            "faqs": [
+                {
+                    "question": "هل الهدف ألا أشعر بالضغط في العمل؟",
+                    "answer": "لا. الهدف ليس إلغاء الضغط، بل التعامل معه بهدوء خطوة بخطوة."
+                },
+                {
+                    "question": "هل طلب المساعدة من المشرف علامة ضعف؟",
+                    "answer": "لا. طلب المساعدة في الوقت المناسب تصرف مهني، وطلب الدعم قوة ومسؤولية."
+                },
+                {
+                    "question": "متى أحتاج إلى دعم أكبر من المشرف؟",
+                    "answer": "عند استمرار الضغط مدة طويلة، أو تأثر النوم أو الطعام أو حياتك اليومية، أو عدم القدرة على أداء العمل بصورة آمنة، أو نوبات خوف أو غضب شديدة، أو ألم في الصدر أو صعوبة في التنفس. أخبر شخصًا تثق به، واستخدم خدمة الصحة المهنية إن وجدت، وتحدث مع طبيب أو مختص، واطلب مساعدة عاجلة عند وجود خطر."
+                }
+            ],
+            "meta_title": "التعامل مع ضغط العمل لموظفي الفنادق",
+            "meta_description": "تدريب فندقي على ضغط العمل: ملاحظة العلامات مبكرًا، وتوقف الدقيقة، وترتيب العمل، والتحدث مع المشرف، والراحة ومتى تطلب الدعم.",
+            "focus_keyword": "التعامل مع ضغط العمل في الفنادق",
+            "chapters": [
+                {
+                    "title": "انتبه للضغط مبكرًا",
+                    "lessons": [
+                        {
+                            "title": "الضغط رسالة تحتاج إلى انتباه",
+                            "minutes": 5,
+                            "body": "<h2>الضغط رسالة</h2><p>بهو ممتلئ، ونزيل منزعج، وهاتف لا يتوقف عن الرنين، وزميل اعتذر عن الحضور: كل موظف في الفندق يعرف هذه اللحظات، والشعور بالضغط فيها أمر طبيعي. وتطلب منا المادة أن نراه لا على أنه فشل، بل <strong>رسالة تحتاج إلى انتباه</strong>، وأن <strong>ننتبه له قبل أن يزيد الضغط.</strong></p><ul><li><strong>قد يتسارع نبضك أو تنفسك.</strong></li><li><strong>قد تشعر بالتوتر أو سرعة الغضب.</strong></li><li><strong>قد يصعب عليك التركيز أو التذكر.</strong></li><li><strong>قد تتسرع أو تكرر الأخطاء.</strong></li><li><strong>ملاحظة الضغط مبكرًا تساعدك على التعامل معه.</strong></li></ul><p>النقطة الأخيرة هي جوهر هذا الدرس. كلما لاحظت العلامات أبكر، كانت الخطوة التي تحتاجها لتهدأ أصغر. أما إذا لم تنتبه إلا بعد أن رفعت صوتك على زميل أو كررت الخطأ نفسه ثلاث مرات، فسيكون التعافي من الموقف أصعب.</p><blockquote class=\"bk-quote\">توقف لحظة واسأل نفسك: ماذا أشعر؟ وما الذي أحتاجه الآن؟</blockquote><h2>سؤالان بسيطان</h2><p>هذان السؤالان يحولان الشعور الغامض بأن \"الأمر كثير\" إلى شيء يمكنك التصرف فيه. <em>ماذا أشعر؟</em> ربما بالتوتر أو الاستعجال أو الانزعاج. <em>ما الذي أحتاجه الآن؟</em> ربما نفسًا بطيئًا، أو رشفة ماء، أو مساعدة من زميل، أو ببساطة إنجاز مهمة واحدة قبل التالية. طرح السؤالين يستغرق ثوانٍ، ولا يوقف عملك بل يساعدك على أدائه بصورة أفضل.</p><h2>المنهج في سطر واحد</h2><p>تلخص المادة منهجها في خمس كلمات: <strong>توقف، تنفس، رتب، تحدث، تعافَ.</strong> وعنوانها يقدّم الفكرة نفسها باختصار: <strong>اهدأ، رتّب، واطلب المساعدة.</strong></p><aside class=\"bk-scene\"><strong>موقف:</strong> خلال وقت إفطار مزدحم، لاحظ نادل أنه أوصل طلبًا خاطئًا إلى طاولتين متتاليتين، وأنه يتحدث بحدة مع المطبخ. بدل أن يسرع أكثر، توقف لحظة عند محطة الخدمة وسأل نفسه: \"ماذا أشعر؟ بالاستعجال. ما الذي أحتاجه؟ أن أراجع طلباتي واحدًا واحدًا\". أعاد قراءة ملاحظاته، وصحح الطلبين بهدوء، وطلب من زميل أن يغطي قسمًا واحدًا عشر دقائق.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> الضغط رسالة. انتبه له مبكرًا، وتوقف واسأل: ماذا أشعر؟ وما الذي أحتاجه الآن؟</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الضغط رسالة",
+                                "questions": [
+                                    {
+                                        "question": "لاحظت أن تنفسك سريع وأنك تنفعل على زملائك أثناء تسجيل الوصول. كيف تصف المادة ذلك؟",
+                                        "options": [
+                                            "علامة على أنك لا تصلح للعمل",
+                                            "رسالة تحتاج إلى انتباه",
+                                            "أمر تتجاهله حتى نهاية المناوبة",
+                                            "دليل على أن النزيل هو المخطئ"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تصف المادة الضغط بأنه رسالة تحتاج إلى انتباه، وتذكر تسارع التنفس وسرعة الغضب من علاماته."
+                                    },
+                                    {
+                                        "question": "لماذا تؤكد المادة على ملاحظة الضغط مبكرًا؟",
+                                        "options": [
+                                            "لتغادر العمل أبكر",
+                                            "ليسجله المشرف",
+                                            "لأن ملاحظته مبكرًا تساعدك على التعامل معه",
+                                            "لأن الضغط لا يستمر إلا دقائق"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول الشريحة: ملاحظة الضغط مبكرًا تساعدك على التعامل معه."
+                                    },
+                                    {
+                                        "question": "ما السؤالان اللذان تقترحهما المادة عندما تتوقف؟",
+                                        "options": [
+                                            "ماذا أشعر؟ وما الذي أحتاجه الآن؟",
+                                            "من السبب؟ ولمن أشتكي؟",
+                                            "كم بقي على الاستراحة؟ ومن تأخر؟",
+                                            "لماذا أنا؟ ولماذا اليوم؟"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تقول المادة: توقف لحظة واسأل نفسك: ماذا أشعر؟ وما الذي أحتاجه الآن؟"
+                                    },
+                                    {
+                                        "question": "تكرر الخطأ الصغير نفسه في فواتير النزلاء. بحسب المادة، علامة على ماذا قد يكون ذلك؟",
+                                        "options": [
+                                            "عطل في النظام فقط",
+                                            "لا شيء مهم",
+                                            "أنك تحتاج مزيدًا من القهوة",
+                                            "الضغط، الذي قد يسبب التسرع أو تكرار الأخطاء"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تذكر المادة التسرع أو تكرار الأخطاء من علامات الضغط."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "تعرّف إلى علامات الضغط واستعد هدوءك في دقيقة",
+                            "minutes": 6,
+                            "body": "<h2>تعرّف إلى علامات الضغط</h2><p>يظهر الضغط في ثلاثة مواضع، وتجمع المادة علاماته في جسمك وأفكارك وسلوكك.</p><h3>١. في جسمك</h3><ul><li>شد في الكتفين أو صداع.</li><li>تسارع التنفس أو ضربات القلب.</li><li>تعب أو صعوبة في الاسترخاء.</li></ul><h3>٢. في أفكارك</h3><ul><li>نسيان أو صعوبة في التركيز.</li><li>الشعور بأن كل شيء عاجل.</li></ul><p>وتضع المادة هنا أيضًا توجيهًا مفيدًا عندما تتسارع الأفكار: <strong>انظر حولك وحدد ما يحدث الآن.</strong> فإعادة انتباهك إلى اللحظة الحاضرة تساعدك على رؤية ما هو عاجل فعلًا.</p><h3>٣. في سلوكك</h3><ul><li>العصبية أو رفع الصوت.</li><li>التسرع أو تكرار الأخطاء.</li><li>الابتعاد عن الآخرين.</li></ul><blockquote class=\"bk-quote\">كل شخص يشعر بالضغط بطريقة مختلفة.</blockquote><p>قد يشعر به زميل في كتفيه، ويصبح آخر صامتًا منعزلًا، ويبدأ ثالث بالتسرع. تعرّف على علاماتك أنت، وكن صبورًا مع زملائك الذين تختلف علاماتهم عن علاماتك.</p><h2>توقف دقيقة واستعد هدوءك</h2><p>عندما تلاحظ العلامات، تقدّم المادة <strong>توقف الدقيقة الواحدة</strong>، ورسالتها: <strong>توقف قبل أن تتصرف بسرعة.</strong></p><ol><li>ثبّت قدميك وخفف شد جسمك.</li><li>خذ نفسًا بطيئًا ثم أخرجه ببطء.</li><li>انظر حولك وحدد ما يحدث الآن.</li><li>اشرب قليلًا من الماء إذا احتجت.</li><li>اختر خطوة واحدة وابدأ بها.</li></ol><p>وإذا كان المكان آمنًا، <strong>ابتعد خطوة</strong>، كأن تذهب إلى المكتب الخلفي أو ممر الخدمة بينما يغطي زميل مكانك.</p><blockquote class=\"bk-quote\">الهدف ليس إلغاء الضغط — بل التعامل معه بهدوء.</blockquote><aside class=\"bk-scene\"><strong>موقف:</strong> انتهت موظفة الاستقبال للتو من التعامل مع نزيل غاضب جدًا. كتفاها مشدودتان وقلبها يخفق بسرعة، والنزيل التالي يتقدم. طلبت من زميلتها دقيقة واحدة، ودخلت المكتب الخلفي، وثبّتت قدميها، وأخذت نفسًا بطيئًا ثم أخرجته، وشربت قليلًا من الماء، وحددت خطوتها التالية: \"أرحب بالنزيل التالي باسمه\". عادت أهدأ وخدمت النزيل التالي جيدًا.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> يمكنك استخدام جزء من هذا التوقف حتى وأنت عند المكتب: ثبّت قدميك وخذ نفسًا بطيئًا واحدًا قبل أن تتكلم.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> راقب العلامات في جسمك وأفكارك وسلوكك، ثم ثبّت نفسك، وتنفس ببطء، وانظر إلى ما يحدث الآن، واختر خطوة واحدة.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: العلامات وتوقف الدقيقة",
+                                "questions": [
+                                    {
+                                        "question": "أصبح زميل صامتًا جدًا ويبتعد عن الفريق في المناوبات المزدحمة. إلى أي مجموعة من العلامات ينتمي ذلك؟",
+                                        "options": [
+                                            "السلوك: الابتعاد عن الآخرين",
+                                            "الجسم: الصداع",
+                                            "الأفكار: النسيان",
+                                            "ليس علامة على الضغط"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تذكر المادة الابتعاد عن الآخرين ضمن علامات الضغط في السلوك."
+                                    },
+                                    {
+                                        "question": "ما الهدف المعلن من توقف الدقيقة الواحدة؟",
+                                        "options": [
+                                            "إلغاء الضغط تمامًا",
+                                            "أخذ استراحة طويلة",
+                                            "التعامل مع الضغط بهدوء خطوة بخطوة",
+                                            "تجنب النزلاء"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: الهدف ليس إلغاء الضغط، بل التعامل معه بهدوء."
+                                    },
+                                    {
+                                        "question": "بعد مكالمة صعبة تشعر أن كل شيء عاجل. أي خطوة من التوقف تساعدك على رؤية ما يجب فعله حقًا؟",
+                                        "options": [
+                                            "ابدأ كل المهام معًا",
+                                            "ارفع صوتك لتلفت الانتباه",
+                                            "اترك المكتب دون أحد",
+                                            "انظر حولك وحدد ما يحدث الآن"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "من خطوات التوقف: انظر حولك وحدد ما يحدث الآن."
+                                    },
+                                    {
+                                        "question": "متى يجوز أن تبتعد خطوة أثناء مناوبة ضاغطة؟",
+                                        "options": [
+                                            "كلما كان النزيل صعبًا",
+                                            "إذا كان المكان آمنًا",
+                                            "أبدًا",
+                                            "في نهاية المناوبة فقط"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: ابتعد خطوة إذا كان المكان آمنًا."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "العمل تحت الضغط",
+                    "lessons": [
+                        {
+                            "title": "رتّب العمل وتحدث مع المشرف بوضوح",
+                            "minutes": 6,
+                            "body": "<h2>رتّب العمل عندما يزيد الضغط</h2><p>كثيرًا ما يأتي الضغط من الشعور بأن العمل كثير ولا توجد بداية واضحة. وتقدّم المادة أربع خطوات:</p><ol><li><strong>توقف:</strong> لا تبدأ كل شيء معًا.</li><li><strong>حدد الأهم:</strong> اختر المهمة الأكثر أهمية.</li><li><strong>نفّذ خطوة:</strong> أنهِ خطوة واضحة.</li><li><strong>تابع:</strong> راجع ما بقي.</li></ol><blockquote class=\"bk-quote\">اسأل: ما المهمة الأهم الآن؟</blockquote><p>هذا السؤال يقطع الضجيج. فبدء خمس مهام معًا يشعرك بالانشغال لكنه لا ينجز شيئًا، أما إنهاء خطوة واضحة واحدة فيعيد إليك السيطرة، ثم تنظر في ما بقي.</p><h2>تحدث مع المشرف بوضوح</h2><p>أحيانًا يكون العمل فعلًا أكثر مما يستطيعه شخص واحد، وعندها تكون الخطوة المهنية أن تتحدث مع مشرفك. وتوضح المادة الطريقة.</p><table class=\"bk-say\"><thead><tr><th>قل</th><th>تجنب</th></tr></thead><tbody><tr><td>اشرح ما يحدث بكلمات قصيرة</td><td>السكوت حتى تتراكم المشكلة</td></tr><tr><td>حدد العمل الذي تستطيع إنجازه</td><td>الصراخ أو لوم الآخرين</td></tr><tr><td>وضّح ما يحتاج إلى مساعدة</td><td>قول: لا أستطيع فقط</td></tr><tr><td>اقترح ترتيبًا للمهام</td><td>إخفاء الخطأ أو التأخير</td></tr><tr><td>اتفق على الخطوة التالية</td><td>الاستمرار في مهمة غير آمنة</td></tr></tbody></table><blockquote class=\"bk-quote\">طلب المساعدة في الوقت المناسب تصرف مهني.</blockquote><p>قارن بين رسالتين. \"لا أستطيع، العمل كثير!\" تترك المشرف يخمّن. أما \"بقيت لي ست غرف، منها غرفتان لكبار الشخصيات يصلون الساعة الثالثة. أستطيع إنهاء غرفتي كبار الشخصيات قبل الثانية والنصف إذا تولى أحد الغرف الأربع الأخرى. هل نتفق على ذلك؟\" فتعطي المشرف ما يحتاجه ليقرر بسرعة.</p><p>ولاحظ آخر بند في قائمة ما يجب تجنبه: إذا أصبحت المهمة غير آمنة، كأن تكون متعبًا لدرجة لا تستطيع معها الرفع بأمان أو كانت المعدات معطلة، فلا تستمر فيها. توقف وأخبر مشرفك.</p><aside class=\"bk-scene\"><strong>موقف:</strong> تأخرت عاملة الغرف عن جدولها بسبب مغادرتين متأخرتين، وشعرت بالضغط يزداد. توقفت وسألت نفسها: ما الأهم الآن؟ فرأت أن الغرفة 803 سيصلها نزيل خلال ساعة. اتصلت بمشرفتها: \"أنا متأخرة أربعين دقيقة بسبب مغادرتين متأخرتين. أستطيع إنهاء 803 أولًا من أجل الوصول، ثم 805 و807. هل يمكن أن يساعدني أحد في 809 و811؟\" فوافقت المشرفة وأرسلت المساعدة.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> توقف، وحدد الأهم، ونفّذ خطوة، وتابع. وعندما تحتاج مساعدة: اشرح باختصار، وحدد ما تستطيع إنجازه، ووضّح ما تحتاجه، واقترح ترتيبًا، واتفق على الخطوة التالية.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: رتّب وتحدث",
+                                "questions": [
+                                    {
+                                        "question": "لديك مهام كثيرة وتشعر أنك مغمور بالعمل. ما أول خطوة في منهج المادة؟",
+                                        "options": [
+                                            "ابدأ كل المهام معًا",
+                                            "أنجز المهمة الأسهل",
+                                            "توقف: لا تبدأ كل شيء معًا",
+                                            "اترك المهام للمناوبة التالية"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "الخطوة الأولى: توقف، لا تبدأ كل شيء معًا."
+                                    },
+                                    {
+                                        "question": "أي رسالة إلى المشرف تتفق مع المادة؟",
+                                        "options": [
+                                            "\"لا أستطيع، العمل كثير.\"",
+                                            "السكوت حتى نهاية المناوبة",
+                                            "\"الخطأ خطأ المناوبة الأخرى.\"",
+                                            "\"أستطيع إنهاء هاتين، وأحتاج مساعدة في هذه الثلاث. هل نتفق على الترتيب؟\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: حدد ما تستطيع إنجازه، ووضّح ما يحتاج إلى مساعدة، واقترح ترتيبًا، واتفق على الخطوة التالية."
+                                    },
+                                    {
+                                        "question": "ارتكبت خطأ تسبب في تأخير. ما الذي تقول المادة أن تتجنبه؟",
+                                        "options": [
+                                            "إخفاء الخطأ أو التأخير",
+                                            "شرحه باختصار",
+                                            "اقتراح حل",
+                                            "الاتفاق على الخطوة التالية"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تذكر المادة إخفاء الخطأ أو التأخير ضمن ما يجب تجنبه."
+                                    },
+                                    {
+                                        "question": "أنت متعب لدرجة لا تستطيع معها رفع غرض ثقيل بأمان، لكنك تريد إنهاء المهمة. ماذا تفعل؟",
+                                        "options": [
+                                            "تستمر حتى تنتهي المهمة",
+                                            "تتوقف وتخبر المشرف، لأن الاستمرار في مهمة غير آمنة يجب تجنبه",
+                                            "تطلب من نزيل المساعدة",
+                                            "تتركها دون إبلاغ أحد"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تذكر المادة الاستمرار في مهمة غير آمنة ضمن ما يجب تجنبه."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "الراحة والدعم",
+                    "lessons": [
+                        {
+                            "title": "افصل بين العمل والراحة واعرف متى تحتاج إلى دعم أكبر",
+                            "minutes": 6,
+                            "body": "<h2>افصل بين العمل ووقت الراحة</h2><p>التعامل مع الضغط لا ينتهي عند انتهاء الدوام. والمادة واضحة: <strong>الراحة بعد العمل جزء من التعامل مع الضغط.</strong> وتقدّم أربع خطوات:</p><ol><li><strong>أنهِ المناوبة:</strong> سجّل المهمة المعلقة وسلّمها بوضوح.</li><li><strong>هدّئ جسمك:</strong> تحرك قليلًا وتناول الماء أو الطعام.</li><li><strong>اترك العمل:</strong> لا تكرر مشكلات العمل طوال المساء.</li><li><strong>استعد للغد:</strong> نم واسترح واستعد ليوم جديد.</li></ol><p>الخطوة الأولى تجعل الخطوات الأخرى ممكنة؛ فحين تُكتب المهمة المعلقة وتُسلَّم، لا تحتاج إلى حملها في ذهنك، ويسهل أن تترك العمل وأنت تعرف أنه لم يبق شيء معلقًا.</p><h2>متى تحتاج إلى دعم أكبر؟</h2><p>أحيانًا يكون الضغط أكبر من مناوبة مزدحمة. وتذكر المادة خمس حالات تطلب فيها الدعم:</p><ul><li>استمرار الضغط مدة طويلة.</li><li>تأثر النوم أو الطعام أو حياتك اليومية.</li><li>عدم القدرة على أداء العمل بصورة آمنة.</li><li>نوبات خوف أو غضب شديدة.</li><li>وجود ألم في الصدر أو صعوبة في التنفس.</li></ul><p>ألم الصدر أو صعوبة التنفس يحتاجان دائمًا إلى اهتمام عاجل؛ لا تنتظر لترى هل سيزولان، بل أخبر أحدًا فورًا واطلب مساعدة عاجلة.</p><h2>ابدأ بهذه الخطوات</h2><ol><li>أخبر المشرف أو شخصًا تثق به.</li><li>استخدم خدمة الصحة المهنية إن وجدت.</li><li>تحدث مع طبيب أو مختص.</li><li>اطلب مساعدة عاجلة عند وجود خطر.</li><li>لا تواجه المشكلة وحدك.</li></ol><blockquote class=\"bk-quote\">طلب الدعم قوة ومسؤولية.</blockquote><aside class=\"bk-scene\"><strong>موقف:</strong> منذ عدة أسابيع ينام موظف التدقيق الليلي نومًا سيئًا ويشعر بالقلق قبل كل مناوبة، وبدأ يرتكب أخطاء لم يكن يرتكبها. أخبر مشرفه، فاستمع إليه دون أحكام وعرّفه بخدمة الصحة المهنية، كما حجز موعدًا مع طبيب. لم يكن عليه أن يواجه الأمر وحده، وطلب المساعدة هو ما يفعله الموظف المسؤول.</aside><h2>كلمة ختامية</h2><p>تختم المادة برسالة مشجعة: <strong>الضغط لا يحدد قوتك، طريقة تعاملك معه تصنع الفرق.</strong> توقف، تنفس، رتب، تحدث. <strong>اهدأ وخذ الأمور خطوة بخطوة.</strong></p><aside class=\"bk-key\"><strong>الخلاصة:</strong> سلّم العمل المعلق، وهدّئ جسمك، واترك العمل في العمل، واسترح. وإذا استمر الضغط أو أثّر في حياتك اليومية أو سلامتك، أو صاحبه ألم في الصدر أو صعوبة في التنفس، فاطلب الدعم، وبصورة عاجلة عند وجود خطر. لا تواجه ذلك وحدك.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الراحة والدعم",
+                                "questions": [
+                                    {
+                                        "question": "في نهاية مناوبتك بقيت مهمة غير منجزة. ماذا تفعل قبل المغادرة؟",
+                                        "options": [
+                                            "تأخذها إلى البيت لتفكر فيها",
+                                            "تتركها وتأمل أن تلاحظها المناوبة التالية",
+                                            "تبقى حتى تنتهي مهما تأخر الوقت",
+                                            "تسجّل المهمة المعلقة وتسلّمها بوضوح"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "\"أنهِ المناوبة\" تعني: سجّل المهمة المعلقة وسلّمها بوضوح."
+                                    },
+                                    {
+                                        "question": "تظل تستعيد شكوى نزيل صعبة طوال المساء في البيت. أي خطوة يخالفها ذلك؟",
+                                        "options": [
+                                            "هدّئ جسمك",
+                                            "اترك العمل",
+                                            "استعد للغد",
+                                            "أنهِ المناوبة"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "\"اترك العمل\" تعني: لا تكرر مشكلات العمل طوال المساء."
+                                    },
+                                    {
+                                        "question": "قال زميل إنه يشعر بألم في الصدر وصعوبة في التنفس خلال مناوبة ضاغطة. ماذا يجب أن يحدث؟",
+                                        "options": [
+                                            "طلب مساعدة عاجلة فورًا لاحتمال وجود خطر",
+                                            "أن تقترح عليه شرب الماء والاستمرار",
+                                            "الانتظار حتى نهاية المناوبة",
+                                            "أن تخبره أنه مجرد ضغط"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "ألم الصدر أو صعوبة التنفس من حالات طلب الدعم، وتقول المادة: اطلب مساعدة عاجلة عند وجود خطر."
+                                    },
+                                    {
+                                        "question": "ماذا تقول المادة عن طلب الدعم؟",
+                                        "options": [
+                                            "يجب أن يكون الملاذ الأخير",
+                                            "للمديرين فقط",
+                                            "قوة ومسؤولية",
+                                            "يجب أن يبقى سرًا"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تنص الشريحة: طلب الدعم قوة ومسؤولية."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,551 @@
+{
+    "slug": "professional-apology",
+    "category": "guest-handling",
+    "level": "foundation",
+    "source_pdf": "Professional-Apology-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/professional-apology.webp",
+    "videos": [
+        {
+            "id": "Pwl5PExezeg",
+            "title": "A perfect apology in three steps | Jahan Kalantar | TEDxSydney",
+            "channel": "TEDx Talks",
+            "why": "A short talk on why most apologies fail and how a sincere apology that acknowledges the impact and commits to action works, matching the deck's rule that an apology must be followed by clear action."
+        },
+        {
+            "id": "R7vP01U8qr4",
+            "title": "The power of the apology | Robert M. Gordon | TEDxLehighRiver",
+            "channel": "TEDx Talks",
+            "why": "Explains the parts of a meaningful, heartfelt apology and how it rebuilds trust, supporting the deck's message that a professional apology restores confidence."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Professional Apology",
+            "subtitle": "Apologise sincerely, then make it right",
+            "short_description": "Learn when and how to apologise to a guest: Listen, Acknowledge, Apologise, Fix and Follow up, using professional phrases and without excuses or blame.",
+            "description": "<p>A good apology can turn a disappointing moment into renewed trust. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows hotel colleagues how to apologise sincerely and then make things right.</p><p>You will learn why a correct apology restores trust, when to apologise, the steps Listen, Acknowledge, Apologise, Fix and Follow up, professional apology phrases, what to say and avoid, how to apologise for the experience without assuming blame and what to do when the problem belongs to another department.</p>",
+            "requirements": "No prior training is needed; the course suits any guest-facing colleague.",
+            "outcomes": [
+                "Explain why a sincere apology followed by action restores trust",
+                "Recognise delays, service errors and inconvenience that call for an apology",
+                "Apply the steps Listen, Acknowledge, Apologise, Fix and Follow up",
+                "Use professional apology phrases and avoid words that spoil an apology",
+                "Take ownership of follow-up when another department is involved"
+            ],
+            "faqs": [
+                {
+                    "question": "Should I apologise if I did not cause the problem?",
+                    "answer": "Yes. The deck says apologise when the guest's experience is affected, even if you are not the cause. You apologise for the experience, then check what happened before judging."
+                },
+                {
+                    "question": "Why should I avoid the word \"but\" in an apology?",
+                    "answer": "Because \"but\" spoils the apology: it turns it into an excuse. Apologise clearly, then explain the step you will take."
+                },
+                {
+                    "question": "What if the problem was caused by another department?",
+                    "answer": "Apologise for the inconvenience, contact the department, give a clear time for an update, follow up until it is handled and inform your supervisor if the solution is delayed. Never blame the other department."
+                }
+            ],
+            "meta_title": "Professional Apology for Hotel Staff",
+            "meta_description": "Hotel training on professional apology: when to apologise, Listen-Acknowledge-Apologise-Fix-Follow up, phrases to use and how to own the follow-up.",
+            "focus_keyword": "professional apology to guests",
+            "chapters": [
+                {
+                    "title": "Why and When to Apologise",
+                    "lessons": [
+                        {
+                            "title": "A Correct Apology Rebuilds Trust",
+                            "minutes": 5,
+                            "body": "<h2>Why a good apology matters</h2><p>Every hotel makes mistakes. A room is not ready on time, an order arrives wrong, a noisy air conditioner keeps a guest awake. What the guest remembers is often not the mistake itself but how the hotel responded. The deck's message is that <strong>a correct apology rebuilds trust</strong>.</p><h2>Five reasons an apology works</h2><ul><li><strong>The guest wants to feel that you heard them.</strong> Before anything is fixed, the guest needs to know their experience has been understood.</li><li><strong>An apology eases the tension in the conversation.</strong> A guest who expects an argument relaxes when they hear a sincere \"I apologise\".</li><li><strong>An apology shows your care about their experience.</strong> It tells the guest the hotel values how they feel, not only the facts.</li><li><strong>The practical step proves the apology is sincere.</strong> Words alone can sound empty; action shows you meant them.</li><li><strong>Follow-up helps restore trust.</strong> Coming back to check closes the loop and shows the apology was not just a way to end the conversation.</li></ul><blockquote class=\"bk-quote\">An apology is not just a word; it must be followed by clear action.</blockquote><h2>Remember: no excuses first</h2><p>The deck adds one reminder: <strong>do not start with excuses</strong>. When a guest complains, it is tempting to explain first: \"We are short of staff today\" or \"The system was down.\" Even if this is true, starting with it sounds like you are defending the hotel rather than caring about the guest. The guest hears: \"It's not our fault.\"</p><p>Start with the guest instead: listen, show you understand, apologise. If an explanation helps, it can come later, briefly, and only as part of what you will do to put things right.</p><h2>The approach in five words</h2><p>The deck summarises the professional apology as <strong>Listen, Acknowledge, Apologise, Fix, Follow up</strong>. The course builds on this sequence. Its aim is captured in the deck's subtitle: <strong>apologise sincerely, then make it right</strong>.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest comes to the desk annoyed that his room was not cleaned while he was at lunch. The receptionist's first thought is to explain that housekeeping is busy with checkouts. Instead she listens, then says: \"I apologise, you came back expecting a fresh room and it wasn't ready. I will ask housekeeping to clean it now and I will call you in 30 minutes to confirm.\" She calls when the room is done. The guest thanks her, and the complaint ends there.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> A sincere apology eases tension and shows care, but only action and follow-up prove it. Never start with excuses.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Apology rebuilds trust",
+                                "questions": [
+                                    {
+                                        "question": "A guest complains that breakfast was late. What should you avoid starting with?",
+                                        "options": [
+                                            "Listening to the guest",
+                                            "An excuse such as \"the kitchen is short of staff\"",
+                                            "Showing you understood",
+                                            "A sincere apology"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck's reminder is: do not start with excuses."
+                                    },
+                                    {
+                                        "question": "What proves that an apology is sincere?",
+                                        "options": [
+                                            "Repeating it several times",
+                                            "Saying it in a formal tone",
+                                            "The practical step that follows it",
+                                            "Explaining whose fault it was"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says the practical step proves the apology is sincere."
+                                    },
+                                    {
+                                        "question": "You apologised and fixed the problem. Why call the guest back later?",
+                                        "options": [
+                                            "Follow-up helps restore trust",
+                                            "To ask for a good review",
+                                            "To explain the cause in detail",
+                                            "It is not needed once fixed"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck lists follow-up as helping to restore trust."
+                                    },
+                                    {
+                                        "question": "Which statement matches the deck?",
+                                        "options": [
+                                            "An apology is enough on its own",
+                                            "Apologising admits the hotel is always wrong",
+                                            "An apology should be avoided to save time",
+                                            "An apology is not just a word; it must be followed by clear action"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck states that an apology is not just a word; clear action must follow it."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "When to Apologise and the Steps of an Apology",
+                            "minutes": 6,
+                            "body": "<h2>When should you apologise to the guest?</h2><p>The deck groups the moments that call for an apology into three types: <strong>delay, service error and inconvenience</strong>.</p><h3>01 Delay</h3><ul><li>Check-in was delayed.</li><li>The guest's request arrived late.</li><li>The guest waited without an update.</li></ul><h3>02 Service error</h3><ul><li>A service arrived that was not requested.</li><li>The request was not carried out correctly.</li><li>Inaccurate information reached the guest.</li></ul><h3>03 Inconvenience to the guest</h3><ul><li>Noise or a fault in the room.</li><li>The problem happened more than once.</li><li>The guest felt a lack of attention.</li></ul><blockquote class=\"bk-quote\">Apologise when the guest's experience is affected, even if you are not the cause.</blockquote><p>This last point matters. The receptionist did not cause the noisy pipe, and the waiter did not cause the late delivery from the kitchen. But to the guest, you are the hotel. Apologising is not admitting personal fault; it is recognising that the guest's stay was affected.</p><h2>Build the apology in steps</h2><p>The deck breaks a professional apology into clear steps, starting with <strong>acknowledge the situation</strong>: show that you understood what happened.</p><ol><li><strong>Listen and do not interrupt the guest.</strong> Let them explain fully.</li><li><strong>Mention the impact of the situation on them.</strong> \"You waited 40 minutes for your order.\"</li><li><strong>Offer a clear and sincere apology.</strong> \"I apologise.\"</li><li><strong>Explain what you will do now.</strong> Give the next step.</li><li><strong>Follow up with them after the solution is carried out.</strong></li></ol><blockquote class=\"bk-quote\">A short, sincere apology is better than a long explanation.</blockquote><h2>Professional apology phrases</h2><p>The deck gives four phrases for common situations:</p><table class=\"bk-say\"><thead><tr><th>Situation</th><th>Phrase</th></tr></thead><tbody><tr><td>Delay</td><td>\"I apologise for the long waiting time.\"</td></tr><tr><td>Inconvenience</td><td>\"I apologise for the inconvenience that happened.\"</td></tr><tr><td>Disappointment</td><td>\"I understand this was not what you expected.\"</td></tr><tr><td>Follow up</td><td>\"I will follow up on this and update you on what happens.\"</td></tr></tbody></table><p>The deck's rule: <strong>choose the right phrase, then state the next step</strong>. A phrase on its own is not enough; always add what happens now.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest calls to say the room service order she received was not what she asked for, and it is the second time today. The order-taker listens without interrupting, then says: \"You ordered the grilled fish and received the chicken, and this is the second time today. I apologise for the inconvenience. I am sending the correct dish now; it will reach you in 20 minutes, and I will call to make sure it is right.\" She calls back after delivery.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Apologise for delays, service errors and inconvenience, even if you are not the cause. Listen, mention the impact, apologise clearly, explain the next step and follow up.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: When and how to apologise",
+                                "questions": [
+                                    {
+                                        "question": "A guest waited 30 minutes at reception without anyone updating her. Which type of situation is this?",
+                                        "options": [
+                                            "Service error",
+                                            "Inconvenience only",
+                                            "Delay",
+                                            "Not a reason to apologise"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck lists 'the guest waited without an update' under delay."
+                                    },
+                                    {
+                                        "question": "The noisy room was caused by engineering works, not by you. Should you apologise?",
+                                        "options": [
+                                            "Yes, apologise when the guest's experience is affected, even if you are not the cause",
+                                            "No, only the engineering team should apologise",
+                                            "Only if the guest asks for an apology",
+                                            "No, it would admit fault"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck says apologise when the guest's experience is affected, even if you are not the cause."
+                                    },
+                                    {
+                                        "question": "Which phrase fits a guest who is disappointed with the view from the room?",
+                                        "options": [
+                                            "\"I apologise for the long waiting time.\"",
+                                            "\"That is not my department.\"",
+                                            "\"All rooms are the same.\"",
+                                            "\"I understand this was not what you expected.\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck's phrase for disappointment is \"I understand this was not what you expected.\""
+                                    },
+                                    {
+                                        "question": "After choosing the right apology phrase, what should you do?",
+                                        "options": [
+                                            "End the conversation",
+                                            "State the next step",
+                                            "Explain the cause in detail",
+                                            "Repeat the apology"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says choose the right phrase, then state the next step."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Apologising Professionally",
+                    "lessons": [
+                        {
+                            "title": "Say and Avoid, and Apologising Without Assuming Blame",
+                            "minutes": 6,
+                            "body": "<h2>Apologise in a professional way</h2><p>The same apology can land well or badly depending on how it is delivered and which words surround it. The deck contrasts what to do with what to avoid:</p><table class=\"bk-say\"><thead><tr><th>Say / Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Look at the guest and listen</td><td>\"But this is not my responsibility.\"</td></tr><tr><td>Use a calm voice</td><td>\"This is the system and I can't do anything.\"</td></tr><tr><td>Say clearly: \"I apologise.\"</td><td>\"You understood the matter wrongly.\"</td></tr><tr><td>Explain the step you will take</td><td>\"All guests wait like you.\"</td></tr><tr><td>Follow up with the guest after the solution</td><td>Making a promise you cannot keep</td></tr></tbody></table><blockquote class=\"bk-quote\">Do not spoil the apology with the word \"but\".</blockquote><p>\"I apologise, but we are very busy\" is not an apology; it is an excuse with an apology in front of it. The guest only hears the part after \"but\". Each item in the avoid column does the same thing: it moves the responsibility to the guest, the system, other guests or someone else. A promise you cannot keep is the most damaging of all, because it creates a second disappointment on top of the first.</p><h2>Apologise for the experience without assuming the cause</h2><p>Sometimes you do not yet know what happened. The guest says their room was entered while they were out, or that they were charged incorrectly. You cannot confirm the facts on the spot, but you can still apologise. The deck gives four steps:</p><ol><li><strong>\"I apologise for the inconvenience.\"</strong> (Apologise) You acknowledge that the guest's experience was affected.</li><li><strong>\"I understand your frustration.\"</strong> (Acknowledge) You respect their feeling without arguing.</li><li><strong>\"I will check what happened.\"</strong> (Check) You verify the details before judging.</li><li><strong>\"I will explain the solution to you.\"</strong> (Act) You offer what you can deliver, clearly.</li></ol><blockquote class=\"bk-quote\">Apologise for the experience, then check and take the right action.</blockquote><p>This protects everyone. The guest feels heard immediately. The hotel does not admit to something that may not have happened. And you have time to find the facts before offering a solution. What you must not do is argue about the facts first, or tell the guest they must be mistaken.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest at checkout says there is a minibar charge on her bill for drinks she never took. The cashier does not say \"The system shows you did.\" She says: \"I apologise for the inconvenience, and I understand your frustration. I will check what happened with housekeeping now.\" She calls the floor, confirms the minibar was restocked by mistake from the previous guest's record, removes the charge and explains the correction to the guest.</aside><aside class=\"bk-note\"><strong>Tip:</strong> If you are about to say \"but\", stop and replace it with the next step: \"I apologise. I will...\"</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Look, listen, use a calm voice, say \"I apologise\" clearly, explain your next step and follow up. Never add \"but\", and when facts are unclear, apologise for the experience, then check and act.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Apologising professionally",
+                                "questions": [
+                                    {
+                                        "question": "Which reply spoils the apology?",
+                                        "options": [
+                                            "\"I apologise. I will send someone now.\"",
+                                            "\"I apologise, but we are very busy today.\"",
+                                            "\"I apologise for the long waiting time.\"",
+                                            "\"I understand your frustration.\""
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says do not spoil the apology with the word \"but\"."
+                                    },
+                                    {
+                                        "question": "A guest says they were charged for something they did not order. You cannot confirm yet. What should you say?",
+                                        "options": [
+                                            "\"The system is never wrong.\"",
+                                            "\"You must have misunderstood.\"",
+                                            "\"I apologise for the inconvenience. I will check what happened.\"",
+                                            "\"That's not my responsibility.\""
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Apologise for the experience, then check the details before judging."
+                                    },
+                                    {
+                                        "question": "A guest complains about a long queue. Which phrase does the deck list as one to avoid?",
+                                        "options": [
+                                            "\"All guests wait like you.\"",
+                                            "\"I apologise for the long waiting time.\"",
+                                            "\"I will follow up on this.\"",
+                                            "\"I understand this was not what you expected.\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "\"All guests wait like you\" is on the deck's avoid list."
+                                    },
+                                    {
+                                        "question": "To calm a guest, a colleague promises a free night without authority to grant it. Why is this wrong?",
+                                        "options": [
+                                            "Free nights are never allowed",
+                                            "It is too generous",
+                                            "It takes too long",
+                                            "The deck says avoid making a promise you cannot keep"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Making a promise you cannot keep is on the deck's avoid list; offer what you can deliver clearly."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Owning the Follow-up",
+                    "lessons": [
+                        {
+                            "title": "When the Problem Is Not From Your Department",
+                            "minutes": 6,
+                            "body": "<h2>When another department is involved</h2><p>Many guest problems start in one department and reach another. A guest tells the restaurant that the room is cold. A guest tells housekeeping that the bill is wrong. A guest tells the doorman that their airport transfer did not arrive. The colleague who hears the problem is often not the one who can fix it. The deck is clear on what to do.</p><h3>What do you do?</h3><ol><li><strong>Apologise for the inconvenience.</strong></li><li><strong>Contact the relevant department.</strong></li><li><strong>Set a clear time for an update.</strong></li><li><strong>Follow up until the request is handled.</strong></li><li><strong>Inform the supervisor if the solution is delayed.</strong></li></ol><h3>Take responsibility for the follow-up</h3><ul><li>Do not blame another department.</li><li>Do not ask the guest to look for the person responsible.</li><li>Do not leave the guest without an update.</li><li>Do not discuss colleagues' mistakes in front of the guest.</li><li>Do not promise a solution before checking.</li></ul><blockquote class=\"bk-quote\">The guest is dealing with the whole hotel, not with one department.</blockquote><h2>Why ownership matters</h2><p>To the guest, \"housekeeping\", \"engineering\" and \"front office\" are all simply the hotel. When a colleague says \"That's engineering, you need to call them,\" the guest hears that nobody will take care of the problem. When a colleague says \"Engineering made a mistake again,\" the guest loses trust in the whole team.</p><p>Owning the follow-up does not mean fixing it yourself. It means you apologise, pass the problem to the right people, tell the guest when they will hear back, and make sure they do. If the time passes and nothing has happened, you escalate to your supervisor rather than letting the guest chase it.</p><h2>Closing thought</h2><p>The deck ends: <strong>apologise sincerely, then fix it and follow up</strong>. Listen, Acknowledge, Apologise, Fix, Follow up. A professional apology restores trust in the guest's relationship with the hotel. A sincere apology, clear action and follow-up rebuild trust.</p><table class=\"bk-say\"><thead><tr><th>Instead of</th><th>Say</th></tr></thead><tbody><tr><td>\"You need to call engineering.\"</td><td>\"I apologise for the inconvenience. I will contact engineering now.\"</td></tr><tr><td>\"They always get this wrong.\"</td><td>\"I will make sure the team looks at this.\"</td></tr><tr><td>\"It will be fixed in five minutes.\" (unchecked)</td><td>\"I will update you within 15 minutes.\"</td></tr></tbody></table><aside class=\"bk-scene\"><strong>Scene:</strong> At dinner, a guest tells the waiter that the air conditioning in his room has been making a loud noise for two nights. The waiter apologises for the inconvenience, calls engineering from the restaurant and tells the guest: \"Engineering will check your room while you are at dinner, and I will update you before your dessert.\" When no update has come after 20 minutes, he informs the restaurant supervisor, who chases it. Before dessert, he confirms to the guest that the unit has been fixed.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> When another department is involved, apologise, contact them, set a clear update time, follow up and escalate if delayed. Never blame colleagues or send the guest to find the right person.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Owning the follow-up",
+                                "questions": [
+                                    {
+                                        "question": "A guest tells you, a restaurant colleague, that their room is too cold. What should you do first?",
+                                        "options": [
+                                            "Tell them to call engineering from the room",
+                                            "Apologise for the inconvenience and contact the relevant department",
+                                            "Explain that it is not a restaurant issue",
+                                            "Promise it will be fixed in five minutes"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says apologise for the inconvenience and contact the relevant department."
+                                    },
+                                    {
+                                        "question": "You promised an update in 15 minutes, but the department has not responded. What next?",
+                                        "options": [
+                                            "Wait until the guest asks again",
+                                            "Tell the guest the department is slow",
+                                            "Inform the supervisor that the solution is delayed",
+                                            "Drop the request"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says inform the supervisor if the solution is delayed."
+                                    },
+                                    {
+                                        "question": "Which reply to a guest follows the deck's guidance?",
+                                        "options": [
+                                            "\"Housekeeping always forgets.\"",
+                                            "\"Please find the duty manager yourself.\"",
+                                            "\"It will definitely be sorted in two minutes.\" (unchecked)",
+                                            "\"I apologise. I have contacted housekeeping and will update you within 15 minutes.\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Apologise, contact the department and set a clear update time; do not blame, redirect or promise before checking."
+                                    },
+                                    {
+                                        "question": "Why should you not discuss colleagues' mistakes in front of the guest?",
+                                        "options": [
+                                            "The guest is dealing with the whole hotel, not with one department",
+                                            "It takes too much time",
+                                            "Colleagues never make mistakes",
+                                            "The guest will ask for compensation"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck's message is that the guest deals with the whole hotel, not one department."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "الاعتذار المهني",
+            "subtitle": "اعتذر بصدق ثم أصلح الموقف",
+            "short_description": "تعلّم متى وكيف تعتذر للنزيل: استمع، اعترف، اعتذر، أصلح، تابع، بعبارات مهنية ودون أعذار أو لوم.",
+            "description": "<p>الاعتذار الجيد يمكن أن يحوّل لحظة مخيبة إلى ثقة متجددة. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتعلّم الموظفين كيف يعتذرون بصدق ثم يصلحون الموقف.</p><p>ستتعرف على سبب إعادة الاعتذار الصحيح للثقة، ومتى تعتذر، وخطوات: استمع، اعترف، اعتذر، أصلح، تابع، وعبارات الاعتذار المهنية، وما تقوله وتتجنبه، وكيف تعتذر عن التجربة دون افتراض السبب، وماذا تفعل عندما لا تكون المشكلة من قسمك.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظف يتعامل مع النزلاء.",
+            "outcomes": [
+                "اشرح لماذا يعيد الاعتذار الصادق المتبوع بتصرف الثقة",
+                "تعرّف على حالات التأخير والخطأ في الخدمة والإزعاج التي تستدعي الاعتذار",
+                "طبّق خطوات: استمع، اعترف، اعتذر، أصلح، تابع",
+                "استخدم عبارات اعتذار مهنية وتجنب الكلمات التي تفسد الاعتذار",
+                "تحمّل مسؤولية المتابعة عندما يكون قسم آخر معنيًا"
+            ],
+            "faqs": [
+                {
+                    "question": "هل أعتذر إذا لم أكن سبب المشكلة؟",
+                    "answer": "نعم. تقول المادة: اعتذر عندما تتأثر تجربة النزيل حتى لو لم تكن أنت السبب؛ فأنت تعتذر عن التجربة ثم تتحقق مما حدث قبل الحكم."
+                },
+                {
+                    "question": "لماذا أتجنب كلمة \"لكن\" في الاعتذار؟",
+                    "answer": "لأن \"لكن\" تفسد الاعتذار وتحوّله إلى عذر. اعتذر بوضوح ثم اشرح الخطوة التي ستقوم بها."
+                },
+                {
+                    "question": "ماذا لو كانت المشكلة من قسم آخر؟",
+                    "answer": "اعتذر عن الإزعاج، وتواصل مع القسم المختص، وحدد وقتًا واضحًا للتحديث، وتابع حتى يتم التعامل مع الطلب، وأبلغ المشرف إذا تأخر الحل. ولا تلقِ اللوم على القسم الآخر."
+                }
+            ],
+            "meta_title": "الاعتذار المهني لموظفي الفنادق",
+            "meta_description": "تدريب فندقي على الاعتذار المهني: متى تعتذر، وخطوات استمع واعترف واعتذر وأصلح وتابع، وعبارات الاعتذار، وتحمّل مسؤولية المتابعة.",
+            "focus_keyword": "الاعتذار المهني للنزيل",
+            "chapters": [
+                {
+                    "title": "لماذا ومتى نعتذر",
+                    "lessons": [
+                        {
+                            "title": "الاعتذار الصحيح يعيد الثقة",
+                            "minutes": 5,
+                            "body": "<h2>لماذا الاعتذار الجيد مهم</h2><p>كل فندق يخطئ أحيانًا: غرفة لم تجهز في موعدها، أو طلب وصل خاطئًا، أو مكيف مزعج يُبقي النزيل مستيقظًا. وما يتذكره النزيل غالبًا ليس الخطأ نفسه، بل طريقة استجابة الفندق. ورسالة المادة أن <strong>الاعتذار الصحيح يعيد الثقة</strong>.</p><h2>خمسة أسباب تجعل الاعتذار فعّالًا</h2><ul><li><strong>النزيل يريد أن يشعر بأنك سمعته.</strong> فقبل إصلاح أي شيء يحتاج أن يعرف أن تجربته فُهمت.</li><li><strong>الاعتذار يخفف التوتر في الحديث.</strong> فالنزيل الذي يتوقع جدالًا يهدأ حين يسمع \"أعتذر\" صادقة.</li><li><strong>الاعتذار يوضح اهتمامك بتجربته،</strong> ويخبره أن الفندق يقدّر مشاعره لا الوقائع فقط.</li><li><strong>الخطوة العملية تثبت صدق الاعتذار.</strong> فالكلمات وحدها قد تبدو فارغة، والتصرف يُظهر أنك تعنيها.</li><li><strong>المتابعة تساعد على استعادة الثقة.</strong> فالعودة للاطمئنان تُغلق الحلقة وتُظهر أن الاعتذار لم يكن مجرد وسيلة لإنهاء الحديث.</li></ul><blockquote class=\"bk-quote\">الاعتذار ليس كلمة فقط — يجب أن يتبعه تصرف واضح.</blockquote><h2>تذكّر: لا تبدأ بالأعذار</h2><p>تضيف المادة تذكيرًا واحدًا: <strong>لا تبدأ بالأعذار</strong>. فعندما يشتكي النزيل يغريك أن تشرح أولًا: \"لدينا نقص في الموظفين اليوم\" أو \"النظام كان متوقفًا\". وحتى لو كان ذلك صحيحًا، فالبدء به يبدو دفاعًا عن الفندق لا اهتمامًا بالنزيل، فيسمع النزيل: \"ليس خطأنا\". ابدأ بالنزيل بدلًا من ذلك: استمع، وأظهر أنك فهمت، واعتذر. وإذا كان الشرح مفيدًا فليأتِ لاحقًا وباختصار، وكجزء مما ستفعله لإصلاح الموقف.</p><h2>المنهج في خمس كلمات</h2><p>تلخص المادة الاعتذار المهني في: <strong>استمع، اعترف، اعتذر، أصلح، تابع</strong>. وهدفه في عنوان المادة: <strong>اعتذر بصدق ثم أصلح الموقف</strong>.</p><aside class=\"bk-scene\"><strong>موقف:</strong> جاء نزيل إلى الاستقبال منزعجًا لأن غرفته لم تُنظف أثناء غدائه. كان أول ما خطر للموظفة أن تشرح انشغال التدبير الفندقي بالمغادرين، لكنها استمعت ثم قالت: \"أعتذر، عدت وأنت تتوقع غرفة جاهزة ولم تكن كذلك. سأطلب من التدبير الفندقي تنظيفها الآن، وسأتصل بك خلال 30 دقيقة للتأكد\". واتصلت عند انتهاء الغرفة، فشكرها النزيل وانتهت الشكوى عند ذلك.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> الاعتذار الصادق يخفف التوتر ويُظهر الاهتمام، لكن التصرف والمتابعة وحدهما يثبتان صدقه. ولا تبدأ بالأعذار أبدًا.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الاعتذار يعيد الثقة",
+                                "questions": [
+                                    {
+                                        "question": "اشتكى نزيل من تأخر الإفطار. بماذا تتجنب البدء؟",
+                                        "options": [
+                                            "الاستماع إلى النزيل",
+                                            "عذر مثل \"المطبخ يعاني نقصًا في الموظفين\"",
+                                            "إظهار أنك فهمت",
+                                            "اعتذار صادق"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تذكير المادة: لا تبدأ بالأعذار."
+                                    },
+                                    {
+                                        "question": "ما الذي يثبت صدق الاعتذار؟",
+                                        "options": [
+                                            "تكراره عدة مرات",
+                                            "قوله بنبرة رسمية",
+                                            "الخطوة العملية التي تتبعه",
+                                            "شرح من المخطئ"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: الخطوة العملية تثبت صدق الاعتذار."
+                                    },
+                                    {
+                                        "question": "اعتذرت وأصلحت المشكلة. لماذا تتصل بالنزيل لاحقًا؟",
+                                        "options": [
+                                            "لأن المتابعة تساعد على استعادة الثقة",
+                                            "لتطلب منه تقييمًا جيدًا",
+                                            "لتشرح السبب بالتفصيل",
+                                            "لا حاجة لذلك بعد الإصلاح"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تذكر المادة أن المتابعة تساعد على استعادة الثقة."
+                                    },
+                                    {
+                                        "question": "أي عبارة تتفق مع المادة؟",
+                                        "options": [
+                                            "الاعتذار يكفي وحده",
+                                            "الاعتذار اعتراف بأن الفندق مخطئ دائمًا",
+                                            "يُتجنب الاعتذار لتوفير الوقت",
+                                            "الاعتذار ليس كلمة فقط، يجب أن يتبعه تصرف واضح"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تنص المادة على أن الاعتذار ليس كلمة فقط ويجب أن يتبعه تصرف واضح."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "متى تعتذر وخطوات الاعتذار",
+                            "minutes": 6,
+                            "body": "<h2>متى يجب أن تعتذر للنزيل؟</h2><p>تجمع المادة المواقف التي تستدعي الاعتذار في ثلاثة أنواع: <strong>تأخير، وخطأ في الخدمة، وإزعاج للنزيل</strong>.</p><h3>01 تأخير</h3><ul><li>تأخر تسجيل الدخول.</li><li>تأخر وصول طلب النزيل.</li><li>انتظر النزيل دون تحديث.</li></ul><h3>02 خطأ في الخدمة</h3><ul><li>وصلت خدمة غير مطلوبة.</li><li>لم ينفذ الطلب بصورة صحيحة.</li><li>وصلت معلومة غير دقيقة.</li></ul><h3>03 إزعاج للنزيل</h3><ul><li>ضوضاء أو عطل في الغرفة.</li><li>تكررت المشكلة أكثر من مرة.</li><li>شعر النزيل بعدم الاهتمام.</li></ul><blockquote class=\"bk-quote\">اعتذر عندما تتأثر تجربة النزيل — حتى لو لم تكن أنت السبب.</blockquote><p>هذه النقطة الأخيرة مهمة؛ فموظف الاستقبال لم يتسبب في صوت الأنابيب، والنادل لم يتسبب في تأخر المطبخ، لكنك في نظر النزيل أنت الفندق. والاعتذار هنا ليس اعترافًا بخطأ شخصي، بل إقرار بأن إقامة النزيل تأثرت.</p><h2>كوّن الاعتذار بخطوات</h2><p>تقسم المادة الاعتذار المهني إلى خطوات واضحة، تبدأ بـ<strong>اعترف بالموقف</strong>: أظهر أنك فهمت ما حدث.</p><ol><li><strong>استمع ولا تقاطع النزيل،</strong> ودعه يشرح بالكامل.</li><li><strong>اذكر أثر الموقف عليه:</strong> \"انتظرت 40 دقيقة لطلبك\".</li><li><strong>قدم اعتذارًا واضحًا وصادقًا:</strong> \"أعتذر\".</li><li><strong>اشرح ما ستفعله الآن،</strong> واذكر الخطوة التالية.</li><li><strong>تابع معه بعد تنفيذ الحل.</strong></li></ol><blockquote class=\"bk-quote\">اعتذار قصير وصادق أفضل من شرح طويل.</blockquote><h2>عبارات اعتذار مهنية</h2><table class=\"bk-say\"><thead><tr><th>الموقف</th><th>العبارة</th></tr></thead><tbody><tr><td>الانتظار</td><td>\"أعتذر عن وقت الانتظار الطويل\"</td></tr><tr><td>الإزعاج</td><td>\"أعتذر عن الإزعاج الذي حدث\"</td></tr><tr><td>خيبة الأمل</td><td>\"أتفهم أن هذا لم يكن ما توقعته\"</td></tr><tr><td>المتابعة</td><td>\"سأتابع الأمر وأحدثك بما يحدث\"</td></tr></tbody></table><p>وقاعدة المادة: <strong>اختر العبارة المناسبة، ثم اذكر الخطوة التالية</strong>. فالعبارة وحدها لا تكفي، وأضف دائمًا ما سيحدث الآن.</p><aside class=\"bk-scene\"><strong>موقف:</strong> اتصلت نزيلة لتقول إن طلب خدمة الغرف الذي وصلها ليس ما طلبته، وإنها المرة الثانية اليوم. استمعت موظفة الطلبات دون مقاطعة ثم قالت: \"طلبتِ السمك المشوي ووصلك الدجاج، وهذه المرة الثانية اليوم. أعتذر عن الإزعاج الذي حدث. سأرسل الطبق الصحيح الآن وسيصلك خلال 20 دقيقة، وسأتصل لأتأكد أنه صحيح\". واتصلت بعد التوصيل.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> اعتذر عن التأخير والخطأ في الخدمة والإزعاج حتى لو لم تكن السبب. استمع، واذكر الأثر، واعتذر بوضوح، واشرح الخطوة التالية، وتابع.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: متى وكيف تعتذر",
+                                "questions": [
+                                    {
+                                        "question": "انتظرت نزيلة 30 دقيقة في الاستقبال دون أن يحدثها أحد. ما نوع الموقف؟",
+                                        "options": [
+                                            "خطأ في الخدمة",
+                                            "إزعاج فقط",
+                                            "تأخير",
+                                            "ليس سببًا للاعتذار"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تذكر المادة \"انتظر النزيل دون تحديث\" ضمن التأخير."
+                                    },
+                                    {
+                                        "question": "سبب ضوضاء الغرفة أعمال صيانة لا علاقة لك بها. هل تعتذر؟",
+                                        "options": [
+                                            "نعم، اعتذر عندما تتأثر تجربة النزيل حتى لو لم تكن أنت السبب",
+                                            "لا، فريق الصيانة وحده يعتذر",
+                                            "فقط إذا طلب النزيل الاعتذار",
+                                            "لا، فهذا اعتراف بالخطأ"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تقول المادة: اعتذر عندما تتأثر تجربة النزيل حتى لو لم تكن أنت السبب."
+                                    },
+                                    {
+                                        "question": "أي عبارة تناسب نزيلًا خاب أمله في إطلالة غرفته؟",
+                                        "options": [
+                                            "\"أعتذر عن وقت الانتظار الطويل\"",
+                                            "\"هذا ليس من قسمي\"",
+                                            "\"كل الغرف متشابهة\"",
+                                            "\"أتفهم أن هذا لم يكن ما توقعته\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "عبارة المادة لخيبة الأمل: \"أتفهم أن هذا لم يكن ما توقعته\"."
+                                    },
+                                    {
+                                        "question": "بعد اختيار عبارة الاعتذار المناسبة، ماذا تفعل؟",
+                                        "options": [
+                                            "تنهي الحديث",
+                                            "تذكر الخطوة التالية",
+                                            "تشرح السبب بالتفصيل",
+                                            "تكرر الاعتذار"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: اختر العبارة المناسبة، ثم اذكر الخطوة التالية."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "الاعتذار بطريقة مهنية",
+                    "lessons": [
+                        {
+                            "title": "قل وتجنب، والاعتذار دون افتراض السبب",
+                            "minutes": 6,
+                            "body": "<h2>اعتذر بطريقة مهنية</h2><p>الاعتذار نفسه قد يُستقبل جيدًا أو سيئًا بحسب طريقة قوله والكلمات المحيطة به. وتقارن المادة بين ما تفعله وما تتجنبه:</p><table class=\"bk-say\"><thead><tr><th>قل / افعل</th><th>تجنب</th></tr></thead><tbody><tr><td>انظر إلى النزيل واستمع</td><td>\"لكن هذه ليست مسؤوليتي\"</td></tr><tr><td>استخدم صوتًا هادئًا</td><td>\"هذا هو النظام ولا أستطيع شيئًا\"</td></tr><tr><td>قل بوضوح: \"أعتذر\"</td><td>\"أنت فهمت الموضوع خطأ\"</td></tr><tr><td>اشرح الخطوة التي ستقوم بها</td><td>\"كل النزلاء ينتظرون مثلك\"</td></tr><tr><td>تابع النزيل بعد الحل</td><td>تقديم وعد لا تستطيع تنفيذه</td></tr></tbody></table><blockquote class=\"bk-quote\">لا تفسد الاعتذار بكلمة: لكن.</blockquote><p>\"أعتذر، لكننا مشغولون جدًا\" ليست اعتذارًا، بل عذر يسبقه اعتذار، والنزيل لا يسمع إلا ما بعد \"لكن\". وكل عبارة في عمود التجنب تفعل الشيء نفسه: تنقل المسؤولية إلى النزيل أو النظام أو النزلاء الآخرين أو غيرك. والوعد الذي لا تستطيع تنفيذه أشدها ضررًا، لأنه يصنع خيبة ثانية فوق الأولى.</p><h2>اعتذر عن التجربة دون افتراض السبب</h2><p>أحيانًا لا تعرف بعد ما حدث؛ فالنزيل يقول إن أحدًا دخل غرفته في غيابه، أو إنه حُسب عليه مبلغ خاطئ. لا يمكنك تأكيد الوقائع فورًا، لكن يمكنك أن تعتذر. وتذكر المادة أربع خطوات:</p><ol><li><strong>\"أعتذر عن الإزعاج\"</strong> (اعتذر): تعترف بتأثر تجربة النزيل.</li><li><strong>\"أتفهم استياءك\"</strong> (اعترف): تحترم شعوره دون جدال.</li><li><strong>\"سأتحقق مما حدث\"</strong> (تحقق): تتحقق من التفاصيل قبل الحكم.</li><li><strong>\"سأشرح لك الحل\"</strong> (تصرّف): تقدم ما تستطيع تنفيذه بوضوح.</li></ol><blockquote class=\"bk-quote\">اعتذر عن التجربة، ثم تحقق واتخذ الإجراء الصحيح.</blockquote><p>هذا يحمي الجميع؛ فالنزيل يشعر فورًا بأنه مسموع، والفندق لا يعترف بشيء ربما لم يحدث، وأنت تكسب وقتًا لمعرفة الحقائق قبل تقديم الحل. أما ما يجب ألا تفعله فهو الجدال في الوقائع أولًا، أو إخبار النزيل بأنه مخطئ حتمًا.</p><aside class=\"bk-scene\"><strong>موقف:</strong> عند المغادرة قالت نزيلة إن فاتورتها تتضمن مشروبات من الميني بار لم تأخذها. لم تقل موظفة الصندوق \"النظام يُظهر أنك أخذتها\"، بل قالت: \"أعتذر عن الإزعاج، وأتفهم استياءك. سأتحقق مما حدث مع التدبير الفندقي الآن\". اتصلت بالطابق، وتأكدت أن الرسوم سُجلت خطأً من سجل النزيل السابق، فأزالتها وشرحت التصحيح للنزيلة.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> إذا أوشكت أن تقول \"لكن\" فتوقف واستبدلها بالخطوة التالية: \"أعتذر. سأقوم بـ...\"</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> انظر واستمع، وتحدث بصوت هادئ، وقل \"أعتذر\" بوضوح، واشرح خطوتك التالية، وتابع. لا تضف \"لكن\" أبدًا، وعندما لا تكون الوقائع واضحة اعتذر عن التجربة ثم تحقق وتصرّف.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الاعتذار بطريقة مهنية",
+                                "questions": [
+                                    {
+                                        "question": "أي رد يفسد الاعتذار؟",
+                                        "options": [
+                                            "\"أعتذر. سأرسل أحدًا الآن\"",
+                                            "\"أعتذر، لكننا مشغولون جدًا اليوم\"",
+                                            "\"أعتذر عن وقت الانتظار الطويل\"",
+                                            "\"أتفهم استياءك\""
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: لا تفسد الاعتذار بكلمة: لكن."
+                                    },
+                                    {
+                                        "question": "قال نزيل إنه حُسب عليه شيء لم يطلبه، ولا يمكنك التأكد بعد. ماذا تقول؟",
+                                        "options": [
+                                            "\"النظام لا يخطئ أبدًا\"",
+                                            "\"لا بد أنك فهمت خطأ\"",
+                                            "\"أعتذر عن الإزعاج. سأتحقق مما حدث\"",
+                                            "\"هذه ليست مسؤوليتي\""
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "اعتذر عن التجربة، ثم تحقق من التفاصيل قبل الحكم."
+                                    },
+                                    {
+                                        "question": "اشتكى نزيل من طابور طويل. أي عبارة تذكرها المادة ضمن ما يُتجنب؟",
+                                        "options": [
+                                            "\"كل النزلاء ينتظرون مثلك\"",
+                                            "\"أعتذر عن وقت الانتظار الطويل\"",
+                                            "\"سأتابع الأمر\"",
+                                            "\"أتفهم أن هذا لم يكن ما توقعته\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "\"كل النزلاء ينتظرون مثلك\" من قائمة التجنب في المادة."
+                                    },
+                                    {
+                                        "question": "لتهدئة نزيل، وعده زميل بليلة مجانية دون صلاحية لذلك. لماذا هذا خطأ؟",
+                                        "options": [
+                                            "لأن الليالي المجانية ممنوعة دائمًا",
+                                            "لأنه كرم زائد",
+                                            "لأنه يستغرق وقتًا طويلًا",
+                                            "لأن المادة تقول: تجنب تقديم وعد لا تستطيع تنفيذه"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقديم وعد لا تستطيع تنفيذه من قائمة التجنب، وقدّم ما تستطيع تنفيذه بوضوح."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "تحمّل مسؤولية المتابعة",
+                    "lessons": [
+                        {
+                            "title": "إذا لم تكن المشكلة من قسمك",
+                            "minutes": 6,
+                            "body": "<h2>عندما يكون قسم آخر معنيًا</h2><p>كثير من مشكلات النزلاء تبدأ في قسم وتصل إلى آخر: نزيل يخبر المطعم أن غرفته باردة، وآخر يخبر التدبير الفندقي أن فاتورته خاطئة، وثالث يخبر موظف الباب أن سيارة المطار لم تصل. والموظف الذي يسمع المشكلة غالبًا ليس من يستطيع حلها، والمادة واضحة فيما يجب فعله.</p><h3>ماذا تفعل؟</h3><ol><li><strong>اعتذر عن الإزعاج.</strong></li><li><strong>تواصل مع القسم المختص.</strong></li><li><strong>حدد وقتًا واضحًا للتحديث.</strong></li><li><strong>تابع حتى يتم التعامل مع الطلب.</strong></li><li><strong>أبلغ المشرف إذا تأخر الحل.</strong></li></ol><h3>تحمّل مسؤولية المتابعة</h3><ul><li>لا تلقِ اللوم على قسم آخر.</li><li>لا تطلب من النزيل البحث عن المسؤول.</li><li>لا تتركه دون تحديث.</li><li>لا تناقش أخطاء الزملاء أمامه.</li><li>لا تعد بحل قبل التأكد.</li></ul><blockquote class=\"bk-quote\">النزيل يتعامل مع الفندق كله — وليس مع قسم واحد.</blockquote><h2>لماذا تهم المسؤولية</h2><p>في نظر النزيل، التدبير الفندقي والصيانة والمكاتب الأمامية كلها ببساطة \"الفندق\". فحين يقول موظف \"هذا من الصيانة، عليك الاتصال بهم\"، يسمع النزيل أن أحدًا لن يهتم بمشكلته. وحين يقول \"الصيانة أخطأت مرة أخرى\"، يفقد النزيل ثقته في الفريق كله.</p><p>وتحمّل مسؤولية المتابعة لا يعني أن تصلح المشكلة بنفسك، بل أن تعتذر، وتنقل المشكلة إلى المختصين، وتخبر النزيل متى سيسمع منهم، وتتأكد أنه سمع. وإذا مر الوقت دون حدوث شيء فصعّد الأمر إلى مشرفك بدل أن تترك النزيل يلاحقه.</p><h2>كلمة ختامية</h2><p>تختم المادة: <strong>اعتذر بصدق، ثم أصلح وتابع</strong>. استمع، اعترف، اعتذر، أصلح، تابع؛ فالاعتذار المهني يعيد الثقة بالنزيل والفندق، والاعتذار الصادق والتصرف الواضح والمتابعة تبني الثقة من جديد.</p><table class=\"bk-say\"><thead><tr><th>بدلًا من</th><th>قل</th></tr></thead><tbody><tr><td>\"عليك الاتصال بالصيانة\"</td><td>\"أعتذر عن الإزعاج، سأتواصل مع الصيانة الآن\"</td></tr><tr><td>\"دائمًا يخطئون في هذا\"</td><td>\"سأتأكد أن الفريق يتعامل مع الأمر\"</td></tr><tr><td>\"سيُصلح خلال خمس دقائق\" (دون تأكد)</td><td>\"سأحدثك خلال 15 دقيقة\"</td></tr></tbody></table><aside class=\"bk-scene\"><strong>موقف:</strong> أثناء العشاء أخبر نزيل النادل أن مكيف غرفته يصدر صوتًا مرتفعًا منذ ليلتين. اعتذر النادل عن الإزعاج، واتصل بالصيانة من المطعم، وقال للنزيل: \"ستفحص الصيانة غرفتك أثناء عشائك، وسأحدثك قبل الحلوى\". وحين لم يصل أي تحديث بعد 20 دقيقة أبلغ مشرف المطعم الذي تابع الأمر، وقبل الحلوى أكد للنزيل أن الجهاز أُصلح.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> عندما يكون قسم آخر معنيًا: اعتذر، وتواصل معه، وحدد وقتًا واضحًا للتحديث، وتابع، وصعّد عند التأخير. ولا تلُم الزملاء ولا ترسل النزيل للبحث عن المسؤول.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: تحمّل مسؤولية المتابعة",
+                                "questions": [
+                                    {
+                                        "question": "أخبرك نزيل، وأنت موظف في المطعم، أن غرفته باردة جدًا. ماذا تفعل أولًا؟",
+                                        "options": [
+                                            "تطلب منه الاتصال بالصيانة من غرفته",
+                                            "تعتذر عن الإزعاج وتتواصل مع القسم المختص",
+                                            "توضح أنها ليست مسألة تخص المطعم",
+                                            "تعده بإصلاحها خلال خمس دقائق"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: اعتذر عن الإزعاج وتواصل مع القسم المختص."
+                                    },
+                                    {
+                                        "question": "وعدت بتحديث خلال 15 دقيقة، لكن القسم لم يستجب. ما الخطوة التالية؟",
+                                        "options": [
+                                            "تنتظر حتى يسأل النزيل مجددًا",
+                                            "تخبر النزيل أن القسم بطيء",
+                                            "تبلغ المشرف بتأخر الحل",
+                                            "تترك الطلب"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: أبلغ المشرف إذا تأخر الحل."
+                                    },
+                                    {
+                                        "question": "أي رد على النزيل يتبع توجيه المادة؟",
+                                        "options": [
+                                            "\"التدبير الفندقي ينسى دائمًا\"",
+                                            "\"من فضلك ابحث عن مدير المناوبة بنفسك\"",
+                                            "\"سيُحل الأمر حتمًا خلال دقيقتين\" (دون تأكد)",
+                                            "\"أعتذر. تواصلت مع التدبير الفندقي وسأحدثك خلال 15 دقيقة\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "اعتذر، وتواصل مع القسم، وحدد وقتًا واضحًا للتحديث؛ ولا تلُم أحدًا ولا تحِل النزيل ولا تعد قبل التأكد."
+                                    },
+                                    {
+                                        "question": "لماذا لا تناقش أخطاء الزملاء أمام النزيل؟",
+                                        "options": [
+                                            "لأن النزيل يتعامل مع الفندق كله وليس مع قسم واحد",
+                                            "لأن ذلك يستغرق وقتًا طويلًا",
+                                            "لأن الزملاء لا يخطئون",
+                                            "لأن النزيل سيطلب تعويضًا"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "رسالة المادة أن النزيل يتعامل مع الفندق كله وليس مع قسم واحد."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

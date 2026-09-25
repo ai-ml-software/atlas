@@ -22,10 +22,12 @@ foreach ((array) ha_locale_config()['legacy'] as $ap_code => $ap_col) {
 	if ($ap_col === $current_language) { $ap_lang = $ap_code; }
 }
 // Mirrored academy courses are shown in the learner's language (English fallback).
+// A library loaded inside a view lives on the controller, not on the loader ($this), so reach it through get_instance().
 $this->load->library('ha_lms_i18n');
-$course_details = $this->ha_lms_i18n->course($course_details);
-$sections = $this->ha_lms_i18n->sections($sections);
-if (is_array($lesson_details)) { $lesson_details = $this->ha_lms_i18n->lesson($lesson_details); }
+$ap_i18n = get_instance()->ha_lms_i18n;
+$course_details = $ap_i18n->course($course_details);
+$sections = $ap_i18n->sections($sections);
+if (is_array($lesson_details)) { $lesson_details = $ap_i18n->lesson($lesson_details); }
 $ap_completed = array();
 if (isset($watch_history) && !empty($watch_history['completed_lesson'])) {
 	$ap_completed = json_decode($watch_history['completed_lesson'], true);
@@ -34,7 +36,7 @@ if (isset($watch_history) && !empty($watch_history['completed_lesson'])) {
 $ap_flat = array();
 if (is_array($sections)) {
 	foreach (array_values($sections) as $ap_si => $ap_s) {
-		foreach ($this->ha_lms_i18n->lessons($this->crud_model->get_lessons('section', $ap_s['id'])->result_array()) as $ap_l) {
+		foreach ($ap_i18n->lessons($this->crud_model->get_lessons('section', $ap_s['id'])->result_array()) as $ap_l) {
 			$ap_l['section_title'] = $ap_s['title'];
 			$ap_l['section_no'] = $ap_si + 1;
 			$ap_flat[] = $ap_l;

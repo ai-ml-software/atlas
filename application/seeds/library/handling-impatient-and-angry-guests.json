@@ -1,0 +1,545 @@
+{
+    "slug": "handling-impatient-and-angry-guests",
+    "category": "guest-handling",
+    "level": "intermediate",
+    "source_pdf": "Handling-Impatient-and-Angry-Guests-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/handling-impatient-and-angry-guests.webp",
+    "videos": [
+        {
+            "id": "qBEiNNF3zZk",
+            "title": "Watch this before you talk to your next angry customer (3 Keys to De-escalating)",
+            "channel": "Myra Golden",
+            "why": "A well-known customer-service trainer demonstrates calm, respectful de-escalation techniques that match the deck's advice: stay calm, let the guest speak, acknowledge the impact and then solve."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Impatient and Angry Guests",
+            "subtitle": "Firm without conflict, fast without tension",
+            "short_description": "Tell impatience from anger, serve the hurried guest quickly and accurately, de-escalate angry guests respectfully and escalate at once when limits are crossed.",
+            "description": "<p>An impatient guest and an angry guest need different responses. This course, built from the Dyafa Hotels &amp; Resorts training deck, helps colleagues act fast and de-escalate safely.</p><p>You will learn to tell impatience from anger, recognise the signals of each, apply five steps to serve a guest in a hurry, calm an angry guest without giving in or clashing, use firm and respectful language, and know exactly when to escalate to a supervisor or security.</p>",
+            "requirements": "Suitable for any guest-facing colleague; completing a basic guest-service course first is helpful.",
+            "outcomes": [
+                "Distinguish an impatient guest from an angry guest and identify the immediate need",
+                "Recognise the possible signals of impatience and of anger without labelling the guest",
+                "Apply the five steps Clarify, Be brief, Decide, Act, Update for guests in a hurry",
+                "De-escalate an angry guest calmly, without submission or confrontation",
+                "Escalate immediately to a supervisor or security when limits are crossed"
+            ],
+            "faqs": [
+                {
+                    "question": "What is the difference between an impatient and an angry guest?",
+                    "answer": "The impatient guest focuses on time and result; the angry guest focuses on the mistake, its impact and fairness. Identify which it is, then adjust your style without labelling the guest."
+                },
+                {
+                    "question": "What should I say if a guest becomes verbally abusive?",
+                    "answer": "Set a respectful limit: “I want to help you, but I cannot continue with abuse.” If the abuse continues, end the conversation politely and call your supervisor or security."
+                },
+                {
+                    "question": "When must I escalate immediately?",
+                    "answer": "On a direct threat, an attempted assault, damage or a weapon, continued abuse after a warning, or when the solution is outside your authority. Never try physical control; move away, protect others and follow emergency procedures."
+                }
+            ],
+            "meta_title": "Handling Impatient and Angry Hotel Guests",
+            "meta_description": "Hotel training: tell impatience from anger, serve hurried guests fast and accurately, de-escalate angry guests respectfully and know when to escalate.",
+            "focus_keyword": "handling angry hotel guests",
+            "chapters": [
+                {
+                    "title": "Impatience or Anger?",
+                    "lessons": [
+                        {
+                            "title": "Know the Difference Before You Respond",
+                            "minutes": 5,
+                            "body": "<h2>Firm without conflict, fast without tension</h2><p>Some of the most demanding moments in hotel work involve a guest who is in a hurry or a guest who is upset. The deck's promise for both is summed up in its subtitle: <strong>act fast, de-escalate safely</strong>. To do that, you first need to know which situation you are in, because the right response to one can make the other worse.</p><h2>Five points that separate impatience from anger</h2><ul><li><strong>The impatient guest focuses on time and the result.</strong> They want to know how long, and they want it done.</li><li><strong>The angry guest focuses on the mistake, its impact and fairness.</strong> They want the problem recognised and put right.</li><li><strong>Speed alone may increase the anger of someone who wants to be heard.</strong> Rushing an angry guest to a solution can feel like being brushed off.</li><li><strong>A long apology may annoy someone who wants a fast result.</strong> The hurried guest does not want three sentences of regret; they want action.</li><li><strong>Identify the situation, then adjust your style, without putting a label on the guest.</strong> The guest is not “difficult”; they have a need you have to read.</li></ul><blockquote class=\"bk-quote\">Ask: what is the priority now? Time, or dealing with the problem?</blockquote><p>The deck frames this as identifying the immediate need: <strong>speed, explanation, or recovery</strong>. A guest late for a flight needs speed. A guest who does not understand a charge needs explanation. A guest whose anniversary dinner went wrong needs recovery. Many situations mix these, but one usually comes first.</p><h2>The five-word flow</h2><p>The deck's cover and closing slide give a flow that covers both situations: <strong>Clarify, Listen, Acknowledge, Resolve, Escalate</strong>. Clarify what the guest needs; listen to them; acknowledge the impact; resolve the issue; and escalate when it is beyond you or when safety is at risk. The rest of the course fills in each part.</p><table class=\"bk-say\"><thead><tr><th>Impatient guest</th><th>Angry guest</th></tr></thead><tbody><tr><td>Focus: time and result</td><td>Focus: mistake, impact, fairness</td></tr><tr><td>Needs: speed and clear options</td><td>Needs: to be heard, then a solution</td></tr><tr><td>Risk: long apologies</td><td>Risk: rushing to a fix</td></tr></tbody></table><aside class=\"bk-scene\"><strong>Scene:</strong> Two guests arrive at the desk at once. The first says, “My taxi is outside, I just need my bill.” The receptionist prints it, confirms the total and wishes him a safe trip in under a minute. The second says, “This is the second time my room was not cleaned.” With her, the receptionist slows down, lets her explain, acknowledges the inconvenience and only then arranges immediate cleaning. Quick for one, patient for the other; each got what their situation required.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Before you respond, identify whether the guest needs speed, explanation or recovery, and adjust your style without labelling them.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Impatience or anger?",
+                                "questions": [
+                                    {
+                                        "question": "A guest says, “My room still hasn't been fixed and nobody cares.” What is this guest most focused on?",
+                                        "options": [
+                                            "Only the time",
+                                            "The hotel's opening hours",
+                                            "The mistake, its impact and fairness",
+                                            "The price of the room"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says the angry guest focuses on the mistake, the impact and fairness."
+                                    },
+                                    {
+                                        "question": "A guest rushing to the airport wants a quick check-out. Why should you avoid a long apology for the short wait?",
+                                        "options": [
+                                            "A long apology may annoy someone who wants a fast result",
+                                            "Apologies are never allowed",
+                                            "It is the cashier's job to apologise",
+                                            "The guest will not understand it"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The slide states that a long apology may annoy someone who wants a fast result."
+                                    },
+                                    {
+                                        "question": "What question does the deck suggest asking yourself first?",
+                                        "options": [
+                                            "Who is to blame?",
+                                            "Is the guest being difficult?",
+                                            "How can I end this quickly?",
+                                            "What is the priority now: time, or dealing with the problem?"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says to ask: what is the priority now, time or dealing with the problem?"
+                                    },
+                                    {
+                                        "question": "A colleague calls a guest “a difficult type” before helping. What does the deck advise?",
+                                        "options": [
+                                            "Labels help colleagues prepare",
+                                            "Identify the situation and adjust your style without labelling the guest",
+                                            "Warn security about the guest",
+                                            "Ask the guest to calm down first"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Identify the situation then adjust your style without putting a label on the guest."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Serving the Impatient Guest",
+                    "lessons": [
+                        {
+                            "title": "Signals of Impatience and Five Steps to Serve",
+                            "minutes": 6,
+                            "body": "<h2>Recognise the signals of impatience</h2><p>Guests rarely say, “I am impatient.” They show it. The deck lists five possible signals:</p><ul><li>Constantly watching the clock or their phone.</li><li>Tapping their fingers or foot.</li><li>Repeated movement, or walking back and forth.</li><li>Short, direct answers.</li><li>The repeated question: “How long will it take?”</li></ul><p>These are possible signals, not proof. A guest checking their phone may simply be reading a message. Use them as a prompt to check what the guest needs, not as a verdict.</p><h2>Respond efficiently</h2><p>When you see these signals, the deck asks you to respond efficiently:</p><ul><li>Go straight to the point.</li><li>Ask about the appointment or the priority.</li><li>Offer a realistic time and short options.</li><li>Act quickly, without errors or false promises.</li><li>Update the guest before the time runs out.</li></ul><blockquote class=\"bk-quote\">Accurate delivery + a clear decision = professional speed.</blockquote><p>Professional speed is not rushing. A colleague who hurries and makes a mistake costs the guest more time than one who works steadily and gets it right. What the guest experiences as “fast” is usually a clear decision followed by accurate action.</p><h2>Five steps to serve the guest in a hurry</h2><ol><li><strong>Clarify</strong> the time and the goal. “What time do you need to leave?”</li><li><strong>Be brief</strong> in your explanation and options. Two choices, not five.</li><li><strong>Decide</strong> on the fastest safe solution.</li><li><strong>Act</strong> quickly and accurately.</li><li><strong>Update</strong> the guest before the agreed time.</li></ol><blockquote class=\"bk-quote\">Speak briefly and clearly; do not speak faster than necessary.</blockquote><p>The deck adds a caution: be concise and decisive without appearing rushed. Speaking very fast can make the guest feel more pressured and can cause misunderstanding. Short sentences at a normal pace sound confident and in control.</p><p>Note the word <strong>safe</strong> in step three. The fastest solution is only the right one if it is also safe and within policy. You never skip safety or accuracy to save a minute.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest at the concierge desk keeps looking at her phone and asks twice, “How long for a taxi?” The concierge clarifies: “What time is your meeting, and where?” She says 10:00, downtown. He is brief: “A hotel car can be here in five minutes, or a taxi in about ten. Which do you prefer?” She chooses the car. He books it, confirms the plate number and, at four minutes, walks over to say the car is arriving now.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Say the time before you are asked again. “Your car will be here in five minutes” stops the repeated question.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> For the impatient guest: clarify, be brief, decide, act and update, fast and accurate, never rushed or careless.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Serving the impatient guest",
+                                "questions": [
+                                    {
+                                        "question": "A guest asks you three times, “How long will it take?” What does this most likely signal?",
+                                        "options": [
+                                            "That the guest is lost",
+                                            "Possible impatience; respond efficiently",
+                                            "That the guest is angry with a colleague",
+                                            "That the guest wants a long explanation"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The repeated question “How long will it take?” is one of the deck's possible signals of impatience."
+                                    },
+                                    {
+                                        "question": "What is the first step in serving a guest in a hurry?",
+                                        "options": [
+                                            "Act quickly",
+                                            "Update the guest",
+                                            "Offer five options",
+                                            "Clarify the time and the goal"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The five steps start with Clarify: the time and the goal."
+                                    },
+                                    {
+                                        "question": "To seem efficient, a colleague speaks very fast to a hurried guest. What does the deck say?",
+                                        "options": [
+                                            "Speak briefly and clearly; do not speak faster than necessary",
+                                            "Fast speech always saves time",
+                                            "Speak slowly and at length",
+                                            "Avoid speaking; use gestures"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck says be concise and decisive without appearing rushed."
+                                    },
+                                    {
+                                        "question": "According to the deck, what equals professional speed?",
+                                        "options": [
+                                            "Speaking fast + skipping checks",
+                                            "Long apologies + many options",
+                                            "Accurate delivery + a clear decision",
+                                            "Promising five minutes every time"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The slide states: accurate delivery plus a clear decision equals professional speed."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Handling Anger Safely",
+                    "lessons": [
+                        {
+                            "title": "Recognise Anger and De-escalate",
+                            "minutes": 6,
+                            "body": "<h2>Recognise the signals of anger</h2><p>The deck lists five possible signals that a guest is angry:</p><ul><li>A raised voice or a sharp tone.</li><li>Repeating the complaint or an accusation.</li><li>A tense posture or leaning forward.</li><li>Strong hand gestures or a pointed finger.</li><li>A clenched jaw or fist.</li></ul><h3>Do not assume</h3><p>Alongside the signals, the deck gives five cautions so you read them fairly:</p><ul><li>Not every raised voice is a threat.</li><li>Do not describe the guest as aggressive in front of them.</li><li>Do not copy their tone or movements.</li><li>Do not argue with them to prove they are wrong.</li><li>Assess the behaviour and the actual risk.</li></ul><blockquote class=\"bk-quote\">Do not judge the person; deal with the behaviour.</blockquote><p>Most angry guests are ordinary people having a bad experience. They are loud because they feel unheard or treated unfairly. Treating them as a danger when they are not can make things worse. At the same time, you must stay alert to real risk, which the next lesson covers.</p><h2>De-escalate without submission or confrontation</h2><p>The deck's aim is to lower the temperature while keeping your professional position: not giving in to anything, and not fighting back.</p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Keep a calm, steady voice</td><td>Lowering your head and eyes in submission</td></tr><tr><td>Let the guest explain without interrupting</td><td>Repeating apologies without a solution</td></tr><tr><td>Acknowledge the impact: “I understand your anger.”</td><td>Matching the raised voice</td></tr><tr><td>Set a limit on abusive behaviour, respectfully</td><td>Moving close to or touching the guest</td></tr><tr><td>Offer a solution after fully understanding the problem</td><td>Threatening or provoking</td></tr></tbody></table><blockquote class=\"bk-quote\">I want to help. I can do so while we speak respectfully.</blockquote><p>Each “Do” has a purpose. A calm, steady voice sets the tone the guest will usually follow. Letting them explain releases pressure and gives you the facts. Acknowledging the impact shows you understand why it matters to them, which is different from admitting blame. A respectful limit protects you. A solution offered after understanding is more likely to fit.</p><p>Each “Avoid” either gives up your position (submission, endless apologies) or raises the conflict (matching the voice, getting too close, threatening). Keep a comfortable distance and never touch an upset guest.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest leans over the desk, pointing: “You charged me twice! This hotel is a joke.” The receptionist keeps her voice low and steady, lets him finish, then says, “I understand your anger; being charged twice is not acceptable. Let me check the folio now.” When he interrupts with insults, she says calmly, “I want to help, and I can do so while we speak respectfully.” He lowers his voice. She finds the duplicate charge, reverses it and prints a corrected bill.</aside><aside class=\"bk-note\"><strong>Tip:</strong> One sincere acknowledgement is worth more than five apologies. Follow it with an action.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Read the signals without labelling, stay calm and steady, acknowledge the impact, set respectful limits and solve after you understand.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Recognise anger and de-escalate",
+                                "questions": [
+                                    {
+                                        "question": "A guest raises their voice about a billing error but makes no threat. What is the right reading?",
+                                        "options": [
+                                            "Treat it as a threat and call security",
+                                            "Raise your voice so they can hear you",
+                                            "Not every raised voice is a threat; assess the behaviour and actual risk",
+                                            "Tell them they are being aggressive"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says not every raised voice is a threat; assess behaviour and actual risk."
+                                    },
+                                    {
+                                        "question": "An angry guest keeps talking over you. What should you do first?",
+                                        "options": [
+                                            "Let the guest explain without interrupting",
+                                            "Match their volume",
+                                            "Repeat “sorry” until they stop",
+                                            "Walk away"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Letting the guest explain without interrupting is on the Do list."
+                                    },
+                                    {
+                                        "question": "Which behaviour is on the deck's Avoid list?",
+                                        "options": [
+                                            "Keeping a calm, steady voice",
+                                            "Acknowledging the impact",
+                                            "Offering a solution after understanding",
+                                            "Moving close to or touching the guest"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Moving close to or touching the guest is listed under Avoid."
+                                    },
+                                    {
+                                        "question": "A colleague apologises again and again but offers no fix. Why is this a problem?",
+                                        "options": [
+                                            "Apologies are against policy",
+                                            "Repeating apologies without a solution is submission, not de-escalation",
+                                            "The guest may want a longer apology",
+                                            "It is only a problem by phone"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck lists repeating apologies without a solution under Avoid."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Firm Language and When to Escalate",
+                            "minutes": 6,
+                            "body": "<h2>Use firm and respectful words</h2><p>The deck gives one ready phrase for each of four difficult moments. Each one is short, respectful and moves the situation forward.</p><table class=\"bk-say\"><thead><tr><th>Situation</th><th>Say</th></tr></thead><tbody><tr><td>Impatient guest</td><td>“I understand your time is important; the fastest available option is…”</td></tr><tr><td>Angry guest</td><td>“I understand that what happened is not acceptable to you; let me fix it.”</td></tr><tr><td>Verbal abuse</td><td>“I want to help you, but I cannot continue with abuse.”</td></tr><tr><td>Delayed resolution</td><td>“The solution is not complete yet; the current update is… and the new time is…”</td></tr></tbody></table><blockquote class=\"bk-quote\">Be precise in the action, and empathetic with the impact.</blockquote><p>Notice what these phrases have in common. They recognise the guest's feeling or situation in a few words, then state what happens next. None of them argues, blames a colleague or makes a promise that has not been checked. The abuse phrase is firm but still offers help; it separates the person you want to serve from the behaviour you cannot accept.</p><h2>Escalate immediately when limits are crossed</h2><p>De-escalation has limits. Some situations must be escalated at once, and the deck gives a clear action for each:</p><ol><li><strong>Direct threat:</strong> move away and activate the security procedure immediately.</li><li><strong>Attempted assault:</strong> do not try physical control; call for backup.</li><li><strong>Damage or a weapon:</strong> move away, protect others and follow the emergency procedure.</li><li><strong>Refusal to stop abuse:</strong> end the conversation politely and call the supervisor or security.</li><li><strong>A solution beyond your authority:</strong> escalate with a clear summary, and make no unapproved promises.</li></ol><p>The first three are about safety. Your role is not to restrain anyone or to be a hero; it is to create distance, protect yourself and others, and get trained people involved through the hotel's security and emergency procedures. The fourth protects your dignity: you do not have to accept continued abuse after a respectful warning. The fifth is about service: when the fix is beyond your authority, a clear summary to your supervisor means the guest does not have to repeat the whole story.</p><h2>Closing message</h2><p>The deck ends with two lines: <strong>for the impatient guest, be fast and accurate; for the angry guest, listen, calm down and set limits.</strong> Clarify, Listen, Acknowledge, Resolve, Escalate.</p><blockquote class=\"bk-quote\">Professionalism combines speed of resolution with safety of interaction.</blockquote><aside class=\"bk-scene\"><strong>Scene:</strong> A guest demands a full refund for his stay because the pool was closed for one afternoon. The front-office colleague acknowledges his disappointment, explains she cannot approve refunds, and says, “I will pass this to the duty manager now with a full summary, so you will not need to repeat it.” She tells the duty manager the room, the issue and what the guest is asking for, without promising any amount. The manager arrives within minutes, already informed.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Know in advance how to reach your supervisor and security quickly on your shift, so escalation takes seconds, not minutes.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Use firm, respectful phrases; for threats, assault, damage or weapons, move away and escalate at once; never attempt physical control.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Firm language and escalation",
+                                "questions": [
+                                    {
+                                        "question": "A guest continues insulting you after a respectful warning. What should you do?",
+                                        "options": [
+                                            "Insult the guest back",
+                                            "Keep listening for as long as it takes",
+                                            "Offer a refund to stop the abuse",
+                                            "End the conversation politely and call the supervisor or security"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "For refusal to stop abuse, the deck says end the conversation politely and call the supervisor or security."
+                                    },
+                                    {
+                                        "question": "A guest tries to hit a colleague at the desk. What does the deck say?",
+                                        "options": [
+                                            "Restrain the guest yourself",
+                                            "Do not try physical control; call for backup",
+                                            "Stand between them and argue",
+                                            "Ignore it and continue working"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "For an attempted assault: do not try physical control and call for backup."
+                                    },
+                                    {
+                                        "question": "Which phrase fits a guest whose issue is taking longer than promised?",
+                                        "options": [
+                                            "“The solution is not complete yet; the current update is… and the new time is…”",
+                                            "“It's not my fault.”",
+                                            "“Please stop asking.”",
+                                            "“It will be done soon.”"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "This is the deck's phrase for a delayed resolution."
+                                    },
+                                    {
+                                        "question": "A guest demands compensation that only a manager can approve. What should you do?",
+                                        "options": [
+                                            "Promise the compensation to calm them",
+                                            "Refuse and end the conversation",
+                                            "Escalate with a clear summary and make no unapproved promises",
+                                            "Tell the guest to email head office"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "For a solution beyond your authority: escalate with a clear summary and no unapproved promises."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "النزيل المستعجل والغاضب",
+            "subtitle": "حزم بلا صدام — سرعة بلا توتر",
+            "short_description": "فرّق بين الاستعجال والغضب، واخدم المستعجل بسرعة ودقة، واخفض تصعيد الغاضب باحترام، وصعّد فورًا عند تجاوز الحدود.",
+            "description": "<p>النزيل المستعجل والنزيل الغاضب يحتاجان إلى استجابتين مختلفتين. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتساعد الموظفين على التصرف بسرعة وخفض التصعيد بأمان.</p><p>ستتعلم التفريق بين الاستعجال والغضب، والتعرف على إشارات كل منهما، وتطبيق خمس خطوات لخدمة المستعجل، وتهدئة الغاضب دون خضوع أو صدام، واستخدام كلمات حازمة ومحترمة، ومعرفة متى تصعّد إلى المشرف أو الأمن.</p>",
+            "requirements": "مناسبة لكل موظف يتعامل مع النزلاء، ويُفضَّل إكمال دورة أساسية في خدمة النزلاء أولًا.",
+            "outcomes": [
+                "فرّق بين النزيل المستعجل والنزيل الغاضب وحدّد الحاجة الآنية",
+                "تعرّف على الإشارات المحتملة للاستعجال والغضب دون وضع ملصق على النزيل",
+                "طبّق خطوات: حدّد، اختصر، اختر، نفّذ، حدّث مع النزيل المستعجل",
+                "اخفض تصعيد النزيل الغاضب بهدوء دون خضوع أو صدام",
+                "صعّد فورًا إلى المشرف أو الأمن عند تجاوز الحدود"
+            ],
+            "faqs": [
+                {
+                    "question": "ما الفرق بين النزيل المستعجل والنزيل الغاضب؟",
+                    "answer": "المستعجل يركز على الوقت والنتيجة، والغاضب يركز على الخطأ والأثر والعدالة. حدّد الحالة ثم اضبط أسلوبك دون وضع ملصق على النزيل."
+                },
+                {
+                    "question": "ماذا أقول إذا أساء النزيل لفظيًا؟",
+                    "answer": "ضع حدًّا باحترام: \"أريد مساعدتكم، لكن لا يمكنني الاستمرار مع الإساءة.\" وإذا استمرت الإساءة فأنهِ الحوار بأدب واستدعِ المشرف أو الأمن."
+                },
+                {
+                    "question": "متى يجب أن أصعّد فورًا؟",
+                    "answer": "عند التهديد المباشر، أو محاولة الاعتداء، أو التخريب أو السلاح، أو رفض وقف الإساءة، أو عندما يكون الحل خارج صلاحيتك. لا تحاول السيطرة الجسدية أبدًا؛ ابتعد واحمِ الآخرين واتبع إجراءات الطوارئ."
+                }
+            ],
+            "meta_title": "التعامل مع النزيل المستعجل والغاضب في الفنادق",
+            "meta_description": "تدريب فندقي: فرّق بين الاستعجال والغضب، واخدم المستعجل بسرعة ودقة، واخفض تصعيد الغاضب باحترام، واعرف متى تصعّد.",
+            "focus_keyword": "التعامل مع النزيل الغاضب",
+            "chapters": [
+                {
+                    "title": "استعجال أم غضب؟",
+                    "lessons": [
+                        {
+                            "title": "فرّق قبل أن تستجيب",
+                            "minutes": 5,
+                            "body": "<h2>حزم بلا صدام، وسرعة بلا توتر</h2><p>من أصعب لحظات العمل الفندقي التعامل مع نزيل مستعجل أو نزيل منزعج. ووعد المادة في الحالتين يلخصه عنوانها: <strong>تصرّف بسرعة، واخفض التصعيد بأمان</strong>. ولكي تفعل ذلك يجب أن تعرف أولًا أي الحالتين أمامك، لأن الاستجابة الصحيحة لإحداهما قد تزيد الأخرى سوءًا.</p><h2>خمس نقاط تفرّق بين الاستعجال والغضب</h2><ul><li><strong>النزيل المستعجل يركز على الوقت والنتيجة؛</strong> يريد أن يعرف كم سيستغرق الأمر، ويريد إنجازه.</li><li><strong>النزيل الغاضب يركز على الخطأ والأثر والعدالة؛</strong> يريد الاعتراف بالمشكلة وتصحيحها.</li><li><strong>السرعة وحدها قد تزيد غضب من يريد أن يُسمع؛</strong> فدفع الغاضب إلى الحل بسرعة قد يشعره بالتجاهل.</li><li><strong>الاعتذار الطويل قد يزعج من يريد إنجازًا سريعًا؛</strong> فالمستعجل لا يريد ثلاث جمل من الأسف، بل يريد تصرفًا.</li><li><strong>حدّد الحالة ثم اضبط أسلوبك دون وضع ملصق على النزيل؛</strong> فالنزيل ليس \"صعبًا\"، بل لديه حاجة عليك أن تقرأها.</li></ul><blockquote class=\"bk-quote\">اسأل: ما الأولوية الآن — الوقت أم معالجة المشكلة؟</blockquote><p>وتصف المادة ذلك بتحديد الحاجة الآنية: <strong>السرعة، أو الشرح، أو المعالجة</strong>. فالنزيل المتأخر عن رحلته يحتاج السرعة، ومن لا يفهم رسمًا في فاتورته يحتاج الشرح، ومن فسد عشاء ذكرى زواجه يحتاج المعالجة. وقد تجتمع هذه الحاجات، لكن إحداها تأتي أولًا عادةً.</p><h2>الخطوات في خمس كلمات</h2><p>يقدم غلاف المادة وشريحتها الختامية تسلسلًا يغطي الحالتين: <strong>حدّد، استمع، اعترف، حلّ، صعّد</strong>. حدّد ما يحتاجه النزيل، واستمع إليه، واعترف بالأثر، وحلّ المشكلة، وصعّد عندما تتجاوز صلاحيتك أو تكون السلامة معرضة للخطر.</p><table class=\"bk-say\"><thead><tr><th>النزيل المستعجل</th><th>النزيل الغاضب</th></tr></thead><tbody><tr><td>التركيز: الوقت والنتيجة</td><td>التركيز: الخطأ والأثر والعدالة</td></tr><tr><td>يحتاج: السرعة وخيارات واضحة</td><td>يحتاج: أن يُسمع ثم حلًّا</td></tr><tr><td>الخطر: الاعتذار الطويل</td><td>الخطر: الاستعجال في الحل</td></tr></tbody></table><aside class=\"bk-scene\"><strong>موقف:</strong> وصل نزيلان إلى المكتب في الوقت نفسه. قال الأول: \"سيارتي في الخارج، أحتاج فاتورتي فقط.\" فطبعتها موظفة الاستقبال وأكدت المبلغ وتمنت له رحلة آمنة في أقل من دقيقة. وقالت الثانية: \"هذه ثاني مرة لا تُنظَّف فيها غرفتي.\" فتمهلت الموظفة معها، وتركتها تشرح، واعترفت بالإزعاج، ثم رتبت تنظيفًا فوريًا. سرعة مع الأول وصبر مع الثانية، وحصل كل منهما على ما تتطلبه حالته.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> قبل أن تستجيب، حدّد هل يحتاج النزيل السرعة أم الشرح أم المعالجة، واضبط أسلوبك دون وضع ملصق عليه.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: استعجال أم غضب؟",
+                                "questions": [
+                                    {
+                                        "question": "قال نزيل: \"غرفتي لم تُصلَح بعد ولا أحد يهتم.\" على ماذا يركز هذا النزيل غالبًا؟",
+                                        "options": [
+                                            "على الوقت فقط",
+                                            "على ساعات عمل الفندق",
+                                            "على الخطأ والأثر والعدالة",
+                                            "على سعر الغرفة"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة إن النزيل الغاضب يركز على الخطأ والأثر والعدالة."
+                                    },
+                                    {
+                                        "question": "نزيل مستعجل إلى المطار يريد مغادرة سريعة. لماذا تتجنب اعتذارًا طويلًا عن الانتظار القصير؟",
+                                        "options": [
+                                            "لأن الاعتذار الطويل قد يزعج من يريد إنجازًا سريعًا",
+                                            "لأن الاعتذار ممنوع",
+                                            "لأن الاعتذار مهمة أمين الصندوق",
+                                            "لأن النزيل لن يفهمه"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تذكر الشريحة أن الاعتذار الطويل قد يزعج من يريد إنجازًا سريعًا."
+                                    },
+                                    {
+                                        "question": "ما السؤال الذي تقترح المادة أن تسأله لنفسك أولًا؟",
+                                        "options": [
+                                            "من المخطئ؟",
+                                            "هل النزيل صعب؟",
+                                            "كيف أنهي هذا بسرعة؟",
+                                            "ما الأولوية الآن: الوقت أم معالجة المشكلة؟"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: اسأل: ما الأولوية الآن، الوقت أم معالجة المشكلة؟"
+                                    },
+                                    {
+                                        "question": "وصف زميل النزيل بأنه \"من النوع الصعب\" قبل أن يساعده. بماذا تنصح المادة؟",
+                                        "options": [
+                                            "الأوصاف تساعد الزملاء على الاستعداد",
+                                            "حدّد الحالة واضبط أسلوبك دون وضع ملصق على النزيل",
+                                            "حذّر الأمن من النزيل",
+                                            "اطلب من النزيل أن يهدأ أولًا"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "حدّد الحالة ثم اضبط أسلوبك دون وضع ملصق على النزيل."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "خدمة النزيل المستعجل",
+                    "lessons": [
+                        {
+                            "title": "إشارات الاستعجال وخمس خطوات للخدمة",
+                            "minutes": 6,
+                            "body": "<h2>تعرّف على إشارات الاستعجال</h2><p>نادرًا ما يقول النزيل: \"أنا مستعجل\"، بل يُظهر ذلك. وتذكر المادة خمس إشارات محتملة:</p><ul><li>مراقبة الساعة أو الهاتف باستمرار.</li><li>النقر بالأصابع أو القدم.</li><li>الحركة المتكررة أو المشي ذهابًا وإيابًا.</li><li>إجابات قصيرة ومباشرة.</li><li>السؤال المتكرر: كم سيستغرق؟</li></ul><p>هذه إشارات محتملة لا أدلة؛ فالنزيل الذي ينظر إلى هاتفه قد يقرأ رسالة فحسب. استخدمها دافعًا للتحقق من حاجته لا حكمًا عليه.</p><h2>استجب بكفاءة</h2><ul><li>اذهب مباشرة إلى النقطة.</li><li>اسأل عن الموعد أو الأولوية.</li><li>قدّم وقتًا واقعيًا وخيارات مختصرة.</li><li>نفّذ بسرعة دون أخطاء أو وعود زائفة.</li><li>حدّث النزيل قبل انتهاء الموعد.</li></ul><blockquote class=\"bk-quote\">تنفيذ دقيق + قرار واضح = السرعة المهنية.</blockquote><p>السرعة المهنية ليست التسرع؛ فالموظف الذي يستعجل ويخطئ يكلف النزيل وقتًا أكثر ممن يعمل بثبات ويصيب. وما يراه النزيل \"سريعًا\" هو عادةً قرار واضح يتبعه تنفيذ دقيق.</p><h2>خمس خطوات لخدمة المستعجل</h2><ol><li><strong>حدّد</strong> الوقت والهدف: \"متى تحتاج إلى المغادرة؟\"</li><li><strong>اختصر</strong> الشرح والخيارات: خياران لا خمسة.</li><li><strong>اختر</strong> أسرع حل آمن.</li><li><strong>نفّذ</strong> بسرعة ودقة.</li><li><strong>حدّث</strong> النزيل قبل الموعد المتفق.</li></ol><blockquote class=\"bk-quote\">تحدث باختصار ووضوح — لا تتحدث أسرع من اللازم.</blockquote><p>وتضيف المادة تنبيهًا: كن موجزًا وحاسمًا دون أن تبدو مستعجلًا؛ فالكلام السريع جدًا قد يزيد ضغط النزيل ويسبب سوء فهم، أما الجمل القصيرة بإيقاع طبيعي فتبدو واثقة ومتحكمة.</p><p>ولاحظ كلمة <strong>آمن</strong> في الخطوة الثالثة؛ فأسرع حل لا يكون صحيحًا إلا إذا كان آمنًا وضمن السياسة، ولا تتخطى السلامة أو الدقة أبدًا لتوفير دقيقة.</p><aside class=\"bk-scene\"><strong>موقف:</strong> نزيلة عند مكتب الكونسيرج تنظر إلى هاتفها وتسأل مرتين: \"كم يستغرق وصول سيارة الأجرة؟\" حدّد الموظف: \"متى اجتماعك وأين؟\" فقالت: العاشرة، في وسط المدينة. فاختصر: \"سيارة الفندق تصل خلال خمس دقائق، أو سيارة أجرة خلال عشر تقريبًا، أيهما تفضلين؟\" اختارت سيارة الفندق، فحجزها وأكد رقم اللوحة، وبعد أربع دقائق توجه إليها ليخبرها أن السيارة تصل الآن.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> اذكر الوقت قبل أن يُسأل عنه مجددًا؛ فعبارة \"ستصل سيارتك خلال خمس دقائق\" توقف السؤال المتكرر.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> مع المستعجل: حدّد، اختصر، اختر، نفّذ، حدّث؛ بسرعة ودقة، دون تسرّع أو إهمال.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: خدمة النزيل المستعجل",
+                                "questions": [
+                                    {
+                                        "question": "سألك نزيل ثلاث مرات: \"كم سيستغرق؟\" على ماذا يدل ذلك غالبًا؟",
+                                        "options": [
+                                            "أن النزيل تائه",
+                                            "استعجال محتمل، فاستجب بكفاءة",
+                                            "أن النزيل غاضب من زميل",
+                                            "أن النزيل يريد شرحًا طويلًا"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "السؤال المتكرر \"كم سيستغرق؟\" من إشارات الاستعجال المحتملة في المادة."
+                                    },
+                                    {
+                                        "question": "ما الخطوة الأولى في خدمة النزيل المستعجل؟",
+                                        "options": [
+                                            "نفّذ بسرعة",
+                                            "حدّث النزيل",
+                                            "اعرض خمسة خيارات",
+                                            "حدّد الوقت والهدف"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تبدأ الخطوات الخمس بـ\"حدّد\": الوقت والهدف."
+                                    },
+                                    {
+                                        "question": "ليبدو كفؤًا، تحدث زميل بسرعة كبيرة مع نزيل مستعجل. ماذا تقول المادة؟",
+                                        "options": [
+                                            "تحدث باختصار ووضوح، ولا تتحدث أسرع من اللازم",
+                                            "الكلام السريع يوفر الوقت دائمًا",
+                                            "تحدث ببطء وبإسهاب",
+                                            "تجنب الكلام واستخدم الإشارات"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تقول المادة: كن موجزًا وحاسمًا دون أن تبدو مستعجلًا."
+                                    },
+                                    {
+                                        "question": "بحسب المادة، ما الذي يساوي السرعة المهنية؟",
+                                        "options": [
+                                            "كلام سريع + تخطي التحقق",
+                                            "اعتذار طويل + خيارات كثيرة",
+                                            "تنفيذ دقيق + قرار واضح",
+                                            "الوعد بخمس دقائق كل مرة"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تذكر الشريحة: تنفيذ دقيق + قرار واضح = السرعة المهنية."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "التعامل مع الغضب بأمان",
+                    "lessons": [
+                        {
+                            "title": "تعرّف على الغضب واخفض التصعيد",
+                            "minutes": 6,
+                            "body": "<h2>تعرّف على إشارات الغضب</h2><p>تذكر المادة خمس إشارات محتملة للغضب:</p><ul><li>ارتفاع الصوت أو نبرة حادة.</li><li>تكرار الشكوى أو الاتهام.</li><li>وضعية جسد مشدودة أو ميل للأمام.</li><li>إشارات قوية باليد أو إصبع موجّه.</li><li>فك أو قبضة مشدودة.</li></ul><h3>لا تفترض</h3><ul><li>ليس كل صوت مرتفع تهديدًا.</li><li>لا تصف النزيل بأنه عدواني أمامه.</li><li>لا تقلد نبرته أو حركاته.</li><li>لا تجادله لإثبات أنه مخطئ.</li><li>قيّم السلوك والخطر الفعلي.</li></ul><blockquote class=\"bk-quote\">لا تحكم على الشخص — تعامل مع السلوك.</blockquote><p>معظم النزلاء الغاضبين أناس عاديون يمرون بتجربة سيئة، يرفعون أصواتهم لأنهم يشعرون بأنهم لم يُسمعوا أو لم يُنصفوا. ومعاملتهم كخطر وهم ليسوا كذلك قد تزيد الأمر سوءًا، لكن عليك في الوقت نفسه أن تبقى منتبهًا للخطر الحقيقي، وهو ما يتناوله الدرس التالي.</p><h2>اخفض التصعيد دون خضوع أو صدام</h2><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنّب</th></tr></thead><tbody><tr><td>حافظ على صوت هادئ وثابت</td><td>خفض الرأس والعينين بخضوع</td></tr><tr><td>دع النزيل يشرح دون مقاطعة</td><td>تكرار الاعتذار دون حل</td></tr><tr><td>اعترف بالأثر: \"أتفهم غضبكم.\"</td><td>مجاراة الصوت المرتفع</td></tr><tr><td>ضع حدًّا للسلوك المسيء باحترام</td><td>الاقتراب أو لمس النزيل</td></tr><tr><td>قدّم حلًّا بعد فهم المشكلة كاملة</td><td>التهديد أو الاستفزاز</td></tr></tbody></table><blockquote class=\"bk-quote\">أريد أن أساعد، ويمكنني ذلك ما دمنا نتحدث باحترام.</blockquote><p>لكل بند في \"افعل\" غاية: الصوت الهادئ الثابت يضبط النبرة التي يتبعها النزيل غالبًا، وتركه يشرح يخفف الضغط ويعطيك الحقائق، والاعتراف بالأثر يُظهر أنك تفهم أهمية الأمر له، وهو غير الاعتراف بالخطأ، والحد المحترم يحميك، والحل بعد الفهم أقرب إلى أن يناسب.</p><p>أما بنود \"تجنّب\" فإما تتخلى عن موقفك المهني (الخضوع والاعتذار المتكرر)، أو ترفع حدة الصدام (مجاراة الصوت والاقتراب والتهديد). حافظ على مسافة مريحة ولا تلمس نزيلًا منزعجًا أبدًا.</p><aside class=\"bk-scene\"><strong>موقف:</strong> مال نزيل على المكتب مشيرًا بإصبعه: \"خصمتم المبلغ مرتين! هذا فندق سيئ.\" حافظت الموظفة على صوت منخفض وثابت، وتركته يكمل، ثم قالت: \"أتفهم غضبكم؛ الخصم مرتين أمر غير مقبول. دعني أراجع الفاتورة الآن.\" وعندما قاطعها بإهانات قالت بهدوء: \"أريد أن أساعدك، ويمكنني ذلك ما دمنا نتحدث باحترام.\" فخفض صوته، ووجدت الخصم المكرر وألغته وطبعت فاتورة مصححة.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> اعتراف صادق واحد أفضل من خمسة اعتذارات، وأتبعه بإجراء.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> اقرأ الإشارات دون تصنيف، وابقَ هادئًا وثابتًا، واعترف بالأثر، وضع حدودًا محترمة، وحلّ بعد أن تفهم.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: تعرّف على الغضب واخفض التصعيد",
+                                "questions": [
+                                    {
+                                        "question": "رفع نزيل صوته بسبب خطأ في الفاتورة دون أي تهديد. ما القراءة الصحيحة؟",
+                                        "options": [
+                                            "تعامله كتهديد وتستدعي الأمن",
+                                            "ترفع صوتك ليسمعك",
+                                            "ليس كل صوت مرتفع تهديدًا؛ قيّم السلوك والخطر الفعلي",
+                                            "تخبره أنه عدواني"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: ليس كل صوت مرتفع تهديدًا، وقيّم السلوك والخطر الفعلي."
+                                    },
+                                    {
+                                        "question": "نزيل غاضب يتحدث فوق كلامك باستمرار. ماذا تفعل أولًا؟",
+                                        "options": [
+                                            "تدعه يشرح دون مقاطعة",
+                                            "تجاري ارتفاع صوته",
+                                            "تكرر \"آسف\" حتى يتوقف",
+                                            "تبتعد عنه"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "ترك النزيل يشرح دون مقاطعة من قائمة \"افعل\"."
+                                    },
+                                    {
+                                        "question": "أي سلوك في قائمة \"تجنّب\"؟",
+                                        "options": [
+                                            "الحفاظ على صوت هادئ وثابت",
+                                            "الاعتراف بالأثر",
+                                            "تقديم حل بعد الفهم",
+                                            "الاقتراب أو لمس النزيل"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "الاقتراب أو لمس النزيل مذكور في قائمة التجنب."
+                                    },
+                                    {
+                                        "question": "زميل يعتذر مرارًا دون أن يقدم حلًّا. لماذا هذه مشكلة؟",
+                                        "options": [
+                                            "الاعتذار مخالف للسياسة",
+                                            "تكرار الاعتذار دون حل خضوع لا خفض للتصعيد",
+                                            "قد يريد النزيل اعتذارًا أطول",
+                                            "المشكلة في الهاتف فقط"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تذكر المادة تكرار الاعتذار دون حل ضمن ما يجب تجنبه."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "كلمات حازمة ومتى تصعّد",
+                            "minutes": 6,
+                            "body": "<h2>استخدم كلمات حازمة ومحترمة</h2><p>تقدم المادة عبارة جاهزة لكل موقف من أربعة مواقف صعبة، وكل منها قصيرة ومحترمة وتدفع الموقف إلى الأمام.</p><table class=\"bk-say\"><thead><tr><th>الموقف</th><th>قل</th></tr></thead><tbody><tr><td>للمستعجل</td><td>\"أفهم أن وقتكم مهم؛ أسرع خيار متاح هو...\"</td></tr><tr><td>للغاضب</td><td>\"أتفهم أن ما حدث غير مقبول بالنسبة لكم؛ دعوني أصلحه.\"</td></tr><tr><td>عند الإهانة</td><td>\"أريد مساعدتكم، لكن لا يمكنني الاستمرار مع الإساءة.\"</td></tr><tr><td>عند تأخر الحل</td><td>\"لم يكتمل الحل بعد؛ التحديث الحالي هو... والموعد الجديد...\"</td></tr></tbody></table><blockquote class=\"bk-quote\">وكن دقيقًا في الإجراء — تعاطف مع الأثر.</blockquote><p>تشترك هذه العبارات في أنها تعترف بشعور النزيل أو وضعه في كلمات قليلة، ثم توضح ما سيحدث بعد ذلك. لا تجادل، ولا تلوم زميلًا، ولا تقدم وعدًا لم يُتحقق منه. وعبارة الإساءة حازمة لكنها ما زالت تعرض المساعدة؛ فهي تفصل بين الشخص الذي تريد خدمته والسلوك الذي لا تقبله.</p><h2>صعّد فورًا عند تجاوز الحدود</h2><ol><li><strong>تهديد مباشر:</strong> ابتعد وفعّل إجراء الأمن فورًا.</li><li><strong>محاولة اعتداء:</strong> لا تحاول السيطرة الجسدية واطلب المساندة.</li><li><strong>تخريب أو سلاح:</strong> ابتعد واحمِ الآخرين واتبع الطوارئ.</li><li><strong>رفض وقف الإساءة:</strong> أنهِ الحوار بأدب واستدعِ المشرف أو الأمن.</li><li><strong>حل خارج الصلاحية:</strong> صعّد مع ملخص واضح ودون وعود غير معتمدة.</li></ol><p>الحالات الثلاث الأولى تتعلق بالسلامة؛ ودورك ليس تقييد أحد أو البطولة، بل خلق مسافة وحماية نفسك والآخرين وإشراك المختصين عبر إجراءات الأمن والطوارئ في الفندق. والرابعة تحمي كرامتك؛ فلست مضطرًا لقبول إساءة مستمرة بعد تنبيه محترم. والخامسة تتعلق بالخدمة؛ فعندما يتجاوز الحل صلاحيتك، يعني الملخص الواضح للمشرف ألا يضطر النزيل إلى إعادة قصته كاملة.</p><h2>رسالة الختام</h2><p>تختم المادة بسطرين: <strong>للمستعجل: كن سريعًا ودقيقًا. للغاضب: استمع واهدأ وضع حدودًا.</strong> حدّد، استمع، اعترف، حلّ، صعّد.</p><blockquote class=\"bk-quote\">المهنية تجمع بين سرعة الحل وسلامة التعامل.</blockquote><aside class=\"bk-scene\"><strong>موقف:</strong> طالب نزيل باسترداد كامل قيمة إقامته لأن المسبح أُغلق ظهيرة يوم واحد. اعترفت موظفة المكتب الأمامي بخيبة أمله، وأوضحت أنها لا تملك صلاحية الموافقة على الاسترداد، وقالت: \"سأنقل الأمر إلى المدير المناوب الآن مع ملخص كامل حتى لا تضطر إلى إعادته.\" وأبلغت المدير برقم الغرفة والمشكلة وما يطلبه النزيل دون أن تعد بأي مبلغ، فوصل المدير خلال دقائق وهو على علم بالتفاصيل.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> اعرف مسبقًا كيف تصل إلى مشرفك والأمن بسرعة خلال نوبتك، ليستغرق التصعيد ثواني لا دقائق.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> استخدم عبارات حازمة ومحترمة، وعند التهديد أو الاعتداء أو التخريب أو السلاح ابتعد وصعّد فورًا، ولا تحاول السيطرة الجسدية أبدًا.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الكلمات الحازمة والتصعيد",
+                                "questions": [
+                                    {
+                                        "question": "استمر نزيل في إهانتك بعد تنبيه محترم. ماذا تفعل؟",
+                                        "options": [
+                                            "ترد عليه بإهانة",
+                                            "تستمر في الاستماع مهما طال الوقت",
+                                            "تعرض استرداد المبلغ لإيقاف الإساءة",
+                                            "تنهي الحوار بأدب وتستدعي المشرف أو الأمن"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "عند رفض وقف الإساءة: أنهِ الحوار بأدب واستدعِ المشرف أو الأمن."
+                                    },
+                                    {
+                                        "question": "حاول نزيل ضرب زميل عند المكتب. ماذا تقول المادة؟",
+                                        "options": [
+                                            "قيّده بنفسك",
+                                            "لا تحاول السيطرة الجسدية واطلب المساندة",
+                                            "قف بينهما وجادله",
+                                            "تجاهل الأمر وتابع عملك"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "عند محاولة الاعتداء: لا تحاول السيطرة الجسدية واطلب المساندة."
+                                    },
+                                    {
+                                        "question": "أي عبارة تناسب نزيلًا تأخر حل مشكلته عن الموعد؟",
+                                        "options": [
+                                            "\"لم يكتمل الحل بعد؛ التحديث الحالي هو... والموعد الجديد...\"",
+                                            "\"ليس ذنبي.\"",
+                                            "\"توقف عن السؤال من فضلك.\"",
+                                            "\"سينتهي قريبًا.\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "هذه عبارة المادة عند تأخر الحل."
+                                    },
+                                    {
+                                        "question": "يطالب نزيل بتعويض لا يوافق عليه إلا المدير. ماذا تفعل؟",
+                                        "options": [
+                                            "تعده بالتعويض لتهدئته",
+                                            "ترفض وتنهي الحوار",
+                                            "تصعّد مع ملخص واضح ودون وعود غير معتمدة",
+                                            "تطلب منه مراسلة الإدارة العامة"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "عند حل خارج الصلاحية: صعّد مع ملخص واضح ودون وعود غير معتمدة."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

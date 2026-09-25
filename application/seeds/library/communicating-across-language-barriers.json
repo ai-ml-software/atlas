@@ -1,0 +1,545 @@
+{
+    "slug": "communicating-across-language-barriers",
+    "category": "communication",
+    "level": "foundation",
+    "source_pdf": "Communicating-Across-Language-Barriers-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/communicating-across-language-barriers.webp",
+    "videos": [
+        {
+            "id": "tFX68SJs2-0",
+            "title": "Patricia Ryan: Don't insist on English!",
+            "channel": "TED",
+            "why": "A teacher with decades of experience in the Arabian Gulf reminds us that a person who does not speak our language well is not less capable, which supports the deck's message that language is the barrier, not the guest."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Communicating Across Language Barriers",
+            "subtitle": "Simple words, clear understanding",
+            "short_description": "Learn to serve guests who do not share your language: stay patient, simplify, point and show, use approved translation and always confirm understanding.",
+            "description": "<p>A guest who does not understand your language still understands care, patience and respect. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows hotel colleagues how to communicate clearly when there is a language barrier.</p><p>You will learn why language is the barrier and not the guest, how to notice the signs that a guest has not understood, and how to use five clear communication steps and four helpful phrases. You will also learn what to do and avoid, how to choose the right support, from a map to an approved translation tool or a colleague, and when to call a translator or supervisor.</p>",
+            "requirements": "No prior training is needed; the course suits every guest-facing colleague, whatever languages they speak.",
+            "outcomes": [
+                "Explain why a language barrier is not a lack of understanding by the guest",
+                "Recognise signs of misunderstanding in the guest's face, questions and actions",
+                "Apply five steps to communicate more clearly with simple words and approved tools",
+                "Use helpful phrases and choose the right support: visual, written, translation or a colleague",
+                "Know when to pause and call a translator or supervisor, and protect guest privacy"
+            ],
+            "faqs": [
+                {
+                    "question": "Does speaking louder help a guest understand?",
+                    "answer": "No. Raising your voice does not make the language clearer. Speak calmly and more slowly, use short words and explain one idea at a time."
+                },
+                {
+                    "question": "Can I use my own phone to translate?",
+                    "answer": "Use the hotel's approved translation tool. The deck says avoid using your personal phone for private data."
+                },
+                {
+                    "question": "When should I ask for a translator or supervisor?",
+                    "answer": "For a medical situation or safety risk, a payment, signature or important approval, a complex complaint or angry guest, private or sensitive information, or when misunderstanding continues after several attempts."
+                }
+            ],
+            "meta_title": "Communicating Across Language Barriers",
+            "meta_description": "Hotel staff training on language barriers: signs of misunderstanding, five clear steps, helpful phrases, approved translation and when to get a translator.",
+            "focus_keyword": "language barriers in hotels",
+            "chapters": [
+                {
+                    "title": "Understanding the Barrier",
+                    "lessons": [
+                        {
+                            "title": "Language Is the Barrier, Not the Guest",
+                            "minutes": 5,
+                            "body": "<h2>Not understanding the language is not failing to understand</h2><p>A guest who struggles with Arabic or English may be a doctor, an engineer or a seasoned traveller. They understand perfectly well what they need; they simply cannot say it easily in your language. The deck makes this point in its title: <strong>not understanding the language does not mean not understanding the guest</strong>. The language is the barrier, not the guest.</p><p>When we forget this, we can slip into speaking to guests as if they were children, or become impatient. Both make the guest feel embarrassed, and embarrassed guests stop asking for what they need.</p><h2>Be patient and give the guest time</h2><p>The deck's central instruction is to <strong>be patient and give the guest time</strong>. Then it lists five practical habits:</p><ul><li><strong>Speak calmly and more slowly.</strong> A calm pace gives the guest time to process each word.</li><li><strong>Use short, direct words.</strong> \"Breakfast is on the first floor\" is easier than \"You will find that we serve breakfast downstairs on the first level.\"</li><li><strong>Explain one idea at a time.</strong> Give the time, pause, then give the place.</li><li><strong>Use gestures or an approved tool.</strong> Pointing, showing and the hotel's approved translation tool all help.</li><li><strong>Confirm understanding before ending the conversation.</strong> Do not let the guest walk away unsure.</li></ul><blockquote class=\"bk-quote\">Speaking louder does not make the language clearer.</blockquote><h2>Why volume does not help</h2><p>It is a common reflex: the guest does not understand, so we say the same thing again, louder. But volume does not change the words. It only adds pressure and can sound angry, especially to someone already feeling unsure. If the message did not work the first time, change the words, slow down or show it, rather than raising your voice.</p><h2>The approach in one line</h2><p>The deck summarises the approach in five words: <strong>Stay calm, Simplify, Show, Translate, Confirm</strong>. Stay calm and patient, simplify your words, show by pointing or with a picture, translate using approved tools, and confirm that the message arrived. The rest of this course builds on this approach.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest arriving late at night speaks very little English and tries to ask about breakfast. The night receptionist notices she is tired and hesitant. He smiles, slows down and says, \"Breakfast... six thirty,\" writing \"6:30\" on a card, then points to the restaurant sign: \"There.\" The guest nods and repeats \"six thirty.\" He did not raise his voice once, and the message arrived.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Avoid long polite phrases when language is a barrier. A warm smile and a short, clear sentence are more welcoming than a long sentence the guest cannot follow.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> The language is the barrier, not the guest. Be patient, speak slowly and simply, and never raise your voice to be understood.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: The barrier, not the guest",
+                                "questions": [
+                                    {
+                                        "question": "A guest does not understand your directions to the spa. What should you do next?",
+                                        "options": [
+                                            "Repeat the same directions more loudly",
+                                            "Tell the guest to ask someone else",
+                                            "Speak calmly and more slowly, with short words, and show the way",
+                                            "Explain everything in one long sentence"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says speak calmly and more slowly, use short words and use gestures; speaking louder does not help."
+                                    },
+                                    {
+                                        "question": "What does the deck mean by \"language is the barrier, not the guest\"?",
+                                        "options": [
+                                            "Not understanding the language does not mean the guest does not understand",
+                                            "Guests who do not speak the language cause problems",
+                                            "Only guests who speak Arabic or English can be served well",
+                                            "The guest must learn the local language"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck's title says not understanding the language does not mean not understanding the guest."
+                                    },
+                                    {
+                                        "question": "You need to tell a guest the pool opening time, its location and the towel rules. How should you do it?",
+                                        "options": [
+                                            "All together, quickly, so the guest is not kept waiting",
+                                            "In writing only, without speaking",
+                                            "Only the most important part",
+                                            "One idea at a time, pausing between each"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says explain one idea at a time."
+                                    },
+                                    {
+                                        "question": "When should you confirm that the guest has understood?",
+                                        "options": [
+                                            "Only if the guest complains later",
+                                            "Before ending the conversation",
+                                            "Never; it may embarrass the guest",
+                                            "Only for VIP guests"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says confirm understanding before ending the conversation."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Notice the Signs of Misunderstanding",
+                            "minutes": 5,
+                            "body": "<h2>Why guests hide misunderstanding</h2><p>Many guests do not say \"I don't understand.\" They may feel embarrassed, not want to trouble you, or simply be tired. Instead they nod, smile and walk away, and the problem appears later: a missed breakfast, a wrong room, a late transfer. That is why the deck asks you to actively look for the signs of misunderstanding in three places: <strong>the face, the questions and the action</strong>.</p><h3>1. The face</h3><ul><li><strong>Hesitation or a confused look.</strong> The guest pauses, frowns slightly or looks at you blankly.</li><li><strong>A smile without a clear answer.</strong> A polite smile can hide confusion. If the guest smiles but does not respond to what you said, check.</li><li><strong>Looking at a companion for help.</strong> When a guest turns to the person next to them, they often have not understood.</li></ul><h3>2. The questions</h3><ul><li><strong>Repeating the same question.</strong> If the guest asks again, your first answer did not reach them.</li><li><strong>Using few words or pointing.</strong> The guest is struggling to find the words.</li><li><strong>Answering \"yes\" without details.</strong> A simple \"yes\" to everything is a warning sign, especially if you asked a question that needs a choice.</li></ul><h3>3. The action</h3><ul><li><strong>Not carrying out the step required.</strong> You asked the guest to sign or fill in a form, and they do not.</li><li><strong>Going to the wrong place.</strong> The guest walks towards the lift when you directed them to the pool.</li><li><strong>Coming back to ask for clarification.</strong> They return to the desk a few minutes later with the same need.</li></ul><table class=\"bk-say\"><thead><tr><th>Where</th><th>Signs</th></tr></thead><tbody><tr><td>Face</td><td>Hesitation or confused look, smile without a clear answer, looking at a companion</td></tr><tr><td>Questions</td><td>Repeating the same question, few words or pointing, \"yes\" without details</td></tr><tr><td>Action</td><td>Not doing the required step, going to the wrong place, returning to ask again</td></tr></tbody></table><blockquote class=\"bk-quote\">Do not pretend you understood. Stop and explain another way.</blockquote><h2>What to do when you see a sign</h2><p>The rule works in both directions. Do not pretend you understood the guest, and do not assume the guest understood you. When you notice a sign, stop and explain another way: use fewer words, point, show a picture, write the number or use the approved translation tool. Then check again.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A housekeeping supervisor explains to a guest that the room will be cleaned after 2 p.m. The guest smiles and says \"yes, yes\", then looks at his wife. The supervisor recognises two signs: a smile without a clear answer and a glance at a companion. She stops, writes \"2:00\" on a note, points to the clock and mimes cleaning. The wife nods and says, \"Two, OK.\" Without that check, the couple would have waited in the room all morning.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Instead of asking \"Do you understand?\", which almost always gets a \"yes\", ask the guest to show or repeat: \"What time?\" or \"Which floor?\"</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Watch the face, the questions and the action. When a sign appears, do not pretend; stop and explain another way.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Signs of misunderstanding",
+                                "questions": [
+                                    {
+                                        "question": "You explain the check-out time and the guest answers \"yes\" to everything without any detail. What does this suggest?",
+                                        "options": [
+                                            "The guest fully agrees",
+                                            "The guest may not have understood",
+                                            "The guest is being rude",
+                                            "Nothing; you can move on"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Answering \"yes\" without details is one of the question signs of misunderstanding."
+                                    },
+                                    {
+                                        "question": "After your directions to the gym, the guest walks towards the restaurant. Which sign is this?",
+                                        "options": [
+                                            "A face sign",
+                                            "A question sign",
+                                            "It is not a sign",
+                                            "An action sign: going to the wrong place"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Going to the wrong place is listed under action."
+                                    },
+                                    {
+                                        "question": "A guest keeps turning to her friend while you speak. What should you do?",
+                                        "options": [
+                                            "Stop and explain another way, for example by pointing or writing",
+                                            "Speak only to the friend from now on",
+                                            "Continue, since the friend will explain",
+                                            "Speak faster to finish sooner"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Looking at a companion for help is a face sign; the deck says stop and explain another way."
+                                    },
+                                    {
+                                        "question": "You are not sure what the guest asked for. What should you avoid?",
+                                        "options": [
+                                            "Asking the guest to point",
+                                            "Using the approved translation tool",
+                                            "Pretending you understood",
+                                            "Writing down a number to check"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says do not pretend you understood."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Communicating Clearly",
+                    "lessons": [
+                        {
+                            "title": "Five Clear Steps and Helpful Phrases",
+                            "minutes": 6,
+                            "body": "<h2>Keep it simple</h2><p>The first step in the deck is to <strong>simplify your speech: use a short sentence and a single idea</strong>. Around that principle, the deck gives five clear communication steps you can use with any guest, in any department.</p><ol><li><strong>Speak slowly, without exaggerating.</strong> Slow down enough to be clear, but not so much that it sounds unnatural or patronising.</li><li><strong>Use easy words.</strong> Choose common words over technical or formal ones: \"room\" not \"accommodation\", \"pay\" not \"settle the folio\".</li><li><strong>Point to the place or the picture.</strong> Direct the guest's attention to what you mean: the sign, the map, the menu photo.</li><li><strong>Use an approved translation tool.</strong> The hotel's approved tool is reliable and protects guest data.</li><li><strong>Ask the guest to confirm what they understood.</strong> Invite them to repeat, point or show you.</li></ol><blockquote class=\"bk-quote\">If the message is not clear, explain it another way.</blockquote><p>If one method does not work, do not repeat it. Switch: from words to pointing, from pointing to writing, from writing to the translation tool.</p><h2>Helpful phrases</h2><p>The deck gives four short phrases. Each is simple enough to be understood even with limited language skills:</p><table class=\"bk-say\"><thead><tr><th>Purpose</th><th>Phrase</th><th>Example</th></tr></thead><tbody><tr><td>Slow down</td><td>\"I will speak slowly.\"</td><td>\"I will repeat slowly.\"</td></tr><tr><td>Point</td><td>\"Can you point?\"</td><td>\"Can you point to what you want?\"</td></tr><tr><td>Confirm</td><td>\"Do you mean this?\"</td><td>\"Do you mean this place?\"</td></tr><tr><td>Check</td><td>\"Is this clear?\"</td><td>\"Is this clear now?\"</td></tr></tbody></table><p>Use one phrase at a time, and then wait. The deck is specific: <strong>give the guest time to read or respond</strong>. A guest reading a translation on a screen, or finding the words to answer, needs a few seconds of silence. Resist filling it.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest at the restaurant points at the menu and says a word the waiter does not recognise. The waiter says, \"Can you point to what you want?\" The guest points to a photo of grilled fish. The waiter points to it too: \"Do you mean this?\" The guest nods, then points to the word \"spicy\" and shakes his head. The waiter writes \"no spicy\" on the order and shows it: \"Is this clear now?\" The guest smiles and gives a thumbs up.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Keep the same simple words each time you repeat. Changing \"lift\" to \"elevator\" to \"the stairs up\" can confuse a guest who has just learned the first word.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Short sentence, one idea, point and show, approved translation, and always ask the guest to confirm. Then give them time to respond.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Clear steps and phrases",
+                                "questions": [
+                                    {
+                                        "question": "A guest has not understood your explanation of the minibar charges. What should you do?",
+                                        "options": [
+                                            "Repeat the exact same explanation",
+                                            "Tell the guest it is not important",
+                                            "Leave a note in the room",
+                                            "Explain it another way, for example by pointing or writing the price"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says if the message is not clear, explain it another way."
+                                    },
+                                    {
+                                        "question": "Which phrase helps you check the guest's meaning about a location?",
+                                        "options": [
+                                            "\"Do you mean this place?\"",
+                                            "\"Why don't you speak English?\"",
+                                            "\"Please speak faster\"",
+                                            "\"That is not possible\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "\"Do you mean this?\" with the example \"Do you mean this place?\" is the confirm phrase."
+                                    },
+                                    {
+                                        "question": "You have shown a guest a translated message on the approved tool. What should you do next?",
+                                        "options": [
+                                            "Immediately start the next explanation",
+                                            "Give the guest time to read or respond",
+                                            "Take the device back quickly",
+                                            "Read it aloud louder"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says give the guest time to read or respond."
+                                    },
+                                    {
+                                        "question": "How should you speak with a guest who has limited language skills?",
+                                        "options": [
+                                            "Very slowly and exaggerated, like to a child",
+                                            "At normal speed with formal words",
+                                            "Slowly without exaggerating, using easy words",
+                                            "Only using gestures, never words"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The steps are to speak slowly without exaggerating and to use easy words."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Support and Respect",
+                    "lessons": [
+                        {
+                            "title": "Do and Avoid, the Right Support and When to Get Help",
+                            "minutes": 7,
+                            "body": "<h2>Communicate with respect and clarity</h2><p>The deck lists five things to do and five to avoid when there is a language barrier.</p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Use short words and sentences</td><td>Raising your voice or showing irritation</td></tr><tr><td>Use a map or a picture when needed</td><td>Using slang or complicated words</td></tr><tr><td>Write the time or the number clearly</td><td>Speaking fast or explaining many things at once</td></tr><tr><td>Use the approved translation tool</td><td>Using your personal phone for private data</td></tr><tr><td>Confirm understanding before continuing</td><td>Saying you understood when you are not sure</td></tr></tbody></table><blockquote class=\"bk-quote\">Respect the guest and do not make them feel embarrassed.</blockquote><h2>Choose the right support</h2><p>Different messages need different tools. The deck lists four:</p><ol><li><strong>Picture or map (visual).</strong> Point to the location or the service.</li><li><strong>Written words (write).</strong> Write the time, the price or the number. Numbers are understood across many languages.</li><li><strong>Approved translation (translate).</strong> Use the hotel's approved tool.</li><li><strong>A suitable colleague.</strong> Ask a colleague who speaks the language, when one is available.</li></ol><p>One firm rule applies: <strong>do not use a child or an unauthorised person to translate sensitive information</strong>. A child travelling with the family, or a stranger in the lobby, should never be asked to translate medical, financial or private matters.</p><h2>When you need a translator or supervisor</h2><p>Some situations are too important to risk a misunderstanding. <strong>Ask for support when there is:</strong></p><ul><li>A medical situation or a risk to safety.</li><li>A payment, a signature or an important approval.</li><li>A complex complaint or an angry guest.</li><li>Private or sensitive information.</li><li>Continued misunderstanding after several attempts.</li></ul><p><strong>Start with these steps:</strong></p><ol><li>Pause the important action temporarily.</li><li>Ask for a translator or a suitable colleague.</li><li>Protect the guest's privacy.</li><li>Confirm the message before acting.</li><li>Record the request and follow up until it is resolved.</li></ol><aside class=\"bk-scene\"><strong>Scene:</strong> At check-out, a guest disputes a charge, speaking rapidly in a language the cashier does not know. His young son offers to translate. The cashier thanks the boy politely but does not ask him to explain a financial matter. She pauses the payment, calls her supervisor and a colleague who speaks the guest's language, and moves the conversation to a quieter corner of the desk. Once the colleague confirms the guest's concern, the charge is reviewed, the outcome is recorded and the guest leaves satisfied.</aside><blockquote class=\"bk-quote\">Clear understanding matters more than ending the conversation quickly.</blockquote><h2>Closing thought</h2><p>The deck ends simply: communicate simply and make sure the message arrived. Stay calm, simplify, show, translate, confirm. Patience and clarity make better service.</p><aside class=\"bk-key\"><strong>Key takeaway:</strong> Use short words, pictures, written numbers and approved tools; never use a child to translate sensitive matters; and pause and get a translator or supervisor when the stakes are high.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Support and respect",
+                                "questions": [
+                                    {
+                                        "question": "A guest needs to know the price of an airport transfer. What is a clear way to share it?",
+                                        "options": [
+                                            "Say it once quickly",
+                                            "Write the price clearly and show it",
+                                            "Use slang to sound friendly",
+                                            "Send it to your personal phone first"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says write the time or the number clearly, and use written words for time, price or number."
+                                    },
+                                    {
+                                        "question": "A guest's child offers to translate a question about the guest's medical condition. What should you do?",
+                                        "options": [
+                                            "Accept, since it is quicker",
+                                            "Ask a passing guest instead",
+                                            "Continue with gestures only",
+                                            "Thank the child and ask for a translator or suitable colleague"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says do not use a child or an unauthorised person to translate sensitive information."
+                                    },
+                                    {
+                                        "question": "A guest must sign an important approval but clearly does not understand it. What is the first step?",
+                                        "options": [
+                                            "Pause the important action temporarily",
+                                            "Ask them to sign and explain later",
+                                            "Sign on their behalf",
+                                            "Tell them it is only a formality"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "A signature or important approval needs support; the first step is to pause the important action temporarily."
+                                    },
+                                    {
+                                        "question": "You are not sure you understood the guest, but the queue is growing. What does the deck say?",
+                                        "options": [
+                                            "Say you understood to keep the queue moving",
+                                            "Ask the guest to come back tomorrow",
+                                            "Clear understanding matters more than ending the conversation quickly",
+                                            "Guess the most likely request"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says clear understanding is more important than ending the conversation quickly, and avoid saying you understood when unsure."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "التواصل عند وجود حاجز لغوي",
+            "subtitle": "كلمات بسيطة وفهم واضح",
+            "short_description": "تعلّم خدمة النزلاء الذين لا يتحدثون لغتك: اصبر، وبسّط، وأشر، واستخدم الترجمة المعتمدة، وتأكد دائمًا من الفهم.",
+            "description": "<p>النزيل الذي لا يفهم لغتك يفهم الاهتمام والصبر والاحترام. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتعلّم الموظفين كيف يتواصلون بوضوح عند وجود حاجز لغوي.</p><p>ستتعرف على سبب أن اللغة هي الحاجز وليس النزيل، وكيف تلاحظ علامات عدم الفهم، وكيف تستخدم خمس خطوات لتواصل أوضح وأربع عبارات تساعد على الفهم. كما ستتعلم ما تفعله وما تتجنبه، وكيف تختار الوسيلة المناسبة من الخريطة إلى أداة الترجمة المعتمدة أو الزميل المناسب، ومتى تطلب مترجمًا أو مشرفًا.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظف يتعامل مع النزلاء أيًا كانت اللغات التي يتحدثها.",
+            "outcomes": [
+                "اشرح لماذا لا يعني الحاجز اللغوي أن النزيل لا يفهم",
+                "تعرّف على علامات عدم الفهم في وجه النزيل وأسئلته وتصرفه",
+                "طبّق خمس خطوات لتواصل أوضح بكلمات بسيطة ووسائل معتمدة",
+                "استخدم عبارات تساعد على الفهم واختر الوسيلة المناسبة: صورة، كتابة، ترجمة، أو زميل",
+                "اعرف متى توقف الإجراء وتطلب مترجمًا أو مشرفًا، واحمِ خصوصية النزيل"
+            ],
+            "faqs": [
+                {
+                    "question": "هل يساعد رفع الصوت النزيل على الفهم؟",
+                    "answer": "لا. رفع الصوت لا يجعل اللغة أوضح. تحدث بهدوء وبسرعة أبطأ، واستخدم كلمات قصيرة، واشرح فكرة واحدة كل مرة."
+                },
+                {
+                    "question": "هل يمكنني استخدام هاتفي للترجمة؟",
+                    "answer": "استخدم أداة الترجمة المعتمدة في الفندق؛ فالمادة تقول: تجنب استخدام هاتفك الشخصي لبيانات خاصة."
+                },
+                {
+                    "question": "متى أطلب مترجمًا أو مشرفًا؟",
+                    "answer": "عند حالة طبية أو خطر على السلامة، أو دفع أو توقيع أو موافقة مهمة، أو شكوى معقدة أو نزيل غاضب، أو معلومة خاصة أو حساسة، أو استمرار عدم الفهم بعد عدة محاولات."
+                }
+            ],
+            "meta_title": "التواصل عند وجود حاجز لغوي",
+            "meta_description": "تدريب فندقي على التواصل مع الحاجز اللغوي: علامات عدم الفهم، وخمس خطوات أوضح، وعبارات مساعدة، والترجمة المعتمدة، ومتى تطلب مترجمًا.",
+            "focus_keyword": "الحاجز اللغوي في الفنادق",
+            "chapters": [
+                {
+                    "title": "فهم الحاجز اللغوي",
+                    "lessons": [
+                        {
+                            "title": "عدم فهم اللغة لا يعني عدم فهم النزيل",
+                            "minutes": 5,
+                            "body": "<h2>اللغة هي الحاجز وليس النزيل</h2><p>قد يكون النزيل الذي يجد صعوبة في العربية أو الإنجليزية طبيبًا أو مهندسًا أو مسافرًا خبيرًا؛ فهو يعرف تمامًا ما يحتاجه، لكنه لا يستطيع قوله بسهولة بلغتك. وتؤكد المادة ذلك في عنوانها: <strong>عدم فهم اللغة لا يعني عدم فهم النزيل</strong>.</p><p>وعندما ننسى ذلك، قد نتحدث مع النزيل كأنه طفل، أو نفقد صبرنا، وكلاهما يُشعره بالحرج، والنزيل المحرج يتوقف عن طلب ما يحتاجه.</p><h2>اصبر وامنح النزيل وقتًا</h2><p>التوجيه الأساسي في المادة هو: <strong>اصبر وامنح النزيل وقتًا</strong>. ثم تذكر خمس عادات عملية:</p><ul><li><strong>تحدث بهدوء وبسرعة أبطأ،</strong> فالإيقاع الهادئ يمنح النزيل وقتًا لفهم كل كلمة.</li><li><strong>استخدم كلمات قصيرة ومباشرة،</strong> فعبارة \"الفطور في الدور الأول\" أسهل من جملة طويلة مليئة بالمجاملات.</li><li><strong>اشرح فكرة واحدة كل مرة:</strong> اذكر الوقت، ثم توقف، ثم اذكر المكان.</li><li><strong>استخدم الإشارة أو وسيلة معتمدة،</strong> كالإشارة إلى المكان أو أداة الترجمة المعتمدة في الفندق.</li><li><strong>تأكد من الفهم قبل إنهاء الحديث،</strong> ولا تدع النزيل يمضي وهو غير متأكد.</li></ul><blockquote class=\"bk-quote\">رفع الصوت لا يجعل اللغة أوضح.</blockquote><h2>لماذا لا يفيد رفع الصوت؟</h2><p>إنها ردة فعل شائعة: لا يفهم النزيل، فنعيد الكلام نفسه بصوت أعلى. لكن الصوت المرتفع لا يغيّر الكلمات، بل يضيف ضغطًا وقد يبدو غضبًا، خاصة لمن يشعر أصلًا بعدم الثقة. إذا لم تصل الرسالة من المرة الأولى، فغيّر الكلمات أو أبطئ أو أشر، بدل أن ترفع صوتك.</p><h2>المنهج في سطر واحد</h2><p>تلخص المادة المنهج في خمس كلمات: <strong>اهدأ، بسّط، أشر، ترجم، تأكد</strong>. اهدأ واصبر، وبسّط كلماتك، وأشر إلى المكان أو الصورة، وترجم بالوسائل المعتمدة، وتأكد أن الرسالة وصلت.</p><aside class=\"bk-scene\"><strong>موقف:</strong> وصلت نزيلة في وقت متأخر من الليل، وهي تتحدث القليل من الإنجليزية، وحاولت السؤال عن الفطور. لاحظ موظف الاستقبال الليلي تعبها وترددها، فابتسم وأبطأ وقال: \"الفطور... السادسة والنصف\"، وكتب \"6:30\" على بطاقة، ثم أشار إلى لوحة المطعم: \"هناك\". أومأت النزيلة وكررت الوقت. لم يرفع صوته مرة واحدة، ووصلت الرسالة.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> تجنب عبارات المجاملة الطويلة عند وجود حاجز لغوي؛ فالابتسامة الدافئة والجملة القصيرة الواضحة أكثر ترحيبًا من جملة طويلة لا يستطيع النزيل متابعتها.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> اللغة هي الحاجز وليس النزيل. اصبر، وتحدث ببطء وبساطة، ولا ترفع صوتك لتُفهم.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الحاجز وليس النزيل",
+                                "questions": [
+                                    {
+                                        "question": "لم يفهم نزيل إرشاداتك إلى السبا. ماذا تفعل بعد ذلك؟",
+                                        "options": [
+                                            "تكرر الإرشادات نفسها بصوت أعلى",
+                                            "تطلب منه أن يسأل غيرك",
+                                            "تتحدث بهدوء وبسرعة أبطأ بكلمات قصيرة وتشير إلى الطريق",
+                                            "تشرح كل شيء في جملة واحدة طويلة"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: تحدث بهدوء وبسرعة أبطأ، واستخدم كلمات قصيرة والإشارة؛ فرفع الصوت لا يفيد."
+                                    },
+                                    {
+                                        "question": "ماذا تعني المادة بأن اللغة هي الحاجز وليس النزيل؟",
+                                        "options": [
+                                            "أن عدم فهم اللغة لا يعني عدم فهم النزيل",
+                                            "أن النزلاء الذين لا يتحدثون اللغة يسببون المشكلات",
+                                            "أن الخدمة الجيدة للمتحدثين بالعربية أو الإنجليزية فقط",
+                                            "أن على النزيل تعلم اللغة المحلية"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "عنوان الشريحة: عدم فهم اللغة لا يعني عدم فهم النزيل."
+                                    },
+                                    {
+                                        "question": "تحتاج إلى إخبار نزيل بموعد فتح المسبح ومكانه وتعليمات المناشف. كيف تفعل ذلك؟",
+                                        "options": [
+                                            "كلها معًا بسرعة حتى لا ينتظر",
+                                            "كتابةً فقط دون كلام",
+                                            "الجزء الأهم فقط",
+                                            "فكرة واحدة كل مرة مع التوقف بين كل منها"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: اشرح فكرة واحدة كل مرة."
+                                    },
+                                    {
+                                        "question": "متى تتأكد من أن النزيل فهم؟",
+                                        "options": [
+                                            "فقط إذا اشتكى لاحقًا",
+                                            "قبل إنهاء الحديث",
+                                            "أبدًا، فقد يُحرجه ذلك",
+                                            "مع كبار الشخصيات فقط"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: تأكد من الفهم قبل إنهاء الحديث."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "لاحظ علامات عدم الفهم",
+                            "minutes": 5,
+                            "body": "<h2>لماذا يُخفي النزيل عدم فهمه؟</h2><p>كثير من النزلاء لا يقولون \"لم أفهم\"؛ فقد يشعرون بالحرج، أو لا يريدون إزعاجك، أو يكونون متعبين. فيومئون ويبتسمون ويمضون، ثم تظهر المشكلة لاحقًا: فطور فائت، أو غرفة خاطئة، أو تأخر عن موعد التوصيل. لذلك تطلب منك المادة البحث عن علامات عدم الفهم في ثلاثة أماكن: <strong>الوجه، والأسئلة، والتصرف</strong>.</p><h3>١. الوجه</h3><ul><li><strong>تردد أو نظرة حائرة،</strong> كأن يتوقف النزيل أو يعقد حاجبيه أو ينظر إليك دون تعبير.</li><li><strong>ابتسامة دون إجابة واضحة،</strong> فالابتسامة المهذبة قد تخفي الحيرة.</li><li><strong>النظر إلى مرافق لطلب المساعدة،</strong> فحين يلتفت النزيل إلى من بجانبه فغالبًا لم يفهم.</li></ul><h3>٢. الأسئلة</h3><ul><li><strong>تكرار السؤال نفسه،</strong> فإذا سأل مرة أخرى فإجابتك الأولى لم تصل.</li><li><strong>استخدام كلمات قليلة أو الإشارة،</strong> فالنزيل يجد صعوبة في إيجاد الكلمات.</li><li><strong>الإجابة بنعم دون تفاصيل،</strong> خاصة إذا كان سؤالك يتطلب اختيارًا.</li></ul><h3>٣. التصرف</h3><ul><li><strong>عدم تنفيذ الخطوة المطلوبة،</strong> كأن تطلب منه التوقيع أو تعبئة نموذج فلا يفعل.</li><li><strong>الذهاب إلى مكان غير صحيح،</strong> كأن يتجه إلى المصعد وقد أرشدته إلى المسبح.</li><li><strong>العودة لطلب التوضيح،</strong> فيرجع إلى المكتب بعد دقائق بالحاجة نفسها.</li></ul><table class=\"bk-say\"><thead><tr><th>المكان</th><th>العلامات</th></tr></thead><tbody><tr><td>الوجه</td><td>تردد أو نظرة حائرة، ابتسامة دون إجابة واضحة، النظر إلى مرافق</td></tr><tr><td>الأسئلة</td><td>تكرار السؤال، كلمات قليلة أو إشارة، الإجابة بنعم دون تفاصيل</td></tr><tr><td>التصرف</td><td>عدم تنفيذ الخطوة، الذهاب إلى مكان خاطئ، العودة لطلب التوضيح</td></tr></tbody></table><blockquote class=\"bk-quote\">لا تتظاهر بالفهم — توقف ووضح بطريقة أخرى.</blockquote><h2>ماذا تفعل عندما ترى علامة؟</h2><p>القاعدة تعمل في الاتجاهين: لا تتظاهر بأنك فهمت النزيل، ولا تفترض أنه فهمك. وعندما تلاحظ علامة، توقف ووضح بطريقة أخرى: كلمات أقل، أو إشارة، أو صورة، أو كتابة الرقم، أو أداة الترجمة المعتمدة. ثم تحقق مرة أخرى.</p><aside class=\"bk-scene\"><strong>موقف:</strong> شرحت مشرفة التدبير الفندقي لنزيل أن الغرفة ستُنظف بعد الساعة الثانية ظهرًا، فابتسم وقال \"نعم، نعم\" ثم نظر إلى زوجته. تعرّفت المشرفة على علامتين: ابتسامة دون إجابة واضحة، والنظر إلى مرافق. فتوقفت وكتبت \"2:00\" على ورقة، وأشارت إلى الساعة، ومثّلت حركة التنظيف. فأومأت الزوجة وقالت: \"الثانية، حسنًا\". لولا هذا التحقق لانتظر الزوجان في الغرفة طوال الصباح.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> بدل أن تسأل \"هل فهمت؟\" التي تكون إجابتها غالبًا \"نعم\"، اطلب من النزيل أن يشير أو يكرر: \"أي ساعة؟\" أو \"أي دور؟\"</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> راقب الوجه والأسئلة والتصرف، وعندما تظهر علامة فلا تتظاهر بالفهم، بل توقف ووضح بطريقة أخرى.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: علامات عدم الفهم",
+                                "questions": [
+                                    {
+                                        "question": "شرحت موعد المغادرة فأجاب النزيل بنعم على كل شيء دون أي تفاصيل. على ماذا يدل ذلك؟",
+                                        "options": [
+                                            "أنه موافق تمامًا",
+                                            "أنه ربما لم يفهم",
+                                            "أنه غير مهذب",
+                                            "لا شيء، ويمكنك المتابعة"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "الإجابة بنعم دون تفاصيل من علامات عدم الفهم في الأسئلة."
+                                    },
+                                    {
+                                        "question": "بعد أن أرشدت النزيل إلى النادي الرياضي اتجه نحو المطعم. أي علامة هذه؟",
+                                        "options": [
+                                            "علامة في الوجه",
+                                            "علامة في الأسئلة",
+                                            "ليست علامة",
+                                            "علامة في التصرف: الذهاب إلى مكان غير صحيح"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "الذهاب إلى مكان غير صحيح مذكور تحت التصرف."
+                                    },
+                                    {
+                                        "question": "تلتفت نزيلة باستمرار إلى صديقتها أثناء حديثك. ماذا تفعل؟",
+                                        "options": [
+                                            "تتوقف وتوضح بطريقة أخرى، كالإشارة أو الكتابة",
+                                            "تتحدث مع الصديقة فقط من الآن",
+                                            "تكمل لأن الصديقة ستشرح لها",
+                                            "تسرع في الكلام لتنتهي أسرع"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "النظر إلى مرافق لطلب المساعدة علامة في الوجه، والمادة تقول: توقف ووضح بطريقة أخرى."
+                                    },
+                                    {
+                                        "question": "لست متأكدًا مما طلبه النزيل. ما الذي يجب تجنبه؟",
+                                        "options": [
+                                            "أن تطلب منه الإشارة",
+                                            "أن تستخدم أداة الترجمة المعتمدة",
+                                            "أن تتظاهر بأنك فهمت",
+                                            "أن تكتب رقمًا للتحقق"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: لا تتظاهر بالفهم."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "التواصل بوضوح",
+                    "lessons": [
+                        {
+                            "title": "خمس خطوات لتواصل أوضح وعبارات تساعد على الفهم",
+                            "minutes": 6,
+                            "body": "<h2>بسّط كلامك</h2><p>الخطوة الأولى في المادة: <strong>بسّط كلامك — استخدم جملة قصيرة وفكرة واحدة</strong>. وحول هذا المبدأ تعطي المادة خمس خطوات لتواصل أوضح تصلح مع أي نزيل وفي أي قسم.</p><ol><li><strong>تحدث ببطء دون مبالغة:</strong> أبطئ بما يكفي للوضوح، لا إلى حد يبدو غير طبيعي أو متعاليًا.</li><li><strong>استخدم كلمات سهلة:</strong> اختر الكلمات الشائعة بدل المصطلحات أو العبارات الرسمية: \"الغرفة\" بدل \"وحدة الإقامة\"، و\"ادفع\" بدل \"سدّد الحساب\".</li><li><strong>أشر إلى المكان أو الصورة:</strong> وجّه انتباه النزيل إلى ما تقصده، كاللوحة أو الخريطة أو صورة الطبق.</li><li><strong>استخدم وسيلة ترجمة معتمدة:</strong> فأداة الفندق المعتمدة موثوقة وتحمي بيانات النزيل.</li><li><strong>اطلب من النزيل تأكيد ما فهمه:</strong> ادعه إلى التكرار أو الإشارة أو أن يريك.</li></ol><blockquote class=\"bk-quote\">غيّر طريقة الشرح إذا لم تصل الرسالة.</blockquote><p>إذا لم تنجح طريقة ما فلا تكررها، بل انتقل: من الكلام إلى الإشارة، ومن الإشارة إلى الكتابة، ومن الكتابة إلى أداة الترجمة.</p><h2>عبارات تساعد على الفهم</h2><p>تعطي المادة أربع عبارات قصيرة، وكل منها بسيطة بما يكفي لتُفهم حتى مع مهارات لغوية محدودة:</p><table class=\"bk-say\"><thead><tr><th>الغرض</th><th>العبارة</th><th>مثال</th></tr></thead><tbody><tr><td>الإبطاء</td><td>\"سأتحدث ببطء\"</td><td>\"سأكرر ببطء\"</td></tr><tr><td>الإشارة</td><td>\"هل يمكنك الإشارة؟\"</td><td>\"هل يمكنك الإشارة إلى ما تريد؟\"</td></tr><tr><td>التأكيد</td><td>\"هل تقصد هذا؟\"</td><td>\"هل تقصد هذا المكان؟\"</td></tr><tr><td>التحقق</td><td>\"هل هذا واضح؟\"</td><td>\"هل هذا واضح الآن؟\"</td></tr></tbody></table><p>استخدم عبارة واحدة ثم انتظر. والمادة محددة: <strong>امنح النزيل وقتًا للقراءة أو الإجابة</strong>. فالنزيل الذي يقرأ ترجمة على الشاشة أو يبحث عن كلمات الرد يحتاج إلى ثوانٍ من الصمت، فلا تملأها.</p><aside class=\"bk-scene\"><strong>موقف:</strong> أشار نزيل في المطعم إلى قائمة الطعام وقال كلمة لم يعرفها النادل. فقال النادل: \"هل يمكنك الإشارة إلى ما تريد؟\" فأشار النزيل إلى صورة سمك مشوي. أشار النادل إليها أيضًا: \"هل تقصد هذا؟\" فأومأ النزيل، ثم أشار إلى كلمة \"حار\" وهز رأسه. كتب النادل \"بدون حار\" على الطلب وأراه إياه: \"هل هذا واضح الآن؟\" فابتسم النزيل ورفع إبهامه.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> التزم بالكلمات البسيطة نفسها كلما كررت؛ فتغيير \"المصعد\" إلى \"الأسانسير\" ثم \"الطابق العلوي\" قد يربك نزيلًا تعلّم الكلمة الأولى للتو.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> جملة قصيرة، وفكرة واحدة، وإشارة، وترجمة معتمدة، واطلب دائمًا من النزيل تأكيد ما فهمه، ثم امنحه وقتًا للرد.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الخطوات والعبارات",
+                                "questions": [
+                                    {
+                                        "question": "لم يفهم نزيل شرحك لرسوم الميني بار. ماذا تفعل؟",
+                                        "options": [
+                                            "تكرر الشرح نفسه تمامًا",
+                                            "تخبره أن الأمر غير مهم",
+                                            "تترك ورقة في الغرفة",
+                                            "تغيّر طريقة الشرح، كأن تشير أو تكتب السعر"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: غيّر طريقة الشرح إذا لم تصل الرسالة."
+                                    },
+                                    {
+                                        "question": "أي عبارة تساعدك على التأكد مما يقصده النزيل بشأن مكان ما؟",
+                                        "options": [
+                                            "\"هل تقصد هذا المكان؟\"",
+                                            "\"لماذا لا تتحدث الإنجليزية؟\"",
+                                            "\"تحدث أسرع من فضلك\"",
+                                            "\"هذا غير ممكن\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "عبارة التأكيد \"هل تقصد هذا؟\" ومثالها \"هل تقصد هذا المكان؟\"."
+                                    },
+                                    {
+                                        "question": "أريت نزيلًا رسالة مترجمة على الأداة المعتمدة. ماذا تفعل بعد ذلك؟",
+                                        "options": [
+                                            "تبدأ الشرح التالي فورًا",
+                                            "تمنحه وقتًا للقراءة أو الإجابة",
+                                            "تسحب الجهاز بسرعة",
+                                            "تقرأها بصوت أعلى"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: امنح النزيل وقتًا للقراءة أو الإجابة."
+                                    },
+                                    {
+                                        "question": "كيف تتحدث مع نزيل مهاراته اللغوية محدودة؟",
+                                        "options": [
+                                            "ببطء شديد ومبالغة كأنك تحدث طفلًا",
+                                            "بسرعة عادية وكلمات رسمية",
+                                            "ببطء دون مبالغة وبكلمات سهلة",
+                                            "بالإشارة فقط دون أي كلمة"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "من الخطوات: تحدث ببطء دون مبالغة، واستخدم كلمات سهلة."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "الوسائل المناسبة والاحترام",
+                    "lessons": [
+                        {
+                            "title": "افعل وتجنب، والوسيلة المناسبة، ومتى تطلب الدعم",
+                            "minutes": 7,
+                            "body": "<h2>تواصل باحترام ووضوح</h2><p>تذكر المادة خمسة أمور تفعلها وخمسة تتجنبها عند وجود حاجز لغوي.</p><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنب</th></tr></thead><tbody><tr><td>استخدم كلمات وجملًا قصيرة</td><td>أن ترفع صوتك أو تُظهر الضيق</td></tr><tr><td>استخدم خريطة أو صورة عند الحاجة</td><td>أن تستخدم كلمات عامية أو معقدة</td></tr><tr><td>اكتب الوقت أو الرقم بوضوح</td><td>أن تتحدث بسرعة أو تشرح أشياء كثيرة</td></tr><tr><td>استخدم وسيلة الترجمة المعتمدة</td><td>أن تستخدم هاتفك الشخصي لبيانات خاصة</td></tr><tr><td>أكد الفهم قبل المتابعة</td><td>أن تقول إنك فهمت وأنت غير متأكد</td></tr></tbody></table><blockquote class=\"bk-quote\">احترم النزيل ولا تجعله يشعر بالحرج.</blockquote><h2>استخدم الوسيلة المناسبة</h2><p>تحتاج الرسائل المختلفة إلى وسائل مختلفة، وتذكر المادة أربعًا:</p><ol><li><strong>صورة أو خريطة:</strong> أشر إلى الموقع أو الخدمة.</li><li><strong>كلمات مكتوبة:</strong> اكتب الوقت أو السعر أو الرقم؛ فالأرقام مفهومة في لغات كثيرة.</li><li><strong>ترجمة معتمدة:</strong> استخدم أداة الفندق المعتمدة.</li><li><strong>زميل مناسب:</strong> اطلب زميلًا يتحدث اللغة عند توفره.</li></ol><p>وهناك قاعدة حازمة: <strong>لا تستخدم طفلًا أو شخصًا غير مخول لترجمة معلومات حساسة</strong>. فلا يُطلب من طفل مرافق للعائلة أو من شخص غريب في البهو ترجمة أمور طبية أو مالية أو خاصة.</p><h2>متى تحتاج إلى مترجم أو مشرف؟</h2><p>بعض المواقف أهم من أن نخاطر فيها بسوء الفهم. <strong>اطلب الدعم عند:</strong></p><ul><li>حالة طبية أو خطر على السلامة.</li><li>دفع أو توقيع أو موافقة مهمة.</li><li>شكوى معقدة أو نزيل غاضب.</li><li>معلومة خاصة أو حساسة.</li><li>استمرار عدم الفهم بعد عدة محاولات.</li></ul><p><strong>ابدأ بهذه الخطوات:</strong></p><ol><li>أوقف الإجراء المهم مؤقتًا.</li><li>اطلب مترجمًا أو زميلًا مناسبًا.</li><li>احمِ خصوصية النزيل.</li><li>تأكد من الرسالة قبل التنفيذ.</li><li>سجل الطلب وتابع حتى الحل.</li></ol><aside class=\"bk-scene\"><strong>موقف:</strong> عند المغادرة اعترض نزيل على رسم في الفاتورة، وكان يتحدث بسرعة بلغة لا تعرفها موظفة الصندوق، فعرض ابنه الصغير أن يترجم. شكرت الموظفة الطفل بلطف، لكنها لم تطلب منه شرح أمر مالي. أوقفت عملية الدفع، واتصلت بمشرفها وبزميل يتحدث لغة النزيل، ونقلت الحديث إلى ركن أهدأ من المكتب. وبعد أن أكد الزميل ما يقصده النزيل، رُوجع الرسم وسُجلت النتيجة وغادر النزيل راضيًا.</aside><blockquote class=\"bk-quote\">الفهم الواضح أهم من إنهاء الحديث بسرعة.</blockquote><h2>كلمة أخيرة</h2><p>تختم المادة ببساطة: تواصل ببساطة وتأكد أن الرسالة وصلت. اهدأ، بسّط، أشر، ترجم، تأكد. فالصبر والوضوح يصنعان خدمة أفضل.</p><aside class=\"bk-key\"><strong>الخلاصة:</strong> استخدم الكلمات القصيرة والصور والأرقام المكتوبة والوسائل المعتمدة، ولا تستخدم طفلًا لترجمة أمور حساسة، وأوقف الإجراء واطلب مترجمًا أو مشرفًا عندما يكون الأمر مهمًا.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الوسائل والاحترام",
+                                "questions": [
+                                    {
+                                        "question": "يحتاج نزيل إلى معرفة سعر التوصيل إلى المطار. ما الطريقة الواضحة لإخباره؟",
+                                        "options": [
+                                            "تقوله مرة واحدة بسرعة",
+                                            "تكتب السعر بوضوح وتريه إياه",
+                                            "تستخدم كلمات عامية لتبدو ودودًا",
+                                            "ترسله إلى هاتفك الشخصي أولًا"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: اكتب الوقت أو الرقم بوضوح، واستخدم الكلمات المكتوبة للوقت أو السعر أو الرقم."
+                                    },
+                                    {
+                                        "question": "عرض طفل النزيل أن يترجم سؤالًا عن حالة والده الصحية. ماذا تفعل؟",
+                                        "options": [
+                                            "تقبل لأنه أسرع",
+                                            "تطلب من نزيل مار بدلًا منه",
+                                            "تكمل بالإشارة فقط",
+                                            "تشكر الطفل وتطلب مترجمًا أو زميلًا مناسبًا"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: لا تستخدم طفلًا أو شخصًا غير مخول لترجمة معلومات حساسة."
+                                    },
+                                    {
+                                        "question": "يجب أن يوقّع نزيل على موافقة مهمة، ومن الواضح أنه لا يفهمها. ما الخطوة الأولى؟",
+                                        "options": [
+                                            "توقف الإجراء المهم مؤقتًا",
+                                            "تطلب منه التوقيع وتشرح لاحقًا",
+                                            "توقّع نيابة عنه",
+                                            "تخبره أنه مجرد إجراء شكلي"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "التوقيع أو الموافقة المهمة يحتاجان إلى دعم، والخطوة الأولى: أوقف الإجراء المهم مؤقتًا."
+                                    },
+                                    {
+                                        "question": "لست متأكدًا أنك فهمت النزيل، والطابور يطول. ماذا تقول المادة؟",
+                                        "options": [
+                                            "قل إنك فهمت ليتحرك الطابور",
+                                            "اطلب منه العودة غدًا",
+                                            "الفهم الواضح أهم من إنهاء الحديث بسرعة",
+                                            "خمّن الطلب الأرجح"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: الفهم الواضح أهم من إنهاء الحديث بسرعة، وتجنب أن تقول إنك فهمت وأنت غير متأكد."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -322,7 +322,7 @@ class Hkp_cms extends Hkp_Controller {
                 }
                 $this->db->where('id', (int) $id)->update('ha_course', $row);
             } else {
-                $code = trim(preg_replace('/[^a-z0-9\-]+/', '-', strtolower((string) ($d['code'] ?: $title_en))), '-');
+                $code = trim(preg_replace('/[^a-z0-9\-]+/', '-', strtolower((string) (!empty($d['code']) ? $d['code'] : $title_en))), '-');
                 if ($this->db->where('code', $code)->count_all_results('ha_course')) {
                     $code .= '-' . substr(bin2hex(random_bytes(2)), 0, 4);
                 }

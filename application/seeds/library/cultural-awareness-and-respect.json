@@ -1,0 +1,545 @@
+{
+    "slug": "cultural-awareness-and-respect",
+    "category": "guest-handling",
+    "level": "foundation",
+    "source_pdf": "Cultural-Awareness-and-Respect-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/cultural-awareness-and-respect.webp",
+    "videos": [
+        {
+            "id": "D9Ihs241zeg",
+            "title": "Chimamanda Ngozi Adichie: The Danger of a Single Story | TED",
+            "channel": "TED",
+            "why": "The novelist shows how assumptions based on a single story about a people lead to misunderstanding, which supports the deck's rule: do not assume what the guest prefers, ask respectfully."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Cultural Awareness and Respect",
+            "subtitle": "Different customs, equal respect",
+            "short_description": "Learn to serve guests from every background with equal respect: notice differences, ask instead of assuming, listen, adapt the service and recover calmly from misunderstandings.",
+            "description": "<p>Guests arrive with different greetings, languages, customs and expectations. What they all share is the right to be treated with respect. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows hotel colleagues how to serve every guest fairly without guessing or stereotyping.</p><p>You will learn why respect makes every guest feel welcome, the three common areas of difference, five respectful service steps and four respectful phrases. You will also learn what to do and avoid in every interaction, how to handle a misunderstanding, and when to ask your supervisor for support.</p>",
+            "requirements": "No prior training is needed; the course suits every guest-facing colleague.",
+            "outcomes": [
+                "Explain why difference does not mean one person is better than another",
+                "Notice common differences in communication, customs and personal space",
+                "Apply five respectful service steps: notice, ask, listen, adapt and check",
+                "Use respectful phrases and avoid assumptions, mockery and unequal treatment",
+                "Recover from a misunderstanding and know when to ask your supervisor for support"
+            ],
+            "faqs": [
+                {
+                    "question": "Do I need to know the customs of every culture?",
+                    "answer": "No. The deck says the goal is to understand the guest, not to memorise every culture in the world. Notice politely, then ask instead of assuming."
+                },
+                {
+                    "question": "Should I offer to shake hands with every guest?",
+                    "answer": "Not automatically. Handshaking or not is one of the common differences. Ask, or follow the guest's lead, before shaking hands or giving physical help."
+                },
+                {
+                    "question": "What should I do if a guest feels offended?",
+                    "answer": "Stay calm and respectful, apologise for the misunderstanding, ask what they prefer and correct the service. If the guest feels insulted or discriminated against, ask your supervisor for support."
+                }
+            ],
+            "meta_title": "Cultural Awareness and Respect for Hotel Staff",
+            "meta_description": "Hotel staff training on cultural awareness: common differences, five respectful service steps, respectful phrases, do and avoid, and handling misunderstandings.",
+            "focus_keyword": "cultural awareness in hotels",
+            "chapters": [
+                {
+                    "title": "Respect for Every Guest",
+                    "lessons": [
+                        {
+                            "title": "Respect Makes Every Guest Feel Welcome",
+                            "minutes": 5,
+                            "body": "<h2>Respect for every guest</h2><p>In a single morning, a hotel colleague may welcome a family from the region, a business traveller from Asia, a group of European tourists and a couple on their honeymoon. Each will greet you differently, eat differently and expect different things. The deck's message is that one thing stays the same: <strong>respect makes every guest feel welcome</strong>.</p><h2>Five things to understand</h2><ul><li><strong>Greetings may differ from person to person.</strong> Some guests prefer a handshake, some a nod, some a hand on the heart.</li><li><strong>Language, customs and food may differ.</strong> What is normal at breakfast for one guest may be unusual for another.</li><li><strong>Distance and communication style may differ.</strong> Some people stand close and speak warmly; others prefer more space and a quieter tone.</li><li><strong>Difference does not mean one person is better than another.</strong> No culture is the standard against which others are measured.</li><li><strong>Fair service respects each guest's needs.</strong> Fair does not mean identical; it means each guest receives the same level of care in the way that suits them.</li></ul><blockquote class=\"bk-quote\">Do not assume what the guest prefers. Ask respectfully.</blockquote><h2>Why assumptions are risky</h2><p>Assumptions feel efficient. We see a guest's appearance, name or passport and think we already know what they eat, how they want to be greeted or which language they speak. Sometimes we are right. Often we are not, and a wrong assumption can make a guest feel judged, excluded or simply not seen as an individual.</p><p>Asking is not a sign that you do not know your job. A short, polite question shows that you care about this particular guest.</p><h2>The approach in one line</h2><p>The deck summarises the approach in five words: <strong>Notice, Ask, Listen, Respect, Adapt</strong>. Notice politely, ask instead of assuming, listen without judging, respect the guest's choices and adapt your service to their needs. The rest of this course builds on this sequence.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest in a headscarf arrives at the spa with her husband. The therapist is about to explain the couples' treatment room, assuming they want to be together. Instead, she asks, \"Would you prefer a shared room or separate rooms, and do you have a preference for a female therapist?\" The guest smiles and chooses separate rooms with a female therapist. Another couple from the same country, an hour later, chooses the shared room. By asking, she served both correctly.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Let the guest lead the greeting. If they offer a hand, respond; if they place a hand on their heart or nod, do the same.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Differences in greeting, language, customs, food and space are normal. Respect every guest equally and ask instead of assuming.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Respect for every guest",
+                                "questions": [
+                                    {
+                                        "question": "A guest's name suggests a certain nationality. You are about to recommend a restaurant. What should you do?",
+                                        "options": [
+                                            "Recommend food from that country",
+                                            "Ask the guest respectfully what they would prefer",
+                                            "Recommend the most expensive option",
+                                            "Avoid recommending anything"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says do not assume what the guest prefers; ask respectfully."
+                                    },
+                                    {
+                                        "question": "What does the deck say about differences between guests?",
+                                        "options": [
+                                            "Some customs are more correct than others",
+                                            "Guests should adapt to the hotel's culture",
+                                            "Difference does not mean one person is better than another",
+                                            "Staff should treat all guests in exactly the same way"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The slide states that difference does not mean one person is better than another."
+                                    },
+                                    {
+                                        "question": "What does fair service mean according to the deck?",
+                                        "options": [
+                                            "Service that respects each guest's needs",
+                                            "Service that is identical for every guest",
+                                            "Service that follows the staff member's own customs",
+                                            "Service only for guests who ask"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck says fair service respects each guest's needs."
+                                    },
+                                    {
+                                        "question": "A guest stands further away from the desk than most people. How should you read this?",
+                                        "options": [
+                                            "The guest is unfriendly",
+                                            "The guest is not interested",
+                                            "You should step closer to them",
+                                            "Distance and communication style can differ; respect it"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck notes that distance and communication style may differ."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Three Common Differences",
+                            "minutes": 5,
+                            "body": "<h2>Where differences usually appear</h2><p>You do not need to study every culture in the world. The deck points to <strong>three areas where differences commonly appear</strong>: communication, customs and personal space. If you pay attention to these three, you will notice most of what matters.</p><h3>1. Communication</h3><ul><li><strong>Language and tone of voice.</strong> Some guests speak loudly and expressively; this is not necessarily anger. Others speak softly; this is not necessarily coldness.</li><li><strong>How a name is pronounced.</strong> A name is personal. Getting it right, or asking how to say it, shows respect.</li><li><strong>Direct or quiet communication.</strong> Some guests say exactly what they want; others hint politely and expect you to read between the lines.</li></ul><h3>2. Customs</h3><ul><li><strong>Greeting, food and clothing.</strong> Guests may have dietary requirements, dress codes or greeting habits linked to their background or beliefs.</li><li><strong>Prayer times or occasions.</strong> Some guests may need a quiet place or schedule their plans around prayer, fasting or special occasions.</li><li><strong>Family or group preferences.</strong> Some families prefer to be seated together, or have a family member who speaks on behalf of the group.</li></ul><h3>3. Personal space</h3><ul><li><strong>Distance during conversation.</strong> The comfortable distance between two people varies.</li><li><strong>Handshaking or not.</strong> Some guests shake hands with everyone; some do not shake hands with the opposite gender; some prefer no physical contact.</li><li><strong>Privacy and eye contact.</strong> Direct eye contact is polite in some cultures and can feel intrusive in others.</li></ul><table class=\"bk-say\"><thead><tr><th>Area</th><th>What to notice</th></tr></thead><tbody><tr><td>Communication</td><td>Language and tone, name pronunciation, direct or quiet style</td></tr><tr><td>Customs</td><td>Greeting, food and clothing, prayer times or occasions, family or group preferences</td></tr><tr><td>Personal space</td><td>Distance, handshaking or not, privacy and eye contact</td></tr></tbody></table><blockquote class=\"bk-quote\">Observe respectfully, then ask instead of assuming.</blockquote><h2>Observe, but do not conclude</h2><p>Noticing these differences is the first step. But observation is not a conclusion. A guest who avoids eye contact may be following a custom, may be shy or may simply be tired. Use what you notice to decide what to ask, not to decide what the guest is like.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A family group of eight arrives at the restaurant during Ramadan, shortly before sunset. The host notices the time and that the father is speaking for the group. She greets him, asks, \"Would you like a table together for the whole family, and shall we have dates and water ready at sunset?\" The father thanks her warmly. She noticed the occasion and the family preference, then asked instead of assuming.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Note preferences a guest shares, such as name pronunciation or dietary needs, in the guest profile according to hotel procedure, so colleagues do not have to ask again.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Watch communication, customs and personal space, and use what you notice to ask the right question, not to assume.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Three common differences",
+                                "questions": [
+                                    {
+                                        "question": "A guest does not offer a hand when you greet him. What is the best response?",
+                                        "options": [
+                                            "Insist on shaking hands to be polite",
+                                            "Assume he is upset with you",
+                                            "Respect it; handshaking or not is a common difference",
+                                            "Ask a colleague to greet him instead"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Handshaking or not is listed under personal space."
+                                    },
+                                    {
+                                        "question": "Under which area does the deck place prayer times and occasions?",
+                                        "options": [
+                                            "Customs",
+                                            "Communication",
+                                            "Personal space",
+                                            "It does not mention them"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Prayer times or occasions are listed under customs."
+                                    },
+                                    {
+                                        "question": "A guest speaks loudly and expressively at the desk. What should you keep in mind?",
+                                        "options": [
+                                            "They are angry and security should be called",
+                                            "Tone of voice differs; it is not necessarily anger",
+                                            "You should speak loudly too",
+                                            "They are being disrespectful"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Language and tone of voice are a common communication difference."
+                                    },
+                                    {
+                                        "question": "You notice a guest avoids eye contact. What does the deck recommend?",
+                                        "options": [
+                                            "Conclude they are hiding something",
+                                            "Look at them more directly",
+                                            "Report it to the manager",
+                                            "Observe respectfully, then ask instead of assuming"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says observe respectfully, then ask instead of assuming."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Respectful Service Steps",
+                    "lessons": [
+                        {
+                            "title": "Five Steps and Respectful Phrases",
+                            "minutes": 6,
+                            "body": "<h2>Ask first</h2><p>The deck's first step is to <strong>ask first: let the guest explain what they prefer</strong>. Around that principle, it gives five steps for service that respects difference.</p><ol><li><strong>Notice the guest's style calmly.</strong> Pay attention to how they greet you, how they speak and what they seem comfortable with.</li><li><strong>Ask a simple, respectful question.</strong> Keep it short and open: \"How would you prefer...?\"</li><li><strong>Listen without interrupting or judging.</strong> Let the guest finish, and do not react with surprise or disapproval.</li><li><strong>Adapt the service to the need.</strong> Change the table, the timing, the greeting or the menu if you can.</li><li><strong>Make sure the service is suitable.</strong> Check afterwards that what you provided works for the guest.</li></ol><blockquote class=\"bk-quote\">The goal is to understand the guest, not to memorise every culture in the world.</blockquote><p>This is freeing. You will never know every custom, and you do not need to. What you need is the habit of noticing, asking and listening. The guest is the expert on what they prefer.</p><h2>Respectful phrases</h2><p>The deck gives four phrases that show respect. Each is short and can be used with any guest:</p><table class=\"bk-say\"><thead><tr><th>Purpose</th><th>Phrase</th><th>Example</th></tr></thead><tbody><tr><td>Preference</td><td>\"How do you prefer?\"</td><td>\"How do you prefer that I address you?\"</td></tr><tr><td>Confirm</td><td>\"Is this suitable?\"</td><td>\"Is this way suitable for you?\"</td></tr><tr><td>Name</td><td>\"How do I pronounce your name?\"</td><td>\"How do I pronounce your name correctly?\"</td></tr><tr><td>Need</td><td>\"Do you have a need?\"</td><td>\"How can we help you?\"</td></tr></tbody></table><blockquote class=\"bk-quote\">A polite question is better than a guess.</blockquote><h2>How to ask well</h2><p>A respectful question is asked in a neutral tone, without surprise, and offers choices rather than suggesting that something is unusual. Compare \"You don't eat pork, right?\" with \"Do you have any dietary preferences we should know about?\" The first assumes; the second invites. Ask once, listen to the answer, and act on it without further comment.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest checks in with a long name the receptionist has never seen. Rather than guess or shorten it, he asks, \"How do I pronounce your name correctly?\" The guest says it slowly and adds, \"But everyone calls me Tomi.\" The receptionist repeats it, notes it in the profile, and asks, \"How would you prefer that I address you?\" For the rest of the stay, staff greet him as he chose.</aside><aside class=\"bk-note\"><strong>Tip:</strong> After adapting a service, close the loop: \"Is this way suitable for you?\" It takes three seconds and confirms you got it right.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Notice, ask, listen without judging, adapt and check. A polite question is always better than a guess.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Steps and phrases",
+                                "questions": [
+                                    {
+                                        "question": "You are not sure how to address a guest. Which phrase fits best?",
+                                        "options": [
+                                            "\"I'll just call you sir\"",
+                                            "\"Where are you from?\"",
+                                            "\"That's an unusual name\"",
+                                            "\"How do you prefer that I address you?\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The preference phrase is \"How do you prefer that I address you?\""
+                                    },
+                                    {
+                                        "question": "A guest explains a dietary custom you have never heard of. What should you do while they speak?",
+                                        "options": [
+                                            "Listen without interrupting or judging",
+                                            "Tell them the kitchen may find it difficult",
+                                            "Show surprise so they know it is unusual",
+                                            "Suggest they eat elsewhere"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Step three is to listen without interrupting or judging."
+                                    },
+                                    {
+                                        "question": "What is the goal of respectful service according to the deck?",
+                                        "options": [
+                                            "To memorise the customs of every culture",
+                                            "To treat everyone in exactly the same way",
+                                            "To understand the guest",
+                                            "To avoid talking about preferences"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The goal is to understand the guest, not to memorise every culture."
+                                    },
+                                    {
+                                        "question": "You have moved a family to a more private table as they requested. What is the final step?",
+                                        "options": [
+                                            "Nothing more is needed",
+                                            "Make sure the service is suitable for them",
+                                            "Tell other guests why they moved",
+                                            "Ask them where they are from"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The fifth step is to make sure the service is suitable."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Respect in Every Interaction",
+                    "lessons": [
+                        {
+                            "title": "Do and Avoid, Misunderstandings and Supervisor Support",
+                            "minutes": 7,
+                            "body": "<h2>Respect difference in every interaction</h2><p>The deck lists five things to do and five to avoid.</p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Use simple, respectful words</td><td>Imitating the guest's accent or making fun of it</td></tr><tr><td>Pronounce the name as the guest prefers</td><td>Assuming religion, nationality or customs</td></tr><tr><td>Ask before shaking hands or giving help</td><td>Using a title the guest does not prefer</td></tr><tr><td>Respect food, clothing and customs</td><td>Judging the guest by their appearance</td></tr><tr><td>Give the same level of service to everyone</td><td>Treating one guest better than another</td></tr></tbody></table><p>Some of these mistakes happen behind the guest's back: joking about an accent in the back office, or giving faster service to guests who seem more important. Respect applies whether or not the guest can see or hear you.</p><blockquote class=\"bk-quote\">Difference does not change a guest's right to respect and service.</blockquote><h2>When a misunderstanding happens</h2><p>Even with the best intentions, you may offend a guest without meaning to. The deck gives four steps:</p><ol><li><strong>Pause calmly.</strong> Do not enter into an argument or become defensive.</li><li><strong>Apologise.</strong> Say: \"I apologise for the misunderstanding.\"</li><li><strong>Ask and clarify.</strong> Ask the guest what they prefer.</li><li><strong>Correct and follow up.</strong> Correct the service and make sure the guest is satisfied.</li></ol><blockquote class=\"bk-quote\">A sincere apology and a calm clarification restore trust.</blockquote><h2>When to ask for your supervisor's support</h2><p><strong>Ask for support when:</strong></p><ul><li>A language barrier is affecting safety.</li><li>There is a religious or cultural request outside your authority.</li><li>The guest feels insulted or discriminated against.</li><li>There is a disagreement between guests because of their differences.</li><li>You do not know the right way to respond.</li></ul><p><strong>Start with these steps:</strong></p><ol><li>Keep your calm and your respect.</li><li>Explain the situation without passing judgement.</li><li>Ask for a translator or suitable help.</li><li>Follow hotel policy.</li><li>Follow up with the guest after the solution.</li></ol><aside class=\"bk-scene\"><strong>Scene:</strong> A waiter greets a female guest with an outstretched hand; she steps back, visibly uncomfortable. He lowers his hand, pauses, and says calmly, \"I apologise for the misunderstanding. How would you prefer to be served today?\" She relaxes and asks for a quieter table. Later, a guest at a nearby table makes a loud remark about her clothing. The waiter does not argue; he informs his supervisor, explains what happened without judgement, and the supervisor handles it according to hotel policy and checks on the guest afterwards.</aside><blockquote class=\"bk-quote\">Asking for support protects respect and prevents misunderstanding.</blockquote><h2>Closing thought</h2><p>The deck ends with a simple message: respect every guest and ask them what they prefer. Notice, ask, listen, respect, adapt. Different customs, equal respect.</p><aside class=\"bk-key\"><strong>Key takeaway:</strong> Never mock, assume or judge by appearance; give everyone the same level of service; apologise sincerely when a misunderstanding happens and ask your supervisor for support when needed.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Respect in every interaction",
+                                "questions": [
+                                    {
+                                        "question": "A colleague imitates a guest's accent in the back office to make others laugh. How does the deck see this?",
+                                        "options": [
+                                            "Harmless, since the guest cannot hear",
+                                            "Acceptable if it is friendly",
+                                            "Something to avoid: imitating or making fun of the guest's accent",
+                                            "Good for team spirit"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck lists imitating the guest's accent or making fun of it under avoid."
+                                    },
+                                    {
+                                        "question": "You accidentally offended a guest with a gesture. What is the first step?",
+                                        "options": [
+                                            "Pause calmly and do not argue or become defensive",
+                                            "Explain that the gesture is normal in your culture",
+                                            "Ignore it and continue",
+                                            "Ask a colleague to take over without saying anything"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The first step is to pause calmly and not enter into argument or defence."
+                                    },
+                                    {
+                                        "question": "A guest says they feel they are being treated unfairly because of their nationality. What should you do?",
+                                        "options": [
+                                            "Tell them they are imagining it",
+                                            "Argue that everyone is treated the same",
+                                            "Offer a discount to end the conversation",
+                                            "Stay calm and respectful and ask your supervisor for support"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "When a guest feels insulted or discriminated against, the deck says ask for your supervisor's support."
+                                    },
+                                    {
+                                        "question": "Two guest groups disagree loudly because of cultural differences. After informing your supervisor, how should you describe the situation?",
+                                        "options": [
+                                            "Say which group is in the wrong",
+                                            "Explain the situation without passing judgement",
+                                            "Describe the guests by their nationality only",
+                                            "Keep it to yourself"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The steps include explaining the situation without passing judgement."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "الوعي الثقافي واحترام الاختلافات",
+            "subtitle": "عادات مختلفة واحترام واحد",
+            "short_description": "تعلّم خدمة النزلاء من كل الخلفيات باحترام متساوٍ: لاحظ الاختلاف، واسأل بدل أن تفترض، واستمع، وكيّف الخدمة، وتعامل بهدوء مع سوء الفهم.",
+            "description": "<p>يصل النزلاء بتحيات ولغات وعادات وتوقعات مختلفة، لكنهم يشتركون جميعًا في حقهم في الاحترام. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتعلّم الموظفين كيف يخدمون كل نزيل بعدل دون تخمين أو أحكام مسبقة.</p><p>ستتعرف على سبب أن الاحترام يجعل كل نزيل يشعر بالترحيب، وعلى ثلاثة اختلافات شائعة، وخمس خطوات لخدمة تحترم الاختلاف، وأربع عبارات تُظهر الاحترام. كما ستتعلم ما تفعله وما تتجنبه في كل تعامل، وكيف تتصرف إذا حدث سوء فهم، ومتى تطلب دعم المشرف.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظف يتعامل مع النزلاء.",
+            "outcomes": [
+                "اشرح لماذا لا يعني الاختلاف أن أحدًا أفضل من الآخر",
+                "لاحظ الاختلافات الشائعة في التواصل والعادات والمساحة الشخصية",
+                "طبّق خمس خطوات لخدمة تحترم الاختلاف: لاحظ، اسأل، استمع، كيّف، تأكد",
+                "استخدم عبارات تُظهر الاحترام وتجنب الافتراض والسخرية والتمييز في المعاملة",
+                "تعامل مع سوء الفهم واعرف متى تطلب دعم المشرف"
+            ],
+            "faqs": [
+                {
+                    "question": "هل يجب أن أعرف عادات كل الثقافات؟",
+                    "answer": "لا. تقول المادة: الهدف فهم النزيل، وليس معرفة كل ثقافات العالم. راقب باحترام، ثم اسأل بدل أن تفترض."
+                },
+                {
+                    "question": "هل أصافح كل نزيل؟",
+                    "answer": "ليس تلقائيًا؛ فالمصافحة أو عدمها من الاختلافات الشائعة. اسأل أو اتبع مبادرة النزيل قبل المصافحة أو المساعدة."
+                },
+                {
+                    "question": "ماذا أفعل إذا شعر النزيل بالإساءة؟",
+                    "answer": "توقف بهدوء، واعتذر عن سوء الفهم، واسأل النزيل عمّا يفضله، وصحح الخدمة. وإذا شعر بالإهانة أو التمييز فاطلب دعم المشرف."
+                }
+            ],
+            "meta_title": "الوعي الثقافي واحترام الاختلافات للفنادق",
+            "meta_description": "تدريب فندقي على الوعي الثقافي: الاختلافات الشائعة، وخمس خطوات لخدمة تحترم الاختلاف، وعبارات الاحترام، وافعل وتجنب، والتعامل مع سوء الفهم.",
+            "focus_keyword": "الوعي الثقافي في الفنادق",
+            "chapters": [
+                {
+                    "title": "احترام لكل نزيل",
+                    "lessons": [
+                        {
+                            "title": "الاحترام يجعل كل نزيل يشعر بالترحيب",
+                            "minutes": 5,
+                            "body": "<h2>احترام لكل نزيل</h2><p>في صباح واحد قد يستقبل الموظف عائلة من المنطقة، ورجل أعمال من آسيا، ومجموعة سياح أوروبيين، وزوجين في شهر العسل. كل منهم سيحييك بطريقة مختلفة، ويأكل بطريقة مختلفة، ويتوقع أشياء مختلفة. ورسالة المادة أن أمرًا واحدًا يبقى ثابتًا: <strong>الاحترام يجعل كل نزيل يشعر بالترحيب</strong>.</p><h2>خمسة أمور يجب فهمها</h2><ul><li><strong>قد تختلف التحية من شخص إلى آخر،</strong> فبعض النزلاء يفضل المصافحة، وبعضهم الإيماءة، وبعضهم وضع اليد على الصدر.</li><li><strong>قد تختلف اللغة والعادات والطعام،</strong> فما هو معتاد في الفطور لنزيل قد يكون غريبًا لآخر.</li><li><strong>قد تختلف المسافة وطريقة التواصل،</strong> فبعض الناس يقترب ويتحدث بحرارة، وبعضهم يفضل مسافة أكبر ونبرة أهدأ.</li><li><strong>لا يعني الاختلاف أن أحدًا أفضل من الآخر،</strong> فلا توجد ثقافة هي المعيار الذي تُقاس به غيرها.</li><li><strong>الخدمة العادلة تحترم احتياج كل نزيل،</strong> والعدل لا يعني التطابق، بل أن ينال كل نزيل المستوى نفسه من الاهتمام بالطريقة التي تناسبه.</li></ul><blockquote class=\"bk-quote\">لا تفترض ما يفضله النزيل — اسأل باحترام.</blockquote><h2>لماذا الافتراض خطر؟</h2><p>يبدو الافتراض موفرًا للوقت؛ نرى مظهر النزيل أو اسمه أو جوازه فنظن أننا نعرف ما يأكله وكيف يريد أن يُحيّا وأي لغة يتحدث. قد نصيب أحيانًا، لكننا نخطئ كثيرًا، والافتراض الخاطئ قد يُشعر النزيل بأنه محكوم عليه أو مستبعد أو غير مرئي كفرد.</p><p>والسؤال ليس علامة على أنك لا تعرف عملك، بل سؤال قصير ومهذب يُظهر أنك تهتم بهذا النزيل بالذات.</p><h2>المنهج في سطر واحد</h2><p>تلخص المادة المنهج في خمس كلمات: <strong>لاحظ، اسأل، استمع، احترم، تكيّف</strong>. لاحظ بأدب، واسأل بدل أن تفترض، واستمع دون حكم، واحترم اختيارات النزيل، وكيّف خدمتك حسب احتياجه.</p><aside class=\"bk-scene\"><strong>موقف:</strong> وصلت نزيلة محجبة إلى السبا مع زوجها، وكانت المعالجة على وشك شرح غرفة العلاج المشتركة للأزواج ظنًا أنهما يريدان البقاء معًا. لكنها سألت بدلًا من ذلك: \"هل تفضلان غرفة مشتركة أم غرفتين منفصلتين؟ وهل تفضلين معالجة؟\" فابتسمت النزيلة واختارت غرفتين منفصلتين مع معالجة. وبعد ساعة اختار زوجان آخران من البلد نفسه الغرفة المشتركة. بالسؤال خدمت الاثنين بشكل صحيح.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> دع النزيل يبادر بالتحية؛ فإن مدّ يده فاستجب، وإن وضع يده على صدره أو أومأ فافعل مثله.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> الاختلاف في التحية واللغة والعادات والطعام والمسافة أمر طبيعي. احترم كل نزيل بالتساوي، واسأل بدل أن تفترض.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: احترام لكل نزيل",
+                                "questions": [
+                                    {
+                                        "question": "يوحي اسم نزيل بجنسية معينة، وأنت على وشك أن تقترح عليه مطعمًا. ماذا تفعل؟",
+                                        "options": [
+                                            "تقترح طعامًا من ذلك البلد",
+                                            "تسأله باحترام عمّا يفضله",
+                                            "تقترح الخيار الأغلى",
+                                            "تتجنب اقتراح أي شيء"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: لا تفترض ما يفضله النزيل، اسأل باحترام."
+                                    },
+                                    {
+                                        "question": "ماذا تقول المادة عن الاختلاف بين النزلاء؟",
+                                        "options": [
+                                            "بعض العادات أصح من غيرها",
+                                            "على النزلاء التكيف مع ثقافة الفندق",
+                                            "لا يعني الاختلاف أن أحدًا أفضل من الآخر",
+                                            "يجب معاملة جميع النزلاء بالطريقة نفسها تمامًا"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تنص الشريحة على أن الاختلاف لا يعني أن أحدًا أفضل من الآخر."
+                                    },
+                                    {
+                                        "question": "ما معنى الخدمة العادلة وفق المادة؟",
+                                        "options": [
+                                            "خدمة تحترم احتياج كل نزيل",
+                                            "خدمة متطابقة لكل نزيل",
+                                            "خدمة تتبع عادات الموظف نفسه",
+                                            "خدمة لمن يطلب فقط"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تقول المادة: الخدمة العادلة تحترم احتياج كل نزيل."
+                                    },
+                                    {
+                                        "question": "يقف نزيل على مسافة من المكتب أبعد من معظم الناس. كيف تفهم ذلك؟",
+                                        "options": [
+                                            "أنه غير ودود",
+                                            "أنه غير مهتم",
+                                            "أن عليك الاقتراب منه",
+                                            "أن المسافة وطريقة التواصل قد تختلف، فاحترم ذلك"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تذكر المادة أن المسافة وطريقة التواصل قد تختلف."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "انتبه إلى ثلاثة اختلافات شائعة",
+                            "minutes": 5,
+                            "body": "<h2>أين تظهر الاختلافات عادة؟</h2><p>لست بحاجة إلى دراسة كل ثقافات العالم. تشير المادة إلى <strong>ثلاثة مجالات تظهر فيها الاختلافات غالبًا</strong>: التواصل، والعادات، والمساحة الشخصية. وإذا انتبهت لهذه الثلاثة، لاحظت معظم ما يهم.</p><h3>١. التواصل</h3><ul><li><strong>اللغة ونبرة الصوت:</strong> بعض النزلاء يتحدثون بصوت عالٍ وتعبير واضح، وهذا ليس غضبًا بالضرورة، وبعضهم يتحدث بهدوء، وهذا ليس برودًا بالضرورة.</li><li><strong>طريقة نطق الاسم:</strong> الاسم شأن شخصي، ونطقه بشكل صحيح أو السؤال عن نطقه يُظهر الاحترام.</li><li><strong>التواصل المباشر أو الهادئ:</strong> بعض النزلاء يقول ما يريده بالضبط، وبعضهم يلمّح بأدب ويتوقع أن تفهم.</li></ul><h3>٢. العادات</h3><ul><li><strong>التحية والطعام والملابس:</strong> قد يكون لدى النزيل متطلبات غذائية أو لباس أو عادات تحية مرتبطة بخلفيته أو معتقده.</li><li><strong>أوقات الصلاة أو المناسبات:</strong> قد يحتاج بعض النزلاء إلى مكان هادئ، أو ينظمون خططهم حول الصلاة أو الصيام أو المناسبات.</li><li><strong>تفضيلات العائلة أو المجموعة:</strong> بعض العائلات تفضل الجلوس معًا، أو يتحدث أحد أفرادها نيابة عن المجموعة.</li></ul><h3>٣. المساحة الشخصية</h3><ul><li><strong>المسافة أثناء الحديث:</strong> المسافة المريحة بين شخصين تختلف.</li><li><strong>المصافحة أو عدمها:</strong> بعض النزلاء يصافح الجميع، وبعضهم لا يصافح الجنس الآخر، وبعضهم يفضل عدم التلامس.</li><li><strong>الخصوصية والتواصل البصري:</strong> النظر المباشر أدب في ثقافات، وقد يبدو تطفلًا في أخرى.</li></ul><table class=\"bk-say\"><thead><tr><th>المجال</th><th>ما تلاحظه</th></tr></thead><tbody><tr><td>التواصل</td><td>اللغة ونبرة الصوت، طريقة نطق الاسم، التواصل المباشر أو الهادئ</td></tr><tr><td>العادات</td><td>التحية والطعام والملابس، أوقات الصلاة أو المناسبات، تفضيلات العائلة أو المجموعة</td></tr><tr><td>المساحة الشخصية</td><td>المسافة أثناء الحديث، المصافحة أو عدمها، الخصوصية والتواصل البصري</td></tr></tbody></table><blockquote class=\"bk-quote\">راقب باحترام، ثم اسأل بدل أن تفترض.</blockquote><h2>راقب ولا تستنتج</h2><p>ملاحظة هذه الاختلافات هي الخطوة الأولى، لكن الملاحظة ليست استنتاجًا. فالنزيل الذي يتجنب النظر المباشر قد يتبع عادة، أو يكون خجولًا، أو متعبًا فقط. استخدم ما تلاحظه لتقرر ماذا تسأل، لا لتحكم على النزيل.</p><aside class=\"bk-scene\"><strong>موقف:</strong> وصلت عائلة من ثمانية أفراد إلى المطعم في رمضان قبيل المغرب. لاحظت المضيفة الوقت، ولاحظت أن الأب يتحدث باسم المجموعة. فرحبت به وسألت: \"هل تفضلون طاولة واحدة تجمع العائلة كلها؟ وهل نجهز التمر والماء عند الأذان؟\" فشكرها الأب بحرارة. لاحظت المناسبة وتفضيل العائلة، ثم سألت بدل أن تفترض.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> سجّل التفضيلات التي يشاركها النزيل، كنطق اسمه أو احتياجاته الغذائية، في ملفه وفق إجراءات الفندق، حتى لا يضطر زملاؤك إلى سؤاله مجددًا.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> انتبه للتواصل والعادات والمساحة الشخصية، واستخدم ما تلاحظه لتطرح السؤال المناسب لا لتفترض.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الاختلافات الشائعة",
+                                "questions": [
+                                    {
+                                        "question": "لم يمد نزيل يده عندما حييته. ما أفضل تصرف؟",
+                                        "options": [
+                                            "تصرّ على المصافحة من باب الأدب",
+                                            "تفترض أنه منزعج منك",
+                                            "تحترم ذلك، فالمصافحة أو عدمها من الاختلافات الشائعة",
+                                            "تطلب من زميل أن يحييه بدلًا منك"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "المصافحة أو عدمها مذكورة تحت المساحة الشخصية."
+                                    },
+                                    {
+                                        "question": "في أي مجال تضع المادة أوقات الصلاة والمناسبات؟",
+                                        "options": [
+                                            "العادات",
+                                            "التواصل",
+                                            "المساحة الشخصية",
+                                            "لا تذكرها"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "أوقات الصلاة أو المناسبات مذكورة تحت العادات."
+                                    },
+                                    {
+                                        "question": "يتحدث نزيل في المكتب بصوت عالٍ وتعبير واضح. ماذا تضع في ذهنك؟",
+                                        "options": [
+                                            "أنه غاضب ويجب استدعاء الأمن",
+                                            "أن نبرة الصوت تختلف وليست غضبًا بالضرورة",
+                                            "أن عليك رفع صوتك أيضًا",
+                                            "أنه غير محترم"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "اللغة ونبرة الصوت من الاختلافات الشائعة في التواصل."
+                                    },
+                                    {
+                                        "question": "لاحظت أن نزيلًا يتجنب التواصل البصري. بماذا توصي المادة؟",
+                                        "options": [
+                                            "أن تستنتج أنه يخفي شيئًا",
+                                            "أن تنظر إليه بشكل أكثر مباشرة",
+                                            "أن تبلغ المدير",
+                                            "أن تراقب باحترام ثم تسأل بدل أن تفترض"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: راقب باحترام، ثم اسأل بدل أن تفترض."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "خطوات لخدمة تحترم الاختلاف",
+                    "lessons": [
+                        {
+                            "title": "خمس خطوات وعبارات تُظهر الاحترام",
+                            "minutes": 6,
+                            "body": "<h2>اسأل أولًا</h2><p>الخطوة الأولى في المادة: <strong>اسأل أولًا — اجعل النزيل يوضح ما يفضله</strong>. وحول هذا المبدأ تعطي المادة خمس خطوات لخدمة تحترم الاختلاف.</p><ol><li><strong>لاحظ أسلوب النزيل بهدوء:</strong> انتبه لطريقة تحيته وحديثه وما يبدو مرتاحًا له.</li><li><strong>اسأل سؤالًا بسيطًا ومحترمًا:</strong> اجعله قصيرًا ومفتوحًا: \"كيف تفضّل...؟\"</li><li><strong>استمع دون مقاطعة أو حكم:</strong> دع النزيل يكمل، ولا تُبدِ استغرابًا أو استنكارًا.</li><li><strong>كيّف الخدمة حسب الاحتياج:</strong> غيّر الطاولة أو التوقيت أو التحية أو القائمة إن استطعت.</li><li><strong>تأكد أن الخدمة مناسبة:</strong> تحقق بعد ذلك أن ما قدمته يناسب النزيل.</li></ol><blockquote class=\"bk-quote\">الهدف فهم النزيل، وليس معرفة كل ثقافات العالم.</blockquote><p>وهذا يريحك؛ فلن تعرف كل العادات، ولست بحاجة إلى ذلك. ما تحتاجه هو عادة الملاحظة والسؤال والاستماع، فالنزيل هو الأعلم بما يفضله.</p><h2>عبارات تُظهر الاحترام</h2><p>تعطي المادة أربع عبارات قصيرة تصلح مع أي نزيل:</p><table class=\"bk-say\"><thead><tr><th>الغرض</th><th>العبارة</th><th>مثال</th></tr></thead><tbody><tr><td>التفضيل</td><td>\"كيف تفضل؟\"</td><td>\"كيف تفضل أن أخاطبك؟\"</td></tr><tr><td>التأكيد</td><td>\"هل هذا مناسب؟\"</td><td>\"هل هذه الطريقة مناسبة لكم؟\"</td></tr><tr><td>الاسم</td><td>\"كيف أنطق اسمك؟\"</td><td>\"كيف أنطق اسمكم بطريقة صحيحة؟\"</td></tr><tr><td>الاحتياج</td><td>\"هل لديكم احتياج؟\"</td><td>\"كيف يمكننا مساعدتكم؟\"</td></tr></tbody></table><blockquote class=\"bk-quote\">السؤال المهذب أفضل من التخمين.</blockquote><h2>كيف تسأل جيدًا</h2><p>السؤال المحترم يُطرح بنبرة محايدة دون استغراب، ويقدم خيارات بدل أن يوحي بأن الأمر غريب. قارن بين \"أنت لا تأكل لحم الخنزير، صحيح؟\" و\"هل لديكم تفضيلات غذائية نحتاج إلى معرفتها؟\"؛ الأول يفترض، والثاني يدعو. اسأل مرة واحدة، واستمع إلى الإجابة، ونفّذها دون تعليق إضافي.</p><aside class=\"bk-scene\"><strong>موقف:</strong> سجّل نزيل وصوله باسم طويل لم يره موظف الاستقبال من قبل. فبدل أن يخمّن أو يختصره، سأل: \"كيف أنطق اسمكم بطريقة صحيحة؟\" فنطقه النزيل ببطء وأضاف: \"لكن الجميع ينادونني تومي\". كرره الموظف وسجله في الملف، ثم سأل: \"كيف تفضل أن أخاطبك؟\" وطوال الإقامة حيّاه الموظفون كما اختار.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> بعد تكييف الخدمة أغلق الدائرة بسؤال: \"هل هذه الطريقة مناسبة لكم؟\" يستغرق ثلاث ثوانٍ ويؤكد أنك أصبت.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> لاحظ، واسأل، واستمع دون حكم، وكيّف، وتأكد. فالسؤال المهذب أفضل دائمًا من التخمين.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الخطوات والعبارات",
+                                "questions": [
+                                    {
+                                        "question": "لست متأكدًا كيف تخاطب نزيلًا. أي عبارة تناسب الموقف؟",
+                                        "options": [
+                                            "\"سأناديك يا سيدي فقط\"",
+                                            "\"من أين أنت؟\"",
+                                            "\"اسمك غريب\"",
+                                            "\"كيف تفضل أن أخاطبك؟\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "عبارة التفضيل: \"كيف تفضل أن أخاطبك؟\""
+                                    },
+                                    {
+                                        "question": "يشرح نزيل عادة غذائية لم تسمع بها من قبل. ماذا تفعل أثناء حديثه؟",
+                                        "options": [
+                                            "تستمع دون مقاطعة أو حكم",
+                                            "تخبره أن المطبخ قد يجد ذلك صعبًا",
+                                            "تُظهر الاستغراب ليعرف أن الأمر غير معتاد",
+                                            "تقترح عليه أن يأكل في مكان آخر"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "الخطوة الثالثة: استمع دون مقاطعة أو حكم."
+                                    },
+                                    {
+                                        "question": "ما هدف الخدمة التي تحترم الاختلاف وفق المادة؟",
+                                        "options": [
+                                            "حفظ عادات كل الثقافات",
+                                            "معاملة الجميع بالطريقة نفسها تمامًا",
+                                            "فهم النزيل",
+                                            "تجنب الحديث عن التفضيلات"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "الهدف فهم النزيل، وليس معرفة كل ثقافات العالم."
+                                    },
+                                    {
+                                        "question": "نقلت عائلة إلى طاولة أكثر خصوصية كما طلبت. ما الخطوة الأخيرة؟",
+                                        "options": [
+                                            "لا حاجة لشيء آخر",
+                                            "تتأكد أن الخدمة مناسبة لهم",
+                                            "تخبر النزلاء الآخرين سبب انتقالهم",
+                                            "تسألهم من أين هم"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "الخطوة الخامسة: تأكد أن الخدمة مناسبة."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "الاحترام في كل تعامل",
+                    "lessons": [
+                        {
+                            "title": "افعل وتجنب، وسوء الفهم، ودعم المشرف",
+                            "minutes": 7,
+                            "body": "<h2>احترم الاختلاف في كل تعامل</h2><p>تذكر المادة خمسة أمور تفعلها وخمسة تتجنبها.</p><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنب</th></tr></thead><tbody><tr><td>استخدم كلمات بسيطة ومحترمة</td><td>أن تقلد لهجة النزيل أو تسخر منها</td></tr><tr><td>انطق الاسم كما يفضله النزيل</td><td>أن تفترض الدين أو الجنسية أو العادات</td></tr><tr><td>اسأل قبل المصافحة أو المساعدة</td><td>أن تستخدم لقبًا لا يفضله النزيل</td></tr><tr><td>احترم الطعام والملابس والعادات</td><td>أن تحكم على النزيل من مظهره</td></tr><tr><td>قدم مستوى الخدمة نفسه للجميع</td><td>أن تعامل نزيلًا أفضل من غيره</td></tr></tbody></table><p>بعض هذه الأخطاء يحدث في غياب النزيل: كالمزاح على لهجة نزيل في المكتب الخلفي، أو تقديم خدمة أسرع لمن يبدو أهم. والاحترام واجب سواء رآك النزيل أو سمعك أم لا.</p><blockquote class=\"bk-quote\">الاختلاف لا يغير حق النزيل في الاحترام والخدمة.</blockquote><h2>إذا حدث سوء فهم</h2><p>حتى مع أفضل النوايا، قد تسيء إلى نزيل دون قصد. وتعطي المادة أربع خطوات:</p><ol><li><strong>توقف بهدوء:</strong> لا تدخل في جدال أو دفاع.</li><li><strong>اعتذر:</strong> قل: \"أعتذر عن سوء الفهم\".</li><li><strong>اسأل ووضح:</strong> اسأل النزيل عمّا يفضله.</li><li><strong>صحح وتابع:</strong> صحح الخدمة وتأكد من رضاه.</li></ol><blockquote class=\"bk-quote\">الاعتذار الصادق والتوضيح الهادئ يعيدان الثقة.</blockquote><h2>متى تطلب دعم المشرف؟</h2><p><strong>اطلب الدعم عند:</strong></p><ul><li>وجود حاجز لغوي يؤثر في السلامة.</li><li>طلب ديني أو ثقافي خارج صلاحيتك.</li><li>شعور النزيل بالإهانة أو التمييز.</li><li>وجود خلاف بين نزلاء بسبب الاختلاف.</li><li>عدم معرفتك بطريقة الاستجابة المناسبة.</li></ul><p><strong>ابدأ بهذه الخطوات:</strong></p><ol><li>احفظ هدوءك واحترامك.</li><li>اشرح الموقف دون إصدار حكم.</li><li>اطلب مترجمًا أو مساعدة مناسبة.</li><li>اتبع سياسة الفندق.</li><li>تابع مع النزيل بعد الحل.</li></ol><aside class=\"bk-scene\"><strong>موقف:</strong> مدّ نادل يده لتحية نزيلة، فتراجعت وقد بدا عليها الانزعاج. أنزل يده وتوقف وقال بهدوء: \"أعتذر عن سوء الفهم، كيف تفضلين أن نخدمك اليوم؟\" فارتاحت وطلبت طاولة أهدأ. ولاحقًا أطلق نزيل على طاولة قريبة تعليقًا بصوت عالٍ على ملابسها. لم يجادل النادل، بل أبلغ مشرفه، وشرح ما حدث دون حكم، فتعامل المشرف مع الموقف وفق سياسة الفندق وتابع مع النزيلة بعد ذلك.</aside><blockquote class=\"bk-quote\">طلب الدعم يحمي الاحترام ويمنع سوء الفهم.</blockquote><h2>كلمة أخيرة</h2><p>تختم المادة برسالة بسيطة: احترم كل نزيل واسأله عمّا يفضله. لاحظ، اسأل، استمع، احترم، تكيّف. عادات مختلفة واحترام واحد.</p><aside class=\"bk-key\"><strong>الخلاصة:</strong> لا تسخر ولا تفترض ولا تحكم من المظهر، وقدّم مستوى الخدمة نفسه للجميع، واعتذر بصدق عند سوء الفهم، واطلب دعم المشرف عند الحاجة.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الاحترام في كل تعامل",
+                                "questions": [
+                                    {
+                                        "question": "قلّد زميل لهجة نزيل في المكتب الخلفي ليضحك الآخرون. كيف تنظر المادة إلى ذلك؟",
+                                        "options": [
+                                            "لا ضرر منه لأن النزيل لا يسمع",
+                                            "مقبول إن كان وديًا",
+                                            "مما يجب تجنبه: تقليد لهجة النزيل أو السخرية منها",
+                                            "مفيد لروح الفريق"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تذكر المادة تقليد لهجة النزيل أو السخرية منها ضمن ما يجب تجنبه."
+                                    },
+                                    {
+                                        "question": "أسأت إلى نزيل بإشارة دون قصد. ما الخطوة الأولى؟",
+                                        "options": [
+                                            "تتوقف بهدوء ولا تدخل في جدال أو دفاع",
+                                            "تشرح أن الإشارة عادية في ثقافتك",
+                                            "تتجاهل الأمر وتكمل",
+                                            "تطلب من زميل أن يتولى الأمر دون أن تقول شيئًا"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "الخطوة الأولى: توقف بهدوء، ولا تدخل في جدال أو دفاع."
+                                    },
+                                    {
+                                        "question": "قال نزيل إنه يشعر بأنه يُعامل بظلم بسبب جنسيته. ماذا تفعل؟",
+                                        "options": [
+                                            "تخبره أنه يتخيل ذلك",
+                                            "تجادله بأن الجميع يُعاملون بالمثل",
+                                            "تعرض عليه خصمًا لإنهاء الحديث",
+                                            "تحافظ على هدوئك واحترامك وتطلب دعم المشرف"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "عند شعور النزيل بالإهانة أو التمييز تقول المادة: اطلب دعم المشرف."
+                                    },
+                                    {
+                                        "question": "اختلفت مجموعتان من النزلاء بصوت عالٍ بسبب الاختلاف الثقافي. بعد إبلاغ المشرف، كيف تصف الموقف؟",
+                                        "options": [
+                                            "تحدد أي المجموعتين مخطئة",
+                                            "تشرح الموقف دون إصدار حكم",
+                                            "تصف النزلاء بجنسياتهم فقط",
+                                            "تحتفظ بالأمر لنفسك"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "من الخطوات: اشرح الموقف دون إصدار حكم."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

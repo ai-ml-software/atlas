@@ -1,0 +1,538 @@
+{
+    "slug": "serving-women-guests",
+    "category": "guest-handling",
+    "level": "foundation",
+    "source_pdf": "Serving-Women-Guests-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/serving-women-guests.webp",
+    "videos": [],
+    "locales": {
+        "en": {
+            "title": "Serving Women Guests",
+            "subtitle": "Equal service, privacy and safety",
+            "short_description": "Learn to give women guests the same level of service, protect room and identity information, offer choices, use neutral language and keep professional boundaries.",
+            "description": "<p>Every guest deserves the same attention and respect. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows how to serve women guests with equal service, careful privacy and a feeling of safety, without treating them differently.</p><p>You will learn why equal service starts with respect, how to protect room and identity information at check-in, how to offer choices on arrival and in the restaurant, which phrases to use and avoid, how to keep professional boundaries and which common mistakes to avoid. The guiding rules are simple: respect, protect privacy and never assume.</p>",
+            "requirements": "No prior training is needed; the course suits every guest-facing colleague.",
+            "outcomes": [
+                "Provide the same level of service to every guest without giving priority based on gender",
+                "Protect room numbers, identity and booking details at check-in and by phone",
+                "Offer room, escort and assistance options and let the guest decide",
+                "Use professional, neutral language and avoid personal questions",
+                "Maintain professional boundaries and respond correctly to uncomfortable behaviour"
+            ],
+            "faqs": [
+                {
+                    "question": "Does serving women guests mean giving different service?",
+                    "answer": "No. The deck is clear that safety does not mean different treatment; it means applying privacy and respect accurately, with the same level of service for all guests."
+                },
+                {
+                    "question": "How should I share the room number at check-in?",
+                    "answer": "Do not say it aloud. Write it or point to it on the key card, for example: “For your privacy, your room number is shown here.”"
+                },
+                {
+                    "question": "What should I do if someone behaves in a way that makes a guest uncomfortable?",
+                    "answer": "End the conversation, step away, and inform the supervisor or security according to the situation."
+                }
+            ],
+            "meta_title": "Serving Women Guests in Hotels",
+            "meta_description": "Hotel training on serving women guests: equal service, room and identity privacy, offering choices, neutral language and professional boundaries.",
+            "focus_keyword": "serving women guests in hotels",
+            "chapters": [
+                {
+                    "title": "Equal Service and Privacy",
+                    "lessons": [
+                        {
+                            "title": "Equal Service Starts with Respect",
+                            "minutes": 5,
+                            "body": "<h2>Equality in every moment</h2><p>The deck opens with three words that summarise the whole topic: <strong>equal service, privacy, safety</strong>. And three rules for every colleague: <strong>respect, protect privacy, never assume</strong>.</p><p>Serving women guests well does not start with special procedures. It starts with respect, applied consistently. The key word on the deck is <strong>equality in every moment</strong>, or consistent respect.</p><h2>Five principles of equal service</h2><ol><li><strong>Provide the same level of service to all guests.</strong> A woman travelling alone, a group of friends or a mother with children receives the same welcome, attention and speed as any other guest.</li><li><strong>Do not give priority based on gender.</strong> Guests are served by their turn, their need and the hotel's standards.</li><li><strong>Address the woman who made the booking, or who is making the decision, directly.</strong> If she is the guest or the decision-maker, speak to her, not to a man standing with her.</li><li><strong>Do not assume who will pay or choose.</strong> Ask, or wait to be told.</li><li><strong>Make safety and privacy part of the procedure.</strong> They are applied to everyone as standard, not offered as a favour.</li></ol><blockquote class=\"bk-quote\">Safety does not mean different treatment; it means applying privacy and respect accurately.</blockquote><h2>Equal does not mean careless</h2><p>Some colleagues worry that equal service means ignoring cultural expectations. It does not. Respecting privacy, keeping a professional manner and offering choices are part of good service for every guest in Saudi hospitality. What the deck asks is that these standards are applied accurately and to all, rather than replaced by assumptions about what a woman guest needs or wants.</p><p>The deck's English summary puts it simply: equal service means equal attention, respect, and control. Control matters: the guest decides for herself.</p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Same level of service for all</td><td>Serving by gender instead of turn and need</td></tr><tr><td>Speak to the booker or decision-maker</td><td>Directing questions to the man with her</td></tr><tr><td>Let the guest tell you who pays or chooses</td><td>Assuming who will pay or decide</td></tr><tr><td>Privacy and safety as standard procedure</td><td>Treating them as special favours</td></tr></tbody></table><aside class=\"bk-scene\"><strong>Scene:</strong> A businesswoman arrives at reception with a male colleague. The booking is in her name. The receptionist greets them both, then addresses her directly: “Welcome, you are booked with us for three nights.” When the colleague reaches for his wallet, the receptionist does not assume; she asks, “How would you like to settle the deposit?” The guest answers that it is on her company card.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Check the booking name before you start speaking, so you know who to address first.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Give every guest the same level of service, speak to the booker or decision-maker, never assume, and build privacy and safety into the procedure.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Equal service",
+                                "questions": [
+                                    {
+                                        "question": "A woman guest made the booking and is checking in with a male relative. Who should you address about the booking?",
+                                        "options": [
+                                            "The male relative, out of courtesy",
+                                            "Whoever speaks first",
+                                            "The woman who made the booking, directly",
+                                            "Neither; hand over the forms silently"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says address the woman who made the booking or is making the decision directly."
+                                    },
+                                    {
+                                        "question": "Two guests reach the desk at almost the same time: a man and a woman. How do you decide who to serve first?",
+                                        "options": [
+                                            "By turn, need and hotel standards, not by gender",
+                                            "Always serve the man first",
+                                            "Always serve the woman first",
+                                            "Serve whoever looks more important"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck says do not give priority based on gender; guests are served by turn, need and the hotel's standards."
+                                    },
+                                    {
+                                        "question": "According to the deck, what does safety for women guests mean?",
+                                        "options": [
+                                            "Completely different procedures for women",
+                                            "Fewer services to avoid contact",
+                                            "Asking the guest many personal questions",
+                                            "Applying privacy and respect accurately, not different treatment"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck states safety does not mean different treatment; it means applying privacy and respect accurately."
+                                    },
+                                    {
+                                        "question": "At the end of a stay, a couple approaches to pay. What should you do?",
+                                        "options": [
+                                            "Hand the bill to the man",
+                                            "Not assume who will pay; let the guests indicate",
+                                            "Hand the bill to the woman",
+                                            "Leave the bill on the counter and walk away"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says do not assume who will pay or choose."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Protect Room and Identity Information",
+                            "minutes": 5,
+                            "body": "<h2>Privacy at check-in</h2><p>Some of the most important protection a hotel gives any guest happens in a few seconds at the front desk. The deck's instruction is: <strong>protect room and identity information</strong>. It is presented not as politeness but as a security standard: <strong>room privacy is a security standard, not a courtesy.</strong></p><h2>Correct privacy</h2><ul><li><strong>Do not say the room number aloud.</strong> Others in the lobby may hear it.</li><li><strong>Write the number, or point to it, on the key card.</strong> The guest sees it; no one else does.</li><li><strong>Verify identity before issuing a replacement key.</strong> A person asking for a key must be the registered guest.</li><li><strong>Do not reveal that the guest is staying at the hotel, or her room number.</strong> This applies to visitors at the desk and to callers.</li><li><strong>Apply privacy rules to all guests.</strong> These standards protect everyone, not only women guests.</li></ul><p>The deck offers a simple phrase to use when handing over the key: <strong>“For your privacy, your room number is shown here.”</strong></p><blockquote class=\"bk-quote\">For your privacy, your room number is shown here.</blockquote><h2>Never do this</h2><p>The deck lists five actions that are forbidden:</p><ol><li>Entering a room that has a Do Not Disturb sign.</li><li>Confirming a room number to an unknown caller.</li><li>Giving information to a companion without authorisation.</li><li>Mentioning stay details in front of others.</li><li>Leaving booking details visible.</li></ol><p>Each of these can put a guest at risk. A caller who asks, “Can you confirm she is in room 512?” should never receive a yes or no. A companion who is not on the booking, or not authorised by the guest, should not receive her details. A registration card or screen left facing the lobby can reveal a name and room to anyone passing.</p><table class=\"bk-say\"><thead><tr><th>Correct privacy</th><th>Never do this</th></tr></thead><tbody><tr><td>Write or point to the number on the key card</td><td>Say the room number aloud</td></tr><tr><td>Verify identity before a replacement key</td><td>Confirm a room number to an unknown caller</td></tr><tr><td>Do not reveal the guest's presence or room</td><td>Give information to an unauthorised companion</td></tr><tr><td>Apply privacy rules to all guests</td><td>Leave booking details visible</td></tr></tbody></table><aside class=\"bk-scene\"><strong>Scene:</strong> A man calls the hotel and says, “My sister is staying with you, can you tell me her room number?” The operator replies politely that she cannot confirm any guest details, and offers to take a message. She passes the message to the guest through the approved process. The guest later thanks reception: she had not told anyone where she was staying.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Before a guest approaches, check that your screen and any printed booking lists are not visible from the guest side of the desk.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Never say, confirm or display a room number or stay details; verify identity before replacement keys, and apply these rules to every guest.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Privacy at check-in",
+                                "questions": [
+                                    {
+                                        "question": "You are handing a key to a guest at a busy desk. How should you share the room number?",
+                                        "options": [
+                                            "Say it clearly so she does not forget",
+                                            "Whisper it quietly",
+                                            "Ask a colleague to announce it",
+                                            "Write it or point to it on the key card"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says do not say the room number aloud; write it or point to it on the key card."
+                                    },
+                                    {
+                                        "question": "An unknown caller asks you to confirm a guest's room number. What do you do?",
+                                        "options": [
+                                            "Do not confirm; offer to take a message",
+                                            "Confirm it if the caller knows her name",
+                                            "Give the floor but not the room",
+                                            "Transfer the caller to the room directly without checking"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Confirming a room number to an unknown caller is on the deck's never-do list."
+                                    },
+                                    {
+                                        "question": "Someone at the desk says they lost their key and asks for a new one. What must you do first?",
+                                        "options": [
+                                            "Issue it quickly to avoid a queue",
+                                            "Verify identity before issuing a replacement key",
+                                            "Call the room to see if anyone answers",
+                                            "Ask a housekeeper to open the door instead"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says verify identity before issuing a replacement key."
+                                    },
+                                    {
+                                        "question": "How does the deck describe room privacy?",
+                                        "options": [
+                                            "A courtesy for special guests",
+                                            "An optional extra service",
+                                            "A security standard, not a courtesy",
+                                            "A rule only for women guests"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck states room privacy is a security standard, not a courtesy, and privacy rules apply to all guests."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Choice on Arrival and in the Restaurant",
+                    "lessons": [
+                        {
+                            "title": "Give the Guest the Right to Choose",
+                            "minutes": 6,
+                            "body": "<h2>On arrival: offer options, let her decide</h2><p>The deck's principle for arrival is: <strong>offer the options and leave the decision to the guest; do not assume which room is best.</strong> It highlights four areas where a woman guest may have preferences:</p><ol><li><strong>Room location:</strong> ask whether she prefers to be close to the lift, or somewhere quiet.</li><li><strong>Room type:</strong> connecting or not connecting.</li><li><strong>Escort:</strong> offer to accompany her to the room, according to hotel policy.</li><li><strong>Assistance:</strong> help with bags or transfer when requested.</li></ol><p>The important word is <em>offer</em>. A colleague may think a room near the lift is safer, or that a guest travelling alone would like an escort. That may be true for one guest and unwelcome for another. The deck's English summary: <strong>offer secure options and let the guest choose.</strong></p><blockquote class=\"bk-quote\">Offer the options and leave the decision to the guest.</blockquote><h2>In the restaurant: fair and comfortable service</h2><p>The restaurant is another place where assumptions can make a guest uncomfortable. The deck gives five things to do and five to avoid.</p><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Ask about the preferred seating area</td><td>Seating a woman dining alone in an uncomfortable place</td></tr><tr><td>Offer the same options to women and other guests</td><td>Asking “Are you alone?” in an embarrassing way</td></tr><tr><td>Place the bill in front of the person who asked for it, or according to instructions</td><td>Assuming the man will pay the bill</td></tr><tr><td>Address the person who ordered or is deciding directly</td><td>Staring or standing close to the table</td></tr><tr><td>Respect her wish to talk or to have quiet</td><td>Forcing a conversation she does not want</td></tr></tbody></table><p>A woman dining alone should be offered the same good tables as anyone else, not a table by the service door. Asking how many guests will be dining is fine; asking “Are you alone?” in a tone that suggests something is unusual is not. And after serving, step back: hovering near the table or watching a guest eat makes anyone uncomfortable.</p><p>The deck's rule for seating and service: <strong>do not link it to gender or marital status; ask about the preference.</strong></p><aside class=\"bk-scene\"><strong>Scene:</strong> A woman arrives alone for dinner. The host smiles and asks, “Table for one? Would you prefer a quiet corner or a table by the window?” She chooses the window. Later a couple at the next table asks for the bill; the server brings it and places it where the woman of the couple, who asked for it, can reach it. Neither guest was treated by assumption; both were served by preference.</aside><aside class=\"bk-note\"><strong>Tip:</strong> When offering an escort to the room, phrase it as a choice the guest can easily decline, and follow hotel policy on who escorts and how.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> On arrival and at the table, offer the same options, ask about preferences and let the guest decide; never link service to gender or marital status.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Choice and the restaurant",
+                                "questions": [
+                                    {
+                                        "question": "A woman guest is checking in alone. How should you choose her room location?",
+                                        "options": [
+                                            "Always put her next to the lift for safety",
+                                            "Ask whether she prefers to be close or somewhere quiet",
+                                            "Put her on the highest floor",
+                                            "Give her whichever room is ready first without asking"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says ask about closeness or quiet and do not assume which room is best."
+                                    },
+                                    {
+                                        "question": "A couple asks for the bill and the woman is the one who requested it. Where do you place it?",
+                                        "options": [
+                                            "In front of the man",
+                                            "In the middle of the table",
+                                            "In front of the person who asked for it, or according to instructions",
+                                            "Give it to whoever looks older"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says place the bill in front of the person who asked for it or according to instructions, and avoid assuming the man will pay."
+                                    },
+                                    {
+                                        "question": "Which of these is on the deck's avoid list in the restaurant?",
+                                        "options": [
+                                            "Asking “Are you alone?” in an embarrassing way",
+                                            "Asking about the preferred seating area",
+                                            "Offering the same options to all guests",
+                                            "Respecting her wish for quiet"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck lists asking “Are you alone?” in an embarrassing way as something to avoid."
+                                    },
+                                    {
+                                        "question": "A woman guest arrives with several bags. What does the deck say about assistance?",
+                                        "options": [
+                                            "Carry them immediately without asking",
+                                            "Never offer help, to avoid contact",
+                                            "Ask a male guest nearby to help",
+                                            "Offer help with bags or transfer, provided on request"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck lists assistance as help with bags or transfer when requested."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Language, Boundaries and Common Mistakes",
+                    "lessons": [
+                        {
+                            "title": "Neutral Language and Professional Boundaries",
+                            "minutes": 7,
+                            "body": "<h2>Use professional, neutral language</h2><p>The words we choose can make a guest feel welcome or uncomfortable. The deck gives five phrases to say and five to avoid.</p><table class=\"bk-say\"><thead><tr><th>Say</th><th>Avoid</th></tr></thead><tbody><tr><td>“Welcome, madam. How may I help you?”</td><td>“Are you alone?”</td></tr><tr><td>“Which location would you prefer?”</td><td>“What is your marital status?”</td></tr><tr><td>“For your privacy, your room number is shown here.”</td><td>“Where is your husband?”</td></tr><tr><td>“Would you like someone to accompany you to the room?”</td><td>“Can I meet you later?”</td></tr><tr><td>“Is there another arrangement that suits you?”</td><td>“I will give the bill to the man.”</td></tr></tbody></table><p>The phrases to say are all about the service: welcome, preferences, privacy, escort and alternatives. The phrases to avoid are all about the guest's personal life or the colleague's personal interest. None of them are needed to serve the guest well.</p><h2>Maintain professional boundaries</h2><p>The deck describes four boundaries:</p><ol><li><strong>Conversation:</strong> keep it linked to the service, and stop when answers become short or the guest is busy.</li><li><strong>Personal contact:</strong> do not ask for a personal number, and do not offer your own account or a private invitation.</li><li><strong>Escort:</strong> only at the guest's request and according to the hotel's official procedure.</li><li><strong>Uncomfortable behaviour:</strong> end the conversation, step away and inform the supervisor or security according to the situation.</li></ol><blockquote class=\"bk-quote\">Friendliness is professional; it must not turn into personal interest.</blockquote><h2>Avoid discrimination and poor conduct</h2><p>The deck lists four common mistakes and the correct approach:</p><ul><li><strong>Men served first:</strong> serve guests by turn, need and hotel standards, not by gender.</li><li><strong>Personal questions:</strong> avoid questions about marital status, money, relationships and reasons for travel.</li><li><strong>Assumptions:</strong> do not assume who decides, who pays, or who needs help or protection.</li><li><strong>Staring or ignoring:</strong> keep professional eye contact and balanced attention, without watching or neglecting.</li></ul><p>The deck summarises: <strong>clear boundaries, protected privacy, fair service.</strong></p><h2>Closing message</h2><p>The deck ends with two short lines: <strong>ask, do not assume; give equal service, do not discriminate.</strong> Keep boundaries, protect privacy, respect. Professional service gives the woman guest safety, control and respect. Equal service protects privacy, choice, and confidence.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest waiting in the lobby tells a bellman that a man from another table keeps approaching her and asking for her number. The bellman does not argue with the man. He calmly ends the exchange, offers the guest a seat in a quieter area, steps away and informs the duty supervisor and security, who handle the situation according to procedure. The guest felt protected without being made the centre of attention.</aside><aside class=\"bk-note\"><strong>Tip:</strong> If a guest's answers become short, take it as a signal: finish politely with “Please let me know if you need anything,” and give her space.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Use service-focused, neutral language, keep conversation and contact professional, escalate uncomfortable behaviour, and never assume or discriminate.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Language and boundaries",
+                                "questions": [
+                                    {
+                                        "question": "A woman guest is checking in without a companion. Which phrase is appropriate?",
+                                        "options": [
+                                            "“Where is your husband?”",
+                                            "“Are you alone?”",
+                                            "“What is your marital status?”",
+                                            "“Welcome, madam. How may I help you?”"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "“Welcome, madam. How may I help you?” is on the deck's say list; the others are on the avoid list."
+                                    },
+                                    {
+                                        "question": "You are chatting with a guest and her answers become very short. What should you do?",
+                                        "options": [
+                                            "Stop the conversation and let her be",
+                                            "Ask more questions to keep her engaged",
+                                            "Tell her about your own travels",
+                                            "Offer to meet her later to continue"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck says keep conversation linked to service and stop when answers become short or the guest is busy."
+                                    },
+                                    {
+                                        "question": "A guest seems uncomfortable because a person keeps approaching her. What does the deck say?",
+                                        "options": [
+                                            "Ignore it unless she complains formally",
+                                            "Argue with the person to defend her",
+                                            "End the conversation, step away and inform the supervisor or security",
+                                            "Ask the guest to go to her room"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "For uncomfortable behaviour, the deck says end the conversation, step away and inform the supervisor or security according to the situation."
+                                    },
+                                    {
+                                        "question": "Which question does the deck list as a personal question to avoid?",
+                                        "options": [
+                                            "“Which location would you prefer?”",
+                                            "Questions about reasons for travel",
+                                            "“Is there another arrangement that suits you?”",
+                                            "“Would you like someone to accompany you to the room?”"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says avoid questions about marital status, money, relationships and reasons for travel."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "خدمة النزيلات",
+            "subtitle": "مساواة وخصوصية وأمان",
+            "short_description": "تعلّم تقديم مستوى الخدمة نفسه للنزيلات، وحماية معلومات الغرفة والهوية، وعرض الخيارات، واستخدام لغة محايدة، والحفاظ على الحدود المهنية.",
+            "description": "<p>كل ضيف يستحق الاهتمام والاحترام نفسيهما. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتوضح كيف نخدم النزيلات بخدمة متساوية وخصوصية دقيقة وشعور بالأمان، دون معاملة مختلفة.</p><p>ستتعرف على أن الخدمة المتساوية تبدأ من الاحترام، وكيف تحمي معلومات الغرفة والهوية عند تسجيل الوصول، وكيف تعرض الخيارات عند الوصول وفي المطعم، وما العبارات التي تقال والتي تُتجنب، وكيف تحافظ على الحدود المهنية، وما الأخطاء الشائعة التي يجب تجنبها. والقواعد بسيطة: احترم، احمِ الخصوصية، لا تفترض.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظف يتعامل مع النزلاء.",
+            "outcomes": [
+                "قدّم مستوى الخدمة نفسه لجميع الضيوف دون أولوية بناءً على الجنس",
+                "احمِ رقم الغرفة والهوية وبيانات الحجز عند تسجيل الوصول وعبر الهاتف",
+                "اعرض خيارات الغرفة والمرافقة والمساعدة واترك القرار للنزيلة",
+                "استخدم لغة مهنية ومحايدة وتجنب الأسئلة الشخصية",
+                "حافظ على الحدود المهنية وتصرّف بشكل صحيح مع السلوك غير المريح"
+            ],
+            "faqs": [
+                {
+                    "question": "هل تعني خدمة النزيلات تقديم خدمة مختلفة؟",
+                    "answer": "لا. توضح المادة أن الأمان لا يعني معاملة مختلفة، بل تطبيقًا دقيقًا للخصوصية والاحترام، مع مستوى الخدمة نفسه لجميع الضيوف."
+                },
+                {
+                    "question": "كيف أوضح رقم الغرفة عند تسجيل الوصول؟",
+                    "answer": "لا تنطقه بصوت مسموع، بل اكتبه أو أشر إليه على بطاقة المفتاح، وقل مثلًا: “لخصوصيتك، رقم الغرفة موضح هنا”."
+                },
+                {
+                    "question": "ماذا أفعل إذا صدر سلوك يزعج النزيلة؟",
+                    "answer": "أنهِ الحوار، وابتعد، وأبلغ المشرف أو الأمن وفق الحالة."
+                }
+            ],
+            "meta_title": "خدمة النزيلات في الفنادق",
+            "meta_description": "تدريب فندقي على خدمة النزيلات: خدمة متساوية، وخصوصية الغرفة والهوية، وعرض الخيارات، ولغة محايدة، وحدود مهنية واضحة.",
+            "focus_keyword": "خدمة النزيلات في الفنادق",
+            "chapters": [
+                {
+                    "title": "الخدمة المتساوية والخصوصية",
+                    "lessons": [
+                        {
+                            "title": "الخدمة المتساوية تبدأ من الاحترام",
+                            "minutes": 5,
+                            "body": "<h2>مساواة في كل لحظة</h2><p>تفتتح المادة بثلاث كلمات تلخص الموضوع: <strong>مساواة وخصوصية وأمان</strong>، وبثلاث قواعد لكل موظف: <strong>احترم، احمِ الخصوصية، لا تفترض</strong>. فخدمة النزيلات لا تبدأ بإجراءات خاصة، بل بالاحترام المطبق باستمرار، والكلمة المفتاحية في المادة هي <strong>مساواة في كل لحظة</strong>.</p><h2>خمسة مبادئ للخدمة المتساوية</h2><ol><li><strong>قدّم مستوى الخدمة نفسه لجميع الضيوف،</strong> فالنزيلة المسافرة وحدها أو مع صديقاتها أو الأم مع أطفالها تحصل على الترحيب والاهتمام والسرعة نفسها.</li><li><strong>لا تعطِ الأولوية بناءً على الجنس،</strong> فالخدمة حسب الدور والحاجة ومعايير الفندق.</li><li><strong>خاطب صاحبة الحجز والقرار مباشرة،</strong> لا الرجل الواقف معها.</li><li><strong>لا تفترض من سيدفع أو يختار،</strong> بل اسأل أو انتظر أن يُقال لك.</li><li><strong>اجعل السلامة والخصوصية جزءًا من الإجراء،</strong> تُطبق على الجميع كمعيار لا كمجاملة.</li></ol><blockquote class=\"bk-quote\">الأمان لا يعني معاملة مختلفة — بل تطبيقًا دقيقًا للخصوصية والاحترام.</blockquote><h2>المساواة لا تعني الإهمال</h2><p>قد يظن بعض الموظفين أن الخدمة المتساوية تعني تجاهل التوقعات الثقافية، وهذا غير صحيح. فاحترام الخصوصية والتعامل المهني وعرض الخيارات جزء من الخدمة الجيدة لكل ضيف في الضيافة السعودية. وما تطلبه المادة هو تطبيق هذه المعايير بدقة وعلى الجميع، بدل استبدالها بافتراضات عمّا تحتاجه النزيلة أو تريده. فالخدمة المتساوية تعني اهتمامًا واحترامًا متساويين، وأن يكون القرار بيد النزيلة.</p><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنب</th></tr></thead><tbody><tr><td>مستوى الخدمة نفسه للجميع</td><td>الخدمة حسب الجنس لا حسب الدور والحاجة</td></tr><tr><td>خاطب صاحبة الحجز والقرار</td><td>توجيه الأسئلة إلى الرجل المرافق</td></tr><tr><td>دع الضيف يحدد من يدفع أو يختار</td><td>افتراض من سيدفع أو يقرر</td></tr><tr><td>الخصوصية والسلامة جزء من الإجراء</td><td>التعامل معها كمجاملة خاصة</td></tr></tbody></table><aside class=\"bk-scene\"><strong>موقف:</strong> وصلت سيدة أعمال إلى الاستقبال مع زميل لها، والحجز باسمها. رحّب الموظف بهما، ثم خاطبها مباشرة: “أهلًا بك، حجزك لدينا لثلاث ليالٍ”. وحين مدّ الزميل يده إلى محفظته لم يفترض الموظف شيئًا، بل سأل: “كيف تفضلون دفع التأمين؟” فأجابت بأنه على بطاقة شركتها.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> تحقق من اسم الحجز قبل أن تبدأ الحديث، لتعرف من تخاطب أولًا.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> قدّم مستوى الخدمة نفسه للجميع، وخاطب صاحبة الحجز والقرار، ولا تفترض، واجعل الخصوصية والسلامة جزءًا من الإجراء.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الخدمة المتساوية",
+                                "questions": [
+                                    {
+                                        "question": "نزيلة هي صاحبة الحجز وتسجل وصولها مع قريب لها. من تخاطب بشأن الحجز؟",
+                                        "options": [
+                                            "القريب، من باب المجاملة",
+                                            "من يتكلم أولًا",
+                                            "صاحبة الحجز مباشرة",
+                                            "لا أحد، تسلّم الاستمارات بصمت"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: خاطب صاحبة الحجز والقرار مباشرة."
+                                    },
+                                    {
+                                        "question": "وصل رجل وامرأة إلى المكتب في الوقت نفسه تقريبًا. كيف تقرر من تخدم أولًا؟",
+                                        "options": [
+                                            "حسب الدور والحاجة ومعايير الفندق لا الجنس",
+                                            "تخدم الرجل أولًا دائمًا",
+                                            "تخدم المرأة أولًا دائمًا",
+                                            "تخدم من يبدو أكثر أهمية"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تقول المادة: لا تعطِ الأولوية بناءً على الجنس، فخدمة الضيوف حسب الدور والحاجة ومعايير الفندق."
+                                    },
+                                    {
+                                        "question": "بحسب المادة، ماذا يعني الأمان للنزيلات؟",
+                                        "options": [
+                                            "إجراءات مختلفة تمامًا للنساء",
+                                            "خدمات أقل لتجنب التواصل",
+                                            "طرح أسئلة شخصية كثيرة",
+                                            "تطبيقًا دقيقًا للخصوصية والاحترام لا معاملة مختلفة"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تنص المادة على أن الأمان لا يعني معاملة مختلفة، بل تطبيقًا دقيقًا للخصوصية والاحترام."
+                                    },
+                                    {
+                                        "question": "في نهاية الإقامة جاء زوجان للدفع. ماذا تفعل؟",
+                                        "options": [
+                                            "تسلّم الفاتورة للرجل",
+                                            "لا تفترض من سيدفع، ودع الضيفين يحددان",
+                                            "تسلّم الفاتورة للمرأة",
+                                            "تترك الفاتورة على المكتب وتنصرف"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: لا تفترض من سيدفع أو يختار."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "احمِ معلومات الغرفة والهوية",
+                            "minutes": 5,
+                            "body": "<h2>الخصوصية عند تسجيل الوصول</h2><p>بعض أهم صور الحماية التي يقدمها الفندق لأي ضيف تحدث في ثوانٍ عند مكتب الاستقبال. وتوجيه المادة: <strong>احمِ معلومات الغرفة والهوية</strong>، وهي لا تقدمه كلباقة بل كمعيار أمني: <strong>إنها معيار أمني — خصوصية الغرفة ليست مجاملة.</strong></p><h2>خصوصية صحيحة</h2><ul><li><strong>لا تنطق رقم الغرفة بصوت مسموع،</strong> فقد يسمعه آخرون في البهو.</li><li><strong>اكتب الرقم أو أشر إليه على بطاقة المفتاح،</strong> فتراه النزيلة وحدها.</li><li><strong>تحقق من الهوية قبل إصدار مفتاح بديل.</strong></li><li><strong>لا تكشف وجود النزيلة أو رقم غرفتها،</strong> لا للزوار عند المكتب ولا للمتصلين.</li><li><strong>طبّق قواعد الخصوصية على جميع الضيوف،</strong> فهي تحمي الجميع.</li></ul><p>وتقترح المادة عبارة بسيطة عند تسليم المفتاح: <strong>“لخصوصيتك، رقم الغرفة موضح هنا”.</strong></p><blockquote class=\"bk-quote\">لخصوصيتك، رقم الغرفة موضح هنا.</blockquote><h2>ممنوع</h2><ol><li>دخول غرفة عليها علامة عدم الإزعاج.</li><li>تأكيد رقم الغرفة لمتصل مجهول.</li><li>إعطاء معلومات لمرافق دون تفويض.</li><li>ذكر تفاصيل الإقامة أمام الآخرين.</li><li>ترك بيانات الحجز ظاهرة.</li></ol><p>كل واحد من هذه قد يعرّض الضيف للخطر. فالمتصل الذي يسأل: “هل هي في الغرفة 512؟” لا يحصل على نعم أو لا. والمرافق غير المفوض لا يحصل على بياناتها. وبطاقة التسجيل أو الشاشة المتجهة نحو البهو قد تكشف الاسم والغرفة لأي عابر.</p><table class=\"bk-say\"><thead><tr><th>خصوصية صحيحة</th><th>ممنوع</th></tr></thead><tbody><tr><td>اكتب الرقم أو أشر إليه على بطاقة المفتاح</td><td>نطق رقم الغرفة بصوت مسموع</td></tr><tr><td>تحقق من الهوية قبل المفتاح البديل</td><td>تأكيد رقم الغرفة لمتصل مجهول</td></tr><tr><td>لا تكشف وجود النزيلة أو غرفتها</td><td>إعطاء معلومات لمرافق دون تفويض</td></tr><tr><td>طبّق قواعد الخصوصية على الجميع</td><td>ترك بيانات الحجز ظاهرة</td></tr></tbody></table><aside class=\"bk-scene\"><strong>موقف:</strong> اتصل رجل بالفندق وقال: “أختي مقيمة عندكم، هل تعطيني رقم غرفتها؟” فردّت موظفة الهاتف بلطف بأنها لا تستطيع تأكيد أي بيانات لنزلاء، وعرضت أن تأخذ رسالة، ثم أوصلتها إلى النزيلة وفق الإجراء المعتمد. وشكرت النزيلة الاستقبال لاحقًا، فهي لم تخبر أحدًا بمكان إقامتها.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> قبل أن يقترب الضيف، تأكد أن شاشتك وأي قوائم حجز مطبوعة غير ظاهرة من جهة الضيوف.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> لا تنطق رقم الغرفة أو تؤكده أو تتركه ظاهرًا، وتحقق من الهوية قبل المفتاح البديل، وطبّق هذه القواعد على كل الضيوف.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الخصوصية عند الوصول",
+                                "questions": [
+                                    {
+                                        "question": "تسلّم نزيلة مفتاحها والمكتب مزدحم. كيف توضح رقم الغرفة؟",
+                                        "options": [
+                                            "تقوله بوضوح حتى لا تنساه",
+                                            "تهمس به بهدوء",
+                                            "تطلب من زميل أن يعلنه",
+                                            "تكتبه أو تشير إليه على بطاقة المفتاح"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: لا تنطق رقم الغرفة بصوت مسموع، واكتبه أو أشر إليه على بطاقة المفتاح."
+                                    },
+                                    {
+                                        "question": "طلب منك متصل مجهول تأكيد رقم غرفة نزيلة. ماذا تفعل؟",
+                                        "options": [
+                                            "لا تؤكد، وتعرض أخذ رسالة",
+                                            "تؤكده إذا كان يعرف اسمها",
+                                            "تذكر الطابق دون الغرفة",
+                                            "تحوّله إلى الغرفة مباشرة دون تحقق"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تأكيد رقم الغرفة لمتصل مجهول ضمن قائمة الممنوعات في المادة."
+                                    },
+                                    {
+                                        "question": "قال شخص عند المكتب إنه أضاع مفتاحه وطلب مفتاحًا جديدًا. ماذا تفعل أولًا؟",
+                                        "options": [
+                                            "تصدره بسرعة لتجنب الطابور",
+                                            "تتحقق من الهوية قبل إصدار مفتاح بديل",
+                                            "تتصل بالغرفة لترى إن كان أحد يرد",
+                                            "تطلب من عاملة التدبير فتح الباب بدلًا من ذلك"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: تحقق من الهوية قبل إصدار مفتاح بديل."
+                                    },
+                                    {
+                                        "question": "كيف تصف المادة خصوصية الغرفة؟",
+                                        "options": [
+                                            "مجاملة للضيوف المميزين",
+                                            "خدمة إضافية اختيارية",
+                                            "معيار أمني وليست مجاملة",
+                                            "قاعدة للنزيلات فقط"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تنص المادة على أن خصوصية الغرفة معيار أمني وليست مجاملة، وأن قواعد الخصوصية تطبق على جميع الضيوف."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "الاختيار عند الوصول وفي المطعم",
+                    "lessons": [
+                        {
+                            "title": "أعطِ النزيلة حق الاختيار",
+                            "minutes": 6,
+                            "body": "<h2>عند الوصول: اعرض الخيارات واترك القرار لها</h2><p>مبدأ المادة عند الوصول: <strong>اعرض الخيارات واترك القرار للنزيلة — لا تفترض الغرفة الأنسب.</strong> وتذكر أربعة مجالات قد يكون للنزيلة فيها تفضيل:</p><ol><li><strong>موقع الغرفة:</strong> اسأل عن القرب أو الهدوء.</li><li><strong>نوع الغرفة:</strong> متصلة أو غير متصلة.</li><li><strong>المرافقة:</strong> اعرضها وفق السياسة.</li><li><strong>المساعدة:</strong> حقائب أو نقل عند الطلب.</li></ol><p>الكلمة المهمة هي <em>اعرض</em>. فقد يظن الموظف أن الغرفة القريبة من المصعد أكثر أمانًا، أو أن النزيلة المسافرة وحدها تريد مرافقة، وقد يكون ذلك صحيحًا لنزيلة وغير مرغوب لأخرى. فاعرض خيارات آمنة ودع الضيفة تختار.</p><blockquote class=\"bk-quote\">اعرض الخيارات واترك القرار للنزيلة.</blockquote><h2>في المطعم: خدمة عادلة ومريحة</h2><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنّب</th></tr></thead><tbody><tr><td>اسأل عن مكان الجلوس المفضل</td><td>وضع نزيلة منفردة في مكان غير مريح</td></tr><tr><td>قدّم الخيارات نفسها للنزيلات والضيوف</td><td>سؤالها “هل أنت وحدك؟” بصورة محرجة</td></tr><tr><td>ضع الحساب أمام من طلبه أو وفق التعليمات</td><td>افتراض أن الرجل سيدفع الحساب</td></tr><tr><td>خاطب صاحبة الطلب والقرار مباشرة</td><td>التحديق أو الوقوف قرب الطاولة</td></tr><tr><td>احترم رغبتها في الحديث أو الهدوء</td><td>فرض محادثة لا ترغب فيها</td></tr></tbody></table><p>النزيلة التي تتناول الطعام وحدها تُعرض عليها الطاولات الجيدة نفسها لا طاولة بجانب باب الخدمة. والسؤال عن عدد الضيوف مقبول، أما سؤال “هل أنت وحدك؟” بنبرة توحي بأن الأمر غريب فغير مقبول. وبعد الخدمة ابتعد، فالوقوف قرب الطاولة أو مراقبة الضيف وهو يأكل يزعج أي أحد.</p><p>وقاعدة المادة للجلوس والخدمة: <strong>لا تربطه بالجنس أو الحالة الاجتماعية — اسأل عن التفضيل.</strong></p><aside class=\"bk-scene\"><strong>موقف:</strong> وصلت نزيلة وحدها للعشاء. ابتسم المضيف وسأل: “طاولة لشخص واحد؟ هل تفضلين ركنًا هادئًا أم طاولة بجانب النافذة؟” فاختارت النافذة. وبعد قليل طلب زوجان على الطاولة المجاورة الحساب، فوضعه النادل أمام الزوجة لأنها من طلبته. لم يُعامل أحد بالافتراض، بل خُدم الجميع حسب تفضيلهم.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> عند عرض المرافقة إلى الغرفة، صغها كخيار يسهل على النزيلة رفضه، والتزم بسياسة الفندق في من يرافق وكيف.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> عند الوصول وعلى الطاولة، اعرض الخيارات نفسها واسأل عن التفضيل ودع النزيلة تقرر، ولا تربط الخدمة بالجنس أو الحالة الاجتماعية.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الاختيار والمطعم",
+                                "questions": [
+                                    {
+                                        "question": "نزيلة تسجل وصولها وحدها. كيف تختار موقع غرفتها؟",
+                                        "options": [
+                                            "تضعها دائمًا بجانب المصعد من أجل الأمان",
+                                            "تسألها هل تفضل القرب أم الهدوء",
+                                            "تضعها في أعلى طابق",
+                                            "تعطيها أول غرفة جاهزة دون سؤال"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: اسأل عن القرب أو الهدوء، ولا تفترض الغرفة الأنسب."
+                                    },
+                                    {
+                                        "question": "طلب زوجان الحساب، والزوجة هي من طلبته. أين تضعه؟",
+                                        "options": [
+                                            "أمام الرجل",
+                                            "في منتصف الطاولة",
+                                            "أمام من طلبه أو وفق التعليمات",
+                                            "أمام من يبدو أكبر سنًا"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: ضع الحساب أمام من طلبه أو وفق التعليمات، وتجنب افتراض أن الرجل سيدفع."
+                                    },
+                                    {
+                                        "question": "أي مما يلي ضمن ما يجب تجنبه في المطعم بحسب المادة؟",
+                                        "options": [
+                                            "سؤالها “هل أنت وحدك؟” بصورة محرجة",
+                                            "السؤال عن مكان الجلوس المفضل",
+                                            "تقديم الخيارات نفسها للجميع",
+                                            "احترام رغبتها في الهدوء"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تذكر المادة سؤال “هل أنت وحدك؟” بصورة محرجة ضمن ما يجب تجنبه."
+                                    },
+                                    {
+                                        "question": "وصلت نزيلة ومعها عدة حقائب. ماذا تقول المادة عن المساعدة؟",
+                                        "options": [
+                                            "احملها فورًا دون سؤال",
+                                            "لا تعرض المساعدة أبدًا لتجنب التواصل",
+                                            "اطلب من نزيل قريب أن يساعدها",
+                                            "المساعدة في الحقائب أو النقل تكون عند الطلب"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تذكر المادة المساعدة: حقائب أو نقل عند الطلب."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "اللغة والحدود والأخطاء الشائعة",
+                    "lessons": [
+                        {
+                            "title": "اللغة المحايدة والحدود المهنية",
+                            "minutes": 7,
+                            "body": "<h2>استخدم لغة مهنية ومحايدة</h2><table class=\"bk-say\"><thead><tr><th>قل</th><th>تجنّب</th></tr></thead><tbody><tr><td>“مرحبًا سيدتي، كيف يمكنني مساعدتك؟”</td><td>“هل أنت وحدك؟”</td></tr><tr><td>“ما الموقع الذي تفضلينه؟”</td><td>“ما حالتك الاجتماعية؟”</td></tr><tr><td>“لخصوصيتك، رقم الغرفة موضح هنا.”</td><td>“أين زوجك؟”</td></tr><tr><td>“هل ترغبين في مرافقة إلى الغرفة؟”</td><td>“هل يمكنني مقابلتك لاحقًا؟”</td></tr><tr><td>“هل هناك ترتيب آخر يناسبك؟”</td><td>“سأعطي الحساب للرجل.”</td></tr></tbody></table><p>العبارات التي تقال كلها عن الخدمة: الترحيب والتفضيل والخصوصية والمرافقة والبدائل. أما العبارات التي تُتجنب فكلها عن حياة الضيفة الشخصية أو عن اهتمام شخصي من الموظف، ولا حاجة لأي منها لتقديم خدمة جيدة.</p><h2>حافظ على الحدود المهنية</h2><ol><li><strong>المحادثة:</strong> اجعلها مرتبطة بالخدمة، وتوقف عند قِصر الإجابات أو انشغال النزيلة.</li><li><strong>التواصل الشخصي:</strong> لا تطلب رقمًا شخصيًا، ولا تقدم حسابك أو دعوة خاصة.</li><li><strong>المرافقة:</strong> تكون بطلب النزيلة ووفق إجراء الفندق الرسمي.</li><li><strong>سلوك غير مريح:</strong> أنهِ الحوار، وابتعد، وأبلغ المشرف أو الأمن وفق الحالة.</li></ol><blockquote class=\"bk-quote\">الودّ مهني — ولا يتحول إلى اهتمام شخصي.</blockquote><h2>تجنّب التمييز وسوء السلوك</h2><ul><li><strong>خدمة الرجال أولًا:</strong> خدمة الضيوف تكون حسب الدور والحاجة ومعايير الفندق، لا الجنس.</li><li><strong>أسئلة شخصية:</strong> تجنب أسئلة الحالة الاجتماعية والمال والعلاقات وأسباب السفر.</li><li><strong>الافتراضات:</strong> لا تفترض من يقرر أو يدفع أو يحتاج المساعدة أو الحماية.</li><li><strong>التحديق أو التجاهل:</strong> حافظ على تواصل بصري مهني واهتمام متوازن دون مراقبة أو إهمال.</li></ul><p>وتلخص المادة: <strong>حدود واضحة — خصوصية محمية — خدمة عادلة.</strong></p><h2>رسالة الختام</h2><p>تختم المادة بسطرين: <strong>اسأل — لا تفترض، قدّم خدمة متساوية — لا تميّز.</strong> التزم بالحدود، احمِ الخصوصية، احترم. فالخدمة المهنية تمنح النزيلة الأمان والتحكم والاحترام.</p><aside class=\"bk-scene\"><strong>موقف:</strong> أخبرت نزيلة تنتظر في البهو موظف الحقائب أن رجلًا من طاولة أخرى يقترب منها مرارًا ويطلب رقمها. لم يجادل الموظف الرجل، بل أنهى الحوار بهدوء، وعرض على النزيلة مكانًا أهدأ للجلوس، وابتعد وأبلغ مشرف المناوبة والأمن، فتعاملا مع الموقف وفق الإجراء. شعرت النزيلة بالحماية دون أن تصبح محط الأنظار.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> إذا قصرت إجابات النزيلة فاعتبرها إشارة، واختم بلطف: “أنا في الخدمة إذا احتجتِ أي شيء”، ثم امنحها مساحتها.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> استخدم لغة محايدة مرتبطة بالخدمة، واجعل الحديث والتواصل مهنيين، وصعّد السلوك غير المريح، ولا تفترض ولا تميّز.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: اللغة والحدود",
+                                "questions": [
+                                    {
+                                        "question": "نزيلة تسجل وصولها دون مرافق. أي عبارة مناسبة؟",
+                                        "options": [
+                                            "“أين زوجك؟”",
+                                            "“هل أنت وحدك؟”",
+                                            "“ما حالتك الاجتماعية؟”",
+                                            "“مرحبًا سيدتي، كيف يمكنني مساعدتك؟”"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "عبارة “مرحبًا سيدتي، كيف يمكنني مساعدتك؟” ضمن ما يقال، والبقية ضمن ما يُتجنب."
+                                    },
+                                    {
+                                        "question": "تتحدث مع نزيلة فأصبحت إجاباتها قصيرة جدًا. ماذا تفعل؟",
+                                        "options": [
+                                            "تتوقف عن الحديث وتمنحها مساحتها",
+                                            "تطرح أسئلة أكثر لإشراكها",
+                                            "تحدثها عن رحلاتك الشخصية",
+                                            "تعرض مقابلتها لاحقًا لإكمال الحديث"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تقول المادة: اجعل المحادثة مرتبطة بالخدمة وتوقف عند قِصر الإجابات أو انشغال النزيلة."
+                                    },
+                                    {
+                                        "question": "تبدو نزيلة منزعجة لأن شخصًا يقترب منها مرارًا. ماذا تقول المادة؟",
+                                        "options": [
+                                            "تجاهل الأمر ما لم تقدم شكوى رسمية",
+                                            "جادل الشخص دفاعًا عنها",
+                                            "أنهِ الحوار، وابتعد، وأبلغ المشرف أو الأمن",
+                                            "اطلب من النزيلة الصعود إلى غرفتها"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "عند السلوك غير المريح تقول المادة: أنهِ الحوار، وابتعد، وأبلغ المشرف أو الأمن وفق الحالة."
+                                    },
+                                    {
+                                        "question": "أي مما يلي تعدّه المادة سؤالًا شخصيًا يجب تجنبه؟",
+                                        "options": [
+                                            "“ما الموقع الذي تفضلينه؟”",
+                                            "الأسئلة عن أسباب السفر",
+                                            "“هل هناك ترتيب آخر يناسبك؟”",
+                                            "“هل ترغبين في مرافقة إلى الغرفة؟”"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: تجنب أسئلة الحالة الاجتماعية والمال والعلاقات وأسباب السفر."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

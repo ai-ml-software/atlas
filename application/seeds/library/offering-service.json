@@ -1,0 +1,551 @@
+{
+    "slug": "offering-service",
+    "category": "personalised-service",
+    "level": "foundation",
+    "source_pdf": "Offering-Service-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/offering-service.webp",
+    "videos": [
+        {
+            "id": "bwcyXcOpWVs",
+            "title": "The Secret Ingredients of Great Hospitality | Will Guidara | TED",
+            "channel": "TED",
+            "why": "A restaurateur shows how noticing what guests need and acting before they ask makes them feel seen and cared for, the heart of offering service."
+        },
+        {
+            "id": "yuuk3pStM24",
+            "title": "The Bar is So Low - The Realities of Memorable Service | Alex Cabañas | TEDxWilmingtonSalon",
+            "channel": "TEDx Talks",
+            "why": "A hospitality leader explains why proactive attention to small things, rather than waiting to be asked, is what makes service memorable."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Offering Service",
+            "subtitle": "Before the guest asks",
+            "short_description": "Learn to notice guest needs, approach professionally and offer help before the guest has to ask, then follow through until the service is complete.",
+            "description": "<p>The best service often begins before the guest says a word. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows hotel colleagues how to take the initiative: Notice, Approach, Offer assistance and Follow through.</p><p>You will learn why proactive service gives guests comfort and trust, how to read the signs that a guest needs help, how to approach with respect, which behaviours to avoid, which words to use instead of blunt questions and what guests expect from you.</p>",
+            "requirements": "No prior training is needed; the course suits every colleague who works where guests are present.",
+            "outcomes": [
+                "Explain what offering service before the guest asks means",
+                "Recognise the signs that a guest needs assistance",
+                "Approach a guest respectfully with a greeting, a smile and full attention",
+                "Avoid ignoring guests or saying a request is not your responsibility",
+                "Use professional offers of help and follow through until the request is complete"
+            ],
+            "faqs": [
+                {
+                    "question": "What are the steps of offering service?",
+                    "answer": "Notice, Approach, Offer assistance, and Follow through until the service is complete."
+                },
+                {
+                    "question": "What if the guest's need is not part of my job?",
+                    "answer": "Do not ignore the guest or say it is not your responsibility. Contact the right colleague and follow the request until they take over."
+                },
+                {
+                    "question": "Should I approach every guest who looks around?",
+                    "answer": "Notice, approach and ask kindly; do not assume. A simple \"How may I assist you?\" lets the guest tell you what they need."
+                }
+            ],
+            "meta_title": "Offering Service Before the Guest Asks",
+            "meta_description": "Hotel training on proactive service: notice guest needs, approach with respect, offer help in professional language and follow through to completion.",
+            "focus_keyword": "proactive service in hotels",
+            "chapters": [
+                {
+                    "title": "Service Before the Request",
+                    "lessons": [
+                        {
+                            "title": "What Offering Service Means and Why It Matters",
+                            "minutes": 5,
+                            "body": "<h2>Offering service means taking the initiative</h2><p>Imagine two hotels. In the first, a guest struggling with a heavy suitcase has to find someone and ask for help. In the second, a colleague sees the suitcase, walks over, greets the guest and offers to take it. Both hotels deliver the same service, but only the second makes the guest feel cared for. The deck defines offering service simply: <strong>taking the initiative before the request</strong>.</p><h2>Five things offering service involves</h2><ul><li><strong>Watch your surroundings and the guests' needs.</strong> Keep part of your attention on the people around you, not only on your task.</li><li><strong>Approach professionally and at the right time.</strong> Choose a moment that helps the guest, not one that interrupts them.</li><li><strong>Offer help before the guest has to ask.</strong> The guest should not need to chase anyone.</li><li><strong>Use clear words and a warm tone.</strong> A friendly \"How may I assist you?\" opens the conversation.</li><li><strong>Make sure the request is carried out or handed to the right department.</strong> Offering is only the start; the need must actually be met.</li></ul><p>The deck summarises the approach in four words: <strong>Notice, Approach, Offer assistance, Follow through until the service is complete</strong>.</p><blockquote class=\"bk-quote\">How may I assist you?</blockquote><h2>Why it matters: comfort and trust</h2><p>The deck's second message is that proactive service <strong>gives the guest comfort and trust</strong>. The key word is <strong>before</strong>: before the guest asks. Five benefits follow:</p><ul><li>The guest feels they are <strong>the centre of attention</strong>.</li><li><strong>Waiting time and tension are reduced.</strong></li><li><strong>Needs are solved before they become complaints.</strong> A guest who cannot find the lift today becomes a guest who complains about signage tomorrow.</li><li>It shows the colleague's <strong>readiness and professionalism</strong>.</li><li>The guest's experience becomes <strong>easier and more comfortable</strong>.</li></ul><blockquote class=\"bk-quote\">When the guest feels we are keen to serve them, they become more comfortable and cooperative.</blockquote><p>There is a practical benefit too. A guest who feels looked after is more patient when something does go wrong, and more willing to accept an alternative. Proactive service creates comfort, trust and easier interactions for everyone.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A housekeeping attendant cleaning a corridor notices a guest standing at a room door, trying her key card again and again. Instead of carrying on with his trolley, he walks over, greets her and asks, \"How may I assist you?\" He sees that she is at the wrong room number, walks her to her own door two rooms down and, when her card still fails, calls the front desk and waits with her until a new card arrives.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Notice, Approach, Offer assistance, Follow through. Offering help before the guest asks makes them feel cared for and solves needs before they become complaints.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: What offering service means",
+                                "questions": [
+                                    {
+                                        "question": "What does the deck mean by offering service?",
+                                        "options": [
+                                            "Responding quickly when a guest calls",
+                                            "Taking the initiative before the guest asks",
+                                            "Offering upgrades to every guest",
+                                            "Waiting at your station until needed"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck defines offering service as taking the initiative before the request."
+                                    },
+                                    {
+                                        "question": "You offered to help a guest find the spa, but it is not your department. What completes the service?",
+                                        "options": [
+                                            "Pointing vaguely down the corridor",
+                                            "Telling the guest to call the spa",
+                                            "Nothing, offering was enough",
+                                            "Making sure the request is carried out or handed to the right department"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says make sure the request is carried out or handed to the relevant department."
+                                    },
+                                    {
+                                        "question": "A guest keeps looking for the lift. Why does helping now matter?",
+                                        "options": [
+                                            "Needs are solved before they become complaints",
+                                            "It is required only for VIP guests",
+                                            "It shortens your shift",
+                                            "It avoids using the signage"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck lists solving needs before they become complaints as a benefit of taking the initiative."
+                                    },
+                                    {
+                                        "question": "Which is NOT one of the benefits of proactive service in the deck?",
+                                        "options": [
+                                            "Waiting time and tension are reduced",
+                                            "The guest feels they are the centre of attention",
+                                            "The hotel can charge higher rates",
+                                            "The guest's experience becomes easier and more comfortable"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck's benefits are about attention, less waiting, fewer complaints, professionalism and comfort, not higher rates."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Reading the Signs That a Guest Needs Service",
+                            "minutes": 5,
+                            "body": "<h2>When should you offer service?</h2><p>You cannot offer help at the right moment if you do not notice the moment arriving. Most guests will not wave at you; instead they show their need through small signs. The deck asks you to <strong>read the signs that show a need for service</strong>, and lists six of them.</p><h3>Six signs to watch for</h3><ol><li><strong>A guest looking around for help.</strong> They scan the lobby, look towards the desk or turn in a circle. They are searching for someone like you.</li><li><strong>A guest carrying luggage or many items.</strong> Bags, shopping, a child's buggy or a tray of drinks. Their hands are full and they may need a door opened or a trolley.</li><li><strong>A guest checking a sign or directions in confusion.</strong> They stop in front of a floor plan, read it twice and look around again.</li><li><strong>A guest waiting without knowing the next step.</strong> They stand at the entrance to the restaurant, unsure whether to wait to be seated, or by the lifts after check-in, unsure where to go.</li><li><strong>A guest trying to attract staff attention.</strong> Raising a hand, making eye contact, or moving towards a colleague who is busy.</li><li><strong>A guest who looks uncomfortable or has a question.</strong> A worried expression, a hesitant step or a guest who starts to speak and then stops.</li></ol><blockquote class=\"bk-quote\">Notice, approach and ask kindly. Do not assume.</blockquote><h2>Why not assume?</h2><p>Signs tell you a guest may need something; they do not tell you what. A guest looking at the lift sign may want the lift, or the restrooms, or may be waiting for a friend. If you assume and start giving directions to the pool, you may miss the real need and leave the guest feeling unheard. Instead, approach and ask a simple, open question such as \"How may I assist you?\" and let the guest tell you.</p><p>Asking also respects the guest's choice. Some guests are happy to find their own way. A kind offer lets them accept or decline comfortably.</p><h2>Make noticing a habit</h2><p>Noticing is easier when you make it part of how you work. Look up from your task regularly. When you walk through a public area, scan it. When you finish with one guest, glance around before you start the next task. Small habits like these mean you see the guest checking the map before they have to come and find you.</p><table class=\"bk-say\"><thead><tr><th>Sign</th><th>A kind offer</th></tr></thead><tbody><tr><td>Looking around</td><td>\"Good evening, how may I assist you?\"</td></tr><tr><td>Carrying many items</td><td>\"May I help you with those?\"</td></tr><tr><td>Confused by directions</td><td>\"May I help you find your way?\"</td></tr><tr><td>Waiting, unsure of next step</td><td>\"Welcome, may I help you?\"</td></tr></tbody></table><aside class=\"bk-scene\"><strong>Scene:</strong> A restaurant host notices a couple standing just inside the entrance, looking from the empty tables to the busy waiters. They are waiting without knowing the next step. She walks over, smiles and says, \"Good evening, welcome. How may I assist you?\" They explain they have no booking but hoped for a table by the window. She seats them within a minute, before they had to catch anyone's eye.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Watch for six signs: looking around, carrying many items, confused by directions, waiting without knowing the next step, trying to get attention and looking uncomfortable. Notice, approach, ask kindly, and do not assume.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Reading the signs",
+                                "questions": [
+                                    {
+                                        "question": "A guest stops in front of the floor plan, reads it twice and looks around. What sign is this?",
+                                        "options": [
+                                            "Checking a sign or directions in confusion",
+                                            "Carrying many items",
+                                            "Waiting for a friend",
+                                            "Nothing that needs attention"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The deck lists a guest checking a sign or directions in confusion as a sign of need."
+                                    },
+                                    {
+                                        "question": "A guest is looking at the lift sign. What should you do?",
+                                        "options": [
+                                            "Assume they want the lift and point to it",
+                                            "Ignore them because the sign is clear",
+                                            "Approach and kindly ask how you may assist",
+                                            "Wait until they ask you"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says notice, approach and ask kindly; do not assume."
+                                    },
+                                    {
+                                        "question": "A couple stands at the restaurant entrance unsure whether to wait to be seated. Which sign is this?",
+                                        "options": [
+                                            "Looking uncomfortable",
+                                            "Carrying many items",
+                                            "Trying to attract attention",
+                                            "Waiting without knowing the next step"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Waiting without knowing the next step is one of the deck's six signs."
+                                    },
+                                    {
+                                        "question": "Why should you ask rather than assume what a guest needs?",
+                                        "options": [
+                                            "Asking takes less effort",
+                                            "Signs show a need may exist but not what it is",
+                                            "Guests prefer long conversations",
+                                            "It avoids offering help"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck's rule is: notice, approach and ask kindly, do not assume."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Approaching the Guest",
+                    "lessons": [
+                        {
+                            "title": "Approach with Respect and Behaviours to Avoid",
+                            "minutes": 6,
+                            "body": "<h2>Approach with respect and give full attention</h2><p>Once you have noticed a guest who may need help, how you approach decides how your offer is received. A good approach feels natural and welcoming; a poor one can feel intrusive or careless. The deck describes <strong>the right way</strong>:</p><ul><li><strong>Smile and make natural eye contact.</strong></li><li><strong>Approach from the front or the visible side,</strong> so you never surprise the guest from behind.</li><li><strong>Keep a suitable professional distance.</strong> Close enough to talk comfortably, not so close that the guest wants to step back.</li><li><strong>Face the guest with your whole body.</strong> It shows your attention is fully on them.</li><li><strong>Start with a greeting, then offer help.</strong> \"Good morning\" first, then \"How may I assist you?\"</li><li><strong>Use the guest's name if you know it.</strong></li></ul><p>The deck also lists what to <strong>avoid</strong> when approaching:</p><ul><li>Approaching in silence.</li><li>Interrupting the guest while they are speaking.</li><li>Standing uncomfortably close.</li><li>Talking while looking away.</li><li>Pointing at the guest with your finger.</li><li>Showing hurry or irritation.</li></ul><blockquote class=\"bk-quote\">Greet first. Offer help. Listen fully.</blockquote><h2>Ignoring the guest is not an option</h2><p>Some behaviours do more damage than a poor approach, because they tell the guest they are not worth attention. The deck lists six behaviours to avoid:</p><ol><li><strong>Approaching the guest without saying anything.</strong></li><li><strong>Pretending not to see the guest.</strong></li><li><strong>Being busy with the phone or a side conversation.</strong></li><li><strong>Ignoring the guest because they are not in your section.</strong></li><li><strong>Waiting for the guest to repeat their request.</strong></li><li><strong>Saying: \"This is not my responsibility.\"</strong></li></ol><p>Every guest sees every colleague as the hotel. A guest does not know or care which department you belong to. If a lifeguard ignores a guest asking about restaurant hours because \"that's not my area\", the guest simply experiences a hotel that does not care.</p><blockquote class=\"bk-quote\">If the service is not your responsibility, contact the right person and follow the request.</blockquote><p>Owning the request does not mean doing everything yourself. It means staying with it until the right colleague takes over: call the department, tell the guest what will happen, and check that it did.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A security officer at the entrance sees a guest trying to open the heavy door while holding a baby. He does not wait or look away. He steps forward from the side where she can see him, opens the door, greets her and asks if she needs anything else. She asks where she can warm a bottle. He does not know, so he radios the restaurant, tells her a colleague is coming to help, and stays until the waiter arrives.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Smile, approach from the front, keep a professional distance, face the guest, greet then offer help. Never ignore a guest or say it is not your responsibility; contact the right person and follow through.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Approaching the guest",
+                                "questions": [
+                                    {
+                                        "question": "You see a guest who may need help. What should you say first?",
+                                        "options": [
+                                            "\"What do you want?\"",
+                                            "Nothing; wait for them to speak",
+                                            "A greeting, then an offer of help",
+                                            "Their room number"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says start with a greeting and then offer help."
+                                    },
+                                    {
+                                        "question": "From which direction should you approach a guest?",
+                                        "options": [
+                                            "From the front or the visible side",
+                                            "From behind so as not to disturb them",
+                                            "From whichever side is closest",
+                                            "It does not matter"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "The right way includes approaching from the front or the visible side."
+                                    },
+                                    {
+                                        "question": "A guest by the pool asks a lifeguard about breakfast times. What should the lifeguard do?",
+                                        "options": [
+                                            "Say it is not his responsibility",
+                                            "Pretend not to hear",
+                                            "Tell the guest to go to reception",
+                                            "Contact the right person or find out, and follow the request"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "If the service is not your responsibility, contact the right person and follow the request."
+                                    },
+                                    {
+                                        "question": "Which behaviour does the deck list as something to avoid?",
+                                        "options": [
+                                            "Using the guest's name",
+                                            "Waiting for the guest to repeat their request",
+                                            "Facing the guest with your whole body",
+                                            "Keeping a professional distance"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Waiting for the guest to repeat their request is on the deck's avoid list."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Language and Expectations",
+                    "lessons": [
+                        {
+                            "title": "Professional Language and What the Guest Expects",
+                            "minutes": 6,
+                            "body": "<h2>Replace the blunt question with a professional offer</h2><p>The words you use when you approach can make a guest feel welcome or feel like a problem. The deck asks you to <strong>replace the blunt question with a professional offer of help</strong>:</p><table class=\"bk-say\"><thead><tr><th>Say</th><th>Avoid</th></tr></thead><tbody><tr><td>\"How may I assist you?\"</td><td>\"What do you want?\"</td></tr><tr><td>\"May I help you?\"</td><td>\"Do you have a problem?\"</td></tr><tr><td>\"I would be happy to help you.\"</td><td>\"What? / Yes?\"</td></tr><tr><td>\"Allow me to check that for you.\"</td><td>\"I don't know.\"</td></tr><tr><td>\"I will contact the right colleague.\"</td><td>\"This is not my responsibility.\"</td></tr></tbody></table><p>Look at the difference. \"What do you want?\" sounds like the guest is interrupting you. \"How may I assist you?\" says you are there for them. \"I don't know\" ends the conversation; \"Allow me to check that for you\" keeps it going and shows ownership. \"This is not my responsibility\" pushes the guest away; \"I will contact the right colleague\" brings help to them.</p><blockquote class=\"bk-quote\">How may I assist you? May I help you? Allow me to check that for you.</blockquote><h2>What the guest expects</h2><p>The deck sums up the guest's point of view: <strong>the guest expects you to notice their need and respond</strong>. Five expectations follow:</p><ol><li><strong>Full attention:</strong> face the guest and listen without interrupting.</li><li><strong>Clear acknowledgement:</strong> smile and nod when a guest calls you from a distance, even if you cannot come immediately.</li><li><strong>Welcoming body language:</strong> keep an open and professional posture.</li><li><strong>Ownership of the request:</strong> do not leave the guest looking for another colleague.</li><li><strong>Service follow-through:</strong> make sure the request is complete and the guest is satisfied.</li></ol><p>Clear acknowledgement matters especially on busy shifts. If you are serving one guest and another tries to catch your eye, a quick smile and nod tells them \"I have seen you, I will be with you soon\". Without it, the second guest feels ignored even though you intend to help.</p><h2>Closing thought</h2><p>The deck ends with a simple call: <strong>notice the need, and take the initiative before you are asked</strong>. Smile, Approach, Offer assistance, Follow up. Proactive service makes every guest feel seen, valued and cared for.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest at the business centre looks frustrated at the printer. A front desk colleague walking past stops, smiles and says, \"May I help you?\" The guest says the printer will not connect. The colleague does not know the system, so she says, \"Allow me to check that for you. I will contact our IT colleague.\" She calls, tells the guest the technician will arrive in five minutes, and returns after he leaves to confirm the documents printed.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Replace \"I don't know\" with \"Allow me to check that for you\" every time. It is honest and it keeps the service going.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Use professional offers of help instead of blunt questions, acknowledge guests even from a distance, own the request and follow through until the guest is satisfied.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Language and expectations",
+                                "questions": [
+                                    {
+                                        "question": "A guest asks you something you do not know. What should you say?",
+                                        "options": [
+                                            "\"I don't know.\"",
+                                            "\"Ask someone else.\"",
+                                            "\"Allow me to check that for you.\"",
+                                            "\"That's not my job.\""
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck replaces \"I don't know\" with \"Allow me to check that for you.\""
+                                    },
+                                    {
+                                        "question": "You are serving one guest when another calls you from across the lobby. What does the guest expect?",
+                                        "options": [
+                                            "That you leave the first guest immediately",
+                                            "That you ignore them until you are free",
+                                            "That you shout that you are busy",
+                                            "A clear acknowledgement: a smile and a nod"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Clear acknowledgement means smile and nod when called from a distance."
+                                    },
+                                    {
+                                        "question": "Which phrase is on the deck's avoid list?",
+                                        "options": [
+                                            "\"Do you have a problem?\"",
+                                            "\"May I help you?\"",
+                                            "\"I would be happy to help you.\"",
+                                            "\"I will contact the right colleague.\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "\"Do you have a problem?\" is a blunt question the deck says to avoid."
+                                    },
+                                    {
+                                        "question": "What does ownership of the request mean in the guest's expectations?",
+                                        "options": [
+                                            "Doing every task yourself",
+                                            "Not leaving the guest to look for another colleague",
+                                            "Telling the guest which department to call",
+                                            "Writing the request in the logbook only"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says ownership means do not leave the guest looking for another colleague."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "المبادرة بعرض الخدمة",
+            "subtitle": "قبل أن يطلب النزيل",
+            "short_description": "تعلّم ملاحظة احتياجات النزيل، والاقتراب بمهنية، وعرض المساعدة قبل أن يضطر للطلب، ثم المتابعة حتى اكتمال الخدمة.",
+            "description": "<p>كثيرًا ما تبدأ أفضل خدمة قبل أن يقول النزيل كلمة. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتعلّم الموظفين المبادرة: لاحظ، اقترب، اعرض المساعدة، وتابع حتى اكتمال الخدمة.</p><p>ستتعرف على سبب منح المبادرة للنزيل الراحة والثقة، وكيف تقرأ الإشارات التي تدل على احتياجه للمساعدة، وكيف تقترب باحترام، وما السلوكيات التي تتجنبها، وما الكلمات التي تستخدمها بدل الأسئلة الحادة، وما يتوقعه النزيل منك.</p>",
+            "requirements": "لا يلزم أي تدريب سابق، والدورة مناسبة لكل موظف يعمل في أماكن وجود النزلاء.",
+            "outcomes": [
+                "اشرح معنى عرض الخدمة قبل أن يطلب النزيل",
+                "تعرّف على الإشارات التي تدل على احتياج النزيل للمساعدة",
+                "اقترب من النزيل باحترام بتحية وابتسامة واهتمام كامل",
+                "تجنب تجاهل النزيل أو قول إن الطلب ليس مسؤوليتك",
+                "استخدم عبارات مهنية لعرض المساعدة وتابع حتى اكتمال الطلب"
+            ],
+            "faqs": [
+                {
+                    "question": "ما خطوات عرض الخدمة؟",
+                    "answer": "لاحظ، اقترب، اعرض المساعدة، وتابع حتى اكتمال الخدمة."
+                },
+                {
+                    "question": "ماذا لو لم يكن احتياج النزيل من عملي؟",
+                    "answer": "لا تتجاهله ولا تقل إنها ليست مسؤوليتك، بل تواصل مع الشخص المختص وتابع الطلب حتى يتولاه."
+                },
+                {
+                    "question": "هل أقترب من كل نزيل ينظر حوله؟",
+                    "answer": "لاحظ، واقترب، واسأل بلطف، ولا تفترض. فسؤال بسيط مثل \"كيف يمكنني مساعدتك؟\" يجعل النزيل يخبرك بما يحتاجه."
+                }
+            ],
+            "meta_title": "المبادرة بعرض الخدمة قبل طلب النزيل",
+            "meta_description": "تدريب فندقي على الخدمة الاستباقية: لاحظ احتياج النزيل، واقترب باحترام، واعرض المساعدة بلغة مهنية، وتابع حتى اكتمال الخدمة.",
+            "focus_keyword": "المبادرة بعرض الخدمة",
+            "chapters": [
+                {
+                    "title": "الخدمة قبل الطلب",
+                    "lessons": [
+                        {
+                            "title": "معنى عرض الخدمة وأهميته",
+                            "minutes": 5,
+                            "body": "<h2>عرض الخدمة يعني المبادرة قبل الطلب</h2><p>تخيّل فندقين: في الأول يضطر نزيل يحمل حقيبة ثقيلة إلى البحث عن موظف وطلب المساعدة، وفي الثاني يرى الموظف الحقيبة فيقترب ويحيّي النزيل ويعرض حملها. الخدمة واحدة في الفندقين، لكن الثاني وحده يُشعر النزيل بالاهتمام. وتعرّف المادة عرض الخدمة ببساطة: <strong>المبادرة قبل الطلب</strong>.</p><h2>خمسة أمور يشملها عرض الخدمة</h2><ul><li><strong>راقب محيطك واحتياجات النزلاء،</strong> واجعل جزءًا من انتباهك على من حولك لا على مهمتك فقط.</li><li><strong>اقترب بطريقة مهنية وفي الوقت المناسب،</strong> واختر لحظة تساعد النزيل لا تقاطعه.</li><li><strong>اعرض المساعدة قبل أن يضطر النزيل للطلب،</strong> فلا ينبغي أن يلاحق أحدًا.</li><li><strong>استخدم كلمات واضحة ونبرة دافئة،</strong> فعبارة \"كيف يمكنني مساعدتك؟\" تفتح الحديث.</li><li><strong>تأكد من تنفيذ الطلب أو تسليمه للجهة المختصة،</strong> فالعرض مجرد بداية ويجب أن تُلبّى الحاجة فعلًا.</li></ul><p>وتلخص المادة المنهج في أربع كلمات: <strong>لاحظ، اقترب، اعرض المساعدة، تابع حتى اكتمال الخدمة</strong>.</p><blockquote class=\"bk-quote\">كيف يمكنني مساعدتك؟</blockquote><h2>لماذا هو مهم: الراحة والثقة</h2><p>الرسالة الثانية في المادة أن المبادرة <strong>تمنح النزيل الراحة والثقة</strong>، والكلمة المفتاحية هي <strong>قبل</strong>: قبل أن يطلب النزيل. ويتبع ذلك خمس فوائد:</p><ul><li><strong>يشعر النزيل بأنه محل اهتمام.</strong></li><li><strong>يقل وقت الانتظار والتوتر.</strong></li><li><strong>تُحل الاحتياجات قبل أن تصبح شكاوى؛</strong> فالنزيل الذي لا يجد المصعد اليوم قد يشتكي من اللوحات غدًا.</li><li><strong>تظهر جاهزية الموظف واحترافيته.</strong></li><li><strong>تصبح تجربة النزيل أسهل وأكثر راحة.</strong></li></ul><blockquote class=\"bk-quote\">حين يشعر النزيل بحرصنا على خدمته، يصبح أكثر راحة وتعاونًا.</blockquote><p>وهناك فائدة عملية أيضًا؛ فالنزيل الذي يشعر بالاهتمام يكون أكثر صبرًا إذا حدث خطأ، وأكثر تقبلًا للبديل. فالخدمة الاستباقية تصنع الراحة والثقة وتعاملًا أسهل للجميع.</p><aside class=\"bk-scene\"><strong>موقف:</strong> لاحظ موظف التدبير الفندقي أثناء تنظيف الممر نزيلة تقف عند باب غرفة وتجرب بطاقتها مرارًا. بدل أن يكمل عمله، اقترب وحيّاها وسأل: \"كيف يمكنني مساعدتك؟\" فتبيّن أنها عند رقم غرفة خاطئ، فرافقها إلى غرفتها على بعد بابين، وحين لم تعمل البطاقة أيضًا اتصل بالاستقبال وانتظر معها حتى وصلت بطاقة جديدة.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> لاحظ، اقترب، اعرض المساعدة، تابع. فعرض المساعدة قبل أن يطلب النزيل يُشعره بالاهتمام ويحل الاحتياجات قبل أن تصبح شكاوى.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: معنى عرض الخدمة",
+                                "questions": [
+                                    {
+                                        "question": "ماذا تعني المادة بعرض الخدمة؟",
+                                        "options": [
+                                            "الاستجابة بسرعة عندما يتصل النزيل",
+                                            "المبادرة قبل أن يطلب النزيل",
+                                            "عرض ترقية على كل نزيل",
+                                            "الانتظار في موقعك حتى يُطلب منك"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تعرّف المادة عرض الخدمة بأنه المبادرة قبل الطلب."
+                                    },
+                                    {
+                                        "question": "عرضت مساعدة نزيل في الوصول إلى السبا، وهو ليس قسمك. ما الذي يكمل الخدمة؟",
+                                        "options": [
+                                            "الإشارة بشكل عام إلى الممر",
+                                            "الطلب من النزيل الاتصال بالسبا",
+                                            "لا شيء، فالعرض يكفي",
+                                            "التأكد من تنفيذ الطلب أو تسليمه للجهة المختصة"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: تأكد من تنفيذ الطلب أو تسليمه للجهة المختصة."
+                                    },
+                                    {
+                                        "question": "نزيل يبحث عن المصعد باستمرار. لماذا تهم مساعدته الآن؟",
+                                        "options": [
+                                            "لأن الاحتياجات تُحل قبل أن تصبح شكاوى",
+                                            "لأن ذلك مطلوب لكبار الشخصيات فقط",
+                                            "لأنه يقصّر مناوبتك",
+                                            "لأنه يغني عن اللوحات"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تذكر المادة أن الاحتياجات تُحل قبل أن تصبح شكاوى ضمن فوائد المبادرة."
+                                    },
+                                    {
+                                        "question": "أي مما يلي ليس من فوائد المبادرة في المادة؟",
+                                        "options": [
+                                            "يقل وقت الانتظار والتوتر",
+                                            "يشعر النزيل بأنه محل اهتمام",
+                                            "يستطيع الفندق رفع الأسعار",
+                                            "تصبح تجربة النزيل أسهل وأكثر راحة"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "فوائد المادة تتعلق بالاهتمام وقلة الانتظار والشكاوى والاحترافية والراحة، لا برفع الأسعار."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "اقرأ الإشارات التي تدل على احتياج الخدمة",
+                            "minutes": 5,
+                            "body": "<h2>متى تعرض الخدمة؟</h2><p>لا يمكنك عرض المساعدة في اللحظة المناسبة إذا لم تلاحظ اقترابها. فمعظم النزلاء لن يلوّحوا لك، بل يُظهرون احتياجهم بإشارات صغيرة. وتطلب منك المادة أن <strong>تقرأ الإشارات التي تدل على احتياج الخدمة</strong>، وتذكر ستًا منها.</p><h3>ست إشارات تنتبه لها</h3><ol><li><strong>نزيل ينظر حوله بحثًا عن المساعدة:</strong> يتفحص الردهة أو ينظر نحو المكتب أو يلتفت حوله؛ إنه يبحث عن شخص مثلك.</li><li><strong>نزيل يحمل أمتعة أو أغراضًا كثيرة:</strong> حقائب أو مشتريات أو عربة طفل؛ يداه مشغولتان وقد يحتاج إلى فتح باب أو عربة أمتعة.</li><li><strong>نزيل يراجع لوحة أو اتجاهات بحيرة:</strong> يقف أمام خريطة الطابق ويقرؤها مرتين ثم ينظر حوله مجددًا.</li><li><strong>نزيل ينتظر دون معرفة الخطوة التالية:</strong> يقف عند مدخل المطعم لا يعرف هل ينتظر من يُجلسه، أو عند المصاعد بعد تسجيل الدخول لا يعرف أين يذهب.</li><li><strong>نزيل يحاول لفت انتباه الموظفين:</strong> يرفع يده أو ينظر إليك أو يتجه نحو موظف مشغول.</li><li><strong>نزيل يبدو غير مرتاح أو لديه استفسار:</strong> ملامح قلق، أو خطوة مترددة، أو يبدأ بالكلام ثم يتوقف.</li></ol><blockquote class=\"bk-quote\">لاحظ، اقترب، واسأل بلطف — لا تفترض.</blockquote><h2>لماذا لا نفترض؟</h2><p>الإشارات تخبرك أن النزيل قد يحتاج شيئًا، لكنها لا تخبرك ما هو. فالنزيل الذي ينظر إلى لوحة المصعد قد يريد المصعد، أو دورات المياه، أو ينتظر صديقًا. وإذا افترضت وبدأت تشرح له الطريق إلى المسبح فقد تفوتك حاجته الحقيقية ويشعر بأنه لم يُسمع. لذلك اقترب واطرح سؤالًا بسيطًا ومفتوحًا مثل \"كيف يمكنني مساعدتك؟\" ودعه يخبرك. والسؤال يحترم اختيار النزيل أيضًا؛ فبعض النزلاء يفضلون إيجاد طريقهم بأنفسهم، والعرض اللطيف يتيح لهم القبول أو الاعتذار براحة.</p><h2>اجعل الملاحظة عادة</h2><p>تصبح الملاحظة أسهل عندما تكون جزءًا من أسلوب عملك: ارفع نظرك عن مهمتك بانتظام، وتفقّد المكان عندما تمر في منطقة عامة، وانظر حولك بعد أن تنتهي من نزيل وقبل أن تبدأ المهمة التالية. هذه العادات الصغيرة تجعلك ترى النزيل الذي يراجع الخريطة قبل أن يضطر للبحث عنك.</p><table class=\"bk-say\"><thead><tr><th>الإشارة</th><th>عرض لطيف</th></tr></thead><tbody><tr><td>ينظر حوله</td><td>\"مساء الخير، كيف يمكنني مساعدتك؟\"</td></tr><tr><td>يحمل أغراضًا كثيرة</td><td>\"هل تسمح لي بمساعدتك في حملها؟\"</td></tr><tr><td>محتار في الاتجاهات</td><td>\"هل تسمح لي بمساعدتك في الوصول؟\"</td></tr><tr><td>ينتظر دون معرفة الخطوة التالية</td><td>\"أهلًا بك، هل تسمح لي بمساعدتك؟\"</td></tr></tbody></table><aside class=\"bk-scene\"><strong>موقف:</strong> لاحظت مضيفة المطعم زوجين يقفان عند المدخل ينظران إلى الطاولات الفارغة ثم إلى النُدُل المشغولين؛ كانا ينتظران دون معرفة الخطوة التالية. اقتربت وابتسمت وقالت: \"مساء الخير، أهلًا بكما. كيف يمكنني مساعدتكما؟\" فأوضحا أنهما بلا حجز لكنهما يرغبان في طاولة قرب النافذة، فأجلستهما خلال دقيقة قبل أن يضطرا للفت انتباه أحد.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> انتبه لست إشارات: النظر حوله، وحمل أغراض كثيرة، والحيرة في الاتجاهات، والانتظار دون معرفة الخطوة التالية، ومحاولة لفت الانتباه، وعدم الارتياح. لاحظ، واقترب، واسأل بلطف، ولا تفترض.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: قراءة الإشارات",
+                                "questions": [
+                                    {
+                                        "question": "توقف نزيل أمام خريطة الطابق وقرأها مرتين ثم نظر حوله. ما هذه الإشارة؟",
+                                        "options": [
+                                            "يراجع لوحة أو اتجاهات بحيرة",
+                                            "يحمل أغراضًا كثيرة",
+                                            "ينتظر صديقًا",
+                                            "لا شيء يحتاج إلى انتباه"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "تذكر المادة نزيلًا يراجع لوحة أو اتجاهات بحيرة ضمن إشارات الاحتياج."
+                                    },
+                                    {
+                                        "question": "نزيل ينظر إلى لوحة المصعد. ماذا تفعل؟",
+                                        "options": [
+                                            "تفترض أنه يريد المصعد وتشير إليه",
+                                            "تتجاهله لأن اللوحة واضحة",
+                                            "تقترب وتسأله بلطف كيف يمكنك مساعدته",
+                                            "تنتظر حتى يسألك"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: لاحظ، اقترب، واسأل بلطف — لا تفترض."
+                                    },
+                                    {
+                                        "question": "زوجان يقفان عند مدخل المطعم لا يعرفان هل ينتظران من يُجلسهما. ما هذه الإشارة؟",
+                                        "options": [
+                                            "يبدو غير مرتاح",
+                                            "يحمل أغراضًا كثيرة",
+                                            "يحاول لفت الانتباه",
+                                            "ينتظر دون معرفة الخطوة التالية"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "الانتظار دون معرفة الخطوة التالية من الإشارات الست في المادة."
+                                    },
+                                    {
+                                        "question": "لماذا تسأل بدل أن تفترض ما يحتاجه النزيل؟",
+                                        "options": [
+                                            "لأن السؤال أقل جهدًا",
+                                            "لأن الإشارات تدل على وجود حاجة لا على نوعها",
+                                            "لأن النزلاء يفضلون الأحاديث الطويلة",
+                                            "لأنه يغني عن عرض المساعدة"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "قاعدة المادة: لاحظ، اقترب، واسأل بلطف، لا تفترض."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "الاقتراب من النزيل",
+                    "lessons": [
+                        {
+                            "title": "اقترب باحترام والسلوكيات التي تتجنبها",
+                            "minutes": 6,
+                            "body": "<h2>اقترب باحترام وامنح النزيل اهتمامك الكامل</h2><p>بعد أن تلاحظ نزيلًا قد يحتاج مساعدة، تحدد طريقة اقترابك كيف يُستقبل عرضك. فالاقتراب الجيد طبيعي ومرحّب، والسيئ قد يبدو متطفلًا أو غير مبالٍ. وتصف المادة <strong>الطريقة الصحيحة</strong>:</p><ul><li><strong>ابتسم وتواصل بصريًا بصورة طبيعية.</strong></li><li><strong>اقترب من الأمام أو الجانب المرئي،</strong> حتى لا تفاجئ النزيل من الخلف.</li><li><strong>حافظ على مسافة مهنية مناسبة؛</strong> قريبة بما يكفي للحديث براحة، لا قريبة إلى حد يجعله يتراجع.</li><li><strong>واجه النزيل بكامل الجسم،</strong> فهذا يُظهر أن انتباهك كله له.</li><li><strong>ابدأ بتحية ثم اعرض المساعدة:</strong> \"صباح الخير\" أولًا ثم \"كيف يمكنني مساعدتك؟\"</li><li><strong>استخدم اسم النزيل إذا عرفته.</strong></li></ul><p>وتذكر المادة ما <strong>تتجنبه</strong> عند الاقتراب:</p><ul><li>الاقتراب بصمت.</li><li>مقاطعة حديث النزيل.</li><li>الوقوف قريبًا بصورة مزعجة.</li><li>التحدث أثناء النظر بعيدًا.</li><li>الإشارة إلى النزيل بالإصبع.</li><li>إظهار العجلة أو الانزعاج.</li></ul><blockquote class=\"bk-quote\">حيِّ أولًا، واعرض المساعدة، واستمع بالكامل.</blockquote><h2>تجاهل النزيل ليس خيارًا</h2><p>بعض السلوكيات أشد ضررًا من الاقتراب السيئ، لأنها تخبر النزيل أنه لا يستحق الاهتمام. وتذكر المادة ستة سلوكيات تتجنبها:</p><ol><li><strong>الاقتراب من النزيل دون قول شيء.</strong></li><li><strong>التظاهر بعدم رؤية النزيل.</strong></li><li><strong>الانشغال بالهاتف أو حديث جانبي.</strong></li><li><strong>تجاهل النزيل لأنه ليس في قسمك.</strong></li><li><strong>انتظار النزيل حتى يكرر طلبه.</strong></li><li><strong>قول: \"هذه ليست مسؤوليتي\".</strong></li></ol><p>يرى النزيل كل موظف على أنه الفندق، ولا يعرف ولا يهمه إلى أي قسم تنتمي. فإذا تجاهل منقذ المسبح نزيلًا يسأل عن مواعيد المطعم لأن \"هذا ليس مجالي\"، فكل ما يعيشه النزيل هو فندق لا يهتم.</p><blockquote class=\"bk-quote\">إذا لم تكن الخدمة من مسؤوليتك، تواصل مع الشخص المختص وتابع الطلب.</blockquote><p>تملّك الطلب لا يعني أن تفعل كل شيء بنفسك، بل أن تبقى معه حتى يتولاه الزميل المناسب: اتصل بالقسم، وأخبر النزيل بما سيحدث، وتأكد أنه حدث.</p><aside class=\"bk-scene\"><strong>موقف:</strong> رأى موظف الأمن عند المدخل نزيلة تحاول فتح الباب الثقيل وهي تحمل رضيعًا. لم ينتظر ولم يشِح بنظره، بل تقدّم من الجانب الذي تراه منه، وفتح الباب، وحيّاها، وسألها إن كانت تحتاج شيئًا آخر. سألته أين يمكنها تدفئة زجاجة الحليب، ولم يكن يعرف، فتواصل مع المطعم عبر الجهاز، وأخبرها أن زميلًا قادم لمساعدتها، وبقي حتى وصل النادل.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> ابتسم، واقترب من الأمام، وحافظ على مسافة مهنية، وواجه النزيل، وحيِّه ثم اعرض المساعدة. ولا تتجاهل نزيلًا أبدًا ولا تقل إنها ليست مسؤوليتك؛ تواصل مع المختص وتابع.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الاقتراب من النزيل",
+                                "questions": [
+                                    {
+                                        "question": "رأيت نزيلًا قد يحتاج مساعدة. ماذا تقول أولًا؟",
+                                        "options": [
+                                            "\"ماذا تريد؟\"",
+                                            "لا شيء، تنتظر حتى يتكلم",
+                                            "تحية ثم عرض المساعدة",
+                                            "رقم غرفته"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: ابدأ بتحية ثم اعرض المساعدة."
+                                    },
+                                    {
+                                        "question": "من أي اتجاه تقترب من النزيل؟",
+                                        "options": [
+                                            "من الأمام أو الجانب المرئي",
+                                            "من الخلف حتى لا تزعجه",
+                                            "من أقرب جانب إليك",
+                                            "لا يهم الاتجاه"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "الطريقة الصحيحة تشمل الاقتراب من الأمام أو الجانب المرئي."
+                                    },
+                                    {
+                                        "question": "سأل نزيل عند المسبح المنقذ عن مواعيد الإفطار. ماذا يفعل المنقذ؟",
+                                        "options": [
+                                            "يقول إنها ليست مسؤوليته",
+                                            "يتظاهر بأنه لم يسمع",
+                                            "يطلب من النزيل الذهاب إلى الاستقبال",
+                                            "يتواصل مع الشخص المختص أو يتحقق، ويتابع الطلب"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "إذا لم تكن الخدمة من مسؤوليتك، تواصل مع الشخص المختص وتابع الطلب."
+                                    },
+                                    {
+                                        "question": "أي سلوك تذكره المادة ضمن ما يُتجنب؟",
+                                        "options": [
+                                            "استخدام اسم النزيل",
+                                            "انتظار النزيل حتى يكرر طلبه",
+                                            "مواجهة النزيل بكامل الجسم",
+                                            "الحفاظ على مسافة مهنية"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "انتظار النزيل حتى يكرر طلبه من قائمة التجنب في المادة."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "اللغة والتوقعات",
+                    "lessons": [
+                        {
+                            "title": "اللغة المهنية وما يتوقعه النزيل",
+                            "minutes": 6,
+                            "body": "<h2>استبدل السؤال الحاد بعرض مهني للمساعدة</h2><p>الكلمات التي تستخدمها عند الاقتراب قد تُشعر النزيل بالترحيب أو بأنه مشكلة. وتطلب منك المادة أن <strong>تستبدل السؤال الحاد بعرض مهني للمساعدة</strong>:</p><table class=\"bk-say\"><thead><tr><th>قل</th><th>تجنّب</th></tr></thead><tbody><tr><td>\"كيف يمكنني مساعدتك؟\"</td><td>\"ماذا تريد؟\"</td></tr><tr><td>\"هل تسمح لي بمساعدتك؟\"</td><td>\"هل لديك مشكلة؟\"</td></tr><tr><td>\"يسعدني مساعدتك\"</td><td>\"ماذا؟ / نعم؟\"</td></tr><tr><td>\"اسمح لي أن أتحقق من ذلك\"</td><td>\"لا أعرف\"</td></tr><tr><td>\"سأتواصل مع الزميل المختص\"</td><td>\"هذه ليست مسؤوليتي\"</td></tr></tbody></table><p>لاحظ الفرق: \"ماذا تريد؟\" توحي بأن النزيل يقاطعك، و\"كيف يمكنني مساعدتك؟\" تقول إنك موجود من أجله. \"لا أعرف\" تنهي الحديث، و\"اسمح لي أن أتحقق من ذلك\" تبقيه مستمرًا وتُظهر تملّك الطلب. \"هذه ليست مسؤوليتي\" تبعد النزيل، و\"سأتواصل مع الزميل المختص\" تجلب المساعدة إليه.</p><blockquote class=\"bk-quote\">كيف يمكنني مساعدتك؟ هل تسمح لي بمساعدتك؟ اسمح لي أن أتحقق من ذلك.</blockquote><h2>ما يتوقعه النزيل</h2><p>تلخص المادة نظرة النزيل: <strong>النزيل يتوقع أن تلاحظ احتياجه وتستجيب</strong>. ويتبع ذلك خمسة توقعات:</p><ol><li><strong>الانتباه الكامل:</strong> واجه النزيل واستمع دون مقاطعة.</li><li><strong>استجابة واضحة:</strong> ابتسم وأومئ عند النداء من بعيد، حتى لو لم تستطع الحضور فورًا.</li><li><strong>لغة جسد مرحبة:</strong> حافظ على وضعية منفتحة ومهنية.</li><li><strong>ملكية الطلب:</strong> لا تترك النزيل يبحث عن موظف آخر.</li><li><strong>متابعة الخدمة:</strong> تأكد من اكتمال الطلب ورضا النزيل.</li></ol><p>والاستجابة الواضحة مهمة خاصة في المناوبات المزدحمة؛ فإذا كنت تخدم نزيلًا وحاول آخر لفت نظرك، فإن ابتسامة سريعة وإيماءة تقول له: \"رأيتك، وسأكون معك قريبًا\". ودونها يشعر النزيل الثاني بالتجاهل رغم أنك تنوي مساعدته.</p><h2>كلمة ختامية</h2><p>تختم المادة بدعوة بسيطة: <strong>لاحظ الاحتياج، وبادر قبل أن يُطلب منك</strong>. ابتسم، اقترب، اعرض المساعدة، تابع؛ فالخدمة الاستباقية تجعل النزيل يشعر بأنه محل اهتمام.</p><aside class=\"bk-scene\"><strong>موقف:</strong> بدا نزيل في مركز الأعمال منزعجًا أمام الطابعة. توقفت موظفة الاستقبال المارّة وابتسمت وقالت: \"هل تسمح لي بمساعدتك؟\" فأخبرها أن الطابعة لا تتصل. لم تكن تعرف النظام، فقالت: \"اسمح لي أن أتحقق من ذلك، سأتواصل مع زميلنا في تقنية المعلومات\". اتصلت، وأخبرت النزيل أن الفني سيصل خلال خمس دقائق، ثم عادت بعد مغادرته لتتأكد أن المستندات طُبعت.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> استبدل \"لا أعرف\" دائمًا بعبارة \"اسمح لي أن أتحقق من ذلك\"، فهي صادقة وتبقي الخدمة مستمرة.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> استخدم عبارات مهنية لعرض المساعدة بدل الأسئلة الحادة، واستجب للنزلاء حتى من بعيد، وتملّك الطلب، وتابع حتى رضا النزيل.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: اللغة والتوقعات",
+                                "questions": [
+                                    {
+                                        "question": "سألك نزيل عن أمر لا تعرفه. ماذا تقول؟",
+                                        "options": [
+                                            "\"لا أعرف\"",
+                                            "\"اسأل غيري\"",
+                                            "\"اسمح لي أن أتحقق من ذلك\"",
+                                            "\"هذا ليس عملي\""
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تستبدل المادة \"لا أعرف\" بعبارة \"اسمح لي أن أتحقق من ذلك\"."
+                                    },
+                                    {
+                                        "question": "تخدم نزيلًا عندما ناداك آخر من طرف الردهة. ماذا يتوقع النزيل الثاني؟",
+                                        "options": [
+                                            "أن تترك النزيل الأول فورًا",
+                                            "أن تتجاهله حتى تنتهي",
+                                            "أن تصيح بأنك مشغول",
+                                            "استجابة واضحة: ابتسامة وإيماءة"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "الاستجابة الواضحة تعني: ابتسم وأومئ عند النداء من بعيد."
+                                    },
+                                    {
+                                        "question": "أي عبارة في قائمة تجنّب؟",
+                                        "options": [
+                                            "\"هل لديك مشكلة؟\"",
+                                            "\"هل تسمح لي بمساعدتك؟\"",
+                                            "\"يسعدني مساعدتك\"",
+                                            "\"سأتواصل مع الزميل المختص\""
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "\"هل لديك مشكلة؟\" سؤال حاد تطلب المادة تجنبه."
+                                    },
+                                    {
+                                        "question": "ماذا تعني ملكية الطلب ضمن توقعات النزيل؟",
+                                        "options": [
+                                            "أن تنجز كل مهمة بنفسك",
+                                            "ألا تترك النزيل يبحث عن موظف آخر",
+                                            "أن تخبر النزيل بالقسم الذي يتصل به",
+                                            "أن تسجل الطلب في السجل فقط"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: ملكية الطلب تعني لا تترك النزيل يبحث عن موظف آخر."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

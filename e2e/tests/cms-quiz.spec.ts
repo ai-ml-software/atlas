@@ -63,9 +63,9 @@ test.describe.serial('Quiz authoring (admin)', () => {
     await form.getByRole('button', { name: 'Generate and add questions' }).click();
     await flashOk(p);
     await expect(p.locator('.hkp-q')).toHaveCount(2);
-    await expect(p.locator('.hkp-q').nth(1)).toContainText('When do you greet a guest?');
-    await expect(p.locator('.hkp-q').nth(1)).toContainText('✓ Within 10 seconds');     // correct: 1 → first option
-    await expect(p.locator('.hkp-q').nth(1)).toContainText('No Arabic');                 // flagged for the reviewer
+    const drafted = p.locator('.hkp-q', { hasText: 'When do you greet a guest?' });
+    await expect(drafted).toContainText('✓ Within 10 seconds');     // correct: 1 → first option
+    await expect(drafted).toContainText('No Arabic');                 // flagged for the reviewer
   });
 
   test('the quiz is listed on the module and can be a lesson checkpoint', async ({ as }) => {

@@ -1,0 +1,551 @@
+{
+    "slug": "handling-unreasonable-requests",
+    "category": "guest-handling",
+    "level": "intermediate",
+    "source_pdf": "Handling-Unreasonable-Requests-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/handling-unreasonable-requests.webp",
+    "videos": [
+        {
+            "id": "bwcyXcOpWVs",
+            "title": "The Secret Ingredients of Great Hospitality | Will Guidara | TED",
+            "channel": "TED",
+            "why": "Shows how to understand the purpose behind what a guest wants and find a creative way to deliver it, which is the idea behind offering a workable alternative when the exact request cannot be met."
+        },
+        {
+            "id": "qBEiNNF3zZk",
+            "title": "Watch this before you talk to your next angry customer (3 Keys to De-escalating)",
+            "channel": "Myra Golden",
+            "why": "Practical de-escalation techniques for the frustration that can follow a refusal: stay calm, acknowledge the feeling and move to what you can do."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Handling Unreasonable Requests",
+            "subtitle": "Refuse the request respectfully",
+            "short_description": "Judge the request, not the guest: assess what can be adapted and what must be refused, then Listen, Empathise, Explain, Offer and Escalate.",
+            "description": "<p>Sometimes a guest asks for something the hotel cannot or must not do. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows colleagues how to protect the guest and protect the hotel at the same time.</p><p>You will learn to focus on the request rather than the person, to sort requests into those that can be adapted and those that must be refused, to follow a five-step professional refusal, to offer workable alternatives, to use calm and steady language, to know when to refuse and when to escalate, and to avoid the mistakes that make a situation worse.</p>",
+            "requirements": "Suitable for any guest-facing colleague; completing a basic guest-service course first is helpful.",
+            "outcomes": [
+                "Judge a request against safety, policy and fairness, not the guest",
+                "Sort requests into those that can be adapted and those that must be refused",
+                "Apply the five steps Listen, Empathise, Explain, Offer, Escalate",
+                "Offer a workable alternative that keeps the guest's goal without breaking limits",
+                "Refuse or escalate correctly when safety, law or privacy is involved"
+            ],
+            "faqs": [
+                {
+                    "question": "Is there such a thing as an unreasonable guest?",
+                    "answer": "The deck says no: there is no unreasonable guest, only an unsuitable request. The request may seem normal from the guest's point of view, so judge the request, not the person."
+                },
+                {
+                    "question": "What should I do if I am not sure whether a request is allowed?",
+                    "answer": "Do not promise anything and ask your supervisor for support."
+                },
+                {
+                    "question": "Which limits can never be negotiated?",
+                    "answer": "Safety, the law and privacy. Requests that endanger safety, break the law or regulations, violate privacy or security, harm another guest's rights or involve abuse, harassment or prohibited activity must be refused."
+                }
+            ],
+            "meta_title": "Handling Unreasonable Guest Requests in Hotels",
+            "meta_description": "Hotel training on unreasonable requests: judge the request not the guest, refuse respectfully, offer workable alternatives and know when to escalate.",
+            "focus_keyword": "unreasonable guest requests",
+            "chapters": [
+                {
+                    "title": "The Request, Not the Guest",
+                    "lessons": [
+                        {
+                            "title": "Focus on the Request and Assess It",
+                            "minutes": 6,
+                            "body": "<h2>There is no unreasonable guest, only an unsuitable request</h2><p>When a guest asks for something the hotel cannot provide, it is tempting to think of them as “unreasonable”. The deck asks us to change that thinking: <strong>there is no unreasonable guest; there is an unsuitable request.</strong> The focus is on the request, not the person.</p><h3>Why this matters</h3><ul><li><strong>The request may seem normal from the guest's point of view.</strong> What looks strange to you may be ordinary in their culture or their usual hotel.</li><li><strong>Perhaps the service was offered to them somewhere else.</strong> Another hotel may have given them a free upgrade or a late check-out.</li><li><strong>They may not know the hotel's policy or the limits of the service.</strong> Most guests have never read our policies.</li><li><strong>Refusing the request may cause frustration or anger.</strong> Expect the feeling and prepare for it.</li><li><strong>Professionalism protects dignity and the relationship.</strong> The guest should leave the conversation feeling respected, even if the answer is no.</li></ul><blockquote class=\"bk-quote\">Judge the request against safety, policy and fairness, not the guest.</blockquote><h2>Classify the request before you reply</h2><p>Before you answer, decide which kind of request it is. The deck gives two lists.</p><h3>Can be adapted (negotiable)</h3><ul><li>It is not available in the form requested.</li><li>It is costly or impractical for the hotel.</li><li>It goes beyond the benefit included in the booking.</li><li>It needs approval or a higher authority.</li><li>Its purpose can be met in another way.</li></ul><h3>Must be refused</h3><ul><li>It puts safety at risk.</li><li>It breaks the law or regulations.</li><li>It violates privacy or security.</li><li>It harms another guest's rights.</li><li>It involves abuse, harassment or a prohibited activity.</li></ul><table class=\"bk-say\"><thead><tr><th>Can be adapted</th><th>Must be refused</th></tr></thead><tbody><tr><td>Not available as requested</td><td>Puts safety at risk</td></tr><tr><td>Costly or impractical</td><td>Breaks the law or regulations</td></tr><tr><td>Beyond the booking benefit</td><td>Violates privacy or security</td></tr><tr><td>Needs higher approval</td><td>Harms another guest's rights</td></tr><tr><td>Purpose can be met another way</td><td>Abuse, harassment or prohibited activity</td></tr></tbody></table><p>The first list is where you look for a solution: an alternative, a charge, an approval. The second list is where the answer is no, however politely you say it.</p><blockquote class=\"bk-quote\">When in doubt, do not promise anything, and ask your supervisor for support.</blockquote><aside class=\"bk-scene\"><strong>Scene:</strong> A guest asks for breakfast to be included free because “my last hotel always did that”. The receptionist does not think of him as difficult; he is comparing with his previous experience. She classifies the request: it goes beyond the booking benefit, so it can be adapted. She explains what his rate includes and offers the breakfast at the published price or a nearby café option. Later, another guest asks for a neighbour's room number. That one is a privacy issue, so it must be refused.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Judge the request, not the guest. Classify it as adaptable or must-refuse, and when in doubt, promise nothing and ask your supervisor.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: The request, not the guest",
+                                "questions": [
+                                    {
+                                        "question": "A guest insists another hotel gave him a free suite upgrade. What is the most helpful way to think about him?",
+                                        "options": [
+                                            "He is an unreasonable guest",
+                                            "He is trying to cheat the hotel",
+                                            "The service may have been offered to him elsewhere; focus on the request",
+                                            "He should be ignored"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck says perhaps the service was offered elsewhere; there is no unreasonable guest, only an unsuitable request."
+                                    },
+                                    {
+                                        "question": "A guest asks you to disable the smoke detector in their room. How should you classify this?",
+                                        "options": [
+                                            "Must be refused: it puts safety at risk",
+                                            "Can be adapted with a fee",
+                                            "Needs a supervisor to approve it",
+                                            "Can be done if the guest insists"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "A request that puts safety at risk is on the must-be-refused list."
+                                    },
+                                    {
+                                        "question": "You are not sure whether a request is allowed. What does the deck say?",
+                                        "options": [
+                                            "Say yes to keep the guest happy",
+                                            "Refuse everything you are unsure about",
+                                            "Ask another guest what they think",
+                                            "Do not promise anything and ask your supervisor for support"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "When in doubt: do not promise anything and ask for your supervisor's support."
+                                    },
+                                    {
+                                        "question": "A request goes beyond what the guest's booking includes. Which category is it?",
+                                        "options": [
+                                            "Must be refused",
+                                            "Can be adapted",
+                                            "Illegal",
+                                            "A security matter"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "Going beyond the benefit included in the booking is on the can-be-adapted list."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Refusing Professionally",
+                    "lessons": [
+                        {
+                            "title": "Five Steps and a Workable Alternative",
+                            "minutes": 6,
+                            "body": "<h2>Five steps for a professional refusal</h2><p>Saying no well is a skill. The deck gives five steps:</p><ol><li><strong>Listen</strong> without interrupting or arguing.</li><li><strong>Empathise</strong> with the guest's frustration.</li><li><strong>Explain</strong> the limit briefly.</li><li><strong>Offer</strong> safe and possible alternatives.</li><li><strong>Escalate</strong> if the disagreement continues.</li></ol><blockquote class=\"bk-quote\">Be firm about the boundary and flexible about the solution.</blockquote><p>This is the heart of the course. The boundary does not move: if something is unsafe or against policy, it stays that way. What moves is how hard you work to find another way to meet the guest's need. Many refusals go wrong because a colleague is flexible about the boundary (“well, maybe just this once”) and rigid about the solution (“no, there is nothing else”). Reverse that.</p><p>Each step has a reason. Listening without arguing lets the guest feel heard before they hear no. Empathy recognises that the refusal is disappointing. A brief explanation respects the guest's intelligence without lecturing. Alternatives show you are still on their side. Escalation brings in more authority when you have reached your limit.</p><h2>An alternative keeps the goal without breaking the limits</h2><p>The deck gives a complete example of a reserved table:</p><table class=\"bk-say\"><thead><tr><th>Step</th><th>Say</th></tr></thead><tbody><tr><td>The request</td><td>“I want the corner table.”</td></tr><tr><td>Empathy</td><td>“I understand it is your favourite spot.”</td></tr><tr><td>The limit</td><td>“Unfortunately, the table is reserved.”</td></tr><tr><td>The alternative</td><td>“I can offer you the window table.”</td></tr><tr><td>Confirmation</td><td>“Does this option suit you?”</td></tr></tbody></table><h3>If you cannot find an alternative</h3><ul><li>Ask about the purpose of the request.</li><li>Ask: “What solution would suit you?”</li><li>Do not agree before checking.</li><li>Ask your supervisor for a suggestion.</li><li>Refuse any suggestion that is unsafe or not permitted.</li></ul><blockquote class=\"bk-quote\">Understand the goal, then look for a safe way to achieve it.</blockquote><p>The purpose behind a request is often easier to meet than the request itself. A guest who wants the corner table may want privacy, a view or a quiet place for a proposal. Once you know the goal, you can often find an option that serves it.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest asks to bring his large dog into the restaurant. The host listens, then empathises: “I understand you don't want to leave him alone.” She explains briefly: “Unfortunately, pets are not permitted in the restaurant.” She asks about his goal. He wants to eat without leaving the dog. She offers in-room dining or a table on the outdoor terrace if permitted under the hotel's pet policy, and checks with her supervisor before confirming. He chooses in-room dining.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Offer two alternatives when you can. A choice helps the guest feel in control after hearing no.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Listen, Empathise, Explain, Offer, Escalate. Firm on the limit, flexible on the solution, and always look for the goal behind the request.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Five steps and alternatives",
+                                "questions": [
+                                    {
+                                        "question": "A guest asks for a sold-out room type. After listening and empathising, what is the next step?",
+                                        "options": [
+                                            "Escalate immediately",
+                                            "Offer a free upgrade",
+                                            "Explain the limit briefly",
+                                            "End the conversation"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The steps are Listen, Empathise, Explain (the limit briefly), Offer, Escalate."
+                                    },
+                                    {
+                                        "question": "You cannot find any alternative for a guest's request. What should you do?",
+                                        "options": [
+                                            "Ask about the purpose of the request and what solution would suit them",
+                                            "Agree to the request to avoid conflict",
+                                            "Tell the guest there is nothing to be done",
+                                            "Accept any suggestion the guest makes"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "If no alternative is found: ask about the goal and ask what solution would suit them."
+                                    },
+                                    {
+                                        "question": "What does “firm about the boundary and flexible about the solution” mean?",
+                                        "options": [
+                                            "Make exceptions for polite guests",
+                                            "Offer no alternatives",
+                                            "Change policy when guests insist",
+                                            "Keep the limit fixed while working to find other ways to meet the need"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says be firm about the boundary and flexible about the solution."
+                                    },
+                                    {
+                                        "question": "A guest suggests an alternative that is not permitted. What does the deck say?",
+                                        "options": [
+                                            "Accept it because the guest suggested it",
+                                            "Refuse any suggestion that is unsafe or not permitted",
+                                            "Accept it if the guest pays",
+                                            "Ignore it and say nothing"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The slide says refuse any suggestion that is unsafe or not permitted."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Calm Language and Common Mistakes",
+                            "minutes": 5,
+                            "body": "<h2>Use calm and steady language</h2><p>The words you choose decide whether a refusal feels respectful or dismissive. The deck compares five phrases to use with five to avoid.</p><table class=\"bk-say\"><thead><tr><th>Say</th><th>Avoid</th></tr></thead><tbody><tr><td>“I understand why this request is important to you.”</td><td>“Are you joking?”</td></tr><tr><td>“We cannot carry out this request for safety reasons.”</td><td>“We don't do that here.”</td></tr><tr><td>“I can offer you these two alternatives.”</td><td>“Go somewhere else.”</td></tr><tr><td>“Allow me to check with the supervisor.”</td><td>“That's your problem.”</td></tr><tr><td>“I will stay with you until we reach a possible solution.”</td><td>“No. I told you.”</td></tr></tbody></table><blockquote class=\"bk-quote\">I understand. We cannot do that, but I can offer these options.</blockquote><p>The phrases on the left follow the five steps: empathy, a brief reason, alternatives, escalation and commitment. The phrases on the right mock, shut the door or push the guest away. Notice that “We cannot carry out this request for safety reasons” gives a reason, while “We don't do that here” gives none, and a refusal without a reason feels personal.</p><h2>Avoid the mistakes that escalate the situation</h2><p>The deck names five common mistakes:</p><ol><li><strong>Mocking:</strong> treating the request as a joke.</li><li><strong>Taking offence:</strong> treating the request as a personal insult.</li><li><strong>Arguing:</strong> trying to prove the guest is wrong.</li><li><strong>Blunt refusal:</strong> saying no without empathy or explanation.</li><li><strong>No solution:</strong> not offering an option or asking for support.</li></ol><p>Each mistake turns a disagreement about a request into a conflict between people. Mocking and taking offence make it personal. Arguing makes it a contest. A blunt refusal leaves the guest feeling dismissed, and no solution leaves them with nowhere to go. Every one of these can be avoided by following the five steps.</p><p>Keep your tone as calm as your words. A correct phrase said impatiently still sounds like “No. I told you.” Speak steadily and keep a friendly face even when the answer must be no.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest asks housekeeping to move a heavy wardrobe to another wall. A new colleague laughs: “Are you joking?” The guest is offended. The supervisor steps in: “I understand why you'd like more space. We cannot move fixed furniture for safety reasons, but I can remove the extra chair and the luggage rack, or check whether a larger room is available.” The guest chooses the larger room check, and the supervisor stays with the request until it is resolved.</aside><aside class=\"bk-note\"><strong>Tip:</strong> If you feel a request is an insult, pause. The guest is asking about a service, not about you.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Use calm, steady phrases that give a reason and an option; never mock, take offence, argue, refuse bluntly or leave the guest without a solution.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Calm language and mistakes",
+                                "questions": [
+                                    {
+                                        "question": "Which phrase refuses a request while giving a reason?",
+                                        "options": [
+                                            "“We don't do that here.”",
+                                            "“No. I told you.”",
+                                            "“That's your problem.”",
+                                            "“We cannot carry out this request for safety reasons.”"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck's Say phrase explains the reason (safety); the others are on the Avoid list."
+                                    },
+                                    {
+                                        "question": "A colleague says “no” with no explanation and turns away. Which mistake is this?",
+                                        "options": [
+                                            "Blunt refusal",
+                                            "Mocking",
+                                            "Taking offence",
+                                            "Escalating"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Blunt refusal means saying no without empathy or explanation."
+                                    },
+                                    {
+                                        "question": "A colleague spends ten minutes trying to prove the guest misread the booking terms. Which mistake is this?",
+                                        "options": [
+                                            "No solution",
+                                            "Mocking",
+                                            "Arguing",
+                                            "Empathising"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Arguing is trying to prove the guest is wrong."
+                                    },
+                                    {
+                                        "question": "You have refused a request and cannot offer an alternative yourself. Which phrase keeps you committed?",
+                                        "options": [
+                                            "“Go somewhere else.”",
+                                            "“I will stay with you until we reach a possible solution.”",
+                                            "“Are you joking?”",
+                                            "“That's your problem.”"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "This is on the deck's Say list; it avoids the no-solution mistake."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Firm Boundaries",
+                    "lessons": [
+                        {
+                            "title": "Know When to Refuse and When to Escalate",
+                            "minutes": 6,
+                            "body": "<h2>Four situations with a clear response</h2><p>Some requests come up again and again. The deck gives a clear response for four of them:</p><ol><li><strong>Smoking in a prohibited area:</strong> refuse clearly and suggest a permitted area.</li><li><strong>A free upgrade without entitlement:</strong> explain the options, the prices or the benefits available.</li><li><strong>A request for another guest's data:</strong> refuse immediately, without confirming any information.</li><li><strong>Aggressive behaviour or a threat:</strong> end the conversation safely and follow the security and emergency procedure.</li></ol><blockquote class=\"bk-quote\">Safety, the law and privacy are limits that cannot be negotiated.</blockquote><h3>Smoking</h3><p>The refusal is clear, but it still comes with an alternative: a permitted area. The guest's goal (to smoke) can be met without breaking the rule.</p><h3>Free upgrade</h3><p>This is an adaptable request. You cannot give what the guest is not entitled to, but you can explain the upgrade options, their prices or any benefits available to them.</p><h3>Another guest's data</h3><p>This is a privacy limit, and the key word is <strong>immediately</strong>. Do not confirm whether a person is staying, do not give a room number and do not hint. Even “I can't say whether he is here” should be said without revealing anything. If the caller has a genuine need, follow the hotel's procedure, for example offering to pass on a message.</p><h3>Aggressive behaviour or a threat</h3><p>This is a safety limit. Your task is not to win the conversation but to end it safely: keep distance, do not try to control the person physically and follow the hotel's security and emergency procedure so trained colleagues can take over.</p><h2>The whole course in two lines</h2><p>The closing slide reads: <strong>refuse the request, not the guest, and keep the limits while offering the solution.</strong> Listen, Empathise, Explain, Offer, Escalate.</p><blockquote class=\"bk-quote\">Professionalism does not mean leniency, and respect does not mean agreement.</blockquote><p>You can be completely respectful and still say no. You can be warm and still hold a limit. The guest should leave feeling that you took them seriously, even when the answer was not the one they wanted.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A caller tells the operator, “I'm his wife; just give me Mr Khalid's room number.” The operator replies calmly, “I'm sorry, for our guests' privacy I cannot share any guest information. I would be happy to take a message and pass it on if the person is staying with us.” The caller insists; the operator repeats the same line politely and offers the message again. She never confirms whether Mr Khalid is a guest.</aside><aside class=\"bk-note\"><strong>Tip:</strong> For privacy requests, use the same calm sentence every time. Consistency protects both the guest and you.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Refuse the request, not the guest. Safety, law and privacy are fixed; respect does not mean agreement.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Refuse or escalate",
+                                "questions": [
+                                    {
+                                        "question": "A caller asks which room a named guest is staying in. What should you do?",
+                                        "options": [
+                                            "Give the room number if the caller sounds genuine",
+                                            "Confirm the guest is staying but not the room",
+                                            "Transfer the call without checking",
+                                            "Refuse immediately without confirming any information"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "For another guest's data the deck says refuse immediately, without confirming any information."
+                                    },
+                                    {
+                                        "question": "A guest lights a cigarette in a non-smoking lounge. What is the deck's response?",
+                                        "options": [
+                                            "Ignore it if the lounge is empty",
+                                            "Refuse clearly and suggest a permitted area",
+                                            "Call security immediately",
+                                            "Charge a fine on the spot"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "For smoking in a prohibited area: refuse clearly and suggest a permitted area."
+                                    },
+                                    {
+                                        "question": "A guest becomes threatening when you refuse a request. What should you do?",
+                                        "options": [
+                                            "End the conversation safely and follow the security and emergency procedure",
+                                            "Stand your ground and argue",
+                                            "Grant the request to calm them",
+                                            "Try to hold the guest until security arrives"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "For aggressive behaviour or a threat: end the conversation safely and follow the security and emergency procedure."
+                                    },
+                                    {
+                                        "question": "Which statement matches the deck's closing message?",
+                                        "options": [
+                                            "Respect means agreeing with the guest",
+                                            "Refuse the guest, not the request",
+                                            "Respect does not mean agreement",
+                                            "Limits can be negotiated for loyal guests"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck ends: professionalism does not mean leniency, and respect does not mean agreement."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "الطلبات غير المعقولة",
+            "subtitle": "ارفض الطلب باحترام",
+            "short_description": "قيّم الطلب لا النزيل: ميّز ما يمكن التفاوض عليه وما يجب رفضه، ثم استمع، تعاطف، اشرح، اقترح، صعّد.",
+            "description": "<p>يطلب النزيل أحيانًا شيئًا لا يستطيع الفندق أو لا يجوز له تقديمه. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتوضح كيف نحمي النزيل ونحمي الفندق في الوقت نفسه.</p><p>ستتعلم التركيز على الطلب لا على الشخص، وتصنيف الطلبات إلى ما يمكن التفاوض عليه وما يجب رفضه، واتباع خمس خطوات لرفض مهني، وتقديم بدائل عملية، واستخدام لغة هادئة وثابتة، ومعرفة متى ترفض ومتى تصعّد، وتجنب الأخطاء التي تصعّد الموقف.</p>",
+            "requirements": "مناسبة لكل موظف يتعامل مع النزلاء، ويُفضَّل إكمال دورة أساسية في خدمة النزلاء أولًا.",
+            "outcomes": [
+                "قيّم الطلب وفق السلامة والسياسة والعدالة لا وفق النزيل",
+                "صنّف الطلبات إلى ما يمكن التفاوض عليه وما يجب رفضه",
+                "طبّق خطوات: استمع، تعاطف، اشرح، اقترح، صعّد",
+                "قدّم بديلًا يحفظ هدف النزيل دون كسر الحدود",
+                "ارفض أو صعّد بصورة صحيحة عندما يتعلق الأمر بالسلامة أو القانون أو الخصوصية"
+            ],
+            "faqs": [
+                {
+                    "question": "هل يوجد نزيل غير معقول؟",
+                    "answer": "تقول المادة: لا يوجد نزيل غير معقول، بل طلب غير مناسب. فقد يبدو الطلب طبيعيًا من وجهة نظر النزيل، لذا قيّم الطلب لا الشخص."
+                },
+                {
+                    "question": "ماذا أفعل إذا لم أكن متأكدًا من أن الطلب مسموح؟",
+                    "answer": "عند الشك: لا تعد بشيء واطلب دعم المشرف."
+                },
+                {
+                    "question": "ما الحدود غير القابلة للتفاوض؟",
+                    "answer": "السلامة والقانون والخصوصية. ويجب رفض الطلب إذا عرّض السلامة للخطر، أو خالف القانون أو الأنظمة، أو انتهك الخصوصية أو الأمن، أو أضر بحقوق ضيف آخر، أو تضمن إساءة أو تحرشًا أو نشاطًا محظورًا."
+                }
+            ],
+            "meta_title": "التعامل مع الطلبات غير المعقولة في الفنادق",
+            "meta_description": "تدريب فندقي على الطلبات غير المعقولة: قيّم الطلب لا النزيل، وارفض باحترام، وقدّم بدائل عملية، واعرف متى تصعّد.",
+            "focus_keyword": "الطلبات غير المعقولة",
+            "chapters": [
+                {
+                    "title": "الطلب وليس الشخص",
+                    "lessons": [
+                        {
+                            "title": "ركّز على الطلب وصنّفه",
+                            "minutes": 6,
+                            "body": "<h2>لا يوجد نزيل غير معقول، بل طلب غير مناسب</h2><p>عندما يطلب النزيل شيئًا لا يستطيع الفندق تقديمه، يغرينا أن نصفه بأنه \"غير معقول\". وتطلب منا المادة أن نغيّر هذا التفكير: <strong>لا يوجد نزيل غير معقول، بل طلب غير مناسب.</strong> التركيز على الطلب وليس الشخص.</p><h3>لماذا يهم ذلك</h3><ul><li><strong>قد يبدو الطلب طبيعيًا من وجهة نظر النزيل،</strong> فما يبدو غريبًا لك قد يكون عاديًا في ثقافته أو في فندقه المعتاد.</li><li><strong>ربما قُدّمت له الخدمة في مكان آخر،</strong> كترقية مجانية أو تأخير مغادرة في فندق آخر.</li><li><strong>قد لا يعرف سياسة الفندق أو حدود الخدمة،</strong> فأغلب النزلاء لم يقرؤوا سياساتنا.</li><li><strong>رفض الطلب قد يسبب إحباطًا أو غضبًا،</strong> فتوقّع هذا الشعور واستعد له.</li><li><strong>المهنية تحافظ على الكرامة والعلاقة،</strong> فيغادر النزيل الحوار وهو يشعر بالاحترام حتى لو كان الجواب لا.</li></ul><blockquote class=\"bk-quote\">قيّم الطلب وفق السلامة والسياسة والعدالة — لا تحكم على النزيل.</blockquote><h2>صنّف الطلب قبل الرد</h2><h3>يمكن التفاوض</h3><ul><li>غير متوفر بالشكل المطلوب.</li><li>مكلف أو غير عملي للفندق.</li><li>يتجاوز الميزة المشمولة بالحجز.</li><li>يحتاج موافقة أو صلاحية أعلى.</li><li>يمكن تلبية غرضه بطريقة بديلة.</li></ul><h3>يجب رفضه</h3><ul><li>يعرّض السلامة للخطر.</li><li>يخالف القانون أو الأنظمة.</li><li>ينتهك الخصوصية أو الأمن.</li><li>يضر بحقوق ضيف آخر.</li><li>يتضمن إساءة أو تحرشًا أو نشاطًا محظورًا.</li></ul><table class=\"bk-say\"><thead><tr><th>يمكن التفاوض</th><th>يجب رفضه</th></tr></thead><tbody><tr><td>غير متوفر بالشكل المطلوب</td><td>يعرّض السلامة للخطر</td></tr><tr><td>مكلف أو غير عملي</td><td>يخالف القانون أو الأنظمة</td></tr><tr><td>يتجاوز ميزة الحجز</td><td>ينتهك الخصوصية أو الأمن</td></tr><tr><td>يحتاج صلاحية أعلى</td><td>يضر بحقوق ضيف آخر</td></tr><tr><td>يمكن تلبية غرضه بطريقة بديلة</td><td>إساءة أو تحرش أو نشاط محظور</td></tr></tbody></table><p>القائمة الأولى هي حيث تبحث عن حل: بديل أو رسوم أو موافقة. والقائمة الثانية هي حيث يكون الجواب لا، مهما كانت طريقة قوله مهذبة.</p><blockquote class=\"bk-quote\">عند الشك: لا تعد بشيء واطلب دعم المشرف.</blockquote><aside class=\"bk-scene\"><strong>موقف:</strong> طلب نزيل أن يكون الإفطار مجانيًا لأن \"فندقي السابق كان يفعل ذلك دائمًا\". لم تعتبره موظفة الاستقبال صعبًا؛ فهو يقارن بتجربته السابقة. صنّفت الطلب: يتجاوز الميزة المشمولة بالحجز، إذن يمكن التفاوض. فشرحت ما يشمله سعره، وعرضت الإفطار بالسعر المعلن أو خيار مقهى قريب. وفي وقت لاحق طلب نزيل آخر رقم غرفة جاره، وهذه مسألة خصوصية يجب رفضها.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> قيّم الطلب لا النزيل، وصنّفه: يمكن التفاوض أم يجب رفضه، وعند الشك لا تعد بشيء واطلب دعم المشرف.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الطلب وليس الشخص",
+                                "questions": [
+                                    {
+                                        "question": "يصر نزيل على أن فندقًا آخر منحه ترقية مجانية إلى جناح. ما الطريقة الأنسب للتفكير فيه؟",
+                                        "options": [
+                                            "أنه نزيل غير معقول",
+                                            "أنه يحاول خداع الفندق",
+                                            "ربما قُدّمت له الخدمة في مكان آخر، فركّز على الطلب",
+                                            "يجب تجاهله"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول المادة: ربما قُدّمت له الخدمة في مكان آخر، ولا يوجد نزيل غير معقول بل طلب غير مناسب."
+                                    },
+                                    {
+                                        "question": "طلب نزيل تعطيل كاشف الدخان في غرفته. كيف تصنّف الطلب؟",
+                                        "options": [
+                                            "يجب رفضه لأنه يعرّض السلامة للخطر",
+                                            "يمكن التفاوض عليه برسوم",
+                                            "يحتاج موافقة المشرف",
+                                            "يمكن تنفيذه إذا أصر النزيل"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "الطلب الذي يعرّض السلامة للخطر ضمن قائمة ما يجب رفضه."
+                                    },
+                                    {
+                                        "question": "لست متأكدًا من أن الطلب مسموح. ماذا تقول المادة؟",
+                                        "options": [
+                                            "وافق لإرضاء النزيل",
+                                            "ارفض كل ما لست متأكدًا منه",
+                                            "اسأل نزيلًا آخر عن رأيه",
+                                            "لا تعد بشيء واطلب دعم المشرف"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "عند الشك: لا تعد بشيء واطلب دعم المشرف."
+                                    },
+                                    {
+                                        "question": "طلب يتجاوز ما يشمله حجز النزيل. إلى أي فئة ينتمي؟",
+                                        "options": [
+                                            "يجب رفضه",
+                                            "يمكن التفاوض",
+                                            "مخالف للقانون",
+                                            "مسألة أمنية"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تجاوز الميزة المشمولة بالحجز ضمن قائمة ما يمكن التفاوض عليه."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "الرفض المهني",
+                    "lessons": [
+                        {
+                            "title": "خمس خطوات وبديل عملي",
+                            "minutes": 6,
+                            "body": "<h2>خمس خطوات لرفض مهني</h2><ol><li><strong>استمع</strong> دون مقاطعة أو جدال.</li><li><strong>تعاطف</strong> مع إحباط النزيل.</li><li><strong>اشرح</strong> الحد باختصار.</li><li><strong>اقترح</strong> بدائل آمنة وممكنة.</li><li><strong>صعّد</strong> إذا استمر الخلاف.</li></ol><blockquote class=\"bk-quote\">كن ثابتًا في الحد — ومرنًا في الحل.</blockquote><p>هذا جوهر الدورة؛ فالحد لا يتحرك: إذا كان الشيء غير آمن أو مخالفًا للسياسة فسيبقى كذلك. أما ما يتحرك فهو مقدار جهدك في إيجاد طريقة أخرى لتلبية حاجة النزيل. وكثير من حالات الرفض تفشل لأن الموظف يكون مرنًا في الحد (\"حسنًا، ربما هذه المرة فقط\") ومتشددًا في الحل (\"لا، لا يوجد شيء آخر\")، والصحيح عكس ذلك.</p><p>ولكل خطوة سبب: الاستماع دون جدال يُشعر النزيل بأنه مسموع قبل أن يسمع الرفض، والتعاطف يعترف بأن الرفض مخيب، والشرح المختصر يحترم عقل النزيل دون وعظ، والبدائل تُظهر أنك ما زلت في صفه، والتصعيد يُدخل صلاحية أعلى عندما تصل إلى حدودك.</p><h2>البديل يحفظ الهدف دون كسر الحدود</h2><table class=\"bk-say\"><thead><tr><th>مثال: طاولة محجوزة</th><th>قل</th></tr></thead><tbody><tr><td>الطلب</td><td>\"أريد طاولة الزاوية.\"</td></tr><tr><td>التعاطف</td><td>\"أتفهم أنها المكان المفضل لكم.\"</td></tr><tr><td>الحد</td><td>\"للأسف، الطاولة محجوزة.\"</td></tr><tr><td>البديل</td><td>\"يمكنني تقديم طاولة النافذة.\"</td></tr><tr><td>التأكيد</td><td>\"هل يناسبكم هذا الخيار؟\"</td></tr></tbody></table><h3>إذا لم تجد بديلًا</h3><ul><li>اسأل عن الهدف من الطلب.</li><li>اسأل: \"ما الحل الذي يناسبكم؟\"</li><li>لا توافق قبل التحقق.</li><li>اطلب اقتراح المشرف.</li><li>ارفض أي اقتراح غير آمن أو غير مسموح.</li></ul><blockquote class=\"bk-quote\">افهم الهدف — ثم ابحث عن طريقة آمنة لتحقيقه.</blockquote><p>الغرض من الطلب كثيرًا ما يكون أسهل تلبية من الطلب نفسه؛ فمن يريد طاولة الزاوية قد يريد الخصوصية أو الإطلالة أو مكانًا هادئًا لمناسبة خاصة. وعندما تعرف الهدف تستطيع غالبًا إيجاد خيار يخدمه.</p><aside class=\"bk-scene\"><strong>موقف:</strong> طلب نزيل إدخال كلبه الكبير إلى المطعم. استمعت المضيفة ثم تعاطفت: \"أتفهم أنك لا تريد تركه وحده.\" وشرحت باختصار: \"للأسف، لا يُسمح بالحيوانات الأليفة في المطعم.\" وسألت عن هدفه، فهو يريد أن يأكل دون أن يترك الكلب. فعرضت خدمة الطعام في الغرفة، أو طاولة في الشرفة الخارجية إن كانت سياسة الفندق تسمح بذلك، وراجعت مشرفها قبل التأكيد. فاختار الطعام في الغرفة.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> اعرض بديلين عندما تستطيع؛ فالاختيار يساعد النزيل على الشعور بالتحكم بعد سماع الرفض.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> استمع، تعاطف، اشرح، اقترح، صعّد. ثابت في الحد، مرن في الحل، وابحث دائمًا عن الهدف وراء الطلب.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: الخطوات الخمس والبدائل",
+                                "questions": [
+                                    {
+                                        "question": "طلب نزيل نوع غرفة محجوزًا بالكامل. بعد الاستماع والتعاطف، ما الخطوة التالية؟",
+                                        "options": [
+                                            "صعّد فورًا",
+                                            "اعرض ترقية مجانية",
+                                            "اشرح الحد باختصار",
+                                            "أنهِ الحوار"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "الخطوات: استمع، تعاطف، اشرح الحد باختصار، اقترح، صعّد."
+                                    },
+                                    {
+                                        "question": "لم تجد أي بديل لطلب النزيل. ماذا تفعل؟",
+                                        "options": [
+                                            "اسأل عن الهدف من الطلب وما الحل الذي يناسبه",
+                                            "وافق على الطلب لتجنب الخلاف",
+                                            "أخبره أنه لا يوجد ما يمكن فعله",
+                                            "اقبل أي اقتراح يقدمه النزيل"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "إذا لم تجد بديلًا: اسأل عن الهدف واسأل ما الحل الذي يناسبه."
+                                    },
+                                    {
+                                        "question": "ما معنى \"كن ثابتًا في الحد ومرنًا في الحل\"؟",
+                                        "options": [
+                                            "استثنِ النزلاء المهذبين",
+                                            "لا تقدم بدائل",
+                                            "غيّر السياسة عندما يصر النزيل",
+                                            "أبقِ الحد ثابتًا واجتهد في إيجاد طرق أخرى لتلبية الحاجة"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: كن ثابتًا في الحد ومرنًا في الحل."
+                                    },
+                                    {
+                                        "question": "اقترح النزيل بديلًا غير مسموح. ماذا تقول المادة؟",
+                                        "options": [
+                                            "اقبله لأن النزيل اقترحه",
+                                            "ارفض أي اقتراح غير آمن أو غير مسموح",
+                                            "اقبله إذا دفع النزيل",
+                                            "تجاهله ولا تقل شيئًا"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول الشريحة: ارفض أي اقتراح غير آمن أو غير مسموح."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "لغة هادئة وأخطاء شائعة",
+                            "minutes": 5,
+                            "body": "<h2>استخدم لغة هادئة وثابتة</h2><p>الكلمات التي تختارها تحدد هل يبدو الرفض محترمًا أم متجاهلًا. وتقارن المادة خمس عبارات تُقال بخمس يجب تجنبها.</p><table class=\"bk-say\"><thead><tr><th>قل</th><th>تجنّب</th></tr></thead><tbody><tr><td>\"أتفهم سبب أهمية هذا الطلب لكم.\"</td><td>\"هل تمزح؟\"</td></tr><tr><td>\"لا يمكننا تنفيذ هذا الطلب بسبب السلامة.\"</td><td>\"نحن لا نفعل ذلك هنا.\"</td></tr><tr><td>\"يمكنني أن أقدم لكم هذين البديلين.\"</td><td>\"اذهب إلى مكان آخر.\"</td></tr><tr><td>\"اسمحوا لي بالتأكد من المشرف.\"</td><td>\"هذه مشكلتك.\"</td></tr><tr><td>\"سأبقى معكم حتى نصل إلى حل ممكن.\"</td><td>\"لا، قلت لك.\"</td></tr></tbody></table><blockquote class=\"bk-quote\">أتفهم ذلك. لا يمكننا فعله، لكن يمكنني تقديم هذه الخيارات.</blockquote><p>عبارات العمود الأول تتبع الخطوات الخمس: تعاطف، وسبب مختصر، وبدائل، وتصعيد، والتزام. أما عبارات العمود الثاني فتسخر أو تغلق الباب أو تُبعد النزيل. ولاحظ أن \"لا يمكننا تنفيذ هذا الطلب بسبب السلامة\" تعطي سببًا، بينما \"نحن لا نفعل ذلك هنا\" لا تعطي شيئًا، والرفض بلا سبب يبدو شخصيًا.</p><h2>تجنّب الأخطاء التي تصعّد الموقف</h2><ol><li><strong>السخرية:</strong> التعامل مع الطلب كأنه مزحة.</li><li><strong>الإهانة:</strong> اعتبار الطلب إهانة شخصية.</li><li><strong>الجدال:</strong> محاولة إثبات أن النزيل مخطئ.</li><li><strong>الرفض الجاف:</strong> قول لا دون تعاطف أو تفسير.</li><li><strong>غياب البديل:</strong> عدم تقديم خيار أو طلب دعم.</li></ol><p>كل خطأ من هذه يحوّل الخلاف حول طلب إلى صراع بين أشخاص؛ فالسخرية والإهانة تجعلانه شخصيًا، والجدال يجعله منافسة، والرفض الجاف يُشعر النزيل بالتجاهل، وغياب البديل يتركه بلا طريق. وكلها يمكن تجنبها باتباع الخطوات الخمس.</p><p>واجعل نبرتك هادئة كالكلمات؛ فالعبارة الصحيحة إذا قيلت بنفاد صبر تبدو كأنها \"لا، قلت لك\". تحدث بثبات وحافظ على وجه ودود حتى عندما يكون الجواب لا.</p><aside class=\"bk-scene\"><strong>موقف:</strong> طلب نزيل من التدبير الفندقي نقل خزانة ثقيلة إلى جدار آخر، فضحك زميل جديد: \"هل تمزح؟\" فتضايق النزيل. تدخلت المشرفة: \"أتفهم رغبتك في مساحة أكبر. لا يمكننا نقل الأثاث الثابت بسبب السلامة، لكن يمكنني إزالة الكرسي الإضافي وحامل الأمتعة، أو التحقق من توفر غرفة أكبر.\" فاختار النزيل التحقق من الغرفة الأكبر، وبقيت المشرفة مع الطلب حتى حُل.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> إذا شعرت أن الطلب إهانة فتوقف لحظة؛ فالنزيل يسأل عن خدمة لا عنك.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> استخدم عبارات هادئة وثابتة تعطي سببًا وخيارًا، ولا تسخر أو تعتبر الطلب إهانة أو تجادل أو ترفض بجفاف أو تترك النزيل بلا بديل.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: اللغة الهادئة والأخطاء",
+                                "questions": [
+                                    {
+                                        "question": "أي عبارة ترفض الطلب مع ذكر السبب؟",
+                                        "options": [
+                                            "\"نحن لا نفعل ذلك هنا.\"",
+                                            "\"لا، قلت لك.\"",
+                                            "\"هذه مشكلتك.\"",
+                                            "\"لا يمكننا تنفيذ هذا الطلب بسبب السلامة.\""
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "عبارة \"قل\" في المادة تذكر السبب (السلامة)، والبقية في قائمة التجنب."
+                                    },
+                                    {
+                                        "question": "قال زميل \"لا\" دون أي تفسير وأدار ظهره. أي خطأ هذا؟",
+                                        "options": [
+                                            "الرفض الجاف",
+                                            "السخرية",
+                                            "الإهانة",
+                                            "التصعيد"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "الرفض الجاف هو قول لا دون تعاطف أو تفسير."
+                                    },
+                                    {
+                                        "question": "قضى زميل عشر دقائق يحاول إثبات أن النزيل أساء قراءة شروط الحجز. أي خطأ هذا؟",
+                                        "options": [
+                                            "غياب البديل",
+                                            "السخرية",
+                                            "الجدال",
+                                            "التعاطف"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "الجدال هو محاولة إثبات أن النزيل مخطئ."
+                                    },
+                                    {
+                                        "question": "رفضت طلبًا ولا تستطيع تقديم بديل بنفسك. أي عبارة تُبقيك ملتزمًا؟",
+                                        "options": [
+                                            "\"اذهب إلى مكان آخر.\"",
+                                            "\"سأبقى معكم حتى نصل إلى حل ممكن.\"",
+                                            "\"هل تمزح؟\"",
+                                            "\"هذه مشكلتك.\""
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "هذه العبارة في قائمة \"قل\"، وتتجنب خطأ غياب البديل."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "حدود ثابتة",
+                    "lessons": [
+                        {
+                            "title": "اعرف متى ترفض ومتى تصعّد",
+                            "minutes": 6,
+                            "body": "<h2>أربعة مواقف واستجابة واضحة</h2><ol><li><strong>التدخين في منطقة ممنوعة:</strong> ارفض بوضوح واقترح منطقة مسموحة.</li><li><strong>ترقية مجانية دون استحقاق:</strong> اشرح الخيارات والأسعار أو المزايا المتاحة.</li><li><strong>طلب بيانات ضيف آخر:</strong> ارفض فورًا دون تأكيد أي معلومة.</li><li><strong>سلوك عدواني أو تهديد:</strong> أنهِ الحوار بأمان واتبع إجراء الأمن والطوارئ.</li></ol><blockquote class=\"bk-quote\">السلامة والقانون والخصوصية حدود غير قابلة للتفاوض.</blockquote><h3>التدخين</h3><p>الرفض واضح، لكنه يأتي مع بديل: منطقة مسموحة؛ فهدف النزيل يمكن تحقيقه دون كسر القاعدة.</p><h3>الترقية المجانية</h3><p>هذا طلب يمكن التفاوض عليه؛ فلا تستطيع منح ما لا يستحقه النزيل، لكن يمكنك شرح خيارات الترقية وأسعارها أو المزايا المتاحة له.</p><h3>بيانات ضيف آخر</h3><p>هذا حد من حدود الخصوصية، والكلمة المفتاحية <strong>فورًا</strong>. لا تؤكد هل الشخص مقيم، ولا تعطِ رقم غرفة، ولا تلمّح. وإذا كانت لدى المتصل حاجة حقيقية فاتبع إجراء الفندق، كعرض إيصال رسالة.</p><h3>السلوك العدواني أو التهديد</h3><p>هذا حد من حدود السلامة؛ ومهمتك ليست كسب الحوار بل إنهاؤه بأمان: حافظ على المسافة، ولا تحاول السيطرة على الشخص جسديًا، واتبع إجراء الأمن والطوارئ في الفندق ليتولى الزملاء المدربون الأمر.</p><h2>الدورة كلها في سطرين</h2><p>تقول الشريحة الختامية: <strong>ارفض الطلب لا النزيل، واحفظ الحدود مع تقديم الحل.</strong> استمع، تعاطف، اشرح، اقترح، صعّد.</p><blockquote class=\"bk-quote\">والمهنية لا تعني التهاون — الاحترام لا يعني الموافقة.</blockquote><p>يمكنك أن تكون محترمًا تمامًا وتقول لا، ويمكنك أن تكون ودودًا وتحافظ على الحد. ويجب أن يغادر النزيل وهو يشعر بأنك أخذته بجدية حتى لو لم يكن الجواب ما أراده.</p><aside class=\"bk-scene\"><strong>موقف:</strong> قالت متصلة لموظفة الهاتف: \"أنا زوجته، أعطيني رقم غرفة السيد خالد فقط.\" فردّت الموظفة بهدوء: \"أعتذر، حفاظًا على خصوصية نزلائنا لا يمكنني مشاركة أي معلومات عن النزلاء. يسعدني أن أدوّن رسالة وأوصلها إن كان الشخص مقيمًا لدينا.\" أصرّت المتصلة، فكررت الموظفة العبارة نفسها بأدب وعرضت الرسالة مرة أخرى، ولم تؤكد أبدًا هل السيد خالد نزيل.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> في طلبات الخصوصية استخدم العبارة الهادئة نفسها في كل مرة؛ فالثبات يحمي النزيل ويحميك.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> ارفض الطلب لا النزيل. السلامة والقانون والخصوصية ثابتة، والاحترام لا يعني الموافقة.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: ترفض أم تصعّد",
+                                "questions": [
+                                    {
+                                        "question": "سأل متصل عن رقم غرفة نزيل باسمه. ماذا تفعل؟",
+                                        "options": [
+                                            "تعطيه الرقم إن بدا صادقًا",
+                                            "تؤكد أن النزيل مقيم دون ذكر الغرفة",
+                                            "تحوّل المكالمة دون تحقق",
+                                            "ترفض فورًا دون تأكيد أي معلومة"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "عند طلب بيانات ضيف آخر تقول المادة: ارفض فورًا دون تأكيد أي معلومة."
+                                    },
+                                    {
+                                        "question": "أشعل نزيل سيجارة في صالة يُمنع فيها التدخين. ما الاستجابة في المادة؟",
+                                        "options": [
+                                            "تتجاهل الأمر إن كانت الصالة فارغة",
+                                            "ترفض بوضوح وتقترح منطقة مسموحة",
+                                            "تستدعي الأمن فورًا",
+                                            "تفرض غرامة في الحال"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "عند التدخين في منطقة ممنوعة: ارفض بوضوح واقترح منطقة مسموحة."
+                                    },
+                                    {
+                                        "question": "أصبح النزيل مهددًا عندما رفضت طلبه. ماذا تفعل؟",
+                                        "options": [
+                                            "تنهي الحوار بأمان وتتبع إجراء الأمن والطوارئ",
+                                            "تثبت على موقفك وتجادله",
+                                            "تنفذ الطلب لتهدئته",
+                                            "تحاول الإمساك بالنزيل حتى يصل الأمن"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "عند السلوك العدواني أو التهديد: أنهِ الحوار بأمان واتبع إجراء الأمن والطوارئ."
+                                    },
+                                    {
+                                        "question": "أي عبارة تطابق رسالة المادة الختامية؟",
+                                        "options": [
+                                            "الاحترام يعني موافقة النزيل",
+                                            "ارفض النزيل لا الطلب",
+                                            "الاحترام لا يعني الموافقة",
+                                            "الحدود قابلة للتفاوض مع النزلاء الدائمين"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تختم المادة: المهنية لا تعني التهاون، والاحترام لا يعني الموافقة."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

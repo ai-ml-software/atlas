@@ -1,0 +1,545 @@
+{
+    "slug": "managing-priorities-when-handling-multiple-requests",
+    "category": "guest-handling",
+    "level": "intermediate",
+    "source_pdf": "Managing-Priorities-When-Handling-Multiple-Requests-Dyafa.pdf",
+    "thumbnail": "uploads/academy/library/managing-priorities-when-handling-multiple-requests.webp",
+    "videos": [
+        {
+            "id": "n3kNlFMXslo",
+            "title": "How to gain control of your free time | Laura Vanderkam | TED",
+            "channel": "TED",
+            "why": "Laura Vanderkam shows that time follows priorities: deciding what matters most first, which supports assessing and ordering several guest requests before acting."
+        }
+    ],
+    "locales": {
+        "en": {
+            "title": "Managing Priorities When Handling Multiple Requests",
+            "subtitle": "Prioritise, delegate, update and follow up to closure",
+            "short_description": "Learn to assess several guest requests by safety, guest impact and time, sort them into four priority levels, delegate clearly and close every request.",
+            "description": "<p>When several guests need you at once, the order in which you act matters. This course, built from the Dyafa Hotels &amp; Resorts training deck, shows colleagues how to decide quickly and fairly what comes first.</p><p>You will learn why priority depends on need and impact rather than on who speaks loudest, how to assess each request from three angles, the quick questions to ask before acting, the four priority levels, what to do and avoid when requests pile up, how to track every request to closure and when to ask the team for support.</p>",
+            "requirements": "Best taken after a foundation guest-service course; suitable for any colleague who handles several guest requests during a shift.",
+            "outcomes": [
+                "Explain why priority is based on need and impact, not on who speaks loudest",
+                "Assess every request by safety, guest impact and time and promise",
+                "Sort requests into immediate, urgent, important and routine and give realistic times",
+                "Track every request with Record, Set time, Update, Confirm",
+                "Recognise when to ask for team support and delegate clearly without forgetting"
+            ],
+            "faqs": [
+                {
+                    "question": "Two requests have the same priority. Which do I serve first?",
+                    "answer": "When priority is equal, serve the guest who has waited longer."
+                },
+                {
+                    "question": "Is it acceptable to do a quick request before a bigger one?",
+                    "answer": "Yes, complete a quick request if it does not delay the urgent one."
+                },
+                {
+                    "question": "Once I delegate a request, is it finished for me?",
+                    "answer": "No. Delegation does not mean forgetting. Follow up until you are sure the request is completed."
+                }
+            ],
+            "meta_title": "Managing Multiple Guest Requests in Hotels",
+            "meta_description": "Hotel training on prioritising several guest requests: safety, impact and time, four priority levels, delegation and follow-up to closure.",
+            "focus_keyword": "prioritising guest requests",
+            "chapters": [
+                {
+                    "title": "Prioritise Before You Start",
+                    "lessons": [
+                        {
+                            "title": "Not Every Request Has the Same Priority",
+                            "minutes": 5,
+                            "body": "<h2>Prioritise before you start</h2><p>At 8 am the front desk is busy. One guest wants a late checkout, another needs a taxi in ten minutes, a phone call reports a guest who has slipped by the pool and a colleague asks for a printer cartridge. If you simply take them in the order they arrive, the injured guest may wait behind the late checkout. The deck's first instruction is short: <strong>prioritise before you start.</strong></p><p>It gives five principles:</p><ul><li><strong>Safety and emergencies come first.</strong> Nothing else is more important than a risk to a person.</li><li><strong>Notice the effect of the request on the guest.</strong> A guest who cannot enter their room is affected far more than one who would like extra coat hangers.</li><li><strong>Respect waiting time and earlier promises.</strong> A guest who has already waited, or who was promised a time, has a claim on your attention.</li><li><strong>Complete a quick request if it does not delay the urgent one.</strong> Handing over a key card in five seconds is sensible; starting a long task while an urgent one waits is not.</li><li><strong>Ask for team support before requests pile up.</strong> Do not wait until you are overwhelmed.</li></ul><blockquote class=\"bk-quote\">Priority is not for whoever raises their voice, but for whoever needs the service first.</blockquote><h2>Why the loudest guest is not always first</h2><p>It is natural to respond to the guest who is most insistent or most upset. Sometimes that guest does have the most urgent need, and then they should be served first because of the need, not the volume. But often the quiet guest waiting patiently, or the elderly guest who has not complained, has a more important problem. A fair, calm process protects every guest and makes the service feel orderly rather than chaotic.</p><h2>The approach in one line</h2><p>The deck summarises the method in five words: <strong>Assess, Prioritise, Delegate, Update, Close</strong>, with a clear subtitle: <strong>prioritise, delegate, inform and follow up to closure.</strong></p><aside class=\"bk-scene\"><strong>Scene:</strong> A guest at the desk is loudly demanding a restaurant booking. At the same moment an older guest quietly says her room key does not work and she needs to take her medication, which is in the room. The receptionist politely tells the first guest, \"I will be with you in two minutes,\" re-encodes the key for the older guest, who cannot use her room, and then returns to the booking. Priority went to the need, not the voice.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Safety first, then guest impact, then waiting time and promises. Do quick tasks only if they do not delay urgent ones, and ask for help early.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Not every request is equal",
+                                "questions": [
+                                    {
+                                        "question": "You have a guest asking for a spa booking and a call reporting a guest who has fallen in the lobby. What comes first?",
+                                        "options": [
+                                            "The spa booking, because it arrived first",
+                                            "The fallen guest, because safety and emergencies come first",
+                                            "Whichever guest is louder",
+                                            "Neither until your supervisor arrives"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck says safety and emergencies come first."
+                                    },
+                                    {
+                                        "question": "A guest is shouting about a minor request while another waits quietly with a room they cannot enter. Who should be prioritised?",
+                                        "options": [
+                                            "The guest who needs the service most, based on impact",
+                                            "The guest who is shouting",
+                                            "The one who looks most important",
+                                            "The one whose request is easiest"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Priority is not for whoever raises their voice, but for whoever needs the service first."
+                                    },
+                                    {
+                                        "question": "You are handling an urgent request and someone asks for a pen. When is it acceptable to hand it over first?",
+                                        "options": [
+                                            "Never, pens are routine",
+                                            "Only if a supervisor approves",
+                                            "If it is quick and does not delay the urgent request",
+                                            "Always, because small things come first"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Complete a quick request if it does not delay the urgent one."
+                                    },
+                                    {
+                                        "question": "Requests are starting to build up at the desk. When should you ask the team for support?",
+                                        "options": [
+                                            "After a guest complains",
+                                            "At the end of the shift",
+                                            "Only in an emergency",
+                                            "Before the requests pile up"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The deck says ask for team support before requests accumulate."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Assess from Three Angles and Ask Before You Start",
+                            "minutes": 6,
+                            "body": "<h2>Assess each request from three angles</h2><p>Deciding priorities does not need a long meeting. It needs a few quick questions in your head. The deck groups them into three angles: <strong>safety, guest impact, and time and promise.</strong></p><h3>1. Safety first</h3><ul><li>Is there an injury or an emergency?</li><li>Is there a risk, or a security fault?</li><li>Is the guest stuck or unable to move?</li></ul><h3>2. Impact on the guest</h3><ul><li>Does the request stop the guest from sleeping, entering or using something?</li><li>Is a child, an older person or a sick person affected?</li><li>How many guests are affected by the problem?</li></ul><h3>3. Time and commitment</h3><ul><li>Who has been waiting longest?</li><li>Did we promise a specific time?</li><li>Can the request be delegated now?</li></ul><blockquote class=\"bk-quote\">Assess quickly, then decide: now, soon, or later.</blockquote><h2>Ask yourself before you start</h2><p>The deck also gives five quick questions to ask before you act, so that you make a <strong>clear and fast decision</strong>:</p><ol><li>Is there a risk or a health situation?</li><li>Does the request block a basic need of the guest?</li><li>Did we commit to the guest at a specific time?</li><li>Is there a quick request that will not delay the urgent one?</li><li>Do I need a colleague or another department?</li></ol><p>The deck warns against the easiest mistake: <strong>do not start the first request that reaches you without assessing the rest.</strong> Take a moment to see the whole picture first.</p><blockquote class=\"bk-quote\">If priority is equal, start with whoever has waited longest.</blockquote><table class=\"bk-say\"><thead><tr><th>Angle</th><th>Ask</th></tr></thead><tbody><tr><td>Safety</td><td>Injury or emergency? Risk or security fault? Guest stuck?</td></tr><tr><td>Guest impact</td><td>Blocks sleep, entry or use? Child, older or sick person? How many affected?</td></tr><tr><td>Time and promise</td><td>Who waited longest? Time promised? Can it be delegated now?</td></tr></tbody></table><aside class=\"bk-scene\"><strong>Scene:</strong> A housekeeping supervisor receives three calls within a minute: room 402 needs extra towels, room 515 reports that the lift on their floor is stuck with a guest inside, and room 610's family with a baby says the room was not cleaned and they were promised it by 2 pm. She assesses: the stuck lift is a safety issue, so she alerts engineering and security at once. Room 610 involves a baby and a missed promise, so a room attendant goes now. Room 402 is routine; she records it and gives a realistic time.</aside><aside class=\"bk-note\"><strong>Tip:</strong> Saying the three angles quietly to yourself, \"safety, impact, time\", takes only a few seconds and stops you from reacting only to the first or loudest request.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Check safety, guest impact and time and promise; ask your quick questions; decide now, soon or later; and if priority is equal, serve whoever has waited longest.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Assess before you start",
+                                "questions": [
+                                    {
+                                        "question": "Which question belongs to the 'impact on the guest' angle?",
+                                        "options": [
+                                            "Who has been waiting longest?",
+                                            "Is there a security fault?",
+                                            "Did we promise a specific time?",
+                                            "Is a child, an older person or a sick person affected?"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "The guest-impact angle asks whether a child, older person or sick person is affected."
+                                    },
+                                    {
+                                        "question": "Two guests have equally important requests. One has waited ten minutes, the other two minutes. Who do you serve first?",
+                                        "options": [
+                                            "The guest who has waited ten minutes",
+                                            "The guest who arrived last",
+                                            "Whoever is a repeat guest",
+                                            "Whoever is standing closer"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "If priority is equal, start with whoever has waited longest."
+                                    },
+                                    {
+                                        "question": "What does the deck warn against when several requests arrive?",
+                                        "options": [
+                                            "Asking a colleague for help",
+                                            "Recording requests",
+                                            "Starting the first request that reaches you without assessing the rest",
+                                            "Checking for safety risks"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The slide says do not start the first request that reaches you without assessing the others."
+                                    },
+                                    {
+                                        "question": "A power failure affects a whole floor while one guest asks for a newspaper. Which assessment question shows the power failure is higher impact?",
+                                        "options": [
+                                            "Can it be delegated now?",
+                                            "How many guests are affected by the problem?",
+                                            "Is it a quick request?",
+                                            "Who asked first?"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The guest-impact angle asks how many guests are affected."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Sorting and Organising Requests",
+                    "lessons": [
+                        {
+                            "title": "Four Priority Levels and Staying Organised",
+                            "minutes": 6,
+                            "body": "<h2>Sort requests into four levels</h2><p>Once you have assessed a request, give it a level. The deck uses four:</p><ol><li><strong>Immediate:</strong> safety, health or security. Move now.</li><li><strong>Urgent:</strong> a basic need or a large impact. Start quickly.</li><li><strong>Important:</strong> the guest's comfort, or an earlier promise. Set a time.</li><li><strong>Routine:</strong> a low-impact request. Record it and carry it out in turn.</li></ol><p>A guest who feels unwell is immediate. A guest locked out of their room late at night is urgent. A guest who was promised an extra pillow by 9 pm is important. A request for a restaurant menu for tomorrow is routine. Each is still a real request, and each deserves an honest answer about when it will happen.</p><blockquote class=\"bk-quote\">Give every guest a realistic time, and do not leave any request unrecorded.</blockquote><p>A realistic time is kinder than an optimistic one. \"Within fifteen minutes\" that becomes forty is worse than an honest \"within thirty minutes\" that is kept.</p><h2>Do and avoid when requests crowd in</h2><table class=\"bk-say\"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>Record every request immediately</td><td>Relying on memory alone</td></tr><tr><td>Set the priority and the responsible colleague</td><td>Starting the easiest request and forgetting the urgent one</td></tr><tr><td>Give the guest a realistic time</td><td>Promising everyone the same time</td></tr><tr><td>Delegate work when needed</td><td>Leaving a request without a clear owner</td></tr><tr><td>Review open requests continuously</td><td>Closing a request before confirming it is done</td></tr></tbody></table><blockquote class=\"bk-quote\">Organisation prevents forgetting and makes service fair and clear.</blockquote><p>Memory fails under pressure. When five things happen at once, the sixth will be forgotten unless it is written down. Promising every guest \"five minutes\" feels polite but guarantees that some promises will be broken. And an easy task done first can feel productive while the urgent one waits.</p><aside class=\"bk-scene\"><strong>Scene:</strong> A concierge has four requests in five minutes: a guest feeling faint in the lobby, a guest who missed a taxi to the airport, a guest who wants a birthday cake arranged for tonight, and a guest asking for a city map. He calls for first aid support for the faint guest at once (immediate), arranges a new taxi (urgent), records the cake with the pastry team and tells the guest it will be confirmed within the hour (important), and hands over the map when he returns to the desk (routine). Each guest receives a realistic time.</aside><aside class=\"bk-key\"><strong>Key takeaway:</strong> Label each request immediate, urgent, important or routine; record everything; give honest times; and never close a request before it is done.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Four priority levels",
+                                "questions": [
+                                    {
+                                        "question": "A guest says they have chest pain. Which level is this?",
+                                        "options": [
+                                            "Routine",
+                                            "Important",
+                                            "Urgent",
+                                            "Immediate: health, move now"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "Immediate covers safety, health or security: move now."
+                                    },
+                                    {
+                                        "question": "A guest was promised extra hangers by 7 pm. Which level fits and what should you do?",
+                                        "options": [
+                                            "Important: an earlier promise, so set a time",
+                                            "Immediate: drop everything",
+                                            "Routine: do it whenever",
+                                            "Not a request; ignore it"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "Important covers guest comfort or an earlier promise: set a time."
+                                    },
+                                    {
+                                        "question": "You are very busy and three guests ask for help. What should you avoid?",
+                                        "options": [
+                                            "Recording each request",
+                                            "Promising all three the same time",
+                                            "Giving each a realistic time",
+                                            "Delegating when needed"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The deck lists promising everyone the same time as something to avoid."
+                                    },
+                                    {
+                                        "question": "Why should you record every request immediately?",
+                                        "options": [
+                                            "So you can close it sooner",
+                                            "Because guests like paperwork",
+                                            "Because relying on memory alone leads to forgetting",
+                                            "So your supervisor can blame someone"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "The deck warns against relying on memory; organisation prevents forgetting."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Follow-Up and Team Support",
+                    "lessons": [
+                        {
+                            "title": "Track Every Request and Ask for Support",
+                            "minutes": 6,
+                            "body": "<h2>Follow every request to closure</h2><p>Setting priorities is only half the job. The other half is making sure every request actually reaches the end. The deck gives four tracking steps:</p><ol><li><strong>Record the request:</strong> write the room, the request and the time.</li><li><strong>Set the time:</strong> decide who will carry it out and when.</li><li><strong>Update the guest:</strong> tell the guest if the time changes.</li><li><strong>Confirm completion:</strong> ask the guest and make sure the request is finished.</li></ol><blockquote class=\"bk-quote\">A request does not end when it is sent to the department; it ends when its completion is confirmed.</blockquote><p>Sending a request to housekeeping feels like progress, but the guest does not experience the message, only the result. A short call, \"Did the towels arrive?\", turns a hopeful request into a confirmed one.</p><h2>When to ask the team for support</h2><p>Nobody can handle unlimited requests alone. The deck lists five moments to ask for support:</p><ul><li>There is more than one urgent request at the same time.</li><li>There is a risk or a health situation.</li><li>Requests are increasing faster than they can be completed.</li><li>You need another department or another level of authority.</li><li>You expect to miss the time you promised.</li></ul><h2>Delegate clearly</h2><ol><li>Tell the supervisor early.</li><li>State the request, its priority and its location.</li><li>Name the colleague responsible for each request.</li><li>Share the complete information once.</li><li>Follow all requests until they are closed.</li></ol><blockquote class=\"bk-quote\">Delegation does not mean forgetting. Follow up until you are sure it is done.</blockquote><aside class=\"bk-scene\"><strong>Scene:</strong> During a busy check-in wave, a receptionist has a guest reporting a water leak, a guest whose booking is missing and a guest waiting for a wheelchair. She tells the duty manager early: \"Leak in 318, urgent; booking issue at the desk, important; wheelchair for the guest in the lobby, urgent.\" The manager names engineering for the leak and a bellman for the wheelchair; the receptionist keeps the booking. She shares the details once, updates the booking guest on the time, then checks back with engineering and the bellman until each request is confirmed as complete.</aside><h2>Closing thought</h2><p>The deck ends with the full cycle: <strong>Assess, Prioritise, Delegate, Update, Close.</strong> Prioritise before you move: put urgent needs first, delegate the work and follow every request. <strong>Do not leave any request without a record, an owner or follow-up.</strong></p><aside class=\"bk-key\"><strong>Key takeaway:</strong> Record, set time, update and confirm every request. Ask for support early, delegate with names and full information, and keep following up until each request is closed.</aside>",
+                            "quiz": {
+                                "title": "Check your understanding: Follow-up and support",
+                                "questions": [
+                                    {
+                                        "question": "You sent a request for a baby cot to housekeeping. When does the request end?",
+                                        "options": [
+                                            "When you send it",
+                                            "When housekeeping replies 'OK'",
+                                            "At the end of your shift",
+                                            "When its completion is confirmed"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "A request does not end when sent to the department; it ends when completion is confirmed."
+                                    },
+                                    {
+                                        "question": "Engineering says the repair will be an hour later than promised. What step applies?",
+                                        "options": [
+                                            "Close the request",
+                                            "Update the guest that the time has changed",
+                                            "Wait and say nothing",
+                                            "Record a new request"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "The Update step says to inform the guest if the time changes."
+                                    },
+                                    {
+                                        "question": "You have two urgent requests at the same time. What should you do?",
+                                        "options": [
+                                            "Ask for team support",
+                                            "Choose one and leave the other",
+                                            "Handle the easier one first",
+                                            "Tell both guests to wait"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "More than one urgent request at the same time is a reason to ask for support."
+                                    },
+                                    {
+                                        "question": "You delegated a guest's luggage request to a bellman. What is still your responsibility?",
+                                        "options": [
+                                            "Nothing; it is his now",
+                                            "Carrying the luggage yourself",
+                                            "Following up until you are sure it is done",
+                                            "Telling the guest to call the bellman"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "Delegation does not mean forgetting; follow up until you are sure of completion."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ar": {
+            "title": "إدارة الأولويات عند تعدد الطلبات",
+            "subtitle": "رتّب ووزّع وأبلغ وتابع حتى الإغلاق",
+            "short_description": "تعلّم تقييم طلبات النزلاء المتعددة من حيث السلامة وأثرها على النزيل والوقت، وتقسيمها إلى أربع درجات، وتوزيع العمل بوضوح وإغلاق كل طلب.",
+            "description": "<p>عندما يحتاجك عدة نزلاء في الوقت نفسه، يصبح ترتيب ما تفعله مهمًا. هذه الدورة مبنية على مادة التدريب لدى فنادق ومنتجعات ضيافة، وتعلّم الموظفين كيف يقررون بسرعة وعدل ما يأتي أولًا.</p><p>ستتعرف على سبب ارتباط الأولوية بالحاجة والأثر لا بمن يرفع صوته، وكيف تقيّم الطلب من ثلاث زوايا، والأسئلة السريعة قبل أن تبدأ، ودرجات الأولوية الأربع، وما تفعله وما تتجنبه عند ازدحام الطلبات، وكيف تتابع كل طلب حتى الإغلاق، ومتى تطلب دعم الفريق.</p>",
+            "requirements": "يُفضّل أخذها بعد دورة تأسيسية في خدمة النزلاء، وهي مناسبة لكل موظف يتعامل مع عدة طلبات خلال مناوبته.",
+            "outcomes": [
+                "اشرح لماذا تعتمد الأولوية على الحاجة والأثر لا على من يرفع صوته",
+                "قيّم كل طلب من حيث السلامة وأثره على النزيل والوقت والالتزام",
+                "قسّم الطلبات إلى فوري وعاجل ومهم وعادي وأعطِ مواعيد واقعية",
+                "تابع كل طلب بخطوات: سجّل، حدد الوقت، حدّث، أكّد",
+                "تعرّف متى تطلب دعم الفريق ووزّع العمل بوضوح دون نسيان"
+            ],
+            "faqs": [
+                {
+                    "question": "طلبان لهما الأولوية نفسها، بأيهما أبدأ؟",
+                    "answer": "إذا تساوت الأولوية، ابدأ بمن ينتظر منذ وقت أطول."
+                },
+                {
+                    "question": "هل يجوز إنجاز طلب سريع قبل طلب أكبر؟",
+                    "answer": "نعم، أنجز الطلب السريع إن لم يؤخر العاجل."
+                },
+                {
+                    "question": "بعد أن أفوّض طلبًا، هل انتهت مسؤوليتي؟",
+                    "answer": "لا. التفويض لا يعني النسيان، تابع حتى تتأكد من الإنجاز."
+                }
+            ],
+            "meta_title": "إدارة الأولويات عند تعدد طلبات النزلاء",
+            "meta_description": "تدريب فندقي على ترتيب طلبات النزلاء المتعددة: السلامة والأثر والوقت، وأربع درجات للأولوية، وتوزيع العمل والمتابعة حتى الإغلاق.",
+            "focus_keyword": "إدارة أولويات طلبات النزلاء",
+            "chapters": [
+                {
+                    "title": "رتّب قبل أن تبدأ",
+                    "lessons": [
+                        {
+                            "title": "ليس كل طلب له الأولوية نفسها",
+                            "minutes": 5,
+                            "body": "<h2>رتّب قبل أن تبدأ</h2><p>في الثامنة صباحًا يزدحم الاستقبال: نزيل يريد تمديد موعد المغادرة، وآخر يحتاج سيارة أجرة خلال عشر دقائق، واتصال يبلغ عن نزيل انزلق عند المسبح، وزميل يطلب حبرًا للطابعة. إذا تعاملت معها بترتيب وصولها فقط، فقد ينتظر النزيل المصاب خلف طلب تمديد المغادرة. وتوجيه المادة الأول قصير: <strong>رتّب قبل أن تبدأ.</strong></p><ul><li><strong>السلامة والطوارئ تأتي أولًا،</strong> فلا شيء أهم من خطر على شخص.</li><li><strong>لاحظ أثر الطلب على النزيل،</strong> فالنزيل الذي لا يستطيع دخول غرفته يتأثر أكثر بكثير ممن يريد علاقات ملابس إضافية.</li><li><strong>احترم وقت الانتظار والوعد السابق،</strong> فالنزيل الذي انتظر أو وُعد بوقت محدد له حق في انتباهك.</li><li><strong>أنجز الطلب السريع إن لم يؤخر العاجل،</strong> فتسليم بطاقة غرفة في خمس ثوانٍ تصرف معقول، أما بدء مهمة طويلة والعاجل ينتظر فلا.</li><li><strong>اطلب دعم الفريق قبل تراكم الطلبات،</strong> ولا تنتظر حتى تُغمر بالعمل.</li></ul><blockquote class=\"bk-quote\">الأولوية ليست لمن يرفع صوته — بل لمن يحتاج الخدمة أولًا.</blockquote><h2>لماذا لا يكون صاحب الصوت الأعلى أولًا دائمًا؟</h2><p>من الطبيعي أن نستجيب للنزيل الأكثر إلحاحًا أو انزعاجًا. وقد تكون حاجته فعلًا هي الأعجل، وعندها يُخدم أولًا بسبب الحاجة لا بسبب الصوت. لكن كثيرًا ما يكون النزيل الهادئ المنتظر بصبر، أو النزيل الكبير في السن الذي لم يشتكِ، صاحب المشكلة الأهم. والإجراء العادل الهادئ يحمي كل النزلاء ويجعل الخدمة منظمة لا فوضوية.</p><h2>المنهج في سطر واحد</h2><p>تلخص المادة المنهج في خمس كلمات: <strong>قيّم، رتّب، وزّع، حدّث، أغلق</strong>، وعنوانها واضح: <strong>رتّب ووزّع وأبلغ وتابع حتى الإغلاق.</strong></p><aside class=\"bk-scene\"><strong>موقف:</strong> نزيل عند المكتب يطالب بصوت مرتفع بحجز في المطعم، وفي اللحظة نفسها تقول نزيلة كبيرة في السن بهدوء إن بطاقة غرفتها لا تعمل وإنها تحتاج إلى تناول دوائها الموجود في الغرفة. قالت موظفة الاستقبال للنزيل الأول بلطف: \"سأكون معك خلال دقيقتين\"، وأعادت برمجة البطاقة للنزيلة التي لا تستطيع استخدام غرفتها، ثم عادت إلى الحجز. ذهبت الأولوية إلى الحاجة لا إلى الصوت.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> السلامة أولًا، ثم أثر الطلب على النزيل، ثم وقت الانتظار والوعود. أنجز السريع فقط إن لم يؤخر العاجل، واطلب المساعدة مبكرًا.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: ليست كل الطلبات متساوية",
+                                "questions": [
+                                    {
+                                        "question": "لديك نزيل يطلب حجزًا في السبا، واتصال يبلغ عن نزيل سقط في البهو. ماذا يأتي أولًا؟",
+                                        "options": [
+                                            "حجز السبا لأنه وصل أولًا",
+                                            "النزيل الذي سقط، لأن السلامة والطوارئ تأتي أولًا",
+                                            "النزيل الأعلى صوتًا",
+                                            "لا هذا ولا ذاك حتى يصل المشرف"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تقول المادة: السلامة والطوارئ تأتي أولًا."
+                                    },
+                                    {
+                                        "question": "نزيل يصرخ بسبب طلب بسيط، وآخر ينتظر بهدوء ولا يستطيع دخول غرفته. من يُقدَّم؟",
+                                        "options": [
+                                            "من يحتاج الخدمة أكثر بحسب الأثر",
+                                            "النزيل الذي يصرخ",
+                                            "من يبدو أهم",
+                                            "صاحب الطلب الأسهل"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "الأولوية ليست لمن يرفع صوته، بل لمن يحتاج الخدمة أولًا."
+                                    },
+                                    {
+                                        "question": "تتعامل مع طلب عاجل وطلب منك أحدهم قلمًا. متى يجوز أن تعطيه القلم أولًا؟",
+                                        "options": [
+                                            "أبدًا، فالأقلام طلب عادي",
+                                            "فقط بموافقة المشرف",
+                                            "إذا كان سريعًا ولا يؤخر الطلب العاجل",
+                                            "دائمًا، فالأشياء الصغيرة أولًا"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "أنجز الطلب السريع إن لم يؤخر العاجل."
+                                    },
+                                    {
+                                        "question": "بدأت الطلبات تتراكم عند المكتب. متى تطلب دعم الفريق؟",
+                                        "options": [
+                                            "بعد أن يشتكي نزيل",
+                                            "في نهاية المناوبة",
+                                            "في الطوارئ فقط",
+                                            "قبل تراكم الطلبات"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "تقول المادة: اطلب دعم الفريق قبل تراكم الطلبات."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title": "قيّم الطلب من ثلاث زوايا واسأل نفسك قبل أن تبدأ",
+                            "minutes": 6,
+                            "body": "<h2>قيّم الطلب من ثلاث زوايا</h2><p>تحديد الأولويات لا يحتاج اجتماعًا طويلًا، بل بضعة أسئلة سريعة في ذهنك. وتجمعها المادة في ثلاث زوايا: <strong>السلامة، وأثر الطلب على النزيل، والوقت والالتزام.</strong></p><h3>١. السلامة أولًا</h3><ul><li>هل توجد إصابة أو حالة طارئة؟</li><li>هل يوجد خطر أو عطل أمني؟</li><li>هل النزيل عالق أو غير قادر على الحركة؟</li></ul><h3>٢. أثره على النزيل</h3><ul><li>هل يمنع الطلب النوم أو الدخول أو الاستخدام؟</li><li>هل يتأثر طفل أو كبير سن أو مريض؟</li><li>كم نزيلًا يتأثر بالمشكلة؟</li></ul><h3>٣. الوقت والالتزام</h3><ul><li>من ينتظر منذ مدة أطول؟</li><li>هل وعدنا بوقت محدد؟</li><li>هل يمكن تفويض الطلب الآن؟</li></ul><blockquote class=\"bk-quote\">قيّم بسرعة ثم حدد: الآن، قريبًا، أو بعد ذلك.</blockquote><h2>اسأل نفسك قبل أن تبدأ</h2><p>وتقدّم المادة أيضًا خمسة أسئلة سريعة قبل التنفيذ، لتتخذ <strong>قرارًا واضحًا وسريعًا</strong>:</p><ol><li>هل يوجد خطر أو حالة صحية؟</li><li>هل تعطل الطلب حاجة أساسية للنزيل؟</li><li>هل التزمنا للنزيل بوقت محدد؟</li><li>هل هناك طلب سريع لا يؤخر العاجل؟</li><li>هل أحتاج إلى زميل أو قسم آخر؟</li></ol><p>وتحذر المادة من أسهل الأخطاء: <strong>لا تبدأ أول طلب وصل إليك دون تقييم الباقي.</strong> خذ لحظة لترى الصورة كاملة أولًا.</p><blockquote class=\"bk-quote\">إذا تساوت الأولوية، ابدأ بمن ينتظر منذ وقت أطول.</blockquote><table class=\"bk-say\"><thead><tr><th>الزاوية</th><th>اسأل</th></tr></thead><tbody><tr><td>السلامة</td><td>إصابة أو طارئ؟ خطر أو عطل أمني؟ نزيل عالق؟</td></tr><tr><td>أثره على النزيل</td><td>يمنع النوم أو الدخول أو الاستخدام؟ طفل أو كبير سن أو مريض؟ كم نزيلًا يتأثر؟</td></tr><tr><td>الوقت والالتزام</td><td>من ينتظر أطول؟ هل وعدنا بوقت؟ هل يمكن التفويض الآن؟</td></tr></tbody></table><aside class=\"bk-scene\"><strong>موقف:</strong> تلقت مشرفة التدبير الفندقي ثلاثة اتصالات خلال دقيقة: الغرفة 402 تحتاج مناشف إضافية، والغرفة 515 تبلغ أن المصعد في طابقها متوقف وبداخله نزيل، وعائلة الغرفة 610 ومعها رضيع تقول إن الغرفة لم تُنظف وقد وُعدت بذلك قبل الثانية ظهرًا. قيّمت المشرفة: المصعد العالق مسألة سلامة، فأبلغت الصيانة والأمن فورًا. والغرفة 610 فيها رضيع ووعد لم يُنفذ، فأرسلت عاملة غرف الآن. أما الغرفة 402 فطلب عادي، فسجّلته وأعطت وقتًا واقعيًا.</aside><aside class=\"bk-note\"><strong>نصيحة:</strong> ترديد الزوايا الثلاث في ذهنك، \"السلامة، الأثر، الوقت\"، يستغرق ثوانٍ قليلة ويمنعك من الاستجابة لأول طلب أو لأعلى صوت فقط.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> افحص السلامة وأثر الطلب والوقت والالتزام، واسأل أسئلتك السريعة، وحدد: الآن أو قريبًا أو بعد ذلك، وإذا تساوت الأولوية فابدأ بمن ينتظر منذ وقت أطول.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: قيّم قبل أن تبدأ",
+                                "questions": [
+                                    {
+                                        "question": "أي سؤال يخص زاوية \"أثره على النزيل\"؟",
+                                        "options": [
+                                            "من ينتظر منذ مدة أطول؟",
+                                            "هل يوجد عطل أمني؟",
+                                            "هل وعدنا بوقت محدد؟",
+                                            "هل يتأثر طفل أو كبير سن أو مريض؟"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "زاوية الأثر على النزيل تسأل: هل يتأثر طفل أو كبير سن أو مريض؟"
+                                    },
+                                    {
+                                        "question": "نزيلان طلباهما بالأهمية نفسها، أحدهما ينتظر منذ عشر دقائق والآخر منذ دقيقتين. بمن تبدأ؟",
+                                        "options": [
+                                            "بالنزيل الذي ينتظر منذ عشر دقائق",
+                                            "بالنزيل الذي وصل أخيرًا",
+                                            "بالنزيل المتكرر",
+                                            "بالأقرب إليك"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "إذا تساوت الأولوية، ابدأ بمن ينتظر منذ وقت أطول."
+                                    },
+                                    {
+                                        "question": "مما تحذر المادة عند وصول عدة طلبات؟",
+                                        "options": [
+                                            "طلب المساعدة من زميل",
+                                            "تسجيل الطلبات",
+                                            "أن تبدأ أول طلب وصل إليك دون تقييم الباقي",
+                                            "التحقق من مخاطر السلامة"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تقول الشريحة: لا تبدأ أول طلب وصل إليك دون تقييم الباقي."
+                                    },
+                                    {
+                                        "question": "انقطعت الكهرباء عن طابق كامل بينما يطلب نزيل صحيفة. أي سؤال تقييم يوضح أن انقطاع الكهرباء أعلى أثرًا؟",
+                                        "options": [
+                                            "هل يمكن تفويضه الآن؟",
+                                            "كم نزيلًا يتأثر بالمشكلة؟",
+                                            "هل هو طلب سريع؟",
+                                            "من طلب أولًا؟"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "زاوية الأثر على النزيل تسأل: كم نزيلًا يتأثر بالمشكلة؟"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "تقسيم الطلبات وتنظيمها",
+                    "lessons": [
+                        {
+                            "title": "أربع درجات للأولوية والتنظيم",
+                            "minutes": 6,
+                            "body": "<h2>قسّم الطلبات إلى أربع درجات</h2><p>بعد تقييم الطلب، أعطه درجة. وتستخدم المادة أربع درجات:</p><ol><li><strong>فوري:</strong> سلامة أو صحة أو أمن — تحرك الآن.</li><li><strong>عاجل:</strong> حاجة أساسية أو أثر كبير — ابدأ سريعًا.</li><li><strong>مهم:</strong> راحة النزيل أو وعد سابق — حدّد وقتًا.</li><li><strong>عادي:</strong> طلب منخفض الأثر — سجّله ونفّذه بالدور.</li></ol><p>النزيل الذي يشعر بتوعك حالة فورية. والنزيل العالق خارج غرفته في وقت متأخر من الليل حالة عاجلة. والنزيل الموعود بوسادة إضافية قبل التاسعة مساءً حالة مهمة. وطلب قائمة المطعم ليوم الغد طلب عادي. وكل منها طلب حقيقي يستحق إجابة صادقة عن موعد تنفيذه.</p><blockquote class=\"bk-quote\">أخبر كل نزيل بموعد واقعي ولا تترك أي طلب دون تسجيل.</blockquote><p>الموعد الواقعي ألطف من الموعد المتفائل؛ فعبارة \"خلال ربع ساعة\" التي تصبح أربعين دقيقة أسوأ من \"خلال نصف ساعة\" صادقة يُوفى بها.</p><h2>افعل وتجنب عند ازدحام الطلبات</h2><table class=\"bk-say\"><thead><tr><th>افعل</th><th>تجنب</th></tr></thead><tbody><tr><td>سجّل كل طلب فورًا</td><td>أن تعتمد على الذاكرة وحدها</td></tr><tr><td>حدد الأولوية والموظف المسؤول</td><td>أن تبدأ الطلب الأسهل وتنسى العاجل</td></tr><tr><td>أعطِ النزيل وقتًا واقعيًا</td><td>أن تعد الجميع بالوقت نفسه</td></tr><tr><td>وزّع العمل عند الحاجة</td><td>أن تترك الطلب دون مسؤول واضح</td></tr><tr><td>راجع الطلبات المفتوحة باستمرار</td><td>أن تغلق الطلب قبل التأكد من إنجازه</td></tr></tbody></table><blockquote class=\"bk-quote\">التنظيم يمنع النسيان ويجعل الخدمة عادلة وواضحة.</blockquote><p>الذاكرة تخون تحت الضغط؛ فحين تحدث خمسة أمور معًا يُنسى السادس ما لم يُكتب. ووعد كل النزلاء بـ\"خمس دقائق\" يبدو مهذبًا لكنه يضمن أن بعض الوعود ستُخلف. والمهمة السهلة التي تُنجز أولًا قد تشعرك بالإنجاز بينما العاجل ينتظر.</p><aside class=\"bk-scene\"><strong>موقف:</strong> تلقى موظف الكونسيرج أربعة طلبات خلال خمس دقائق: نزيل يشعر بالدوار في البهو، ونزيل فاتته سيارة الأجرة إلى المطار، ونزيل يريد ترتيب كعكة عيد ميلاد الليلة، ونزيل يطلب خريطة للمدينة. طلب دعم الإسعافات الأولية للنزيل المصاب بالدوار فورًا (فوري)، ورتب سيارة أجرة جديدة (عاجل)، وسجّل طلب الكعكة مع فريق الحلويات وأخبر النزيل أنه سيتأكد خلال ساعة (مهم)، وسلّم الخريطة عند عودته إلى المكتب (عادي). وحصل كل نزيل على موعد واقعي.</aside><aside class=\"bk-key\"><strong>الخلاصة:</strong> صنّف كل طلب: فوري أو عاجل أو مهم أو عادي، وسجّل كل شيء، وأعطِ مواعيد صادقة، ولا تغلق طلبًا قبل إنجازه.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: درجات الأولوية الأربع",
+                                "questions": [
+                                    {
+                                        "question": "قال نزيل إنه يشعر بألم في الصدر. ما درجة هذا الطلب؟",
+                                        "options": [
+                                            "عادي",
+                                            "مهم",
+                                            "عاجل",
+                                            "فوري: صحة، تحرك الآن"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "الفوري يشمل السلامة أو الصحة أو الأمن: تحرك الآن."
+                                    },
+                                    {
+                                        "question": "وُعد نزيل بعلاقات ملابس إضافية قبل السابعة مساءً. ما الدرجة المناسبة وماذا تفعل؟",
+                                        "options": [
+                                            "مهم: وعد سابق، فحدّد وقتًا",
+                                            "فوري: اترك كل شيء",
+                                            "عادي: نفّذه متى شئت",
+                                            "ليس طلبًا، تجاهله"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "المهم يشمل راحة النزيل أو وعدًا سابقًا: حدّد وقتًا."
+                                    },
+                                    {
+                                        "question": "أنت مشغول جدًا وطلب ثلاثة نزلاء المساعدة. ما الذي يجب تجنبه؟",
+                                        "options": [
+                                            "تسجيل كل طلب",
+                                            "وعد الثلاثة بالوقت نفسه",
+                                            "إعطاء كل منهم وقتًا واقعيًا",
+                                            "توزيع العمل عند الحاجة"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "تذكر المادة \"أن تعد الجميع بالوقت نفسه\" ضمن ما يجب تجنبه."
+                                    },
+                                    {
+                                        "question": "لماذا يجب تسجيل كل طلب فورًا؟",
+                                        "options": [
+                                            "لتغلقه أسرع",
+                                            "لأن النزلاء يحبون الأوراق",
+                                            "لأن الاعتماد على الذاكرة وحدها يؤدي إلى النسيان",
+                                            "ليجد المشرف من يلومه"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "تحذر المادة من الاعتماد على الذاكرة وحدها، والتنظيم يمنع النسيان."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "المتابعة ودعم الفريق",
+                    "lessons": [
+                        {
+                            "title": "تابع كل طلب واطلب دعم الفريق",
+                            "minutes": 6,
+                            "body": "<h2>تابع كل طلب حتى الإغلاق</h2><p>تحديد الأولويات نصف العمل فقط، والنصف الآخر أن تتأكد أن كل طلب يصل إلى نهايته. وتحدد المادة أربع خطوات للمتابعة:</p><ol><li><strong>سجّل الطلب:</strong> اكتب الغرفة والطلب والوقت.</li><li><strong>حدد الوقت:</strong> حدد من سينفذه ومتى.</li><li><strong>حدّث النزيل:</strong> أخبر النزيل إذا تغير الموعد.</li><li><strong>أكّد الإنجاز:</strong> اسأل النزيل وتأكد أن الطلب اكتمل.</li></ol><blockquote class=\"bk-quote\">الطلب لا ينتهي عند إرساله للقسم — ينتهي عندما يتأكد إنجازه.</blockquote><p>إرسال الطلب إلى التدبير الفندقي يبدو تقدمًا، لكن النزيل لا يعيش الرسالة بل النتيجة. واتصال قصير: \"هل وصلت المناشف؟\" يحوّل الطلب من أمل إلى إنجاز مؤكد.</p><h2>متى تطلب دعم الفريق؟</h2><ul><li>وجود أكثر من طلب عاجل في الوقت نفسه.</li><li>وجود خطر أو حالة صحية.</li><li>زيادة الطلبات أسرع من الإنجاز.</li><li>الحاجة إلى قسم أو صلاحية أخرى.</li><li>توقع تأخير الموعد الذي وعدت به.</li></ul><h2>وزّع العمل بوضوح</h2><ol><li>أبلغ المشرف مبكرًا.</li><li>حدد الطلب وأولويته وموقعه.</li><li>سمِّ الموظف المسؤول عن كل طلب.</li><li>شارك المعلومات كاملة مرة واحدة.</li><li>تابع جميع الطلبات حتى الإغلاق.</li></ol><blockquote class=\"bk-quote\">التفويض لا يعني النسيان — تابع حتى تتأكد من الإنجاز.</blockquote><aside class=\"bk-scene\"><strong>موقف:</strong> خلال موجة تسجيل وصول مزدحمة، كان لدى موظفة الاستقبال نزيل يبلغ عن تسرب مياه، ونزيل حجزه غير موجود، ونزيل ينتظر كرسيًا متحركًا. أبلغت المدير المناوب مبكرًا: \"تسرب في 318، عاجل؛ مشكلة حجز عند المكتب، مهم؛ كرسي متحرك لنزيل في البهو، عاجل\". فسمّى المدير الصيانة للتسرب وموظف الأمتعة للكرسي، وبقي الحجز مع الموظفة. شاركت التفاصيل مرة واحدة، وحدّثت نزيل الحجز بالموعد، ثم تابعت مع الصيانة وموظف الأمتعة حتى تأكد إنجاز كل طلب.</aside><h2>كلمة ختامية</h2><p>تختم المادة بالدورة الكاملة: <strong>قيّم، رتّب، وزّع، حدّث، أغلق.</strong> رتّب قبل أن تتحرك، وقدّم العاجل ووزّع العمل وتابع كل طلب. <strong>لا تترك طلبًا دون تسجيل أو مسؤول أو متابعة.</strong></p><aside class=\"bk-key\"><strong>الخلاصة:</strong> سجّل كل طلب وحدد وقته وحدّث النزيل وأكّد الإنجاز. اطلب الدعم مبكرًا، ووزّع العمل بالأسماء والمعلومات الكاملة، وتابع حتى يُغلق كل طلب.</aside>",
+                            "quiz": {
+                                "title": "تحقق من فهمك: المتابعة والدعم",
+                                "questions": [
+                                    {
+                                        "question": "أرسلت طلب سرير أطفال إلى التدبير الفندقي. متى ينتهي الطلب؟",
+                                        "options": [
+                                            "عند إرساله",
+                                            "عندما يرد القسم \"تم\"",
+                                            "في نهاية مناوبتك",
+                                            "عندما يتأكد إنجازه"
+                                        ],
+                                        "answer": 3,
+                                        "explanation": "الطلب لا ينتهي عند إرساله للقسم، بل عندما يتأكد إنجازه."
+                                    },
+                                    {
+                                        "question": "أخبرتك الصيانة أن الإصلاح سيتأخر ساعة عن الموعد. أي خطوة تنطبق؟",
+                                        "options": [
+                                            "أغلق الطلب",
+                                            "حدّث النزيل بأن الموعد تغير",
+                                            "انتظر ولا تقل شيئًا",
+                                            "سجّل طلبًا جديدًا"
+                                        ],
+                                        "answer": 1,
+                                        "explanation": "خطوة حدّث النزيل تعني: أخبر النزيل إذا تغير الموعد."
+                                    },
+                                    {
+                                        "question": "لديك طلبان عاجلان في الوقت نفسه. ماذا تفعل؟",
+                                        "options": [
+                                            "تطلب دعم الفريق",
+                                            "تختار أحدهما وتترك الآخر",
+                                            "تبدأ بالأسهل",
+                                            "تطلب من النزيلين الانتظار"
+                                        ],
+                                        "answer": 0,
+                                        "explanation": "وجود أكثر من طلب عاجل في الوقت نفسه من أسباب طلب الدعم."
+                                    },
+                                    {
+                                        "question": "فوّضت طلب أمتعة نزيل إلى موظف الأمتعة. ما الذي يبقى من مسؤوليتك؟",
+                                        "options": [
+                                            "لا شيء، أصبح مسؤوليته",
+                                            "أن تحمل الأمتعة بنفسك",
+                                            "أن تتابع حتى تتأكد من الإنجاز",
+                                            "أن تطلب من النزيل الاتصال بموظف الأمتعة"
+                                        ],
+                                        "answer": 2,
+                                        "explanation": "التفويض لا يعني النسيان، تابع حتى تتأكد من الإنجاز."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
