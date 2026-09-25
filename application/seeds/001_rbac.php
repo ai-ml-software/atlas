@@ -54,8 +54,28 @@ class Seed_rbac extends Ha_seeder {
             'settings'             => array('en' => 'Settings', 'ar' => 'الإعدادات', 'actions' => array('view', 'update')),
             'audit_logs'           => array('en' => 'Audit Logs', 'ar' => 'سجل التدقيق', 'actions' => array('view', 'export')),
             'leads'                => array('en' => 'Leads', 'ar' => 'طلبات التواصل', 'actions' => array('view', 'update', 'delete', 'export')),
-            'ai'                   => array('en' => 'AI Studio', 'ar' => 'استوديو الذكاء الاصطناعي', 'actions' => array('view', 'configure', 'generate', 'approve', 'publish')),
+            'ai'                   => array('en' => 'AI Studio', 'ar' => 'استوديو الذكاء الاصطناعي', 'actions' => array('view', 'configure', 'generate', 'approve', 'publish', 'use', 'govern')),
             'api_keys'             => array('en' => 'API Keys', 'ar' => 'مفاتيح الواجهة البرمجية', 'actions' => array('view', 'create', 'revoke')),
+            // altus Hospitality Knowledge & Performance (ppt-features sections 35, 63).
+            'knowledge'            => array('en' => 'Knowledge Library', 'ar' => 'مكتبة المعرفة', 'actions' => array('view', 'create', 'update', 'review', 'approve', 'publish', 'archive')),
+            'curriculum'           => array('en' => 'Curriculum', 'ar' => 'المنهج', 'actions' => array('view', 'create', 'update', 'publish')),
+            'competencies'         => array('en' => 'Competencies', 'ar' => 'الكفاءات', 'actions' => array('view', 'create', 'update', 'delete', 'assess')),
+            'rubrics'              => array('en' => 'Practical Rubrics', 'ar' => 'نماذج التقييم العملي', 'actions' => array('view', 'create', 'update', 'publish')),
+            'practicals'           => array('en' => 'Practical Assessments', 'ar' => 'التقييمات العملية', 'actions' => array('view', 'assess', 'void')),
+            'gaps'                 => array('en' => 'Competency Gaps', 'ar' => 'فجوات الكفاءة', 'actions' => array('view', 'waive')),
+            'action_plans'         => array('en' => 'Action Plans', 'ar' => 'خطط التحسين', 'actions' => array('view', 'create', 'update', 'assign', 'review')),
+            'reassessments'        => array('en' => 'Reassessments', 'ar' => 'إعادة التقييم', 'actions' => array('view', 'request', 'approve')),
+            'readiness'            => array('en' => 'Readiness', 'ar' => 'الجاهزية', 'actions' => array('view', 'calculate', 'configure')),
+            'cohorts'              => array('en' => 'Cohorts', 'ar' => 'الدفعات', 'actions' => array('view', 'create', 'update', 'delete')),
+            'kpis'                 => array('en' => 'KPIs', 'ar' => 'مؤشرات الأداء', 'actions' => array('view', 'create', 'update', 'import')),
+            'engagements'          => array('en' => 'Engagements', 'ar' => 'المهام الاستشارية', 'actions' => array('view', 'create', 'update')),
+            'frameworks'           => array('en' => 'Advisory Frameworks', 'ar' => 'الأطر الاستشارية', 'actions' => array('view', 'assess', 'configure')),
+            'quality_audits'       => array('en' => 'Quality Audits', 'ar' => 'تدقيق الجودة', 'actions' => array('view', 'create', 'update')),
+            'corporate'            => array('en' => 'Corporate Content', 'ar' => 'المحتوى المؤسسي', 'actions' => array('view', 'update', 'publish')),
+            'branding'             => array('en' => 'Branding', 'ar' => 'الهوية البصرية', 'actions' => array('view', 'update')),
+            'executive'            => array('en' => 'Executive View', 'ar' => 'العرض التنفيذي', 'actions' => array('view')),
+            'imports'              => array('en' => 'Imports', 'ar' => 'الاستيراد', 'actions' => array('run')),
+            'system'               => array('en' => 'System', 'ar' => 'النظام', 'actions' => array('health', 'configure')),
         );
     }
 
@@ -78,13 +98,36 @@ class Seed_rbac extends Ha_seeder {
             'run'         => array('en' => 'Run', 'ar' => 'تنفيذ'),
             'configure'   => array('en' => 'Configure', 'ar' => 'إعداد'),
             'generate'    => array('en' => 'Generate with', 'ar' => 'التوليد عبر'),
-            'revoke'      => array('en' => 'Revoke', 'ar' => 'إلغاء'),
+            'use'         => array('en' => 'Use', 'ar' => 'استخدام'),
+            'govern'      => array('en' => 'Govern', 'ar' => 'حوكمة'),
+            'review'      => array('en' => 'Review', 'ar' => 'مراجعة'),
+            'archive'     => array('en' => 'Archive', 'ar' => 'أرشفة'),
+            'assess'      => array('en' => 'Assess', 'ar' => 'تقييم'),
+            'void'        => array('en' => 'Void', 'ar' => 'إبطال'),
+            'waive'       => array('en' => 'Waive', 'ar' => 'إعفاء'),
+            'request'     => array('en' => 'Request', 'ar' => 'طلب'),
+            'calculate'   => array('en' => 'Calculate', 'ar' => 'احتساب'),
+            'health'      => array('en' => 'Monitor health of', 'ar' => 'مراقبة صحة'),
         );
     }
 
-    /** The eight roles required by plan section 2 / PHASE 2. */
-    public static function roles() {
+    /** Grants shared by every role that manages people's capability, not content. */
+    private static function capability_manager_grants() {
         return array(
+            'competencies' => array('view', 'assess'), 'practicals' => array('view', 'assess'),
+            'gaps' => '*', 'action_plans' => '*', 'reassessments' => '*',
+            'readiness' => array('view', 'calculate'), 'cohorts' => '*',
+            'knowledge' => array('view'), 'curriculum' => array('view'), 'rubrics' => array('view'),
+            'ai' => array('use'),
+        );
+    }
+
+    /**
+     * The eight roles required by plan section 2 / PHASE 2, extended with the
+     * platform, organisation and property roles of ppt-features section 35.
+     */
+    public static function roles() {
+        $roles = array(
             'super_admin' => array(
                 'en' => 'Super Admin', 'ar' => 'مدير النظام',
                 'scope' => 'system',
@@ -228,6 +271,173 @@ class Seed_rbac extends Ha_seeder {
                 ),
             ),
         );
+
+        // --- HK&P grants on the original roles -------------------------------
+        $cap = self::capability_manager_grants();
+        $roles['academy_admin']['en'] = 'Altus Administrator';
+        $roles['academy_admin']['ar'] = 'مدير ألتوس';
+        $roles['academy_admin']['desc_en'] = 'Runs the platform for every client: curriculum, knowledge approval, certification, analytics and AI governance.';
+        $roles['academy_admin']['desc_ar'] = 'يدير المنصة لجميع العملاء: المنهج واعتماد المعرفة والشهادات والتحليلات وحوكمة الذكاء الاصطناعي.';
+        $roles['academy_admin']['grants'] += array(
+            'knowledge' => '*', 'curriculum' => '*', 'competencies' => '*', 'rubrics' => '*', 'practicals' => '*',
+            'gaps' => '*', 'action_plans' => '*', 'reassessments' => '*', 'readiness' => '*', 'cohorts' => '*',
+            'kpis' => '*', 'engagements' => '*', 'frameworks' => '*', 'quality_audits' => '*', 'corporate' => '*',
+            'branding' => '*', 'executive' => '*', 'imports' => '*', 'system' => array('health'),
+        );
+        $roles['academy_admin']['grants']['organizations'] = '*';
+        $roles['academy_admin']['grants']['properties'] = '*';
+        $roles['academy_admin']['grants']['departments'] = '*';
+        $roles['academy_admin']['grants']['users'] = '*';
+
+        $roles['instructor']['grants'] += array(
+            'knowledge' => array('view', 'create', 'update'), 'curriculum' => array('view'),
+            'competencies' => array('view'), 'rubrics' => array('view', 'create', 'update'),
+        );
+        $roles['instructor']['grants']['ai'][] = 'use';
+
+        $roles['org_admin']['grants'] += $cap + array(
+            'kpis' => '*', 'branding' => '*', 'quality_audits' => '*', 'executive' => array('view'),
+            'imports' => array('run'), 'engagements' => array('view'), 'frameworks' => array('view'),
+        );
+        $roles['org_admin']['grants']['knowledge'] = array('view', 'create', 'update', 'review', 'approve', 'publish', 'archive');
+        $roles['org_admin']['grants']['competencies'] = array('view', 'create', 'update', 'assess');
+        $roles['org_admin']['grants']['rubrics'] = array('view', 'create', 'update', 'publish');
+        $roles['org_admin']['grants']['readiness'] = '*';
+
+        $roles['property_manager']['en'] = 'General Manager';
+        $roles['property_manager']['ar'] = 'المدير العام';
+        $roles['property_manager']['grants'] += $cap + array(
+            'kpis' => array('view', 'create', 'update', 'import'), 'branding' => array('view'),
+            'quality_audits' => '*', 'executive' => array('view'),
+        );
+        // A property authors its own local SOPs and standards; review and publish stay separate.
+        $roles['property_manager']['grants']['knowledge'] = array('view', 'create', 'update', 'archive');
+        // A General Manager creates their own staff and applies the property's brand (ppt-features 4B, 190).
+        $roles['property_manager']['grants']['users'] = array('view', 'create');
+        $roles['property_manager']['grants']['branding'] = '*';
+
+        $roles['department_manager']['en'] = 'Department Head';
+        $roles['department_manager']['ar'] = 'رئيس القسم';
+        $roles['department_manager']['grants'] += $cap;
+
+        $roles['learner']['en'] = 'Employee / Learner';
+        $roles['learner']['ar'] = 'موظف / متدرب';
+        $roles['learner']['grants'] += array(
+            'knowledge' => array('view'), 'competencies' => array('view'), 'action_plans' => array('view', 'update'),
+            'reassessments' => array('view', 'request'), 'readiness' => array('view'), 'ai' => array('use'),
+        );
+
+        $roles['auditor']['grants'] += array(
+            'knowledge' => array('view'), 'competencies' => array('view'), 'gaps' => array('view'),
+            'action_plans' => array('view'), 'readiness' => array('view'), 'kpis' => array('view'),
+            'quality_audits' => array('view'), 'practicals' => array('view'),
+        );
+
+        // --- New roles (ppt-features section 35) -----------------------------
+        $roles['altus_admin'] = array(
+            'en' => 'Altus Platform Administrator', 'ar' => 'مسؤول منصة ألتوس',
+            'scope' => 'system',
+            'desc_en' => 'Administers clients, properties, users, configuration and system health across the platform.',
+            'desc_ar' => 'يدير العملاء والفنادق والمستخدمين والإعدادات وصحة النظام على مستوى المنصة.',
+            'grants' => array(
+                'dashboard' => array('view'), 'users' => '*', 'learners' => '*', 'managers' => '*',
+                'organizations' => '*', 'properties' => '*', 'departments' => '*', 'job_roles' => '*',
+                'reports' => '*', 'analytics' => '*', 'audit_logs' => '*', 'settings' => '*', 'notifications' => '*',
+                'certificates' => '*', 'branding' => '*', 'executive' => '*', 'imports' => '*', 'system' => '*',
+                'kpis' => '*', 'readiness' => '*', 'cohorts' => '*', 'gaps' => array('view'),
+                'knowledge' => array('view'), 'curriculum' => array('view'), 'competencies' => array('view'),
+                'ai' => array('view', 'use', 'govern'), 'api_keys' => '*',
+            ),
+        );
+        $roles['content_manager'] = array(
+            'en' => 'Altus Content Manager', 'ar' => 'مدير محتوى ألتوس',
+            'scope' => 'system',
+            'desc_en' => 'Authors the master curriculum, knowledge items, question banks and rubrics. Cannot approve or publish knowledge.',
+            'desc_ar' => 'يؤلف المنهج الرئيسي وعناصر المعرفة وبنوك الأسئلة ونماذج التقييم. لا يعتمد المعرفة ولا ينشرها.',
+            'grants' => array(
+                'dashboard' => array('view'), 'knowledge' => array('view', 'create', 'update', 'archive'),
+                'curriculum' => array('view', 'create', 'update'), 'courses' => array('view', 'create', 'update'),
+                'lessons' => '*', 'question_banks' => '*', 'assessments' => array('view', 'create', 'update'),
+                'competencies' => array('view', 'create', 'update'), 'rubrics' => array('view', 'create', 'update'),
+                'corporate' => array('view', 'update'), 'media' => '*', 'ai' => array('view', 'generate', 'use'),
+                'imports' => array('run'),
+            ),
+        );
+        $roles['quality_reviewer'] = array(
+            'en' => 'Altus Quality Reviewer', 'ar' => 'مراجع جودة ألتوس',
+            'scope' => 'system',
+            'desc_en' => 'Reviews and quality-approves knowledge and curriculum. Publishing stays with an administrator.',
+            'desc_ar' => 'يراجع المعرفة والمنهج ويعتمد جودتها. يبقى النشر بيد المسؤول.',
+            'grants' => array(
+                'dashboard' => array('view'), 'knowledge' => array('view', 'review', 'approve'),
+                'curriculum' => array('view'), 'courses' => array('view', 'approve'), 'assessments' => array('view'),
+                'question_banks' => array('view'), 'competencies' => array('view'), 'rubrics' => array('view'),
+                'corporate' => array('view'), 'ai' => array('view', 'use'), 'reports' => array('view'),
+            ),
+        );
+        $roles['consultant'] = array(
+            'en' => 'Altus Consultant', 'ar' => 'مستشار ألتوس',
+            'scope' => 'system',
+            'desc_en' => 'Runs client engagements, advisory frameworks and cross-property analytics.',
+            'desc_ar' => 'يدير المهام الاستشارية للعملاء والأطر الاستشارية والتحليلات عبر الفنادق.',
+            'grants' => array(
+                'dashboard' => array('view'), 'engagements' => '*', 'frameworks' => array('view', 'assess'),
+                'analytics' => '*', 'reports' => '*', 'executive' => array('view'), 'kpis' => array('view', 'create', 'update', 'import'),
+                'readiness' => array('view'), 'gaps' => array('view'), 'competencies' => array('view'),
+                'quality_audits' => '*', 'organizations' => array('view'), 'properties' => array('view'),
+                'knowledge' => array('view'), 'ai' => array('use'),
+            ),
+        );
+        $roles['executive'] = array(
+            'en' => 'Executive / Owner', 'ar' => 'تنفيذي / مالك',
+            'scope' => 'organization',
+            'desc_en' => 'Board-grade view of capability, readiness, risk and KPIs. No employee-level detail.',
+            'desc_ar' => 'عرض على مستوى مجلس الإدارة للقدرات والجاهزية والمخاطر ومؤشرات الأداء دون تفاصيل الموظفين.',
+            'grants' => array(
+                'dashboard' => array('view'), 'executive' => array('view'), 'reports' => array('view', 'export'),
+                'analytics' => array('view'), 'kpis' => array('view'), 'readiness' => array('view'),
+                'engagements' => array('view'), 'frameworks' => array('view'),
+            ),
+        );
+        $roles['training_manager'] = array(
+            'en' => 'HR / Training Manager', 'ar' => 'مدير الموارد البشرية / التدريب',
+            'scope' => 'organization',
+            'desc_en' => 'Assigns learning, runs cohorts and imports, follows gaps and issues certification across the organisation.',
+            'desc_ar' => 'يسند التعلم ويدير الدفعات والاستيراد ويتابع الفجوات ويصدر الشهادات على مستوى المنشأة.',
+            'grants' => $cap + array(
+                'dashboard' => array('view'), 'users' => array('view', 'create', 'update', 'import', 'export'),
+                'learners' => '*', 'training_assignments' => '*', 'enrollments' => '*', 'certificates' => array('view', 'issue', 'export'),
+                'reports' => '*', 'analytics' => array('view'), 'imports' => array('run'), 'job_roles' => array('view'),
+                'departments' => array('view'), 'courses' => array('view'), 'learning_paths' => array('view'),
+            ),
+        );
+        $roles['property_admin'] = array(
+            'en' => 'Property Admin', 'ar' => 'مسؤول الفندق',
+            'scope' => 'property',
+            'desc_en' => 'Configures one property: staff, departments, branding and local standards.',
+            'desc_ar' => 'يهيئ فندقاً واحداً: الموظفين والأقسام والهوية البصرية والمعايير المحلية.',
+            'grants' => array(
+                'dashboard' => array('view'), 'users' => array('view', 'create', 'update'), 'learners' => array('view', 'update'),
+                'properties' => array('view', 'update'), 'departments' => '*', 'job_roles' => array('view'),
+                'branding' => '*', 'knowledge' => array('view', 'create', 'update'), 'cohorts' => '*',
+                'training_assignments' => array('view', 'create', 'assign'), 'readiness' => array('view', 'calculate'),
+                'reports' => array('view', 'export'), 'kpis' => array('view', 'create', 'update', 'import'), 'ai' => array('use'),
+            ),
+        );
+        $roles['supervisor'] = array(
+            'en' => 'Supervisor / Assessor', 'ar' => 'مشرف / مقيّم',
+            'scope' => 'department',
+            'desc_en' => 'Conducts practical assessments, records evidence, reviews action plans and runs reassessments.',
+            'desc_ar' => 'يجري التقييمات العملية ويسجل الأدلة ويراجع خطط التحسين وينفذ إعادة التقييم.',
+            'grants' => array(
+                'dashboard' => array('view'), 'learners' => array('view'),
+                'competencies' => array('view', 'assess'), 'practicals' => array('view', 'assess'),
+                'gaps' => array('view'), 'action_plans' => array('view', 'update', 'review'),
+                'reassessments' => '*', 'readiness' => array('view'), 'rubrics' => array('view'),
+                'knowledge' => array('view'), 'ai' => array('use'),
+            ),
+        );
+        return $roles;
     }
 
     public function run($db) {

@@ -1,8 +1,11 @@
 # Hospitality Academy — Implementation Status
 
-Target specification: `plan-final.txt` (60 sections, 19 phases).
-Host application: Academy LMS (CodeIgniter 3.1.9, PHP 8.3), `C:\laragon\www\atlas-lms\Academy-LMS`.
-Working database: `atlas_hospitality`. Test database: `atlas_hospitality_test` (rebuilt on every run).
+Target specifications: `plan-final.txt` (60 sections, 19 phases) and, from 2026-09-24,
+the ALTUS HK&P upgrade specification `ppt-features.txt` (190 sections), which is tracked
+section by section in [gap.md](gap.md).
+Host application: Academy LMS (CodeIgniter 3.1.9, PHP 8.1 locally), `C:\laragon\www\atlas\atlas`.
+Working database (local): `atlas_merged` (production dump + migrations 11–15), selected by
+`application/config/database.local.php`. Test database: `atlas_hospitality_test` (rebuilt on every run).
 
 Status vocabulary, as required by plan section 57:
 
@@ -53,7 +56,13 @@ HA_AUDIT_BASE=http://localhost/atlas-lms/Academy-LMS php index.php ha_audit flow
 Live URL: <http://localhost/atlas-lms/Academy-LMS/> (root redirects to `/en` or
 `/ar` by browser language).
 
-**Last full test run: 83 tests, 83 passed, 0 failed, 1,523 assertions.**
+**Last full test run (2026-09-25): 136 tests, 136 passed, 0 failed, 2,100+ assertions.**
+**Last authenticated crawl (2026-09-25, production data copy): 9 roles, 1,100+ pages, 0 errors, 0 dead links.**
+**Arabic interface coverage: 1,673 / 1,673 strings (enforced by `Test_cms`).**
+
+Figures below this line that predate 2026-09-24 are kept as history:
+
+**Earlier full test run: 83 tests, 83 passed, 0 failed, 1,523 assertions.**
 **Last browser route sweep: both frontends, signed out, learner and admin, 0 problems.**
 **Last page audit: 240 checks across 236 URLs, 0 problems.**
 **Last flow audit: 5 end-to-end flows, 0 problems.**
@@ -241,30 +250,29 @@ Last run: 116 tests, 116 passed, 1,824 assertions; 61/61 end-to-end HTTP checks.
 
 ---
 
-## Not started
+### ALTUS Hospitality Knowledge & Performance (added 2026-09-24 / 25)
 
-Schema exists for all of these; application code does not yet.
+Per-section detail for all 190 sections is in [gap.md](gap.md). Summary:
 
-| # | Requirement |
-|---|---|
-| 3 | A Hospitality Academy admin dashboard (the Academy LMS admin panel works and manages the mirrored catalogue) |
-| 4 | Academy-specific people screens (the Academy LMS user manager works) |
-| 11 | Training assignment engine, reminders, escalation |
-| 14 | SOP acknowledgement flow and manager compliance view |
-| 15 | Checklist run execution UI |
-| 16, 17, 18 | Assessment delivery, assignment submission, exam sessions |
-| 19 | Certificate generation, PDF and QR (verification itself is done) |
-| 21 | Attendance session management |
-| 22 | Notification dispatch and notification centre |
-| 23, 24 | Reports and analytics |
-| 33, 34 | Admin CMS screens and editorial workflow |
-| 31, 32 | Admin competitor intelligence screens |
-| 42 | Learner dashboard and course player |
-| 44 | Email templates |
-| 46 | Versioned API `/api/v1/*` |
-| 47, 48 | Queue jobs and scheduled tasks |
-| 55 | Performance measurement pass |
-| 56 | Production readiness audit |
+| Area | Location | Test | Status |
+|---|---|---|---|
+| Tenancy: organisation → portfolio → property → department → team, 16 roles, scope-aware reads | migration `…013`, `Ha_auth`, `seeds/001_rbac.php` | `Test_rbac`, `Test_hkp`, `Test_cms` | VERIFIED |
+| Evidence chain: requirements → learning → theory → practical → competency → gap → action → reassessment → readiness → certificate | `Ha_competency`, `Ha_theory`, `Ha_practical`, `Ha_action_plans`, `Ha_readiness`, `Ha_certification` | `Test_hkp::final_qa_scenario_end_to_end` | VERIFIED |
+| Knowledge governance, versions, acknowledgement, health | `Ha_knowledge` | `Test_hkp` | VERIFIED |
+| Governed AI (approved, authorised sources only; cites; says "insufficient") | `Ha_governed_ai` | `Test_hkp` | VERIFIED |
+| KPIs, performance matrix, GOPPAR, ESG, capability model, engagements (ASCENT) | `Ha_kpi`, `Ha_advisory` | `Test_hkp` | VERIFIED |
+| Reports CSV/XLSX, board report, certificate PDF/PNG with QR | `Ha_reports`, `Ha_xlsx`, `Ha_pdf`, `Ha_qr` | `Test_hkp` | VERIFIED |
+| Page builder, revisions, SEO/AEO/GEO score, FAQ/Place schema | `Ha_page_builder`, `Ha_seo_score`, `Hkp_cms` | `Test_cms` | VERIFIED |
+| Modules & lessons CMS: links, uploads (video/PDF/PPT/audio), drip release | `Hkp_cms`, `Ha_learning::release_at` | `Test_cms` | VERIFIED |
+| AI editor help with provider/model choice and prompt enhancement | `Ha_ai_assist` | `Test_cms` | VERIFIED |
+| HK&P API endpoints, spec response envelope | `Api_v1`, `Ha_api_hkp` | `Test_cms`, curl | VERIFIED |
+| Arabic interface (1,673 strings) | `language/arabic/hkp_lang.php` | `Test_cms` | VERIFIED |
+| Legacy admin and user sidebars link the workspace and CMS | `views/backend/*/navigation.php` | crawl: 67/67 admin links 200 | VERIFIED |
+
+Partial (see gap.md for the exact gap): custom-domain provisioning, Arabic for 296 ported
+legacy quiz questions, vector semantic search, SMS/WhatsApp delivery, offline lessons,
+PMS/POS/HR connectors and SSO, privacy self-service export/erasure, load testing,
+automatic retention purge, scheduled backups/DR, and committing this work to git.
 
 ---
 
@@ -282,9 +290,9 @@ Schema exists for all of these; application code does not yet.
   their own, because Wikimedia Commons holds no modern, on-brand certificate
   photograph that passes the filters. Those surfaces borrow the training-room
   image rather than ship something wrong.
-- **Not started:** the admin panel screens, the learner experience, and the
-  operational engines listed above.
+- **Since 2026-09-24:** the admin screens, learner experience and operational
+  engines that were "not started" are built as the HK&P workspace (table above).
 
-83 automated tests pass, 240 rendered-page checks across 236 URLs report zero
-problems, and 5 end-to-end form flows pass. No requirement above is marked
+136 automated tests pass, and the authenticated crawl of 9 roles on the production data copy
+reports zero errors and zero dead links. No requirement above is marked
 complete unless it is.

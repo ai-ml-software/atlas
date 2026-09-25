@@ -15,6 +15,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *   POST /api/v1/ai/jobs                 ai:generate  {"type":"lesson_script","lesson_id":12,"minutes":5}
  *                                                     {"type":"course_draft","topic":"…","lessons":8}
  *
+ *   Hospitality Knowledge & Performance (tenant-scoped exactly like the web screens):
+ *   GET  /api/v1/competencies[?user_id=]  performance:read + competencies.view
+ *   GET  /api/v1/readiness[?user_id=]     performance:read + readiness.view
+ *   GET  /api/v1/actions                  performance:read + action_plans.view
+ *   GET  /api/v1/certificates             performance:read + certificates.view
+ *   GET  /api/v1/people                   team:read + learners.view
+ *   GET  /api/v1/gaps[?severity=]         team:read + gaps.view
+ *   GET  /api/v1/search?q=&locale=        knowledge:read + knowledge.view
+ *   GET  /api/v1/kpis?property_id=        kpis:read + kpis.view
+ *
+ * Responses follow spec section 136: {"success": true, "data": …, "message": …}
+ * and {"success": false, "message": …, "errors": {…}}. The older "error" object
+ * is kept on failures so existing clients keep working.
  * Two independent checks guard every call: the key must carry the scope, and
  * the key's owner must hold the matching permission right now. A scope never
  * grants more than the person has.
@@ -69,7 +82,8 @@ class Api_v1 extends CI_Controller {
         $this->ha_auth->from_api_key($auth);
 
         $route = implode('/', array_map(function ($s) {
-            return preg_match('/^\d+$/', $s) ? '{id}' : (preg_match('/^[a-z0-9\-]+$/', $s) && !in_array($s, array('me', 'courses', 'enrollments', 'ai', 'jobs'), true) ? '{code}' : $s);
+            return preg_match('/^\d+$/', $s) ? '{id}' : (preg_match('/^[a-z0-9\-]+$/', $s) && !in_array($s, array('me', 'courses', 'enrollments', 'ai', 'jobs',
+                'competencies', 'readiness', 'actions', 'certificates', 'people', 'gaps', 'search', 'kpis'), true) ? '{code}' : $s);
         }, $segments));
 
         try {
@@ -81,7 +95,17 @@ class Api_v1 extends CI_Controller {
                 case 'GET ai/jobs':            return $this->jobs();
                 case 'GET ai/jobs/{id}':       return $this->job_show((int) $segments[2]);
                 case 'POST ai/jobs':           return $this->job_create();
+                case 'GET competencies':       return $this->hkp('performance:read', 'competencies.view', 'competencies', array((int) $this->input->get('user_id')));
+                case 'GET readiness':          return $this->hkp('performance:read', 'readiness.view', 'readiness', array((int) $this->input->get('user_id')));
+                case 'GET actions':            return $this->hkp('performance:read', 'action_plans.view', 'actions');
+                case 'GET certificates':       return $this->hkp('performance:read', 'certificates.view', 'certificates');
+                case 'GET people':             return $this->hkp('team:read', 'learners.view', 'people');
+                case 'GET gaps':               return $this->hkp('team:read', 'gaps.view', 'gaps', array(array('severity' => $this->input->get('severity'))));
+                case 'GET search':             return $this->hkp('knowledge:read', 'knowledge.view', 'knowledge_search', array((string) $this->input->get('q'), $this->input->get('locale') === 'ar' ? 'ar' : null));
+                case 'GET kpis':               return $this->hkp('kpis:read', 'kpis.view', 'kpis', array((int) $this->input->get('property_id')));
             }
+        } catch (Ha_api_denied $e) {
+            return $this->error(403, $e->getMessage());
         } catch (InvalidArgumentException $e) {
             return $this->error(422, $e->getMessage());
         } catch (Exception $e) {
@@ -106,12 +130,30 @@ class Api_v1 extends CI_Controller {
     }
 
     private function json($data, $status = 200) {
+        if ($status < 400 && !isset($data['success'])) {
+            $data = array('success' => true) + $data + array('message' => 'Operation completed successfully');
+        }
         $this->output->set_status_header($status)
             ->set_output(json_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
     }
 
-    private function error($status, $message) {
-        $this->json(array('error' => array('status' => (int) $status, 'message' => $message)), $status);
+    private function error($status, $message, array $errors = array()) {
+        $body = array('success' => false, 'message' => $status === 401 ? 'Unauthorised: ' . $message : $message);
+        if ($errors || $status === 422) {
+            $body['errors'] = $errors ?: array('request' => array($message));
+        }
+        $body['error'] = array('status' => (int) $status, 'message' => $message);
+        $this->json($body, $status);
+    }
+
+    /** HK&P read endpoints: scope + permission check, then the tenant-scoped read model. */
+    private function hkp($scope, $permission, $method, array $args = array()) {
+        if (!$this->need($scope, $permission)) {
+            return;
+        }
+        $this->load->library('ha_api_hkp');
+        $data = call_user_func_array(array($this->ha_api_hkp, $method), $args);
+        $this->json(array('data' => $data, 'meta' => array('count' => isset($data[0]) || $data === array() ? count($data) : null)));
     }
 
     private function body() {

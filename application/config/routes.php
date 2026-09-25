@@ -109,6 +109,32 @@ $route['api/v1']      = 'api_v1/dispatch';
 $route['api/v1/(.+)'] = 'api_v1/dispatch';
 
 // ---------------------------------------------------------------------------
+// altus Hospitality Knowledge & Performance workspace. One URL space (/hkp),
+// four controllers: learner + shared (hkp), assessment (hkp_assess), property
+// management (hkp_team), Altus team (hkp_admin), executive (hkp_exec).
+// ---------------------------------------------------------------------------
+$route['hkp/sw.js']              = 'hkp/sw';
+$route['hkp/assess']             = 'hkp_assess/index';
+$route['hkp/assess/(.+)']        = 'hkp_assess/$1';
+$route['hkp/team']               = 'hkp_team/index';
+$route['hkp/team/(.+)']          = 'hkp_team/$1';
+$route['hkp/admin']              = 'hkp_admin/index';
+$route['hkp/admin/(.+)']         = 'hkp_admin/$1';
+$route['hkp/cms']                = 'hkp_cms/index';
+$route['hkp/cms/(.+)']           = 'hkp_cms/$1';
+$route['hkp/exec']               = 'hkp_exec/index';
+$route['hkp/exec/(.+)']          = 'hkp_exec/$1';
+$route['hkp']                    = 'hkp/index';
+$route['hkp/(.+)']               = 'hkp/$1';
+// Public certificate verification (ppt-features 23, 113). No sign-in, no private data.
+$route['verify/certificate/(:any)'] = 'hkp_public/verify/$1';
+$route['verify/(:any)']             = 'hkp_public/verify/$1';
+$route['verify']                    = 'hkp_public/verify';
+// Public Altus corporate pages, CMS-managed (ppt-features 46, 161, 162).
+$route['(en|ar)/altus']             = 'hkp_public/corporate/$1';
+$route['(en|ar)/altus/case-studies'] = 'hkp_public/case_studies/$1';
+
+// ---------------------------------------------------------------------------
 // Hospitality Academy public website (plan sections 25, 26, 28, 40).
 // The locale is always explicit in the URL so hreflang is honest and a link
 // can be shared in the language it was read in.

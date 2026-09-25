@@ -19,6 +19,7 @@ $config['ha_ai_tasks'] = array(
     'translate_ar'   => array('kind' => 'text',   'label' => 'Arabic adaptation of English content',           'json' => true,  'max_tokens' => 12000, 'temperature' => 0.2),
     'review'         => array('kind' => 'text',   'label' => 'Quality and safety review of a draft',           'json' => true,  'max_tokens' => 3000,  'temperature' => 0.0),
     'assistant'      => array('kind' => 'text',   'label' => 'Admin / instructor writing assistant',           'json' => false, 'max_tokens' => 2000,  'temperature' => 0.7),
+    'knowledge_answer' => array('kind' => 'text', 'label' => 'Governed assistant: answers only from approved knowledge', 'json' => false, 'max_tokens' => 900, 'temperature' => 0.1),
     'narration'      => array('kind' => 'tts',    'label' => 'Narration voice for slide videos'),
     'avatar'         => array('kind' => 'avatar', 'label' => 'Presenter (avatar) video'),
     'clip'           => array('kind' => 'clip',   'label' => 'Generative b-roll clip'),

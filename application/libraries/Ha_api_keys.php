@@ -23,6 +23,10 @@ class Ha_api_keys {
             'enrollments:read' => 'Read the owner\'s enrolments and progress',
             'ai:generate'      => 'Queue AI generation jobs (needs the AI Studio generate permission)',
             'ai:jobs'          => 'Read the status and output of the owner\'s AI jobs',
+            'performance:read' => 'Read competencies, readiness, action plans and certificates (own, or the team the owner manages)',
+            'team:read'        => 'Read people and capability gaps in the owner\'s scope',
+            'knowledge:read'   => 'Search approved knowledge the owner may see',
+            'kpis:read'        => 'Read KPI scorecards for properties in the owner\'s scope',
         );
     }
 

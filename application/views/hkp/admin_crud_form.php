@@ -1,0 +1,18 @@
+<div class="hkp-head"><div><div class="hkp-eyebrow"><a href="<?php echo hkp_url('admin/crud/' . $e['key']); ?>"><?php echo hkp_e($e['title']); ?></a></div><h1><?php echo $id ? hkp_e('Edit') : hkp_e('Add'); ?></h1></div></div>
+<form class="hkp-card hkp-form" method="post" action="<?php echo hkp_url('admin/crud/' . $e['key'] . '/save/' . $id); ?>"><?php echo ha_csrf_field(); ?>
+<div class="hkp-row">
+<?php foreach ($e['fields'] as $name => $type): $req = substr($type, -1) === '*'; $type = rtrim($type, '*'); $v = isset($row[$name]) ? $row[$name] : ''; $fid = 'f_' . $name; $wide = in_array($type, array('textarea', 'json'), true); ?>
+  <div class="hkp-field"<?php echo $wide ? ' style="grid-column:1/-1"' : ''; ?>>
+    <label for="<?php echo $fid; ?>"><?php echo hkp_label($name); ?><?php echo $req ? ' *' : ''; ?></label>
+    <?php if ($type === 'textarea'): ?><textarea id="<?php echo $fid; ?>" class="hkp-input" name="<?php echo $name; ?>" rows="4"<?php echo substr($name, -3) === '_ar' ? ' dir="rtl"' : ''; ?>><?php echo hkp_h($v); ?></textarea>
+    <?php elseif ($type === 'json'): $list = json_decode((string) $v, true); ?><textarea id="<?php echo $fid; ?>" class="hkp-input" name="<?php echo $name; ?>" rows="4"><?php echo hkp_h(is_array($list) ? implode("\n", array_map(function ($x) { return is_array($x) ? json_encode($x) : $x; }, $list)) : $v); ?></textarea><span class="hkp-help"><?php echo hkp_e('One item per line.'); ?></span>
+    <?php elseif ($type === 'bool'): ?><label class="hkp-check"><input id="<?php echo $fid; ?>" type="checkbox" name="<?php echo $name; ?>" value="1"<?php echo (int) $v ? ' checked' : ''; ?>> <?php echo hkp_e('Yes'); ?></label>
+    <?php elseif (strpos($type, 'enum:') === 0): ?><select id="<?php echo $fid; ?>" class="hkp-select" name="<?php echo $name; ?>"<?php echo $req ? ' required' : ''; ?>><?php foreach (explode(',', substr($type, 5)) as $o): ?><option value="<?php echo hkp_h($o); ?>"<?php echo (string) $v === $o ? ' selected' : ''; ?>><?php echo $o === '' ? '—' : hkp_label($o); ?></option><?php endforeach; ?></select>
+    <?php elseif (strpos($type, 'fk:') === 0 || $type === 'scope'): ?><select id="<?php echo $fid; ?>" class="hkp-select" name="<?php echo $name; ?>"<?php echo $req ? ' required' : ''; ?>><option value=""><?php echo $type === 'scope' ? hkp_e('Altus global') : '—'; ?></option><?php foreach ($opts[$name] as $o): ?><option value="<?php echo (int) $o['id']; ?>"<?php echo (string) $v === (string) $o['id'] ? ' selected' : ''; ?>><?php echo hkp_h($o['label']); ?></option><?php endforeach; ?></select>
+    <?php else: ?><input id="<?php echo $fid; ?>" class="hkp-input" name="<?php echo $name; ?>" value="<?php echo hkp_h($v); ?>" type="<?php echo $type === 'number' ? 'number' : ($type === 'date' ? 'date' : ($type === 'email' ? 'email' : ($type === 'url' ? 'url' : 'text'))); ?>"<?php echo $type === 'number' ? ' step="any"' : ''; ?><?php echo $req ? ' required' : ''; ?><?php echo substr($name, -3) === '_ar' ? ' dir="rtl"' : ''; ?>><?php endif; ?>
+  </div>
+<?php endforeach; ?>
+</div>
+<div class="hkp-actions"><button class="hkp-btn"><?php echo hkp_e('Save'); ?></button><a class="hkp-btn hkp-btn--ghost" href="<?php echo hkp_url('admin/crud/' . $e['key']); ?>"><?php echo hkp_e('Cancel'); ?></a></div>
+</form>
+<?php if ($id): ?><form method="post" action="<?php echo hkp_url('admin/crud/' . $e['key'] . '/remove/' . $id); ?>" data-confirm="<?php echo hkp_e('Archive this record? History is kept.'); ?>" style="margin-top:1rem"><?php echo ha_csrf_field(); ?><button class="hkp-btn hkp-btn--ghost hkp-btn--sm"><?php echo hkp_e('Archive / remove'); ?></button></form><?php endif; ?>

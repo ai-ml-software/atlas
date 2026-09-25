@@ -39,4 +39,31 @@ abstract class Ha_migration {
         }
         $this->db->query('SET FOREIGN_KEY_CHECKS=1');
     }
+
+    /**
+     * Adds columns to an existing table, skipping any that already exist, so a
+     * migration that extends a shipped table can be re-run after a partial
+     * failure without erroring. $columns maps column name => DDL after the name.
+     */
+    protected function add_columns($table, array $columns) {
+        $existing = $this->db->list_fields($table);
+        foreach ($columns as $name => $ddl) {
+            if (!in_array($name, $existing, true)) {
+                $this->db->query('ALTER TABLE ' . $table . ' ADD COLUMN `' . $name . '` ' . $ddl);
+            }
+        }
+    }
+
+    /** Reverse of add_columns(): drops the columns that exist. */
+    protected function drop_columns($table, array $names) {
+        if (!$this->db->table_exists($table)) {
+            return;
+        }
+        $existing = $this->db->list_fields($table);
+        foreach ($names as $name) {
+            if (in_array($name, $existing, true)) {
+                $this->db->query('ALTER TABLE ' . $table . ' DROP COLUMN `' . $name . '`');
+            }
+        }
+    }
 }

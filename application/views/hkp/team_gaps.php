@@ -1,0 +1,19 @@
+<div class="hkp-head"><div><h1><?php echo hkp_e('Competency gaps'); ?></h1><p><?php echo hkp_e('Required level compared with assessed level for every person and competency. Severity thresholds are configurable in Branding & settings.'); ?></p></div>
+<div class="hkp-tabs" style="margin:0;border:0"><?php foreach (array('' => 'All', 'critical' => 'Critical', 'moderate' => 'Moderate', 'minor' => 'Minor') as $k => $l): ?><a href="?severity=<?php echo $k; ?>" class="<?php echo (string) $sev === (string) $k ? 'is-active' : ''; ?>"><?php echo hkp_e($l); ?></a><?php endforeach; ?></div></div>
+
+<section class="hkp-card" style="margin-bottom:1rem"><h2><?php echo hkp_e('Gap heatmap'); ?></h2>
+<?php if (!$matrix['users']): ?><div class="hkp-empty"><?php echo hkp_e('No roles with required competencies in this team yet.'); ?></div><?php else: ?>
+  <div class="hkp-table-wrap"><table class="hkp-table hkp-heat"><thead><tr><th><?php echo hkp_e('Employee'); ?></th><?php foreach ($matrix['skills'] as $s): ?><th title="<?php echo hkp_h(hkp_pick($s, 'name')); ?>"><?php echo hkp_h(mb_substr(hkp_pick($s, 'name'), 0, 16)); ?></th><?php endforeach; ?></tr></thead><tbody>
+  <?php foreach ($matrix['users'] as $u): ?><tr><td><?php echo hkp_person_open($u['user_id']); ?><?php echo hkp_h($u['first_name'] . ' ' . $u['last_name']); ?><?php echo hkp_person_close(); ?><div class="hkp-small hkp-muted"><?php echo hkp_h(hkp_pick($u, 'title')); ?></div></td>
+    <?php foreach ($matrix['skills'] as $sid => $s): $c = isset($matrix['cells'][$u['user_id']][$sid]) ? $matrix['cells'][$u['user_id']][$sid] : null; ?>
+      <?php if (!$c): ?><td class="c s-na">·</td><?php else: ?><td class="c s-<?php echo $c['severity']; ?>" title="<?php echo hkp_e('Level {c} of {r}', array('c' => $c['current'], 'r' => $c['required'])); ?>"><?php echo (int) $c['current']; ?>/<?php echo (int) $c['required']; ?></td><?php endif; ?>
+    <?php endforeach; ?></tr><?php endforeach; ?></tbody></table></div>
+  <div class="hkp-legend"><span><i style="background:var(--ok-bg)"></i><?php echo hkp_e('Met'); ?></span><span><i style="background:#fff6dd"></i><?php echo hkp_e('Minor'); ?></span><span><i style="background:#fde2c4"></i><?php echo hkp_e('Moderate'); ?></span><span><i style="background:var(--bad-bg)"></i><?php echo hkp_e('Critical'); ?></span><span><?php echo hkp_e('Cells show current / required level.'); ?></span></div>
+<?php endif; ?></section>
+
+<section class="hkp-card"><h2><?php echo hkp_e('Open gaps'); ?></h2>
+  <div class="hkp-table-wrap"><table class="hkp-table"><thead><tr><th><?php echo hkp_e('Employee'); ?></th><th><?php echo hkp_e('Competency'); ?></th><th><?php echo hkp_e('Level'); ?></th><th><?php echo hkp_e('Severity'); ?></th><th><?php echo hkp_e('Reason'); ?></th><th><?php echo hkp_e('Status'); ?></th><th><?php echo hkp_e('Detected'); ?></th><th></th></tr></thead><tbody>
+  <?php foreach ($gaps as $g): ?><tr><td><?php echo hkp_person_open($g['user_id']); ?><?php echo hkp_h($g['first_name'] . ' ' . $g['last_name']); ?><?php echo hkp_person_close(); ?><div class="hkp-small hkp-muted"><?php echo hkp_h(hkp_pick($g, 'dept')); ?></div></td><td><?php echo hkp_h(hkp_pick($g, 'name')); ?></td>
+    <td><?php echo (int) $g['current_level']; ?> / <?php echo (int) $g['required_level']; ?></td><td><?php echo hkp_badge($g['severity']); ?></td><td class="hkp-small"><?php echo hkp_label($g['reason']); ?></td><td><?php echo hkp_badge($g['status']); ?></td><td class="hkp-small"><?php echo hkp_date($g['detected_at']); ?></td>
+    <td><?php if ($g['status'] === 'open' && $this->ha_auth->has('action_plans.create')): ?><a class="hkp-btn hkp-btn--sm" href="<?php echo hkp_url('team/employee/' . $g['user_id']); ?>"><?php echo hkp_e('Assign action'); ?></a><?php endif; ?></td></tr><?php endforeach; ?>
+  </tbody></table></div></section>

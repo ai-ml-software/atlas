@@ -17,6 +17,26 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 	<ul class="metismenu side-nav side-nav-light">
 
 		<li class="side-nav-title side-nav-item"><?php echo get_phrase('navigation'); ?></li>
+		<?php $HA = get_instance(); $HA->load->library('ha_auth'); ?>
+		<li class="side-nav-item">
+			<a href="<?php echo site_url('hkp'); ?>" class="side-nav-link">
+				<i class="mdi mdi-view-dashboard-variant-outline"></i>
+				<span>altus Workspace</span>
+			</a>
+		</li>
+		<?php if ($HA->ha_auth->has(array('cms_pages.view', 'courses.update', 'lessons.update'))) : ?>
+		<li class="side-nav-item">
+			<a href="javascript: void(0);" class="side-nav-link">
+				<i class="mdi mdi-file-document-edit-outline"></i>
+				<span> Website &amp; content </span>
+				<span class="menu-arrow"></span>
+			</a>
+			<ul class="side-nav-second-level" aria-expanded="false">
+				<?php if ($HA->ha_auth->has('cms_pages.view')) : ?><li><a href="<?php echo site_url('hkp/cms'); ?>">Pages, sections &amp; SEO</a></li><?php endif; ?>
+				<li><a href="<?php echo site_url('hkp/cms/modules'); ?>">Modules &amp; lessons</a></li>
+			</ul>
+		</li>
+		<?php endif; ?>
 		<?php if (get_settings('allow_instructor') == 1) : ?>
 			<?php if ($this->session->userdata('is_instructor')) : ?>
 				<li class="side-nav-item">
@@ -34,8 +54,7 @@ $status_wise_courses = $this->crud_model->get_status_wise_courses();
 				<?php
 				// Shown only when the instructor's academy role grants AI Studio;
 				// the controller enforces the same permission server side.
-				$this->load->library('ha_auth');
-				if ($this->db->table_exists('ha_ai_job') && $this->ha_auth->has('ai.view')) : ?>
+								if ($this->db->table_exists('ha_ai_job') && $HA->ha_auth->has('ai.view')) : ?>
 				<li class="side-nav-item">
 					<a href="<?php echo site_url('ha_ai/studio'); ?>" class="side-nav-link <?php if (strpos((string) $page_name, '../ha_ai/') === 0) echo 'active'; ?>">
 						<i class="mdi mdi-robot-happy-outline"></i>

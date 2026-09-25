@@ -1,618 +1,499 @@
-# Hospitality Academy
+# altus Hospitality Knowledge & Performance (HK&P)
 
-Hotel training, standard operating procedures and workforce certification, in
-Arabic and English, built inside the Academy LMS CodeIgniter application.
+altus HK&P is a bilingual (Arabic / English) hospitality capability platform for
+Altus Advisory. It runs inside the Academy LMS CodeIgniter application.
 
-**Live locally:** <http://localhost/atlas-lms/Academy-LMS/>
+It does more than host courses. It proves whether each employee can do the job:
+role requirements lead to learning, then theory and practical assessment, then
+competency, gaps, corrective action, reassessment, readiness, certification and
+KPIs. Every step is scoped to its tenant and recorded in the audit log.
 
-The root URL detects the visitor's language and lands on `/en` or `/ar`. Every
-original Academy LMS route (`/login`, `/admin`, the user area) is untouched and
-continues to work.
-
----
-
-## What this is
-
-**One catalogue, two frontends.** The academy tables (`ha_*`) are the single
-source of truth. A bridge command publishes that catalogue into the original
-Academy LMS tables, so the shipped theme, the student area, enrolment, the
-instructor panel and the admin course manager all work against the same
-content. Both frontends use the same violet palette.
-
-| Frontend | URL | What it does |
-|---|---|---|
-| Hospitality Academy | `/en`, `/ar` | Bilingual marketing and catalogue site, SEO, certificate verification |
-| Academy LMS | `/`, `/courses`, `/home/my_courses` | The shipped LMS: enrolment, course player, student area, instructor and admin panels |
-
-A public academy website plus the data model behind it:
-
-| Area | What exists |
+| | URL (local) |
 |---|---|
-| Public site | 18 routes, every one in English and Arabic, 206 detail pages |
-| Curriculum | 74 courses, 666 lessons, 6 programmes, 3 career paths, 20 skills, all bilingual |
-| SOP hub | 14 versioned procedures with checklists, acknowledgement model, public resources page |
-| Content | 8 pages, 14 topics (6 subject pillars, 8 Saudi city pages), 6 articles, 12 FAQs |
-| SEO | Per-page metadata in both languages, hreflang, sitemap, robots, JSON-LD, redirect manager |
-| Photography | 36 photographs from Wikimedia Commons, licensed, credited, served as WebP |
-| Authorization | 8 roles, 180 permissions, tenant scoping, audit log |
-| Verification | 83 automated tests, a rendered-page audit, a public flow audit |
+| Workspace (learners, managers, Altus team, executives) | <http://localhost/atlas/atlas/hkp> |
+| Website + page builder | <http://localhost/atlas/atlas/hkp/cms> |
+| Modules & lessons CMS | <http://localhost/atlas/atlas/hkp/cms/modules> |
+| Legacy LMS admin panel | <http://localhost/atlas/atlas/admin> |
+| Public site | <http://localhost/atlas/atlas/en> · <http://localhost/atlas/atlas/ar> |
+| Altus corporate page | <http://localhost/atlas/atlas/en/altus> |
+| Certificate verification | <http://localhost/atlas/atlas/verify> |
+| phpMyAdmin | <http://localhost/phpmyadmin> (user `root`, no password) |
+
+Related documents:
+
+- [gap.md](gap.md): the 190-section specification against what is built, and the issues fixed.
+- [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md): status per area, with the tests behind each claim.
+- [DEPLOYMENT.md](DEPLOYMENT.md): server checks and debugging a 500 error after upload.
 
 ---
 
-## Deploying
+## 1. Sign-in accounts
 
-Putting this on a server, or debugging an HTTP 500 after uploading, is covered
-in [DEPLOYMENT.md](DEPLOYMENT.md). Upload `deploy-check.php`, open it with your
-key, and it reports what the server can actually do rather than leaving you to
-guess.
+There is one sign-in page for everyone: `/login`.
 
----
+| Role | Email | Password | Lands on |
+|---|---|---|---|
+| **Admin** (super admin) | `admin@hospitalityacademy.sa` | `admin123` | `/admin/dashboard` → sidebar **altus Workspace** |
+| **Instructor** | `instructor.fo@hospitalityacademy.sa` | `Academy#2026` | instructor panel, `/hkp` |
+| **Student** | `omar.learner@dyafagroup.sa` | `Academy#2026` | `/home/my_courses`, `/hkp` |
 
-## Requirements
+The seeded role accounts all use the password `Academy#2026`:
 
-- PHP 8.3 with `gd` (WebP), `curl`, `mysqli`
-- MySQL 8
-- Apache with `mod_rewrite` (Laragon provides all of this)
-
----
-
-## Setup
-
-```bash
-cd C:/laragon/www/atlas-lms/Academy-LMS
-
-# 1. Database. Credentials live in application/config/database.php
-mysql -uroot -proot -e "CREATE DATABASE atlas_hospitality CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci"
-mysql -uroot -proot atlas_hospitality < uploads/install.sql
-
-# 2. Schema and content
-php index.php ha_cli migrate
-php index.php ha_cli seed
-
-# 3. Photography (downloads from Wikimedia Commons, needs network)
-php index.php ha_images fetch
-php index.php ha_images fetch_variants
-php index.php ha_images assign
-
-# 4. Publish the catalogue into the Academy LMS tables
-php index.php ha_bridge sync
-php index.php ha_bridge enrol     # demo enrolments for the seeded learners
-```
-
-Then open <http://localhost/atlas-lms/Academy-LMS/>.
-
----
-
-## Command reference
-
-### Schema and data
-
-```bash
-php index.php ha_cli status     # which migrations have run
-php index.php ha_cli migrate    # apply pending migrations
-php index.php ha_cli rollback   # roll back to a version (default 0)
-php index.php ha_cli seed       # seed content, idempotent
-php index.php ha_cli fresh      # rollback, migrate, seed
-```
-
-Seeders are idempotent: running `seed` twice updates rows in place rather than
-duplicating them, so it is safe against a populated database.
-
-CodeIgniter 3.1.9's own Migration library calls `is_callable([$class, 'up'])`,
-which PHP 8 evaluates as `false` for a non-static method, so it cannot run on
-this PHP build. `Ha_cli` is a replacement that keeps the same file format and
-records state in `ha_migration`. The framework in `system/` is not patched.
-
-### Photography
-
-```bash
-php index.php ha_images fetch            # download the subject library
-php index.php ha_images fetch_variants   # extra photos per course category
-php index.php ha_images assign           # attach photos to content
-php index.php ha_images report           # licence list and coverage
-php index.php ha_images purge <subject>  # drop one so it can be refetched
-php index.php ha_images build            # fetch then assign
-```
-
-### Publishing to the Academy LMS
-
-```bash
-php index.php ha_bridge sync     # mirror ha_* into course/lesson/section/category
-php index.php ha_bridge enrol    # give the seeded learners enrolments
-php index.php ha_bridge status   # what is mirrored, and whether it has drifted
-php index.php ha_bridge clear    # remove the mirrored rows
-```
-
-`sync` writes one way and is idempotent. A mirrored course is matched on the
-academy code held in `course.meta_keywords`, so running it twice updates rather
-than duplicates. It also writes the JPEG files the legacy theme resolves by
-filename convention, and mirrors each academy category as a category plus a
-sub-category, because a legacy course attaches to the sub-category.
-
-Re-run `sync` after any change to the academy catalogue.
-
-### Lesson video
-
-```bash
-php index.php ha_video discover   # read the source playlists, verify every video
-php index.php ha_video assign     # place verified videos on the curated courses
-php index.php ha_video recheck    # re-verify assigned videos, exit 1 if any died
-php index.php ha_video report     # what is placed, and which channels are credited
-php index.php ha_video clear      # remove every assignment
-```
-
-Course video is embedded from third-party YouTube channels. The academy does
-not own it, so the pipeline is built around that fact rather than around it:
-
-- **Nothing ships unverified.** `discover` fetches every candidate through
-  YouTube's oEmbed endpoint (no API key, no quota) and keeps only videos that
-  actually resolve. A video ID looks valid whether or not it points at
-  anything, and a catalogue of plausible dead embeds fails invisibly until a
-  learner hits one.
-- **Placement is curated, not scored.** A title-matching scorer was tried
-  first and is why the curated map in `Ha_video` exists: it put a
-  guest-complaint video on a HACCP course and a bellboy video on a
-  property-management course, both in the right department and about the
-  wrong thing. Courses absent from the map keep their written lesson.
-- **Every video is credited.** The channel name and a link to the original
-  travel with the lesson, and the credit line says plainly that the video is
-  not the academy's own production.
-- **`recheck` is meant to run on a schedule.** Third-party videos get deleted,
-  set private and age-gated without notice. It exits non-zero when one dies so
-  a cron job can raise it.
-- **A video lesson with no verified source publishes as text**, not as an
-  empty player.
-
-`discover` reads playlist RSS rather than the Data API, which needs no key but
-returns only the most recent 15 entries per playlist. That is the current cap
-on how many videos exist to place.
-
-### Interface language
-
-```bash
-php index.php ha_lang translate   # write Arabic for every phrase
-php index.php ha_lang export      # write application/language/arabic.json
-php index.php ha_lang status      # coverage
-php index.php ha_lang missing     # what is still English
-```
-
-The application has two translation systems and they are unrelated. The public
-academy site keeps its Arabic in the `ha_*_translation` tables. The admin panel
-and the Academy LMS front end read theirs through `get_phrase()` and
-`site_phrase()` from the `language` table, which shipped with an `english`
-column and nothing else, so neither could be translated at all.
-
-`ha_lang translate` fills the `arabic` column from
-`application/libraries/Ha_phrasebook.php`, which holds the phrase map as
-reviewable source rather than as rows someone edited once in a database.
-`export` then writes `application/language/arabic.json`: the application
-discovers which languages to offer by scanning that directory for `.json`
-files, so without the file Arabic is fully translated and still missing from
-the language menu.
-
-Not translated, and deliberately: catalogue text in the Academy LMS front end.
-Course titles, section names and lesson titles there come from `Ha_bridge sync`,
-which publishes the English side of the academy tables into a `course` table
-that has one title column. Switching the interface to Arabic translates the
-chrome around them, not the courses themselves.
-
-### Page design
-
-```bash
-php index.php ha_artwork assign   # give programmes and paths a photograph
-php index.php ha_artwork report   # what carries artwork
-python .lab/design_check.py       # design sweep, both locales and widths
-```
-
-Three shared pieces do the work, so a change reaches every page instead of one:
-
-- `application/views/academy/_hero.php` is the hero. Give it a picture and it
-  lays out in two columns with one real count resting on the corner of the
-  photograph; leave the picture out and it falls back to a single column. It
-  replaced a hero copied into twenty views that had already drifted apart.
-- `application/views/academy/_close.php` is the closing band. Every page now
-  ends by asking for something rather than by becoming the footer.
-- `.ha-card__cover` in `academy.css` is the card that leads with its picture.
-
-Programmes and learning paths carried no artwork at all, which is why those
-listings were walls of white rectangles. `ha_artwork assign` pairs each one
-with a file already in `ha_media`, so the pictures are the same Wikimedia
-Commons files under the same licences, already credited. The pairing is written
-out rather than matched on words: "Hotel Safety Essentials" matched nothing
-sensible, and a front office photograph on a fire safety programme is worse
-than none.
-
-`ha_page_art()` resolves a hero picture by media subject. Listing pages have no
-thumbnail of their own, and borrowing the first record's put a kitchen on the
-programmes hero purely because "Food Safety Certified" sorts first.
-
-`.lab/design_check.py` is the guard: 21 pages at desktop and phone, failing on
-a page too thin to be worth the visit, a hero with neither copy nor artwork, a
-grid where every card shows the same picture, a page with no closing band,
-broken images, horizontal overflow and JavaScript errors.
-
-### The Academy LMS home layout
-
-`application/views/frontend/default-new/home_hospitality.php`, registered in
-**Home Page Builder** as "Hospitality Academy" and active.
-
-It loads `assets/academy/academy.css` rather than restating the palette. That
-is the point: the two front ends were drifting into two different violets and
-two different card shapes, and one stylesheet is the only thing that keeps them
-together. Every number on it is counted from the catalogue as the page renders.
-
-Two things worth knowing if you build another layout:
-
-- `Home::home()` picks the view from `home_pages.html_file_names[0]`, **not**
-  from `frontend_settings.home_page`. A row without that column falls back to
-  `home_1` and your layout never renders, which looks exactly like the layout
-  being broken.
-- The layout is visible at `/home`. The site root shows it only when
-  **root_frontend** is set to `lms` (see above); it is currently `academy`, so
-  the root still serves the bilingual SEO site.
-
-### Which front end the site root serves
-
-The application ships two public front ends and the root can only show one.
-It is an administrator's choice, under **Home Page Builder**:
-
-| Setting | The root shows |
+| Email | HK&P role |
 |---|---|
-| `academy` (default) | The bilingual SEO site, `/en` and `/ar` |
-| `lms` | The Academy LMS theme at `/home`, which the Home Page Builder and the theme switcher drive |
+| `academy.admin@hospitalityacademy.sa` | Altus administrator |
+| `org.admin@dyafagroup.sa` | Organisation admin (Dyafa) |
+| `gm.riyadh@dyafagroup.sa` | General Manager |
+| `fom.riyadh@dyafagroup.sa` | Department Head |
+| `auditor@dyafagroup.sa` | Auditor |
+| `demo.gm@altusdemo.sa` | General Manager: *ALTUS Demo Hotel Riyadh* (second tenant) |
+| `demo.supervisor@altusdemo.sa` | Supervisor / practical assessor |
+| `demo.training@altusdemo.sa` | Training manager |
+| `demo.exec@altusdemo.sa` | Executive / owner |
+| `demo.learner@altusdemo.sa`, `demo.learner2@altusdemo.sa` | Employees |
 
-This exists because with the academy site fixed at the root, building a home
-page and activating a theme both appeared to do nothing: they were configuring
-a front end nobody ever landed on.
-
-The academy pages also read the administrator's brand: the uploaded dark logo
-in the header, the light logo in the footer, `system_title` as the name, and
-`custom_css` on every page. They previously read none of it and drew a
-hardcoded mark instead, which is why uploading a logo appeared to do nothing.
-
-### Assessments
-
-```bash
-php index.php ha_quiz build     # create or refresh the assessment on every course
-php index.php ha_quiz report    # coverage and question count
-php index.php ha_quiz clear     # remove every assessment
-```
-
-Every course ends with a four-question assessment: 74 courses, 296 questions,
-70 per cent to pass, three attempts. Questions live in
-`application/libraries/Ha_quizbank.php`, written per course rather than
-generated, because a question that could belong to any course ("What is the
-main goal of this procedure?") tests whether the learner can read rather than
-whether they learned the work.
-
-`ha_bridge sync` rebuilds them as its last step. It has to: republishing
-rewrites every legacy lesson row, which used to take the assessments with it,
-so they existed until the next routine sync and then quietly did not. The same
-rebuild also clears questions orphaned by earlier syncs, which had accumulated
-to three times the real count.
-
-Questions are `single_choice`, which renders radio buttons. The
-`multiple_choice` type renders checkboxes and belongs to questions with more
-than one right answer. `correct_answers` holds the correct option's **1-based
-position as a string**, because that is the value the radio posts and what the
-grader compares with `in_array()`.
-
-Not yet done: the questions belong in `ha_assessment` and `ha_question` so the
-academy tables stay the source of truth. That move is blocked on Arabic, since
-those tables require `body_ar` on every question and 296 machine-translated
-exam questions about food safety and fire response is not something to ship.
-
-### Content gap
-
-```bash
-php index.php ha_audit content   # per course: thin lessons, missing media, no assessment
-```
-
-This is the audit that matters before launch, and it currently fails. The
-website is finished; the teaching content is not. Every course carries the
-same nine lesson shapes with the course name interpolated, bodies average
-under 200 characters, no lesson has a transcript, and no course has an
-assessment, so a learner can be certified without being tested. `ha_audit run`
-proving 240 green checks says the pages render, not that they teach.
-
-### Verification
-
-```bash
-php index.php ha_test run              # whole suite
-php index.php ha_test run rbac         # one suite
-php index.php ha_test list_tests       # what exists
-
-HA_AUDIT_BASE=http://localhost/atlas-lms/Academy-LMS php index.php ha_audit run
-HA_AUDIT_BASE=http://localhost/atlas-lms/Academy-LMS php index.php ha_audit flows
-
-python .lab/routes.py       # both frontends in a real browser, signed in and out
-python .lab/shoot.py        # desktop and phone screenshots of the academy site
-```
-
-`ha_test` rebuilds `atlas_hospitality_test` from the migrations on every run, so
-a test never touches working data. `ha_audit run` walks every URL in the sitemap
-and checks what a crawler actually receives. `ha_audit flows` submits the contact
-form, verifies certificates, searches and follows the language switch.
+> **Change every password before this runs anywhere except a local machine.**
+> The demo tenant ("Altus Demo Client") and its case studies are illustrative
+> and are labelled as such.
 
 ---
 
-## Layout
+## 2. What the platform does
+
+### Learner: *My workspace*
+
+- A dashboard that answers "what should I do next?". It shows assigned learning, due dates, the readiness status and why, open action plans and certificates.
+- **My learning**:
+  - modules and tracks built from the learner's role requirements
+  - bilingual lessons with video, PDF, slides, audio and transcripts
+  - resume from the last position
+  - drip release
+- **Knowledge**: approved SOPs, policies and checklists, with acknowledgement.
+- **Smart search** across knowledge and lessons that the learner is allowed to see. Arabic and English queries find each other's sources.
+- **AI assistant**: answers only from approved content, with citations. If the content does not cover a question, it says so.
+- **Assessments**: theory papers, plus practical assessments that the learner can view.
+- Competency profile, readiness explanation, action plans with evidence upload, and certificates with QR verification.
+
+### Property management: GM, department head, supervisor, training manager
+
+- Team dashboard, people list and each employee's full evidence record.
+- **Assign learning** to people, job roles, departments or cohorts, with due dates and exemptions.
+- **Assessor queue**: weighted practical rubrics, where a critical criterion caps the result.
+- Gap heatmap, action plans (assign, review, approve evidence) and reassessment.
+- Readiness heatmap, and **opening readiness** for a pre-opening team.
+- Certification, quality audits (internal, brand, mystery guest, safety and SOP compliance), KPIs and reports (CSV and XLSX).
+- Branding for the property: logo, colours and name, applied instantly.
+
+### Altus team: *Administration*
+
+- A portfolio dashboard across all clients and properties.
+- Records for organisations, properties, departments, job roles, users and roles, with 16 roles.
+- **Curriculum**: 16 professional domains (10 core), tracks and drag-ordered modules.
+- **Content review**: draft → internal approval → quality approval → publish, with versions and a diff view. Authors cannot approve their own work.
+- Assessments and question bank, the competency library and role-to-competency matrix, and rubrics.
+- Readiness policies and certification programmes.
+- **AI governance**: index status, the query log and citation checks.
+- Engagements (the ASCENT stages DISCOVER → SCALE), and frameworks: Altus Performance Matrix™, GOPPAR Value Stack™, ESG and the capability model.
+- Corporate CMS (services, sectors, case studies, leadership and partners), imports with preview and rollback, the audit log and **system health**.
+
+### Executive
+
+- An executive overview and a printable **board report**.
+
+### Website and content CMS (this release)
+
+- A **page builder** with 13 section types: hero, text, image + text, image, gallery, cards, key figures, FAQ, steps, call to action, video, quote and sanitised HTML.
+  - Drag sections to reorder. You can also edit, hide, duplicate or delete them. Each section has English and Arabic content.
+  - Every save keeps a **revision** that you can restore.
+- **SEO / AEO / GEO score** per language, from 26 checks, each with a fix:
+  - meta title and description, focus keyword, heading and intro, content depth, alt text, internal links and hreflang pairing
+  - question headings, FAQ pairs and direct answers
+  - entity, facts, sources, schema type, region and place, and coordinates
+  - FAQ sections produce `FAQPage` schema automatically, and region/place produce `Place` / `LocalBusiness` schema
+- **Modules & lessons CMS**:
+  - lesson content from text, YouTube, Vimeo or MP4 links
+  - uploads: video (MP4 / WebM up to 500 MB), PDF, PowerPoint and audio
+  - external links and downloadable resources
+  - drip release by date or by days after enrolment
+  - watch-share and completion rules
+  - publishing syncs the module to the legacy LMS automatically
+- **AI help in every editor**:
+  - choose the provider and model
+  - **Enhance prompt** turns a rough request into a precise brief that you can edit before running it
+  - write a section, improve text, translate AR↔EN, write meta tags, an FAQ, a lesson or quiz questions
+  - nothing is saved until you insert it
+
+### API (`/api/v1`)
+
+- Personal API keys: hashed, scoped, expiring and IP-pinnable. The rate limit is 120 requests per minute.
+- Endpoints: `me`, `courses`, `enrollments`, `ai/jobs`, `competencies`, `readiness`, `actions`, `certificates`, `people`, `gaps`, `search`, `kpis`.
+- Every call is tenant-scoped exactly like the web screens.
+- Responses use the form `{"success", "data", "message"}`.
+- Create keys at `/account_security`.
+
+---
+
+## 3. Run it locally (Laragon, Windows)
+
+### Requirements
+
+- Laragon with Apache 2.4, **PHP 8.1** (`C:\laragon\bin\php\php-8.1.10-Win32-vs16-x64`) and **MySQL 8.0** (`C:\laragon\bin\mysql\mysql-8.0.30-winx64`)
+- PHP extensions: `gd`, `curl`, `mysqli`, `mbstring`, `fileinfo`, `zip`
+- `mod_rewrite` enabled. Laragon enables it by default
+
+### Start
+
+1. In Laragon, click **Start All**. If Apache was started some other way, use **Stop All** and then **Start All** so that Laragon owns the processes.
+2. Open <http://localhost/atlas/atlas/login>.
+
+### Which database is used
+
+`application/config/database.php` points at the **live production host**. On a
+local machine, `application/config/database.local.php` overrides it:
+
+```php
+'database' => 'atlas_merged',   // production dump + migrations 11-15 + local extras
+```
+
+| Database | What it is |
+|---|---|
+| `atlas_merged` | **In use.** The production dump `khidmat_atlas.sql`, upgraded (see §5) |
+| `atlas_local` | The previous local database, left unchanged |
+| `atlas_local_premerge` | A copy of `atlas_local` taken before the merge |
+| `khidmat_prod_import` | A pristine import of the production dump |
+| `atlas_hospitality_test` | Rebuilt from scratch by every test run |
+
+To go back to the old local data, set `'database' => 'atlas_local'`.
+
+To use the name `atlas_local` for the merged data, rename the databases in
+phpMyAdmin (Operations → Rename). Then change the line back.
+
+> **Never delete or rename `database.local.php` while running CLI commands.**
+> Without it, `php index.php ha_cli migrate` would run against production.
+
+### Command line
+
+In PowerShell, put PHP and MySQL on the path first:
+
+```powershell
+$env:Path = "C:\laragon\bin\php\php-8.1.10-Win32-vs16-x64;C:\laragon\bin\mysql\mysql-8.0.30-winx64\bin;" + $env:Path
+cd C:\laragon\www\atlas\atlas
+
+php index.php ha_cli status          # migrations (15 expected)
+php index.php ha_cli migrate         # apply pending migrations
+php index.php ha_cli seed rbac       # roles and permissions (safe on production data)
+php index.php ha_cli seed hkp        # HK&P reference data (safe on production data)
+php index.php ha_test run            # 136 tests on an isolated database
+php index.php hkp_cli daily          # reminders, overdue sweeps, expiry, readiness
+php index.php hkp_cli work           # process queued jobs (email, notifications)
+php index.php hkp_cli index          # rebuild the governed-AI knowledge index
+php index.php hkp_cli status         # scheduler and queue state
+```
+
+`seed rbac` and `seed hkp` update rows by natural key, so it is safe to run
+them again. **Do not run the plain `seed` against production data.** The
+curriculum and content seeders would overwrite real content.
+
+### Email on a local machine
+
+Local email is **recorded, not sent**. The setting is `email.delivery = auto`, and
+it applies whenever `database.local.php` exists. Messages appear in the in-app
+notification centre.
+
+To send real email locally, set **System → Settings → email.delivery = send**
+and configure SMTP under **Settings → System settings**. Laragon's own sendmail
+only saves `.eml` files to `C:\laragon\bin\sendmail\output`.
+
+### "Login does nothing" for a learner or instructor (device limit)
+
+The legacy LMS allows each non-admin account `allowed_device_number_of_loging`
+(currently **5**) signed-in browsers. A sixth login asks for a code sent by
+email. Locally that email is only recorded, not sent, so the account appears
+stuck on the login page. Admins are exempt.
+
+There are two fixes:
+
+- Raise the limit under **Settings → System settings**.
+- Clear an account's device list:
+
+  ```sql
+  UPDATE users SET sessions = '[]' WHERE email = 'omar.learner@dyafagroup.sa';
+  ```
+
+On production with working email, this is the intended security check.
+
+### phpMyAdmin (the "403 Forbidden" fix)
+
+phpMyAdmin was not installed, and Laragon's alias denied access. The fix:
+
+- phpMyAdmin 5.2.3 is now installed in `C:\laragon\etc\apps\phpMyAdmin`, with its own `config.inc.php` (host `127.0.0.1`, root with no password) and a `tmp/` folder.
+- `C:\laragon\etc\apache2\alias\phpmyadmin.conf` now contains `Require all granted`. The original is saved alongside as `.bak-claude`.
+
+If you see the 403 error again after a Laragon update, re-apply that alias line
+and restart Apache.
+
+### Large video uploads
+
+PHP allows 2 GB uploads (`upload_max_filesize` / `post_max_size` in
+`C:\laragon\bin\php\php-8.1.10-Win32-vs16-x64\php.ini`). The CMS itself limits
+lesson video to 500 MB, and PDF, slides and resources to 100 MB. For long or
+paid video, use a streaming host (YouTube unlisted, Vimeo, Bunny Stream or
+Cloudflare Stream) and paste the link instead.
+
+---
+
+## 4. How to add and edit content
+
+### A website page, manually
+
+1. Open **altus Workspace → Website pages** (`/hkp/cms`).
+2. Create a new page in the form on that page, giving the English and Arabic title and the address. Or open an existing page.
+3. Fill in **Page, SEO, AEO and GEO settings**:
+   - title and subtitle
+   - hero image
+   - meta title (30–60 characters) and meta description (70–160 characters)
+   - focus keyword
+   - schema type
+   - region code (e.g. `SA-01`), place name (e.g. `Riyadh`), latitude and longitude
+4. **Add sections.** Pick a type and fill the English fields, then the Arabic ones. An empty Arabic field shows the English text. For repeatable sections (cards, FAQ, steps, key figures, gallery), write one item per line, with fields separated by `|`:
+
+   ```
+   What is readiness? | Readiness shows whether evidence proves a person can work to standard.
+   ```
+
+5. **Drag** sections by their handle to reorder them. You can also hide, duplicate or delete a section. Every change keeps a revision under **Revisions → Restore**.
+6. Work through the **Optimisation checklist** until the SEO, AEO and GEO scores are where you want them. Each failing check says exactly what to fix.
+7. Set the status to **Published**. Use **View English** and **View Arabic** to check the result.
+
+### A website page, with AI
+
+1. In any page or section form, open **AI writing help**.
+2. Choose the **provider and model**, or leave them empty to use the default route.
+3. Write a rough request, for example: *"a section on our pre-opening support for independent hotels in Riyadh"*.
+4. Click **Enhance prompt**. The AI rewrites the request as a precise brief. Read it and edit it if needed.
+5. Choose a task (section, FAQ, meta tags, improve, translate), then **Generate**.
+6. Review the result, then **Insert into the field**. Nothing is saved until you click **Save**.
+
+The AI is told never to invent statistics, clients or awards. Where a fact is
+needed, it leaves a `[source needed]` placeholder.
+
+To connect a provider (OpenAI, Anthropic, Gemini, Azure and others), open
+**AI Studio → AI providers & keys**. Keys are stored encrypted.
+
+### A module (course) and its lessons, manually
+
+1. Open **Website & content → Modules & lessons** (`/hkp/cms/modules`), then **New module**.
+2. Fill in the English and Arabic titles, domain, level, duration, thumbnail, pass mark and certificate eligibility. Then **Save module**.
+3. Add **sections** (chapters), then **Add lesson** in each.
+4. Choose the lesson content. You can combine any of these:
+   - **Video link**: YouTube, Vimeo or a direct MP4 URL
+   - **Upload main media**: MP4 / WebM video (up to 500 MB), MP3 audio, PDF (shown in a viewer) or PowerPoint (offered as a download)
+   - **Lesson content**: HTML text
+   - **Other link**: an article, form or resource
+   - **Add a downloadable resource**: PDF, PPT, DOC, XLSX, ZIP or images
+5. Set **Release (drip) and completion**:
+   - available immediately, on a date, or a number of days after enrolment
+   - completion rule
+   - required watch share
+6. **Drag** lessons to reorder them. Use **Preview as learner** to check.
+7. Set the module to **Published**. It becomes visible in `/hkp/learn`, is indexed for search and the AI assistant, and is synced to the legacy LMS catalogue.
+
+Deleting a lesson that learners have progress on **archives** it instead, so
+their evidence is kept.
+
+### A module with AI
+
+- **Inside a lesson:** use **AI writing help**, with the task *Write a short applied lesson* or *Write assessment questions*.
+- **For a whole course:** use **Generate a whole course with AI**, which opens AI Studio (`/ha_ai/studio`). AI Studio drafts the outline and lesson scripts, runs validation and a person's review, and then publishes. It can also render narrated slide videos.
+
+### Knowledge (SOPs, policies, checklists)
+
+1. Go to **Knowledge** and create an item. Set its scope: global, organisation or property.
+2. **Submit** it. Internal approval and then quality approval follow, and then it is **published**. You cannot approve your own item.
+3. Published items can require **acknowledgement**, and are indexed for the governed AI.
+4. **New version** keeps the history. **Compare** shows the changes.
+
+### Assessments, competencies and certification
+
+| Task | Where |
+|---|---|
+| Theory papers and questions | **Administration → Assessments** |
+| Practical rubrics (weighted, critical criteria, thresholds) | **Competencies → Rubric** |
+| Required level per competency, per job role or property | **Competencies → matrix** |
+| Readiness rules per role, certification programmes and validity | **Readiness & certification** |
+
+---
+
+## 5. Production database merge (what was done)
+
+The production dump `khidmat_atlas.sql` (MariaDB 11.4) was merged in these steps. Nothing was ever written to the production server.
+
+1. **Backup.** `atlas_local` was saved as `atlas_local_premerge`, plus a SQL file.
+2. **Import.** The dump was imported into `atlas_merged`. It has 148 tables and the real users, 136 enrolments, 100 certificate verifications and the real branding.
+3. **Migrate.** `ha_cli migrate` applied migrations 11–15: AI Studio, key authentication, HK&P performance, intelligence, and the CMS builder.
+4. **Seed.** Only `seed rbac` and `seed hkp` were run.
+5. **Carry over.** Local-only rows were copied by natural key, **never by ID**, because user, category and lesson IDs collide between the two databases. Two of these rows were test fixtures:
+   - a mock AI provider, which is now disabled
+   - a placeholder course, which is now archived
+6. **Verify.**
+   - The logins above work.
+   - All 67 legacy admin sidebar links return 200.
+   - The workspace crawl passed for 9 roles with 0 errors.
+
+The details are in [gap.md](gap.md#production-database-merge).
+
+---
+
+## 6. Deploy to production
+
+1. **Back up production first.** In phpMyAdmin, use Export, or run `mysqldump`. Keep the file off the server.
+2. Upload the code. Do **not** upload `application/config/database.local.php`.
+3. Check `application/config/database.php` (the production credentials) and `config.php` (`base_url`, and a unique `encryption_key` that matches the one used to encrypt the AI keys).
+4. On the server, run:
+
+   ```bash
+   php index.php ha_cli status
+   php index.php ha_cli migrate        # 11-15, additive and reversible
+   php index.php ha_cli seed rbac
+   php index.php ha_cli seed hkp
+   php index.php hkp_cli index
+   ```
+
+5. Add cron jobs:
+
+   ```cron
+   15 2 * * *   cd /path/to/app && php index.php hkp_cli daily
+   */5 * * * *  cd /path/to/app && php index.php hkp_cli work
+   ```
+
+6. Configure SMTP, then set **email.delivery = send**. Connect an AI provider in AI Studio.
+7. Make these folders writable by the web server:
+   - `application/storage/private`
+   - `uploads/`
+   - `application/cache`
+   - `application/logs`
+8. Open `/hkp/admin/system`. Every row should be green, apart from the backup row, which you enable yourself.
+9. Change all the demo passwords. Remove the demo tenant if the client does not need it.
+
+If a page returns 500 after upload, see [DEPLOYMENT.md](DEPLOYMENT.md). The
+`deploy-check.php` script reports what the server can actually do.
+
+---
+
+## 7. Code layout (HK&P)
 
 ```
 application/
+  core/Hkp_Controller.php         auth, locale, security headers, navigation, render
   controllers/
-    Academy.php        public website, all routes, both languages
-    Ha_cli.php         migration and seed runner
-    Ha_images.php      photography pipeline
-    Ha_test.php        test runner
-    Ha_audit.php       rendered page and flow audits
-    Ha_bridge.php      publishes the catalogue into the Academy LMS tables
+    Hkp.php                       learner workspace, knowledge, search, assistant
+    Hkp_assess.php                theory, grading, practical, reassessment
+    Hkp_team.php                  property management
+    Hkp_admin.php                 Altus administration
+    Hkp_cms.php                   page builder, modules and lessons CMS, AI help
+    Hkp_exec.php                  executive + board report
+    Hkp_public.php                /verify, /altus corporate pages
+    Hkp_cli.php                   daily / work / index / status
+    Api_v1.php                    versioned API
   libraries/
-    Ha_auth.php        roles, permissions, tenant scope
-    Ha_audit.php       audit log writer
-    Ha_catalog.php     public read model, published content only
-    Ha_seo.php         metadata, hreflang, JSON-LD, sitemap, redirects
-    Ha_repository.php  admin list and write mechanics
-    Ha_repo_*.php      one per organisation entity
-    Ha_migration.php   migration base class
-    Ha_seeder.php      seeder base class
-    Ha_testcase.php    assertions
-  helpers/
-    ha_media_helper.php  image rendering
-  migrations/          six migrations, 89 tables
-  seeds/               RBAC, organisations, curriculum, SOPs, content
-  tests/               schema, RBAC, repositories, content, SEO
-  views/academy/       the public theme
-assets/academy/        stylesheet and script
-uploads/academy/       downloaded photographs (WebP, two sizes)
+    Ha_competency  Ha_practical  Ha_theory  Ha_action_plans  Ha_readiness
+    Ha_certification  Ha_learning  Ha_knowledge  Ha_governed_ai  Ha_kpi
+    Ha_advisory  Ha_reports  Ha_xlsx  Ha_pdf  Ha_qr  Ha_importer  Ha_crud
+    Ha_tenant  Ha_notify  Ha_files  Ha_page_builder  Ha_seo_score
+    Ha_ai_assist  Ha_api_hkp  Ha_i18n_keys
+  helpers/hkp_helper.php          hkp_t(), hkp_url(), badges, sanitiser
+  language/arabic/hkp_lang.php    1,673 Arabic interface strings
+  migrations/…013 …014 …015       HK&P schema (additive, reversible)
+  seeds/001_rbac.php 006_hkp.php  roles, domains, rubrics, KPIs, demo tenant
+  tests/080_hkp.php 090_cms.php   evidence chain, isolation, CMS, API, i18n
+  views/hkp/                      every workspace screen
+assets/hkp/                       hkp.css design system, hkp.js
 ```
 
 ---
 
-## Photography and licensing
+## 8. Reference: legacy Academy LMS
 
-Photographs come from **Wikimedia Commons**, not from an image search. Google
-Images indexes third-party copyrighted work; republishing it would expose the
-site to takedowns and licence claims.
+Everything below describes the original LMS and the academy site, which still
+work alongside HK&P.
 
-The pipeline only accepts licences that permit commercial reuse (CC0, public
-domain, CC BY, CC BY-SA), stores the author, licence, licence URL and source
-page beside each file, and flags anything whose licence requires the
-photographer to be named. Those are listed on `/en/credits` and `/ar/credits`,
-which the footer links from every page. That page is a licence obligation, not
-decoration.
-
-Candidates are drawn from curated Commons categories rather than free-text
-search, because relevance ranking returns confident nonsense: a search for
-"Riyadh" first returned a photograph of a fort in Bahrain. Files whose name or
-description marks them as a drawing, map, diagram, logo or archival plate are
-rejected, as are military subjects and any image featuring children, which do
-not belong on a hotel training site. No two subjects share a photograph: the
-downloader rejects a file whose checksum is already held.
-
-Two subjects have no photograph of their own. Commons has no modern, on-brand
-certificate photograph that survives those filters, so the certification
-surfaces borrow the training-room image rather than ship a medieval manuscript
-or a military parade.
-
-Every image is converted to WebP at two widths: 1600px for heroes and 800px for
-cards. Markup carries intrinsic `width` and `height` so a grid does not reflow
-while images arrive, heroes load eagerly, everything else lazily.
-
----
-
-## Design
-
-Both frontends share the Academy LMS palette: violet `#754FFE` on slate
-(`#0D0C23`, `#1E293B`, `#6E798A`) over a near-white `#F8F7FF`. The academy site
-uses the accent to lead the eye rather than to decorate: a rule above each page
-and section title, a lift and accent border on card hover, a solid primary
-button with a real shadow, and tinted sections alternating with white to give
-the page a rhythm.
-
-Two things were removed from the shipped theme's home page, because they state
-something untrue. The partner logo strip used demo assets showing Stanford, the
-University of Texas and the University of Chicago, which claims an endorsement
-this academy does not have. The generic stock hero art was replaced with the
-academy's own licensed hospitality photography. Reinstate a partner strip only
-with real partners who have agreed to be named.
-
-## Bilingual delivery
-
-English and Arabic are separate authored content, not a translation layer. Each
-translatable record has one row per locale in a `*_translation` table, and slugs
-are translated too, so an Arabic reader gets an Arabic URL:
-
-```
-/en/courses/fo-check-in
-/ar/courses/إجراءات-تسجيل-الوصول
-```
-
-That needs two things most CodeIgniter sites do not have. `permitted_uri_chars`
-in `application/config/config.php` is extended to the Arabic Unicode block, and
-slugs are decoded once in the controller. Arabic page URLs resolve through a
-database lookup rather than literal route keys, because CodeIgniter compiles a
-route key into a regex without the unicode modifier and a literal Arabic key
-never matches.
-
-The Arabic interface is a real right-to-left document: `dir` on `<html>`,
-logical CSS properties throughout, and an Arabic font stack. It is not an
-English layout mirrored.
-
----
-
-## Content rules
-
-The site does not publish pass rates, success statistics, employer endorsements
-or accreditation claims, because none of them can be evidenced to a visitor.
-Testimonials are deliberately unseeded: a real quote needs a real, consenting
-person.
-
-Competitor records store only what the cited page states, each with an evidence
-URL and the date it was checked. Anything the source does not say is recorded as
-`unknown` rather than guessed.
-
----
-
-## Status
-
-Implementation status against the specification in `plan-final.txt`, including
-what is finished and what is not, is tracked in
-[IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md). Nothing there is marked
-verified without a passing test or audit.
-
-The public website, curriculum, SOP content, SEO system and photography are
-complete. The Academy LMS admin panel and learner area work and are documented
-under [Running the academy](#running-the-academy); what is unbuilt is the
-academy's own `ha_*` administration, and the assessment, certificate,
-notification and reporting engines, which have schema but no application code
-yet.
-
----
-
-## Demo accounts
-
-Seeded by `002_organizations`, password `Academy#2026`:
-
-| Account | Role |
-|---|---|
-| `academy.admin@hospitalityacademy.sa` | Academy admin |
-| `org.admin@dyafagroup.sa` | Organisation admin |
-| `gm.riyadh@dyafagroup.sa` | Property manager |
-| `fom.riyadh@dyafagroup.sa` | Department manager |
-| `omar.learner@dyafagroup.sa` | Learner |
-| `auditor@dyafagroup.sa` | Auditor |
-
-The super admin is `admin@hospitalityacademy.sa`. Change every one of these
-before this runs anywhere but a local machine.
-
-| Account | Password | Where it lands |
-|---|---|---|
-| `admin@hospitalityacademy.sa` | `admin123` | `/admin/dashboard` |
-| `instructor.fo@hospitalityacademy.sa` | `Academy#2026` | instructor panel |
-| `omar.learner@dyafagroup.sa` | `Academy#2026` | `/home/my_courses` |
-
----
-
-## Running the academy
-
-### Signing in as the administrator
-
-There is one sign-in form for everybody, at `/login`. `/admin` is not a login
-page: it checks the session and, when there is none, sends the browser to
-`/login` with a `Refresh` header. A blank window at `/admin` therefore means
-the browser has not followed that redirect, not that the panel is down. To
-check a deployment from the command line:
+### Command reference
 
 ```bash
-curl -sI https://example.com/atlas/admin | grep -i refresh
-# refresh: 0;url=https://example.com/atlas/login   <- working as designed
+php index.php ha_cli rollback   # roll back to a version (default 0)
+php index.php ha_cli fresh      # rollback, migrate, seed: NEVER on production data
+
+php index.php ha_bridge sync     # mirror ha_* into course/lesson/section/category
+php index.php ha_bridge status   # what is mirrored, and whether it has drifted
+php index.php ha_bridge sync_one <course-code>
+
+php index.php ha_images fetch | fetch_variants | assign | report
+php index.php ha_video discover | assign | recheck | report | clear
+php index.php ha_lang translate | export | status | missing
+php index.php ha_quiz build | report | clear
+php index.php ha_audit run | flows | content
 ```
 
-Sign in at `/login` with the super admin account above and you land on
-`/admin/dashboard`. The sidebar is the whole panel. `Visit website` in the top
-bar returns to the public site, and `Administration` in the public header comes
-back.
+CodeIgniter 3.1.9's own Migration library cannot run on PHP 8.
+`Ha_cli` replaces it: it keeps the same file format and records its state in
+`ha_migration`. The framework in `system/` is not patched.
 
-### Where course content is edited
+`ha_bridge sync` writes one way and is idempotent. It matches courses on the
+academy code, so running it twice does not create duplicates. The HK&P CMS runs
+`sync_one` automatically when you publish a module.
 
-Everything about a course lives in one editor, reached from
-**Courses > All courses** and then the edit action, or directly:
+### Lesson video from third parties
+
+`ha_video discover` verifies every YouTube candidate through oEmbed. A video
+lesson without a verified source publishes as text rather than as an empty
+player. Each video is credited to its channel.
+
+Run `ha_video recheck` on a schedule. It exits non-zero when a video has
+disappeared.
+
+**Terabox cannot be used as a video source.** It sends
+`X-Frame-Options: SAMEORIGIN` and has no stable direct file URL. Use YouTube
+unlisted, Vimeo, Bunny Stream, Cloudflare Stream or Wasabi instead.
+
+### Where legacy course content is edited
 
 ```
 /admin/courses                         the list
 /admin/course_form/add_course          create
 /admin/course_form/course_edit/{id}    edit: info, curriculum, pricing, SEO
 /admin/quizes/{id}                     quizzes for a course
-/admin/quiz_questions/{quiz_id}        questions in a quiz
 ```
 
-Sections and lessons are added inside the course editor's curriculum tab, not
-on a page of their own. `/admin/lessons/{id}` redirects there.
+For HK&P modules, use `/hkp/cms/modules` instead. It is the source of truth,
+and it publishes to the legacy tables.
 
-### Lesson types
+### Which front end the site root serves
 
-The **Add lesson** dialog offers these. Only the first three columns matter for
-where the video actually lives:
+Set **root_frontend** under **Home Page Builder**:
 
-| Type | Where the file sits | Notes |
-|---|---|---|
-| Video (upload) | your server | Simplest, and the fastest way to fill a shared host's disk quota |
-| YouTube | YouTube | Unlisted videos work and cost nothing |
-| Vimeo | Vimeo | |
-| Google Drive | Drive | Needs the file shared to anyone with the link |
-| HTML5 | any URL | A direct `.mp4` URL, played in a `<video>` tag. Needs byte-range support |
-| Wasabi | Wasabi S3 | Configured under **Settings > Wasabi**. Cheap S3-compatible storage |
-| Academy Cloud | Creativeitem's service | Paid addon |
-| iframe embed | anywhere | Renders the URL inside an `<iframe>` |
-| Audio, Document, Image, Text | your server | Handouts, SOP PDFs, checklists |
+- `academy` serves the bilingual SEO site at `/en` and `/ar`.
+- `lms` serves the Academy LMS theme at `/home`.
 
-### Terabox will not work as a video source
-
-Not a configuration problem, and not fixable from this side. Terabox sends
-`X-Frame-Options: SAMEORIGIN` on its share pages:
-
-```bash
-curl -sI https://www.terabox.com/ | grep -i x-frame
-# X-Frame-Options: SAMEORIGIN
-```
-
-A browser refuses to render that inside an iframe on another domain, so an
-`iframe embed` lesson pointing at a Terabox share shows an empty box. The
-`HTML5` type does not rescue it either: Terabox does not publish a stable
-direct file URL, the one it generates is tied to a session and expires, and
-using a consumer storage account to serve a commercial course also runs against
-its terms of service.
-
-For paid courses, use a host built for it. In rough order of least work:
-
-1. **YouTube unlisted**, free, already supported, but the player carries
-   YouTube branding and the video is reachable by anyone with the link.
-2. **Bunny Stream** or **Cloudflare Stream**, a few dollars a month, real
-   signed playback and adaptive bitrate. Use the `HTML5` or `iframe` type.
-3. **Wasabi**, already built into this panel under **Settings > Wasabi**, if
-   you would rather own the bucket.
-
-### Quizzes and resources
-
-Quizzes are per course, at **Courses > the course > Quiz**, or
-`/admin/quizes/{course_id}`. A quiz holds questions added at
-`/admin/quiz_questions/{quiz_id}`. Downloadable handouts, SOP PDFs and
-checklists are lessons of type Document, attached to the section they belong to.
-
-### Analytics
-
-| Screen | What it answers |
-|---|---|
-| `/admin/dashboard` | Revenue by month, course/lesson/enrolment/student counts, course overview |
-| `/admin/admin_revenue` | What the platform earned |
-| `/admin/instructor_revenue` | What each instructor is owed |
-| `/admin/purchase_history` | Every transaction |
-| `/admin/enrol_history` | Every enrolment, paid or manual |
-| `/admin/course_enrol_list` | Who is enrolled on one course |
-
-The public site has a separate check of its own, `php index.php ha_audit run`,
-which walks every published page. It is a correctness audit, not traffic
-analytics; for traffic, add an analytics tag under **Settings > SEO**.
+`Home::home()` picks the layout from `home_pages.html_file_names[0]`.
 
 ### Taking payment
 
-The catalogue as seeded earns nothing, by construction. Three things are set
-for a demo and all three have to change before a single riyal can arrive:
+As seeded, courses are free and every gateway is in test mode. Before any
+payment can come in:
 
-1. **Every course is free.** All 74 rows carry `is_free_course = 1` and
-   `price = 0`. Set a price per course in the course editor, or in bulk:
+1. Set a price per course.
+2. Enter live gateway keys under **Settings → Payment**.
+3. Set `system_currency` to `SAR` under **Settings → System**.
 
-   ```sql
-   UPDATE course SET is_free_course = 0, price = 250 WHERE id IN (...);
-   ```
+### Photography and licensing
 
-2. **Every gateway is in test mode.** `paypal` is `"mode":"sandbox"`, `stripe`
-   has `"testmode":"on"`, and `razorpay` holds an `rzp_test` key. Enter live
-   keys and switch the mode under **Settings > Payment**.
+Photographs come from **Wikimedia Commons**, and only under licences that allow
+commercial use. The author and licence are stored with each file, and credits
+are shown at `/en/credits` and `/ar/credits`. Do not replace them with images
+from an image search.
 
-3. **The currency is USD.** For Saudi pricing set `system_currency` to `SAR`
-   under **Settings > System**, along with the matching gateway currency.
+### Content rules
 
-Instructor payouts and the platform's commission split are under
-**Settings > Instructor** and `/admin/instructor_payout`.
+The platform publishes no invented pass rates, endorsements, testimonials or
+accreditations. Illustrative case studies and demo figures are labelled as
+illustrative. Competitor records hold only what the cited source states.

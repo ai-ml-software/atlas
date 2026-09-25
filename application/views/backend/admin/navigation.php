@@ -28,6 +28,39 @@
             </a>
         </li>
 
+        <!-- altus Hospitality Knowledge & Performance workspace -->
+        <li class="side-nav-item">
+            <a href="javascript: void(0);" class="side-nav-link">
+                <i class="mdi mdi-view-dashboard-variant-outline"></i>
+                <span> altus Workspace </span>
+                <span class="menu-arrow"></span>
+            </a>
+            <ul class="side-nav-second-level" aria-expanded="false">
+                <li><a href="<?php echo site_url('hkp'); ?>">My workspace</a></li>
+                <li><a href="<?php echo site_url('hkp/team'); ?>">Team &amp; property</a></li>
+                <li><a href="<?php echo site_url('hkp/exec'); ?>">Executive dashboard</a></li>
+                <li><a href="<?php echo site_url('hkp/admin'); ?>">Administration</a></li>
+                <li><a href="<?php echo site_url('hkp/admin/curriculum'); ?>">Curriculum &amp; tracks</a></li>
+                <li><a href="<?php echo site_url('hkp/admin/competencies'); ?>">Competencies &amp; rubrics</a></li>
+                <li><a href="<?php echo site_url('hkp/knowledge'); ?>">Knowledge centre</a></li>
+                <li><a href="<?php echo site_url('hkp/admin/ai'); ?>">Governed AI</a></li>
+            </ul>
+        </li>
+        <li class="side-nav-item">
+            <a href="javascript: void(0);" class="side-nav-link">
+                <i class="mdi mdi-file-document-edit-outline"></i>
+                <span> Website &amp; content </span>
+                <span class="menu-arrow"></span>
+            </a>
+            <ul class="side-nav-second-level" aria-expanded="false">
+                <li><a href="<?php echo site_url('hkp/cms'); ?>">Pages, sections &amp; SEO</a></li>
+                <li><a href="<?php echo site_url('hkp/cms') . '#new-page'; ?>">New page</a></li>
+                <li><a href="<?php echo site_url('hkp/cms/modules'); ?>">Modules &amp; lessons</a></li>
+                <li><a href="<?php echo site_url('hkp/cms/module'); ?>">New module</a></li>
+                <li><a href="<?php echo site_url('ha_ai/studio'); ?>">Generate a course with AI</a></li>
+            </ul>
+        </li>
+
         <?php if (has_permission('course')): ?>
         <li class="side-nav-item<?php if ($page_name == 'courses' || $page_name == 'course_add' || $page_name == 'course_edit' || $page_name == 'categories' || $page_name == 'category_add' || $page_name == 'category_edit' || $page_name == 'coupons' || $page_name == 'coupon_add' || $page_name == 'coupon_edit' || $page_name == 'add_bundle' || $page_name == 'manage_course_bundle' || $page_name == 'edit_bundle' || $page_name == 'active_bundle_subscription_report' || $page_name == 'expire_bundle_subscription_report' || $page_name == 'bundle_invoice') {
         echo 'active';

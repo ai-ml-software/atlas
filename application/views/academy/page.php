@@ -20,11 +20,15 @@
     </div>
 </section>
 
+<?php if (trim(strip_tags((string) $page['body'])) !== ''): ?>
 <section class="ha-section">
     <div class="ha-shell ha-prose">
         <?= $page['body'] ?>
     </div>
 </section>
+<?php endif; ?>
+
+<?php if (!empty($sections)) { $this->load->view('academy/_sections', array('sections' => $sections, 'locale' => $locale)); } ?>
 
 <?php $this->load->view('academy/_close', array(
     'close_title' => $locale === 'ar' ? 'ابدأ بتدريب فريقك' : 'Start training your team',

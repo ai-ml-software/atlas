@@ -1133,3 +1133,34 @@ body.ha--rtl .ha-brand__name { letter-spacing: 0; }
     .ha-card__cover img { transition: none; }
     .ha-card:hover .ha-card__cover img { transform: none; }
 }
+
+/* ---- Page-builder sections (hkp/cms) ------------------------------------ */
+.ha-block + .ha-block { padding-block-start: 0; }
+.ha-block-hero { position: relative; border-radius: 18px; overflow: hidden; background: var(--ha-ink, #1e1b4b); color: #fff; }
+.ha-block-hero__img { display: block; inline-size: 100%; max-block-size: 420px; object-fit: cover; opacity: .55; }
+.ha-block-hero--image .ha-block-hero__body { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; padding: clamp(1.25rem, 4vw, 3rem); }
+.ha-block-hero:not(.ha-block-hero--image) .ha-block-hero__body { padding: clamp(1.5rem, 4vw, 3rem); }
+.ha-block-hero h2 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.4rem); margin: 0 0 .5rem; }
+.ha-block-split { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1rem, 3vw, 2.5rem); align-items: center; }
+.ha-block-split--end img { order: 2; }
+.ha-block-split img, .ha-block-figure img { inline-size: 100%; block-size: auto; border-radius: 14px; }
+.ha-block-figure { margin: 0; }
+.ha-block-figure figcaption, .ha-block-caption { font-size: .88rem; color: #5b6470; margin-top: .4rem; }
+.ha-block-grid { display: grid; gap: 1rem; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 1rem; }
+.ha-block-grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.ha-block-grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.ha-block-card { border: 1px solid #e6e3ee; border-radius: 14px; padding: 1.1rem 1.2rem; background: #fff; }
+.ha-block-card__title { display: block; font-size: 1.05rem; margin-bottom: .35rem; }
+.ha-block-card--stat .ha-block-card__title { font-size: 2rem; line-height: 1.1; }
+.ha-block-steps { counter-reset: s; list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: .8rem; }
+.ha-block-steps li { counter-increment: s; position: relative; padding-inline-start: 3rem; }
+.ha-block-steps li::before { content: counter(s); position: absolute; inset-inline-start: 0; top: 0; inline-size: 2.1rem; block-size: 2.1rem; border-radius: 50%; display: grid; place-items: center; background: #f1edfb; font-weight: 700; }
+.ha-block-faq details { border-bottom: 1px solid #e6e3ee; padding: .8rem 0; }
+.ha-block-faq summary { cursor: pointer; list-style: none; }
+.ha-block-faq summary h3 { display: inline; font-size: 1.02rem; margin: 0; }
+.ha-block-cta { text-align: center; padding: clamp(1.5rem, 4vw, 3rem); border-radius: 18px; background: #f7f4ff; }
+.ha-block-video { position: relative; padding-top: 56.25%; border-radius: 14px; overflow: hidden; background: #000; margin-top: .8rem; }
+.ha-block-video iframe, .ha-block-video video { position: absolute; inset: 0; inline-size: 100%; block-size: 100%; border: 0; }
+.ha-block-quote { margin: 0; padding: 1.2rem 1.5rem; border-inline-start: 4px solid #8b5cf6; font-size: 1.15rem; }
+.ha-block-quote cite { display: block; font-size: .9rem; margin-top: .5rem; font-style: normal; color: #5b6470; }
+@media (max-width: 760px) { .ha-block-split, .ha-block-grid, .ha-block-grid--2, .ha-block-grid--4 { grid-template-columns: 1fr; } .ha-block-split--end img { order: 0; } }

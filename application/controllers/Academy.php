@@ -63,7 +63,8 @@ class Academy extends CI_Controller {
             // channel; the pipeline is built and simply has nothing assigned
             // yet. Naming the host here means enabling video is not also a
             // security-header change made in a hurry.
-            "frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com",
+            "frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://player.vimeo.com",
+            "media-src 'self'",
             "object-src 'none'",
             "base-uri 'self'",
             "form-action 'self'",
@@ -812,7 +813,26 @@ class Academy extends CI_Controller {
         // language's slug, never this one with the locale swapped.
         $this->ha_seo->set_alternate(array('en' => $page['slug_en'], 'ar' => $page['slug_ar']));
         $this->ha_seo->breadcrumb($page['title'], $page['slug']);
-        $this->render('page', array('page' => $page));
+        // Page-builder sections, their FAQ (AEO) and the page's place (GEO) become structured data.
+        $sections = array();
+        if ($this->db->table_exists('ha_page_section')) {
+            $this->load->library('ha_page_builder');
+            $sections = $this->ha_page_builder->sections($page['id']);
+            $faq = $this->ha_page_builder->faq_items($page['id'], $this->locale);
+            if ($faq && ($schema = $this->ha_seo->faq_schema($faq))) {
+                $this->ha_seo->add_schema($schema);
+            }
+            $row = $this->db->select('schema_type, geo_region, geo_placename, geo_lat, geo_lng')->get_where('ha_page', array('id' => $page['id']))->row_array();
+            if ($row && ($row['geo_placename'] || $row['schema_type'] === 'LocalBusiness')) {
+                $place = array('@type' => $row['schema_type'] === 'LocalBusiness' ? 'LocalBusiness' : 'Place', 'name' => $page['title'],
+                    'address' => array('@type' => 'PostalAddress', 'addressLocality' => $row['geo_placename'], 'addressRegion' => $row['geo_region'], 'addressCountry' => 'SA'));
+                if ($row['geo_lat'] !== null && $row['geo_lng'] !== null) {
+                    $place['geo'] = array('@type' => 'GeoCoordinates', 'latitude' => (float) $row['geo_lat'], 'longitude' => (float) $row['geo_lng']);
+                }
+                $this->ha_seo->add_schema($place);
+            }
+        }
+        $this->render('page', array('page' => $page, 'sections' => $sections));
     }
 
     public function about($locale = 'en')       { $this->page($locale, 'about'); }

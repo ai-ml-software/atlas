@@ -1,0 +1,3 @@
+<div class="hkp-head"><div><h1><?php echo hkp_e('Grading'); ?></h1><p><?php echo hkp_e('Essays and short answers that did not match an accepted answer wait here for a person.'); ?></p></div></div>
+<section class="hkp-card"><?php if (!$rows): ?><div class="hkp-empty"><?php echo hkp_e('Nothing waiting to be graded.'); ?></div><?php endif; ?>
+<ul class="hkp-list"><?php foreach ($rows as $r): ?><li><span><?php echo hkp_h($r['first_name'] . ' ' . $r['last_name']); ?> — <?php echo hkp_h(hkp_pick($r, 'title')); ?> <span class="hkp-small hkp-muted"><?php echo hkp_date($r['submitted_at'], true); ?></span></span><a class="hkp-btn hkp-btn--sm" href="<?php echo hkp_url('assess/grading/' . $r['id']); ?>"><?php echo hkp_e('Grade'); ?></a></li><?php endforeach; ?></ul></section>

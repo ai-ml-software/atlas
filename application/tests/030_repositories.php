@@ -43,12 +43,12 @@ class Test_repositories extends Ha_testcase {
 
     public function test_pagination_returns_a_page_and_a_total() {
         $this->as_user('admin@hospitalityacademy.sa');
-        $page = $this->properties->paginate(array('per_page' => 3, 'page' => 1));
+        $page = $this->properties->paginate(array('per_page' => 3, 'page' => 1, 'organization_id' => $this->org_id()));
         $this->assertCount(3, $page['rows'], 'Expected a page of three properties');
         $this->assertEquals(8, $page['total'], 'All eight seeded properties should be counted');
         $this->assertEquals(3, $page['pages']);
 
-        $page2 = $this->properties->paginate(array('per_page' => 3, 'page' => 3));
+        $page2 = $this->properties->paginate(array('per_page' => 3, 'page' => 3, 'organization_id' => $this->org_id()));
         $this->assertCount(2, $page2['rows'], 'Last page holds the remainder');
     }
 
@@ -67,11 +67,11 @@ class Test_repositories extends Ha_testcase {
         $resorts = $this->properties->paginate(array('property_type' => 'resort'));
         $this->assertEquals(2, $resorts['total'], 'Two seeded resorts');
 
-        $preopening = $this->properties->paginate(array('operational_status' => 'pre_opening'));
+        $preopening = $this->properties->paginate(array('operational_status' => 'pre_opening', 'organization_id' => $this->org_id()));
         $this->assertEquals(1, $preopening['total']);
         $this->assertEquals('abha-highlands', $preopening['rows'][0]['slug']);
 
-        $riyadh = $this->properties->paginate(array('city' => 'Riyadh'));
+        $riyadh = $this->properties->paginate(array('city' => 'Riyadh', 'organization_id' => $this->org_id()));
         $this->assertEquals(1, $riyadh['total']);
     }
 
@@ -250,9 +250,15 @@ class Test_repositories extends Ha_testcase {
 
     public function test_organization_listing_counts_properties() {
         $this->as_user('admin@hospitalityacademy.sa');
-        $page = $this->orgs->paginate();
-        $this->assertEquals(1, $page['total']);
-        $this->assertEquals(8, (int) $page['rows'][0]['property_count']);
+        $page = $this->orgs->paginate(array('sort' => 'name_en', 'dir' => 'desc'));
+        // Dyafa plus the "Altus Demo Client" second tenant used by the HK&P isolation tests.
+        $this->assertEquals(2, $page['total']);
+        $counts = array();
+        foreach ($page['rows'] as $r) {
+            $counts[$r['slug']] = (int) $r['property_count'];
+        }
+        $this->assertEquals(8, $counts['dyafa-hospitality-group']);
+        $this->assertEquals(1, $counts['altus-demo-client']);
     }
 
     public function test_organization_with_properties_cannot_be_deleted() {

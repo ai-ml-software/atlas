@@ -6,5 +6,7 @@ return array(
     'hostname' => '127.0.0.1',
     'username' => 'root',
     'password' => '',
-    'database' => 'atlas_local',
+    // atlas_merged = production dump (khidmat_atlas.sql) + migrations 11-15 + local-only data.
+    // The previous local database is still available as atlas_local.
+    'database' => 'atlas_merged',
 );

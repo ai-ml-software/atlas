@@ -32,8 +32,12 @@ class Test_rbac extends Ha_testcase {
     // ------------------------------------------------------------------ roles
 
     public function test_all_eight_roles_are_seeded() {
+        // The original eight roles plus the platform, organisation and property
+        // roles of the altus HK&P specification (ppt-features section 35).
         $expected = array('super_admin', 'academy_admin', 'instructor', 'org_admin',
-            'property_manager', 'department_manager', 'learner', 'auditor');
+            'property_manager', 'department_manager', 'learner', 'auditor',
+            'altus_admin', 'content_manager', 'quality_reviewer', 'consultant',
+            'executive', 'training_manager', 'property_admin', 'supervisor');
         foreach ($expected as $code) {
             $this->assertDatabaseHas('ha_role', array('code' => $code), 'Role missing: ' . $code);
         }
@@ -174,11 +178,15 @@ class Test_rbac extends Ha_testcase {
 
     public function test_organization_admin_reaches_every_property_in_their_organization() {
         $this->as_user('org.admin@dyafagroup.sa');
-        $properties = $this->db->get('ha_property')->result_array();
-        $this->assertGreaterThan(1, count($properties));
-        foreach ($properties as $p) {
-            $this->assertTrue($this->auth->can_property($p['id']),
-                'Organization admin should reach property ' . $p['slug']);
+        $org = $this->db->get_where('ha_organization', array('slug' => 'dyafa-hospitality-group'))->row_array();
+        foreach ($this->db->get('ha_property')->result_array() as $p) {
+            if ((int) $p['organization_id'] === (int) $org['id']) {
+                $this->assertTrue($this->auth->can_property($p['id']),
+                    'Organization admin should reach property ' . $p['slug']);
+            } else {
+                $this->assertFalse($this->auth->can_property($p['id']),
+                    'Organization admin must not reach another tenant\'s property ' . $p['slug']);
+            }
         }
     }
 
