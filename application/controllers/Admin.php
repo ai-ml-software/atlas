@@ -1352,25 +1352,16 @@ class Admin extends CI_Controller
                 redirect(site_url('admin/manage_language'), 'refresh');
             }
 
-            if (! $this->db->field_exists($language, 'language')) {
-                $this->load->dbforge();
-                $fields = [
-                    $language => [
-                        'type'      => 'TEXT',
-                        'default'   => null,
-                        'null'      => true,
-                        'collation' => 'utf8_unicode_ci',
-                    ],
-                ];
-                $this->dbforge->add_column('language', $fields);
-            }
-
-            saveDefaultJSONFile($language);
-            $this->session->set_flashdata('flash_message', get_phrase('language_added_successfully'));
+            try { saveDefaultJSONFile($language); $this->session->set_flashdata('flash_message',get_phrase('language_is_recorded_for_review')); }
+            catch (Throwable $e) { $this->session->set_flashdata('error_message',$e->getMessage()); }
             redirect(site_url('admin/manage_language'), 'refresh');
         }
         if ($param1 == 'add_phrase') {
-            $new_phrase = get_phrase($this->input->post('phrase'));
+            $key=strtolower(preg_replace('/\s+/','_',trim((string)$this->input->post('phrase'))));
+            if ($key!=='' && !$this->db->get_where('language',array('phrase'=>$key))->num_rows()) { $this->db->insert('language',array('phrase'=>$key,'english'=>ucfirst(str_replace('_',' ',$key)))); }
+            $this->load->library('ha_global_translation');
+            if ($key!=='') { $this->ha_global_translation->unit('site','ui:legacy:'.$key,ucfirst(str_replace('_',' ',$key)),array('type'=>'ui','domain'=>'legacy','key'=>$key)); }
+            $new_phrase = get_phrase($key);
             $this->session->set_flashdata('flash_message', $new_phrase . ' ' . get_phrase('has_been_added_successfully'));
             redirect(site_url('admin/manage_language'), 'refresh');
         }
@@ -1380,11 +1371,8 @@ class Admin extends CI_Controller
         }
 
         if ($param1 == 'delete_language') {
-            if (file_exists('application/language/' . $param2 . '.json')) {
-                unlink('application/language/' . $param2 . '.json');
-                $this->session->set_flashdata('flash_message', get_phrase('language_deleted_successfully'));
-                redirect(site_url('admin/manage_language'), 'refresh');
-            }
+            $this->session->set_flashdata('error_message',get_phrase('language_history_is_retained_use_reviewed_language_management'));
+            redirect(site_url('admin/manage_language'),'refresh');
         }
         $page_data['languages']  = $this->crud_model->get_all_languages();
         $page_data['page_name']  = 'manage_language';
@@ -1394,11 +1382,14 @@ class Admin extends CI_Controller
 
     public function update_phrase_with_ajax()
     {
+        if ($this->session->userdata('admin_login') != true) { show_error('Authentication required.',403); }
+        check_permission('settings');
+        if ($this->input->method(true)!=='POST') { show_error('POST required.',405); }
         $current_editing_language = $this->input->post('currentEditingLanguage');
         $updatedValue             = $this->input->post('updatedValue');
         $key                      = $this->input->post('key');
-        saveJSONFile($current_editing_language, $key, $updatedValue);
-        echo $current_editing_language . ' ' . $key . ' ' . $updatedValue;
+        try { saveJSONFile($current_editing_language,$key,$updatedValue); $this->output->set_content_type('application/json')->set_output(json_encode(array('status'=>'reviewing'))); }
+        catch (Throwable $e) { $this->output->set_status_header(422)->set_content_type('application/json')->set_output(json_encode(array('error'=>$e->getMessage()))); }
     }
 
     public function message($param1 = 'message_home', $param2 = '', $param3 = '')
@@ -2992,8 +2983,16 @@ class Admin extends CI_Controller
 
     public function update_language_direction()
     {
+        if ($this->session->userdata('admin_login') != true) { show_error('Authentication required.',403); }
+        check_permission('settings');
+        if ($this->input->method(true)!=='POST') { show_error('POST required.',405); }
         $language      = $this->input->post('language');
         $dir           = $this->input->post('dir');
+        if (!in_array($dir,array('ltr','rtl'),true)) { show_error('Invalid writing direction.',422); }
+        require_once APPPATH.'helpers/ha_reviewed_translation_helper.php';
+        try { $locale=ha_resolve_language_code($language); }
+        catch (Throwable $e) { show_error($e->getMessage(),422); return; }
+        if ($this->db->table_exists('ha_language_inventory')) { $this->db->where('locale',$locale)->update('ha_language_inventory',array('direction'=>$dir,'updated_at'=>date('Y-m-d H:i:s'))); }
         $language_dirs = get_settings('language_dirs') ? json_decode(get_settings('language_dirs'), true) : ['english' => 'ltr'];
 
         $language_dirs[$language] = $dir;

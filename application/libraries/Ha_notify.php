@@ -131,6 +131,13 @@ class Ha_notify {
                 $row['delivery_error'] = 'No ' . $channel . ' provider is connected yet.';
             }
             $this->CI->db->insert('ha_notification', $row);
+            $id = (int)$this->CI->db->insert_id();
+            if (!empty($user['locale']) && !in_array($user['locale'],array('en','ar'),true)) {
+                $localized = $this->render($event,$channel,$user['locale'],(int)$user['organization_id'],$vars);
+                foreach ($localized['translated'] ? array('title'=>$localized['subject'],'body'=>$localized['body']) : array() as $field=>$value) {
+                    $this->CI->db->insert('ha_i18n_text',array('entity'=>'notification','entity_id'=>$id,'field'=>$field,'locale'=>$user['locale'],'value'=>$value,'source'=>'human','updated_at'=>date('Y-m-d H:i:s')));
+                }
+            }
             $count++;
         }
         return $count;
@@ -148,12 +155,14 @@ class Ha_notify {
                 }
             }
         }
+        $translated = (bool)$tpl;
         if (!$tpl) {
             $defaults = self::default_templates();
-            $d = isset($defaults[$event][$locale]) ? $defaults[$event][$locale] : array($event, '');
+            $translated = isset($defaults[$event][$locale]);
+            $d = isset($defaults[$event][$locale]) ? $defaults[$event][$locale] : (isset($defaults[$event]['en']) ? $defaults[$event]['en'] : array($event, ''));
             $tpl = array('subject' => $d[0], 'body' => $d[1]);
         }
-        return array('subject' => $this->fill($tpl['subject'], $vars), 'body' => $this->fill($tpl['body'], $vars));
+        return array('subject' => $this->fill($tpl['subject'], $vars), 'body' => $this->fill($tpl['body'], $vars), 'translated'=>$translated);
     }
 
     public function fill($text, array $vars) {
@@ -201,6 +210,11 @@ class Ha_notify {
             $ar = $r['locale'] === 'ar';
             $subject = $ar ? $r['title_ar'] : $r['title_en'];
             $body = $ar ? $r['body_ar'] : $r['body_en'];
+            if (!$ar && !empty($r['locale']) && $r['locale'] !== 'en') {
+                foreach ($this->CI->db->get_where('ha_i18n_text',array('entity'=>'notification','entity_id'=>$r['id'],'locale'=>$r['locale']))->result_array() as $text) {
+                    if ($text['field']==='title') { $subject=$text['value']; } elseif ($text['field']==='body') { $body=$text['value']; }
+                }
+            }
             $ok = false;
             $error = null;
             try {
@@ -209,7 +223,8 @@ class Ha_notify {
                 $this->CI->email->from($from ?: 'no-reply@localhost');
                 $this->CI->email->to($r['email']);
                 $this->CI->email->subject($subject);
-                $this->CI->email->message('<div dir="' . ($ar ? 'rtl' : 'ltr') . '">' . nl2br(htmlspecialchars($body, ENT_QUOTES, 'UTF-8')) . '</div>');
+                require_once APPPATH.'helpers/ha_locale_helper.php';
+                $this->CI->email->message('<div lang="'.htmlspecialchars($r['locale'] ?: 'en',ENT_QUOTES,'UTF-8').'" dir="' . ha_locale_dir($r['locale'] ?: 'en') . '">' . nl2br(htmlspecialchars($body, ENT_QUOTES, 'UTF-8')) . '</div>');
                 $ok = @$this->CI->email->send(false);
                 if (!$ok) {
                     $error = 'The mail transport refused the message.';
@@ -231,8 +246,9 @@ class Ha_notify {
     }
 
     public function inbox($user_id, $limit = 50) {
-        return $this->CI->db->where(array('user_id' => (int) $user_id, 'channel' => 'in_app'))
+        $rows = $this->CI->db->where(array('user_id' => (int) $user_id, 'channel' => 'in_app'))
             ->order_by('id', 'DESC')->limit($limit)->get('ha_notification')->result_array();
+        foreach ($rows as &$row) { $row['_ha_entity']='notification'; } unset($row); return $rows;
     }
 
     public function mark_read($user_id, $id = null) {

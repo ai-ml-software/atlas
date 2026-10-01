@@ -42,6 +42,7 @@ class Ha_lms_i18n {
         if ($this->locale === null) {
             $this->locale = 'en';
             $column = (string) $this->CI->session->userdata('language');
+            if (ha_locale_enabled($column)) { $this->locale = $column; }
             foreach ((array) ha_locale_config()['legacy'] as $code => $col) {
                 if ($col === $column && ha_locale_enabled($code)) {
                     $this->locale = $code;
@@ -76,6 +77,8 @@ class Ha_lms_i18n {
     private function find($table, $id, $course_id) {
         $this->load($course_id);
         $key = $table . ':' . (int) $id;
+        $course_link=isset($this->links['course:'.(int)$course_id]) ? $this->links['course:'.(int)$course_id] : null;
+        if ($course_link) { $this->CI->load->library('ha_library_review'); if (!$this->CI->ha_library_review->translation_current($course_link[1],$this->locale())) { return null; } }
         return isset($this->links[$key]) ? $this->links[$key] : null;
     }
 
@@ -237,6 +240,7 @@ class Ha_lms_i18n {
             }
             $explanation = $this->pair($hq, 'explanation', 'question', $link[1], 'explanation');
             $rows[$i]['explanation'] = $explanation !== null ? $explanation : $hq['explanation_en'];
+            if ($this->CI->db->field_exists('ha_retired_at','ha_question_option')) { $this->CI->db->where('ha_retired_at', null); }
             $opts = $this->CI->db->order_by('sort_order', 'ASC')->get_where('ha_question_option', array('question_id' => $link[1]))->result_array();
             $current = json_decode((string) $q['options'], true);
             if ($opts && is_array($current) && count($opts) === count($current)) {

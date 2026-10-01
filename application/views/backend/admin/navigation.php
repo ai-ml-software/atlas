@@ -41,6 +41,7 @@
                 <li><a href="<?php echo site_url('hkp/exec'); ?>">Executive dashboard</a></li>
                 <li><a href="<?php echo site_url('hkp/admin'); ?>">Administration</a></li>
                 <li><a href="<?php echo site_url('hkp/admin/curriculum'); ?>">Curriculum &amp; tracks</a></li>
+                <li><a href="<?php echo site_url('hkp/admin/library'); ?>"><?php echo get_phrase('library_and_language_coverage'); ?></a></li>
                 <li><a href="<?php echo site_url('hkp/admin/competencies'); ?>">Competencies &amp; rubrics</a></li>
                 <li><a href="<?php echo site_url('hkp/knowledge'); ?>">Knowledge centre</a></li>
                 <li><a href="<?php echo site_url('hkp/admin/ai'); ?>">Governed AI</a></li>

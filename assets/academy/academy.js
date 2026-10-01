@@ -127,7 +127,8 @@
 
             items.forEach(function (li) {
                 used += li.getBoundingClientRect().width + gap;
-                if (used > avail - 90) { overflow.push(li); }   // 90px reserves the More control
+                // The mega-menu item never moves: its panel belongs to the bar, not to the More list.
+                if (used > avail - 90 && !li.hasAttribute('data-ha-mega')) { overflow.push(li); }   // 90px reserves the More control
             });
 
             if (!overflow.length) {

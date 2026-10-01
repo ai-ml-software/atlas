@@ -64,7 +64,7 @@ class Academy extends CI_Controller {
             // channel; the pipeline is built and simply has nothing assigned
             // yet. Naming the host here means enabling video is not also a
             // security-header change made in a hurry.
-            "frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://player.vimeo.com",
+            "frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://player.vimeo.com https://www.dailymotion.com https://geo.dailymotion.com",
             "media-src 'self'",
             "object-src 'none'",
             "base-uri 'self'",
@@ -158,6 +158,9 @@ class Academy extends CI_Controller {
         $data['dir'] = $data['rtl'] ? 'rtl' : 'ltr';
         $data['seo'] = $this->ha_seo;
         $data['menu'] = $this->ha_catalog->menu('public_header', $this->locale);
+        // The founders' contact lines for the footer, the mega menu and the profile book (Admin → Leadership profiles).
+        $this->load->library('ha_corporate');
+        $data['founders'] = $this->db->table_exists('ha_leadership_profile') ? $this->ha_corporate->locale($this->locale)->leaders() : array();
         $data['t'] = $this->phrases();
         return $data;
     }
@@ -316,9 +319,89 @@ class Academy extends CI_Controller {
 
     // ------------------------------------------------------------------ home
 
+    /**
+     * Home: the Altus Gulf corporate home (2026 Corporate Profile), with the
+     * academy catalogue kept as one section of it. Built for search (keyword-led
+     * H1 and meta, a link into every page), for answer engines (an answer-first
+     * summary and a FAQ marked up as FAQPage) and for generative/geo search
+     * (Organization + ProfessionalService with Riyadh/Saudi geo, founders, area
+     * served, the Ascent method as HowTo). Copy lives in ha_corporate_block, so
+     * it is editable in the workspace; seed 010 writes it.
+     */
     public function home($locale = 'en') {
         $this->boot($locale);
+        $this->load->library('ha_corporate');
+        $co = $this->ha_corporate->locale($this->locale);
+        $b = $co->blocks(array('home_seo', 'home_hero', 'home_answer', 'hero', 'hero_stats', 'about', 'why', 'why_uvp', 'platform', 'platform_features',
+            'platform_layers', 'platform_domains', 'platform_value', 'platform_compare_intro', 'platform_compare', 'ascent_intro', 'ascent', 'market', 'market_kpi',
+            'market_sources', 'vision2030_intro', 'vision2030', 'sectors_intro', 'division', 'goppar', 'home_faq', 'closing'));
+        if (!$b['home_hero']) {
+            return $this->legacy_home();
+        }
+        $seo = $b['home_seo'] ? $b['home_seo'][0] : array('title' => 'Altus Gulf', 'body' => '');
+        $faqs = array_map(function ($f) { return array('question' => $f['title'], 'answer' => $f['body']); }, $b['home_faq']);
 
+        $this->ha_seo->prepare($this->locale, '', array('route_key' => 'altus-home'), array('title' => $seo['title'], 'description' => $seo['body']));
+        $this->ha_seo->set_alternate('');
+        if ($faq_schema = $this->ha_seo->faq_schema($faqs)) {
+            $this->ha_seo->add_schema($faq_schema);
+        }
+        $leaders = $co->leaders();
+        $home = $this->ha_seo->url('');
+        $org = array(
+            '@type' => array('Organization', 'ProfessionalService'),
+            '@id' => $this->ha_seo->base_url() . '#organization',
+            'name' => 'Altus Gulf',
+            'alternateName' => array('Altus Advisory', 'Altus Knowledge and Performance'),
+            'slogan' => 'Elevating Hospitality & Business Performance',
+            'description' => $b['home_answer'] ? $b['home_answer'][0]['body'] : '',
+            'url' => $home,
+            'logo' => base_url('uploads/system/altus-logo-stacked.png'),
+            'image' => base_url('uploads/system/altus-logo-horizontal.png'),
+            'address' => array('@type' => 'PostalAddress', 'addressLocality' => 'Riyadh', 'addressRegion' => 'Riyadh Province', 'addressCountry' => 'SA'),
+            'geo' => array('@type' => 'GeoCoordinates', 'latitude' => 24.7136, 'longitude' => 46.6753),
+            'areaServed' => array(array('@type' => 'Country', 'name' => 'Saudi Arabia'), array('@type' => 'Place', 'name' => 'GCC'), array('@type' => 'Place', 'name' => 'Middle East and North Africa')),
+            'knowsLanguage' => array('ar', 'en'),
+            'knowsAbout' => array('Hospitality consulting', 'Hotel owner representation', 'Hotel pre-opening', 'Hotel feasibility studies', 'Hotel management agreements (HMA)',
+                'Revenue management', 'GOPPAR', 'Applied AI for hospitality', 'Digital transformation', 'Hospitality training and certification', 'Saudi Vision 2030'),
+            'founder' => array_map(function ($l) { return array('@type' => 'Person', 'name' => $l['name'], 'jobTitle' => $l['role']); }, $leaders),
+            'contactPoint' => array(
+                array('@type' => 'ContactPoint', 'contactType' => 'sales', 'telephone' => '+966500511994', 'areaServed' => 'SA', 'availableLanguage' => array('Arabic', 'English')),
+                array('@type' => 'ContactPoint', 'contactType' => 'sales', 'telephone' => '+201095556779', 'availableLanguage' => array('Arabic', 'English')),
+            ),
+            'hasOfferCatalog' => array('@type' => 'OfferCatalog', 'name' => ha_pt('Advisory Services'), 'itemListElement' => array_map(function ($s) {
+                return array('@type' => 'Offer', 'itemOffered' => array('@type' => 'Service', 'name' => $s['title']));
+            }, array_merge($co->services()['hospitality'], $co->services()['business_growth']))),
+        );
+        $this->ha_seo->add_schema($org);
+        $this->ha_seo->add_schema(array('@type' => 'WebSite', 'name' => 'Altus Gulf', 'url' => $home, 'inLanguage' => $this->locale,
+            'publisher' => array('@id' => $this->ha_seo->base_url() . '#organization'),
+            'potentialAction' => array('@type' => 'SearchAction', 'target' => $this->ha_seo->url('search') . '?q={search_term_string}', 'query-input' => 'required name=search_term_string')));
+        if ($b['ascent']) {
+            $this->ha_seo->add_schema(array('@type' => 'HowTo', 'name' => ha_pt('The Altus Ascent™ Framework'), 'inLanguage' => $this->locale,
+                'step' => array_map(function ($s, $i) { return array('@type' => 'HowToStep', 'position' => $i + 1, 'name' => $s['title'], 'text' => $s['body']); }, $b['ascent'], array_keys($b['ascent']))));
+        }
+        $this->ha_seo->add_schema(array('@type' => 'ItemList', 'name' => 'Altus Gulf', 'itemListElement' => array_map(function ($p, $i) {
+            return array('@type' => 'SiteNavigationElement', 'position' => $i + 1, 'name' => ha_pt($p[1]), 'url' => $this->ha_seo->url($p[0]));
+        }, $this->home_links(), array_keys($this->home_links()))));
+
+        $this->render('home_altus', array(
+            'b' => $b, 'faqs' => $faqs, 'leaders' => $leaders, 'cases' => $co->cases(), 'sectors' => $co->sectors(), 'services' => $co->services(),
+            'courses' => $this->ha_catalog->courses($this->locale, array('sort' => 'newest', 'limit' => 6)),
+            'articles' => $this->ha_catalog->articles($this->locale, array('limit' => 3)),
+            'level_label' => array($this, 'level_label'),
+        ));
+    }
+
+    /** The pages the home page links into, in reading order (also the ItemList above). */
+    private function home_links() {
+        return array(array('about-altus', 'About'), array('services', 'Services'), array('knowledge-performance', 'Altus Knowledge and Performance'),
+            array('ascent', 'Ascent'), array('market', 'Market'), array('case-studies', 'Case Studies'), array('leadership', 'Leadership'),
+            array('courses', 'Courses'), array('contact', 'Contact'));
+    }
+
+    /** The academy home, kept for a database the corporate seed has not reached yet. */
+    private function legacy_home() {
         $page = $this->ha_catalog->page('home', $this->locale);
         if (!$page) {
             return $this->not_found();
@@ -837,6 +920,41 @@ class Academy extends CI_Controller {
             }
         }
         $this->render('altus', $data);
+    }
+
+    /**
+     * The 2026 Corporate Profile as a book: the deck's pages exported as images
+     * (uploads/academy/profile/{en,ar}), turned with GSAP, with every page's text
+     * in the HTML so it reads and indexes without the images. Languages other
+     * than en/ar show the English edition. The deck's last slide carries
+     * placeholder contact lines, so the book closes on an HTML back cover with the
+     * real contact details instead.
+     */
+    public function profile($locale = 'en') {
+        $this->boot($locale);
+        $edition = $this->locale === 'ar' ? 'ar' : 'en';
+        $file = FCPATH . 'uploads/academy/profile/' . $edition . '/pages.json';
+        $pages = is_file($file) ? json_decode(file_get_contents($file), true) : array();
+        if (!$pages) {
+            return $this->not_found();
+        }
+        $pages = array_values(array_filter($pages, function ($p) { return (int) $p['n'] < 25; }));
+        $title = ha_pt('Altus Gulf Corporate Profile 2026');
+        $this->ha_seo->prepare($this->locale, 'profile', array('route_key' => 'altus-profile'), array(
+            'title' => $title . ' | ' . $this->ha_seo->brand(),
+            'description' => ha_pt('Read the Altus Gulf 2026 Corporate Profile online: hospitality and business advisory in Saudi Arabia, the Altus Ascent™ Framework, market data, case studies and the founders.'),
+            'image' => 'uploads/academy/profile/' . $edition . '/01.webp',
+        ));
+        $this->ha_seo->set_alternate('profile');
+        $this->ha_seo->set_locales(array('en', 'ar'));
+        $this->ha_seo->breadcrumb($title, 'profile');
+        $this->ha_seo->add_schema(array('@type' => 'Book', 'name' => $title, 'bookFormat' => 'EBook', 'inLanguage' => $edition,
+            'numberOfPages' => count($pages) + 1, 'datePublished' => '2026',
+            'author' => array('@type' => 'Organization', 'name' => 'Altus Gulf'),
+            'workTranslation' => array('@type' => 'Book', 'inLanguage' => $edition === 'ar' ? 'en' : 'ar', 'url' => base_url(($edition === 'ar' ? 'en' : 'ar') . '/profile'))));
+        $this->load->library('ha_corporate');
+        $this->render('profile_book', array('pages' => $pages, 'edition' => $edition, 'page_title' => $title,
+            'leaders' => $this->ha_corporate->locale($this->locale)->leaders(), 'closing' => $this->ha_corporate->block('closing')));
     }
 
     public function about($locale = 'en')       { $this->page($locale, 'about'); }

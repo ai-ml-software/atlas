@@ -81,6 +81,7 @@ class Seed_i18n extends Ha_seeder {
 
     /** The legacy app lists a language in its menus only when {column}.json exists. */
     protected function write_json($col) {
+        if (defined('HA_TEST_RUNNING') && HA_TEST_RUNNING) { return; }
         $rows = $this->db->select("phrase, `$col` AS t", false)->where("`$col` IS NOT NULL", null, false)->where("`$col` !=", '')->get('language')->result_array();
         $map = array();
         foreach ($rows as $r) {

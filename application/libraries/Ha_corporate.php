@@ -132,7 +132,10 @@ class Ha_corporate {
             $lines = function ($text) { return array_values(array_filter(array_map('trim', preg_split('/\R/u', (string) $text)), 'strlen')); };
             $out[] = array('id' => (int) $l['id'], 'slug' => $l['slug'], 'name' => $this->pick($l, 'name'), 'role' => $this->pick($l, 'role'),
                 'bio' => $this->pick($l, 'biography'), 'track' => $lines($this->pick($l, 'track_record')),
-                'recognition' => $lines($this->pick($l, 'recognition')), 'photo' => (string) $l['photo_path'], 'linkedin' => (string) $l['linkedin_url']);
+                'recognition' => $lines($this->pick($l, 'recognition')), 'photo' => (string) $l['photo_path'], 'linkedin' => (string) $l['linkedin_url'],
+                'email' => (string) ($l['email'] ?? ''), 'phone' => (string) ($l['phone'] ?? ''), 'phone_digits' => preg_replace('/\D/', '', (string) ($l['phone'] ?? '')),
+                'social' => array_filter(array('linkedin' => (string) $l['linkedin_url'], 'facebook' => (string) ($l['facebook_url'] ?? ''),
+                    'instagram' => (string) ($l['instagram_url'] ?? ''), 'x' => (string) ($l['x_url'] ?? '')), 'strlen'));
         }
         return $out;
     }

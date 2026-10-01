@@ -82,11 +82,15 @@ $ha_custom_css = trim((string) get_frontend_settings('custom_css'));
     <link rel="stylesheet" href="<?= base_url('assets/academy/altus-chrome.css') ?>">
     <?php /* Altus Gulf corporate pages (About, Services, Ascent, Market, Case Studies, Leadership). */ ?>
     <link rel="stylesheet" href="<?= base_url('assets/academy/altus-corporate.css') ?>">
+    <?php /* The approved reference theme (dark editorial, photographic), loaded last over everything above. */ ?>
+    <link rel="stylesheet" href="<?= base_url('assets/academy/altus-theme.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/academy/library.css') ?>">
+    <?php if ($view === 'profile_book'): ?><link rel="stylesheet" href="<?= base_url('assets/academy/profile-book.css') ?>"><?php endif; ?>
     <?php if ($ha_custom_css !== ''): ?>
         <style><?= $ha_custom_css ?></style>
     <?php endif; ?>
 </head>
-<body class="ha ha--<?= $locale ?><?= $is_rtl ? ' ha--rtl' : '' ?><?= in_array($locale, array('en', 'tl'), true) ? '' : ' ha--intl' ?>">
+<body class="ha ha--<?= $locale ?><?= $is_rtl ? ' ha--rtl' : '' ?><?= in_array($locale, array('en', 'tl'), true) ? '' : ' ha--intl' ?><?= in_array($view, array('home_altus', 'profile_book'), true) ? ' ha--overlay' : '' ?>">
 
 <a class="ha-skip" href="#ha-main"><?= html_escape($t['skip_to_content']) ?></a>
 
@@ -99,6 +103,7 @@ $ha_custom_css = trim((string) get_frontend_settings('custom_css'));
  */
 $ha_social = array(
     'linkedin'  => ha_chrome('ha_social_linkedin', $locale),
+    'facebook'  => ha_chrome('ha_social_facebook', $locale),
     'instagram' => ha_chrome('ha_social_instagram', $locale),
     'youtube'   => ha_chrome('ha_social_youtube', $locale),
     'x'         => ha_chrome('ha_social_x', $locale),
@@ -106,37 +111,71 @@ $ha_social = array(
 $ha_social = array_filter($ha_social, function ($v) { return trim((string) $v) !== ''; });
 ?>
 <div class="ha-chrome" data-ha-chrome>
-    <div class="ha-rail">
-        <div class="ha-shell ha-rail__inner">
-            <p class="ha-rail__note"><?= html_escape(ha_chrome('ha_rail_note', $locale)) ?></p>
-            <nav class="ha-rail__links" aria-label="<?= ha_pe('Utility') ?>">
-                <a href="<?= base_url($locale . '/verify') ?>"><?= html_escape($t['verify_title']) ?></a>
-                <a href="<?= base_url($locale . '/contact') ?>"><?= html_escape($t['contact']) ?></a>
-                <details class="ha-langmenu" data-ha-langmenu>
-                    <summary class="ha-rail__lang" aria-label="<?= ha_pe('Language') ?>"><span lang="<?= $locale ?>"><?= html_escape(ha_locale_name($locale)) ?></span></summary>
-                    <ul class="ha-langmenu__list" role="list">
-                        <?php foreach ($lang_links as $lc => $href): ?>
-                        <li><a href="<?= html_escape($href) ?>" hreflang="<?= $lc ?>" lang="<?= $lc ?>" dir="<?= ha_locale_dir($lc) ?>" data-ha-lang-switch<?= $lc === $locale ? ' aria-current="true"' : '' ?>><?= html_escape(ha_locale_name($lc)) ?></a></li>
-                        <?php endforeach; ?>
-                    </ul>
-                </details>
-            </nav>
-        </div>
-    </div>
-
     <div class="ha-mast">
         <div class="ha-shell ha-mast__inner">
 
             <div class="ha-mast__row">
                 <a class="ha-mast__brand" href="<?= base_url($locale) ?>">
-                    <?php if ($ha_logo_header !== ''): ?>
-                        <img class="ha-mast__logo" src="<?= $ha_logo_header ?>" alt="<?= html_escape($ha_brand_name) ?>">
+                    <?php if (($ha_logo_footer ?: $ha_logo_header) !== ''): ?>
+                        <?php /* The bar is dark in this theme: light-on-dark lockup. */ ?>
+                        <img class="ha-mast__logo" src="<?= $ha_logo_footer ?: $ha_logo_header ?>" alt="<?= html_escape($ha_brand_name) ?>" width="186" height="40">
                     <?php else: ?>
                         <span class="ha-brand__name"><?= html_escape($ha_brand_name) ?></span>
                     <?php endif; ?>
                 </a>
 
+                            <nav class="ha-mast__nav" id="ha-nav" aria-label="<?= html_escape($ha_brand_name) ?>">
+                    <?php /* Visible only while the panel is a panel; Escape and the scrim also close it. */ ?>
+                    <button class="ha-iconbtn ha-mast__close" type="button" data-ha-nav-close
+                            aria-label="<?= ha_pe('Close menu') ?>">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                             stroke-linecap="round" aria-hidden="true" focusable="false">
+                            <path d="M6 6l12 12M18 6L6 18"/>
+                        </svg>
+                    </button>
+                    <ul>
+                        <?php foreach ($menu as $item):
+                            $item_path = $locale . ($item['url'] === '' ? '' : '/' . $item['url']);
+                            if ($item['url'] === 'knowledge-performance'): ?>
+                            <?php /* Mega menu: the platform, the academy (learn, resources, company), the profile book and the founders. */ ?>
+                            <li class="ha-mega" data-ha-mega>
+                                <span class="ha-mega__head">
+                                    <a href="<?= base_url($item_path) ?>"><?= html_escape($item['label']) ?></a>
+                                    <button class="ha-mega__toggle" type="button" aria-expanded="false" aria-controls="ha-mega-panel" data-ha-mega-toggle>
+                                        <span class="ha-visually-hidden"><?= ha_pe('Show the academy menu') ?></span>
+                                        <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+                                    </button>
+                                </span>
+                                <?php $this->load->view('academy/_mega', array('locale' => $locale, 't' => $t, 'rtl' => $is_rtl, 'founders' => isset($founders) ? $founders : array())); ?>
+                            </li>
+                            <?php else: ?>
+                            <li><a href="<?= base_url($item_path) ?>"><?= html_escape($item['label']) ?></a></li>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+                        <?php /* Filled by academy.js with whatever does not fit; hidden when everything does. */ ?>
+                        <li class="ha-more" data-ha-more>
+                            <button class="ha-more__btn" type="button" aria-expanded="false" aria-haspopup="true">
+                                <?= ha_pe('More') ?>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                                    <path d="M5 9l7 7 7-7"/>
+                                </svg>
+                            </button>
+                            <ul class="ha-more__panel"></ul>
+                        </li>
+                    </ul>
+                </nav>
+
                 <div class="ha-mast__actions">
+                    <details class="ha-langmenu" data-ha-langmenu>
+                        <summary class="ha-rail__lang" aria-label="<?= ha_pe('Language') ?>: <?= html_escape(ha_locale_name($locale)) ?>"><span lang="<?= $locale ?>" aria-hidden="true"><?= strtoupper($locale) ?></span></summary>
+                        <ul class="ha-langmenu__list" role="list">
+                            <?php foreach ($lang_links as $lc => $href): ?>
+                            <li><a href="<?= html_escape($href) ?>" hreflang="<?= $lc ?>" lang="<?= $lc ?>" dir="<?= ha_locale_dir($lc) ?>" data-ha-lang-switch<?= $lc === $locale ? ' aria-current="true"' : '' ?>><?= html_escape(ha_locale_name($lc)) ?></a></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </details>
+
                     <form class="ha-mast__search" data-ha-search action="<?= base_url($locale . '/search') ?>" method="get" role="search">
                         <label class="ha-visually-hidden" for="ha-q"><?= html_escape($t['search']) ?></label>
                         <input id="ha-q" type="search" name="q" placeholder="<?= html_escape($t['search_placeholder']) ?>"
@@ -167,7 +206,7 @@ $ha_social = array_filter($ha_social, function ($v) { return trim((string) $v) !
                         </a>
                     <?php else: ?>
                         <a class="ha-mast__signin" href="<?= base_url('login') ?>"><?= ha_pe('Login') ?></a>
-                        <a class="ha-mast__cta" href="<?= base_url('sign_up') ?>"><?= ha_pe('Join Now') ?></a>
+                        <a class="ha-mast__cta" href="<?= base_url($locale . '/contact') ?>"><?= ha_pe('Get in Touch') ?> <span aria-hidden="true">→</span></a>
                     <?php endif; ?>
 
                     <button class="ha-iconbtn ha-mast__burger" type="button" data-ha-nav-toggle
@@ -181,33 +220,7 @@ $ha_social = array_filter($ha_social, function ($v) { return trim((string) $v) !
                 </div>
             </div>
 
-            <nav class="ha-mast__nav" id="ha-nav" aria-label="<?= html_escape($ha_brand_name) ?>">
-                <?php /* Visible only while the panel is a panel; Escape and the scrim also close it. */ ?>
-                <button class="ha-iconbtn ha-mast__close" type="button" data-ha-nav-close
-                        aria-label="<?= ha_pe('Close menu') ?>">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
-                         stroke-linecap="round" aria-hidden="true" focusable="false">
-                        <path d="M6 6l12 12M18 6L6 18"/>
-                    </svg>
-                </button>
-                <ul>
-                    <?php foreach ($menu as $item):
-                        $item_path = $locale . ($item['url'] === '' ? '' : '/' . $item['url']); ?>
-                        <li><a href="<?= base_url($item_path) ?>"><?= html_escape($item['label']) ?></a></li>
-                    <?php endforeach; ?>
-                    <?php /* Filled by academy.js with whatever does not fit; hidden when everything does. */ ?>
-                    <li class="ha-more" data-ha-more>
-                        <button class="ha-more__btn" type="button" aria-expanded="false" aria-haspopup="true">
-                            <?= ha_pe('More') ?>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-                                <path d="M5 9l7 7 7-7"/>
-                            </svg>
-                        </button>
-                        <ul class="ha-more__panel"></ul>
-                    </li>
-                </ul>
-            </nav>
+
 
         </div>
     </div>
@@ -242,19 +255,23 @@ $ha_social = array_filter($ha_social, function ($v) { return trim((string) $v) !
     <?php endif; ?>
     <div class="ha-shell ha-foot__inner">
 
-        <div class="ha-foot__lead">
-            <div>
+        <?php /* Reference footer row: logo, the corporate menu, the place. */ ?>
+        <div class="ha-foot__top">
+            <a href="<?= base_url($locale) ?>" aria-label="<?= html_escape($ha_brand_name) ?>">
                 <?php if ($ha_logo_footer !== ''): ?>
-                    <img class="ha-foot__logo" src="<?= $ha_logo_footer ?>" alt="<?= html_escape($ha_brand_name) ?>">
+                    <img class="ha-foot__logo" src="<?= $ha_logo_footer ?>" alt="<?= html_escape($ha_brand_name) ?>" width="186" height="40" loading="lazy">
                 <?php else: ?>
-                    <p class="ha-footer__name"><?= html_escape($ha_brand_name) ?></p>
+                    <span class="ha-footer__name"><?= html_escape($ha_brand_name) ?></span>
                 <?php endif; ?>
-                <p class="ha-foot__statement"><?= html_escape(ha_chrome('ha_footer_statement', $locale)) ?></p>
-            </div>
-            <a class="ha-foot__cta" href="<?= base_url($locale . '/contact') ?>">
-                <?= html_escape($t['contact']) ?>
             </a>
+            <nav class="ha-foot__nav" aria-label="<?= ha_pe('Footer') ?>">
+                <?php foreach ($menu as $item): ?>
+                    <a href="<?= base_url($locale . ($item['url'] === '' ? '' : '/' . $item['url'])) ?>"><?= html_escape($item['label']) ?></a>
+                <?php endforeach; ?>
+            </nav>
+            <p class="ha-foot__place"><?= ha_pe('Riyadh') ?> | <?= ha_pe('Saudi Arabia') ?> | <?= ha_pe('GCC') ?></p>
         </div>
+        <p class="ha-foot__statement"><?= html_escape(ha_chrome('ha_footer_statement', $locale)) ?></p>
 
         <?php
         /*
@@ -264,18 +281,7 @@ $ha_social = array_filter($ha_social, function ($v) { return trim((string) $v) !
          * structure and a scanning eye finds the right third of it.
          */
         $ha_foot_groups = array(
-            array(
-                'title' => 'Altus Gulf',
-                'links' => array(
-                    array('about-altus', ha_pt('About')),
-                    array('services', ha_pt('Services')),
-                    array('knowledge-performance', ha_pt('Altus Knowledge and Performance')),
-                    array('ascent', ha_pt('Ascent')),
-                    array('market', ha_pt('Market')),
-                    array('case-studies', ha_pt('Case Studies')),
-                    array('leadership', ha_pt('Leadership')),
-                ),
-            ),
+            // The corporate pages are the footer's top row (the header menu); the groups below are the academy.
             array(
                 'title' => ha_pt('Learn'),
                 'links' => array(
@@ -330,53 +336,37 @@ $ha_social = array_filter($ha_social, function ($v) { return trim((string) $v) !
                         <a href="tel:<?= html_escape(preg_replace('/[^\d+]/', '', $ha_phone)) ?>" dir="ltr"><?= html_escape($ha_phone) ?></a>
                     <?php endif; ?>
                 </div>
-                <?php if ($ha_social): ?>
-                    <div class="ha-foot__social">
-                        <?php
-                        // Drawn at one stroke weight, matching the guide's
-                        // "minimal, thin-line vectors only" rule for iconography.
-                        $ha_icons = array(
-                            'linkedin'  => '<path d="M5.5 8.5v10M5.5 5.2v.1M10.5 18.5v-10M10.5 12.2c0-2 1.4-3.2 3.2-3.2 1.9 0 3.3 1.2 3.3 3.5v6"/>',
-                            'instagram' => '<rect x="4.2" y="4.2" width="15.6" height="15.6" rx="4.4"/><circle cx="12" cy="12" r="3.6"/><path d="M16.8 7.2v.1"/>',
-                            'youtube'   => '<rect x="3.2" y="6" width="17.6" height="12" rx="3.6"/><path d="M10.5 9.6l4.6 2.4-4.6 2.4z"/>',
-                            'x'         => '<path d="M5 5l14 14M19 5L5 19"/>',
-                        );
-                        $ha_names = array('linkedin' => 'LinkedIn', 'instagram' => 'Instagram',
-                                          'youtube' => 'YouTube', 'x' => 'X');
-                        foreach ($ha_social as $key => $url): ?>
-                            <a href="<?= html_escape($url) ?>" rel="noopener noreferrer" target="_blank"
-                               aria-label="<?= html_escape($ha_names[$key]) ?>">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
-                                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-                                    <?= $ha_icons[$key] ?>
-                                </svg>
-                            </a>
-                        <?php endforeach; ?>
-                    </div>
-                <?php endif; ?>
+                <?= ha_social_icons($ha_social + array('email' => $ha_email), 'ha-foot__social', 'Altus Gulf') ?>
             </div>
         </div>
 
         <?php
         /*
-         * The founders' direct lines, as on the Altus Gulf corporate site. Stored as
-         * site settings (ha_founder_*), so a number changes in the admin panel, not
-         * in a deploy; the shipped values are the published ones.
+         * The founders, from Admin → Leadership profiles: portrait, phone (call and
+         * WhatsApp), e-mail and their own social links. The shipped settings are the
+         * fallback for a database the profiles have not reached yet.
          */
-        $ha_founders = array(
-            array(ha_chrome('ha_founder_1_name', $locale), ha_chrome('ha_founder_1_role', $locale), ha_chrome('ha_founder_1_phone', $locale)),
-            array(ha_chrome('ha_founder_2_name', $locale), ha_chrome('ha_founder_2_role', $locale), ha_chrome('ha_founder_2_phone', $locale)),
+        $ha_people = !empty($founders) ? $founders : array(
+            array('name' => ha_chrome('ha_founder_1_name', $locale), 'role' => ha_chrome('ha_founder_1_role', $locale), 'phone' => ha_chrome('ha_founder_1_phone', $locale), 'email' => '', 'photo' => '', 'social' => array(), 'slug' => ''),
+            array('name' => ha_chrome('ha_founder_2_name', $locale), 'role' => ha_chrome('ha_founder_2_role', $locale), 'phone' => ha_chrome('ha_founder_2_phone', $locale), 'email' => '', 'photo' => '', 'social' => array(), 'slug' => ''),
         );
         ?>
         <div class="ha-foot__founders" aria-label="<?= ha_pe('Speak to a founder') ?>">
-            <?php foreach ($ha_founders as $f): if (trim((string) $f[2]) === '') continue; $digits = preg_replace('/\D/', '', $f[2]); ?>
+            <?php foreach ($ha_people as $f): $digits = preg_replace('/\D/', '', (string) $f['phone']); ?>
                 <div class="ha-foot__founder">
-                    <strong><?= html_escape($f[0]) ?></strong>
-                    <span><?= html_escape($f[1]) ?></span>
-                    <span dir="ltr"><?= html_escape($f[2]) ?></span>
-                    <div class="ha-foot__actions">
-                        <a href="https://wa.me/<?= $digits ?>" rel="noopener noreferrer" target="_blank"><?= ha_pe('WhatsApp') ?></a>
-                        <a href="tel:+<?= $digits ?>"><?= ha_pe('Call') ?></a>
+                    <?php if ($f['photo'] !== ''): ?><img class="ha-foot__face" src="<?= base_url(str_replace('.webp', '-sm.webp', $f['photo'])) ?>" alt="<?= html_escape($f['name']) ?>" width="56" height="56" loading="lazy"><?php endif; ?>
+                    <div>
+                        <strong><?= html_escape($f['name']) ?></strong>
+                        <span><?= ha_pe('Co-Founder') ?></span>
+                        <?php if ($digits !== ''): ?><a class="ha-foot__tel" href="tel:+<?= $digits ?>" dir="ltr"><?= html_escape($f['phone']) ?></a><?php endif; ?>
+                        <?php if ($f['email'] !== ''): ?><a class="ha-foot__mail" href="mailto:<?= html_escape($f['email']) ?>"><?= html_escape($f['email']) ?></a><?php endif; ?>
+                        <div class="ha-foot__actions">
+                            <?php if ($digits !== ''): ?>
+                                <a href="https://wa.me/<?= $digits ?>" rel="noopener noreferrer" target="_blank"><?= ha_pe('WhatsApp') ?></a>
+                                <a href="tel:+<?= $digits ?>"><?= ha_pe('Call') ?></a>
+                            <?php endif; ?>
+                            <?= ha_social_icons($f['social'], 'ha-foot__person-social', $f['name']) ?>
+                        </div>
                     </div>
                 </div>
             <?php endforeach; ?>
@@ -390,11 +380,16 @@ $ha_social = array_filter($ha_social, function ($v) { return trim((string) $v) !
                 <a href="<?= base_url($locale . '/privacy') ?>"><?= html_escape($t['privacy']) ?></a>
                 <a href="<?= base_url($locale . '/terms') ?>"><?= html_escape($t['terms']) ?></a>
                 <a href="<?= base_url($locale . '/credits') ?>"><?= ha_pe('Photo credits') ?></a>
+                <a href="<?= base_url('sign_up') ?>"><?= ha_pe('Join Now') ?></a>
+                <a href="<?= base_url('sitemap.xml') ?>"><?= ha_pe('Sitemap') ?></a>
             </nav>
         </div>
     </div>
 </footer>
 
+<?php /* GSAP drives the mega menu reveal and the profile book. Self-hosted: the CSP allows 'self' only. */ ?>
+<script src="<?= base_url('assets/vendor/gsap/gsap.min.js') ?>" defer></script>
 <script src="<?= base_url('assets/academy/academy.js') ?>" defer></script>
+<script src="<?= base_url('assets/academy/mega.js') ?>" defer></script>
 </body>
 </html>

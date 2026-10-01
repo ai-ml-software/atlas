@@ -10,7 +10,7 @@ require_once APPPATH . 'helpers/ha_locale_helper.php';
  *   course  = one deck                 ha_course            code dy-<slug>
  *   chapter = a part of the deck       ha_course_section    (course, sort_order)
  *   lesson  = a reading chapter        ha_lesson            (course, sort_order)
- *             + an optional verified YouTube video           ha_lesson_video_source
+ *             + an optional unverified video candidate      ha_lesson_video_source
  *   quiz    = 4 scenario questions after every lesson       ha_assessment as-dy-<slug>-<n>
  *
  * Every lesson has completion_rule = quiz: the lesson counts as done only when
@@ -29,6 +29,10 @@ require_once APPPATH . 'helpers/ha_locale_helper.php';
  */
 class Seed_library extends Ha_seeder {
 
+    private $review;
+    private $publishing = false;
+    private $release_locale = null;
+
     const PREFIX = 'dy-';
     const PASS = 75;
     const ATTEMPTS = 10;
@@ -45,20 +49,57 @@ class Seed_library extends Ha_seeder {
 
     public function run($db) {
         $this->boot($db);
-        $files = glob(APPPATH . 'seeds/library/*.json');
+        $CI =& get_instance();
+        $CI->load->library('ha_library_review');
+        $this->review = $CI->ha_library_review;
+        $files = array_values($this->review->course_files());
         if (!$files || !$this->db->table_exists('ha_course')) {
             return 0;
         }
         sort($files);
-        $n = $this->categories();
+        $n = 0;
         foreach ($files as $file) {
             $course = json_decode(file_get_contents($file), true);
             if (!is_array($course) || empty($course['slug']) || empty($course['locales']['en'])) {
-                continue;
+                throw new RuntimeException('Invalid PDF course seed: ' . basename($file));
             }
+            $this->review->stage($course);
+            $existing = $db->get_where('ha_course', array('code' => self::PREFIX . $course['slug']))->row_array();
+            // Published content stays available while its replacement is reviewed.
+            if ($existing && $existing['status'] === 'published') { continue; }
+            if (!$n) { $n += $this->categories(); }
             $n += $this->course($course);
         }
         return $n;
+    }
+
+    /** Called only after the review service's complete readiness gate passes. */
+    public function import_reviewed($db, array $course, $locale = 'en') {
+        $this->boot($db);
+        $CI =& get_instance(); $CI->load->library('ha_library_review'); $this->review = $CI->ha_library_review;
+        $this->publishing = true;
+        $this->release_locale = $locale;
+        return $this->course($course);
+    }
+
+    private function stable_upsert($table, $entity, $key, $code, array $fallback, array $values) {
+        $id = $this->review->identity($entity, $key, $code);
+        if ($this->publishing) {
+            foreach (array_keys($values) as $field) {
+                if (substr($field, -3) === '_ar' && $this->release_locale !== 'ar' && $id) { unset($values[$field]); }
+            }
+        }
+        if (!$id && !$this->db->where(array('entity' => $entity, 'course_code' => $code))->count_all_results('ha_library_identity')) {
+            $old = $this->db->get_where($table, $fallback)->row_array();
+            $id = $old ? (int) $old['id'] : 0;
+        }
+        if ($id) { $id = $this->upsert($table, array('id' => $id), $values); }
+        else {
+            $values = $this->only_existing($table, $values + $fallback + array('created_at' => $this->now, 'updated_at' => $this->now));
+            $this->db->insert($table, $values); $id = (int) $this->db->insert_id();
+        }
+        $this->review->identity($entity, $key, $code, $id);
+        return $id;
     }
 
     // ------------------------------------------------------------ categories
@@ -98,6 +139,7 @@ class Seed_library extends Ha_seeder {
         );
         $n = 0;
         foreach ($new as $code => $def) {
+            if ($this->db->get_where('ha_category',array('code'=>$code))->num_rows()) { continue; }
             list($sort, $icon, $names) = $def;
             $had = $this->db->select('slug_ar')->get_where('ha_category', array('code' => $code))->row('slug_ar');
             $id = $this->upsert('ha_category', array('code' => $code), array(
@@ -150,11 +192,12 @@ class Seed_library extends Ha_seeder {
             'currency'             => 'SAR',
             'certificate_eligible' => 1,
             'pass_percentage'      => self::PASS,
-            'status'               => 'published',
-            'published_at'         => ($existing && $existing['published_at']) ? $existing['published_at'] : $this->now,
+            'status'               => $this->publishing ? 'published' : ($existing ? $existing['status'] : 'draft'),
+            'published_at'         => ($existing && $existing['published_at']) ? $existing['published_at'] : ($this->publishing ? $this->now : null),
         ));
 
         foreach ($loc as $locale => $o) {
+            if ($this->publishing && $locale !== $this->release_locale && $locale !== 'en') { continue; }
             $this->upsert('ha_course_translation', array('course_id' => $course_id, 'locale' => $locale), array(
                 'title' => $o['title'], 'short_description' => $o['short_description'],
                 'description' => $o['description'], 'requirements' => $o['requirements'],
@@ -176,7 +219,9 @@ class Seed_library extends Ha_seeder {
         // Chapters.
         $section_ids = array();
         foreach ($en['chapters'] as $ci => $chapter) {
-            $section_ids[$ci] = $this->upsert('ha_course_section', array('course_id' => $course_id, 'sort_order' => $ci), array(
+            $section_key = isset($chapter['source_key']) ? $chapter['source_key'] : $code . ':section-' . sprintf('%03d', $ci+1);
+            $section_ids[$ci] = $this->stable_upsert('ha_course_section', 'section', $section_key, $code, array('course_id' => $course_id, 'sort_order' => $ci), array(
+                'course_id' => $course_id, 'sort_order' => $ci,
                 'title_en' => $chapter['title'],
                 'title_ar' => isset($ar['chapters'][$ci]['title']) ? $ar['chapters'][$ci]['title'] : $chapter['title'],
             ));
@@ -187,15 +232,21 @@ class Seed_library extends Ha_seeder {
             }
         }
 
-        $bank_id = $this->upsert('ha_question_bank', array('code' => 'qb-' . $code), array(
+        $bank_values = array(
             'name_en' => $en['title'], 'name_ar' => $ar['title'], 'course_id' => $course_id, 'status' => 'active',
-        ));
+        );
+        if ($this->publishing && $this->release_locale !== 'ar') { unset($bank_values['name_ar']); }
+        $bank_id = $this->upsert('ha_question_bank', array('code' => 'qb-' . $code), $bank_values);
 
         foreach ($lessons as $k => $x) {
             list($ci, $li, $l) = $x;
-            $video = isset($video_at[$k]) ? $videos[$video_at[$k]] : null;
-            $assessment_id = $this->quiz($code, $course_id, $bank_id, $k, $ci, $li, $loc);
-            $lesson_id = $this->upsert('ha_lesson', array('course_id' => $course_id, 'sort_order' => $k), array(
+            // A lesson may name its own video candidate ("video": {id, title, channel}); otherwise the
+            // course-level list is spread over the lessons as before.
+            $video = !empty($l['video']['id']) ? $l['video'] : (isset($video_at[$k]) ? $videos[$video_at[$k]] : null);
+            $lesson_key = isset($l['source_key']) ? $l['source_key'] : $code . ':lesson-' . sprintf('%03d', $k+1);
+            $assessment_id = $this->quiz($code, $course_id, $bank_id, $k, $ci, $li, $loc, $lesson_key);
+            $lesson_id = $this->stable_upsert('ha_lesson', 'lesson', $lesson_key, $code, array('course_id' => $course_id, 'sort_order' => $k), array(
+                'course_id' => $course_id, 'sort_order' => $k,
                 'section_id'                => $section_ids[$ci],
                 'lesson_type'               => $video ? 'video' : 'text',
                 'video_source'              => $video ? 'youtube' : null,
@@ -207,42 +258,43 @@ class Seed_library extends Ha_seeder {
                 'completion_rule'           => 'quiz',
                 'required_watch_percentage' => 0,
                 'assessment_id'             => $assessment_id,
-                'status'                    => 'published',
+                'status'                    => $this->publishing ? 'published' : 'draft',
             ));
             foreach ($loc as $locale => $o) {
+                if ($this->publishing && $locale !== $this->release_locale && $locale !== 'en') { continue; }
                 if (empty($o['chapters'][$ci]['lessons'][$li])) {
                     continue;
                 }
                 $ol = $o['chapters'][$ci]['lessons'][$li];
                 $this->upsert('ha_lesson_translation', array('lesson_id' => $lesson_id, 'locale' => $locale), array(
-                    'title' => $ol['title'], 'objective' => $o['chapters'][$ci]['title'], 'body' => $ol['body'],
+                    'title' => $ol['title'], 'objective' => !empty($ol['objectives']) ? implode("\n",$ol['objectives']) : $o['chapters'][$ci]['title'], 'body' => $ol['body'],
                 ));
             }
             if ($video) {
-                $this->upsert('ha_lesson_video_source', array('lesson_id' => $lesson_id), array(
+                $match = array('lesson_id' => $lesson_id, 'provider' => 'youtube', 'video_id' => $video['id'], 'locale' => 'en');
+                $had_video = $this->db->get_where('ha_lesson_video_source', $match)->row_array();
+                if (!$had_video) { $this->upsert('ha_lesson_video_source', $match, array(
                     'provider' => 'youtube', 'video_id' => $video['id'],
                     'watch_url' => 'https://www.youtube.com/watch?v=' . $video['id'],
                     'embed_url' => 'https://www.youtube-nocookie.com/embed/' . $video['id'],
                     'title' => $video['title'], 'author_name' => $video['channel'],
                     'author_url' => isset($video['author_url']) ? $video['author_url'] : null,
                     'thumbnail_url' => 'https://i.ytimg.com/vi/' . $video['id'] . '/hqdefault.jpg',
-                    'is_owned' => 0, 'status' => 'live', 'last_checked_at' => $this->now, 'last_error' => null,
-                ));
-            } else {
-                $this->db->delete('ha_lesson_video_source', array('lesson_id' => $lesson_id));
+                    'is_owned' => 0, 'status' => 'unchecked', 'last_checked_at' => null, 'last_error' => null,
+                )); }
             }
         }
 
-        // A deck that was shortened loses its trailing lessons and chapters.
-        $gone = $this->db->select('id, assessment_id')->where('course_id', $course_id)->where('sort_order >=', count($lessons))->get('ha_lesson')->result_array();
-        foreach ($gone as $g) {
-            $this->db->delete('ha_lesson_video_source', array('lesson_id' => $g['id']));
-            $this->db->delete('ha_lesson', array('id' => $g['id']));
-            if ($g['assessment_id']) {
-                $this->db->delete('ha_assessment', array('id' => $g['assessment_id']));
+        // Retire absent source identities; retain assessment attempts and progress.
+        $keep = array();
+        foreach ($this->review->keys($c)['lessons'] as $key => $unused) { $keep[] = $this->review->identity('lesson', $key, $code); }
+        if ($keep) {
+            $gone = $this->db->select('id,assessment_id')->where('course_id', $course_id)->where_not_in('id', $keep)->get('ha_lesson')->result_array();
+            foreach ($gone as $g) {
+                $this->db->where('id', $g['id'])->update('ha_lesson', array('status' => 'archived', 'updated_at' => $this->now));
+                if ($g['assessment_id']) { $this->db->where('id', $g['assessment_id'])->update('ha_assessment', array('status' => 'archived', 'updated_at' => $this->now)); }
             }
         }
-        $this->db->where('course_id', $course_id)->where('sort_order >=', count($en['chapters']))->delete('ha_course_section');
         return 1;
     }
 
@@ -257,15 +309,18 @@ class Seed_library extends Ha_seeder {
 
     // ------------------------------------------------------------------ quiz
 
-    private function quiz($course_code, $course_id, $bank_id, $k, $ci, $li, array $loc) {
+    private function quiz($course_code, $course_id, $bank_id, $k, $ci, $li, array $loc, $lesson_key) {
         $q_en = $loc['en']['chapters'][$ci]['lessons'][$li]['quiz'];
         $q_ar = isset($loc['ar']['chapters'][$ci]['lessons'][$li]['quiz']) ? $loc['ar']['chapters'][$ci]['lessons'][$li]['quiz'] : $q_en;
         $need = (int) ceil(count($q_en['questions']) * self::PASS / 100);
-        $id = $this->upsert('ha_assessment', array('code' => 'as-' . $course_code . '-' . ($k + 1)), array(
+        $assessment_identity = $this->review->identity('assessment', $lesson_key, $course_code);
+        $assessment_code = $assessment_identity ? $this->db->select('code')->get_where('ha_assessment', array('id' => $assessment_identity))->row('code') : 'as-' . $course_code . '-' . substr(hash('sha256', $lesson_key), 0, 12);
+        $id = $this->stable_upsert('ha_assessment', 'assessment', $lesson_key, $course_code, array('code' => 'as-' . $course_code . '-' . ($k + 1)), array(
+            'code' => $assessment_code,
             'title_en'             => $q_en['title'],
             'title_ar'             => $q_ar['title'],
-            'instructions_en'      => 'Answer all ' . count($q_en['questions']) . ' questions. ' . $need . ' correct answers unlock the next lesson; you can retake the quiz.',
-            'instructions_ar'      => 'أجب عن الأسئلة ' . count($q_en['questions']) . ' كلها. تحتاج إلى ' . $need . ' إجابات صحيحة لفتح الدرس التالي، ويمكنك إعادة الاختبار.',
+            'instructions_en'      => isset($q_en['instructions']) ? $q_en['instructions'] : 'Answer all ' . count($q_en['questions']) . ' questions. ' . $need . ' correct answers unlock the next lesson; you can retake the quiz.',
+            'instructions_ar'      => isset($q_ar['instructions']) ? $q_ar['instructions'] : 'أجب عن الأسئلة ' . count($q_en['questions']) . ' كلها. تحتاج إلى ' . $need . ' إجابات صحيحة لفتح الدرس التالي، ويمكنك إعادة الاختبار.',
             'assessment_type'      => 'quiz',
             'course_id'            => $course_id,
             'bank_id'              => $bank_id,
@@ -276,7 +331,7 @@ class Seed_library extends Ha_seeder {
             'max_attempts'         => self::ATTEMPTS,
             'pass_percentage'      => self::PASS,
             'show_correct_answers' => 1,
-            'status'               => 'published',
+            'status'               => $this->publishing ? 'published' : 'draft',
         ));
         $instructions = array(
             'hi' => 'सभी {n} प्रश्नों के उत्तर दें। अगला पाठ खोलने के लिए {k} सही उत्तर चाहिए; आप क्विज़ दोबारा दे सकते हैं।',
@@ -289,7 +344,9 @@ class Seed_library extends Ha_seeder {
         foreach ($loc as $locale => $o) {
             if ($locale !== 'en' && $locale !== 'ar' && !empty($o['chapters'][$ci]['lessons'][$li]['quiz']['title'])) {
                 $this->overlay('assessment', $id, 'title', $locale, $o['chapters'][$ci]['lessons'][$li]['quiz']['title']);
-                if (isset($instructions[$locale])) {
+                if (isset($o['chapters'][$ci]['lessons'][$li]['quiz']['instructions'])) {
+                    $this->overlay('assessment',$id,'instructions',$locale,$o['chapters'][$ci]['lessons'][$li]['quiz']['instructions']);
+                } elseif (isset($instructions[$locale])) {
                     $this->overlay('assessment', $id, 'instructions', $locale,
                         strtr($instructions[$locale], array('{n}' => count($q_en['questions']), '{k}' => $need)));
                 }
@@ -297,6 +354,7 @@ class Seed_library extends Ha_seeder {
         }
 
         $linked = $this->db->select('question_id')->where('assessment_id', $id)->order_by('sort_order', 'ASC')->get('ha_assessment_question')->result_array();
+        $kept_questions = array();
         foreach ($q_en['questions'] as $qi => $q) {
             $qa = isset($q_ar['questions'][$qi]) ? $q_ar['questions'][$qi] : $q;
             $fields = array(
@@ -305,20 +363,30 @@ class Seed_library extends Ha_seeder {
                 'explanation_en' => $q['explanation'], 'explanation_ar' => $qa['explanation'],
                 'marks' => 1, 'status' => 'active', 'updated_at' => $this->now,
             );
-            if (isset($linked[$qi])) {
-                $question_id = (int) $linked[$qi]['question_id'];
+            $question_key = isset($q['source_key']) ? $q['source_key'] : $lesson_key . ':q' . sprintf('%03d', $qi+1);
+            $question_id = $this->review->identity('question', $question_key, $course_code);
+            if (!$question_id && !$this->db->where(array('entity' => 'question', 'course_code' => $course_code))->count_all_results('ha_library_identity') && isset($linked[$qi])) { $question_id = (int) $linked[$qi]['question_id']; }
+            if ($question_id) {
+                if ($this->publishing && $this->release_locale !== 'ar') { unset($fields['body_ar'], $fields['explanation_ar']); }
                 $this->db->where('id', $question_id)->update('ha_question', $fields);
             } else {
                 $fields['created_at'] = $this->now;
                 $this->db->insert('ha_question', $fields);
                 $question_id = (int) $this->db->insert_id();
-                $this->db->insert('ha_assessment_question', array('assessment_id' => $id, 'question_id' => $question_id, 'marks' => 1, 'sort_order' => $qi));
             }
+            $this->review->identity('question', $question_key, $course_code, $question_id);
+            $kept_questions[] = $question_id;
+            $link_match = array('assessment_id' => $id, 'question_id' => $question_id);
+            if ($this->db->get_where('ha_assessment_question', $link_match)->num_rows()) {
+                $this->db->where($link_match)->update('ha_assessment_question', array('marks' => 1, 'sort_order' => $qi));
+            } else { $this->db->insert('ha_assessment_question', $link_match + array('marks' => 1, 'sort_order' => $qi)); }
             $options = $this->db->select('id')->where('question_id', $question_id)->order_by('sort_order', 'ASC')->get('ha_question_option')->result_array();
             foreach ($q['options'] as $oi => $text) {
                 $row = array('body_en' => $text, 'body_ar' => isset($qa['options'][$oi]) ? $qa['options'][$oi] : $text,
                     'is_correct' => $oi === (int) $q['answer'] ? 1 : 0, 'sort_order' => $oi);
+                if ($this->db->field_exists('ha_retired_at','ha_question_option')) { $row['ha_retired_at'] = null; }
                 if (isset($options[$oi])) {
+                    if ($this->publishing && $this->release_locale !== 'ar') { unset($row['body_ar']); }
                     $option_id = (int) $options[$oi]['id'];
                     $this->db->where('id', $option_id)->update('ha_question_option', $row);
                 } else {
@@ -336,7 +404,7 @@ class Seed_library extends Ha_seeder {
                 }
             }
             foreach (array_slice($options, count($q['options'])) as $extra) {
-                $this->db->delete('ha_question_option', array('id' => $extra['id']));
+                if ($this->db->field_exists('ha_retired_at','ha_question_option')) { $this->db->where('id', $extra['id'])->update('ha_question_option', array('ha_retired_at' => $this->now)); }
             }
             foreach ($loc as $locale => $o) {
                 if ($locale === 'en' || $locale === 'ar') {
@@ -349,8 +417,11 @@ class Seed_library extends Ha_seeder {
                 }
             }
         }
-        foreach (array_slice($linked, count($q_en['questions'])) as $extra) {
-            $this->db->delete('ha_assessment_question', array('assessment_id' => $id, 'question_id' => $extra['question_id']));
+        foreach ($linked as $extra) {
+            if (!in_array((int) $extra['question_id'], $kept_questions, true)) {
+                $this->db->delete('ha_assessment_question', array('assessment_id' => $id, 'question_id' => $extra['question_id']));
+                $this->db->where('id', $extra['question_id'])->update('ha_question', array('status' => 'archived'));
+            }
         }
         return $id;
     }

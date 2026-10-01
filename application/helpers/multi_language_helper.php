@@ -81,98 +81,20 @@ if (!function_exists('get_phrase')) {
     }
 }
 
-// This function helps us to get the translated phrase from the file. If it does not exist this function will save the phrase and by default it will have the same form as given
+// Reviewed row-based phrases with existing dictionary compatibility; no inferred writes.
 if (!function_exists('get_phrase')) {
     function get_phrase($phrase = '')
     {
-        $CI = get_instance();
-        $CI->load->database();
-        $CI->load->dbforge();
-        if($CI->session->userdata('language')){
-            $language_code = $CI->session->userdata('language');
-        }else{
-            $language_code = $CI->db->get_where('settings', array('key' => 'language'))->row()->value;
-        }
-
-        $key = strtolower(preg_replace('/\s+/', '_', $phrase));
-
-        /**LANGUAGE HANDLING USING DATABASE**/
-        // CHECK IF A COLUMN EXISTS IN LANGUAGE TABLE
-        if (!$CI->db->field_exists($language_code, 'language')) {
-            $fields = array(
-                $language_code => array(
-                    'type' => 'LONGTEXT',
-                    'default' => null,
-                    'null' => TRUE,
-                    'collation' => 'utf8_unicode_ci'
-                )
-            );
-            $CI->dbforge->add_column('language', $fields);
-        }
-
-        $phrase_query = $CI->db->get_where('language', array('phrase' => $key))->row_array();
-
-        if (is_array($phrase_query) && count($phrase_query) > 0) {
-            if (!empty($phrase_query[$language_code])) {
-                return $phrase_query[$language_code];
-            } else {
-                $phrase = ucfirst(str_replace('_', ' ', $key));
-                $checker = array('phrase' => $key);
-                $updater = array($language_code => $phrase);
-                $CI->db->where($checker);
-                $CI->db->update('language', $updater);
-                return $phrase;
-            }
-        } else {
-            $phrase = ucfirst(str_replace('_', ' ', $key));
-            $CI->db->insert('language', array('phrase' => $key, $language_code => $phrase));
-            return $phrase;
-        }
+        require_once APPPATH . 'helpers/ha_reviewed_translation_helper.php';
+        return ha_legacy_phrase($phrase, false);
     }
 }
 
 if ( ! function_exists('api_phrase'))
 {
     function api_phrase($phrase = '') {
-        $CI = get_instance();
-        $CI->load->database();
-        $CI->load->dbforge();
-        $language_code = $CI->db->get_where('settings', array('key' => 'language'))->row()->value;
-
-        $key = strtolower(preg_replace('/\s+/', '_', $phrase));
-
-        /**LANGUAGE HANDLING USING DATABASE**/
-        // CHECK IF A COLUMN EXISTS IN LANGUAGE TABLE
-        if (!$CI->db->field_exists($language_code, 'language')) {
-            $fields = array(
-                $language_code => array(
-                    'type' => 'LONGTEXT',
-                    'default' => null,
-                    'null' => TRUE,
-                    'collation' => 'utf8_unicode_ci'
-                )
-            );
-            $CI->dbforge->add_column('language', $fields);
-        }
-
-        $phrase_query = $CI->db->get_where('language', array('phrase' => $key))->row_array();
-
-        if ($phrase_query != null && count($phrase_query) > 0) {
-            if (!empty($phrase_query[$language_code])) {
-                return $phrase_query[$language_code];
-            } else {
-                $phrase = ucfirst(str_replace('_', ' ', $key));
-                $checker = array('phrase' => $key);
-                $updater = array($language_code => $phrase);
-                $CI->db->where($checker);
-                $CI->db->update('language', $updater);
-                return $phrase;
-            }
-        } else {
-            $phrase = ucfirst(str_replace('_', ' ', $key));
-            $CI->db->insert('language', array('phrase' => $key, $language_code => $phrase));
-            return $phrase;
-        }
+        require_once APPPATH . 'helpers/ha_reviewed_translation_helper.php';
+        return ha_legacy_phrase($phrase, true);
     }
 }
 
@@ -180,53 +102,8 @@ if ( ! function_exists('api_phrase'))
 if (!function_exists('site_phrase')) {
     function site_phrase($phrase = '')
     {
-        $CI = get_instance();
-        $CI->load->database();
-        $CI->load->dbforge();
-        if(!$CI->session->userdata('language')){
-            $CI->session->set_userdata('language', 'english');
-        }
-        $language_code = $CI->session->userdata('language');
-        $key = strtolower(preg_replace('/\s+/', '_', $phrase));
-
-        // An empty phrase has nothing to translate and used to be inserted as
-        // a blank row that then showed up as untranslated forever.
-        if ($key === '') {
-            return '';
-        }
-
-        /**LANGUAGE HANDLING USING DATABASE**/
-        // CHECK IF A COLUMN EXISTS IN LANGUAGE TABLE
-        if (!$CI->db->field_exists($language_code, 'language')) {
-            $fields = array(
-                $language_code => array(
-                    'type' => 'LONGTEXT',
-                    'default' => null,
-                    'null' => TRUE,
-                    'collation' => 'utf8_unicode_ci'
-                )
-            );
-            $CI->dbforge->add_column('language', $fields);
-        }
-
-        $phrase_query = $CI->db->get_where('language', array('phrase' => $key))->row_array();
-
-        if (is_array($phrase_query) && count($phrase_query) > 0) {
-            if (!empty($phrase_query[$language_code])) {
-                return $phrase_query[$language_code];
-            } else {
-                $phrase = ucfirst(str_replace('_', ' ', $key));
-                $checker = array('phrase' => $key);
-                $updater = array($language_code => $phrase);
-                $CI->db->where($checker);
-                $CI->db->update('language', $updater);
-                return $phrase;
-            }
-        } else {
-            $phrase = ucfirst(str_replace('_', ' ', $key));
-            $CI->db->insert('language', array('phrase' => $key, $language_code => $phrase));
-            return $phrase;
-        }
+        require_once APPPATH . 'helpers/ha_reviewed_translation_helper.php';
+        return ha_legacy_phrase($phrase, false);
     }
 }
 
@@ -236,11 +113,21 @@ if (!function_exists('openJSONFile')) {
     {
         $CI = get_instance();
         $CI->load->database();
+        require_once APPPATH.'helpers/ha_reviewed_translation_helper.php';
+        $locale=ha_resolve_language_code($code);
+        $column=ha_locale_legacy_column($locale);
+        $review=array();
+        if ($CI->db->table_exists('ha_translation_unit')) {
+            foreach ($CI->db->select('u.target_json,v.value')->from('ha_translation_unit u')->join('ha_translation_value v','v.unit_id=u.id')
+                ->where(array('u.scope'=>'site','u.active'=>1,'v.locale'=>$locale))->like('u.locator','ui:legacy:','after')->get()->result_array() as $item) {
+                $target=json_decode($item['target_json'],true); $review[$target['key']]=$item['value'];
+            }
+        }
         $key_value_pairs = [];
         $language_query = $CI->db->get_where('language')->result_array();
         foreach ($language_query as $row) {
             $key = $row['phrase'];
-            $value = !empty($row[$code]) ? $row[$code] : ucfirst(str_replace('_', ' ', $key));
+            $value = isset($review[$key]) ? $review[$key] : ($column && isset($row[$column]) ? $row[$column] : '');
             $key_value_pairs[$key] = $value;
         }
         return $key_value_pairs;
@@ -251,14 +138,9 @@ if (!function_exists('openJSONFile')) {
 if (!function_exists('saveDefaultJSONFile')) {
     function saveDefaultJSONFile($language_code)
     {
-        $language_code = strtolower($language_code);
-        if (!file_exists(APPPATH . 'language/' . $language_code . '.json')) {
-            $fp = fopen(APPPATH . 'language/' . $language_code . '.json', 'w');
-            $newLangFile = APPPATH . 'language/' . $language_code . '.json';
-            $enLangFile   = APPPATH . 'language/english.json';
-            copy($enLangFile, $newLangFile);
-            fclose($fp);
-        }
+        require_once APPPATH.'helpers/ha_reviewed_translation_helper.php';
+        $CI=get_instance(); $CI->load->library('ha_library_review');
+        return $CI->ha_library_review->language(ha_resolve_language_code($language_code));
     }
 }
 
@@ -266,14 +148,16 @@ if (!function_exists('saveDefaultJSONFile')) {
 if (!function_exists('saveJSONFile')) {
     function saveJSONFile($language_code, $updating_key, $updating_value)
     {
-        $updating_value = str_replace("'", '&#39;', $updating_value);
         $CI = get_instance();
-        $CI->load->database();
-
-        $checker = array('phrase' => $updating_key);
-        $updater = array($language_code => $updating_value);
-        $CI->db->where($checker);
-        $CI->db->update('language', $updater);
+        $CI->load->library('ha_global_translation');
+        require_once APPPATH.'helpers/ha_reviewed_translation_helper.php';
+        $locale=ha_resolve_language_code($language_code);
+        $key=strtolower(preg_replace('/\s+/','_',trim($updating_key)));
+        $row=$CI->db->get_where('language',array('phrase'=>$key))->row_array();
+        $source=$row && !empty($row['english']) ? $row['english'] : ucfirst(str_replace('_',' ',$key));
+        $id=$CI->ha_global_translation->unit('site','ui:legacy:'.$key,$source,array('type'=>'ui','domain'=>'legacy','key'=>$key));
+        $unit=$CI->db->get_where('ha_translation_unit',array('id'=>$id))->row_array();
+        $CI->ha_global_translation->import(array('version'=>1,'locale'=>$locale,'units'=>array(array('key'=>$unit['unit_key'],'source_hash'=>$unit['source_hash'],'value'=>$updating_value,'status'=>'reviewing'))),'human');
     }
 }
 

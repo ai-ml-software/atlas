@@ -16,6 +16,26 @@ if (!function_exists('ha_locale_config')) {
             $config = array();
             include APPPATH . 'config/ha_locales.php';
             $cfg = $config['ha_locales'];
+            $inventory = APPPATH . 'seeds/library_support/languages.json';
+            if (is_file($inventory)) {
+                $data = json_decode(file_get_contents($inventory), true);
+                foreach ((array) (isset($data['languages']) ? $data['languages'] : array()) as $language) {
+                    if (preg_match('/^[a-z]{2,3}$/D', $language['locale'])) { $cfg['catalog'][$language['locale']] = $language['name']; }
+                }
+            }
+            $released = APPPATH . 'seeds/library_support/enabled_languages.json';
+            if (is_file($released)) {
+                $data = json_decode(file_get_contents($released), true);
+                foreach ((array) (isset($data['locales']) ? $data['locales'] : array()) as $code) {
+                    if (preg_match('/^[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*$/D', $code)) {
+                        $cfg['enabled'][] = $code;
+                        if (!isset($cfg['catalog'][$code])) { $cfg['catalog'][$code] = isset($data['definitions'][$code]['name']) ? $data['definitions'][$code]['name'] : $code; }
+                        if (isset($data['definitions'][$code]['direction']) && $data['definitions'][$code]['direction']==='rtl') { $cfg['rtl'][]=$code; }
+                    }
+                }
+                $cfg['enabled'] = array_values(array_unique($cfg['enabled']));
+                $cfg['enabled'] = array_values(array_diff($cfg['enabled'],isset($data['disabled']) ? $data['disabled'] : array()));
+            }
         }
         return $cfg;
     }
@@ -39,7 +59,10 @@ if (!function_exists('ha_locale_config')) {
     }
 
     function ha_locale_dir($code) {
-        return in_array($code, ha_locale_config()['rtl'], true) ? 'rtl' : 'ltr';
+        $base = explode('-', $code)[0];
+        if (preg_match('/-(Arab|Hebr|Thaa|Nkoo|Adlm)(?:-|$)/', $code)) { return 'rtl'; }
+        if (preg_match('/-(Latn|Cyrl)(?:-|$)/', $code)) { return 'ltr'; }
+        return in_array($code, ha_locale_config()['rtl'], true) || in_array($base,ha_locale_config()['rtl'],true) ? 'rtl' : 'ltr';
     }
 
     /** ICU locale id, e.g. ur_PK, for number/date/currency formatting. */
@@ -86,7 +109,7 @@ if (!function_exists('ha_locale_config')) {
         if ($list === null) {
             $list = array();
             foreach (ha_locales() as $l) {
-                if ($l === 'en' || is_file(APPPATH . 'language/site/' . $l . '.php')) {
+                if ($l === 'en' || is_file(APPPATH . 'language/site/' . $l . '.php') || ha_locale_released($l)) {
                     $list[] = $l;
                 }
             }
@@ -106,7 +129,7 @@ if (!function_exists('ha_locale_config')) {
     function ha_site_dictionary($locale) {
         static $dicts = array();
         if (!isset($dicts[$locale])) {
-            $file = APPPATH . 'language/site/' . preg_replace('/[^a-z]/', '', $locale) . '.php';
+            $file = APPPATH . 'language/site/' . ha_locale_filename($locale) . '.php';
             $dicts[$locale] = ($locale !== 'en' && is_file($file)) ? (array) include $file : array();
         }
         return $dicts[$locale];
@@ -126,10 +149,33 @@ if (!function_exists('ha_locale_config')) {
                 $out = $d[$text];
             }
         }
+        require_once APPPATH . 'helpers/ha_reviewed_translation_helper.php';
+        $out = ha_reviewed_text('site', $text, $locale, $out);
         foreach ($vars as $k => $v) {
             $out = str_replace('{' . $k . '}', (string) $v, $out);
         }
         return $out;
+    }
+
+    function ha_locale_filename($locale) {
+        return preg_match('/^[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*$/D', $locale) ? $locale : 'en';
+    }
+
+    function ha_locale_released($code) {
+        static $released = null;
+        if ($released === null) {
+            $file = APPPATH . 'seeds/library_support/enabled_languages.json';
+            $data = is_file($file) ? json_decode(file_get_contents($file), true) : array();
+            $released = isset($data['locales']) ? $data['locales'] : array();
+        }
+        return in_array($code, $released, true);
+    }
+
+    /** Preserve every language route; search engines support a narrower tag set. */
+    function ha_hreflang($code) {
+        $base = explode('-', $code)[0];
+        if ($base === 'fil') { $code = 'tl' . substr($code, 3); $base = 'tl'; }
+        return strlen($base) === 2 ? $code : null;
     }
 
     /** ha_pt() escaped for direct output in HTML text or attributes. */

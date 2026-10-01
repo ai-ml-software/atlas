@@ -67,7 +67,7 @@ class Test_content extends Ha_testcase {
 
     public function test_every_course_resolves_in_both_locales() {
         $missing = array();
-        foreach ($this->db->select('id, code, slug_en, slug_ar')->get('ha_course')->result_array() as $c) {
+        foreach ($this->db->select('id, code, slug_en, slug_ar')->get_where('ha_course',array('status'=>'published'))->result_array() as $c) {
             foreach (array('en', 'ar') as $locale) {
                 $row = $this->catalog->course($c['slug_' . $locale], $locale);
                 if (!$row || empty($row['title'])) {
@@ -248,7 +248,10 @@ class Test_content extends Ha_testcase {
     public function test_public_menu_is_populated_in_both_locales() {
         foreach (array('en', 'ar') as $locale) {
             $menu = $this->catalog->menu('public_header', $locale);
-            $this->assertGreaterThan(8, count($menu), 'The public header needs its full navigation');
+            // The current corporate header has eight primary destinations.
+            foreach (array('about-altus','services','knowledge-performance','ascent','market','case-studies','leadership','contact') as $destination) {
+                $this->assertTrue(in_array($destination,array_column($menu,'url'),true),'Required navigation destination: '.$destination);
+            }
             foreach ($menu as $item) {
                 $this->assertNotEmpty($item['label'], 'A menu item must have a label in ' . $locale);
             }

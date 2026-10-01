@@ -24,6 +24,24 @@ require_once APPPATH . 'core/Hkp_Controller.php';
  */
 class Hkp_admin extends Hkp_Controller {
 
+    public function library() {
+        $this->need('curriculum.view');
+        if (!$this->ha_auth->is_system_scoped()) { show_error('System administration required.', 403); }
+        $this->load->library(array('ha_library_review','ha_global_translation','ha_library_video'));
+        if (!$this->db->table_exists('ha_language_inventory')) { show_error('The library workflow migration has not been installed.', 503); }
+        $q = mb_substr(trim((string) $this->input->get('q')),0,100); $offset = max(0,(int) $this->input->get('offset'));
+        $this->db->select('locale,name,modality,status,enabled')->order_by('locale')->limit(100,$offset);
+        if ($q !== '') { $this->db->group_start()->like('locale',$q)->or_like('name',$q)->group_end(); }
+        $languages = $this->db->get('ha_language_inventory')->result_array();
+        $this->render('admin_library', array('source_report' => $this->ha_library_review->audit_sources(),
+            'language_counts' => $this->db->select('status,COUNT(*) AS total')->group_by('status')->get('ha_language_inventory')->result_array(),
+            'languages' => $languages, 'q' => $q, 'offset' => $offset,
+            'revision_counts' => $this->db->select('status,COUNT(*) AS total')->group_by('status')->get('ha_library_revision')->result_array(),
+            'unit_count' => $this->db->where('active',1)->count_all_results('ha_translation_unit'),
+            'video_counts' => $this->db->select('v.status,COUNT(*) AS total')->from('ha_lesson_video_source v')->join('ha_lesson l','l.id=v.lesson_id')->join('ha_course c','c.id=l.course_id')->like('c.code','dy-','after')->group_by('v.status')->get()->result_array()),
+            hkp_t('Library and language coverage'), 'curriculum');
+    }
+
     public function index() {
         $this->need(array('organizations.view', 'analytics.view'));
         $this->load->library(array('ha_kpi', 'ha_readiness', 'ha_knowledge'));

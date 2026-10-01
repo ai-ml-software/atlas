@@ -38,6 +38,7 @@ class Ha_seo {
     protected $path = '';
 
     protected $locale = 'en';
+    protected $lookup = array();
 
     public function __construct() {
         $this->CI =& get_instance();
@@ -134,6 +135,7 @@ class Ha_seo {
      * @param array  $fallback title, description, image, schema
      */
     public function prepare($locale, $path, array $lookup = array(), array $fallback = array()) {
+        $this->lookup = $lookup;
         $this->locale = ha_locale_enabled($locale) ? $locale : 'en';
         $this->path = ltrim((string) $path, '/');
         $this->locales = null;
@@ -276,15 +278,20 @@ class Ha_seo {
         // translated into is left out of hreflang entirely (see page_locales()).
         $alt = $m['alternate_path'];
         foreach ($this->page_locales() as $l) {
+            $tag = ha_hreflang($l);
+            if (!$tag) { continue; }
             $href = $this->url($this->path_for($l, $alt), $l);
-            $out[] = '<link rel="alternate" hreflang="' . $l . '" href="' . html_escape($href) . '">';
-            if ($l === 'en' || $l === 'ar') {
-                $out[] = '<link rel="alternate" hreflang="' . $l . '-SA" href="' . html_escape($href) . '">';
-            }
+            $out[] = '<link rel="alternate" hreflang="' . $tag . '" href="' . html_escape($href) . '">';
         }
-        $out[] = '<link rel="alternate" hreflang="x-default" href="' . html_escape($this->url($this->path_for('en', $alt), 'en')) . '">';
+        $default_locale = in_array('en',$this->page_locales(),true) ? 'en' : ($this->page_locales() ? $this->page_locales()[0] : 'en');
+        $out[] = '<link rel="alternate" hreflang="x-default" href="' . html_escape($this->url($this->path_for($default_locale, $alt), $default_locale)) . '">';
 
-        $out[] = '<meta name="theme-color" content="#0D1B2A">';
+        $out[] = '<meta name="theme-color" content="#1E2329">';
+        // Local / generative search: the firm is in Riyadh (city level; no street address is published yet).
+        $out[] = '<meta name="geo.region" content="SA-01">';
+        $out[] = '<meta name="geo.placename" content="Riyadh">';
+        $out[] = '<meta name="geo.position" content="24.7136;46.6753">';
+        $out[] = '<meta name="ICBM" content="24.7136, 46.6753">';
 
         // og:type is per page. It was hardcoded to "website", which told every
         // crawler that an article was a site home page.
@@ -379,7 +386,8 @@ class Ha_seo {
      * with a canonical to English, so no thin duplicate is ever indexed.
      */
     public function set_locales(array $locales) {
-        $this->locales = array_values(array_intersect(ha_site_locales(), array_merge(array('en'), $locales)));
+        $available = $this->released_course_locales();
+        $this->locales = array_values(array_intersect(ha_site_locales(), $available !== null ? $available : array_merge(array('en'), $locales)));
         if (!in_array($this->locale, $this->locales, true)) {
             $this->meta['robots'] = 'noindex,follow';
             $this->meta['canonical'] = $this->url($this->path_for('en', $this->meta['alternate_path']), 'en');
@@ -388,7 +396,19 @@ class Ha_seo {
     }
 
     public function page_locales() {
-        return $this->locales !== null ? $this->locales : ha_site_locales();
+        $released = $this->released_course_locales();
+        return $this->locales !== null ? $this->locales : ($released !== null ? array_values(array_intersect(ha_site_locales(), $released)) : ha_site_locales());
+    }
+
+    private function released_course_locales() {
+        if (!isset($this->lookup['entity_type'],$this->lookup['entity_id']) || $this->lookup['entity_type'] !== 'course' || !$this->db->table_exists('ha_course_locale_release')) { return null; }
+        $code = (string) $this->db->select('code')->get_where('ha_course',array('id' => $this->lookup['entity_id']))->row('code');
+        if (strpos($code,'dy-') !== 0) { return null; }
+        return $this->library_course_locales($this->lookup['entity_id']);
+    }
+    private function library_course_locales($id) {
+        $this->CI->load->library('ha_library_review');
+        return $this->CI->ha_library_review->released_locales($id);
     }
 
     public function render_schema() {
@@ -563,14 +583,16 @@ class Ha_seo {
         $extra = array_values(array_diff($site, array('en', 'ar')));
         $urls = array();
         // $paths: array(locale => path); $have: extra locales this entity is translated into (null = all).
-        $add = function (array $paths, $lastmod, $priority, $changefreq, $have = null) use (&$urls, $site, $extra) {
+        $add = function (array $paths, $lastmod, $priority, $changefreq, $have = null, $strict = false) use (&$urls, $site, $extra) {
             $set = array();
             foreach ($site as $l) {
+                if ($strict && !in_array($l, (array) $have, true)) { continue; }
                 if ($l !== 'en' && $l !== 'ar' && $have !== null && !in_array($l, $have, true)) {
                     continue;
                 }
                 $set[$l] = $this->url(isset($paths[$l]) ? $paths[$l] : $paths['en'], $l);
             }
+            if (!$set) { return; }
             $urls[] = array('urls' => $set, 'lastmod' => $lastmod ? date('Y-m-d', strtotime($lastmod)) : date('Y-m-d'),
                 'priority' => $priority, 'changefreq' => $changefreq);
         };
@@ -607,8 +629,10 @@ class Ha_seo {
             $add(array('en' => $route), null, '0.8', 'daily');
         }
         $tc = $translated('ha_course_translation', 'course_id');
-        foreach ($this->db->select('id, slug_en, slug_ar, updated_at')->from('ha_course')->where('status', 'published')->get()->result_array() as $r) {
-            $add(array('en' => 'courses/' . $r['slug_en'], 'ar' => 'courses/' . $r['slug_ar']), $r['updated_at'], '0.8', 'weekly', $tc($r['id']));
+        foreach ($this->db->select('id,code,slug_en,slug_ar,updated_at')->from('ha_course')->where('status', 'published')->get()->result_array() as $r) {
+            $managed = strpos($r['code'],'dy-') === 0 && $this->db->table_exists('ha_course_locale_release');
+            $have = $managed ? $this->library_course_locales($r['id']) : $tc($r['id']);
+            $add(array('en' => 'courses/' . $r['slug_en'], 'ar' => 'courses/' . $r['slug_ar']), $r['updated_at'], '0.8', 'weekly', $have, $managed);
         }
         $tg = $translated('ha_program_translation', 'program_id');
         foreach ($this->db->select('id, slug_en, slug_ar, updated_at')->from('ha_program')->where('status', 'published')->get()->result_array() as $r) {
@@ -648,9 +672,10 @@ class Ha_seo {
                 $xml .= '    <changefreq>' . $u['changefreq'] . "</changefreq>\n";
                 $xml .= '    <priority>' . $u['priority'] . "</priority>\n";
                 foreach ($u['urls'] as $alt_locale => $alt) {
-                    $xml .= '    <xhtml:link rel="alternate" hreflang="' . $alt_locale . '" href="' . html_escape($alt) . "\"/>\n";
+                    $tag = ha_hreflang($alt_locale);
+                    if ($tag) { $xml .= '    <xhtml:link rel="alternate" hreflang="' . $tag . '" href="' . html_escape($alt) . "\"/>\n"; }
                 }
-                $xml .= '    <xhtml:link rel="alternate" hreflang="x-default" href="' . html_escape($u['urls']['en']) . "\"/>\n";
+                $xml .= '    <xhtml:link rel="alternate" hreflang="x-default" href="' . html_escape(isset($u['urls']['en']) ? $u['urls']['en'] : reset($u['urls'])) . "\"/>\n";
                 $xml .= "  </url>\n";
             }
         }
@@ -780,8 +805,29 @@ class Ha_seo {
         $out = array();
         $out[] = '# ' . self::BRAND_EN;
         $out[] = '';
-        $out[] = '> Hotel training, standard operating procedures and workforce certification '
-            . 'for hospitality teams in Saudi Arabia, authored in both Arabic and English.';
+        $out[] = '> Altus Gulf is a hospitality and business advisory firm in Riyadh, Saudi Arabia: hotel owner '
+            . 'representation, pre-opening, feasibility, commercial performance, strategy, revenue and applied AI, '
+            . 'and Altus Knowledge and Performance, a bilingual Arabic/English hotel learning and certification platform.';
+        $out[] = '';
+        // Generative search reads this file first: name the corporate pages so an answer can cite the right one.
+        $out[] = '## Altus Gulf (advisory)';
+        $out[] = '';
+        foreach (array(
+            'about-altus' => 'About Altus Gulf: overview, vision, mission, philosophy, values, partnerships, ESG',
+            'services' => 'Hospitality Solutions and Business Growth Solutions; eight capabilities; twelve sectors',
+            'knowledge-performance' => 'Altus Knowledge and Performance: the bilingual hotel learning and performance platform',
+            'ascent' => 'The Altus Ascent(TM) Framework (Discover, Assess, Design, Transform, Optimise, Scale), Performance Matrix, GOPPAR Value Stack',
+            'market' => 'Saudi hospitality market opportunity with sources, and Vision 2030 alignment',
+            'case-studies' => 'Four illustrative, anonymised case studies',
+            'leadership' => 'Co-founders Islam Mahrous and Hussam Smadi',
+            'contact' => 'Start a conversation',
+        ) as $path => $what) {
+            $root = rtrim($base, '/') . '/';
+            $out[] = '- [' . $what . '](' . $root . 'en/' . $path . ') · Arabic: ' . $root . 'ar/' . $path;
+        }
+        $out[] = '';
+        $out[] = 'Hotel training, standard operating procedures and workforce certification '
+            . 'for hospitality teams in Saudi Arabia, authored in both Arabic and English:';
         $out[] = '';
         $out[] = 'Every page exists at /en/... and /ar/... . The Arabic is authored, not '
             . 'machine-translated, and Arabic pages use Arabic URLs.';

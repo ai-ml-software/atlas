@@ -36,7 +36,7 @@ abstract class Hkp_Controller extends CI_Controller {
             $this->session->set_userdata('hkp_locale', $lang);
             if ($legacy = ha_locale_legacy_column($lang)) {
                 $this->session->set_userdata('language', $legacy);
-            }
+            } else { $this->session->set_userdata('language', $lang); }
             if ($this->ha_auth->check()) {
                 $this->db->where('user_id', (int) $this->ha_auth->id())->update('ha_profile', array('locale' => $lang));
             }
@@ -224,6 +224,7 @@ abstract class Hkp_Controller extends CI_Controller {
                 array('props', hkp_t('Properties'), 'admin/crud/properties', 'home', 'properties.view'),
                 array('people_admin', hkp_t('Users'), 'admin/users', 'users', 'users.view'),
                 array('curriculum', hkp_t('Curriculum'), 'admin/curriculum', 'layers', 'curriculum.view'),
+                array('library_coverage', hkp_t('Library and language coverage'), 'admin/library', 'layers', 'system.health'),
                 array('content_review', hkp_t('Content review'), 'admin/content', 'check', array('knowledge.review', 'knowledge.approve', 'knowledge.create')),
                 array('assess_admin', hkp_t('Assessments'), 'admin/assessments', 'clipboard', 'assessments.create'),
                 array('comp_admin', hkp_t('Competencies'), 'admin/competencies', 'target', 'competencies.create'),

@@ -39,10 +39,11 @@ class Ha_assessment {
      *
      * @return array counts and the courses that had no questions
      */
-    public function build() {
+    public function build($only_course_id = null) {
         $bank = $this->CI->ha_quizbank->questions();
         $db   = $this->CI->db;
 
+        if ($only_course_id !== null) { $db->where('id', (int) $only_course_id); }
         $courses = $db->select('id, title, meta_keywords, section')
             ->like('meta_keywords', 'ha:')->get('course')->result_array();
 
@@ -52,6 +53,7 @@ class Ha_assessment {
         // questions behind pointing at a quiz lesson that no longer exists.
         // They are invisible to the learner and they accumulate on every
         // sync, so clear them before writing the new set.
+        if ($only_course_id === null) {
         $live = $db->select('id')->where('lesson_type', 'quiz')->get('lesson')->result_array();
         $live_ids = array();
         foreach ($live as $l) {
@@ -65,6 +67,7 @@ class Ha_assessment {
             $db->where_not_in('quiz_id', $live_ids);
         }
         $db->delete('question');
+        }
 
         foreach ($courses as $course) {
             $code = $this->academy_code($course['meta_keywords']);

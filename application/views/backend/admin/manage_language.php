@@ -218,7 +218,7 @@
 			},
 			success: function(response) {
 				$('#btn-' + key).html('<i class = "mdi mdi-check-circle"></i>');
-				success_notify('<?php echo get_phrase('phrase_updated'); ?>');
+            success_notify(<?php echo json_encode(get_phrase('saved_for_translation_review'),JSON_HEX_TAG|JSON_HEX_AMP|JSON_HEX_APOS|JSON_HEX_QUOT); ?>);
 			}
 		});
 	}

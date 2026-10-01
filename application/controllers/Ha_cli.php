@@ -89,16 +89,19 @@ class Ha_cli extends CI_Controller {
         $this->out('Hospitality Academy CLI. Commands: migrate, rollback, seed, fresh, status.');
     }
 
-    public function migrate() {
+    public function migrate($only = null) {
         $all = $this->discover();
+        if ($only !== null && !isset($all[$only])) { $this->fail('Unknown migration version: ' . $only); }
         $done = $this->applied();
         $ran = 0;
         foreach ($all as $version => $meta) {
+            if ($only !== null && (string) $version !== (string) $only) { continue; }
             if (isset($done[$version])) {
                 continue;
             }
             $m = $this->instantiate($meta);
             $m->up();
+            $this->db->data_cache = array();
             $this->db->insert(self::TABLE, array(
                 'version' => $version,
                 'name'    => $meta['name'],

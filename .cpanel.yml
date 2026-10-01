@@ -46,3 +46,15 @@ deployment:
     - /bin/mkdir -p "${DEPLOYPATH}application/cache" "${DEPLOYPATH}application/logs" "${DEPLOYPATH}application/storage/private" "${DEPLOYPATH}uploads/academy" "${DEPLOYPATH}uploads/thumbnails" "${DEPLOYPATH}uploads/pages" "${DEPLOYPATH}uploads/lessons" "${DEPLOYPATH}uploads/modules"
     - /bin/chmod 755 "${DEPLOYPATH}application/cache" "${DEPLOYPATH}application/logs" "${DEPLOYPATH}uploads" "${DEPLOYPATH}uploads/academy" "${DEPLOYPATH}uploads/thumbnails" "${DEPLOYPATH}uploads/pages" "${DEPLOYPATH}uploads/lessons" "${DEPLOYPATH}uploads/modules"
     - /bin/chmod 700 "${DEPLOYPATH}application/storage/private"
+
+    # Database: schema, then content. All idempotent and safe on live data: records are
+    # matched on natural keys and updated in place, administrator edits are kept, and
+    # learners' progress survives. Order matters: corporate content, the 40-course
+    # library, archive everything that is not the library, then publish to the player.
+    # PHPBIN: the account's CLI PHP (EasyApache default path; change if the host differs).
+    - export PHPBIN=/usr/local/bin/php
+    - cd "${DEPLOYPATH}" && ${PHPBIN} index.php ha_cli migrate
+    - cd "${DEPLOYPATH}" && ${PHPBIN} index.php ha_cli seed altus_profile
+    - cd "${DEPLOYPATH}" && ${PHPBIN} index.php ha_cli seed library
+    - cd "${DEPLOYPATH}" && ${PHPBIN} index.php ha_cli seed library_only
+    - cd "${DEPLOYPATH}" && ${PHPBIN} index.php ha_bridge sync

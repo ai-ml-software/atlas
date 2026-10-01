@@ -51,6 +51,8 @@ class Ha_learning {
 
     public function course($course_id, $locale = null) {
         $loc = $locale ?: hkp_locale();
+        $this->CI->load->library('ha_library_review');
+        if (!$this->CI->ha_library_review->translation_current($course_id,$loc)) { $loc='en'; }
         $c = $this->CI->db->select('c.*, t.title, t.short_description, t.description, te.title AS title_en')
             ->from('ha_course c')->join('ha_course_translation t', 't.course_id = c.id AND t.locale = ' . $this->CI->db->escape($loc), 'left')
             ->join('ha_course_translation te', "te.course_id = c.id AND te.locale = 'en'", 'left')
@@ -121,6 +123,10 @@ class Ha_learning {
 
     public function lesson($lesson_id, $locale = null) {
         $loc = $locale ?: hkp_locale();
+        $course_id=(int)$this->CI->db->select('course_id')->get_where('ha_lesson',array('id'=>(int)$lesson_id))->row('course_id');
+        $this->CI->load->library('ha_library_review');
+        $current=$this->CI->ha_library_review->translation_current($course_id,$loc);
+        if (!$current) { $loc='en'; }
         $l = $this->CI->db->select('l.*, t.title, t.objective, t.body, t.transcript, t.captions_url, te.title AS title_en, te.body AS body_en, te.objective AS objective_en')
             ->from('ha_lesson l')->join('ha_lesson_translation t', 't.lesson_id = l.id AND t.locale = ' . $this->CI->db->escape($loc), 'left')
             ->join('ha_lesson_translation te', "te.lesson_id = l.id AND te.locale = 'en'", 'left')
@@ -128,7 +134,7 @@ class Ha_learning {
         if (!$l) {
             return null;
         }
-        $l['translated'] = trim((string) $l['body']) !== '' || $loc === 'en';
+        $l['translated'] = $current && (trim((string) $l['body']) !== '' || $loc === 'en');
         $l['title'] = $l['title'] ?: $l['title_en'];
         $l['objective'] = $l['objective'] ?: $l['objective_en'];
         $l['body'] = trim((string) $l['body']) !== '' ? $l['body'] : $l['body_en'];
@@ -143,6 +149,7 @@ class Ha_learning {
         if (!$l || $l['status'] !== 'published' || !$this->course_visible($l['course_id'], $user_id)) {
             throw new RuntimeException('That lesson is not available.');
         }
+        $this->assert_library_sequence($l, $user_id);
         $unmet = $this->unmet_prerequisites($l['course_id'], $user_id);
         if ($unmet) {
             throw new RuntimeException('Complete these modules first: ' . implode(', ', $unmet) . '.');
@@ -183,6 +190,22 @@ class Ha_learning {
             }
         }
         return $times ? date('Y-m-d H:i:s', max($times)) : null;
+    }
+
+    /** PDF courses unlock lessons only after every earlier checkpoint is passed. */
+    public function assert_library_sequence(array $lesson, $user_id) {
+        $code = (string) $this->CI->db->select('code')->get_where('ha_course', array('id'=>$lesson['course_id']))->row('code');
+        if (strpos($code,'dy-') !== 0) { return; }
+        $previous = $this->CI->db->where(array('course_id'=>$lesson['course_id'],'status'=>'published','is_mandatory'=>1))
+            ->where('sort_order <',(int) $lesson['sort_order'])->order_by('sort_order')->get('ha_lesson')->result_array();
+        foreach ($previous as $p) {
+            if ($p['completion_rule'] === 'quiz' && $p['assessment_id']) {
+                $done = $this->CI->db->get_where('ha_assessment_attempt', array('assessment_id'=>$p['assessment_id'],'user_id'=>(int)$user_id,'passed'=>1,'status'=>'graded'))->num_rows();
+            } else {
+                $done = $this->CI->db->get_where('ha_lesson_progress', array('lesson_id'=>$p['id'],'user_id'=>(int)$user_id,'status'=>'completed'))->num_rows();
+            }
+            if (!$done) { throw new RuntimeException(hkp_t('Pass each earlier lesson checkpoint before opening this lesson.')); }
+        }
     }
 
     /** Heartbeat from the player: time spent and last viewed position. */

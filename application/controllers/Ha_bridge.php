@@ -149,7 +149,7 @@ class Ha_bridge extends CI_Controller {
             fwrite(STDERR, 'ERROR: no published course with code "' . $code . '"' . PHP_EOL);
             exit(1);
         }
-        $this->sync_categories();
+        $this->sync_categories((int) $course['category_id']);
         $category_ids = array();
         $sub_category_ids = array();
         foreach ($this->db->get('category')->result_array() as $c) {
@@ -162,7 +162,8 @@ class Ha_bridge extends CI_Controller {
         $legacy_id = $this->sync_course($course, $category_ids, $sub_category_ids);
         $counts = $this->sync_curriculum($course, $legacy_id);
         $this->load->library('ha_assessment');
-        $this->ha_assessment->build();
+        // PDF courses already have their reviewed per-lesson assessments.
+        if (strpos($code, 'dy-') !== 0) { $this->ha_assessment->build($legacy_id); }
         $this->out('synced ' . $code . ' -> legacy course ' . $legacy_id . ' (' . $counts['sections'] . ' sections, ' . $counts['lessons'] . ' lessons)');
     }
 
@@ -170,8 +171,9 @@ class Ha_bridge extends CI_Controller {
      * Academy categories become legacy top level categories. The academy code
      * is stored in category.code, which is what makes this re-runnable.
      */
-    private function sync_categories() {
+    private function sync_categories($only_id = null) {
         $written = 0;
+        if ($only_id !== null) { $this->db->where('c.id', (int) $only_id); }
         $rows = $this->db
             ->select('c.id, c.code, c.slug_en, c.sort_order, c.icon')
             ->select('t.name', false)
@@ -184,7 +186,7 @@ class Ha_bridge extends CI_Controller {
         foreach ($rows as $r) {
             $written += $this->sync_category_pair($r);
         }
-        $written += $this->prune_categories($rows);
+        if ($only_id === null) { $written += $this->prune_categories($rows); }
         return $written;
     }
 
@@ -436,6 +438,7 @@ class Ha_bridge extends CI_Controller {
      * name. Older stamps are cleared out or the directory grows on every sync.
      */
     private function publish_course_thumbnail($course_id, $source, $last_modified, $previous_stamp = null) {
+        if (defined('HA_TEST_RUNNING') && HA_TEST_RUNNING) { return; }
         $theme = $this->theme();
         $prefix = 'course_thumbnail_' . $theme . '_' . $course_id;
 
@@ -481,9 +484,13 @@ class Ha_bridge extends CI_Controller {
             ->order_by('section_id', 'ASC')->order_by('order', 'ASC')->order_by('id', 'ASC')->get('lesson')->result_array();
 
         $linked = array();
+        $linked_sections = array();
         if ($this->db->table_exists('ha_lms_link')) {
             foreach ($this->db->get_where('ha_lms_link', array('legacy_course_id' => $legacy_course_id, 'legacy_table' => 'lesson'))->result_array() as $k) {
                 $linked[$k['ha_table'] . ':' . $k['ha_id']] = (int) $k['legacy_id'];
+            }
+            foreach ($this->db->get_where('ha_lms_link', array('legacy_course_id' => $legacy_course_id, 'legacy_table' => 'section'))->result_array() as $k) {
+                $linked_sections[(int) $k['ha_id']] = (int) $k['legacy_id'];
             }
         }
         $linked_ids = array_flip($linked);
@@ -513,8 +520,10 @@ class Ha_bridge extends CI_Controller {
                 'order'         => (int) $s['sort_order'] + 1,
                 'restricted_by' => '',
             );
-            if (isset($old_sections[$si])) {
-                $legacy_section_id = $old_sections[$si];
+            if ($this->db->field_exists('ha_retired_at', 'section')) { $section_row['ha_retired_at'] = null; }
+            $existing_section = isset($linked_sections[$s['id']]) ? $linked_sections[$s['id']] : (!$linked_sections && isset($old_sections[$si]) ? $old_sections[$si] : null);
+            if ($existing_section !== null) {
+                $legacy_section_id = $existing_section;
                 $this->db->where('id', $legacy_section_id)->update('section', $section_row);
             } else {
                 $this->db->insert('section', $section_row);
@@ -531,7 +540,7 @@ class Ha_bridge extends CI_Controller {
                 ->select('v.video_id, v.embed_url, v.author_name, v.author_url, v.status AS video_status, v.provider AS video_provider, lt.captions_url', false)
                 ->from('ha_lesson l')
                 ->join('ha_lesson_translation lt', "lt.lesson_id = l.id AND lt.locale = 'en'", 'left')
-                ->join('ha_lesson_video_source v', "v.lesson_id = l.id AND v.status = 'live'", 'left')
+                ->join('ha_lesson_video_source v', "v.id = (SELECT vs.id FROM ha_lesson_video_source vs WHERE vs.lesson_id=l.id AND vs.status='live' ORDER BY (vs.locale='en') DESC, vs.editorial_score DESC, vs.sort_order, vs.id LIMIT 1)", 'left', false)
                 ->where('l.section_id', $s['id'])
                 ->where('l.status', 'published')
                 ->order_by('l.sort_order', 'ASC')
@@ -547,7 +556,8 @@ class Ha_bridge extends CI_Controller {
                 $video_url  = '';
                 $caption    = '';
                 $summary    = $l['body'];
-                if ($type === 'video' && !empty($l['embed_url']) && $l['video_provider'] === 'academy') {
+                if (!empty($l['embed_url'])) { $type = 'video'; }
+                if ($type === 'video' && !empty($l['embed_url']) && in_array($l['video_provider'], array('academy','upload'), true)) {
                     // The academy's own production (AI Studio): an MP4 on this
                     // server, played by the LMS html5 player with captions.
                     $video_type = 'html5';
@@ -558,7 +568,8 @@ class Ha_bridge extends CI_Controller {
                     $summary   .= '<p class="lesson-video-credit"><small>Produced by ' . html_escape($l['author_name'])
                         . '. Narration and slides were drafted with AI and approved by the academy before publishing.</small></p>';
                 } elseif ($type === 'video' && !empty($l['embed_url'])) {
-                    $video_type = 'youtube';
+                    $video_type = $l['video_provider'] === 'youtube' ? 'youtube' : ($l['video_provider'] === 'vimeo' ? 'vimeo' : 'iframe');
+                    if ($video_type === 'iframe') { $type = 'iframe'; }
                     $video_url  = $l['embed_url'];
                     $summary   .= $this->video_credit($l);
                 } elseif ($type === 'video') {
@@ -602,13 +613,21 @@ class Ha_bridge extends CI_Controller {
             if (isset($used[$id]) || ($o['lesson_type'] === 'quiz' && !isset($linked_ids[$id]))) {
                 continue;
             }
+            if (strpos($course['code'], 'dy-') === 0 && $this->db->field_exists('ha_retired_at', 'lesson')) {
+                $this->db->where('id', $id)->update('lesson', array('ha_retired_at' => date('Y-m-d H:i:s')));
+                continue;
+            }
             $this->db->where('quiz_id', $id)->delete('question');
             $this->db->where('id', $id)->delete('lesson');
             if ($this->db->table_exists('ha_lms_link')) {
                 $this->db->where(array('legacy_table' => 'lesson', 'legacy_id' => $id))->delete('ha_lms_link');
             }
         }
-        foreach (array_slice($old_sections, count($sections)) as $sid) {
+        foreach (array_diff($old_sections, $section_ids) as $sid) {
+            if (strpos($course['code'], 'dy-') === 0 && $this->db->field_exists('ha_retired_at', 'section')) {
+                $this->db->where('id', $sid)->update('section', array('ha_retired_at' => date('Y-m-d H:i:s')));
+                continue;
+            }
             $this->db->where('section_id', $sid)->where('lesson_type !=', 'quiz')->delete('lesson');
             if (!$this->db->where('section_id', $sid)->count_all_results('lesson')) {
                 $this->db->where('id', $sid)->delete('section');
@@ -624,6 +643,7 @@ class Ha_bridge extends CI_Controller {
 
     /** Update the legacy lesson linked to $key (or the next reusable one), or insert a new row. */
     private function put_lesson(array $linked, array &$pool, array &$used, $key, array $row) {
+        if ($this->db->field_exists('ha_retired_at', 'lesson')) { $row['ha_retired_at'] = null; }
         $id = isset($linked[$key]) ? $linked[$key] : null;
         if ($id === null || isset($used[$id])) {
             $id = null;
@@ -689,7 +709,12 @@ class Ha_bridge extends CI_Controller {
         // Questions are reused by position too: quiz_results key answers by question id.
         $old = array_map('intval', array_column($this->db->select('id')->where('quiz_id', $legacy_id)
             ->order_by('order', 'ASC')->order_by('id', 'ASC')->get('question')->result_array(), 'id'));
+        $question_links = array(); $used_questions = array();
+        foreach ($this->db->get_where('ha_lms_link', array('legacy_table'=>'question','ha_table'=>'ha_question','legacy_course_id'=>$legacy_course_id))->result_array() as $link) {
+            $question_links[(int) $link['ha_id']] = (int) $link['legacy_id'];
+        }
         foreach ($questions as $i => $q) {
+            if ($this->db->field_exists('ha_retired_at', 'ha_question_option')) { $this->db->where('ha_retired_at', null); }
             $options = $this->db->select('body_en, is_correct')->where('question_id', $q['id'])
                 ->order_by('sort_order', 'ASC')->get('ha_question_option')->result_array();
             $correct = array();
@@ -707,17 +732,21 @@ class Ha_bridge extends CI_Controller {
                 'correct_answers'   => json_encode($correct),
                 'order'             => $i + 1,
             );
-            if (isset($old[$i])) {
-                $this->db->where('id', $old[$i])->update('question', $row);
-                $qid = $old[$i];
+            if ($this->db->field_exists('ha_retired_at','question')) { $row['ha_retired_at'] = null; }
+            $existing_question = isset($question_links[$q['id']]) ? $question_links[$q['id']] : (!$question_links && isset($old[$i]) ? $old[$i] : null);
+            if ($existing_question !== null) {
+                $this->db->where('id', $existing_question)->update('question', $row);
+                $qid = $existing_question;
             } else {
                 $this->db->insert('question', $row);
                 $qid = (int) $this->db->insert_id();
             }
+            $used_questions[] = $qid;
             $this->link('question', $qid, 'ha_question', $q['id'], $legacy_course_id);
         }
-        foreach (array_slice($old, count($questions)) as $gone) {
-            $this->db->where('id', $gone)->delete('question');
+        foreach (array_diff($old, $used_questions) as $gone) {
+            if ($this->db->field_exists('ha_retired_at', 'question')) { $this->db->where('id', $gone)->update('question', array('ha_retired_at'=>date('Y-m-d H:i:s'))); }
+            else { $this->db->where('id', $gone)->delete('question'); }
         }
         return true;
     }
@@ -738,8 +767,7 @@ class Ha_bridge extends CI_Controller {
         $link = !empty($lesson['author_url'])
             ? '<a href="' . html_escape($lesson['author_url']) . '" rel="noopener nofollow" target="_blank">' . $name . '</a>'
             : $name;
-        return '<p class="lesson-video-credit"><small>Video by ' . $link
-            . ', used under the standard YouTube embed terms. It is not produced by the academy.</small></p>';
+        return '<p class="lesson-video-credit"><small>Video by ' . $link . '.</small></p>';
     }
 
     /** The legacy player switches on these values. */

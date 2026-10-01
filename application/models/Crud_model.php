@@ -637,6 +637,7 @@ class Crud_model extends CI_Model
 
     public function get_lessons($type = "", $id = "")
     {
+        if ($this->db->field_exists('ha_retired_at', 'lesson')) { $this->db->where('ha_retired_at', null); }
         $this->db->order_by("order", "asc");
         if ($type == "course") {
             return $this->db->get_where('lesson', ['course_id' => $id]);
@@ -1428,6 +1429,7 @@ class Crud_model extends CI_Model
 
     public function get_section($type_by, $id)
     {
+        if ($this->db->field_exists('ha_retired_at','section')) { $this->db->where('ha_retired_at', null); }
         $this->db->order_by("order", "asc");
         if ($type_by == 'course') {
             return $this->db->get_where('section', ['course_id' => $id]);
@@ -2386,7 +2388,7 @@ class Crud_model extends CI_Model
             'ha_footer_statement_en', 'ha_footer_statement_ar',
             'ha_contact_address_en', 'ha_contact_address_ar',
             'ha_contact_email', 'ha_contact_phone',
-            'ha_social_linkedin', 'ha_social_instagram',
+            'ha_social_linkedin', 'ha_social_facebook', 'ha_social_instagram',
             'ha_social_youtube', 'ha_social_x',
         );
 
@@ -3518,6 +3520,7 @@ class Crud_model extends CI_Model
     // Get quiz questions
     public function get_quiz_questions($quiz_id)
     {
+        if ($this->db->field_exists('ha_retired_at','question')) { $this->db->where('ha_retired_at', null); }
         $this->db->order_by("order", "asc");
         $this->db->where('quiz_id', $quiz_id);
         return $this->db->get('question');
@@ -3716,16 +3719,21 @@ class Crud_model extends CI_Model
     // This function is responsible for retreving all the language file from language folder
     public function get_all_languages()
     {
+        require_once APPPATH.'helpers/ha_locale_helper.php';
         $language_files = [];
         $all_files      = $this->get_list_of_language_files();
         foreach ($all_files as $file) {
             $info = pathinfo($file);
             if (isset($info['extension']) && strtolower($info['extension']) == 'json') {
                 $file_name = explode('.json', $info['basename']);
-                array_push($language_files, $file_name[0]);
+                $code=array_search($file_name[0],ha_locale_config()['legacy'],true);
+                if (ha_locale_known($file_name[0])) { $code=$file_name[0]; }
+                if ($code && ha_locale_enabled($code)) { array_push($language_files, $file_name[0]); }
             }
         }
-        return $language_files;
+        require_once APPPATH.'helpers/ha_locale_helper.php';
+        foreach (ha_locales() as $locale) { $language_files[]=ha_locale_legacy_column($locale) ?: $locale; }
+        return array_values(array_unique($language_files));
     }
 
     // This function is responsible for showing all the installed themes

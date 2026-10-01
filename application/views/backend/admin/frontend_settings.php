@@ -202,7 +202,7 @@
 
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <label for="ha_contact_email"><?php echo get_phrase('Email'); ?></label>
+                                    <label for="ha_contact_email"><?php echo get_phrase('Email'); ?> (<?php echo get_phrase('support'); ?>, info@altusgulf.com)</label>
                                     <input type="email" class="form-control" name="ha_contact_email" id="ha_contact_email"
                                            value="<?php echo html_escape(get_frontend_settings('ha_contact_email')); ?>">
                                 </div>
@@ -215,8 +215,8 @@
 
                             <div class="row">
                                 <?php
-                                $ha_networks = array('linkedin' => 'LinkedIn', 'instagram' => 'Instagram',
-                                                     'youtube' => 'YouTube', 'x' => 'X');
+                                $ha_networks = array('linkedin' => 'LinkedIn', 'facebook' => 'Facebook', 'instagram' => 'Instagram',
+                                                     'x' => 'X', 'youtube' => 'YouTube');
                                 foreach ($ha_networks as $ha_k => $ha_label): ?>
                                     <div class="col-md-6 form-group">
                                         <label for="ha_social_<?php echo $ha_k; ?>"><?php echo $ha_label; ?></label>

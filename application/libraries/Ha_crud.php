@@ -78,7 +78,8 @@ class Ha_crud {
                 'list' => array('name_en', 'role_en', 'status'), 'search' => array('name_en', 'name_ar'),
                 'fields' => array('slug' => 'slug*', 'name_en' => 'text*', 'name_ar' => 'text*', 'role_en' => 'text*', 'role_ar' => 'text*', 'biography_en' => 'textarea', 'biography_ar' => 'textarea',
                     'track_record_en' => 'textarea', 'track_record_ar' => 'textarea', 'recognition_en' => 'textarea', 'recognition_ar' => 'textarea', 'education' => 'text', 'credentials' => 'text',
-                    'photo_path' => 'text', 'linkedin_url' => 'url', 'sort_order' => 'number', 'status' => 'enum:draft,published')),
+                    'photo_path' => 'image', 'email' => 'email', 'phone' => 'text', 'linkedin_url' => 'url', 'facebook_url' => 'url', 'instagram_url' => 'url', 'x_url' => 'url',
+                    'sort_order' => 'number', 'status' => 'enum:draft,published')),
             'partners' => array('table' => 'ha_partner', 'perm' => 'corporate', 'title' => 'Partnership directory',
                 'list' => array('name', 'category', 'relationship_status', 'is_official', 'visibility'), 'search' => array('name', 'geography'),
                 'fields' => array('name' => 'text*', 'category' => 'enum:hotel_operator,global_brand,technology,data,investor,fund,family_office,government,development_authority',
@@ -212,6 +213,33 @@ class Ha_crud {
                 continue;
             }
             $v = is_string($v) ? trim($v) : $v;
+            // image: an uploaded file replaces the stored path; without one the path field (kept or cleared) stands.
+            if ($type === 'image') {
+                $up = isset($_FILES[$name . '__file']) ? $_FILES[$name . '__file'] : null;
+                if ($up && !empty($up['tmp_name']) && is_uploaded_file($up['tmp_name'])) {
+                    $info = @getimagesize($up['tmp_name']);
+                    $ext = $info ? array(IMAGETYPE_JPEG => 'jpg', IMAGETYPE_PNG => 'png', IMAGETYPE_WEBP => 'webp')[$info[2]] ?? null : null;
+                    if (!$ext) {
+                        $errors[] = ucfirst(str_replace('_', ' ', $name)) . ' must be a JPG, PNG or WebP image.';
+                        continue;
+                    }
+                    if ($up['size'] > 5 * 1024 * 1024) {
+                        $errors[] = ucfirst(str_replace('_', ' ', $name)) . ' must be 5 MB or smaller.';
+                        continue;
+                    }
+                    $dir = 'uploads/academy/people/';
+                    if (!is_dir(FCPATH . $dir)) { @mkdir(FCPATH . $dir, 0755, true); }
+                    $file = $dir . bin2hex(random_bytes(8)) . '.' . $ext;
+                    if (!move_uploaded_file($up['tmp_name'], FCPATH . $file)) {
+                        $errors[] = 'The image could not be saved.';
+                        continue;
+                    }
+                    $v = $file;
+                } elseif ($v !== '' && $v !== null && !preg_match('~^(uploads/[A-Za-z0-9/_\-.]+|https://\S+)$~', $v)) {
+                    $errors[] = ucfirst(str_replace('_', ' ', $name)) . ' must be an uploaded image.';
+                    continue;
+                }
+            }
             if ($v === '' || $v === null) {
                 if ($required) {
                     $errors[] = ucfirst(str_replace('_', ' ', $name)) . ' is required.';

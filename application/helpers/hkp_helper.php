@@ -48,7 +48,7 @@ if (!function_exists('hkp_locale')) {
         static $dicts = array();
         $locale = $locale ?: hkp_locale();
         if (!isset($dicts[$locale])) {
-            $file = APPPATH . 'language/hkp/' . preg_replace('/[^a-z]/', '', $locale) . '.php';
+            $file = APPPATH . 'language/hkp/' . ha_locale_filename($locale) . '.php';
             $dicts[$locale] = ($locale !== 'en' && is_file($file)) ? (array) include $file : array();
         }
         return $dicts[$locale];
@@ -68,6 +68,8 @@ if (!function_exists('hkp_locale')) {
                 $out = $dict[$text];
             }
         }
+        require_once APPPATH . 'helpers/ha_reviewed_translation_helper.php';
+        $out = ha_reviewed_text('hkp', $text, hkp_locale(), $out);
         foreach ($vars as $k => $v) {
             $out = str_replace('{' . $k . '}', (string) $v, $out);
         }
@@ -89,9 +91,18 @@ if (!function_exists('hkp_locale')) {
      * reads title_{locale}, then English, then Arabic, then a plain `title`,
      * so a missing translation shows the best available text rather than nothing.
      */
-    function hkp_pick($row, $field) {
+    function hkp_pick($row, $field, $entity = null) {
         if (!is_array($row)) {
             return '';
+        }
+        $loc = hkp_locale();
+        if (!$entity && isset($row['_ha_entity'])) { $entity = $row['_ha_entity']; }
+        if ($entity && !empty($row['id']) && $loc !== 'en' && $loc !== 'ar') {
+            $CI =& get_instance();
+            if ($CI->db->table_exists('ha_i18n_text')) {
+                $value = $CI->db->select('value')->get_where('ha_i18n_text',array('entity'=>$entity,'entity_id'=>(int)$row['id'],'field'=>$field,'locale'=>$loc))->row('value');
+                if (is_string($value) && trim($value) !== '') { return $value; }
+            }
         }
         foreach (array_unique(array(hkp_locale(), 'en', 'ar')) as $loc) {
             if (isset($row[$field . '_' . $loc]) && trim((string) $row[$field . '_' . $loc]) !== '') {

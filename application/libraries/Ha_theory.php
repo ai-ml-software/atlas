@@ -52,6 +52,8 @@ class Ha_theory {
             if (!$this->CI->ha_learning->course_visible($a['course_id'], $user_id)) {
                 throw new RuntimeException('That assessment is not available to you.');
             }
+            $lesson = $this->CI->db->get_where('ha_lesson', array('assessment_id'=>(int)$assessment_id,'status'=>'published'))->row_array();
+            if ($lesson) { $this->CI->ha_learning->assert_library_sequence($lesson, $user_id); }
         }
         $open = $this->CI->db->get_where('ha_assessment_attempt', array('assessment_id' => (int) $assessment_id, 'user_id' => (int) $user_id, 'status' => 'in_progress'))->row_array();
         if ($open) {
@@ -74,6 +76,7 @@ class Ha_theory {
         }
         $order = array();
         foreach ($qids as $qid) {
+            if ($this->CI->db->field_exists('ha_retired_at','ha_question_option')) { $this->CI->db->where('ha_retired_at', null); }
             $opts = array_map('intval', array_column($this->CI->db->select('id')->order_by('sort_order')->get_where('ha_question_option', array('question_id' => $qid))->result_array(), 'id'));
             $q = $this->CI->db->select('question_type')->get_where('ha_question', array('id' => $qid))->row_array();
             if ((int) $a['shuffle_options'] || in_array($q['question_type'], array('ordering', 'matching'), true)) {
@@ -117,6 +120,8 @@ class Ha_theory {
             return null;
         }
         $a = $this->assessment($at['assessment_id']);
+        $this->CI->load->library('ha_library_review');
+        $current=$this->CI->ha_library_review->translation_current($a['course_id'],hkp_locale());
         $order = json_decode((string) $at['question_order'], true) ?: array();
         $answers = array();
         foreach ($this->CI->db->get_where('ha_assessment_answer', array('attempt_id' => (int) $attempt_id))->result_array() as $r) {
@@ -139,16 +144,18 @@ class Ha_theory {
                     continue;
                 }
                 $op = $all[$oid];
-                $row = array('id' => (int) $op['id'], 'body' => hkp_pick($op, 'body'), 'match' => hkp_pick($op, 'match_key'));
+                $row = array('id' => (int) $op['id'], 'body' => $current ? hkp_pick($op, 'body', 'question_option') : $op['body_en'], 'match' => $current ? hkp_pick($op, 'match_key', 'question_option') : $op['match_key_en']);
                 if ($show && (int) $a['show_correct_answers']) {
                     $row['is_correct'] = (int) $op['is_correct'];
                 }
                 $opts[] = $row;
             }
-            $questions[] = array('id' => (int) $q['id'], 'type' => $q['question_type'], 'body' => hkp_pick($q, 'body'),
-                'translated' => hkp_locale() === 'en' || trim((string) $q['body_ar']) !== '',
+            $translated = $current && (hkp_locale() === 'en' || (hkp_locale() === 'ar' && trim((string) $q['body_ar']) !== '')
+                || $this->CI->db->get_where('ha_i18n_text',array('entity'=>'question','entity_id'=>$q['id'],'field'=>'body','locale'=>hkp_locale()))->num_rows() > 0);
+            $questions[] = array('id' => (int) $q['id'], 'type' => $q['question_type'], 'body' => $current ? hkp_pick($q, 'body', 'question') : $q['body_en'],
+                'translated' => $translated,
                 'marks' => (float) $q['marks'], 'options' => $opts,
-                'explanation' => $show ? hkp_pick($q, 'explanation') : null,
+                'explanation' => $show ? ($current ? hkp_pick($q, 'explanation', 'question') : $q['explanation_en']) : null,
                 'answer' => isset($answers[$q['id']]) ? $answers[$q['id']] : null);
         }
         return array('attempt' => $at, 'assessment' => $a, 'questions' => $questions);
@@ -179,7 +186,8 @@ class Ha_theory {
             if (!$q) {
                 continue;
             }
-            $opts = $this->CI->db->get_where('ha_question_option', array('question_id' => $q['id']))->result_array();
+            // An existing attempt retains its original option identities, including retired options.
+            $opts = $o['o'] ? $this->CI->db->where_in('id', $o['o'])->get('ha_question_option')->result_array() : array();
             $marks = (float) $q['marks'];
             $max += $marks;
             $resp = $late ? null : (isset($responses[$q['id']]) ? $responses[$q['id']] : null);

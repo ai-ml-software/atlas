@@ -171,6 +171,8 @@ $route['(' . $HA_LOCALES . ')/certificates']                = 'academy/certifica
 $route['(' . $HA_LOCALES . ')/verify']                      = 'academy/verify/$1';
 $route['(' . $HA_LOCALES . ')/verify/(:any)']               = 'academy/verify/$1/$2';
 $route['(' . $HA_LOCALES . ')/about']                       = 'academy/about/$1';
+// The 2026 Corporate Profile as a page-turning book (English and the Arabic MSA edition).
+$route['(' . $HA_LOCALES . ')/profile'] = 'academy/profile/$1';
 // Altus Gulf corporate pages (2026 Corporate Profile), see Academy::corporate_pages().
 $route['(' . $HA_LOCALES . ')/(about-altus|services|knowledge-performance|ascent|market|case-studies|leadership)'] = 'academy/corporate/$1/$2';
 $route['(' . $HA_LOCALES . ')/hotels']                      = 'academy/hotels/$1';

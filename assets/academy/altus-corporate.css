@@ -119,3 +119,32 @@ body.ha--rtl .ag-quote p { font-family: var(--ha-font-ar); font-style: normal; }
 .ha-foot__founder .ha-foot__actions { display: flex; gap: .5rem; margin-top: .35rem; flex-wrap: wrap; }
 .ha-foot__founder .ha-foot__actions a { display: inline-flex; align-items: center; min-height: 40px; padding-inline: .9rem; border: 1px solid rgba(247, 245, 241, .25); border-radius: 2px; color: var(--ha-on-dark); text-decoration: none; font-size: .85rem; }
 .ha-foot__founder .ha-foot__actions a:hover { border-color: var(--ha-accent); color: #fff; }
+.ag-more { margin: 1.5rem 0 0; }
+.ag-more a { font-family: var(--ha-font-heading); font-weight: 600; color: var(--ha-accent-on-light); text-decoration: none; border-block-end: 2px solid var(--ha-accent); padding-block-end: .15rem; }
+.ag-more a:hover { color: var(--ha-ink); }
+.ag-answer__text { font-size: 1.15rem; line-height: 1.65; color: var(--ha-ink); }
+.ag-divisions { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 1.25rem; }
+.ag-division { background: var(--ha-canvas); border: 1px solid var(--ha-line); border-block-start: 3px solid var(--ha-accent); border-radius: var(--ha-radius); padding: 1.4rem 1.5rem; }
+.ag-division h3 a { color: var(--ha-ink); text-decoration: none; }
+.ag-division h3 a:hover { color: var(--ha-accent-on-light); }
+.ag-layers { list-style: none; margin: 2rem 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: .75rem; }
+.ag-layers li { display: grid; gap: .3rem; padding: 1rem 1.1rem; background: var(--ha-canvas); border: 1px solid var(--ha-line); border-radius: var(--ha-radius); }
+.ag-layers .ha-num { color: var(--ha-accent-on-light); font-size: .85rem; }
+.ag-layers li > span:last-child { font-size: .9rem; color: var(--ha-ink-soft); }
+.ag-features { margin: 1.5rem 0; }
+.ag-kpis--light li { background: var(--ha-canvas); color: var(--ha-ink); border: 1px solid var(--ha-line); }
+.ag-kpis--light .ag-kpis__v { color: var(--altus-sage-deep, #246548); }
+.ag-pillars { margin-top: 1.5rem; }
+.ag-casecard h3 a, .ag-founder h3 a { color: var(--ha-ink); text-decoration: none; }
+.ag-casecard h3 a:hover, .ag-founder h3 a:hover { color: var(--ha-accent-on-light); }
+.ag-founder .ag-leader__mono { width: 56px; height: 56px; font-size: 1.5rem; }
+.ag-faq { max-width: 880px; }
+.ag-faq__q { margin: 0; font-size: 1.05rem; font-weight: 600; font-family: var(--ha-font-heading); }
+.ag-hero--home h1 { max-width: 22ch; }
+/* Corporate section heads stack (eyebrow, H2, lead) instead of the catalogue's title-left / link-right row. */
+.ha-section__head:has(> .ha-eyebrow) { display: block; }
+.ha-section__head:has(> .ha-eyebrow) .ha-eyebrow { margin-bottom: .5rem; }
+.ha-section__head:has(> .ha-eyebrow) h2::before { display: none; }
+.ha-section__head:has(> .ha-eyebrow) p { margin-top: .6rem; }
+/* KPI values that are words ("High", "100s") read better in the heading face; figures keep the data face. */
+.ag-kpis--light .ag-kpis__v { font-family: var(--ha-font-heading); font-weight: 600; }

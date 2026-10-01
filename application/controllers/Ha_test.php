@@ -119,6 +119,7 @@ class Ha_test extends CI_Controller {
             $class = 'Migration_' . ucfirst(strtolower($m[2]));
             $migration = new $class();
             $migration->up();
+            $this->db->data_cache = array();
         }
 
         require_once APPPATH . 'libraries/Ha_seeder.php';
@@ -134,6 +135,7 @@ class Ha_test extends CI_Controller {
     }
 
     public function run($filter = null) {
+        if (!defined('HA_TEST_RUNNING')) { define('HA_TEST_RUNNING', true); }
         $this->started = microtime(true);
         $this->out('Hospitality Academy test suite');
         $this->out('database: ' . $this->test_db);

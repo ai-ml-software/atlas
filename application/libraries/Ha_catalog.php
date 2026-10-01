@@ -81,6 +81,10 @@ class Ha_catalog {
      * language never publishes thin duplicates of the English site.
      */
     public function is_translated($table, $fk, $id, $locale) {
+        if ($table === 'ha_course_translation' && $this->db->table_exists('ha_course_locale_release')) {
+            $code = (string) $this->db->select('code')->get_where('ha_course',array('id' => $id))->row('code');
+            if (strpos($code,'dy-') === 0) { $this->CI->load->library('ha_library_review'); return in_array($locale,$this->CI->ha_library_review->released_locales($id),true); }
+        }
         if ($locale === 'en' || $locale === 'ar') {
             return true;
         }
@@ -260,6 +264,16 @@ class Ha_catalog {
             ->where('p.status', 'published')
             ->get()->result_array();
 
+        $course['translation_complete']=$this->is_translated('ha_course_translation','course_id',$course['id'],$locale);
+        $course['source_documents']=array();
+        $manifest_path=APPPATH.'seeds/library_support/manifest.json';
+        if (strpos($course['code'],'dy-')===0 && is_file($manifest_path)) {
+            $manifest=json_decode(file_get_contents($manifest_path),true);
+            foreach (isset($manifest['sources']) ? $manifest['sources'] : array() as $source) {
+                $path='uploads/academy/library/sources/'.$source['sha256'].'.pdf';
+                if ($source['course_code']===$course['code'] && is_file(FCPATH.$path)) { $course['source_documents'][]=array('filename'=>$source['filename'],'path'=>$path); }
+            }
+        }
         return $course;
     }
 

@@ -39,12 +39,13 @@ if (!function_exists('ha_chrome_defaults')) {
             'ha_contact_address_en' => "Riyadh\nKingdom of Saudi Arabia",
             'ha_contact_address_ar' => "الرياض\nالمملكة العربية السعودية",
 
-            // Deliberately empty. A placeholder address on a live site is worse
-            // than none: it collects mail nobody reads. The footer omits each
-            // of these until it is filled in.
-            'ha_contact_email'    => '',
+            // The support inbox is real; phone and social links stay empty until an
+            // administrator fills them in (Admin → Frontend settings), and the footer
+            // omits each one until then: a placeholder link is worse than none.
+            'ha_contact_email'    => 'info@altusgulf.com',   // support inbox (Admin → Frontend settings)
             'ha_contact_phone'    => '',
             'ha_social_linkedin'  => '',
+            'ha_social_facebook'  => '',
             'ha_social_instagram' => '',
             'ha_social_youtube'   => '',
             'ha_social_x'         => '',
@@ -86,3 +87,40 @@ if (!function_exists('ha_chrome')) {
         return $cache[$lookup];
     }
 }
+
+if (!function_exists('ha_social_icons')) {
+    /**
+     * Thin-line icon links for social networks and e-mail (one stroke weight, the brand's
+     * icon rule). $links: network => url, plus 'email' => address. Empty values are skipped.
+     *
+     * @param array  $links
+     * @param string $class  wrapper class
+     * @param string $who    accessible name prefix, e.g. a person's name
+     */
+    function ha_social_icons(array $links, $class = 'ha-social', $who = '') {
+        $paths = array(
+            'linkedin'  => '<path d="M5.5 9v10M5.5 5.2v.1M10 19V9M10 13c0-2.3 1.5-4 3.6-4S17 10.6 17 13v6"/>',
+            'facebook'  => '<path d="M14.5 8H17V4.5h-2.5A4 4 0 0 0 10.5 8.5V11H8v3.5h2.5V21H14v-6.5h2.6L17 11h-3V8.9c0-.5.4-.9.9-.9Z"/>',
+            'instagram' => '<rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.7"/><path d="M16.9 7.1v.1"/>',
+            'x'         => '<path d="M4.5 4.5l15 15M19.5 4.5l-15 15"/>',
+            'youtube'   => '<rect x="3" y="6" width="18" height="12" rx="3.6"/><path d="M10.4 9.6l4.6 2.4-4.6 2.4z"/>',
+            'email'     => '<rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="M4 7l8 6 8-6"/>',
+        );
+        $names = array('linkedin' => 'LinkedIn', 'facebook' => 'Facebook', 'instagram' => 'Instagram', 'x' => 'X', 'youtube' => 'YouTube', 'email' => 'Email');
+        $out = '';
+        foreach ($paths as $k => $svg) {
+            $v = isset($links[$k]) ? trim((string) $links[$k]) : '';
+            if ($v === '' || ($k !== 'email' && !preg_match('~^https?://~i', $v)) || ($k === 'email' && !filter_var($v, FILTER_VALIDATE_EMAIL))) {
+                continue;
+            }
+            $href = $k === 'email' ? 'mailto:' . $v : $v;
+            $label = trim($who . ' ' . $names[$k]);
+            $out .= '<a href="' . html_escape($href) . '"' . ($k === 'email' ? '' : ' target="_blank" rel="noopener noreferrer"')
+                . ' aria-label="' . html_escape($label) . '" title="' . html_escape($k === 'email' ? $v : $names[$k]) . '">'
+                . '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">'
+                . $svg . '</svg></a>';
+        }
+        return $out === '' ? '' : '<span class="' . html_escape($class) . '">' . $out . '</span>';
+    }
+}
+

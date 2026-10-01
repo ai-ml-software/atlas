@@ -14,6 +14,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |       clip  -> generative video clip from a prompt (b-roll)
 */
 $config['ha_ai_tasks'] = array(
+    'translation'   => array('kind' => 'text', 'label' => 'Global translations awaiting human review', 'json' => true, 'max_tokens' => 12000, 'temperature' => 0.1),
     'course_outline' => array('kind' => 'text',   'label' => 'Course outline (sections, lessons, outcomes)', 'json' => true,  'max_tokens' => 8000,  'temperature' => 0.4),
     'lesson_script'  => array('kind' => 'text',   'label' => 'Lesson video script + slides + quiz',            'json' => true,  'max_tokens' => 12000, 'temperature' => 0.4),
     'translate_ar'   => array('kind' => 'text',   'label' => 'Arabic adaptation of English content',           'json' => true,  'max_tokens' => 12000, 'temperature' => 0.2),

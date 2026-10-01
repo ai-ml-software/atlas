@@ -1,6 +1,6 @@
-<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); require_once APPPATH.'helpers/hkp_helper.php'; ?>
 
-<section class="ha-hero<?= !empty($course['thumbnail']) ? ' ha-hero--image' : '' ?>">
+<section class="ha-hero<?= strpos($course['code'],'dy-')===0 ? ' ha-course-hero' : '' ?><?= !empty($course['thumbnail']) ? ' ha-hero--image' : '' ?>">
     <?php $hero = ha_image_variant($course['thumbnail'], 'wide'); if ($hero): ?>
         <div class="ha-hero__media" aria-hidden="true"
              style="background-image:url('<?= base_url($hero) ?>')"></div>
@@ -18,9 +18,16 @@
     <div class="ha-shell ha-detail">
 
         <div>
+            <?php if (isset($course['translation_complete']) && !$course['translation_complete']): ?><p role="status"><?= ha_pe('This course is not yet available in {language}; the English version is shown.',array('language'=>ha_locale_name($locale))) ?></p><?php endif; ?>
             <div class="ha-prose">
                 <h2><?= html_escape($t['overview']) ?></h2>
-                <p><?= html_escape($course['description']) ?></p>
+                <div><?= hkp_safe_html($course['description']) ?></div>
+
+                <?php if (!empty($course['source_documents'])): ?>
+                    <h2><?= ha_pe('Source training material') ?></h2>
+                    <p><?= ha_pe('Dyafa Hotels & Resorts') ?></p>
+                    <ul><?php foreach ($course['source_documents'] as $document): ?><li><a href="<?= html_escape(base_url($document['path'])) ?>"><?= html_escape($document['filename']) ?></a></li><?php endforeach; ?></ul>
+                <?php endif; ?>
 
                 <?php if ($course['outcomes']): ?>
                     <h2><?= html_escape($t['outcomes']) ?></h2>

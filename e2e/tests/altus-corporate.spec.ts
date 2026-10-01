@@ -20,9 +20,9 @@ const PAGES: Record<string, { h1: RegExp; text: RegExp; ar: RegExp }> = {
 test.describe('Altus Gulf corporate site', () => {
   test('the header menu is the Altus Gulf menu, in order, in both languages', async ({ page }) => {
     await open(page, 'en');
-    await expect(page.locator('#ha-nav > ul > li:not(.ha-more) > a')).toHaveText(MENU_EN);
+    await expect(page.locator('#ha-nav > ul > li:not(.ha-more) > a, #ha-nav > ul > li > .ha-mega__head > a, #ha-nav .ha-more__panel > li > a')).toHaveText(MENU_EN);   // inline items, then any moved under More, in order
     await open(page, 'ar');
-    await expect(page.locator('#ha-nav > ul > li:not(.ha-more) > a')).toHaveText(MENU_AR);
+    await expect(page.locator('#ha-nav > ul > li:not(.ha-more) > a, #ha-nav > ul > li > .ha-mega__head > a, #ha-nav .ha-more__panel > li > a')).toHaveText(MENU_AR);
     await expect(page.locator('html')).toHaveAttribute('dir', 'rtl');
   });
 
@@ -41,6 +41,47 @@ test.describe('Altus Gulf corporate site', () => {
       await expect(page.locator('main')).not.toContainText(/^\s*ية\.\s*$/m);
     });
   }
+
+  test('home page: keyword-led H1 and meta, answer-first summary, FAQ and structured data, links into every page', async ({ page }) => {
+    for (const [l, h1, title] of [['en', /Advisory in Saudi Arabia/, /^Hospitality Consulting in Saudi Arabia \| Altus Gulf$/],
+                                  ['ar', /استشارات الضيافة/, /استشارات الضيافة في السعودية/]] as const) {
+      await open(page, l);
+      await expect(page.locator('h1')).toHaveCount(1);
+      await expect(page.locator('h1')).toHaveText(h1);
+      await expect(page).toHaveTitle(title);
+      const desc = (await page.locator('meta[name=description]').getAttribute('content'))!;
+      expect(desc.length).toBeGreaterThan(110);
+      expect(desc.length).toBeLessThanOrEqual(160);
+      await expect(page.locator('#about p').first()).toContainText(/Altus Gulf|Altus Gulf/);      // answer-first block in About
+      await expect(page.locator('#faq details')).toHaveCount(10);
+      await expect(page.locator('meta[name="geo.region"]')).toHaveAttribute('content', 'SA-01');
+      const types = await page.locator('script[type="application/ld+json"]').evaluateAll((s) => s.map((x) => JSON.stringify(JSON.parse(x.textContent!)['@type'])));
+      for (const t of ['"FAQPage"', '["Organization","ProfessionalService"]', '"WebSite"', '"HowTo"']) expect(types, t).toContain(t);
+      for (const p of ['about-altus', 'services', 'knowledge-performance', 'ascent', 'market', 'case-studies', 'leadership', 'courses', 'contact']) {
+        await expect(page.locator(`main a[href$="/${l}/${p}"]`).first(), p).toBeAttached();
+      }
+      await expect(page.locator('main')).not.toContainText('&#8230;');
+    }
+    const llms = await (await page.request.get('llms.txt')).text();
+    expect(llms).toContain('Altus Gulf is a hospitality and business advisory firm in Riyadh');
+    expect(llms).toMatch(/\/en\/about-altus\)/);
+  });
+
+  test('reference theme: transparent header over the photo hero, dark stat strip, six service cards, real numbers only', async ({ page }) => {
+    await open(page, 'en');
+    await expect(page.locator('body')).toHaveClass(/ha--overlay/);
+    expect(await page.locator('.ha-chrome').evaluate((e) => getComputedStyle(e).position)).toBe('fixed');
+    expect(await page.locator('.t-hero__photo').evaluate((e) => getComputedStyle(e).backgroundImage)).toContain('hero-riyadh-terrace');
+    await expect(page.locator('.t-stats__n')).toHaveText(['60+', '2', '12', '1']);
+    await expect(page.locator('.t-svc')).toHaveCount(6);
+    await expect(page.locator('main')).not.toContainText(/\+18%|\+12%|96%/);              // the reference's placeholder figures are not used
+    await expect(page.locator('#results')).toContainText(/Illustrative case results/);
+    await page.mouse.wheel(0, 800);
+    await expect(page.locator('.ha-chrome')).toHaveClass(/ha-chrome--stuck/);
+    for (const f of ['uploads/academy/altus/hero-riyadh-terrace.webp', 'uploads/academy/altus/svc-training.webp', 'uploads/academy/altus/CREDITS.json']) {
+      expect((await page.request.get(f)).status(), f).toBe(200);
+    }
+  });
 
   test('case studies are labelled illustrative and keep the disclaimer', async ({ page }) => {
     await open(page, 'en/case-studies');
@@ -65,7 +106,7 @@ test.describe('Altus Gulf corporate site', () => {
     }
     await expect(foot.locator('.ha-foot__founder')).toHaveCount(2);
     await expect(foot.locator('a[href="https://wa.me/966500511994"]')).toBeAttached();
-    await expect(foot.locator('a[href="tel:+201095556779"]')).toBeAttached();
+    await expect(foot.locator('a[href="tel:+201095556779"]').first()).toBeAttached();   // the number and the Call button
     await expect(foot).toContainText(/Altus Gulf · All rights reserved\./);
   });
 

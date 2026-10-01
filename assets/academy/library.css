@@ -1,0 +1,15 @@
+/* PDF course headings remain readable above the source cover image. */
+.ha-hero.ha-course-hero { background: #14181c; color: #fff; }
+.ha-hero.ha-course-hero .ha-hero__media { opacity: .3; }
+.ha-hero.ha-course-hero .ha-hero__lede { color: #e2dcd1; }
+.ha-hero.ha-course-hero::before {
+    background: linear-gradient(90deg, rgba(20,24,28,.96), rgba(20,24,28,.8) 60%, rgba(20,24,28,.6));
+}
+.ha--rtl .ha-hero.ha-course-hero::before {
+    background: linear-gradient(270deg, rgba(20,24,28,.96), rgba(20,24,28,.8) 60%, rgba(20,24,28,.6));
+}
+@media (max-width:780px) {
+    .ha-hero.ha-course-hero::before, .ha--rtl .ha-hero.ha-course-hero::before {
+        background: rgba(20,24,28,.88);
+    }
+}

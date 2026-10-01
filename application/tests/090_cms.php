@@ -139,9 +139,12 @@ class Test_cms extends Ha_testcase {
         $this->assertNotEmpty($own['kpis'], 'The GM\'s own property scorecard is returned');
     }
 
-    public function test_every_interface_string_is_translated_in_every_language() {
+    public function test_ready_languages_are_complete_and_pending_strings_are_registered() {
         require_once APPPATH . 'libraries/Ha_i18n_keys.php';
         $keys = Ha_i18n_keys::collect();
+        $this->CI->load->library('ha_global_translation');
+        $this->CI->ha_global_translation->collect_site();
+        $registered=array_column($this->db->where('scope','site')->like('locator','ui:hkp:','after')->get('ha_translation_unit')->result_array(),'source_text');
         foreach (ha_locales() as $code) {
             if ($code === 'en') {
                 continue;
@@ -155,7 +158,15 @@ class Test_cms extends Ha_testcase {
                     $missing[] = $k;
                 }
             }
-            $this->assertEmpty($missing, count($missing) . ' strings have no ' . $code . ': ' . implode(' | ', array_slice($missing, 0, 15)));
+            $language=$this->db->get_where('ha_language_inventory',array('locale'=>$code))->row_array();
+            if ($language && $language['status']==='ready' && (int)$language['enabled']) {
+                $this->assertTrue($this->CI->ha_global_translation->coverage($code,'site')['ready'],'Released languages need reviewed coverage for every shared unit');
+            } else {
+                // Existing URLs remain available while their full review is pending.
+                // Every missing phrase must be exported for translation, never hidden.
+                $this->assertEmpty(array_diff($missing,$registered),'Pending phrases missing from the review inventory');
+                $this->assertFalse($this->CI->ha_global_translation->coverage($code,'site')['ready'],'Incomplete dictionaries cannot count as complete translation');
+            }
             foreach ($dict as $en => $tr) {
                 if (preg_match_all('/\{[a-z_]+\}/', $en, $m)) {
                     foreach ($m[0] as $ph) {

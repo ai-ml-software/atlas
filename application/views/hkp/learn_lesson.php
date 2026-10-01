@@ -4,19 +4,21 @@
   <?php if ($l['objective']): ?><p><?php echo hkp_h($l['objective']); ?></p><?php endif; ?></div>
   <?php echo hkp_badge($progress['status'] === 'completed' ? 'completed' : 'in_progress'); ?>
 </div>
-<?php if (!$l['translated']): ?><div class="hkp-flash hkp-flash--error"><?php echo hkp_e('This lesson is not yet available in Arabic; the English version is shown.'); ?></div><?php endif; ?>
+<?php if (!$l['translated']): ?><div class="hkp-flash hkp-flash--error"><?php echo hkp_e('This lesson is not yet available in {language}; the English version is shown.', array('language' => ha_locale_name(hkp_locale()))); ?></div><?php endif; ?>
 
 <article class="hkp-card" data-lesson-track="<?php echo hkp_url('learn/track_time/' . $l['id']); ?>" data-resume="<?php echo (int) $progress['last_position_seconds']; ?>">
   <?php if ($video): ?>
+    <?php if (!empty($video['credit'])): ?><p class="hkp-small"><?php echo hkp_h($video['credit']); ?> · <?php echo hkp_e('Video language: {language}', array('language' => ha_locale_name($video['locale']))); ?> <?php if (!empty($video['watch_url'])): ?><a href="<?php echo hkp_h($video['watch_url']); ?>" target="_blank" rel="noopener noreferrer"><?php echo hkp_e('Original video'); ?></a><?php endif; ?></p><?php endif; ?>
     <div class="hkp-video" style="margin-bottom:1rem">
       <?php if ($video['type'] === 'embed'): ?>
         <iframe src="<?php echo hkp_h($video['src']); ?>" title="<?php echo hkp_h($l['title']); ?>" allow="encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>
       <?php else: ?>
-        <video src="<?php echo hkp_h($video['src']); ?>" controls preload="metadata" playsinline<?php echo $l['captions_url'] ? '' : ''; ?>>
-          <?php if ($l['captions_url']): ?><track kind="captions" src="<?php echo hkp_h(base_url(ltrim($l['captions_url'], '/'))); ?>" srclang="<?php echo hkp_locale(); ?>" default><?php endif; ?>
+        <video src="<?php echo hkp_h($video['src']); ?>" controls preload="metadata" playsinline>
+          <?php if (!empty($video['captions_url'])): ?><track kind="captions" src="<?php echo hkp_h(base_url(ltrim($video['captions_url'], '/'))); ?>" srclang="<?php echo hkp_h(hkp_locale()); ?>" default><?php endif; ?>
         </video>
       <?php endif; ?>
     </div>
+    <p class="hkp-small hkp-muted"><?php echo hkp_e('If the video cannot play in your region, continue with the complete written lesson below.'); ?></p>
   <?php endif; ?>
   <?php if (!empty($l['media_path']) && $l['media_type'] !== 'video'): $mu = base_url(ltrim($l['media_path'], '/')); ?>
     <div style="margin-bottom:1rem">

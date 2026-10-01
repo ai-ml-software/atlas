@@ -1459,16 +1459,22 @@ class Home extends CI_Controller
     public function site_language()
     {
         $selected_language = $this->input->post('language');
-        $this->session->set_userdata('language', $selected_language);
+        require_once APPPATH . 'helpers/ha_locale_helper.php';
+        $locale = ha_locale_known($selected_language) ? $selected_language : array_search($selected_language, ha_locale_config()['legacy'], true);
+        if (!$locale || !ha_locale_enabled($locale)) { $this->output->set_status_header(400); echo false; return; }
+        $this->session->set_userdata('language', ha_locale_legacy_column($locale) ?: $locale);
+        $this->session->set_userdata('hkp_locale', $locale);
         echo true;
     }
 
     // SETTING FRONTEND LANGUAGE
     public function switch_language($language = "column")
     {
-        if ($this->db->field_exists(strtolower($language), 'language')) {
-            $this->session->set_userdata('language', $language);
-        }
+        require_once APPPATH . 'helpers/ha_locale_helper.php';
+        $locale = ha_locale_known($language) ? $language : array_search($language, ha_locale_config()['legacy'], true);
+        if (!$locale || !ha_locale_enabled($locale)) { $this->output->set_status_header(400); echo json_encode(array('reload' => false)); return; }
+        $this->session->set_userdata('language', ha_locale_legacy_column($locale) ?: $locale);
+        $this->session->set_userdata('hkp_locale', $locale);
         echo json_encode(['reload' => true]);
     }
 

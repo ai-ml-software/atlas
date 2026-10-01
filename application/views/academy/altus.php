@@ -18,7 +18,13 @@ $closing = $first('closing');
 ?>
 
 <?php /* ------------------------------------------------------------ hero */ ?>
-<section class="ha-hero ha-hero--lead ag-hero">
+<?php
+// Reference theme: every corporate page opens on its own photograph (uploads/academy/altus, see CREDITS.json).
+$ag_photo = array('about-altus' => 'about-riyadh-dusk', 'services' => 'svc-operations', 'knowledge-performance' => 'platform-learning',
+    'ascent' => 'why-building', 'market' => 'market-skyline', 'case-studies' => 'svc-development', 'leadership' => 'svc-training');
+$ag_file = isset($ag_photo[$slug]) ? 'uploads/academy/altus/' . $ag_photo[$slug] . '.webp' : '';
+?>
+<section class="ha-hero ha-hero--lead ag-hero"<?php if ($ag_file !== '' && is_file(FCPATH . $ag_file)): ?> data-photo style="background-image:url('<?= base_url($ag_file) ?>')"<?php endif; ?>>
     <div class="ha-shell ha-hero__body">
         <p class="ha-eyebrow"><?= html_escape($tagline['title'] ?: 'Altus Gulf') ?></p>
         <h1><?= html_escape($page_title) ?></h1>
@@ -83,7 +89,7 @@ $closing = $first('closing');
     </div>
 </section>
 
-<section class="ha-section">
+<section class="ha-section" id="why">
     <div class="ha-shell">
         <?php $why = $b['why']; $intro = array_shift($why); ?>
         <div class="ha-section__head"><h2><?= html_escape($intro['title']) ?></h2><p><?= html_escape($intro['body']) ?></p></div>
@@ -368,8 +374,13 @@ $closing = $first('closing');
 <section class="ha-section<?= $i % 2 === 0 ? ' ha-section--tint' : '' ?>" id="<?= html_escape($l['slug']) ?>">
     <div class="ha-shell ag-leader">
         <header class="ag-leader__head">
-            <span class="ag-leader__mono" aria-hidden="true"><?= html_escape(mb_substr($l['name'], 0, 1)) ?></span>
-            <div><p class="ha-eyebrow"><?= ha_pe('Executive leadership') ?></p><h2><?= html_escape($l['name']) ?></h2><p class="ag-leader__role"><?= html_escape($l['role']) ?></p></div>
+            <?php if ($l['photo'] !== ''): ?><img class="ag-leader__photo" src="<?= base_url($l['photo']) ?>" alt="<?= html_escape($l['name']) ?>" width="160" height="160"><?php else: ?><span class="ag-leader__mono" aria-hidden="true"><?= html_escape(mb_substr($l['name'], 0, 1)) ?></span><?php endif; ?>
+            <div><p class="ha-eyebrow"><?= ha_pe('Executive leadership') ?></p><h2><?= html_escape($l['name']) ?></h2><p class="ag-leader__role"><?= html_escape($l['role']) ?></p>
+                <p class="ag-leader__contact">
+                    <?php if ($l['phone_digits'] !== ''): ?><a href="tel:+<?= $l['phone_digits'] ?>" dir="ltr"><?= html_escape($l['phone']) ?></a> · <a href="https://wa.me/<?= $l['phone_digits'] ?>" target="_blank" rel="noopener noreferrer"><?= ha_pe('WhatsApp') ?></a><?php endif; ?>
+                    <?php if ($l['email'] !== ''): ?> · <a href="mailto:<?= html_escape($l['email']) ?>"><?= html_escape($l['email']) ?></a><?php endif; ?>
+                </p>
+                <?= ha_social_icons($l['social'], 'ag-leader__social', $l['name']) ?></div>
         </header>
         <div class="ag-two">
             <div class="ha-prose"><p><?= html_escape($l['bio']) ?></p></div>

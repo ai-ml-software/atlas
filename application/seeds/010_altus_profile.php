@@ -28,7 +28,122 @@ class Seed_altus_profile extends Ha_seeder {
         if (!$this->db->table_exists('ha_corporate_block')) {
             return 0;
         }
-        return $this->blocks() + $this->services() + $this->cases() + $this->leaders() + $this->menu() + $this->platform_brand();
+        return $this->blocks() + $this->services() + $this->cases() + $this->leaders() + $this->menu() + $this->platform_brand() + $this->home() + $this->rename_academy();
+    }
+
+    /** The academy pages still carried the pre-brand name; it is the Altus Gulf Academy now, in every language. */
+    private function rename_academy() {
+        if (!$this->db->table_exists('ha_page_translation')) {
+            return 0;
+        }
+        $n = 0;
+        foreach (array('Hospitality Academy' => 'Altus Gulf Academy', 'أكاديمية الضيافة' => 'أكاديمية Altus Gulf') as $from => $to) {
+            foreach (array('title', 'subtitle', 'body') as $col) {
+                if (!$this->db->field_exists($col, 'ha_page_translation')) {
+                    continue;
+                }
+                $this->db->query("UPDATE ha_page_translation SET `$col` = REPLACE(`$col`, ?, ?) WHERE `$col` LIKE ?", array($from, $to, '%' . $from . '%'));
+                $n += $this->db->affected_rows();
+            }
+        }
+        return $n;
+    }
+
+    /**
+     * Home page copy (written for search, answer engines and generative search):
+     * the meta title/description, a keyword-led H1, an answer-first summary an
+     * AI engine can quote, the platform detail from the profile, and the FAQ
+     * that becomes FAQPage structured data. Facts are the profile's own; claims
+     * the profile does not support are not made.
+     */
+    private function home() {
+        $n = 0;
+        $B = function () use (&$n) { $n += call_user_func_array(array($this, 'block'), func_get_args()); };
+
+        $B('home_seo', 'home_seo', 'Hospitality Consulting in Saudi Arabia | Altus Gulf', 'استشارات الضيافة في السعودية | Altus Gulf',
+            'Riyadh-based hospitality and business advisory: hotel owner representation, pre-opening, feasibility, revenue and AI, plus a bilingual hotel training platform.',
+            'استشارات ضيافة وأعمال من الرياض: تمثيل المالك، ودعم ما قبل الافتتاح، ودراسات الجدوى، والإيرادات والذكاء الاصطناعي، ومنصة تدريب فندقي ثنائية اللغة.');
+        $B('home_hero', 'home_hero', 'Hospitality & Business Performance Advisory in Saudi Arabia', 'استشارات الضيافة وأداء الأعمال في المملكة العربية السعودية',
+            "A Riyadh-based boutique strategy house where hotel operations meet applied business intelligence: owner-side advisory for hotel owners, investors and growing enterprises across Saudi Arabia, the GCC and MENA.",
+            'بيت خبرة استراتيجي متخصص مقرّه الرياض، تلتقي فيه عمليات الضيافة بذكاء الأعمال التطبيقي: استشارات في صف المالك لملّاك الفنادق والمستثمرين والشركات المتنامية في المملكة العربية السعودية ودول الخليج والشرق الأوسط وشمال أفريقيا.');
+        $B('home_answer', 'home_answer', 'What is Altus Gulf?', 'ما هي Altus Gulf؟',
+            "Altus Gulf is a hospitality and business advisory firm in Riyadh, Saudi Arabia. It represents hotel owners and investors in development, pre-opening, feasibility and commercial performance, advises growing enterprises on strategy, revenue, applied AI and digital transformation, and runs Altus Knowledge and Performance, a bilingual Arabic and English learning and performance platform for hotels.",
+            'Altus Gulf شركة استشارات في الضيافة والأعمال مقرّها الرياض في المملكة العربية السعودية. تمثّل ملّاك الفنادق والمستثمرين في التطوير وما قبل الافتتاح ودراسات الجدوى والأداء التجاري، وتقدّم للشركات المتنامية الاستشارات في الاستراتيجية والإيرادات والذكاء الاصطناعي التطبيقي والتحول الرقمي، وتشغّل منصة Altus للمعرفة والأداء، وهي منصة تعلّم وأداء للفنادق بالعربية والإنجليزية.');
+
+        foreach (array(
+            array('Product & Experience', 'المنتج والتجربة', 'Clear scope and a consistent experience across information architecture and UX.', 'نطاق واضح وتجربة متسقة عبر هيكلة المعلومات وتجربة المستخدم.'),
+            array('Knowledge & Learning', 'المعرفة والتعلّم', 'Knowledge architecture, master curriculum, learning engine, assessment and certification.', 'هيكلة المعرفة، والمنهج الرئيسي، ومحرك التعلّم، والتقييم والاعتماد.'),
+            array('Intelligence & Performance', 'الذكاء والأداء', 'Knowledge engine, smart search, governed AI assistant, and live performance indicators.', 'محرك المعرفة، والبحث الذكي، ومساعد ذكاء اصطناعي محكوم، ومؤشرات أداء مباشرة.'),
+            array('Technical Operations', 'العمليات التقنية', 'Database, identity and permissions, per-property customisation, admin and reporting.', 'قاعدة البيانات، والهوية والصلاحيات، والتخصيص لكل منشأة، والإدارة والتقارير.'),
+            array('Governance & Growth', 'الحوكمة والنمو', 'Security and privacy, version control, product roadmap, web and mobile channels.', 'الأمن والخصوصية، وإدارة الإصدارات، وخارطة طريق المنتج، وقنوات الويب والجوال.'),
+        ) as $i => $r) {
+            $B('platform_layer_' . ($i + 1), 'platform_layers', $r[0], $r[1], $r[2], $r[3]);
+        }
+        $B('platform_domains', 'platform_domains', 'Master curriculum: ten professional domains', 'المنهج الرئيسي: عشرة مجالات مهنية',
+            "Hotel Fundamentals\nFront Office\nHousekeeping\nFood & Beverage\nKitchen\nSales & Marketing\nRevenue & Reservations\nGuest Experience\nQuality & Audit\nSecurity & Safety",
+            "أساسيات الفنادق\nالمكتب الأمامي\nالتدبير الفندقي\nالأغذية والمشروبات\nالمطبخ\nالمبيعات والتسويق\nالإيرادات والحجوزات\nتجربة النزلاء\nالجودة والتدقيق\nالأمن والسلامة");
+        foreach (array(
+            array('40%+', '40%+', 'Faster onboarding readiness: new hires productive from day one.', 'جاهزية أسرع للموظفين الجدد: موظفون منتجون منذ اليوم الأول.'),
+            array('High', 'مرتفع', 'Knowledge retained in-house: it stays with the institution, not with departing staff.', 'معرفة محتفَظ بها داخل المنشأة: تبقى مع المؤسسة لا مع المغادرين.'),
+            array('100s', 'مئات', 'Of training hours saved: digital content replaces costly, repetitive classroom cycles.', 'من ساعات التدريب الموفَّرة: يحل المحتوى الرقمي محل دورات القاعات المتكررة المكلفة.'),
+            array('GOP ↑', 'GOP ↑', 'Guest satisfaction and profit: faster resolution supports scores and profit.', 'رضا النزلاء والربحية: سرعة المعالجة تدعم التقييمات والربحية.'),
+        ) as $i => $r) {
+            $B('platform_value_' . ($i + 1), 'platform_value', $r[0], $r[1], $r[2], $r[3]);
+        }
+        foreach (array(
+            array('Source of content', 'مصدر المحتوى', 'External frameworks, generic decks | Off-the-shelf libraries, no hotel standards | Three decades of operator-grade SOPs and field-tested standards',
+                'أطر خارجية وعروض عامة | مكتبات جاهزة دون معايير فندقية | ثلاثة عقود من إجراءات التشغيل القياسية بمستوى المشغّلين والمعايير المُجرَّبة ميدانيًا'),
+            array('After the engagement', 'بعد انتهاء التعاقد', 'Knowledge leaves with the consultants | Content ages without ownership | Knowledge stays institutionalised, versioned, and continuously updated',
+                'تغادر المعرفة مع المستشارين | يتقادم المحتوى دون جهة مالكة | تبقى المعرفة مؤسسية ومُدارة بالإصدارات ومحدَّثة باستمرار'),
+            array('Fit to the property', 'الملاءمة للمنشأة', 'One-size recommendations | No customisation, no Arabic depth | White-label, bilingual, tailored per property, role, and standard',
+                'توصيات موحّدة لجميع الحالات | بلا تخصيص ولا عمق عربي | بعلامة المنشأة، ثنائية اللغة، ومخصّصة لكل منشأة ودور ومعيار'),
+            array('Proof of adoption', 'دليل التبنّي', 'Limited once the report is delivered | Completion clicks, not competence | Assessment, certification, and competency dashboards per employee',
+                'محدود بعد تسليم التقرير | نقرات إتمام لا كفاءة فعلية | تقييم واعتماد ولوحات كفاءة لكل موظف'),
+            array('Intelligence', 'الذكاء', 'Static documents | Keyword search at best | Governed AI assistant answering strictly from approved content',
+                'مستندات ثابتة | بحث بالكلمات المفتاحية في أفضل الأحوال | مساعد ذكاء اصطناعي محكوم يجيب حصرًا من المحتوى المعتمد'),
+        ) as $i => $r) {
+            $B('platform_compare_' . ($i + 1), 'platform_compare', $r[0], $r[1], $r[2], $r[3]);
+        }
+        $B('platform_compare_intro', 'platform_compare_intro', 'How the Altus Gulf model differs', 'ما يميّز نموذج Altus Gulf',
+            'Consultancies typically hand over reports. Software vendors hand over tools. Altus Knowledge and Performance brings the two together: consulting know-how institutionalised inside a living platform that keeps building value long after the mandate.',
+            'تسلّم شركات الاستشارات عادةً تقارير، ويسلّم مزوّدو البرمجيات أدوات. أما منصة Altus للمعرفة والأداء فتجمع بين الاثنين: خبرة استشارية مُؤسَّسة داخل منصة حيّة تواصل بناء القيمة طويلًا بعد انتهاء التعاقد.');
+
+        // FAQ: the questions owners, investors and hotel teams actually ask, answered in 40-80 words, each linking onward.
+        foreach (array(
+            array('What does Altus Gulf do?', 'ماذا تقدّم Altus Gulf؟',
+                'Altus Gulf advises hotel owners, investors and growing enterprises. Its Hospitality Solutions cover owner representation, pre-opening support, feasibility studies, quality audits and commercial performance; its Business Growth Solutions cover strategy, revenue optimisation and applied AI, digital transformation, leadership development and M&A due diligence. It also runs Altus Knowledge and Performance, a bilingual hotel learning platform.',
+                'تقدّم Altus Gulf الاستشارات لملّاك الفنادق والمستثمرين والشركات المتنامية. تشمل حلول الضيافة تمثيل المالك ودعم ما قبل الافتتاح ودراسات الجدوى وتدقيق الجودة والأداء التجاري، وتشمل حلول نمو الأعمال الاستراتيجية وتحسين الإيرادات والذكاء الاصطناعي التطبيقي والتحول الرقمي وتطوير القيادات والعناية الواجبة للاندماج والاستحواذ. كما تشغّل منصة Altus للمعرفة والأداء للتعلّم الفندقي بلغتين.'),
+            array('Who does Altus Gulf work with?', 'مع من تعمل Altus Gulf؟',
+                'Hotel and resort owners, institutional investors, developers, family offices, government and semi-government entities, and enterprises scaling regionally. The firm serves twelve sectors, from hotels, luxury resorts and tourism destinations to real estate, mixed-use developments, healthcare hospitality, retail and F&B, and sports and events, at every scale from a single independent property to national portfolios.',
+                'ملّاك الفنادق والمنتجعات، والمستثمرون المؤسسيون، والمطوّرون، والمكاتب العائلية، والجهات الحكومية وشبه الحكومية، والشركات التي تتوسع إقليميًا. وتخدم الشركة اثني عشر قطاعًا، من الفنادق والمنتجعات الفاخرة والوجهات السياحية إلى العقارات والمشاريع متعددة الاستخدامات والضيافة الصحية والتجزئة والأغذية والمشروبات والرياضة والفعاليات، بكل الأحجام من منشأة مستقلة واحدة إلى المحافظ الوطنية.'),
+            array('What is hotel owner representation?', 'ما هو تمثيل المالك في المشاريع الفندقية؟',
+                "Owner representation is independent, client-side oversight of a hotel project or operation on the owner's behalf. Altus Gulf acts as the link between investors, contractors and the operator: protecting budgets, reducing design deficiencies, governing the hotel management agreement (HMA), reviewing procurement and OS&E, and managing contractor claims through to handover. The firm holds no equity in operators and takes no vendor commissions.",
+                'تمثيل المالك إشراف مستقل إلى جانب العميل على المشروع الفندقي أو تشغيله نيابةً عن المالك. تعمل Altus Gulf حلقةَ وصل بين المستثمرين والمقاولين والمشغّل: تحمي الميزانيات، وتحدّ من أوجه القصور في التصميم، وتحكم إدارة اتفاقية إدارة الفندق (HMA)، وتراجع المشتريات والمستلزمات والمعدات التشغيلية (OS&E)، وتعالج مطالبات المقاولين حتى التسليم. ولا تملك الشركة حصصًا في المشغّلين ولا تتقاضى عمولات من المزوّدين.'),
+            array('How does Altus Gulf support a hotel pre-opening?', 'كيف تدعم Altus Gulf مرحلة ما قبل افتتاح الفندق؟',
+                'With an integrated pre-opening command structure: a unified countdown plan, staged recruitment and training waves, procurement governance, brand-standard readiness and revenue systems live before soft opening. The founders have directed pre-opening projects across Saudi Arabia, Libya, Egypt and West Africa, delivering more than 1,700 rooms at 90 to 95 per cent operational readiness.',
+                'من خلال هيكل قيادة متكامل لما قبل الافتتاح: خطة موحّدة للعد التنازلي، وموجات توظيف وتدريب مرحلية، وحوكمة المشتريات، وجاهزية معايير العلامة، وأنظمة إيرادات جاهزة قبل الافتتاح التجريبي. وقد أشرف المؤسسان على مشاريع ما قبل افتتاح في السعودية وليبيا ومصر وغرب أفريقيا، سُلّمت فيها أكثر من 1,700 غرفة بجاهزية تشغيلية بين 90% و95%.'),
+            array('What is the Altus Ascent™ Framework?', 'ما هو إطار Altus Ascent™؟',
+                "Altus Ascent™ is the firm's six-stage method for every mandate: Discover, Assess, Design, Transform, Optimise and Scale. Each stage has defined gates, deliverables and owner sign-off, taking an asset from its first diagnostic to institutionalised, self-sustaining performance. It is used alongside two proprietary lenses, the Altus Performance Matrix™ and the GOPPAR Value Stack™.",
+                'إطار Altus Ascent™ هو منهج الشركة المؤلّف من ست مراحل لكل مهمة: الاستكشاف، والتقييم، والتصميم، والتحويل، والتحسين، والتوسّع. لكل مرحلة نقاط عبور ومخرجات محددة واعتماد من المالك، لينتقل الأصل من التشخيص الأول إلى أداء مؤسسي مستدام ذاتيًا. ويُستخدم إلى جانب عدستين خاصتين هما مصفوفة الأداء The Altus Performance Matrix™ وسلّم قيمة GOPPAR.'),
+            array('What is Altus Knowledge and Performance?', 'ما هي منصة Altus للمعرفة والأداء؟',
+                "It is Altus Gulf's learning, knowledge-management and performance platform for hotels. It turns operating standards into short applied lessons, assessments and certificates across ten professional domains, from front office and housekeeping to food and beverage, quality and safety. It is white-label per property, includes a governed AI assistant that answers only from approved content, and is priced for independent hotels and SMEs.",
+                'هي منصة Altus Gulf للتعلّم وإدارة المعرفة والأداء في الفنادق. تحوّل معايير التشغيل إلى دروس تطبيقية قصيرة وتقييمات وشهادات عبر عشرة مجالات مهنية، من المكتب الأمامي والتدبير الفندقي إلى الأغذية والمشروبات والجودة والسلامة. وتعمل بعلامة كل منشأة، وتضم مساعد ذكاء اصطناعي محكومًا يجيب من المحتوى المعتمد فقط، وسعرها مناسب للفنادق المستقلة والمنشآت الصغيرة والمتوسطة.'),
+            array('Is the platform available in Arabic and English?', 'هل المنصة متاحة بالعربية والإنجليزية؟',
+                'Yes. Altus Knowledge and Performance is bilingual by design: every course, lesson, quiz and certificate is written in Modern Standard Arabic and English, and learners switch language at any time with a right-to-left layout for Arabic. Each lesson ends with a short scenario quiz, and the next lesson opens only once that quiz is passed.',
+                'نعم. منصة Altus للمعرفة والأداء ثنائية اللغة بالتصميم: كل دورة ودرس واختبار وشهادة مكتوبة بالعربية الفصحى والإنجليزية، ويمكن للمتعلّم تبديل اللغة في أي وقت مع تخطيط من اليمين إلى اليسار للعربية. وينتهي كل درس باختبار قصير قائم على مواقف عملية، ولا يُفتح الدرس التالي إلا بعد اجتيازه.'),
+            array('How does Altus Gulf support Saudi Vision 2030?', 'كيف تدعم Altus Gulf رؤية السعودية 2030؟',
+                'Across four pillars: helping deliver new hotel assets on time and on budget for the 150-million-visit tourism target; advancing digital and AI leadership in hospitality; building Saudi human capital through coaching, competency frameworks and the bilingual digital academy; and bringing Tier-1 consulting standards to SMEs, start-ups and independent hotels.',
+                'عبر أربع ركائز: المساعدة في تسليم أصول فندقية جديدة في موعدها وضمن ميزانيتها لمستهدف 150 مليون زيارة سياحية؛ وتعزيز الريادة الرقمية والذكاء الاصطناعي في الضيافة؛ وبناء رأس المال البشري السعودي من خلال التدريب وأطر الكفاءات والأكاديمية الرقمية ثنائية اللغة؛ ونقل معايير الاستشارات من الفئة الأولى إلى المنشآت الصغيرة والمتوسطة والشركات الناشئة والفنادق المستقلة.'),
+            array('Where is Altus Gulf based and which markets does it serve?', 'أين يقع مقر Altus Gulf وما الأسواق التي تخدمها؟',
+                "Altus Gulf is based in Riyadh, in the Kingdom of Saudi Arabia, and serves clients across Saudi Arabia, the GCC and the wider MENA region. Its founders bring more than 60 combined years of leadership inside Marriott, IHG, Starwood and Accor systems and in independent asset management across Saudi Arabia, the GCC, Jordan, Egypt and North Africa.",
+                'يقع مقر Altus Gulf في الرياض بالمملكة العربية السعودية، وتخدم عملاءها في السعودية ودول الخليج ومنطقة الشرق الأوسط وشمال أفريقيا. ويجمع مؤسساها أكثر من 60 عامًا من القيادة داخل منظومات ماريوت وIHG وستاروود وأكور، وفي إدارة الأصول المستقلة في السعودية ودول الخليج والأردن ومصر وشمال أفريقيا.'),
+            array('How do I start working with Altus Gulf?', 'كيف أبدأ العمل مع Altus Gulf؟',
+                "Start a conversation through the contact page, or speak to a co-founder directly: Islam Mahrous on +20 10 9555 6779 or Hussam Smadi on +966 50 051 1994, by call or WhatsApp. Every engagement begins with Discover, the first stage of the Altus Ascent™ Framework, which establishes the factual baseline before any recommendation is made.",
+                'ابدأ محادثة عبر صفحة التواصل، أو تحدّث مباشرةً إلى أحد الشريكين المؤسسين: إسلام محروس على الرقم ‎+20 10 9555 6779 أو حسام الصمادي على الرقم ‎+966 50 051 1994، اتصالًا أو عبر واتساب. ويبدأ كل تعاقد بمرحلة الاستكشاف، أولى مراحل إطار Altus Ascent™، التي تُرسي خط الأساس الواقعي قبل تقديم أي توصية.'),
+        ) as $i => $r) {
+            $B('home_faq_' . ($i + 1), 'home_faq', $r[0], $r[1], $r[2], $r[3]);
+        }
+        return $n;
     }
 
     /**
@@ -499,10 +614,27 @@ class Seed_altus_profile extends Ha_seeder {
                 "Best Economy Hotel in Saudi Arabia, as General Manager\nU.S. Embassy Riyadh recognition: Best Security Measures",
                 "أفضل فندق اقتصادي في السعودية، بصفته مديرًا عامًا\nتكريم من سفارة الولايات المتحدة في الرياض: أفضل إجراءات أمنية"),
         );
+        // Contact lines and portraits: filled once, never over an administrator's edit (Admin → Leadership profiles).
+        $contacts = array(
+            'islam-mahrous' => array('email' => 'islam.mahrous@altusgulf.com', 'phone' => '+20 10 9555 6779', 'photo_path' => 'uploads/academy/people/islam-mahrous.webp'),
+            'hossam-smadi'  => array('email' => 'hussam.smadi@altusgulf.com', 'phone' => '+966 50 051 1994', 'photo_path' => 'uploads/academy/people/hussam-smadi.webp'),
+        );
         foreach ($rows as $i => $l) {
-            $this->upsert('ha_leadership_profile', array('slug' => $l[0]), array('name_en' => $l[1], 'name_ar' => $l[2], 'role_en' => $l[3], 'role_ar' => $l[4],
+            $id = $this->upsert('ha_leadership_profile', array('slug' => $l[0]), array('name_en' => $l[1], 'name_ar' => $l[2], 'role_en' => $l[3], 'role_ar' => $l[4],
                 'biography_en' => $l[5], 'biography_ar' => $l[6], 'track_record_en' => $l[7], 'track_record_ar' => $l[8],
                 'recognition_en' => $l[9], 'recognition_ar' => $l[10], 'sort_order' => $i, 'status' => 'published'));
+            if (isset($contacts[$l[0]])) {
+                $current = $this->db->get_where('ha_leadership_profile', array('id' => $id))->row_array();
+                $fill = array();
+                foreach ($contacts[$l[0]] as $col => $val) {
+                    if (array_key_exists($col, $current) && trim((string) $current[$col]) === '') {
+                        $fill[$col] = $val;
+                    }
+                }
+                if ($fill) {
+                    $this->db->where('id', $id)->update('ha_leadership_profile', $fill);
+                }
+            }
         }
         return count($rows);
     }
