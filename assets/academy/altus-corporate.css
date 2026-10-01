@@ -1,0 +1,121 @@
+/*
+ * Altus Gulf corporate pages (views/academy/altus.php).
+ *
+ * Only what the shared academy components do not already provide: the two-
+ * column lead, value list, capability tiles, the Performance Matrix and GOPPAR
+ * stack, KPI band, case-study and leader layouts. Every colour is a brand token
+ * (altus-tokens.css); copper appears as rules, numbers and accents, and copper
+ * TEXT uses the deepened tone that clears WCAG AA.
+ */
+
+.ag-hero { background: linear-gradient(180deg, var(--altus-ivory-2, #FAF7F2) 0%, var(--ha-page) 100%); border-block-end: 1px solid var(--ha-line); }
+.ag-hero h1 { font-size: clamp(2.2rem, 1.4rem + 3.4vw, 3.6rem); color: var(--ha-ink); max-width: 20ch; }
+.ag-hero__quote { font-family: var(--ha-font-display); font-style: italic; font-size: clamp(1.15rem, 1rem + .6vw, 1.45rem); color: var(--ha-accent-on-light); max-width: 46ch; margin: 0 0 .8rem; }
+body.ha--rtl .ag-hero__quote { font-family: var(--ha-font-ar); font-style: normal; }
+
+.ag-two { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start; }
+@media (max-width: 860px) { .ag-two { grid-template-columns: 1fr; } }
+
+.ag-lead { border-inline-start: 3px solid var(--ha-accent); padding-inline-start: 1rem; }
+.ag-card { border-block-start: 3px solid var(--ha-accent); }
+.ag-card h3 { margin-block-end: .4rem; }
+.ag-card p { margin: 0; color: var(--ha-ink-soft); }
+
+.ag-vmp { margin: 0; display: grid; gap: 1rem; }
+.ag-vmp > div { background: var(--ha-canvas); border: 1px solid var(--ha-line); border-radius: var(--ha-radius); padding: 1.1rem 1.25rem; }
+.ag-vmp dt { font-family: var(--ha-font-heading); font-weight: 600; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ha-accent-on-light); }
+body.ha--rtl .ag-vmp dt { letter-spacing: 0; font-size: .95rem; }
+.ag-vmp dd { margin: .35rem 0 0; }
+
+.ag-callout { margin-top: 1.75rem; padding: 1.25rem 1.5rem; border-radius: var(--ha-radius); background: var(--altus-gold-tint, #F6E8E0); border-inline-start: 4px solid var(--ha-accent); }
+.ag-callout p:last-child { margin: 0; font-size: 1.05rem; }
+.ag-signoff { margin-top: 1.5rem; font-family: var(--ha-font-display); font-style: italic; font-size: 1.15rem; color: var(--ha-ink); }
+body.ha--rtl .ag-signoff { font-family: var(--ha-font-ar); font-style: normal; font-weight: 600; }
+.ag-center { justify-content: center; margin-top: 2rem; }
+.ag-subhead { font-size: .85rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ha-accent-on-light); margin: 1.5rem 0 .75rem; }
+body.ha--rtl .ag-subhead { letter-spacing: 0; font-size: 1rem; }
+
+.ag-values { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr)); gap: 1rem; }
+.ag-values li { background: var(--ha-canvas); border: 1px solid var(--ha-line); border-radius: var(--ha-radius); padding: 1.2rem 1.25rem; }
+.ag-values__n, .ag-services__n { display: block; font-size: .85rem; color: var(--ha-accent-on-light); margin-bottom: .35rem; }
+.ag-values h3 { margin-bottom: .3rem; }
+.ag-values p { margin: 0; color: var(--ha-ink-soft); }
+
+.ag-services { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); gap: 1rem; }
+
+.ag-caps { gap: 0; border: 1px solid var(--ha-line); border-radius: var(--ha-radius); overflow: hidden; background: var(--ha-canvas); }
+.ag-cap { padding: 1.25rem; border: 1px solid var(--ha-line); margin: -1px 0 0 -1px; }
+.ag-cap h3 { color: var(--ha-ink); margin-bottom: .35rem; }
+.ag-cap h3::before { content: ""; display: block; width: 28px; height: 2px; background: var(--ha-accent); margin-bottom: .7rem; }
+.ag-cap p { margin: 0; color: var(--ha-ink-soft); font-size: .95rem; }
+.ha-section--tint .ha-grid--4:not(.ag-caps) .ag-cap { background: var(--ha-canvas); border-radius: var(--ha-radius); margin: 0; }
+
+.ag-sectors .ha-chip { cursor: default; }
+
+/* Performance Matrix: a 2 × 2 read on two axes, the Altus Gulf Zone top-right. */
+.ag-frameworks { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 2rem; }
+.ag-matrix, .ag-stack { margin: 0; background: var(--ha-canvas); border: 1px solid var(--ha-line); border-radius: var(--ha-radius-lg); padding: 1.5rem; position: relative; }
+.ag-matrix__plot { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: .5rem .6rem; }
+.ag-matrix__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: .5rem; }
+@media (max-width: 480px) { .ag-matrix, .ag-stack { padding: 1rem; } .ag-matrix__cell { padding: .7rem; min-height: 0; } }
+.ag-matrix__cell { min-height: 110px; padding: .9rem; border-radius: var(--ha-radius); background: var(--ha-surface); display: flex; flex-direction: column; gap: .3rem; }
+.ag-matrix__cell strong { font-family: var(--ha-font-heading); }
+.ag-matrix__cell span { font-size: .9rem; color: var(--ha-ink-soft); }
+.ag-matrix__cell.is-zone { background: var(--ha-ink); color: var(--altus-on-navy, #E9E4DA); }
+.ag-matrix__cell.is-zone strong { color: var(--altus-gold-on-dark, #E58A5E); }
+.ag-matrix__cell.is-zone span { color: var(--altus-on-navy, #E9E4DA); }
+.ag-matrix__axis { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ha-ink-faint); margin: 0; }
+/* The vertical axis reads bottom-to-top in its own column, so it can never overlap the cells or the note. */
+.ag-matrix__axis--y { writing-mode: vertical-rl; transform: rotate(180deg); text-align: start; align-self: stretch; }
+body.ha--rtl .ag-matrix__axis, body.ha--rtl .ag-matrix__axis--y { letter-spacing: 0; font-size: .85rem; }
+.ag-matrix__note { margin: 1rem 0 0; font-weight: 600; }
+
+/* GOPPAR Value Stack: four layers that compound into the result. */
+.ag-stack ol { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; }
+.ag-stack li { display: grid; gap: .2rem; padding: .85rem 1rem; border-radius: var(--ha-radius); background: var(--ha-surface); border-inline-start: 4px solid var(--altus-sand, #D9C6A3); }
+.ag-stack li:nth-child(2) { margin-inline-start: .6rem; }
+.ag-stack li:nth-child(3) { margin-inline-start: 1.2rem; }
+.ag-stack li:nth-child(4) { margin-inline-start: 1.8rem; }
+.ag-stack li span { font-size: .9rem; color: var(--ha-ink-soft); }
+.ag-stack__result { margin: 1rem 0 0; padding: .9rem 1rem; border-radius: var(--ha-radius); background: var(--altus-sage-tint, #E3F0E9); color: var(--altus-sage-deep, #246548); font-weight: 600; }
+
+.ag-kpis { list-style: none; margin: 0 0 2rem; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+.ag-kpis li { padding: 1.4rem 1.25rem; border-radius: var(--ha-radius); background: var(--ha-ink); color: var(--altus-on-navy, #E9E4DA); }
+.ag-kpis__v { display: block; font-size: clamp(1.8rem, 1.3rem + 1.6vw, 2.5rem); color: var(--altus-gold-on-dark, #E58A5E); line-height: 1.1; margin-bottom: .4rem; }
+.ag-kpis__l { font-size: .92rem; }
+.ag-sources { margin-top: 1.5rem; font-size: .85rem; color: var(--ha-ink-faint); }
+
+.ag-case { padding-block: 2rem; border-block-start: 1px solid var(--ha-line); }
+.ag-case:first-of-type { border-block-start: 0; }
+.ag-case h2 { max-width: 34ch; }
+.ag-case__metrics { list-style: none; padding: 0; margin: 1rem 0 1.5rem; display: flex; flex-wrap: wrap; gap: .6rem; }
+.ag-case__metrics li { padding: .55rem .9rem; border-radius: 999px; background: var(--ha-surface); font-size: .9rem; }
+.ag-case__metrics .ha-num { color: var(--altus-sage-deep, #246548); font-weight: 600; }
+.ag-case__body { margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 1rem 2rem; }
+.ag-case__body dt { font-family: var(--ha-font-heading); font-weight: 600; color: var(--ha-accent-on-light); font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; }
+body.ha--rtl .ag-case__body dt { letter-spacing: 0; font-size: .95rem; }
+.ag-case__body dd { margin: .3rem 0 0; }
+
+.ag-quote { margin: 1.5rem 0 0; padding: 1.5rem 1.75rem; border-radius: var(--ha-radius-lg); background: var(--ha-ink); color: var(--altus-on-navy, #E9E4DA); }
+.ag-quote p { font-family: var(--ha-font-display); font-style: italic; font-size: 1.25rem; line-height: 1.5; margin: 0; }
+body.ha--rtl .ag-quote p { font-family: var(--ha-font-ar); font-style: normal; }
+.ag-quote footer { margin-top: .9rem; font-size: .85rem; color: var(--altus-gold-on-dark, #E58A5E); }
+.ag-letter { max-width: 72ch; }
+
+.ag-leader__head { display: flex; gap: 1.25rem; align-items: center; margin-bottom: 1.5rem; }
+.ag-leader__mono { flex: none; width: 76px; height: 76px; border-radius: 50%; display: grid; place-items: center; background: var(--ha-ink); color: var(--altus-gold-on-dark, #E58A5E); font-family: var(--ha-font-display); font-size: 2rem; }
+.ag-leader__head h2 { margin: 0; }
+.ag-leader__role { margin: .3rem 0 0; color: var(--ha-accent-on-light); font-weight: 600; }
+.ag-ticks { list-style: none; margin: 0; padding: 0; display: grid; gap: .55rem; }
+.ag-ticks li { position: relative; padding-inline-start: 1.5rem; }
+.ag-ticks li::before { content: ""; position: absolute; inset-inline-start: 0; top: .55em; width: .55rem; height: .55rem; border-radius: 2px; background: var(--ha-accent); }
+.ag-ticks--award li::before { background: var(--altus-sage, #2E7D5A); border-radius: 50%; }
+
+/* Founders contact band in the footer (layout.php). */
+.ha-foot__founders { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 1rem; padding-block: 1.75rem; border-block-start: 1px solid rgba(247, 245, 241, .12); }
+.ha-foot__founder { display: flex; flex-direction: column; gap: .35rem; }
+.ha-foot__founder strong { color: #fff; font-family: var(--ha-font-heading); font-weight: 600; }
+.ha-foot__founder span { color: var(--ha-on-dark-soft); font-size: .85rem; }
+.ha-foot__founder .ha-foot__actions { display: flex; gap: .5rem; margin-top: .35rem; flex-wrap: wrap; }
+.ha-foot__founder .ha-foot__actions a { display: inline-flex; align-items: center; min-height: 40px; padding-inline: .9rem; border: 1px solid rgba(247, 245, 241, .25); border-radius: 2px; color: var(--ha-on-dark); text-decoration: none; font-size: .85rem; }
+.ha-foot__founder .ha-foot__actions a:hover { border-color: var(--ha-accent); color: #fff; }

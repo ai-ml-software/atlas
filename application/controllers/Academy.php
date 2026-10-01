@@ -773,6 +773,72 @@ class Academy extends CI_Controller {
         $this->render('page', array('page' => $page, 'sections' => $sections));
     }
 
+    // ------------------------------------------------------------- Altus Gulf
+    // The corporate pages from the 2026 Corporate Profile. Each is a route of its own
+    // (one H1, one canonical URL, one meta description), all drawn from the same
+    // CMS records through Ha_corporate.
+
+    /** slug => [english title, english description, sections it needs] */
+    private function corporate_pages() {
+        return array(
+            'about-altus' => array('About Altus Gulf', 'A boutique strategy house where hospitality operations meet applied business intelligence: our vision, mission, philosophy, values and the independence behind every recommendation.',
+                array('hero', 'hero_stats', 'about', 'philosophy', 'why', 'why_uvp', 'values_intro', 'values', 'partnerships_intro', 'partnerships', 'esg_intro', 'esg', 'compare_intro', 'compare', 'closing')),
+            'services' => array('Advisory Services', 'Hospitality Solutions and Business Growth Solutions: owner representation, pre-opening, feasibility, quality audits, commercial performance, strategy, revenue and applied AI, digital transformation, leadership and M&A due diligence.',
+                array('division', 'capabilities_intro', 'capabilities', 'sectors_intro', 'digital_intro', 'digital', 'closing')),
+            'knowledge-performance' => array('Altus Knowledge and Performance', 'The Altus Gulf platform for hotel learning, knowledge management and measurable performance: bilingual, white-label per property, with a governed AI assistant and certification.',
+                array('platform', 'platform_features', 'platform_experiences', 'closing')),
+            'ascent' => array('The Altus Ascent™ Framework', 'Six stages from first diagnostic to institutionalised performance: Discover, Assess, Design, Transform, Optimise, Scale, with the Altus Performance Matrix™ and the GOPPAR Value Stack™.',
+                array('ascent_intro', 'ascent', 'frameworks_intro', 'matrix', 'matrix_note', 'goppar', 'goppar_note', 'closing')),
+            'market' => array('Saudi Hospitality Market Opportunity', 'The Saudi growth runway: 122M visits in 2025, SAR 300B tourism spending, 362K projected hotel keys by 2030, and how Altus Gulf aligns with the pillars of Vision 2030.',
+                array('market', 'market_kpi', 'market_catalyst', 'market_sources', 'vision2030_intro', 'vision2030', 'closing')),
+            'case-studies' => array('Illustrative Case Studies', 'Illustrative, anonymised mandates of the kind our principals have led: a resort turnaround, a 19-hotel excellence programme, a dual pre-opening and owner representation in Riyadh.',
+                array('cases_intro', 'closing')),
+            'leadership' => array('Leadership', 'Islam Mahrous and Hussam Smadi, co-founders of Altus Gulf: more than 60 combined years of hotel operations, asset management, commercial strategy and digital transformation.',
+                array('about', 'closing')),
+        );
+    }
+
+    public function corporate($locale, $slug) {
+        $this->boot($locale);
+        $pages = $this->corporate_pages();
+        if (!isset($pages[$slug])) {
+            return $this->not_found();
+        }
+        list($title_en, $desc_en, $sections) = $pages[$slug];
+        $this->load->library('ha_corporate');
+        $co = $this->ha_corporate->locale($this->locale);
+        $data = array('slug' => $slug, 'b' => $co->blocks($sections), 'tagline' => $co->block('tagline'));
+        if ($slug === 'services' || $slug === 'about-altus') {
+            $data['services'] = $co->services();
+            $data['sectors'] = $co->sectors();
+        }
+        if ($slug === 'case-studies') {
+            $data['cases'] = $co->cases();
+        }
+        if ($slug === 'leadership') {
+            $data['leaders'] = $co->leaders();
+        }
+        $title = ha_pt($title_en);
+        $data['page_title'] = $title;
+        $this->ha_seo->prepare($this->locale, $slug, array('route_key' => 'altus-' . $slug), array(
+            'title' => $title . ' | ' . $this->ha_seo->brand(),
+            'description' => ha_pt($desc_en),
+        ));
+        $this->ha_seo->set_alternate($slug);
+        $this->ha_seo->breadcrumb($title, $slug);
+        $this->ha_seo->add_schema(array('@type' => 'ProfessionalService', 'name' => 'Altus Gulf',
+            'slogan' => 'Elevating Hospitality & Business Performance', 'url' => base_url($this->locale . '/' . $slug),
+            'areaServed' => array('Saudi Arabia', 'GCC', 'MENA'),
+            'address' => array('@type' => 'PostalAddress', 'addressLocality' => 'Riyadh', 'addressCountry' => 'SA')));
+        if ($slug === 'leadership' && !empty($data['leaders'])) {
+            foreach ($data['leaders'] as $l) {
+                $this->ha_seo->add_schema(array('@type' => 'Person', 'name' => $l['name'], 'jobTitle' => $l['role'],
+                    'worksFor' => array('@type' => 'Organization', 'name' => 'Altus Gulf')));
+            }
+        }
+        $this->render('altus', $data);
+    }
+
     public function about($locale = 'en')       { $this->page($locale, 'about'); }
     public function hotels($locale = 'en')      { $this->page($locale, 'for-hotels'); }
     public function hotels_training($locale = 'en') { $this->page($locale, 'hotels-training'); }

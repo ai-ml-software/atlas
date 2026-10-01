@@ -177,22 +177,24 @@ class Ha_tenant {
 
     public static function platform_defaults() {
         return array(
-            'brand_name_en' => 'altus Hospitality Knowledge & Performance',
-            'brand_name_ar' => 'ألتوس للمعرفة والأداء الفندقي',
+            'brand_name_en' => 'Altus Knowledge and Performance',
+            'brand_name_ar' => 'Altus للمعرفة والأداء',
             'logo_path' => 'logo.png',
             'favicon_path' => null,
-            'color_primary' => '#0F3D3E',
-            'color_secondary' => '#0D1B2A',
-            'color_accent' => '#C89D4F',
-            'color_surface' => '#F7F6F2',
-            'font_latin' => 'Montserrat',
-            'font_arabic' => 'Cairo',
+            // Altus Gulf colour system: deepened Transformation Copper for actions (white text clears AA),
+            // Executive Charcoal ink, signature copper accent, Creamy White surface.
+            'color_primary' => '#A2471F',
+            'color_secondary' => '#1E2329',
+            'color_accent' => '#C45B2F',
+            'color_surface' => '#F7F5F1',
+            'font_latin' => 'Inter',
+            'font_arabic' => 'IBM Plex Sans Arabic',
             'login_headline_en' => 'The right knowledge, to the right person, at the right time.',
             'login_headline_ar' => 'المعرفة الصحيحة، للشخص المناسب، في الوقت المناسب.',
             'welcome_en' => 'Knowledge that stays with your institution, evidence that shows it is working.',
             'welcome_ar' => 'معرفة تبقى في مؤسستك، وأدلة تثبت أنها تعمل.',
-            'email_footer_en' => 'altus Hospitality Knowledge & Performance · Altus Advisory, Riyadh',
-            'email_footer_ar' => 'ألتوس للمعرفة والأداء الفندقي · ألتوس للاستشارات، الرياض',
+            'email_footer_en' => 'Altus Knowledge and Performance · Altus Gulf, Riyadh',
+            'email_footer_ar' => 'Altus للمعرفة والأداء · Altus Gulf، الرياض',
             'signatory_name_en' => null, 'signatory_name_ar' => null,
             'signatory_title_en' => null, 'signatory_title_ar' => null,
             'signature_path' => null, 'custom_domain' => null,
@@ -309,10 +311,12 @@ class Ha_tenant {
 
     /** CSS custom properties for the effective brand. Values are validated hex colours only. */
     public function css_vars(array $brand) {
-        $font_latin = preg_replace('/[^A-Za-z0-9 \-]/', '', (string) $brand['font_latin']) ?: 'Montserrat';
-        $font_ar = preg_replace('/[^A-Za-z0-9 \-]/', '', (string) $brand['font_arabic']) ?: 'Cairo';
+        // A property may name its own face; the shipped brand stack always follows, so a face that
+        // is not installed (or the retired Montserrat/Cairo) falls back to Inter / IBM Plex Sans Arabic.
+        $font_latin = preg_replace('/[^A-Za-z0-9 \-]/', '', (string) $brand['font_latin']) ?: 'Inter';
+        $font_ar = preg_replace('/[^A-Za-z0-9 \-]/', '', (string) $brand['font_arabic']) ?: 'IBM Plex Sans Arabic';
         return ':root{--brand:' . $brand['color_primary'] . ';--brand-ink:' . $brand['color_secondary']
             . ';--accent:' . $brand['color_accent'] . ';--surface-brand:' . $brand['color_surface']
-            . ';--font-latin:"' . $font_latin . '";--font-arabic:"' . $font_ar . '";}';
+            . ';--font-latin:"' . $font_latin . '",var(--altus-font-body);--font-arabic:"' . $font_ar . '",var(--altus-font-ar);}';
     }
 }

@@ -4,28 +4,24 @@
  * here uses logical properties so Arabic RTL is the same layout mirrored,
  * not a second stylesheet. Fonts are served locally (offline-safe).
  */
-@font-face { font-family: "Montserrat"; font-weight: 400; font-display: swap; src: url("../academy/fonts/montserrat-400-latin.woff2") format("woff2"); }
-@font-face { font-family: "Montserrat"; font-weight: 600; font-display: swap; src: url("../academy/fonts/montserrat-600-latin.woff2") format("woff2"); }
-@font-face { font-family: "Montserrat"; font-weight: 700; font-display: swap; src: url("../academy/fonts/montserrat-700-latin.woff2") format("woff2"); }
-@font-face { font-family: "Playfair Display"; font-weight: 700; font-display: swap; src: url("../academy/fonts/playfair-display-700-latin.woff2") format("woff2"); }
-@font-face { font-family: "Cairo"; font-weight: 400; font-display: swap; src: url("../academy/fonts/cairo-400-arabic.woff2") format("woff2"); }
-@font-face { font-family: "Cairo"; font-weight: 600; font-display: swap; src: url("../academy/fonts/cairo-600-arabic.woff2") format("woff2"); }
-@font-face { font-family: "Cairo"; font-weight: 700; font-display: swap; src: url("../academy/fonts/cairo-700-arabic.woff2") format("woff2"); }
+@import url("../academy/altus-fonts.css");
+@import url("../academy/altus-tokens.css");
 
 :root {
-  --brand: #0F3D3E; --brand-ink: #0D1B2A; --accent: #C89D4F; --surface-brand: #F7F6F2;
-  --ink: #16202b; --muted: #5b6470; --line: #e3e0d8; --card: #ffffff; --bg: var(--surface-brand);
+  --brand: #1F4A3A; --brand-ink: #1E2329; --accent: #C45B2F; --surface-brand: #F7F5F1;
+  --ink: #1E2329; --muted: #5b6470; --line: #e3e0d8; --card: #ffffff; --bg: var(--surface-brand);
   --ok: #1f7a4d; --ok-bg: #e6f4ec; --warn: #9a6b00; --warn-bg: #fdf3dc; --bad: #b3261e; --bad-bg: #fbe9e7; --neutral-bg: #eef0f2;
-  --radius: 14px; --shadow: 0 1px 2px rgba(13,27,42,.06), 0 8px 24px rgba(13,27,42,.06);
-  --font-latin: "Montserrat"; --font-arabic: "Cairo";
+  --radius: 14px; --shadow: 0 1px 2px rgba(30, 35, 41,.06), 0 8px 24px rgba(30, 35, 41,.06);
+  --font-latin: var(--altus-font-body); --font-arabic: var(--altus-font-ar); --font-heading: var(--altus-font-heading); --font-display: var(--altus-font-display); --font-mono: var(--altus-font-mono);
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
-body.hkp { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.55 var(--font-latin), "Segoe UI", system-ui, sans-serif; }
-body.hkp.is-ar { font-family: var(--font-arabic), "Segoe UI", Tahoma, sans-serif; font-size: 15.5px; }
+body.hkp { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.55 var(--font-latin); }
+body.hkp.is-ar { font-family: var(--font-arabic); font-size: 15.5px; }
 h1, h2, h3 { color: var(--brand-ink); line-height: 1.25; margin: 0 0 .5rem; }
-h1 { font: 700 1.65rem/1.2 "Playfair Display", Georgia, serif; }
-.is-ar h1 { font-family: var(--font-arabic), serif; font-weight: 700; }
+h1 { font: 400 1.75rem/1.2 var(--font-display); letter-spacing: -.01em; }
+h2, h3 { font-family: var(--font-heading); }
+.is-ar h1, .is-ar h2, .is-ar h3 { font-family: var(--font-arabic); font-weight: 700; }
 h2 { font-size: 1.1rem; font-weight: 700; }
 h3 { font-size: .98rem; font-weight: 600; }
 a { color: var(--brand); }
@@ -47,8 +43,8 @@ a:hover { color: var(--brand-ink); }
 .is-intl .hkp-nav__section { letter-spacing: 0; font-size: .75rem; }
 .hkp-nav__item { display: flex; gap: .7rem; align-items: center; color: #d7dde4; text-decoration: none; padding: .55rem .75rem; border-radius: 10px; font-size: .9rem; min-height: 40px; }
 .hkp-nav__item:hover { background: rgba(255,255,255,.06); color: #fff; }
-.hkp-nav__item.is-active { background: linear-gradient(90deg, rgba(200,157,79,.22), rgba(200,157,79,.05)); color: #fff; box-shadow: inset 3px 0 0 var(--accent); }
-[dir="rtl"] .hkp-nav__item.is-active { box-shadow: inset -3px 0 0 var(--accent); background: linear-gradient(270deg, rgba(200,157,79,.22), rgba(200,157,79,.05)); }
+.hkp-nav__item.is-active { background: linear-gradient(90deg, rgba(196, 91, 47,.22), rgba(196, 91, 47,.05)); color: #fff; box-shadow: inset 3px 0 0 var(--accent); }
+[dir="rtl"] .hkp-nav__item.is-active { box-shadow: inset -3px 0 0 var(--accent); background: linear-gradient(270deg, rgba(196, 91, 47,.22), rgba(196, 91, 47,.05)); }
 .hkp-main-wrap { min-width: 0; display: flex; flex-direction: column; }
 .hkp-top { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; gap: .75rem; padding: .7rem 1.5rem; background: rgba(255,255,255,.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
 .hkp-search { position: relative; flex: 1; max-width: 560px; display: flex; align-items: center; gap: .5rem; background: var(--bg); border: 1px solid var(--line); border-radius: 999px; padding: 0 .9rem; color: var(--muted); }
@@ -71,7 +67,13 @@ a:hover { color: var(--brand-ink); }
 .hkp-user__menu a { display: flex; gap: .5rem; align-items: center; padding: .55rem .7rem; border-radius: 8px; text-decoration: none; color: var(--ink); }
 .hkp-user__menu a:hover { background: var(--bg); }
 .hkp-main { padding: 1.5rem; flex: 1; outline: none; max-width: 1480px; width: 100%; }
-.hkp-foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem; padding: 1rem 1.5rem; color: var(--muted); font-size: .78rem; border-top: 1px solid var(--line); }
+.hkp-foot { display: grid; gap: .9rem; padding: 1.25rem 1.5rem 1.5rem; color: var(--muted); font-size: .8rem; border-top: 2px solid var(--accent); background: var(--card); }
+.hkp-foot__brand { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; }
+.hkp-foot__brand img { height: 30px; width: auto; }
+.hkp-foot__nav { display: flex; flex-wrap: wrap; gap: .25rem 1.1rem; }
+.hkp-foot__nav a { color: var(--brand-ink); text-decoration: none; font-weight: 600; padding-block: .3rem; }
+.hkp-foot__nav a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: .2em; }
+.hkp-foot__base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem; padding-top: .7rem; border-top: 1px solid var(--line); }
 .hkp-only-mobile { display: none; }
 
 /* ------------------------------------------------------------ components */

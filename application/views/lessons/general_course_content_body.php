@@ -119,8 +119,6 @@ $get_lesson_type = get_lesson_type($lesson_details['id']);
 		</audio>
 	</div>
 	<?php include "plyr_config.php"; ?>
-</div>
-	
 
 <?php elseif ($get_lesson_type == 'quiz') : ?>
 	<div class="mt-0">
@@ -160,6 +158,9 @@ $get_lesson_type = get_lesson_type($lesson_details['id']);
 		<iframe class="embed-responsive-item" width="100%" height="550px" src="<?php echo $lesson_details['attachment']; ?>" allowfullscreen></iframe>
 	</div>
 <?php endif; ?>
+<?php // Closes .video-container for every lesson type. It used to close only inside the audio branch,
+      // so for video, quiz and text lessons the course sidebar was swallowed into the lesson column. ?>
+</div>
 
 
 <script>

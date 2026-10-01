@@ -15,8 +15,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  */
 class Ha_seo {
 
-    const BRAND_EN = 'Hospitality Academy';
-    const BRAND_AR = 'أكاديمية الضيافة';
+    // Altus Gulf: the Arabic corporate profile writes the brand in Latin script too.
+    const BRAND_EN = 'Altus Gulf';
+    const BRAND_AR = 'Altus Gulf';
 
     /** @var CI_Controller */
     protected $CI;

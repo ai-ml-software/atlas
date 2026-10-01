@@ -80,6 +80,8 @@ $ha_custom_css = trim((string) get_frontend_settings('custom_css'));
     <link rel="stylesheet" href="<?= base_url('assets/academy/academy.css') ?>">
     <?php /* Owns the header and footer; must load after the theme it overrides. */ ?>
     <link rel="stylesheet" href="<?= base_url('assets/academy/altus-chrome.css') ?>">
+    <?php /* Altus Gulf corporate pages (About, Services, Ascent, Market, Case Studies, Leadership). */ ?>
+    <link rel="stylesheet" href="<?= base_url('assets/academy/altus-corporate.css') ?>">
     <?php if ($ha_custom_css !== ''): ?>
         <style><?= $ha_custom_css ?></style>
     <?php endif; ?>
@@ -159,8 +161,9 @@ $ha_social = array_filter($ha_social, function ($v) { return trim((string) $v) !
                     $ha_admin = $ha_sess ? $ha_sess->userdata('admin_login') : false;
                     ?>
                     <?php if ($ha_user || $ha_admin): ?>
-                        <a class="ha-mast__cta" href="<?= base_url($ha_admin ? 'admin' : 'home/my_courses') ?>">
-                            <?= ha_pe('My learning') ?>
+                        <?php /* Signed-in people work in Altus Knowledge and Performance; /hkp routes each role to its home. */ ?>
+                        <a class="ha-mast__cta" href="<?= site_url('hkp') ?>">
+                            <?= ha_pe('Altus Knowledge and Performance') ?>
                         </a>
                     <?php else: ?>
                         <a class="ha-mast__signin" href="<?= base_url('login') ?>"><?= ha_pe('Login') ?></a>
@@ -262,6 +265,18 @@ $ha_social = array_filter($ha_social, function ($v) { return trim((string) $v) !
          */
         $ha_foot_groups = array(
             array(
+                'title' => 'Altus Gulf',
+                'links' => array(
+                    array('about-altus', ha_pt('About')),
+                    array('services', ha_pt('Services')),
+                    array('knowledge-performance', ha_pt('Altus Knowledge and Performance')),
+                    array('ascent', ha_pt('Ascent')),
+                    array('market', ha_pt('Market')),
+                    array('case-studies', ha_pt('Case Studies')),
+                    array('leadership', ha_pt('Leadership')),
+                ),
+            ),
+            array(
                 'title' => ha_pt('Learn'),
                 'links' => array(
                     array('courses', $t['courses']),
@@ -342,9 +357,34 @@ $ha_social = array_filter($ha_social, function ($v) { return trim((string) $v) !
             </div>
         </div>
 
+        <?php
+        /*
+         * The founders' direct lines, as on the Altus Gulf corporate site. Stored as
+         * site settings (ha_founder_*), so a number changes in the admin panel, not
+         * in a deploy; the shipped values are the published ones.
+         */
+        $ha_founders = array(
+            array(ha_chrome('ha_founder_1_name', $locale), ha_chrome('ha_founder_1_role', $locale), ha_chrome('ha_founder_1_phone', $locale)),
+            array(ha_chrome('ha_founder_2_name', $locale), ha_chrome('ha_founder_2_role', $locale), ha_chrome('ha_founder_2_phone', $locale)),
+        );
+        ?>
+        <div class="ha-foot__founders" aria-label="<?= ha_pe('Speak to a founder') ?>">
+            <?php foreach ($ha_founders as $f): if (trim((string) $f[2]) === '') continue; $digits = preg_replace('/\D/', '', $f[2]); ?>
+                <div class="ha-foot__founder">
+                    <strong><?= html_escape($f[0]) ?></strong>
+                    <span><?= html_escape($f[1]) ?></span>
+                    <span dir="ltr"><?= html_escape($f[2]) ?></span>
+                    <div class="ha-foot__actions">
+                        <a href="https://wa.me/<?= $digits ?>" rel="noopener noreferrer" target="_blank"><?= ha_pe('WhatsApp') ?></a>
+                        <a href="tel:+<?= $digits ?>"><?= ha_pe('Call') ?></a>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+
         <div class="ha-foot__base">
-            <p>&copy; <?= date('Y') ?> <?= html_escape($ha_brand_name) ?>.
-                <?= ha_pe('Photography from Wikimedia Commons under licences that permit this use.') ?>
+            <p>&copy; <?= date('Y') ?> <?= html_escape($ha_brand_name) ?> · <?= ha_pe('All rights reserved.') ?>
+                <?= ha_pe('Elevating Hospitality & Business Performance') ?>
             </p>
             <nav aria-label="<?= html_escape($t['legal']) ?>">
                 <a href="<?= base_url($locale . '/privacy') ?>"><?= html_escape($t['privacy']) ?></a>

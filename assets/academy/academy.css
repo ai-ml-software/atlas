@@ -24,34 +24,35 @@
  * light, which is the deepened gold that actually passes AA.
  */
 :root {
-    --ha-ink: var(--altus-navy, #0D1B2A);
-    --ha-ink-soft: var(--altus-slate, #4A6572);
+    --ha-ink: var(--altus-navy, #1E2329);
+    --ha-ink-soft: var(--altus-slate, #5B6775);
     --ha-ink-faint: var(--altus-slate-soft, #5F6B77);
     --ha-canvas: var(--altus-card, #ffffff);
-    --ha-page: var(--altus-ivory, #F7F6F2);
+    --ha-page: var(--altus-ivory, #F7F5F1);
     --ha-surface: var(--altus-ivory-tint, #F0EEE7);
     --ha-surface-2: var(--altus-ivory-tint-2, #E7E4DA);
     --ha-line: var(--altus-gray, #E6E8EB);
 
-    /* Fills. Navy, because gold may not fill. */
-    --ha-action: var(--altus-navy, #0D1B2A);
-    --ha-action-deep: var(--altus-steel, #1E2A38);
+    /* Colour usage guide: CTAs are copper. The fill is the deepened copper so
+       white button text clears 4.5:1 (the signature copper measures 4.3:1). */
+    --ha-action: var(--altus-gold-deep, #A2471F);
+    --ha-action-deep: #86391A;
     --ha-action-ink: #ffffff;
 
     /* Accent. Gold, and only ever as a mark. */
-    --ha-accent: var(--altus-gold, #C89D4F);
-    --ha-accent-on-light: var(--altus-gold-deep, #7A5F28);
-    --ha-accent-soft: var(--altus-sand, #EDE4D3);
+    --ha-accent: var(--altus-gold, #C45B2F);
+    --ha-accent-on-light: var(--altus-gold-deep, #A2471F);
+    --ha-accent-soft: var(--altus-sand, #D9C6A3);
     --ha-accent-ink: #ffffff;
-    --ha-accent-deep: var(--altus-steel, #1E2A38);
+    --ha-accent-deep: var(--altus-steel, #2A2F35);
 
     /* Text tones for dark surfaces. */
     --ha-on-dark: var(--altus-on-navy, #D8DCE1);
     --ha-on-dark-soft: var(--altus-on-navy-soft, #A6B0BC);
     --ha-on-dark-faint: var(--altus-on-navy-faint, #8A94A1);
 
-    --ha-warn: var(--altus-gold-deep, #7A5F28);
-    --ha-warn-soft: var(--altus-gold-tint, #F7F0E2);
+    --ha-warn: var(--altus-gold-deep, #A2471F);
+    --ha-warn-soft: var(--altus-gold-tint, #F6E8E0);
     --ha-danger: var(--altus-brick, #8C2F24);
     --ha-danger-soft: var(--altus-brick-tint, #F6E9E7);
     --ha-ok: var(--altus-sage-deep, #43584A);
@@ -71,14 +72,15 @@
      * of --fs-body exactly. Below that they compress, because a 42px heading
      * on a 390px screen is not hierarchy, it is a wall.
      */
-    --ha-font: "Montserrat", "Montserrat Fallback", system-ui, -apple-system, "Segoe UI", sans-serif;
-    --ha-font-display: "Playfair Display", "Playfair Fallback", Georgia, "Times New Roman", serif;
-    /* Cairo AR is Cairo's Arabic ranges only. Latin inside Arabic text -- the
-     * brand name, a space, a digit -- falls through to Montserrat, which is a
-     * better Latin face than Cairo's secondary one and is already loaded. It
-     * also stops a single space (U+0020, in Cairo's Latin subset) dragging
-     * 33KB onto an English page for the bilingual block's word gaps. */
-    --ha-font-ar: "Cairo AR", "Montserrat", "Noto Naskh Arabic", system-ui, sans-serif;
+    /* Altus Typography System: Canela display, Neue Haas Grotesk headings,
+     * Inter reading, IBM Plex Mono data; stacks live in altus-tokens.css. The
+     * Arabic face ships Arabic ranges only, so Latin inside Arabic text (the
+     * brand name, digits) falls through to Inter, which is already loaded. */
+    --ha-font: var(--altus-font-body, "Inter", system-ui, sans-serif);
+    --ha-font-heading: var(--altus-font-heading, "Inter Tight", "Inter", system-ui, sans-serif);
+    --ha-font-display: var(--altus-font-display, "Fraunces", Georgia, serif);
+    --ha-font-mono: var(--altus-font-mono, "IBM Plex Mono", monospace);
+    --ha-font-ar: var(--altus-font-ar, "IBM Plex Sans Arabic", "Inter", Tahoma, sans-serif);
 
     --fs-body: 1.0625rem;                                  /* 17px           */
     --fs-h1: clamp(1.95rem, 1.25rem + 2.9vw, 2.6563rem);   /* 2.5x  at full  */
@@ -100,7 +102,7 @@
     --lh-heading: 1.2;
     --lh-body-ar: 1.85;
     --lh-heading-ar: 1.45;
-    --ha-shadow: var(--altus-shadow-md, 0 1px 2px rgba(13, 27, 42, .06), 0 10px 28px rgba(13, 27, 42, .08));
+    --ha-shadow: var(--altus-shadow-md, 0 1px 2px rgba(30, 35, 41, .06), 0 10px 28px rgba(30, 35, 41, .08));
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -123,12 +125,15 @@ body.ha--rtl {
     letter-spacing: 0;        /* Arabic is cursive; tracking breaks the joins */
 }
 
-/* Phase III: Playfair Display carries H1 and H2, Montserrat SemiBold carries
-   H3 and below. Arabic has no Playfair equivalent in the approved set, so
-   Cairo carries the whole scale and weight does the work instead. */
+/* Typography sheet: the hero title is Canela Regular at -1% tracking; H2-H4
+   are Neue Haas Grotesk Medium. Arabic has no Canela equivalent, so the
+   Arabic face carries the whole scale and weight does the work instead. */
 h1, h2, h3, h4 { margin: 0 0 .5em; line-height: var(--lh-heading); }
-h1, h2 { font-family: var(--ha-font-display); font-weight: 700; letter-spacing: -.005em; }
-h3, h4 { font-family: var(--ha-font); font-weight: 600; letter-spacing: 0; }
+h1 { font-family: var(--ha-font-display); font-weight: 400; letter-spacing: -.01em; }
+h2 { font-family: var(--ha-font-heading); font-weight: 600; letter-spacing: 0; }
+h3, h4 { font-family: var(--ha-font-heading); font-weight: 500; letter-spacing: .01em; }
+/* Data, KPIs and numbers: IBM Plex Mono, per the sheet. */
+.ha-num, .ha-kpi, .ha-stat__value, [data-ha-num] { font-family: var(--ha-font-mono); font-variant-numeric: tabular-nums; }
 body.ha--rtl h1, body.ha--rtl h2, body.ha--rtl h3, body.ha--rtl h4 {
     font-family: var(--ha-font-ar);
     letter-spacing: 0;
@@ -298,8 +303,9 @@ body.ha--rtl .ha-crumbs li + li::before { content: "‹"; }
 
 .ha-grid { display: grid; gap: 1.1rem; }
 .ha-grid--3 { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
-.ha-grid--4 { grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
-.ha-grid--2 { grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); }
+/* min() keeps a column minimum from forcing a scroll on screens narrower than it. */
+.ha-grid--4 { grid-template-columns: repeat(auto-fill, minmax(min(230px, 100%), 1fr)); }
+.ha-grid--2 { grid-template-columns: repeat(auto-fill, minmax(min(360px, 100%), 1fr)); }
 
 .ha-card {
     display: flex; flex-direction: column;
@@ -679,7 +685,7 @@ body.ha--rtl .ha-hero h1 { letter-spacing: 0; }
 .ha-card:hover {
     transform: translateY(-3px);
     border-color: var(--ha-accent);
-    box-shadow: 0 2px 4px rgba(13, 27, 42, .05), 0 16px 34px rgba(13, 27, 42, .13);
+    box-shadow: 0 2px 4px rgba(30, 35, 41, .05), 0 16px 34px rgba(30, 35, 41, .13);
 }
 .ha-media__img { transition: transform .35s ease; }
 .ha-card:hover .ha-media__img { transform: scale(1.04); }
@@ -689,10 +695,10 @@ body.ha--rtl .ha-hero h1 { letter-spacing: 0; }
 
 /* Buttons: a solid primary with a real shadow, and a bordered secondary. */
 .ha-btn {
-    box-shadow: 0 1px 2px rgba(13, 27, 42, .08), 0 6px 16px rgba(13, 27, 42, .22);
+    box-shadow: 0 1px 2px rgba(30, 35, 41, .08), 0 6px 16px rgba(30, 35, 41, .22);
     transition: background .16s ease, border-color .16s ease, transform .16s ease, box-shadow .16s ease;
 }
-.ha-btn:hover { transform: translateY(-1px); box-shadow: 0 2px 4px rgba(13, 27, 42, .1), 0 10px 22px rgba(13, 27, 42, .3); }
+.ha-btn:hover { transform: translateY(-1px); box-shadow: 0 2px 4px rgba(30, 35, 41, .1), 0 10px 22px rgba(30, 35, 41, .3); }
 .ha-btn--ghost { box-shadow: none; border-color: var(--ha-line); color: var(--ha-ink); }
 .ha-btn--ghost:hover { box-shadow: none; border-color: var(--ha-accent); color: var(--ha-accent-deep); background: var(--ha-accent-soft); }
 
@@ -881,7 +887,7 @@ body.ha--rtl .ha-eyebrow { letter-spacing: 0; }
 .ha-city__name {
     position: absolute; inset-inline: 0; inset-block-end: 0;
     padding: 1.6rem .8rem .6rem; color: #fff; font-weight: 600; font-size: .95rem;
-    background: linear-gradient(to top, rgba(13, 27, 42, .85), rgba(13, 27, 42, 0));
+    background: linear-gradient(to top, rgba(30, 35, 41, .85), rgba(30, 35, 41, 0));
 }
 .ha-city:hover { border-color: var(--ha-accent); }
 .ha-city:hover .ha-media__img { transform: scale(1.06); }
@@ -904,7 +910,7 @@ body.ha--rtl .ha-eyebrow { letter-spacing: 0; }
 
 /* The close. It resolves rather than fading into the footer. */
 .ha-close {
-    background: linear-gradient(140deg, var(--altus-navy-deep, #060E17) 0%, var(--ha-ink) 60%);
+    background: linear-gradient(140deg, var(--altus-navy-deep, #14181C) 0%, var(--ha-ink) 60%);
     color: #fff; padding-block: clamp(3rem, 2rem + 4vw, 5rem);
 }
 .ha-close__inner { max-width: 62ch; }
@@ -1089,7 +1095,7 @@ body.ha--rtl .ha-brand__name { letter-spacing: 0; }
     position: relative;
     border-radius: var(--ha-radius-lg);
     overflow: hidden;
-    box-shadow: 0 24px 60px rgba(13, 27, 42, .18);
+    box-shadow: 0 24px 60px rgba(30, 35, 41, .18);
     aspect-ratio: 4 / 3;
     background: var(--ha-surface-2);
 }
@@ -1104,7 +1110,7 @@ body.ha--rtl .ha-brand__name { letter-spacing: 0; }
     backdrop-filter: blur(6px);
     border-radius: var(--ha-radius);
     padding: .6rem .9rem;
-    box-shadow: 0 8px 24px rgba(13, 27, 42, .16);
+    box-shadow: 0 8px 24px rgba(30, 35, 41, .16);
 }
 .ha-hero__stat b { display: block; font-size: 1.45rem; line-height: 1.1; color: var(--ha-ink); }
 .ha-hero__stat span { font-size: .78rem; color: var(--ha-ink-faint); }
@@ -1185,7 +1191,7 @@ body.ha--ml, body.ha--ml :is(h1, h2, h3, h4) { font-family: "Noto Sans Malayalam
     border-inline-end: 1.5px solid currentColor; border-block-end: 1.5px solid currentColor; transform: translateY(-.15em) rotate(45deg); }
 .ha-langmenu[open] > summary::after { transform: translateY(.1em) rotate(-135deg); }
 .ha-langmenu__list { position: absolute; inset-inline-end: 0; top: calc(100% + .5rem); z-index: 60; min-width: 12rem; margin: 0; padding: .4rem;
-    list-style: none; background: #fff; color: var(--ha-ink, #0D1B2A); border-radius: 12px; box-shadow: 0 18px 40px rgba(13, 27, 42, .18), 0 2px 6px rgba(13, 27, 42, .08); }
+    list-style: none; background: #fff; color: var(--ha-ink, #1E2329); border-radius: 12px; box-shadow: 0 18px 40px rgba(30, 35, 41, .18), 0 2px 6px rgba(30, 35, 41, .08); }
 .ha-langmenu__list a { display: block; min-height: 44px; padding: .65rem .8rem; border-radius: 8px; color: inherit; text-decoration: none; font-size: .95rem; }
-.ha-langmenu__list a:hover, .ha-langmenu__list a:focus-visible { background: rgba(13, 27, 42, .06); }
+.ha-langmenu__list a:hover, .ha-langmenu__list a:focus-visible { background: rgba(30, 35, 41, .06); }
 .ha-langmenu__list a[aria-current] { font-weight: 700; }

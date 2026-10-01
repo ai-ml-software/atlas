@@ -1,38 +1,36 @@
 /* ==========================================================================
    Altus lesson player
-   Brand system from the Altus Advisory guide: deep navy + gold, Montserrat for
-   text, Playfair Display for the lesson title. Loaded after the vendor player
+   Brand system from the Altus Gulf colour and typography sheets: charcoal +
+   copper on creamy white, Inter for text, the Canela display face for titles. Loaded after the vendor player
    CSS and overrides it by specificity, not by !important, wherever possible.
    ========================================================================== */
 
-@font-face { font-family: "Montserrat"; font-weight: 400; font-display: swap; src: url("../../academy/fonts/montserrat-400-latin.woff2") format("woff2"); }
-@font-face { font-family: "Montserrat"; font-weight: 600; font-display: swap; src: url("../../academy/fonts/montserrat-600-latin.woff2") format("woff2"); }
-@font-face { font-family: "Montserrat"; font-weight: 700; font-display: swap; src: url("../../academy/fonts/montserrat-700-latin.woff2") format("woff2"); }
-@font-face { font-family: "Playfair Display"; font-weight: 700; font-display: swap; src: url("../../academy/fonts/playfair-display-700-latin.woff2") format("woff2"); }
-@font-face { font-family: "Cairo"; font-weight: 400; font-display: swap; src: url("../../academy/fonts/cairo-400-arabic.woff2") format("woff2"); }
-@font-face { font-family: "Cairo"; font-weight: 700; font-display: swap; src: url("../../academy/fonts/cairo-700-arabic.woff2") format("woff2"); }
+@import url("../../academy/altus-fonts.css");
+@import url("../../academy/altus-tokens.css");
 
 :root {
   /* six roles, one accent */
-  --ap-canvas: #F4F2EE;       /* warm paper */
+  --ap-canvas: #F7F5F1;       /* warm paper */
   --ap-surface: #FFFFFF;
-  --ap-ink: #0D1B2A;          /* Altus navy */
-  --ap-ink-soft: #4E5A68;     /* navy-tinted secondary */
-  --ap-accent: #C89D4F;       /* Altus gold */
-  --ap-accent-deep: #7A5F28;  /* gold that clears 4.5:1 on white */
-  --ap-accent-soft: #F5EEDF;
-  --ap-line: rgba(13, 27, 42, .10);
-  --ap-ok: #2F6B4F;
+  --ap-ink: #1E2329;          /* Altus navy */
+  --ap-ink-soft: #5B6775;     /* navy-tinted secondary */
+  --ap-accent: #C45B2F;       /* Altus gold */
+  --ap-accent-deep: #A2471F;  /* gold that clears 4.5:1 on white */
+  --ap-accent-soft: #F6E8E0;
+  --ap-line: rgba(30, 35, 41, .10);
+  --ap-ok: #2E7D5A;
   --ap-ok-soft: #E6F0EA;
 
-  --ap-font: "Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --ap-display: "Playfair Display", Georgia, serif;
+  --ap-font: var(--altus-font-body);
+  --ap-heading: var(--altus-font-heading);
+  --ap-mono: var(--altus-font-mono);
+  --ap-display: var(--altus-font-display);
   --ap-radius: 14px;
   --ap-radius-sm: 10px;
   /* three elevation steps, shadows tinted to the navy */
-  --ap-e1: 0 1px 2px rgba(13, 27, 42, .06), 0 1px 1px rgba(13, 27, 42, .04);
-  --ap-e2: 0 8px 24px rgba(13, 27, 42, .08), 0 2px 6px rgba(13, 27, 42, .05);
-  --ap-e3: 0 24px 60px rgba(13, 27, 42, .14), 0 6px 16px rgba(13, 27, 42, .08);
+  --ap-e1: 0 1px 2px rgba(30, 35, 41, .06), 0 1px 1px rgba(30, 35, 41, .04);
+  --ap-e2: 0 8px 24px rgba(30, 35, 41, .08), 0 2px 6px rgba(30, 35, 41, .05);
+  --ap-e3: 0 24px 60px rgba(30, 35, 41, .14), 0 6px 16px rgba(30, 35, 41, .08);
   --ap-ease: cubic-bezier(0.23, 1, 0.32, 1);
   --ap-bar-h: 72px;
 }
@@ -43,7 +41,7 @@ body.ap {
   font-family: var(--ap-font); font-size: 16px; line-height: 1.6;
   -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
 }
-body.ap--rtl { font-family: "Cairo", var(--ap-font); }
+body.ap--rtl { font-family: var(--altus-font-ar); }
 body.ap ::selection { background: var(--ap-accent); color: var(--ap-ink); }
 body.ap :focus-visible { outline: 3px solid var(--ap-accent); outline-offset: 3px; border-radius: 6px; }
 body.ap a { text-underline-offset: .2em; }
@@ -58,7 +56,7 @@ body.ap a { text-underline-offset: .2em; }
   display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 1.25rem;
   padding: .75rem clamp(1rem, 3vw, 2rem);
   background: linear-gradient(180deg, #0F2033 0%, var(--ap-ink) 100%);
-  color: #E7EBF0; border-bottom: 1px solid rgba(200, 157, 79, .35);
+  color: #E7EBF0; border-bottom: 1px solid rgba(196, 91, 47, .35);
   box-shadow: 0 1px 0 rgba(255, 255, 255, .04) inset, var(--ap-e2);
 }
 .ap-bar__brand { display: flex; align-items: center; height: 44px; padding-inline-end: 1.25rem; border-inline-end: 1px solid rgba(255, 255, 255, .12); }
@@ -84,7 +82,7 @@ body.ap a { text-underline-offset: .2em; }
 }
 .ap-btn:active { transform: translateY(1px) scale(.98); }
 .ap-btn[disabled], .ap-btn.is-busy { opacity: .6; cursor: progress; }
-.ap-btn--primary { background: var(--ap-accent); color: var(--ap-ink); box-shadow: 0 6px 16px rgba(200, 157, 79, .35); }
+.ap-btn--primary { background: var(--ap-accent); color: var(--ap-ink); box-shadow: 0 6px 16px rgba(196, 91, 47, .35); }
 .ap-btn--primary:hover { background: #D6AE62; }
 .ap-btn--done { background: var(--ap-ok-soft); color: var(--ap-ok); border-color: rgba(47, 107, 79, .25); }
 .ap-btn--light { background: #fff; color: var(--ap-ink); }
@@ -123,9 +121,9 @@ body.ap a { text-underline-offset: .2em; }
 }
 .ap-eyebrow { margin: 0 0 .6rem; color: var(--ap-accent-deep); font-weight: 700; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; }
 .ap--rtl .ap-eyebrow { letter-spacing: 0; text-transform: none; font-size: .9rem; }
-.ap-title { margin: 0 0 1rem; font-family: var(--ap-display); font-weight: 700; color: var(--ap-ink);
+.ap-title { margin: 0 0 1rem; font-family: var(--ap-display); font-weight: 400; letter-spacing: -.01em; color: var(--ap-ink);
   font-size: clamp(1.7rem, 1.2rem + 1.6vw, 2.6rem); line-height: 1.12; letter-spacing: -.012em; text-wrap: balance; max-width: 26ch; }
-.ap--rtl .ap-title { font-family: "Cairo", var(--ap-font); letter-spacing: 0; line-height: 1.35; }
+.ap--rtl .ap-title { font-family: var(--altus-font-ar); letter-spacing: 0; line-height: 1.35; }
 .ap-meta { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 2rem; padding: 0; list-style: none; }
 .ap-meta li { display: inline-flex; align-items: center; gap: .45rem; padding: .35rem .8rem; border-radius: 999px;
   background: var(--ap-canvas); color: var(--ap-ink-soft); font-size: .82rem; font-weight: 600; font-variant-numeric: tabular-nums; }
@@ -135,7 +133,7 @@ body.ap a { text-underline-offset: .2em; }
 .ap-prose > * + * { margin-top: 1.05em; }
 .ap-prose p:first-child { font-size: 1.22rem; line-height: 1.6; color: var(--ap-ink); font-weight: 600; }
 .ap-prose h2, .ap-prose h3 { margin: 2em 0 .5em; color: var(--ap-ink); line-height: 1.25; }
-.ap-prose h2 { font-family: var(--ap-display); font-size: 1.55rem; }
+.ap-prose h2 { font-family: var(--ap-heading); font-weight: 600; font-size: 1.45rem; }
 .ap-prose h3 { font-size: 1.15rem; }
 .ap-prose ul, .ap-prose ol { padding-inline-start: 1.3em; }
 .ap-prose li + li { margin-top: .45em; }
@@ -143,7 +141,7 @@ body.ap a { text-underline-offset: .2em; }
 .ap-prose strong { color: var(--ap-ink); }
 .ap-prose a { color: var(--ap-accent-deep); text-decoration-thickness: 1px; }
 .ap-prose .ha-self-check, .ap-prose blockquote { margin: 2em 0 0; padding: 1.25rem 1.5rem; background: var(--ap-accent-soft);
-  border-radius: var(--ap-radius-sm); border: 1px solid rgba(200, 157, 79, .35); }
+  border-radius: var(--ap-radius-sm); border: 1px solid rgba(196, 91, 47, .35); }
 
 .ap-notice { display: flex; gap: 1rem; align-items: flex-start; padding: 1.25rem 1.5rem; border-radius: var(--ap-radius-sm);
   background: var(--ap-canvas); color: var(--ap-ink-soft); }
@@ -173,7 +171,7 @@ body.ap a { text-underline-offset: .2em; }
 
 /* ---------------------------------------------------------------- sidebar */
 .ap-side { position: sticky; top: calc(var(--ap-bar-h) + 1rem); max-height: calc(100vh - var(--ap-bar-h) - 2rem); overflow: auto;
-  border-radius: var(--ap-radius); scrollbar-width: thin; scrollbar-color: rgba(13, 27, 42, .2) transparent; }
+  border-radius: var(--ap-radius); scrollbar-width: thin; scrollbar-color: rgba(30, 35, 41, .2) transparent; }
 .ap .course-playing-sidebar { padding: 0; border: 0; border-radius: var(--ap-radius); box-shadow: var(--ap-e2); background: var(--ap-surface); }
 .ap .course-playing-sidebar > .title { margin: 0; padding: 1.25rem 1.5rem; text-align: start; font: 700 1.05rem/1.3 var(--ap-font); color: var(--ap-ink);
   border-bottom: 1px solid var(--ap-line); position: sticky; top: 0; background: var(--ap-surface); z-index: 2; }

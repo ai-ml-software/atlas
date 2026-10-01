@@ -279,7 +279,7 @@ class Ha_video_renderer {
         }
 
         // Footer: brand and slide counter.
-        $brand = $rtl ? 'أكاديمية الضيافة' : 'Hospitality Academy';
+        $brand = 'Altus Gulf';
         $counter = $n . ' / ' . $count;
         $this->text_block($im, $brand, $font, 16, $muted, $pad, $h - 48, $max_w, $rtl, 1);
         $this->text_block($im, $counter, $this->font(false), 16, $muted, $pad, $h - 48, $max_w, !$rtl, 1);

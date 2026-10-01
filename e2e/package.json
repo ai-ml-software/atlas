@@ -7,7 +7,8 @@
         "test:desktop": "playwright test --project=desktop",
         "test:mobile": "playwright test --project=mobile",
         "report": "playwright show-report report",
-        "test:headed": "playwright test --project=desktop --headed"
+        "test:headed": "playwright test --project=desktop --headed",
+        "guides": "playwright test -c playwright.guides.config.ts"
     },
     "keywords": [],
     "author": "",

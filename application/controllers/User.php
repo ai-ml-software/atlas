@@ -838,23 +838,12 @@ class User extends CI_Controller
     {
         $quiz_details = $this->crud_model->get_lessons('lesson', $quiz_id)->row_array();
 
-        $data['quiz_id'] = $quiz_details['id'];
-        $data['user_id'] = $this->session->userdata('user_id');
-        $data['user_answers'] = json_encode(array());
-        $data['correct_answers'] = json_encode(array());
-        $data['date_added'] = time();
-        $data['date_updated'] = time();
-        $data['is_submitted'] = 0;
-        $data['total_obtained_marks'] = 0;
+        $this->open_quiz_attempt($quiz_details, $this->session->userdata('user_id'));
 
-        $row = $this->db->get_where('quiz_results', array('user_id' => $data['user_id'], 'quiz_id' => $quiz_id));
-        $total_attemped = $this->db->where('quiz_id', $quiz_id)->where('user_id', $data['user_id'])->get('quiz_results')->num_rows();
-        if ($quiz_details['quiz_attempt'] == 0 && $row->num_rows() <= 0 || $quiz_details['quiz_attempt'] > ($total_attemped - 1)) :
-
-            if ($this->db->get_where('quiz_results', array('user_id' => $data['user_id'], 'is_submitted' => 0, 'quiz_id' => $quiz_id))->num_rows() == 0) :
-                $this->db->insert('quiz_results', $data);
-            endif;
-        endif;
+        // "register" only opens the attempt: an untimed quiz is already on the page and must not be redrawn.
+        if ($retake === 'register') {
+            return;
+        }
 
         if ($retake != "") {
             $course_title = $this->crud_model->get_course_by_id($quiz_details['course_id'])->row('title');
@@ -864,6 +853,27 @@ class User extends CI_Controller
         $page_data['quiz_questions'] = $this->db->get_where('question', array('quiz_id' => $quiz_id));
         $page_data['quiz_id'] = $quiz_id;
         $this->load->view('lessons/quiz_answer_sheet', $page_data);
+    }
+
+    /**
+     * Opens an attempt (an unsubmitted quiz_results row) unless one is already
+     * open or the attempt limit is used up. Called when a quiz starts and again
+     * when an answer arrives, so an answer given before the start request has
+     * landed is still recorded instead of silently dropped.
+     */
+    private function open_quiz_attempt($quiz_details, $user_id) {
+        if (!$quiz_details || !$user_id) {
+            return;
+        }
+        $quiz_id = $quiz_details['id'];
+        if ($this->db->get_where('quiz_results', array('user_id' => $user_id, 'is_submitted' => 0, 'quiz_id' => $quiz_id))->num_rows() > 0) {
+            return;
+        }
+        $total_attemped = $this->db->where('quiz_id', $quiz_id)->where('user_id', $user_id)->get('quiz_results')->num_rows();
+        if ($quiz_details['quiz_attempt'] == 0 && $total_attemped <= 0 || $quiz_details['quiz_attempt'] > ($total_attemped - 1)) {
+            $this->db->insert('quiz_results', array('quiz_id' => $quiz_id, 'user_id' => $user_id, 'user_answers' => json_encode(array()),
+                'correct_answers' => json_encode(array()), 'date_added' => time(), 'date_updated' => time(), 'is_submitted' => 0, 'total_obtained_marks' => 0));
+        }
     }
 
     function submit_quiz_answer($quiz_id = "", $question_id = "", $question_type = "")
@@ -877,6 +887,9 @@ class User extends CI_Controller
 
         //Question details
         $question_details = $this->db->get_where('question', array('id' => $question_id))->row_array();
+
+        // An answer can arrive before the start request has opened the attempt.
+        $this->open_quiz_attempt($quiz_details, $user_id);
 
 
         $results = $this->db->order_by('quiz_result_id', 'desc')->get_where('quiz_results', array('quiz_id' => $quiz_id, 'user_id' => $user_id));

@@ -39,13 +39,24 @@ async function answerQuiz(p: Page, correctly: boolean) {
 
 test.describe.serial('Library course: each lesson unlocks only after its quiz is passed', () => {
   test.beforeAll(reset);
-  test.afterAll(reset);
+  test.afterAll(() => { if (!process.env.KEEP_STATE) reset(); });   // KEEP_STATE=1 leaves the attempts for inspection
 
   test('the course is built as lesson → quiz → lesson with drip on', () => {
     expect(COURSE).toBeGreaterThan(0);
     expect(one(`SELECT enable_drip_content FROM course WHERE id=${COURSE}`)).toBe('1');
     expect([LESSON1.type, QUIZ1.type]).toEqual([expect.stringMatching(/video|text/), 'quiz']);
     expect(LESSON2.type).not.toBe('quiz');
+  });
+
+  test('the course sidebar sits beside a video lesson, not under it', async ({ as }) => {
+    const p = await as('admin');
+    await p.setViewportSize({ width: 1440, height: 900 });
+    await open(p, url(LESSON1.id));
+    // .video-container used to stay open for every non-audio lesson, nesting the sidebar inside the lesson column.
+    expect(await p.locator('.ap-side').evaluate((e) => e.parentElement!.className)).toContain('ap-layout');
+    const side = (await p.locator('.ap-side').boundingBox())!;
+    const stage = (await p.locator('.ap-stage').boundingBox())!;
+    expect(side.x).toBeGreaterThan(stage.x + stage.width - 1);
   });
 
   test('lesson 2 is locked before anything is done', async ({ as }) => {
@@ -68,6 +79,10 @@ test.describe.serial('Library course: each lesson unlocks only after its quiz is
     const p = await as('student');
     await open(p, url(QUIZ1.id));
     await answerQuiz(p, false);
+    // The attempt really was recorded and graded below the pass mark (not merely never saved).
+    const graded = sql(`SELECT is_submitted, total_obtained_marks FROM quiz_results WHERE user_id=${STUDENT} AND quiz_id=${QUIZ1.id} ORDER BY quiz_result_id DESC LIMIT 1`)[0];
+    expect(graded?.[0]).toBe('1');
+    expect(Number(graded?.[1])).toBeLessThan(3);
     await open(p, url(LESSON2.id));
     await expect(p.locator('.ap-notice--lock')).toBeVisible();
   });
@@ -75,8 +90,12 @@ test.describe.serial('Library course: each lesson unlocks only after its quiz is
   test('retaking and passing the quiz unlocks lesson 2', async ({ as }) => {
     const p = await as('student');
     await open(p, url(QUIZ1.id));
-    await p.getByRole('link', { name: /take the quiz again/i }).click();
-    await open(p, url(QUIZ1.id));
+    // Reopening a failed quiz starts a fresh attempt; the result page's retake link appears only when attempts are counted.
+    const retake = p.getByRole('link', { name: /take the quiz again/i });
+    if (await retake.isVisible()) {
+      await retake.click();
+      await open(p, url(QUIZ1.id));
+    }
     await answerQuiz(p, true);
     await open(p, url(QUIZ1.id));
     await expect(p.locator('[data-ap-next-locked]')).toHaveCount(0);

@@ -132,9 +132,29 @@ $chosen_property = (int) $this->session->userdata('hkp_property');
       <?php if ($error): ?><div class="hkp-flash hkp-flash--error" role="alert"><?php echo hkp_h($error); ?></div><?php endif; ?>
       <?php $this->load->view($content_view); ?>
     </main>
-    <footer class="hkp-foot">
-      <span><?php echo hkp_h(hkp_pick($brand, 'email_footer')); ?></span>
-      <span><?php echo hkp_e('The right knowledge, to the right person, at the right time.'); ?></span>
+    <?php
+    // Same corporate menu as the public site, in the visitor's language (public pages exist for every site locale, English otherwise).
+    $hkp_site = function_exists('ha_locale_enabled') && ha_locale_enabled(hkp_locale()) ? hkp_locale() : 'en';
+    $hkp_foot_links = array(
+        'about-altus' => 'About', 'services' => 'Services', 'knowledge-performance' => 'Altus Knowledge and Performance',
+        'ascent' => 'Ascent', 'market' => 'Market', 'case-studies' => 'Case Studies', 'leadership' => 'Leadership',
+        'courses' => 'Courses', 'contact' => 'Contact',
+    );
+    ?>
+    <footer class="hkp-foot" data-hkp-foot>
+      <div class="hkp-foot__brand">
+        <img src="<?php echo base_url('uploads/system/altus-logo-horizontal.png'); ?>" alt="Altus Gulf" width="138" height="30" loading="lazy">
+        <span><?php echo hkp_e('The right knowledge, to the right person, at the right time.'); ?></span>
+      </div>
+      <nav class="hkp-foot__nav" aria-label="<?php echo hkp_e('Altus Gulf'); ?>">
+        <?php foreach ($hkp_foot_links as $path => $label): ?>
+          <a href="<?php echo base_url($hkp_site . '/' . $path); ?>"><?php echo hkp_e($label); ?></a>
+        <?php endforeach; ?>
+      </nav>
+      <div class="hkp-foot__base">
+        <span>&copy; <?php echo date('Y'); ?> Altus Gulf · <?php echo hkp_e('All rights reserved.'); ?> <?php echo hkp_e('Elevating Hospitality & Business Performance'); ?></span>
+        <?php $hkp_mail = trim((string) hkp_pick($brand, 'email_footer')); if ($hkp_mail !== ''): ?><span><?php echo hkp_h($hkp_mail); ?></span><?php endif; ?>
+      </div>
     </footer>
   </div>
 </div>

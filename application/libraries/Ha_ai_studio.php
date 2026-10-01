@@ -735,7 +735,7 @@ TXT;
             throw new RuntimeException('The rendered file ' . $render['video'] . ' is missing.');
         }
         $reviewer = $this->CI->db->get_where('users', array('id' => (int) $job['reviewed_by']))->row_array();
-        $credit = 'Hospitality Academy' . ($reviewer ? ' · reviewed by ' . trim($reviewer['first_name'] . ' ' . $reviewer['last_name']) : '');
+        $credit = 'Altus Gulf' . ($reviewer ? ' · reviewed by ' . trim($reviewer['first_name'] . ' ' . $reviewer['last_name']) : '');
 
         if ($locale === 'en') {
             // The LMS player shows the English video; one source per lesson.

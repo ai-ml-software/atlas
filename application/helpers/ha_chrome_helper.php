@@ -18,11 +18,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 if (!function_exists('ha_chrome_defaults')) {
     function ha_chrome_defaults() {
         return array(
-            'ha_rail_note_en' => 'Hotel training in Arabic and English · Verifiable certificates',
-            'ha_rail_note_ar' => 'تدريب فندقي بالعربية والإنجليزية · شهادات قابلة للتحقق',
+            'ha_rail_note_en' => 'Strategic Advisory & Business Consultancy · Riyadh · GCC & MENA',
+            'ha_rail_note_ar' => 'الاستشارات الاستراتيجية واستشارات الأعمال · الرياض · الخليج والشرق الأوسط وشمال أفريقيا',
 
-            'ha_footer_statement_en' => 'Standards that hold when no one is watching.',
-            'ha_footer_statement_ar' => 'معايير تصمد حين لا يراقب أحد.',
+            'ha_footer_statement_en' => 'Elevating Hospitality & Business Performance',
+            'ha_footer_statement_ar' => 'الارتقاء بالضيافة وأداء الأعمال',
+
+            // Founders' direct lines, as published on the Altus Gulf corporate site.
+            'ha_founder_1_name_en'  => 'Islam Mahrous',
+            'ha_founder_1_name_ar'  => 'إسلام محروس',
+            'ha_founder_1_role_en'  => 'Co-Founder',
+            'ha_founder_1_role_ar'  => 'شريك مؤسس',
+            'ha_founder_1_phone'    => '+20 10 9555 6779',
+            'ha_founder_2_name_en'  => 'Hussam Smadi',
+            'ha_founder_2_name_ar'  => 'حسام الصمادي',
+            'ha_founder_2_role_en'  => 'Co-Founder',
+            'ha_founder_2_role_ar'  => 'شريك مؤسس',
+            'ha_founder_2_phone'    => '+966 50 051 1994',
 
             'ha_contact_address_en' => "Riyadh\nKingdom of Saudi Arabia",
             'ha_contact_address_ar' => "الرياض\nالمملكة العربية السعودية",

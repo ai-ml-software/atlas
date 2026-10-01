@@ -22,7 +22,7 @@
     --chrome-mast-h-stuck: 68px;
     --chrome-ease: cubic-bezier(.16, 1, .3, 1);
     --chrome-dur: .34s;
-    --chrome-hairline: rgba(200, 157, 79, .55);
+    --chrome-hairline: rgba(196, 91, 47, .55);
 }
 
 /* ------------------------------------------------------------------ shell */
@@ -92,15 +92,26 @@
 }
 .ha-rail__links a:hover { color: #fff; }
 
-/* The language control is the one place gold carries text. Gold on obsidian
-   measures 7:1; gold on ivory measures 2.3:1, which is why it never appears
-   as text anywhere below this bar. */
+/* Copper carries text on the dark rail and footer only in its lightened
+   form: --altus-gold-on-dark measures 6.1:1 on charcoal, where the signature
+   copper itself measures 3.68:1 and fails AA for small text. */
 .ha-rail__lang {
+    /* A <summary>, so it does not inherit the rail link type above; match it. */
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    min-height: 32px;
+    padding-inline: .7rem;
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .04em;
+    cursor: pointer;
+    list-style: none;
     border: 1px solid var(--chrome-hairline);
-    color: var(--ha-accent) !important;
+    color: var(--altus-gold-on-dark, #E58A5E) !important;
     border-radius: 2px;
 }
-.ha-rail__lang:hover { border-color: var(--ha-accent); background: rgba(200, 157, 79, .1); }
+.ha-rail__lang:hover { border-color: var(--ha-accent); background: rgba(196, 91, 47, .1); }
 
 /* -------------------------------------------------------------- masthead */
 
@@ -126,7 +137,7 @@
 .ha-chrome--stuck .ha-mast__row { min-height: var(--chrome-mast-h-stuck); }
 
 .ha-chrome--stuck {
-    box-shadow: 0 1px 0 rgba(13, 27, 42, .06), 0 14px 34px -18px rgba(13, 27, 42, .38);
+    box-shadow: 0 1px 0 rgba(30, 35, 41, .06), 0 14px 34px -18px rgba(30, 35, 41, .38);
 }
 
 .ha-mast__brand {
@@ -149,7 +160,7 @@
 
 /* ------------------------------------------------------------------- nav */
 
-.ha-mast__nav { border-block-start: 1px solid rgba(13, 27, 42, .1); }
+.ha-mast__nav { border-block-start: 1px solid rgba(30, 35, 41, .1); }
 .ha-mast__nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -222,7 +233,7 @@
     background: var(--ha-canvas);
     border: 1px solid var(--ha-line);
     border-block-start: 2px solid var(--ha-accent);
-    box-shadow: 0 18px 40px -22px rgba(13, 27, 42, .5);
+    box-shadow: 0 18px 40px -22px rgba(30, 35, 41, .5);
     display: none;
 }
 .ha-more__panel.is-open { display: block; }
@@ -435,8 +446,13 @@
 @media (max-width: 680px) {
     .ha-rail__note { display: none; }
     .ha-rail__inner { justify-content: flex-end; }
-    .ha-mast__logo { height: 52px; }
-    .ha-chrome--stuck .ha-mast__logo { height: 42px; }
+    /* The Altus Gulf lockup is horizontal (about 4.6:1): at 52px tall it took
+       240px and pushed the actions past a 390px screen. 36px keeps the
+       wordmark legible and leaves the row its search, sign-in, CTA and menu. */
+    .ha-mast__row { gap: .5rem; }
+    .ha-mast__logo { height: 30px; max-width: 38vw; }
+    .ha-chrome--stuck .ha-mast__logo { height: 28px; }
+    .ha-mast__actions { min-width: 0; }
     .ha-mast__cta { padding-inline: .85rem; }
     .ha-mast__search.is-open input { width: clamp(120px, 40vw, 200px); }
     /* On a phone the open field, the join CTA and the menu button do not fit
@@ -445,6 +461,15 @@
        when the field closes. */
     .ha-mast__search.is-open ~ .ha-mast__cta,
     .ha-mast__search.is-open ~ .ha-mast__signin { display: none; }
+}
+
+/* Small Android phones (360px). The rail keeps Contact and the language switch
+   (Verify stays one tap away in the footer) and the sign-in pair tightens so
+   logo, search, sign-in, CTA and menu still share one row. */
+@media (max-width: 380px) {
+    .ha-rail__links a[href$="/verify"] { display: none; }
+    .ha-mast__signin, .ha-mast__cta { padding-inline: .55rem; font-size: .68rem; letter-spacing: .04em; }
+    .ha-mast__logo { height: 26px; }
 }
 
 /* ---------------------------------------------------------------- footer */
@@ -504,7 +529,7 @@ body.ha--rtl .ha-foot__statement { font-family: var(--ha-font-ar); line-height: 
     border: 1px solid var(--ha-accent);
     border-radius: 2px;
     background: transparent;
-    color: var(--ha-accent);
+    color: var(--altus-gold-on-dark, #E58A5E);
     font-size: .78rem;
     font-weight: 700;
     letter-spacing: .08em;
@@ -513,7 +538,7 @@ body.ha--rtl .ha-foot__statement { font-family: var(--ha-font-ar); line-height: 
     white-space: nowrap;
     transition: background .2s var(--chrome-ease), color .2s var(--chrome-ease);
 }
-.ha-foot__cta:hover { background: var(--ha-accent); color: var(--ha-ink); }
+.ha-foot__cta:hover { background: var(--altus-gold-deep, #A2471F); border-color: var(--altus-gold-deep, #A2471F); color: var(--altus-ivory, #F7F5F1); }
 
 /* Band 2: grouped navigation. The previous footer put fourteen links in one
    undifferentiated row, which is a list, not wayfinding. */
@@ -531,7 +556,7 @@ body.ha--rtl .ha-foot__statement { font-family: var(--ha-font-ar); line-height: 
     font-weight: 700;
     letter-spacing: .14em;
     text-transform: uppercase;
-    color: var(--ha-accent);
+    color: var(--altus-gold-on-dark, #E58A5E);
 }
 /*
  * Arabic ranks by size, because the devices Latin uses here are unavailable to
@@ -611,9 +636,9 @@ body.ha--rtl .ha-foot__col h2 {
  * defaults that belong to no design system; theming them from the palette is
  * the difference between a page that was assembled and one that was built.
  */
-::selection { background: var(--ha-accent); color: var(--ha-ink); }
+::selection { background: var(--altus-sand, #D9C6A3); color: var(--ha-ink); }
 body.ha { caret-color: var(--ha-action); accent-color: var(--ha-action); }
-body.ha--rtl ::selection { background: var(--ha-accent); color: var(--ha-ink); }
+body.ha--rtl ::selection { background: var(--altus-sand, #D9C6A3); color: var(--ha-ink); }
 
 @supports selector(::-webkit-scrollbar) {
     .ha-mast__nav::-webkit-scrollbar { width: 8px; }

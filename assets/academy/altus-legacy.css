@@ -9,132 +9,132 @@
  */
 
 .home_1st,.home_2nd,.home_3rd,.home_4th,.home_5th,:root {
-    --bg-white-2: #F7F6F2;
-    --color-4: #0D1B2A;
+    --bg-white-2: #F7F5F1;
+    --color-4: #1E2329;
     --color-12: #0D1B2A3a;
     --color-15: #0D1B2A58;
 }
 
 .menu_pro_tgl_bg ul li:hover a {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .accordion-body-2 .accordion-body-video h2 a:hover,.accordion-body-2 .accordion-time h2:hover,.course-play-body .course-play-left-body .body-1 p a:hover,.course-play-body .course-play-left-body .video p a,.courses-card-body:hover .courses-text h5,.dropdown-menu li a:hover,.expert-instructor .instructor-card .instructor-card-body:hover h3,.expert-instructor .instructor-card .instructor-card-body:hover p,.footer .copyright .footer-privacy a:hover,.footer a:hover,.menu_pro_tgl_bg ul li:hover i,.qustion .accordion-item .active,.sing-up-right h3 span {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .menu_pro_tgl_bg ul li:hover {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .menu_pro_tgl_bg ul li:hover:after {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .menu_pro_wish-flex .spandiv span {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .menu_pro_wish-f-b .prcd a {
-    color: #0D1B2A;
-    border: 1.5px solid #0D1B2A;
+    color: #1E2329;
+    border: 1.5px solid #1E2329;
 }
 
 .menu_pro_btn .btn {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .search-icon {
-    border: 1px solid #0D1B2A;
+    border: 1px solid #1E2329;
 }
 
 .m-cross-icon,.m-search-icon {
-    border: 1px solid #0D1B2A;
+    border: 1px solid #1E2329;
 }
 
 .blog-body .left-tag a:hover,.blog-body .right-section .right-tag a:hover,.instructor .instructor-icon i:hover,.pagenation .active,.search-item span:hover {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .cross-icon,.m-cross-icon {
-    border: 1px solid #0D1B2A;
+    border: 1px solid #1E2329;
 }
 
 .h-1-banner .h-1-banner-text h1 span {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .inline-form .search-btn {
-    background: #0D1B2A;
+    background: #1E2329;
 }
 
 .search-option .submit-cls {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .courses-card-body .courses-text .courses-price .courses-price-right i {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .grid-view-body .courses-card .courses-text .review-icon span {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .course-category h3::after {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .ac-lecture li a span i {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .accordion-body-2 .accordion-body-video .icon i {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .c-d-3-banner .card-video-icon i:hover,.error-body-text a {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .include-icon i {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .comment #phone:hover {
-    border-color: #0D1B2A;
+    border-color: #1E2329;
 }
 
 .purchase-btn:hover {
-    background-color: #0D1B2A;
-    border-color: #0D1B2A;
+    background-color: #1E2329;
+    border-color: #1E2329;
 }
 
 .faq .faq-accrodion .faq-acc-heading h4 {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .form-section #exampleFormControlInput1:focus-visible {
-    border-color: #0D1B2A;
+    border-color: #1E2329;
 }
 
 .about-us .about-us-btn a,.course-play-body .course-play-left-body .body-1 a:hover {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .course-play-body .course-play-left-body .video .card-video-icon {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .course-play-tab .nav-tabs .nav-item.show .nav-link,.nav-tabs .nav-link.active {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .course-play-tab .like p {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .course-play-tab .like button {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .s_list_one li::before {
@@ -142,36 +142,36 @@
 }
 
 .s_list_one li::after {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .speech-item-content .inner .title::before {
-    background: #0D1B2A;
+    background: #1E2329;
 }
 
 .sing-up-right .resend-code .btn {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .btn-bar {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .invoice-no .invoice-color {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .invoice-bill .invoice-total h2 {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .list-btn svg path {
-    fill: #0D1B2A;
+    fill: #1E2329;
 }
 
 .pagenation .active, .page-item.active .page-link {
-    background-color: #0D1B2A;
-    box-shadow: 0px 7px 18px -8px #0D1B2A;
+    background-color: #1E2329;
+    box-shadow: 0px 7px 18px -8px #1E2329;
 }
 
 ul.step-down li::before {
@@ -179,258 +179,258 @@ ul.step-down li::before {
 }
 
 .blog-search-input.form-control:focus {
-    border-color: #0D1B2A !important;
+    border-color: #1E2329 !important;
 }
 
 .nice-select .option {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .select-box .nice-select .current {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .btn-fill {
-    border: 1px solid #0D1B2A !important;
+    border: 1px solid #1E2329 !important;
 }
 
 .btn-fill:hover {
-    background: #0D1B2A;
+    background: #1E2329;
 }
 
 .follow-btn {
-    border: 1px solid #0D1B2A !important;
+    border: 1px solid #1E2329 !important;
 }
 
 .follow-btn:hover {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .main-nav-wrap .nav-item .nav-link {
-    color: #0D1B2A !important;
+    color: #1E2329 !important;
 }
 
 .ctBtn {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .course-bundle-details .created-by-instructor {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .home_1st {
-    --bg-white-2: #F7F6F2;
-    --color-4: #0D1B2A;
+    --bg-white-2: #F7F5F1;
+    --color-4: #1E2329;
     --color-12: #0D1B2A3a;
     --color-15: #0D1B2A58;
 }
 
 .home_2nd {
-    --bg-white-2: #F7F6F2;
-    --color-4: #0D1B2A;
+    --bg-white-2: #F7F5F1;
+    --color-4: #1E2329;
     --color-12: #0D1B2A3a;
     --color-15: #0D1B2A58;
 }
 
 .home_3rd {
-    --bg-white-2: #F7F6F2;
-    --color-4: #0D1B2A;
+    --bg-white-2: #F7F5F1;
+    --color-4: #1E2329;
     --color-12: #0D1B2A3a;
     --color-15: #0D1B2A58;
 }
 
 .home_4th {
-    --bg-white-2: #F7F6F2;
-    --color-4: #0D1B2A;
+    --bg-white-2: #F7F5F1;
+    --color-4: #1E2329;
     --color-12: #0D1B2A3a;
     --color-15: #0D1B2A58;
 }
 
 .home_5th {
-    --bg-white-2: #F7F6F2;
-    --color-4: #0D1B2A;
+    --bg-white-2: #F7F5F1;
+    --color-4: #1E2329;
     --color-12: #0D1B2A3a;
     --color-15: #0D1B2A58;
 }
 
 .sub-header {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .menu_pro_tgl_bg ul li:hover i {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .dropdown-menu li a:hover {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .navbar-nav .navbarHover a:hover {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .navbar-nav .navbarHover a:hover .has-sub-category, .navbar-nav .navbarHover li a:hover i {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .m-cross-icon, .m-search-icon {
-    border: 1px solid #0D1B2A;
+    border: 1px solid #1E2329;
 }
 
 .search-item span:hover {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .cross-icon {
-    border: 1px solid #0D1B2A;
+    border: 1px solid #1E2329;
 }
 
 .m-cross-icon {
-    border: 1px solid #0D1B2A;
+    border: 1px solid #1E2329;
 }
 
 .courses-card-body:hover .courses-text h5 {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .courses-card .courses-card-body .courses-text p a {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .qustion .accordion-item .active {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .footer a:hover {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .footer .copyright .footer-privacy a:hover {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .breadcrumb span {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .breadcrumb i {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .bread-crumb h1 {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .pagenation .active {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .courses-details .courses-details-1st-text h1 {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .accordion-body-2 .accordion-body-video h2 a:hover {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .accordion-body-2 .accordion-time h2:hover {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .instructor .instructor-icon svg:hover path, .instructor .instructor-icon svg:hover {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .instructor .instructor-icon i:hover {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .c-d-3-banner .card-video-icon i:hover {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .error-body-text a {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .blog-body .left-tag a:hover {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .blog-body .right-section .right-tag a:hover {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .sing-up-right h3 span {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .about-us .about-us-btn a {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .course-play-body .course-play-left-body .body-1 a:hover {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .course-play-body .course-play-left-body .video p a {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .course-play-body .course-play-left-body .body-1 p a:hover {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .course-play-tab .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    border-bottom: 2px solid #0D1B2A;
-    color: #0D1B2A;
+    border-bottom: 2px solid #1E2329;
+    color: #1E2329;
 }
 
 .course-play-tab .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
-    border-color: #0D1B2A;
+    border-color: #1E2329;
 }
 
 .s_search input {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .sbundle-items .bundle-foot:hover {
-    background-color: #0D1B2A;
-    border-color: #0D1B2A;
+    background-color: #1E2329;
+    border-color: #1E2329;
 }
 
 .bundle-active {
-    background-color: #0D1B2A;
-    border-color: #0D1B2A !important;
+    background-color: #1E2329;
+    border-color: #1E2329 !important;
 }
 
 .EbannerTop .search-option .form-control {
-    border: 1px solid #0D1B2A;
+    border: 1px solid #1E2329;
 }
 
 .eFaq .accordion-button {
-    color: #0D1B2A !important;
+    color: #1E2329 !important;
 }
 
 .faq-accrodion .accordion .accordion-button::before {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .Espeech-item .speech-item-content .no::after {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .ePromotion h4 span {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .eBtn .btn:hover {
-    background-color: #0D1B2A;
-    border-color: #0D1B2A;
+    background-color: #1E2329;
+    border-color: #1E2329;
 }
 
 .eStudent a:hover {
-    background: #0D1B2A;
+    background: #1E2329;
 }
 
 .Etop_right p::after {
@@ -438,111 +438,111 @@ ul.step-down li::before {
 }
 
 .eImage span {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .navbar-nav .navbarHover li ul li a:hover {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .epopCourse:hover .review-btn .echecks {
-    background-color: #0D1B2A !important;
-    border-color: #0D1B2A !important;
+    background-color: #1E2329 !important;
+    border-color: #1E2329 !important;
 }
 
 .enrollBtn {
-    background-color: #0D1B2A;
+    background-color: #1E2329;
 }
 
 .fCardsection p {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .etopCourseHead .list-btn {
-    color: #0D1B2A !important;
+    color: #1E2329 !important;
 }
 
 .eListCourse .courses-price-border .review-icon p {
-    color: #0D1B2A !important;
+    color: #1E2329 !important;
 }
 
 .course-category .form-group .form-control {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .form-check-label.active span {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .course-all-category .accordion-button:not(.collapsed) {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .nBread a {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .eInfo p {
-    color: #0D1B2A !important;
+    color: #1E2329 !important;
 }
 
 .eInfo a {
-    color: #0D1B2A !important;
+    color: #1E2329 !important;
 }
 
 .info-tag p {
-    color: #0D1B2A !important;
+    color: #1E2329 !important;
 }
 
 .info-tag .fa-clock {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .eSocialShare p {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .path-pos .user-dropdown-menu-item a:hover {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .path-pos .user-dropdown-menu-item a:hover svg path {
-    stroke: #0D1B2A;
+    stroke: #1E2329;
 }
 
 .expert7-section .instructor-card .instructor-card-body:hover p, .expert7-section .instructor-card .instructor-card-body:hover h3 {
-    color: #0D1B2A;
+    color: #1E2329;
 }
 
 .fCardsection .nice-select::after {
-    border-bottom: 2px solid #0D1B2A;
-    border-right: 2px solid #0D1B2A;
+    border-bottom: 2px solid #1E2329;
+    border-right: 2px solid #1E2329;
 }
 
 .community-menu li a:hover {
-    background: #0D1B2A;
+    background: #1E2329;
 }
 
 .community-menu li.active a {
-    background: #0D1B2A;
+    background: #1E2329;
 }
 
 .create-post-btn {
-    background: #0D1B2A;
+    background: #1E2329;
 }
 
 .btn-submit-post {
-    background: #0D1B2A;
+    background: #1E2329;
 }
 
 /* -------------------------------------------------------------- variables */
 :root,
 .home_1st, .home_2nd, .home_3rd, .home_4th, .home_5th,
 .dark-theme {
-    --color-4: #0D1B2A;
+    --color-4: #1E2329;
     --color-12: #0D1B2A3a;
     --color-15: #0D1B2A58;
-    --bg-white-2: #F7F6F2;
+    --bg-white-2: #F7F5F1;
 }
 
 .ctBtn,
@@ -551,15 +551,15 @@ a.ctBtn,
 .page-item.active .page-link,
 .page-link.active,
 span.page-link {
-    background-color: #0D1B2A !important;
-    border-color: #0D1B2A !important;
+    background-color: #1E2329 !important;
+    border-color: #1E2329 !important;
 }
 
 .ctBtn:hover,
 a.ctBtn:hover,
 .signUp-btn:hover {
-    background-color: #1E2A38 !important;
-    border-color: #1E2A38 !important;
+    background-color: #2A2F35 !important;
+    border-color: #2A2F35 !important;
 }
 
 /* ------------------------------------------------------------------- logo

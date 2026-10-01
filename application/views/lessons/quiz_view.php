@@ -97,7 +97,8 @@
                             <?php include "quiz_answer_sheet.php"; ?>
                         </div>
 
-                        <script type="text/javascript">setTimeout(function(){startQuiz();}, 1500);</script>
+                        <?php // Untimed: the sheet is already here. Open the attempt now and leave the learner's answers in place. ?>
+                        <script type="text/javascript">$.post("<?php echo site_url('user/start_quiz/'.$lesson_details['id'].'/register'); ?>");</script>
                     <?php endif; ?>
 
                 <?php endif; ?>
