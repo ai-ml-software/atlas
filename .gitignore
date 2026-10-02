@@ -24,6 +24,9 @@ e2e/node_modules/
 e2e/.auth/
 e2e/report/
 e2e/test-results/
+e2e/report-isolated/
+e2e/playwright-report/
+e2e/test-results-isolated/
 
 # --- Editors / OS ---
 .DS_Store

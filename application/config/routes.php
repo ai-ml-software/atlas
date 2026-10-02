@@ -103,6 +103,8 @@ $route['my_bookings']               = "addons/tutor_booking/booked_schedules_stu
 // The shipped listing lives at home/courses. Bare /courses is the URL people
 // type and link to, so it resolves there rather than at the theme's 404.
 $route['courses']       = 'home/courses';
+$route['sign_up'] = 'login/sign_up';
+$route['sign_up/verification_code'] = 'login/sign_up/verification_code';
 $route['course/(:any)'] = 'home/course/$1';
 
 
@@ -124,6 +126,7 @@ $route['hkp/team/(.+)']          = 'hkp_team/$1';
 $route['hkp/admin']              = 'hkp_admin/index';
 $route['hkp/admin/(.+)']         = 'hkp_admin/$1';
 $route['hkp/cms']                = 'hkp_cms/index';
+$route['hkp/cms/navigation']     = 'hkp_cms/manage_navigation';
 $route['hkp/cms/(.+)']           = 'hkp_cms/$1';
 $route['hkp/exec']               = 'hkp_exec/index';
 $route['hkp/exec/(.+)']          = 'hkp_exec/$1';

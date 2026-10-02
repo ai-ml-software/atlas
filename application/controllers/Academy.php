@@ -31,6 +31,7 @@ class Academy extends CI_Controller {
     private function boot($locale) {
         $this->locale = ha_locale_enabled($locale) ? $locale : ha_locale_default();
         ha_site_locale($this->locale);
+        $this->session->set_userdata('ha_public_locale', $this->locale);
         $this->content_security_policy();
         return $this->locale;
     }
@@ -152,20 +153,44 @@ class Academy extends CI_Controller {
     /** Shared view data every public page needs. */
     private function shell(array $data) {
         $data['hero_preload'] = $this->hero_preload($data);
-        $data['locale'] = $this->locale;
-        $data['rtl'] = ha_locale_dir($this->locale) === 'rtl';
-        $data['site_locales'] = ha_site_locales();
-        $data['dir'] = $data['rtl'] ? 'rtl' : 'ltr';
+        $this->load->library('ha_site_layout');
+        $data = array_merge($data, $this->ha_site_layout->data($this->locale));
         $data['seo'] = $this->ha_seo;
-        $data['menu'] = $this->ha_catalog->menu('public_header', $this->locale);
-        // The founders' contact lines for the footer, the mega menu and the profile book (Admin → Leadership profiles).
-        $this->load->library('ha_corporate');
-        $data['founders'] = $this->db->table_exists('ha_leadership_profile') ? $this->ha_corporate->locale($this->locale)->leaders() : array();
-        $data['t'] = $this->phrases();
         return $data;
     }
 
     private function render($view, array $data) {
+        // Native landing pages share the section CMS; learner transactions stay in their original controllers.
+        if ($this->db->table_exists('ha_website_draft')) {
+            $route = preg_replace('~^' . preg_quote($this->locale, '~') . '(?:/|$)~', '', $this->uri->uri_string());
+            $codes = array('' => 'home', 'courses' => 'courses', 'programs' => 'programs', 'learning-paths' => 'learning-paths',
+                'certificates' => 'certificates-info', 'sop' => 'sop', 'hospitality-topics' => 'hospitality-topics', 'articles' => 'articles',
+                'verify' => 'verify', 'about' => 'about', 'hotels' => 'for-hotels', 'contact' => 'contact', 'credits' => 'credits');
+            $p = null;
+            if (isset($data['page']['id'])) { $p = $this->db->get_where('ha_page', array('id' => $data['page']['id']))->row_array(); }
+            elseif (isset($codes[$route])) { $p = $this->db->get_where('ha_page', array('code' => $codes[$route]))->row_array(); }
+            if ($p) {
+                $this->load->library(array('ha_auth', 'ha_page_builder'));
+                $can_edit = $this->ha_auth->is_system_scoped() && $this->ha_auth->has('cms_pages.update');
+                $data['studio_edit_url'] = $can_edit ? site_url('hkp/cms/live/' . $p['id']) . '?edit=' . ($this->locale === 'ar' ? 'ar' : 'en') : null;
+                $snapshot = $this->ha_page_builder->page($p['id']);
+                $sections = $snapshot['sections'];
+                $tr = $snapshot['tr'][$this->locale] ?? $snapshot['tr']['en'] ?? array();
+                if ($can_edit && (int) $this->input->get('studio_preview') === (int) $p['id']) {
+                    $this->load->library('ha_website_studio'); $state = $this->ha_website_studio->state($p['id']);
+                    $sections = $state['payload']['sections']; $tr = $state['payload']['tr'][$this->locale] ?? array();
+                    // Drafts may hold editable item lines; render the same normalized representation as publication.
+                    $normalized = $this->ha_website_studio->validate($state['payload']);
+                    $sections = $normalized['sections']; $tr = $normalized['tr'][$this->locale];
+                    $data['studio_is_preview'] = true;
+                    $this->output->set_header('Cache-Control: private, no-store')->set_header('X-Robots-Tag: noindex, nofollow');
+                }
+                if ($can_edit) { $this->output->set_header('Cache-Control: private, no-store'); }
+                $visible = array_values(array_filter($sections, function ($s) { return !empty($s['is_visible']); }));
+                if ($view === 'page') { $data['page'] = array_merge($data['page'], $tr); $data['sections'] = $visible; }
+                else { $data['studio_sections'] = $p['status'] === 'published' || !empty($data['studio_is_preview']) ? $visible : array(); $data['studio_page_copy'] = $tr; }
+            }
+        }
         $this->load->view('academy/layout', $this->shell(array_merge($data, array('view' => $view))));
     }
 
@@ -180,63 +205,8 @@ class Academy extends CI_Controller {
 
     /** Interface strings. Content comes from the database; these are chrome. */
     private function phrases() {
-        $en = array(
-            'skip_to_content' => 'Skip to content',
-            'search' => 'Search',
-            'search_placeholder' => 'Search courses, topics and articles',
-            'search_results_for' => 'Search results for',
-            'no_results' => 'Nothing matched that search.',
-            'courses' => 'Courses', 'programs' => 'Programs', 'learning_paths' => 'Learning Paths',
-            'topics' => 'Hospitality Topics', 'sop' => 'SOP Resources', 'articles' => 'Articles',
-            'certificates' => 'Certifications', 'about' => 'About Academy', 'for_hotels' => 'For Hotels',
-            'contact' => 'Contact', 'home' => 'Home',
-            'all_categories' => 'All categories', 'all_levels' => 'All levels',
-            'level' => 'Level', 'duration' => 'Duration', 'minutes' => 'min', 'hours' => 'hours',
-            'lessons' => 'lessons', 'free' => 'Free', 'certificate' => 'Certificate',
-            'overview' => 'Overview', 'curriculum' => 'Curriculum', 'instructor' => 'Instructor',
-            'outcomes' => 'What you will be able to do', 'requirements' => 'Requirements',
-            'prerequisites' => 'Prerequisites', 'faq' => 'Frequently asked questions',
-            'related_courses' => 'Related courses', 'part_of_programs' => 'Part of these programs',
-            'skills_awarded' => 'Skills recorded on completion',
-            'preview' => 'Preview', 'mandatory' => 'Mandatory', 'optional' => 'Optional',
-            'enrol' => 'Start this course', 'sign_in_to_start' => 'Sign in to start',
-            'read_more' => 'Read more', 'published' => 'Published', 'read_time' => 'min read',
-            'verify_title' => 'Verify a certificate',
-            'verify_help' => 'Enter the verification code printed on the certificate.',
-            'verify_code' => 'Verification code', 'verify_button' => 'Check certificate',
-            'verify_valid' => 'This certificate is valid.',
-            'verify_expired' => 'This certificate has expired.',
-            'verify_revoked' => 'This certificate has been revoked.',
-            'verify_not_found' => 'No certificate matches that code.',
-            'certificate_no' => 'Certificate number', 'issued_on' => 'Issued on',
-            'expires_on' => 'Expires on', 'holder' => 'Holder', 'subject' => 'Course or program',
-            'score' => 'Final score', 'status' => 'Status',
-            'contact_name' => 'Your name', 'contact_email' => 'Work email', 'contact_phone' => 'Phone',
-            'contact_org' => 'Hotel or organization', 'contact_city' => 'City',
-            'contact_headcount' => 'Approximate number of employees',
-            'contact_interest' => 'What you need', 'contact_message' => 'Message',
-            'contact_submit' => 'Send enquiry',
-            'contact_thanks' => 'Thank you. Your enquiry has been recorded and someone will reply by email.',
-            'required_field' => 'This field is required.',
-            'steps' => 'Steps', 'step' => 'Step', 'in_this_path' => 'Courses in this step',
-            'version' => 'Version', 'effective_date' => 'Effective date', 'review_date' => 'Review date',
-            'purpose' => 'Purpose', 'scope' => 'Scope', 'responsibilities' => 'Responsibilities',
-            'required_tools' => 'Required tools', 'procedure' => 'Procedure', 'checklist' => 'Checklist',
-            'safety_notes' => 'Safety notes', 'quality_standard' => 'Quality standard',
-            'escalation' => 'Escalation', 'department' => 'Department',
-            'showing' => 'Showing', 'of' => 'of', 'results' => 'results',
-            'previous' => 'Previous', 'next' => 'Next',
-            'not_found_title' => 'Page not found',
-            'not_found_body' => 'The page you asked for does not exist. It may have been moved or the address may be mistyped.',
-            'back_home' => 'Go to the home page',
-            'language_switch' => 'العربية',
-            'in_city' => 'Training emphasis in this city',
-            'browse_all' => 'Browse all',
-            'footer_note' => 'Hotel training, standard operating procedures and workforce certification.',
-            'legal' => 'Legal', 'privacy' => 'Privacy', 'terms' => 'Terms',
-        );
-        // English is the source; application/language/site/{code}.php translates it.
-        return array_map('ha_pt', $en);
+        $this->load->library('ha_site_layout');
+        return $this->ha_site_layout->phrases();
     }
 
     /**
@@ -582,7 +552,35 @@ class Academy extends CI_Controller {
             $this->ha_seo->add_schema($faq_schema);
         }
 
-        $this->render('course', array('course' => $course, 'level_label' => array($this, 'level_label')));
+        $this->load->library('ha_auth');
+        $this->load->helper('ha_security');
+        $signed_in = $this->ha_auth->check();
+        $enrolled = $signed_in && $this->db->where(array('user_id' => $this->ha_auth->id(),
+            'course_id' => $course['id']))->where('status !=', 'cancelled')->count_all_results('ha_enrollment') > 0;
+        $this->render('course', array('course' => $course, 'signed_in' => $signed_in, 'enrolled' => $enrolled,
+            'level_label' => array($this, 'level_label')));
+    }
+
+    /** Explicit start action; never enroll from a crawled or shared GET link. */
+    public function start($course_id = 0) {
+        $this->load->helper('ha_security');
+        $this->output->set_header('Cache-Control: no-store');
+        if ($this->input->method() !== 'post') {
+            $this->output->set_header('Allow: POST');
+            return $this->output->set_status_header(405)->set_output('Use the course start button.');
+        }
+        if (!ha_csrf_valid()) {
+            return $this->output->set_status_header(403)->set_output('Your session expired. Reload the course and try again.');
+        }
+        $this->load->library('ha_course_entry');
+        try {
+            $this->ha_course_entry->remember((int) $course_id, $this->input->post('locale'));
+            if (!$this->ha_auth->check()) { redirect(site_url('login'), 'location'); }
+            $destination = $this->ha_course_entry->finish($this->ha_auth->id());
+            redirect($destination, 'location');
+        } catch (RuntimeException $e) {
+            return $this->output->set_status_header(403)->set_content_type('text/plain', 'utf-8')->set_output($e->getMessage());
+        }
     }
 
     // -------------------------------------------------------------- programs

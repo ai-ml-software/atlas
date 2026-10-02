@@ -15,6 +15,146 @@ require_once APPPATH . 'core/Hkp_Controller.php';
  */
 class Hkp_cms extends Hkp_Controller {
 
+    private function studio_ready() {
+        if (!$this->db->table_exists('ha_publisher_draft')) { show_error('Install the Admin Studio migration: php index.php ha_cli migrate', 503); }
+    }
+
+    public function catalogue($type = 'programs', $id = 0) {
+        $this->load->library(array('ha_studio_catalogue', 'ha_website_studio'));
+        try { $def = $this->ha_studio_catalogue->authorize($type, 'view'); }
+        catch (InvalidArgumentException $e) { show_404(); }
+        catch (RuntimeException $e) { show_error($e->getMessage(), 403); }
+        if ($this->input->method() === 'post') {
+            $this->post_guard();
+            $this->attempt(function () use ($type, $id) { return $this->ha_studio_catalogue->save($type, (int) $id, $this->input->post()); }, hkp_t('Content saved.'), function ($saved) use ($type) { return hkp_url('cms/catalogue/' . $type . '/' . $saved); }); return;
+        }
+        $record = null;
+        if ($id && $id !== 'new') { try { $record = $this->ha_studio_catalogue->record($type, $id); } catch (InvalidArgumentException $e) { show_404(); } }
+        $q = mb_substr(trim((string) $this->input->get('q')), 0, 100); $page = max(1, (int) $this->input->get('page'));
+        $list = $this->ha_studio_catalogue->listing($type, $q, $page);
+        $courses = $type === 'programs' ? $this->db->select('c.id, t.title')->from('ha_course c')->join('ha_course_translation t', "t.course_id = c.id AND t.locale = 'en'")->where('c.organization_id IS NULL', null, false)->where('c.property_id IS NULL', null, false)->order_by('t.title')->get()->result_array() : array();
+        $this->render('studio_catalogue', array('type' => $type, 'def' => $def, 'record' => $record, 'editing' => (bool) $id,
+            'list' => $list, 'q' => $q, 'page' => $page, 'courses' => $courses), hkp_t($def['title']), 'catalogue_' . $type);
+    }
+
+    public function studio() {
+        $this->need(array('courses.create', 'cms_pages.view'));
+        $this->studio_ready();
+        $this->render('studio_dashboard', array(), hkp_t('Content Studio'), 'studio');
+    }
+
+    public function publisher($id = 0) {
+        $this->need('ai.generate');
+        $this->studio_ready();
+        $this->load->library(array('ha_document_publisher', 'ha_ai_assist'));
+        if ($this->input->method() === 'post') {
+            $this->post_guard();
+            $this->attempt(function () {
+                $source = trim((string) $this->input->post('source'));
+                $name = 'Pasted source';
+                if (!empty($_FILES['source_file']['name'])) {
+                    $f = $_FILES['source_file'];
+                    if ((int) $f['error'] !== UPLOAD_ERR_OK || !is_uploaded_file($f['tmp_name'])) { throw new InvalidArgumentException('The upload did not complete.'); }
+                    $name = $f['name']; $source = $this->ha_document_publisher->extract($f['tmp_name'], $name);
+                }
+                return $this->ha_document_publisher->source($source, $name, (string) $this->input->post('target'), (string) $this->input->post('locale'));
+            }, hkp_t('Source analysed. Review the extracted text before generating.'), function ($new_id) { return hkp_url('cms/publisher/' . $new_id); });
+            return;
+        }
+        $draft = null;
+        if ($id) { try { $draft = $this->ha_document_publisher->find($id); } catch (InvalidArgumentException $e) { show_404(); } }
+        $models = $this->ha_ai_assist->catalogue();
+        $db = $this->db->select('id, source_name, target, locale, status, created_at')->from('ha_publisher_draft');
+        if (!$this->ha_auth->is_system_scoped()) { $db->where('created_by', $this->uid); }
+        $this->render('studio_publisher', array('draft' => $draft, 'models' => $models,
+            'drafts' => $db->order_by('id', 'DESC')->limit(20)->get()->result_array()), hkp_t('AI Publisher'), 'publisher');
+    }
+
+    public function publisher_action($id = 0) {
+        $this->need('ai.generate'); $this->post_guard(); $this->studio_ready();
+        $this->load->library('ha_document_publisher');
+        try {
+            $d = $this->ha_document_publisher->find($id);
+            $action = (string) $this->input->post('action'); $version = (int) $this->input->post('version');
+            if ($action === 'generate') {
+                $version = $this->ha_document_publisher->generate($id, $version, (string) $this->input->post('provider'), (string) $this->input->post('model'), (string) $this->input->post('brief'));
+            } elseif ($action === 'save') {
+                $p = json_decode((string) $this->input->post('payload'), true);
+                if (!is_array($p)) { throw new InvalidArgumentException('The structured draft is not valid JSON.'); }
+                $version = $this->ha_document_publisher->save($id, $p, $version);
+            } elseif ($action === 'import') {
+                if ($this->input->post('confirmed') !== 'yes') { throw new InvalidArgumentException('Confirm that you reviewed this package.'); }
+                $entity = $this->ha_document_publisher->materialize($id, $version);
+                $this->json(array('ok' => true, 'edit_url' => hkp_url('cms/' . ($d['target'] === 'course' ? 'module/' : 'page/') . $entity))); return;
+            } else { throw new InvalidArgumentException('Unknown publisher action.'); }
+            $d = $this->ha_document_publisher->find($id);
+            $this->json(array('ok' => true, 'version' => $version, 'payload' => json_decode($d['payload_json'], true)));
+        } catch (DomainException $e) { $this->json(array('ok' => false, 'error' => $e->getMessage()), 409); }
+        catch (Exception $e) { $this->json(array('ok' => false, 'error' => $e->getMessage()), $e instanceof InvalidArgumentException ? 422 : 403); }
+    }
+
+    public function live($id = 0) {
+        $this->need('cms_pages.update'); $this->studio_ready();
+        $this->load->library('ha_website_studio');
+        try { $state = $this->ha_website_studio->state($id); }
+        catch (RuntimeException $e) { show_error($e->getMessage(), 403); }
+        catch (InvalidArgumentException $e) { show_404(); }
+        $this->render('studio_live', array('state' => $state, 'types' => Ha_page_builder::types()), hkp_t('Live page editor'), 'cms_pages');
+    }
+
+    public function preview($id = 0) {
+        $this->need('cms_pages.update'); $this->load->library('ha_website_studio');
+        try { $s = $this->ha_website_studio->state($id); }
+        catch (Exception $e) { show_error('Preview not available.', 403); }
+        $loc = $this->input->get('edit') === 'ar' ? 'ar' : 'en';
+        $p = $this->ha_website_studio->validate($s['payload']);
+        $this->load->view('hkp/studio_preview', array('locale' => $loc, 'page_copy' => $p['tr'][$loc],
+            'sections' => array_values(array_filter($p['sections'], function ($s) { return !empty($s['is_visible']); }))));
+    }
+
+    public function publisher_preview($id = 0) {
+        $this->need('ai.generate'); $this->load->library('ha_document_publisher');
+        try { $d = $this->ha_document_publisher->find($id); $p = $this->ha_document_publisher->validate(json_decode($d['payload_json'], true) ?: array(), $d['target']); }
+        catch (Exception $e) { show_error('Save a valid draft before previewing.', 422); }
+        $this->load->view('hkp/studio_preview', array('locale' => $d['locale'], 'package' => $p, 'target' => $d['target']));
+    }
+
+    public function live_save($id = 0) {
+        $this->need('cms_pages.update'); $this->post_guard(); $this->studio_ready();
+        $this->load->library('ha_website_studio');
+        try {
+            $version = (int) $this->input->post('version');
+            if ($this->input->post('action') === 'publish') {
+                $this->ha_website_studio->publish($id, $version);
+                $s = $this->ha_website_studio->state($id);
+                $this->json(array('ok' => true, 'version' => 0, 'base_hash' => $s['base_hash'], 'published' => true));
+            } else {
+                $p = json_decode((string) $this->input->post('payload'), true);
+                if (!is_array($p)) { throw new InvalidArgumentException('Invalid page draft.'); }
+                $version = $this->ha_website_studio->save($id, $p, $version, (string) $this->input->post('base_hash'));
+                $this->json(array('ok' => true, 'version' => $version));
+            }
+        } catch (DomainException $e) { $this->json(array('ok' => false, 'error' => $e->getMessage()), 409); }
+        catch (Exception $e) { $this->json(array('ok' => false, 'error' => $e->getMessage()), $e instanceof InvalidArgumentException ? 422 : 403); }
+    }
+
+    public function manage_navigation() {
+        $this->need('cms_pages.update');
+        if (!$this->ha_auth->is_system_scoped()) { show_error('Website navigation requires platform access.', 403); }
+        $this->load->library('ha_website_navigation');
+        if ($this->input->method() === 'post') {
+            $this->post_guard();
+            $this->attempt(function () { $this->ha_website_navigation->save((int) $this->input->post('menu_id'), (array) $this->input->post('items')); }, hkp_t('Navigation saved.'));
+            return;
+        }
+        $menus = $this->ha_website_navigation->menus();
+        $id = (int) $this->input->get('menu');
+        $menu = null; foreach ($menus as $m) { if ((int) $m['id'] === $id) { $menu = $m; } }
+        $menu = $menu ?: ($menus[0] ?? null);
+        $this->render('studio_navigation', array('menus' => $menus, 'selected_menu' => $menu,
+            'items' => $menu ? $this->ha_website_navigation->items($menu['id']) : array()), hkp_t('Navigation & footer'), 'cms_navigation');
+    }
+
     // ================================================================ pages
 
     public function index() {

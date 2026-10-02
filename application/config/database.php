@@ -110,3 +110,10 @@ if (is_file(__DIR__ . '/database.production.php')) {
 if (is_file(__DIR__ . '/database.local.php')) {
     $db['default'] = array_merge($db['default'], (array) include __DIR__ . '/database.local.php');
 }
+
+// The loopback-only Playwright router uses the independently rebuilt test DB.
+// Apache/production and ordinary CLI commands cannot activate this override.
+if (PHP_SAPI === 'cli-server' && ENVIRONMENT === 'testing'
+    && defined('HA_E2E_DATABASE') && HA_E2E_DATABASE === 'atlas_hospitality_test') {
+    $db['default']['database'] = HA_E2E_DATABASE;
+}

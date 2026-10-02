@@ -43,6 +43,38 @@ class Ha_test extends CI_Controller {
         $this->run();
     }
 
+    /** Fresh browser fixtures, separate from mutations left by individual PHP tests. */
+    public function prepare_browser() {
+        if ($this->test_db !== 'atlas_hospitality_test') {
+            fwrite(STDERR, 'Browser fixtures require atlas_hospitality_test.' . PHP_EOL);
+            exit(1);
+        }
+        if (!defined('HA_TEST_RUNNING')) { define('HA_TEST_RUNNING', true); }
+        $this->prepare_database();
+        $this->migrate_and_seed();
+        $this->db->where('key', 'system_title')->update('settings', array('value' => 'Altus Gulf'));
+        // Simulate the existing available PDF course without a production release.
+        $id = (int) $this->db->get_where('ha_course', array('code' => 'dy-active-listening'))->row('id');
+        $this->db->where('id', $id)->update('ha_course', array('status' => 'published'));
+        $this->db->where('course_id', $id)->update('ha_lesson', array('status' => 'published'));
+        $this->db->where('course_id', $id)->update('ha_assessment', array('status' => 'published'));
+        $this->load->helper('text');
+        require_once APPPATH . 'controllers/Ha_bridge.php';
+        $reflection = new ReflectionClass('Ha_bridge');
+        $bridge = $reflection->newInstanceWithoutConstructor();
+        $bridge->db = $this->db;
+        $bridge->load = $this->load;
+        $now = $reflection->getProperty('now');
+        $now->setAccessible(true);
+        $now->setValue($bridge, time());
+        $bridge->sync_one('dy-active-listening');
+        $this->load->model('user_model');
+        $this->user_model->register_user(array('first_name' => 'New', 'last_name' => 'Learner',
+            'email' => 'e2e.newlearner@example.invalid', 'password' => sha1('Academy#2026'),
+            'role_id' => 2, 'status' => 1, 'wishlist' => '[]', 'sessions' => '[]'));
+        $this->out('Prepared browser fixtures in atlas_hospitality_test; working data unchanged.');
+    }
+
     public function list_tests() {
         foreach ($this->discover() as $file => $class) {
             $this->out(str_pad($class, 40) . basename($file));

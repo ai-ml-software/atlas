@@ -17,6 +17,7 @@ $chosen_property = (int) $this->session->userdata('hkp_property');
 <link rel="manifest" href="<?php echo hkp_url('manifest'); ?>">
 <?php if ($brand['favicon_path']): ?><link rel="icon" href="<?php echo base_url(ltrim($brand['favicon_path'], '/')); ?>"><?php endif; ?>
 <link rel="stylesheet" href="<?php echo hkp_asset('assets/hkp/hkp.css'); ?>">
+<link rel="stylesheet" href="<?php echo hkp_asset('assets/hkp/admin-studio.css'); ?>">
 <style><?php echo $this->ha_tenant->css_vars($brand); ?></style>
 </head>
 <body class="hkp is-<?php echo $loc; ?><?php echo hkp_is_rtl() ? ' is-rtl' : ''; ?><?php echo in_array($loc, array('en', 'tl'), true) ? '' : ' is-intl'; ?><?php echo in_array($loc, array('ar'), true) ? ' is-ar' : ''; ?>">
@@ -73,20 +74,24 @@ $chosen_property = (int) $this->session->userdata('hkp_property');
         <?php if ($show_altus): ?><div class="hkp-brand__by"><?php echo hkp_e('Powered by altus Hospitality Knowledge & Performance'); ?></div><?php endif; ?>
       </div>
     </div>
+    <div class="studio-nav-tools"><label class="hkp-sr" for="studio-nav-search"><?php echo hkp_e('Find a page'); ?></label><input id="studio-nav-search" type="search" placeholder="<?php echo hkp_e('Find a page…'); ?>"><button type="button" class="studio-collapse" data-collapse-sidebar aria-label="<?php echo hkp_e('Collapse sidebar'); ?>" aria-expanded="true"><?php echo hkp_icon('menu'); ?></button></div>
     <nav class="hkp-nav">
-      <?php foreach ($nav as $sec): ?>
-        <div class="hkp-nav__section"><?php echo hkp_h($sec['label']); ?></div>
+      <?php foreach ($nav as $section_key => $sec): $section_active = in_array($active, array_column($sec['items'], 'key'), true); ?>
+        <details class="studio-nav-group" data-nav-group="<?php echo hkp_h($section_key); ?>"<?php echo $section_active || $section_key === 'overview' || count($nav) <= 2 ? ' open' : ''; ?>>
+        <summary class="hkp-nav__section"><?php echo hkp_h($sec['label']); ?><span aria-hidden="true">⌄</span></summary>
         <?php foreach ($sec['items'] as $it): ?>
-          <a href="<?php echo hkp_h($it['url']); ?>" class="hkp-nav__item<?php echo $active === $it['key'] ? ' is-active' : ''; ?>"<?php echo $active === $it['key'] ? ' aria-current="page"' : ''; ?>>
+          <a href="<?php echo hkp_h($it['url']); ?>" title="<?php echo hkp_h($it['label']); ?>" class="hkp-nav__item<?php echo $active === $it['key'] ? ' is-active' : ''; ?>"<?php echo $active === $it['key'] ? ' aria-current="page"' : ''; ?>>
             <?php echo hkp_icon($it['icon']); ?><span><?php echo hkp_h($it['label']); ?></span>
           </a>
         <?php endforeach; ?>
+        </details>
       <?php endforeach; ?>
       <?php if ($is_admin_login): ?>
         <div class="hkp-nav__section"><?php echo hkp_e('Academy LMS'); ?></div>
         <a class="hkp-nav__item" href="<?php echo site_url('admin/dashboard'); ?>"><?php echo hkp_icon('cog'); ?><span><?php echo hkp_e('Classic admin panel'); ?></span></a>
       <?php endif; ?>
     </nav>
+    <div class="studio-side-profile"><span class="hkp-avatar"><?php echo hkp_h($initials); ?></span><div><strong><?php echo hkp_h($me_name); ?></strong><a href="<?php echo hkp_url('profile'); ?>"><?php echo hkp_e('Account settings'); ?></a></div><a href="<?php echo site_url('login/logout'); ?>" aria-label="<?php echo hkp_e('Sign out'); ?>"><?php echo hkp_icon('logout'); ?></a></div>
   </aside>
 
   <div class="hkp-main-wrap">
@@ -98,6 +103,7 @@ $chosen_property = (int) $this->session->userdata('hkp_property');
         <input id="hkp-q" name="q" type="search" autocomplete="off" placeholder="<?php echo hkp_e('Search SOPs, lessons, standards…'); ?>" data-suggest="<?php echo hkp_url('search_suggest'); ?>" value="<?php echo hkp_h($this->input->get('q')); ?>">
         <div class="hkp-suggest" role="listbox" hidden></div>
       </form>
+      <button class="studio-command-trigger hkp-hide-mobile" type="button" data-open-command aria-label="<?php echo hkp_e('Find pages and quick actions'); ?>">⌘ K</button>
       <?php if ($properties): ?>
       <form method="post" action="<?php echo hkp_url('context'); ?>" class="hkp-context">
         <?php echo ha_csrf_field(); ?>
@@ -105,7 +111,7 @@ $chosen_property = (int) $this->session->userdata('hkp_property');
         <select id="hkp-prop" name="property_id" onchange="this.form.submit()">
           <option value="0"><?php echo hkp_e('All properties'); ?></option>
           <?php foreach ($properties as $p): ?>
-            <option value="<?php echo (int) $p['id']; ?>"<?php echo $chosen_property === (int) $p['id'] ? ' selected' : ''; ?>><?php echo hkp_h(hkp_pick($p, 'name')); ?></option>
+            <option value="<?php echo (int) $p['id']; ?>"<?php echo $chosen_property === (int) $p['id'] ? ' selected' : ''; ?>><?php echo hkp_h(hkp_pick($p, 'org') . ' / ' . hkp_pick($p, 'name')); ?></option>
           <?php endforeach; ?>
         </select>
       </form>
@@ -128,6 +134,7 @@ $chosen_property = (int) $this->session->userdata('hkp_property');
     </header>
 
     <main id="hkp-main" class="hkp-main" tabindex="-1">
+      <nav class="studio-breadcrumb" aria-label="<?php echo hkp_e('Breadcrumb'); ?>"><a href="<?php echo hkp_url(); ?>"><?php echo hkp_e('Workspace'); ?></a><span aria-hidden="true">/</span><span><?php echo hkp_h($page_title); ?></span></nav>
       <?php if ($ok): ?><div class="hkp-flash hkp-flash--ok" role="status"><?php echo hkp_h($ok); ?></div><?php endif; ?>
       <?php if ($error): ?><div class="hkp-flash hkp-flash--error" role="alert"><?php echo hkp_h($error); ?></div><?php endif; ?>
       <?php $this->load->view($content_view); ?>
@@ -158,7 +165,9 @@ $chosen_property = (int) $this->session->userdata('hkp_property');
     </footer>
   </div>
 </div>
+<dialog id="studio-command" class="studio-command" aria-labelledby="studio-command-title"><div class="studio-command-head"><h2 id="studio-command-title"><?php echo hkp_e('Where would you like to go?'); ?></h2><button class="hkp-iconbtn" type="button" data-close-command aria-label="<?php echo hkp_e('Close'); ?>">×</button></div><label class="hkp-sr" for="studio-command-input"><?php echo hkp_e('Search pages'); ?></label><input id="studio-command-input" class="hkp-input" type="search" placeholder="<?php echo hkp_e('Search pages and actions…'); ?>"><div class="studio-command-results"><?php foreach ($nav as $sec): foreach ($sec['items'] as $it): ?><a href="<?php echo hkp_h($it['url']); ?>"><?php echo hkp_icon($it['icon']); ?><span><?php echo hkp_h($it['label']); ?></span><small><?php echo hkp_h($sec['label']); ?></small></a><?php endforeach; endforeach; ?><?php if ($this->ha_auth->has('courses.create')): ?><a href="<?php echo hkp_url('cms/module'); ?>"><?php echo hkp_icon('book'); ?><span><?php echo hkp_e('Create course'); ?></span></a><?php endif; ?><?php if ($this->ha_auth->has('cms_pages.create')): ?><a href="<?php echo hkp_url('cms') . '#new-page'; ?>"><?php echo hkp_icon('pen'); ?><span><?php echo hkp_e('Create page'); ?></span></a><?php endif; ?></div></dialog>
 <script>window.HKP = {csrf: <?php echo json_encode(ha_csrf_token()); ?>, base: <?php echo json_encode(hkp_url()); ?>, rtl: <?php echo hkp_is_rtl() ? 'true' : 'false'; ?>, sw: <?php echo json_encode(hkp_url('sw.js')); ?>};</script>
 <script src="<?php echo hkp_asset('assets/hkp/hkp.js'); ?>" defer></script>
+<script src="<?php echo hkp_asset('assets/hkp/admin-studio.js'); ?>" defer></script>
 </body>
 </html>

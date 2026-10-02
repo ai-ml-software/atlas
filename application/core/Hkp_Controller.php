@@ -51,7 +51,11 @@ abstract class Hkp_Controller extends CI_Controller {
                 $this->output->_display();
                 exit;
             }
-            $this->session->set_userdata('hkp_return', current_url());
+            // Keep the query (including selected language), never replay a POST as a GET.
+            if ($this->input->method() === 'get') {
+                $query = (string) $this->input->server('QUERY_STRING');
+                $this->session->set_userdata('hkp_return', current_url() . ($query !== '' ? '?' . $query : ''));
+            }
             redirect(site_url('login'), 'refresh');
         }
         $this->uid = (int) $this->ha_auth->id();
@@ -244,6 +248,34 @@ abstract class Hkp_Controller extends CI_Controller {
                 array('board', hkp_t('Board report'), 'exec/board', 'file', 'executive.view'),
             )),
         );
+        // Keep existing destinations and permissions; arrange them by the editor's task.
+        $catalogue = array();
+        foreach ($sections as $section) { foreach ($section[1] as $item) { $catalogue[$item[0]] = $item; } }
+        $catalogue['studio'] = array('studio', hkp_t('Content dashboard'), 'cms/studio', 'grid', array('courses.create', 'cms_pages.view'));
+        if ($this->ha_auth->has_all(array('ai.generate', 'courses.create'))) {
+            $catalogue['publisher'] = array('publisher', hkp_t('AI Publisher'), 'cms/publisher', 'spark', 'ai.generate');
+        }
+        if ($this->ha_auth->is_system_scoped()) {
+            $catalogue['cms_navigation'] = array('cms_navigation', hkp_t('Navigation & footer'), 'cms/navigation', 'route', 'cms_pages.update');
+            $catalogue['catalogue_programs'] = array('catalogue_programs', hkp_t('Programs'), 'cms/catalogue/programs', 'layers', 'programs.view');
+            $catalogue['catalogue_paths'] = array('catalogue_paths', hkp_t('Learning paths'), 'cms/catalogue/paths', 'route', 'learning_paths.view');
+            $catalogue['catalogue_articles'] = array('catalogue_articles', hkp_t('Articles'), 'cms/catalogue/articles', 'file', 'articles.view');
+            $catalogue['catalogue_topics'] = array('catalogue_topics', hkp_t('Hospitality topics'), 'cms/catalogue/topics', 'library', 'cms_pages.view');
+        }
+        $groups = array(
+            'overview' => array('Overview', array($this->ha_auth->has(array('organizations.view', 'analytics.view')) ? 'altus_home' : 'home')),
+            'learner' => array('Learn', array('learn', 'paths', 'knowledge', 'assess', 'competencies', 'actions', 'certificates', 'assistant')),
+            'manager' => array('People & performance', array('team_home', 'team', 'cohorts', 'assign', 'assessor', 'gaps', 'team_actions', 'readiness', 'opening', 'team_certs', 'audits', 'kpis', 'reports')),
+            'portfolio' => array('Portfolio', array('orgs', 'props', 'people_admin', 'engagements', 'frameworks', 'exec', 'board')),
+            'studio' => array('Content Studio', array('studio', 'cms_modules', 'catalogue_programs', 'catalogue_paths', 'curriculum', 'assess_admin', 'catalogue_articles', 'catalogue_topics', 'comp_admin', 'publisher', 'imports', 'content_review', 'library_coverage')),
+            'website' => array('Website', array('cms_pages', 'cms_navigation', 'corporate')),
+            'platform' => array('Platform', array('ai_gov', 'rules', 'branding', 'audit_log', 'system')),
+        );
+        $sections = array();
+        foreach ($groups as $key => $group) {
+            $items = array(); foreach ($group[1] as $item) { if (isset($catalogue[$item])) { $items[] = $catalogue[$item]; } }
+            $sections[$key] = array(hkp_t($group[0]), $items);
+        }
         $out = array();
         foreach ($sections as $key => $s) {
             $items = array();

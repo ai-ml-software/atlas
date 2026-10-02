@@ -60,9 +60,13 @@
       var secs = Math.round((Date.now() - started) / 1000);
       started = Date.now();
       if (secs < 2) { return; }
-      var data = { seconds: secs, position: video ? Math.round(video.currentTime) : 0 };
+      var data = { seconds: secs };
+      // Reading the guide or a failed/embed video must not erase a saved native video position.
+      if (video && video.readyState >= 1 && Number.isFinite(video.currentTime)) { data.position = Math.round(video.currentTime); }
       if (useBeacon && navigator.sendBeacon) {
-        var fd = new FormData(); fd.append('seconds', data.seconds); fd.append('position', data.position); fd.append('ha_csrf', H.csrf);
+        var fd = new FormData(); fd.append('seconds', data.seconds);
+        if (data.position !== undefined) { fd.append('position', data.position); }
+        fd.append('ha_csrf', H.csrf);
         navigator.sendBeacon(url, fd);
       } else { post(url, data); }
     };
@@ -70,7 +74,15 @@
     document.addEventListener('visibilitychange', function () { if (document.hidden) { send(true); } else { started = Date.now(); } });
     window.addEventListener('pagehide', function () { send(true); });
     var resume = parseInt(lesson.getAttribute('data-resume') || '0', 10);
-    if (video && resume > 5) { video.addEventListener('loadedmetadata', function () { video.currentTime = resume; }, { once: true }); }
+    if (video && resume > 0) {
+      var restore = function () {
+        if (Number.isFinite(video.duration) && video.duration > 0) {
+          video.currentTime = Math.min(resume, Math.max(0, video.duration - 1));
+        }
+      };
+      if (video.readyState >= 1) { restore(); }
+      else { video.addEventListener('loadedmetadata', restore, { once: true }); }
+    }
   }
 
   // Drag-and-drop sortable lists (ordering questions, curriculum, page sections). Keyboard: Alt+Up/Down.

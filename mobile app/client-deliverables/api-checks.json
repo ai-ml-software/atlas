@@ -1,0 +1,26 @@
+{
+    "database": "atlas_hospitality_test",
+    "checks": [
+        "Missing token returns 401 JSON.",
+        "Verified key resolves its own live identity.",
+        "Identity response contains no password or credential hash.",
+        "Missing course scope is denied.",
+        "Read-only key cannot perform mobile writes.",
+        "Native course contract returns a bounded authorized list.",
+        "Learner cannot read another tenant employee competencies.",
+        "Learner cannot assign learning.",
+        "Manager cannot assign to another tenant employee.",
+        "Knowledge list uses published visible records.",
+        "Property selector is server-scoped.",
+        "Another employee assessment attempt is inaccessible.",
+        "Another employee assessment cannot be submitted.",
+        "Authorized assessment starts through the existing policy service.",
+        "Native assessment paper contains authorized questions.",
+        "An in-progress paper does not reveal correct answers or explanations.",
+        "Empty answers are graded by the server as a failed attempt.",
+        "A submitted attempt cannot be graded twice.",
+        "Unknown endpoint returns 404 JSON.",
+        "Revoked credentials stop working immediately."
+    ],
+    "working_data_touched": false
+}

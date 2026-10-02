@@ -6,6 +6,8 @@
         "test": "playwright test",
         "test:desktop": "playwright test --project=desktop",
         "test:mobile": "playwright test --project=mobile",
+        "test:isolated": "playwright test -c playwright.isolated.config.ts",
+        "test:course-entry": "playwright test -c playwright.isolated.config.ts course-entry.spec.ts --project=desktop",
         "report": "playwright show-report report",
         "test:headed": "playwright test --project=desktop --headed",
         "guides": "playwright test -c playwright.guides.config.ts"

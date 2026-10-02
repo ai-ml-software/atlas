@@ -27,6 +27,7 @@ class Ha_api_keys {
             'team:read'        => 'Read people and capability gaps in the owner\'s scope',
             'knowledge:read'   => 'Search approved knowledge the owner may see',
             'kpis:read'        => 'Read KPI scorecards for properties in the owner\'s scope',
+            'mobile:write'     => 'Perform native mobile actions allowed by the owner\'s current permissions',
         );
     }
 

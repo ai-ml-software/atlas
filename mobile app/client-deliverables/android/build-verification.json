@@ -1,0 +1,9 @@
+{
+  "apk": "ALTUS-1.0.0-release.apk",
+  "bytes": 61477976,
+  "sha256": "7d1ab03ab0107493a97516fc4ec08a28b9c95ee1cb4ade538996a2915af16bde",
+  "bundledJavaScriptBytes": 2861568,
+  "arm64Libraries": 26,
+  "sourceMatchesBuild": true,
+  "nativeDeviceTest": "Not performed; user requested APK file only"
+}

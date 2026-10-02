@@ -229,8 +229,29 @@ class User_model extends CI_Model
 
     public function register_user($data)
     {
+        $this->db->trans_start();
         $this->db->insert('users', $data);
         $user_id = $this->db->insert_id();
+        // Public registrations need the same learner workspace used by the catalog.
+        // Provision only a new account's self-scoped learner role, with no tenant grants.
+        if ((int) ($data['role_id'] ?? 0) === 2 && $this->db->table_exists('ha_profile')
+            && $this->db->table_exists('ha_user_role')) {
+            $role = $this->db->get_where('ha_role', array('code' => 'learner', 'scope' => 'self'))->row_array();
+            if (!$role) {
+                $this->db->trans_rollback();
+                throw new RuntimeException('The learner role must be configured before registration.');
+            }
+            $this->load->helper('ha_locale');
+            $this->load->library('session');
+            $intent = $this->session->userdata('ha_course_start');
+            $locale = is_array($intent) && ha_locale_enabled($intent['locale'] ?? null)
+                ? $intent['locale'] : ha_locale_default();
+            $now = date('Y-m-d H:i:s');
+            $this->db->insert('ha_profile', array('user_id' => $user_id, 'locale' => $locale,
+                'status' => 'active', 'created_at' => $now, 'updated_at' => $now));
+            $this->db->insert('ha_user_role', array('user_id' => $user_id, 'role_id' => $role['id'], 'created_at' => $now));
+        }
+        $this->db->trans_complete();
        // $this->user_model->update_unique_identifier($user_id);
         return $user_id;
     }
@@ -701,6 +722,15 @@ class User_model extends CI_Model
         if ($query->num_rows() > 0) {
             $row = $query->row();
 
+            // Recheck availability for password, device confirmation and 2FA paths.
+            $profile_status = $this->db->table_exists('ha_profile')
+                ? $this->db->get_where('ha_profile', array('user_id' => (int) $row->id))->row('status') : null;
+            if ((int) $row->status !== 1 || ($profile_status !== null && $profile_status !== 'active')) {
+                $this->session_destroy();
+                $this->session->set_flashdata('error_message', get_phrase('invalid_login_credentials'));
+                redirect(site_url('login'), 'refresh');
+            }
+
             // Every login path (password, social, new-device confirmation)
             // ends here, so the second factor is enforced once, here, and no
             // path can skip it.
@@ -724,15 +754,16 @@ class User_model extends CI_Model
                 $this->session->set_userdata('admin_login', '1');
             } else if ($row->role_id == 2) {
                 $this->session->set_userdata('user_login', '1');
-                // A page the visitor was sent to login from wins (deep link), unless it is an auth page.
-                $back = (string) $this->session->userdata('url_history');
-                if ($back !== '' && !preg_match('~/(login|logout|sign_up)(/|$)~', parse_url($back, PHP_URL_PATH) ?: '')) {
-                    redirect($back, 'refresh');
-                }
             }
-            // Everyone lands in the HK&P workspace; /hkp routes each role to its own home
-            // (learner dashboard, property team, Altus administration, executive view).
-            redirect(site_url('hkp'), 'refresh');
+            $this->load->library('ha_course_entry');
+            try {
+                $destination = $this->ha_course_entry->finish((int) $row->id);
+            } catch (RuntimeException $e) {
+                $this->session->set_flashdata('error_message', $e->getMessage());
+                $this->session->unset_userdata(array('hkp_return', 'url_history'));
+                $destination = site_url('hkp/learn');
+            }
+            redirect($destination ?: $this->ha_course_entry->return_url(), 'refresh');
         } else {
             $this->session->set_flashdata('error_message', get_phrase('invalid_login_credentials'));
             redirect(site_url('login'), 'refresh');
@@ -813,7 +844,9 @@ class User_model extends CI_Model
         }elseif($user_type == 'login'){
             // Signed-in users never see the login form again: /hkp routes each role to its home.
             if ((int) $this->session->userdata('user_id') > 0 && ($this->session->userdata('admin_login') || $this->session->userdata('user_login'))) {
-                redirect(site_url('hkp'), 'refresh');
+                $this->load->library('ha_auth');
+                if ($this->ha_auth->check()) { redirect(site_url('hkp'), 'refresh'); }
+                $this->session_destroy();
             }
         }
     }
@@ -857,6 +890,7 @@ class User_model extends CI_Model
         $this->session->unset_userdata('name');
         $this->session->unset_userdata('is_instructor');
         $this->session->unset_userdata('url_history');
+        $this->session->unset_userdata(array('hkp_return', 'ha_course_start', 'ha_2fa_user_id', 'ha_2fa_expires', 'ha_2fa_verified'));
         $this->session->unset_userdata('app_url');
         $this->session->unset_userdata('total_price_of_checking_out');
         $this->session->unset_userdata('register_email');

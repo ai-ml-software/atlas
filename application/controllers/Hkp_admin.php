@@ -63,6 +63,10 @@ class Hkp_admin extends Hkp_Controller {
             'awaiting' => $count('ha_sop_version', "status IN ('internal_review','quality_review','approved','review')"),
             'ai_week' => $count('ha_ai_query', "created_at >= '" . date('Y-m-d H:i:s', strtotime('-7 days')) . "'"),
         );
+        $property_query = $db->select('id')->from('ha_property');
+        $this->ha_auth->scope_query($property_query, array('organization_id' => 'organization_id', 'property_id' => 'id'));
+        $allowed_properties = array_map('intval', array_column($property_query->get()->result_array(), 'id'));
+        $property_in = implode(',', $allowed_properties ?: array(0));
         $compare = $db->query("SELECT pr.id, pr.name_en, pr.name_ar, pr.operational_status, COUNT(DISTINCT p.user_id) staff,
                 ROUND(100 * SUM(rr.status = 'ready') / GREATEST(COUNT(rr.id),1), 1) ready_pct,
                 (SELECT ROUND(100 * SUM(e.status = 'completed') / GREATEST(COUNT(*),1), 1) FROM ha_enrollment e JOIN ha_profile p2 ON p2.user_id = e.user_id WHERE p2.property_id = pr.id) completion,
@@ -70,8 +74,10 @@ class Hkp_admin extends Hkp_Controller {
                 (SELECT COUNT(*) FROM ha_certificate c WHERE c.property_id = pr.id AND c.status = 'issued') certs
             FROM ha_property pr LEFT JOIN ha_profile p ON p.property_id = pr.id AND p.status = 'active' AND p.user_id IN ($in)
             LEFT JOIN ha_readiness_record rr ON rr.user_id = p.user_id AND rr.is_current = 1
-            WHERE pr.status = 'active' GROUP BY pr.id ORDER BY critical DESC, pr.name_en")->result_array();
-        $recent = $db->order_by('id', 'DESC')->limit(12)->get('ha_audit_log')->result_array();
+            WHERE pr.status = 'active' AND pr.id IN ($property_in) GROUP BY pr.id ORDER BY critical DESC, pr.name_en")->result_array();
+        $audit_query = $db->from('ha_audit_log');
+        $this->ha_auth->scope_query($audit_query, array('organization_id' => 'organization_id', 'property_id' => 'property_id', 'user_id' => 'user_id'));
+        $recent = $audit_query->order_by('id', 'DESC')->limit(6)->get()->result_array();
         $this->render('admin_dashboard', array('s' => $stats, 'compare' => $compare, 'recent' => $recent, 'k' => $this->ha_kpi->platform_kpis($users)),
             hkp_t('Portfolio dashboard'), 'altus_home');
     }
@@ -947,6 +953,11 @@ class Hkp_admin extends Hkp_Controller {
             return;
         }
         $db = $this->db;
+        $learning_health = null;
+        if ($this->ha_auth->is_system_scoped()) {
+            $this->load->library('ha_learning_health');
+            $learning_health = $this->ha_learning_health->report(25);
+        }
         $health = array(
             'database' => array('ok' => (bool) $db->conn_id, 'detail' => $db->platform() . ' ' . $db->version()),
             'queue' => array('ok' => true, 'detail' => $db->where('status', 'queued')->count_all_results('ha_queue_job') . ' queued · ' . $db->where('status', 'failed')->count_all_results('ha_queue_job') . ' failed'),
@@ -974,7 +985,7 @@ class Hkp_admin extends Hkp_Controller {
         foreach (Ha_tenant::registry() as $k => $meta) {
             $settings[$k] = array('meta' => $meta, 'value' => $this->ha_tenant->get($k));
         }
-        $this->render('admin_system', array('health' => $health, 'errors' => array_slice(array_reverse($errors), 0, 12), 'settings' => $settings,
+        $this->render('admin_system', array('health' => $health, 'learning_health' => $learning_health, 'errors' => array_slice(array_reverse($errors), 0, 12), 'settings' => $settings,
             'rules' => $this->db->get_where('ha_notification_rule', array('organization_id' => 0))->result_array(),
             'templates' => $this->db->order_by('event_code')->get_where('ha_notification_template', array('organization_id' => 0))->result_array()), hkp_t('System'), 'system');
     }

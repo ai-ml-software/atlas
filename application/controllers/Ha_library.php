@@ -13,10 +13,11 @@ class Ha_library extends CI_Controller {
         if (strpos($file,'b64:') === 0) { $decoded = base64_decode(strtr(substr($file,4),'-_','+/'),true); if ($decoded === false || strpos($decoded,"\0") !== false) { throw new InvalidArgumentException('Invalid encoded file path.'); } return $decoded; }
         return rawurldecode($file);
     }
-    public function index() { $this->output(array('commands' => array('audit [code]','collect [code]','review_export file','review_import file','translation_export locale file [scope]',
+    public function index() { $this->output(array('commands' => array('audit [code]','collect [code]','collect_site','review_export file','review_import file','translation_export locale file [scope]',
         'translation_import file','translate locale [scope] [limit]','coverage locale [scope]','videos [code]','video_export file','video_import file','verify_videos [code]','readiness code locale','publish code locale','enable locale','disable locale','qa_export locale file [scope]','qa_import file','companion code locale file','report file [locale]','language_variant locale base direction name'))); }
     public function audit($code = null) { $this->output($this->ha_library_review->audit_sources($code)); }
     public function collect($code = null) { $this->output(array('collected' => $this->ha_global_translation->collect($code))); }
+    public function collect_site() { $this->output(array('collected' => $this->ha_global_translation->collect_site())); }
     public function review_export($file) { $file=$this->file_arg($file); Ha_library_review::write_json($file, $this->ha_library_review->export_reviews()); $this->output(array('exported' => $file)); }
     public function review_import($file) { $this->output(array('imported' => $this->ha_library_review->import_reviews(Ha_library_review::json_file($this->file_arg($file))))); }
     public function translation_export($locale, $file, $scope = null) { $file=$this->file_arg($file); Ha_library_review::write_json($file, $this->ha_global_translation->export($locale, $scope)); $this->output(array('exported' => $file)); }

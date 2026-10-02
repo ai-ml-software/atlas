@@ -108,7 +108,17 @@
                 <?php endif; ?>
             </ul>
 
-            <a class="ha-btn" style="width:100%" href="<?= base_url('login') ?>"><?= html_escape($t['sign_in_to_start']) ?></a>
+            <?php if ($enrolled): ?>
+                <a class="ha-btn" style="width:100%" data-course-start href="<?= base_url('hkp/learn/module/' . (int) $course['id']) . '?lang=' . rawurlencode($locale) ?>"><?= ha_pe('View course') ?></a>
+            <?php elseif ((int) $course['is_free'] === 1): ?>
+                <form method="post" action="<?= base_url('academy/start/' . (int) $course['id']) ?>">
+                    <?= ha_csrf_field() ?>
+                    <input type="hidden" name="locale" value="<?= html_escape($locale) ?>">
+                    <button type="submit" class="ha-btn" style="width:100%" data-course-start><?= html_escape($signed_in ? $t['enrol'] : $t['sign_in_to_start']) ?></button>
+                </form>
+            <?php else: ?>
+                <a class="ha-btn" style="width:100%" href="<?= base_url($signed_in ? 'hkp/learn' : 'login') ?>"><?= $signed_in ? ha_pe('My learning') : html_escape($t['sign_in_to_start']) ?></a>
+            <?php endif; ?>
 
             <?php if ($course['skills']): ?>
                 <h3 style="margin-top:1.4rem"><?= html_escape($t['skills_awarded']) ?></h3>

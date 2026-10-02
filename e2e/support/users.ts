@@ -1,6 +1,6 @@
 /** Accounts used by the suite (README §1). One saved session per role. */
 export const USERS = {
-  admin:      { email: 'admin@hospitalityacademy.sa',          password: 'admin123' },
+  admin:      { email: 'admin@hospitalityacademy.sa',          password: process.env.HKP_TEST_DATABASE ? 'Academy#2026' : 'admin123' },
   instructor: { email: 'instructor.fo@hospitalityacademy.sa',  password: 'Academy#2026' },
   student:    { email: 'omar.learner@dyafagroup.sa',           password: 'Academy#2026' },
   orgAdmin:   { email: 'org.admin@dyafagroup.sa',              password: 'Academy#2026' },
@@ -12,4 +12,4 @@ export const USERS = {
 } as const;
 
 export type Role = keyof typeof USERS;
-export const stateFile = (role: Role) => `.auth/${role}.json`;
+export const stateFile = (role: Role) => `.auth/${process.env.HKP_TEST_DATABASE ? 'isolated-' : ''}${role}.json`;

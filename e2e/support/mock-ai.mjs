@@ -6,6 +6,10 @@ const PORT = 8765;
 
 function reply(system, user) {
   const s = system || '';
+  if (/untrusted source DATA/.test(s)) {
+    if (/"modules"/.test(s)) return JSON.stringify({ title: 'E2E document course ' + Date.now(), summary: 'Source supported cleaning procedures.', modules: [{ title: 'Preparation', lessons: [{ title: 'Use PPE', objective: 'Prepare safely.', body: '<p>Always wear PPE before cleaning.</p>', minutes: 5 }] }], quiz: [{ question: 'What comes first?', options: ['Wear PPE', 'Mix chemicals'], correct: 0, explanation: 'Protect yourself first.' }], passing_score: 80 });
+    return JSON.stringify({ title: 'E2E document page ' + Date.now(), summary: 'Source supported operational knowledge.', sections: [{ heading: 'Preparation', body: '<p>Always wear PPE.</p>' }] });
+  }
   if (/Rewrite the user's rough request as a precise brief/.test(s)) {
     return `BRIEF: Audience: hotel owners in Riyadh. Goal: explain pre-opening support. Request: ${user.slice(0, 120)}`;
   }

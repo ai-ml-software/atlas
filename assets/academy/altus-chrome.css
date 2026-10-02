@@ -662,3 +662,7 @@ body.ha--rtl ::selection { background: var(--altus-sand, #D9C6A3); color: var(--
 @media print {
     .ha-chrome, .ha-foot__social, .ha-foot__cta { display: none !important; }
 }
+
+/* The same accessible consent notice on public and account pages. */
+.ha-cookie{position:fixed;inset-inline-end:1rem;inset-block-end:1rem;z-index:1000;width:min(420px,calc(100vw - 2rem));box-sizing:border-box;padding:1.25rem;background:var(--ha-ink);color:var(--ha-on-dark);border:1px solid var(--ha-on-dark-faint);box-shadow:var(--altus-shadow-lg)}
+.ha-cookie[hidden]{display:none}.ha-cookie p{font:inherit;font-size:.85rem;line-height:1.6;color:inherit;margin:0 0 1rem}.ha-cookie a{color:var(--ha-on-dark);text-decoration:underline}.ha-cookie button{min-height:44px}.ha-cookie :is(a,button):focus-visible{outline:3px solid var(--ha-on-dark);outline-offset:3px}

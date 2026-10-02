@@ -163,9 +163,12 @@ class Test_library_workflow extends Ha_testcase {
         $counts=$sync->invoke($bridge,$course,$legacy);
         $total=(int)$this->db->where(array('course_id'=>$course['id'],'status'=>'published'))->count_all_results('ha_lesson');
         $this->assertEquals(2*$total,$counts['lessons']);
-        $links=$this->db->get_where('ha_lms_link',array('legacy_course_id'=>$legacy,'legacy_table'=>'lesson'))->result_array();
+        // Sync refreshes updated_at; compare stable identities and ordering explicitly.
+        $links=$this->db->select('legacy_table,legacy_id,ha_table,ha_id,legacy_course_id')->order_by('legacy_id')
+            ->get_where('ha_lms_link',array('legacy_course_id'=>$legacy,'legacy_table'=>'lesson'))->result_array();
         $sync->invoke($bridge,$course,$legacy);
-        $this->assertEquals($links,$this->db->get_where('ha_lms_link',array('legacy_course_id'=>$legacy,'legacy_table'=>'lesson'))->result_array());
+        $this->assertEquals($links,$this->db->select('legacy_table,legacy_id,ha_table,ha_id,legacy_course_id')->order_by('legacy_id')
+            ->get_where('ha_lms_link',array('legacy_course_id'=>$legacy,'legacy_table'=>'lesson'))->result_array());
         $linked=$this->db->get_where('ha_lms_link',array('legacy_course_id'=>$legacy,'legacy_table'=>'lesson','ha_table'=>'ha_lesson','ha_id'=>$lesson['id']))->row_array();
         $this->db->where('id',$lesson['id'])->update('ha_lesson',array('status'=>'archived'));
         $sync->invoke($bridge,$course,$legacy);

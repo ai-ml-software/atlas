@@ -1,0 +1,909 @@
+I want you to build a completely new **mobile application for ALTUS Gulf / Altus Knowledge & Performance**.
+
+The existing website and platform should be used as the main reference for the product structure, content, features, terminology, and brand identity.
+
+Reference website:
+https://altusgulf.com/en
+
+I will provide you with:
+
+1. Screenshots of the existing website/platform.
+2. Our ALTUS Gulf logo.
+3. Our brand guidelines.
+4. Any additional screenshots or references for the mobile experience.
+
+Your task is to design and build a **complete production-quality mobile app**, not simply resize the existing website.
+
+The mobile application should translate the ALTUS Knowledge & Performance platform into a modern, premium, intuitive mobile experience.
+
+## IMPORTANT DESIGN DIRECTION
+
+The application must feel:
+
+- Premium
+- Corporate
+- Modern
+- Elegant
+- Professional
+- Visually distinctive
+- Hospitality-focused
+- Cinematic but practical
+- Easy to use
+- Clean and uncluttered
+- Suitable for hotel employees, supervisors, managers, and administrators
+
+Do not create a generic LMS design.
+
+The application should have its own distinctive ALTUS identity and should visually reflect:
+
+**People. Knowledge. Performance.**
+
+Use the ALTUS Gulf brand guidelines, logo, typography, colors, spacing, imagery, and visual language consistently throughout the application.
+
+Use realistic hospitality photography where appropriate.
+
+Avoid excessive gradients, childish illustrations, unnecessary animations, or overly futuristic interfaces.
+
+The result should feel like a premium hospitality technology platform.
+
+---
+
+# MOBILE-FIRST UX
+
+Design specifically for mobile devices.
+
+Do not simply reproduce desktop pages inside a smaller screen.
+
+Optimize navigation, cards, learning content, assessments, reports, dashboards, and interactions for touch.
+
+The primary navigation should use a clean mobile navigation system such as:
+
+- Home
+- Learn
+- Knowledge
+- AI Assistant
+- Progress/Profile
+
+Where different roles require different navigation, adapt the navigation dynamically.
+
+Support both:
+
+- iOS
+- Android
+
+The architecture should also be ready for future tablet support.
+
+---
+
+# BILINGUAL EXPERIENCE
+
+The application must be bilingual by design.
+
+Primary languages:
+
+- English
+- Arabic
+
+Arabic must use proper RTL layout.
+
+Users should be able to switch language from their profile/settings without logging out.
+
+All interface components must correctly adapt between LTR and RTL.
+
+The system architecture should also allow additional languages later.
+
+---
+
+# WHITE-LABEL ARCHITECTURE
+
+The platform must support multiple hotel companies, brands, and individual properties.
+
+Each property may have:
+
+- Its own logo
+- Brand colors
+- Property name
+- Customized learning content
+- Assigned employees
+- Property-specific SOPs
+- Property-specific announcements
+- Property-specific reporting
+
+ALTUS remains the platform administrator.
+
+---
+
+# USER ROLES
+
+The application should support at minimum:
+
+### Learner / Employee
+
+Hotel employees completing training, accessing SOPs and using the knowledge platform.
+
+### Supervisor
+
+Supervises employee learning, progress and competency.
+
+### Property Manager / Management
+
+Views property-level performance, employee progress, learning compliance and reports.
+
+### Instructor / Content Manager
+
+Manages learning content when permissions allow.
+
+### ALTUS Administrator
+
+Manages clients, properties, content, standards, analytics and platform governance.
+
+Permissions must be controlled using secure Role-Based Access Control.
+
+---
+
+# COMPLETE MOBILE APP SCREEN LIST
+
+Do not skip screens.
+
+Design and implement the complete user journeys.
+
+## 1. ONBOARDING & ACCESS
+
+Create:
+
+1. Splash Screen
+2. Welcome Screen
+3. Introduction / Product Value Screen
+4. Language Selection
+5. Sign In
+6. Forgot Password
+7. Password Reset
+8. OTP Verification
+9. First-Time User Setup
+10. Select Organization / Hotel Group
+11. Select Property
+12. Role Confirmation
+13. Terms & Privacy Acceptance
+14. Notification Permission
+15. Successful Setup / Welcome
+
+---
+
+# 2. LEARNER HOME
+
+Create a personalized learner dashboard.
+
+Include:
+
+- User greeting
+- Property/brand
+- Continue Learning
+- Learning plan progress
+- Required courses
+- Due training
+- Recently viewed content
+- Learning streak
+- Certificates
+- Announcements
+- Recommended learning
+- Quick access to SOPs
+- Quick access to AI Assistant
+- Notifications
+- Search
+
+The home screen should clearly answer:
+
+**What should I learn or do next?**
+
+---
+
+# 3. MY LEARNING
+
+Include:
+
+- My Learning Plan
+- Mandatory Learning
+- Assigned Courses
+- In Progress
+- Completed
+- Overdue
+- Recommended
+- Learning Paths
+- Programs
+- Certifications
+- Course history
+
+Filters and search should be available.
+
+---
+
+# 4. COURSE CATALOG
+
+Include:
+
+- Course categories
+- Search
+- Filters
+- Professional domains
+- Featured courses
+- Recently added
+- Required learning
+- Recommended courses
+
+ALTUS currently covers hospitality domains such as:
+
+- Hotel Fundamentals
+- Front Office
+- Housekeeping
+- Food & Beverage
+- Kitchen
+- Sales & Marketing
+- Revenue & Reservations
+- Guest Experience
+- Quality & Audit
+- Security & Safety
+
+The architecture should allow additional categories later.
+
+---
+
+# 5. COURSE DETAILS
+
+Display:
+
+- Course image
+- Course title
+- Description
+- Duration
+- Number of lessons
+- Progress
+- Competencies covered
+- Learning objectives
+- Instructor/content owner
+- Lessons
+- Assessments
+- Resources
+- Certificate availability
+- Download availability
+
+Primary CTA:
+
+**Start Course**
+
+or
+
+**Continue Course**
+
+---
+
+# 6. LESSON PLAYER
+
+Create a premium mobile learning experience.
+
+Support:
+
+- Video
+- Images
+- Text
+- Infographics
+- PDF resources
+- Audio
+- Interactive elements
+- Scenarios
+- Knowledge checks
+
+Show:
+
+- Lesson title
+- Course progress
+- Time remaining
+- Previous / Next
+- Transcript
+- Resources
+- Bookmark
+- Download
+- Report issue
+
+Do not overload the screen.
+
+---
+
+# 7. QUIZ & ASSESSMENT
+
+Include:
+
+- Multiple-choice questions
+- Scenario questions
+- True/False
+- Image-based questions
+- Progress indicator
+- Immediate feedback when allowed
+- Final score
+- Passing score
+- Retry rules
+- Explanation
+- Assessment history
+
+When a lesson requires passing an assessment before progressing, enforce the rule automatically.
+
+---
+
+# 8. KNOWLEDGE HUB
+
+This is one of the most important sections.
+
+Users should be able to access:
+
+- SOPs
+- Operational guides
+- Policies
+- Standards
+- Checklists
+- Hospitality topics
+- Articles
+- Best practices
+- Forms/templates
+- Department resources
+
+Include:
+
+- Department filters
+- Smart search
+- Favorites
+- Recently viewed
+- Recommended resources
+- Property-specific resources
+
+---
+
+# 9. SOP VIEWER
+
+Create a dedicated SOP mobile reading experience.
+
+Include:
+
+- SOP title
+- Department
+- SOP code
+- Version
+- Effective date
+- Owner
+- Purpose
+- Responsibility
+- Procedure
+- Safety notes
+- Related forms
+- Related SOPs
+- Download
+- Favorite
+- Share internally where permitted
+
+The SOP reader should be extremely easy for frontline employees to use.
+
+---
+
+# 10. SMART SEARCH
+
+Create one unified search function across:
+
+- Courses
+- Lessons
+- SOPs
+- Articles
+- Policies
+- Topics
+- Resources
+- FAQs
+
+Search should support natural-language queries.
+
+Examples:
+
+“How do I handle a guest complaint?”
+
+“How do I enter a guest room?”
+
+“What is the lost and found procedure?”
+
+Results should clearly identify the content source.
+
+---
+
+# 11. ALTUS AI ASSISTANT
+
+Create a governed AI assistant.
+
+The AI Assistant must answer based only on approved organizational knowledge and authorized ALTUS/property content.
+
+It should not invent company policies.
+
+Suggested capabilities:
+
+- Ask operational questions
+- Find SOPs
+- Explain procedures
+- Summarize policies
+- Translate approved content
+- Explain lessons
+- Recommend relevant training
+- Find forms/checklists
+- Answer FAQs
+
+Every answer should show its source whenever possible.
+
+Example:
+
+**Source: FO-SOP-04 – Guest Complaint Handling**
+
+Include suggested questions and conversation history.
+
+---
+
+# 12. PROGRESS
+
+Create a visual personal learning dashboard.
+
+Include:
+
+- Overall completion %
+- Required training %
+- Learning hours
+- Completed courses
+- Assessments
+- Average score
+- Certificates
+- Competencies
+- Learning streak
+- Monthly activity
+- Upcoming deadlines
+
+Make the experience motivating without becoming childish.
+
+---
+
+# 13. CERTIFICATES
+
+Include:
+
+- My Certificates
+- Certificate details
+- Digital certificate
+- QR verification
+- Issue date
+- Expiry date when applicable
+- Course
+- Property
+- Download
+- Share
+
+---
+
+# 14. NOTIFICATIONS
+
+Support:
+
+- New course assigned
+- Course reminder
+- Assessment reminder
+- Course deadline
+- Certificate issued
+- Certificate expiry
+- New SOP
+- SOP revision
+- Announcement
+- Manager message
+- Training session
+- System notification
+
+Allow notification preferences.
+
+---
+
+# 15. PROFILE & SETTINGS
+
+Include:
+
+- User photo
+- Name
+- Employee ID
+- Job title
+- Department
+- Property
+- Organization
+- Language
+- Notifications
+- Downloads
+- Dark mode
+- Password/security
+- Privacy
+- Help & support
+- App version
+- Sign out
+
+---
+
+# 16. OFFLINE LEARNING
+
+Allow users to download authorized content for offline access.
+
+Include:
+
+- Downloaded lessons
+- Downloaded SOPs
+- Download status
+- Storage usage
+- Remove download
+- Auto-sync progress when connection returns
+
+---
+
+# 17. QR FEATURES
+
+Support QR functionality for:
+
+- Training attendance
+- Certificate verification
+- Learning event check-in
+- Opening property-specific learning content
+- Opening a specific SOP or lesson
+
+---
+
+# 18. DISCUSSION & COLLABORATION
+
+Where enabled, include:
+
+- Course discussions
+- Questions
+- Instructor responses
+- Supervisor comments
+- Team learning discussions
+
+These features must be controllable by property administrators.
+
+---
+
+# 19. SUPERVISOR / PROPERTY MANAGEMENT MOBILE EXPERIENCE
+
+Create dedicated management screens.
+
+Include:
+
+### Management Dashboard
+
+Show:
+
+- Team learning completion
+- Mandatory training compliance
+- Overdue employees
+- Course completion
+- Assessment performance
+- Certificates
+- Department comparison
+- Learning hours
+- Recent activity
+
+### Team Members
+
+Show employees with:
+
+- Department
+- Position
+- Progress
+- Compliance status
+- Assigned learning
+- Certificates
+
+### Learner Details
+
+Show:
+
+- Employee profile
+- Learning plan
+- Completed training
+- Overdue training
+- Scores
+- Competency status
+- Certificates
+- Activity history
+
+### Assign Learning
+
+Allow authorized managers to:
+
+- Select employee
+- Select department/team
+- Select course
+- Select learning path
+- Set deadline
+- Assign learning
+
+### Reports
+
+Provide mobile-friendly reports and analytics.
+
+---
+
+# 20. COMPETENCY MANAGEMENT
+
+Create employee competency profiles.
+
+Competencies may include examples such as:
+
+- Guest Service
+- Communication
+- Operational Knowledge
+- Safety
+- Compliance
+- Problem Solving
+- Leadership
+- Department Skills
+
+Show competency gaps and recommended training.
+
+---
+
+# 21. PROPERTY BRANDING
+
+Property administrators should be able to see their hotel branding throughout the app.
+
+The architecture should support:
+
+- Logo
+- Primary color
+- Secondary color
+- Property image
+- Welcome message
+
+ALTUS platform identity should remain visible appropriately without overpowering the property brand.
+
+---
+
+# 22. ALTUS ADMIN MOBILE EXPERIENCE
+
+For authorized ALTUS administrators provide mobile access to:
+
+- Client accounts
+- Organizations
+- Properties
+- Users
+- Roles
+- Content
+- Courses
+- SOPs
+- Articles
+- Version history
+- Approval workflow
+- Analytics
+- Certificates
+- Support tickets
+- Notifications
+- Audit activity
+
+Complex editing tools can remain more suitable for desktop, but mobile administrators should still be able to review, approve, monitor and perform essential actions.
+
+---
+
+# 23. CONTENT GOVERNANCE
+
+Every controlled document should support:
+
+- Version number
+- Draft status
+- Review
+- Approval
+- Published status
+- Effective date
+- Content owner
+- Revision history
+- Archived versions
+
+Employees should always see the latest approved version.
+
+---
+
+# 24. SUPPORT CENTER
+
+Include:
+
+- Help Center
+- FAQs
+- Contact Support
+- Create Ticket
+- My Tickets
+- Ticket Status
+- Attach Screenshot
+- Report Technical Issue
+- Report Content Issue
+
+---
+
+# 25. NEW FEATURES TO INCLUDE
+
+Enhance the app with modern features where appropriate:
+
+- Offline learning
+- Push notifications
+- Learning streaks
+- Smart recommendations
+- Favorites/bookmarks
+- Recently viewed
+- Continue where you stopped
+- QR attendance
+- QR certificate verification
+- Smart search
+- AI knowledge assistant
+- Personalized learning feed
+- Competency recommendations
+- Dark mode
+- Accessibility options
+- Download manager
+- Announcements
+- Training calendar
+- Microlearning
+- Scenario-based learning
+- Saved searches
+- Recently updated SOP indicator
+- Mandatory-content acknowledgment
+- Read-and-confirm policy acknowledgement
+
+---
+
+# DESIGN SYSTEM
+
+Create a reusable mobile design system.
+
+Include:
+
+- Typography
+- Colors
+- Buttons
+- Forms
+- Cards
+- Course cards
+- SOP cards
+- Navigation
+- Search components
+- Progress indicators
+- Charts
+- Status badges
+- Icons
+- Alerts
+- Empty states
+- Loading states
+- Error states
+- Success states
+- Modals
+- Bottom sheets
+- Toast messages
+
+All elements must work in both English and Arabic.
+
+---
+
+# UI QUALITY
+
+Pay particular attention to:
+
+- Spacing
+- Typography
+- Visual hierarchy
+- Touch targets
+- Card consistency
+- Image quality
+- Loading states
+- Empty states
+- Error states
+- Confirmation dialogs
+- Keyboard behavior
+- Back-navigation behavior
+- RTL behavior
+- Long Arabic text
+- Small mobile screens
+
+Do not leave unfinished placeholder pages.
+
+Do not create buttons that do nothing.
+
+Do not use fake functionality just for appearance.
+
+---
+
+# NAVIGATION
+
+Create a logical information architecture before implementation.
+
+The learner experience should remain simple.
+
+Suggested learner bottom navigation:
+
+**Home | Learn | Knowledge | AI | Profile**
+
+Progress and notifications may be available from Home/Profile.
+
+Management users can receive additional management navigation based on role permissions.
+
+---
+
+# SECURITY
+
+Implement secure authentication and authorization.
+
+Users must never be able to access another organization or hotel's information without permission.
+
+Apply tenant isolation across:
+
+- Organizations
+- Properties
+- Departments
+- Users
+- Learning content
+- Reports
+- Analytics
+- Certificates
+
+Do not rely only on hiding interface elements.
+
+Security must be enforced server-side.
+
+---
+
+# PERFORMANCE
+
+The app should:
+
+- Load quickly
+- Cache appropriate content
+- Optimize images
+- Stream video efficiently
+- Handle unstable hotel Wi-Fi
+- Support offline learning
+- Sync learning progress safely
+- Avoid unnecessary network requests
+
+---
+
+# DEVELOPMENT APPROACH
+
+Before coding:
+
+1. Study the reference website.
+2. Study all screenshots.
+3. Study the logo and brand guidelines.
+4. Identify the complete information architecture.
+5. Create the complete mobile screen inventory.
+6. Map the navigation.
+7. Map user roles and permissions.
+8. Identify reusable components.
+9. Identify backend/API requirements.
+10. Identify what functionality already exists and what needs to be added.
+
+Then build the application systematically.
+
+Do not remove existing useful functionality simply because it is difficult to convert to mobile.
+
+Instead, redesign it appropriately for mobile.
+
+---
+
+# IMPORTANT
+
+This should not look or behave like a cloned website placed inside a mobile WebView.
+
+I want a **real mobile product experience** based on the ALTUS Knowledge & Performance ecosystem.
+
+Use the existing website as the source of truth for ALTUS positioning, terminology, services and visual identity, but create a superior mobile UX.
+
+Where the existing platform has weaknesses, improve them.
+
+Where a mobile-specific feature would significantly improve the experience, add it thoughtfully.
+
+The final product should feel like a platform that could compete professionally with modern enterprise learning applications while maintaining a clear hospitality-specific ALTUS identity.
+
+The app should communicate:
+
+**Knowledge → Application → Performance → Measurable Improvement**
+
+First inspect everything I provide and produce the complete app architecture and screen inventory.
+
+Then proceed with implementation without skipping screens or leaving major user journeys incomplete.

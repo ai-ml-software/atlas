@@ -14,12 +14,11 @@ $comp_met = count(array_filter($competencies, function ($c) { return $c['gap'] =
   <div class="hkp-eyebrow" style="color:var(--accent)"><?php echo hkp_e('What do I need to do?'); ?></div>
   <h1><?php echo hkp_e('Welcome, {name}', array('name' => $first)); ?></h1>
   <p class="hkp-muted" style="max-width:70ch"><?php echo hkp_h(hkp_pick($brand, 'welcome')); ?></p>
-  <?php if ($next): ?>
-    <p style="margin:.9rem 0 0"><a class="hkp-btn hkp-btn--accent" href="<?php echo hkp_url('learn/lesson/' . $next['next_lesson_id']); ?>"><?php echo hkp_icon('play'); ?> <?php echo hkp_e('Continue: {title}', array('title' => $next['title'])); ?></a></p>
-  <?php elseif ($plan_total && $plan_done === $plan_total): ?>
+  <?php if ($plan_total && $plan_done === $plan_total): ?>
     <p style="margin:.9rem 0 0"><?php echo hkp_badge('completed', hkp_t('All assigned learning complete')); ?></p>
   <?php endif; ?>
 </section>
+<?php $this->load->view('hkp/learning_continue', array('next' => $next)); ?>
 
 <div class="hkp-grid hkp-grid--4" style="margin-bottom:1rem">
   <div class="hkp-card hkp-tile">
@@ -60,7 +59,9 @@ $comp_met = count(array_filter($competencies, function ($c) { return $c['gap'] =
         <tbody>
         <?php foreach ($plan as $r): ?>
           <tr>
-            <td><a href="<?php echo hkp_url('learn/module/' . $r['course_id']); ?>"><?php echo hkp_h($r['title']); ?></a><?php if ((int) $r['is_mandatory']): ?> <span class="hkp-small hkp-muted">· <?php echo hkp_e('mandatory'); ?></span><?php endif; ?></td>
+            <td><?php if ($r['course_available']): ?><a href="<?php echo hkp_url('learn/module/' . $r['course_id']); ?>"><?php echo hkp_h($r['title']); ?></a><?php else: ?><?php echo hkp_h($r['title']); ?><?php endif; ?>
+              <div class="hkp-small hkp-muted"><?php echo hkp_h($r['selection_label']); ?><?php if ((int) $r['is_mandatory']): ?> · <?php echo hkp_e('mandatory'); ?><?php endif; ?></div>
+              <?php if ($r['availability_note']): ?><div class="hkp-small hkp-muted"><?php echo hkp_h($r['availability_note']); ?></div><?php endif; ?></td>
             <td style="min-width:120px"><?php echo hkp_bar($r['progress_percentage']); ?> <span class="hkp-small"><?php echo hkp_pct($r['progress_percentage']); ?></span></td>
             <td class="hkp-small"><?php echo hkp_date($r['due_at']); ?></td>
             <td><?php echo hkp_badge($r['state']); ?></td>

@@ -1,0 +1,549 @@
+1
+00:00:00,000 --> 00:00:23,956
+People. Knowledge. Performance.
+A confident, recognizable ALTUS arrival.
+
+2
+00:00:23,956 --> 00:00:31,189
+Extraordinary service starts with you.
+Connect every employee to the purpose of hospitality.
+
+3
+00:00:31,189 --> 00:00:38,422
+Knowledge that makes a difference.
+Explain learning, application and measurable performance.
+
+4
+00:00:38,422 --> 00:01:11,280
+Your language. Your experience.
+English and Arabic interfaces; expandable global locale catalog.
+
+5
+00:01:11,280 --> 00:01:18,354
+Welcome back
+Securely connect a personal account or explicitly enter the demonstration.
+
+6
+00:01:18,354 --> 00:01:24,582
+Recover your account
+Use the existing secure web account recovery flow.
+
+7
+00:01:24,582 --> 00:01:30,876
+Set a new password
+Complete password recovery with the account provider.
+
+8
+00:01:30,876 --> 00:01:37,919
+Verify your identity
+Preserve the platform authenticator and recovery-code policy.
+
+9
+00:01:37,919 --> 00:01:42,733
+Make it yours
+Set a preferred name and region.
+
+10
+00:01:42,733 --> 00:01:48,286
+Your hotel group
+Identify an authorized organization.
+
+11
+00:01:48,286 --> 00:01:54,415
+Your property
+Keep property learning and SOPs in the correct context.
+
+12
+00:01:54,415 --> 00:02:02,118
+Your workspace
+Confirm server-issued roles; demonstrate role-specific experiences.
+
+13
+00:02:02,118 --> 00:02:08,357
+A foundation of trust
+Review privacy and terms before accepting.
+
+14
+00:02:08,357 --> 00:02:14,865
+Stay one step ahead
+Request notification permission at a meaningful moment.
+
+15
+00:02:14,865 --> 00:02:21,559
+Your journey starts here
+Confirm setup and guide the employee to the next action.
+
+16
+00:02:21,559 --> 00:02:30,347
+Your next step, made clear.
+One prioritized next action, required learning and operational knowledge.
+
+17
+00:02:30,347 --> 00:02:38,055
+A little learning. A lasting difference.
+Search and filter an actionable learning plan.
+
+18
+00:02:38,055 --> 00:02:43,818
+Mandatory learning
+A focused view of the employee learning journey.
+
+19
+00:02:43,818 --> 00:02:49,597
+Assigned courses
+A focused view of the employee learning journey.
+
+20
+00:02:49,597 --> 00:02:55,101
+In progress
+A focused view of the employee learning journey.
+
+21
+00:02:55,101 --> 00:03:00,770
+Completed learning
+A focused view of the employee learning journey.
+
+22
+00:03:00,770 --> 00:03:06,738
+Upcoming & overdue
+A focused view of the employee learning journey.
+
+23
+00:03:06,738 --> 00:03:12,507
+Recommended for you
+A focused view of the employee learning journey.
+
+24
+00:03:12,507 --> 00:03:18,060
+Learning paths
+A focused view of the employee learning journey.
+
+25
+00:03:18,060 --> 00:03:23,609
+Programs
+A focused view of the employee learning journey.
+
+26
+00:03:23,609 --> 00:03:29,123
+Course history
+A focused view of the employee learning journey.
+
+27
+00:03:29,123 --> 00:03:35,866
+Elevate your everyday.
+Discover hospitality learning across professional domains.
+
+28
+00:03:35,866 --> 00:03:41,930
+Professional domains
+Explore every core hospitality discipline.
+
+29
+00:03:41,930 --> 00:03:49,533
+Course details
+Understand outcomes, competencies, lessons and certificate rules.
+
+30
+00:03:49,533 --> 00:03:59,221
+Learn. Apply. Remember.
+A focused native text/video player with progress and next steps.
+
+31
+00:03:59,221 --> 00:04:06,060
+Lesson transcript
+Read alongside the lesson for accessibility and comprehension.
+
+32
+00:04:06,060 --> 00:04:12,298
+Learning resources
+Bring practical reference material into the workflow.
+
+33
+00:04:12,298 --> 00:04:19,442
+Put your knowledge to work.
+Scenario and knowledge questions with pass rules and clear feedback.
+
+34
+00:04:19,442 --> 00:04:26,615
+Your assessment result
+Understand the score, explanations and permitted next step.
+
+35
+00:04:26,615 --> 00:04:31,999
+Assessment history
+Review past attempts and improvement.
+
+36
+00:04:31,999 --> 00:04:41,147
+Confidence, at your fingertips.
+Find current approved SOPs, policies, standards and checklists.
+
+37
+00:04:41,147 --> 00:04:48,035
+Policies & standards
+Find operational guidance in the right content category.
+
+38
+00:04:48,035 --> 00:04:54,819
+Operational checklists
+Find operational guidance in the right content category.
+
+39
+00:04:54,819 --> 00:05:02,007
+Articles & best practices
+Find operational guidance in the right content category.
+
+40
+00:05:02,007 --> 00:05:08,736
+Forms & templates
+Find operational guidance in the right content category.
+
+41
+00:05:08,736 --> 00:05:15,394
+Department resources
+Find operational guidance in the right content category.
+
+42
+00:05:15,394 --> 00:05:23,437
+The standard behind great service.
+Read versioned procedures, safety notes and confirm understanding.
+
+43
+00:05:23,437 --> 00:05:30,106
+What would you like to know?
+Search courses and authorized operational sources together.
+
+44
+00:05:30,106 --> 00:05:36,624
+Saved for the moment you need it.
+Keep useful courses and guidance close at hand.
+
+45
+00:05:36,624 --> 00:05:42,448
+Recently viewed
+Return quickly to useful operational content.
+
+46
+00:05:42,448 --> 00:05:47,956
+Saved searches
+Repeat useful queries without retyping.
+
+47
+00:05:47,956 --> 00:05:54,150
+Read & confirmed
+Record acknowledgment against the current approved version.
+
+48
+00:05:54,150 --> 00:06:02,903
+Good questions. Trusted answers.
+Retrieve approved guidance with citations and honest coverage limits.
+
+49
+00:06:02,903 --> 00:06:08,887
+Your conversations
+Return to previous questions and sources.
+
+50
+00:06:08,887 --> 00:06:16,045
+See how far you have come.
+Track learning, readiness, activity and evidence.
+
+51
+00:06:16,045 --> 00:06:23,399
+Turn knowledge into capability.
+Understand strengths, gaps and recommended next learning.
+
+52
+00:06:23,399 --> 00:06:29,952
+Ready, with evidence.
+Explain readiness using actual policy checks.
+
+53
+00:06:29,952 --> 00:06:35,496
+Your improvement plan
+Make identified gaps actionable.
+
+54
+00:06:35,496 --> 00:06:41,790
+Improvement action
+Review deadlines, evidence and review status.
+
+55
+00:06:41,790 --> 00:06:48,483
+Achievement, recognized.
+Find issued credentials and expiry details.
+
+56
+00:06:48,483 --> 00:06:53,662
+Your achievement
+Review and share an issued certificate.
+
+57
+00:06:53,662 --> 00:07:00,420
+Verify a credential
+Check a certificate using the trusted verification service.
+
+58
+00:07:00,420 --> 00:07:06,803
+Your updates
+Read assignment reminders, revisions and announcements.
+
+59
+00:07:06,803 --> 00:07:13,392
+Update details
+Understand a notification and open the relevant destination.
+
+60
+00:07:13,392 --> 00:07:19,945
+From your property
+Keep employees aligned on important operational updates.
+
+61
+00:07:19,945 --> 00:07:25,959
+Make time for growth.
+See training sessions and upcoming deadlines.
+
+62
+00:07:25,959 --> 00:07:32,068
+Training session
+Review the session, location and attendance action.
+
+63
+00:07:32,068 --> 00:07:37,886
+Check in to learning
+Scan an attendance or authorized learning link.
+
+64
+00:07:37,886 --> 00:07:44,879
+Knowledge that travels with you.
+Review saved offline reading and remove local downloads.
+
+65
+00:07:44,879 --> 00:07:50,828
+Offline content
+Read locally saved content and see its version.
+
+66
+00:07:50,828 --> 00:07:56,812
+Better, together.
+Read and contribute to learning conversations.
+
+67
+00:07:56,812 --> 00:08:02,895
+Learning conversation
+Review instructor and colleague contributions.
+
+68
+00:08:02,895 --> 00:08:07,944
+Ask your team
+Post a focused learning question.
+
+69
+00:08:07,944 --> 00:08:14,858
+Your space to grow.
+Find account details, preferences and every personal tool.
+
+70
+00:08:14,858 --> 00:08:20,127
+Your profile
+Maintain personal display details.
+
+71
+00:08:20,127 --> 00:08:27,180
+Make it work for you.
+Change language, theme and accessibility without signing out.
+
+72
+00:08:27,180 --> 00:08:33,223
+Notification preferences
+Choose useful reminder categories.
+
+73
+00:08:33,223 --> 00:08:41,157
+Account security
+Manage credentials, password and MFA using the existing identity system.
+
+74
+00:08:41,157 --> 00:08:47,745
+Privacy
+Understand how workplace account and learning information is used.
+
+75
+00:08:47,745 --> 00:08:52,629
+Terms of use
+Review the platform terms.
+
+76
+00:08:52,629 --> 00:09:01,113
+People. Knowledge. Performance.
+Explain ALTUS positioning and the app version.
+
+77
+00:09:01,113 --> 00:09:08,396
+Account deletion request
+Request account deletion with employer retention considerations.
+
+78
+00:09:08,396 --> 00:09:16,375
+Great teams. Measurable progress.
+See who needs attention and act on training and readiness.
+
+79
+00:09:16,375 --> 00:09:22,943
+The people behind the experience.
+Find authorized employees and their readiness.
+
+80
+00:09:22,943 --> 00:09:29,102
+Employee development
+Review the employee learning and competency record.
+
+81
+00:09:29,102 --> 00:09:35,405
+Give growth a direction.
+Assign a course to authorized people with a deadline.
+
+82
+00:09:35,405 --> 00:09:42,024
+From insight to improvement.
+Review capability gaps and property performance.
+
+83
+00:09:42,024 --> 00:09:47,787
+Where to focus next
+Prioritize open competency gaps.
+
+84
+00:09:47,787 --> 00:09:54,411
+Practical assessment queue
+Find employees ready for practical evaluation.
+
+85
+00:09:54,411 --> 00:10:02,544
+Observe. Assess. Develop.
+Record criterion-based observed evidence.
+
+86
+00:10:02,544 --> 00:10:11,152
+Your brand. ALTUS capability.
+Preview property identity using centralized design tokens.
+
+87
+00:10:11,152 --> 00:10:18,946
+A portfolio of potential.
+Reach central content, governance, property and system tools.
+
+88
+00:10:18,946 --> 00:10:25,984
+Client organizations
+Review governed platform operations in the authorized scope.
+
+89
+00:10:25,984 --> 00:10:32,383
+Properties
+Review governed platform operations in the authorized scope.
+
+90
+00:10:32,383 --> 00:10:39,401
+Users & access
+Review governed platform operations in the authorized scope.
+
+91
+00:10:39,401 --> 00:10:46,380
+Roles & permissions
+Review governed platform operations in the authorized scope.
+
+92
+00:10:46,380 --> 00:10:53,073
+Content library
+Review governed platform operations in the authorized scope.
+
+93
+00:10:53,073 --> 00:11:00,117
+Versions & approvals
+Review governed platform operations in the authorized scope.
+
+94
+00:11:00,117 --> 00:11:07,425
+Cross-property analytics
+Review governed platform operations in the authorized scope.
+
+95
+00:11:07,425 --> 00:11:14,004
+Audit activity
+Review governed platform operations in the authorized scope.
+
+96
+00:11:14,004 --> 00:11:21,062
+Shape the learning experience.
+Prepare a course draft without overwriting published content.
+
+97
+00:11:21,062 --> 00:11:27,311
+Review with confidence.
+Review revision metadata and approval separation.
+
+98
+00:11:27,311 --> 00:11:34,415
+We are here to help.
+Find FAQs, issue reporting and support requests.
+
+99
+00:11:34,415 --> 00:11:40,034
+A little clarity
+Resolve common learning and account questions.
+
+100
+00:11:40,034 --> 00:11:46,422
+Your support requests
+Track the status of submitted support requests.
+
+101
+00:11:46,422 --> 00:11:52,196
+Let us help you move forward.
+Describe an issue and attach a file.
+
+102
+00:11:52,196 --> 00:11:57,579
+Support request
+Read a submitted issue and its status.
+
+103
+00:11:57,579 --> 00:12:03,643
+Report an issue
+Report a technical or content issue with context.
+
+104
+00:12:03,643 --> 00:12:09,352
+You are offline
+A clear, recoverable system state.
+
+105
+00:12:09,352 --> 00:12:15,215
+Please sign in again
+A clear, recoverable system state.
+
+106
+00:12:15,215 --> 00:12:22,124
+A little care, behind the scenes.
+A clear, recoverable system state.
+
+107
+00:12:22,124 --> 00:12:28,403
+A better experience awaits.
+A clear, recoverable system state.
+
+108
+00:12:28,403 --> 00:12:34,366
+Access is restricted
+A clear, recoverable system state.
+
+109
+00:12:34,366 --> 00:12:40,330
+Let us try that again.
+A clear, recoverable system state.
+
+110
+00:12:40,330 --> 00:12:46,428
+This page is unavailable
+A clear, recoverable system state.

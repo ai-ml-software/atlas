@@ -621,6 +621,8 @@ class Ha_seo {
         $tp = $translated('ha_page_translation', 'page_id');
         foreach ($this->db->select('p.id, p.code, p.slug_en, p.slug_ar, p.updated_at')->from('ha_page p')
                      ->where('p.status', 'published')->get()->result_array() as $p) {
+            // These CMS records customise native listing routes, which are listed below in every site language.
+            if (in_array($p['code'], array('courses', 'programs', 'learning-paths', 'hospitality-topics', 'sop', 'articles', 'verify'), true)) { continue; }
             $add(array('en' => $p['slug_en'], 'ar' => $p['slug_ar']), $p['updated_at'],
                 $p['code'] === 'home' ? '1.0' : '0.7', $p['code'] === 'home' ? 'daily' : 'monthly', $tp($p['id']));
         }

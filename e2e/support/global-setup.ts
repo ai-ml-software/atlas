@@ -10,6 +10,9 @@ import { localDatabase, sql } from './db';
 export default async function globalSetup() {
   const db = localDatabase();
   console.log(`[e2e] database: ${db}`);
+  if (db === 'atlas_hospitality_test') {
+    sql(`UPDATE settings SET value='Altus Gulf' WHERE \`key\`='system_title'`);
+  }
   sql(`UPDATE users SET sessions='[]' WHERE sessions IS NOT NULL AND sessions <> '[]'`);
   sql(`INSERT INTO ha_ai_provider (slug, enabled, base_url, settings_json, created_at, updated_at)
        SELECT 'e2e_mock', 1, 'http://127.0.0.1:8765/v1', '{"name":"E2E Mock","api_style":"openai"}', NOW(), NOW()

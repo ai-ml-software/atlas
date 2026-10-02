@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "ALTUS Knowledge & Performance",
+    "slug": "altus-knowledge-performance",
+    "version": "1.0.0",
+    "scheme": "altus",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/altus-favicon.png",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.altusgulf.knowledge",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Scan training attendance and certificate QR codes when you choose to scan."
+      }
+    },
+    "android": {
+      "package": "com.altusgulf.knowledge",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#F7F5F1"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/altus-favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "./plugins/withReleaseSigning.cjs",
+      "expo-font",
+      "expo-secure-store",
+      [
+        "expo-localization",
+        {
+          "supportsRTL": true
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Scan training attendance and certificate QR codes.",
+          "recordAudioAndroid": false
+        }
+      ],
+      "expo-document-picker",
+      "expo-notifications",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/altus-mark.png",
+          "imageWidth": 110,
+          "backgroundColor": "#F7F5F1"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}

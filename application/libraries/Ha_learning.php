@@ -534,7 +534,7 @@ class Ha_learning {
      */
     public function plan($user_id) {
         $loc = hkp_locale();
-        $rows = $this->CI->db->select('e.*, c.code, c.duration_minutes, c.level, COALESCE(NULLIF(t.title, \'\'), te.title) AS title, tr.status AS assignment_status, ta.is_mandatory, ta.title_en AS assignment_en, ta.title_ar AS assignment_ar', false)
+        $rows = $this->CI->db->select('e.*, c.code, c.status AS course_status, c.duration_minutes, c.level, COALESCE(NULLIF(t.title, \'\'), te.title) AS title, tr.status AS assignment_status, ta.is_mandatory, ta.title_en AS assignment_en, ta.title_ar AS assignment_ar', false)
             ->from('ha_enrollment e')->join('ha_course c', 'c.id = e.course_id')
             ->join('ha_course_translation t', 't.course_id = c.id AND t.locale = ' . $this->CI->db->escape($loc), 'left')
             ->join('ha_course_translation te', "te.course_id = c.id AND te.locale = 'en'", 'left')
@@ -542,12 +542,22 @@ class Ha_learning {
             ->join('ha_training_recipient tr', 'tr.assignment_id = ta.id AND tr.user_id = e.user_id', 'left')
             ->where('e.user_id', (int) $user_id)->where('e.status !=', 'cancelled')
             ->order_by("FIELD(e.status,'active','completed','expired')", '', false)->order_by('e.due_at IS NULL', '', false)->order_by('e.due_at')->get()->result_array();
+        $activity = array();
+        if ($rows) {
+            foreach ($this->CI->db->select('enrollment_id, MAX(updated_at) AS last_activity_at', false)
+                ->where('user_id', (int) $user_id)->where_in('enrollment_id', array_column($rows, 'id'))
+                ->group_by('enrollment_id')->get('ha_lesson_progress')->result_array() as $a) {
+                $activity[$a['enrollment_id']] = $a['last_activity_at'];
+            }
+        }
         $now = time();
         foreach ($rows as &$r) {
             if ($r['assignment_status'] === 'waived') {
                 $r['state'] = 'exempted';
             } elseif ($r['status'] === 'completed') {
                 $r['state'] = 'completed';
+            } elseif ($r['status'] === 'expired') {
+                $r['state'] = 'expired';
             } elseif ($r['due_at'] && strtotime($r['due_at']) < $now) {
                 $r['state'] = 'overdue';
             } elseif ((float) $r['progress_percentage'] > 0) {
@@ -558,8 +568,59 @@ class Ha_learning {
                 $r['state'] = 'assigned';
             }
             $r['next_lesson_id'] = $this->next_lesson($r['id'], $r['course_id']);
+            $r['course_available'] = $this->course_visible($r['course_id'], $user_id);
+            $r['selection_label'] = $r['training_assignment_id'] || $r['source'] === 'assigned' ? hkp_t('Assigned')
+                : ($r['source'] === 'self' ? hkp_t('Self selected') : hkp_label($r['source']));
+            // Legacy writers use different configured timezones. Activity must never
+            // make a newly selected course look older than its own enrolment.
+            $r['last_activity_at'] = isset($activity[$r['id']]) ? max($r['created_at'], $activity[$r['id']]) : $r['created_at'];
+            $r['can_resume'] = false;
+            $r['availability_note'] = !$r['course_available'] ? hkp_t('This course is currently unavailable. Your saved progress is retained.') : '';
+            if ($r['course_available'] && $r['status'] === 'active' && $r['state'] !== 'exempted' && $r['next_lesson_id']) {
+                $l = $this->CI->db->get_where('ha_lesson', array('id' => $r['next_lesson_id']))->row_array();
+                $release = $this->release_at($l, $r['id']);
+                if ($release && strtotime($release) > $now) {
+                    $r['availability_note'] = hkp_t('This lesson opens on {date}.', array('date' => hkp_date($release)));
+                } elseif ($this->unmet_prerequisites($r['course_id'], $user_id)) {
+                    $r['availability_note'] = hkp_t('Complete the prerequisite modules first.');
+                } else {
+                    try {
+                        $this->assert_library_sequence($l, $user_id);
+                        $r['can_resume'] = true;
+                    } catch (RuntimeException $e) {
+                        $r['availability_note'] = $e->getMessage();
+                    }
+                }
+            }
         }
         return $rows;
+    }
+
+    /** Read-only suggestion; enrolment updates alone do not count as learning activity. */
+    public function continuation($user_id, array $plan = null) {
+        $rows = $plan === null ? $this->plan($user_id) : $plan;
+        $rows = array_values(array_filter($rows, function ($r) {
+            return $r['course_available'] && $r['status'] === 'active' && $r['state'] !== 'exempted'
+                && ($r['can_resume'] || !$r['next_lesson_id']);
+        }));
+        usort($rows, function ($a, $b) {
+            $recent = strcmp($b['last_activity_at'], $a['last_activity_at']);
+            return $recent ?: ((int) $b['id'] <=> (int) $a['id']);
+        });
+        if (!$rows) { return null; }
+        $r = $rows[0];
+        $r['lesson_title'] = null;
+        $r['saved_position'] = 0;
+        $r['continue_url'] = hkp_url('learn/module/' . $r['course_id']);
+        if ($r['can_resume']) {
+            $lesson = $this->lesson($r['next_lesson_id']);
+            $r['lesson_title'] = $lesson['title'];
+            $position = $this->CI->db->select('last_position_seconds')->get_where('ha_lesson_progress',
+                array('enrollment_id' => $r['id'], 'user_id' => (int) $user_id, 'lesson_id' => $r['next_lesson_id']))->row_array();
+            $r['saved_position'] = $position ? (int) $position['last_position_seconds'] : 0;
+            $r['continue_url'] = hkp_url('learn/lesson/' . $r['next_lesson_id']);
+        }
+        return $r;
     }
 
     public function next_lesson($enrollment_id, $course_id) {

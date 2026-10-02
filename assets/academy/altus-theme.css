@@ -61,8 +61,10 @@ body.ha--rtl .t-link { letter-spacing: 0; font-size: .9rem; }
 .ha-chrome::after { background: var(--t-line-on-dark); opacity: 1; }
 .ha-mast { background: transparent; }
 .ha-mast__row { min-height: var(--t-header-h); gap: clamp(1rem, 2.4vw, 2.5rem); }
-.ha-mast__logo { height: 40px; max-width: 200px; }
-.ha-chrome--stuck .ha-mast__logo { height: 34px; }
+/* Legacy LMS branding uses filename-based !important sizes. The shared
+   components own their dimensions regardless of the content styles loaded. */
+.ha .ha-mast__logo { height: 40px !important; max-width: 200px; }
+.ha .ha-chrome--stuck .ha-mast__logo { height: 34px !important; }
 .ha-chrome--stuck { box-shadow: 0 10px 30px -18px rgba(0, 0, 0, .6); }
 
 /* The home page lays the bar over its photograph until the reader scrolls. */
@@ -137,6 +139,7 @@ body.ha--rtl .ag-hero[data-photo]::before { background: linear-gradient(270deg, 
 .ha-foot { background: var(--t-dark-2); border-block-start: 0; }
 .ha-foot__top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.25rem 2rem; padding-block: 2.25rem 1.5rem; }
 .ha-foot__top img { height: 40px; width: auto; }
+.ha .ha-foot__top .ha-foot__logo { height: 40px !important; max-width: 280px; }
 .ha-foot__nav { display: flex; flex-wrap: wrap; gap: .25rem 1.4rem; }
 .ha-foot__nav a { color: var(--t-ink-on-dark); text-decoration: none; font-size: .82rem; padding-block: .35rem; }
 .ha-foot__nav a:hover { color: var(--altus-gold-on-dark, #E58A5E); }
@@ -326,8 +329,8 @@ body.ha--rtl .t-link > span[aria-hidden], body.ha--rtl .ha-btn > span[aria-hidde
     .t-about__media { min-height: 300px; }
     .t-about__card { position: relative; inset: auto; width: auto; margin: -3rem 1rem 0; }
 }
-@media (max-width: 680px) { .ha-mast__logo, .ha-chrome--stuck .ha-mast__logo { height: 30px; max-width: 40vw; } }
-@media (max-width: 380px) { .ha-mast__logo, .ha-chrome--stuck .ha-mast__logo { height: 26px; } }
+@media (max-width: 680px) { .ha .ha-mast__logo, .ha .ha-chrome--stuck .ha-mast__logo { height: 30px !important; max-width: 40vw; } }
+@media (max-width: 380px) { .ha .ha-mast__logo, .ha .ha-chrome--stuck .ha-mast__logo { height: 26px !important; } }
 @media (max-width: 680px) {
     .t-about__media { display: flex; align-items: flex-end; margin-bottom: 2rem; }
     .t-about__card { margin: 0 1rem -1.75rem; }

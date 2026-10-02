@@ -39,13 +39,7 @@ class Hkp extends Hkp_Controller {
         }
         $this->load->library(array('ha_learning', 'ha_readiness', 'ha_competency', 'ha_certification'));
         $plan = $this->ha_learning->plan($this->uid);
-        $next = null;
-        foreach ($plan as $row) {
-            if ($row['state'] !== 'completed' && $row['state'] !== 'exempted' && $row['next_lesson_id']) {
-                $next = $row;
-                break;
-            }
-        }
+        $next = $this->ha_learning->continuation($this->uid, $plan);
         $done = count(array_filter($plan, function ($r) { return $r['state'] === 'completed'; }));
         $this->render('dashboard', array(
             'plan' => array_slice($plan, 0, 8), 'plan_total' => count($plan), 'plan_done' => $done, 'next' => $next,
@@ -165,7 +159,8 @@ class Hkp extends Hkp_Controller {
             $this->attempt(function () use ($L, $id) { return $L->enroll($this->uid, (int) $id, 'self'); }, hkp_t('Added to your learning.'), hkp_url('learn/module/' . (int) $id));
             return;
         }
-        $this->render('learn', array('plan' => $L->plan($this->uid)), hkp_t('My learning'), 'learn');
+        $plan = $L->plan($this->uid);
+        $this->render('learn', array('plan' => $plan, 'next' => $L->continuation($this->uid, $plan)), hkp_t('My learning'), 'learn');
     }
 
     protected function track_modules($track_id) {

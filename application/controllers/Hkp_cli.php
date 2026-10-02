@@ -30,6 +30,14 @@ class Hkp_cli extends CI_Controller {
         fwrite(STDOUT, $s . PHP_EOL);
     }
 
+    /** JSON to stdout; exit 1 means review is needed. No corrections or notifications. */
+    public function learning_health($limit = 200) {
+        $this->load->library('ha_learning_health');
+        $report = $this->ha_learning_health->report($limit);
+        $this->out(json_encode($report, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+        if (!$report['ok']) { exit(1); }
+    }
+
     private function step($name, callable $fn) {
         try {
             $r = $fn();

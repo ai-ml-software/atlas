@@ -3,6 +3,21 @@
 <div class="hkp-actions"><a class="hkp-btn hkp-btn--ghost" href="<?php echo hkp_url('admin/crud/roadmap'); ?>"><?php echo hkp_e('Roadmap & feature flags'); ?></a>
 <form method="post" action="<?php echo hkp_url('admin/system/run'); ?>"><?php echo ha_csrf_field(); ?><button class="hkp-btn"><?php echo hkp_e('Run daily jobs now'); ?></button></form></div></div>
 <div class="hkp-grid hkp-grid--4" style="margin-bottom:1rem"><?php foreach ($health as $k => $h): ?><div class="hkp-card hkp-tile"><span class="hkp-tile__label"><?php echo hkp_label($k); ?></span><span><?php echo $h['ok'] ? hkp_badge('success', hkp_t('Healthy')) : hkp_badge('warning', hkp_t('Attention')); ?></span><span class="hkp-tile__foot"><?php echo hkp_h($h['detail']); ?></span></div><?php endforeach; ?></div>
+<?php if ($learning_health): ?>
+<section class="hkp-card" data-learning-health style="margin-bottom:1rem">
+  <h2><?php echo hkp_e('Learning progress health'); ?></h2>
+  <p><?php echo $learning_health['ok'] ? hkp_badge('success', hkp_t('Healthy')) : hkp_badge('warning', hkp_t('Attention')); ?>
+    <?php echo hkp_e('{count} findings need review.', array('count' => $learning_health['issues_total'])); ?></p>
+  <p class="hkp-small hkp-muted"><?php echo hkp_e('Checks are read only. Curriculum changes may require review; saved history is never repaired automatically.'); ?></p>
+  <p class="hkp-small"><?php echo hkp_e('{count} enrollments have unavailable courses; their history is retained.', array('count' => $learning_health['unavailable_enrollments'])); ?></p>
+  <?php foreach ($learning_health['checks'] as $code => $check): if (!$check['total']) { continue; } ?>
+    <details><summary><?php echo hkp_h($code); ?> · <?php echo (int) $check['total']; ?></summary>
+      <pre class="hkp-small" style="white-space:pre-wrap;overflow-wrap:anywhere"><?php echo hkp_h(json_encode($check['records'], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES)); ?></pre>
+      <?php if ($check['truncated']): ?><p class="hkp-small"><?php echo hkp_e('Showing the first 25 findings. Export the CLI report for more records.'); ?></p><?php endif; ?>
+    </details>
+  <?php endforeach; ?>
+</section>
+<?php endif; ?>
 <div class="hkp-grid hkp-grid--main">
 <form class="hkp-card hkp-form" method="post" action="<?php echo hkp_url('admin/system/settings'); ?>"><?php echo ha_csrf_field(); ?><h2><?php echo hkp_e('Global rules'); ?></h2><p class="hkp-small hkp-muted"><?php echo hkp_e('Organisations and properties may override these where authorised.'); ?></p>
 <?php foreach ($groups as $g => $items): ?><h3><?php echo hkp_label($g); ?></h3><div class="hkp-table-wrap"><table class="hkp-table"><tbody>

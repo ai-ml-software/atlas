@@ -38,14 +38,15 @@ class Login extends CI_Controller
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
 
-    public function sign_up()
+    public function sign_up($step = '')
     {
         // Same rule as index(): signed-in users belong in the HK&P workspace.
         if ((int) $this->session->userdata('user_id') > 0 && ($this->session->userdata('admin_login') || $this->session->userdata('user_login'))) {
             redirect(site_url('hkp'), 'refresh');
         }
-        $page_data['page_name'] = 'sign_up';
-        $page_data['page_title'] = site_phrase('sign_up');
+        $verification = $step === 'verification_code' && $this->session->userdata('register_email');
+        $page_data['page_name'] = $verification ? 'verification_code' : 'sign_up';
+        $page_data['page_title'] = site_phrase($verification ? 'email_verification' : 'sign_up');
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
 
@@ -69,6 +70,7 @@ class Login extends CI_Controller
             $this->user_model->new_device_login_tracker($row->id);
             $this->user_model->set_login_userdata($row->id);
         } else {
+            $this->session->set_flashdata('ha_login_email', trim((string)$email));
             $this->session->set_flashdata('error_message', get_phrase('invalid_login_credentials'));
             redirect(site_url('login'), 'refresh');
         }

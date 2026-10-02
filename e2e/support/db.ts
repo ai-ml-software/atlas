@@ -21,6 +21,13 @@ export function localDatabase(): string {
   if (!db || !host || !/^(127\.0\.0\.1|localhost)$/.test(host)) {
     throw new Error(`Refusing to run: database.local.php host "${host}" is not local.`);
   }
+  if (process.env.HKP_TEST_DATABASE) {
+    if (process.env.HKP_TEST_DATABASE !== 'atlas_hospitality_test'
+        || process.env.HKP_BASE_URL !== 'http://127.0.0.1:8099/') {
+      throw new Error('The isolated database requires the dedicated loopback Playwright server.');
+    }
+    return 'atlas_hospitality_test';
+  }
   return db;
 }
 

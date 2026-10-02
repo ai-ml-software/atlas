@@ -43,7 +43,8 @@
                                         }
 
                                     ?>
-	                                <?php $category_details = $this->crud_model->get_category_details_by_id($top_10_category['sub_category_id'])->row_array(); ?>
+	                                <?php $category_details = $this->crud_model->get_category_details_by_id($top_10_category['sub_category_id'])->row_array();
+                                        if (!$category_details) { continue; } ?>
 	                                <li><a class="ft2-nav-link" href="<?php echo site_url('home/courses?category=' . $category_details['slug']); ?>"><?php echo $category_details['name']; ?></a></li>
 	                                <?php endforeach; ?>
                             </ul>
