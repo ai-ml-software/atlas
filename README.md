@@ -1,5 +1,67 @@
 # altus Hospitality Knowledge & Performance (HK&P)
 
+## Mobile connection and role training — October 2026
+
+**Mobile app settings** is visible in the native **Platform** menu and the legacy admin sidebar at `/hkp/admin/mobile`. A system-scoped account with `settings.view` is required; updates/key management also require `settings.update`. The app exposes **Settings → Server setup** and **Personal API key**, as well as **Get my personal API key** on Sign in. Admin and app screens provide real **Test connection** controls.
+
+The local mobile `.env` is configured with `http://localhost/atlas/atlas` and a native-generated `altm_` configuration key. For a USB-connected Android device run `adb reverse tcp:80 tcp:80`. Each user creates an own `ha_` mobile key in Account Security after password/2FA confirmation and enters it in **Connect account**; it expires after 90 days and does not grant extra permissions. Personal keys never belong in build environment variables. Production needs the deployed site's own URL and key.
+
+- [Installation and URL/key setup](docs/guides/MOBILE_INSTALLATION.md)
+- [Administrator guide](docs/guides/ADMIN_USER_GUIDE.md), [Student guide](docs/guides/STUDENT_USER_GUIDE.md), [Instructor guide](docs/guides/INSTRUCTOR_USER_GUIDE.md)
+- [Printable guides, narrated video player and chapter navigation](docs/guides/index.html)
+- [Every registered mobile option and its live status](docs/guides/MOBILE_OPTIONS.html)
+- [Signed Android 1.0.1 APK](mobile%20app/client-deliverables/android/ALTUS-1.0.1-release.apk) — version code 2, ARM64, local development backend.
+
+The role recordings use actual local browser screens with English synthetic narration and isolated sample accounts. The inventory distinguishes live-supported mobile routes from demonstration-only options. No production deployment, iOS release or physical-device acceptance is implied.
+
+## Admin Studio — October 2026
+
+The existing application now includes a redesigned ALTUS admin workspace, grouped/collapsible sidebar, searchable page palette, bilingual catalogue editors, private live website drafts, editable navigation/footer, and document publishing for courses, website pages, articles, SOPs and hospitality topics. Text, scanned and mixed PDFs use local English/Arabic OCR and background jobs. Generate editable modules, lessons and quizzes using your configured AI provider. Created content remains unpublished until reviewed through the existing publishing workflow.
+
+| Start here | Local URL / guide |
+|---|---|
+| Admin dashboard | <http://localhost/atlas/atlas/hkp/admin> |
+| Content Studio | <http://localhost/atlas/atlas/hkp/cms/studio> |
+| AI Document Publisher | <http://localhost/atlas/atlas/hkp/cms/publisher> |
+| Website pages and live editor | <http://localhost/atlas/atlas/hkp/cms> |
+| Theme and global site settings | <http://localhost/atlas/atlas/hkp/cms/theme> |
+| Revision history | <http://localhost/atlas/atlas/hkp/studio/revisions> |
+| Navigation and footer | <http://localhost/atlas/atlas/hkp/cms/navigation> |
+| Install / upgrade / PDF dependencies | [ADMIN_INSTALL.md](docs/ADMIN_INSTALL.md) |
+| Daily admin workflows and screenshots | [ADMIN_GUIDE.md](docs/ADMIN_GUIDE.md) |
+| Feature matrix and implementation details | [ADMIN_FEATURES.md](docs/ADMIN_FEATURES.md) |
+| Executed tests and configuration-dependent checks | [Acceptance report](ALTUS_AI_PUBLISHER_ACCEPTANCE_REPORT.md) |
+| MCP integrations, approvals, health, audit | <http://localhost/atlas/atlas/hkp/cms/integrations> · [daily workflows](docs/MCP_ADMIN_WORKFLOWS.md) |
+| **MCP server (PHP, built in): endpoint, OAuth, scopes, tools, client setup** | [MCP_PHP.md](docs/MCP_PHP.md) · endpoint `http://localhost/atlas/atlas/mcp` |
+| Legacy Node MCP gateway (deprecated, optional) | [MCP_GATEWAY_RUNBOOK.md](docs/MCP_GATEWAY_RUNBOOK.md) |
+| Native publisher API reference (`/api/publisher/v1`) | [PUBLISHER_API.md](docs/PUBLISHER_API.md) |
+
+This is a **native CodeIgniter implementation**. Remote MCP access is served **by PHP inside the application**: `POST /mcp` (Streamable HTTP, MCP 2025-06-18 / 2025-03-26) with a built-in OAuth 2.1 authorization server (dynamic client registration, PKCE S256, refresh rotation, revocation, resource indicators) that signs users in through the normal ALTUS login and two-factor screens. No Node process is needed. It is off unless `ALTUS_MCP_ENABLED=1` and needs migration 032 (`php index.php ha_cli migrate`). See [docs/MCP_PHP.md](docs/MCP_PHP.md).
+
+The earlier Node 24 gateway in `mcp-gateway/` is kept in the repository for reference but is **deprecated and optional**; do not run it alongside the PHP server for new installs. No WordPress plugin is part of this release. Existing authentication, tenancy, learning records and LMS services remain authoritative.
+
+```powershell
+# Connect Claude Code to the built-in PHP MCP server (OAuth opens your browser):
+claude mcp add --transport http altus http://localhost/atlas/atlas/mcp
+# End-to-end check with the official MCP SDK client (Node used only as the test client):
+node tests/mcp_sdk_e2e.mjs http://localhost/atlas/atlas
+```
+
+Quick upgrade, after verifying the local database override and making a database backup:
+
+```powershell
+Set-Location C:/laragon/www/atlas/atlas
+$altusPhp = 'C:/laragon/bin/php/php-8.1.10-Win32-vs16-x64/php.exe'
+& $altusPhp index.php ha_cli migrate
+& C:/Python313/python.exe -m pip install -r tools/publisher-requirements.txt
+```
+
+The local database has the Admin Studio and publisher migrations (25, 26, 27, 29 and 30) applied. Sign in with your existing platform admin account. Configure an approved provider/model in `/ha_ai/providers` before generating AI drafts. Uploaded documents need the extraction worker: `php index.php publisher_cli daemon`, or schedule `publisher_cli work 25` every minute. `publisher_cli health` reports dependency/provider/worker setup. See the installation guide for Tesseract English/Arabic data, executable paths, upload limits and isolated testing. Open **Integrations → MCP server (PHP, built in)**, copy the MCP URL and follow [MCP_PHP.md](docs/MCP_PHP.md) to connect a client. Migration 032 (PHP MCP/OAuth tables) is applied to the local database.
+
+![Admin workspace preview](docs/screenshots/admin-dashboard.png)
+
+The documentation below describes the wider existing application; the linked Admin Studio guides describe this update.
+
 altus HK&P is a bilingual (Arabic / English) hospitality capability platform for
 Altus Advisory. It runs inside the Academy LMS CodeIgniter application.
 
@@ -183,7 +245,7 @@ php index.php ha_cli status          # migrations (15 expected)
 php index.php ha_cli migrate         # apply pending migrations
 php index.php ha_cli seed rbac       # roles and permissions (safe on production data)
 php index.php ha_cli seed hkp        # HK&P reference data (safe on production data)
-php index.php ha_test run            # 136 tests on an isolated database
+php index.php ha_test run            # isolated native suite; see the acceptance report for current results
 php index.php hkp_cli daily          # reminders, overdue sweeps, expiry, readiness
 php index.php hkp_cli work           # process queued jobs (email, notifications)
 php index.php hkp_cli index          # rebuild the governed-AI knowledge index

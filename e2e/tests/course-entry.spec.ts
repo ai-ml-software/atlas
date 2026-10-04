@@ -158,6 +158,16 @@ test.describe('Public course start and My Learning', () => {
     await expectMyLearning(page);
   });
 
+  test('a background service-worker request preserves the locked-lesson explanation', async ({ page }) => {
+    await selectCourse(page); await login(page);
+    await expect(page).toHaveURL(new RegExp(`/hkp/learn/module/${course}\\?lang=en$`));
+    const locked = await page.request.get(`hkp/learn/lesson/${lessons[1]}`);
+    expect(locked.headers().refresh).toContain('/hkp/learn');
+    expect((await page.request.get('hkp/sw.js')).status()).toBe(200);
+    await page.goto('hkp/learn');
+    await expect(page.locator('.hkp-flash--error')).toBeVisible();
+  });
+
   test('selection remains pending until the second factor succeeds', async ({ page }) => {
     const fixture = JSON.parse(execFileSync(process.env.HKP_PHP || 'C:/laragon/bin/php/php-8.1.10-Win32-vs16-x64/php.exe', ['-r',
       "define('BASEPATH',getcwd());define('APPPATH',getcwd().'/../application/');require APPPATH.'libraries/Ha_crypto.php';require APPPATH.'libraries/Ha_totp.php';$c=new Ha_crypto();$t=new Ha_totp();echo json_encode(array('cipher'=>$c->encrypt('JBSWY3DPEHPK3PXP'),'code'=>$t->code('JBSWY3DPEHPK3PXP')));"

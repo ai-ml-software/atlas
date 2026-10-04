@@ -1,0 +1,172 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DEPLOYMENT</title><style>:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f7f5f1;color:#1c2227;font:16px/1.7 'Segoe UI',Tahoma,Arial,sans-serif}header{background:#1c2227;color:white;padding:28px max(24px,calc((100% - 1080px)/2));border-bottom:4px solid #c45b2f}header a{color:#f3c5a8}main{max-width:1080px;margin:auto;padding:28px 24px 70px}h1,h2,h3{line-height:1.25}h2{margin-top:36px}a{color:#944527}pre{padding:18px;background:#e9e5df;border-radius:10px;overflow:auto}code{font-size:.9em}table{border-collapse:collapse;width:100%;background:white;font-size:14px}td,th{padding:10px;border:1px solid #ddd;text-align:start;vertical-align:top}.card{background:white;border:1px solid #ded8cf;border-radius:14px;padding:22px;margin-bottom:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}video{display:block;width:100%;max-height:640px;background:#111}.chapters{max-height:300px;overflow:auto;display:flex;flex-wrap:wrap;gap:8px;padding:10px 0}button,.button{border:1px solid #c45b2f;border-radius:8px;background:white;color:#71371e;padding:9px 12px;cursor:pointer;text-decoration:none;font:inherit}p{margin:12px 0}.muted{color:#646a6d}img{max-width:100%}@media(max-width:600px){main{padding:20px 15px}table{display:block;overflow:auto}header{padding:22px 15px}}@media print{header,nav,.no-print{display:none}body{background:white;font-size:12px}main{padding:0;max-width:none}h2{break-after:avoid}pre,table{break-inside:avoid}a{color:inherit}}</style><header><strong>ALTUS KNOWLEDGE &amp; PERFORMANCE</strong><br><a href="index.html">User guides and recordings</a></header><main><h1 dir="auto">Deploying to a shared host</h1>
+<p dir="auto">Written for a deployment into a subdirectory, for example</p>
+<p dir="auto"><code>https://khidmat.alwaysdata.net/atlas/</code>.</p>
+<p dir="auto">---</p>
+<h2 dir="auto">Why you are seeing HTTP 500 with no message</h2>
+<p dir="auto"><code>index.php</code> defaults <code>ENVIRONMENT</code> to <code>production</code>, and production sets</p>
+<p dir="auto"><code>display_errors = 0</code>. Any fatal error therefore reaches the browser as a bare</p>
+<p dir="auto">500 with nothing to act on. The error is real and the server knows what it is;</p>
+<p dir="auto">it is just not being shown.</p>
+<p dir="auto">Two ways to see it. Use the first.</p>
+<h3 dir="auto">1. Run the deployment check</h3>
+<p dir="auto">Upload <code>deploy-check.php</code> beside <code>index.php</code>, set a key in it, then open:</p>
+<pre><code>
+https://khidmat.alwaysdata.net/atlas/deploy-check.php?key=YOUR_KEY
+
+</code></pre>
+<p dir="auto">It tests PHP version and extensions, mod_rewrite, the <code>.htaccess</code>, the database</p>
+<p dir="auto">connection, directory permissions and the presence of the application files,</p>
+<p dir="auto">and prints the tail of the CodeIgniter log. Every failure comes with the fix.</p>
+<p dir="auto"><strong>Delete the file when you are done.</strong> It describes your server to anyone who</p>
+<p dir="auto">opens it.</p>
+<h3 dir="auto">2. Turn errors on for one request</h3>
+<p dir="auto">In <code>index.php</code>, change:</p>
+<pre><code>
+define(&#39;ENVIRONMENT&#39;, isset($_SERVER[&#39;CI_ENV&#39;]) ? $_SERVER[&#39;CI_ENV&#39;] : &#39;production&#39;);
+
+</code></pre>
+<p dir="auto">to <code>&#39;development&#39;</code>, reload the failing page, read the error, then change it</p>
+<p dir="auto">back. Never leave a live site in development mode: it prints file paths,</p>
+<p dir="auto">queries and credentials to visitors.</p>
+<p dir="auto">---</p>
+<h2 dir="auto">The usual causes, most common first</h2>
+<h3 dir="auto">1. Database credentials still point at your laptop</h3>
+<p dir="auto">This is the most likely cause. <code>application/config/database.php</code> currently</p>
+<p dir="auto">holds the local development values:</p>
+<pre><code>
+&#39;hostname&#39; =&gt; &#39;127.0.0.1&#39;,
+
+&#39;username&#39; =&gt; &#39;root&#39;,
+
+&#39;password&#39; =&gt; &#39;root&#39;,
+
+&#39;database&#39; =&gt; &#39;atlas_hospitality&#39;,
+
+</code></pre>
+<p dir="auto">On alwaysdata none of those exist. Replace them with the values from your</p>
+<p dir="auto">host&#39;s control panel. On alwaysdata the host is usually</p>
+<p dir="auto"><code>mysql-&lt;account&gt;.alwaysdata.net</code> and the database is <code>&lt;account&gt;_something</code>.</p>
+<p dir="auto">A failed connection in production mode produces exactly the blank 500 you saw.</p>
+<h3 dir="auto">2. The database is empty</h3>
+<p dir="auto">Export from the working local database and import on the server:</p>
+<pre><code>
+# locally
+
+mysqldump -uroot -proot --default-character-set=utf8mb4 \
+
+  --single-transaction --routines atlas_hospitality &gt; atlas.sql
+
+
+
+# on the host, through phpMyAdmin or the shell
+
+mysql -h &lt;host&gt; -u &lt;user&gt; -p &lt;database&gt; &lt; atlas.sql
+
+</code></pre>
+<p dir="auto">Keep <code>utf8mb4</code>. Anything else mangles the Arabic content and the Arabic slugs.</p>
+<h3 dir="auto">3. PHP version</h3>
+<p dir="auto">The application needs PHP 7.4 or newer and is developed on 8.3. On alwaysdata</p>
+<p dir="auto">the PHP version is set per site in the admin panel.</p>
+<h3 dir="auto">4. Missing extensions</h3>
+<p dir="auto">Required: <code>mysqli</code>, <code>mbstring</code>, <code>json</code>. Needed by the photo pipeline: <code>gd</code></p>
+<p dir="auto">with WebP, and <code>curl</code>. The deployment check reports each one.</p>
+<h3 dir="auto">5. Directory permissions</h3>
+<p dir="auto">These must be writable by the web user:</p>
+<pre><code>
+application/logs
+
+application/cache
+
+uploads
+
+uploads/academy
+
+uploads/thumbnails
+
+</code></pre>
+<p dir="auto"><code>chmod 755</code> is usually right, <code>775</code> if the web user is in your group. Without a</p>
+<p dir="auto">writable <code>application/logs</code> you cannot read the error that caused the 500.</p>
+<h3 dir="auto">6. A directive your host rejects</h3>
+<p dir="auto">Shared hosts commonly return 500 rather than ignoring an unsupported directive.</p>
+<p dir="auto">The shipped <code>.htaccess</code> avoids the usual offenders: no <code>php_value</code>, no</p>
+<p dir="auto"><code>php_flag</code>, no <code>AddHandler</code>, no <code>Options +FollowSymLinks</code>, and Apache 2.4</p>
+<p dir="auto">syntax guarded by <code>&lt;IfModule&gt;</code>.</p>
+<p dir="auto">To test whether <code>.htaccess</code> is the cause at all, rename it to <code>htaccess.txt</code></p>
+<p dir="auto">and reload. If the 500 becomes a working home page with broken links, the file</p>
+<p dir="auto">is the problem. If the 500 stays, it is not.</p>
+<p dir="auto">---</p>
+<h2 dir="auto">The .htaccess</h2>
+<p dir="auto">The shipped file works at a domain root and in any subdirectory without</p>
+<p dir="auto">editing, because the rewrite rule is relative to the directory holding it.</p>
+<p dir="auto"><code>RewriteBase</code> is left commented out on purpose.</p>
+<p dir="auto">Uncomment and set it <strong>only</strong> if you get a redirect loop or every URL resolves</p>
+<p dir="auto">to the document root:</p>
+<pre><code>
+RewriteBase /atlas/
+
+</code></pre>
+<p dir="auto">It also blocks <code>application/</code> and <code>system/</code>, refuses to execute anything under</p>
+<p dir="auto"><code>uploads/</code>, hides dotfiles and <code>.sql</code>, <code>.log</code> and <code>.md</code> files, sets basic</p>
+<p dir="auto">security headers, and enables compression and far-future caching for static</p>
+<p dir="auto">assets.</p>
+<p dir="auto">Verify after deploying:</p>
+<pre><code>
+https://khidmat.alwaysdata.net/atlas/                      the site
+
+https://khidmat.alwaysdata.net/atlas/en                    pretty URLs work
+
+https://khidmat.alwaysdata.net/atlas/application/config/config.php   must be 403
+
+https://khidmat.alwaysdata.net/atlas/README.md             must be 403
+
+</code></pre>
+<p dir="auto">If <code>/atlas/</code> loads but <code>/atlas/en</code> is a 404, mod_rewrite is not active for the</p>
+<p dir="auto">directory. On alwaysdata that usually means the site is configured as a static</p>
+<p dir="auto">or PHP-CGI site rather than an Apache site with <code>.htaccess</code> enabled.</p>
+<p dir="auto">---</p>
+<h2 dir="auto">HTTPS behind a proxy</h2>
+<p dir="auto">alwaysdata terminates TLS at a proxy and forwards plain HTTP, so</p>
+<p dir="auto"><code>$_SERVER[&#39;HTTPS&#39;]</code> is not set even though visitors are on <code>https://</code>.</p>
+<p dir="auto">Unhandled, CodeIgniter builds every asset, canonical and redirect URL with</p>
+<p dir="auto"><code>http://</code>, and the browser blocks them as mixed content.</p>
+<p dir="auto"><code>application/config/config.php</code> now also reads <code>X-Forwarded-Proto</code>,</p>
+<p dir="auto"><code>X-Forwarded-SSL</code> and port 443, so the base URL is correct behind a proxy. No</p>
+<p dir="auto">action needed; this is noted because it is not obvious when links come out</p>
+<p dir="auto">wrong.</p>
+<p dir="auto">---</p>
+<h2 dir="auto">After the site loads</h2>
+<p dir="auto">The academy content lives in the <code>ha_*</code> tables and is published into the</p>
+<p dir="auto">Academy LMS tables by a bridge command. If you imported a full dump, both are</p>
+<p dir="auto">already present and there is nothing to run.</p>
+<p dir="auto">If you imported only a partial dump, or you change the catalogue, run:</p>
+<pre><code>
+php index.php ha_cli migrate
+
+php index.php ha_cli seed
+
+php index.php ha_bridge sync
+
+</code></pre>
+<p dir="auto">Most shared hosts give you SSH. On alwaysdata you have it. If you do not, run</p>
+<p dir="auto">these locally against the remote database by temporarily pointing</p>
+<p dir="auto"><code>application/config/database.php</code> at the host.</p>
+<p dir="auto">---</p>
+<h2 dir="auto">Before this is public</h2>
+<ul>
+<li>Change every seeded password. The demo accounts in <code>README.md</code> all use</li>
+</ul>
+<p dir="auto">  <code>[local credentials omitted]</code> and the super admin uses <code>[local credentials omitted]</code>.</p>
+<ul>
+<li>Delete <code>deploy-check.php</code>.</li>
+<li>Delete or protect the <code>.lab/</code> directory. It holds screenshots and audit</li>
+</ul>
+<p dir="auto">  output, not application code.</p>
+<ul>
+<li>Confirm <code>ENVIRONMENT</code> is <code>production</code> in <code>index.php</code>.</li>
+<li>Set <code>$config[&#39;log_threshold&#39;]</code> to <code>1</code> in <code>application/config/config.php</code> so</li>
+</ul>
+<p dir="auto">  real errors are recorded, and check <code>application/logs</code> is writable.</p>
+<ul>
+<li>Point <code>$config[&#39;encryption_key&#39;]</code> in <code>application/config/config.php</code> at a</li>
+</ul>
+<p dir="auto">  long random value. It is currently empty.</p></main></html>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Switch, Share, Pressable } from "react-native";
+import { View, Switch, Share, Pressable, Linking } from "react-native";
 import * as DocumentPicker from "expo-document-picker";
 import { router } from "expo-router";
 import { useApp } from "../state/AppProvider";
@@ -25,8 +25,32 @@ import { JsonRecord, Course, LocalPost, bi } from "../domain/models";
 import { useResource } from "../services/useResource";
 import { LocalePicker } from "./Onboarding";
 
+/** Workspace screens for managers, executives, trainers and admins — only those the role permits. */
+const roleScreens = [
+  ["management", "people-outline", "management"],
+  ["team", "person-add-outline", "team"],
+  ["reports", "stats-chart-outline", "reports"],
+  ["gaps", "alert-circle-outline", "gaps"],
+  ["assign", "send-outline", "assign"],
+  ["competencies", "ribbon-outline", "competencies"],
+  ["readiness", "checkmark-done-outline", "readiness"],
+  ["admin", "shield-checkmark-outline", "admin"],
+] as const;
+export function RoleShortcuts() {
+  const { t, can } = useApp();
+  const visible = roleScreens.filter(([id]) => can(id));
+  if (!visible.length) return null;
+  return (
+    <View style={{ gap: 4 }}>
+      <Section title={t("yourWorkspace")} />
+      {visible.map(([id, icon, label]) => (
+        <ListRow key={id} icon={icon} title={t(label)} onPress={() => go(id)} />
+      ))}
+    </View>
+  );
+}
 export function Profile() {
-  const { state, t, identity, confirm, logout } = useApp();
+  const { state, t, identity, confirm, logout, can } = useApp();
   const c = useTheme();
   return (
     <View style={styles.stack}>
@@ -67,34 +91,21 @@ export function Profile() {
         ["support", "support"],
         ["security", "securityNote"],
         ["about", "about"],
-      ].map(([id, label]) => (
-        <ListRow key={id} title={t(label)} onPress={() => go(id)} />
-      ))}
+      ]
+        .filter(([id]) => can(id))
+        .map(([id, label]) => (
+          <ListRow key={id} title={t(label)} onPress={() => go(id)} />
+        ))}
       {state.mode === "demo" && (
         <ListRow title={t("changeRole")} onPress={() => go("role")} />
       )}
-      {state.role !== "learner" && (
-        <ListRow
-          title={t(
-            ["instructor", "admin"].includes(state.role)
-              ? "admin"
-              : "management",
-          )}
-          onPress={() =>
-            go(
-              ["instructor", "admin"].includes(state.role)
-                ? "admin"
-                : "management",
-            )
-          }
-        />
-      )}
+      <RoleShortcuts />
       <Button
         label={t("signOut")}
         secondary
         onPress={() =>
           confirm("confirmSignOut", () => {
-            void logout().then(() => router.replace("/welcome"));
+            void logout().then(() => router.replace("/sign-in"));
           })
         }
       />
@@ -105,9 +116,17 @@ export function Profile() {
   );
 }
 export function Settings({ spec }: { spec: ScreenSpec }) {
-  const { state, patch, t, confirm, reset } = useApp();
+  const { state, patch, t, confirm, reset, remote } = useApp();
   const c = useTheme();
   const [showCountry, setShowCountry] = useState(false);
+  const support = remote?.support;
+  const contacts = support
+    ? ([
+        ["mail-outline", support.email, `mailto:${support.email}`],
+        ["call-outline", support.phone, `tel:${support.phone.replace(/[^+0-9]/g, "")}`],
+        ["globe-outline", support.url, support.url],
+      ] as const).filter(([, v]) => !!v)
+    : [];
   const preferences =
     spec.id === "notification-settings"
       ? (["reminders", "sopUpdates"] as const)
@@ -121,6 +140,21 @@ export function Settings({ spec }: { spec: ScreenSpec }) {
   };
   return (
     <View style={styles.stack}>
+      {spec.id === "settings" && contacts.length > 0 && (
+        <View style={{ gap: 4 }}>
+          <T variant="label" style={{ color: c.muted }}>
+            {t("support")}
+          </T>
+          {contacts.map(([icon, label, href]) => (
+            <ListRow
+              key={href}
+              icon={icon}
+              title={label}
+              onPress={() => void Linking.openURL(href)}
+            />
+          ))}
+        </View>
+      )}
       {preferences.map((pref) => (
         <Row
           key={pref}
@@ -176,7 +210,7 @@ export function Settings({ spec }: { spec: ScreenSpec }) {
   );
 }
 export function Dashboard({ spec }: { spec: ScreenSpec }) {
-  const { state, t, b } = useApp();
+  const { state, t, b, can } = useApp();
   const c = useTheme();
   const resource = useResource<JsonRecord | JsonRecord[]>(
     spec.source ? `${spec.source}?locale=${state.locale}` : undefined,
@@ -270,7 +304,7 @@ export function Dashboard({ spec }: { spec: ScreenSpec }) {
         <StateView detail={t("liveUnavailable")} />
       )}
       <Section title={t("yourNextStep")} />
-      {links.map(([id, en, ar]) => (
+      {links.filter(([id]) => can(id)).map(([id, en, ar]) => (
         <ListRow
           key={id}
           title={state.locale === "ar" ? ar : en}

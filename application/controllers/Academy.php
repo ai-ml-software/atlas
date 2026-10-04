@@ -160,6 +160,7 @@ class Academy extends CI_Controller {
     }
 
     private function render($view, array $data) {
+        if ($this->input->get('studio_theme_preview')==='1') { $this->output->set_header('Cache-Control: private, no-store')->set_header('X-Robots-Tag: noindex, nofollow'); }
         // Native landing pages share the section CMS; learner transactions stay in their original controllers.
         if ($this->db->table_exists('ha_website_draft')) {
             $route = preg_replace('~^' . preg_quote($this->locale, '~') . '(?:/|$)~', '', $this->uri->uri_string());
@@ -171,24 +172,67 @@ class Academy extends CI_Controller {
             elseif (isset($codes[$route])) { $p = $this->db->get_where('ha_page', array('code' => $codes[$route]))->row_array(); }
             if ($p) {
                 $this->load->library(array('ha_auth', 'ha_page_builder'));
-                $can_edit = $this->ha_auth->is_system_scoped() && $this->ha_auth->has('cms_pages.update');
+                $this->config->load('ha_publisher', true);
+                $can_edit = $this->config->item('live_editing', 'ha_publisher') && $this->ha_auth->is_system_scoped() && $this->ha_auth->has('cms_pages.update');
                 $data['studio_edit_url'] = $can_edit ? site_url('hkp/cms/live/' . $p['id']) . '?edit=' . ($this->locale === 'ar' ? 'ar' : 'en') : null;
                 $snapshot = $this->ha_page_builder->page($p['id']);
                 $sections = $snapshot['sections'];
                 $tr = $snapshot['tr'][$this->locale] ?? $snapshot['tr']['en'] ?? array();
-                if ($can_edit && (int) $this->input->get('studio_preview') === (int) $p['id']) {
+                // Draft previews need an editor session AND a valid signed, expiring link; anyone else sees the published page.
+                $this->load->library('ha_studio_preview');
+                if ($can_edit && (int) $this->input->get('studio_preview') === (int) $p['id'] && $this->ha_studio_preview->verify('page', $p['id'], (string) $this->input->get('studio_sig'))) {
                     $this->load->library('ha_website_studio'); $state = $this->ha_website_studio->state($p['id']);
                     $sections = $state['payload']['sections']; $tr = $state['payload']['tr'][$this->locale] ?? array();
                     // Drafts may hold editable item lines; render the same normalized representation as publication.
                     $normalized = $this->ha_website_studio->validate($state['payload']);
+                    $data['studio_page_id'] = (int) $p['id'];
                     $sections = $normalized['sections']; $tr = $normalized['tr'][$this->locale];
                     $data['studio_is_preview'] = true;
+                    // Corporate homepage blocks render from the private draft in the preview only.
+                    if ($view === 'home_altus' && isset($data['b']) && !empty($normalized['corporate']) && in_array($this->locale, array('en', 'ar'), true)) {
+                        foreach ($data['b'] as $section => &$rows) {
+                            foreach ($rows as &$row) {
+                                $d = $normalized['corporate'][(string) ($row['id'] ?? '')] ?? null;
+                                if (!$d) { continue; }
+                                foreach (array('title', 'body') as $k) {
+                                    $v = $d[$k . '_' . $this->locale];
+                                    $row[$k] = ($v === '' && $this->locale === 'ar') ? $d[$k . '_en'] : $v;
+                                }
+                            }
+                            unset($row);
+                        }
+                        unset($rows);
+                        $data['faqs'] = array_map(function ($f) { return array('question' => $f['title'], 'answer' => $f['body']); }, $data['b']['home_faq'] ?? array());
+                    }
                     $this->output->set_header('Cache-Control: private, no-store')->set_header('X-Robots-Tag: noindex, nofollow');
                 }
                 if ($can_edit) { $this->output->set_header('Cache-Control: private, no-store'); }
                 $visible = array_values(array_filter($sections, function ($s) { return !empty($s['is_visible']); }));
                 if ($view === 'page') { $data['page'] = array_merge($data['page'], $tr); $data['sections'] = $visible; }
-                else { $data['studio_sections'] = $p['status'] === 'published' || !empty($data['studio_is_preview']) ? $visible : array(); $data['studio_page_copy'] = $tr; }
+                elseif ($view === 'home') { $data['page'] = array_merge($data['page'], $tr); $data['studio_sections'] = $visible; }
+                else {
+                    $data['studio_sections'] = $p['status'] === 'published' || !empty($data['studio_is_preview']) ? $visible : array();
+                    // Corporate homepage copy has its own approved CMS source; opt into the page overlay only on reviewed publication.
+                    if ($view !== 'home_altus' || !empty($p['studio_enabled']) || !empty($data['studio_is_preview'])) { $data['studio_page_copy'] = $tr; }
+                }
+            }
+            if (!$p && isset($data[$view]['id'])) {
+                $this->load->library('ha_auth');
+                $this->config->load('ha_publisher',true);
+                $detail_editors = array('course' => array('courses.update', 'cms/catalogue_live/courses/'), 'program' => array('programs.update', 'cms/catalogue_live/programs/'),
+                    'path' => array('learning_paths.update', 'cms/catalogue_live/paths/'), 'article' => array('articles.update', 'cms/catalogue_live/articles/'), 'topic' => array('cms_pages.update', 'cms/catalogue_live/topics/'));
+                if ($this->config->item('live_editing','ha_publisher') && isset($detail_editors[$view]) && $this->ha_auth->is_system_scoped() && $this->ha_auth->has($detail_editors[$view][0])) {
+                    $data['studio_edit_url'] = site_url('hkp/' . $detail_editors[$view][1] . (int) $data[$view]['id']);
+                    $entity_types=array('course'=>'courses','program'=>'programs','path'=>'paths','article'=>'articles','topic'=>'topics');
+                    $this->load->library('ha_studio_preview');
+                    if (isset($entity_types[$view]) && $this->input->get('studio_entity_preview')===$entity_types[$view].':'.(int)$data[$view]['id'] && $this->ha_studio_preview->verify($entity_types[$view], (int) $data[$view]['id'], (string) $this->input->get('studio_sig'))) {
+                        $this->load->library('ha_content_studio'); $draft=$this->ha_content_studio->state($entity_types[$view],(int)$data[$view]['id']); $copy=$draft['payload']; $def=Ha_studio_catalogue::types()[$entity_types[$view]];
+                        $loc=$this->locale==='ar'?'ar':'en'; $data[$view]['title']=$copy['title_'.$loc]; if ($def['summary']) $data[$view][$def['summary']]=$copy['summary_'.$loc]; $data[$view][$def['body']]=$copy['body_'.$loc]; $data[$view][$def['image']]=$copy['image'];
+                        $data['studio_is_preview']=true; $this->output->set_header('X-Robots-Tag: noindex, nofollow');
+                    }
+
+                    $this->output->set_header('Cache-Control: private, no-store');
+                }
             }
         }
         $this->load->view('academy/layout', $this->shell(array_merge($data, array('view' => $view))));

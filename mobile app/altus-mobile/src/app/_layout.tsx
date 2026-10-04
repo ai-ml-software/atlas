@@ -7,6 +7,7 @@ import { Fraunces_400Regular } from "@expo-google-fonts/fraunces";
 import { IBMPlexSansArabic_400Regular } from "@expo-google-fonts/ibm-plex-sans-arabic";
 import { AppProvider } from "../state/AppProvider";
 import { StateView } from "../components/ui";
+import { RemoteGate } from "../features/RemoteGate";
 export default function Layout() {
   const [loaded, error] = useFonts({
     Body: Inter_400Regular,
@@ -17,7 +18,9 @@ export default function Layout() {
     <SafeAreaProvider>
       <AppProvider>
         {loaded || error ? (
-          <Stack screenOptions={{ headerShown: false, animation: "none" }} />
+          <RemoteGate>
+            <Stack screenOptions={{ headerShown: false, animation: "none" }} />
+          </RemoteGate>
         ) : (
           <StateView type="loading" />
         )}

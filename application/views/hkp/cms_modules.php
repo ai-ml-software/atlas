@@ -5,5 +5,5 @@
 <section class="hkp-card"><div class="hkp-table-wrap"><table class="hkp-table"><thead><tr><th><?php echo hkp_e('Module'); ?></th><th><?php echo hkp_e('Domain'); ?></th><th class="hkp-num"><?php echo hkp_e('Lessons'); ?></th><th><?php echo hkp_e('Scope'); ?></th><th><?php echo hkp_e('Status'); ?></th><th></th></tr></thead><tbody>
 <?php foreach ($rows as $c): ?><tr><td><a href="<?php echo hkp_url('cms/module/' . $c['id']); ?>"><strong><?php echo hkp_h(hkp_pick($c, 'title') ?: $c['code']); ?></strong></a><div class="hkp-small hkp-muted"><?php echo hkp_h($c['code']); ?></div></td>
   <td class="hkp-small"><?php echo hkp_h(hkp_pick($c, 'domain')); ?></td><td class="hkp-num"><?php echo (int) $c['lessons']; ?></td><td class="hkp-small"><?php echo $c['organization_id'] ? hkp_e('Client') : hkp_e('Altus global'); ?></td><td><?php echo hkp_badge($c['status']); ?></td>
-  <td><a class="hkp-btn hkp-btn--sm" href="<?php echo hkp_url('cms/module/' . $c['id']); ?>"><?php echo hkp_e('Edit'); ?></a></td></tr><?php endforeach; ?>
+  <td><div class="hkp-actions"><a class="hkp-btn hkp-btn--sm" href="<?php echo hkp_url('cms/module/' . $c['id']); ?>"><?php echo hkp_e('Edit'); ?></a><?php echo hkp_content_view_buttons('modules', $c['id'], $c['status']); ?></div></td></tr><?php endforeach; ?>
 </tbody></table></div></section>

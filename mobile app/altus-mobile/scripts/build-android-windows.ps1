@@ -2,6 +2,9 @@ param([string]$Architectures='arm64-v8a', [string]$BuildDirectory='D:\altus-buil
 $ErrorActionPreference='Stop'
 $sourcePath=(Resolve-Path -LiteralPath (Join-Path $PSScriptRoot '..')).Path
 . (Join-Path $PSScriptRoot 'android-env.ps1')
+# Public configuration is optional. Do not compile a workstation's .env key into
+# a release unless a matching production key is explicitly supplied to the build.
+if(-not $env:EXPO_PUBLIC_ALTUS_APP_KEY) { $env:EXPO_PUBLIC_ALTUS_APP_KEY='disabled' }
 $stagePath=[IO.Path]::GetFullPath($BuildDirectory).TrimEnd('\')
 if($stagePath.Length -gt 40 -or $stagePath -eq $sourcePath -or $stagePath.StartsWith($sourcePath+'\',[StringComparison]::OrdinalIgnoreCase)) { throw 'Choose a separate short native build directory, such as D:\altus-build.' }
 $marker=Join-Path $stagePath '.altus-build-origin'
@@ -16,8 +19,10 @@ Push-Location $sourcePath
 try {
   & node (Join-Path $PSScriptRoot 'prepare-signing.cjs')
   if($LASTEXITCODE -ne 0) { throw 'Release signing key preparation failed.' }
-  $excludes=@('node_modules','android','ios','dist','.expo','.credentials','.git') | ForEach-Object { Join-Path $sourcePath $_ }
-  & robocopy.exe $sourcePath $stagePath /E /XD $excludes /XF '*.log' /R:1 /W:1 /NFL /NDL /NP /NJH /NJS
+  # Exclude both sides of /PURGE: source-only absolute exclusions can erase the
+  # staged native/dependency caches even though those sources were not copied.
+  $excludes=@('node_modules','android','ios','dist','.expo','.credentials','.git') | ForEach-Object { $_; Join-Path $sourcePath $_; Join-Path $stagePath $_ }
+  & robocopy.exe $sourcePath $stagePath /E /PURGE /XD $excludes /XF '*.log' '.altus-build-origin' /R:1 /W:1 /NFL /NDL /NP /NJH /NJS
   if($LASTEXITCODE -ge 8) { throw 'Copying native build sources failed.' }
   Push-Location $stagePath
   try {

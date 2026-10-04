@@ -11,6 +11,7 @@ export default defineConfig({
   use: { ...base.use, baseURL: process.env.HKP_BASE_URL },
   webServer: [base.webServer as any, {
     command: '"C:/laragon/bin/php/php-8.1.10-Win32-vs16-x64/php.exe" -S 127.0.0.1:8099 -t .. support/router.php',
+    stderr: 'ignore', // PHP logs every asset request; assertion failures retain browser traces.
     url: 'http://127.0.0.1:8099/en', reuseExistingServer: true, timeout: 30_000,
   }],
 });

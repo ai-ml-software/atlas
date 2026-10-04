@@ -40,7 +40,7 @@
 <?php else : ?>
 <!------------- PLYR.IO ------------>
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/global/plyr/plyr.css">
-<video poster="<?php echo $this->crud_model->get_course_thumbnail_url($course_details['id']); ?>" id="player" playsinline controls>
+<video poster="<?php echo $this->crud_model->get_course_thumbnail_url($course_details['id']); ?>" id="player" playsinline controls controlslist="nodownload" oncontextmenu="return false;">
   <?php if (get_video_extension($course_details['video_url']) == 'mp4') : ?>
     <source src="<?php echo $course_details['video_url']; ?>" type="video/mp4">
   <?php elseif (get_video_extension($course_details['video_url']) == 'webm') : ?>

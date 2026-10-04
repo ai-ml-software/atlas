@@ -61,7 +61,7 @@ $get_lesson_type = get_lesson_type($lesson_details['id']);
 		$video_id = $url_array_2[1];
 	endif; ?>
 	<div class=" <?php if ($full_page) echo 'bg-black'; ?>">
-		<video id="player" playsinline controls>
+		<video id="player" playsinline controls controlslist="nodownload" oncontextmenu="return false;">
 			<source class="remove_video_src" src="https://www.googleapis.com/drive/v3/files/<?php echo $video_id; ?>?alt=media&key=<?php echo get_settings('youtube_api_key'); ?>" type="video/mp4">
 			<?php if ($lesson_details['caption'] != "" && file_exists('uploads/captions/' . $lesson_details['caption'])) : ?>
 				<track kind="captions" label="Caption" src="<?php echo base_url('uploads/captions/' . $lesson_details['caption']); ?>" srclang="en" default />
@@ -80,7 +80,7 @@ $get_lesson_type = get_lesson_type($lesson_details['id']);
 	<?php include "plyr_config.php"; ?>
 <?php elseif ($get_lesson_type == 'amazon_video_url' || $get_lesson_type == 'wasabi_video_url' || $get_lesson_type == 'academy_cloud' || $get_lesson_type == 'html5_video_url') : ?>
 	<div class=" <?php if ($full_page) echo 'bg-black'; ?>">
-		<video poster="<?php echo $lesson_thumbnail_url; ?>" id="player" playsinline controls>
+		<video poster="<?php echo $lesson_thumbnail_url; ?>" id="player" playsinline controls controlslist="nodownload" oncontextmenu="return false;">
 			<?php
 			// Academy-produced videos are stored as paths relative to this
 			// install (uploads/ai_videos/...), so they survive a domain move.
@@ -99,7 +99,7 @@ $get_lesson_type = get_lesson_type($lesson_details['id']);
 <?php elseif ($get_lesson_type == 'video_file') : ?>
 
 	<div class=" <?php if ($full_page) echo 'bg-black'; ?>">
-		<video poster="<?php echo $lesson_thumbnail_url; ?>" id="player" playsinline controls>
+		<video poster="<?php echo $lesson_thumbnail_url; ?>" id="player" playsinline controls controlslist="nodownload" oncontextmenu="return false;">
 			<source src="<?php echo site_url('files?course_id=' . $course_details['id'] . '&lesson_id=' . $lesson_details['id'] . '&type=video&ext=mp4' . '&expire=' . time()); ?>" type="video/mp4">
 			<?php if ($lesson_details['caption'] != "" && file_exists('uploads/captions/' . $lesson_details['caption'])) : ?>
 				<track kind="captions" label="Caption" src="<?php echo base_url('uploads/captions/' . $lesson_details['caption']); ?>" srclang="en" default />

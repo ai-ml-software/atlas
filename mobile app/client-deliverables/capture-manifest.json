@@ -1,5 +1,5 @@
 {
-  "created": "2026-10-02",
+  "created": "2026-10-04",
   "screenCount": 110,
   "captures": [
     {
@@ -64,7 +64,7 @@
       "ar": "مرحباً بعودتك",
       "module": "Access",
       "kind": "auth",
-      "benefit": "Securely connect a personal account or explicitly enter the demonstration.",
+      "benefit": "Sign in with email/password and open the workspace permitted by your account.",
       "next": "first-setup",
       "index": 5,
       "locale": "en",
@@ -104,7 +104,7 @@
       "ar": "تأكيد هويتك",
       "module": "Access",
       "kind": "auth",
-      "benefit": "Preserve the platform authenticator and recovery-code policy.",
+      "benefit": "Confirm a new device and pass the platform authenticator or recovery-code policy when required.",
       "index": 8,
       "locale": "en",
       "file": "008-otp-en.png",
@@ -1627,7 +1627,7 @@
       "ar": "مرحباً بعودتك",
       "module": "Access",
       "kind": "auth",
-      "benefit": "Securely connect a personal account or explicitly enter the demonstration.",
+      "benefit": "Sign in with email/password and open the workspace permitted by your account.",
       "next": "first-setup",
       "index": 5,
       "locale": "ar",
@@ -1667,7 +1667,7 @@
       "ar": "تأكيد هويتك",
       "module": "Access",
       "kind": "auth",
-      "benefit": "Preserve the platform authenticator and recovery-code policy.",
+      "benefit": "Confirm a new device and pass the platform authenticator or recovery-code policy when required.",
       "index": 8,
       "locale": "ar",
       "file": "008-otp-ar.png",

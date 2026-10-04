@@ -831,6 +831,13 @@ class Ha_catalog {
 
     public function menu($code, $locale = 'en') {
         $locale = $this->locale($locale);
+        if ($this->CI->input->get('studio_theme_preview')==='1' && $this->db->table_exists('ha_studio_draft')) {
+            $this->CI->load->library(array('ha_auth','ha_content_studio'));
+            if ($this->CI->ha_auth->is_system_scoped() && $this->CI->ha_auth->has('cms_pages.update')) {
+                $menu=$this->db->get_where('ha_menu',array('code'=>$code))->row_array();
+                if ($menu) { $state=$this->CI->ha_content_studio->state('navigation',$menu['id']); if ($state['version']) { $items=array(); foreach ($state['payload']['items'] as $item) { if (empty($item['visible'])) continue; $items[]=array('id'=>$item['id']??0,'label'=>$item['label_'.$this->col($locale)]??$item['label_en'],'url'=>$item['url_'.$this->col($locale)]??$item['url_en'],'open_in_new_tab'=>$item['open_in_new_tab']??0); } return $items; } }
+            }
+        }
         $items = $this->db
             ->select('i.id')
             ->select('i.label_' . $this->col($locale) . ' AS label', false)

@@ -1,0 +1,38 @@
+[
+  {
+    "file": "ALTUS-Admin-Guide.mp4",
+    "chapters": 57,
+    "duration_seconds": 838.32,
+    "bytes": 28430589,
+    "decoded": true,
+    "audio": "AAC English synthetic narration",
+    "video": "H264 actual browser recording"
+  },
+  {
+    "file": "ALTUS-Student-Guide.mp4",
+    "chapters": 14,
+    "duration_seconds": 186.72,
+    "bytes": 6653935,
+    "decoded": true,
+    "audio": "AAC English synthetic narration",
+    "video": "H264 actual browser recording"
+  },
+  {
+    "file": "ALTUS-Instructor-Guide.mp4",
+    "chapters": 20,
+    "duration_seconds": 280.64,
+    "bytes": 9042630,
+    "decoded": true,
+    "audio": "AAC English synthetic narration",
+    "video": "H264 actual browser recording"
+  },
+  {
+    "file": "ALTUS-Mobile-Guide.mp4",
+    "chapters": 5,
+    "duration_seconds": 91.96000000000001,
+    "bytes": 1389177,
+    "decoded": true,
+    "audio": "AAC English synthetic narration",
+    "video": "H264 actual browser recording"
+  }
+]

@@ -1,28 +1,30 @@
-# ALTUS Android release APK
+# ALTUS Android release 1.2.1
 
-Built and verified on 2 October 2026.
+Built and verified on 4 October 2026. This report supersedes earlier build details.
 
-| Item | Result |
-|---|---|
-| File | ALTUS-1.0.0-release.apk |
-| Size | 61,477,976 bytes / 58.6 MiB |
-| Application | ALTUS Knowledge & Performance |
-| Package | com.altusgulf.knowledge |
-| Version | 1.0.0 / version code 1 |
-| Minimum Android | API 24 / Android 7.0 |
-| Target Android | API 36 |
-| Architecture | ARM64 (arm64-v8a) |
-| Native build | Gradle assembleRelease passed; 569 tasks executed |
-| Signature | Dedicated ALTUS RSA signing key; apksigner verification passed with APK Signature Scheme v2 |
-| JavaScript | 2,861,568 bytes bundled inside APK; Metro is not required to open the installed app |
-| Native libraries | 26 ARM64 libraries included |
-| Source integrity | Every app source file matches the short-folder build source |
-| Device validation | Not performed; user requested the APK file only |
+- APK: ALTUS-1.2.1-release.apk; version code 5.
+- Package: com.altusgulf.knowledge.
+- Size: 106625498 bytes / 101.7 MiB.
+- Android 7+ (minimum API 24), target API 36.
+- Architectures: ARM64, ARMv7 and x86_64.
+- Signature: APK Signature Scheme v2 verified; RSA 3072. The certificate matches release 1.2.0.
+- JavaScript: 2887044 bytes bundled; 78 native libraries. No Metro or Expo Go is needed.
+- All src files and app.json match the short-folder build source.
+- No workstation configuration key, account password or personal token is bundled.
+- TypeScript/lint and 11 access/config tests passed; Expo Doctor 21/21.
+- Authentication service: 10 tests, 50 assertions. Existing key/2FA regression: 15 tests, 73 assertions.
+- Actual login/role HTTP and browser checks: 33. API/assessment security regression: 20.
+- UI: 220 English/Arabic captures across all 110 registered routes, zero browser runtime errors or horizontal overflow.
+- Native physical-device testing has not been performed.
 
-SHA-256: `7d1ab03ab0107493a97516fc4ec08a28b9c95ee1cb4ade538996a2915af16bde`
+SHA-256: 115ac4c4d657480edf6a262f65a2d8c3821f33cd1e1fac5c8ef363b23a0798ac
 
-Transfer the APK to an ARM64 Android phone and open it. Permit installation from the chosen file source if Android asks. Open **ALTUS Knowledge & Performance** and select **Explore the demonstration** to review without a platform credential. The app bundles its demonstration data, photography and fonts. Live workflows need the additive server API and an authorized personal key.
+Transfer the APK to the phone, open it and permit installation from that source. The app opens email/password login; server-assigned permissions control tabs, shortcuts and screens. Device/email confirmation and authenticator/recovery verification are enforced when required.
 
-The signing key and credentials are stored privately under the Windows user's LocalAppData/ALTUS/Signing directory, outside the website, source and client pack. Future updates must use the same signing key. A reusable Windows build wrapper avoids long native paths by staging in D:\altus-build.
+The public website still returned the old API-key-only login response on 4 October. Deploy ../ALTUS-Mobile-Backend-1.2.1.zip and migration 20260101000034 there before native password login can work. The local migration has been applied. No production deployment was performed.
 
-This is the signed release build of the current product preview. The production integrations and native acceptance checks listed in `../../FINAL-AUDIT.md` remain outstanding. No Google Play submission or iOS binary is included. Detailed checks accompany this report in `signature-verification.txt`, `package-metadata.txt` and `build-verification.json`.
+Advanced administration opens the secure web console and requires a separate web login. Other unfinished native integrations are recorded in ../../FINAL-AUDIT.md; this build must not be described as a fully released enterprise platform.
+
+The client PDF and 1080p narrated video were regenerated with the current 110 English/Arabic screen captures. The video covers every registered screen and is 12 minutes 49 seconds.
+
+Signing credentials remain privately outside the workspace under the Windows user LocalAppData/ALTUS/Signing directory. Preserve that key for updates. No iOS binary or store submission is included.

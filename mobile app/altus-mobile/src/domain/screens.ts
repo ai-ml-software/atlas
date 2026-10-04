@@ -79,7 +79,7 @@ export const screens: ScreenSpec[] = [
     module: "Access",
     kind: "auth",
     benefit:
-      "Securely connect a personal account or explicitly enter the demonstration.",
+      "Sign in with email/password and open the workspace permitted by your account.",
     next: "first-setup",
   },
   {
@@ -104,7 +104,7 @@ export const screens: ScreenSpec[] = [
     ar: "تأكيد هويتك",
     module: "Access",
     kind: "auth",
-    benefit: "Preserve the platform authenticator and recovery-code policy.",
+    benefit: "Confirm a new device and pass the platform authenticator or recovery-code policy when required.",
   },
   {
     id: "first-setup",

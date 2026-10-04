@@ -20,6 +20,13 @@
             </nav>
             <p class="ha-foot__place"><?= ha_pe('Riyadh') ?> | <?= ha_pe('Saudi Arabia') ?> | <?= ha_pe('GCC') ?></p>
         </div>
+        <?php if (!empty($ha_site_contact)): ?>
+            <address class="ha-foot__contact" style="font-style:normal;display:flex;flex-wrap:wrap;gap:8px 20px;margin:12px 0">
+                <?php if (!empty($ha_site_contact['contact_email'])): ?><a href="mailto:<?= html_escape($ha_site_contact['contact_email']) ?>"><?= html_escape($ha_site_contact['contact_email']) ?></a><?php endif; ?>
+                <?php if (!empty($ha_site_contact['contact_phone'])): ?><a href="tel:<?= html_escape(preg_replace('/[^0-9+]/', '', $ha_site_contact['contact_phone'])) ?>" dir="ltr"><?= html_escape($ha_site_contact['contact_phone']) ?></a><?php endif; ?>
+                <?php if (!empty($ha_site_contact['contact_address'])): ?><span><?= html_escape($ha_site_contact['contact_address']) ?></span><?php endif; ?>
+            </address>
+        <?php endif; ?>
         <p class="ha-foot__statement"><?= html_escape(ha_chrome('ha_footer_statement', $locale)) ?></p>
 
         <?php

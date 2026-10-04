@@ -27,6 +27,9 @@ e2e/test-results/
 e2e/report-isolated/
 e2e/playwright-report/
 e2e/test-results-isolated/
+e2e/report-studio/
+e2e/test-results-studio/
+tools/__pycache__/
 
 # --- Editors / OS ---
 .DS_Store
@@ -34,3 +37,6 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+application/config/ha_publisher.local.php
+application/config/ha_mobile.local.php

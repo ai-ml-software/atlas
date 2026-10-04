@@ -1,0 +1,272 @@
+{
+  "role": "learner",
+  "created": "2026-10-03T09:05:48.124Z",
+  "base": "http://127.0.0.1:8099",
+  "raw": "C:\\laragon\\www\\atlas\\atlas\\application\\logs\\guide-recordings\\page@16f8b68fafb93d3a7e55b4493370fabe.webm",
+  "recording": "Actual browser screen recording on isolated seeded accounts; English synthetic narration. No real personal data or plaintext keys recorded.",
+  "parts": [
+    {
+      "file": "C:\\laragon\\www\\atlas\\atlas\\application\\logs\\guide-recordings\\page@16f8b68fafb93d3a7e55b4493370fabe.webm",
+      "duration": 186.686
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Dashboard",
+      "url": "http://127.0.0.1:8099/hkp",
+      "text": "Your dashboard shows the next learning step, current progress and permitted work. Use the sidebar to open learning, approved knowledge, assessments and certificates. Switch language without changing your account permissions.",
+      "file": "C:\\laragon\\www\\atlas\\atlas\\application\\logs\\guide-recordings\\learner-0.wav",
+      "duration": 14.781632653061225,
+      "start": 0.704,
+      "controls": [
+        "Guest Complaint Handling",
+        "My learning plan",
+        "What stands between you and Ready",
+        "Recommended for your gaps",
+        "Upcoming deadlines",
+        "My action plans",
+        "Ask the assistant",
+        "Latest notifications"
+      ],
+      "end": 15.646
+    },
+    {
+      "title": "My learning",
+      "url": "http://127.0.0.1:8099/hkp/learn",
+      "text": "Use the learning list to find assigned, active or completed courses. Open a course, continue its next available lesson and follow any prerequisites. Progress is stored against your own account.",
+      "file": "C:\\laragon\\www\\atlas\\atlas\\application\\logs\\guide-recordings\\learner-1.wav",
+      "duration": 13.3621768707483,
+      "start": 16.381,
+      "controls": [
+        "Guest Complaint Handling"
+      ],
+      "end": 29.934
+    },
+    {
+      "title": "Learning paths",
+      "url": "http://127.0.0.1:8099/hkp/learn/paths",
+      "text": "Open an assigned learning path, check the required sequence and due dates, and continue the next available course. Locked items show their prerequisites.",
+      "file": "C:\\laragon\\www\\atlas\\atlas\\application\\logs\\guide-recordings\\learner-2.wav",
+      "duration": 10.19265306122449,
+      "start": 30.605,
+      "controls": [
+        "Required for your role: Front Desk Agent",
+        "Hotel Fundamentals — Front Desk · Hotel Fundamentals",
+        "Front Office — Check-in · Front Office",
+        "Guest Experience — Service Recovery · Guest Experience",
+        "Hotel Fundamentals",
+        "Sales & Marketing",
+        "Front Office",
+        "Revenue & Reservations",
+        "Housekeeping",
+        "Guest Experience",
+        "Food & Beverage",
+        "Quality & Audit",
+        "Kitchen",
+        "Security & Safety",
+        "Leadership & Capability"
+      ],
+      "end": 40.961
+    },
+    {
+      "title": "Knowledge",
+      "url": "http://127.0.0.1:8099/hkp/knowledge",
+      "text": "Search approved SOPs and knowledge in your permitted organisation and language. Open the document, check its version and read the procedure. Acknowledge only after you have read and understood it.",
+      "file": "C:\\laragon\\www\\atlas\\atlas\\application\\logs\\guide-recordings\\learner-3.wav",
+      "duration": 12.327074829931973,
+      "start": 41.678,
+      "controls": [
+        "Title contains",
+        "Type",
+        "All types",
+        "Sop",
+        "Policy",
+        "Standard",
+        "Procedure",
+        "Checklist",
+        "Work instruction",
+        "Faq",
+        "Job aid",
+        "Guide",
+        "Reference",
+        "Case study",
+        "Best practice",
+        "Knowledge article",
+        "Domain",
+        "All domains",
+        "Hotel Fundamentals",
+        "Sales & Marketing",
+        "Front Office",
+        "Revenue & Reservations",
+        "Housekeeping",
+        "Guest Experience",
+        "Food & Beverage",
+        "Quality & Audit",
+        "Kitchen",
+        "Security & Safety",
+        "Governance",
+        "Community & People",
+        "Responsible Tourism",
+        "Operational Sustainability",
+        "Leadership & Capability",
+        "Digital & Analytics",
+        "Filter"
+      ],
+      "end": 54.193
+    },
+    {
+      "title": "Assessments",
+      "url": "http://127.0.0.1:8099/hkp/assess",
+      "text": "Open an available assessment, read its instructions and submit your answers. Attempts and passing requirements are enforced on the server. Review the outcome before retrying if another attempt is allowed.",
+      "file": "C:\\laragon\\www\\atlas\\atlas\\application\\logs\\guide-recordings\\learner-4.wav",
+      "duration": 13.006530612244898,
+      "start": 55.422,
+      "controls": [
+        "Knowledge (theory)",
+        "Practical (observed)"
+      ],
+      "end": 68.622
+    },
+    {
+      "title": "Competencies",
+      "url": "http://127.0.0.1:8099/hkp/competencies",
+      "text": "Review your competency record, the required evidence and gaps. Arrange any practical assessment with an authorised assessor. A completed course is one part of the evidence.",
+      "file": "C:\\laragon\\www\\atlas\\atlas\\application\\logs\\guide-recordings\\learner-5.wav",
+      "duration": 11.97718820861678,
+      "start": 69.29,
+      "controls": [
+        "Required for my role",
+        "Open gaps",
+        "Request reassessment",
+        "Recommended practice",
+        "Assessment history"
+      ],
+      "end": 81.427
+    },
+    {
+      "title": "Action plans",
+      "url": "http://127.0.0.1:8099/hkp/actions",
+      "text": "Create or update an action plan with an owner, due date and evidence. Submit it for review when ready, then follow the review comments and update the result.",
+      "file": "C:\\laragon\\www\\atlas\\atlas\\application\\logs\\guide-recordings\\learner-6.wav",
+      "duration": 10.17750566893424,
+      "start": 82.129,
+      "controls": [],
+      "end": 92.493
+    },
+    {
+      "title": "Certificates",
+      "url": "http://127.0.0.1:8099/hkp/certificates",
+      "text": "Review issued certificates and expiry dates. Open or download the permitted certificate and use its verification code to confirm its status. A revoked certificate no longer verifies as valid.",
+      "file": "C:\\laragon\\www\\atlas\\atlas\\application\\logs\\guide-recordings\\learner-7.wav",
+      "duration": 12.921768707482993,
+      "start": 93.176,
+      "controls": [
+        "Front Office Certification · 2 of 9 requirements met"
+      ],
+      "end": 106.295
+    },
+    {
+      "title": "AI assistant",
+      "url": "http://127.0.0.1:8099/hkp/assistant",
+      "text": "Ask a focused question about approved operational knowledge. Review the cited sources. The assistant reports insufficient coverage when the approved library cannot support an answer.",
+      "file": "C:\\laragon\\www\\atlas\\atlas\\application\\logs\\guide-recordings\\learner-8.wav",
+      "duration": 12.017052154195012,
+      "start": 106.9,
+      "controls": [
+        "Your question",
+        "Ask"
+      ],
+      "end": 119.098
+    },
+    {
+      "title": "Readiness",
+      "url": "http://127.0.0.1:8099/hkp/team/readiness",
+      "text": "Review readiness requirements and supporting evidence. Investigate missing learning, practical criteria and operational actions before confirming readiness for a role or opening.",
+      "file": "C:\\laragon\\www\\atlas\\atlas\\application\\logs\\guide-recordings\\learner-9.wav",
+      "duration": 11.26721088435374,
+      "start": 119.792,
+      "controls": [
+        "Readiness heatmap",
+        "People"
+      ],
+      "end": 131.227
+    },
+    {
+      "title": "Opening readiness",
+      "url": "http://127.0.0.1:8099/hkp/team/opening",
+      "text": "Review readiness requirements and supporting evidence. Investigate missing learning, practical criteria and operational actions before confirming readiness for a role or opening.",
+      "file": "C:\\laragon\\www\\atlas\\atlas\\application\\logs\\guide-recordings\\learner-10.wav",
+      "duration": 11.26721088435374,
+      "start": 131.973,
+      "controls": [
+        "Add item",
+        "Recruitment",
+        "Training",
+        "Competency",
+        "Sop",
+        "Systems",
+        "Safety",
+        "Quality",
+        "Commercial",
+        "Critical",
+        "Save"
+      ],
+      "end": 143.41
+    },
+    {
+      "title": "Account security and personal mobile key",
+      "url": "http://127.0.0.1:8099/account_security",
+      "text": "Manage your authenticator and recovery codes. Create a personal mobile API key using your current password and a second-factor code when enabled. Copy the key once into mobile Sign in. Revoke it here when no longer needed.",
+      "file": "C:\\laragon\\www\\atlas\\atlas\\application\\logs\\guide-recordings\\learner-11.wav",
+      "duration": 15.446575963718821,
+      "start": 145.781,
+      "controls": [
+        "Set up authenticator app",
+        "Current password / كلمة المرور الحالية",
+        "Create personal mobile key"
+      ],
+      "end": 161.415
+    },
+    {
+      "title": "Notifications",
+      "url": "http://127.0.0.1:8099/hkp/notifications",
+      "text": "Read your account notifications and follow their linked actions. Mark the items read through the supported controls. Mobile push delivery is a separate integration and is not demonstrated in this recording.",
+      "file": "C:\\laragon\\www\\atlas\\atlas\\application\\logs\\guide-recordings\\learner-12.wav",
+      "duration": 13.021859410430839,
+      "start": 162.024,
+      "controls": [
+        "Mark all as read"
+      ],
+      "end": 175.231
+    },
+    {
+      "title": "Profile and preferences",
+      "url": "http://127.0.0.1:8099/hkp/profile",
+      "text": "Review your account information, language and accessible property context. Change only the fields permitted by your role and keep your security settings current.",
+      "file": "C:\\laragon\\www\\atlas\\atlas\\application\\logs\\guide-recordings\\learner-13.wav",
+      "duration": 10.617460317460317,
+      "start": 175.881,
+      "controls": [
+        "Preferences",
+        "Language",
+        "English",
+        "العربية",
+        "Timezone",
+        "Asia/Riyadh",
+        "Asia/Dubai",
+        "Asia/Qatar",
+        "Asia/Kuwait",
+        "Asia/Bahrain",
+        "Asia/Muscat",
+        "Africa/Cairo",
+        "Asia/Amman",
+        "Europe/London",
+        "Notifications",
+        "Save",
+        "My role"
+      ],
+      "end": 186.686
+    }
+  ],
+  "errors": []
+}

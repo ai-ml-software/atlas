@@ -42,6 +42,9 @@ abstract class Hkp_Controller extends CI_Controller {
             }
         }
         if ($this->public_action()) {
+            // Background manifest/worker requests must not consume messages waiting for the next page.
+            $this->session->keep_flashdata('hkp_ok');
+            $this->session->keep_flashdata('hkp_error');
             hkp_locale();
             return;
         }
@@ -256,7 +259,13 @@ abstract class Hkp_Controller extends CI_Controller {
             $catalogue['publisher'] = array('publisher', hkp_t('AI Publisher'), 'cms/publisher', 'spark', 'ai.generate');
         }
         if ($this->ha_auth->is_system_scoped()) {
+            $catalogue['mobile_app'] = array('mobile_app', hkp_t('Mobile app settings'), 'admin/mobile', 'cog', 'settings.view');
             $catalogue['cms_navigation'] = array('cms_navigation', hkp_t('Navigation & footer'), 'cms/navigation', 'route', 'cms_pages.update');
+            $catalogue['cms_theme'] = array('cms_theme', hkp_t('Theme & site settings'), 'cms/theme', 'palette', 'cms_pages.update');
+            // MCP console: same gate as Ha_mcp_console::can_manage() (platform scope + settings.update).
+            $catalogue['mcp_console'] = array('mcp_console', hkp_t('MCP & AI connections'), 'mcp', 'plug', 'settings.update');
+            $catalogue['cms_integrations'] =array('cms_integrations', hkp_t('Integrations & approvals'), 'cms/integrations', 'shield', 'cms_pages.update');
+            $catalogue['studio_revisions'] = array('studio_revisions', hkp_t('Revision history'), 'studio/revisions', 'list', 'cms_pages.update');
             $catalogue['catalogue_programs'] = array('catalogue_programs', hkp_t('Programs'), 'cms/catalogue/programs', 'layers', 'programs.view');
             $catalogue['catalogue_paths'] = array('catalogue_paths', hkp_t('Learning paths'), 'cms/catalogue/paths', 'route', 'learning_paths.view');
             $catalogue['catalogue_articles'] = array('catalogue_articles', hkp_t('Articles'), 'cms/catalogue/articles', 'file', 'articles.view');
@@ -268,8 +277,8 @@ abstract class Hkp_Controller extends CI_Controller {
             'manager' => array('People & performance', array('team_home', 'team', 'cohorts', 'assign', 'assessor', 'gaps', 'team_actions', 'readiness', 'opening', 'team_certs', 'audits', 'kpis', 'reports')),
             'portfolio' => array('Portfolio', array('orgs', 'props', 'people_admin', 'engagements', 'frameworks', 'exec', 'board')),
             'studio' => array('Content Studio', array('studio', 'cms_modules', 'catalogue_programs', 'catalogue_paths', 'curriculum', 'assess_admin', 'catalogue_articles', 'catalogue_topics', 'comp_admin', 'publisher', 'imports', 'content_review', 'library_coverage')),
-            'website' => array('Website', array('cms_pages', 'cms_navigation', 'corporate')),
-            'platform' => array('Platform', array('ai_gov', 'rules', 'branding', 'audit_log', 'system')),
+            'website' => array('Website', array('cms_pages', 'cms_navigation', 'cms_theme', 'cms_integrations', 'studio_revisions', 'corporate')),
+            'platform' => array('Platform', array('mcp_console', 'mobile_app', 'ai_gov', 'rules', 'branding', 'audit_log', 'system')),
         );
         $sections = array();
         foreach ($groups as $key => $group) {

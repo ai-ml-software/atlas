@@ -125,7 +125,12 @@ class Hkp extends Hkp_Controller {
             $c = $L->course($l['course_id']);
             $ids = array_map('intval', array_column($c['lessons'], 'id'));
             $pos = array_search((int) $id, $ids, true);
-            $this->render('learn_lesson', array('l' => $l, 'c' => $c, 'progress' => $open['progress'],
+            // A quiz-gated lesson cannot be completed until its checkpoint is passed:
+            // offer the checkpoint instead of a "complete" button that can only fail.
+            $checkpoint = ($l['completion_rule'] === 'quiz' && $l['assessment_id']
+                && !$this->db->where(array('assessment_id' => $l['assessment_id'], 'user_id' => $this->uid, 'passed' => 1, 'status' => 'graded'))->count_all_results('ha_assessment_attempt'))
+                ? (int) $l['assessment_id'] : 0;
+            $this->render('learn_lesson', array('l' => $l, 'c' => $c, 'progress' => $open['progress'], 'checkpoint' => $checkpoint,
                 'prev' => $pos > 0 ? $ids[$pos - 1] : null, 'next' => $pos !== false && $pos < count($ids) - 1 ? $ids[$pos + 1] : null,
                 'video' => $this->video_for($l)), $l['title'], 'learn');
             return;
@@ -176,40 +181,8 @@ class Hkp extends Hkp_Controller {
 
     /** Best playable source for a video lesson: published academy video, YouTube/Vimeo embed or direct URL. */
     protected function video_for(array $l) {
-        $src = null;
-        $country = null;
-        if ($this->db->table_exists('ha_language_inventory')) {
-            $this->load->library('ha_library_video');
-            $profile = $this->db->get_where('ha_profile', array('user_id' => $this->uid))->row_array();
-            $country = $profile && isset($profile['country']) ? $profile['country'] : null;
-            $src = $this->ha_library_video->for_lesson($l['id'], hkp_locale(), $country);
-        } elseif ($this->db->table_exists('ha_lesson_video_source')) {
-            $src = $this->db->where(array('lesson_id' => $l['id'], 'status' => 'live'))->limit(1)->get('ha_lesson_video_source')->row_array();
-        }
-        if (!$src && $l['lesson_type'] !== 'video') { return null; }
-        // Preserve grandfathered URLs, while a known-unavailable source never
-        // becomes playable again merely by falling back to the same URL.
-        if (!$src && $this->db->table_exists('ha_lesson_video_source')) {
-            foreach ($this->db->get_where('ha_lesson_video_source', array('lesson_id' => $l['id']))->result_array() as $candidate) {
-                if ($candidate['watch_url'] !== $l['video_url'] && $candidate['embed_url'] !== $l['video_url']) { continue; }
-                if ($candidate['status'] === 'unavailable' || (isset($candidate['region_restrictions']) && !Ha_library_video::country_allowed($candidate['region_restrictions'], $country))) { return null; }
-            }
-        }
-        $url = $src ? ($src['provider'] === 'academy' || $src['provider'] === 'upload' ? $src['watch_url'] : ($src['embed_url'] ?: $src['watch_url'])) : $l['video_url'];
-        if (!$url) {
-            return null;
-        }
-        $meta = array('locale' => $src && isset($src['locale']) ? $src['locale'] : 'en', 'credit' => $src ? $src['author_name'] : '',
-            'captions_url' => $src && !empty($src['captions_authorized']) ? $src['captions_path'] : $l['captions_url'],
-            'watch_url' => $src && preg_match('~^https://~', $src['watch_url']) ? $src['watch_url'] : null);
-        if (preg_match('~(?:youtube(?:-nocookie)?\.com/(?:watch\?v=|embed/)|youtu\.be/)([A-Za-z0-9_-]{11})~', $url, $m)) {
-            return array('type' => 'embed', 'src' => 'https://www.youtube-nocookie.com/embed/' . $m[1]) + $meta;
-        }
-        if (preg_match('~vimeo\.com/(\d+)~', $url, $m)) {
-            return array('type' => 'embed', 'src' => 'https://player.vimeo.com/video/' . $m[1]) + $meta;
-        }
-        if (preg_match('~dailymotion\.com/(?:embed/video/|video/)([A-Za-z0-9]+)~', $url, $m)) { return array('type' => 'embed', 'src' => 'https://www.dailymotion.com/embed/video/' . $m[1]) + $meta; }
-        return array('type' => 'file', 'src' => preg_match('~^https?://~', $url) ? $url : base_url(ltrim($url, '/'))) + $meta;
+        $this->load->library('ha_lesson_video');
+        return $this->ha_lesson_video->for_lesson($l, $this->uid, hkp_locale());
     }
 
     // ------------------------------------------------------------ knowledge

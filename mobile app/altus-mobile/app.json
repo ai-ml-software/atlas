@@ -2,29 +2,47 @@
   "expo": {
     "name": "ALTUS Knowledge & Performance",
     "slug": "altus-knowledge-performance",
-    "version": "1.0.0",
+    "version": "1.2.1",
     "scheme": "altus",
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
-    "icon": "./assets/altus-favicon.png",
+    "icon": "./assets/icon.png",
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.altusgulf.knowledge",
+      "buildNumber": "5",
       "infoPlist": {
-        "NSCameraUsageDescription": "Scan training attendance and certificate QR codes when you choose to scan."
+        "NSCameraUsageDescription": "Scan training attendance and certificate QR codes when you choose to scan.",
+        "ITSAppUsesNonExemptEncryption": false,
+        "CFBundleAllowMixedLocalizations": true
       }
     },
     "android": {
       "package": "com.altusgulf.knowledge",
+      "versionCode": 5,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png",
         "backgroundColor": "#F7F5F1"
-      }
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.POST_NOTIFICATIONS"
+      ],
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ]
     },
     "web": {
       "bundler": "metro",
       "output": "single",
       "favicon": "./assets/altus-favicon.png"
+    },
+    "extra": {
+      "platformUrl": "https://altusgulf.com",
+      "supportsRTL": true
     },
     "plugins": [
       "expo-router",
@@ -45,13 +63,23 @@
         }
       ],
       "expo-document-picker",
-      "expo-notifications",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/android-icon-monochrome.png",
+          "color": "#C45B2F"
+        }
+      ],
       [
         "expo-splash-screen",
         {
           "image": "./assets/altus-mark.png",
           "imageWidth": 110,
-          "backgroundColor": "#F7F5F1"
+          "backgroundColor": "#F7F5F1",
+          "dark": {
+            "image": "./assets/altus-mark.png",
+            "backgroundColor": "#1C2227"
+          }
         }
       ]
     ],

@@ -73,8 +73,23 @@ $api_base = site_url('api/v1');
 <div class="col-lg-6">
     <div class="card h-100"><div class="card-body">
         <h4 class="page-title mb-3"><i class="mdi mdi-key-chain-variant"></i> API keys</h4>
+        <?php if (!empty($can_mobile_keys)): ?>
+        <section class="border rounded p-3 mb-3" data-personal-mobile-key>
+            <h5>Personal mobile API key / مفتاح تطبيق الجوال الشخصي</h5>
+            <p class="small">Use this ha_ key in the app Sign in screen. It expires in 90 days and follows your current account permissions. The altm_ configuration key belongs in Server setup.</p>
+            <form method="post" action="<?php echo site_url('account_security/mobile_key_create'); ?>" autocomplete="off">
+                <?php echo ha_csrf_field(); ?>
+                <label for="mobile-key-password">Current password / كلمة المرور الحالية</label>
+                <input id="mobile-key-password" class="form-control mb-2" name="password" type="password" autocomplete="current-password" required>
+                <?php if ($twofa_on): ?><label for="mobile-key-code">Authenticator code / رمز المصادقة</label><input id="mobile-key-code" class="form-control mb-2" name="code" inputmode="numeric" autocomplete="one-time-code" required><?php endif; ?>
+                <button class="btn btn-primary">Create personal mobile key</button>
+            </form>
+        </section>
+        <?php endif; ?>
         <?php if (!$can_keys): ?>
-            <p class="text-muted mb-0">Your role does not include API access.</p>
+            <?php if (!empty($new_key)): ?><div class="alert alert-success"><strong>Copy your new mobile key now. It will not be shown again.</strong><input id="ha-newkey" class="form-control font-monospace" value="<?php echo html_escape($new_key); ?>" readonly aria-label="New API key"></div><?php endif; ?>
+            <?php foreach ($keys as $k): ?><div class="border-bottom py-2"><strong><?php echo html_escape($k['name']); ?></strong> <code>ha_<?php echo html_escape($k['prefix']); ?>_…</code><?php if (!$k['revoked_at']): ?><form method="post" action="<?php echo site_url('account_security/key_revoke'); ?>"><?php echo ha_csrf_field(); ?><input type="hidden" name="key_id" value="<?php echo (int) $k['id']; ?>"><button class="btn btn-sm btn-outline-danger">Revoke</button></form><?php else: ?> <span>Revoked</span><?php endif; ?></div><?php endforeach; ?>
+            <p class="text-muted mb-0">General integration keys require API access permission.</p>
         <?php else: ?>
             <?php if (!empty($new_key)): ?>
                 <div class="alert alert-success" role="alert">

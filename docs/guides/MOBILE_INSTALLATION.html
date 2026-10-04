@@ -1,0 +1,76 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MOBILE INSTALLATION</title><style>:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f7f5f1;color:#1c2227;font:16px/1.7 'Segoe UI',Tahoma,Arial,sans-serif}header{background:#1c2227;color:white;padding:28px max(24px,calc((100% - 1080px)/2));border-bottom:4px solid #c45b2f}header a{color:#f3c5a8}main{max-width:1080px;margin:auto;padding:28px 24px 70px}h1,h2,h3{line-height:1.25}h2{margin-top:36px}a{color:#944527}pre{padding:18px;background:#e9e5df;border-radius:10px;overflow:auto}code{font-size:.9em}table{border-collapse:collapse;width:100%;background:white;font-size:14px}td,th{padding:10px;border:1px solid #ddd;text-align:start;vertical-align:top}.card{background:white;border:1px solid #ded8cf;border-radius:14px;padding:22px;margin-bottom:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}video{display:block;width:100%;max-height:640px;background:#111}.chapters{max-height:300px;overflow:auto;display:flex;flex-wrap:wrap;gap:8px;padding:10px 0}button,.button{border:1px solid #c45b2f;border-radius:8px;background:white;color:#71371e;padding:9px 12px;cursor:pointer;text-decoration:none;font:inherit}p{margin:12px 0}.muted{color:#646a6d}img{max-width:100%}@media(max-width:600px){main{padding:20px 15px}table{display:block;overflow:auto}header{padding:22px 15px}}@media print{header,nav,.no-print{display:none}body{background:white;font-size:12px}main{padding:0;max-width:none}h2{break-after:avoid}pre,table{break-inside:avoid}a{color:inherit}}</style><header><strong>ALTUS KNOWLEDGE &amp; PERFORMANCE</strong><br><a href="index.html">User guides and recordings</a></header><main><nav class="no-print"><button onclick="window.print()">Print / Save PDF</button></nav><h1 dir="auto">Mobile installation and connection / تثبيت التطبيق والاتصال</h1>
+<p dir="auto">The current signed Android build is <strong>ALTUS 1.0.1</strong>, version code <strong>2</strong>, ARM64. It connects to this local Laragon installation using <code>http://localhost/atlas/atlas</code>. The build contains an app configuration key only; it contains no user&#39;s personal sign-in key. Production deployment and app-store submission are separate.</p>
+<h2 dir="auto">1. Prepare the backend</h2>
+<p dir="auto">Keep Laragon Apache and MySQL running. Follow <a href="ADMIN_INSTALL.html">backend installation</a>, use the local database override and run additive migrations through 31. Open <code>http://localhost/atlas/atlas/hkp/admin/mobile</code> as a system administrator; confirm Mobile app settings appears in Platform and the legacy admin sidebar. Existing accounts, certificates and learner history are preserved.</p>
+<p dir="auto">From the repository root, the local setup helper can create the ignored mobile <code>.env</code> and an app configuration key through the native service:</p>
+<pre><code>
+&amp; &#39;C:\laragon\bin\php\php-8.1.10-Win32-vs16-x64\php.exe&#39; index.php mobile_cli configure_local
+
+&amp; &#39;C:\laragon\bin\php\php-8.1.10-Win32-vs16-x64\php.exe&#39; index.php mobile_cli configure_preview
+
+</code></pre>
+<p dir="auto">The helper refuses a remote database/URL and does not replace an existing <code>.env</code>. <code>configure_preview</code> enables only localhost/127.0.0.1 port 8083 in the ignored <code>application/config/ha_mobile.local.php</code>. Hosted previews should use exact HTTPS origins through <code>HA_MOBILE_WEB_ORIGINS</code>. Native apps do not depend on browser CORS.</p>
+<h2 dir="auto">2. Install on an Android phone or emulator</h2>
+<p dir="auto">Install Android platform-tools. Connect an authorised ARM64 phone by USB, enable USB debugging and accept its computer prompt. The local computer must keep Apache running. In a new PowerShell window:</p>
+<pre><code>
+adb devices
+
+adb reverse tcp:80 tcp:80
+
+adb install -r &#39;C:\laragon\www\atlas\atlas\mobile app\client-deliverables\android\ALTUS-1.0.1-release.apk&#39;
+
+</code></pre>
+<p dir="auto">Reverse forwarding makes the phone&#39;s localhost:80 reach Laragon on the computer. Repeat it after disconnecting or restarting the device. On an Android emulator you can instead configure <code>http://10.0.2.2/atlas/atlas</code> and the matching app key in Server setup. The default APK is ARM64; build with the emulator&#39;s matching architecture if needed. A standalone phone without USB forwarding needs a reachable deployed HTTPS server. Do not enter the computer&#39;s localhost address and expect it to work over Wi-Fi.</p>
+<p dir="auto">Open the app. In Sign in or Profile → Settings, choose Server setup. Verify the URL and key prefix, then Test connection. If using a replacement key, enter the new <code>altm_…</code> value and Save. Settings contains a visible Personal API key option as well.</p>
+<h2 dir="auto">3. Sign in as admin, student or instructor</h2>
+<p dir="auto">On Sign in, choose Get my personal API key. Sign in to the website and open Account Security. Enter your current password and authenticator code if enabled, then Create personal mobile key. Copy the <code>ha_…</code> key once and paste it into the app&#39;s Personal API key field with the same platform URL. Press Connect account. The key follows the user&#39;s live roles, permissions and tenant access and expires after 90 days. Revoke it from Account Security when replacing a device. Learners need no general integration-key permission for this own mobile key.</p>
+<h2 dir="auto">4. Build from source</h2>
+<pre><code>
+cd &#39;C:\laragon\www\atlas\atlas\mobile app\altus-mobile&#39;
+
+npm.cmd ci
+
+Copy-Item &#39;.env.example&#39; &#39;.env&#39; # Only for a new setup; do not replace an existing configured file.
+
+# Edit .env with the reachable URL and the altm_ key from the same backend.
+
+npm.cmd run check
+
+npx.cmd expo start --clear
+
+</code></pre>
+<p dir="auto">The required environment values are:</p>
+<pre><code>
+EXPO_PUBLIC_PLATFORM_URL=http://localhost/atlas/atlas
+
+EXPO_PUBLIC_ALTUS_APP_KEY=altm_&lt;key-from-this-backend&gt;
+
+</code></pre>
+<p dir="auto"><code>.env</code> is ignored by Git. Public Expo variables are compiled into the JavaScript bundle, so never put <code>ha_</code> keys, AI credentials or signing passwords there. A changed <code>.env</code> requires restarting Expo or rebuilding the APK. A saved device Server setup takes precedence until reset.</p>
+<p dir="auto">For a signed Windows build, the existing wrapper stages generated Android code in a separate short directory and reuses the private signing key:</p>
+<pre><code>
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-android-windows.ps1
+
+</code></pre>
+<p dir="auto">Its output name follows <code>app.json</code>&#39;s version. Increase Android versionCode for subsequent releases. The network config plugin allows plain HTTP only for localhost, 127.0.0.1 and 10.0.2.2; all other hosts require HTTPS. Do not remove this policy to work around a production TLS problem.</p>
+<h2 dir="auto">5. Browser preview and tests</h2>
+<pre><code>
+npm.cmd run export:web
+
+node scripts/serve.cjs
+
+# Open http://127.0.0.1:8083
+
+</code></pre>
+<p dir="auto">From the repository root, run the PHP regression suite only in its protected test namespace:</p>
+<pre><code>
+$env:HA_TEST_DB=&#39;atlas_hospitality_test_mobile_fix&#39;
+
+&amp; &#39;C:\laragon\bin\php\php-8.1.10-Win32-vs16-x64\php.exe&#39; index.php ha_test run
+
+</code></pre>
+<p dir="auto">For browser fixtures, prepare the dedicated <code>atlas_hospitality_test</code> database before the first run; this rebuilds that test database only. In <code>e2e</code>, run <code>npx.cmd playwright test --config=playwright.studio.config.ts tests/mobile-settings.spec.ts --project=desktop</code>. The exported mobile preview must already be running on port 8083. These tests cover menu/tenant restrictions, Arabic/mobile layout, configuration/key lifecycle, actual Expo setup, own learner key creation and actual live sign-in. The role-video recording script also checks every recorded page for HTTP/PHP errors.</p>
+<h2 dir="auto">Production and iOS</h2>
+<p dir="auto">Deploy the backend changes first, run migrations and generate the production site&#39;s own app key. Configure <code>EXPO_PUBLIC_PLATFORM_URL=https://altusgulf.com</code> only when that site&#39;s mobile endpoints and credentials are ready. A key generated in the local database does not authenticate on another database. Follow the existing <a href="MOBILE_APP.html">mobile release guide</a> for signing, EAS and store steps. Do not upload the local <code>.env</code>, test accounts or local API keys as production credentials. iOS needs a Mac or authorised EAS build and device/TestFlight validation; it was not built on this Windows host.</p>
+<h2 dir="auto">العربية</h2>
+<p dir="auto">شغّل Apache وMySQL وثبّت ترحيلات قاعدة البيانات حتى الإصدار 31. افتح إعدادات تطبيق الجوال بحساب مسؤول النظام وأنشئ مفتاح <code>altm_</code> عند الحاجة. للتجربة المحلية على هاتف USB استخدم <code>adb reverse tcp:80 tcp:80</code> ثم ثبّت ملف APK إصدار 1.0.1. اختبر الاتصال من إعداد الخادم واحفظ. أنشئ مفتاحك الشخصي <code>ha_</code> من أمان الحساب بعد تأكيد كلمة المرور والمصادقة الثنائية، ثم استخدمه في ربط الحساب. للإنتاج استخدم خادم HTTPS ومفتاحًا صادرًا من قاعدة بيانات الإنتاج نفسها. لا تضع المفاتيح الشخصية في <code>.env</code>.</p></main></html>

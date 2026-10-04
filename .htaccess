@@ -26,6 +26,12 @@
     # to the path the site is served at, with both slashes:
     # RewriteBase /atlas/
 
+    # Pass the Authorization header to PHP (CGI/FastCGI hosts drop it), so
+    # bearer tokens reach /mcp. PHP reads HTTP_AUTHORIZATION or the
+    # REDIRECT_HTTP_AUTHORIZATION copy this rule creates.
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
     # Send everything that is not a real file or directory to the front
     # controller. The query string form keeps CodeIgniter's URI parsing
     # working on hosts where PATH_INFO is unavailable.
@@ -45,12 +51,14 @@
 # Never serve the application source or the framework. Written as a rewrite
 # rather than RedirectMatch so it does not need to know the install path.
 <IfModule mod_rewrite.c>
-    RewriteRule ^(application|system)(/|$) - [F,L]
+    RewriteRule ^(application|system|mcp-gateway|tools|e2e|mobile[[:space:]]app/altus-mobile)(/|$) - [F,L,NC]
+    # Hidden paths (.git/, .env ...) are never served; only /.well-known/ (OAuth metadata) is public.
+    RewriteRule (^|/)\.(?!well-known(/|$)) - [F,L]
 </IfModule>
 
 # Apache 2.4 access syntax, guarded so an Apache 2.2 host does not 500 here.
 <IfModule mod_authz_core.c>
-    <FilesMatch "^\.">
+    <FilesMatch "^\.(?!well-known$)">
         Require all denied
     </FilesMatch>
     <FilesMatch "\.(sql|log|md|lock|ini|sh|py|bak|dist|example)$">
@@ -59,7 +67,7 @@
 </IfModule>
 
 <IfModule !mod_authz_core.c>
-    <FilesMatch "^\.">
+    <FilesMatch "^\.(?!well-known$)">
         Order allow,deny
         Deny from all
     </FilesMatch>

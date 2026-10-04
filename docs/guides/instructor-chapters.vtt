@@ -1,0 +1,61 @@
+WEBVTT
+
+00:00:00.831 --> 00:00:16.762
+Courses & lessons — Create or open a course. Edit its sections, lessons, media and assessments. Check learner-facing content and language coverage. Saving draft content does not publish it; use the normal publication controls.
+
+00:00:18.422 --> 00:00:37.199
+AI Publisher — Upload a PDF, choose the output type and follow extraction progress. Review source text and generated content, reorder sections, and save a private draft. Configure an AI provider first. SOP output must pass its normal review and approval process.
+
+00:00:37.967 --> 00:00:52.899
+Dashboard — Your dashboard shows the next learning step, current progress and permitted work. Use the sidebar to open learning, approved knowledge, assessments and certificates. Switch language without changing your account permissions.
+
+00:00:53.507 --> 00:01:07.054
+My learning — Use the learning list to find assigned, active or completed courses. Open a course, continue its next available lesson and follow any prerequisites. Progress is stored against your own account.
+
+00:01:07.663 --> 00:01:18.032
+Learning paths — Open an assigned learning path, check the required sequence and due dates, and continue the next available course. Locked items show their prerequisites.
+
+00:01:18.656 --> 00:01:31.129
+Knowledge — Search approved SOPs and knowledge in your permitted organisation and language. Open the document, check its version and read the procedure. Acknowledge only after you have read and understood it.
+
+00:01:31.689 --> 00:01:44.874
+Assessments — Open an available assessment, read its instructions and submit your answers. Attempts and passing requirements are enforced on the server. Review the outcome before retrying if another attempt is allowed.
+
+00:01:45.455 --> 00:01:57.590
+Competencies — Review your competency record, the required evidence and gaps. Arrange any practical assessment with an authorised assessor. A completed course is one part of the evidence.
+
+00:01:58.197 --> 00:02:11.277
+Certificates — Review issued certificates and expiry dates. Open or download the permitted certificate and use its verification code to confirm its status. A revoked certificate no longer verifies as valid.
+
+00:02:11.875 --> 00:02:24.074
+AI assistant — Ask a focused question about approved operational knowledge. Review the cited sources. The assistant reports insufficient coverage when the approved library cannot support an answer.
+
+00:02:24.728 --> 00:02:38.293
+Team dashboard — Use the team dashboard to prioritise learning, capability gaps and operational actions for visible staff. Figures come from the current tenant data; choose the property context before making decisions.
+
+00:02:38.902 --> 00:02:50.143
+Team — Search the team within your permitted scope. Open a learner to inspect their learning and capability record. Organisation and property boundaries are enforced by the server.
+
+00:02:50.719 --> 00:03:03.191
+Reports — Choose the report and filters for your permitted property context. Review learning, compliance and capability results, then export the supported spreadsheet or report if your role allows it.
+
+00:03:03.782 --> 00:03:18.897
+Content dashboard — Content dashboard: review the records and visible actions in your current tenant context. Use the search, filters and forms shown here. Required fields are validated and every change still requires your current permission.
+
+00:03:19.568 --> 00:03:31.767
+Curriculum — Review the structured curriculum and its learning relationships. Update permitted definitions and check downstream courses, competency requirements and language coverage before publication.
+
+00:03:32.633 --> 00:03:44.343
+Assessments — Create an assessment, set its scoring and attempts, and edit questions and approved answers. Review grading and practical assessment requirements before releasing it to learners.
+
+00:03:44.966 --> 00:03:58.929
+Content review — Review knowledge drafts and their source evidence. Submit changes for review, request corrections or approve with the required role. Published SOP versions and acknowledgements remain governed by the existing workflow.
+
+00:03:59.819 --> 00:04:15.427
+Account security and personal mobile key — Manage your authenticator and recovery codes. Create a personal mobile API key using your current password and a second-factor code when enabled. Copy the key once into mobile Sign in. Revoke it here when no longer needed.
+
+00:04:16.020 --> 00:04:29.189
+Notifications — Read your account notifications and follow their linked actions. Mark the items read through the supported controls. Mobile push delivery is a separate integration and is not demonstrated in this recording.
+
+00:04:29.811 --> 00:04:40.608
+Profile and preferences — Review your account information, language and accessible property context. Change only the fields permitted by your role and keep your security settings current.

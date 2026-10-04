@@ -10,7 +10,7 @@
         <div>
             <div class="ha-prose">
                 <h2><?= html_escape($t['overview']) ?></h2>
-                <p><?= html_escape($program['description']) ?></p>
+                <p<?= ha_studio('body') ?>><?= html_escape($program['description']) ?></p>
             </div>
 
             <h2 style="margin-top:2rem"><?= html_escape($t['courses']) ?></h2>

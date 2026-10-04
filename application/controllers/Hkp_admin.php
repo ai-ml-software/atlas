@@ -63,6 +63,29 @@ class Hkp_admin extends Hkp_Controller {
             'awaiting' => $count('ha_sop_version', "status IN ('internal_review','quality_review','approved','review')"),
             'ai_week' => $count('ha_ai_query', "created_at >= '" . date('Y-m-d H:i:s', strtotime('-7 days')) . "'"),
         );
+        // The same figures as they stood 30 days ago, where the record history allows it (null = no history).
+        $cut = date('Y-m-d H:i:s', strtotime('-30 days'));
+        $org_where = $this->ha_auth->is_system_scoped() ? '1=1' : 'id IN (' . implode(',', $this->ha_auth->organization_ids() ?: array(0)) . ')';
+        $prop_where = $this->ha_auth->is_system_scoped() ? "status = 'active'" : "status = 'active' AND organization_id IN (" . implode(',', $this->ha_auth->organization_ids() ?: array(0)) . ')';
+        $prev = array(
+            'organisations' => $count('ha_organization', "$org_where AND created_at < '$cut'"),
+            'properties' => $count('ha_property', "$prop_where AND created_at < '$cut'"),
+            'users' => $count('users', "id IN ($in) AND date_added < " . strtotime('-30 days')),
+            'active' => null,
+            'learners' => $count('ha_user_role ur JOIN ha_role r ON r.id = ur.role_id', "r.code = 'learner' AND ur.user_id IN ($in) AND ur.created_at < '$cut'"),
+            'managers' => $count('ha_user_role ur JOIN ha_role r ON r.id = ur.role_id', "r.code IN ('property_manager','department_manager','supervisor','training_manager','org_admin') AND ur.user_id IN ($in) AND ur.created_at < '$cut'"),
+            'courses' => $count('ha_course', "status = 'published' AND COALESCE(published_at, created_at) < '$cut'"),
+            'domains' => $count('ha_domain', "status = 'active' AND created_at < '$cut'"),
+            'tracks' => $count('ha_track', "status = 'published' AND COALESCE(published_at, created_at) < '$cut'"),
+            'lessons' => $count('ha_lesson', "status = 'published' AND created_at < '$cut'"),
+            'assessments' => $count('ha_assessment', "status = 'published' AND created_at < '$cut'"),
+            'competencies' => $count('ha_skill', "status = 'active' AND created_at < '$cut'"),
+            'gaps' => $count('ha_competency_gap', "user_id IN ($in) AND detected_at < '$cut' AND (closed_at IS NULL OR closed_at >= '$cut')"),
+            'actions' => $count('ha_action_plan', "user_id IN ($in) AND created_at < '$cut' AND (completed_at IS NULL OR completed_at >= '$cut')"),
+            'certificates' => $count('ha_certificate', "user_id IN ($in) AND issued_at < '$cut' AND (revoked_at IS NULL OR revoked_at >= '$cut')"),
+            'expiring' => null, 'awaiting' => null,
+            'ai_week' => $count('ha_ai_query', "created_at >= '" . date('Y-m-d H:i:s', strtotime('-14 days')) . "' AND created_at < '" . date('Y-m-d H:i:s', strtotime('-7 days')) . "'"),
+        );
         $property_query = $db->select('id')->from('ha_property');
         $this->ha_auth->scope_query($property_query, array('organization_id' => 'organization_id', 'property_id' => 'id'));
         $allowed_properties = array_map('intval', array_column($property_query->get()->result_array(), 'id'));
@@ -78,7 +101,7 @@ class Hkp_admin extends Hkp_Controller {
         $audit_query = $db->from('ha_audit_log');
         $this->ha_auth->scope_query($audit_query, array('organization_id' => 'organization_id', 'property_id' => 'property_id', 'user_id' => 'user_id'));
         $recent = $audit_query->order_by('id', 'DESC')->limit(6)->get()->result_array();
-        $this->render('admin_dashboard', array('s' => $stats, 'compare' => $compare, 'recent' => $recent, 'k' => $this->ha_kpi->platform_kpis($users)),
+        $this->render('admin_dashboard', array('s' => $stats, 'prev' => $prev, 'compare' => $compare, 'recent' => $recent, 'k' => $this->ha_kpi->platform_kpis($users)),
             hkp_t('Portfolio dashboard'), 'altus_home');
     }
 
@@ -726,6 +749,54 @@ class Hkp_admin extends Hkp_Controller {
             'prompt' => $this->ha_governed_ai->governance_prompt('en'), 'sources' => $this->db->select('d.id, d.code, d.ai_enabled, t.title')->from('ha_sop_document d')
                 ->join('ha_sop_version_translation t', "t.version_id = d.current_version_id AND t.locale = 'en'", 'left')->where('d.status', 'published')->order_by('t.title')->get()->result_array()),
             hkp_t('AI governance'), 'ai_gov');
+    }
+
+    // -------------------------------------------------------------- mobile
+
+    /** /hkp/admin/mobile — remote config + app keys for the native app. */
+    public function mobile($op = '', $id = 0) {
+        $this->need('settings.view');
+        // This configuration and its app keys are shared across all properties.
+        if (!$this->ha_auth->is_system_scoped()) {
+            show_error(hkp_t('You do not have permission to do that.'), 403);
+            return;
+        }
+        $this->load->library('ha_mobile_config');
+        $M = $this->ha_mobile_config;
+        if ($op !== '') {
+            $this->need('settings.update');
+            $this->post_guard();
+            if ($op === 'save') {
+                $this->attempt(function () use ($M) { $M->save((array) $this->input->post('m'), $this->uid); }, hkp_t('Mobile app settings saved.'));
+                return;
+            }
+            if ($op === 'key_create' || $op === 'key_rotate') {
+                try {
+                    $new = $op === 'key_create' ? $M->create_key($this->input->post('name'), $this->input->post('platform'), $this->uid) : $M->rotate_key((int) $id, $this->uid);
+                    // Shown exactly once on the next page view, then gone from the session.
+                    $this->session->set_flashdata('hkp_mobile_key', $new['key']);
+                    $this->back($op === 'key_create' ? hkp_t('Key created. Copy it now; it will not be shown again.') : hkp_t('Key rotated. The old key no longer works.'), true, hkp_url('admin/mobile'));
+                } catch (Exception $e) { $this->back($e->getMessage(), false, hkp_url('admin/mobile')); }
+                return;
+            }
+            if ($op === 'key_revoke') {
+                $this->back($M->revoke_key((int) $id, $this->uid) ? hkp_t('Key revoked.') : hkp_t('That key is not active.'), true, hkp_url('admin/mobile'));
+                return;
+            }
+            show_404();
+        }
+        $config = $M->get();
+        $new_key = $this->session->flashdata('hkp_mobile_key');
+        $setup_qr = null;
+        if ($new_key) {
+            // QR for the app's "Server setup" scanner. Rendered locally; never sent to a third party.
+            $this->load->library('ha_totp');
+            $base = $config['settings']['api_base_url'] ?: rtrim(base_url(), '/');
+            $setup_qr = $this->ha_totp->qr_data_uri('altus-setup:' . json_encode(array('base' => $base, 'appKey' => $new_key), JSON_UNESCAPED_SLASHES));
+        }
+        $this->render('admin_mobile', array('ready' => $M->ready(), 'config' => $config, 'keys' => $M->keys(),
+            'features' => Ha_mobile_config::features(), 'new_key' => $new_key, 'setup_qr' => $setup_qr,
+            'endpoint' => site_url('api/v1/mobile/config'), 'can_edit' => $this->can('settings.update')), hkp_t('Mobile app settings'), 'mobile_app');
     }
 
     // --------------------------------------------------------- engagements

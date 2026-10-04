@@ -2,7 +2,8 @@
 $loc = hkp_locale();
 $brand_name = hkp_pick($brand, 'brand_name');
 $show_altus = $brand['show_altus'] !== 'client' && $brand['source'] !== 'platform';
-$logo = $brand['logo_path'] ? base_url(ltrim($brand['logo_path'], '/')) : base_url('logo.png');
+$logo_path = $brand['logo_path'] && is_file(FCPATH . ltrim($brand['logo_path'], '/')) ? ltrim($brand['logo_path'], '/') : 'uploads/system/altus-mark.png';
+$logo = base_url($logo_path);
 $me_name = $me ? trim($me['first_name'] . ' ' . $me['last_name']) : '';
 $initials = $me ? mb_strtoupper(mb_substr($me['first_name'], 0, 1) . mb_substr($me['last_name'], 0, 1)) : '';
 $chosen_property = (int) $this->session->userdata('hkp_property');
@@ -61,7 +62,8 @@ $chosen_property = (int) $this->session->userdata('hkp_property');
     <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
     <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4v16l13-8z" fill="currentColor"/></symbol>
     <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v12m0 0-4-4m4 4 4-4M4 20h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
-    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+    <symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 3v4M15 3v4M6.5 7h11v3.5a5.5 5.5 0 0 1-11 0zM12 16v5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-lock"viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
   </defs>
 </svg>
 
@@ -76,11 +78,17 @@ $chosen_property = (int) $this->session->userdata('hkp_property');
     </div>
     <div class="studio-nav-tools"><label class="hkp-sr" for="studio-nav-search"><?php echo hkp_e('Find a page'); ?></label><input id="studio-nav-search" type="search" placeholder="<?php echo hkp_e('Find a page…'); ?>"><button type="button" class="studio-collapse" data-collapse-sidebar aria-label="<?php echo hkp_e('Collapse sidebar'); ?>" aria-expanded="true"><?php echo hkp_icon('menu'); ?></button></div>
     <nav class="hkp-nav">
+      <?php $pinned = array('cms_pages','cms_modules','publisher','cms_navigation','mcp_console'); ?>
+      <div class="studio-nav-primary"><div class="hkp-nav__section"><?php echo hkp_e('Create & manage'); ?></div>
+      <?php foreach ($pinned as $primary_key): foreach ($nav as $sec): foreach ($sec['items'] as $it): if ($it['key'] !== $primary_key) continue; ?>
+      <a class="hkp-nav__item<?php echo $active === $it['key'] ? ' is-active' : ''; ?>" data-nav="<?php echo hkp_h($it['key']); ?>" href="<?php echo hkp_h($it['url']); ?>"<?php echo $active === $it['key'] ? ' aria-current="page"' : ''; ?>><?php echo hkp_icon($it['icon']); ?><span><?php echo hkp_h($it['key']==='cms_modules' ? hkp_t('Courses & lessons') : $it['label']); ?></span><?php if ($it['key'] === 'mcp_console'): ?><em class="studio-nav-new" aria-hidden="true">MCP</em><?php endif; ?></a>
+      <?php endforeach; endforeach; endforeach; ?>
+      <?php if ($this->ha_auth->is_system_scoped() && $this->ha_auth->has('cms_pages.update')): ?><a class="hkp-nav__item<?php echo $active === 'cms_theme' ? ' is-active' : ''; ?>" href="<?php echo hkp_url('cms/theme'); ?>"<?php echo $active === 'cms_theme' ? ' aria-current="page"' : ''; ?>><?php echo hkp_icon('cog'); ?><span><?php echo hkp_e('Theme & layout'); ?></span></a><a class="hkp-nav__item<?php echo $active === 'cms_integrations' ? ' is-active' : ''; ?>" href="<?php echo hkp_url('cms/integrations'); ?>"<?php echo $active === 'cms_integrations' ? ' aria-current="page"' : ''; ?>><?php echo hkp_icon('shield'); ?><span><?php echo hkp_e('Integrations & approvals'); ?></span></a><?php endif; ?></div>
       <?php foreach ($nav as $section_key => $sec): $section_active = in_array($active, array_column($sec['items'], 'key'), true); ?>
         <details class="studio-nav-group" data-nav-group="<?php echo hkp_h($section_key); ?>"<?php echo $section_active || $section_key === 'overview' || count($nav) <= 2 ? ' open' : ''; ?>>
         <summary class="hkp-nav__section"><?php echo hkp_h($sec['label']); ?><span aria-hidden="true">⌄</span></summary>
-        <?php foreach ($sec['items'] as $it): ?>
-          <a href="<?php echo hkp_h($it['url']); ?>" title="<?php echo hkp_h($it['label']); ?>" class="hkp-nav__item<?php echo $active === $it['key'] ? ' is-active' : ''; ?>"<?php echo $active === $it['key'] ? ' aria-current="page"' : ''; ?>>
+        <?php foreach ($sec['items'] as $it): if ($it['key'] !== 'mcp_console' && in_array($it['key'], array_merge($pinned,array('cms_theme','cms_integrations')), true)) continue; ?>
+          <a data-nav="<?php echo hkp_h($it['key']); ?>" href="<?php echo hkp_h($it['url']); ?>" title="<?php echo hkp_h($it['label']); ?>" class="hkp-nav__item<?php echo $active === $it['key'] ? ' is-active' : ''; ?>"<?php echo $active === $it['key'] ? ' aria-current="page"' : ''; ?>>
             <?php echo hkp_icon($it['icon']); ?><span><?php echo hkp_h($it['label']); ?></span>
           </a>
         <?php endforeach; ?>
@@ -91,7 +99,8 @@ $chosen_property = (int) $this->session->userdata('hkp_property');
         <a class="hkp-nav__item" href="<?php echo site_url('admin/dashboard'); ?>"><?php echo hkp_icon('cog'); ?><span><?php echo hkp_e('Classic admin panel'); ?></span></a>
       <?php endif; ?>
     </nav>
-    <div class="studio-side-profile"><span class="hkp-avatar"><?php echo hkp_h($initials); ?></span><div><strong><?php echo hkp_h($me_name); ?></strong><a href="<?php echo hkp_url('profile'); ?>"><?php echo hkp_e('Account settings'); ?></a></div><a href="<?php echo site_url('login/logout'); ?>" aria-label="<?php echo hkp_e('Sign out'); ?>"><?php echo hkp_icon('logout'); ?></a></div>
+    <aside class="studio-side-promo" aria-label="<?php echo hkp_e('ALTUS Knowledge and Performance'); ?>"><span class="studio-side-promo__mark" aria-hidden="true">♛</span><p><?php echo hkp_e('Driving better performance together.'); ?></p><a href="<?php echo hkp_h(site_url($loc . '/about')); ?>"><?php echo hkp_e('Learn more'); ?> <span aria-hidden="true" class="studio-flip">→</span></a></aside>
+    <div class="studio-side-profile"><span class="hkp-avatar"><?php echo hkp_h($initials); ?></span><div><strong><?php echo hkp_h($me_name); ?></strong><a href="<?php echo hkp_url('profile'); ?>"><?php echo hkp_e('Account settings'); ?></a></div></div>
   </aside>
 
   <div class="hkp-main-wrap">
@@ -168,6 +177,8 @@ $chosen_property = (int) $this->session->userdata('hkp_property');
 <dialog id="studio-command" class="studio-command" aria-labelledby="studio-command-title"><div class="studio-command-head"><h2 id="studio-command-title"><?php echo hkp_e('Where would you like to go?'); ?></h2><button class="hkp-iconbtn" type="button" data-close-command aria-label="<?php echo hkp_e('Close'); ?>">×</button></div><label class="hkp-sr" for="studio-command-input"><?php echo hkp_e('Search pages'); ?></label><input id="studio-command-input" class="hkp-input" type="search" placeholder="<?php echo hkp_e('Search pages and actions…'); ?>"><div class="studio-command-results"><?php foreach ($nav as $sec): foreach ($sec['items'] as $it): ?><a href="<?php echo hkp_h($it['url']); ?>"><?php echo hkp_icon($it['icon']); ?><span><?php echo hkp_h($it['label']); ?></span><small><?php echo hkp_h($sec['label']); ?></small></a><?php endforeach; endforeach; ?><?php if ($this->ha_auth->has('courses.create')): ?><a href="<?php echo hkp_url('cms/module'); ?>"><?php echo hkp_icon('book'); ?><span><?php echo hkp_e('Create course'); ?></span></a><?php endif; ?><?php if ($this->ha_auth->has('cms_pages.create')): ?><a href="<?php echo hkp_url('cms') . '#new-page'; ?>"><?php echo hkp_icon('pen'); ?><span><?php echo hkp_e('Create page'); ?></span></a><?php endif; ?></div></dialog>
 <script>window.HKP = {csrf: <?php echo json_encode(ha_csrf_token()); ?>, base: <?php echo json_encode(hkp_url()); ?>, rtl: <?php echo hkp_is_rtl() ? 'true' : 'false'; ?>, sw: <?php echo json_encode(hkp_url('sw.js')); ?>};</script>
 <script src="<?php echo hkp_asset('assets/hkp/hkp.js'); ?>" defer></script>
+  <?php $studio_text = array(); foreach (array('Title', 'Summary', 'Page title', 'Subtitle', 'Page content', 'Hero image path', 'Button label', 'Button URL', 'Upload image', 'Hide', 'Show', 'Duplicate', 'Delete', 'Remove', 'Add module', 'Add lesson', 'Add question', 'Add section', 'Module title', 'Lesson title', 'Learning objective', 'Content (HTML supported)', 'Minutes', 'Passing score (%)', 'Question', 'Explanation', 'Correct option index (0 = first option)', 'Choose from media', 'Close', 'Search media', 'No images yet. Upload an image below.', 'Edit', 'Unsaved changes', 'Saving private draft…', 'Draft saved', 'Published', 'Homepage blocks', 'Text', 'Items', 'one per line', 'Hidden', 'Move section up', 'Move section down', 'Uploading image…', 'Image', 'Body', 'Unsaved private changes', 'Private draft saved', 'Save and review your changes first.', 'Publish this reviewed saved version?', 'Publish this reviewed page draft to the website?', 'Discard this private draft and reload the published page? Download your draft first if you need to keep the edits.', 'Review link copied. It expires in 24 hours and requires an editor sign-in.', 'Review link ready. It expires in 24 hours and requires an editor sign-in.') as $key) { $studio_text[$key] = hkp_t($key); } ?>
+  <script>window.HKP.text = <?php echo json_encode($studio_text, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_UNESCAPED_UNICODE); ?>;</script>
 <script src="<?php echo hkp_asset('assets/hkp/admin-studio.js'); ?>" defer></script>
 </body>
 </html>

@@ -41,6 +41,48 @@ export function one(query: string): string | undefined {
   return sql(query)[0]?.[0];
 }
 
+/**
+ * Copies the matching rows aside and returns a function that puts them back exactly,
+ * so a spec that publishes to shared live content leaves the local database as it found it.
+ *   const restore = preserve([['ha_page_translation', 'page_id=6'], ['ha_page_section', 'page_id=6']]);
+ *   try { ... } finally { restore(); }
+ */
+export function preserve(rows: [table: string, where: string][]): () => void {
+  const tag = `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`;
+  const copies = rows.map(([table, where], i) => {
+    if (!/^[a-z_]+$/.test(table)) throw new Error(`Unsafe table name ${table}`);
+    const copy = `zz_e2e_keep_${tag}_${i}`;
+    sql(`CREATE TABLE ${copy} AS SELECT * FROM ${table} WHERE ${where}`);
+    return { table, where, copy };
+  });
+  return () => {
+    sql(copies.map(({ table, where, copy }) => `DELETE FROM ${table} WHERE ${where}; INSERT INTO ${table} SELECT * FROM ${copy}; DROP TABLE ${copy};`).join(' '));
+  };
+}
+
+/** preserve() for a CMS page: translations, sections and private live draft, plus the page row's publication fields. */
+export function keepPage(id: number): () => void {
+  const fields = sql(`SELECT studio_enabled, IFNULL(published_at,'NULL'), updated_at FROM ha_page WHERE id=${id}`)[0];
+  const rows = preserve([['ha_page_translation', `page_id=${id}`], ['ha_page_section', `page_id=${id}`], ['ha_website_draft', `page_id=${id}`]]);
+  return () => {
+    rows();
+    const published = fields[1] === 'NULL' ? 'NULL' : `'${fields[1]}'`;
+    sql(`UPDATE ha_page SET studio_enabled=${Number(fields[0])}, published_at=${published}, updated_at='${fields[2]}' WHERE id=${id}`);
+  };
+}
+
+/**
+ * Environment for a CLI worker (php index.php publisher_cli ...) that must see the same
+ * database as the site under test: the isolated test DB on the loopback router, otherwise
+ * the local DB from database.local.php (the CLI's default).
+ */
+export function workerEnv(): NodeJS.ProcessEnv {
+  const env = { ...process.env };
+  if (localDatabase() === 'atlas_hospitality_test') env.ALTUS_PUBLISHER_TEST_DB = 'atlas_hospitality_test';
+  else delete env.ALTUS_PUBLISHER_TEST_DB;
+  return env;
+}
+
 export function userId(email: string): number {
   return Number(one(`SELECT id FROM users WHERE email = '${email.replace(/'/g, "''")}'`));
 }

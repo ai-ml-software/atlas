@@ -1,0 +1,287 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>IMPLEMENTATION STATUS</title><style>:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f7f5f1;color:#1c2227;font:16px/1.7 'Segoe UI',Tahoma,Arial,sans-serif}header{background:#1c2227;color:white;padding:28px max(24px,calc((100% - 1080px)/2));border-bottom:4px solid #c45b2f}header a{color:#f3c5a8}main{max-width:1080px;margin:auto;padding:28px 24px 70px}h1,h2,h3{line-height:1.25}h2{margin-top:36px}a{color:#944527}pre{padding:18px;background:#e9e5df;border-radius:10px;overflow:auto}code{font-size:.9em}table{border-collapse:collapse;width:100%;background:white;font-size:14px}td,th{padding:10px;border:1px solid #ddd;text-align:start;vertical-align:top}.card{background:white;border:1px solid #ded8cf;border-radius:14px;padding:22px;margin-bottom:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}video{display:block;width:100%;max-height:640px;background:#111}.chapters{max-height:300px;overflow:auto;display:flex;flex-wrap:wrap;gap:8px;padding:10px 0}button,.button{border:1px solid #c45b2f;border-radius:8px;background:white;color:#71371e;padding:9px 12px;cursor:pointer;text-decoration:none;font:inherit}p{margin:12px 0}.muted{color:#646a6d}img{max-width:100%}@media(max-width:600px){main{padding:20px 15px}table{display:block;overflow:auto}header{padding:22px 15px}}@media print{header,nav,.no-print{display:none}body{background:white;font-size:12px}main{padding:0;max-width:none}h2{break-after:avoid}pre,table{break-inside:avoid}a{color:inherit}}</style><header><strong>ALTUS KNOWLEDGE &amp; PERFORMANCE</strong><br><a href="index.html">User guides and recordings</a></header><main><h1 dir="auto">Hospitality Academy — Implementation Status</h1>
+<p dir="auto">Target specifications: <code>plan-final.txt</code> (60 sections, 19 phases) and, from 2026-09-24,</p>
+<p dir="auto">the ALTUS HK&amp;P upgrade specification <code>ppt-features.txt</code> (190 sections), which is tracked</p>
+<p dir="auto">section by section in <a href="gap.html">gap.md</a>.</p>
+<p dir="auto">Host application: Academy LMS (CodeIgniter 3.1.9, PHP 8.1 locally), <code>C:\laragon\www\atlas\atlas</code>.</p>
+<p dir="auto">Working database (local): <code>atlas_merged</code> (production dump + migrations 11–15), selected by</p>
+<p dir="auto"><code>application/config/database.local.php</code>. Test database: <code>atlas_hospitality_test</code> (rebuilt on every run).</p>
+<p dir="auto">Status vocabulary, as required by plan section 57:</p>
+<table>
+<tr><th>Status</th><th>Meaning</th></tr>
+<tr><td>VERIFIED</td><td>Code exists and an automated test or audit proves it works</td></tr>
+<tr><td>IMPLEMENTED</td><td>Code exists and runs, no automated test yet</td></tr>
+<tr><td>NOT STARTED</td><td>No code yet</td></tr>
+</table>
+<p dir="auto">This file reports the true state. Nothing is marked VERIFIED without a passing check.</p>
+<p dir="auto">---</p>
+<h2 dir="auto">Stack decision, recorded</h2>
+<p dir="auto"><code>plan-final.txt</code> addresses &quot;an existing Laravel application&quot;. This repository is</p>
+<p dir="auto">CodeIgniter 3, not Laravel. A Laravel implementation of the same specification</p>
+<p dir="auto">also exists at <code>C:\laragon\www\atlas-lms\bk</code>. Both facts were put to the project</p>
+<p dir="auto">owner, who directed the build to proceed inside the CodeIgniter application at</p>
+<p dir="auto"><code>Academy-LMS</code>. That decision is why the architecture below uses CodeIgniter</p>
+<p dir="auto">libraries and a hand-written migration, seeder, test and audit runner.</p>
+<p dir="auto">---</p>
+<h2 dir="auto">Verification commands</h2>
+<pre><code>
+cd C:/laragon/www/atlas-lms/Academy-LMS
+
+
+
+php index.php ha_cli status        # migration state
+
+php index.php ha_cli migrate       # apply pending migrations
+
+php index.php ha_cli seed          # idempotent seed
+
+php index.php ha_cli fresh         # full rollback, migrate, seed
+
+php index.php ha_test run          # whole test suite
+
+php index.php ha_test run seo      # one suite
+
+
+
+# photography
+
+php index.php ha_images fetch          # download the licensed photo library
+
+php index.php ha_images fetch_variants # extra photos per course category
+
+php index.php ha_images assign         # attach photos to content
+
+php index.php ha_images report         # licence list and coverage
+
+
+
+# rendered page audit against the live server
+
+HA_AUDIT_BASE=http://localhost/atlas-lms/Academy-LMS php index.php ha_audit run
+
+HA_AUDIT_BASE=http://localhost/atlas-lms/Academy-LMS php index.php ha_audit flows
+
+</code></pre>
+<p dir="auto">Live URL: &lt;http://localhost/atlas-lms/Academy-LMS/&gt; (root redirects to <code>/en</code> or</p>
+<p dir="auto"><code>/ar</code> by browser language).</p>
+<p dir="auto"><strong>Last full test run (2026-09-25): 136 tests, 136 passed, 0 failed, 2,100+ assertions.</strong></p>
+<p dir="auto"><strong>Last authenticated crawl (2026-09-25, production data copy): 9 roles, 1,100+ pages, 0 errors, 0 dead links.</strong></p>
+<p dir="auto"><strong>Arabic interface coverage: 1,673 / 1,673 strings (enforced by <code>Test_cms</code>).</strong></p>
+<p dir="auto"><strong>Last Playwright browser run (2026-09-25): 170 passed, 0 failed, 0 skipped, on desktop 1440 px and phone 390 px, in Edge (<code>e2e/</code>, <code>npm test</code>).</strong></p>
+<p dir="auto">Figures below this line that predate 2026-09-24 are kept as history:</p>
+<p dir="auto"><strong>Earlier full test run: 83 tests, 83 passed, 0 failed, 1,523 assertions.</strong></p>
+<p dir="auto"><strong>Last browser route sweep: both frontends, signed out, learner and admin, 0 problems.</strong></p>
+<p dir="auto"><strong>Last page audit: 240 checks across 236 URLs, 0 problems.</strong></p>
+<p dir="auto"><strong>Last flow audit: 5 end-to-end flows, 0 problems.</strong></p>
+<p dir="auto">---</p>
+<h2 dir="auto">Section status</h2>
+<h3 dir="auto">Foundation</h3>
+<table>
+<tr><th>#</th><th>Requirement</th><th>Location</th><th>Test</th><th>Status</th></tr>
+<tr><td>—</td><td>Application installed, database configured, admin account, public site renders</td><td><code>application/config/database.php</code>, <code>config.php</code></td><td>HTTP sweep</td><td>VERIFIED</td></tr>
+<tr><td>36</td><td>Architecture: migrations, seeders, repositories, libraries separated from controllers</td><td><code>application/migrations/</code>, <code>seeds/</code>, <code>libraries/Ha_*.php</code></td><td><code>ha_cli fresh</code></td><td>VERIFIED</td></tr>
+<tr><td>36</td><td>Migration runner (CI 3.1.9&#39;s own library cannot run on PHP 8)</td><td><code>controllers/Ha_cli.php</code>, <code>libraries/Ha_migration.php</code></td><td>full down/up cycle</td><td>VERIFIED</td></tr>
+<tr><td>50</td><td>Test runner, assertion library, isolated test database</td><td><code>controllers/Ha_test.php</code>, <code>libraries/Ha_testcase.php</code></td><td>83 tests run</td><td>VERIFIED</td></tr>
+<tr><td>16, 53</td><td>Rendered-page audit runner</td><td><code>controllers/Ha_audit.php</code></td><td>236 URLs walked</td><td>VERIFIED</td></tr>
+</table>
+<h3 dir="auto">37 — Database</h3>
+<table>
+<tr><th>#</th><th>Requirement</th><th>Location</th><th>Test</th><th>Status</th></tr>
+<tr><td>37</td><td>Core identity, RBAC, organization tree</td><td><code>migrations/…000001_create_core_tables.php</code></td><td><code>Test_schema</code></td><td>VERIFIED</td></tr>
+<tr><td>37</td><td>Programs, courses, lessons, enrollment, progress, paths, skills</td><td><code>…000002_create_academy_tables.php</code></td><td><code>Test_schema</code></td><td>VERIFIED</td></tr>
+<tr><td>37</td><td>Question engine, assessments, assignments, exams, certificates, verification</td><td><code>…000003_create_assessment_tables.php</code></td><td><code>Test_schema</code></td><td>VERIFIED</td></tr>
+<tr><td>37</td><td>SOP hub, versions, acknowledgement, checklists, training assignments, attendance, notifications, audit log</td><td><code>…000004_create_operations_tables.php</code></td><td><code>Test_schema</code></td><td>VERIFIED</td></tr>
+<tr><td>37</td><td>CMS, SEO metadata, redirects, topics, leads, competitor intelligence</td><td><code>…000005_create_content_tables.php</code></td><td><code>Test_schema</code></td><td>VERIFIED</td></tr>
+<tr><td>37</td><td>89 tables, all InnoDB/utf8mb4, foreign keys on every tenant relationship</td><td>database</td><td><code>Test_schema</code></td><td>VERIFIED</td></tr>
+<tr><td>40</td><td>Bilingual model: parallel EN/AR translation rows</td><td><code>ha_*_translation</code></td><td><code>Test_schema</code>, <code>Test_content</code></td><td>VERIFIED</td></tr>
+</table>
+<h3 dir="auto">2, 38, 45, 49, 52 — Authorization, tenancy and audit</h3>
+<table>
+<tr><th>#</th><th>Requirement</th><th>Location</th><th>Test</th><th>Status</th></tr>
+<tr><td>2</td><td>Eight roles</td><td><code>seeds/001_rbac.php</code></td><td><code>Test_rbac</code></td><td>VERIFIED</td></tr>
+<tr><td>38</td><td>180 permissions across 41 modules</td><td><code>seeds/001_rbac.php</code></td><td><code>Test_rbac</code></td><td>VERIFIED</td></tr>
+<tr><td>38</td><td>Server-side permission checks, never hidden UI</td><td><code>libraries/Ha_auth.php</code></td><td><code>Test_rbac</code></td><td>VERIFIED</td></tr>
+<tr><td>45</td><td>Role scope decides access; context columns do not grant it</td><td><code>Ha_auth::load()</code></td><td><code>Test_rbac</code> (6 isolation tests)</td><td>VERIFIED</td></tr>
+<tr><td>52</td><td>Cross-organization, cross-property, cross-department access refused</td><td><code>Ha_auth</code></td><td><code>Test_rbac</code></td><td>VERIFIED</td></tr>
+<tr><td>52</td><td>Suspended profile and deactivated account lose access</td><td><code>Ha_auth::load()</code></td><td><code>Test_rbac</code></td><td>VERIFIED</td></tr>
+<tr><td>38</td><td>Mass assignment, sort-key whitelisting, IDOR refusal</td><td><code>libraries/Ha_repository.php</code></td><td><code>Test_repositories</code></td><td>VERIFIED</td></tr>
+<tr><td>49</td><td>Audit log with actor, action, entity, before/after, IP, agent; secrets redacted</td><td><code>libraries/Ha_audit.php</code></td><td><code>Test_repositories</code></td><td>VERIFIED</td></tr>
+</table>
+<h3 dir="auto">41, 5 — Admin mechanics and organizations</h3>
+<table>
+<tr><th>#</th><th>Requirement</th><th>Location</th><th>Test</th><th>Status</th></tr>
+<tr><td>41</td><td>Search (EN/AR), filters, sort, pagination, bulk actions, export</td><td><code>Ha_repository</code></td><td><code>Test_repositories</code> (18 tests)</td><td>VERIFIED</td></tr>
+<tr><td>41</td><td>Destructive action blocked while a record is in use</td><td><code>can_delete()</code></td><td><code>Test_repositories</code></td><td>VERIFIED</td></tr>
+<tr><td>5</td><td>Organizations, properties, departments, job roles</td><td><code>libraries/Ha_repo_*.php</code></td><td><code>Test_repositories</code></td><td>VERIFIED</td></tr>
+<tr><td>5</td><td>Seed data: 1 organization, 8 Saudi properties, 16 departments, 28 job roles, 24 accounts</td><td><code>seeds/002_organizations.php</code></td><td>idempotent re-run verified</td><td>VERIFIED</td></tr>
+</table>
+<h3 dir="auto">6, 7, 8, 9, 10, 20 — Curriculum</h3>
+<table>
+<tr><th>#</th><th>Requirement</th><th>Location</th><th>Test</th><th>Status</th></tr>
+<tr><td>9</td><td>Hospitality catalogue: 74 courses across nine departments</td><td><code>seeds/003_curriculum.php</code></td><td><code>Test_content</code></td><td>VERIFIED</td></tr>
+<tr><td>7, 8, 40</td><td>148 course translations, 666 lessons, 1,332 lesson translations</td><td><code>seeds/003_curriculum.php</code></td><td><code>Test_content</code></td><td>VERIFIED</td></tr>
+<tr><td>7</td><td>Outcomes, requirements, FAQ, sections, preview lesson, completion rules</td><td><code>seeds/003_curriculum.php</code></td><td><code>Test_content</code></td><td>VERIFIED</td></tr>
+<tr><td>6</td><td>6 programs grouping courses into qualifications</td><td><code>seeds/003_curriculum.php</code></td><td><code>Test_content</code></td><td>VERIFIED</td></tr>
+<tr><td>10</td><td>3 career paths, 16 steps mapped to job roles</td><td><code>seeds/003_curriculum.php</code></td><td><code>Test_content</code></td><td>VERIFIED</td></tr>
+<tr><td>20</td><td>20 skills mapped to the courses that award them</td><td><code>seeds/003_curriculum.php</code></td><td><code>Test_content</code></td><td>VERIFIED</td></tr>
+<tr><td>7</td><td>Unpublished content never appears publicly</td><td><code>libraries/Ha_catalog.php</code></td><td><code>Test_content</code></td><td>VERIFIED</td></tr>
+</table>
+<h3 dir="auto">12, 13, 14, 15 — SOP hub</h3>
+<table>
+<tr><th>#</th><th>Requirement</th><th>Location</th><th>Test</th><th>Status</th></tr>
+<tr><td>12</td><td>14 SOPs with the full structure: purpose, scope, responsibilities, tools, procedure, checklist, safety, quality, escalation</td><td><code>seeds/004_sops.php</code></td><td><code>Test_content</code></td><td>VERIFIED</td></tr>
+<tr><td>12</td><td>14 SOP categories, bilingual</td><td><code>seeds/004_sops.php</code></td><td><code>ha_audit</code> (SOP pages render)</td><td>VERIFIED</td></tr>
+<tr><td>13</td><td>Version control with author, approver, effective date, review date, change summary</td><td><code>ha_sop_version</code></td><td><code>Test_schema</code></td><td>VERIFIED</td></tr>
+<tr><td>39</td><td>Organization-scoped SOPs never publicly readable by URL</td><td><code>Ha_catalog::public_sop()</code></td><td><code>Test_content</code></td><td>VERIFIED</td></tr>
+<tr><td>15</td><td>14 runnable checklists, 140 items, linked to their SOP</td><td><code>seeds/004_sops.php</code></td><td>seed idempotency + counts</td><td>VERIFIED</td></tr>
+<tr><td>14</td><td>Acknowledgement schema (user, version, IP, timestamp)</td><td><code>ha_sop_acknowledgement</code></td><td><code>Test_schema</code></td><td>IMPLEMENTED</td></tr>
+</table>
+<h3 dir="auto">25, 26 — Public academy website</h3>
+<table>
+<tr><th>#</th><th>Requirement</th><th>Location</th><th>Test</th><th>Status</th></tr>
+<tr><td>26</td><td>All 17 public routes, in both locales</td><td><code>controllers/Academy.php</code>, <code>config/routes.php</code></td><td>HTTP sweep, <code>ha_audit</code></td><td>VERIFIED</td></tr>
+<tr><td>26</td><td>206 detail pages (courses, programs, paths, topics, articles) resolve in both locales</td><td><code>Academy.php</code></td><td>HTTP sweep: 206/206 → 200</td><td>VERIFIED</td></tr>
+<tr><td>26</td><td>Static pages resolve by translated slug from the database</td><td><code>Academy::page_by_slug()</code></td><td><code>ha_audit</code></td><td>VERIFIED</td></tr>
+<tr><td>28</td><td>No broken internal link anywhere on the public site</td><td>—</td><td><code>ha_audit</code> link crawl</td><td>VERIFIED</td></tr>
+<tr><td>54</td><td>One H1 per page and no heading-level jumps</td><td>views</td><td><code>ha_audit</code></td><td>VERIFIED</td></tr>
+<tr><td>26</td><td><code>/verify/{code}</code> public certificate verification with four outcomes</td><td><code>Academy::verify()</code>, <code>Ha_catalog::verify_certificate()</code></td><td><code>Test_content</code></td><td>VERIFIED</td></tr>
+<tr><td>26</td><td>Contact form writing a real lead record, rejecting invalid input</td><td><code>Academy::contact()</code></td><td><code>ha_audit flows</code></td><td>VERIFIED</td></tr>
+<tr><td>35</td><td>Global search across courses, articles and topics</td><td><code>Ha_catalog::search()</code></td><td><code>Test_content</code></td><td>VERIFIED</td></tr>
+<tr><td>28</td><td>404 page that resolves, not a blank screen</td><td><code>Academy::missing()</code></td><td><code>ha_audit</code></td><td>VERIFIED</td></tr>
+<tr><td>25</td><td>Public header navigation driven from the database</td><td><code>ha_menu</code>, <code>ha_menu_item</code></td><td><code>Test_content</code></td><td>VERIFIED</td></tr>
+</table>
+<h3 dir="auto">27, 28, 29, 53 — SEO, AEO and GEO</h3>
+<table>
+<tr><th>#</th><th>Requirement</th><th>Location</th><th>Test</th><th>Status</th></tr>
+<tr><td>27</td><td>Admin-editable SEO metadata for every indexable page, EN and AR (70 records)</td><td><code>libraries/Ha_seo.php</code>, <code>ha_seo_metadata</code></td><td><code>Test_seo</code></td><td>VERIFIED</td></tr>
+<tr><td>28</td><td>Title, description, canonical, robots, OpenGraph, Twitter card</td><td><code>Ha_seo::render_head()</code></td><td><code>Test_seo</code>, <code>ha_audit</code></td><td>VERIFIED</td></tr>
+<tr><td>28</td><td>hreflang EN/AR plus x-default, pointing at the translated slug</td><td><code>Ha_seo::render_head()</code></td><td><code>Test_seo</code>, <code>ha_audit</code></td><td>VERIFIED</td></tr>
+<tr><td>28</td><td>Arabic slugs as real URLs (<code>permitted_uri_chars</code> extended, slugs decoded)</td><td><code>config/config.php</code>, <code>Academy::slug()</code></td><td>103 Arabic URLs → 200</td><td>VERIFIED</td></tr>
+<tr><td>28</td><td>Language-aware XML sitemap with alternates (236 URLs)</td><td><code>Ha_seo::render_sitemap()</code></td><td><code>Test_seo</code></td><td>VERIFIED</td></tr>
+<tr><td>28</td><td>robots.txt allowing the site, blocking admin and API</td><td><code>Ha_seo::render_robots()</code></td><td><code>Test_seo</code></td><td>VERIFIED</td></tr>
+<tr><td>28</td><td>Breadcrumbs plus BreadcrumbList schema</td><td><code>Ha_seo::breadcrumb()</code></td><td><code>Test_seo</code></td><td>VERIFIED</td></tr>
+<tr><td>28</td><td>Organization, WebSite, WebPage, Course, Article, FAQPage, HowTo, CollectionPage schema</td><td><code>Ha_seo</code>, <code>seeds/005_content.php</code></td><td><code>Test_seo</code></td><td>VERIFIED</td></tr>
+<tr><td>28</td><td>301 redirect manager with hit counting</td><td><code>Ha_seo::redirect_for()</code></td><td><code>Test_seo</code></td><td>VERIFIED</td></tr>
+<tr><td>29</td><td>Saudi city pages with genuinely local content, not doorway pages</td><td><code>seeds/005_content.php</code></td><td><code>Test_content</code> (length + uniqueness)</td><td>VERIFIED</td></tr>
+<tr><td>29</td><td>City schema naming the city and country</td><td><code>seeds/005_content.php</code></td><td><code>Test_seo</code></td><td>VERIFIED</td></tr>
+<tr><td>—</td><td>AEO: question-shaped FAQs with direct answers, in FAQPage schema</td><td><code>seeds/005_content.php</code></td><td><code>Test_seo</code></td><td>VERIFIED</td></tr>
+<tr><td>53</td><td>Automated SEO audit over every indexable page</td><td><code>Test_seo</code>, <code>controllers/Ha_audit.php</code></td><td>21 tests + 236-URL walk</td><td>VERIFIED</td></tr>
+</table>
+<h3 dir="auto">30, 31, 32, 33 — Content and competitor intelligence</h3>
+<table>
+<tr><th>#</th><th>Requirement</th><th>Location</th><th>Test</th><th>Status</th></tr>
+<tr><td>33</td><td>8 public pages, bilingual, database-driven</td><td><code>seeds/005_content.php</code></td><td><code>Test_content</code></td><td>VERIFIED</td></tr>
+<tr><td>30</td><td>14 topics: 6 pillars, 8 city pages, content taxonomy linked to courses</td><td><code>seeds/005_content.php</code></td><td><code>Test_content</code></td><td>VERIFIED</td></tr>
+<tr><td>33</td><td>6 articles, bilingual, with author, category, tags, related course and CTA</td><td><code>seeds/005_content.php</code></td><td><code>Test_content</code></td><td>VERIFIED</td></tr>
+<tr><td>31</td><td>3 competitors recorded with capabilities, evidence URL and checked date</td><td><code>seeds/005_content.php</code></td><td><code>Test_seo</code></td><td>VERIFIED</td></tr>
+<tr><td>31</td><td>No unsupported competitor claim: unknown is recorded as unknown</td><td><code>seeds/005_content.php</code></td><td><code>Test_seo</code></td><td>VERIFIED</td></tr>
+<tr><td>32</td><td>25 tracked keywords (EN and AR) with intent, cluster and target page</td><td><code>seeds/005_content.php</code></td><td><code>Test_seo</code></td><td>VERIFIED</td></tr>
+<tr><td>16 (reality rule)</td><td>No invented statistics, endorsements or testimonials anywhere</td><td><code>seeds/005_content.php</code></td><td>testimonials deliberately unseeded</td><td>VERIFIED</td></tr>
+</table>
+<h3 dir="auto">Academy LMS integration</h3>
+<table>
+<tr><th>#</th><th>Requirement</th><th>Location</th><th>Test</th><th>Status</th></tr>
+<tr><td>7, 9</td><td>Catalogue published into the legacy LMS: 74 courses, 296 sections, 666 lessons, 9 categories plus 9 sub-categories</td><td><code>controllers/Ha_bridge.php</code></td><td><code>ha_bridge status</code>, browser sweep</td><td>VERIFIED</td></tr>
+<tr><td>—</td><td>One source of truth: <code>ha_*</code> writes one way, matched on course code, idempotent</td><td><code>Ha_bridge::sync()</code></td><td>re-run leaves counts unchanged</td><td>VERIFIED</td></tr>
+<tr><td>—</td><td>Legacy thumbnails published as JPEG under the theme&#39;s filename convention</td><td><code>Ha_bridge::publish_course_thumbnail()</code></td><td>74 files, 0 broken images</td><td>VERIFIED</td></tr>
+<tr><td>—</td><td>Two-tier category mapping, because a legacy course attaches to a sub-category</td><td><code>Ha_bridge::sync_category_pair()</code></td><td>course filter and home tiles render</td><td>VERIFIED</td></tr>
+<tr><td>—</td><td><code>/courses</code>, <code>/home/courses</code>, <code>/home/my_courses</code> show real courses</td><td>legacy theme + bridge</td><td><code>.lab/routes.py</code></td><td>VERIFIED</td></tr>
+<tr><td>—</td><td>Seeded learners have enrolments (67)</td><td><code>Ha_bridge::enrol()</code></td><td><code>/home/my_courses</code> renders 6 courses</td><td>VERIFIED</td></tr>
+<tr><td>—</td><td><code>/home/profile</code> no longer returns 500</td><td><code>controllers/Home.php</code></td><td><code>.lab/routes.py</code></td><td>VERIFIED</td></tr>
+<tr><td>—</td><td><code>/courses</code> and <code>/course/{slug}</code> resolve instead of the theme 404</td><td><code>config/routes.php</code></td><td><code>.lab/routes.py</code></td><td>VERIFIED</td></tr>
+<tr><td>16 (reality rule)</td><td>False partner endorsements removed from the shipped home page</td><td><code>views/frontend/default-new/home_elegant.php</code></td><td>visual check</td><td>VERIFIED</td></tr>
+</table>
+<h3 dir="auto">Design</h3>
+<table>
+<tr><th>#</th><th>Requirement</th><th>Location</th><th>Test</th><th>Status</th></tr>
+<tr><td>—</td><td>Both frontends share the Academy LMS violet palette</td><td><code>assets/academy/academy.css</code></td><td>visual check</td><td>VERIFIED</td></tr>
+<tr><td>—</td><td>Accent-led hierarchy: title rules, card hover lift, primary button, section rhythm</td><td><code>assets/academy/academy.css</code></td><td>visual check</td><td>VERIFIED</td></tr>
+<tr><td>54</td><td>Refinements honour <code>prefers-reduced-motion</code></td><td><code>academy.css</code></td><td>—</td><td>IMPLEMENTED</td></tr>
+</table>
+<h3 dir="auto">Photography and media</h3>
+<table>
+<tr><th>#</th><th>Requirement</th><th>Location</th><th>Test</th><th>Status</th></tr>
+<tr><td>—</td><td>Root URL serves the academy; legacy LMS routes untouched</td><td><code>config/routes.php</code></td><td>HTTP 302 to <code>/en</code>, legacy routes still 200</td><td>VERIFIED</td></tr>
+<tr><td>39</td><td>Licensed photo library: 34 images, commercial-use licences only</td><td><code>controllers/Ha_images.php</code></td><td><code>ha_images report</code></td><td>VERIFIED</td></tr>
+<tr><td>39</td><td>Attribution stored per file: author, licence, licence URL, source page</td><td><code>migrations/…000006_add_media_attribution.php</code></td><td><code>ha_images report</code></td><td>VERIFIED</td></tr>
+<tr><td>39</td><td>Public credits page in both languages, linked from every page footer</td><td><code>views/academy/credits.php</code>, <code>Academy::credits()</code></td><td><code>ha_audit</code></td><td>VERIFIED</td></tr>
+<tr><td>—</td><td>Sourcing by curated Commons category, not relevance search</td><td><code>Ha_images::fetch_subject()</code></td><td>inspected contact sheet</td><td>VERIFIED</td></tr>
+<tr><td>—</td><td>Drawings, maps, logos, military and child imagery rejected</td><td><code>Ha_images::looks_photographic()</code></td><td>inspected contact sheet</td><td>VERIFIED</td></tr>
+<tr><td>—</td><td>No two subjects share a photograph (checksum dedupe)</td><td><code>Ha_images::store()</code></td><td><code>ha_images report</code></td><td>VERIFIED</td></tr>
+<tr><td>—</td><td>Course cards vary within a category</td><td><code>Ha_images::assign()</code></td><td>inspected screenshots</td><td>VERIFIED</td></tr>
+<tr><td>55</td><td>WebP at two widths, intrinsic dimensions, lazy below the fold</td><td><code>helpers/ha_media_helper.php</code></td><td>browser check, 0 broken images</td><td>VERIFIED</td></tr>
+<tr><td>55</td><td>No horizontal overflow at 1440px or 390px</td><td><code>academy.css</code></td><td>browser check</td><td>VERIFIED</td></tr>
+<tr><td>100% coverage</td><td>74/74 courses, 14/14 topics, 6/6 articles, 6 pages, 70 social images</td><td>database</td><td><code>ha_images report</code></td><td>VERIFIED</td></tr>
+</table>
+<h3 dir="auto">40, 43, 54 — Bilingual, mobile and accessibility</h3>
+<table>
+<tr><th>#</th><th>Requirement</th><th>Location</th><th>Test</th><th>Status</th></tr>
+<tr><td>40</td><td>Genuine RTL: <code>dir</code> on <code>&lt;html&gt;</code>, logical CSS properties, Arabic font stack</td><td><code>views/academy/layout.php</code>, <code>assets/academy/academy.css</code></td><td><code>ha_audit</code>: lang/dir correct on all 236 URLs</td><td>VERIFIED</td></tr>
+<tr><td>40</td><td>Language switch lands on the translated slug, not the same path</td><td><code>Academy</code>, <code>Ha_seo::set_alternate()</code></td><td><code>ha_audit flows</code></td><td>VERIFIED</td></tr>
+<tr><td>40</td><td>Arabic authored separately, never a copy of the English string</td><td><code>seeds/003_curriculum.php</code></td><td><code>Test_content</code></td><td>VERIFIED</td></tr>
+<tr><td>43</td><td>Mobile navigation, 44px tap targets, responsive grids, readable tables</td><td><code>assets/academy/academy.css</code></td><td><code>ha_audit</code> markup checks</td><td>IMPLEMENTED</td></tr>
+<tr><td>54</td><td>Skip link, focus-visible outlines, labelled inputs, single H1, heading order, image alt text</td><td>layout + <code>ha_audit</code> checks</td><td><code>ha_audit</code></td><td>VERIFIED</td></tr>
+<tr><td>54</td><td><code>prefers-reduced-motion</code> honoured</td><td><code>academy.css</code></td><td>—</td><td>IMPLEMENTED</td></tr>
+</table>
+<h3 dir="auto">AI Studio, key authentication, API v1 (added 2026-09-24)</h3>
+<table>
+<tr><th>Requirement</th><th>Location</th><th>Test</th><th>Status</th></tr>
+<tr><td>47-provider registry from official docs, country / region / capability metadata</td><td><code>config/ha_ai_providers.php</code></td><td><code>Test_ai_studio</code></td><td>VERIFIED</td></tr>
+<tr><td>Provider keys encrypted (AES-256-GCM), env-var override, live model sync, test connection</td><td><code>libraries/Ha_ai_gateway.php</code>, <code>Ha_crypto.php</code></td><td><code>Test_ai_studio</code>, e2e</td><td>VERIFIED</td></tr>
+<tr><td>Task routing, usage ledger, writing assistant</td><td><code>controllers/Ha_ai.php</code>, <code>views/backend/ha_ai/</code></td><td>e2e</td><td>VERIFIED</td></tr>
+<tr><td>Course draft + lesson script jobs, validation, review, publish, single-course LMS sync</td><td><code>libraries/Ha_ai_studio.php</code>, <code>Ha_bridge::sync_one()</code></td><td><code>Test_ai_studio</code>, e2e</td><td>VERIFIED</td></tr>
+<tr><td>Narrated slide video (GD + Arabic shaping + ffmpeg + WebVTT)</td><td><code>libraries/Ha_video_renderer.php</code>, <code>Ha_arabic.php</code></td><td>slides drawn in tests; encoding needs ffmpeg</td><td>IMPLEMENTED</td></tr>
+<tr><td>TTS / presenter / clip adapters (OpenAI-style, ElevenLabs, Azure, Google, Gemini, HeyGen, D-ID, Synthesia, Veo, Luma, Runway)</td><td><code>libraries/Ha_ai_media.php</code></td><td>adapter matching tested; no live vendor calls</td><td>IMPLEMENTED</td></tr>
+<tr><td>Background worker with lock, heartbeat, retry, crash recovery</td><td><code>controllers/Ha_ai_cli.php</code></td><td><code>Test_ai_studio</code>, e2e</td><td>VERIFIED</td></tr>
+<tr><td>TOTP two-factor login on every login path, recovery codes, throttling</td><td><code>libraries/Ha_two_factor.php</code>, <code>Ha_totp.php</code>, <code>User_model::set_login_userdata()</code></td><td><code>Test_key_auth</code>, e2e</td><td>VERIFIED</td></tr>
+<tr><td>Personal API keys (hashed, scoped, expiry, IP pinning, revoke, rate limit) and <code>/api/v1</code></td><td><code>libraries/Ha_api_keys.php</code>, <code>controllers/Api_v1.php</code></td><td><code>Test_key_auth</code>, e2e</td><td>VERIFIED</td></tr>
+</table>
+<p dir="auto">Last run: 116 tests, 116 passed, 1,824 assertions; 61/61 end-to-end HTTP checks.</p>
+<p dir="auto">---</p>
+<h3 dir="auto">ALTUS Hospitality Knowledge &amp; Performance (added 2026-09-24 / 25)</h3>
+<p dir="auto">Per-section detail for all 190 sections is in <a href="gap.html">gap.md</a>. Summary:</p>
+<table>
+<tr><th>Area</th><th>Location</th><th>Test</th><th>Status</th></tr>
+<tr><td>Tenancy: organisation → portfolio → property → department → team, 16 roles, scope-aware reads</td><td>migration <code>…013</code>, <code>Ha_auth</code>, <code>seeds/001_rbac.php</code></td><td><code>Test_rbac</code>, <code>Test_hkp</code>, <code>Test_cms</code></td><td>VERIFIED</td></tr>
+<tr><td>Evidence chain: requirements → learning → theory → practical → competency → gap → action → reassessment → readiness → certificate</td><td><code>Ha_competency</code>, <code>Ha_theory</code>, <code>Ha_practical</code>, <code>Ha_action_plans</code>, <code>Ha_readiness</code>, <code>Ha_certification</code></td><td><code>Test_hkp::final_qa_scenario_end_to_end</code></td><td>VERIFIED</td></tr>
+<tr><td>Knowledge governance, versions, acknowledgement, health</td><td><code>Ha_knowledge</code></td><td><code>Test_hkp</code></td><td>VERIFIED</td></tr>
+<tr><td>Governed AI (approved, authorised sources only; cites; says &quot;insufficient&quot;)</td><td><code>Ha_governed_ai</code></td><td><code>Test_hkp</code></td><td>VERIFIED</td></tr>
+<tr><td>KPIs, performance matrix, GOPPAR, ESG, capability model, engagements (ASCENT)</td><td><code>Ha_kpi</code>, <code>Ha_advisory</code></td><td><code>Test_hkp</code></td><td>VERIFIED</td></tr>
+<tr><td>Reports CSV/XLSX, board report, certificate PDF/PNG with QR</td><td><code>Ha_reports</code>, <code>Ha_xlsx</code>, <code>Ha_pdf</code>, <code>Ha_qr</code></td><td><code>Test_hkp</code></td><td>VERIFIED</td></tr>
+<tr><td>Page builder, revisions, SEO/AEO/GEO score, FAQ/Place schema</td><td><code>Ha_page_builder</code>, <code>Ha_seo_score</code>, <code>Hkp_cms</code></td><td><code>Test_cms</code></td><td>VERIFIED</td></tr>
+<tr><td>Modules &amp; lessons CMS: links, uploads (video/PDF/PPT/audio), drip release</td><td><code>Hkp_cms</code>, <code>Ha_learning::release_at</code></td><td><code>Test_cms</code></td><td>VERIFIED</td></tr>
+<tr><td>AI editor help with provider/model choice and prompt enhancement</td><td><code>Ha_ai_assist</code></td><td><code>Test_cms</code></td><td>VERIFIED</td></tr>
+<tr><td>HK&amp;P API endpoints, spec response envelope</td><td><code>Api_v1</code>, <code>Ha_api_hkp</code></td><td><code>Test_cms</code>, curl</td><td>VERIFIED</td></tr>
+<tr><td>Arabic interface (1,673 strings)</td><td><code>language/arabic/hkp_lang.php</code></td><td><code>Test_cms</code></td><td>VERIFIED</td></tr>
+<tr><td>Legacy admin and user sidebars link the workspace and CMS</td><td><code>views/backend/*/navigation.php</code></td><td>crawl: 67/67 admin links 200</td><td>VERIFIED</td></tr>
+</table>
+<p dir="auto">Partial (see gap.md for the exact gap): custom-domain provisioning, Arabic for 296 ported</p>
+<p dir="auto">legacy quiz questions, vector semantic search, SMS/WhatsApp delivery, offline lessons,</p>
+<p dir="auto">PMS/POS/HR connectors and SSO, privacy self-service export/erasure, load testing,</p>
+<p dir="auto">automatic retention purge, scheduled backups/DR, and committing this work to git.</p>
+<p dir="auto">---</p>
+<h2 dir="auto">Honest summary</h2>
+<ul>
+<li><strong>Delivered and test-proven:</strong> the data model (37), authorization and tenancy</li>
+</ul>
+<p dir="auto">  (2, 38, 45, 52), audit (49), admin list/form mechanics (41), organizations (5),</p>
+<p dir="auto">  the full curriculum (6–10, 20), the SOP knowledge hub content and version</p>
+<p dir="auto">  model (12, 13, 39), the entire public website (25, 26, 35), the SEO/AEO/GEO</p>
+<p dir="auto">  system (27, 28, 29, 53), content and competitor intelligence (30–33),</p>
+<p dir="auto">  bilingual RTL delivery (40) and the accessibility basics (54).</p>
+<ul>
+<li><strong>Delivered without automated tests yet:</strong> reduced-motion handling, which</li>
+</ul>
+<p dir="auto">  needs a real device to confirm.</p>
+<ul>
+<li><strong>Photography:</strong> two subjects (certificate imagery) have no photograph of</li>
+</ul>
+<p dir="auto">  their own, because Wikimedia Commons holds no modern, on-brand certificate</p>
+<p dir="auto">  photograph that passes the filters. Those surfaces borrow the training-room</p>
+<p dir="auto">  image rather than ship something wrong.</p>
+<ul>
+<li><strong>Since 2026-09-24:</strong> the admin screens, learner experience and operational</li>
+</ul>
+<p dir="auto">  engines that were &quot;not started&quot; are built as the HK&amp;P workspace (table above).</p>
+<p dir="auto">136 automated tests pass, and the authenticated crawl of 9 roles on the production data copy</p>
+<p dir="auto">reports zero errors and zero dead links. No requirement above is marked</p>
+<p dir="auto">complete unless it is.</p></main></html>

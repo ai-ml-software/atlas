@@ -69,27 +69,52 @@ export function Intro({ spec }: { spec: ScreenSpec }) {
   );
 }
 export function Auth({ spec }: { spec: ScreenSpec }) {
-  const { t, state, connect } = useApp();
-  const [base, setBase] = useState(state.base),
-    [key, setKey] = useState(""),
+  const { t, state, signIn, completeTwoFactor, feature } = useApp();
+  const [email, setEmail] = useState(""),
+    [password, setPassword] = useState(""),
+    [challenge, setChallenge] = useState(""),
+    [challengeType, setChallengeType] = useState<"email" | "authenticator">("authenticator"),
+    [code, setCode] = useState(""),
     [busy, setBusy] = useState(false),
     [error, setError] = useState("");
   const c = useTheme();
-  const submit = async () => {
-    if (!base || !key) {
-      setError(t("invalid"));
-      return;
-    }
+  const run = async (action: () => Promise<void>) => {
     setBusy(true);
     setError("");
     try {
-      await connect(base, key);
-      router.replace("/home");
+      await action();
     } catch (e) {
       setError(e instanceof Error ? e.message : t("apiFailure"));
     } finally {
       setBusy(false);
     }
+  };
+  const submit = () => {
+    if (!email.trim() || !password) {
+      setError(t("signInRequired"));
+      return;
+    }
+    void run(async () => {
+      const step = await signIn(email, password);
+      if (step.done) router.replace("/home");
+      else {
+        setPassword("");
+        setChallenge(step.challenge);
+        setChallengeType(step.type);
+      }
+    });
+  };
+  const verify = () => {
+    if (!code.trim()) {
+      setError(t("twoFactorRequired"));
+      return;
+    }
+    void run(async () => {
+      const step = await completeTwoFactor(challenge, code);
+      setCode("");
+      if (step.done) router.replace("/home");
+      else { setChallenge(step.challenge); setChallengeType(step.type); }
+    });
   };
   const accountPath =
     spec.id === "forgot-password"
@@ -108,49 +133,75 @@ export function Auth({ spec }: { spec: ScreenSpec }) {
         <T variant="title">
           {t(spec.id === "sign-in" ? "secureLogin" : "securityNote")}
         </T>
-        <T style={{ color: c.muted }}>{t("demoScope")}</T>
+        <T style={{ color: c.muted }}>
+          {t(spec.id === "sign-in" ? (challenge ? (challengeType === "email" ? "deviceCodeBody" : "twoFactorBody") : "signInBody") : "demoScope")}
+        </T>
       </Card>
-      {spec.id === "sign-in" && (
+      {spec.id === "sign-in" && !challenge && (
         <>
           <Field
-            label={t("apiUrl")}
-            value={base}
-            onChangeText={setBase}
-            keyboardType="url"
+            label={t("email")}
+            value={email}
+            onChangeText={setEmail}
+            keyboardType="email-address"
             autoCapitalize="none"
+            autoCorrect={false}
+            autoComplete="email"
+            textContentType="username"
           />
           <Field
-            label={t("apiKey")}
-            value={key}
-            onChangeText={setKey}
+            label={t("password")}
+            value={password}
+            onChangeText={setPassword}
             secureTextEntry
             autoCapitalize="none"
             autoCorrect={false}
+            autoComplete="password"
+            textContentType="password"
+            onSubmitEditing={submit}
           />
-          {!!error && <T style={{ color: c.accent }}>{error}</T>}
+          {!!error && <T style={{ color: c.accent }} accessibilityLiveRegion="polite">{error}</T>}
           <Button label={t("signIn")} onPress={submit} busy={busy} />
+          <ListRow
+            title={t("forgotPassword")}
+            onPress={() => void Linking.openURL(`${state.base}/login/forgot_password_request`)}
+          />
+          {feature("demo") && (
+            <Button label={t("exploreDemo")} secondary onPress={() => go("first-setup")} />
+          )}
+        </>
+      )}
+      {spec.id === "sign-in" && !!challenge && (
+        <>
+          <Field
+            label={t(challengeType === "email" ? "deviceCode" : "twoFactorCode")}
+            value={code}
+            onChangeText={setCode}
+            keyboardType={challengeType === "email" ? "number-pad" : "default"}
+            autoCapitalize="none"
+            autoCorrect={false}
+            autoComplete="one-time-code"
+            textContentType="oneTimeCode"
+            onSubmitEditing={verify}
+          />
+          {!!error && <T style={{ color: c.accent }} accessibilityLiveRegion="polite">{error}</T>}
+          <Button label={t("verify")} onPress={verify} busy={busy} />
           <Button
-            label={t("exploreDemo")}
+            label={t("back")}
             secondary
             onPress={() => {
-              go("first-setup");
+              setChallenge("");
+              setCode("");
+              setError("");
             }}
           />
         </>
       )}
-      <Button
-        label={t("openAccount")}
-        secondary
-        onPress={() => void Linking.openURL(`${state.base}/${accountPath}`)}
-      />
-      {spec.id === "sign-in" && (
-        <ListRow
-          title={
-            state.locale === "ar"
-              ? "نسيت كلمة المرور؟"
-              : "Forgot your password?"
-          }
-          onPress={() => go("forgot-password")}
+      {spec.id !== "sign-in" && (
+        <Button
+          label={t("openAccount")}
+          secondary
+          onPress={() => void Linking.openURL(`${state.base}/${accountPath}`)}
         />
       )}
       <T variant="small" style={{ color: c.muted }}>

@@ -8,7 +8,7 @@
 <section class="ha-section">
     <div class="ha-shell">
         <div class="ha-prose">
-            <p><?= html_escape($path['description']) ?></p>
+            <p<?= ha_studio('body') ?>><?= html_escape($path['description']) ?></p>
         </div>
 
         <div style="margin-top:2rem">

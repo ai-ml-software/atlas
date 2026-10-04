@@ -1,0 +1,122 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ADMIN INSTALL</title><style>:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f7f5f1;color:#1c2227;font:16px/1.7 'Segoe UI',Tahoma,Arial,sans-serif}header{background:#1c2227;color:white;padding:28px max(24px,calc((100% - 1080px)/2));border-bottom:4px solid #c45b2f}header a{color:#f3c5a8}main{max-width:1080px;margin:auto;padding:28px 24px 70px}h1,h2,h3{line-height:1.25}h2{margin-top:36px}a{color:#944527}pre{padding:18px;background:#e9e5df;border-radius:10px;overflow:auto}code{font-size:.9em}table{border-collapse:collapse;width:100%;background:white;font-size:14px}td,th{padding:10px;border:1px solid #ddd;text-align:start;vertical-align:top}.card{background:white;border:1px solid #ded8cf;border-radius:14px;padding:22px;margin-bottom:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}video{display:block;width:100%;max-height:640px;background:#111}.chapters{max-height:300px;overflow:auto;display:flex;flex-wrap:wrap;gap:8px;padding:10px 0}button,.button{border:1px solid #c45b2f;border-radius:8px;background:white;color:#71371e;padding:9px 12px;cursor:pointer;text-decoration:none;font:inherit}p{margin:12px 0}.muted{color:#646a6d}img{max-width:100%}@media(max-width:600px){main{padding:20px 15px}table{display:block;overflow:auto}header{padding:22px 15px}}@media print{header,nav,.no-print{display:none}body{background:white;font-size:12px}main{padding:0;max-width:none}h2{break-after:avoid}pre,table{break-inside:avoid}a{color:inherit}}</style><header><strong>ALTUS KNOWLEDGE &amp; PERFORMANCE</strong><br><a href="index.html">User guides and recordings</a></header><main><h1 dir="auto">Admin Studio installation</h1>
+<p dir="auto">This release extends the existing CodeIgniter application. It is not a WordPress plugin. Read <a href="ADMIN_BASELINE.html">the architecture baseline</a> and <a href="ALTUS_AI_PUBLISHER_ACCEPTANCE_REPORT.html">acceptance report</a> for the architecture and executed checks. MCP setup is in <a href="MCP_GATEWAY_RUNBOOK.html">MCP_GATEWAY_RUNBOOK</a>.</p>
+<h2 dir="auto">Existing Laragon installation</h2>
+<p dir="auto">The local working database is <code>atlas_merged</code>. Migration <code>20260101000025_admin_studio</code> adds private document/page draft tables and missing landing-page/menu records. Migration <code>20260101000026_studio_home_binding</code> adds the explicit homepage binding marker. Existing courses, users, progress and certificates remain in their existing tables. Run the complete migration runner before opening the editors. Migrations 27, 29 and 30 add retained document jobs/OCR support, shared entity/theme drafts, stable section keys, OAuth grants, approvals, retries, media selection and connection history.</p>
+<ul>
+<li>Start Laragon&#39;s Apache and MySQL. Keep <code>application/config/database.local.php</code> pointing to <strong>your local database</strong>. The tracked database configuration has a production fallback, so verify the override before any CLI migration.</li>
+<li>Back up the database and private files. The backup made for this installation is outside the web root at <code>C:/laragon/backups/atlas-admin-studio-20261002/atlas_merged-before-admin-studio.sql</code>. Keep backups off the public web server.</li>
+<li>In PowerShell, from the project root:</li>
+</ul>
+<pre><code>
+Set-Location C:/laragon/www/atlas/atlas
+
+$altusPhp = &#39;C:/laragon/bin/php/php-8.1.10-Win32-vs16-x64/php.exe&#39;
+
+&amp; $altusPhp index.php ha_cli status
+
+&amp; $altusPhp index.php ha_cli migrate
+
+</code></pre>
+<ul>
+<li>Sign in using an existing platform admin account at <code>/login</code>. Open <a href="http://localhost/atlas/atlas/hkp/admin">the admin dashboard</a> and <a href="http://localhost/atlas/atlas/hkp/cms/studio">Content Studio</a>.</li>
+</ul>
+<p dir="auto">The existing application&#39;s full installation, account setup and deployment instructions remain in <a href="README.html">README</a> and <a href="DEPLOYMENT.html">DEPLOYMENT</a>. An empty installation needs the original Academy database as well as native migrations; this additive release is not a replacement database dump. Do not run <code>ha_cli fresh</code> against working data.</p>
+<h2 dir="auto">Document extraction</h2>
+<p dir="auto">PDF extraction requires Python, <code>pypdf</code>, PHP <code>proc_open</code>, <code>fileinfo</code>, <code>mbstring</code> and a readable <code>tools/</code> directory. DOCX/PPTX extraction also requires PHP <code>zip</code> and <code>dom</code>. TXT/MD/JSON require UTF-8 text. The verified local environment uses PHP 8.1.10, Python 3.13 and pypdf 6.19.0.</p>
+<pre><code>
+&amp; C:/Python313/python.exe -m pip install -r tools/publisher-requirements.txt
+
+</code></pre>
+<p dir="auto">Install both the OCR engine and language data. Follow the <a href="https://tesseract-ocr.github.io/tessdoc/Installation.html">official Tesseract installation guide</a>; its Windows section links the UB Mannheim installer. Select English and Arabic language data, or put <code>eng.traineddata</code> and <code>ara.traineddata</code> from <a href="https://github.com/tesseract-ocr/tessdata_fast">official tessdata_fast</a> in <code>application/storage/private/ocr/tessdata</code>.</p>
+<p dir="auto">After installing Tesseract on Windows, these commands install the official language files in the private folder used by the example configuration:</p>
+<pre><code>
+New-Item -ItemType Directory -Force application/storage/private/ocr/tessdata | Out-Null
+
+Invoke-WebRequest https://raw.githubusercontent.com/tesseract-ocr/tessdata_fast/main/eng.traineddata -OutFile application/storage/private/ocr/tessdata/eng.traineddata
+
+Invoke-WebRequest https://raw.githubusercontent.com/tesseract-ocr/tessdata_fast/main/ara.traineddata -OutFile application/storage/private/ocr/tessdata/ara.traineddata
+
+</code></pre>
+<p dir="auto">On Debian/Ubuntu:</p>
+<pre><code>
+sudo apt install tesseract-ocr tesseract-ocr-eng tesseract-ocr-ara
+
+python3 -m pip install -r tools/publisher-requirements.txt
+
+</code></pre>
+<p dir="auto">Windows local override (edit the executable paths after copying):</p>
+<pre><code>
+Copy-Item application/config/ha_publisher.local.example.php application/config/ha_publisher.local.php
+
+</code></pre>
+<p dir="auto">Leave <code>mcp_enabled</code> false until the gateway is configured. Never overwrite an existing local override blindly. Run <code>publisher_cli health</code> to check the actual configuration used by PHP.</p>
+<p dir="auto">Executable paths live in <code>application/config/ha_publisher.php</code> (or <code>ha_publisher.local.php</code> on a workstation) and can be overridden by environment variables. Never accept an executable or command from an HTTP request.</p>
+<table>
+<tr><th>Setting</th><th>Environment variable</th><th>Default</th></tr>
+<tr><td><code>python</code></td><td><code>ALTUS_PUBLISHER_PYTHON</code></td><td><code>python</code> on Windows, <code>python3</code> elsewhere (PATH lookup); set an absolute path when the web server PATH differs</td></tr>
+<tr><td><code>tesseract</code></td><td><code>ALTUS_TESSERACT</code></td><td><code>C:/Program Files/Tesseract-OCR/tesseract.exe</code> if present, else <code>tesseract</code> on PATH</td></tr>
+<tr><td><code>tessdata</code></td><td><code>ALTUS_TESSDATA</code></td><td><code>application/storage/private/ocr/tessdata</code> (needs <code>eng.traineddata</code> and <code>ara.traineddata</code>)</td></tr>
+<tr><td><code>max_attempts</code></td><td><code>ALTUS_PUBLISHER_MAX_ATTEMPTS</code></td><td><code>3</code> automatic tries for transient failures (time limit, expired worker lease)</td></tr>
+<tr><td><code>attempt_limit</code></td><td><code>ALTUS_PUBLISHER_ATTEMPT_LIMIT</code></td><td><code>6</code> total tries including manual <strong>Retry extraction</strong></td></tr>
+<tr><td><code>backoff_seconds</code></td><td><code>ALTUS_PUBLISHER_BACKOFF</code></td><td><code>60</code>, doubled per attempt</td></tr>
+<tr><td><code>source_retention_days</code></td><td><code>ALTUS_PUBLISHER_RETENTION_DAYS</code></td><td><code>30</code>; retained uploads of finished jobs are deleted afterwards</td></tr>
+</table>
+<p dir="auto">Input and dependency errors (damaged or encrypted PDF, missing Tesseract or language data) fail immediately with guidance instead of retrying. <strong>Content Studio → AI Publisher → Setup &amp; worker health</strong> checks Python, pypdf, PyMuPDF, the Tesseract binary, eng/ara language data, an enabled AI provider and the worker heartbeat, with the fix for each failing item. The same checks run on the command line with <code>php index.php publisher_cli health</code>.</p>
+<h3 dir="auto">Extraction worker</h3>
+<p dir="auto">Uploaded documents are queued and extracted by a command-line worker. Run one of:</p>
+<pre><code>
+php index.php publisher_cli daemon            # long-running service (poll every 5 s)
+
+php index.php publisher_cli work 25           # one batch, for a scheduler
+
+php index.php publisher_cli cleanup           # delete retained sources past the retention window
+
+</code></pre>
+<p dir="auto">Windows Task Scheduler (elevated PowerShell, runs a batch every minute):</p>
+<pre><code>
+powershell -ExecutionPolicy Bypass -File tools\publisher-worker-task.ps1 -Php &quot;C:\laragon\bin\php\php-8.1.10-Win32-vs16-x64\php.exe&quot;
+
+</code></pre>
+<p dir="auto">Linux cron:</p>
+<pre><code>
+* * * * * cd /var/www/altus &amp;&amp; php index.php publisher_cli work 25 &gt;&gt; application/logs/publisher-worker.log 2&gt;&amp;1
+
+</code></pre>
+<p dir="auto">Each run writes a heartbeat; the publisher shows the last heartbeat and warns when none was recorded in the last five minutes. Batch runs also apply the source retention cleanup. Migration <code>20260101000029_publisher_completion</code> adds the draft featured image (<code>media_id</code>) and the job retry time (<code>next_attempt_at</code>).</p>
+<p dir="auto">For uploads set PHP <code>upload_max_filesize</code> to at least <code>15M</code> and <code>post_max_size</code> to at least <code>20M</code>, then restart Apache. These values cover document imports; larger lesson/video uploads use the existing LMS limits. Upload temporary storage and existing application log/media/private-storage directories must be writable by the web-server account.</p>
+<p dir="auto">PDFs are bounded to 150 pages and 120,000 extracted characters. Pages without a text layer are read with local Tesseract OCR (English + Arabic). Encrypted and damaged PDFs are rejected. Upload size is limited to 15 MB. Extraction stores the source text privately in the database, marked with <code>[Page N]</code>, and records per-page provenance (method text/OCR, characters, review required) shown beside the source. OCR pages and Arabic text layers stored in presentation forms are flagged for human review. The original upload is retained privately only for the retention window. Use the existing lesson-resource upload if learners need the source file.</p>
+<p dir="auto">Generated sections, lessons and questions carry <code>source_pages</code> references to those markers. Before creating content you can choose a featured image from the platform media library (applied to the course thumbnail, page hero, article cover or topic hero). SOP output maps onto the knowledge fields (purpose, scope, responsibilities, procedure, safety notes, escalation …) and can be submitted to <strong>internal review</strong> with a chosen reviewer and approver; it is never approved or published automatically.</p>
+<p dir="auto">Regenerate the extraction fixtures with <code>python tools/publisher_fixtures.py</code>; run the extractor tests with <code>python tools/test_publisher_extract.py</code>.</p>
+<h2 dir="auto">Configure AI generation</h2>
+<p dir="auto">Open the existing <strong>AI Studio → AI providers &amp; keys</strong> screen at <code>/ha_ai/providers</code>. Enable an approved chat provider, set its credentials through the existing encrypted settings workflow, and synchronize/select its models. Keep the application&#39;s encryption key stable when moving environments. Provider credentials must not go into documentation, browser JavaScript or Git.</p>
+<p dir="auto">In <strong>Content Studio → AI Publisher</strong>, explicitly select a provider/model and click <strong>Generate draft</strong>. That action sends up to 60,000 extracted source characters plus your editorial brief to that provider. Upload/analysis alone performs local extraction. Generation needs the provider to return the required structured JSON; failures leave the existing draft intact. The provider/model and source/content hashes are recorded for review. The browser-test mock is confined to <code>e2e/</code>; it is disabled after tests and is not an application fallback.</p>
+<p dir="auto">Without an enabled provider, admins can still edit the website and catalogue, create courses manually, and load/review a valid structured package in the Publisher&#39;s advanced editor.</p>
+<h2 dir="auto">Permissions</h2>
+<p dir="auto">Website live editing, public catalogue editing and menus require system-scoped platform access. Page actions require <code>cms_pages.update</code>; publication additionally requires <code>cms_pages.publish</code>. Catalogue permissions use <code>programs</code>, <code>learning_paths</code>, <code>articles</code> or <code>cms_pages</code> according to the type. Document drafting requires <code>ai.generate</code> plus the target course/page/article/topic/SOP creation permission; course import additionally checks lesson, assessment and question-bank creation permissions when those objects are included.</p>
+<p dir="auto">Source drafts are visible to their author and system administrators. Tenant authors cannot inspect other authors&#39; sources or import into another organisation. The existing role and scope system remains authoritative; hiding a sidebar link is not the permission check.</p>
+<h2 dir="auto">Verification and rollback</h2>
+<pre><code>
+&amp; $altusPhp index.php ha_test run
+
+&amp; $altusPhp index.php ha_test prepare_browser
+
+Set-Location e2e
+
+npm.cmd ci
+
+npx.cmd playwright test -c playwright.studio.config.ts
+
+Set-Location ../mcp-gateway
+
+npm.cmd ci
+
+npm.cmd run build
+
+npm.cmd test
+
+npm.cmd run test:integration
+
+</code></pre>
+<p dir="auto">Both PHP commands rebuild only <code>atlas_hospitality_test</code>. The Studio Playwright configuration uses loopback port 8099 and the same isolated database; it refuses a mismatched server. Run database rebuilds, browser tests and the MCP integration test sequentially: the latter two share the seeded browser database. Microsoft Edge and Node are required. Existing Playwright configuration can modify the working local database, so use the isolated Studio configuration for this guide.</p>
+<p dir="auto">For rollback, restore a verified database backup and the corresponding source/assets together. Migration 25&#39;s <code>down()</code> removes the two new draft tables but deliberately retains authored landing pages/menu data; using it discards private drafts and is not a complete content rollback. Migration 26 retains the binding marker on rollback to avoid changing published content accidentally. Do not reset the repository: it contains unrelated pre-existing work. For page-level recovery use the existing SEO/revisions screen; re-open the live editor after restoring a revision.</p>
+<p dir="auto">Before deploying, perform the checks in <a href="DEPLOYMENT.html">DEPLOYMENT</a>, configure a real approved AI provider, test extraction under the actual web-server account, and validate this release on staging. Production was not deployed during this task.</p></main></html>

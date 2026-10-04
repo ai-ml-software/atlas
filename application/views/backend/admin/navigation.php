@@ -18,6 +18,10 @@
 
         <li class="side-nav-title side-nav-item"><?php echo get_phrase('navigation'); ?></li>
 
+        <?php $this->load->library('ha_auth'); if ($this->ha_auth->is_system_scoped() && $this->ha_auth->has('settings.view')): ?>
+        <li class="side-nav-item"><a href="<?php echo site_url('hkp/admin/mobile'); ?>" class="side-nav-link"><i class="dripicons-device-mobile"></i><span><?php echo $this->session->userdata('hkp_locale') === 'ar' ? 'إعدادات تطبيق الجوال' : 'Mobile app settings'; ?></span></a></li>
+        <?php endif; ?>
+
         <li class="side-nav-item                                		                         <?php if ($page_name == 'dashboard') {
                                                                          echo 'active';
                                                                  }

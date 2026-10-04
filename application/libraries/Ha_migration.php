@@ -38,6 +38,7 @@ abstract class Ha_migration {
             $this->db->query('DROP TABLE IF EXISTS ' . $t);
         }
         $this->db->query('SET FOREIGN_KEY_CHECKS=1');
+        unset($this->db->data_cache['table_names']);
     }
 
     /**
@@ -46,12 +47,14 @@ abstract class Ha_migration {
      * failure without erroring. $columns maps column name => DDL after the name.
      */
     protected function add_columns($table, array $columns) {
+        unset($this->db->data_cache['field_names'][$table]);
         $existing = $this->db->list_fields($table);
         foreach ($columns as $name => $ddl) {
             if (!in_array($name, $existing, true)) {
                 $this->db->query('ALTER TABLE ' . $table . ' ADD COLUMN `' . $name . '` ' . $ddl);
             }
         }
+        unset($this->db->data_cache['field_names'][$table]);
     }
 
     /** Reverse of add_columns(): drops the columns that exist. */
@@ -59,11 +62,13 @@ abstract class Ha_migration {
         if (!$this->db->table_exists($table)) {
             return;
         }
+        unset($this->db->data_cache['field_names'][$table]);
         $existing = $this->db->list_fields($table);
         foreach ($names as $name) {
             if (in_array($name, $existing, true)) {
                 $this->db->query('ALTER TABLE ' . $table . ' DROP COLUMN `' . $name . '`');
             }
         }
+        unset($this->db->data_cache['field_names'][$table]);
     }
 }

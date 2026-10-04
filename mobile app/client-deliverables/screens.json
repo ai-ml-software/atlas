@@ -41,7 +41,7 @@
     "ar": "مرحباً بعودتك",
     "module": "Access",
     "kind": "auth",
-    "benefit": "Securely connect a personal account or explicitly enter the demonstration.",
+    "benefit": "Sign in with email/password and open the workspace permitted by your account.",
     "next": "first-setup"
   },
   {
@@ -66,7 +66,7 @@
     "ar": "تأكيد هويتك",
     "module": "Access",
     "kind": "auth",
-    "benefit": "Preserve the platform authenticator and recovery-code policy."
+    "benefit": "Confirm a new device and pass the platform authenticator or recovery-code policy when required."
   },
   {
     "id": "first-setup",

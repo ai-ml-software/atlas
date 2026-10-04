@@ -1,19 +1,19 @@
 <div class="hkp-head">
-  <div><div class="hkp-eyebrow"><a href="<?php echo hkp_url('learn/module/' . $c['id']); ?>"><?php echo hkp_h($c['title']); ?></a></div>
+  <div><div class="hkp-eyebrow"><a href="<?php echo hkp_url((!empty($preview) ? 'cms/module/' : 'learn/module/') . $c['id']); ?>"><?php echo hkp_h($c['title']); ?></a></div>
   <h1><?php echo hkp_h($l['title']); ?></h1>
   <?php if ($l['objective']): ?><p><?php echo hkp_h($l['objective']); ?></p><?php endif; ?></div>
-  <?php echo hkp_badge($progress['status'] === 'completed' ? 'completed' : 'in_progress'); ?>
+  <?php if (empty($preview)) { echo hkp_badge($progress['status'] === 'completed' ? 'completed' : 'in_progress'); } ?>
 </div>
 <?php if (!$l['translated']): ?><div class="hkp-flash hkp-flash--error"><?php echo hkp_e('This lesson is not yet available in {language}; the English version is shown.', array('language' => ha_locale_name(hkp_locale()))); ?></div><?php endif; ?>
 
-<article class="hkp-card" data-lesson-track="<?php echo hkp_url('learn/track_time/' . $l['id']); ?>" data-resume="<?php echo (int) $progress['last_position_seconds']; ?>">
+<article class="hkp-card"<?php if (empty($preview)): ?> data-lesson-track="<?php echo hkp_url('learn/track_time/' . $l['id']); ?>" data-resume="<?php echo (int) $progress['last_position_seconds']; ?>"<?php endif; ?>>
   <?php if ($video): ?>
     <?php if (!empty($video['credit'])): ?><p class="hkp-small"><?php echo hkp_h($video['credit']); ?> · <?php echo hkp_e('Video language: {language}', array('language' => ha_locale_name($video['locale']))); ?> <?php if (!empty($video['watch_url'])): ?><a href="<?php echo hkp_h($video['watch_url']); ?>" target="_blank" rel="noopener noreferrer"><?php echo hkp_e('Original video'); ?></a><?php endif; ?></p><?php endif; ?>
     <div class="hkp-video" style="margin-bottom:1rem">
       <?php if ($video['type'] === 'embed'): ?>
         <iframe src="<?php echo hkp_h($video['src']); ?>" title="<?php echo hkp_h($l['title']); ?>" allow="encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>
       <?php else: ?>
-        <video src="<?php echo hkp_h($video['src']); ?>" controls preload="metadata" playsinline>
+        <video src="<?php echo hkp_h($video['src']); ?>" controls controlslist="nodownload" oncontextmenu="return false;" preload="metadata" playsinline>
           <?php if (!empty($video['captions_url'])): ?><track kind="captions" src="<?php echo hkp_h(base_url(ltrim($video['captions_url'], '/'))); ?>" srclang="<?php echo hkp_h(hkp_locale()); ?>" default><?php endif; ?>
         </video>
       <?php endif; ?>
@@ -49,11 +49,18 @@
   <?php endif; ?>
 </article>
 
+<?php if (empty($preview)): ?>
 <div class="hkp-actions" style="margin-top:1rem;justify-content:space-between">
   <span><?php if ($prev): ?><a class="hkp-btn hkp-btn--ghost" href="<?php echo hkp_url('learn/lesson/' . $prev); ?>">← <?php echo hkp_e('Previous'); ?></a><?php endif; ?></span>
+  <?php if (!empty($checkpoint) && $progress['status'] !== 'completed'): ?>
+  <a class="hkp-btn" data-lesson-checkpoint href="<?php echo hkp_url('assess/theory/' . $checkpoint); ?>"><?php echo hkp_icon('check'); ?> <?php echo hkp_e('Take assessment'); ?></a>
+  <?php else: ?>
   <form method="post" action="<?php echo hkp_url('learn/complete/' . $l['id']); ?>"><?php echo ha_csrf_field(); ?>
     <?php if ($l['completion_rule'] === 'acknowledge'): ?><label class="hkp-check"><input type="checkbox" required> <?php echo hkp_e('I have read and will follow this checklist.'); ?></label><?php endif; ?>
     <button class="hkp-btn"><?php echo hkp_icon('check'); ?> <?php echo $progress['status'] === 'completed' ? hkp_e('Completed — continue') : hkp_e('Mark lesson complete'); ?></button>
   </form>
+  <?php endif; ?>
   <span><?php if ($next): ?><a class="hkp-btn hkp-btn--ghost" href="<?php echo hkp_url('learn/lesson/' . $next); ?>"><?php echo hkp_e('Next'); ?> →</a><?php endif; ?></span>
 </div>
+
+<?php endif; ?>

@@ -1,4 +1,8 @@
-# ALTUS mobile implementation audit — 2 October 2026
+# ALTUS mobile implementation audit — updated 4 October 2026
+
+The 1.2.1 release adds direct email/password sign-in, email device confirmation, existing authenticator/recovery verification, seven-day account/tenant-bound sessions, logout revocation, precise per-screen permissions and foreground permission refresh. Migration `20260101000034` has been applied locally. Ten isolated authentication tests (50 assertions), fifteen existing key/2FA regression tests (73 assertions), eleven mobile configuration/access tests, 33 actual login/role HTTP and browser checks, and twenty API/assessment regression checks passed. All 110 screens were captured again in English and Arabic with zero browser runtime errors or horizontal overflow. The production website still returned the older “Missing or malformed API key” login response when checked on 4 October; the supplied backend update must be deployed there before native password login can work. Advanced administrator tools currently open the secure web console. The older artifact details below describe the initial preview and are superseded by the 1.2.1 build report.
+
+Dependency review: npm audit currently reports 31 findings (12 moderate, 19 high). Proposed fixes include incompatible Expo/React Native downgrades, so no forced downgrade was applied. Dependency security review remains part of production acceptance. Expo Doctor passes all 21 compatibility checks; compatibility checks do not resolve security advisories.
 
 The delivered code is a native mobile product preview with working demonstration journeys and an additive live API. It is not yet a fully deployed production platform. Screen coverage, functional demonstration behavior, live integration and native validation are separate facts.
 
@@ -30,7 +34,7 @@ The language registry includes 186 entries: all 184 ISO 639-1 languages plus Fil
 
 | Area | Remaining work |
 |---|---|
-| Authentication | Native password/session, reset and MFA integration preserving existing device, consent and anti-abuse policies; current live access uses scoped personal keys. |
+| Authentication | Native password/session and device/MFA verification implemented; production backend rollout and device validation remain. Password recovery uses the existing secure website. Native captcha integration remains required where browser captcha is enabled. |
 | Learning delivery | Device validation of video/audio playback, resume, every assessment type, interruption/retry and timers; protected/private media delivery and PDF/interactive lesson rendering. |
 | Offline | Encrypted account-bound content, licenses/expiry/revocation, media downloads, version reconciliation and idempotent progress synchronization. Current live reading copies are session-local; demonstration copies persist locally. |
 | Push | Register device tokens securely, apply server preferences, deliver via configured providers, handle deep links and failed/revoked tokens. Local preference switches alone do not deliver push. |

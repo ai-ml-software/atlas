@@ -2,20 +2,20 @@
 
 <section class="ha-hero<?= !empty($topic['hero_image']) ? ' ha-hero--image' : '' ?>">
     <?php $hero = ha_image_variant($topic['hero_image'], 'wide'); if ($hero): ?>
-        <div class="ha-hero__media" aria-hidden="true"
+        <div class="ha-hero__media" aria-hidden="true"<?= ha_studio('hero_image', 'image') ?>
              style="background-image:url('<?= base_url($hero) ?>')"></div>
     <?php endif; ?>
     <div class="ha-shell ha-hero__body">
         <?php if (!empty($topic['city'])): ?>
             <p><span class="ha-pill ha-pill--accent"><?= html_escape($topic['city']) ?></span></p>
         <?php endif; ?>
-        <h1><?= html_escape($topic['title']) ?></h1>
+        <h1<?= ha_studio('title') ?>><?= html_escape($topic['title']) ?></h1>
     </div>
 </section>
 
 <section class="ha-section">
     <div class="ha-shell ha-detail">
-        <div class="ha-prose">
+        <div class="ha-prose"<?= ha_studio('body', 'html') ?>>
             <?= $topic['intro'] ?>
         </div>
 

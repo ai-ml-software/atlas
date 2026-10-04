@@ -1,0 +1,61 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PUBLISHER API</title><style>:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f7f5f1;color:#1c2227;font:16px/1.7 'Segoe UI',Tahoma,Arial,sans-serif}header{background:#1c2227;color:white;padding:28px max(24px,calc((100% - 1080px)/2));border-bottom:4px solid #c45b2f}header a{color:#f3c5a8}main{max-width:1080px;margin:auto;padding:28px 24px 70px}h1,h2,h3{line-height:1.25}h2{margin-top:36px}a{color:#944527}pre{padding:18px;background:#e9e5df;border-radius:10px;overflow:auto}code{font-size:.9em}table{border-collapse:collapse;width:100%;background:white;font-size:14px}td,th{padding:10px;border:1px solid #ddd;text-align:start;vertical-align:top}.card{background:white;border:1px solid #ded8cf;border-radius:14px;padding:22px;margin-bottom:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}video{display:block;width:100%;max-height:640px;background:#111}.chapters{max-height:300px;overflow:auto;display:flex;flex-wrap:wrap;gap:8px;padding:10px 0}button,.button{border:1px solid #c45b2f;border-radius:8px;background:white;color:#71371e;padding:9px 12px;cursor:pointer;text-decoration:none;font:inherit}p{margin:12px 0}.muted{color:#646a6d}img{max-width:100%}@media(max-width:600px){main{padding:20px 15px}table{display:block;overflow:auto}header{padding:22px 15px}}@media print{header,nav,.no-print{display:none}body{background:white;font-size:12px}main{padding:0;max-width:none}h2{break-after:avoid}pre,table{break-inside:avoid}a{color:inherit}}</style><header><strong>ALTUS KNOWLEDGE &amp; PERFORMANCE</strong><br><a href="index.html">User guides and recordings</a></header><main><h1 dir="auto">Native publisher API — <code>/api/publisher/v1</code></h1>
+<p dir="auto">Internal API used only by the MCP gateway. It is separate from, and does not</p>
+<p dir="auto">change, the public <code>/api/v1</code> contract. Implemented in</p>
+<p dir="auto"><code>application/controllers/Publisher_api.php</code> over the shared native services in</p>
+<p dir="auto"><code>Ha_publishing_service</code> (the same services the admin screens use).</p>
+<h2 dir="auto">Request</h2>
+<ul>
+<li><code>POST /api/publisher/v1/{action}</code> with a JSON object body (≤22 MB). Other methods → 405.</li>
+<li><code>Authorization: Bearer &lt;delegated JWT&gt;</code> — HS256, header <code>kid</code>, <code>aud=altus-native-publisher</code>, <code>iss=$ALTUS_MCP_URL</code>, lifetime ≤60 s, claims <code>sub</code>, <code>client_id</code>, <code>scope</code>, <code>source_id</code> (the OAuth access-token id). Each call re-verifies the token row, its OAuth grant, the user&#39;s active status and current permissions.</li>
+<li>Writes require <code>Idempotency-Key: [A-Za-z0-9_-]{8,100}</code>. Same key + same body → stored response is replayed with header <code>Idempotent-Replayed: true</code>; same key + different body → 409 <code>idempotency_conflict</code>.</li>
+<li>Optional <code>X-Request-Id</code> (echoed; generated otherwise).</li>
+<li>Body must never carry <code>user_id</code>, <code>organization_id</code> or <code>property_id</code> (422): identity and tenant come from the grant.</li>
+<li>Feature switch: when <code>ALTUS_MCP_ENABLED</code> is not <code>1</code> every call (including <code>bridge</code>) returns 503 <code>mcp_disabled</code>.</li>
+</ul>
+<h2 dir="auto">Response envelope</h2>
+<pre><code>
+{&quot;success&quot;:true,&quot;data&quot;:{...},&quot;error&quot;:null,&quot;request_id&quot;:&quot;...&quot;}
+
+{&quot;success&quot;:false,&quot;data&quot;:null,&quot;error&quot;:{&quot;code&quot;:&quot;conflict&quot;,&quot;message&quot;:&quot;...&quot;,&quot;details&quot;:{...},&quot;retryable&quot;:false},&quot;request_id&quot;:&quot;...&quot;}
+
+</code></pre>
+<p dir="auto">Writes add <code>data.audit_reference = {audit_id, actor_id, client_id, request_key, request_id}</code>; <code>audit_id</code> is the <code>ha_audit_log.id</code> row written in the same transaction.</p>
+<table>
+<tr><th>HTTP</th><th><code>error.code</code></th><th>When</th></tr>
+<tr><td>401</td><td><code>missing_credential</code>, <code>invalid_credential</code>, <code>unknown_key</code>, <code>token_revoked</code>, <code>grant_revoked</code>, <code>user_revoked</code>, <code>login_expired</code></td><td>Bad/expired/over-long JWT, unknown <code>kid</code>, revoked token or grant, inactive user. <code>WWW-Authenticate</code> is set.</td></tr>
+<tr><td>403</td><td><code>insufficient_scope</code> (<code>details.required_scope</code>), <code>forbidden</code>, <code>approval_required</code>, <code>self_approval_forbidden</code></td><td>Scope or permission missing, tenant boundary, unreviewed approval.</td></tr>
+<tr><td>404</td><td><code>not_found</code>, <code>unknown_operation</code></td><td>Missing object/revision/approval, or one owned by another user/client/tenant (no existence leak).</td></tr>
+<tr><td>405</td><td><code>method_not_allowed</code></td><td>Not POST.</td></tr>
+<tr><td>409</td><td><code>conflict</code> (<code>details.current_version</code>, <code>current_base_hash</code>, <code>current_hash</code>, <code>object_type</code>, <code>object_id</code>; for approvals also <code>approval_id</code>, <code>approved_version</code>), <code>idempotency_conflict</code>, <code>approval_expired</code>, <code>approval_consumed</code>, <code>approval_mismatch</code>, <code>approval_unavailable</code></td><td>Stale <code>version</code>/<code>base_hash</code>, content changed after approval, reused approval.</td></tr>
+<tr><td>413</td><td><code>payload_too_large</code></td><td>Body over 22 MB.</td></tr>
+<tr><td>422</td><td><code>validation_failed</code>, <code>idempotency_key_required</code>, <code>sop_governance_required</code></td><td>Invalid input; SOPs cannot be published through MCP.</td></tr>
+<tr><td>500</td><td><code>internal_error</code> (<code>retryable: true</code>)</td><td>Unexpected failure; transaction rolled back.</td></tr>
+<tr><td>503</td><td><code>mcp_disabled</code>, <code>mcp_not_configured</code></td><td>Feature switch off / secret missing.</td></tr>
+</table>
+<h2 dir="auto">Actions</h2>
+<p dir="auto">Scope in brackets. Types: <code>page</code>, <code>site</code>, <code>navigation</code>, <code>courses</code>, <code>programs</code>, <code>paths</code>, <code>articles</code>, <code>topics</code>, <code>publisher</code> (document drafts).</p>
+<table>
+<tr><th>Action</th><th>Body</th><th>Result</th></tr>
+<tr><td><code>health</code> [read]</td><td>—</td><td>native readiness flags</td></tr>
+<tr><td><code>list</code> [read]</td><td><code>type</code>, <code>query?</code>, <code>page?</code></td><td>object list</td></tr>
+<tr><td><code>get</code> [read]</td><td><code>type</code>, <code>id</code></td><td><code>object_id, object_type, status, version, hash, state{payload,version,base_hash,published}, edit_url, preview_url, warnings</code></td></tr>
+<tr><td><code>create</code> [content/course write]</td><td><code>type</code> (courses/articles/topics/programs/paths), <code>payload</code></td><td>new private draft; native tenant scope; status forced to draft</td></tr>
+<tr><td><code>save</code> [content/course write]</td><td><code>type</code>, <code>id</code>, <code>version</code>, <code>base_hash</code>, <code>payload</code></td><td>as <code>get</code> (version + 1)</td></tr>
+<tr><td><code>media_list</code> [read] / <code>media</code> [media write]</td><td><code>query?</code> / <code>name, base64, alt_en?, alt_ar?</code></td><td>media items / stored image</td></tr>
+<tr><td><code>source</code>, <code>upload_document</code> [content/course write]</td><td>text or base64 file, <code>name</code>, <code>target</code>, <code>locale</code></td><td>publisher draft</td></tr>
+<tr><td><code>generate</code>, <code>translate</code>, <code>source_correction</code>, <code>import</code>, <code>job_control</code> [write]; <code>job_status</code> [read]</td><td><code>id</code>, <code>version</code>, …</td><td>publisher draft / job</td></tr>
+<tr><td><code>validate</code> [read]</td><td><code>target</code>, <code>payload</code></td><td>dry-run package validation</td></tr>
+<tr><td><code>request_publish</code> [publish]</td><td><code>type</code>, <code>id</code>, `operation: publish</td><td>archive`</td><td><code>approval_id, status:pending, object_type, object_id, operation, version, expires_at (UTC, ISO 8601 Z), review_url</code></td></tr>
+<tr><td><code>approval_status</code> [read]</td><td><code>id</code></td><td><code>status</code> (`pending</td><td>approved</td><td>declined</td><td>consumed</td><td>expired<code>), binding fields, </code>expires_at`</td></tr>
+<tr><td><code>publish</code> [publish]</td><td><code>approval_id</code>, optional <code>type</code>,<code>id</code>,<code>operation</code>,<code>version</code> to assert the binding</td><td>published object (<code>version: 0</code>)</td></tr>
+<tr><td><code>restore</code> [write]</td><td><code>type</code>, <code>id</code>, <code>revision</code>, <code>version</code>, <code>base_hash</code></td><td>revision restored <strong>as a draft</strong></td></tr>
+<tr><td><code>unarchive</code> [publish]</td><td><code>type</code>, <code>id</code></td><td>archived object returned to <code>draft</code></td></tr>
+<tr><td><code>bridge</code></td><td><code>{code, binding}</code> with <code>aud=altus-login-exchange</code> JWT whose <code>body_hash</code> matches</td><td>gateway-only login exchange</td></tr>
+</table>
+<p dir="auto">There is no delete, SQL or shell action.</p>
+<h2 dir="auto">Approval rules</h2>
+<ul>
+<li>An approval is bound to client, requesting user, operation, object and content version (<code>object_version</code> + content hash). It expires 10 minutes after the request (<code>expires_at</code> stored in UTC), is single-use, and becomes invalid if the draft or published content changes.</li>
+<li>A reviewer must hold the publication permission for the object and be in scope. The requester cannot approve their own request unless <code>ALTUS_MCP_ALLOW_SELF_APPROVAL=1</code>.</li>
+<li>SOP documents are never published through MCP (<code>sop_governance_required</code>); imported SOP packages stay drafts in the existing SOP approval workflow.</li>
+</ul></main></html>

@@ -21,7 +21,14 @@ $img = function ($name, $fallback) {
     return '';
 };
 $bg = function ($url) { return $url !== '' ? ' style="background-image:url(\'' . html_escape($url) . '\')"' : ''; };
+get_instance()->load->helper('ha_studio');
+// Click-to-edit markers for corporate blocks (emitted only in an authorized private preview).
+$cf = function ($blk, $field) { return empty($blk['id']) ? '' : ha_studio('c:' . (int) $blk['id'] . ':' . $field); };
 $hero = $first('home_hero');
+if (!empty($studio_page_copy)) {
+    if (!empty($studio_page_copy['title'])) { $hero['title'] = $studio_page_copy['title']; }
+    $hero['body'] = $studio_page_copy['subtitle'] ?? $hero['body'];
+}
 $about = $by('about');
 $ans = $first('home_answer');
 list($q_open, $q_close) = $rtl ? array('«', '»') : array('“', '”');
@@ -37,14 +44,16 @@ $icons = array(
 
 <?php /* ================================================================ HERO */ ?>
 <section class="t-hero" aria-labelledby="t-h1">
-    <div class="t-hero__photo" aria-hidden="true"<?= $bg($img('hero-riyadh-terrace', 'page-home')) ?>></div>
+    <?php $studio_hero_image = !empty($studio_page_copy['hero_image']) ? $studio_page_copy['hero_image'] : ''; if ($studio_hero_image && !preg_match('~^https?://~', $studio_hero_image)) { $studio_hero_image = base_url(ltrim($studio_hero_image, '/')); } ?>
+    <div class="t-hero__photo" aria-hidden="true"<?= ha_studio('hero_image', 'image') ?><?= $bg($studio_hero_image ?: $img('hero-riyadh-terrace', 'page-home')) ?>></div>
     <p class="t-hero__place"><?= ha_pe('Riyadh') ?><br><?= ha_pe('Saudi Arabia') ?><br>&amp; <?= ha_pe('GCC') ?></p>
     <div class="ha-shell t-hero__body">
         <p class="ha-eyebrow"><?= ha_pe('Hospitality intelligence & business strategy') ?></p>
-        <h1 id="t-h1"><?= html_escape($hero['title']) ?></h1>
-        <p class="t-hero__lede"><?= html_escape($hero['body']) ?></p>
+        <h1 id="t-h1"<?= ha_studio('title') ?>><?= html_escape($hero['title']) ?></h1>
+        <p class="t-hero__lede"<?= ha_studio('subtitle') ?>><?= html_escape($hero['body']) ?></p>
         <div class="t-hero__actions">
-            <a class="ha-btn t-btn-light" href="<?= base_url($locale . '/services') ?>"><?= ha_pe('Explore our expertise') ?> <span aria-hidden="true">→</span></a>
+            <?php $studio_cta_url = !empty($studio_page_copy['cta_label']) && !empty($studio_page_copy['cta_url']) ? $studio_page_copy['cta_url'] : 'services'; if (!preg_match('~^(https?://|/|#)~', $studio_cta_url)) { $studio_cta_url = base_url($locale . '/' . ltrim($studio_cta_url, '/')); } ?>
+            <a class="ha-btn t-btn-light" href="<?= html_escape($studio_cta_url) ?>"><span<?= ha_studio('cta_label') ?>><?= !empty($studio_page_copy['cta_label']) ? html_escape($studio_page_copy['cta_label']) : ha_pe('Explore our expertise') ?></span> <span aria-hidden="true">→</span></a>
             <a class="ha-btn t-btn-line" href="<?= base_url($locale . '/contact') ?>"><?= ha_pe('Start a conversation') ?></a>
         </div>
     </div>
@@ -72,7 +81,7 @@ $icons = array(
         <div>
             <p class="ha-eyebrow"><?= ha_pe('About Altus Gulf') ?></p>
             <h2 id="t-about"><?= ha_pe('Strategic Advisory for a Stronger Hospitality Future') ?></h2>
-            <p><?= html_escape($ans['body']) ?></p>
+            <p<?= $cf($ans, 'body') ?>><?= html_escape($ans['body']) ?></p>
             <div class="t-links">
                 <a class="t-link" href="<?= base_url($locale . '/about-altus') ?>"><?= ha_pe('Our story') ?> <span aria-hidden="true">→</span></a>
                 <a class="t-link" href="<?= base_url($locale . '/about-altus#why') ?>"><?= ha_pe('Why Altus Gulf') ?> <span aria-hidden="true">→</span></a>
@@ -132,7 +141,7 @@ $icons = array(
             <div>
                 <p class="ha-eyebrow"><?= ha_pe('Why Altus Gulf') ?></p>
                 <h2 id="t-adv"><?= ha_pe('The Advantage You Can Rely On') ?></h2>
-                <p><?= html_escape($first('why')['body']) ?></p>
+                <p<?= $cf($first('why'), 'body') ?>><?= html_escape($first('why')['body']) ?></p>
                 <a class="t-link" href="<?= base_url($locale . '/ascent') ?>"><?= ha_pe('Our method: the Altus Ascent™ Framework') ?> <span aria-hidden="true">→</span></a>
             </div>
             <ol>
@@ -169,7 +178,7 @@ $icons = array(
                 <div>
                     <h3><?= ha_pe('The GOPPAR Value Stack™') ?></h3>
                     <ol>
-                        <?php foreach ($b['goppar'] ?? array() as $g): ?><li><span><?= html_escape($g['title']) ?></span><span aria-hidden="true">↑</span></li><?php endforeach; ?>
+                        <?php foreach ($b['goppar'] ?? array() as $g): ?><li><span<?= $cf($g, 'title') ?>><?= html_escape($g['title']) ?></span><span aria-hidden="true">↑</span></li><?php endforeach; ?>
                     </ol>
                 </div>
                 <div class="t-ring">
@@ -193,16 +202,16 @@ $icons = array(
         <div>
             <p class="ha-eyebrow"><?= ha_pe('Market opportunity') ?></p>
             <h2 id="t-mkt"><?= ha_pe('A Growing Market. A Bigger Tomorrow.') ?></h2>
-            <p><?= html_escape($first('market')['body']) ?></p>
+            <p<?= $cf($first('market'), 'body') ?>><?= html_escape($first('market')['body']) ?></p>
             <a class="t-link" href="<?= base_url($locale . '/market') ?>"><?= ha_pe('Explore market insights') ?> <span aria-hidden="true">→</span></a>
         </div>
         <div>
             <ul class="t-market__kpis">
                 <?php foreach ($b['market_kpi'] as $k): ?>
-                    <li><span class="t-market__v"><?= html_escape($k['title']) ?></span><span class="t-market__l"><?= html_escape($k['body']) ?></span></li>
+                    <li><span class="t-market__v"<?= $cf($k, 'title') ?>><?= html_escape($k['title']) ?></span><span class="t-market__l"<?= $cf($k, 'body') ?>><?= html_escape($k['body']) ?></span></li>
                 <?php endforeach; ?>
             </ul>
-            <p class="ag-sources"><?= html_escape($first('market_sources')['body']) ?></p>
+            <p class="ag-sources"<?= $cf($first('market_sources'), 'body') ?>><?= html_escape($first('market_sources')['body']) ?></p>
         </div>
     </div>
 </section>
@@ -212,15 +221,15 @@ $icons = array(
 <section class="ha-section ha-section--tint" id="platform" aria-labelledby="t-plat">
     <div class="ha-shell">
         <div class="t-head">
-            <div><p class="ha-eyebrow"><?= ha_pe('Proprietary digital platform') ?></p><h2 id="t-plat"><?= html_escape($pl['positioning']['title'] ?? '') ?></h2></div>
-            <p><?= html_escape($pl['positioning']['body'] ?? '') ?></p>
+            <div><p class="ha-eyebrow"><?= ha_pe('Proprietary digital platform') ?></p><h2 id="t-plat"<?= $cf($pl['positioning'] ?? array(), 'title') ?>><?= html_escape($pl['positioning']['title'] ?? '') ?></h2></div>
+            <p<?= $cf($pl['positioning'] ?? array(), 'body') ?>><?= html_escape($pl['positioning']['body'] ?? '') ?></p>
             <a class="t-link" href="<?= base_url($locale . '/knowledge-performance') ?>"><?= ha_pe('Discover the platform') ?> <span aria-hidden="true">→</span></a>
         </div>
         <div class="ha-grid ha-grid--4">
-            <?php foreach ($b['platform_features'] as $x): ?><article class="ag-cap"><h3><?= html_escape($x['title']) ?></h3><p><?= html_escape($x['body']) ?></p></article><?php endforeach; ?>
+            <?php foreach ($b['platform_features'] as $x): ?><article class="ag-cap"><h3<?= $cf($x, 'title') ?>><?= html_escape($x['title']) ?></h3><p<?= $cf($x, 'body') ?>><?= html_escape($x['body']) ?></p></article><?php endforeach; ?>
         </div>
         <?php $dom = $first('platform_domains'); if ($dom['body'] !== ''): ?>
-            <p class="ag-subhead"><?= html_escape($dom['title']) ?></p>
+            <p class="ag-subhead"<?= $cf($dom, 'title') ?>><?= html_escape($dom['title']) ?></p>
             <ul class="ha-chips"><?php foreach ($lines($dom['body']) as $d): ?><li><a class="ha-chip" href="<?= base_url($locale . '/courses') ?>"><?= html_escape($d) ?></a></li><?php endforeach; ?></ul>
         <?php endif; ?>
     </div>
@@ -260,7 +269,7 @@ $icons = array(
     <div class="ha-shell t-voice__inner">
         <blockquote>
             <p class="ha-eyebrow" id="t-voice"><?= ha_pe('From the founders') ?></p>
-            <p><?= $q_open . html_escape($about['founders_quote']['body']) . $q_close ?></p>
+            <p><?= $q_open ?><span<?= $cf($about['founders_quote'], 'body') ?>><?= html_escape($about['founders_quote']['body']) ?></span><?= $q_close ?></p>
         </blockquote>
         <div class="t-voice__who">
             <?php foreach ($leaders as $l): ?>
@@ -281,9 +290,9 @@ $icons = array(
         <div class="ha-section__head"><p class="ha-eyebrow"><?= ha_pe('Questions and answers') ?></p><h2 id="ag-faq"><?= ha_pe('Frequently asked questions about Altus Gulf') ?></h2></div>
         <div class="ha-faq">
         <?php foreach ($faqs as $i => $f): ?>
-            <details<?= $i === 0 ? ' open' : '' ?>>
-                <summary><h3 class="ag-faq__q"><?= html_escape($f['question']) ?></h3></summary>
-                <p class="ha-faq__body"><?= html_escape($f['answer']) ?></p>
+            <?php $fb = $b['home_faq'][$i] ?? array(); ?><details<?= $i === 0 || ha_studio_mode() ? ' open' : '' ?>>
+                <summary><h3 class="ag-faq__q"<?= $cf($fb, 'title') ?>><?= html_escape($f['question']) ?></h3></summary>
+                <p class="ha-faq__body"<?= $cf($fb, 'body') ?>><?= html_escape($f['answer']) ?></p>
             </details>
         <?php endforeach; ?>
         </div>
@@ -298,8 +307,8 @@ $icons = array(
 <section class="t-close t-dark" aria-labelledby="t-close"<?= $bg($img('cta-palms', 'city-alula')) ?>>
     <div class="ha-shell t-close__inner">
         <p class="ha-eyebrow"><?= ha_pe('Let’s build a stronger hospitality future') ?></p>
-        <h2 id="t-close"><?= html_escape($cl['title']) ?></h2>
-        <p><?= html_escape($cl['body']) ?></p>
+        <h2 id="t-close"<?= $cf($cl, 'title') ?>><?= html_escape($cl['title']) ?></h2>
+        <p<?= $cf($cl, 'body') ?>><?= html_escape($cl['body']) ?></p>
         <div class="t-hero__actions">
             <a class="ha-btn t-btn-light" href="<?= base_url($locale . '/contact') ?>"><?= ha_pe('Get in Touch') ?> <span aria-hidden="true">→</span></a>
             <a class="ha-btn t-btn-line" href="<?= base_url($locale . '/services') ?>"><?= ha_pe('Explore our services') ?></a>

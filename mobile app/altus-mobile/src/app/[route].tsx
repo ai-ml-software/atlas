@@ -39,7 +39,16 @@ import { Knowledge, Sop, Assistant } from "../features/Knowledge";
 import { Profile, Settings, Dashboard, Form } from "../features/Workspaces";
 import { Collection, Detail } from "../features/Collections";
 import { QR } from "../features/QR";
-const primary = ["home", "learning", "knowledge", "assistant", "profile"];
+import { AdminWeb } from "../features/AdminWeb";
+/** Bottom tabs; each is shown only when the signed-in role may open it. */
+const tabs = [
+  ["home", "home-outline", "home"],
+  ["learning", "book-outline", "learn"],
+  ["knowledge", "library-outline", "knowledge"],
+  ["assistant", "sparkles-outline", "ai"],
+  ["management", "people-outline", "teamTab"],
+  ["profile", "person-outline", "profile"],
+] as const;
 const liveSupported = new Set([
   "home",
   "learning",
@@ -91,23 +100,23 @@ export default function Screen() {
   const params = useLocalSearchParams<{ route: string; id?: string }>();
   const key = params.route || "home";
   const spec = byId[key] || byId["not-found"];
-  const { state, t, ready, rtl, online, has } = useApp();
+  const { state, t, ready, rtl, online, can } = useApp();
   const c = useTheme();
   const { width } = useWindowDimensions();
   if (!ready) return <StateView type="loading" />;
   if (state.mode === "guest" && !publicScreens.has(key))
     return <Redirect href="/sign-in" />;
-  const denied =
-    spec.roles &&
-    (state.mode === "demo"
-      ? !spec.roles.includes(state.role)
-      : !has(spec.module === "Administration" ? "cms.view" : "learners.view"));
-  const root = primary.includes(key);
+  if (state.mode !== "guest" && key === "sign-in") return <Redirect href="/home" />;
+  const root = tabs.some(([id]) => id === key);
   const showTabs =
     state.mode !== "guest" && !["Access", "System"].includes(spec.module);
   const title = state.locale === "ar" ? spec.ar : spec.title;
-  const page = denied ? (
+  // Role permissions intersected with the administrator's feature toggles (/hkp/admin/mobile).
+  const allowed = publicScreens.has(key) || spec.module === "System" || can(key);
+  const page = !allowed ? (
     <StateView type="restricted" />
+  ) : state.mode === "live" && spec.module === "Administration" ? (
+    <AdminWeb spec={spec} />
   ) : state.mode === "live" &&
     !liveSupported.has(key) &&
     !publicScreens.has(key) ? (
@@ -144,7 +153,7 @@ export default function Screen() {
             }}
           >
             <Row style={{ justifyContent: "space-between" }}>
-              {!root && key !== "welcome" ? (
+              {!root && key !== "sign-in" ? (
                 <IconButton
                   name={rtl ? "arrow-forward" : "arrow-back"}
                   label={t("back")}
@@ -152,7 +161,7 @@ export default function Screen() {
                     router.canGoBack()
                       ? router.back()
                       : router.replace(
-                          state.mode === "guest" ? "/welcome" : "/home",
+                          state.mode === "guest" ? "/sign-in" : "/home",
                         )
                   }
                 />
@@ -268,13 +277,9 @@ export default function Screen() {
                 gap: 0,
               }}
             >
-              {[
-                ["home", "home-outline", "home"],
-                ["learning", "book-outline", "learn"],
-                ["knowledge", "library-outline", "knowledge"],
-                ["assistant", "sparkles-outline", "ai"],
-                ["profile", "person-outline", "profile"],
-              ].map(([id, icon, label]) => (
+              {tabs
+                .filter(([id]) => id === "home" || id === "profile" || can(id))
+                .map(([id, icon, label]) => (
                 <Pressable
                   key={id}
                   accessibilityRole="tab"

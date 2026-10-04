@@ -1,0 +1,172 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:17.762
+Website pages — Find a website page, open its live editor and click supported text or images on the actual frontend. Add, duplicate, order or hide sections. Save a private draft, preview responsive layouts, then publish explicitly.
+
+00:00:18.000 --> 00:00:34.747
+Courses & lessons — Create or open a course. Edit its sections, lessons, media and assessments. Check learner-facing content and language coverage. Saving draft content does not publish it; use the normal publication controls.
+
+00:00:36.000 --> 00:00:55.586
+AI Publisher — Upload a PDF, choose the output type and follow extraction progress. Review source text and generated content, reorder sections, and save a private draft. Configure an AI provider first. SOP output must pass its normal review and approval process.
+
+00:00:57.000 --> 00:01:10.017
+Navigation & footer — Choose a navigation location and language. Edit labels and internal destinations, add items and arrange their order. Check the footer groups and save the navigation changes.
+
+00:01:10.017 --> 00:01:22.855
+Theme & layout — Edit approved brand colours, fonts, spacing, header and footer settings. Save a draft, preview the real website and publish explicitly when the result is ready.
+
+00:01:22.855 --> 00:01:45.915
+Integrations & approvals — Connections lists OAuth clients and grants. Approvals contains publication requests. Health tests the gateway and dependencies. Audit lists actions. Archive lets permitted administrators restore supported content. Each MCP publication requires a current, single-use administrator approval.
+
+00:01:45.915 --> 00:02:01.972
+Portfolio dashboard — Use the portfolio dashboard and search the sidebar to find your tool. Website Pages, Courses, AI Publisher and Menus stay prominent. Other groups expand around the active page and show only permitted destinations.
+
+00:02:01.972 --> 00:02:16.334
+My learning — Use the learning list to find assigned, active or completed courses. Open a course, continue its next available lesson and follow any prerequisites. Progress is stored against your own account.
+
+00:02:16.334 --> 00:02:27.527
+Learning paths — Open an assigned learning path, check the required sequence and due dates, and continue the next available course. Locked items show their prerequisites.
+
+00:02:27.527 --> 00:02:40.854
+Knowledge — Search approved SOPs and knowledge in your permitted organisation and language. Open the document, check its version and read the procedure. Acknowledge only after you have read and understood it.
+
+00:02:40.854 --> 00:02:54.861
+Assessments — Open an available assessment, read its instructions and submit your answers. Attempts and passing requirements are enforced on the server. Review the outcome before retrying if another attempt is allowed.
+
+00:02:54.861 --> 00:03:07.838
+Competencies — Review your competency record, the required evidence and gaps. Arrange any practical assessment with an authorised assessor. A completed course is one part of the evidence.
+
+00:03:07.838 --> 00:03:19.015
+Action plans — Create or update an action plan with an owner, due date and evidence. Submit it for review when ready, then follow the review comments and update the result.
+
+00:03:19.015 --> 00:03:32.937
+Certificates — Review issued certificates and expiry dates. Open or download the permitted certificate and use its verification code to confirm its status. A revoked certificate no longer verifies as valid.
+
+00:03:32.937 --> 00:03:45.954
+AI assistant — Ask a focused question about approved operational knowledge. Review the cited sources. The assistant reports insufficient coverage when the approved library cannot support an answer.
+
+00:03:45.954 --> 00:04:00.341
+Team dashboard — Use the team dashboard to prioritise learning, capability gaps and operational actions for visible staff. Figures come from the current tenant data; choose the property context before making decisions.
+
+00:04:00.341 --> 00:04:12.418
+Team — Search the team within your permitted scope. Open a learner to inspect their learning and capability record. Organisation and property boundaries are enforced by the server.
+
+00:04:12.418 --> 00:04:24.380
+Cohorts — Create or open a cohort, select its permitted members and manage its learning assignments. Cohorts organise delivery while preserving each learner’s individual progress.
+
+00:04:24.380 --> 00:04:37.252
+Assign learning — Choose visible team members, a learning object and due date. Review the assignment before submitting. Existing assignments and learner progress stay attached to the same accounts.
+
+00:04:37.252 --> 00:04:50.759
+Assessor queue — Open an assigned practical assessment, inspect evidence and score the rubric criteria. Critical criteria can cap the outcome. Submit only observations supported by evidence.
+
+00:04:50.759 --> 00:05:02.382
+Gaps — Review capability gaps and their severity. Open the relevant learner or requirement, then plan an assignment, practical assessment or action that addresses the gap.
+
+00:05:02.382 --> 00:05:14.394
+Actions — Review submitted action plans, inspect the evidence and provide the permitted review outcome. Follow up through the approved workflow rather than marking unsupported work complete.
+
+00:05:14.394 --> 00:05:26.661
+Readiness — Review readiness requirements and supporting evidence. Investigate missing learning, practical criteria and operational actions before confirming readiness for a role or opening.
+
+00:05:26.661 --> 00:05:38.928
+Opening readiness — Review readiness requirements and supporting evidence. Investigate missing learning, practical criteria and operational actions before confirming readiness for a role or opening.
+
+00:05:38.928 --> 00:05:52.620
+Certifications — Review certificates for visible team members. Check issuance, expiry and revocation. Export only within your permitted scope and verify certificates through their public verification link.
+
+00:05:52.620 --> 00:06:03.617
+Quality audits — Open a quality audit, review its checklist and enter evidence-based findings. Link follow-up actions to the responsible people and track their completion.
+
+00:06:03.617 --> 00:06:15.934
+KPIs — Review property KPI scorecards and reporting periods. Check whether higher or lower values represent improvement, and record evidence before interpreting performance.
+
+00:06:15.934 --> 00:06:29.251
+Reports — Choose the report and filters for your permitted property context. Review learning, compliance and capability results, then export the supported spreadsheet or report if your role allows it.
+
+00:06:29.251 --> 00:06:45.762
+Organisations — Search and filter this structured catalogue. Use Add for a new record and Edit for an existing record. Required fields and tenant relationships are validated on save. Deletion is refused when related records still depend on the item.
+
+00:06:45.762 --> 00:07:02.273
+Properties — Search and filter this structured catalogue. Use Add for a new record and Edit for an existing record. Required fields and tenant relationships are validated on save. Deletion is refused when related records still depend on the item.
+
+00:07:03.000 --> 00:07:18.921
+Users — Search users and open a profile to edit permitted account fields and tenant grants. Keep users in their correct organisation, property and role. Deactivate access through the supported controls rather than removing learning history.
+
+00:07:21.000 --> 00:07:33.587
+Engagements — Create or open an engagement, review its stages and update assigned tasks with evidence. Keep organisation and property context correct so stakeholders see only their own work.
+
+00:07:33.587 --> 00:07:44.440
+Frameworks — Manage advisory frameworks and their stages. Use the published structure consistently across engagements and review changes before they affect active work.
+
+00:07:48.000 --> 00:08:03.936
+Executive overview — Executive overview: review the records and visible actions in your current tenant context. Use the search, filters and forms shown here. Required fields are validated and every change still requires your current permission.
+
+00:08:03.936 --> 00:08:19.543
+Board report — Board report: review the records and visible actions in your current tenant context. Use the search, filters and forms shown here. Required fields are validated and every change still requires your current permission.
+
+00:08:19.543 --> 00:08:35.469
+Content dashboard — Content dashboard: review the records and visible actions in your current tenant context. Use the search, filters and forms shown here. Required fields are validated and every change still requires your current permission.
+
+00:08:35.469 --> 00:08:51.451
+Programs — Use search and filters to find the record. Open its editor, update English and Arabic content and relationships, and save a draft. Preview before publishing. Archive or restore only when your role permits it.
+
+00:08:51.451 --> 00:09:07.433
+Learning paths — Use search and filters to find the record. Open its editor, update English and Arabic content and relationships, and save a draft. Preview before publishing. Archive or restore only when your role permits it.
+
+00:09:07.433 --> 00:09:20.435
+Curriculum — Review the structured curriculum and its learning relationships. Update permitted definitions and check downstream courses, competency requirements and language coverage before publication.
+
+00:09:20.435 --> 00:09:32.972
+Assessments — Create an assessment, set its scoring and attempts, and edit questions and approved answers. Review grading and practical assessment requirements before releasing it to learners.
+
+00:09:36.000 --> 00:09:51.982
+Articles — Use search and filters to find the record. Open its editor, update English and Arabic content and relationships, and save a draft. Preview before publishing. Archive or restore only when your role permits it.
+
+00:09:51.982 --> 00:10:07.964
+Hospitality topics — Use search and filters to find the record. Open its editor, update English and Arabic content and relationships, and save a draft. Preview before publishing. Archive or restore only when your role permits it.
+
+00:10:07.964 --> 00:10:20.116
+Competencies — Manage competency definitions and evidence requirements. Link them to learning and practical criteria. Course completion alone does not prove operational readiness.
+
+00:10:21.000 --> 00:10:34.532
+Imports — Select the supported import format, upload your source and review validation errors before confirming. Keep a backup before bulk imports and verify relationships after the import completes.
+
+00:10:36.000 --> 00:10:50.792
+Content review — Review knowledge drafts and their source evidence. Submit changes for review, request corrections or approve with the required role. Published SOP versions and acknowledgements remain governed by the existing workflow.
+
+00:10:52.306 --> 00:11:03.955
+Library and language coverage — Review the source library, supported languages and release coverage. Missing or unreviewed translations must be completed and signed off before a language is advertised as ready.
+
+00:11:04.767 --> 00:11:17.004
+Revision history — Find a saved revision by object and date. Review the recorded change and restore an earlier version through the protected native service. Version checks prevent overwriting a newer edit.
+
+00:11:18.312 --> 00:11:30.660
+Corporate CMS — Manage the corporate website records and approved public content. Edits bind to native records. Preview the real homepage through the live CMS and publish only reviewed changes.
+
+00:11:31.503 --> 00:11:48.950
+Mobile app settings — Set the platform address, branding, feature switches, language, support, update rules and maintenance. Generate an app configuration key, then enter it in mobile Server setup and test the connection. Rotate or revoke keys here.
+
+00:11:50.182 --> 00:12:04.750
+AI governance — Choose enabled providers and models, set governance and inspect coverage. Enter provider credentials only in their secured settings. Generated learning content stays in review; AI does not approve SOPs.
+
+00:12:07.078 --> 00:12:20.853
+Readiness & certification — Manage readiness and certification rules. Review the required learning, assessments and practical evidence before issuing or revoking a certificate. Existing certificate verification remains available.
+
+00:12:22.493 --> 00:12:34.226
+Branding & settings — Update the permitted property branding and settings. Preview the result in its tenant context. Property changes do not grant control over global mobile configuration.
+
+00:12:35.675 --> 00:12:48.871
+Audit logs — Filter the audit history by activity and object. Use it to trace who changed access, content or settings. Audit records support operational review and are not editable learning content.
+
+00:12:50.944 --> 00:13:04.564
+System — Review service health and platform settings. Run scheduled jobs when permitted and check the learning progress diagnostics. The dedicated Mobile app settings link opens app configuration and key management.
+
+00:13:14.572 --> 00:13:30.250
+Account security and personal mobile key — Manage your authenticator and recovery codes. Create a personal mobile API key using your current password and a second-factor code when enabled. Copy the key once into mobile Sign in. Revoke it here when no longer needed.
+
+00:13:31.776 --> 00:13:45.142
+Notifications — Read your account notifications and follow their linked actions. Mark the items read through the supported controls. Mobile push delivery is a separate integration and is not demonstrated in this recording.
+
+00:13:47.382 --> 00:13:58.280
+Profile and preferences — Review your account information, language and accessible property context. Change only the fields permitted by your role and keep your security settings current.

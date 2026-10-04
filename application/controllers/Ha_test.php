@@ -33,6 +33,10 @@ class Ha_test extends CI_Controller {
         ini_set('memory_limit', '512M');
         $this->load->database();
         $this->test_db = getenv('HA_TEST_DB') ? getenv('HA_TEST_DB') : 'atlas_hospitality_test';
+        if (!preg_match('/^atlas_hospitality_test(?:_[a-z0-9_]+)?$/D', $this->test_db) || strlen($this->test_db)>64) {
+            fwrite(STDERR, 'Refusing to rebuild a database outside the atlas_hospitality_test namespace.' . PHP_EOL);
+            exit(1);
+        }
     }
 
     private function out($line = '') {
@@ -107,6 +111,10 @@ class Ha_test extends CI_Controller {
         require APPPATH . 'config/database.php';
         $conf = $db[$active_group];
         $host = $conf['hostname'];
+        if (!in_array($host, array('localhost','127.0.0.1'), true)) {
+            fwrite(STDERR, 'Test database rebuilds require a loopback MySQL server.' . PHP_EOL);
+            exit(1);
+        }
         $user = $conf['username'];
         $pass = $conf['password'];
 

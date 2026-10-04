@@ -25,6 +25,19 @@ class Test_key_auth extends Ha_testcase {
 
     // ------------------------------------------------------------------ TOTP
 
+    public function test_mobile_key_scopes_follow_current_permissions() {
+        $this->CI->load->library('ha_auth');
+        $this->CI->ha_auth->assume($this->user_id);
+        $scopes = $this->CI->ha_api_keys->mobile_scopes($this->CI->ha_auth);
+        $this->assertTrue(in_array('profile:read', $scopes, true));
+        $this->assertTrue(in_array('courses:read', $scopes, true));
+        $this->assertTrue(in_array('mobile:write', $scopes, true));
+        $this->assertFalse(in_array('team:read', $scopes, true));
+        $this->assertFalse(in_array('ai:generate', $scopes, true));
+        $this->CI->ha_auth->assume(null);
+        $this->assertEquals(array(), $this->CI->ha_api_keys->mobile_scopes($this->CI->ha_auth));
+    }
+
     public function test_base32_round_trips_arbitrary_bytes() {
         foreach (array('', 'f', 'fo', 'foo', 'foob', 'fooba', 'foobar', random_bytes(20)) as $raw) {
             $this->assertSame($raw, Ha_totp::base32_decode(Ha_totp::base32_encode($raw)), 'base32 round trip');

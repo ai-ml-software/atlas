@@ -2,6 +2,7 @@ param([string]$Architectures='arm64-v8a', [switch]$Bundle, [string]$SigningDirec
 $ErrorActionPreference = 'Stop'
 $appPath = (Resolve-Path -LiteralPath (Join-Path $PSScriptRoot '..')).Path
 . (Join-Path $PSScriptRoot 'android-env.ps1')
+if(-not $env:EXPO_PUBLIC_ALTUS_APP_KEY) { $env:EXPO_PUBLIC_ALTUS_APP_KEY='disabled' }
 Push-Location $appPath
 try {
   if (-not $SigningDirectory) {
@@ -25,7 +26,8 @@ try {
   } finally { Pop-Location }
   $outputDir = if ($OutputDirectory) { $OutputDirectory } else { Join-Path $appPath '..\client-deliverables\android' }
   New-Item -ItemType Directory -Path $outputDir -Force | Out-Null
-  $outputName = if ($Bundle) { 'ALTUS-1.0.0-release.aab' } else { 'ALTUS-1.0.0-release.apk' }
+  $appVersion = (Get-Content -LiteralPath (Join-Path $appPath 'app.json') -Raw | ConvertFrom-Json).expo.version
+  $outputName = if ($Bundle) { "ALTUS-$appVersion-release.aab" } else { "ALTUS-$appVersion-release.apk" }
   $sourcePath = if ($Bundle) { 'android\app\build\outputs\bundle\release\app-release.aab' } else { 'android\app\build\outputs\apk\release\app-release.apk' }
   Copy-Item -LiteralPath (Join-Path $appPath $sourcePath) -Destination (Join-Path $outputDir $outputName) -Force
   Get-FileHash -LiteralPath (Join-Path $outputDir $outputName) -Algorithm SHA256 | Format-List

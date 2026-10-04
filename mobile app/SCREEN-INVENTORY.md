@@ -2,7 +2,7 @@
 
 Final browser UI audit: 110 registered routes; each captured in English and Arabic. Every route is listed below. **Native iOS and Android device checks are pending.** A rendered screen is not proof of a completed live enterprise workflow. See FINAL-AUDIT.md for the release contract.
 
-Live integration legend: API = connected to the existing authenticated domain services; local = device/session preference or reading copy; web = existing web-managed security flow; preview = native live contract remains to be implemented. Media and camera device behavior still require native validation.
+Live integration legend: API = connected to authenticated domain services; local = device/session preference or reading copy; web = existing secure web flow; preview = native live contract remains to be implemented. The launch screen is email/password login; native device/email and authenticator verification are handled inside that flow. Advanced administration opens the appropriate web console. Media and camera device behavior still require native validation.
 
 | # | Module | Route | Screen | UI | Live integration | Benefit |
 |---|---|---|---|---|---|---|
@@ -10,10 +10,10 @@ Live integration legend: API = connected to the existing authenticated domain se
 | 002 | Access | /welcome | Extraordinary service starts with you. | Captured EN + AR | Preview | Connect every employee to the purpose of hospitality. |
 | 003 | Access | /introduction | Knowledge that makes a difference. | Captured EN + AR | Preview | Explain learning, application and measurable performance. |
 | 004 | Access | /language | Your language. Your experience. | Captured EN + AR | Local/session | English and Arabic interfaces; expandable global locale catalog. |
-| 005 | Access | /sign-in | Welcome back | Captured EN + AR | API · scoped personal key | Securely connect a personal account or explicitly enter the demonstration. |
+| 005 | Access | /sign-in | Welcome back | Captured EN + AR | API · password/session/device/MFA | Sign in with email/password and open the workspace permitted by your account. |
 | 006 | Access | /forgot-password | Recover your account | Captured EN + AR | Web-managed security | Use the existing secure web account recovery flow. |
 | 007 | Access | /reset-password | Set a new password | Captured EN + AR | Web-managed security | Complete password recovery with the account provider. |
-| 008 | Access | /otp | Verify your identity | Captured EN + AR | Web-managed security | Preserve the platform authenticator and recovery-code policy. |
+| 008 | Access | /otp | Verify your identity | Captured EN + AR | Web-managed security | Confirm a new device and pass the platform authenticator or recovery-code policy when required. |
 | 009 | Access | /first-setup | Make it yours | Captured EN + AR | Preview | Set a preferred name and region. |
 | 010 | Access | /organization | Your hotel group | Captured EN + AR | Preview | Identify an authorized organization. |
 | 011 | Access | /property | Your property | Captured EN + AR | Preview | Keep property learning and SOPs in the correct context. |
@@ -92,17 +92,17 @@ Live integration legend: API = connected to the existing authenticated domain se
 | 084 | Management | /assessor-queue | Practical assessment queue | Captured EN + AR | Preview | Find employees ready for practical evaluation. |
 | 085 | Management | /practical | Observe. Assess. Develop. | Captured EN + AR | Preview | Record criterion-based observed evidence. |
 | 086 | Management | /branding | Your brand. ALTUS capability. | Captured EN + AR | Preview | Preview property identity using centralized design tokens. |
-| 087 | Administration | /admin | A portfolio of potential. | Captured EN + AR | Preview | Reach central content, governance, property and system tools. |
-| 088 | Administration | /clients | Client organizations | Captured EN + AR | Preview | Review governed platform operations in the authorized scope. |
-| 089 | Administration | /properties | Properties | Captured EN + AR | Preview | Review governed platform operations in the authorized scope. |
-| 090 | Administration | /users | Users & access | Captured EN + AR | Preview | Review governed platform operations in the authorized scope. |
-| 091 | Administration | /roles | Roles & permissions | Captured EN + AR | Preview | Review governed platform operations in the authorized scope. |
-| 092 | Administration | /content | Content library | Captured EN + AR | Preview | Review governed platform operations in the authorized scope. |
-| 093 | Administration | /versions | Versions & approvals | Captured EN + AR | Preview | Review governed platform operations in the authorized scope. |
-| 094 | Administration | /portfolio | Cross-property analytics | Captured EN + AR | Preview | Review governed platform operations in the authorized scope. |
-| 095 | Administration | /audit | Audit activity | Captured EN + AR | Preview | Review governed platform operations in the authorized scope. |
-| 096 | Administration | /course-editor | Shape the learning experience. | Captured EN + AR | Preview | Prepare a course draft without overwriting published content. |
-| 097 | Administration | /version-detail | Review with confidence. | Captured EN + AR | Preview | Review revision metadata and approval separation. |
+| 087 | Administration | /admin | A portfolio of potential. | Captured EN + AR | Secure web console | Reach central content, governance, property and system tools. |
+| 088 | Administration | /clients | Client organizations | Captured EN + AR | Secure web console | Review governed platform operations in the authorized scope. |
+| 089 | Administration | /properties | Properties | Captured EN + AR | Secure web console | Review governed platform operations in the authorized scope. |
+| 090 | Administration | /users | Users & access | Captured EN + AR | Secure web console | Review governed platform operations in the authorized scope. |
+| 091 | Administration | /roles | Roles & permissions | Captured EN + AR | Secure web console | Review governed platform operations in the authorized scope. |
+| 092 | Administration | /content | Content library | Captured EN + AR | Secure web console | Review governed platform operations in the authorized scope. |
+| 093 | Administration | /versions | Versions & approvals | Captured EN + AR | Secure web console | Review governed platform operations in the authorized scope. |
+| 094 | Administration | /portfolio | Cross-property analytics | Captured EN + AR | Secure web console | Review governed platform operations in the authorized scope. |
+| 095 | Administration | /audit | Audit activity | Captured EN + AR | Secure web console | Review governed platform operations in the authorized scope. |
+| 096 | Administration | /course-editor | Shape the learning experience. | Captured EN + AR | Secure web console | Prepare a course draft without overwriting published content. |
+| 097 | Administration | /version-detail | Review with confidence. | Captured EN + AR | Secure web console | Review revision metadata and approval separation. |
 | 098 | Support | /support | We are here to help. | Captured EN + AR | Preview | Find FAQs, issue reporting and support requests. |
 | 099 | Support | /faq | A little clarity | Captured EN + AR | Preview | Resolve common learning and account questions. |
 | 100 | Support | /tickets | Your support requests | Captured EN + AR | Preview | Track the status of submitted support requests. |

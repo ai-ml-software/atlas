@@ -2,15 +2,15 @@
 
 <section class="ha-hero<?= strpos($course['code'],'dy-')===0 ? ' ha-course-hero' : '' ?><?= !empty($course['thumbnail']) ? ' ha-hero--image' : '' ?>">
     <?php $hero = ha_image_variant($course['thumbnail'], 'wide'); if ($hero): ?>
-        <div class="ha-hero__media" aria-hidden="true"
+        <div class="ha-hero__media" aria-hidden="true"<?= ha_studio('hero_image', 'image') ?>
              style="background-image:url('<?= base_url($hero) ?>')"></div>
     <?php endif; ?>
     <div class="ha-shell ha-hero__body">
         <?php if (!empty($course['category_name'])): ?>
             <p><span class="ha-pill ha-pill--accent"><?= html_escape($course['category_name']) ?></span></p>
         <?php endif; ?>
-        <h1><?= html_escape($course['title']) ?></h1>
-        <p class="ha-hero__lede"><?= html_escape($course['short_description']) ?></p>
+        <h1<?= ha_studio('title') ?>><?= html_escape($course['title']) ?></h1>
+        <p class="ha-hero__lede"<?= ha_studio('subtitle') ?>><?= html_escape($course['short_description']) ?></p>
     </div>
 </section>
 
@@ -21,7 +21,7 @@
             <?php if (isset($course['translation_complete']) && !$course['translation_complete']): ?><p role="status"><?= ha_pe('This course is not yet available in {language}; the English version is shown.',array('language'=>ha_locale_name($locale))) ?></p><?php endif; ?>
             <div class="ha-prose">
                 <h2><?= html_escape($t['overview']) ?></h2>
-                <div><?= hkp_safe_html($course['description']) ?></div>
+                <div<?= ha_studio('body', 'html') ?>><?= hkp_safe_html($course['description']) ?></div>
 
                 <?php if (!empty($course['source_documents'])): ?>
                     <h2><?= ha_pe('Source training material') ?></h2>

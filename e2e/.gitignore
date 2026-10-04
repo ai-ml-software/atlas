@@ -5,3 +5,6 @@ test-results/
 report-isolated/
 playwright-report/
 test-results-isolated/
+report-studio/
+test-results-studio/
+test-results-content-view/

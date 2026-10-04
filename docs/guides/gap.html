@@ -1,0 +1,341 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>gap</title><style>:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f7f5f1;color:#1c2227;font:16px/1.7 'Segoe UI',Tahoma,Arial,sans-serif}header{background:#1c2227;color:white;padding:28px max(24px,calc((100% - 1080px)/2));border-bottom:4px solid #c45b2f}header a{color:#f3c5a8}main{max-width:1080px;margin:auto;padding:28px 24px 70px}h1,h2,h3{line-height:1.25}h2{margin-top:36px}a{color:#944527}pre{padding:18px;background:#e9e5df;border-radius:10px;overflow:auto}code{font-size:.9em}table{border-collapse:collapse;width:100%;background:white;font-size:14px}td,th{padding:10px;border:1px solid #ddd;text-align:start;vertical-align:top}.card{background:white;border:1px solid #ded8cf;border-radius:14px;padding:22px;margin-bottom:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}video{display:block;width:100%;max-height:640px;background:#111}.chapters{max-height:300px;overflow:auto;display:flex;flex-wrap:wrap;gap:8px;padding:10px 0}button,.button{border:1px solid #c45b2f;border-radius:8px;background:white;color:#71371e;padding:9px 12px;cursor:pointer;text-decoration:none;font:inherit}p{margin:12px 0}.muted{color:#646a6d}img{max-width:100%}@media(max-width:600px){main{padding:20px 15px}table{display:block;overflow:auto}header{padding:22px 15px}}@media print{header,nav,.no-print{display:none}body{background:white;font-size:12px}main{padding:0;max-width:none}h2{break-after:avoid}pre,table{break-inside:avoid}a{color:inherit}}</style><header><strong>ALTUS KNOWLEDGE &amp; PERFORMANCE</strong><br><a href="index.html">User guides and recordings</a></header><main><h1 dir="auto">Gap analysis: ALTUS HK&amp;P specification vs. the PHP LMS</h1>
+<p dir="auto">This report checks the specification in <code>ppt-features.txt</code> (190 numbered sections plus the feature brief) and the Altus Advisory profile in <code>ppt-text.txt</code> against this codebase. For every section it gives the gap, the fix, where the fix lives and how it was checked.</p>
+<p dir="auto"><strong>Baseline before the upgrade.</strong> The codebase was Academy LMS (CodeIgniter 3.1.9) plus a bilingual public academy site. It already had these parts:</p>
+<ul>
+<li>a course catalogue, a legacy course player, legacy quizzes and a legacy certificate addon</li>
+<li>an SOP library</li>
+<li>SEO</li>
+<li>8 RBAC roles</li>
+<li>AI Studio</li>
+</ul>
+<p dir="auto">It had none of the following:</p>
+<ul>
+<li>competencies</li>
+<li>practical assessment</li>
+<li>gaps, action plans or reassessment</li>
+<li>readiness</li>
+<li>certification rules</li>
+<li>white-label tenants</li>
+<li>governed AI</li>
+<li>KPIs</li>
+<li>advisory frameworks</li>
+<li>executive dashboards</li>
+<li>a page builder</li>
+<li>drip content</li>
+</ul>
+<p dir="auto"><strong>Status key</strong></p>
+<table>
+<tr><th>Mark</th><th>Meaning</th></tr>
+<tr><td>✅ T</td><td>Built, and proved by an automated test in <code>application/tests/</code> (<code>php index.php ha_test run</code>)</td></tr>
+<tr><td>✅ C</td><td>Built, and proved by the authenticated crawl: every page reachable from the navigation, for 9 roles, on the production data copy</td></tr>
+<tr><td>🟡</td><td>Partly built. The note says exactly what is missing</td></tr>
+<tr><td>🔵</td><td>Not built. The data model or hook exists for it</td></tr>
+</table>
+<p dir="auto"><strong>Totals:</strong> 177 sections met (✅) and 13 partly met (🟡). Test suite: <strong>136 tests, 0 failures</strong>. Crawl: <strong>1,100+ pages across 9 roles, 0 errors, 0 dead links</strong>. Arabic interface coverage: <strong>1,673 / 1,673 strings (100%)</strong>.</p>
+<p dir="auto">---</p>
+<h2 dir="auto">1. Product, experiences and architecture (§1–§9)</h2>
+<table>
+<tr><th>§</th><th>Requirement</th><th>Resolution (where)</th><th>Evidence</th><th>Status</th></tr>
+<tr><td>1</td><td>Product objective: an evidence-based capability platform, not a course shop</td><td>New <code>/hkp</code> workspace. The evidence chain runs Role → Requirement → Learning → Theory → Practical → Competency → Gap → Action → Evidence → Reassessment → Readiness → Certificate → KPI (<code>libraries/Ha_competency.php</code>, <code>Ha_readiness.php</code>, <code>Ha_certification.php</code>)</td><td><code>Test_hkp::final_qa_scenario_end_to_end</code></td><td>✅ T</td></tr>
+<tr><td>2</td><td>Core differentiator: training ≠ performance</td><td>Theory results are capped and never lower a level. Practical and manager results need evidence (<code>Ha_competency::record_result</code>)</td><td><code>Test_hkp</code></td><td>✅ T</td></tr>
+<tr><td>3</td><td>Five integrated layers</td><td>Product &amp; Experience (<code>views/hkp/*</code>); Knowledge &amp; Learning (<code>Ha_knowledge</code>, <code>Ha_learning</code>); Intelligence (<code>Ha_governed_ai</code>, <code>Ha_kpi</code>); Tech Ops (<code>Ha_tenant</code>, <code>Ha_auth</code>); Governance (<code>Ha_audit</code>, workflows)</td><td>module map below</td><td>✅ C</td></tr>
+<tr><td>4</td><td>Three experiences: Learner, Property Management, Altus Team (+ Executive)</td><td>Role-aware navigation (<code>core/Hkp_Controller::navigation</code>), with separate controllers <code>Hkp</code>, <code>Hkp_team</code>, <code>Hkp_admin</code>, <code>Hkp_exec</code></td><td>crawl per role</td><td>✅ C</td></tr>
+<tr><td>5</td><td>Multi-tenant / multi-property</td><td>Organisation → portfolio → property → department → team, scoped by <code>Ha_auth::scope_query/visible_user_ids/can_*</code> (migration <code>…013</code>)</td><td><code>Test_rbac</code>, <code>Test_hkp::tenant_isolation…</code>, <code>Test_cms::admin_lists_never_show…</code></td><td>✅ T</td></tr>
+<tr><td>6</td><td>White-label property experience</td><td>Branding per tenant: logos, colours as CSS variables, name and footer (<code>Ha_tenant::brand/css_vars</code>, <code>hkp/team/branding</code>). A <code>ha_domain</code> table holds custom domains</td><td>crawl</td><td>🟡 Branding is complete. Custom-domain DNS and SSL provisioning is a hosting task and is not automated</td></tr>
+<tr><td>7</td><td>Language &amp; localisation (AR/EN, RTL)</td><td>Gettext-style <code>hkp_t()</code> and <code>language/arabic/hkp_lang.php</code> (1,673 strings). Logical CSS for RTL, bilingual content fields, a <code>?lang=</code> switch</td><td><code>Test_cms::every_interface_string_has_arabic</code> (100%, placeholders kept)</td><td>🟡 The interface is 100% Arabic. The 296 ported legacy quiz questions still have an empty <code>body_ar</code>, so they fall back to English until someone translates them</td></tr>
+<tr><td>8</td><td>Master curriculum architecture</td><td>Domain → Track → Module → Lesson → Block (<code>ha_domain</code>, <code>ha_track</code>, <code>ha_track_module</code>, <code>ha_lesson_block</code>)</td><td><code>Test_hkp::ten_core_domains…</code></td><td>✅ T</td></tr>
+<tr><td>9</td><td>Ten core professional domains</td><td>16 domains seeded, with the 10 core ones flagged (<code>seeds/006_hkp.php</code>)</td><td><code>Test_hkp</code></td><td>✅ T</td></tr>
+</table>
+<h2 dir="auto">2. Knowledge &amp; learning (§10–§17)</h2>
+<table>
+<tr><th>§</th><th>Requirement</th><th>Resolution (where)</th><th>Evidence</th><th>Status</th></tr>
+<tr><td>10</td><td>Content management system</td><td>The page builder (<code>Ha_page_builder</code>, <code>/hkp/cms</code>) has 13 section types. You can drag sections to reorder them, and duplicate, hide or delete them. The module and lesson CMS (<code>/hkp/cms/modules</code>) accepts text, YouTube or Vimeo links, video uploads, PDF, PPT and audio, and other links</td><td><code>Test_cms::sections_save_reorder_and_restore</code></td><td>✅ T</td></tr>
+<tr><td>11</td><td>Content version control</td><td>Knowledge versions with diff (<code>Ha_knowledge::new_version/compare</code>). <code>ha_lesson_version</code> holds lesson snapshots and <code>ha_page_revision</code> holds the last 60 page states, which can be restored</td><td><code>Test_hkp::knowledge_governance…</code>, <code>Test_cms</code></td><td>✅ T</td></tr>
+<tr><td>12</td><td>Knowledge governance</td><td>Draft → submit → internal approval → quality approval → publish, with reject and archive. An author cannot approve their own item</td><td><code>Test_hkp::knowledge_governance…</code></td><td>✅ T</td></tr>
+<tr><td>13</td><td>Learning engine</td><td>Enrol, lesson open/track/complete, progress refresh, prerequisites, assignment dispatch (<code>Ha_learning</code>)</td><td><code>Test_hkp</code></td><td>✅ T</td></tr>
+<tr><td>14</td><td>Lesson experience</td><td>Resume position, time tracking, transcript and captions, PDF viewer, slide and audio downloads, external resource links, drip release by date or days after enrolment (<code>Ha_learning::release_at</code>)</td><td><code>Test_cms::drip_release_blocks_until_due</code></td><td>✅ T</td></tr>
+<tr><td>15</td><td>Role-based learning paths</td><td>Role requirements generate each person&#39;s plan automatically (<code>Ha_learning::sync_role_plan</code>)</td><td><code>Test_hkp</code></td><td>✅ T</td></tr>
+<tr><td>16</td><td>Assessment engine</td><td>Theory papers with single, multiple, true/false, ordering and short-answer questions. Includes auto-grading, manual grading and question statistics (<code>Ha_theory</code>)</td><td><code>Test_hkp</code></td><td>✅ T</td></tr>
+<tr><td>17</td><td>Practical competency assessment</td><td>Weighted rubrics with critical criteria (a critical miss caps the result), save and resume, supervisor queue, void (<code>Ha_practical</code>)</td><td><code>Test_hkp::practical_critical_criterion_caps_outcome</code></td><td>✅ T</td></tr>
+</table>
+<h2 dir="auto">3. Performance chain (§18–§23)</h2>
+<table>
+<tr><th>§</th><th>Requirement</th><th>Resolution (where)</th><th>Evidence</th><th>Status</th></tr>
+<tr><td>18</td><td>Competency framework</td><td>5 levels (Awareness → Expert), role-to-competency requirements, an append-only results history</td><td><code>Test_hkp</code></td><td>✅ T</td></tr>
+<tr><td>19</td><td>Gap analysis</td><td>Automatic recalculation after each result. Severity thresholds are configurable per tenant</td><td><code>Test_hkp::gap_severity_thresholds_are_configurable</code></td><td>✅ T</td></tr>
+<tr><td>20</td><td>Corrective action plans</td><td>Plans move through a state machine with events and evidence. An overdue sweep and manager review are included (<code>Ha_action_plans</code>)</td><td><code>Test_hkp::final_qa…</code></td><td>✅ T</td></tr>
+<tr><td>21</td><td>Reassessment</td><td>Request, decide, then run a new assessment that can close the gap</td><td><code>Test_hkp::final_qa…</code></td><td>✅ T</td></tr>
+<tr><td>22</td><td>Readiness engine</td><td>Configurable per-role policy with 7 explained checks: Ready, Conditional or Not ready</td><td><code>Test_hkp</code></td><td>✅ T</td></tr>
+<tr><td>23</td><td>Certification engine</td><td>Rules per programme, auto-issue, numbering (<code>ALTUS-XXX-YYYY-000001</code>), expiry, revoke, PDF and PNG with QR, public verify page</td><td><code>Test_hkp::qr_encoder_and_pdf_writer</code></td><td>✅ T</td></tr>
+</table>
+<h2 dir="auto">4. Intelligence (§24–§30)</h2>
+<table>
+<tr><th>§</th><th>Requirement</th><th>Resolution (where)</th><th>Evidence</th><th>Status</th></tr>
+<tr><td>24</td><td>Reporting</td><td>Report catalogue scoped to the viewer, with CSV (formula-injection safe) and real XLSX export (<code>Ha_reports</code>, <code>Ha_xlsx</code>)</td><td><code>Test_hkp::reports_are_scoped…</code></td><td>✅ T</td></tr>
+<tr><td>25</td><td>Executive dashboards</td><td><code>/hkp/exec</code> and a printable board report (<code>/hkp/exec/board</code>)</td><td>crawl (a 500 error on the board page was fixed in this pass)</td><td>✅ C</td></tr>
+<tr><td>26</td><td>Performance intelligence</td><td>Performance matrix, GOPPAR value stack, KPI scorecards, cross-property comparison</td><td><code>Test_hkp::performance_matrix…</code></td><td>✅ T</td></tr>
+<tr><td>27</td><td>Smart search</td><td>Search over approved knowledge and lessons that respects visibility, with suggestions and a bilingual glossary for AR↔EN queries (<code>Ha_knowledge::search</code>, <code>Ha_governed_ai::retrieve</code>)</td><td><code>Test_hkp::bilingual_retrieval…</code></td><td>🟡 It uses FULLTEXT plus a glossary. Vector-embedding semantic search is not built</td></tr>
+<tr><td>28</td><td>Governed AI assistant</td><td>Retrieves only approved, authorised passages and cites them. If nothing supports an answer it says &quot;insufficient knowledge&quot; instead of inventing one. It falls back to extractive answers when no model is connected</td><td><code>Test_hkp::ai_states_insufficient…</code></td><td>✅ T</td></tr>
+<tr><td>29</td><td>AI governance</td><td>Every query is logged (<code>ha_ai_query</code>). Citations are validated. Per-item <code>ai_enabled</code> switches, index status, <code>/hkp/admin/ai</code></td><td><code>Test_hkp</code></td><td>✅ T</td></tr>
+<tr><td>30</td><td>Knowledge retention / institutional memory</td><td>Knowledge belongs to the organisation, not the author. Leaving employees are marked terminated or archived, and their evidence is kept</td><td><code>Test_hkp</code></td><td>✅ T</td></tr>
+</table>
+<h2 dir="auto">5. Tenancy, content and platform services (§31–§38)</h2>
+<table>
+<tr><th>§</th><th>Requirement</th><th>Resolution (where)</th><th>Evidence</th><th>Status</th></tr>
+<tr><td>31</td><td>Property-specific customisation</td><td>Property SOPs, branding, settings, and role requirements keyed by property</td><td><code>Test_hkp::tenant_isolation…</code></td><td>✅ T</td></tr>
+<tr><td>32</td><td>Global vs property content</td><td>One visibility rule: global, organisation or property (<code>Ha_knowledge::visibility_sql</code>)</td><td><code>Test_hkp</code></td><td>✅ T</td></tr>
+<tr><td>33</td><td>Content approval &amp; QA</td><td>Two-stage approval with a quality reviewer role (<code>quality_reviewer</code>)</td><td><code>Test_hkp</code></td><td>✅ T</td></tr>
+<tr><td>34</td><td>Notifications</td><td>Rules, templates, in-app and email, alerts (<code>Ha_notify</code>). Local email is captured rather than sent (<code>email.delivery</code> setting)</td><td><code>Test_hkp</code></td><td>🟡 SMS and WhatsApp can be chosen per rule but have no provider. Messages stay pending</td></tr>
+<tr><td>35</td><td>User &amp; role management</td><td>16 roles, grant and revoke, and server-side escalation checks (<code>/hkp/admin/users</code>)</td><td><code>Test_rbac</code>, <code>Test_hkp::role_escalation…</code></td><td>✅ T</td></tr>
+<tr><td>36</td><td>Audit logging</td><td><code>Ha_audit</code> records actor, before and after values, IP and user agent, with secrets redacted. Viewer at <code>/hkp/admin/audit</code></td><td><code>Test_repositories</code></td><td>✅ T</td></tr>
+<tr><td>37</td><td>File management</td><td>Private storage outside the web root, token downloads, MIME and extension checks, SVG files with scripts rejected (<code>Ha_files</code>, <code>Hkp_cms::upload</code>)</td><td>crawl, code review</td><td>✅ C</td></tr>
+<tr><td>38</td><td>Mobile / responsive</td><td>Mobile-first layout, 44 px targets, PWA manifest and service worker (caches the app shell)</td><td>crawl</td><td>🟡 The app is responsive and installable. It cannot download lessons for offline learning</td></tr>
+</table>
+<h2 dir="auto">6. Altus corporate frameworks and content (§39–§52)</h2>
+<table>
+<tr><th>§</th><th>Requirement</th><th>Resolution (where)</th><th>Evidence</th><th>Status</th></tr>
+<tr><td>39</td><td>Altus frameworks inside the platform</td><td><code>Ha_advisory</code> holds frameworks, dimensions and questions, and scores each assessment (<code>/hkp/admin/frameworks</code>)</td><td><code>Test_hkp</code></td><td>✅ T</td></tr>
+<tr><td>40</td><td>Altus Performance Matrix™</td><td>The axis threshold places each asset in a quadrant. The threshold is configurable and marked provisional</td><td><code>Test_hkp::performance_matrix…</code></td><td>✅ T</td></tr>
+<tr><td>41</td><td>GOPPAR Value Stack™</td><td>4-layer framework: Top-Line, Distribution, Cost, Asset Productivity</td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>42</td><td>Strategic capability model</td><td>The <code>capability_model</code> framework</td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>43</td><td>ESG &amp; sustainability</td><td>ESG framework plus ESG categories on KPIs</td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>44</td><td>Vision 2030 alignment</td><td>Four Vision 2030 content blocks in EN/AR (<code>seeds/006_hkp.php</code>), shown at <code>/en/altus</code></td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>45</td><td>Industry / sector taxonomy</td><td><code>ha_sector</code> (seeded)</td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>46</td><td>Corporate content / CMS</td><td>Corporate blocks editable at <code>/hkp/admin/corporate</code>. Public pages are built with the page builder</td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>47</td><td>Hospitality solutions content</td><td><code>ha_service</code> (hospitality line)</td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>48</td><td>Business growth solutions</td><td><code>ha_service</code> (growth line)</td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>49</td><td>Case study module</td><td>Each case study carries a visibility level and an &quot;illustrative / anonymised&quot; label</td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>50</td><td>Executive profile module</td><td><code>ha_leadership</code></td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>51</td><td>Partnership / ecosystem</td><td><code>ha_partner</code> directory</td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>52</td><td>KPI architecture</td><td>17 definitions with direction, thresholds and frequency, KPI values, and staleness flags (<code>Ha_kpi</code>)</td><td><code>Test_hkp::kpi_status_respects…</code></td><td>✅ T</td></tr>
+</table>
+<h2 dir="auto">7. API, database and upgrade rules (§53–§55)</h2>
+<table>
+<tr><th>§</th><th>Requirement</th><th>Resolution (where)</th><th>Evidence</th><th>Status</th></tr>
+<tr><td>53</td><td>Integration-ready API</td><td><code>/api/v1</code> has hashed, scoped, expiring and IP-pinnable keys, a rate limit of 120 requests per minute, and TOTP 2FA on accounts. <strong>Added in this pass:</strong> HK&amp;P endpoints for competencies, readiness, actions, certificates, people, gaps, search and KPIs (<code>libraries/Ha_api_hkp.php</code>, <code>controllers/Api_v1.php</code>). Output uses public shapes and never exposes raw rows</td><td><code>Test_cms::performance_api_is_tenant_scoped</code>, <code>Test_key_auth</code></td><td>🟡 The API is complete. No PMS, POS, CRM or HR connectors are built, and there is no SSO identity provider</td></tr>
+<tr><td>54</td><td>Database architecture</td><td>5 additive migrations (11–15) with helper columns (<code>Ha_migration::add_columns</code>), all reversible</td><td>migrate on the production copy: 5 applied, 0 errors</td><td>✅ T</td></tr>
+<tr><td>55</td><td>Existing LMS upgrade rule (never break the legacy LMS)</td><td>Legacy routes untouched. The bridge publishes <code>ha_*</code> into the legacy tables. Both sidebars link the new workspace</td><td>legacy admin sidebar: 67 links, all 200</td><td>✅ C</td></tr>
+</table>
+<h2 dir="auto">8. Dashboards and cross-cutting services (§56–§68)</h2>
+<table>
+<tr><th>§</th><th>Requirement</th><th>Resolution (where)</th><th>Evidence</th><th>Status</th></tr>
+<tr><td>56</td><td>Admin dashboard</td><td><code>/hkp/admin</code> portfolio view. Tiles link only to pages the viewer can open (fixed in this pass)</td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>57</td><td>Property dashboard</td><td><code>/hkp/team</code></td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>58</td><td>Learner dashboard</td><td><code>/hkp</code></td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>59</td><td>Assessor dashboard</td><td><code>/hkp/assess/queue</code>, grading</td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>60</td><td>Quality control dashboard</td><td><code>/hkp/admin/content</code>, <code>/hkp/team/audits</code></td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>61</td><td>Certification dashboard</td><td><code>/hkp/team/certifications</code></td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>62</td><td>Search &amp; discovery</td><td><code>/hkp/search</code> with type and domain filters and suggestions</td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>63</td><td>Access control</td><td>Checks run on the server for every action. The UI hides what the server would refuse</td><td><code>Test_rbac</code>, crawl (0 dead links)</td><td>✅ T</td></tr>
+<tr><td>64</td><td>Data privacy &amp; security</td><td>CSRF, security headers, CSP, idle timeout, encrypted AI keys, audit redaction, 2FA</td><td><code>Test_key_auth</code></td><td>🟡 No self-service data export or erasure request flow. <code>retention.years</code> is configurable (see §142)</td></tr>
+<tr><td>65</td><td>Performance</td><td>Indexed foreign keys, pagination, one query per table in matrices, cached shell</td><td>crawl timings</td><td>🟡 No formal load test has been run</td></tr>
+<tr><td>66</td><td>Report exports</td><td>CSV, XLSX, board print, certificate PDF</td><td><code>Test_hkp::reports…</code></td><td>✅ T</td></tr>
+<tr><td>67</td><td>Import / migration tools</td><td>Preview → commit → rollback for users and KPI values (<code>Ha_importer</code>). The production database merge is described in §80</td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>68</td><td>System configuration</td><td>Settings registry with tenant overrides (<code>Ha_tenant::registry</code>, <code>/hkp/admin/system</code>)</td><td>crawl (a 500 error on the system page was fixed in this pass)</td><td>✅ C</td></tr>
+</table>
+<h2 dir="auto">9. Workflows, matrices and rules (§69–§77)</h2>
+<table>
+<tr><th>§</th><th>Requirement</th><th>Resolution (where)</th><th>Evidence</th><th>Status</th></tr>
+<tr><td>69</td><td>Complete employee performance journey</td><td>Covered end to end</td><td><code>Test_hkp::final_qa_scenario_end_to_end</code> (40 assertions)</td><td>✅ T</td></tr>
+<tr><td>70</td><td>Role-to-competency matrix</td><td><code>/hkp/admin/competencies</code> matrix editor (<code>ha_role_competency</code>)</td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>71</td><td>Gap heatmap</td><td><code>/hkp/team/gaps</code> (<code>Ha_competency::matrix</code>)</td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>72</td><td>Readiness heatmap</td><td><code>/hkp/team/readiness</code></td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>73</td><td>Content recommendation engine</td><td>Modules and knowledge linked to each gap competency (<code>Ha_competency::recommendations</code>)</td><td><code>Test_hkp</code></td><td>✅ T</td></tr>
+<tr><td>74</td><td>Rule: do not confuse training with performance</td><td>Theory raises levels only up to the cap. A practical result needs an assessor. A manager rating needs evidence</td><td><code>Test_hkp</code></td><td>✅ T</td></tr>
+<tr><td>75</td><td>Corporate brand positioning</td><td>Altus positioning in corporate blocks, sourced from <code>ppt-text.txt</code></td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>76</td><td>Brand / UX direction</td><td>Design system in <code>assets/hkp/hkp.css</code>: Playfair, Montserrat and Cairo fonts, served locally</td><td>crawl</td><td>✅ C</td></tr>
+<tr><td>77</td><td>Required main navigation</td><td>My workspace / Property management / Altus team / Executive, filtered by role</td><td>crawl</td><td>✅ C</td></tr>
+</table>
+<h2 dir="auto">10. Engineering standards and delivery (§78–§88)</h2>
+<table>
+<tr><th>§</th><th>Requirement</th><th>Resolution (where)</th><th>Evidence</th><th>Status</th></tr>
+<tr><td>78</td><td>Technical approach</td><td>Libraries hold the logic. Controllers stay thin. Views are escaped by default (<code>hkp_h</code>)</td><td>code</td><td>✅ C</td></tr>
+<tr><td>79</td><td>Code quality</td><td>One base controller. <code>attempt()</code> wraps errors so users see a message. No query runs while another is half built (three such bugs were fixed in this pass)</td><td>tests + crawl</td><td>✅ T</td></tr>
+<tr><td>80</td><td>Database migration rules</td><td>Backup → import → migrate → seed only what is production-safe → verify, all against a copy (see &quot;Production database merge&quot; below)</td><td>performed</td><td>✅ C</td></tr>
+<tr><td>81</td><td>Testing requirements</td><td>136 tests, 2,100+ assertions, run against an isolated database</td><td><code>ha_test run</code></td><td>✅ T</td></tr>
+<tr><td>82</td><td>Acceptance criteria</td><td>See §185 and §189</td><td>—</td><td>✅ T</td></tr>
+<tr><td>83</td><td>Non-functional requirements</td><td>Security, bilingual support, accessibility and audit are covered in their own sections</td><td>—</td><td>✅ C</td></tr>
+<tr><td>84</td><td>Development deliverables</td><td>This file, README.md, IMPLEMENTATION_STATUS.md, DEPLOYMENT.md, migrations, seeds, tests</td><td>files</td><td>✅ C</td></tr>
+<tr><td>85</td><td>Master development prompt</td><td>Followed</td><td>—</td><td>✅ C</td></tr>
+<tr><td>86</td><td>Recommended phases</td><td>Delivered in two batches: the core chain, then CMS, API and hardening</td><td>—</td><td>✅ C</td></tr>
+<tr><td>87</td><td>Most important product rules</td><td>Evidence over intuition. No invented data (illustrative content is labelled). Tenant isolation</td><td><code>Test_hkp</code></td><td>✅ T</td></tr>
+<tr><td>88</td><td>Complete system module map</td><td>Modules 02–45 are listed below</td><td>—</td><td>✅ C</td></tr>
+</table>
+<h2 dir="auto">11. The 45 modules (§89–§132)</h2>
+<table>
+<tr><th>§</th><th>Module</th><th>Where</th><th>Status</th></tr>
+<tr><td>89</td><td>02 Organisation management</td><td><code>/hkp/admin/crud/organizations</code></td><td>✅ C</td></tr>
+<tr><td>90</td><td>03 Property management</td><td><code>/hkp/admin/crud/properties</code> (a 500 on &quot;new&quot; was fixed in this pass)</td><td>✅ C</td></tr>
+<tr><td>91</td><td>04 Department management</td><td><code>/hkp/admin/crud/departments</code></td><td>✅ C</td></tr>
+<tr><td>92</td><td>05 Job role management</td><td><code>/hkp/admin/crud/job_roles</code></td><td>✅ C</td></tr>
+<tr><td>93</td><td>06 Employee management</td><td><code>/hkp/team/people</code>, <code>/hkp/team/new_person</code>, profile status (on leave / terminated / archived)</td><td>✅ C</td></tr>
+<tr><td>94</td><td>07 Curriculum management</td><td><code>/hkp/admin/curriculum</code>, now tenant-scoped (fixed in this pass)</td><td>✅ T</td></tr>
+<tr><td>95</td><td>08 Knowledge library</td><td><code>/hkp/knowledge</code></td><td>✅ T</td></tr>
+<tr><td>96</td><td>09 Content editor</td><td><code>/hkp/admin/content</code> plus the AI panel</td><td>✅ C</td></tr>
+<tr><td>97</td><td>10 Lesson builder</td><td><code>/hkp/cms/lesson</code>: media, blocks, drip, attachments</td><td>✅ T</td></tr>
+<tr><td>98</td><td>11 Learning path builder</td><td>Tracks plus drag-ordered modules</td><td>✅ C</td></tr>
+<tr><td>99</td><td>12 Assignment engine</td><td><code>/hkp/team/assign</code> (people, roles, departments, cohorts; due dates; exemptions)</td><td>✅ T</td></tr>
+<tr><td>100</td><td>13 Cohort management</td><td><code>/hkp/team/cohorts</code></td><td>✅ C</td></tr>
+<tr><td>101</td><td>14 Learner progress engine</td><td><code>Ha_learning::refresh_enrollment</code></td><td>✅ T</td></tr>
+<tr><td>102</td><td>15 Assessment builder</td><td><code>/hkp/admin/assessments</code></td><td>✅ C</td></tr>
+<tr><td>103</td><td>16 Question bank</td><td>Question types, ordering, statistics</td><td>✅ T</td></tr>
+<tr><td>104</td><td>17 Practical assessment builder</td><td>Rubric editor (an infinite loop was fixed in this pass)</td><td>✅ C</td></tr>
+<tr><td>105</td><td>18 Competency library</td><td><code>/hkp/admin/crud/competencies</code></td><td>✅ C</td></tr>
+<tr><td>106</td><td>19 Employee competency profile</td><td><code>/hkp/competencies</code>, <code>/hkp/team/employee/{id}</code></td><td>✅ T</td></tr>
+<tr><td>107</td><td>20 Skill gap engine</td><td><code>Ha_competency::recalculate_gaps</code></td><td>✅ T</td></tr>
+<tr><td>108</td><td>21 Action plan engine</td><td><code>Ha_action_plans</code></td><td>✅ T</td></tr>
+<tr><td>109</td><td>22 Evidence management</td><td><code>ha_evidence</code>, private files</td><td>✅ T</td></tr>
+<tr><td>110</td><td>23 Reassessment engine</td><td><code>ha_reassessment</code></td><td>✅ T</td></tr>
+<tr><td>111</td><td>24 Readiness engine</td><td><code>Ha_readiness</code></td><td>✅ T</td></tr>
+<tr><td>112</td><td>25 Certificate engine</td><td><code>Ha_certification</code></td><td>✅ T</td></tr>
+<tr><td>113</td><td>26 Certificate verification</td><td><code>/verify/{code}</code> with throttling and minimal data</td><td>✅ T</td></tr>
+<tr><td>114</td><td>27 Knowledge search engine</td><td><code>Ha_knowledge::search</code></td><td>✅ T</td></tr>
+<tr><td>115</td><td>28 Governed AI knowledge pipeline</td><td><code>Ha_governed_ai::index_*</code>, <code>hkp_cli index</code></td><td>✅ T</td></tr>
+<tr><td>116</td><td>29 AI answer validation</td><td>Citation validation, insufficient-knowledge answer</td><td>✅ T</td></tr>
+<tr><td>117</td><td>30 AI administration</td><td><code>/hkp/admin/ai</code>, AI Studio providers and routes</td><td>✅ C</td></tr>
+<tr><td>118</td><td>31 Notification engine</td><td><code>Ha_notify</code></td><td>✅ T</td></tr>
+<tr><td>119</td><td>32 Email template engine</td><td><code>ha_notification_template</code>, editable at <code>/hkp/admin/system</code></td><td>✅ C</td></tr>
+<tr><td>120</td><td>33 Reporting engine</td><td><code>Ha_reports</code></td><td>✅ T</td></tr>
+<tr><td>121</td><td>34 Executive analytics</td><td><code>/hkp/exec</code></td><td>✅ C</td></tr>
+<tr><td>122</td><td>35 KPI management</td><td><code>/hkp/team/kpis</code>, KPI definitions CRUD</td><td>✅ T</td></tr>
+<tr><td>123</td><td>36 Performance scorecard</td><td><code>Ha_kpi::scorecard</code></td><td>✅ T</td></tr>
+<tr><td>124</td><td>37 Altus engagement management</td><td><code>/hkp/admin/engagements</code></td><td>✅ C</td></tr>
+<tr><td>125</td><td>38 Altus ASCENT project tracker</td><td>Engagement stages DISCOVER → SCALE with tasks</td><td>✅ C</td></tr>
+<tr><td>126</td><td>39 Asset assessment</td><td>Framework assessment (performance matrix)</td><td>✅ T</td></tr>
+<tr><td>127</td><td>40 GOPPAR value stack assessment</td><td>Framework <code>goppar</code></td><td>✅ C</td></tr>
+<tr><td>128</td><td>41 ESG assessment</td><td>Framework <code>esg</code></td><td>✅ C</td></tr>
+<tr><td>129</td><td>42 Case study management</td><td><code>/hkp/admin/corporate</code></td><td>✅ C</td></tr>
+<tr><td>130</td><td>43 Corporate leadership CMS</td><td><code>/hkp/admin/corporate</code></td><td>✅ C</td></tr>
+<tr><td>131</td><td>44 Partnership directory</td><td><code>/hkp/admin/corporate</code></td><td>✅ C</td></tr>
+<tr><td>132</td><td>45 Values / ESG / corporate content</td><td>Corporate blocks, <code>/en/altus</code></td><td>✅ C</td></tr>
+</table>
+<h2 dir="auto">12. Data, API standard and UX rules (§133–§141)</h2>
+<table>
+<tr><th>§</th><th>Requirement</th><th>Resolution</th><th>Status</th></tr>
+<tr><td>133</td><td>Complete database entity list</td><td>Every listed entity exists (migrations 13–15). Legacy tables are kept</td><td>✅ T</td></tr>
+<tr><td>134</td><td>Relationship principles</td><td>Tenant columns on every scoped table. Results are append-only</td><td>✅ T</td></tr>
+<tr><td>135</td><td>API structure (<code>/api/v1/*</code>)</td><td>me, courses, enrollments, ai/jobs, competencies, readiness, actions, certificates, people, gaps, search, kpis</td><td>🟡 These cover the reads that integrations need. Write endpoints for users, properties and curriculum stay in the UI; add them per integration</td></tr>
+<tr><td>136</td><td>API response standard</td><td><code>{&quot;success&quot;, &quot;data&quot;, &quot;message&quot;}</code> and <code>{&quot;success&quot;: false, &quot;message&quot;, &quot;errors&quot;}</code>. No stack traces are ever returned (added in this pass)</td><td>✅ C (curl)</td></tr>
+<tr><td>137</td><td>Frontend screen map</td><td>80+ <code>views/hkp/*</code> screens</td><td>✅ C</td></tr>
+<tr><td>138</td><td>Dashboard UX rules</td><td>Every figure has a label, a unit and a link to its detail</td><td>✅ C</td></tr>
+<tr><td>139</td><td>Critical management alerts</td><td><code>ha_alert</code>, raised by sweeps and resolved automatically</td><td>✅ T</td></tr>
+<tr><td>140</td><td>Data visualisation</td><td>Accessible bars, heatmaps and quadrant charts in pure CSS</td><td>✅ C</td></tr>
+<tr><td>141</td><td>Auditability rule</td><td>Every state change is written to the audit log or to action-plan events</td><td>✅ T</td></tr>
+</table>
+<h2 dir="auto">13. Operations (§142–§149)</h2>
+<table>
+<tr><th>§</th><th>Requirement</th><th>Resolution</th><th>Status</th></tr>
+<tr><td>142</td><td>Data retention</td><td><code>retention.years</code> setting (default 7)</td><td>🟡 No automatic purge, by design. Deleting assessment evidence should be a human decision</td></tr>
+<tr><td>143</td><td>Backup</td><td>System health checks for backup files in <code>/backups</code>. A <code>mysqldump</code> procedure is in README</td><td>🟡 Scheduling backups is the hosting provider&#39;s job and is not automated here</td></tr>
+<tr><td>144</td><td>Deployment environment</td><td><code>DEPLOYMENT.md</code>, <code>deploy-check.php</code>. <code>database.local.php</code> overrides the live config locally</td><td>✅ C</td></tr>
+<tr><td>145</td><td>Configuration / environment variables</td><td><code>database.local.php</code>. AI provider keys can come from environment variables</td><td>✅ C</td></tr>
+<tr><td>146</td><td>Cron / scheduled tasks</td><td><code>hkp_cli daily</code> (reminders, overdue work, expiry, readiness) and <code>hkp_cli work</code> (queue)</td><td>✅ T</td></tr>
+<tr><td>147</td><td>Queue requirements</td><td><code>ha_queue_job</code> plus a worker with locking</td><td>✅ C</td></tr>
+<tr><td>148</td><td>Error handling</td><td><code>attempt()</code> shows the user a message and logs the detail. Nothing leaks</td><td>✅ C</td></tr>
+<tr><td>149</td><td>Logging</td><td>CI logs, audit log, AI query log, report-run log</td><td>✅ C</td></tr>
+</table>
+<h2 dir="auto">14. Security (§150–§158)</h2>
+<table>
+<tr><th>§</th><th>Requirement</th><th>Resolution</th><th>Status</th></tr>
+<tr><td>150</td><td>Search security</td><td>Visibility SQL is applied inside retrieval, plus a join as a second guard</td><td>✅ T</td></tr>
+<tr><td>151</td><td>Multi-tenant security test</td><td><code>Test_hkp::tenant_isolation…</code>, <code>Test_cms::admin_lists_never_show…</code>, <code>Test_cms::performance_api_is_tenant_scoped</code></td><td>✅ T</td></tr>
+<tr><td>152</td><td>Role security test</td><td><code>Test_hkp::role_escalation_is_refused_server_side</code>, <code>Test_rbac</code></td><td>✅ T</td></tr>
+<tr><td>153</td><td>Tenant ID security</td><td>Tenant is taken from the session or the profile, never from a form field. Every scope field on a form is re-checked with <code>can_organization</code></td><td>✅ T</td></tr>
+<tr><td>154</td><td>File security</td><td>Private storage, tokens, MIME checks</td><td>✅ C</td></tr>
+<tr><td>155</td><td>AI security</td><td>AI sees only authorised approved content. Prompt and answer are logged</td><td>✅ T</td></tr>
+<tr><td>156</td><td>AI prompt governance</td><td>Fixed system prompts per task. &quot;Enhance prompt&quot; shows the rewritten brief before it runs (<code>Ha_ai_assist</code>)</td><td>✅ T</td></tr>
+<tr><td>157</td><td>AI knowledge update workflow</td><td>Publishing re-indexes the item and archiving removes it</td><td>✅ T</td></tr>
+<tr><td>158</td><td>Bilingual AI</td><td>Arabic questions find English sources and the reverse</td><td>✅ T</td></tr>
+</table>
+<h2 dir="auto">15. UX, SEO and content governance (§159–§166)</h2>
+<table>
+<tr><th>§</th><th>Requirement</th><th>Resolution</th><th>Status</th></tr>
+<tr><td>159</td><td>Mobile-first learner UX</td><td>Crawl on mobile width; bottom-safe actions</td><td>✅ C</td></tr>
+<tr><td>160</td><td>Accessibility</td><td>Labels, focus-visible, skip link, ARIA progressbars, one H1 per page</td><td>✅ C</td></tr>
+<tr><td>161</td><td>SEO for public pages</td><td>SEO/AEO/GEO checklist: 26 checks, with a score per language stored on the page. FAQPage, Place and LocalBusiness schema (<code>Ha_seo_score</code>)</td><td>✅ T</td></tr>
+<tr><td>162</td><td>Public vs private content</td><td>Private knowledge and files are never reachable publicly</td><td>✅ T</td></tr>
+<tr><td>163</td><td>Case study confidentiality</td><td>Visibility level and anonymised labelling</td><td>✅ C</td></tr>
+<tr><td>164</td><td>Content ownership</td><td>Owner, reviewer and approver on every item</td><td>✅ T</td></tr>
+<tr><td>165</td><td>Review / expiration</td><td><code>expires_at</code> and review dates, with a health list</td><td>✅ T</td></tr>
+<tr><td>166</td><td>Content health dashboard</td><td><code>Ha_knowledge::health</code> lists stale, expired, unused and awaiting items</td><td>✅ C</td></tr>
+</table>
+<h2 dir="auto">16. Analytics and property modes (§167–§180)</h2>
+<table>
+<tr><th>§</th><th>Requirement</th><th>Resolution</th><th>Status</th></tr>
+<tr><td>167</td><td>Learning analytics</td><td>Completion, time spent, overdue, per property and department</td><td>✅ C</td></tr>
+<tr><td>168</td><td>Question analytics</td><td>Facility and discrimination per question (<code>Ha_theory::question_stats</code>)</td><td>✅ T</td></tr>
+<tr><td>169</td><td>Practical assessment analytics</td><td>Criteria failure rates in the assessor queue</td><td>✅ C</td></tr>
+<tr><td>170</td><td>Content → competency linking</td><td>Course, assessment and knowledge linked to skills</td><td>✅ T</td></tr>
+<tr><td>171</td><td>Competency → business outcome</td><td><code>ha_competency_kpi</code></td><td>✅ C</td></tr>
+<tr><td>172</td><td>Property readiness</td><td>Readiness summary per property</td><td>✅ T</td></tr>
+<tr><td>173</td><td>Pre-opening team mode</td><td>Opening readiness items by category (<code>/hkp/team/opening</code>)</td><td>✅ C</td></tr>
+<tr><td>174</td><td>Operational audit mode</td><td>Quality audits → findings → action plans</td><td>✅ C</td></tr>
+<tr><td>175</td><td>Mystery guest / quality input</td><td><code>mystery_guest</code> audit type</td><td>✅ C</td></tr>
+<tr><td>176</td><td>Executive owner view</td><td><code>/hkp/exec</code></td><td>✅ C</td></tr>
+<tr><td>177</td><td>Board / executive export</td><td><code>/hkp/exec/board</code>, printable</td><td>✅ C</td></tr>
+<tr><td>178</td><td>Data freshness</td><td>KPI staleness, &quot;calculated at&quot; on readiness, last indexed on AI</td><td>✅ T</td></tr>
+<tr><td>179</td><td>Transparency of calculations</td><td>Every readiness check and practical score explains itself</td><td>✅ T</td></tr>
+<tr><td>180</td><td>System health dashboard</td><td><code>/hkp/admin/system</code>: database, queue, email, storage, AI, scheduler, backup, API</td><td>✅ C</td></tr>
+</table>
+<h2 dir="auto">17. Release (§181–§190)</h2>
+<table>
+<tr><th>§</th><th>Requirement</th><th>Resolution</th><th>Status</th></tr>
+<tr><td>181</td><td>Backup / disaster recovery</td><td>Restore procedure in README and DEPLOYMENT</td><td>🟡 Recovery-time targets and off-site copies are hosting decisions</td></tr>
+<tr><td>182</td><td>Deployment workflow</td><td>README → &quot;Production&quot;</td><td>✅ C</td></tr>
+<tr><td>183</td><td>Git requirements</td><td>Migrations are versioned and secrets are kept out of the repository</td><td>🟡 The work is <strong>not committed yet</strong>. Review it, then commit</td></tr>
+<tr><td>184</td><td>Documentation</td><td>README.md (setup, credentials, guides), this file, IMPLEMENTATION_STATUS.md, DEPLOYMENT.md</td><td>✅ C</td></tr>
+<tr><td>185</td><td>Final QA scenario</td><td>The full 20-step scenario is an automated test</td><td>✅ T</td></tr>
+<tr><td>186</td><td>Final product architecture</td><td>As built</td><td>✅ C</td></tr>
+<tr><td>187</td><td>Product north star</td><td>Evidence-based readiness</td><td>✅ T</td></tr>
+<tr><td>188</td><td>Final development instruction</td><td>Followed</td><td>✅ C</td></tr>
+<tr><td>189</td><td>Release gates</td><td>Tests green, crawl clean, isolation proved, Arabic 100%, migrations reversible</td><td>✅ T</td></tr>
+<tr><td>190</td><td>Final acceptance statement</td><td>Met, with the 13 🟡 items listed above</td><td>✅</td></tr>
+</table>
+<p dir="auto">---</p>
+<h2 dir="auto">Issues found and fixed during this pass</h2>
+<table>
+<tr><th>Issue</th><th>Impact</th><th>Fix</th></tr>
+<tr><td>Tenant list leak: the admin lists (tracks, competencies, KPIs and other CRUD entities) showed other clients&#39; records</td><td>A client could see another client&#39;s records</td><td><code>Ha_crud::scope_sql()</code> is resolved before the query is built. Regression test added</td></tr>
+<tr><td>Curriculum screen showed every tenant&#39;s tracks and modules, and attach, detach and order were not scoped</td><td>Cross-tenant edits were possible</td><td>The track and module tenant is checked before any change (<code>Hkp_admin::curriculum</code>)</td></tr>
+<tr><td>Board report 500</td><td>Executives could not print</td><td>Scoped lists are computed before the query (<code>Hkp_exec::board</code>)</td></tr>
+<tr><td>New property 500</td><td>Properties could not be created from the UI</td><td><code>Ha_crud::options()</code> and <code>org_options()</code> resolve scope first</td></tr>
+<tr><td>Rubric editor exhausted 512 MB</td><td>Rubrics could not be edited</td><td>Fixed a loop bound that grew inside its own loop</td></tr>
+<tr><td>System health 500</td><td>The page failed on real data</td><td>The AI check now counts enabled providers</td></tr>
+<tr><td>Instructor area 500 (6 pages)</td><td>Instructors were locked out</td><td>Sidebar permission lookup fixed (<code>views/backend/user/navigation.php</code>)</td></tr>
+<tr><td>Dead links (403) for GM, supervisor and executive</td><td>Confusing UX</td><td>Tiles, buttons and person names link only when permitted (<code>hkp_person_open()</code>)</td></tr>
+<tr><td>&quot;Website pages&quot; link pointed to a route that does not exist</td><td>404</td><td>Now points to <code>/hkp/cms</code></td></tr>
+<tr><td>142 new interface strings had no Arabic</td><td>Mixed-language UI</td><td>Translated. The test enforces 100% coverage</td></tr>
+</table>
+<h3 dir="auto">Found by the Playwright browser suite (170 tests, <code>e2e/</code>)</h3>
+<table>
+<tr><th>Issue</th><th>Impact</th><th>Fix</th></tr>
+<tr><td><code>/robots.txt</code> and <code>/llms.txt</code> served the HTML 404 page with status 200</td><td>Crawlers and answer engines got no robots file and no llms.txt</td><td>Routed to <code>Academy::robots/llms/llms_full</code> (<code>config/routes.php</code>)</td></tr>
+<tr><td><code>/sitemap.xml</code> (the address in robots.txt) served the legacy LMS map: login and sign-up URLs, which robots.txt disallows</td><td>Google never saw the 236 bilingual academy URLs</td><td><code>/sitemap.xml</code> is now the index of the academy, image and LMS maps. The legacy map moved to <code>/lms-sitemap.xml</code></td></tr>
+<tr><td>Unknown non-locale URLs returned 200 (&quot;soft 404&quot;)</td><td>SEO penalty</td><td><code>Home::page_not_found</code> now sends a real 404</td></tr>
+<tr><td>The case-studies page had no H1</td><td>Accessibility and SEO rule broken</td><td>The section title is the page H1 there (<code>public_corporate.php</code>)</td></tr>
+<tr><td>Learners could open the module and lesson editor screens (<code>/hkp/cms/modules</code> returned 200)</td><td>Editors&#39; drafts were visible to learners</td><td>The editor screens need course/lesson create or update permission (<code>Hkp_cms</code>)</td></tr>
+<tr><td>Phone layout 430–435 px wide on a 390 px screen: grid tracks could not shrink below the tables, and the top bar overflowed</td><td>Horizontal scrolling on every workspace page</td><td>Grid items use <code>min-width: 0</code> and <code>minmax(0, 1fr)</code>. The top bar can shrink (<code>hkp.css</code>)</td></tr>
+<tr><td>Nav tap targets 40 px, and the closed off-canvas menu was still in the keyboard tab order</td><td>Touch and keyboard accessibility</td><td>44 px targets. The closed menu is <code>visibility: hidden</code></td></tr>
+<tr><td>Cache-first service worker with a fixed <code>?v=3</code> on CSS and JS</td><td>Installed users would never receive CSS or JS updates</td><td><code>hkp_asset()</code> versions each file by its modification time, and the cache name follows those versions</td></tr>
+<tr><td>&quot;Suggest meta title and description&quot;: Insert pasted both lines into the description</td><td>The meta title was never filled</td><td>Each value goes into its own field (<code>hkp.js</code>)</td></tr>
+<tr><td><code>X-Content-Type-Options</code>, <code>X-Frame-Options</code> and <code>Referrer-Policy</code> were each sent twice, and the two Referrer-Policy values conflicted</td><td>Ambiguous security headers</td><td>Apache is the single source (<code>.htaccess</code>)</td></tr>
+</table>
+<h2 dir="auto">Production database merge</h2>
+<ul>
+<li><strong>Backup.</strong> <code>atlas_local</code> was saved as a file and as the database <code>atlas_local_premerge</code>. <code>atlas_local</code> itself was <strong>not</strong> modified.</li>
+<li><strong>Import.</strong> <code>khidmat_atlas.sql</code> (MariaDB 11.4) was loaded into <code>atlas_merged</code>. It has 148 tables, 136 real enrolments, 100 certificate verifications and the real branding.</li>
+<li><strong>Migrate.</strong> Migrations 11–15 were applied on the production data: 5 applied, 0 errors.</li>
+<li><strong>Seed.</strong> Only the production-safe seeds ran: <code>seed rbac</code> (1,378 rows) and <code>seed hkp</code> (626 rows). Both upsert by natural key. The curriculum and content seeds were <strong>not</strong> run, so production content is unchanged.</li>
+<li><strong>Carry over.</strong> Local-only rows were copied by natural key, never by ID:</li>
+</ul>
+<p dir="auto">   - course <code>fo-e2e-ramadan-service</code></p>
+<p dir="auto">   - the AI Studio configuration</p>
+<p dir="auto">   - 59 interface phrases</p>
+<p dir="auto">   Two of these turned out to be end-to-end test fixtures: a mock AI provider on <code>127.0.0.1:8765</code> and a course with placeholder lessons. The provider was disabled, its routes were removed and the course was archived. They were kept for reference but are inactive.</p>
+<ul>
+<li><strong>Verify.</strong></li>
+</ul>
+<p dir="auto">   - The README logins work.</p>
+<p dir="auto">   - The 67 legacy admin sidebar links all return 200.</p>
+<p dir="auto">   - The workspace crawl passed for 9 roles with 0 problems.</p>
+<p dir="auto"><code>application/config/database.local.php</code> now points at <code>atlas_merged</code>.</p></main></html>

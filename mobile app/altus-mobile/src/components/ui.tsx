@@ -28,15 +28,21 @@ export const palette = {
   emerald: "#2E7D5A",
 };
 export function useTheme() {
-  const { state } = useApp();
+  const { state, remote } = useApp();
+  // Admin branding (remote config) applies unless the user picked their own accent.
+  const brand = remote?.branding;
+  const accent =
+    state.accent === palette.copper && brand?.primary_color
+      ? brand.primary_color
+      : state.accent;
   return {
-    bg: state.dark ? "#1C2227" : palette.cream,
+    bg: state.dark ? "#1C2227" : brand?.background_color || palette.cream,
     surface: state.dark ? "#293137" : "#FFFFFF",
     text: state.dark ? "#F7F5F1" : palette.charcoal,
     muted: state.dark ? "#BDC4CA" : palette.slate,
     border: state.dark ? "#414A50" : "#E7E1D8",
     soft: state.dark ? "#353C40" : "#F0E9DE",
-    accent: state.dark ? "#E08B63" : state.accent,
+    accent: state.dark ? "#E08B63" : accent,
     green: state.dark ? "#83C6A3" : palette.emerald,
   };
 }
@@ -493,10 +499,16 @@ export function StateView({
   );
 }
 export function Logo({ light = false }: { light?: boolean }) {
+  const { remote, state } = useApp();
+  const custom = remote?.branding.logo_url;
+  const name =
+    (state.locale === "ar"
+      ? remote?.branding.app_name_ar
+      : remote?.branding.app_name) || "ALTUS Gulf";
   return (
     <Image
-      source={light ? assets.logoLight : assets.logo}
-      accessibilityLabel="ALTUS Gulf"
+      source={custom ? { uri: custom } : light ? assets.logoLight : assets.logo}
+      accessibilityLabel={name}
       style={{ width: 117, height: 38, resizeMode: "contain" }}
     />
   );

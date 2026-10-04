@@ -1,5 +1,8 @@
 import { bi, Bi } from "../domain/models";
+import Constants from "expo-constants";
 export const messages: Record<string, Bi> = {
+  deviceCode: bi("Email verification code", "رمز التحقق المرسل بالبريد"),
+  deviceCodeBody: bi("Enter the code sent to your account email to confirm this device. Your existing session stays active until verification is complete.", "أدخل الرمز المرسل إلى بريد حسابك لتأكيد هذا الجهاز. تبقى جلستك الحالية فعالة حتى اكتمال التحقق."),
   home: bi("Home", "الرئيسية"),
   learn: bi("Learn", "تعلّم"),
   knowledge: bi("Knowledge", "المعرفة"),
@@ -56,15 +59,21 @@ export const messages: Record<string, Bi> = {
     "Sign out of your workspace?",
     "هل تريد تسجيل الخروج من مساحة عملك؟",
   ),
-  signIn: bi("Connect account", "ربط الحساب"),
+  signIn: bi("Sign in", "تسجيل الدخول"),
+  password: bi("Password", "كلمة المرور"),
+  forgotPassword: bi("Forgot your password?", "نسيت كلمة المرور؟"),
+  signInBody: bi("Use your ALTUS email address and password. Your role decides which screens you see.", "استخدم بريدك الإلكتروني وكلمة المرور في ألتوس. يحدد دورك الشاشات التي تظهر لك."),
+  signInRequired: bi("Enter your email address and password.", "أدخل بريدك الإلكتروني وكلمة المرور."),
+  twoFactorBody: bi("Enter the 6-digit code from your authenticator app, or a recovery code.", "أدخل الرمز المكون من 6 أرقام من تطبيق المصادقة، أو رمز استرداد."),
+  twoFactorCode: bi("Verification code", "رمز التحقق"),
+  twoFactorRequired: bi("Enter the verification code.", "أدخل رمز التحقق."),
+  adminWebBody: bi("Administration tools open in the secure web console with your current permissions.", "تُفتح أدوات الإدارة في لوحة الويب الآمنة وفق صلاحياتك الحالية."),
+  teamTab: bi("Team", "الفريق"),
+  yourWorkspace: bi("Your workspace", "مساحة عملك"),
+  openAdminConsole: bi("Open the web console", "فتح لوحة الويب"),
   exploreDemo: bi("Explore the demonstration", "استكشف العرض التوضيحي"),
   email: bi("Email", "البريد الإلكتروني"),
-  apiKey: bi("Personal API key", "مفتاح واجهة برمجة شخصي"),
-  apiUrl: bi("Platform URL", "رابط المنصة"),
-  secureLogin: bi(
-    "Connect with a scoped personal API key from Account Security. Password, MFA and recovery are managed by your existing web account.",
-    "اربط حسابك بمفتاح شخصي محدد الصلاحيات من أمان الحساب. تُدار كلمة المرور والتحقق والاستعادة عبر حساب الويب الحالي.",
-  ),
+  secureLogin: bi("Welcome to ALTUS", "مرحبًا بك في ألتوس"),
   openAccount: bi("Open secure account sign-in", "افتح تسجيل الدخول الآمن"),
   invalid: bi(
     "Please complete the required fields.",
@@ -251,8 +260,8 @@ export const messages: Record<string, Bi> = {
   actions: bi("Improvement actions", "إجراءات التحسين"),
   success: bi("Ready for your next step.", "جاهز لخطوتك التالية."),
   appVersion: bi(
-    "ALTUS Knowledge & Performance · 1.0.0",
-    "ألتوس المعرفة والأداء · ١.٠.٠",
+    `ALTUS Knowledge & Performance · ${Constants.expoConfig?.version || "1.2.1"}`,
+    `ألتوس المعرفة والأداء · ${Constants.expoConfig?.version || "1.2.1"}`,
   ),
   fullCatalog: bi(
     "Browse every country and registered language. Translation coverage is shown separately.",
@@ -378,10 +387,6 @@ export const messages: Record<string, Bi> = {
     "This demonstration lesson is a reading lesson. Live video sources appear when supplied by the authorized lesson API.",
     "هذا الدرس التوضيحي للقراءة. تظهر مصادر الفيديو عند توفيرها من واجهة الدروس المصرح بها.",
   ),
-  signInRequired: bi(
-    "Connect your account or enter the demonstration.",
-    "اربط حسابك أو ادخل العرض التوضيحي.",
-  ),
   changeRole: bi("Demonstration workspace", "مساحة العرض التوضيحي"),
   contentGovernance: bi(
     "Draft → Review → Approval → Published",
@@ -434,6 +439,19 @@ export const messages: Record<string, Bi> = {
     "Native push permission can be requested on iOS or Android. In-app updates remain available here.",
     "يمكن طلب صلاحية الإشعارات على iOS أو Android. تبقى التحديثات داخل التطبيق متاحة هنا.",
   ),
+  featureDisabled: bi(
+    "Your administrator has turned this feature off.",
+    "أوقف المسؤول هذه الميزة.",
+  ),
+  maintenanceTitle: bi("We'll be right back", "سنعود قريبًا"),
+  updateRequiredTitle: bi("Update required", "التحديث مطلوب"),
+  updateRequiredBody: bi(
+    "This version is no longer supported. Install the latest version to continue.",
+    "لم يعد هذا الإصدار مدعومًا. ثبّت أحدث إصدار للمتابعة.",
+  ),
+  updateSuggested: bi("A new version of the app is available.", "يتوفر إصدار جديد من التطبيق."),
+  updateNow: bi("Update", "تحديث"),
+  later: bi("Later", "لاحقًا"),
   consentBody: bi(
     "Only access content you are authorized to use. Protect guest and colleague information. Follow your property’s approved procedures.",
     "ادخل فقط إلى المحتوى المصرح لك باستخدامه. احمِ معلومات الضيوف والزملاء واتبع إجراءات منشأتك المعتمدة.",

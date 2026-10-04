@@ -1,0 +1,19 @@
+{
+  "version": "1.2.1",
+  "versionCode": 5,
+  "package": "com.altusgulf.knowledge",
+  "minSdk": 24,
+  "targetSdk": 36,
+  "abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86_64"
+  ],
+  "bytes": 106625498,
+  "bundleBytes": 2887044,
+  "nativeLibraries": 78,
+  "configurationKeyBundled": false,
+  "sourceMatchesStage": true,
+  "sha256": "115ac4c4d657480edf6a262f65a2d8c3821f33cd1e1fac5c8ef363b23a0798ac",
+  "nativeDeviceTested": false
+}

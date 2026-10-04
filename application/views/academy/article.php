@@ -5,8 +5,8 @@
         <?php if (!empty($article['category_name'])): ?>
             <p><span class="ha-pill ha-pill--accent"><?= html_escape($article['category_name']) ?></span></p>
         <?php endif; ?>
-        <h1><?= html_escape($article['title']) ?></h1>
-        <p class="ha-hero__lede"><?= html_escape($article['excerpt']) ?></p>
+        <h1<?= ha_studio('title') ?>><?= html_escape($article['title']) ?></h1>
+        <p class="ha-hero__lede"<?= ha_studio('subtitle') ?>><?= html_escape($article['excerpt']) ?></p>
         <p style="color:var(--ha-ink-faint);font-size:.9rem">
             <?php if (!empty($article['author_name'])): ?><?= html_escape($article['author_name']) ?> · <?php endif; ?>
             <time datetime="<?= date('Y-m-d', strtotime($article['published_at'])) ?>">
@@ -18,7 +18,7 @@
 </section>
 
 <?php $cover = ha_image_variant($article['cover_image'], 'wide'); if ($cover): ?>
-<figure class="ha-cover">
+<figure class="ha-cover"<?= ha_studio('hero_image', 'image') ?>>
     <div class="ha-shell">
         <?= ha_image($article['cover_image'], $locale === 'ar' ? $article['cover_image_alt_ar'] : $article['cover_image_alt_en'],
             array('size' => 'wide', 'class' => 'ha-cover__img', 'eager' => true)) ?>
@@ -28,7 +28,7 @@
 
 <section class="ha-section">
     <div class="ha-shell ha-detail">
-        <article class="ha-prose">
+        <article class="ha-prose"<?= ha_studio('body', 'html') ?>>
             <?= $article['body'] ?>
 
             <?php if ($article['tags']): ?>

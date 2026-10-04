@@ -3,16 +3,16 @@
 <!-- Hero ------------------------------------------------------------------ -->
 <section class="ha-hero ha-hero--image ha-hero--lead">
     <?php $hero = ha_image_variant($page['hero_image'], 'wide'); if ($hero): ?>
-        <div class="ha-hero__media" aria-hidden="true"
+        <div class="ha-hero__media" aria-hidden="true"<?= ha_studio('hero_image', 'image') ?>
              style="background-image:url('<?= base_url($hero) ?>')"></div>
     <?php endif; ?>
     <div class="ha-shell ha-hero__body">
         <p class="ha-eyebrow"><?= ha_pe('Saudi Arabia · Arabic and English') ?></p>
-        <h1><?= html_escape($page['title']) ?></h1>
-        <p class="ha-hero__lede"><?= html_escape($page['subtitle']) ?></p>
+        <h1<?= ha_studio('title') ?>><?= html_escape($page['title']) ?></h1>
+        <p class="ha-hero__lede"<?= ha_studio('subtitle') ?>><?= html_escape($page['subtitle']) ?></p>
         <div class="ha-hero__actions">
             <a class="ha-btn" href="<?= base_url($locale . '/' . ($page['cta_url'] ?: 'courses')) ?>">
-                <?= html_escape($page['cta_label']) ?>
+                <span<?= ha_studio('cta_label') ?>><?= html_escape($page['cta_label']) ?></span>
             </a>
             <a class="ha-btn ha-btn--ghost" href="<?= base_url($locale . '/hotels') ?>">
                 <?= html_escape($t['for_hotels']) ?>
@@ -83,7 +83,7 @@
 
 <!-- The written argument ---------------------------------------------------- -->
 <section class="ha-section">
-    <div class="ha-shell ha-prose">
+    <div class="ha-shell ha-prose"<?= ha_studio('body', 'html') ?>>
         <?= $page['body'] ?>
     </div>
 </section>

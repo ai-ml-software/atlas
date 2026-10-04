@@ -60,6 +60,7 @@ include APPPATH . 'views/academy/_brand.php';
     <?php if ($ha_custom_css !== ''): ?>
         <style><?= $ha_custom_css ?></style>
     <?php endif; ?>
+<link rel="stylesheet" href="<?= site_url('publisher_theme/css') ?><?= (!empty($studio_is_preview) || $this->input->get('studio_theme_preview')==='1') ? '?preview=1' : '' ?>">
 </head>
 <body class="ha ha--<?= $locale ?><?= $is_rtl ? ' ha--rtl' : '' ?><?= in_array($locale, array('en', 'tl'), true) ? '' : ' ha--intl' ?><?= in_array($view, array('home_altus', 'profile_book'), true) ? ' ha--overlay' : '' ?>">
 
@@ -87,19 +88,19 @@ include APPPATH . 'views/academy/_brand.php';
 <main id="ha-main" class="ha-main">
     <?php
     // Keep native listings/forms intact while allowing administrators to customise the introduction and all added sections.
-    $native = $this->load->view('academy/' . $view, get_defined_vars(), true);
-    if (!empty($studio_page_copy['title'])) {
-        $native = preg_replace_callback('~(<h1\b[^>]*>).*?(</h1>)~s', function ($m) use ($studio_page_copy) { return $m[1] . html_escape($studio_page_copy['title']) . $m[2]; }, $native, 1);
-    }
-    echo $native;
-    if (!empty($studio_page_copy['body'])): ?><section class="ha-section"><div class="ha-shell ha-prose"><?php echo hkp_safe_html($studio_page_copy['body']); ?></div></section><?php endif;
-    if (!empty($studio_sections)) { $this->load->view('academy/_sections', array('sections' => $studio_sections, 'locale' => $locale)); }
+    // Editable elements carry explicit ha_studio() markers in their templates (see ha_studio_helper);
+    // the markers are emitted only while an authorized private preview renders.
+    $this->load->helper('ha_studio');
+    ha_studio_mode(!empty($studio_is_preview));
+    $this->load->view('academy/' . $view, get_defined_vars());
+    if (!empty($studio_page_copy['body']) && !in_array($view, array('page', 'home'), true)): ?><section class="ha-section"><div<?= ha_studio('body', 'html') ?> class="ha-shell ha-prose"><?php echo hkp_safe_html($studio_page_copy['body']); ?></div></section><?php endif;
+    if (!empty($studio_sections)) { $this->load->view('academy/_sections', array('sections' => $studio_sections, 'locale' => $locale, 'studio_is_preview' => !empty($studio_is_preview))); }
     ?>
 </main>
 <?php if (!empty($studio_edit_url) && empty($studio_is_preview)): ?><a class="ha-studio-edit" href="<?php echo html_escape($studio_edit_url); ?>" style="position:fixed;bottom:24px;inset-inline-end:24px;z-index:100;padding:12px 18px;background:#a84d27;color:white;border-radius:8px;text-decoration:none;box-shadow:0 5px 20px #0002;font:600 13px sans-serif"><?php echo ha_pe('Edit page'); ?> ↗</a><?php endif; ?>
 
 <?php include APPPATH . 'views/academy/_footer.php'; ?>
-<?php include APPPATH . 'views/academy/_cookie.php'; ?>
+  <?php if (empty($studio_is_preview)) { include APPPATH . 'views/academy/_cookie.php'; } ?>
 
 
 <?php include APPPATH . 'views/academy/_scripts.php'; ?>

@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MCP ADMIN WORKFLOWS</title><style>:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f7f5f1;color:#1c2227;font:16px/1.7 'Segoe UI',Tahoma,Arial,sans-serif}header{background:#1c2227;color:white;padding:28px max(24px,calc((100% - 1080px)/2));border-bottom:4px solid #c45b2f}header a{color:#f3c5a8}main{max-width:1080px;margin:auto;padding:28px 24px 70px}h1,h2,h3{line-height:1.25}h2{margin-top:36px}a{color:#944527}pre{padding:18px;background:#e9e5df;border-radius:10px;overflow:auto}code{font-size:.9em}table{border-collapse:collapse;width:100%;background:white;font-size:14px}td,th{padding:10px;border:1px solid #ddd;text-align:start;vertical-align:top}.card{background:white;border:1px solid #ded8cf;border-radius:14px;padding:22px;margin-bottom:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}video{display:block;width:100%;max-height:640px;background:#111}.chapters{max-height:300px;overflow:auto;display:flex;flex-wrap:wrap;gap:8px;padding:10px 0}button,.button{border:1px solid #c45b2f;border-radius:8px;background:white;color:#71371e;padding:9px 12px;cursor:pointer;text-decoration:none;font:inherit}p{margin:12px 0}.muted{color:#646a6d}img{max-width:100%}@media(max-width:600px){main{padding:20px 15px}table{display:block;overflow:auto}header{padding:22px 15px}}@media print{header,nav,.no-print{display:none}body{background:white;font-size:12px}main{padding:0;max-width:none}h2{break-after:avoid}pre,table{break-inside:avoid}a{color:inherit}}</style><header><strong>ALTUS KNOWLEDGE &amp; PERFORMANCE</strong><br><a href="index.html">User guides and recordings</a></header><main><h1 dir="auto">MCP integrations — administrator daily workflows</h1>
+<p dir="auto">Screen: <strong>Content Studio → Integrations</strong> (<code>/hkp/cms/integrations</code>). Requires</p>
+<p dir="auto">platform (system) scope and <code>cms_pages.update</code>. Approving, declining, revoking</p>
+<p dir="auto">and restoring require <code>cms_pages.publish</code> (or the content type&#39;s publish</p>
+<p dir="auto">permission). The audit tab requires <code>audit_logs.view</code>. The screen follows the</p>
+<p dir="auto">interface language; Arabic renders right-to-left.</p>
+<table>
+<tr><th>Tab</th><th>URL</th><th>Use</th></tr>
+<tr><td>Approval requests</td><td><code>?tab=approvals&amp;status=pending</code></td><td>Queue of MCP publish/archive requests. Filter by status.</td></tr>
+<tr><td>Connections</td><td><code>?tab=connections</code></td><td>OAuth grants with user, client, last seen (UTC), request count, last action. Revoke.</td></tr>
+<tr><td>Connection health</td><td><code>?tab=health</code></td><td>Probes gateway <code>/health</code>, protected-resource metadata and OAuth server metadata (PKCE S256); accepted signing key ids; recently active grants.</td></tr>
+<tr><td>MCP audit history</td><td><code>?tab=audit</code></td><td>Read-only, 25 per page. Filter by action (<code>mcp.save</code>, <code>mcp.publish</code>, <code>oauth.consent</code>, <code>oauth.revoke</code> …), user id, date range, client/text.</td></tr>
+<tr><td>Archive</td><td><code>?tab=archive</code></td><td>Archived pages; *Restore to draft*. Nothing is permanently deleted.</td></tr>
+</table>
+<p dir="auto">Use <strong>Copy MCP URL</strong> and <strong>Connect a client</strong> for the connection instructions. The sidebar highlights Integrations while this screen is open.</p>
+<h2 dir="auto">Morning check (2 minutes)</h2>
+<ul>
+<li>*Connection health*: all three probes <strong>OK</strong>. If the gateway shows *Switched off* or *Secret missing*, see the runbook §2.</li>
+<li>*Approval requests* (pending): work the queue (below). Requests expire 10 minutes after they were made; expired ones need a fresh request from the client.</li>
+<li>*Connections*: revoke grants for people who left, unknown clients, or anything not seen for a long time.</li>
+</ul>
+<h2 dir="auto">Reviewing a publication request</h2>
+<ul>
+<li>Open the request. Check client, requesting user, object, version and operation.</li>
+<li>Use *Preview content*, then compare *Published content* with *Requested draft*.</li>
+<li>*Approve this version* or *Decline*. You cannot approve a request you made yourself; another administrator must (separation of duties). The MCP client then calls <code>altus_publish_approved</code> once; the approval is consumed.</li>
+<li>If anyone edits the draft after approval, the approval stops working (409 conflict) and the client must request again — re-review the new version.</li>
+</ul>
+<h2 dir="auto">Investigating an action</h2>
+<p dir="auto">*MCP audit history* → filter by action or user → the <code>audit_reference.audit_id</code></p>
+<p dir="auto">returned to the MCP client is the <code>#</code> column. Rows cannot be edited here.</p>
+<h2 dir="auto">Restoring archived content</h2>
+<p dir="auto">*Archive* → *Restore to draft*. The page returns to draft, then goes through the</p>
+<p dir="auto">normal review/publication flow. Archiving itself only happens via an approved</p>
+<p dir="auto">request.</p>
+<h2 dir="auto">Revoking access</h2>
+<p dir="auto">*Connections* → *Revoke access*. Tokens and refresh tokens for that grant stop</p>
+<p dir="auto">working immediately (next call → 401). Deactivating a user in ALTUS also blocks</p>
+<p dir="auto">all their MCP access at the next call. To revoke everything, follow runbook §6.</p></main></html>

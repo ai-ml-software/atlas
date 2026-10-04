@@ -1,0 +1,113 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MOBILE APP</title><style>:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f7f5f1;color:#1c2227;font:16px/1.7 'Segoe UI',Tahoma,Arial,sans-serif}header{background:#1c2227;color:white;padding:28px max(24px,calc((100% - 1080px)/2));border-bottom:4px solid #c45b2f}header a{color:#f3c5a8}main{max-width:1080px;margin:auto;padding:28px 24px 70px}h1,h2,h3{line-height:1.25}h2{margin-top:36px}a{color:#944527}pre{padding:18px;background:#e9e5df;border-radius:10px;overflow:auto}code{font-size:.9em}table{border-collapse:collapse;width:100%;background:white;font-size:14px}td,th{padding:10px;border:1px solid #ddd;text-align:start;vertical-align:top}.card{background:white;border:1px solid #ded8cf;border-radius:14px;padding:22px;margin-bottom:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}video{display:block;width:100%;max-height:640px;background:#111}.chapters{max-height:300px;overflow:auto;display:flex;flex-wrap:wrap;gap:8px;padding:10px 0}button,.button{border:1px solid #c45b2f;border-radius:8px;background:white;color:#71371e;padding:9px 12px;cursor:pointer;text-decoration:none;font:inherit}p{margin:12px 0}.muted{color:#646a6d}img{max-width:100%}@media(max-width:600px){main{padding:20px 15px}table{display:block;overflow:auto}header{padding:22px 15px}}@media print{header,nav,.no-print{display:none}body{background:white;font-size:12px}main{padding:0;max-width:none}h2{break-after:avoid}pre,table{break-inside:avoid}a{color:inherit}}</style><header><strong>ALTUS KNOWLEDGE &amp; PERFORMANCE</strong><br><a href="index.html">User guides and recordings</a></header><main><h1 dir="auto">ALTUS mobile app — admin settings, API keys and release</h1>
+<p dir="auto">App source: <code>mobile app/altus-mobile</code> (Expo SDK 57, Expo Router, TypeScript).</p>
+<p dir="auto">Bundle id / package: <code>com.altusgulf.knowledge</code>.</p>
+<h2 dir="auto">1. Admin: Mobile app settings</h2>
+<p dir="auto">URL: <code>/hkp/admin/mobile</code>, directly visible as <strong>Platform → Mobile app settings</strong> and in the legacy administrator sidebar.</p>
+<p dir="auto">Viewing needs a system-scoped active account and <code>settings.view</code>; saving, generating, rotating and revoking keys also need <code>settings.update</code>. Property administrators cannot edit global app configuration.</p>
+<p dir="auto">Arabic UI strings are in <code>application/language/hkp/ar.php</code>.</p>
+<table>
+<tr><th>Section</th><th>What it controls in the app</th></tr>
+<tr><td>Connection → API base URL</td><td>Where signed-out users point after loading config. Empty = keep the built-in/setup address. HTTPS only (http allowed for localhost/10.0.2.2).</td></tr>
+<tr><td>Branding</td><td>App name EN/AR (logo accessibility label), primary/accent/background colours (used unless the user picked their own accent), logo URL (header), splash image URL (maintenance / update screens). The store icon and native launch screen are fixed per binary.</td></tr>
+<tr><td>Modules shown</td><td>learning, knowledge, assessments, assistant, qr, notifications, team, performance, demo. Off = hidden from the tab bar and the screen shows &quot;turned off by your administrator&quot;. Home/profile/settings are never hidden.</td></tr>
+<tr><td>Language and support</td><td>Default language (applied on first launch only; <code>device</code> = phone language). Support email/phone/URL appear in Settings.</td></tr>
+<tr><td>Versions and store links</td><td>Per platform: below <code>min_version</code> = blocking &quot;Update required&quot; screen; below <code>latest_version</code> = dismissible banner; store link opens from both.</td></tr>
+<tr><td>Maintenance</td><td>Full-screen message (EN/AR) instead of the app, with Retry and Server setup.</td></tr>
+</table>
+<p dir="auto">Save is a single, draft-free save. Each save bumps <code>version</code> and writes an <code>ha_audit_log</code> row (<code>entity_type = mobile_app</code>) with before/after.</p>
+<p dir="auto">Storage: <code>ha_mobile_config</code> (one row, JSON) and <code>ha_mobile_app_key</code> — migration <code>20260101000031_mobile_app_settings.php</code> (additive; <code>down()</code> drops both tables).</p>
+<h2 dir="auto">2. App keys (altm_…)</h2>
+<ul>
+<li><strong>Generate</strong> — name + platform; the full key <code>altm_&lt;12 hex&gt;_&lt;40 chars&gt;</code> is shown <strong>once</strong> together with a setup QR code. Only an HMAC of the secret is stored (same <code>Ha_crypto::hmac</code> as personal keys).</li>
+<li><strong>Rotate</strong> — issues a new key with the same name/platform and revokes the old one immediately.</li>
+<li><strong>Revoke</strong> — the key stops working at once.</li>
+<li>An app key only reads public remote config. People still sign in with their personal <code>ha_…</code> keys (Account Security), which are unchanged, as are <code>/mobile_api/*</code> and <code>/api/v1/*</code>.</li>
+</ul>
+<h2 dir="auto">3. Remote config endpoint</h2>
+<pre><code>
+GET /api/v1/mobile/config
+
+X-App-Key: altm_xxxxxxxxxxxx_xxxxxxxx…   (or Authorization: Bearer altm_…)
+
+If-None-Match: &quot;&lt;etag&gt;&quot;                  (optional)
+
+</code></pre>
+<ul>
+<li>200 <code>{success:true, data:{version, updated_at, api_base_url, branding, features, default_language, support, platforms, maintenance}, message}</code> with <code>ETag</code> and <code>Cache-Control: private, max-age=300</code>.</li>
+<li>304 when the ETag matches (weak <code>W/</code> validators are accepted too).</li>
+<li>401 for a missing, wrong, revoked or personal key. 429 after 30 failures from one IP in 15 minutes. 405 for anything other than GET.</li>
+<li>Route: <code>application/config/routes.php</code> → <code>Mobile_config::index</code> (declared before the <code>api/v1/(.+)</code> catch-all).</li>
+</ul>
+<pre><code>
+curl -i -H &quot;X-App-Key: altm_...&quot; https://altusgulf.com/api/v1/mobile/config
+
+</code></pre>
+<h2 dir="auto">4. How the app uses it</h2>
+<ul>
+<li><strong>Built-in defaults:</strong> <code>EXPO_PUBLIC_PLATFORM_URL</code> (EAS env) → <code>app.json</code> <code>expo.extra.platformUrl</code> → <code>https://altusgulf.com</code>. You can also bake in an app key with <code>EXPO_PUBLIC_ALTUS_APP_KEY</code>. It ends up readable inside the binary, which is fine because it only unlocks public config. Never bake in an <code>ha_</code> key.</li>
+<li><strong>Server setup:</strong> open <strong>Profile → Settings → Server setup</strong> or <strong>Sign in → Server setup</strong>. The logo long-press remains an extra shortcut. Enter the URL and app key, choose <strong>Test connection</strong>, then <strong>Save</strong>, or scan the native setup QR shown after generating a key (<code>altus-setup:{&quot;base&quot;:…,&quot;appKey&quot;:…}</code>). Saved setup is verified before storage in expo-secure-store (<code>WHEN_UNLOCKED_THIS_DEVICE_ONLY</code>). Reset restores built-in URL/key defaults and reloads their configuration. The web preview deliberately does not persist credentials.</li>
+<li><strong>At launch:</strong> preferences and identity restore before server defaults apply. Cached public configuration is bound to the same URL and key prefix. Fetch uses <code>If-None-Match</code>; failures retain the matching cache and show the error. Refresh also runs on foreground return and every five minutes while active and online.</li>
+<li>Code: <code>src/services/remoteConfig.ts</code> (pure helpers + fetch), <code>src/state/AppProvider.tsx</code> (<code>remote</code>, <code>feature()</code>, <code>setupServer</code>), <code>src/features/RemoteGate.tsx</code> (maintenance/update), <code>src/features/ServerSetup.tsx</code>, <code>src/app/server-setup.tsx</code>.</li>
+</ul>
+<h2 dir="auto">5. Verification</h2>
+<pre><code>
+# PHP (isolated test DB, never production)
+
+$env:HA_TEST_DB=&#39;atlas_hospitality_test_mobile&#39;
+
+&amp; &#39;C:\laragon\bin\php\php-8.1.10-Win32-vs16-x64\php.exe&#39; index.php ha_test run 170_mobile
+
+# App
+
+cd &#39;mobile app\altus-mobile&#39;
+
+npm.cmd run check            # tsc + expo lint + node unit tests (remote configuration and role selection)
+
+npx.cmd expo-doctor
+
+npx.cmd expo export --platform android --platform ios --output-dir dist-native
+
+</code></pre>
+<h2 dir="auto">6. Release — Android</h2>
+<p dir="auto">Versions: bump <code>expo.version</code> (user-visible), and <code>android.versionCode</code> (integer, must increase every upload). <code>eas.json</code> uses <code>appVersionSource: &quot;local&quot;</code>; the production profile has <code>autoIncrement</code>.</p>
+<p dir="auto"><strong>Signing (no secrets in git):</strong> the upload keystore lives outside the repo in <code>%LOCALAPPDATA%\ALTUS\Signing\com.altusgulf.knowledge</code>. <code>plugins/withReleaseSigning.cjs</code> reads <code>ALTUS_ANDROID_KEYSTORE</code>, <code>ALTUS_ANDROID_STORE_PASSWORD</code>, <code>ALTUS_ANDROID_KEY_ALIAS</code> and <code>ALTUS_ANDROID_KEY_PASSWORD</code> at build time. <code>*.jks</code>, <code>.credentials/</code>, <code>/android</code> and <code>/ios</code> are git-ignored. Back up the keystore. Use Play App Signing, so this key is only the upload key.</p>
+<p dir="auto">Local build (Windows, verified toolchain):</p>
+<pre><code>
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-android-windows.ps1            # signed APK
+
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-android-windows.ps1 -Bundle    # AAB for Play
+
+</code></pre>
+<p dir="auto">Output: <code>mobile app/client-deliverables/android/</code>.</p>
+<p dir="auto">Cloud (run manually; this uploads to Expo):</p>
+<pre><code>
+eas login
+
+eas env:create --environment production --name EXPO_PUBLIC_PLATFORM_URL --value https://altusgulf.com
+
+eas credentials -p android                         # upload the existing keystore
+
+eas build -p android --profile production          # AAB
+
+eas submit -p android --profile production         # needs a Play service-account JSON (not in repo)
+
+</code></pre>
+<h2 dir="auto">7. Release — iOS (needs EAS or a Mac; it cannot build on Windows)</h2>
+<pre><code>
+eas build -p ios --profile production   # EAS creates/uses distribution cert + provisioning profile (Apple Developer account)
+
+eas submit -p ios --profile production  # App Store Connect; needs the app record for com.altusgulf.knowledge
+
+</code></pre>
+<p dir="auto">Bump <code>ios.buildNumber</code> for each upload. <code>ITSAppUsesNonExemptEncryption=false</code> is set (HTTPS only). The camera usage text is in English only. An Arabic <code>locales</code> entry in app.json made Android <code>lintVitalRelease</code> fail with ExtraTranslation, so it was removed. If you need it, add it later as an iOS-only InfoPlist.strings.</p>
+<h2 dir="auto">8. Store checklist</h2>
+<ul>
+<li>[ ] Version / versionCode / buildNumber bumped; <code>min_version</code>/<code>latest_version</code> + store links set in <code>/hkp/admin/mobile</code> after the store release is live</li>
+<li>[ ] Production app key generated, put in the EAS env (or distributed by QR); old keys revoked</li>
+<li>[ ] Privacy policy URL (<code>/privacy</code>) and support URL; data-safety form (Play) / App Privacy (Apple): account email, learning progress; no tracking, no ads</li>
+<li>[ ] Screenshots: phone 6.7&quot; + 5.5&quot; (iOS), phone + 7&quot;/10&quot; tablet (Play), EN and AR</li>
+<li>[ ] Demo reviewer account (personal key with read scopes) in review notes; you can also switch the demo module on</li>
+<li>[ ] Permissions explained: camera (QR scanning only), notifications (Android 13+ prompt)</li>
+<li>[ ] Content rating questionnaire, target audience (adults / employees)</li>
+<li>[ ] Test on a physical Android device (release APK) and on TestFlight</li>
+</ul></main></html>

@@ -7,7 +7,7 @@ $ai_entity = 'page';
 $ai_id = $p['id'];
 ?>
 <div class="hkp-head"><div><div class="hkp-eyebrow"><a href="<?php echo hkp_url('cms'); ?>"><?php echo hkp_e('Website pages'); ?></a> · <?php echo hkp_h($p['code']); ?></div>
-<h1><?php echo hkp_h($tr($loc, 'title') ?: $p['code']); ?></h1><p><?php echo hkp_badge($p['status']); ?> · <a href="<?php echo site_url('en/' . $p['slug_en']); ?>" target="_blank" rel="noopener"><?php echo hkp_e('View English'); ?></a> · <a href="<?php echo site_url('ar/' . $p['slug_ar']); ?>" target="_blank" rel="noopener"><?php echo hkp_e('View Arabic'); ?></a></p></div>
+<h1><?php echo hkp_h($tr($loc, 'title') ?: $p['code']); ?></h1><p><?php echo hkp_badge($p['status']); ?> · <?php echo hkp_content_view_buttons('pages', $p['id'], $p['status']); ?><?php if ($this->ha_auth->is_system_scoped() && $this->ha_auth->has('cms_pages.update') && $this->db->table_exists('ha_website_draft')) { echo hkp_content_view_buttons('pages', $p['id'], $p['status'], true); } ?></p></div>
 <div class="hkp-tabs" style="margin:0;border:0"><a href="?edit=en" class="<?php echo $loc === 'en' ? 'is-active' : ''; ?>">English</a><a href="?edit=ar" class="<?php echo $loc === 'ar' ? 'is-active' : ''; ?>">العربية</a></div></div>
 
 <div class="hkp-grid hkp-grid--4" style="margin-bottom:1rem">
@@ -59,7 +59,7 @@ $ai_id = $p['id'];
       <div class="hkp-field"><label for="glo"><?php echo hkp_e('Longitude'); ?></label><input id="glo" class="hkp-input" name="geo_lng" value="<?php echo hkp_h($p['geo_lng']); ?>" placeholder="46.6753"></div></div>
     <?php if (!(int) $p['is_system']): ?><div class="hkp-row"><div class="hkp-field"><label for="se"><?php echo hkp_e('Address (English)'); ?></label><input id="se" class="hkp-input" name="slug_en" value="<?php echo hkp_h($p['slug_en']); ?>"></div><div class="hkp-field"><label for="sa"><?php echo hkp_e('Address (Arabic)'); ?></label><input id="sa" class="hkp-input" name="slug_ar" dir="rtl" value="<?php echo hkp_h($p['slug_ar']); ?>"></div></div><?php endif; ?>
     <div class="hkp-field" style="max-width:260px"><label for="ps"><?php echo hkp_e('Status'); ?></label><select id="ps" class="hkp-select" name="status"><?php foreach (array('draft', 'review', 'published', 'archived') as $s): ?><option value="<?php echo $s; ?>"<?php echo $p['status'] === $s ? ' selected' : ''; ?>><?php echo hkp_label($s); ?></option><?php endforeach; ?></select></div>
-    <div><button class="hkp-btn"><?php echo hkp_e('Save page'); ?></button></div>
+    <div><button class="hkp-btn"><?php echo hkp_e('Save page'); ?></button><button class="hkp-btn hkp-btn--ghost" name="after_save" value="view"><?php echo hkp_e('Save and view'); ?></button></div>
   </form>
 </div>
 

@@ -1,0 +1,572 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>README</title><style>:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f7f5f1;color:#1c2227;font:16px/1.7 'Segoe UI',Tahoma,Arial,sans-serif}header{background:#1c2227;color:white;padding:28px max(24px,calc((100% - 1080px)/2));border-bottom:4px solid #c45b2f}header a{color:#f3c5a8}main{max-width:1080px;margin:auto;padding:28px 24px 70px}h1,h2,h3{line-height:1.25}h2{margin-top:36px}a{color:#944527}pre{padding:18px;background:#e9e5df;border-radius:10px;overflow:auto}code{font-size:.9em}table{border-collapse:collapse;width:100%;background:white;font-size:14px}td,th{padding:10px;border:1px solid #ddd;text-align:start;vertical-align:top}.card{background:white;border:1px solid #ded8cf;border-radius:14px;padding:22px;margin-bottom:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}video{display:block;width:100%;max-height:640px;background:#111}.chapters{max-height:300px;overflow:auto;display:flex;flex-wrap:wrap;gap:8px;padding:10px 0}button,.button{border:1px solid #c45b2f;border-radius:8px;background:white;color:#71371e;padding:9px 12px;cursor:pointer;text-decoration:none;font:inherit}p{margin:12px 0}.muted{color:#646a6d}img{max-width:100%}@media(max-width:600px){main{padding:20px 15px}table{display:block;overflow:auto}header{padding:22px 15px}}@media print{header,nav,.no-print{display:none}body{background:white;font-size:12px}main{padding:0;max-width:none}h2{break-after:avoid}pre,table{break-inside:avoid}a{color:inherit}}</style><header><strong>ALTUS KNOWLEDGE &amp; PERFORMANCE</strong><br><a href="index.html">User guides and recordings</a></header><main><h1 dir="auto">altus Hospitality Knowledge &amp; Performance (HK&amp;P)</h1>
+<h2 dir="auto">Mobile connection and role training — October 2026</h2>
+<p dir="auto"><strong>Mobile app settings</strong> is visible in the native <strong>Platform</strong> menu and the legacy admin sidebar at <code>/hkp/admin/mobile</code>. A system-scoped account with <code>settings.view</code> is required; updates/key management also require <code>settings.update</code>. The app exposes <strong>Settings → Server setup</strong> and <strong>Personal API key</strong>, as well as <strong>Get my personal API key</strong> on Sign in. Admin and app screens provide real <strong>Test connection</strong> controls.</p>
+<p dir="auto">The local mobile <code>.env</code> is configured with <code>http://localhost/atlas/atlas</code> and a native-generated <code>altm_</code> configuration key. For a USB-connected Android device run <code>adb reverse tcp:80 tcp:80</code>. Each user creates an own <code>ha_</code> mobile key in Account Security after password/2FA confirmation and enters it in <strong>Connect account</strong>; it expires after 90 days and does not grant extra permissions. Personal keys never belong in build environment variables. Production needs the deployed site&#39;s own URL and key.</p>
+<ul>
+<li><a href="MOBILE_INSTALLATION.html">Installation and URL/key setup</a></li>
+<li><a href="ADMIN_USER_GUIDE.html">Administrator guide</a>, <a href="STUDENT_USER_GUIDE.html">Student guide</a>, <a href="INSTRUCTOR_USER_GUIDE.html">Instructor guide</a></li>
+<li><a href="index.html">Printable guides, narrated video player and chapter navigation</a></li>
+<li><a href="MOBILE_OPTIONS.html">Every registered mobile option and its live status</a></li>
+<li><a href="../../mobile%20app/client-deliverables/android/ALTUS-1.0.1-release.apk">Signed Android 1.0.1 APK</a> — version code 2, ARM64, local development backend.</li>
+</ul>
+<p dir="auto">The role recordings use actual local browser screens with English synthetic narration and isolated sample accounts. The inventory distinguishes live-supported mobile routes from demonstration-only options. No production deployment, iOS release or physical-device acceptance is implied.</p>
+<h2 dir="auto">Admin Studio — October 2026</h2>
+<p dir="auto">The existing application now includes a redesigned ALTUS admin workspace, grouped/collapsible sidebar, searchable page palette, bilingual catalogue editors, private live website drafts, editable navigation/footer, and document publishing for courses, website pages, articles, SOPs and hospitality topics. Text, scanned and mixed PDFs use local English/Arabic OCR and background jobs. Generate editable modules, lessons and quizzes using your configured AI provider. Created content remains unpublished until reviewed through the existing publishing workflow.</p>
+<table>
+<tr><th>Start here</th><th>Local URL / guide</th></tr>
+<tr><td>Admin dashboard</td><td>&lt;http://localhost/atlas/atlas/hkp/admin&gt;</td></tr>
+<tr><td>Content Studio</td><td>&lt;http://localhost/atlas/atlas/hkp/cms/studio&gt;</td></tr>
+<tr><td>AI Document Publisher</td><td>&lt;http://localhost/atlas/atlas/hkp/cms/publisher&gt;</td></tr>
+<tr><td>Website pages and live editor</td><td>&lt;http://localhost/atlas/atlas/hkp/cms&gt;</td></tr>
+<tr><td>Theme and global site settings</td><td>&lt;http://localhost/atlas/atlas/hkp/cms/theme&gt;</td></tr>
+<tr><td>Revision history</td><td>&lt;http://localhost/atlas/atlas/hkp/studio/revisions&gt;</td></tr>
+<tr><td>Navigation and footer</td><td>&lt;http://localhost/atlas/atlas/hkp/cms/navigation&gt;</td></tr>
+<tr><td>Install / upgrade / PDF dependencies</td><td><a href="ADMIN_INSTALL.html">ADMIN_INSTALL.md</a></td></tr>
+<tr><td>Daily admin workflows and screenshots</td><td><a href="ADMIN_GUIDE.html">ADMIN_GUIDE.md</a></td></tr>
+<tr><td>Feature matrix and implementation details</td><td><a href="ADMIN_FEATURES.html">ADMIN_FEATURES.md</a></td></tr>
+<tr><td>Executed tests and configuration-dependent checks</td><td><a href="ALTUS_AI_PUBLISHER_ACCEPTANCE_REPORT.html">Acceptance report</a></td></tr>
+<tr><td>MCP integrations, approvals, health, audit</td><td>&lt;http://localhost/atlas/atlas/hkp/cms/integrations&gt; · <a href="MCP_ADMIN_WORKFLOWS.html">daily workflows</a></td></tr>
+<tr><td>MCP gateway install, OAuth clients, secrets, deploy, rollback</td><td><a href="MCP_GATEWAY_RUNBOOK.html">MCP_GATEWAY_RUNBOOK.md</a></td></tr>
+<tr><td>Native publisher API reference (<code>/api/publisher/v1</code>)</td><td><a href="PUBLISHER_API.html">PUBLISHER_API.md</a></td></tr>
+</table>
+<p dir="auto">This is a <strong>native CodeIgniter implementation</strong>. Remote MCP access is provided by a separate Node 24 gateway (<code>mcp-gateway/</code>, official MCP SDK, Streamable HTTP, OAuth with PKCE via <code>oidc-provider</code>) that calls the native <code>/api/publisher/v1</code> with short-lived delegated credentials; it is off unless <code>ALTUS_MCP_ENABLED=1</code>. No WordPress plugin is part of this release. Existing authentication, tenancy, learning records and LMS services remain authoritative.</p>
+<pre><code>
+Set-Location C:/laragon/www/atlas/atlas/mcp-gateway
+
+npm.cmd ci
+
+npm.cmd run build
+
+npm.cmd test   # Node 24 (.nvmrc)
+
+</code></pre>
+<p dir="auto">Quick upgrade, after verifying the local database override and making a database backup:</p>
+<pre><code>
+Set-Location C:/laragon/www/atlas/atlas
+
+$altusPhp = &#39;C:/laragon/bin/php/php-8.1.10-Win32-vs16-x64/php.exe&#39;
+
+&amp; $altusPhp index.php ha_cli migrate
+
+&amp; C:/Python313/python.exe -m pip install -r tools/publisher-requirements.txt
+
+</code></pre>
+<p dir="auto">The local database has the Admin Studio and publisher migrations (25, 26, 27, 29 and 30) applied. Sign in with your existing platform admin account. Configure an approved provider/model in <code>/ha_ai/providers</code> before generating AI drafts. Uploaded documents need the extraction worker: <code>php index.php publisher_cli daemon</code>, or schedule <code>publisher_cli work 25</code> every minute. <code>publisher_cli health</code> reports dependency/provider/worker setup. See the installation guide for Tesseract English/Arabic data, executable paths, upload limits and isolated testing. Open <strong>Integrations ? Connection health</strong>, copy the MCP URL and follow the linked gateway runbook to connect a client.</p>
+<p dir="auto"><img alt="Admin workspace preview" src="../screenshots/admin-dashboard.png" loading="lazy"></p>
+<p dir="auto">The documentation below describes the wider existing application; the linked Admin Studio guides describe this update.</p>
+<p dir="auto">altus HK&amp;P is a bilingual (Arabic / English) hospitality capability platform for</p>
+<p dir="auto">Altus Advisory. It runs inside the Academy LMS CodeIgniter application.</p>
+<p dir="auto">It does more than host courses. It proves whether each employee can do the job:</p>
+<p dir="auto">role requirements lead to learning, then theory and practical assessment, then</p>
+<p dir="auto">competency, gaps, corrective action, reassessment, readiness, certification and</p>
+<p dir="auto">KPIs. Every step is scoped to its tenant and recorded in the audit log.</p>
+<table>
+<tr><th></th><th>URL (local)</th></tr>
+<tr><td>Workspace (learners, managers, Altus team, executives)</td><td>&lt;http://localhost/atlas/atlas/hkp&gt;</td></tr>
+<tr><td>Website + page builder</td><td>&lt;http://localhost/atlas/atlas/hkp/cms&gt;</td></tr>
+<tr><td>Modules &amp; lessons CMS</td><td>&lt;http://localhost/atlas/atlas/hkp/cms/modules&gt;</td></tr>
+<tr><td>Legacy LMS admin panel</td><td>&lt;http://localhost/atlas/atlas/admin&gt;</td></tr>
+<tr><td>Public site</td><td>&lt;http://localhost/atlas/atlas/en&gt; · &lt;http://localhost/atlas/atlas/ar&gt;</td></tr>
+<tr><td>Altus corporate page</td><td>&lt;http://localhost/atlas/atlas/en/altus&gt;</td></tr>
+<tr><td>Certificate verification</td><td>&lt;http://localhost/atlas/atlas/verify&gt;</td></tr>
+<tr><td>phpMyAdmin</td><td>&lt;http://localhost/phpmyadmin&gt; (user <code>root</code>, no password)</td></tr>
+</table>
+<p dir="auto">Related documents:</p>
+<ul>
+<li><a href="gap.html">gap.md</a>: the 190-section specification against what is built, and the issues fixed.</li>
+<li><a href="IMPLEMENTATION_STATUS.html">IMPLEMENTATION_STATUS.md</a>: status per area, with the tests behind each claim.</li>
+<li><a href="DEPLOYMENT.html">DEPLOYMENT.md</a>: server checks and debugging a 500 error after upload.</li>
+</ul>
+<p dir="auto">---</p>
+<h2 dir="auto">Sign in</h2>
+<p dir="auto">Use your own existing account. Ask the administrator to provision access; local fixture credentials are omitted from this public training copy.</p>
+<h2 dir="auto">2. What the platform does</h2>
+<h3 dir="auto">Learner: *My workspace*</h3>
+<ul>
+<li>A dashboard that answers &quot;what should I do next?&quot;. It shows assigned learning, due dates, the readiness status and why, open action plans and certificates.</li>
+<li><strong>My learning</strong>:</li>
+</ul>
+<p dir="auto">  - modules and tracks built from the learner&#39;s role requirements</p>
+<p dir="auto">  - bilingual lessons with video, PDF, slides, audio and transcripts</p>
+<p dir="auto">  - resume from the last position</p>
+<p dir="auto">  - drip release</p>
+<ul>
+<li><strong>Knowledge</strong>: approved SOPs, policies and checklists, with acknowledgement.</li>
+<li><strong>Smart search</strong> across knowledge and lessons that the learner is allowed to see. Arabic and English queries find each other&#39;s sources.</li>
+<li><strong>AI assistant</strong>: answers only from approved content, with citations. If the content does not cover a question, it says so.</li>
+<li><strong>Assessments</strong>: theory papers, plus practical assessments that the learner can view.</li>
+<li>Competency profile, readiness explanation, action plans with evidence upload, and certificates with QR verification.</li>
+</ul>
+<h3 dir="auto">Property management: GM, department head, supervisor, training manager</h3>
+<ul>
+<li>Team dashboard, people list and each employee&#39;s full evidence record.</li>
+<li><strong>Assign learning</strong> to people, job roles, departments or cohorts, with due dates and exemptions.</li>
+<li><strong>Assessor queue</strong>: weighted practical rubrics, where a critical criterion caps the result.</li>
+<li>Gap heatmap, action plans (assign, review, approve evidence) and reassessment.</li>
+<li>Readiness heatmap, and <strong>opening readiness</strong> for a pre-opening team.</li>
+<li>Certification, quality audits (internal, brand, mystery guest, safety and SOP compliance), KPIs and reports (CSV and XLSX).</li>
+<li>Branding for the property: logo, colours and name, applied instantly.</li>
+</ul>
+<h3 dir="auto">Altus team: *Administration*</h3>
+<ul>
+<li>A portfolio dashboard across all clients and properties.</li>
+<li>Records for organisations, properties, departments, job roles, users and roles, with 16 roles.</li>
+<li><strong>Curriculum</strong>: 16 professional domains (10 core), tracks and drag-ordered modules.</li>
+<li><strong>Content review</strong>: draft → internal approval → quality approval → publish, with versions and a diff view. Authors cannot approve their own work.</li>
+<li>Assessments and question bank, the competency library and role-to-competency matrix, and rubrics.</li>
+<li>Readiness policies and certification programmes.</li>
+<li><strong>AI governance</strong>: index status, the query log and citation checks.</li>
+<li>Engagements (the ASCENT stages DISCOVER → SCALE), and frameworks: Altus Performance Matrix™, GOPPAR Value Stack™, ESG and the capability model.</li>
+<li>Corporate CMS (services, sectors, case studies, leadership and partners), imports with preview and rollback, the audit log and <strong>system health</strong>.</li>
+</ul>
+<h3 dir="auto">Executive</h3>
+<ul>
+<li>An executive overview and a printable <strong>board report</strong>.</li>
+</ul>
+<h3 dir="auto">Website and content CMS (this release)</h3>
+<ul>
+<li>A <strong>page builder</strong> with 13 section types: hero, text, image + text, image, gallery, cards, key figures, FAQ, steps, call to action, video, quote and sanitised HTML.</li>
+</ul>
+<p dir="auto">  - Drag sections to reorder. You can also edit, hide, duplicate or delete them. Each section has English and Arabic content.</p>
+<p dir="auto">  - Every save keeps a <strong>revision</strong> that you can restore.</p>
+<ul>
+<li><strong>SEO / AEO / GEO score</strong> per language, from 26 checks, each with a fix:</li>
+</ul>
+<p dir="auto">  - meta title and description, focus keyword, heading and intro, content depth, alt text, internal links and hreflang pairing</p>
+<p dir="auto">  - question headings, FAQ pairs and direct answers</p>
+<p dir="auto">  - entity, facts, sources, schema type, region and place, and coordinates</p>
+<p dir="auto">  - FAQ sections produce <code>FAQPage</code> schema automatically, and region/place produce <code>Place</code> / <code>LocalBusiness</code> schema</p>
+<ul>
+<li><strong>Modules &amp; lessons CMS</strong>:</li>
+</ul>
+<p dir="auto">  - lesson content from text, YouTube, Vimeo or MP4 links</p>
+<p dir="auto">  - uploads: video (MP4 / WebM up to 500 MB), PDF, PowerPoint and audio</p>
+<p dir="auto">  - external links and downloadable resources</p>
+<p dir="auto">  - drip release by date or by days after enrolment</p>
+<p dir="auto">  - watch-share and completion rules</p>
+<p dir="auto">  - publishing syncs the module to the legacy LMS automatically</p>
+<ul>
+<li><strong>AI help in every editor</strong>:</li>
+</ul>
+<p dir="auto">  - choose the provider and model</p>
+<p dir="auto">  - <strong>Enhance prompt</strong> turns a rough request into a precise brief that you can edit before running it</p>
+<p dir="auto">  - write a section, improve text, translate AR↔EN, write meta tags, an FAQ, a lesson or quiz questions</p>
+<p dir="auto">  - nothing is saved until you insert it</p>
+<h3 dir="auto">API (<code>/api/v1</code>)</h3>
+<ul>
+<li>Personal API keys: hashed, scoped, expiring and IP-pinnable. The rate limit is 120 requests per minute.</li>
+<li>Endpoints: <code>me</code>, <code>courses</code>, <code>enrollments</code>, <code>ai/jobs</code>, <code>competencies</code>, <code>readiness</code>, <code>actions</code>, <code>certificates</code>, <code>people</code>, <code>gaps</code>, <code>search</code>, <code>kpis</code>.</li>
+<li>Every call is tenant-scoped exactly like the web screens.</li>
+<li>Responses use the form <code>{&quot;success&quot;, &quot;data&quot;, &quot;message&quot;}</code>.</li>
+<li>Create keys at <code>/account_security</code>.</li>
+</ul>
+<p dir="auto">---</p>
+<h2 dir="auto">3. Run it locally (Laragon, Windows)</h2>
+<h3 dir="auto">Requirements</h3>
+<ul>
+<li>Laragon with Apache 2.4, <strong>PHP 8.1</strong> (<code>C:\laragon\bin\php\php-8.1.10-Win32-vs16-x64</code>) and <strong>MySQL 8.0</strong> (<code>C:\laragon\bin\mysql\mysql-8.0.30-winx64</code>)</li>
+<li>PHP extensions: <code>gd</code>, <code>curl</code>, <code>mysqli</code>, <code>mbstring</code>, <code>fileinfo</code>, <code>zip</code></li>
+<li><code>mod_rewrite</code> enabled. Laragon enables it by default</li>
+</ul>
+<h3 dir="auto">Start</h3>
+<ul>
+<li>In Laragon, click <strong>Start All</strong>. If Apache was started some other way, use <strong>Stop All</strong> and then <strong>Start All</strong> so that Laragon owns the processes.</li>
+<li>Open &lt;http://localhost/atlas/atlas/login&gt;.</li>
+</ul>
+<h3 dir="auto">Which database is used</h3>
+<p dir="auto"><code>application/config/database.php</code> points at the <strong>live production host</strong>. On a</p>
+<p dir="auto">local machine, <code>application/config/database.local.php</code> overrides it:</p>
+<pre><code>
+&#39;database&#39; =&gt; &#39;atlas_merged&#39;,   // production dump + migrations 11-15 + local extras
+
+</code></pre>
+<table>
+<tr><th>Database</th><th>What it is</th></tr>
+<tr><td><code>atlas_merged</code></td><td><strong>In use.</strong> The production dump <code>khidmat_atlas.sql</code>, upgraded (see §5)</td></tr>
+<tr><td><code>atlas_local</code></td><td>The previous local database, left unchanged</td></tr>
+<tr><td><code>atlas_local_premerge</code></td><td>A copy of <code>atlas_local</code> taken before the merge</td></tr>
+<tr><td><code>khidmat_prod_import</code></td><td>A pristine import of the production dump</td></tr>
+<tr><td><code>atlas_hospitality_test</code></td><td>Rebuilt from scratch by every test run</td></tr>
+</table>
+<p dir="auto">To go back to the old local data, set <code>&#39;database&#39; =&gt; &#39;atlas_local&#39;</code>.</p>
+<p dir="auto">To use the name <code>atlas_local</code> for the merged data, rename the databases in</p>
+<p dir="auto">phpMyAdmin (Operations → Rename). Then change the line back.</p>
+<p dir="auto">&gt; <strong>Never delete or rename <code>database.local.php</code> while running CLI commands.</strong></p>
+<p dir="auto">&gt; Without it, <code>php index.php ha_cli migrate</code> would run against production.</p>
+<h3 dir="auto">Command line</h3>
+<p dir="auto">In PowerShell, put PHP and MySQL on the path first:</p>
+<pre><code>
+$env:Path = &quot;C:\laragon\bin\php\php-8.1.10-Win32-vs16-x64;C:\laragon\bin\mysql\mysql-8.0.30-winx64\bin;&quot; + $env:Path
+
+cd C:\laragon\www\atlas\atlas
+
+
+
+php index.php ha_cli status          # migrations (15 expected)
+
+php index.php ha_cli migrate         # apply pending migrations
+
+php index.php ha_cli seed rbac       # roles and permissions (safe on production data)
+
+php index.php ha_cli seed hkp        # HK&amp;P reference data (safe on production data)
+
+php index.php ha_test run            # isolated native suite; see the acceptance report for current results
+
+php index.php hkp_cli daily          # reminders, overdue sweeps, expiry, readiness
+
+php index.php hkp_cli work           # process queued jobs (email, notifications)
+
+php index.php hkp_cli index          # rebuild the governed-AI knowledge index
+
+php index.php hkp_cli status         # scheduler and queue state
+
+</code></pre>
+<p dir="auto"><code>seed rbac</code> and <code>seed hkp</code> update rows by natural key, so it is safe to run</p>
+<p dir="auto">them again. <strong>Do not run the plain <code>seed</code> against production data.</strong> The</p>
+<p dir="auto">curriculum and content seeders would overwrite real content.</p>
+<h3 dir="auto">Browser end-to-end tests (Playwright)</h3>
+<p dir="auto">The <code>e2e/</code> folder holds <strong>170 browser tests</strong>. They cover every role and every</p>
+<p dir="auto">main use case: the public site and SEO files, sign-in, the learner journey,</p>
+<p dir="auto">theory and practical assessment, management, certification, the page builder,</p>
+<p dir="auto">the modules CMS, AI help, the executive view, access control and security,</p>
+<p dir="auto">and phone layouts. They run in the Microsoft Edge that ships with Windows, so</p>
+<p dir="auto">no browser download is needed.</p>
+<pre><code>
+cd C:\laragon\www\atlas\atlas\e2e
+
+npm install            # first time only (installs @playwright/test)
+
+npm test               # everything: desktop 1440px + phone 390px
+
+npm run test:desktop   # or: npm run test:mobile / npm run test:headed
+
+npm run report         # open the HTML report (screenshots + traces on failure)
+
+</code></pre>
+<ul>
+<li><strong>Local only.</strong> The suite refuses to start unless <code>database.local.php</code></li>
+</ul>
+<p dir="auto">  points at <code>127.0.0.1</code> or <code>localhost</code>.</p>
+<ul>
+<li><strong>Setup.</strong> Each role signs in once and the session is reused. Setup clears</li>
+</ul>
+<p dir="auto">  the device lists, so repeated runs never hit the 5-device limit.</p>
+<ul>
+<li><strong>AI.</strong> A mock OpenAI-compatible server on <code>127.0.0.1:8765</code></li>
+</ul>
+<p dir="auto">  (<code>e2e/support/mock-ai.mjs</code>) is enabled only during the run. The AI tests</p>
+<p dir="auto">  exercise the real path: browser → PHP → HTTP → model.</p>
+<ul>
+<li><strong>Test data.</strong> Everything the tests create is prefixed <code>E2E</code>/<code>e2e-</code>, and</li>
+</ul>
+<p dir="auto">  teardown deletes it or archives it. That includes pages, the fixture</p>
+<p dir="auto">  certificate, modules, and the mock provider switch.</p>
+<h3 dir="auto">Email on a local machine</h3>
+<p dir="auto">Local email is <strong>recorded, not sent</strong>. The setting is <code>email.delivery = auto</code>, and</p>
+<p dir="auto">it applies whenever <code>database.local.php</code> exists. Messages appear in the in-app</p>
+<p dir="auto">notification centre.</p>
+<p dir="auto">To send real email locally, set <strong>System → Settings → email.delivery = send</strong></p>
+<p dir="auto">and configure SMTP under <strong>Settings → System settings</strong>. Laragon&#39;s own sendmail</p>
+<p dir="auto">only saves <code>.eml</code> files to <code>C:\laragon\bin\sendmail\output</code>.</p>
+<h3 dir="auto">&quot;Login does nothing&quot; for a learner or instructor (device limit)</h3>
+<p dir="auto">The legacy LMS allows each non-admin account <code>allowed_device_number_of_loging</code></p>
+<p dir="auto">(currently <strong>5</strong>) signed-in browsers. A sixth login asks for a code sent by</p>
+<p dir="auto">email. Locally that email is only recorded, not sent, so the account appears</p>
+<p dir="auto">stuck on the login page. Admins are exempt.</p>
+<p dir="auto">There are two fixes:</p>
+<ul>
+<li>Raise the limit under <strong>Settings → System settings</strong>.</li>
+<li>Clear an account&#39;s device list:</li>
+</ul>
+<p dir="auto">  ```sql</p>
+<p dir="auto">  UPDATE users SET sessions = &#39;[]&#39; WHERE email = &#39;omar.learner@dyafagroup.sa&#39;;</p>
+<p dir="auto">  ```</p>
+<p dir="auto">On production with working email, this is the intended security check.</p>
+<h3 dir="auto">phpMyAdmin (the &quot;403 Forbidden&quot; fix)</h3>
+<p dir="auto">phpMyAdmin was not installed, and Laragon&#39;s alias denied access. The fix:</p>
+<ul>
+<li>phpMyAdmin 5.2.3 is now installed in <code>C:\laragon\etc\apps\phpMyAdmin</code>, with its own <code>config.inc.php</code> (host <code>127.0.0.1</code>, root with no password) and a <code>tmp/</code> folder.</li>
+<li><code>C:\laragon\etc\apache2\alias\phpmyadmin.conf</code> now contains <code>Require all granted</code>. The original is saved alongside as <code>.bak-claude</code>.</li>
+</ul>
+<p dir="auto">If you see the 403 error again after a Laragon update, re-apply that alias line</p>
+<p dir="auto">and restart Apache.</p>
+<h3 dir="auto">Large video uploads</h3>
+<p dir="auto">PHP allows 2 GB uploads (<code>upload_max_filesize</code> / <code>post_max_size</code> in</p>
+<p dir="auto"><code>C:\laragon\bin\php\php-8.1.10-Win32-vs16-x64\php.ini</code>). The CMS itself limits</p>
+<p dir="auto">lesson video to 500 MB, and PDF, slides and resources to 100 MB. For long or</p>
+<p dir="auto">paid video, use a streaming host (YouTube unlisted, Vimeo, Bunny Stream or</p>
+<p dir="auto">Cloudflare Stream) and paste the link instead.</p>
+<p dir="auto">---</p>
+<h2 dir="auto">4. How to add and edit content</h2>
+<h3 dir="auto">A website page, manually</h3>
+<ul>
+<li>Open <strong>altus Workspace → Website pages</strong> (<code>/hkp/cms</code>).</li>
+<li>Create a new page in the form on that page, giving the English and Arabic title and the address. Or open an existing page.</li>
+<li>Fill in <strong>Page, SEO, AEO and GEO settings</strong>:</li>
+</ul>
+<p dir="auto">   - title and subtitle</p>
+<p dir="auto">   - hero image</p>
+<p dir="auto">   - meta title (30–60 characters) and meta description (70–160 characters)</p>
+<p dir="auto">   - focus keyword</p>
+<p dir="auto">   - schema type</p>
+<p dir="auto">   - region code (e.g. <code>SA-01</code>), place name (e.g. <code>Riyadh</code>), latitude and longitude</p>
+<ul>
+<li><strong>Add sections.</strong> Pick a type and fill the English fields, then the Arabic ones. An empty Arabic field shows the English text. For repeatable sections (cards, FAQ, steps, key figures, gallery), write one item per line, with fields separated by <code>|</code>:</li>
+</ul>
+<p dir="auto">   ```</p>
+<p dir="auto">   What is readiness? | Readiness shows whether evidence proves a person can work to standard.</p>
+<p dir="auto">   ```</p>
+<ul>
+<li><strong>Drag</strong> sections by their handle to reorder them. You can also hide, duplicate or delete a section. Every change keeps a revision under <strong>Revisions → Restore</strong>.</li>
+<li>Work through the <strong>Optimisation checklist</strong> until the SEO, AEO and GEO scores are where you want them. Each failing check says exactly what to fix.</li>
+<li>Set the status to <strong>Published</strong>. Use <strong>View English</strong> and <strong>View Arabic</strong> to check the result.</li>
+</ul>
+<h3 dir="auto">A website page, with AI</h3>
+<ul>
+<li>In any page or section form, open <strong>AI writing help</strong>.</li>
+<li>Choose the <strong>provider and model</strong>, or leave them empty to use the default route.</li>
+<li>Write a rough request, for example: *&quot;a section on our pre-opening support for independent hotels in Riyadh&quot;*.</li>
+<li>Click <strong>Enhance prompt</strong>. The AI rewrites the request as a precise brief. Read it and edit it if needed.</li>
+<li>Choose a task (section, FAQ, meta tags, improve, translate), then <strong>Generate</strong>.</li>
+<li>Review the result, then <strong>Insert into the field</strong>. Nothing is saved until you click <strong>Save</strong>.</li>
+</ul>
+<p dir="auto">The AI is told never to invent statistics, clients or awards. Where a fact is</p>
+<p dir="auto">needed, it leaves a <code>[source needed]</code> placeholder.</p>
+<p dir="auto">To connect a provider (OpenAI, Anthropic, Gemini, Azure and others), open</p>
+<p dir="auto"><strong>AI Studio → AI providers &amp; keys</strong>. Keys are stored encrypted.</p>
+<h3 dir="auto">A module (course) and its lessons, manually</h3>
+<ul>
+<li>Open <strong>Website &amp; content → Modules &amp; lessons</strong> (<code>/hkp/cms/modules</code>), then <strong>New module</strong>.</li>
+<li>Fill in the English and Arabic titles, domain, level, duration, thumbnail, pass mark and certificate eligibility. Then <strong>Save module</strong>.</li>
+<li>Add <strong>sections</strong> (chapters), then <strong>Add lesson</strong> in each.</li>
+<li>Choose the lesson content. You can combine any of these:</li>
+</ul>
+<p dir="auto">   - <strong>Video link</strong>: YouTube, Vimeo or a direct MP4 URL</p>
+<p dir="auto">   - <strong>Upload main media</strong>: MP4 / WebM video (up to 500 MB), MP3 audio, PDF (shown in a viewer) or PowerPoint (offered as a download)</p>
+<p dir="auto">   - <strong>Lesson content</strong>: HTML text</p>
+<p dir="auto">   - <strong>Other link</strong>: an article, form or resource</p>
+<p dir="auto">   - <strong>Add a downloadable resource</strong>: PDF, PPT, DOC, XLSX, ZIP or images</p>
+<ul>
+<li>Set <strong>Release (drip) and completion</strong>:</li>
+</ul>
+<p dir="auto">   - available immediately, on a date, or a number of days after enrolment</p>
+<p dir="auto">   - completion rule</p>
+<p dir="auto">   - required watch share</p>
+<ul>
+<li><strong>Drag</strong> lessons to reorder them. Use <strong>Preview as learner</strong> to check.</li>
+<li>Set the module to <strong>Published</strong>. It becomes visible in <code>/hkp/learn</code>, is indexed for search and the AI assistant, and is synced to the legacy LMS catalogue.</li>
+</ul>
+<p dir="auto">Deleting a lesson that learners have progress on <strong>archives</strong> it instead, so</p>
+<p dir="auto">their evidence is kept.</p>
+<h3 dir="auto">A module with AI</h3>
+<ul>
+<li><strong>Inside a lesson:</strong> use <strong>AI writing help</strong>, with the task *Write a short applied lesson* or *Write assessment questions*.</li>
+<li><strong>For a whole course:</strong> use <strong>Generate a whole course with AI</strong>, which opens AI Studio (<code>/ha_ai/studio</code>). AI Studio drafts the outline and lesson scripts, runs validation and a person&#39;s review, and then publishes. It can also render narrated slide videos.</li>
+</ul>
+<h3 dir="auto">Knowledge (SOPs, policies, checklists)</h3>
+<ul>
+<li>Go to <strong>Knowledge</strong> and create an item. Set its scope: global, organisation or property.</li>
+<li><strong>Submit</strong> it. Internal approval and then quality approval follow, and then it is <strong>published</strong>. You cannot approve your own item.</li>
+<li>Published items can require <strong>acknowledgement</strong>, and are indexed for the governed AI.</li>
+<li><strong>New version</strong> keeps the history. <strong>Compare</strong> shows the changes.</li>
+</ul>
+<h3 dir="auto">Assessments, competencies and certification</h3>
+<table>
+<tr><th>Task</th><th>Where</th></tr>
+<tr><td>Theory papers and questions</td><td><strong>Administration → Assessments</strong></td></tr>
+<tr><td>Practical rubrics (weighted, critical criteria, thresholds)</td><td><strong>Competencies → Rubric</strong></td></tr>
+<tr><td>Required level per competency, per job role or property</td><td><strong>Competencies → matrix</strong></td></tr>
+<tr><td>Readiness rules per role, certification programmes and validity</td><td><strong>Readiness &amp; certification</strong></td></tr>
+</table>
+<p dir="auto">---</p>
+<h2 dir="auto">5. Production database merge (what was done)</h2>
+<p dir="auto">The production dump <code>khidmat_atlas.sql</code> (MariaDB 11.4) was merged in these steps. Nothing was ever written to the production server.</p>
+<ul>
+<li><strong>Backup.</strong> <code>atlas_local</code> was saved as <code>atlas_local_premerge</code>, plus a SQL file.</li>
+<li><strong>Import.</strong> The dump was imported into <code>atlas_merged</code>. It has 148 tables and the real users, 136 enrolments, 100 certificate verifications and the real branding.</li>
+<li><strong>Migrate.</strong> <code>ha_cli migrate</code> applied migrations 11–15: AI Studio, key authentication, HK&amp;P performance, intelligence, and the CMS builder.</li>
+<li><strong>Seed.</strong> Only <code>seed rbac</code> and <code>seed hkp</code> were run.</li>
+<li><strong>Carry over.</strong> Local-only rows were copied by natural key, <strong>never by ID</strong>, because user, category and lesson IDs collide between the two databases. Two of these rows were test fixtures:</li>
+</ul>
+<p dir="auto">   - a mock AI provider, which is now disabled</p>
+<p dir="auto">   - a placeholder course, which is now archived</p>
+<ul>
+<li><strong>Verify.</strong></li>
+</ul>
+<p dir="auto">   - The logins above work.</p>
+<p dir="auto">   - All 67 legacy admin sidebar links return 200.</p>
+<p dir="auto">   - The workspace crawl passed for 9 roles with 0 errors.</p>
+<p dir="auto">The details are in <a href="gap.html#production-database-merge">gap.md</a>.</p>
+<p dir="auto">---</p>
+<h2 dir="auto">6. Deploy to production</h2>
+<ul>
+<li><strong>Back up production first.</strong> In phpMyAdmin, use Export, or run <code>mysqldump</code>. Keep the file off the server.</li>
+<li>Upload the code. Do <strong>not</strong> upload <code>application/config/database.local.php</code>.</li>
+<li>Check <code>application/config/database.php</code> (the production credentials) and <code>config.php</code> (<code>base_url</code>, and a unique <code>encryption_key</code> that matches the one used to encrypt the AI keys).</li>
+<li>On the server, run:</li>
+</ul>
+<p dir="auto">   ```bash</p>
+<p dir="auto">   php index.php ha_cli status</p>
+<p dir="auto">   php index.php ha_cli migrate        # 11-15, additive and reversible</p>
+<p dir="auto">   php index.php ha_cli seed rbac</p>
+<p dir="auto">   php index.php ha_cli seed hkp</p>
+<p dir="auto">   php index.php hkp_cli index</p>
+<p dir="auto">   ```</p>
+<ul>
+<li>Add cron jobs:</li>
+</ul>
+<p dir="auto">   ```cron</p>
+<p dir="auto">   15 2 * * *   cd /path/to/app &amp;&amp; php index.php hkp_cli daily</p>
+<p dir="auto">   */5 * * * *  cd /path/to/app &amp;&amp; php index.php hkp_cli work</p>
+<p dir="auto">   ```</p>
+<ul>
+<li>Configure SMTP, then set <strong>email.delivery = send</strong>. Connect an AI provider in AI Studio.</li>
+<li>Make these folders writable by the web server:</li>
+</ul>
+<p dir="auto">   - <code>application/storage/private</code></p>
+<p dir="auto">   - <code>uploads/</code></p>
+<p dir="auto">   - <code>application/cache</code></p>
+<p dir="auto">   - <code>application/logs</code></p>
+<ul>
+<li>Open <code>/hkp/admin/system</code>. Every row should be green, apart from the backup row, which you enable yourself.</li>
+<li>Change all the demo passwords. Remove the demo tenant if the client does not need it.</li>
+</ul>
+<p dir="auto">If a page returns 500 after upload, see <a href="DEPLOYMENT.html">DEPLOYMENT.md</a>. The</p>
+<p dir="auto"><code>deploy-check.php</code> script reports what the server can actually do.</p>
+<p dir="auto">---</p>
+<h2 dir="auto">7. Code layout (HK&amp;P)</h2>
+<pre><code>
+application/
+
+  core/Hkp_Controller.php         auth, locale, security headers, navigation, render
+
+  controllers/
+
+    Hkp.php                       learner workspace, knowledge, search, assistant
+
+    Hkp_assess.php                theory, grading, practical, reassessment
+
+    Hkp_team.php                  property management
+
+    Hkp_admin.php                 Altus administration
+
+    Hkp_cms.php                   page builder, modules and lessons CMS, AI help
+
+    Hkp_exec.php                  executive + board report
+
+    Hkp_public.php                /verify, /altus corporate pages
+
+    Hkp_cli.php                   daily / work / index / status
+
+    Api_v1.php                    versioned API
+
+  libraries/
+
+    Ha_competency  Ha_practical  Ha_theory  Ha_action_plans  Ha_readiness
+
+    Ha_certification  Ha_learning  Ha_knowledge  Ha_governed_ai  Ha_kpi
+
+    Ha_advisory  Ha_reports  Ha_xlsx  Ha_pdf  Ha_qr  Ha_importer  Ha_crud
+
+    Ha_tenant  Ha_notify  Ha_files  Ha_page_builder  Ha_seo_score
+
+    Ha_ai_assist  Ha_api_hkp  Ha_i18n_keys
+
+  helpers/hkp_helper.php          hkp_t(), hkp_url(), badges, sanitiser
+
+  language/arabic/hkp_lang.php    1,673 Arabic interface strings
+
+  migrations/…013 …014 …015       HK&amp;P schema (additive, reversible)
+
+  seeds/001_rbac.php 006_hkp.php  roles, domains, rubrics, KPIs, demo tenant
+
+  tests/080_hkp.php 090_cms.php   evidence chain, isolation, CMS, API, i18n
+
+  views/hkp/                      every workspace screen
+
+assets/hkp/                       hkp.css design system, hkp.js
+
+</code></pre>
+<p dir="auto">---</p>
+<h2 dir="auto">8. Reference: legacy Academy LMS</h2>
+<p dir="auto">Everything below describes the original LMS and the academy site, which still</p>
+<p dir="auto">work alongside HK&amp;P.</p>
+<h3 dir="auto">Command reference</h3>
+<pre><code>
+php index.php ha_cli rollback   # roll back to a version (default 0)
+
+php index.php ha_cli fresh      # rollback, migrate, seed: NEVER on production data
+
+
+
+php index.php ha_bridge sync     # mirror ha_* into course/lesson/section/category
+
+php index.php ha_bridge status   # what is mirrored, and whether it has drifted
+
+php index.php ha_bridge sync_one &lt;course-code&gt;
+
+
+
+php index.php ha_images fetch | fetch_variants | assign | report
+
+php index.php ha_video discover | assign | recheck | report | clear
+
+php index.php ha_lang translate | export | status | missing
+
+php index.php ha_quiz build | report | clear
+
+php index.php ha_audit run | flows | content
+
+</code></pre>
+<p dir="auto">CodeIgniter 3.1.9&#39;s own Migration library cannot run on PHP 8.</p>
+<p dir="auto"><code>Ha_cli</code> replaces it: it keeps the same file format and records its state in</p>
+<p dir="auto"><code>ha_migration</code>. The framework in <code>system/</code> is not patched.</p>
+<p dir="auto"><code>ha_bridge sync</code> writes one way and is idempotent. It matches courses on the</p>
+<p dir="auto">academy code, so running it twice does not create duplicates. The HK&amp;P CMS runs</p>
+<p dir="auto"><code>sync_one</code> automatically when you publish a module.</p>
+<h3 dir="auto">Lesson video from third parties</h3>
+<p dir="auto"><code>ha_video discover</code> verifies every YouTube candidate through oEmbed. A video</p>
+<p dir="auto">lesson without a verified source publishes as text rather than as an empty</p>
+<p dir="auto">player. Each video is credited to its channel.</p>
+<p dir="auto">Run <code>ha_video recheck</code> on a schedule. It exits non-zero when a video has</p>
+<p dir="auto">disappeared.</p>
+<p dir="auto"><strong>Terabox cannot be used as a video source.</strong> It sends</p>
+<p dir="auto"><code>X-Frame-Options: SAMEORIGIN</code> and has no stable direct file URL. Use YouTube</p>
+<p dir="auto">unlisted, Vimeo, Bunny Stream, Cloudflare Stream or Wasabi instead.</p>
+<h3 dir="auto">Where legacy course content is edited</h3>
+<pre><code>
+/admin/courses                         the list
+
+/admin/course_form/add_course          create
+
+/admin/course_form/course_edit/{id}    edit: info, curriculum, pricing, SEO
+
+/admin/quizes/{id}                     quizzes for a course
+
+</code></pre>
+<p dir="auto">For HK&amp;P modules, use <code>/hkp/cms/modules</code> instead. It is the source of truth,</p>
+<p dir="auto">and it publishes to the legacy tables.</p>
+<h3 dir="auto">Which front end the site root serves</h3>
+<p dir="auto">Set <strong>root_frontend</strong> under <strong>Home Page Builder</strong>:</p>
+<ul>
+<li><code>academy</code> serves the bilingual SEO site at <code>/en</code> and <code>/ar</code>.</li>
+<li><code>lms</code> serves the Academy LMS theme at <code>/home</code>.</li>
+</ul>
+<p dir="auto"><code>Home::home()</code> picks the layout from <code>home_pages.html_file_names[0]</code>.</p>
+<h3 dir="auto">Taking payment</h3>
+<p dir="auto">As seeded, courses are free and every gateway is in test mode. Before any</p>
+<p dir="auto">payment can come in:</p>
+<ul>
+<li>Set a price per course.</li>
+<li>Enter live gateway keys under <strong>Settings → Payment</strong>.</li>
+<li>Set <code>system_currency</code> to <code>SAR</code> under <strong>Settings → System</strong>.</li>
+</ul>
+<h3 dir="auto">Photography and licensing</h3>
+<p dir="auto">Photographs come from <strong>Wikimedia Commons</strong>, and only under licences that allow</p>
+<p dir="auto">commercial use. The author and licence are stored with each file, and credits</p>
+<p dir="auto">are shown at <code>/en/credits</code> and <code>/ar/credits</code>. Do not replace them with images</p>
+<p dir="auto">from an image search.</p>
+<h3 dir="auto">Content rules</h3>
+<p dir="auto">The platform publishes no invented pass rates, endorsements, testimonials or</p>
+<p dir="auto">accreditations. Illustrative case studies and demo figures are labelled as</p>
+<p dir="auto">illustrative. Competitor records hold only what the cited source states.</p></main></html>

@@ -72,7 +72,8 @@ class Account_security extends CI_Controller {
             'new_codes' => $this->session->flashdata('ha_new_codes'),
             'new_key' => $this->session->flashdata('ha_new_key'),
             'can_keys' => $this->can_keys(),
-            'keys' => $this->can_keys() ? $this->ha_api_keys->for_user($uid) : array(),
+            'can_mobile_keys' => $this->ha_auth->check(),
+            'keys' => $this->ha_api_keys->for_user($uid),
             'scopes' => Ha_api_keys::scopes(),
             'account' => $this->user,
         );
@@ -145,6 +146,30 @@ class Account_security extends CI_Controller {
     }
 
     // ---------------------------------------------------------- API keys
+
+    public function mobile_key_create() {
+        $this->guard();
+        if (!$this->ha_auth->check()) { $this->done('Your account is not active.', false); return; }
+        $bucket = 'mobile_key_password:' . (int) $this->user['id'];
+        if ($this->ha_api_keys->throttled($bucket, 5, 900)) { $this->done('Too many attempts. Try again in 15 minutes.', false); return; }
+        $valid = hash_equals((string) $this->user['password'], sha1((string) $this->input->post('password')));
+        if (!$valid) {
+            $this->ha_api_keys->attempt($bucket, false, ha_client_ip());
+            $this->done('Your password was not correct.', false); return;
+        }
+        if ($this->ha_two_factor->is_enabled($this->user['id'])) {
+            $check = $this->ha_two_factor->check($this->user['id'], $this->input->post('code'), ha_client_ip());
+            if (!$check['ok']) { $this->done($check['error'], false); return; }
+        }
+        try {
+            $active = $this->db->where('user_id', $this->user['id'])->where('revoked_at IS NULL', null, false)->count_all_results('ha_api_key');
+            if ($active >= 10) { throw new InvalidArgumentException('You already have 10 active keys. Revoke one first.'); }
+            $key = $this->ha_api_keys->create($this->user['id'], 'ALTUS mobile', $this->ha_api_keys->mobile_scopes($this->ha_auth), date('Y-m-d H:i:s', time() + 90 * 86400));
+            $this->audit('create', 'Personal mobile key created (90-day expiry)');
+            $this->session->set_flashdata('ha_new_key', $key['key']);
+            $this->done('Mobile key created. Copy it now and enter it in the app Sign in screen.');
+        } catch (Exception $e) { $this->done($e->getMessage(), false); }
+    }
 
     public function key_create() {
         $this->guard();

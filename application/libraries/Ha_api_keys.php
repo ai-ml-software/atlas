@@ -33,6 +33,18 @@ class Ha_api_keys {
 
     const MAX_FAILURES_PER_IP = 30;   // per 15 minutes
 
+    /** A personal mobile key adds no permissions; native requests still check live grants. */
+    public function mobile_scopes($auth) {
+        if (!$auth->check()) { return array(); }
+        $scopes = array('profile:read');
+        foreach (array('courses.view'=>array('courses:read', 'enrollments:read'), 'knowledge.view'=>array('knowledge:read'),
+            'competencies.view'=>array('performance:read'), 'learners.view'=>array('team:read'), 'kpis.view'=>array('kpis:read')) as $permission=>$add) {
+            if ($auth->has($permission)) { $scopes = array_merge($scopes, $add); }
+        }
+        if ($auth->has(array('courses.view', 'knowledge.view', 'training_assignments.assign', 'ai.use'))) { $scopes[] = 'mobile:write'; }
+        return array_values(array_unique($scopes));
+    }
+
     private $CI;
     private $crypto;
 
@@ -138,6 +150,19 @@ class Ha_api_keys {
         $user = $this->CI->db->get_where('users', array('id' => (int) $row['user_id']))->row_array();
         if (!$user || (int) $user['status'] !== 1) {
             return $this->refuse(401, 'The owner of this API key is not an active account.');
+        }
+
+        // Native sessions are invalidated by password, email, profile or MFA changes.
+        // Ordinary integration keys keep their existing authentication contract.
+        if (strpos((string)$row['name'], 'Mobile app session') === 0) {
+            if (!is_cli() && get_class($this->CI) !== 'Mobile_api') {
+                return $this->refuse(403, 'Mobile sessions can only access the native mobile API.');
+            }
+            $this->CI->load->library('ha_mobile_session');
+            if (!$this->CI->ha_mobile_session->valid($row, $user)) {
+                $this->revoke((int)$row['id'], (int)$user['id']);
+                return $this->refuse(401, 'Your mobile session expired. Sign in again.');
+            }
         }
 
         $this->CI->db->set('use_count', 'use_count + 1', false)

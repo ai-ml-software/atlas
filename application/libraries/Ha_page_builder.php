@@ -203,6 +203,9 @@ class Ha_page_builder {
         $snap = json_decode($r['snapshot_json'], true);
         $this->revision($page_id, $actor_id, 'Before restoring revision #' . (int) $revision_id);
         $this->CI->db->trans_start();
+        if ($this->CI->db->field_exists('studio_enabled', 'ha_page')) {
+            $this->CI->db->where('id', (int) $page_id)->update('ha_page', array('studio_enabled' => empty($snap['studio_enabled']) ? 0 : 1));
+        }
         foreach ((array) $snap['tr'] as $loc => $t) {
             $row = array_intersect_key($t, array_flip(array('title', 'subtitle', 'body', 'hero_image', 'cta_label', 'cta_url')));
             $this->CI->db->where(array('page_id' => (int) $page_id, 'locale' => $loc))->update('ha_page_translation', $row);

@@ -25,7 +25,7 @@ Use the supplied palm-and-wordmark, already prepared by the website in `uploads/
 
 ## Identity and tenancy
 
-Live identity comes from a personal API credential owned by the signed-in user; credentials are never supplied by demonstration role selection. Live roles and permissions come from `Ha_auth`, not a selected screen or local storage. All property, people, course, document and reporting access is checked on the server. Selecting a property changes display context only within authorized properties; it grants no permission. New native password/session flows must preserve web MFA, device and anti-abuse policy before release. The current web account-security flow can issue/revoke scoped credentials.
+Live identity comes from email/password sign-in against the preset HTTPS server. The server issues a seven-day mobile session after any required email/device confirmation and authenticator or recovery-code verification; users do not enter API keys or server settings. Sessions are bound to the account's credentials, MFA state and tenant context. Live roles and permissions come from `Ha_auth`, never demonstration role selection or local storage, and are checked on every API request. All property, people, course, document and reporting access is enforced on the server. Selecting a property changes display context only within authorized properties; it grants no permission. Existing browser CAPTCHA requirements remain enforced and require website sign-in until a native CAPTCHA flow is implemented. Deploy the matching mobile backend and session-security migration before enabling password login on the public server.
 
 ## Backend mapping
 

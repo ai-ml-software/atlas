@@ -5,6 +5,7 @@ class Ha_studio_catalogue {
     private $CI;
     public static function types() {
         return array(
+            'courses' => array('title'=>'Courses','table'=>'ha_course','perm'=>'courses','route'=>'courses','translation'=>'ha_course_translation','fk'=>'course_id','summary'=>'short_description','body'=>'description','image'=>'thumbnail'),
             'programs' => array('title' => 'Programs', 'table' => 'ha_program', 'perm' => 'programs', 'route' => 'programs', 'translation' => 'ha_program_translation', 'fk' => 'program_id', 'summary' => 'short_description', 'body' => 'description', 'image' => 'thumbnail'),
             'paths' => array('title' => 'Learning paths', 'table' => 'ha_learning_path', 'perm' => 'learning_paths', 'route' => 'learning-paths', 'summary' => 'summary', 'body' => 'description', 'image' => 'thumbnail'),
             'articles' => array('title' => 'Articles', 'table' => 'ha_article', 'perm' => 'articles', 'route' => 'articles', 'translation' => 'ha_article_translation', 'fk' => 'article_id', 'summary' => 'excerpt', 'body' => 'body', 'image' => 'cover_image'),
@@ -13,10 +14,11 @@ class Ha_studio_catalogue {
     }
     public function __construct() { $this->CI =& get_instance(); $this->CI->load->library(array('ha_auth', 'ha_audit')); $this->CI->load->helper('hkp'); }
     public function definition($type) { $d = self::types()[$type] ?? null; if (!$d) { throw new InvalidArgumentException('Unknown content type.'); } return $d; }
-    public function authorize($type, $operation) { $d = $this->definition($type); if (!$this->CI->ha_auth->is_system_scoped() || !$this->CI->ha_auth->has($d['perm'] . '.' . $operation)) { throw new RuntimeException('Platform ' . $d['perm'] . '.' . $operation . ' permission is required.'); } return $d; }
+    public function authorize($type, $operation) { $d = $this->definition($type); if (($type !== 'courses' && !$this->CI->ha_auth->is_system_scoped()) || !$this->CI->ha_auth->has($d['perm'] . '.' . $operation)) { throw new RuntimeException('Platform ' . $d['perm'] . '.' . $operation . ' permission is required.'); } return $d; }
     public function record($type, $id) {
         $d = $this->authorize($type, 'view'); $row = $this->CI->db->get_where($d['table'], array('id' => (int) $id))->row_array();
         if (!$row) { throw new InvalidArgumentException('Record not found.'); }
+        if ($type==='courses' && !$this->CI->ha_auth->is_system_scoped() && (!$row['organization_id'] || !$this->CI->ha_auth->can_organization($row['organization_id']))) throw new RuntimeException('Course is outside your organization scope.');
         $tr = array();
         if (isset($d['translation'])) { foreach ($this->CI->db->get_where($d['translation'], array($d['fk'] => (int) $id))->result_array() as $t) { $tr[$t['locale']] = $t; } }
         $record = array('row' => $row, 'tr' => $tr);
@@ -27,11 +29,13 @@ class Ha_studio_catalogue {
         }
         return $record;
     }
-    public function hash(array $record) { return hash('sha256', json_encode($record, JSON_UNESCAPED_UNICODE)); }
+    // Visitor counters change on every public view (including the editor's own preview) and are not content.
+    public function hash(array $record) { unset($record['row']['view_count']); return hash('sha256', json_encode($record, JSON_UNESCAPED_UNICODE)); }
     public function listing($type, $query, $page) {
         $d = $this->authorize($type, 'view'); $db = $this->CI->db;
         $db->select('r.*')->from($d['table'] . ' r');
         if (isset($d['translation'])) { $db->select('t.title AS title_en')->join($d['translation'] . ' t', 't.' . $d['fk'] . " = r.id AND t.locale = 'en'", 'left'); }
+        if ($type==='courses') $this->CI->ha_auth->scope_query($db,array('organization_id'=>'r.organization_id','property_id'=>'r.property_id'));
         if ($query !== '') { $db->group_start()->like(isset($d['translation']) ? 't.title' : 'r.title_en', $query)->or_like('r.slug_en', $query)->group_end(); }
         $count_db = clone $db; $total = $count_db->count_all_results();
         return array('rows' => $db->order_by('r.id', 'DESC')->limit(30, (max(1, $page) - 1) * 30)->get()->result_array(), 'total' => $total, 'pages' => max(1, (int) ceil($total / 30)));
@@ -41,6 +45,8 @@ class Ha_studio_catalogue {
         $status = (string) ($in['status'] ?? 'draft');
         if (!in_array($status, array('draft', 'review', 'published', 'archived'), true)) { throw new InvalidArgumentException('Invalid publication status.'); }
         if ($status === 'published') { $this->authorize($type, 'publish'); }
+        if ($type==='courses' && $id) { $existing=$this->record($type,$id); $this->CI->load->library('ha_library_review'); if (isset($this->CI->ha_library_review->course_files()[$existing['row']['code']])) throw new RuntimeException('Governed PDF-library courses use the existing source review and release workflow.'); }
+
         $row = array('status' => $status, 'updated_at' => date('Y-m-d H:i:s'));
         foreach (array('en', 'ar') as $loc) {
             $title = trim((string) ($in['title_' . $loc] ?? '')); $slug = trim((string) ($in['slug_' . $loc] ?? ''));
@@ -49,6 +55,7 @@ class Ha_studio_catalogue {
             if ($this->CI->db->where('slug_' . $loc, $slug)->where('id !=', (int) $id)->count_all_results($d['table'])) { throw new InvalidArgumentException('That address is already used.'); }
         }
         $image = trim((string) ($in['image'] ?? '')); Ha_website_studio::safe_url($image); $row[$d['image']] = mb_substr($image, 0, 255) ?: null;
+        if ($type==='courses') { $row['level']=in_array($in['level']??'',array('foundation','intermediate','advanced','leadership'),true)?$in['level']:'foundation'; if (!$id) { $row['organization_id']=$this->CI->ha_auth->is_system_scoped()?null:$this->CI->ha_auth->default_organization_id();$row['created_by']=$this->CI->ha_auth->id(); } }
         if ($type === 'programs') { $row['level'] = in_array($in['level'] ?? '', array('foundation', 'intermediate', 'advanced', 'leadership'), true) ? $in['level'] : 'foundation'; $row['duration_hours'] = max(0, min(10000, (float) ($in['duration_hours'] ?? 0))); }
         if ($type === 'paths') { $row['department_code'] = mb_substr(trim((string) ($in['department_code'] ?? '')), 0, 60) ?: null; }
         if ($type === 'topics') {
@@ -90,6 +97,7 @@ class Ha_studio_catalogue {
                 $this->CI->db->where($fk, $id)->delete($relation);
                 foreach ($courses as $i => $course) { $this->CI->db->insert($relation, array($fk => $id, 'course_id' => $course, 'sort_order' => $i)); }
             }
+            if ($type==='courses' && $status==='published') { $this->CI->load->library(array('ha_governed_ai','ha_cli_runner')); $this->CI->ha_governed_ai->index_course($id); $course=$this->CI->db->get_where('ha_course',array('id'=>$id))->row_array(); if (!$course['organization_id']) $this->CI->ha_cli_runner->spawn(array('ha_bridge','sync_one',$course['code'])); }
             if ($type === 'paths' && array_key_exists('steps_json', $in)) { $this->save_steps($id, (string) $in['steps_json']); }
             $this->CI->ha_audit->log($status === 'published' ? 'publish' : 'update', $type, $id, array('description' => 'Catalogue content saved: ' . $row['slug_en'], 'after' => array('status' => $status, 'hash' => hash('sha256', json_encode($row)))));
             if (!$this->CI->db->trans_status()) { throw new RuntimeException('Save failed and was rolled back.'); }

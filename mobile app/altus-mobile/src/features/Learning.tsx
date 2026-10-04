@@ -21,14 +21,16 @@ import {
 import { assets, courses, questions } from "../domain/demo";
 import { Course, JsonRecord } from "../domain/models";
 import { useResource } from "../services/useResource";
+import { RoleShortcuts } from "./Workspaces";
 import { ScreenSpec } from "../domain/screens";
 import { LessonMedia, Media } from "../components/LessonMedia";
 import { LiveAssessment, LiveResult } from "./LiveAssessment";
 
 export function Home() {
-  const { state, t, b } = useApp();
+  const { state, t, b, can } = useApp();
   const c = useTheme();
-  const live = useResource<Course[]>("plan?locale=" + state.locale);
+  const learning = can("learning");
+  const live = useResource<Course[]>(learning ? "plan?locale=" + state.locale : "");
   const demoCourses = courses.map((x) => ({
     ...x,
     progress: state.completed.includes(x.id) ? 100 : x.progress,
@@ -80,12 +82,14 @@ export function Home() {
           </T>
         </View>
       </View>
-      <Section
-        title={t("continueLearning")}
-        action={t("viewAll")}
-        onPress={() => go("learning")}
-      />
-      {state.mode === "live" && live.loading ? (
+      {learning && (
+        <Section
+          title={t("continueLearning")}
+          action={t("viewAll")}
+          onPress={() => go("learning")}
+        />
+      )}
+      {!learning ? null : state.mode === "live" && live.loading ? (
         <StateView type="loading" />
       ) : state.mode === "live" && live.error ? (
         <StateView
@@ -133,7 +137,7 @@ export function Home() {
           </T>
           <T variant="small">{t("learningPlan")}</T>
         </Card>
-        <Card style={{ flex: 1, padding: 15 }}>
+        {can("certificates") && <Card style={{ flex: 1, padding: 15 }}>
           <Icon name="ribbon-outline" color={c.green} />
           <T variant="small">{t("certificates")}</T>
           <Pressable
@@ -145,7 +149,7 @@ export function Home() {
               {t("viewAll")} →
             </T>
           </Pressable>
-        </Card>
+        </Card>}
       </Row>
       <Section title={t("quickAccess")} />
       <Row>
@@ -154,7 +158,9 @@ export function Home() {
           ["assistant", "sparkles-outline", "ai"],
           ["progress", "stats-chart-outline", "progress"],
           ["calendar", "calendar-outline", "calendar"],
-        ].map(([id, icon, label]) => (
+        ]
+          .filter(([id]) => can(id))
+          .map(([id, icon, label]) => (
           <Pressable
             key={id}
             onPress={() => go(id)}
@@ -191,23 +197,7 @@ export function Home() {
           <CourseCard course={demoCourses[3]} compact />
         </>
       )}
-      {state.role !== "learner" && (
-        <Button
-          label={t(
-            ["instructor", "admin"].includes(state.role)
-              ? "admin"
-              : "management",
-          )}
-          secondary
-          onPress={() =>
-            go(
-              ["instructor", "admin"].includes(state.role)
-                ? "admin"
-                : "management",
-            )
-          }
-        />
-      )}
+      <RoleShortcuts />
     </View>
   );
 }

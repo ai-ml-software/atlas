@@ -70,6 +70,13 @@ class Ha_auth {
         return $this->refresh();
     }
 
+    /** Identity from a signature-verified, live OAuth grant; never from request user IDs. */
+    public function from_gateway(array $claims) {
+        if (empty($claims['verified']) || empty($claims['sub'])) { throw new RuntimeException('A verified delegated identity is required.'); }
+        $this->assumed_user_id=(int)$claims['sub']; $this->refresh();
+        if (!$this->check()) { throw new RuntimeException('The delegated user is inactive.'); } return $this;
+    }
+
     // ---------------------------------------------------------------- identity
 
     /** Loads the signed in user's roles, permissions and tenant scope once per request. */

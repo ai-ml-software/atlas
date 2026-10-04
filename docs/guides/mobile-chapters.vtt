@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00:00.485 --> 00:00:18.326
+Sign in and key types — This is the actual Expo mobile interface. Platform URL points to your backend. Personal API key uses your own ha key. Get my personal API key opens Account Security, where password and two-factor checks protect creation.
+
+00:00:18.642 --> 00:00:34.002
+Find Server setup in Settings — Settings now includes visible Server setup and Personal API key options. The app configuration key is separate from sign-in. Language, country, appearance and support contacts are also available here.
+
+00:00:34.262 --> 00:00:50.288
+Server connection and app key — Server setup shows the platform address, a safe key prefix and the loaded configuration version. Enter an altm app key only when replacing it. Save validates a new setup before storing it securely on a native device.
+
+00:00:54.363 --> 00:01:11.756
+Test the real connection — Test connection sends a real request to the local native configuration endpoint. Connection successful confirms the URL and current app key are accepted. A revoked key is rejected. The secret is masked and is never included in this recording.
+
+00:01:11.788 --> 00:01:31.938
+QR, reset and device networking — On a native device, Scan setup QR reads the locally generated administrator code. Reset restores the build defaults. For this local APK, keep Laragon running and use USB reverse forwarding. Production requires a reachable HTTPS backend and its own app key.

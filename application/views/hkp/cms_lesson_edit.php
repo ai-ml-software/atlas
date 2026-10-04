@@ -6,7 +6,7 @@ $ai_entity = 'lesson'; $ai_id = $l ? $l['id'] : 0; $ai_insert = '#lb_en';
 $ai_tasks = array('lesson' => 'Write a short applied lesson', 'improve' => 'Improve the selected text', 'translate_ar' => 'Translate to Arabic (Modern Standard Arabic)', 'translate_en' => 'Translate to English', 'quiz' => 'Write assessment questions', 'enhance_prompt' => 'Turn a rough request into a precise brief');
 ?>
 <div class="hkp-head"><div><div class="hkp-eyebrow"><a href="<?php echo hkp_url('cms/module/' . $c['id']); ?>"><?php echo hkp_h($course_tr ? $course_tr['title'] : $c['code']); ?></a></div><h1><?php echo $l ? hkp_h($t('en', 'title')) : hkp_e('New lesson'); ?></h1>
-<?php if ($l): ?><p><?php echo hkp_badge($l['status']); ?> · <a href="<?php echo hkp_url('learn/lesson/' . $l['id']); ?>"><?php echo hkp_e('Preview as learner'); ?></a></p><?php endif; ?></div></div>
+<?php if ($l): ?><p><?php echo hkp_badge($l['status']); ?> · <?php echo hkp_content_view_buttons('lessons', $l['id'], $l['status']); ?></p><?php endif; ?></div></div>
 <div class="hkp-grid hkp-grid--main">
 <form class="hkp-card hkp-form" method="post" enctype="multipart/form-data" action="<?php echo hkp_url('cms/lesson_save/' . ($l ? $l['id'] : 0)); ?>"><?php echo ha_csrf_field(); ?><input type="hidden" name="course_id" value="<?php echo (int) $c['id']; ?>">
   <div class="hkp-row">
@@ -43,7 +43,7 @@ $ai_tasks = array('lesson' => 'Write a short applied lesson', 'improve' => 'Impr
     <div class="hkp-field"><label for="las"><?php echo hkp_e('Checkpoint assessment'); ?></label><select id="las" class="hkp-select" name="assessment_id"><option value=""></option><?php foreach ($assessments as $a): ?><option value="<?php echo (int) $a['id']; ?>"<?php echo (int) $v('assessment_id') === (int) $a['id'] ? ' selected' : ''; ?>><?php echo hkp_h(hkp_pick($a, 'title')); ?></option><?php endforeach; ?></select></div>
   </div>
   <div class="hkp-actions"><label class="hkp-check"><input type="checkbox" name="is_mandatory" value="1"<?php echo !$l || (int) $l['is_mandatory'] ? ' checked' : ''; ?>> <?php echo hkp_e('Mandatory'); ?></label><label class="hkp-check"><input type="checkbox" name="is_preview" value="1"<?php echo $l && (int) $l['is_preview'] ? ' checked' : ''; ?>> <?php echo hkp_e('Free preview'); ?></label></div>
-  <div class="hkp-actions"><button class="hkp-btn"><?php echo hkp_e('Save lesson'); ?></button></div>
+  <div class="hkp-actions"><button class="hkp-btn"><?php echo hkp_e('Save lesson'); ?></button><button class="hkp-btn hkp-btn--ghost" name="after_save" value="view"><?php echo hkp_e('Save and view'); ?></button></div>
 </form>
 <div class="hkp-grid"><?php $this->load->view('hkp/_ai_panel', compact('models', 'ai_entity', 'ai_id', 'ai_insert', 'ai_tasks')); ?>
 <?php if ($l && $this->ha_auth->has('lessons.delete')): ?><form class="hkp-card" method="post" action="<?php echo hkp_url('cms/lesson_delete/' . $l['id']); ?>" data-confirm="<?php echo hkp_e('Delete this lesson? If learners have progress it is archived instead.'); ?>"><?php echo ha_csrf_field(); ?><button class="hkp-btn hkp-btn--danger hkp-btn--sm"><?php echo hkp_e('Delete lesson'); ?></button></form><?php endif; ?></div>

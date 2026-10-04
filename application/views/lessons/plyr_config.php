@@ -2,6 +2,9 @@
 <script src="<?php echo base_url(); ?>assets/global/plyr/plyr.js"></script>
 <script>
     var player = new Plyr('#player', {
+        // Keep course playback controls without offering a download action.
+        controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'fullscreen'],
+        disableContextMenu: true,
         youtube: {
             // Options for YouTube player
             controls: 1, // Show YouTube controls

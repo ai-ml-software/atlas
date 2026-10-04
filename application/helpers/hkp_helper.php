@@ -275,3 +275,20 @@ if (!function_exists('hkp_locale')) {
         return $out;
     }
 }
+
+
+/** Internal links resolve the current address and protect unpublished content. */
+function hkp_content_view_url($type, $id, $locale = 'en', $draft = false) {
+    $locale = $locale === 'ar' ? 'ar' : 'en';
+    return hkp_url('cms/view/' . rawurlencode($type) . '/' . (int) $id) . '?locale=' . $locale . ($draft ? '&draft=1' : '');
+}
+
+function hkp_content_view_buttons($type, $id, $status, $draft = false) {
+    $html = '';
+    foreach (array('en', 'ar') as $locale) {
+        $label = $draft ? ($locale === 'en' ? 'Preview draft English' : 'Preview draft Arabic')
+            : ($status === 'published' ? ($locale === 'en' ? 'View English' : 'View Arabic') : ($locale === 'en' ? 'Preview English' : 'Preview Arabic'));
+        $html .= '<a class="hkp-btn hkp-btn--sm hkp-btn--ghost" data-content-view href="' . hkp_h(hkp_content_view_url($type, $id, $locale, $draft)) . '" target="_blank" rel="noopener noreferrer">' . hkp_e($label) . '</a>';
+    }
+    return $html;
+}

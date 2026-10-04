@@ -1,0 +1,132 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MCP GATEWAY RUNBOOK</title><style>:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f7f5f1;color:#1c2227;font:16px/1.7 'Segoe UI',Tahoma,Arial,sans-serif}header{background:#1c2227;color:white;padding:28px max(24px,calc((100% - 1080px)/2));border-bottom:4px solid #c45b2f}header a{color:#f3c5a8}main{max-width:1080px;margin:auto;padding:28px 24px 70px}h1,h2,h3{line-height:1.25}h2{margin-top:36px}a{color:#944527}pre{padding:18px;background:#e9e5df;border-radius:10px;overflow:auto}code{font-size:.9em}table{border-collapse:collapse;width:100%;background:white;font-size:14px}td,th{padding:10px;border:1px solid #ddd;text-align:start;vertical-align:top}.card{background:white;border:1px solid #ded8cf;border-radius:14px;padding:22px;margin-bottom:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}video{display:block;width:100%;max-height:640px;background:#111}.chapters{max-height:300px;overflow:auto;display:flex;flex-wrap:wrap;gap:8px;padding:10px 0}button,.button{border:1px solid #c45b2f;border-radius:8px;background:white;color:#71371e;padding:9px 12px;cursor:pointer;text-decoration:none;font:inherit}p{margin:12px 0}.muted{color:#646a6d}img{max-width:100%}@media(max-width:600px){main{padding:20px 15px}table{display:block;overflow:auto}header{padding:22px 15px}}@media print{header,nav,.no-print{display:none}body{background:white;font-size:12px}main{padding:0;max-width:none}h2{break-after:avoid}pre,table{break-inside:avoid}a{color:inherit}}</style><header><strong>ALTUS KNOWLEDGE &amp; PERFORMANCE</strong><br><a href="index.html">User guides and recordings</a></header><main><h1 dir="auto">ALTUS MCP gateway runbook</h1>
+<p dir="auto">The gateway (<code>mcp-gateway/</code>) is a separate Node 24 / TypeScript service. It runs</p>
+<p dir="auto">the official MCP SDK over Streamable HTTP at <code>$ALTUS_MCP_URL/mcp</code>, an OAuth 2.1</p>
+<p dir="auto">authorization server (<code>oidc-provider</code>, PKCE S256 required) at</p>
+<p dir="auto"><code>$ALTUS_MCP_URL/oauth</code>, and calls the native ALTUS API <code>/api/publisher/v1</code> with</p>
+<p dir="auto">short-lived (≤60 s) delegated credentials. Login and two-factor authentication</p>
+<p dir="auto">are the existing ALTUS login: the OAuth consent step redirects to</p>
+<p dir="auto"><code>/hkp/cms/mcp_login</code>.</p>
+<pre><code>
+MCP client ──OAuth PKCE──▶ gateway /oauth ──redirect──▶ ALTUS login + 2FA + consent
+
+MCP client ──Bearer──────▶ gateway /mcp ──HS256 JWT (kid, ≤60s)──▶ /api/publisher/v1
+
+</code></pre>
+<h2 dir="auto">1. Install</h2>
+<pre><code>
+Set-Location C:/laragon/www/atlas/atlas/mcp-gateway
+
+node --version     # require Node 24; .nvmrc records the major version
+
+npm.cmd ci
+
+npm.cmd run build
+
+npm.cmd test           # unit tests; the live contract test is skipped by default
+
+node tools/generate-key.mjs   # creates private-jwks.json (OAuth token signing key, keep private)
+
+Copy-Item .env.example .env   # then edit .env
+
+</code></pre>
+<p dir="auto">Native side (once per database, after a backup — see §7):</p>
+<pre><code>
+$altusPhp = &#39;C:/laragon/bin/php/php-8.1.10-Win32-vs16-x64/php.exe&#39;
+
+&amp; $altusPhp index.php ha_cli migrate   # includes publisher migrations 27, 29 and 30 (drafts/jobs, OAuth grants, approvals, retries and connections)
+
+</code></pre>
+<h2 dir="auto">2. Environment (<code>.env</code> and the PHP server environment)</h2>
+<table>
+<tr><th>Variable</th><th>Where</th><th>Meaning</th></tr>
+<tr><td><code>ALTUS_MCP_ENABLED</code></td><td>gateway <strong>and</strong> PHP</td><td>Feature switch. Anything but <code>1</code> → gateway <code>/mcp</code> returns 503 <code>mcp_disabled</code>; native API and bridge return 503.</td></tr>
+<tr><td><code>ALTUS_MCP_URL</code></td><td>gateway <strong>and</strong> PHP</td><td>Public gateway origin. PHP checks it as the JWT <code>iss</code>. HTTPS required when <code>NODE_ENV=production</code>.</td></tr>
+<tr><td><code>ALTUS_NATIVE_URL</code></td><td>gateway</td><td>ALTUS base URL (<code>https://…/</code> in production).</td></tr>
+<tr><td><code>ALTUS_MCP_SECRET</code></td><td>gateway <strong>and</strong> PHP</td><td>Current HS256 secret, ≥32 random characters.</td></tr>
+<tr><td><code>ALTUS_MCP_KEY_ID</code></td><td>gateway <strong>and</strong> PHP</td><td>Key id put in the JWT <code>kid</code> header (e.g. <code>2026-10</code>).</td></tr>
+<tr><td><code>ALTUS_MCP_SECRET_PREVIOUS</code>, <code>ALTUS_MCP_KEY_ID_PREVIOUS</code></td><td>gateway <strong>and</strong> PHP</td><td>Rotation window only (§4).</td></tr>
+<tr><td><code>ALTUS_MCP_ALLOW_SELF_APPROVAL</code></td><td>PHP</td><td><code>1</code> lets a requester approve their own MCP request. Default off (separation of duties).</td></tr>
+<tr><td><code>ALTUS_DB_*</code></td><td>gateway</td><td>MySQL for the OAuth store (<code>ha_oauth_store</code>) and live user checks. Use the same database as ALTUS.</td></tr>
+<tr><td><code>ALTUS_OAUTH_JWKS_FILE</code></td><td>gateway</td><td>Path to <code>private-jwks.json</code>.</td></tr>
+<tr><td><code>ALTUS_OAUTH_CLIENTS</code></td><td>gateway</td><td>JSON array of registered OAuth clients (§3).</td></tr>
+<tr><td><code>ALTUS_COOKIE_KEYS</code></td><td>gateway</td><td>Comma-separated cookie keys, newest first.</td></tr>
+<tr><td><code>ALTUS_TRUST_PROXY</code></td><td>gateway</td><td><code>1</code> behind a TLS-terminating reverse proxy.</td></tr>
+</table>
+<p dir="auto">PHP reads these with <code>getenv()</code> in <code>application/config/ha_publisher.php</code>. Under</p>
+<p dir="auto">Apache set them with <code>SetEnv</code> in the vhost (never in a committed file), or in an</p>
+<p dir="auto">untracked <code>application/config/ha_publisher.local.php</code> returning an array of the</p>
+<p dir="auto">same config keys.</p>
+<p dir="auto">Generate a secret: <code>node -e &quot;console.log(require(&#39;crypto&#39;).randomBytes(48).toString(&#39;hex&#39;))&quot;</code>.</p>
+<h2 dir="auto">3. OAuth client registration</h2>
+<p dir="auto">Clients are static (no dynamic registration). Add an entry to</p>
+<p dir="auto"><code>ALTUS_OAUTH_CLIENTS</code> and restart the gateway:</p>
+<pre><code>
+[{&quot;client_id&quot;:&quot;altus-desktop&quot;,&quot;redirect_uris&quot;:[&quot;http://127.0.0.1:3200/callback&quot;],
+
+  &quot;grant_types&quot;:[&quot;authorization_code&quot;,&quot;refresh_token&quot;],&quot;response_types&quot;:[&quot;code&quot;],
+
+  &quot;token_endpoint_auth_method&quot;:&quot;none&quot;}]
+
+</code></pre>
+<p dir="auto">For local native configuration, copy <code>application/config/ha_publisher.local.example.php</code> to the ignored <code>ha_publisher.local.php</code> if it does not already exist. Set <code>mcp_enabled=true</code>, <code>gateway_url</code>, <code>gateway_secret</code> and <code>gateway_key_id</code> to the <strong>same</strong> URL, secret and key id as <code>.env</code>. Keep <code>allow_self_approval=false</code>. On Apache, restart after environment changes.</p>
+<p dir="auto">Start from <code>mcp-gateway/</code>:</p>
+<pre><code>
+npm.cmd start
+
+Invoke-RestMethod http://127.0.0.1:3100/health
+
+Invoke-RestMethod http://127.0.0.1:3100/.well-known/oauth-protected-resource/mcp
+
+</code></pre>
+<p dir="auto">Open ALTUS <strong>Integrations ? Connection health</strong>. All three probes must pass. In a compatible remote MCP client, add <code>http://127.0.0.1:3100/mcp</code> for local testing or your public HTTPS <code>/mcp</code> URL for a deployed service. A remote cloud client cannot reach your workstation loopback URL; configure a reachable HTTPS gateway for that client. Enter the registered client id if requested. Its exact callback URL must match <code>redirect_uris</code>; the example <code>altus-local</code> callback is for a locally implemented client, not a universal vendor callback. Confirm each vendor&#39;s callback in its current connector settings before registration.</p>
+<p dir="auto">Complete OAuth in the browser: ALTUS login ? existing 2FA if enabled ? scope consent ? return to the client. Call <code>altus_health</code>, <code>altus_list_objects</code> and <code>altus_get_object</code>; confirm last-seen activity in <strong>Connections</strong>. Use the steps in <a href="MCP_ADMIN_WORKFLOWS.html">admin workflows</a> to save, review and publish a draft. No secret or raw delegated JWT needs to be pasted into the client.</p>
+<p dir="auto">Clients must send PKCE S256 and <code>resource=$ALTUS_MCP_URL/mcp</code>. Discovery:</p>
+<p dir="auto"><code>/.well-known/oauth-protected-resource/mcp</code> and</p>
+<p dir="auto"><code>/oauth/.well-known/openid-configuration</code>. Scopes: <code>altus.read</code>,</p>
+<p dir="auto"><code>altus.content.write</code>, <code>altus.course.write</code>, <code>altus.media.write</code>,</p>
+<p dir="auto"><code>altus.publish</code>, <code>altus.admin</code>; at consent they are limited to what the user&#39;s</p>
+<p dir="auto">current ALTUS permissions allow, and every native call rechecks permissions and</p>
+<p dir="auto">tenant scope. Access tokens live 300 s, refresh tokens rotate on use (24 h).</p>
+<h2 dir="auto">4. Secrets and rotation</h2>
+<p dir="auto">Delegated credentials carry <code>kid</code>. To rotate without downtime:</p>
+<ul>
+<li>Generate a new secret. On <strong>PHP first</strong>: set <code>ALTUS_MCP_SECRET_PREVIOUS</code>/<code>ALTUS_MCP_KEY_ID_PREVIOUS</code> to the old pair and <code>ALTUS_MCP_SECRET</code>/<code>ALTUS_MCP_KEY_ID</code> to the new pair. PHP now accepts both (by <code>kid</code>).</li>
+<li>Update the gateway the same way and restart it. It signs with the new key.</li>
+<li>After at least 60 s (longest delegated lifetime) remove the previous pair on both sides.</li>
+<li>Confirm *Integrations → Connection health* lists only the new key id, and <code>GET /health</code> shows <code>key_id</code>.</li>
+</ul>
+<p dir="auto">Rotate <code>private-jwks.json</code> by adding a new key first in the <code>keys</code> array (old</p>
+<p dir="auto">key kept for 24 h so existing refresh tokens still verify), then removing it.</p>
+<p dir="auto">Never commit <code>.env</code>, <code>private-jwks.json</code> or the local PHP override.</p>
+<h2 dir="auto">5. Deploy</h2>
+<ul>
+<li>Docker: <code>docker build -t altus-mcp mcp-gateway &amp;&amp; docker run --env-file mcp-gateway/.env -v /secure/private-jwks.json:/app/private-jwks.json:ro -p 127.0.0.1:3100:3100 altus-mcp</code></li>
+<li>Or systemd: <code>node --env-file=.env dist/server.js</code> as an unprivileged user, behind nginx/Apache TLS with <code>ALTUS_TRUST_PROXY=1</code>.</li>
+<li>Set <code>NODE_ENV=production</code>; the gateway refuses non-HTTPS URLs then.</li>
+<li>Smoke: <code>curl $ALTUS_MCP_URL/health</code> → <code>{&quot;status&quot;:&quot;ready&quot;,...}</code>; unauthenticated <code>POST /mcp</code> → 401 with <code>WWW-Authenticate: Bearer resource_metadata=…</code>. Then open *Integrations → Connection health* in ALTUS; all three probes should be OK.</li>
+</ul>
+<h2 dir="auto">6. Rollback</h2>
+<ul>
+<li>Disable first: set <code>ALTUS_MCP_ENABLED=0</code> in PHP (immediately blocks all MCP calls with 503) and stop the gateway.</li>
+<li>Redeploy the previous gateway build (<code>dist/</code> or image tag) if needed; the OAuth store schema is unchanged by this release.</li>
+<li>Database: migration 030 is additive and removing it is <strong>not</strong> needed to disable MCP. If you must, <code>php index.php ha_cli rollback 20260101000029</code> rolls back every migration newer than that version (check <code>ha_cli status</code> first so no other newer migration is reverted); 030&#39;s <code>down()</code> drops only <code>ha_mcp_connection</code> and the three added <code>ha_publisher_approval</code> columns. Restore from the backup in §7 for anything else.</li>
+<li>Revoke all grants if credentials may be compromised: <code>DELETE FROM ha_oauth_store;</code> (forces re-consent) and rotate <code>ALTUS_MCP_SECRET</code>.</li>
+</ul>
+<h2 dir="auto">7. Backup before migrating</h2>
+<pre><code>
+$stamp = Get-Date -Format yyyyMMdd-HHmm
+
+New-Item -ItemType Directory -Force C:/backups | Out-Null
+
+&amp; C:/laragon/bin/mysql/mysql-8.0.30-winx64/bin/mysqldump.exe -uroot --single-transaction --routines --result-file=&quot;C:/backups/atlas_merged-$stamp.sql&quot; atlas_merged
+
+</code></pre>
+<p dir="auto">Keep backups outside the web root. Verify size &gt; 0 and restore into a scratch</p>
+<p dir="auto">database before production use (<code>mysql -uroot scratch --execute=&quot;source C:/backups/backup.sql&quot;</code>).</p>
+<h2 dir="auto">8. Tests</h2>
+<table>
+<tr><th>Command</th><th>What it covers</th></tr>
+<tr><td><code>npm test</code></td><td>Scope mapping, delegated JWT audience/issuer/expiry, ≤60 s cap, <code>kid</code> rotation.</td></tr>
+<tr><td><code>npm run test:integration</code> (or <code>ALTUS_INTEGRATION_TEST=1 npm test</code>)</td><td>Live: real gateway + PHP built-in server on <code>atlas_hospitality_test</code> + official MCP SDK <code>Client</code> over <code>StreamableHTTPClientTransport</code>: OAuth PKCE (wrong verifier rejected), scope restriction, learner cannot obtain write scopes, tenant isolation, revoked user, revoked grant, refresh rotation, self-approval blocked, second-admin approval, single-use, expiry, changed-content rejection, idempotent duplicate publication. Also covers private catalogue creation, approved archive/restore, the disabled gateway and native two-factor login before OAuth consent. Requires seeded <code>atlas_hospitality_test</code> (<code>php index.php ha_test prepare_browser</code>) and Playwright in <code>e2e/</code>.</td></tr>
+<tr><td><code>php index.php ha_test run publisher</code></td><td>Native contract (<code>160_publisher_api_gaps.php</code>, <code>140_publisher_upgrade.php</code>).</td></tr>
+</table></main></html>

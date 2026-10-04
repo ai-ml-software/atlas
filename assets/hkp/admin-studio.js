@@ -1,7 +1,15 @@
 (function () {
   'use strict';
+  document.querySelectorAll('[data-copy-text]').forEach(function (button) {
+    button.addEventListener('click', async function () {
+      var status = document.querySelector('#mcp-copy-status');
+      try { await navigator.clipboard.writeText(button.dataset.copyText); if (status) status.textContent = button.dataset.copyOk; }
+      catch (_) { if (status) status.textContent = button.dataset.copyError; }
+    });
+  });
   var side = document.querySelector('.hkp-side');
   var groups = document.querySelectorAll('[data-nav-group]');
+    var primary = document.querySelector('.studio-nav-primary');
   function read(key) { try { return localStorage.getItem(key); } catch (_) { return null; } }
   function write(key, value) { try { localStorage.setItem(key, value); } catch (_) {} }
   var collapse = document.querySelector('[data-collapse-sidebar]');
@@ -18,6 +26,8 @@
   var filter = document.querySelector('#studio-nav-search');
   if (filter) filter.addEventListener('input', function () {
     var q = filter.value.toLocaleLowerCase();
+      document.querySelectorAll('.hkp-nav a').forEach(function(a){a.hidden=!a.textContent.toLocaleLowerCase().includes(q);});
+      if (primary) primary.querySelectorAll('a').forEach(function(a){a.hidden=!a.textContent.toLocaleLowerCase().includes(q);});
     groups.forEach(function (g) { var count = 0; g.querySelectorAll('a').forEach(function (a) { a.hidden = !a.textContent.toLocaleLowerCase().includes(q); if (!a.hidden) count++; }); g.hidden = !count; if (q) g.open = true; else g.open = !!g.querySelector('[aria-current="page"]') || read('altus.nav.' + g.dataset.navGroup) === 'true' || g.dataset.navGroup === 'overview'; });
   });
   var dialog = document.querySelector('#studio-command');

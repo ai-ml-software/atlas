@@ -1,0 +1,68 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ADMIN GUIDE</title><style>:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f7f5f1;color:#1c2227;font:16px/1.7 'Segoe UI',Tahoma,Arial,sans-serif}header{background:#1c2227;color:white;padding:28px max(24px,calc((100% - 1080px)/2));border-bottom:4px solid #c45b2f}header a{color:#f3c5a8}main{max-width:1080px;margin:auto;padding:28px 24px 70px}h1,h2,h3{line-height:1.25}h2{margin-top:36px}a{color:#944527}pre{padding:18px;background:#e9e5df;border-radius:10px;overflow:auto}code{font-size:.9em}table{border-collapse:collapse;width:100%;background:white;font-size:14px}td,th{padding:10px;border:1px solid #ddd;text-align:start;vertical-align:top}.card{background:white;border:1px solid #ded8cf;border-radius:14px;padding:22px;margin-bottom:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}video{display:block;width:100%;max-height:640px;background:#111}.chapters{max-height:300px;overflow:auto;display:flex;flex-wrap:wrap;gap:8px;padding:10px 0}button,.button{border:1px solid #c45b2f;border-radius:8px;background:white;color:#71371e;padding:9px 12px;cursor:pointer;text-decoration:none;font:inherit}p{margin:12px 0}.muted{color:#646a6d}img{max-width:100%}@media(max-width:600px){main{padding:20px 15px}table{display:block;overflow:auto}header{padding:22px 15px}}@media print{header,nav,.no-print{display:none}body{background:white;font-size:12px}main{padding:0;max-width:none}h2{break-after:avoid}pre,table{break-inside:avoid}a{color:inherit}}</style><header><strong>ALTUS KNOWLEDGE &amp; PERFORMANCE</strong><br><a href="index.html">User guides and recordings</a></header><main><h1 dir="auto">ALTUS admin guide</h1>
+<p dir="auto">Sign in at <code>/login</code>, then open <code>/hkp/admin</code>. Use the four primary sidebar entries: <strong>Website Pages</strong>, <strong>Courses &amp; lessons</strong>, <strong>AI Publisher</strong> and <strong>Navigation &amp; footer</strong>. Search the sidebar or press Ctrl+K/Cmd+K to find other tools. On phones, open the menu drawer; Arabic uses RTL. Permissions control the available tools.</p>
+<p dir="auto"><img alt="Admin dashboard" src="../screenshots/admin-dashboard.png" loading="lazy"></p>
+<h2 dir="auto">Create content from a document</h2>
+<ul>
+<li>Open <strong>AI Publisher</strong> (<code>/hkp/cms/publisher</code>). Check <strong>Setup &amp; worker health</strong>; each missing dependency has a setup action.</li>
+<li>Upload PDF/DOCX/PPTX/TXT/MD/JSON or paste text. Select course, website page, article, hospitality topic or SOP, and EN/AR. Click <strong>Analyse document</strong>.</li>
+<li>Uploads wait for the extraction worker. Follow progress; cancel if needed. A failed job gives the cause and <strong>Retry extraction</strong> where permitted. Text and scanned PDF pages are processed locally, with English/Arabic OCR where required.</li>
+<li>Read the source and per-page provenance. Correct text and <strong>Save corrected source</strong> before generation. Review OCR-marked pages carefully.</li>
+<li>Select an enabled provider and its model, enter an optional brief, then <strong>Generate draft</strong>. Generation uses the selected configured service.</li>
+<li>Compare output with the source. Edit and reorder modules, lessons, objectives, sections, quiz options, correct answers and pass mark. Review source-page references. <strong>Regenerate</strong> replaces the selected item; <strong>Translate saved draft</strong> creates an independent language draft.</li>
+<li>Choose a featured image using the media library/upload controls. <strong>Save draft</strong>, then <strong>Preview saved draft</strong>.</li>
+<li><strong>Create content as draft</strong> writes real native records. Course packages include modules, lessons and quizzes. Open the linked native builder and finish translations/media/review. Nothing is published by package import.</li>
+<li>For SOPs choose the reviewer and approver and submit to <strong>internal review</strong>. Complete the existing knowledge approval workflow before publication.</li>
+</ul>
+<p dir="auto"><img alt="AI Publisher" src="../screenshots/document-publisher.png" loading="lazy"></p>
+<h2 dir="auto">Edit the actual frontend</h2>
+<p dir="auto">An authorized administrator sees <strong>Edit page</strong> on supported public pages. Choose <strong>Live editor</strong>, or open a page from <strong>Website Pages</strong>. Click supported text directly in the preview to type and synchronize the adjacent controls. Clicking an image opens its media control; keyboard Enter/Space is supported. Entity detail pages use their native live content editor.</p>
+<ul>
+<li>Select EN/AR and edit title, summary/body, hero image or call to action. Home also exposes corporate content blocks.</li>
+<li>Insert any of the thirteen section types. Expand fields or click the section in the preview. Duplicate, hide/show, reorder with arrows/drag, or remove. Use media selection/upload for images.</li>
+<li>Changes save privately. Use <strong>Save draft</strong> to save now; undo/redo tracks editor changes. Desktop/tablet/mobile buttons adjust preview width.</li>
+<li>Check both languages and click <strong>Publish</strong> when ready. Visitors see only published records; signing into a preview does not publish it.</li>
+</ul>
+<p dir="auto"><img alt="Live editor" src="../screenshots/live-editor.png" loading="lazy"></p>
+<p dir="auto">If another editor changes the content, a conflict prevents overwriting it. Download the draft where offered, reload/discard the stale private draft, and reapply reviewed changes. Page <strong>SEO &amp; revisions</strong> and <strong>Revision history</strong> (<code>/hkp/studio/revisions</code>) provide recovery. Restoring a Studio revision creates a private draft that needs publication. Review links expire and require editor login.</p>
+<p dir="auto">Catalogues, contact forms, certificate verification and learning actions remain functional inside their surrounding editable content. The editor modifies supported content records and sections, rather than application code.</p>
+<h2 dir="auto">Courses and resource CRUD</h2>
+<p dir="auto"><strong>Courses &amp; lessons</strong> opens the existing native builder for course metadata, ordered sections/lessons, bilingual lesson text, media/resources and completion rules. <strong>Assessments &amp; question bank</strong> manages quizzes/options/pass marks. Use existing publication controls after review. Governed PDF-library courses retain source review/release controls. Removal respects native learner-history protections.</p>
+<p dir="auto"><strong>Programs, Articles, Hospitality topics and Learning paths</strong> provide bilingual create/edit forms and live metadata editing. Drafts stay private. Programs/topics select ordered courses. Paths add stable steps and course/program/SOP/assessment/skill items; enrolled steps cannot be removed destructively.</p>
+<p dir="auto"><img alt="Learning path editor" src="../screenshots/learning-path-editor.png" loading="lazy"></p>
+<h2 dir="auto">Theme, global settings and menus</h2>
+<p dir="auto"><strong>Theme &amp; site settings</strong> (<code>/hkp/cms/theme</code>) manages approved fonts, colours, spacing, logo, site name, SEO defaults, contact details and header/footer/navigation appearance. Save privately, inspect the actual site preview, then <strong>Publish saved draft</strong>.</p>
+<p dir="auto"><strong>Navigation &amp; footer</strong> selects a header/footer menu. Edit English/Arabic labels, addresses and visibility; add links and reorder using drag or Alt+arrow. <strong>Save private draft</strong> changes only the preview. <strong>Publish saved draft</strong> updates visitors&#39; menus. Required system URLs are protected. Footer groups remain Learn, Resources and Company.</p>
+<table>
+<tr><th>Public destination</th><th>Landing route</th></tr>
+<tr><td>Home</td><td><code>/en</code></td></tr>
+<tr><td>Courses / Programs / Learning paths / Certifications</td><td><code>/en/courses</code>, <code>/en/programs</code>, <code>/en/learning-paths</code>, <code>/en/certificates</code></td></tr>
+<tr><td>SOP resources / Hospitality topics / Articles / Verify</td><td><code>/en/sop</code>, <code>/en/hospitality-topics</code>, <code>/en/articles</code>, <code>/en/verify</code></td></tr>
+<tr><td>About / For Hotels / Contact / Photo credits</td><td><code>/en/about</code>, <code>/en/hotels</code>, <code>/en/contact</code>, <code>/en/credits</code></td></tr>
+</table>
+<p dir="auto">All have Arabic equivalents. Landing pages are in Website Pages; individual resource/course details are in their respective native editors.</p>
+<h2 dir="auto">Connect and manage MCP</h2>
+<ul>
+<li>Complete the <a href="MCP_GATEWAY_RUNBOOK.html">gateway setup</a>, including client registration and matching native/gateway configuration.</li>
+<li>Open <strong>Integrations ? Connection health</strong> (<code>/hkp/cms/integrations?tab=health</code>); gateway, resource metadata and OAuth metadata should pass.</li>
+<li>Add the displayed gateway <code>/mcp</code> URL to your compatible client. Start OAuth, sign into ALTUS (including 2FA if enabled), review the requested scopes and consent.</li>
+<li>Inspect <strong>Connections</strong> to confirm the client/user, last request and activity. Revoke access here when required.</li>
+<li>The client saves private drafts and requests publication. Another administrator reviews <strong>Approval requests</strong>, checks preview/diff and approves the exact version. The client then uses its approved operation once within ten minutes.</li>
+<li>Use <strong>Audit history</strong> to trace the returned audit reference. <strong>Archive</strong> can restore archived pages into drafts; normal publication review applies.</li>
+</ul>
+<p dir="auto"><img alt="MCP connection health" src="../screenshots/mcp-integrations.png" loading="lazy"></p>
+<p dir="auto">See <a href="MCP_ADMIN_WORKFLOWS.html">MCP administrator workflows</a> for approvals, revocation and recovery.</p>
+<h2 dir="auto">Troubleshooting</h2>
+<table>
+<tr><th>Symptom</th><th>Action</th></tr>
+<tr><td>Missing tables/editor unavailable</td><td>Verify database override, back up and run <code>php index.php ha_cli migrate</code>.</td></tr>
+<tr><td>Document remains queued</td><td>Start <code>publisher_cli daemon</code> or schedule <code>publisher_cli work 25</code>; inspect the heartbeat.</td></tr>
+<tr><td>OCR/dependency failure</td><td>Follow <strong>Setup &amp; worker health</strong>; configure Python/Tesseract and both eng/ara language files.</td></tr>
+<tr><td>No provider/model</td><td>Configure/enable a chat provider and synchronize models in AI Studio.</td></tr>
+<tr><td>Invalid AI output</td><td>Refine the brief or correct the validated draft manually; import has not occurred.</td></tr>
+<tr><td>Conflict</td><td>Reload current content and merge reviewed changes; do not keep retrying stale versions.</td></tr>
+<tr><td>Guest sees old content</td><td>Save is private; publish the reviewed draft and verify EN/AR/visibility.</td></tr>
+<tr><td>Missing tool / 403</td><td>Check current role permissions and tenant scope.</td></tr>
+<tr><td>MCP connection fails</td><td>Check all three health probes, exact URLs/secrets/key ids, client redirect URI and resource audience.</td></tr>
+<tr><td>Approval expired/content changed</td><td>Request a new approval and review the current version.</td></tr>
+</table>
+<p dir="auto">Screenshots use local test fixtures. Deployment-specific checks and executed results are recorded in the <a href="ALTUS_AI_PUBLISHER_ACCEPTANCE_REPORT.html">acceptance report</a>.</p></main></html>

@@ -110,6 +110,15 @@ $route['course/(:any)'] = 'home/course/$1';
 
 // Versioned, API-key authenticated JSON API. The legacy /api/* (mobile app,
 // JWT) is a separate controller and unaffected.
+// Native PHP MCP server + OAuth 2.1 authorization server (no Node gateway required).
+$route['mcp'] = 'mcp_http/index';
+$route['oauth/(register|authorize|token|revoke)'] = 'mcp_http/index';
+$route['\.well-known/(oauth-authorization-server|oauth-protected-resource|openid-configuration)(/.*)?'] = 'mcp_http/index';
+$route['\.well-known/jwks\.json'] = 'mcp_http/index';
+$route['api/publisher/v1'] = 'publisher_api/dispatch';
+$route['api/publisher/v1/(.+)'] = 'publisher_api/dispatch';
+// Mobile remote config: app-key (altm_) authenticated, not a personal key.
+$route['api/v1/mobile/config'] = 'mobile_config/index';
 $route['api/v1']      = 'api_v1/dispatch';
 $route['api/v1/(.+)'] = 'api_v1/dispatch';
 
@@ -128,6 +137,10 @@ $route['hkp/admin/(.+)']         = 'hkp_admin/$1';
 $route['hkp/cms']                = 'hkp_cms/index';
 $route['hkp/cms/navigation']     = 'hkp_cms/manage_navigation';
 $route['hkp/cms/(.+)']           = 'hkp_cms/$1';
+$route['hkp/studio/(.+)']        = 'hkp_studio/$1';
+$route['hkp/mcp']                = 'hkp_mcp/index';
+$route['hkp/mcp/(action|rpc|smoke|health)'] = 'hkp_mcp/$1';
+$route['hkp/mcp/call/(\d+)']     = 'hkp_mcp/call/$1';
 $route['hkp/exec']               = 'hkp_exec/index';
 $route['hkp/exec/(.+)']          = 'hkp_exec/$1';
 $route['hkp']                    = 'hkp/index';

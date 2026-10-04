@@ -1,0 +1,43 @@
+WEBVTT
+
+00:00:00.704 --> 00:00:15.646
+Dashboard — Your dashboard shows the next learning step, current progress and permitted work. Use the sidebar to open learning, approved knowledge, assessments and certificates. Switch language without changing your account permissions.
+
+00:00:16.381 --> 00:00:29.934
+My learning — Use the learning list to find assigned, active or completed courses. Open a course, continue its next available lesson and follow any prerequisites. Progress is stored against your own account.
+
+00:00:30.605 --> 00:00:40.961
+Learning paths — Open an assigned learning path, check the required sequence and due dates, and continue the next available course. Locked items show their prerequisites.
+
+00:00:41.678 --> 00:00:54.193
+Knowledge — Search approved SOPs and knowledge in your permitted organisation and language. Open the document, check its version and read the procedure. Acknowledge only after you have read and understood it.
+
+00:00:55.422 --> 00:01:08.622
+Assessments — Open an available assessment, read its instructions and submit your answers. Attempts and passing requirements are enforced on the server. Review the outcome before retrying if another attempt is allowed.
+
+00:01:09.290 --> 00:01:21.427
+Competencies — Review your competency record, the required evidence and gaps. Arrange any practical assessment with an authorised assessor. A completed course is one part of the evidence.
+
+00:01:22.129 --> 00:01:32.493
+Action plans — Create or update an action plan with an owner, due date and evidence. Submit it for review when ready, then follow the review comments and update the result.
+
+00:01:33.176 --> 00:01:46.295
+Certificates — Review issued certificates and expiry dates. Open or download the permitted certificate and use its verification code to confirm its status. A revoked certificate no longer verifies as valid.
+
+00:01:46.900 --> 00:01:59.098
+AI assistant — Ask a focused question about approved operational knowledge. Review the cited sources. The assistant reports insufficient coverage when the approved library cannot support an answer.
+
+00:01:59.792 --> 00:02:11.227
+Readiness — Review readiness requirements and supporting evidence. Investigate missing learning, practical criteria and operational actions before confirming readiness for a role or opening.
+
+00:02:11.973 --> 00:02:23.410
+Opening readiness — Review readiness requirements and supporting evidence. Investigate missing learning, practical criteria and operational actions before confirming readiness for a role or opening.
+
+00:02:25.781 --> 00:02:41.415
+Account security and personal mobile key — Manage your authenticator and recovery codes. Create a personal mobile API key using your current password and a second-factor code when enabled. Copy the key once into mobile Sign in. Revoke it here when no longer needed.
+
+00:02:42.024 --> 00:02:55.231
+Notifications — Read your account notifications and follow their linked actions. Mark the items read through the supported controls. Mobile push delivery is a separate integration and is not demonstrated in this recording.
+
+00:02:55.881 --> 00:03:06.686
+Profile and preferences — Review your account information, language and accessible property context. Change only the fields permitted by your role and keep your security settings current.

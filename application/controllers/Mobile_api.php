@@ -20,10 +20,8 @@ class Mobile_api extends CI_Controller {
         header('Cache-Control: no-store');
         header('X-Content-Type-Options: nosniff');
         $origin = isset($_SERVER['HTTP_ORIGIN']) ? $_SERVER['HTTP_ORIGIN'] : '';
-        $origins = array_filter(array_map('trim', explode(',', (string) getenv('HA_MOBILE_WEB_ORIGINS'))));
-        if (ENVIRONMENT !== 'production') {
-            $origins = array_merge($origins, array('http://localhost:8081', 'http://127.0.0.1:8081', 'http://localhost:8082', 'http://127.0.0.1:8082'));
-        }
+        $this->config->load('ha_mobile', true);
+        $origins = (array) $this->config->item('web_origins', 'ha_mobile');
         if ($origin && in_array($origin, $origins, true)) {
             header('Access-Control-Allow-Origin: ' . $origin);
             header('Vary: Origin');
@@ -37,6 +35,19 @@ class Mobile_api extends CI_Controller {
             return $this->output->set_status_header(204)->set_output('');
         }
         try {
+            // Email + password sign-in (no key yet). Issues a personal mobile session key.
+            if (in_array($route, array('login', 'login_2fa'), true)) {
+                if (strtoupper($this->input->method()) !== 'POST') { return $this->respond(null, 405, 'Use POST.'); }
+                if (ENVIRONMENT === 'production' && !is_https()) { return $this->respond(null, 403, 'Sign-in requires HTTPS.'); }
+                $bucket='mobile_login_request:'.ha_client_ip();
+                $recent=$this->db->where('bucket',$bucket)->where('created_at >=',date('Y-m-d H:i:s',time()-60))->count_all_results('ha_auth_attempt');
+                if($recent>=30){header('Retry-After: 60');return $this->respond(null,429,'Too many sign-in requests. Please wait a minute.');}
+                $this->ha_api_keys->attempt($bucket,true,ha_client_ip());
+                $body = json_decode((string) file_get_contents('php://input'), true);
+                if (!is_array($body)) { $body = (array) $this->input->post(); }
+                $r = $this->sign_in($route, $body, ha_client_ip());
+                return $this->respond($r['data'], $r['status'], $r['message']);
+            }
             $this->auth_result = $this->ha_api_keys->authenticate(Ha_api_keys::from_request(), ha_client_ip());
             if (!$this->auth_result['ok']) { return $this->respond(null, $this->auth_result['status'], $this->auth_result['error']); }
             $bucket = 'mobile_key:' . $this->auth_result['key']['id'];
@@ -50,6 +61,11 @@ class Mobile_api extends CI_Controller {
             $this->locale = in_array($loc, array('en', 'ar'), true) ? $loc : 'en';
             hkp_locale($this->locale);
             $method = strtoupper($this->input->method());
+            if ($method === 'POST' && $route === 'logout') {
+                $this->load->library('ha_mobile_session');
+                $this->ha_mobile_session->logout($this->auth_result['key']);
+                return $this->respond(null, 200, 'Signed out.');
+            }
             if ($method === 'POST') { $this->need('mobile:write'); }
             $id = (int) $this->input->get('id');
             $body = json_decode((string) file_get_contents('php://input'), true) ?: array();
@@ -201,8 +217,24 @@ class Mobile_api extends CI_Controller {
         } catch (Throwable $e) { log_message('error','Mobile API request failed: '.get_class($e)); return $this->respond(null,500,'The request could not be completed.'); }
     }
 
+    /** @return array('status','message','data') — public so tests can drive it without HTTP. */
+    public function sign_in($route, array $body, $ip) {
+        $this->load->library('ha_mobile_session');
+        foreach(array('email','password','device','challenge','code') as $field){
+            if(isset($body[$field])&&!is_string($body[$field])){return array('status'=>422,'message'=>'Use text values for sign-in fields.','data'=>null);}
+        }
+        $device = isset($body['device']) ? (string) $body['device'] : '';
+        if ($route === 'login_2fa') {
+            return $this->ha_mobile_session->verify_two_factor($body['challenge'] ?? '', $body['code'] ?? '', $ip, $device);
+        }
+        return $this->ha_mobile_session->login($body['email'] ?? '', $body['password'] ?? '', $ip, $device);
+    }
+
     private function need($scope,$permission=null) {
         if(!Ha_api_keys::has_scope($this->auth_result['key'],$scope)){throw new RuntimeException('This personal key is missing the required scope.');}
+        // Scope checks alone cannot preserve access after a role is changed.
+        $grants=array('courses:read'=>'courses.view','enrollments:read'=>'courses.view');
+        if(isset($grants[$scope])&&!$this->ha_auth->has($grants[$scope])){throw new RuntimeException('Your account does not have this permission.');}
         if($permission&&!$this->ha_auth->has($permission)){throw new RuntimeException('Your account does not have this permission.');}
     }
     private function media_url($path) {

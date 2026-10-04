@@ -1,0 +1,60 @@
+{
+  "role": "mobile",
+  "created": "2026-10-03T08:55:16.594Z",
+  "raw": "C:\\laragon\\www\\atlas\\atlas\\application\\logs\\guide-recordings\\page@2ceab8e93ebc4f018afeaff2e43a0fde.webm",
+  "chapters": [
+    {
+      "title": "Sign in and key types",
+      "text": "This is the actual Expo mobile interface. Platform URL points to your backend. Personal API key uses your own ha key. Get my personal API key opens Account Security, where password and two-factor checks protect creation.",
+      "file": "C:\\laragon\\www\\atlas\\atlas\\application\\logs\\guide-recordings\\mobile-0.wav",
+      "controls": [],
+      "start": 0.485,
+      "duration": 16.831609977324263,
+      "end": 18.326
+    },
+    {
+      "title": "Find Server setup in Settings",
+      "text": "Settings now includes visible Server setup and Personal API key options. The app configuration key is separate from sign-in. Language, country, appearance and support contacts are also available here.",
+      "file": "C:\\laragon\\www\\atlas\\atlas\\application\\logs\\guide-recordings\\mobile-1.wav",
+      "controls": [],
+      "start": 18.642,
+      "duration": 14.341814058956917,
+      "end": 34.002
+    },
+    {
+      "title": "Server connection and app key",
+      "text": "Server setup shows the platform address, a safe key prefix and the loaded configuration version. Enter an altm app key only when replacing it. Save validates a new setup before storing it securely on a native device.",
+      "file": "C:\\laragon\\www\\atlas\\atlas\\application\\logs\\guide-recordings\\mobile-2.wav",
+      "controls": [],
+      "start": 34.262,
+      "duration": 14.891609977324263,
+      "end": 50.288
+    },
+    {
+      "title": "Test the real connection",
+      "text": "Test connection sends a real request to the local native configuration endpoint. Connection successful confirms the URL and current app key are accepted. A revoked key is rejected. The secret is masked and is never included in this recording.",
+      "file": "C:\\laragon\\www\\atlas\\atlas\\application\\logs\\guide-recordings\\mobile-3.wav",
+      "controls": [],
+      "start": 54.363,
+      "duration": 16.32625850340136,
+      "end": 71.756
+    },
+    {
+      "title": "QR, reset and device networking",
+      "text": "On a native device, Scan setup QR reads the locally generated administrator code. Reset restores the build defaults. For this local APK, keep Laragon running and use USB reverse forwarding. Production requires a reachable HTTPS backend and its own app key.",
+      "file": "C:\\laragon\\www\\atlas\\atlas\\application\\logs\\guide-recordings\\mobile-4.wav",
+      "controls": [],
+      "start": 71.788,
+      "duration": 19.13111111111111,
+      "end": 91.938
+    }
+  ],
+  "errors": [],
+  "parts": [
+    {
+      "file": "C:\\laragon\\www\\atlas\\atlas\\application\\logs\\guide-recordings\\page@2ceab8e93ebc4f018afeaff2e43a0fde.webm",
+      "duration": 91.938
+    }
+  ],
+  "recording": "Actual Expo web interface, real working local config endpoint; English synthetic narration; no personal keys."
+}

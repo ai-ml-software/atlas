@@ -60,8 +60,8 @@ text(p,(463,327,786,497),'Global coverage is described precisely:\n186 selectabl
 p=page('Implementation status')
 text(p,(40,90,790,140),'A reviewable product. A clear release path.',31,True)
 text(p,(40,163,415,344),'BUILT AND VERIFIED HERE\n\nNative React Native/Expo code and 110 registered routes.\nEnglish/Arabic browser captures and responsive checks.\nLocal demonstration journeys and persistence.\nAdditive API: identity, courses, plans, lessons, server-graded assessments, SOPs, acknowledgment, search, governed AI with sources, competency, readiness, actions, certificates, people, gaps, KPIs, notifications and assignments.\n20 isolated HTTP authorization and assessment checks.',12)
-text(p,(450,163,795,403),'REQUIRED BEFORE A PRODUCTION SALE / RELEASE\n\nNative iOS and Android device validation.\nNormal mobile password/session/MFA integration preserving account policy; current live connection uses scoped personal keys.\nDevice validation of media playback and all assessment types; private media delivery.\nEncrypted account-bound offline media and idempotent progress synchronization.\nPush token registration and delivery.\nLive support tickets, discussions, event attendance, property-brand publishing and content approval actions.\nProduction endpoint rollout, provider configuration and store signing.',12,color=SLATE)
-text(p,(40,443,790,523),'This presentation shows a working product preview with demonstration content. It must not be described as a fully released or fully translated application. Existing website capabilities are not automatically complete native mobile capabilities.',13,color=COPPER)
+text(p,(450,163,795,403),'REQUIRED BEFORE A PRODUCTION SALE / RELEASE\n\nDeploy the matching password-login backend update to the public website.\nNative iOS and Android device validation.\nDevice validation of media playback and all assessment types; private media delivery.\nEncrypted account-bound offline media and idempotent progress synchronization.\nPush token registration and delivery.\nLive support tickets, discussions, event attendance, property-brand publishing and content approval actions.\nNative administration beyond the current secure web-console links.\nProvider configuration and store release acceptance.',12,color=SLATE)
+text(p,(40,443,790,523),'Direct email/password login, device/MFA verification and role-based screens are implemented and tested against the isolated backend. The public server update and native device acceptance remain. Demonstration figures are illustrative; additional languages currently use English fallback.',13,color=COPPER)
 
 for idx in range(0,len(screens),2):
  pair=screens[idx:idx+2];p=page('Complete screen tour')
@@ -132,7 +132,7 @@ for i,s in enumerate(screens):
  with wave.open(str(wavfile)) as wav:duration=wav.getnframes()/wav.getframerate()
  duration=max(duration+.6,4)
  seg=frames/f'{i:03d}.mp4'
- subprocess.run([ffmpeg,'-y','-loglevel','error','-loop','1','-i',str(frames/f'{i:03d}.png'),'-i',str(wavfile),'-t',str(duration),'-r','15','-c:v','libx264','-preset','ultrafast','-crf','25','-pix_fmt','yuv420p','-c:a','aac','-b:a','96k','-af','apad','-movflags','+faststart',str(seg)],check=True)
+ subprocess.run([ffmpeg,'-y','-loglevel','error','-loop','1','-i',str(frames/f'{i:03d}.png'),'-i',str(wavfile),'-t',str(duration),'-r','15','-c:v','libx264','-threads','2','-preset','ultrafast','-crf','25','-pix_fmt','yuv420p','-c:a','aac','-b:a','96k','-af','apad','-movflags','+faststart',str(seg)],check=True)
  segments.append(seg)
  def stamp(v):
   ms=round(v*1000);return f'{ms//3600000:02d}:{ms//60000%60:02d}:{ms//1000%60:02d},{ms%1000:03d}'

@@ -1,6 +1,6 @@
 <?php $groups = array(); foreach ($settings as $k => $s) { $groups[$s['meta'][2]][$k] = $s; } ?>
 <div class="hkp-head"><div><h1><?php echo hkp_e('System'); ?></h1><p><?php echo hkp_e('Health, global rules, notifications and the product roadmap.'); ?></p></div>
-<div class="hkp-actions"><a class="hkp-btn hkp-btn--ghost" href="<?php echo hkp_url('admin/crud/roadmap'); ?>"><?php echo hkp_e('Roadmap & feature flags'); ?></a>
+<div class="hkp-actions"><?php if ($this->ha_auth->is_system_scoped() && $this->ha_auth->has('settings.view')): ?><a class="hkp-btn hkp-btn--ghost" href="<?php echo hkp_url('admin/mobile'); ?>" data-mobile-settings-link><?php echo hkp_e('Mobile app'); ?></a><?php endif; ?><a class="hkp-btn hkp-btn--ghost" href="<?php echo hkp_url('admin/crud/roadmap'); ?>"><?php echo hkp_e('Roadmap & feature flags'); ?></a>
 <form method="post" action="<?php echo hkp_url('admin/system/run'); ?>"><?php echo ha_csrf_field(); ?><button class="hkp-btn"><?php echo hkp_e('Run daily jobs now'); ?></button></form></div></div>
 <div class="hkp-grid hkp-grid--4" style="margin-bottom:1rem"><?php foreach ($health as $k => $h): ?><div class="hkp-card hkp-tile"><span class="hkp-tile__label"><?php echo hkp_label($k); ?></span><span><?php echo $h['ok'] ? hkp_badge('success', hkp_t('Healthy')) : hkp_badge('warning', hkp_t('Attention')); ?></span><span class="hkp-tile__foot"><?php echo hkp_h($h['detail']); ?></span></div><?php endforeach; ?></div>
 <?php if ($learning_health): ?>

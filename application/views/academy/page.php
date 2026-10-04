@@ -2,27 +2,27 @@
 
 <section class="ha-hero<?= !empty($page['hero_image']) ? ' ha-hero--image' : '' ?>">
     <?php $hero = ha_image_variant($page['hero_image'], 'wide'); if ($hero): ?>
-        <div class="ha-hero__media" aria-hidden="true"
+        <div class="ha-hero__media" aria-hidden="true"<?= ha_studio('hero_image', 'image') ?>
              style="background-image:url('<?= base_url($hero) ?>')"></div>
     <?php endif; ?>
     <div class="ha-shell ha-hero__body">
-        <h1><?= html_escape($page['title']) ?></h1>
-        <?php if (!empty($page['subtitle'])): ?>
-            <p class="ha-hero__lede"><?= html_escape($page['subtitle']) ?></p>
+        <h1<?= ha_studio('title') ?>><?= html_escape($page['title']) ?></h1>
+        <?php if (!empty($page['subtitle']) || ha_studio_mode()): ?>
+            <p class="ha-hero__lede"<?= ha_studio('subtitle') ?>><?= html_escape($page['subtitle']) ?></p>
         <?php endif; ?>
         <?php if (!empty($page['cta_label'])): ?>
             <div class="ha-hero__actions">
                 <a class="ha-btn" href="<?= base_url($locale . '/' . ltrim((string) $page['cta_url'], '/')) ?>">
-                    <?= html_escape($page['cta_label']) ?>
+                    <span<?= ha_studio('cta_label') ?>><?= html_escape($page['cta_label']) ?></span>
                 </a>
             </div>
         <?php endif; ?>
     </div>
 </section>
 
-<?php if (trim(strip_tags((string) $page['body'])) !== ''): ?>
+<?php if (trim(strip_tags((string) $page['body'])) !== '' || ha_studio_mode()): ?>
 <section class="ha-section">
-    <div class="ha-shell ha-prose">
+    <div class="ha-shell ha-prose"<?= ha_studio('body', 'html') ?>>
         <?= $page['body'] ?>
     </div>
 </section>

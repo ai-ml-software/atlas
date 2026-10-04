@@ -1,0 +1,31 @@
+ALTUS Admin, Live CMS and AI Publisher Upgrade
+Summary
+Extend the existing CodeIgniter application using the master specification and admin-design.png. Preserve authentication, tenant boundaries, learning progress, certificates and SOP approval workflows.
+Deliver a polished native admin, genuine frontend click-to-edit controls, scanned-PDF publishing and authenticated remote MCP access. Implementation and verification will run locally; production deployment is separate.
+Admin design and live editing
+- Apply shared cream, charcoal and copper design tokens across admin screens, forms, tables and dialogs. Match the reference’s compact spacing, typography, hotel photography and clear hierarchy. Dashboard figures must come from real data.
+- Keep Website Pages, Courses, AI Publisher and Menus visible in the sidebar. Group remaining learning, resource, operational and system tools below, with permission-aware visibility, search and active-group expansion.
+- Support all twelve requested destinations, Home and existing content detail pages. Authorized administrators can click supported text, images and sections on the actual frontend to open editing controls.
+- Provide section insertion, ordering, duplication, visibility, media selection and responsive preview using the existing thirteen section types. Preserve functional catalogue, contact and certificate-verification components while making their surrounding content editable.
+- Add shared theme controls for brand colours, approved fonts, spacing, header, footer and navigation. Bind edits to native records, including the existing corporate homepage.
+- Save edits as private drafts with stable section identifiers, version checks, revision history and explicit publication. Extend draft support to articles, topics, programs, paths and global site settings. Preview links require authorization; ordinary visitors continue seeing published content.
+PDF and AI publishing
+- Extend the current publisher to produce courses with sections, lessons and quizzes; website pages; articles; SOPs; and hospitality topics.
+- Retain uploaded sources privately and process extraction through background jobs with progress, cancellation, retry and clear failure messages. Keep existing upload and document limits.
+- Extract embedded text first; render scanned pages with the existing Python PDF tooling and apply local English/Arabic OCR using Tesseract. Preserve page references and support mixed scanned/text documents.
+- Present source text beside generated drafts. Administrators can correct extraction, edit and reorder content, regenerate selected sections, translate and choose media before saving.
+- Use the configured AI provider and model. Generated content remains a draft; SOP output enters the existing review and approval workflow. Missing dependencies or provider configuration must produce actionable setup guidance.
+Native publishing API and MCP
+- Add /api/publisher/v1 backed by shared native content services. Support content discovery, draft editing, media uploads, preview, document-job status, package validation/import, approval requests, publication and revision restoration. Preserve existing API contracts.
+- Return object identifiers, status, version, preview/edit links and audit references. Require version checks and idempotency keys for writes; reject concurrent changes with a conflict response.
+- Build a separate Node 24/TypeScript gateway using the official MCP SDK, Streamable HTTP and the MCP authorization specification.
+- Use OAuth through oidc-provider, integrated with existing ALTUS login and two-factor authentication. Implement PKCE, consent, protected-resource metadata, audience validation, refresh rotation and revocation. Persist grants in dedicated tables.
+- Map scopes to existing permissions for reading, content, courses, media, publishing and administration. Every native request rechecks the authenticated user’s current permissions and tenant access. Use separate, short-lived delegated credentials between gateway and native API.
+- MCP publication requires an administrator-reviewed approval bound to the client, user, operation, object and content version. Approvals expire after ten minutes, are single-use and become invalid when content changes. SOP approvals remain mandatory.
+- Add admin screens for integrations, approval requests, connection health and audit history. Expose archive/restore operations with appropriate permissions; exclude arbitrary SQL, shell execution and permanent deletion.
+Verification, installation and documentation
+- Use additive migrations and separate feature switches for live editing and MCP. Preserve existing content, relationships and learner history; document backup and rollback procedures.
+- Verify desktop/mobile layouts, Arabic RTL, keyboard access, every requested route, actual click-to-edit behaviour, draft privacy, global-theme preview, revision restoration and concurrent editing.
+- Test text/scanned/mixed PDFs, malformed uploads, OCR failures, cancellation, AI validation and SOP governance. Re-run the complete existing regression suite after integration.
+- Test MCP through an actual SDK client, including OAuth, scope restrictions, revoked users, tenant isolation, approval expiry, changed-content rejection and duplicate publication.
+- Update README and admin guides with installation commands, migrations, OCR dependencies, worker scheduling, AI configuration, gateway/OAuth setup, daily workflows, screenshots and feature inventory. Record verified checks and any configuration-dependent checks that could not run.
