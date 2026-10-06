@@ -113,6 +113,7 @@ return array(
     'Articles' => 'المقالات',
     'Certifications' => 'الشهادات',
     'About Academy' => 'عن الأكاديمية',
+    'About Platform' => 'عن المنصة',
     'For Hotels' => 'للفنادق',
     'All categories' => 'كل التصنيفات',
     'All levels' => 'كل المستويات',

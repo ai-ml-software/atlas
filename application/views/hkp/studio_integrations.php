@@ -21,6 +21,9 @@ $statusLabel = array('pending' => $L('Pending', 'قيد الانتظار'), 'app
 .mcp-health div{padding:12px;border:1px solid #e6e0d7;border-radius:10px}
 .mcp-pager{display:flex;gap:8px;align-items:center;margin-block-start:12px}
 .mcp-muted{color:#6b665f;font-size:13px}
+.hkp-sr-only{position:absolute;inline-size:1px;block-size:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+#mcp-bulk input[type=checkbox]{inline-size:18px;block-size:18px;accent-color:#a84d27}
+#mcp-bulk input[type=checkbox]:focus-visible{outline:2px solid #a84d27;outline-offset:2px}
 </style>
 <div class="hkp-head"><div><div class="hkp-eyebrow"><?= hkp_h($L('Connected publishing', 'النشر المتصل')) ?></div><h1><?= hkp_h($L('Integrations & approvals', 'التكاملات والموافقات')) ?></h1><p><?= hkp_h($L('Review exact drafts, approve publication, monitor MCP connections and revoke client access.', 'راجع المسودات بدقة، ووافق على النشر، وراقب اتصالات MCP، وألغِ وصول العملاء.')) ?></p></div></div>
 <nav aria-label="<?= hkp_h($L('Integration sections', 'أقسام التكامل')) ?>"><ul class="mcp-tabs"><?php foreach ($tabs as $k => $label): ?><li><a href="<?= $base . '?tab=' . $k ?>"<?= $tab === $k ? ' aria-current="page"' : '' ?>><?= hkp_h($label) ?></a></li><?php endforeach; ?></ul></nav>
@@ -58,15 +61,36 @@ $statusLabel = array('pending' => $L('Pending', 'قيد الانتظار'), 'app
 <a class="hkp-btn hkp-btn--ghost" href="<?= hkp_h($detail['content']['preview_url']) ?>" target="_blank" rel="noopener"><?= hkp_h($L('Preview content', 'معاينة المحتوى')) ?></a>
 <div class="studio-review"><div><h3><?= hkp_h($L('Published content', 'المحتوى المنشور')) ?></h3><pre class="studio-source" dir="ltr"><?= hkp_h(json_encode($detail['content']['state']['published'] ?? $detail['content']['state']['page'] ?? array(), JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)) ?></pre></div><div><h3><?= hkp_h($L('Requested draft', 'المسودة المطلوبة')) ?></h3><pre class="studio-source" dir="ltr"><?= hkp_h(json_encode($detail['content']['state']['payload'], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)) ?></pre></div></div>
 <?php if ($state($a) === 'pending' && $can['publish'] && ((int) $a['requester_id'] !== $viewer_id || $self_approval)): ?>
-<form method="post"><?= ha_csrf_field() ?><input type="hidden" name="approval" value="<?= (int) $a['id'] ?>"><div class="hkp-actions"><button class="hkp-btn" name="decision" value="approve"><?= hkp_h($L('Approve this version', 'الموافقة على هذا الإصدار')) ?></button><button class="hkp-btn hkp-btn--ghost" name="decision" value="decline"><?= hkp_h($L('Decline', 'رفض')) ?></button></div></form>
+<form method="post"><?= ha_csrf_field() ?><input type="hidden" name="approval" value="<?= (int) $a['id'] ?>"><div class="hkp-actions"><button class="hkp-btn" name="decision" value="approve"><?= hkp_h($L('Approve & publish this version', 'الموافقة على هذا الإصدار ونشره')) ?></button><button class="hkp-btn hkp-btn--ghost" name="decision" value="decline"><?= hkp_h($L('Decline', 'رفض')) ?></button></div></form>
 <?php elseif ($state($a) === 'pending' && (int) $a['requester_id'] === $viewer_id && !$self_approval): ?><p class="mcp-muted"><?= hkp_h($L('You requested this operation, so another administrator must review it.', 'أنت من طلب هذه العملية، لذا يجب أن يراجعها مسؤول آخر.')) ?></p><?php endif; ?>
 <?php endif; ?></section>
 <?php endif; ?>
 <section class="hkp-card" style="margin-top:20px"><h2><?= hkp_h($L('Approval requests', 'طلبات الموافقة')) ?></h2>
 <form method="get" class="mcp-filters"><input type="hidden" name="tab" value="approvals"><div class="hkp-field"><label for="mcp-status"><?= hkp_h($L('Status', 'الحالة')) ?></label><select id="mcp-status" class="hkp-select" name="status"><?php foreach ($statusLabel as $k => $label) if ($k !== 'expired'): ?><option value="<?= $k ?>"<?= $status === $k ? ' selected' : '' ?>><?= hkp_h($label) ?></option><?php endif; ?></select></div><button class="hkp-btn hkp-btn--ghost"><?= hkp_h($L('Filter', 'تصفية')) ?></button></form>
-<div class="hkp-table-wrap"><table class="hkp-table"><thead><tr><th><?= hkp_h($L('Content', 'المحتوى')) ?></th><th><?= hkp_h($L('Client', 'العميل')) ?></th><th><?= hkp_h($L('Operation', 'العملية')) ?></th><th><?= hkp_h($L('Requester', 'مقدم الطلب')) ?></th><th><?= hkp_h($L('Status', 'الحالة')) ?></th><th><?= hkp_h($L('Expires (UTC)', 'ينتهي (UTC)')) ?></th></tr></thead><tbody>
-<?php foreach ($approvals as $a): $s = $state($a); ?><tr><td><a href="<?= $base . '?tab=approvals&status=' . $status . '&approval=' . (int) $a['id'] ?>"><?= hkp_h($a['object_type'] . ' #' . $a['object_id']) ?></a></td><td dir="ltr"><?= hkp_h($a['client_id']) ?></td><td><?= hkp_h($a['operation']) ?></td><td>#<?= (int) $a['requester_id'] ?></td><td><span class="hkp-badge hkp-badge--<?= $badge[$s] ?? 'muted' ?>"><?= hkp_h($statusLabel[$s] ?? $s) ?></span></td><td dir="ltr"><?= hkp_h($a['expires_at']) ?></td></tr><?php endforeach; ?>
-</tbody></table></div><?php if (!$approvals): ?><p class="hkp-muted"><?= hkp_h($L('No requests in this view.', 'لا توجد طلبات في هذا العرض.')) ?></p><?php endif; ?></section>
+<?php $canApprove = function ($a) use ($state, $can, $viewer_id, $self_approval) { return $state($a) === 'pending' && $can['publish'] && ((int) $a['requester_id'] !== $viewer_id || $self_approval); }; $anyApprovable = (bool) array_filter($approvals, $canApprove); ?>
+<form method="post" id="mcp-bulk"><?= ha_csrf_field() ?><input type="hidden" name="action" value="bulk_approve">
+<?php if ($approvals): ?><div class="hkp-actions" style="margin-block:12px;align-items:center"><button class="hkp-btn" id="mcp-bulk-approve" disabled><?= hkp_h($L('Approve & publish selected', 'الموافقة والنشر للمحدد')) ?> (<span id="mcp-bulk-count">0</span>)</button><span class="mcp-muted"><?= hkp_h($anyApprovable ? $L('Tick requests, or use the header box to select all.', 'حدد الطلبات، أو استخدم مربع العنوان لتحديد الكل.') : $L('No request here can be approved. Expired requests must be requested again by the MCP client.', 'لا يوجد طلب قابل للموافقة هنا. يجب أن يعيد عميل MCP طلب الطلبات المنتهية.')) ?></span></div><?php endif; ?>
+<div class="hkp-table-wrap"><table class="hkp-table"><thead><tr><th><?php if ($approvals): ?><input type="checkbox" id="mcp-select-all"<?= $anyApprovable ? '' : ' disabled' ?> aria-label="<?= hkp_h($L('Select all pending requests', 'تحديد كل الطلبات المعلقة')) ?>"><?php else: ?><span class="hkp-sr-only"><?= hkp_h($L('Select', 'تحديد')) ?></span><?php endif; ?></th><th><?= hkp_h($L('Content', 'المحتوى')) ?></th><th><?= hkp_h($L('Client', 'العميل')) ?></th><th><?= hkp_h($L('Operation', 'العملية')) ?></th><th><?= hkp_h($L('Requester', 'مقدم الطلب')) ?></th><th><?= hkp_h($L('Status', 'الحالة')) ?></th><th><?= hkp_h($L('Expires (UTC)', 'ينتهي (UTC)')) ?></th><th></th></tr></thead><tbody>
+<?php foreach ($approvals as $a): $s = $state($a); $ok = $canApprove($a); ?><tr><td><?php $why = $ok ? '' : ($s === 'expired' ? $L('Expired: ask the MCP client to request approval again.', 'منتهي: اطلب من عميل MCP طلب الموافقة مجدداً.') : ($s !== 'pending' ? $L('Already reviewed.', 'تمت مراجعته.') : (!$can['publish'] ? $L('Publication permission required.', 'يلزم إذن النشر.') : $L('Another administrator must approve your own request.', 'يجب أن يوافق مسؤول آخر على طلبك.')))); ?><input type="checkbox"<?= $ok ? ' name="approvals[]" value="' . (int) $a['id'] . '"' : ' disabled title="' . hkp_h($why) . '"' ?> aria-label="<?= hkp_h($L('Select request', 'تحديد الطلب') . ' #' . (int) $a['id'] . ($why ? ' – ' . $why : '')) ?>"></td><td><a href="<?= $base . '?tab=approvals&status=' . $status . '&approval=' . (int) $a['id'] ?>"><?= hkp_h($a['object_type'] . ' #' . $a['object_id']) ?></a></td><td dir="ltr"><?= hkp_h($a['client_id']) ?></td><td><?= hkp_h($a['operation']) ?></td><td>#<?= (int) $a['requester_id'] ?></td><td><span class="hkp-badge hkp-badge--<?= $badge[$s] ?? 'muted' ?>"><?= hkp_h($statusLabel[$s] ?? $s) ?></span></td><td dir="ltr"><?= hkp_h($a['expires_at']) ?></td><td><?php if ($ok): ?><button class="hkp-btn hkp-btn--ghost" name="single" value="<?= (int) $a['id'] ?>"><?= hkp_h($L('Approve & publish', 'موافقة ونشر')) ?></button><?php endif; ?></td></tr><?php endforeach; ?>
+</tbody></table></div></form><?php if (!$approvals): ?><p class="hkp-muted"><?= hkp_h($L('No requests in this view.', 'لا توجد طلبات في هذا العرض.')) ?></p><?php endif; ?></section>
+<?php if ($approvals): ?><script>
+(function () {
+  var form = document.getElementById('mcp-bulk'), all = document.getElementById('mcp-select-all'),
+      btn = document.getElementById('mcp-bulk-approve'), count = document.getElementById('mcp-bulk-count');
+  if (!form || !all || !btn) return;
+  var boxes = function () { return Array.prototype.slice.call(form.querySelectorAll('input[name="approvals[]"]')); };
+  var sync = function () {
+    var b = boxes(), n = b.filter(function (x) { return x.checked; }).length;
+    count.textContent = n; btn.disabled = n === 0;
+    all.checked = n > 0 && n === b.length; all.indeterminate = n > 0 && n < b.length;
+  };
+  all.addEventListener('change', function () { boxes().forEach(function (x) { x.checked = all.checked; }); sync(); });
+  form.addEventListener('change', function (e) { if (e.target.name === 'approvals[]') sync(); });
+  // A row's own Approve button submits only that row, whatever is ticked.
+  form.addEventListener('submit', function (e) { if (e.submitter === btn && !boxes().some(function (x) { return x.checked; })) e.preventDefault(); });
+  sync();
+})();
+</script><?php endif; ?>
 
 <?php elseif ($tab === 'connections'): ?>
 <section class="hkp-card" style="margin-top:20px"><h2><?= hkp_h($L('OAuth connections', 'اتصالات OAuth')) ?></h2>

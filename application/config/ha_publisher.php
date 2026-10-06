@@ -9,9 +9,11 @@ $config['native_audience'] = 'altus-native-publisher';
 $config['gateway_key_id'] = getenv('ALTUS_MCP_KEY_ID') ?: 'current';
 $config['gateway_secret_previous'] = getenv('ALTUS_MCP_SECRET_PREVIOUS') ?: '';
 $config['gateway_key_id_previous'] = getenv('ALTUS_MCP_KEY_ID_PREVIOUS') ?: 'previous';
-// Separation of duties: the requesting user may not approve their own MCP request unless explicitly allowed.
-$config['allow_self_approval'] = getenv('ALTUS_MCP_ALLOW_SELF_APPROVAL') === '1';
-$config['approval_ttl'] = 600;
+// Self-approval: the requesting administrator may approve their own MCP request (every review is audited).
+// Set ALTUS_MCP_ALLOW_SELF_APPROVAL=0 to require a second administrator (separation of duties).
+$config['allow_self_approval'] = getenv('ALTUS_MCP_ALLOW_SELF_APPROVAL') !== '0';
+// Seconds a request stays approvable/usable. Default 24 hours so a reviewer can work through a batch.
+$config['approval_ttl'] = (int) (getenv('ALTUS_MCP_APPROVAL_TTL') ?: 86400);
 
 // Native PHP MCP server (/mcp) and OAuth 2.1 authorization server (/oauth/*). Same mcp_enabled switch.
 // Issuer: set ALTUS_MCP_ISSUER to the public base URL in production (default: config base_url).

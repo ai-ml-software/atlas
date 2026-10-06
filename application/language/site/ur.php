@@ -9,6 +9,7 @@ return array(
     'A learning path runs a new starter from their first shift to a verified certificate, in the order the work is learned.' => 'لرننگ پاتھ نئے ملازم کو پہلی شفٹ سے تصدیق شدہ سرٹیفکیٹ تک لے جاتا ہے، اسی ترتیب سے جس میں کام سیکھا جاتا ہے۔',
     'A manager assigns a course, a programme or a procedure to a person, a department, a property or a job role, with a due date.' => 'مینیجر کسی کورس، پروگرام یا طریقۂ کار کو آخری تاریخ کے ساتھ کسی فرد، شعبے، ہوٹل یا جاب رول کو تفویض کرتا ہے۔',
     'About Academy' => 'اکیڈمی کے بارے میں',
+    'About Platform' => 'پلیٹ فارم کے بارے میں',
     'Acknowledged the current version' => 'موجودہ ورژن کی توثیق کر دی',
     'Advanced' => 'ایڈوانسڈ',
     'All categories' => 'تمام زمرے',

@@ -73,15 +73,31 @@ class Ha_publishing_service {
             if ($a['status']==='consumed') throw new Ha_api_error(409,'approval_consumed','This approval was already used. Approvals are single-use.',array('approval_id'=>(int)$id));
             if ($a['status']!=='approved' || self::expired($a)) throw new Ha_api_error(self::expired($a)?409:403,self::expired($a)?'approval_expired':'approval_required','A current human approval is required.',array('approval_id'=>(int)$id,'status'=>self::expired($a)?'expired':$a['status'],'expires_at'=>self::utc($a['expires_at'])));
             foreach (array('type'=>'object_type','id'=>'object_id','operation'=>'operation') as $k=>$col) if (isset($expect[$k]) && (string)$expect[$k]!==(string)$a[$col]) throw new Ha_api_error(409,'approval_mismatch','The approval covers a different '.$k.'.',array('approval_id'=>(int)$id,$k=>$a[$col]));
-            $this->publish_permission($a['object_type']); $s=$this->state($a['object_type'],$a['object_id']);
-            if ((isset($a['object_version']) && $a['object_version']!==null && (int)$a['object_version']!==(int)$s['version']) || (isset($expect['version']) && (int)$expect['version']!==(int)$s['version']) || !hash_equals($a['content_hash'],$this->digest($a['object_type'],$a['object_id']))) throw $this->conflict('The approved content changed. Request a new approval.',$a);
-            try { if ($a['operation']==='archive') { $this->archive($a['object_type'],$a['object_id']); }
-                elseif (in_array($a['object_type'],array('lessons','quizzes'),true)) { $this->mcp_content()->set_status($a['object_type'],$a['object_id'],'published'); }
-                elseif ($a['object_type']==='page') { $this->CI->ha_website_studio->publish($a['object_id'],$s['version']); }
-                else { $this->CI->ha_content_studio->publish($a['object_type'],$a['object_id'],$s['version']); } }
-            catch (DomainException $e) { throw $this->conflict($e->getMessage(),$a); }
-            $set=array('status'=>'consumed'); if ($db->field_exists('consumed_at','ha_publisher_approval')) $set['consumed_at']=gmdate('Y-m-d H:i:s');
-            $db->where(array('id'=>$id,'status'=>'approved'))->update('ha_publisher_approval',$set); if ($db->affected_rows()!==1) throw new Ha_api_error(409,'approval_consumed','This approval was already used.');
+            $this->apply($a,$expect);
+            $db->trans_commit(); return $this->describe($a['object_type'],$a['object_id']);
+        } catch (Throwable $e) { $db->trans_rollback(); throw $e; }
+    }
+    /** Runs a locked, approved request (publish or archive) and marks it consumed. Caller owns the transaction. */
+    private function apply(array $a,array $expect=array()) {
+        $db=$this->CI->db; $id=(int)$a['id'];
+        $this->publish_permission($a['object_type']); $s=$this->state($a['object_type'],$a['object_id']);
+        if ((isset($a['object_version']) && $a['object_version']!==null && (int)$a['object_version']!==(int)$s['version']) || (isset($expect['version']) && (int)$expect['version']!==(int)$s['version']) || !hash_equals($a['content_hash'],$this->digest($a['object_type'],$a['object_id']))) throw $this->conflict('The approved content changed. Request a new approval.',$a);
+        try { if ($a['operation']==='archive') { $this->archive($a['object_type'],$a['object_id']); }
+            elseif (in_array($a['object_type'],array('lessons','quizzes'),true)) { $this->mcp_content()->set_status($a['object_type'],$a['object_id'],'published'); }
+            elseif ($a['object_type']==='page') { $this->CI->ha_website_studio->publish($a['object_id'],$s['version']); }
+            else { $this->CI->ha_content_studio->publish($a['object_type'],$a['object_id'],$s['version']); } }
+        catch (DomainException $e) { throw $this->conflict($e->getMessage(),$a); }
+        $set=array('status'=>'consumed'); if ($db->field_exists('consumed_at','ha_publisher_approval')) $set['consumed_at']=gmdate('Y-m-d H:i:s');
+        $db->where(array('id'=>$id,'status'=>'approved'))->update('ha_publisher_approval',$set); if ($db->affected_rows()!==1) throw new Ha_api_error(409,'approval_consumed','This approval was already used.');
+    }
+    /** Admin "Approve": human review and publication in one step, so the change is live immediately. */
+    public function approve_and_publish($id) {
+        $this->review($id,true);
+        $db=$this->CI->db; $db->trans_begin();
+        try { $a=$db->query('SELECT * FROM ha_publisher_approval WHERE id=? FOR UPDATE',array((int)$id))->row_array();
+            if (!$a || $a['status']!=='approved') throw new Ha_api_error(409,'approval_unavailable','Approval was not recorded.');
+            $this->apply($a);
+            $this->CI->ha_audit->log('publish',$a['object_type'],(int)$a['object_id'],array('description'=>'Published on approval of MCP request #'.(int)$id));
             $db->trans_commit(); return $this->describe($a['object_type'],$a['object_id']);
         } catch (Throwable $e) { $db->trans_rollback(); throw $e; }
     }
@@ -163,8 +179,20 @@ class Ha_publishing_service {
             $this->CI->ha_audit->log('oauth.revoke','users',(int)$g['user_id'],array('description'=>'PHP MCP grant revoked for client '.$g['client_id']));
             return 'revoked';
         }
+        if ($action==='bulk_approve') {
+            // Row "Approve" button sends `single`; "Approve selected" sends the checked `approvals[]`. Each goes through review() (permission, expiry, separation of duties, content hash).
+            $ids=isset($post['single'])?array((int)$post['single']):array_map('intval',(array)($post['approvals']??array()));
+            $ids=array_values(array_unique(array_filter($ids)));
+            if (!$ids) throw new Ha_api_error(422,'validation_failed','Select at least one request to approve.');
+            // Each approved request is published straight away (content hash and version are re-checked).
+            $failed=array(); foreach ($ids as $id) { try { $this->approve_and_publish($id); } catch (Throwable $e) { $failed[]='#'.$id.': '.$e->getMessage(); } }
+            if ($failed) throw new Ha_api_error(409,'partial_approval',(count($ids)-count($failed)).' of '.count($ids).' approved and published. '.implode(' ',$failed));
+            return 'published';
+        }
         if ($action==='unarchive') { $this->unarchive((string)($post['type']??'page'),(int)($post['id']??0)); return 'restored'; }
-        $this->review((int)($post['approval']??0),($post['decision']??'')==='approve'); return 'reviewed';
+        $id=(int)($post['approval']??0);
+        if (($post['decision']??'')==='approve') { $this->approve_and_publish($id); return 'published'; }
+        $this->review($id,false); return 'reviewed';
     }
     public function execute($action,array $in,$client) {
         $type=(string)($in['type']??'page'); $id=(int)($in['id']??0);

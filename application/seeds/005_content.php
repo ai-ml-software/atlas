@@ -1174,7 +1174,7 @@ class Seed_content extends Ha_seeder {
             array('SOP Resources', 'موارد الإجراءات', 'sop', 'sop'),
             array('Articles', 'المقالات', 'articles', 'articles'),
             array('Certifications', 'الشهادات', 'certificates', 'certificates'),
-            array('About Academy', 'عن الأكاديمية', 'about', 'about'),
+            array('About Platform', 'عن المنصة', 'about', 'about'),
             array('For Hotels', 'للفنادق', 'hotels', 'hotels'),
             array('Contact', 'تواصل', 'contact', 'contact'),
         );

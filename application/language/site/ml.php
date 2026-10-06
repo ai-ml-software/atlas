@@ -9,6 +9,7 @@ return array(
     'A learning path runs a new starter from their first shift to a verified certificate, in the order the work is learned.' => 'ജോലി പഠിക്കുന്ന ക്രമത്തിൽ, പുതിയ ജീവനക്കാരനെ ആദ്യ ഷിഫ്റ്റിൽ നിന്ന് സ്ഥിരീകരിച്ച സർട്ടിഫിക്കറ്റ് വരെ ഒരു ലേണിംഗ് പാത്ത് കൊണ്ടുപോകുന്നു.',
     'A manager assigns a course, a programme or a procedure to a person, a department, a property or a job role, with a due date.' => 'മാനേജർ ഒരു കോഴ്സോ പ്രോഗ്രാമോ നടപടിക്രമമോ ഒരു വ്യക്തിക്കോ വകുപ്പിനോ ഹോട്ടലിനോ ജോലി റോളിനോ അവസാന തീയതിയോടെ നൽകുന്നു.',
     'About Academy' => 'അക്കാദമിയെക്കുറിച്ച്',
+    'About Platform' => 'പ്ലാറ്റ്ഫോമിനെക്കുറിച്ച്',
     'Acknowledged the current version' => 'നിലവിലെ പതിപ്പ് അംഗീകരിച്ചവർ',
     'Advanced' => 'ഉന്നത നിലവാരം',
     'All categories' => 'എല്ലാ വിഭാഗങ്ങളും',

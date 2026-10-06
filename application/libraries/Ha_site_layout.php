@@ -49,7 +49,7 @@ class Ha_site_layout {
             'no_results' => 'Nothing matched that search.',
             'courses' => 'Courses', 'programs' => 'Programs', 'learning_paths' => 'Learning Paths',
             'topics' => 'Hospitality Topics', 'sop' => 'SOP Resources', 'articles' => 'Articles',
-            'certificates' => 'Certifications', 'about' => 'About Academy', 'for_hotels' => 'For Hotels',
+            'certificates' => 'Certifications', 'about' => 'About Platform', 'for_hotels' => 'For Hotels',
             'contact' => 'Contact', 'home' => 'Home',
             'all_categories' => 'All categories', 'all_levels' => 'All levels',
             'level' => 'Level', 'duration' => 'Duration', 'minutes' => 'min', 'hours' => 'hours',

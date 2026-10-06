@@ -9,6 +9,7 @@ return array(
     'A learning path runs a new starter from their first shift to a verified certificate, in the order the work is learned.' => 'Dinadala ng learning path ang bagong empleyado mula sa unang shift hanggang sa beripikadong sertipiko, ayon sa pagkakasunod ng pag-aaral ng trabaho.',
     'A manager assigns a course, a programme or a procedure to a person, a department, a property or a job role, with a due date.' => 'Nag-a-assign ang manager ng kurso, programa o pamamaraan sa isang tao, departamento, hotel o posisyon, kasama ang takdang petsa.',
     'About Academy' => 'Tungkol sa Akademya',
+    'About Platform' => 'Tungkol sa Platform',
     'Acknowledged the current version' => 'Kinilala ang kasalukuyang bersyon',
     'Advanced' => 'Mataas na antas',
     'All categories' => 'Lahat ng kategorya',

@@ -12,6 +12,14 @@ $cols = array(
     array(ha_pt('Resources'), array(array('sop', $t['sop']), array('hospitality-topics', $t['topics']), array('articles', $t['articles']), array('verify', $t['verify_title']))),
     array(ha_pt('Company'), array(array('about', $t['about']), array('hotels', $t['for_hotels']), array('contact', $t['contact']), array('credits', ha_pt('Photo credits')))),
 );
+// Same editable menus as the footer (Website studio → Navigation & footer); an existing menu wins, even when empty.
+if (!empty($studio_footer_menus)) {
+    foreach (array('footer_learn', 'footer_resources', 'footer_company') as $i => $code) {
+        if (isset($studio_footer_menus[$code]) && get_instance()->db->where('code', $code)->count_all_results('ha_menu')) {
+            $cols[$i][1] = array_map(function ($item) { return array($item['url'], $item['label']); }, $studio_footer_menus[$code]);
+        }
+    }
+}
 $people = !empty($founders) ? $founders : array(
     array('name' => ha_chrome('ha_founder_1_name', $locale), 'phone' => ha_chrome('ha_founder_1_phone', $locale), 'email' => '', 'photo' => '', 'social' => array()),
     array('name' => ha_chrome('ha_founder_2_name', $locale), 'phone' => ha_chrome('ha_founder_2_phone', $locale), 'email' => '', 'photo' => '', 'social' => array()),

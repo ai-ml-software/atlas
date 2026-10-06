@@ -240,7 +240,8 @@ class Mobile_api extends CI_Controller {
     private function media_url($path) {
         $path=trim((string)$path);if(!$path||strpos($path,'..')!==false||preg_match('~uploads/private~i',$path)){return null;}
         if(preg_match('~^https://~i',$path)){return $path;}
-        if(preg_match('~^(uploads/academy/|assets/)~',ltrim($path,'/'))){return base_url(ltrim($path,'/'));}
+        // Same public locations the website's lesson view links to; native clients require HTTPS.
+        if(preg_match('~^(uploads/academy/|uploads/hkp/|assets/)~',ltrim($path,'/'))){return preg_replace('~^http://~i','https://',base_url(ltrim($path,'/')));}
         return null;
     }
     private function course_shape($id,$progress=null,$mandatory=false) {
@@ -248,7 +249,7 @@ class Mobile_api extends CI_Controller {
         if(!$c){return null;}
         if($progress===null){$e=$this->db->get_where('ha_enrollment',array('user_id'=>$this->uid,'course_id'=>$id))->row_array();$progress=$e?(float)$e['progress_percentage']:0;}
         $title=$c['title'];$description=strip_tags($c['short_description'] ?: $c['description']);
-        return array('id'=>(string)$id,'title'=>array('en'=>$title,'ar'=>$title),'category'=>array('en'=>$c['code'],'ar'=>$c['code']),'description'=>array('en'=>$description,'ar'=>$description),'minutes'=>(int)$c['duration_minutes'],'lessons'=>count($c['lessons']),'progress'=>$progress,'mandatory'=>$mandatory,'image'=>'lobby');
+        return array('id'=>(string)$id,'title'=>array('en'=>$title,'ar'=>$title),'category'=>array('en'=>$c['code'],'ar'=>$c['code']),'description'=>array('en'=>$description,'ar'=>$description),'minutes'=>(int)$c['duration_minutes'],'lessons'=>count($c['lessons']),'progress'=>$progress,'mandatory'=>$mandatory,'image'=>'lobby','image_url'=>$this->media_url($c['thumbnail'] ?? ''));
     }
     private function respond($data,$status=200,$message='Operation completed successfully') {
         return $this->output->set_status_header($status)->set_output(json_encode(array('success'=>$status<400,'data'=>$data,'message'=>$message),JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES));

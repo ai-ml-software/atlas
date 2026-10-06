@@ -30,7 +30,12 @@ export function Home() {
   const { state, t, b, can } = useApp();
   const c = useTheme();
   const learning = can("learning");
-  const live = useResource<Course[]>(learning ? "plan?locale=" + state.locale : "");
+  const plan = useResource<Course[]>(learning ? "plan?locale=" + state.locale : "");
+  // Without enrollments, point the learner at the published catalog instead of an empty card.
+  const catalog = useResource<Course[]>(
+    learning && plan.data && !plan.data.length ? "courses?locale=" + state.locale : "",
+  );
+  const live = plan.data && !plan.data.length ? catalog : plan;
   const demoCourses = courses.map((x) => ({
     ...x,
     progress: state.completed.includes(x.id) ? 100 : x.progress,
@@ -206,9 +211,16 @@ export function Courses({ spec }: { spec: ScreenSpec }) {
   const [query, setQuery] = useState(""),
     [filter, setFilter] = useState("all");
   const c = useTheme();
-  const resource = useResource<Course[]>(
-    `${spec.source === "courses" ? "courses" : "plan"}?locale=${state.locale}`,
+  const primary = useResource<Course[]>(
+    `${spec.source === "courses" ? "courses?per_page=50&" : "plan?"}locale=${state.locale}`,
   );
+  // The main learning tab falls back to the catalog for users with no enrollments yet.
+  const fallback = useResource<Course[]>(
+    spec.id === "learning" && primary.data && !primary.data.length
+      ? `courses?per_page=50&locale=${state.locale}`
+      : undefined,
+  );
+  const resource = spec.id === "learning" && primary.data && !primary.data.length ? fallback : primary;
   const raw =
     state.mode === "live"
       ? resource.data || []
@@ -216,7 +228,7 @@ export function Courses({ spec }: { spec: ScreenSpec }) {
           ...x,
           progress: state.completed.includes(x.id) ? 100 : x.progress,
         }));
-  const active = ["mandatory", "assigned"].includes(spec.id)
+  const active = spec.id === "mandatory"
     ? "required"
     : spec.id === "in-progress"
       ? "inProgress"

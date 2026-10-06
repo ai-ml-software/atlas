@@ -2,7 +2,7 @@
   "expo": {
     "name": "ALTUS Knowledge & Performance",
     "slug": "altus-knowledge-performance",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "scheme": "altus",
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
@@ -10,7 +10,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.altusgulf.knowledge",
-      "buildNumber": "5",
+      "buildNumber": "6",
       "infoPlist": {
         "NSCameraUsageDescription": "Scan training attendance and certificate QR codes when you choose to scan.",
         "ITSAppUsesNonExemptEncryption": false,
@@ -19,7 +19,7 @@
     },
     "android": {
       "package": "com.altusgulf.knowledge",
-      "versionCode": 5,
+      "versionCode": 6,
       "adaptiveIcon": {
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",

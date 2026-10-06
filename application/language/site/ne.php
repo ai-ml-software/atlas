@@ -9,6 +9,7 @@ return array(
     'A learning path runs a new starter from their first shift to a verified certificate, in the order the work is learned.' => 'लर्निङ पाथले नयाँ कर्मचारीलाई पहिलो सिफ्टदेखि प्रमाणित प्रमाणपत्रसम्म, काम सिकिने क्रममै अगाडि बढाउँछ।',
     'A manager assigns a course, a programme or a procedure to a person, a department, a property or a job role, with a due date.' => 'म्यानेजरले कुनै व्यक्ति, विभाग, प्रोपर्टी वा जब रोललाई अन्तिम मितिसहित कोर्स, कार्यक्रम वा प्रक्रिया तोक्छन्।',
     'About Academy' => 'एकेडेमीको बारेमा',
+    'About Platform' => 'प्लेटफर्मको बारेमा',
     'Acknowledged the current version' => 'हालको संस्करण स्वीकार गरियो',
     'Advanced' => 'उन्नत',
     'All categories' => 'सबै वर्गहरू',

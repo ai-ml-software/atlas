@@ -538,7 +538,11 @@ export function CourseCard({
     >
       {!compact && (
         <Image
-          source={assets[course.image]}
+          source={
+            course.image_url?.startsWith("https://")
+              ? { uri: course.image_url }
+              : assets[course.image] || assets.lobby
+          }
           style={{ width: "100%", height: 146 }}
         />
       )}

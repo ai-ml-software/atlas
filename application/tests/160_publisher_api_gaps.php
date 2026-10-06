@@ -143,6 +143,16 @@ class Test_publisher_api_gaps extends Ha_testcase {
         $this->assertNotNull($caught); $this->assertEquals('self_approval_forbidden',$caught?$caught->error_code:null); $this->assertEquals('pending',$this->db->get_where('ha_publisher_approval',array('id'=>$a['approval_id']))->row('status'));
         $this->CI->config->config['ha_publisher']['allow_self_approval']=true; $P->review($a['approval_id'],true); $this->assertEquals('approved',$this->db->get_where('ha_publisher_approval',array('id'=>$a['approval_id']))->row('status'));
     }
+    public function test_admin_bulk_approve_publishes_immediately() {
+        $g=$this->grant($this->admin); $this->page_draft($g,'Bulk approved headline');
+        $a=$this->call('request_publish',array('type'=>'page','id'=>$this->about(),'operation'=>'publish'),$this->bearer($g),$this->key('bulk'))['data'];
+        $this->CI->config->config['ha_publisher']['allow_self_approval']=true; $P=$this->CI->ha_publishing_service;
+        $this->assertEquals('published',$P->admin_post(array('action'=>'bulk_approve','approvals'=>array((string)$a['approval_id']))));
+        $this->assertEquals('consumed',$this->db->get_where('ha_publisher_approval',array('id'=>$a['approval_id']))->row('status'),'approval is used by the publication');
+        $this->assertEquals('Bulk approved headline',$this->CI->ha_page_builder->page($this->about())['tr']['en']['title'],'checked + Approve makes the change live');
+        $caught=null; try { $P->admin_post(array('action'=>'bulk_approve','single'=>(string)$a['approval_id'])); } catch (Ha_api_error $e) { $caught=$e; }
+        $this->assertEquals('partial_approval',$caught?$caught->error_code:null,'a used request cannot be approved twice');
+    }
     public function test_approval_expiry_change_single_use_and_duplicate_publication() {
         $g=$this->grant($this->admin); $this->page_draft($g,'Approved MCP headline');
         $a=$this->call('request_publish',array('type'=>'page','id'=>$this->about(),'operation'=>'publish'),$this->bearer($g),$this->key('rq'))['data'];

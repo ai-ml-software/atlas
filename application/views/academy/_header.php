@@ -50,7 +50,7 @@ $ha_social = array_filter($ha_social, function ($v) { return trim((string) $v) !
                                         <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
                                     </button>
                                 </span>
-                                <?php $this->load->view('academy/_mega', array('locale' => $locale, 't' => $t, 'rtl' => $is_rtl, 'founders' => isset($founders) ? $founders : array())); ?>
+                                <?php $this->load->view('academy/_mega', array('locale' => $locale, 't' => $t, 'rtl' => $is_rtl, 'founders' => isset($founders) ? $founders : array(), 'studio_footer_menus' => isset($studio_footer_menus) ? $studio_footer_menus : array())); ?>
                             </li>
                             <?php else: ?>
                             <li><a href="<?= base_url($item_path) ?>"><?= html_escape($item['label']) ?></a></li>

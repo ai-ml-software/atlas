@@ -12,6 +12,8 @@ export interface Course {
   progress: number;
   mandatory: boolean;
   image: "lobby" | "training" | "operations";
+  /** HTTPS course thumbnail from the platform, when one is published. */
+  image_url?: string | null;
 }
 export interface Document {
   id: string;
